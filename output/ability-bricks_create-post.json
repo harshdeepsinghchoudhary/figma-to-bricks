@@ -1,0 +1,100 @@
+{
+  "name": "bricks/create-post",
+  "label": "Create post",
+  "description": "Create a new page or post. Optionally seed a Bricks element tree atomically with creation. Returns the new post ID, builder URL, and revision ID.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Post title."
+      },
+      "postType": {
+        "type": "string",
+        "description": "Post type slug. Default: page. Must be a Bricks-enabled post type."
+      },
+      "status": {
+        "type": "string",
+        "description": "Post status. Default: draft.",
+        "enum": [
+          "draft",
+          "publish",
+          "pending",
+          "private",
+          "future"
+        ]
+      },
+      "slug": {
+        "type": "string",
+        "description": "URL slug. Auto-generated from title if omitted."
+      },
+      "parent": {
+        "type": "integer",
+        "description": "Parent post ID (for hierarchical post types like pages)."
+      },
+      "elements": {
+        "type": "array",
+        "description": "Bricks element objects to seed the page with, not JSON strings. When provided, the tree is saved atomically with the post; partial state is never written. Element `id` values are internal 6-character Bricks IDs used by builder references and default frontend selectors. In nested format, you may omit ids and Bricks generates them while preserving parent-child nesting. In flat format, ids and parent references must be valid 6-character ids.",
+        "items": {
+          "type": "object"
+        }
+      }
+    },
+    "required": [
+      "title"
+    ],
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "postId": {
+        "type": "integer"
+      },
+      "title": {
+        "type": "string"
+      },
+      "slug": {
+        "type": "string"
+      },
+      "postType": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string"
+      },
+      "editUrl": {
+        "type": "string"
+      },
+      "builderUrl": {
+        "type": "string"
+      },
+      "permalink": {
+        "type": "string"
+      },
+      "revisionId": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "description": "Revision ID if elements were seeded."
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": null,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

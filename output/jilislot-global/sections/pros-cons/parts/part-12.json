@@ -1,0 +1,169 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "cons-list-section",
+      "figmaNodeId": "scope",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 60
+      },
+      "children": [
+        {
+          "type": "unsupported",
+          "id": "line-78",
+          "figmaNodeId": "8221:798",
+          "notes": [
+            "Vertical line: type=LINE, strokeWeight=1, stroke #FFFFFF1A"
+          ]
+        },
+        {
+          "type": "column",
+          "id": "cons-frame",
+          "figmaNodeId": "8221:785",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 14
+          },
+          "size": {
+            "width": 498
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "cons-item-1",
+              "figmaNodeId": "8221:786",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 10
+              },
+              "size": {
+                "width": 498
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "cons-icon-1",
+                  "figmaNodeId": "8221:788",
+                  "asset": {
+                    "nodeId": "8221:788",
+                    "kind": "svg"
+                  },
+                  "layout": {
+                    "padding": {
+                      "top": 6
+                    }
+                  }
+                },
+                {
+                  "type": "text-basic",
+                  "id": "cons-text-1",
+                  "figmaNodeId": "8221:787",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "id": "cons-item-2",
+              "figmaNodeId": "8221:790",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 10
+              },
+              "size": {
+                "width": 498
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "cons-icon-2",
+                  "figmaNodeId": "8221:792",
+                  "asset": {
+                    "nodeId": "8221:792",
+                    "kind": "svg"
+                  },
+                  "layout": {
+                    "padding": {
+                      "top": 6
+                    }
+                  }
+                },
+                {
+                  "type": "text-basic",
+                  "id": "cons-text-2",
+                  "figmaNodeId": "8221:791",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and ",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "id": "cons-item-3",
+              "figmaNodeId": "8221:794",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 10
+              },
+              "size": {
+                "width": 498
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "cons-icon-3",
+                  "figmaNodeId": "8221:796",
+                  "asset": {
+                    "nodeId": "8221:796",
+                    "kind": "svg"
+                  },
+                  "layout": {
+                    "padding": {
+                      "top": 6
+                    }
+                  }
+                },
+                {
+                  "type": "text-basic",
+                  "id": "cons-text-3",
+                  "figmaNodeId": "8221:795",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

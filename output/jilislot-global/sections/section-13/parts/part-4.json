@@ -1,0 +1,73 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "frame-1261152837",
+      "figmaNodeId": "8226:210",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 24,
+        "align": "center"
+      },
+      "size": {
+        "width": 235,
+        "height": 218
+      }
+    },
+    {
+      "type": "icon",
+      "id": "group-1261154677",
+      "figmaNodeId": "8226:211",
+      "asset": {
+        "nodeId": "8226:211",
+        "kind": "svg"
+      }
+    },
+    {
+      "type": "column",
+      "id": "frame-1261152833",
+      "figmaNodeId": "8226:218",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 10,
+        "align": "center"
+      },
+      "size": {
+        "width": 235,
+        "height": 84
+      }
+    },
+    {
+      "type": "heading",
+      "id": "start-spinning",
+      "figmaNodeId": "8226:219",
+      "text": "Start spinning",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 18,
+        "fontWeight": 700,
+        "lineHeight": "26px",
+        "color": "#FFFFFF",
+        "align": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "lorem-ipsum",
+      "figmaNodeId": "8226:220",
+      "text": "Lorem Ipsum is simply dummy text of the printing and ",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "lineHeight": "24px",
+        "color": "#FFFFFF",
+        "align": "center"
+      }
+    }
+  ],
+  "_uncertain": []
+}

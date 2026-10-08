@@ -1,0 +1,87 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-part-4",
+      "notes": [],
+      "children": [
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8222:1096",
+          "asset": {
+            "nodeId": "8222:1096",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-1261152826-1",
+          "figmaNodeId": "8222:1097",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-1261152825-1",
+              "figmaNodeId": "8222:1098",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jili-table-games",
+                  "figmaNodeId": "8222:1099",
+                  "text": "Jili Table Games",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 700,
+                    "lineHeight": "21.78px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "lorem-ipsum",
+                  "figmaNodeId": "8222:1100",
+                  "text": "Lorem Ipsum is simply dummy text of the ",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "id": "play-now-button",
+              "figmaNodeId": "8222:1101",
+              "text": "Play Now",
+              "background": {
+                "color": "#FCC40B"
+              },
+              "border": {
+                "radius": 400
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": "16.94px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "top-level synthetic wrapper omitted",
+    "section-part-4: dropped unknown field \"_uncertain\""
+  ]
+}

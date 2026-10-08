@@ -1,0 +1,84 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8222:1305",
+          "asset": {
+            "nodeId": "8222:1305",
+            "kind": "image"
+          },
+          "size": {
+            "width": 360,
+            "height": 185
+          },
+          "border": {
+            "radius": 4
+          }
+        },
+        {
+          "type": "column",
+          "id": "section-1-column-1",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-1261152830-1",
+              "figmaNodeId": "8222:1307",
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "vip-program",
+                  "figmaNodeId": "8222:1308",
+                  "text": "VIP Program",
+                  "level": 2,
+                  "size": {
+                    "width": 325,
+                    "height": 24
+                  },
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": 600,
+                    "lineHeight": "24.2px",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "lorem-ipsum",
+                  "figmaNodeId": "8222:1309",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of",
+                  "size": {
+                    "width": 325,
+                    "height": 81
+                  },
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "id": "claim-now",
+              "figmaNodeId": "8222:1310",
+              "text": "Claim Now"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout gaps and margins not specified"
+  ]
+}

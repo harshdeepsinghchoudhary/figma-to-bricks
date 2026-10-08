@@ -1,0 +1,1502 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "about-jili-slot-games",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "heading",
+          "id": "about-heading",
+          "figmaNodeId": "8221:804",
+          "text": "About Jili Slot Games",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "lineHeight": "41.15px",
+            "color": "#FFFFFF",
+            "align": "center"
+          },
+          "level": 2,
+          "size": {
+            "width": 351
+          }
+        },
+        {
+          "type": "row",
+          "id": "about-jili-slot-games-row-1",
+          "children": [
+            {
+              "type": "column",
+              "id": "game-card",
+              "figmaNodeId": "8222:958",
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-1",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "game-image",
+                      "figmaNodeId": "8222:830",
+                      "asset": {
+                        "nodeId": "8222:830",
+                        "kind": "image"
+                      },
+                      "border": {
+                        "radius": 4
+                      },
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "game-details",
+                      "figmaNodeId": "8222:828",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "game-title",
+                          "figmaNodeId": "8221:807",
+                          "text": "Super Ace Jili",
+                          "level": 3,
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "game-description",
+                          "figmaNodeId": "8222:827",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "game-rtp",
+                          "figmaNodeId": "8222:829",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154694-1",
+              "figmaNodeId": "8222:959",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-2",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "game-image-2",
+                      "figmaNodeId": "8222:966",
+                      "asset": {
+                        "nodeId": "8222:966",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "game-details-2",
+                      "figmaNodeId": "8222:962",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "game-title-2",
+                          "figmaNodeId": "8222:963",
+                          "text": "Jili Ludo",
+                          "level": 3,
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text-basic",
+                          "id": "game-description-2",
+                          "figmaNodeId": "8222:964",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text-basic",
+                          "id": "game-rtp-2",
+                          "figmaNodeId": "8222:965",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              },
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154695-1",
+              "figmaNodeId": "8222:967",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "game-display-card",
+                  "figmaNodeId": "8222:969",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "about-jili-slot-games-column-3",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "jili-money-coming-image",
+                          "figmaNodeId": "8222:974",
+                          "asset": {
+                            "nodeId": "8222:974",
+                            "kind": "image"
+                          },
+                          "size": {
+                            "width": 254,
+                            "height": 135
+                          },
+                          "border": {
+                            "radius": 4
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "jili-money-coming-content",
+                          "figmaNodeId": "8222:970",
+                          "children": [
+                            {
+                              "type": "heading",
+                              "id": "jili-money-coming-title",
+                              "figmaNodeId": "8222:971",
+                              "text": "Jili Money Coming",
+                              "level": 3,
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 700,
+                                "lineHeight": "21.78px",
+                                "align": "center",
+                                "color": "#FFFFFF"
+                              },
+                              "size": {
+                                "width": 227
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "high-volatility-claim",
+                              "figmaNodeId": "8222:972",
+                              "text": "High volatility, combo wins",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "align": "left",
+                                "color": "#FFFFFF"
+                              },
+                              "size": {
+                                "width": 227
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "rtp-label",
+                              "figmaNodeId": "8222:973",
+                              "text": "RTP: 96.00%",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "align": "left",
+                                "color": "#FFFFFF"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 8,
+                            "align": "center"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 24,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              },
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154696",
+              "figmaNodeId": "8222:975",
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-4",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-8222-982",
+                      "figmaNodeId": "8222:982",
+                      "asset": {
+                        "nodeId": "8222:982",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "frame-1261152824-2",
+                      "figmaNodeId": "8222:978",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "text-8222-979",
+                          "figmaNodeId": "8222:979",
+                          "text": "Jili Slot Fortune Gems",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 227
+                          },
+                          "level": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "text-8222-980",
+                          "figmaNodeId": "8222:980",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "text-8222-981",
+                          "figmaNodeId": "8222:981",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 24,
+            "align": "start",
+            "margin": {
+              "top": 50
+            }
+          }
+        },
+        {
+          "type": "row",
+          "id": "about-jili-slot-games-row-2",
+          "children": [
+            {
+              "type": "column",
+              "id": "group-1261154697-1",
+              "figmaNodeId": "8222:983",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-5",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "boxing-king-image",
+                      "figmaNodeId": "8222:990",
+                      "asset": {
+                        "nodeId": "8222:990",
+                        "kind": "image"
+                      },
+                      "border": {
+                        "radius": 4
+                      },
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "boxing-king-text-column",
+                      "figmaNodeId": "8222:986",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "boxing-king-title",
+                          "figmaNodeId": "8222:987",
+                          "text": "Boxing King Jili Slot",
+                          "level": 3,
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "boxing-king-description",
+                          "figmaNodeId": "8222:988",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "boxing-king-rtp",
+                          "figmaNodeId": "8222:989",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              },
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154698-1",
+              "figmaNodeId": "8222:991",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-6",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "game-image-3",
+                      "figmaNodeId": "8222:998",
+                      "asset": {
+                        "nodeId": "8222:998",
+                        "kind": "image"
+                      },
+                      "border": {
+                        "radius": 4
+                      },
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "game-info",
+                      "figmaNodeId": "8222:994",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "game-title-3",
+                          "figmaNodeId": "8222:995",
+                          "text": "Alibaba Jili Slot",
+                          "level": 3,
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "game-desc",
+                          "figmaNodeId": "8222:996",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "game-rtp-3",
+                          "figmaNodeId": "8222:997",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              },
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154699-1",
+              "figmaNodeId": "8222:999",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-7",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "game-image-4",
+                      "asset": {
+                        "nodeId": "8222:1006",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      },
+                      "border": {
+                        "radius": 4
+                      },
+                      "figmaNodeId": "8222:1006"
+                    },
+                    {
+                      "type": "column",
+                      "id": "game-details-3",
+                      "figmaNodeId": "8222:1002",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "game-title-4",
+                          "text": "Jili Golden Empire",
+                          "level": 3,
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "figmaNodeId": "8222:1003",
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "game-volatility",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "figmaNodeId": "8222:1004",
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "game-rtp-4",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "figmaNodeId": "8222:1005"
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              },
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154700-1",
+              "figmaNodeId": "8222:1007",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-8",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-8222-1014",
+                      "figmaNodeId": "8222:1014",
+                      "asset": {
+                        "nodeId": "8222:1014",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "frame-1261152824-1",
+                      "figmaNodeId": "8222:1010",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jili-fortune-gems-2",
+                          "figmaNodeId": "8222:1011",
+                          "text": "Jili Fortune Gems 2",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "high-volatility-combo-wins-2",
+                          "figmaNodeId": "8222:1012",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "rtp-96-00-2",
+                          "figmaNodeId": "8222:1013",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              },
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 24,
+            "align": "start",
+            "margin": {
+              "top": 24
+            }
+          }
+        },
+        {
+          "type": "row",
+          "id": "about-jili-slot-games-row-3",
+          "children": [
+            {
+              "type": "column",
+              "id": "group-1261154701-1",
+              "figmaNodeId": "8222:1015",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-9",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "hero-image",
+                      "figmaNodeId": "8222:1022",
+                      "asset": {
+                        "nodeId": "8222:1022",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      },
+                      "border": {
+                        "radius": 4
+                      },
+                      "notes": [
+                        "imageFill: FILL scale"
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "card-content",
+                      "figmaNodeId": "8222:1018",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "card-title",
+                          "figmaNodeId": "8222:1019",
+                          "text": "Jili Super Ace Slot",
+                          "level": 3,
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "card-subtitle",
+                          "figmaNodeId": "8222:1020",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text-basic",
+                          "id": "card-rtp",
+                          "figmaNodeId": "8222:1021",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              },
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154702-1",
+              "figmaNodeId": "8222:1023",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-10",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "wild-ace-image",
+                      "figmaNodeId": "8222:1030",
+                      "asset": {
+                        "nodeId": "8222:1030",
+                        "kind": "image"
+                      },
+                      "border": {
+                        "radius": 4
+                      },
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "wild-ace-details",
+                      "figmaNodeId": "8222:1026",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "wild-ace-title",
+                          "figmaNodeId": "8222:1027",
+                          "text": "Wild Ace Jili",
+                          "level": 3,
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "wild-ace-description",
+                          "figmaNodeId": "8222:1028",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "wild-ace-rtp",
+                          "figmaNodeId": "8222:1029",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              },
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154703",
+              "figmaNodeId": "8222:1031",
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-11",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image",
+                      "figmaNodeId": "8222:1038",
+                      "asset": {
+                        "nodeId": "8222:1038",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "frame-1261152824",
+                      "figmaNodeId": "8222:1034",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jili-crazy-777-slot",
+                          "figmaNodeId": "8222:1035",
+                          "text": "Jili Crazy 777 Slot",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "high-volatility-combo-wins",
+                          "figmaNodeId": "8222:1036",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "rtp-96-00",
+                          "figmaNodeId": "8222:1037",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154704-1",
+              "figmaNodeId": "8222:1039",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "about-jili-slot-games-column-12",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-2",
+                      "figmaNodeId": "8222:1046",
+                      "asset": {
+                        "nodeId": "8222:1046",
+                        "kind": "image"
+                      },
+                      "layout": {
+                        "display": "block"
+                      },
+                      "notes": [],
+                      "size": {
+                        "width": 254,
+                        "height": 135
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "frame-1261152824-1-2",
+                      "figmaNodeId": "8222:1042",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jili-caishen",
+                          "figmaNodeId": "8222:1043",
+                          "text": "Jili Caishen",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 700,
+                            "lineHeight": "21.78px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "layout": {
+                            "display": "block"
+                          },
+                          "notes": [],
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "high-volatility-combo-wins-3",
+                          "figmaNodeId": "8222:1044",
+                          "text": "High volatility, combo wins",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "layout": {
+                            "display": "block"
+                          },
+                          "notes": [],
+                          "size": {
+                            "width": 227
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "rtp-96",
+                          "figmaNodeId": "8222:1045",
+                          "text": "RTP: 96.00%",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "layout": {
+                            "display": "block"
+                          },
+                          "notes": []
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 8,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 14,
+                  "right": 14,
+                  "bottom": 24,
+                  "left": 14
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 282
+              },
+              "background": {
+                "color": "#191818"
+              },
+              "border": {
+                "radius": 10
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 24,
+            "align": "start",
+            "margin": {
+              "top": 24
+            }
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "center"
+      }
+    }
+  ],
+  "_uncertain": [
+    "card-content: dropped unknown field \"offset\"",
+    "game-details: dropped unknown field \"offCross\"",
+    "section-part-9: dropped unknown field \"_uncertain\""
+  ]
+}

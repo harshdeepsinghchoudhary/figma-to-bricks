@@ -1,0 +1,106 @@
+[
+  {
+    "id": "uij3ls",
+    "name": "heading",
+    "parent": "gd5d4i",
+    "children": [],
+    "settings": {
+      "text": "Test Heading",
+      "tag": "h1",
+      "_typography": {
+        "font-family": "Source Sans 3",
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "135%",
+        "color": {
+          "raw": "#3D3D3D"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "vtnl5x",
+    "name": "text",
+    "parent": "gd5d4i",
+    "children": [],
+    "settings": {
+      "text": "<p>This is a test paragraph to confirm the compiler round-trips.</p>",
+      "_typography": {
+        "font-family": "Source Sans 3",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "150%",
+        "color": {
+          "raw": "#555555"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "etgzq1",
+    "name": "text-basic",
+    "parent": "gd5d4i",
+    "children": [],
+    "settings": {
+      "text": "CEO of The Motive Point",
+      "_typography": {
+        "font-family": "Source Sans 3",
+        "font-size": "17px",
+        "font-weight": "400",
+        "color": {
+          "raw": "#3D3D3D"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "83bmfs",
+    "name": "button",
+    "parent": "gd5d4i",
+    "children": [],
+    "settings": {
+      "text": "Click Me",
+      "_typography": {
+        "font-family": "Source Sans 3",
+        "font-size": "16px",
+        "font-weight": "600",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      },
+      "link": {
+        "type": "external",
+        "url": "https://example.com",
+        "postId": ""
+      }
+    }
+  },
+  {
+    "id": "gd5d4i",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "uij3ls",
+      "vtnl5x",
+      "etgzq1",
+      "83bmfs"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "80",
+        "right": "40",
+        "bottom": "80",
+        "left": "40"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FAF9FF"
+        }
+      }
+    }
+  }
+]

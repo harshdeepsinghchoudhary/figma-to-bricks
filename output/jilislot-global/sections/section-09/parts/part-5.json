@@ -1,0 +1,40 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jilislot-global-part5",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154724",
+          "figmaNodeId": "8222:1262",
+          "layout": {
+            "display": "flex",
+            "direction": "column"
+          },
+          "notes": [
+            "Group node without explicit fills or auto-layout; treated as empty container."
+          ]
+        },
+        {
+          "type": "block",
+          "id": "rectangle-5757",
+          "figmaNodeId": "8222:1263",
+          "background": {
+            "color": "#181818"
+          },
+          "border": {
+            "radius": 12
+          },
+          "layout": {
+            "display": "block"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout gaps, margins, padding not provided"
+  ]
+}

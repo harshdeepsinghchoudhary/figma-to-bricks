@@ -1,0 +1,43 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "hero-mobile-section",
+      "figmaNodeId": "8226:81",
+      "background": {
+        "color": "#101010"
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "hero-left",
+          "figmaNodeId": "8226:3",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 16
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 700,
+            "lineHeight": "40px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "column",
+          "id": "hero-right",
+          "figmaNodeId": "8226:80",
+          "notes": "Container has no children in this part; contents handled in other parts."
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "hero-left size width/height",
+    "hero-right size (width/height)",
+    "section vertical padding"
+  ]
+}

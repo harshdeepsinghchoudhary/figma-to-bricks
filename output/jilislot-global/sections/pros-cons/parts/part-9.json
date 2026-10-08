@@ -1,0 +1,100 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "pros-connector",
+      "figmaNodeId": "8221:758",
+      "layout": {
+        "display": "block"
+      },
+      "size": {
+        "width": 0,
+        "height": 269
+      },
+      "notes": [
+        "Vertical line stroke #FFFFFF1A, line weight 1"
+      ]
+    },
+    {
+      "type": "column",
+      "id": "pros-block",
+      "figmaNodeId": "8221:801",
+      "layout": {
+        "display": "block"
+      },
+      "size": {
+        "width": 1200,
+        "height": 269
+      },
+      "background": {
+        "gradient": {
+          "angle": 90,
+          "stops": [
+            {
+              "color": "#0DAE2F",
+              "position": 0
+            },
+            {
+              "color": "#D60906",
+              "position": 100
+            }
+          ]
+        }
+      },
+      "notes": [
+        "Layers overlap: 8221:759 (Group 1261154689) and 8221:762 are stacked",
+        "8221:761 (Group 1261154378) likely contains the bullet list items shown in screenshot, but they were not in the data. See part description"
+      ],
+      "children": [
+        {
+          "type": "column",
+          "id": "pros-container",
+          "figmaNodeId": "8221:761",
+          "size": {
+            "width": 504,
+            "height": 209
+          }
+        },
+        {
+          "type": "row",
+          "id": "pros-header",
+          "figmaNodeId": "8221:762",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "justify": "start",
+            "align": "center",
+            "gap": 7
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "pros-icon",
+              "figmaNodeId": "8221:763",
+              "asset": {
+                "nodeId": "8221:763",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "heading",
+              "id": "pros-text",
+              "figmaNodeId": "8221:765",
+              "text": "PROS",
+              "level": 4,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 700,
+                "lineHeight": "32px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

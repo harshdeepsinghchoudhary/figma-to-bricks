@@ -1,0 +1,80 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "conclusion-text-block",
+      "figmaNodeId": "8226:386",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 32
+      },
+      "children": [
+        {
+          "type": "heading",
+          "id": "conclusion",
+          "figmaNodeId": "8226:387",
+          "level": 2,
+          "text": "Conclusion",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 48,
+            "fontWeight": 700,
+            "lineHeight": "58.09px",
+            "color": "#000000"
+          }
+        },
+        {
+          "type": "text-basic",
+          "id": "conclusion-paragraph",
+          "figmaNodeId": "8226:388",
+          "text": "Winning in Aviator takes more than luck. Use smart strategies, stay in control, and play with a clear plan. The key is to enjoy the game while making smart moves!",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 500,
+            "lineHeight": "30px",
+            "color": "#000000"
+          }
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "id": "get-started",
+      "figmaNodeId": "8226:391",
+      "text": "Get Started",
+      "background": {
+        "color": "#FFFFFF"
+      },
+      "border": {
+        "radius": 400
+      },
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 0,
+        "padding": {
+          "top": 15,
+          "right": 32,
+          "bottom": 15,
+          "left": 32
+        },
+        "align": "center",
+        "justify": "center"
+      },
+      "boxShadow": {
+        "color": "#000000",
+        "blur": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "spread": 0
+      }
+    }
+  ],
+  "_uncertain": [
+    "layout numbers not fully specified",
+    "border color not provided"
+  ]
+}

@@ -1,0 +1,244 @@
+[
+  {
+    "id": "jf258t",
+    "name": "heading",
+    "parent": "v71zsk",
+    "children": [],
+    "settings": {
+      "text": "Who We Are",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Source Sans Pro",
+        "font-size": "44px",
+        "font-weight": "700",
+        "line-height": "140%",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#3D3D3D"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "dbhhjo",
+    "name": "icon",
+    "parent": "v71zsk",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/rectangle-21-32_1331.svg",
+          "url": "../../assets/rectangle-21-32_1331.svg"
+        },
+        "height": "8"
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "v71zsk",
+    "name": "div",
+    "parent": "mpbc0e",
+    "children": [
+      "jf258t",
+      "dbhhjo"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "bv3tyn",
+    "name": "image",
+    "parent": "36og1z",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/generating-new-leads-amico-1-32_1332.svg",
+        "url": "../../assets/generating-new-leads-amico-1-32_1332.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "513px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "45l9x8",
+    "name": "text",
+    "parent": "36og1z",
+    "children": [],
+    "settings": {
+      "text": "<p>At Machplus, we are passionate about digital marketing and strive to deliver exceptional results to our clients. We consist of a team of experienced professionals who are well-versed in the ever-evolving world of online marketing. Our mission is to help businesses of all sizes harness the power of digital platforms to boost their visibility, drive traffic, and increase conversions. \n\nOur team at Machplus is dedicated to staying ahead of the curve when it comes to digital marketing trends. We continuously educate ourselves on the latest strategies and tools to ensure that we provide cutting-edge solutions to our clients. By combining creativity with data-driven insights, we tailor our approach to each client's unique needs, ensuring that every campaign we launch is optimized for success.</p>",
+      "_width": "100%",
+      "_widthMax": "622px",
+      "_typography": {
+        "font-family": "Source Sans 3",
+        "font-size": "17px",
+        "font-weight": "400",
+        "line-height": "25.5px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#3D3D3D"
+        },
+        "text-align": "left"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "36og1z",
+    "name": "div",
+    "parent": "mpbc0e",
+    "children": [
+      "bv3tyn",
+      "45l9x8"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_justifyContent": "space-between",
+      "_margin": {
+        "top": "109"
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_margin:tablet_portrait": {
+        "top": "55"
+      },
+      "_margin:mobile_landscape": {
+        "top": "40"
+      }
+    }
+  },
+  {
+    "id": "40u8sz",
+    "name": "text",
+    "parent": "k64xme",
+    "children": [],
+    "settings": {
+      "text": "<p>One of the key pillars of our philosophy at Machplus is transparency. We believe in open communication and collaboration with our clients every step of the way. From setting clear objectives at the beginning of a project to providing detailed reports on campaign performance, we strive to build trust and foster long-lasting partnerships with our clients.\n\nOur dedication to transparency ensures that our clients are always informed and involved in the decision-making process, leading to more effective and impactful digital marketing strategies.</p>",
+      "_width": "100%",
+      "_widthMax": "622px",
+      "_typography": {
+        "font-family": "Source Sans 3",
+        "font-size": "17px",
+        "font-weight": "400",
+        "line-height": "25.5px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#3D3D3D"
+        },
+        "text-align": "left"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "ibd1mq",
+    "name": "image",
+    "parent": "k64xme",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/social-share-amico-1-32_1828.svg",
+        "url": "../../assets/social-share-amico-1-32_1828.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "513px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "k64xme",
+    "name": "div",
+    "parent": "mpbc0e",
+    "children": [
+      "40u8sz",
+      "ibd1mq"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_justifyContent": "space-between",
+      "_margin": {
+        "top": "120"
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_margin:tablet_portrait": {
+        "top": "60"
+      },
+      "_margin:mobile_landscape": {
+        "top": "40"
+      }
+    }
+  },
+  {
+    "id": "mpbc0e",
+    "name": "container",
+    "parent": "uvhhw2",
+    "children": [
+      "v71zsk",
+      "36og1z",
+      "k64xme"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center",
+      "_widthMax": "1276px"
+    }
+  },
+  {
+    "id": "uvhhw2",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "mpbc0e"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "240",
+        "right": "16",
+        "bottom": "240",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FBF0F5"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "top": "120",
+        "bottom": "120"
+      },
+      "_padding:mobile_landscape": {
+        "top": "60",
+        "bottom": "60"
+      }
+    }
+  }
+]

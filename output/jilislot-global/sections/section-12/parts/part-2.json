@@ -1,0 +1,89 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "group-1261154736",
+      "figmaNodeId": "8226:157",
+      "layout": {
+        "display": "block"
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154736-1",
+          "figmaNodeId": "8226:157"
+        },
+        {
+          "type": "image",
+          "id": "image-8226-99",
+          "figmaNodeId": "8226:99",
+          "asset": {
+            "nodeId": "8226:99",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-1261152831-1",
+          "figmaNodeId": "8226:127",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-1261152830-1",
+              "figmaNodeId": "8226:101",
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "heading-8226-102",
+                  "figmaNodeId": "8226:102",
+                  "text": "Golden Empire",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": 600,
+                    "lineHeight": "24.2px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "text-8226-103",
+                  "figmaNodeId": "8226:103",
+                  "text": "RTP Percentage: (96%)+ (97%+)",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 500,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "text-8226-126",
+              "figmaNodeId": "8226:126",
+              "text": "Type: Classic, Bonus Buy, Jackpot",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 500,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout direction of group not specified, assumed column",
+    "layout and spacing details for container and image positioning"
+  ]
+}

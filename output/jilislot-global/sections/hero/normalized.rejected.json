@@ -1,0 +1,97 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jili-slot-hero",
+      "background": {
+        "color": "#000000"
+      },
+      "children": [
+        {
+          "type": "container",
+          "id": "hero-content",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 32
+          },
+          "children": [
+            {
+              "type": "container",
+              "id": "hero-text",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 16
+              },
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 1,
+                  "id": "jili-slot-heading",
+                  "text": "Jili Slot - Play Jili Online Slot | Free Games Play",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 48,
+                    "fontWeight": 700,
+                    "lineHeight": "58.09px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "jili-slot-desc",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "id": "get-started-button",
+              "text": "Get Started",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 7,
+                "padding": {
+                  "left": 32,
+                  "right": 32,
+                  "top": 15,
+                  "bottom": 15,
+                  "align": "center",
+                  "justify": "center"
+                },
+                "align": "center",
+                "justify": "center"
+              },
+              "background": {
+                "color": "#FCC40B"
+              },
+              "border": {
+                "radius": 400
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 600,
+                "lineHeight": "19.36px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

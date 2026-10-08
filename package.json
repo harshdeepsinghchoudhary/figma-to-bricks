@@ -1,0 +1,26 @@
+{
+  "name": "figma-to-bricks",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "node scripts/1_extract_figma.js",
+    "normalize": "node scripts/2_normalize.js",
+    "compile": "node scripts/3_compile_bricks.js",
+    "inject": "node scripts/4_inject.js",
+    "inject:mcp": "node scripts/4_inject_mcp.js",
+    "measure": "node scripts/5_measure.js",
+    "all": "node scripts/run-all.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "ajv": "^8.20.0",
+    "dotenv": "^16.6.1",
+    "jsonrepair": "^3.8.0",
+    "node-fetch": "^3.3.2",
+    "playwright-core": "^1.48.0"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.33.5"
+  }
+}

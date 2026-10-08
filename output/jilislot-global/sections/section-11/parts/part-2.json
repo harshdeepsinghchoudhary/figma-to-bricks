@@ -1,0 +1,56 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "image",
+          "id": "a5927452-5ef0-4eec-a45d-dba41aa77da0",
+          "figmaNodeId": "8226:91",
+          "asset": {
+            "nodeId": "8226:91",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "button",
+          "id": "learn-more",
+          "figmaNodeId": "8226:92",
+          "text": "Learn More",
+          "background": {
+            "color": "#FCC40B"
+          },
+          "border": {
+            "radius": 400
+          },
+          "size": {
+            "width": 152,
+            "height": 49
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 600,
+            "lineHeight": "19.36px",
+            "color": "#000000"
+          },
+          "layout": {
+            "padding": {
+              "top": 15,
+              "right": 32,
+              "bottom": 15,
+              "left": 32
+            }
+          }
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "_uncertain": [
+    "layout properties for button not fully specified"
+  ]
+}

@@ -1,0 +1,462 @@
+[
+  {
+    "id": "1yaxq9",
+    "name": "heading",
+    "parent": "j9y6lm",
+    "children": [],
+    "settings": {
+      "text": "How To Play Jili Games Demo Slots For Free",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "600",
+        "line-height": "41.15px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "m2xkcs",
+    "name": "icon",
+    "parent": "q02dfq",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/group-1261154677-8221_664.svg",
+          "url": "../../assets/group-1261154677-8221_664.svg"
+        },
+        "height": "110",
+        "width": "fill"
+      },
+      "_widthMax": "94px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "ukkwdw",
+    "name": "text",
+    "parent": "hcza3z",
+    "children": [],
+    "settings": {
+      "text": "<p>Visit Website</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "7jb9uf",
+    "name": "text",
+    "parent": "hcza3z",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "hcza3z",
+    "name": "div",
+    "parent": "q02dfq",
+    "children": [
+      "ukkwdw",
+      "7jb9uf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "q02dfq",
+    "name": "div",
+    "parent": "n0ksi3",
+    "children": [
+      "m2xkcs",
+      "hcza3z"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "36doi6",
+    "name": "icon",
+    "parent": "me1jkj",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/group-1261154677-8226_189.svg",
+          "url": "../../assets/group-1261154677-8226_189.svg"
+        },
+        "height": "110",
+        "width": "fill"
+      },
+      "_widthMax": "94px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "gdb765",
+    "name": "text",
+    "parent": "p4j64p",
+    "children": [],
+    "settings": {
+      "text": "<p>Search for a Jili slot</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "6vxlux",
+    "name": "text",
+    "parent": "p4j64p",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "p4j64p",
+    "name": "div",
+    "parent": "me1jkj",
+    "children": [
+      "gdb765",
+      "6vxlux"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "me1jkj",
+    "name": "div",
+    "parent": "n0ksi3",
+    "children": [
+      "36doi6",
+      "p4j64p"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "rriktn",
+    "name": "image",
+    "parent": "02jxma",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154677-8226_200.svg",
+        "url": "../../assets/group-1261154677-8226_200.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "94px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "m7l7wc",
+    "name": "text",
+    "parent": "7db1q6",
+    "children": [],
+    "settings": {
+      "text": "<p>Click play game</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "gqqfig",
+    "name": "text",
+    "parent": "7db1q6",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "7db1q6",
+    "name": "div",
+    "parent": "02jxma",
+    "children": [
+      "m7l7wc",
+      "gqqfig"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "02jxma",
+    "name": "div",
+    "parent": "n0ksi3",
+    "children": [
+      "rriktn",
+      "7db1q6"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "dp1hm4",
+    "name": "icon",
+    "parent": "76ky1g",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/group-1261154677-8226_211.svg",
+          "url": "../../assets/group-1261154677-8226_211.svg"
+        },
+        "height": "110",
+        "width": "fill"
+      },
+      "_widthMax": "94px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "55xirh",
+    "name": "heading",
+    "parent": "msosdm",
+    "children": [],
+    "settings": {
+      "text": "Start spinning",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "8y4db9",
+    "name": "text",
+    "parent": "msosdm",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "msosdm",
+    "name": "div",
+    "parent": "76ky1g",
+    "children": [
+      "55xirh",
+      "8y4db9"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "76ky1g",
+    "name": "div",
+    "parent": "n0ksi3",
+    "children": [
+      "dp1hm4",
+      "msosdm"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "n0ksi3",
+    "name": "div",
+    "parent": "j9y6lm",
+    "children": [
+      "q02dfq",
+      "me1jkj",
+      "02jxma",
+      "76ky1g"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(4, 1fr)",
+      "_gridGap": "87",
+      "_alignItemsGrid": "stretch",
+      "_width": "100%",
+      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
+      "_gridGap:tablet_portrait": "40",
+      "_gridTemplateColumns:mobile_portrait": "1fr"
+    }
+  },
+  {
+    "id": "j9y6lm",
+    "name": "div",
+    "parent": "6wy433",
+    "children": [
+      "1yaxq9",
+      "n0ksi3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "50",
+      "_columnGap": "50",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "6wy433",
+    "name": "container",
+    "parent": "8tvj6u",
+    "children": [
+      "j9y6lm"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "8tvj6u",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "6wy433"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

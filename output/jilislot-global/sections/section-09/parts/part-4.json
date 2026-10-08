@@ -1,0 +1,93 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-part4",
+      "children": [
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8222:1295",
+          "asset": {
+            "nodeId": "8222:1295",
+            "kind": "image"
+          },
+          "size": {
+            "width": 360,
+            "height": 185
+          },
+          "border": {
+            "radius": 4
+          }
+        },
+        {
+          "type": "column",
+          "id": "cashback-info",
+          "children": [
+            {
+              "type": "heading",
+              "id": "cashback-heading",
+              "figmaNodeId": "8222:1297",
+              "text": "0.5 Cashback",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": 600,
+                "lineHeight": "24.2px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "text",
+              "id": "cashback-description",
+              "figmaNodeId": "8222:1299",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "button",
+              "id": "claim-now-button",
+              "figmaNodeId": "8222:1300",
+              "text": "Claim Now",
+              "size": {
+                "width": 336,
+                "height": 49
+              },
+              "background": {
+                "color": "#FCC40B"
+              },
+              "border": {
+                "radius": 400
+              },
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "align": "center",
+                "justify": "center",
+                "padding": {
+                  "top": 15,
+                  "right": 32,
+                  "bottom": 15,
+                  "left": 32
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "_uncertain": [
+    "section notes omitted",
+    "column layout details omitted",
+    "Layout: in the measured column, [8222:1297, 8222:1299] and [8222:1300] are separate stacked items, so they must be SIBLING elements. [8222:1300] must not be nested inside the element holding [8222:1297, 8222:1299]."
+  ]
+}

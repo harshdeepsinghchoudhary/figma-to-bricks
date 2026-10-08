@@ -1,0 +1,148 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154706",
+          "figmaNodeId": "8222:1091",
+          "layout": {
+            "direction": "column",
+            "gap": 24
+          },
+          "size": {
+            "width": 254,
+            "height": 326
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "image",
+              "figmaNodeId": "8222:1087",
+              "asset": {
+                "nodeId": "8222:1087",
+                "kind": "image"
+              },
+              "size": {
+                "width": 254,
+                "height": 135
+              },
+              "border": {
+                "radius": 4
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-1261152826",
+              "figmaNodeId": "8222:1090",
+              "layout": {
+                "direction": "column",
+                "gap": 30,
+                "align": "center"
+              },
+              "size": {
+                "width": 242,
+                "height": 167
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "id": "frame-1261152825",
+                  "figmaNodeId": "8222:1085",
+                  "layout": {
+                    "direction": "column",
+                    "gap": 14,
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 206,
+                    "height": 90
+                  },
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "jili-fishing-games",
+                      "figmaNodeId": "8222:1083",
+                      "text": "Jili Fishing Games",
+                      "level": 2,
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 18,
+                        "fontWeight": 700,
+                        "lineHeight": "21.78px",
+                        "color": "#FFFFFF",
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "lorem-ipsum",
+                      "figmaNodeId": "8222:1084",
+                      "text": "Lorem Ipsum is simply dummy text of the ",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 18,
+                        "fontWeight": 400,
+                        "lineHeight": "27px",
+                        "color": "#FFFFFF",
+                        "align": "center"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "id": "frame-6",
+                  "figmaNodeId": "8222:1088",
+                  "layout": {
+                    "direction": "row",
+                    "gap": 7,
+                    "justify": "center",
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 242,
+                    "height": 47
+                  },
+                  "background": {
+                    "color": "#FCC40B"
+                  },
+                  "border": {
+                    "radius": 400
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "id": "play-now",
+                      "figmaNodeId": "8222:1089",
+                      "text": "Play Now",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 600,
+                        "lineHeight": "16.94px",
+                        "color": "#000000",
+                        "align": "left"
+                      },
+                      "background": {
+                        "color": "#FCC40B"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "background color for group-1261154706 not provided",
+    "frame-6: dropped unknown field \"offCross\""
+  ]
+}

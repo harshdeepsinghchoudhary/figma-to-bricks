@@ -1,0 +1,191 @@
+{
+  "id": "scope",
+  "name": "Match Plus Home (scoped)",
+  "type": "FRAME",
+  "box": [
+    6664,
+    -12154,
+    1275.55,
+    503.72
+  ],
+  "children": [
+    {
+      "g": "row",
+      "gaps": [
+        99
+      ],
+      "children": [
+        {
+          "g": "column",
+          "gaps": [
+            32,
+            64
+          ],
+          "children": [
+            {
+              "id": "32:1321",
+              "name": "Machplus: Best Digital Marketing Agency in Malaysia",
+              "type": "TEXT",
+              "characters": "Machplus: Best Digital Marketing Agency in Malaysia",
+              "strokeWeight": 1,
+              "box": [
+                6664,
+                -12154,
+                509,
+                195
+              ],
+              "fills": [
+                {
+                  "t": "GRADIENT_LINEAR",
+                  "note": "see PRECOMPUTED GRADIENTS by nodeId"
+                }
+              ],
+              "style": {
+                "fontFamily": "Source Sans 3",
+                "fontSize": 48,
+                "fontWeight": 700,
+                "textAlignHorizontal": "LEFT",
+                "lineHeight": "135%"
+              }
+            },
+            {
+              "id": "32:1322",
+              "name": "In today's fast-paced digital world, having a strong online presence is crucial for businesses to thrive and succeed. That's where Machplus, the best digital marketing agency in Malaysia, comes into play. With our expertise and innovative strategies, we help businesses effectively reach their target audience and achieve their goals.",
+              "type": "TEXT",
+              "characters": "In today's fast-paced digital world, having a strong online presence is crucial for businesses to thrive and succeed. That's where Machplus, the best digital marketing agency in Malaysia, comes into play. With our expertise and innovative strategies, we help businesses effectively reach their target audience and achieve their goals.",
+              "strokeWeight": 1,
+              "box": [
+                6664,
+                -11927,
+                513,
+                128
+              ],
+              "fills": [
+                {
+                  "t": "SOLID",
+                  "c": "#3D3D3DCC"
+                }
+              ],
+              "style": {
+                "fontFamily": "Source Sans 3",
+                "fontSize": 17,
+                "fontWeight": 400,
+                "textAlignHorizontal": "LEFT",
+                "lineHeight": "25.5px"
+              }
+            },
+            {
+              "id": "32:1324",
+              "name": "Frame 36",
+              "type": "INSTANCE",
+              "layoutMode": "HORIZONTAL",
+              "layoutWrap": "NO_WRAP",
+              "layoutSizingHorizontal": "HUG",
+              "layoutSizingVertical": "HUG",
+              "clipsContent": false,
+              "strokeWeight": 1,
+              "box": [
+                6664,
+                -11735,
+                513,
+                47
+              ],
+              "children": [
+                {
+                  "id": "I32:1324;32:17847",
+                  "name": "Frame 36",
+                  "type": "INSTANCE",
+                  "layoutMode": "HORIZONTAL",
+                  "itemSpacing": 10,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "paddingTop": 9,
+                  "paddingBottom": 11,
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "layoutWrap": "NO_WRAP",
+                  "layoutSizingHorizontal": "FIXED",
+                  "layoutSizingVertical": "HUG",
+                  "layoutGrow": 0,
+                  "layoutAlign": "INHERIT",
+                  "clipsContent": false,
+                  "cornerRadius": 4,
+                  "strokeWeight": 1,
+                  "box": [
+                    6664,
+                    -11735,
+                    513,
+                    47
+                  ],
+                  "fills": [
+                    {
+                      "t": "GRADIENT_LINEAR",
+                      "note": "see PRECOMPUTED GRADIENTS by nodeId"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "I32:1324;32:17847;137:2597",
+                      "name": "arrow-right",
+                      "type": "INSTANCE",
+                      "asset": true,
+                      "box": [
+                        6786.5,
+                        -11724.5,
+                        24,
+                        24
+                      ]
+                    },
+                    {
+                      "id": "I32:1324;32:17847;42:3487",
+                      "name": "Start your Marketing journey",
+                      "type": "TEXT",
+                      "characters": "Start your Marketing journey",
+                      "layoutSizingHorizontal": "HUG",
+                      "layoutSizingVertical": "HUG",
+                      "layoutGrow": 0,
+                      "layoutAlign": "INHERIT",
+                      "strokeWeight": 1,
+                      "box": [
+                        6820.5,
+                        -11726,
+                        234,
+                        27
+                      ],
+                      "fills": [
+                        {
+                          "t": "SOLID",
+                          "c": "#FFFFFF"
+                        }
+                      ],
+                      "style": {
+                        "fontFamily": "Source Sans Pro",
+                        "fontSize": 19,
+                        "fontWeight": 600,
+                        "textAlignHorizontal": "LEFT",
+                        "lineHeight": "140%"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "32:1097",
+          "name": "Group 38",
+          "type": "GROUP",
+          "asset": true,
+          "box": [
+            7276,
+            -12106.88,
+            663.55,
+            456.6
+          ],
+          "offCross": 47.12
+        }
+      ]
+    }
+  ]
+}

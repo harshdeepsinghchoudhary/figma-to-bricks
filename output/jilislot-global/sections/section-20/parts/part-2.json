@@ -1,0 +1,121 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "8226-603",
+          "figmaNodeId": "8226:603",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 60,
+            "align": "center",
+            "wrap": false
+          },
+          "size": {
+            "width": 414,
+            "height": 330
+          }
+        },
+        {
+          "type": "column",
+          "id": "8226-601",
+          "figmaNodeId": "8226:601",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 40,
+            "align": "stretch",
+            "wrap": false
+          },
+          "size": {
+            "width": 414,
+            "height": 102
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "8226-586",
+              "figmaNodeId": "8226:586",
+              "asset": {
+                "nodeId": "8226:586",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "row",
+              "id": "8226-587",
+              "figmaNodeId": "8226:587",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 40,
+                "align": "center",
+                "wrap": false
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8226-588",
+                  "figmaNodeId": "8226:588",
+                  "text": "Home",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 500,
+                    "lineHeight": "21.78px",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "8226-589",
+                  "figmaNodeId": "8226:589",
+                  "text": "Company",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 500,
+                    "lineHeight": "21.78px",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "8226-590",
+                  "figmaNodeId": "8226:590",
+                  "text": "GAMES",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 500,
+                    "lineHeight": "21.78px",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "8226-591",
+                  "figmaNodeId": "8226:591",
+                  "text": "CONTACT US",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 500,
+                    "lineHeight": "21.78px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

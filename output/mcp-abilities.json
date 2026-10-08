@@ -1,0 +1,854 @@
+{
+  "abilities": [
+    {
+      "name": "core/get-site-info",
+      "label": "Get Site Information",
+      "description": "Returns site information configured in WordPress. By default returns all fields, or optionally a filtered subset."
+    },
+    {
+      "name": "core/get-user-info",
+      "label": "Get User Information",
+      "description": "Returns profile details for the current authenticated user to support personalization, auditing, and access-aware behavior. By default returns all fields, or optionally a filtered subset."
+    },
+    {
+      "name": "core/get-environment-info",
+      "label": "Get Environment Info",
+      "description": "Returns core details about the site's runtime context for diagnostics and compatibility (environment, PHP runtime, database server info, WordPress version). By default returns all fields, or optionally a filtered subset."
+    },
+    {
+      "name": "bricks/get-element-schema",
+      "label": "Get element schema",
+      "description": "Full settings schema (controls, groups, defaults) for a specific element type."
+    },
+    {
+      "name": "bricks/preview-dynamic-tag",
+      "label": "Preview dynamic tag",
+      "description": "Render a dynamic-data expression against a real post so you can verify the output before committing it to a template. Accepts full expressions with modifiers (for example `{post_title:plain}` or `Hello {user_first_name @fallback:'there'}`). Returns the rendered value alongside an `isEmpty` flag, which catches tags that would silently disappear in production. Read-only."
+    },
+    {
+      "name": "bricks/get-builder-guide",
+      "label": "Get builder guide",
+      "description": "Reference documentation for generating valid Bricks element JSON. Requires a topic: elements, layout, styling, dynamic-data, query-loops, or components."
+    },
+    {
+      "name": "bricks/get-page-structure",
+      "label": "Get page structure",
+      "description": "Lightweight tree view of page elements for understanding layout without full settings data. Optionally filter to a specific element and/or descendant depth."
+    },
+    {
+      "name": "bricks/get-page-elements",
+      "label": "Get page elements",
+      "description": "Full element data for a page/template with all settings. Optionally filter to a specific element and its children."
+    },
+    {
+      "name": "bricks/set-page-elements",
+      "label": "Set page elements",
+      "description": "Replace the entire element tree on a page or template. Destructive: every existing element is overwritten. A pre-save revision is captured automatically; pass the returned `revisionId` to `bricks/restore-revision` to undo. Granular alternatives: `bricks/add-element`, `bricks/update-element`, `bricks/remove-element`."
+    },
+    {
+      "name": "bricks/add-element",
+      "label": "Add element",
+      "description": "Add one or more elements at a specific position. Supports nested children format and component instances."
+    },
+    {
+      "name": "bricks/update-element",
+      "label": "Update element",
+      "description": "Partial-merge update of an existing element's settings. Only provided keys are updated. Pass `null` or `\"\"` for a key to delete it (matches the builder, which removes a key when its control is cleared). Supports dryRun and compact response options."
+    },
+    {
+      "name": "bricks/batch-update-elements",
+      "label": "Batch update elements",
+      "description": "Partial-merge update multiple existing elements in one save/revision. Applies the same validation, permission checks, and `null`/`\"\"` deletion sentinels as update-element. Supports dryRun and compact response options."
+    },
+    {
+      "name": "bricks/remove-element",
+      "label": "Remove element",
+      "description": "Remove an element and, optionally, all of its children. Destructive: a pre-save revision is captured automatically. Pass the returned `revisionId` to `bricks/restore-revision` to undo."
+    },
+    {
+      "name": "bricks/get-page-settings",
+      "label": "Get page settings",
+      "description": "Page settings for a post (SEO, body classes, header/footer disable, custom CSS, etc.)."
+    },
+    {
+      "name": "bricks/set-page-settings",
+      "label": "Set page settings",
+      "description": "Set page settings via partial merge. Only provided keys are updated."
+    },
+    {
+      "name": "bricks/find-post",
+      "label": "Find post",
+      "description": "Search posts, pages, and templates by slug, title, or free-text fragment. Returns only the records the current user can edit, annotated with Bricks metadata (`bricksEnabled`, `hasBricksData`, `locked`, `builderUrl`)."
+    },
+    {
+      "name": "bricks/render-elements",
+      "label": "Render elements",
+      "description": "Render HTML + CSS for a proposed Bricks element tree without saving, or omit elements to render a post's current saved tree. Use responseFormat `summary` for compact post-save verification. Read-only."
+    },
+    {
+      "name": "bricks/checkout-site-repository",
+      "label": "Checkout site repository",
+      "description": "Return a cursor-bounded, filterable file manifest for editable Bricks pages, templates, and design resources without loading every complete document. Known design lookups can omit documents and select one resource kind/query. Includes exact page digests and optional best-effort direct dependency hints; hints are not proof that a resource is unused or safe to delete."
+    },
+    {
+      "name": "bricks/resolve-agent-file",
+      "label": "Resolve agent file",
+      "description": "Resolve an exact or unambiguous page or design-resource name, ID, or canonical path to one editable Bricks file and an opaque baseline for a two-call edit. Matching is normalized exact-then-prefix, never fuzzy; incomplete or ambiguous discovery returns summaries only."
+    },
+    {
+      "name": "bricks/convert-html-css-to-bricks-data",
+      "label": "Convert HTML/CSS to Bricks data",
+      "description": "Convert raw HTML and/or CSS into Bricks element data, global classes, variables, and CSS-only update suggestions. Read-only: returns converted data without saving. Non-administrators must supply postId for a valid, editable Bricks-enabled target with the necessary Builder permissions, including for HTML conversion. Administrators may omit postId. For CSS-only conversion, a supplied postId also scopes the existing-element context. CSS follows target editing permissions. JavaScript requires unfiltered_html. Code elements retain their existing execution and signature requirements. PHP authoring requires BRICKS_ENABLE_PHP_ABILITIES and the PHP authorization prerequisites. Disallowed converted elements are identified; HTML/CSS page import can omit them and report a partial result. Reconcile `skipped_global_variables` against existing same-name values, persist returned `global_classes` once with `bricks-batch-create-global-classes`, then save the element tree."
+    },
+    {
+      "name": "bricks/preview-html-css-page-import",
+      "label": "Preview HTML/CSS page import",
+      "description": "Compile an authoritative HTML/CSS file pair into a compact, rendered, exact, side-effect-free preview. Returns a short-lived token bound to the normalized page, generated design resources, target, user, and current document and design-system versions."
+    },
+    {
+      "name": "bricks/commit-site-foundation",
+      "label": "Commit site foundation",
+      "description": "Create a complete greenfield Bricks foundation from one compact manifest: native palette variables, fluid spacing and typography scales, a site-wide root theme style, header/footer templates with global conditions, and a published static homepage. Uses a durable same-key saga and stops before overwriting any saved design foundation."
+    },
+    {
+      "name": "bricks/commit-html-css-page-import",
+      "label": "Commit HTML/CSS page import",
+      "description": "First and only call for a known empty page or template body. Submit sibling page sections without a main wrapper or site-wide header/footer landmarks, documentPurpose=page-content, responsive CSS, replaceExisting=false, native-only policies when required, and one stable idempotency key. Use documentPurpose=migration only to preserve an external fragment. Clean commits return a compact authoritative summary by default; warning-bearing candidates retain the full frozen review payload for explicit apply."
+    },
+    {
+      "name": "bricks/checkout-page-workspace",
+      "label": "Checkout page workspace",
+      "description": "Export one page or template area as a deterministic canonical Bricks file plus a compact dependency manifest. Code-sensitive pages fail closed when the caller lacks execute-code permission; checkout never returns a redacted full-replacement candidate. The returned working copy is not authoritative until it passes preview and token-only apply."
+    },
+    {
+      "name": "bricks/preview-page-workspace",
+      "label": "Preview page workspace",
+      "description": "Validate, normalize, permission-check, render, diff, and freeze an edited canonical page workspace without saving. Code-sensitive candidates fail closed without execute-code permission. Rejects stale page or design-system baselines."
+    },
+    {
+      "name": "bricks/apply-page-workspace",
+      "label": "Apply page workspace",
+      "description": "Commit the exact canonical page candidate frozen by preview. Apply accepts no mutable page data, rechecks code-sensitive permissions, and fails closed if authority was lost. Uses the same lock, journal, revision, readback, idempotency, and recovery contract as transactional HTML/CSS import."
+    },
+    {
+      "name": "bricks/checkout-design-resource-workspace",
+      "label": "Checkout design resource workspace",
+      "description": "Export one existing global class, global variable, theme style, or component as a deterministic canonical file with exact resource-specific ownership. This update-only workflow deliberately excludes create, delete, rename, and multi-resource atomicity."
+    },
+    {
+      "name": "bricks/preview-design-resource-workspace",
+      "label": "Preview design resource workspace",
+      "description": "Side-effect-free validation and diff for one edited design-resource file. Rejects stale item and dependency ownership, immutable IDs, unsupported opaque edits, and unacknowledged component slot removal, then freezes the exact focused mutation in a short-lived user-bound token."
+    },
+    {
+      "name": "bricks/apply-design-resource-workspace",
+      "label": "Apply design resource workspace",
+      "description": "Commit the exact single-resource mutation frozen by preview. Token-only apply rechecks user, execution policy, write permission, exact resource/dependency baseline, and then delegates normalization, referential validation, compare-and-swap, and readback to the existing focused design ability."
+    },
+    {
+      "name": "bricks/commit-exact-site-edits",
+      "label": "Commit exact site edits",
+      "description": "Fastest existing-site path for precise edits: replace page or component text, insert an unstyled native page text sibling, update safe component labels and custom attributes, change global-variable values, or update one global-class/theme-style settings leaf in one call. Pages, components, and design resources may be selected by exact ID or exact unique name; elements may be selected by ID or exact unique current text or label. Each operation must provide expectedValue, or literal allowBlindWrite true only for an intentional target. The server performs canonical resolution, checkout, component-property boundary checks, permissions, CAS preview, durable replay, apply, and authoritative readback internally."
+    },
+    {
+      "name": "bricks/checkout-site-edit-map",
+      "label": "Checkout site edit map",
+      "description": "Checkout up to 25 explicit targets through the targets array, using {scope: page, postId} or {scope: design, resource, id}. When IDs are known, filter element outlines with elementIds. Canonical files remain server-side; short selectionRef values bind each typed edit to an authenticated exact selection."
+    },
+    {
+      "name": "bricks/preview-site-edit-plan",
+      "label": "Preview site edit plan",
+      "description": "Compile up to 64 exact typed text or global-variable edits into the frozen canonical files, recheck caller policy and focused write permissions, and delegate validation, stale-state checks, preparation, and preview-token issuance to Site Changeset. No Bricks data is changed."
+    },
+    {
+      "name": "bricks/commit-site-edit-plan",
+      "label": "Commit site edit plan",
+      "description": "Common two-call existing-site fast path: submit the short selectionRef advertised by checkout with a supported operation and value. Canonical files are compiled and previewed server-side, then Site Changeset applies or resumes under one stable idempotency key. Repeat the same call to recover a lost response; summary readback is the default."
+    },
+    {
+      "name": "bricks/checkout-site-changeset",
+      "label": "Checkout site changeset",
+      "description": "Checkout up to 25 canonical page and design-resource files in one bounded response. Pages are ordered before design resources, so every intermediate pages-first state must be valid. This is a working copy, never an atomic database transaction."
+    },
+    {
+      "name": "bricks/preview-site-changeset",
+      "label": "Preview site changeset",
+      "description": "Focused-preview every edited file without changing Bricks page or design data, then freeze the exact pages-first changeset in a short-lived user and execution-policy-bound token. Create required design definitions separately before consumers."
+    },
+    {
+      "name": "bricks/apply-site-changeset",
+      "label": "Apply site changeset",
+      "description": "Run a bounded time slice of the durable changeset. Every inner token and derived key is checkpointed before mutation; just-in-time checkout/rebase preserves target and dependency CAS. Results explicitly report committed, in-progress, partial-commit, failed-before-commit, or manual-recovery state and never claim cross-resource atomicity."
+    },
+    {
+      "name": "bricks/resume-site-changeset",
+      "label": "Resume site changeset",
+      "description": "Run a bounded time slice of the durable changeset. Every inner token and derived key is checkpointed before mutation; just-in-time checkout/rebase preserves target and dependency CAS. Results explicitly report committed, in-progress, partial-commit, failed-before-commit, or manual-recovery state and never claim cross-resource atomicity."
+    },
+    {
+      "name": "bricks/commit-agent-file",
+      "label": "Commit agent file",
+      "description": "Validate, durably checkpoint, apply, and authoritatively read back one resolved Bricks file in the second call of a focused edit. Returns a compact digest/version/change summary by default; pass responseFormat=document only when the complete canonical file is needed. The idempotency key is bound to the complete candidate before preview or mutation; retries resume the existing Site Changeset journal and never create a hidden replacement preview."
+    },
+    {
+      "name": "bricks/resolve-site-changeset",
+      "label": "Resolve site changeset recovery",
+      "description": "Delete one terminal durable changeset journal only after an operator has inspected and resolved its partial or manual-recovery state. Requires the exact idempotency key, changeset digest, and literal acknowledgement. This removes recovery evidence but does not roll back or change Bricks data."
+    },
+    {
+      "name": "bricks/apply-html-css-page-import",
+      "label": "Apply HTML/CSS page import",
+      "description": "Commit the exact candidate frozen by preview without resending its HTML, CSS, or Bricks tree. Uses database-session fencing, a durable idempotency journal, conditional writes, readback verification, and safe before-image compensation."
+    },
+    {
+      "name": "bricks/list-templates",
+      "label": "List templates",
+      "description": "List all Bricks templates with type, status, and condition summary. Supports pagination and type filter."
+    },
+    {
+      "name": "bricks/get-template",
+      "label": "Get template",
+      "description": "Fetch a single Bricks template by ID. Returns title, type, status, edit URL, and by default settings plus the element tree for the rendered template area. Pass includeElements=false or includeSettings=false for a lighter response; use get-page-elements when you need scoped element-tree reads."
+    },
+    {
+      "name": "bricks/create-template",
+      "label": "Create template",
+      "description": "Create a new Bricks template (`bricks_template` post type). Pass `type` (header / footer / content / section / popup / archive / search / error / password_protection, or a WooCommerce type such as wc_product), optional initial `elements` tree, and optional `status` (`draft`, `publish`, or `private`; default `draft`). Returns `templateId`, `editUrl`, and `status`. Note: header and footer templates are automatically wrapped in `<header>` / `<footer>` landmarks at render time. Do NOT set `tag: \"header\"` (or `customTag: \"header\"`) on the template root, because that produces nested landmarks. Use `section` / `block` / `container` with their default tag."
+    },
+    {
+      "name": "bricks/delete-template",
+      "label": "Delete template",
+      "description": "Permanently delete a Bricks template. Destructive and unrecoverable: this calls `wp_delete_post` with `force=true` and there is no Bricks revision path to undo. The response includes a `beforeDelete` snapshot (title, type, element count) so you can show what was removed."
+    },
+    {
+      "name": "bricks/get-template-settings",
+      "label": "Get template settings",
+      "description": "Template settings including conditions, header sticky/popup config, password protection, preview."
+    },
+    {
+      "name": "bricks/set-template-settings",
+      "label": "Set template settings",
+      "description": "Set template settings via partial merge. Covers conditions, header sticky/popup config, password protection."
+    },
+    {
+      "name": "bricks/set-template-conditions",
+      "label": "Set template conditions",
+      "description": "Replace the `templateConditions` array on a template. Each condition has a `main` kind (`any`, `frontpage`, `postType`, `archiveType`, `search`, `error`, `terms`, or `ids`) plus kind-specific fields. Section templates can also include `hookName` and optional `hookPriority` to render on a WordPress hook. Legacy `main=hook` input is normalized to `any` when `hookName` is present. Full replacement, not a merge."
+    },
+    {
+      "name": "bricks/list-template-sources",
+      "label": "List template sources",
+      "description": "List remote template-library sources: Bricks built-ins (`wireframes`, `design-sets`), admin-configured remote template URLs, and group rows. Returns the raw source records used by the builder source picker. Use a returned `id` or `url` with `bricks/list-remote-templates` to inspect remote templates or `bricks/insert-remote-template` to insert one."
+    },
+    {
+      "name": "bricks/list-remote-templates",
+      "label": "List remote templates",
+      "description": "List templates available in a built-in source (`wireframes` or `design-sets`) or an admin-configured remote template URL. Use a source `id` or `url` from `bricks/list-template-sources`. Returns paginated template metadata by default; request a specific page/perPage and use `mode: \"full\"` only for targeted inspection."
+    },
+    {
+      "name": "bricks/insert-template",
+      "label": "Insert template",
+      "description": "Copy a local Bricks template's element tree into a target post at a chosen position. Supported positions: `replace` (overwrite everything), `start` and `end` (root-level top or bottom; defaults to `end`), `before` and `after` (sibling of `anchorElementId`), and `append` and `prepend` (child of `anchorElementId`). Every source element ID is regenerated to avoid collisions. A revision is captured before the write, so `replace` is destructive but reversible via `bricks/restore-revision`. For remote library templates use `bricks/insert-remote-template`."
+    },
+    {
+      "name": "bricks/insert-remote-template",
+      "label": "Insert remote template",
+      "description": "Fetch a template from a remote template-library source such as `wireframes` or `design-sets`, optionally import missing design assets, and insert its element tree into a target post. Uses the same placement options as `bricks/insert-template`. Existing local design assets are preserved and the target post receives a pre-save revision."
+    },
+    {
+      "name": "bricks/get-design-context",
+      "label": "Get design context",
+      "description": "One-call summary of the site design context: color palettes, global classes, theme styles, components, global variables, and responsive breakpoints. Pass `responseFormat: \"summary\"` for capped orientation output, or `includeUsage: true` to add `usedOnPosts` per component."
+    },
+    {
+      "name": "bricks/list-color-palettes",
+      "label": "List color palettes",
+      "description": "All palettes with complete color records, paletteDigest/colorDigest values, and compact resource ownership. Pass the returned ownership into creates, or add the target digest as itemDigest for updates and deletes."
+    },
+    {
+      "name": "bricks/create-color",
+      "label": "Create color",
+      "description": "Append a builder-shaped color to an existing palette using exact resource ownership from list-color-palettes. Root colors require `light`; shade rows require `parent` and `type`. Returns verified ownership and authoritative color/palette digests."
+    },
+    {
+      "name": "bricks/update-color",
+      "label": "Update color",
+      "description": "Partial-merge update of one palette color using ownership plus its colorDigest as itemDigest. Returns verified ownership and digests. Raw variable renames that would require a cross-resource reference rewrite fail closed without changing palette or reference data."
+    },
+    {
+      "name": "bricks/create-color-palette",
+      "label": "Create color palette",
+      "description": "Create a uniquely named color palette using exact resource ownership from list-color-palettes. Optional builder-shaped colors preserve supplied IDs and shade relationships. Returns verified ownership and authoritative digests."
+    },
+    {
+      "name": "bricks/update-color-palette",
+      "label": "Update color palette",
+      "description": "Rename a color palette using ownership plus its paletteDigest as itemDigest. Does not modify its colors and preserves opaque palette fields. Returns verified ownership and digest."
+    },
+    {
+      "name": "bricks/delete-color",
+      "label": "Delete color",
+      "description": "Remove one color using ownership plus its colorDigest as itemDigest. Deleting a root also removes its shades. Removing any named CSS variables requires literal allowOrphans=true even when fresh bounded reference evidence is zero."
+    },
+    {
+      "name": "bricks/delete-color-palette",
+      "label": "Delete color palette",
+      "description": "Permanently delete a palette and all its colors using ownership plus its paletteDigest as itemDigest. Removing any named CSS variables requires literal allowOrphans=true even when fresh bounded reference evidence is zero."
+    },
+    {
+      "name": "bricks/list-global-classes",
+      "label": "List global classes",
+      "description": "All global classes with complete settings, per-class itemDigest, resource ownership, lock ownership, and category ownership. Pass the relevant returned ownership envelopes unchanged when mutating a class."
+    },
+    {
+      "name": "bricks/create-global-class",
+      "label": "Create global class",
+      "description": "Create a new global class with CSS settings and optional responsive overrides. A non-empty category requires categoryOwnership from list-global-classes and is guarded in the final class commit; split-authority categorized writes fail closed."
+    },
+    {
+      "name": "bricks/batch-create-global-classes",
+      "label": "Batch create global classes",
+      "description": "Validate and create many global classes in one atomic write. Requires exact class ownership and, when any class is categorized, categoryOwnership from the same latest read. Category existence and authority are guarded. Prefer this for converter output; provided 6-character IDs are preserved."
+    },
+    {
+      "name": "bricks/update-global-class",
+      "label": "Update global class",
+      "description": "Update an existing global class without losing opaque stored fields. Requires class ownership with the full-row itemDigest plus lock ownership; assigning a non-empty category also requires categoryOwnership from the same read. Exact lock and category rows are guarded in the final commit. Settings merge and selectors replace."
+    },
+    {
+      "name": "bricks/delete-global-class",
+      "label": "Delete global class",
+      "description": "Permanently delete a global class. Requires class ownership, lock ownership, and literal allowOrphans=true even when fresh bounded usage evidence is zero. Shared-authority deletes fail closed when the local scan is incomplete."
+    },
+    {
+      "name": "bricks/get-theme-styles",
+      "label": "Get theme styles",
+      "description": "Theme styles with exact resource ownership and per-style digests calculated from complete authoritative rows. Without a filter returns summaries; with a style ID returns its full unredacted settings."
+    },
+    {
+      "name": "bricks/list-theme-styles",
+      "label": "List theme styles",
+      "description": "Paginated theme-style summaries with exact resource ownership and full-row itemDigest. Use get-theme-styles with an id for the complete settings."
+    },
+    {
+      "name": "bricks/create-theme-style",
+      "label": "Create theme style",
+      "description": "Create a new theme style through a fresh exact append compare-and-swap. Returns refreshed ownership and a digest of the complete stored style. Pass `conditions: [{ main: \"any\" }]` for site-wide defaults."
+    },
+    {
+      "name": "bricks/update-theme-style",
+      "label": "Update theme style",
+      "description": "Update an existing theme style with exact ownership and its full-row itemDigest. Opaque stored fields are preserved. Settings merge by default; `replace: true` replaces settings, while label and conditions replace when provided."
+    },
+    {
+      "name": "bricks/delete-theme-style",
+      "label": "Delete theme style",
+      "description": "Delete a theme style with exact ownership and its full-row itemDigest. Styles with settings or conditions require literal acknowledgeStyleRemoval=true after reviewing fresh bounded impact evidence. Returns the complete unredacted deleted row for manual recovery."
+    },
+    {
+      "name": "bricks/list-components",
+      "label": "List components",
+      "description": "List all components with labels, property summaries, componentDigest values, and the atomically paired designSystemVersion. Use the digest and version together for safe update/delete calls. Supports pagination."
+    },
+    {
+      "name": "bricks/get-component",
+      "label": "Get component",
+      "description": "Component elements, properties, variants, slots, authoritative componentDigest, and atomically paired designSystemVersion for safe follow-up writes. Reports componentPayloadRedacted when code-sensitive settings are hidden."
+    },
+    {
+      "name": "bricks/create-component",
+      "label": "Create component",
+      "description": "Create a new component from an elements subtree. Labels must be unique (`bricks_conflict_duplicate_component_name` on collision). Incoming element ids are regenerated, property connections and parent-property references are remapped, and builder metadata is stamped so the component is not treated as a beta component."
+    },
+    {
+      "name": "bricks/update-component",
+      "label": "Update component",
+      "description": "Update an existing component. Requires expectedDesignSystemVersion and expectedComponentDigest from a recent list/get response. Only provided fields are changed, but `elements` replaces the entire component tree, so read the component first with `bricks/get-component` before editing one element. When componentPayloadRedacted is true, do not replace elements from that redacted payload. Slot IDs are preserved where possible; removing any existing slot requires explicit `allowSlotOrphans=true`, even when the fresh usage scan finds no content."
+    },
+    {
+      "name": "bricks/delete-component",
+      "label": "Delete component",
+      "description": "Remove a component from the global store. Requires expectedDesignSystemVersion, expectedComponentDigest, expectedUsageCount from a recent read, and explicit `allowOrphans=true` for every deletion, including zero known uses. The digest covers the complete authoritative component. Usage is current review evidence, not a guarantee that every reference was found."
+    },
+    {
+      "name": "bricks/extract-component-from-elements",
+      "label": "Extract component from elements",
+      "description": "Lift an existing element subtree out of a post and into a new global component, replacing the original subtree with a component instance. External references inside the subtree (global class names, CSS variables) are preserved as-is, so the component stays coupled to whatever tokens the original elements used. A revision is captured before the post write."
+    },
+    {
+      "name": "bricks/list-global-variables",
+      "label": "List global variables",
+      "description": "All global CSS variables and categories with authority-correct ownership plus ready full-row itemOwnership envelopes."
+    },
+    {
+      "name": "bricks/set-global-variables",
+      "label": "Set global variables",
+      "description": "Ownership-guarded variable upsert. Accepts copy-ready rows from list-global-variables, requires the variable and category ownerships from one latest read, preserves opaque fields, and rejects or compensates category drift."
+    },
+    {
+      "name": "bricks/set-global-variable-categories",
+      "label": "Set global variable categories",
+      "description": "Replace the complete global-variable category list with exact category and variable ownership from one latest read. Referenced removals and scale-config changes fail closed because no acknowledgement can make the required variable regeneration atomic. Returns refreshed ownership and ready per-category item ownership."
+    },
+    {
+      "name": "bricks/delete-global-variable",
+      "label": "Delete global variable",
+      "description": "Delete one global CSS variable with its ready itemOwnership from the latest read. Requires literal allowOrphans=true even when fresh bounded reference evidence is zero; shared-authority deletes fail closed when the local scan is incomplete. Success verifies the variable remains absent."
+    },
+    {
+      "name": "bricks/generate-scale-variables",
+      "label": "Generate scale variables",
+      "description": "Preview fluid clamp() variables with a deterministic generationDigest and exact variable/category save ownership. Direct scale persistence fails closed until the two option stores can be committed atomically; persist reviewed rows through ownership-guarded abilities."
+    },
+    {
+      "name": "bricks/audit-design-system",
+      "label": "Audit design system",
+      "description": "Read-only scan for design-system rot: orphan references (errors), theme styles without conditions (warnings), unused resources and palette fragmentation (infos). Scans all Bricks posts + templates in one pass. Pass `scope` to narrow, or `skipPostScan: true` for a fast config-only check."
+    },
+    {
+      "name": "bricks/generate-color-shades",
+      "label": "Generate color shades",
+      "description": "Generate builder-equivalent light, dark, or transparent shades. A preview targeting an existing palette color returns saveOwnership; pass it unchanged with save:true to replace the matching shade graph through owned CAS. Inline baseColor previews remain persistence-free."
+    },
+    {
+      "name": "bricks/create-post",
+      "label": "Create post",
+      "description": "Create a new page or post. Optionally seed a Bricks element tree atomically with creation. Returns the new post ID, builder URL, and revision ID."
+    },
+    {
+      "name": "bricks/duplicate-post",
+      "label": "Duplicate post",
+      "description": "Clone a post/page including its Bricks element tree, page settings, and featured image. The duplicate is created as a draft by default."
+    },
+    {
+      "name": "bricks/delete-post",
+      "label": "Delete post",
+      "description": "Move a post or page to trash (recoverable) or permanently delete it. Lock-aware: refuses to delete a post that another user is currently editing."
+    },
+    {
+      "name": "bricks/list-revisions",
+      "label": "List revisions",
+      "description": "List Bricks-aware revisions for a post. Shows which areas (content/header/footer) each revision has data for."
+    },
+    {
+      "name": "bricks/get-revision",
+      "label": "Get revision",
+      "description": "Fetch the full Bricks element tree from a specific revision. Read-only; use `bricks/restore-revision` to roll back."
+    },
+    {
+      "name": "bricks/restore-revision",
+      "label": "Restore revision",
+      "description": "Roll back a post to a previous revision. Copies Bricks postmeta (element tree + page settings) from the revision onto the current post. Takes a new snapshot first so the restore itself is reversible."
+    },
+    {
+      "name": "bricks/upload-media",
+      "label": "Upload media",
+      "description": "Upload a media file from a URL or base64 data. Returns the attachment object with all size variants, ready to use in Bricks image elements."
+    },
+    {
+      "name": "bricks/find-media",
+      "label": "Find media",
+      "description": "Search the media library by filename, title, or alt text. Filter by MIME type. Supports compact results or full media objects with all size variants."
+    },
+    {
+      "name": "bricks/delete-media",
+      "label": "Delete media",
+      "description": "Delete a media library attachment by ID. Use after upload-media QA runs or when replacing unused assets. Destructive: returns a beforeDelete snapshot and respects WordPress attachment trash behavior."
+    },
+    {
+      "name": "bricks/get-mcp-version",
+      "label": "Get Bricks MCP version",
+      "description": "Report the Bricks plugin version, the Bricks abilities contract version, the WordPress MCP Adapter version, and the WordPress core version. Call once at the start of a session to detect version drift mid-conversation. `disabledAbilityCount` includes both admin-disabled and default-off abilities; `adminDisabledAbilityCount` and `defaultDisabledAbilityCount` split those states."
+    },
+    {
+      "name": "bricks/list-ability-status",
+      "label": "List Bricks ability status",
+      "description": "Inspect whether expected Bricks abilities are enabled. Pass exact `abilityNames` for targeted diagnostics. The default summary lists enabled abilities only; pass `includeDisabled: true` for the complete compact registry, or use `detailed` for full metadata. Exact-name lookups still return matching disabled abilities."
+    },
+    {
+      "name": "bricks/start-here",
+      "label": "Bricks orientation (start here)",
+      "description": "Compact task router for clients without loaded Bricks skills. A clearly named existing page or design resource routes directly to resolve-agent-file then commit-agent-file without version, context, catalog, or manifest calls. Pass responseFormat=detailed only when the complete workflow guide is needed. Clients that already loaded bricks-start-here do not need this tool."
+    },
+    {
+      "name": "bricks/list-cms-sources",
+      "label": "List CMS sources",
+      "description": "Introspect the site's content model. Pass a `source` (one of `wp`, `acf`, `jetengine`, `metabox`, `cmb2`, `pods`, `toolset`, `woo`) to fetch its schema, or omit to receive only the availability directory. Read-only: Bricks does not expose CRUD for third-party field providers. Use this to understand what data the site already carries so you can reference it correctly in templates and dynamic-data tags."
+    },
+    {
+      "name": "bricks/get-reading-settings",
+      "label": "Get reading settings",
+      "description": "Read WordPress Reading settings: whether the front page shows latest posts or a static page, the selected homepage, and the selected posts page."
+    },
+    {
+      "name": "bricks/set-reading-settings",
+      "label": "Set reading settings",
+      "description": "Set WordPress Reading settings for site builds. Covers `show_on_front`, `page_on_front`, and `page_for_posts` only. Requires manage_options."
+    },
+    {
+      "name": "bricks/list-nav-menus",
+      "label": "List nav menus",
+      "description": "List WordPress nav menus with item counts, assigned theme locations, and whether any menu item uses Bricks mega-menu or multilevel metadata. Read-only. Use before deciding whether to reuse an existing WordPress menu or build a new Nav Nested menu directly in a Bricks header."
+    },
+    {
+      "name": "bricks/get-nav-menu",
+      "label": "Get nav menu",
+      "description": "Fetch one WordPress nav menu as an ordered nested item tree. Includes menu item links, object references, classes, target/rel fields, assigned locations, and Bricks item options (`megaMenuTemplateId`, `multilevel`). Read-only."
+    },
+    {
+      "name": "bricks/save-nav-menu",
+      "label": "Save nav menu",
+      "description": "Create or update a WordPress nav menu, assign registered theme locations, and create/update/reorder menu items from a nested tree. Omitted existing items are preserved, not deleted; use `bricks/delete-nav-menu-items` for explicit item deletion. Supports Bricks item options for top-level items: `megaMenuTemplateId` attaches a published Bricks template for the Nav Menu element mega-menu path, and `multilevel` enables Bricks multilevel behavior."
+    },
+    {
+      "name": "bricks/delete-nav-menu-items",
+      "label": "Delete nav menu items",
+      "description": "Delete explicit WordPress nav menu item IDs from a selected menu. Destructive and not Bricks revision-backed; returns beforeDelete snapshots for every removed item. Never use this for reordering or partial updates."
+    },
+    {
+      "name": "bricks/delete-nav-menu",
+      "label": "Delete nav menu",
+      "description": "Delete a WordPress nav menu by ID, slug, or exact name. Destructive and not Bricks revision-backed; returns a full beforeDelete snapshot including menu items and Bricks mega-menu metadata."
+    },
+    {
+      "name": "bricks/get-form-config",
+      "label": "Get form config",
+      "description": "Read a Form element's fields, actions, and settings for a given post + elementId. Read-only. Use before update-form-fields / update-form-actions to see current shape."
+    },
+    {
+      "name": "bricks/update-form-fields",
+      "label": "Update form fields",
+      "description": "Replace the entire `fields` array on a Form element. Order is significant, so this is always a full replacement, never a merge. Each field needs at least `{ id, type }`, and `type` must be one of the 18 supported field types (see `skills/forms`). A pre-save revision is taken."
+    },
+    {
+      "name": "bricks/update-form-actions",
+      "label": "Update form actions",
+      "description": "Update the actions list and/or partial-merge per-action settings (emailTo, webhookUrl, redirectUrl, etc.). Built-in actions are validated against the same runtime list the Form element uses, so `save-submission` and `unlock-password-protection` require their global settings. Custom action keys are accepted only when a matching `bricks/form/action/{key}` hook is registered. Provide at least one of `actions` or `settings`. A pre-save revision is taken."
+    },
+    {
+      "name": "bricks/list-form-submissions",
+      "label": "List form submissions",
+      "description": "Read stored submissions for a Form element from the `{prefix}bricks_form_submissions` table. Paginated. When the table is missing (the Save Submission action has never run), returns an empty list with an explanatory `note` rather than a hard error."
+    },
+    {
+      "name": "bricks/list-query-filters",
+      "label": "List query filters",
+      "description": "Enumerate Query Filter elements across posts/templates (filter-checkbox, filter-radio, filter-select, filter-range, filter-search, filter-datepicker, filter-submit, filter-active-filters). Returns post/location + filter target (filterQueryId). Read-only."
+    },
+    {
+      "name": "bricks/get-filter-element",
+      "label": "Get filter element",
+      "description": "Read a single Query Filter element's full settings (source, field, label, style, filterQueryId, etc.). Read-only."
+    },
+    {
+      "name": "bricks/update-filter-element",
+      "label": "Update filter element",
+      "description": "Partial-merge update of a filter element's settings. Use to change source (taxonomy/customField/wpField), field mapping, labels, or UI options without touching filterQueryId. For retargeting to a different loop, use set-filter-target-query. A pre-save revision is taken."
+    },
+    {
+      "name": "bricks/set-filter-target-query",
+      "label": "Set filter target query",
+      "description": "Bind a filter element to a target query-loop element via `filterQueryId`. Filter elements that lack this binding never fire. Pass an empty string to unbind. A pre-save revision is taken."
+    },
+    {
+      "name": "bricks/reindex-filters",
+      "label": "Reindex filters",
+      "description": "Drop/recreate the query-filter index table and queue index jobs. Use after bulk filter changes, schema changes, or to recover from a corrupted index. The background job may continue after this call returns. Equivalent to clicking Regenerate filter index in Bricks > Settings > Query filters."
+    },
+    {
+      "name": "bricks/list-popups",
+      "label": "List popups",
+      "description": "List all popup templates (`bricks_template` posts whose template type is `popup`). Returns id, title, status, and conditions summary. Read-only. Equivalent to list-templates with type=popup plus extra popup-specific meta."
+    },
+    {
+      "name": "bricks/get-popup-config",
+      "label": "Get popup config",
+      "description": "Read a popup template's configuration: the template conditions (where it can appear), the popup-specific settings (`popupCloseOn`, `popupBodyScroll`, `popupAjax`, `popupLimit*`), and the interaction triggers that reference it (elements whose target is `popup` with `templateId` pointing at this popup). Read-only."
+    },
+    {
+      "name": "bricks/update-popup-settings",
+      "label": "Update popup settings",
+      "description": "Partial-merge update of popup-specific template settings: popupCloseOn (esc/backdrop), popupBodyScroll, popupAjax, popupLimitWindow, popupLimitSessionStorage, popupLimitLocalStorage, and popupLimitTimeStorage. Does NOT manage template display conditions (use set-template-conditions) or interaction triggers on opener elements (use update-element-interactions on the caller)."
+    },
+    {
+      "name": "bricks/get-element-interactions",
+      "label": "Get element interactions",
+      "description": "Read an element's own `_interactions` rows plus inherited global-class interactions in frontend order. Each interaction has a trigger (such as `click`, `enterView`, `scroll`, `formSubmit`) and an action (such as `show`, `hide`, `setAttribute`, `startAnimation`, `toggleOffCanvas`, `javascript`, `storageAdd`). `target` is optional and defaults to `self` at runtime; valid explicit values are `self`, `custom`, and `popup`. Read-only."
+    },
+    {
+      "name": "bricks/update-element-interactions",
+      "label": "Update element interactions",
+      "description": "Replace the element-level `_interactions` array. Order is significant, so this is always a full replacement, never a merge. Missing row IDs are generated. Trigger, action, target, JavaScript function references, and action/trigger-specific required fields are validated. Global-class interactions are read-only here; update the class to change inherited rows. A pre-save revision is taken."
+    },
+    {
+      "name": "bricks/get-element-conditions",
+      "label": "Get element conditions",
+      "description": "Read the `_conditions` array stored on an element's settings. Conditions are OR groups containing AND items: the element renders when any group matches and every item inside that group matches. Read-only."
+    },
+    {
+      "name": "bricks/update-element-conditions",
+      "label": "Update element conditions",
+      "description": "Replace the `_conditions` array on an element. Conditions are full-replacement ordered repeaters, never a merge. Missing row IDs are generated. Pass an empty array to clear all conditions. A pre-save revision is taken."
+    },
+    {
+      "name": "bricks/list-settings-schema",
+      "label": "List Bricks settings schema",
+      "description": "Discover which Bricks global-settings keys are writable via MCP. Returns an allow-list registry: each entry declares `key`, `type`, `category` (general/performance/maintenance/builder/templates/forms), `label`, and validation hints. Call this before `bricks/set-global-settings` to know what you can touch. Credentials, code-execution toggles, and builder role data are excluded from this surface; use list-credential-status to check whether credentials are configured."
+    },
+    {
+      "name": "bricks/list-credential-status",
+      "label": "List Bricks credential status",
+      "description": "Read whether Bricks credentials are configured without returning secret values. Covers the license key, API/site/secret keys, access tokens, and template passwords. Every row returns configured/readable/writable flags; readable and writable are false because credential values stay admin-UI-only for now."
+    },
+    {
+      "name": "bricks/get-global-settings",
+      "label": "Get Bricks global settings",
+      "description": "Read current values for every allow-listed Bricks global setting. Excluded keys (credentials and code-execution settings) are never returned even if set. Remote template source passwords are redacted to passwordConfigured booleans. Pair with `bricks/list-settings-schema` to know what each key means."
+    },
+    {
+      "name": "bricks/set-global-settings",
+      "label": "Set Bricks global settings",
+      "description": "Partial-merge write to Bricks global settings. Pass `{ settings: { key: value, ... } }`; only the keys you send are touched, and everything else is preserved. Keys outside the registry return `bricks_setting_unknown`, and excluded keys return `bricks_setting_excluded`. Every value is validated against the registry schema before write."
+    },
+    {
+      "name": "bricks/get-woo-setup-status",
+      "label": "Get WooCommerce setup status",
+      "description": "Inspect Bricks/WooCommerce setup readiness for shop, single product, cart, checkout, and account areas. Returns assigned pages, existing Bricks data/content risks, available classic/v2 presets, Bricks Woo settings, and WooCommerce core page/account/checkout settings. Read this before planning or running Woo setup."
+    },
+    {
+      "name": "bricks/plan-woo-setup",
+      "label": "Plan WooCommerce setup",
+      "description": "Dry-run Bricks WooCommerce setup. Produces a planId plus page creation/reuse/assignment operations, selected classic or advanced presets, template-drafting side effects, blockers, warnings, and confirmation requirements. Defaults to classic mode because modular v2 Woo elements are experimental."
+    },
+    {
+      "name": "bricks/run-woo-setup",
+      "label": "Run WooCommerce setup",
+      "description": "Apply a reviewed Woo setup plan: create only missing Woo pages, reuse matching pages only when empty or shortcode-only, assign Woo page options, optionally enable experimental advanced modular elements, and run the shared Woo setup wizard for selected areas. Existing Bricks/non-empty/block page content requires explicit overwriteExistingPageContent and destructive confirmation."
+    },
+    {
+      "name": "bricks/get-woo-setup-options",
+      "label": "Get Woo setup options",
+      "description": "Read the safe WooCommerce core options that Bricks setup needs: assigned shop/cart/checkout/account pages, coupon/login/registration checkout settings, and native archive AJAX add-to-cart behavior. Bricks-owned Woo toggles remain in bricks/get-global-settings. Credentials and payment/shipping gateway settings are not exposed."
+    },
+    {
+      "name": "bricks/set-woo-setup-options",
+      "label": "Set Woo setup options",
+      "description": "Partial-merge write to the small allow-list of WooCommerce core options Bricks setup needs. Page IDs must reference existing non-trashed pages or 0 to clear, boolean values are stored as WooCommerce yes/no options, and unrelated Woo settings are preserved. Bricks-owned Woo toggles remain in bricks/set-global-settings."
+    },
+    {
+      "name": "bricks/list-builder-permissions",
+      "label": "List Bricks builder permissions",
+      "description": "Read the real builder-access model: permission sections, default and custom capability definitions, and the current WordPress role assignments. Custom definitions live in `BRICKS_DB_CAPABILITIES_PERMISSIONS`; role access lives on WordPress roles, not in `bricks_global_settings`."
+    },
+    {
+      "name": "bricks/upsert-builder-capability",
+      "label": "Upsert Bricks builder capability",
+      "description": "Create or update one custom builder access capability. The capability grants a validated list of builder permission keys and then appears in the Builder access role selector. Built-in Bricks capability ids cannot be overwritten."
+    },
+    {
+      "name": "bricks/set-builder-role-access",
+      "label": "Set Bricks builder role access",
+      "description": "Assign existing builder access capabilities to WordPress roles. Empty string means no builder access. The administrator role is intentionally not writable here because Bricks always treats administrators as full access."
+    },
+    {
+      "name": "bricks/delete-builder-capability",
+      "label": "Delete Bricks builder capability",
+      "description": "Delete one custom builder capability definition and remove that WordPress capability from all roles. Built-in Bricks capabilities cannot be deleted."
+    },
+    {
+      "name": "bricks/list-breakpoints",
+      "label": "List Bricks breakpoints",
+      "description": "Read the site's responsive breakpoints. Returns `{ baseKey, baseWidth, customEnabled, isMobileFirst, breakpoints, defaults }`, with `breakpoints` sorted by width for the active paradigm. `customEnabled` reflects the `customBreakpoints` master toggle."
+    },
+    {
+      "name": "bricks/set-breakpoints",
+      "label": "Set Bricks breakpoints",
+      "description": "Full-replacement write of the breakpoint list with exact ownership. Removing or renaming any current key requires literal allowRemovedBreakpoints=true and returns removed keys plus bounded usage evidence; width, label, icon, ordering, and additive edits do not require acknowledgement. Exactly one row must have base: true. When cssLoading=file, follow up with bricks/regenerate-css-files."
+    },
+    {
+      "name": "bricks/list-global-queries",
+      "label": "List global queries",
+      "description": "Enumerate the reusable query-loop configurations saved in Bricks. Supports search, category filter, and pagination. Returns a summary row per query (`id`, `label`, `category`, and a `summary` object with fields such as `objectType`, `postType`, and `posts_per_page`) plus the category list. Call `bricks/get-global-query` to fetch the full stored row."
+    },
+    {
+      "name": "bricks/get-global-query",
+      "label": "Get global query",
+      "description": "Read a single global query by ID. Returns the full stored row, including `id`, `name`, optional `category`, and `settings` using the same shape as an element's inline `query` setting."
+    },
+    {
+      "name": "bricks/create-global-query",
+      "label": "Create global query",
+      "description": "Save a new reusable query. Use a unique label and a `query` object that mirrors an element's inline `query` setting (for example `{ objectType: \"post\", postType: [\"post\"], posts_per_page: 10 }`). Any optional `category` must already exist; create it first via `bricks/create-global-query-category`."
+    },
+    {
+      "name": "bricks/update-global-query",
+      "label": "Update global query",
+      "description": "Partial-merge update of a global query's label, category, or inline query object. When the `query` field is sent it is replaced in full (no deep merge inside), so always pass the complete query-settings object."
+    },
+    {
+      "name": "bricks/delete-global-query",
+      "label": "Delete global query",
+      "description": "Delete a global query by ID. Elements referencing the deleted query will fall back to their inline query settings (if any) or show no loop."
+    },
+    {
+      "name": "bricks/create-global-query-category",
+      "label": "Create global query category",
+      "description": "Create a new category that global queries can be grouped under. Returns the generated `{ id, name }` category row."
+    },
+    {
+      "name": "bricks/delete-global-query-category",
+      "label": "Delete global query category",
+      "description": "Delete a global-query category. Queries inside the category are kept; their `category` field is cleared."
+    },
+    {
+      "name": "bricks/list-sidebars",
+      "label": "List Bricks sidebars",
+      "description": "Enumerate custom sidebars registered via Bricks > Settings > Sidebars. Read-only. Returns `[{ id, name, description }]`."
+    },
+    {
+      "name": "bricks/create-sidebar",
+      "label": "Create Bricks sidebar",
+      "description": "Register a new custom sidebar. The ID is derived from `name` (lowercased, spaces to underscores, stripped of other characters). Names must be unique. Once created, the sidebar shows up in the Bricks \"Sidebar\" element dropdown and accepts widgets via Appearance > Widgets."
+    },
+    {
+      "name": "bricks/update-sidebar",
+      "label": "Update Bricks sidebar",
+      "description": "Partial-merge update of a sidebar's `name` and/or `description`. The `id` is immutable; to change it, delete and recreate the sidebar."
+    },
+    {
+      "name": "bricks/delete-sidebar",
+      "label": "Delete Bricks sidebar",
+      "description": "Delete a custom sidebar by ID. Widgets placed in the sidebar are removed from `sidebars_widgets` (same behavior as the admin UI). Destructive."
+    },
+    {
+      "name": "bricks/list-custom-fonts",
+      "label": "List Bricks custom fonts",
+      "description": "Enumerate custom font families registered via the `bricks_fonts` CPT. Returns paginated rows with `id`, `family`, and `faceCount`; call `bricks/get-custom-font` for the full `fontFaces` map."
+    },
+    {
+      "name": "bricks/get-custom-font",
+      "label": "Get Bricks custom font",
+      "description": "Fetch a single custom font family by post ID. Returns `{ font: { id, family, fontFaces } }`."
+    },
+    {
+      "name": "bricks/create-custom-font",
+      "label": "Create Bricks custom font family",
+      "description": "Create a `bricks_fonts` family from `family`. Returns `{ font: { id, family, fontFaces } }`. Attach face files via `bricks/upload-custom-font-file` and `bricks/update-custom-font`."
+    },
+    {
+      "name": "bricks/update-custom-font",
+      "label": "Update Bricks custom font",
+      "description": "Update a custom font family. Accepts `family` for renaming and `fontFaces` for full replacement of the face map, keyed by weight/style strings such as `400` or `400italic`. Every file value must reference an attachment ID."
+    },
+    {
+      "name": "bricks/delete-custom-font",
+      "label": "Delete Bricks custom font",
+      "description": "Delete a custom font family post. Face attachments stay in the media library; remove them separately if they are no longer needed. Destructive: pages using the font will fall back to their next available choice."
+    },
+    {
+      "name": "bricks/upload-custom-font-file",
+      "label": "Upload Bricks custom font file",
+      "description": "Upload a font face file (woff2, woff, ttf, otf, or eot) as a private attachment. Enforces an extension allow-list, MIME sniffing via `wp_check_filetype_and_ext`, and an 8 MB size cap (filterable via `bricks/abilities/fonts/max_bytes`). Returns the new attachment ID; pass it to `bricks/update-custom-font` to bind it to a weight and style."
+    },
+    {
+      "name": "bricks/list-icon-sets",
+      "label": "List Bricks icon sets",
+      "description": "Enumerate custom icon sets (`BRICKS_DB_ICON_SETS`) and the list of disabled built-in or custom icon-set IDs (`BRICKS_DB_DISABLED_ICON_SETS`)."
+    },
+    {
+      "name": "bricks/set-disabled-icon-sets",
+      "label": "Set disabled Bricks icon sets",
+      "description": "Full-replacement write of the disabled-icon-set list. Use this to hide built-in libraries or custom icon sets from the builder picker. Pass an empty array to re-enable all."
+    },
+    {
+      "name": "bricks/list-custom-icons",
+      "label": "List Bricks custom icons",
+      "description": "Enumerate uploaded custom SVG icon rows from `BRICKS_DB_CUSTOM_ICONS`, optionally filtered by `setId`. Rows use the builder icon-manager shape: `id`, `setId`, `name`, `url`, and `attachment_id`. Paginated."
+    },
+    {
+      "name": "bricks/upload-custom-icon",
+      "label": "Upload Bricks custom icon",
+      "description": "Add an SVG icon to an existing custom icon set. The raw SVG is sanitized server-side, stored as a Media Library attachment, then saved in `BRICKS_DB_CUSTOM_ICONS` with `url` and `attachment_id` so the builder icon manager can use it."
+    },
+    {
+      "name": "bricks/delete-custom-icon",
+      "label": "Delete Bricks custom icon",
+      "description": "Remove a custom icon by ID from the `BRICKS_DB_CUSTOM_ICONS` option. Destructive."
+    },
+    {
+      "name": "bricks/create-custom-icon-set",
+      "label": "Create Bricks custom icon set",
+      "description": "Create a new custom icon set so `upload-custom-icon` has a `setId` target. Appends a row to `BRICKS_DB_ICON_SETS` with a generated `set_<hex>` ID."
+    },
+    {
+      "name": "bricks/delete-custom-icon-set",
+      "label": "Delete Bricks custom icon set",
+      "description": "Remove a custom icon set from `BRICKS_DB_ICON_SETS`. Cascades to drop every custom icon row in `BRICKS_DB_CUSTOM_ICONS` assigned to that set. SVG attachments stay in the Media Library. Destructive."
+    },
+    {
+      "name": "bricks/list-pseudo-classes",
+      "label": "List Bricks pseudo-classes",
+      "description": "Return the list of pseudo-class selectors available in the builder style panel. `isDefault` is true when the option is unset and Bricks is using the built-in fallback (`:hover`, `:active`, `:focus`)."
+    },
+    {
+      "name": "bricks/set-pseudo-classes",
+      "label": "Set Bricks pseudo-classes",
+      "description": "Full-replacement write of the pseudo-class selector list with exact ownership. Removing any current selector requires literal allowRemovedPseudoClasses=true and returns removed selectors plus bounded usage evidence; additive and reorder-only edits do not require acknowledgement. Empty/null resets to the built-in defaults."
+    },
+    {
+      "name": "bricks/get-style-manager",
+      "label": "Get Bricks style manager",
+      "description": "Return the `BRICKS_DB_STYLE_MANAGER` option verbatim, or null if unset. Common keys: `htmlFontSize`, `minScreenWidth`, `maxScreenWidth`, `defaultMode` (light|dark|auto)."
+    },
+    {
+      "name": "bricks/set-style-manager",
+      "label": "Set Bricks style manager",
+      "description": "Full-replacement write of the style-manager option. Pass null or empty object to reset to defaults."
+    },
+    {
+      "name": "bricks/regenerate-css-files",
+      "label": "Regenerate Bricks CSS files",
+      "description": "Mirror of Settings > Bricks > General > \"Regenerate CSS files\". Rebuilds the per-post CSS files served when `cssLoading` is `file`. When `cssLoading` is `inline`, the regenerated files act only as a fallback; the live output is still inline `<style>` tags."
+    },
+    {
+      "name": "bricks/list-orphaned-elements",
+      "label": "List orphaned Bricks elements",
+      "description": "Scan every post that uses Bricks meta for elements whose parent no longer exists in the same tree. Read-only: returns what `bricks/cleanup-orphaned-elements` would remove without touching anything."
+    },
+    {
+      "name": "bricks/cleanup-orphaned-elements",
+      "label": "Clean up orphaned Bricks elements",
+      "description": "Strip orphan rows from the Bricks postmeta of every affected post. Destructive. Mirrors the admin \"Clean up orphaned elements\" button."
+    },
+    {
+      "name": "bricks/execute-php",
+      "label": "Execute PHP",
+      "description": "Run arbitrary PHP for advanced development, maintenance, automation, and troubleshooting workflows. Requires explicit PHP configuration and Bricks code execution access for the connected user."
+    },
+    {
+      "name": "bricks/list-transfer-items",
+      "label": "List Bricks transfer items",
+      "description": "Read the unified import/export selector for the current site. Returns exportable transfer types and exact item IDs for color palettes, theme styles, classes, variables, custom fonts, breakpoints, global queries, components, templates, settings tabs, builder interface profiles, and custom capabilities, filtered by the current user permissions."
+    },
+    {
+      "name": "bricks/export-transfer-package",
+      "label": "Export Bricks transfer package",
+      "description": "Create a unified Bricks import/export ZIP package and return it as base64 for MCP transport. Call `bricks/list-transfer-items` first and pass explicit item IDs for every selected type. Sensitive settings tabs (`api-keys`, `custom-code`) require `allowSensitiveSettings: true`."
+    },
+    {
+      "name": "bricks/inspect-transfer-package",
+      "label": "Inspect Bricks transfer package",
+      "description": "Inspect a base64 unified transfer ZIP without writing. Returns the manifest filtered by current user permissions plus conflicts, warnings, `zipHash`, and size. Call this before `bricks/import-transfer-package` and pass the returned `zipHash` as `expectedZipHash`."
+    },
+    {
+      "name": "bricks/import-transfer-package",
+      "label": "Import Bricks transfer package",
+      "description": "Import selected items from an inspected unified transfer ZIP. Requires explicit `types`, exact manifest item IDs, and `expectedZipHash` from `bricks/inspect-transfer-package`. Defaults to keeping existing data on conflicts. Any replacement requires `allowOverwrite: true`; sensitive settings tabs require `allowSensitiveSettings: true`."
+    },
+    {
+      "name": "bricks/get-system-information",
+      "label": "Get Bricks system information",
+      "description": "Read-only environment snapshot covering theme, Bricks, WordPress, server, and active plugins. Mirrors Settings > Bricks > System Information. License and API key values are never included."
+    }
+  ]
+}

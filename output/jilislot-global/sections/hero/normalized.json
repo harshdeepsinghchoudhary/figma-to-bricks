@@ -1,0 +1,124 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "banner-section",
+      "figmaNodeId": "8222:819",
+      "asset": {
+        "nodeId": "8222:819",
+        "kind": "image"
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "banner-content",
+          "figmaNodeId": "8219:54",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 32,
+            "align": "start"
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "banner-text",
+              "figmaNodeId": "8219:55",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 16,
+                "align": "start"
+              },
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "banner-title",
+                  "figmaNodeId": "8219:1261",
+                  "text": "Jili Slot - Play Jili Online Slot | Free Games Play",
+                  "level": 1,
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 48,
+                    "fontWeight": 700,
+                    "lineHeight": "58.09px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  },
+                  "size": {
+                    "width": 619
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "banner-description",
+                  "figmaNodeId": "8219:57",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  },
+                  "size": {
+                    "width": 518
+                  }
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "id": "get-started-button",
+              "figmaNodeId": "8219:58",
+              "text": "Get Started",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 7,
+                "padding": {
+                  "left": 32,
+                  "right": 32,
+                  "top": 15,
+                  "bottom": 15
+                },
+                "align": "center",
+                "justify": "center"
+              },
+              "size": {
+                "width": 154
+              },
+              "background": {
+                "color": "#FCC40B"
+              },
+              "border": {
+                "radius": 400
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 600,
+                "lineHeight": "19.36px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "padding": {
+          "top": 126,
+          "right": 720,
+          "bottom": 125,
+          "left": 101
+        },
+        "align": "start"
+      }
+    }
+  ]
+}

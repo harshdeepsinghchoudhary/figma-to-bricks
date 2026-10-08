@@ -1,0 +1,93 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154425",
+          "figmaNodeId": "8226:82"
+        },
+        {
+          "type": "column",
+          "id": "frame-44",
+          "figmaNodeId": "8226:83",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 30
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-43",
+          "figmaNodeId": "8226:84",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 10
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "innovative-gameplay-mechanics",
+              "figmaNodeId": "8226:85",
+              "text": "Innovative Gameplay Mechanics",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 34,
+                "fontWeight": 700,
+                "lineHeight": "41.15px",
+                "align": "left",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-42",
+              "figmaNodeId": "8226:86",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 10
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lorem-ipsum-1",
+                  "figmaNodeId": "8226:87",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeight": "24px",
+                    "align": "left",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "lorem-ipsum-2",
+                  "figmaNodeId": "8226:88",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeight": "24px",
+                    "align": "left",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

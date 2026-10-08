@@ -1,0 +1,226 @@
+[
+  {
+    "id": "tzs7hy",
+    "name": "heading",
+    "parent": "322btd",
+    "children": [],
+    "settings": {
+      "text": "Machplus: Best Digital Marketing Agency in Malaysia",
+      "tag": "h1",
+      "_typography": {
+        "font-family": "Source Sans 3",
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "135%",
+        "letter-spacing": "0%",
+        "text-align": "left"
+      },
+      "_gradient": {
+        "applyTo": "text",
+        "gradientType": "linear",
+        "angle": "172.73",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#3D3D3D"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#EF5366"
+            },
+            "stop": "100%"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "f4vz5x",
+    "name": "text",
+    "parent": "322btd",
+    "children": [],
+    "settings": {
+      "text": "<p>In today's fast-paced digital world, having a strong online presence is crucial for businesses to thrive and succeed. That's where Machplus, the best digital marketing agency in Malaysia, comes into play. With our expertise and innovative strategies, we help businesses effectively reach their target audience and achieve their goals.</p>",
+      "_margin": {
+        "top": "32"
+      },
+      "_typography": {
+        "font-family": "Source Sans 3",
+        "font-size": "17px",
+        "font-weight": "400",
+        "line-height": "25.5px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#3D3D3DCC"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "n4sdem",
+    "name": "button",
+    "parent": "322btd",
+    "children": [],
+    "settings": {
+      "text": "Start your Marketing journey",
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/arrow-right-I32_1324_32_17847_137_2597.svg",
+          "url": "../../assets/arrow-right-I32_1324_32_17847_137_2597.svg"
+        },
+        "height": "24",
+        "width": "24"
+      },
+      "iconPosition": "left",
+      "iconGap": "10px",
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "9",
+        "right": "20",
+        "bottom": "11",
+        "left": "20"
+      },
+      "_margin": {
+        "top": "64"
+      },
+      "_typography": {
+        "font-family": "Source Sans Pro",
+        "font-size": "19px",
+        "font-weight": "600",
+        "line-height": "140%",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "96.52",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#EF5366"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#D64A5B"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_margin:tablet_portrait": {
+        "top": "32"
+      },
+      "_margin:mobile_landscape": {
+        "top": "32"
+      }
+    }
+  },
+  {
+    "id": "322btd",
+    "name": "div",
+    "parent": "62gvx1",
+    "children": [
+      "tzs7hy",
+      "f4vz5x",
+      "n4sdem"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "513px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "sd0cl8",
+    "name": "image",
+    "parent": "62gvx1",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-38-32_1097.svg",
+        "url": "../../assets/group-38-32_1097.svg"
+      },
+      "_margin": {
+        "top": "47.12"
+      },
+      "_width": "100%",
+      "_widthMax": "663px",
+      "_margin:tablet_portrait": {
+        "top": "0"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "62gvx1",
+    "name": "container",
+    "parent": "4vz0c2",
+    "children": [
+      "322btd",
+      "sd0cl8"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_widthMax": "1276px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "4vz0c2",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "62gvx1"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

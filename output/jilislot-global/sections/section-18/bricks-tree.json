@@ -1,0 +1,219 @@
+[
+  {
+    "id": "c0933k",
+    "name": "image",
+    "parent": "k8ydzp",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/vector-1-8226_536.svg",
+        "url": "../../assets/vector-1-8226_536.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "163px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "k8ydzp",
+    "name": "div",
+    "parent": "v0yt55",
+    "children": [
+      "c0933k"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "295.5",
+        "right": "231.5",
+        "bottom": "0",
+        "left": "805.5"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FCC40B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "16px",
+          "right": "16px",
+          "bottom": "16px",
+          "left": "16px"
+        }
+      }
+    }
+  },
+  {
+    "id": "v0yt55",
+    "name": "div",
+    "parent": "9kmj5u",
+    "children": [
+      "k8ydzp"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_background": {
+        "color": {
+          "raw": "#FCC40B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "16px",
+          "right": "16px",
+          "bottom": "16px",
+          "left": "16px"
+        }
+      }
+    }
+  },
+  {
+    "id": "hntjc1",
+    "name": "heading",
+    "parent": "kr5m25",
+    "children": [],
+    "settings": {
+      "text": "Conclusion",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "58.09px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "3gtwjd",
+    "name": "text",
+    "parent": "kr5m25",
+    "children": [],
+    "settings": {
+      "text": "<p>Winning in Aviator takes more than luck. Use smart strategies, stay in control, and play with a clear plan. The key is to enjoy the game while making smart moves!</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "500",
+        "line-height": "30px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "kr5m25",
+    "name": "div",
+    "parent": "6na8e2",
+    "children": [
+      "hntjc1",
+      "3gtwjd"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "ab82md",
+    "name": "button",
+    "parent": "6na8e2",
+    "children": [],
+    "settings": {
+      "text": "Get Started",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "400px",
+          "right": "400px",
+          "bottom": "400px",
+          "left": "400px"
+        }
+      }
+    }
+  },
+  {
+    "id": "6na8e2",
+    "name": "div",
+    "parent": "9kmj5u",
+    "children": [
+      "kr5m25",
+      "ab82md"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "32",
+      "_columnGap": "32",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "9kmj5u",
+    "name": "container",
+    "parent": "gxniql",
+    "children": [
+      "v0yt55",
+      "6na8e2"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "gxniql",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "9kmj5u"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

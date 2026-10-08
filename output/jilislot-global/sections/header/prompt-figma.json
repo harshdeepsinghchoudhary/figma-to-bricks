@@ -1,0 +1,317 @@
+{
+  "id": "scope",
+  "name": "jilislot.global (scoped)",
+  "type": "FRAME",
+  "box": [
+    2791,
+    -3120,
+    1440,
+    75
+  ],
+  "children": [
+    {
+      "id": "8221:6",
+      "name": "Group 1261154665",
+      "type": "GROUP",
+      "clipsContent": false,
+      "strokeWeight": 1,
+      "box": [
+        2791,
+        -3120,
+        1440,
+        75
+      ],
+      "children": [
+        {
+          "id": "8221:5",
+          "name": "Rectangle 5754",
+          "type": "RECTANGLE",
+          "strokeWeight": 1,
+          "box": [
+            2791,
+            -3120,
+            1440,
+            75
+          ],
+          "fills": [
+            {
+              "t": "SOLID",
+              "c": "#282828"
+            }
+          ]
+        },
+        {
+          "id": "8219:1250",
+          "name": "Frame 1261152820",
+          "type": "FRAME",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 331,
+          "counterAxisAlignItems": "CENTER",
+          "layoutWrap": "NO_WRAP",
+          "layoutSizingHorizontal": "HUG",
+          "layoutSizingVertical": "HUG",
+          "clipsContent": false,
+          "strokeWeight": 1,
+          "box": [
+            2911,
+            -3103,
+            1200,
+            40
+          ],
+          "children": [
+            {
+              "id": "8219:1249",
+              "name": "Frame 1261152819",
+              "type": "FRAME",
+              "layoutMode": "HORIZONTAL",
+              "itemSpacing": 294,
+              "primaryAxisAlignItems": "SPACE_BETWEEN",
+              "counterAxisAlignItems": "CENTER",
+              "layoutWrap": "NO_WRAP",
+              "layoutSizingHorizontal": "FIXED",
+              "layoutSizingVertical": "HUG",
+              "layoutGrow": 0,
+              "layoutAlign": "INHERIT",
+              "clipsContent": false,
+              "strokeWeight": 1,
+              "box": [
+                2911,
+                -3103,
+                807,
+                40
+              ],
+              "children": [
+                {
+                  "id": "8219:1238",
+                  "name": "image 233",
+                  "type": "RECTANGLE",
+                  "layoutSizingHorizontal": "FIXED",
+                  "layoutSizingVertical": "FIXED",
+                  "layoutGrow": 0,
+                  "layoutAlign": "INHERIT",
+                  "strokeWeight": 1,
+                  "box": [
+                    2911,
+                    -3103,
+                    99,
+                    40
+                  ],
+                  "imageExported": false,
+                  "fills": [
+                    {
+                      "t": "IMAGE",
+                      "scale": "FILL"
+                    }
+                  ]
+                },
+                {
+                  "id": "8219:33",
+                  "name": "Frame 3",
+                  "type": "FRAME",
+                  "layoutMode": "HORIZONTAL",
+                  "itemSpacing": 40,
+                  "counterAxisAlignItems": "CENTER",
+                  "layoutWrap": "NO_WRAP",
+                  "layoutSizingHorizontal": "HUG",
+                  "layoutSizingVertical": "HUG",
+                  "layoutGrow": 0,
+                  "layoutAlign": "INHERIT",
+                  "clipsContent": false,
+                  "strokeWeight": 1,
+                  "box": [
+                    3304,
+                    -3092.5,
+                    414,
+                    19
+                  ],
+                  "children": [
+                    {
+                      "id": "8219:34",
+                      "name": "Home",
+                      "type": "TEXT",
+                      "characters": "Home",
+                      "layoutSizingHorizontal": "HUG",
+                      "layoutSizingVertical": "HUG",
+                      "layoutGrow": 0,
+                      "layoutAlign": "INHERIT",
+                      "strokeWeight": 1,
+                      "box": [
+                        3304,
+                        -3092.5,
+                        49,
+                        19
+                      ],
+                      "fills": [
+                        {
+                          "t": "SOLID",
+                          "c": "#FFFFFF"
+                        }
+                      ],
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "textAlignHorizontal": "LEFT",
+                        "textCase": "UPPER",
+                        "lineHeight": "19.36px"
+                      }
+                    },
+                    {
+                      "id": "8219:35",
+                      "name": "Company",
+                      "type": "TEXT",
+                      "characters": "Company",
+                      "layoutSizingHorizontal": "HUG",
+                      "layoutSizingVertical": "HUG",
+                      "layoutGrow": 0,
+                      "layoutAlign": "INHERIT",
+                      "strokeWeight": 1,
+                      "box": [
+                        3393,
+                        -3092.5,
+                        82,
+                        19
+                      ],
+                      "fills": [
+                        {
+                          "t": "SOLID",
+                          "c": "#FFFFFF"
+                        }
+                      ],
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "textAlignHorizontal": "LEFT",
+                        "textCase": "UPPER",
+                        "lineHeight": "19.36px"
+                      }
+                    },
+                    {
+                      "id": "8219:36",
+                      "name": "GAMES",
+                      "type": "TEXT",
+                      "characters": "GAMES",
+                      "layoutSizingHorizontal": "HUG",
+                      "layoutSizingVertical": "HUG",
+                      "layoutGrow": 0,
+                      "layoutAlign": "INHERIT",
+                      "strokeWeight": 1,
+                      "box": [
+                        3515,
+                        -3092.5,
+                        58,
+                        19
+                      ],
+                      "fills": [
+                        {
+                          "t": "SOLID",
+                          "c": "#FFFFFF"
+                        }
+                      ],
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "textAlignHorizontal": "LEFT",
+                        "lineHeight": "19.36px"
+                      }
+                    },
+                    {
+                      "id": "8219:37",
+                      "name": "CONTACT US",
+                      "type": "TEXT",
+                      "characters": "CONTACT US",
+                      "layoutSizingHorizontal": "HUG",
+                      "layoutSizingVertical": "HUG",
+                      "layoutGrow": 0,
+                      "layoutAlign": "INHERIT",
+                      "strokeWeight": 1,
+                      "box": [
+                        3613,
+                        -3092.5,
+                        105,
+                        19
+                      ],
+                      "fills": [
+                        {
+                          "t": "SOLID",
+                          "c": "#FFFFFF"
+                        }
+                      ],
+                      "style": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "textAlignHorizontal": "LEFT",
+                        "lineHeight": "19.36px"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8219:1248",
+              "name": "Frame 1261152818",
+              "type": "FRAME",
+              "layoutMode": "HORIZONTAL",
+              "itemSpacing": 8,
+              "counterAxisAlignItems": "CENTER",
+              "layoutWrap": "NO_WRAP",
+              "layoutSizingHorizontal": "HUG",
+              "layoutSizingVertical": "HUG",
+              "layoutGrow": 0,
+              "layoutAlign": "INHERIT",
+              "clipsContent": false,
+              "strokeWeight": 1,
+              "box": [
+                4049,
+                -3103,
+                62,
+                40
+              ],
+              "children": [
+                {
+                  "id": "8219:48",
+                  "name": "image",
+                  "type": "ELLIPSE",
+                  "layoutSizingHorizontal": "FIXED",
+                  "layoutSizingVertical": "FIXED",
+                  "layoutGrow": 0,
+                  "layoutAlign": "INHERIT",
+                  "strokeWeight": 1,
+                  "box": [
+                    4049,
+                    -3103,
+                    40,
+                    40
+                  ],
+                  "imageExported": false,
+                  "fills": [
+                    {
+                      "t": "IMAGE",
+                      "scale": "FILL"
+                    }
+                  ]
+                },
+                {
+                  "id": "8219:1245",
+                  "name": "Frame",
+                  "type": "FRAME",
+                  "asset": true,
+                  "box": [
+                    4097,
+                    -3090,
+                    14,
+                    14
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

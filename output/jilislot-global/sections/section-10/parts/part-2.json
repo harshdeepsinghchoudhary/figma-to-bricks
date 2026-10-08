@@ -1,0 +1,117 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "row",
+          "id": "section-1-row-1",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-8226-5",
+              "figmaNodeId": "8226:5",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 30
+              },
+              "size": {
+                "width": 569,
+                "height": 284.2
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "id": "frame-8226-6",
+                  "figmaNodeId": "8226:6",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 16
+                  },
+                  "size": {
+                    "width": 569,
+                    "height": 208
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "text-8226-7",
+                      "figmaNodeId": "8226:7",
+                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "24px",
+                        "color": "#FFFFFF"
+                      },
+                      "size": {
+                        "width": 569,
+                        "height": 96
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "text-8226-8",
+                      "figmaNodeId": "8226:8",
+                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "24px",
+                        "color": "#FFFFFF"
+                      },
+                      "size": {
+                        "width": 569,
+                        "height": 96
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "id": "icon-8226-9",
+                  "figmaNodeId": "8226:9",
+                  "asset": {
+                    "nodeId": "8226:9",
+                    "kind": "svg"
+                  },
+                  "size": {
+                    "width": 342,
+                    "height": 46.2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "id": "image-8226-77",
+              "figmaNodeId": "8226:77",
+              "asset": {
+                "nodeId": "8226:77",
+                "kind": "image"
+              },
+              "border": {
+                "radius": 12
+              },
+              "size": {
+                "width": 570,
+                "height": 381
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout gaps for section",
+    "background or border colors for frames",
+    "exact type mapping for GROUP asset (used as icon)"
+  ]
+}

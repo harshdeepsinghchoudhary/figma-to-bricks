@@ -1,0 +1,170 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "list-container",
+      "figmaNodeId": "8221:745",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 14
+      },
+      "size": {
+        "width": 498
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "list-item-1",
+          "figmaNodeId": "8221:746",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10
+          },
+          "size": {
+            "width": 498,
+            "height": 54
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "checkbox-icon-1",
+              "figmaNodeId": "8221:748",
+              "asset": {
+                "nodeId": "8221:748",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 18,
+                "height": 18
+              },
+              "notes": [
+                "offCross 6 (margin-top)"
+              ]
+            },
+            {
+              "type": "text",
+              "id": "list-text-1",
+              "figmaNodeId": "8221:747",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "size": {
+                "width": 470,
+                "height": 54
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "list-item-2",
+          "figmaNodeId": "8221:750",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10
+          },
+          "size": {
+            "width": 498,
+            "height": 27
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "checkbox-icon-2",
+              "figmaNodeId": "8221:752",
+              "asset": {
+                "nodeId": "8221:752",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 18,
+                "height": 18
+              },
+              "notes": [
+                "offCross 6 (margin-top)"
+              ]
+            },
+            {
+              "type": "text",
+              "id": "list-text-2",
+              "figmaNodeId": "8221:751",
+              "text": "Lorem Ipsum is simply dummy text of the printing and ",
+              "size": {
+                "width": 470,
+                "height": 27
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "list-item-3",
+          "figmaNodeId": "8221:754",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10
+          },
+          "size": {
+            "width": 498,
+            "height": 54
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "checkbox-icon-3",
+              "figmaNodeId": "8221:756",
+              "asset": {
+                "nodeId": "8221:756",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 18,
+                "height": 18
+              },
+              "notes": [
+                "offCross 6 (margin-top)"
+              ]
+            },
+            {
+              "type": "text",
+              "id": "list-text-3",
+              "figmaNodeId": "8221:755",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "size": {
+                "width": 470,
+                "height": 54
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

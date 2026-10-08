@@ -1,0 +1,107 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "wild-ace-card",
+      "figmaNodeId": "8222:1024",
+      "background": {
+        "color": "#191818"
+      },
+      "border": {
+        "radius": 10
+      },
+      "size": {
+        "width": 282,
+        "height": 289
+      },
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 24,
+        "padding": {
+          "top": 14,
+          "right": 14,
+          "bottom": 14,
+          "left": 14
+        },
+        "align": "center"
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "wild-ace-image",
+          "figmaNodeId": "8222:1030",
+          "asset": {
+            "nodeId": "8222:1030",
+            "kind": "image"
+          },
+          "border": {
+            "radius": 4
+          }
+        },
+        {
+          "type": "column",
+          "id": "wild-ace-details",
+          "figmaNodeId": "8222:1026",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "wild-ace-title",
+              "figmaNodeId": "8222:1027",
+              "text": "Wild Ace Jili",
+              "level": 3,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "21.78px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            },
+            {
+              "type": "text",
+              "id": "wild-ace-description",
+              "figmaNodeId": "8222:1028",
+              "text": "High volatility, combo wins",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text",
+              "id": "wild-ace-rtp",
+              "figmaNodeId": "8222:1029",
+              "text": "RTP: 96.00%",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              },
+              "layout": {
+                "margin": {
+                  "top": 13
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

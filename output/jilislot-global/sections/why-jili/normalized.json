@@ -1,0 +1,655 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jili-top-game-provider",
+      "children": [
+        {
+          "type": "heading",
+          "id": "top-game-provider-heading",
+          "figmaNodeId": "8221:7",
+          "level": 2,
+          "text": "What Makes Jili a Top Game Provider?",
+          "layout": {
+            "display": "block"
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "color": "#FFFFFF",
+            "align": "center",
+            "lineHeight": "41.15px"
+          },
+          "size": {
+            "width": 626
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-1261154685-1",
+          "figmaNodeId": "8221:672",
+          "children": [
+            {
+              "type": "column",
+              "id": "group-1261154667-1",
+              "figmaNodeId": "8221:614",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "vector-left",
+                  "figmaNodeId": "8221:617",
+                  "asset": {
+                    "nodeId": "8221:617",
+                    "kind": "svg"
+                  },
+                  "typography": {
+                    "color": "#FFFFFF"
+                  },
+                  "size": {
+                    "width": 19.99,
+                    "height": 19.95
+                  }
+                },
+                {
+                  "type": "icon",
+                  "id": "vector-right",
+                  "figmaNodeId": "8221:618",
+                  "asset": {
+                    "nodeId": "8221:618",
+                    "kind": "svg"
+                  },
+                  "size": {
+                    "width": 19.99,
+                    "height": 19.95
+                  },
+                  "layout": {
+                    "margin": {
+                      "left": 1180.03
+                    }
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 90.29,
+                "align": "start"
+              }
+            },
+            {
+              "type": "row",
+              "id": "features-row",
+              "figmaNodeId": "8221:671",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "margin": {
+                  "left": 32
+                },
+                "align": "start"
+              },
+              "children": [
+                {
+                  "type": "row",
+                  "id": "jili-top-game-provider-row-1",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "quality-design-column",
+                      "figmaNodeId": "8221:667",
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 195
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "jili-top-game-provider-column-2",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "quality-design-text-group",
+                              "figmaNodeId": "8221:637",
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "align": "start"
+                              },
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "jili-top-game-provider-column-1",
+                                  "children": [
+                                    {
+                                      "type": "heading",
+                                      "id": "quality-design-heading",
+                                      "figmaNodeId": "8221:623",
+                                      "level": 3,
+                                      "text": "Quality Design",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 700,
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "lineHeight": "26px"
+                                      },
+                                      "size": {
+                                        "width": 129
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "quality-design-text",
+                                      "figmaNodeId": "8221:624",
+                                      "text": "Eye-catching visuals and smooth animations.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 14,
+                                        "fontWeight": 400,
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "lineHeight": "22px"
+                                      },
+                                      "size": {
+                                        "width": 195
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "column",
+                                    "gap": 8,
+                                    "align": "center"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "row",
+                              "id": "quality-design-icon-group",
+                              "figmaNodeId": "8221:663",
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "align": "end"
+                              },
+                              "notes": [
+                                "Ellipse 15 has no explicit color fill in Figma data; background is missing.",
+                                "Polygon 2 is a star shape with solid purple fill, not an SVG asset."
+                              ],
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "quality-design-ellipse",
+                                  "figmaNodeId": "8221:619",
+                                  "asset": {
+                                    "nodeId": "8221:619",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 94,
+                                    "height": 94
+                                  }
+                                },
+                                {
+                                  "type": "icon",
+                                  "id": "quality-design-crown",
+                                  "figmaNodeId": "8221:647",
+                                  "text": "Crown icon",
+                                  "asset": {
+                                    "nodeId": "8221:647",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 32,
+                                    "height": 32
+                                  }
+                                }
+                              ]
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 16,
+                            "align": "center"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "fast-reliable-column",
+                      "figmaNodeId": "8221:668",
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start",
+                        "margin": {
+                          "left": 50
+                        }
+                      },
+                      "size": {
+                        "width": 195
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "jili-top-game-provider-column-4",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "fast-reliable-icon-group",
+                              "figmaNodeId": "8221:664",
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "align": "end"
+                              },
+                              "notes": [
+                                "Ellipse 15 has no explicit color fill in Figma data; background is missing.",
+                                "Polygon 2 is a star shape with solid blue fill, not an SVG asset."
+                              ],
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "fast-reliable-ellipse",
+                                  "figmaNodeId": "8221:628",
+                                  "asset": {
+                                    "nodeId": "8221:628",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 94,
+                                    "height": 94
+                                  }
+                                },
+                                {
+                                  "type": "icon",
+                                  "id": "fast-reliable-icon",
+                                  "figmaNodeId": "8221:660",
+                                  "text": "Thumbs up icon",
+                                  "asset": {
+                                    "nodeId": "8221:660",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 32,
+                                    "height": 32
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "fast-reliable-text-group",
+                              "figmaNodeId": "8221:638",
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "align": "start"
+                              },
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "jili-top-game-provider-column-3",
+                                  "children": [
+                                    {
+                                      "type": "heading",
+                                      "id": "fast-reliable-heading",
+                                      "figmaNodeId": "8221:639",
+                                      "level": 3,
+                                      "text": "Fast & Reliable",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 700,
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "lineHeight": "26px"
+                                      },
+                                      "size": {
+                                        "width": 129
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "fast-reliable-text",
+                                      "figmaNodeId": "8221:640",
+                                      "text": "Optimized for quick, seamless gameplay.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 14,
+                                        "fontWeight": 400,
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "lineHeight": "22px"
+                                      },
+                                      "size": {
+                                        "width": 195
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "column",
+                                    "gap": 8,
+                                    "align": "center"
+                                  }
+                                }
+                              ]
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 16,
+                            "align": "center"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "unique-features-column",
+                      "figmaNodeId": "8221:669",
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start",
+                        "margin": {
+                          "left": 48
+                        }
+                      },
+                      "size": {
+                        "width": 195
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "jili-top-game-provider-column-6",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "unique-features-text-group",
+                              "figmaNodeId": "8221:641",
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "align": "start"
+                              },
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "jili-top-game-provider-column-5",
+                                  "children": [
+                                    {
+                                      "type": "heading",
+                                      "id": "unique-features-heading",
+                                      "figmaNodeId": "8221:642",
+                                      "level": 3,
+                                      "text": "Unique Features",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 700,
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "lineHeight": "26px"
+                                      },
+                                      "size": {
+                                        "width": 144
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "unique-features-text",
+                                      "figmaNodeId": "8221:643",
+                                      "text": "Innovative bonuses and mechanics.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 14,
+                                        "fontWeight": 400,
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "lineHeight": "22px"
+                                      },
+                                      "size": {
+                                        "width": 195
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "column",
+                                    "gap": 8,
+                                    "align": "center"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "row",
+                              "id": "unique-features-icon-group",
+                              "figmaNodeId": "8221:665",
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "align": "end",
+                                "margin": {
+                                  "left": 42
+                                }
+                              },
+                              "notes": [
+                                "Ellipse 15 has no explicit color fill in Figma data; background is missing.",
+                                "Polygon 2 is a star shape with solid teal fill, not an SVG asset."
+                              ],
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "unique-features-ellipse",
+                                  "figmaNodeId": "8221:632",
+                                  "asset": {
+                                    "nodeId": "8221:632",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 94,
+                                    "height": 94
+                                  }
+                                },
+                                {
+                                  "type": "icon",
+                                  "id": "unique-features-icon",
+                                  "figmaNodeId": "8221:649",
+                                  "text": "Lightbulb on icon",
+                                  "asset": {
+                                    "nodeId": "8221:649",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 40,
+                                    "height": 40
+                                  }
+                                }
+                              ]
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 17,
+                            "align": "start"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "fair-trusted-column",
+                      "figmaNodeId": "8221:670",
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start",
+                        "margin": {
+                          "left": 68
+                        }
+                      },
+                      "size": {
+                        "width": 175
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "jili-top-game-provider-column-8",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "fair-trusted-icon-group",
+                              "figmaNodeId": "8221:666",
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "align": "end"
+                              },
+                              "notes": [
+                                "Ellipse 15 has no explicit color fill in Figma data; background is missing.",
+                                "Polygon 2 is a star shape with solid pink/red fill, not an SVG asset."
+                              ],
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "fair-trusted-ellipse",
+                                  "figmaNodeId": "8221:635",
+                                  "asset": {
+                                    "nodeId": "8221:635",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 94,
+                                    "height": 94
+                                  }
+                                },
+                                {
+                                  "type": "icon",
+                                  "id": "fair-trusted-icon",
+                                  "figmaNodeId": "8221:655",
+                                  "text": "User trust icon",
+                                  "asset": {
+                                    "nodeId": "8221:655",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 34,
+                                    "height": 34
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "fair-trusted-text-group",
+                              "figmaNodeId": "8221:644",
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "align": "start"
+                              },
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "jili-top-game-provider-column-7",
+                                  "children": [
+                                    {
+                                      "type": "heading",
+                                      "id": "fair-trusted-heading",
+                                      "figmaNodeId": "8221:645",
+                                      "level": 3,
+                                      "text": "Fair & Trusted",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 700,
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "lineHeight": "26px"
+                                      },
+                                      "size": {
+                                        "width": 123
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "fair-trusted-text",
+                                      "figmaNodeId": "8221:646",
+                                      "text": "Certified RNG and solid RTP rates.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 14,
+                                        "fontWeight": 400,
+                                        "color": "#FFFFFF",
+                                        "align": "center",
+                                        "lineHeight": "22px"
+                                      },
+                                      "size": {
+                                        "width": 175
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "column",
+                                    "gap": 8,
+                                    "align": "center"
+                                  }
+                                }
+                              ]
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 16,
+                            "align": "center"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 60,
+        "align": "center"
+      }
+    }
+  ],
+  "_uncertain": [
+    "Polygon 2 inside quality-design-icon-group (8221:625) is a REGULAR_POLYGON with fill #7B3DD9 but no asset; represented as icon via notes.",
+    "Polygon 2 inside fast-reliable-icon-group (8221:629) is a REGULAR_POLYGON with fill #1D39CF but no asset; represented as icon via notes.",
+    "Polygon 2 inside unique-features-icon-group (8221:633) is a REGULAR_POLYGON with fill #16CABD but no asset; represented as icon via notes.",
+    "Polygon 2 inside fair-trusted-icon-group (8221:636) is a REGULAR_POLYGON with fill #FF3680 but no asset; represented as icon via notes.",
+    "Ellipse 15 elements (8221:619, 8221:628, 8221:632, 8221:635) have no 'fills' in Figma data; their color is unknown/not white.",
+    "Vector 8221:616 ('Vector', box [2918.01,-1877.2,1186,116], fill #2C2C2C) has no asset and is not imageExported; represented as note in decorative-vectors-row due to lack of layout position in flex.",
+    "vector-left: dropped unknown field \"layout.marginStart\""
+  ]
+}

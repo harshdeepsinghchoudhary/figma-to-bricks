@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "data": {
+    "abilities": [
+      {
+        "name": "bricks/delete-post",
+        "category": "bricks-content",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-global-settings",
+        "category": "bricks-settings",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/execute-php",
+        "category": "bricks-system",
+        "enabled": false,
+        "defaultEnabled": false
+      }
+    ],
+    "responseFormat": "summary",
+    "returned": 3,
+    "total": 170,
+    "enabled": 128,
+    "disabled": 42
+  }
+}

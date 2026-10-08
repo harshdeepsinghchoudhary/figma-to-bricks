@@ -1,0 +1,72 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jilislot-section",
+      "children": [
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8222:1275",
+          "asset": {
+            "nodeId": "8222:1275",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "column",
+          "id": "jilislot-section-column-1",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-1261152830-1",
+              "figmaNodeId": "8222:1277",
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "first-deposit-bonus",
+                  "figmaNodeId": "8222:1278",
+                  "text": "100% First Deposit Bonus",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": 600,
+                    "lineHeight": "24.2px",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "description",
+                  "figmaNodeId": "8222:1279",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "id": "claim-now",
+              "figmaNodeId": "8222:1280",
+              "text": "Claim Now"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section.id",
+    "image.id",
+    "heading.id",
+    "text.id",
+    "button.id"
+  ]
+}

@@ -1,0 +1,1777 @@
+{
+  "section": {
+    "count": 13,
+    "observedSettingKeys": [
+      {
+        "key": "_padding",
+        "count": 13
+      },
+      {
+        "key": "_padding:tablet_portrait",
+        "count": 13
+      },
+      {
+        "key": "_padding:mobile_landscape",
+        "count": 13
+      },
+      {
+        "key": "_background",
+        "count": 13
+      },
+      {
+        "key": "_cssId",
+        "count": 1
+      },
+      {
+        "key": "_background:tablet_portrait",
+        "count": 1
+      }
+    ],
+    "sampleValues": {
+      "_padding": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": {
+          "left": "16",
+          "right": "16",
+          "top": "156",
+          "bottom": "240"
+        },
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": {
+          "bottom": "256"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"top\"]}": {
+          "top": "120",
+          "bottom": "120"
+        },
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": {
+          "bottom": "120"
+        }
+      },
+      "_padding:mobile_landscape": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"top\"]}": {
+          "top": "60",
+          "bottom": "60"
+        },
+        "{\"type\":\"object\",\"keys\":[\"top\"]}": {
+          "top": "60"
+        },
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": {
+          "bottom": "60"
+        }
+      },
+      "_background": {
+        "{\"type\":\"object\",\"keys\":[\"color\"]}": {
+          "color": {
+            "raw": "#FAF9FF"
+          }
+        },
+        "{\"type\":\"object\",\"keys\":[\"attachment\",\"color\",\"position\",\"repeat\",\"size\"]}": {
+          "attachment": "scroll",
+          "position": "top center",
+          "repeat": "no-repeat",
+          "size": "custom",
+          "color": {
+            "raw": "#FAF9FF"
+          }
+        }
+      },
+      "_cssId": {
+        "{\"type\":\"string\"}": "WhoWeAre"
+      },
+      "_background:tablet_portrait": {
+        "{\"type\":\"object\",\"keys\":[\"size\"]}": {
+          "size": "cover"
+        }
+      }
+    }
+  },
+  "container": {
+    "count": 13,
+    "observedSettingKeys": [
+      {
+        "key": "_rowGap",
+        "count": 12
+      },
+      {
+        "key": "_alignItems",
+        "count": 12
+      },
+      {
+        "key": "_columnGap",
+        "count": 11
+      },
+      {
+        "key": "_direction",
+        "count": 6
+      },
+      {
+        "key": "_justifyContent",
+        "count": 6
+      },
+      {
+        "key": "_rowGap:tablet_portrait",
+        "count": 6
+      },
+      {
+        "key": "_rowGap:mobile_landscape",
+        "count": 5
+      },
+      {
+        "key": "_direction:tablet_portrait",
+        "count": 4
+      },
+      {
+        "key": "_direction:mobile_landscape",
+        "count": 1
+      },
+      {
+        "key": "_margin",
+        "count": 1
+      },
+      {
+        "key": "_display",
+        "count": 1
+      },
+      {
+        "key": "_flexWrap",
+        "count": 1
+      },
+      {
+        "key": "_direction:mobile_portrait",
+        "count": 1
+      },
+      {
+        "key": "_background",
+        "count": 1
+      },
+      {
+        "key": "_height",
+        "count": 1
+      },
+      {
+        "key": "_widthMax",
+        "count": 1
+      },
+      {
+        "key": "_width",
+        "count": 1
+      },
+      {
+        "key": "_position",
+        "count": 1
+      },
+      {
+        "key": "_padding",
+        "count": 1
+      },
+      {
+        "key": "_padding:tablet_portrait",
+        "count": 1
+      },
+      {
+        "key": "_padding:mobile_landscape",
+        "count": 1
+      },
+      {
+        "key": "_background:mobile_portrait",
+        "count": 1
+      },
+      {
+        "key": "_padding:mobile_portrait",
+        "count": 1
+      },
+      {
+        "key": "_background:mobile_landscape",
+        "count": 1
+      }
+    ],
+    "sampleValues": {
+      "_direction": {
+        "{\"type\":\"string\"}": "row"
+      },
+      "_justifyContent": {
+        "{\"type\":\"string\"}": "space-between"
+      },
+      "_columnGap": {
+        "{\"type\":\"string\"}": "50"
+      },
+      "_rowGap": {
+        "{\"type\":\"string\"}": "50"
+      },
+      "_direction:tablet_portrait": {
+        "{\"type\":\"string\"}": "column"
+      },
+      "_alignItems": {
+        "{\"type\":\"string\"}": "flex-end"
+      },
+      "_rowGap:mobile_landscape": {
+        "{\"type\":\"string\"}": "40"
+      },
+      "_rowGap:tablet_portrait": {
+        "{\"type\":\"string\"}": "50"
+      },
+      "_direction:mobile_landscape": {
+        "{\"type\":\"string\"}": "column-reverse"
+      },
+      "_margin": {
+        "{\"type\":\"object\",\"keys\":[\"top\"]}": {
+          "top": "-336"
+        }
+      },
+      "_display": {
+        "{\"type\":\"string\"}": "flex"
+      },
+      "_flexWrap": {
+        "{\"type\":\"string\"}": "wrap"
+      },
+      "_direction:mobile_portrait": {
+        "{\"type\":\"string\"}": "row"
+      },
+      "_background": {
+        "{\"type\":\"object\",\"keys\":[\"attachment\",\"blendMode\",\"custom\",\"image\",\"position\",\"repeat\",\"size\"]}": {
+          "image": {
+            "id": 2800,
+            "filename": "Machplus-yes-or-no-background-image.png",
+            "size": "large",
+            "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/09/Machplus-yes-or-no-backg…",
+            "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/09/Machplus-yes-or-no-backg…"
+          },
+          "blendMode": "normal",
+          "attachment": "scroll",
+          "position": "top center",
+          "repeat": "no-repeat",
+          "size": "custom",
+          "custom": "100% 100%"
+        }
+      },
+      "_height": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_widthMax": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_width": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_position": {
+        "{\"type\":\"string\"}": "relative"
+      },
+      "_padding": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": {
+          "right": "16",
+          "left": "16",
+          "top": "240",
+          "bottom": "553"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"top\"]}": {
+          "bottom": "400",
+          "top": "120"
+        }
+      },
+      "_padding:mobile_landscape": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"top\"]}": {
+          "bottom": "300",
+          "top": "60"
+        }
+      },
+      "_background:mobile_portrait": {
+        "{\"type\":\"object\",\"keys\":[\"custom\",\"size\"]}": {
+          "size": "custom",
+          "custom": "180% 100%"
+        }
+      },
+      "_padding:mobile_portrait": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": {
+          "bottom": "150"
+        }
+      },
+      "_background:mobile_landscape": {
+        "{\"type\":\"object\",\"keys\":[\"custom\",\"size\"]}": {
+          "size": "custom",
+          "custom": "120% 100%"
+        }
+      }
+    }
+  },
+  "div": {
+    "count": 96,
+    "observedSettingKeys": [
+      {
+        "key": "_display",
+        "count": 88
+      },
+      {
+        "key": "_columnGap",
+        "count": 66
+      },
+      {
+        "key": "_rowGap",
+        "count": 66
+      },
+      {
+        "key": "_direction",
+        "count": 50
+      },
+      {
+        "key": "_alignItems",
+        "count": 41
+      },
+      {
+        "key": "_widthMax",
+        "count": 28
+      },
+      {
+        "key": "_width",
+        "count": 28
+      },
+      {
+        "key": "_justifyContent",
+        "count": 25
+      },
+      {
+        "key": "_border",
+        "count": 25
+      },
+      {
+        "key": "_padding",
+        "count": 21
+      },
+      {
+        "key": "_background",
+        "count": 21
+      },
+      {
+        "key": "_boxShadow",
+        "count": 19
+      },
+      {
+        "key": "_widthMax:tablet_portrait",
+        "count": 14
+      },
+      {
+        "key": "_widthMax:mobile_landscape",
+        "count": 11
+      },
+      {
+        "key": "_heightMin",
+        "count": 11
+      },
+      {
+        "key": "_rowGap:mobile_landscape",
+        "count": 11
+      },
+      {
+        "key": "_columnGap:mobile_landscape",
+        "count": 8
+      },
+      {
+        "key": "_position",
+        "count": 8
+      },
+      {
+        "key": "_flexShrink",
+        "count": 8
+      },
+      {
+        "key": "query",
+        "count": 8
+      },
+      {
+        "key": "_width:mobile_landscape",
+        "count": 7
+      },
+      {
+        "key": "_margin",
+        "count": 5
+      },
+      {
+        "key": "_direction:mobile_landscape",
+        "count": 5
+      },
+      {
+        "key": "_alignItems:mobile_landscape",
+        "count": 4
+      },
+      {
+        "key": "_flexGrow",
+        "count": 4
+      },
+      {
+        "key": "_height",
+        "count": 4
+      },
+      {
+        "key": "_content::before",
+        "count": 4
+      },
+      {
+        "key": "_position::before",
+        "count": 4
+      },
+      {
+        "key": "_top::before",
+        "count": 4
+      },
+      {
+        "key": "_right::before",
+        "count": 4
+      },
+      {
+        "key": "_bottom::before",
+        "count": 4
+      },
+      {
+        "key": "_left::before",
+        "count": 4
+      },
+      {
+        "key": "_zIndex::before",
+        "count": 4
+      },
+      {
+        "key": "_display::before",
+        "count": 4
+      },
+      {
+        "key": "_border::before",
+        "count": 4
+      },
+      {
+        "key": "_overflow",
+        "count": 4
+      },
+      {
+        "key": "hasLoop",
+        "count": 3
+      },
+      {
+        "key": "_gridTemplateColumns",
+        "count": 2
+      },
+      {
+        "key": "_gridGap",
+        "count": 2
+      },
+      {
+        "key": "_padding:mobile_landscape",
+        "count": 2
+      },
+      {
+        "key": "_flexWrap",
+        "count": 2
+      },
+      {
+        "key": "_margin:tablet_portrait",
+        "count": 1
+      },
+      {
+        "key": "_width:tablet_portrait",
+        "count": 1
+      },
+      {
+        "key": "_direction:tablet_portrait",
+        "count": 1
+      },
+      {
+        "key": "_rowGap:tablet_portrait",
+        "count": 1
+      },
+      {
+        "key": "_gridTemplateColumns:tablet_portrait",
+        "count": 1
+      },
+      {
+        "key": "_gridTemplateColumns:mobile_landscape",
+        "count": 1
+      }
+    ],
+    "sampleValues": {
+      "_display": {
+        "{\"type\":\"string\"}": "flex"
+      },
+      "_direction": {
+        "{\"type\":\"string\"}": "column"
+      },
+      "_columnGap": {
+        "{\"type\":\"string\"}": "64"
+      },
+      "_rowGap": {
+        "{\"type\":\"string\"}": "64"
+      },
+      "_margin": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": {
+          "bottom": "37"
+        },
+        "{\"type\":\"object\",\"keys\":[\"top\"]}": {
+          "top": "4"
+        }
+      },
+      "_widthMax": {
+        "{\"type\":\"string\"}": "513px"
+      },
+      "_width": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_widthMax:tablet_portrait": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_margin:tablet_portrait": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": {
+          "bottom": "0"
+        }
+      },
+      "_width:tablet_portrait": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_justifyContent": {
+        "{\"type\":\"string\"}": "space-between"
+      },
+      "_alignItems": {
+        "{\"type\":\"string\"}": "center"
+      },
+      "_direction:mobile_landscape": {
+        "{\"type\":\"string\"}": "column"
+      },
+      "_widthMax:mobile_landscape": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_padding": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": {
+          "top": "32",
+          "right": "32",
+          "bottom": "32",
+          "left": "32"
+        },
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": {
+          "bottom": "27"
+        }
+      },
+      "_background": {
+        "{\"type\":\"object\",\"keys\":[\"color\"]}": {
+          "color": {
+            "raw": "#FFFFFF"
+          }
+        }
+      },
+      "_border": {
+        "{\"type\":\"object\",\"keys\":[\"radius\"]}": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        }
+      },
+      "_boxShadow": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"values\"]}": {
+          "values": {
+            "offsetY": "4",
+            "offsetX": "0",
+            "blur": "14",
+            "spread": "0"
+          },
+          "color": {
+            "raw": "#C7C7CC3D"
+          }
+        }
+      },
+      "_heightMin": {
+        "{\"type\":\"string\"}": "626"
+      },
+      "_width:mobile_landscape": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_rowGap:mobile_landscape": {
+        "{\"type\":\"string\"}": "40"
+      },
+      "_columnGap:mobile_landscape": {
+        "{\"type\":\"string\"}": "40"
+      },
+      "_direction:tablet_portrait": {
+        "{\"type\":\"string\"}": "column"
+      },
+      "_alignItems:mobile_landscape": {
+        "{\"type\":\"string\"}": "flex-start"
+      },
+      "_rowGap:tablet_portrait": {
+        "{\"type\":\"string\"}": "80"
+      },
+      "_gridTemplateColumns": {
+        "{\"type\":\"string\"}": "1fr 1fr"
+      },
+      "_gridGap": {
+        "{\"type\":\"string\"}": "32"
+      },
+      "_gridTemplateColumns:tablet_portrait": {
+        "{\"type\":\"string\"}": "1fr"
+      },
+      "_padding:mobile_landscape": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": {
+          "top": "30",
+          "right": "20",
+          "bottom": "30",
+          "left": "20"
+        }
+      },
+      "_flexWrap": {
+        "{\"type\":\"string\"}": "wrap"
+      },
+      "_position": {
+        "{\"type\":\"string\"}": "relative"
+      },
+      "_flexShrink": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_flexGrow": {
+        "{\"type\":\"string\"}": "1"
+      },
+      "_height": {
+        "{\"type\":\"string\"}": "84"
+      },
+      "_content::before": {
+        "{\"type\":\"string\"}": " "
+      },
+      "_position::before": {
+        "{\"type\":\"string\"}": "absolute"
+      },
+      "_top::before": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_right::before": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_bottom::before": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_left::before": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_zIndex::before": {
+        "{\"type\":\"string\"}": "1"
+      },
+      "_display::before": {
+        "{\"type\":\"string\"}": "flex"
+      },
+      "_border::before": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"radius\",\"style\",\"width\"]}": {
+          "radius": {
+            "top": "50",
+            "right": "50",
+            "bottom": "50",
+            "left": "50"
+          },
+          "width": {
+            "top": "4",
+            "right": "4",
+            "bottom": "4",
+            "left": "4"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "#FFFFFF"
+          }
+        }
+      },
+      "_overflow": {
+        "{\"type\":\"string\"}": "hidden"
+      },
+      "query": {
+        "{\"type\":\"object\",\"keys\":[\"number\",\"objectType\"]}": {
+          "objectType": "term",
+          "number": "5"
+        }
+      },
+      "hasLoop": {
+        "{\"type\":\"boolean\"}": true
+      },
+      "_gridTemplateColumns:mobile_landscape": {
+        "{\"type\":\"string\"}": "1fr"
+      }
+    }
+  },
+  "heading": {
+    "count": 28,
+    "observedSettingKeys": [
+      {
+        "key": "text",
+        "count": 28
+      },
+      {
+        "key": "_typography",
+        "count": 28
+      },
+      {
+        "key": "tag",
+        "count": 11
+      },
+      {
+        "key": "_display",
+        "count": 9
+      },
+      {
+        "key": "_flexDirection",
+        "count": 9
+      },
+      {
+        "key": "_justifyContent",
+        "count": 9
+      },
+      {
+        "key": "_alignItems",
+        "count": 9
+      },
+      {
+        "key": "_content::after",
+        "count": 7
+      },
+      {
+        "key": "_height::after",
+        "count": 7
+      },
+      {
+        "key": "_background::after",
+        "count": 7
+      },
+      {
+        "key": "_display::after",
+        "count": 7
+      },
+      {
+        "key": "_transform::after",
+        "count": 7
+      },
+      {
+        "key": "_alignSelf::after",
+        "count": 7
+      },
+      {
+        "key": "_width::after",
+        "count": 7
+      },
+      {
+        "key": "_widthMax",
+        "count": 5
+      },
+      {
+        "key": "_gradient",
+        "count": 2
+      },
+      {
+        "key": "_cssCustom",
+        "count": 2
+      },
+      {
+        "key": "_cssClasses",
+        "count": 2
+      },
+      {
+        "key": "_width",
+        "count": 1
+      }
+    ],
+    "sampleValues": {
+      "text": {
+        "{\"type\":\"string\"}": "Machplus: Best Digital Marketing Agency in Malaysia"
+      },
+      "tag": {
+        "{\"type\":\"string\"}": "h1"
+      },
+      "_gradient": {
+        "{\"type\":\"object\",\"keys\":[\"angle\",\"applyTo\",\"colors\",\"gradientType\"]}": {
+          "applyTo": "text",
+          "gradientType": "linear",
+          "angle": "144.8",
+          "colors": {
+            "__array_length": 2,
+            "__sample_item": {
+              "id": "zisnus",
+              "color": {
+                "raw": "#3D3D3D"
+              },
+              "stop": "22.01%"
+            }
+          }
+        }
+      },
+      "_typography": {
+        "{\"type\":\"object\",\"keys\":[\"font-family\",\"font-weight\",\"letter-spacing\",\"line-height\",\"text-align\"]}": {
+          "font-weight": "700",
+          "font-family": "Source Sans 3",
+          "text-align": "left",
+          "line-height": "135%",
+          "letter-spacing": "0%"
+        },
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\",\"text-align\"]}": {
+          "text-align": "center",
+          "font-family": "Source Sans 3",
+          "font-weight": "700",
+          "font-size": "44px",
+          "line-height": "140%",
+          "letter-spacing": "0%",
+          "color": {
+            "raw": "#3D3D3D"
+          }
+        },
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\"]}": {
+          "font-size": "24px",
+          "color": {
+            "raw": "#3D3D3D"
+          },
+          "line-height": "36px",
+          "letter-spacing": "0%",
+          "font-weight": "600",
+          "font-family": "Source Sans 3"
+        }
+      },
+      "_content::after": {
+        "{\"type\":\"string\"}": " "
+      },
+      "_height::after": {
+        "{\"type\":\"string\"}": "8"
+      },
+      "_background::after": {
+        "{\"type\":\"object\",\"keys\":[\"color\"]}": {
+          "color": {
+            "raw": "#EF536666"
+          }
+        }
+      },
+      "_display::after": {
+        "{\"type\":\"string\"}": "flex"
+      },
+      "_transform::after": {
+        "{\"type\":\"object\",\"keys\":[\"skewX\"]}": {
+          "skewX": "-45"
+        }
+      },
+      "_alignSelf::after": {
+        "{\"type\":\"string\"}": "center"
+      },
+      "_display": {
+        "{\"type\":\"string\"}": "flex"
+      },
+      "_flexDirection": {
+        "{\"type\":\"string\"}": "column"
+      },
+      "_justifyContent": {
+        "{\"type\":\"string\"}": "center"
+      },
+      "_alignItems": {
+        "{\"type\":\"string\"}": "center"
+      },
+      "_width::after": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_widthMax": {
+        "{\"type\":\"string\"}": "579px"
+      },
+      "_width": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_cssCustom": {
+        "{\"type\":\"string\"}": "\n.span-outline span{\n\tdisplay: inline-flex !important;\n    flex-direction: colum…"
+      },
+      "_cssClasses": {
+        "{\"type\":\"string\"}": "span-outline"
+      }
+    }
+  },
+  "text": {
+    "count": 29,
+    "observedSettingKeys": [
+      {
+        "key": "text",
+        "count": 29
+      },
+      {
+        "key": "_typography",
+        "count": 29
+      },
+      {
+        "key": "_padding",
+        "count": 11
+      },
+      {
+        "key": "_widthMax",
+        "count": 9
+      },
+      {
+        "key": "_margin",
+        "count": 3
+      },
+      {
+        "key": "_cssClasses",
+        "count": 2
+      }
+    ],
+    "sampleValues": {
+      "text": {
+        "{\"type\":\"string\"}": "<p>In today's fast-paced digital world, having a strong online presence is cruci…"
+      },
+      "_typography": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\",\"text-align\"]}": {
+          "font-weight": "400",
+          "font-family": "Source Sans 3",
+          "font-size": "17px",
+          "line-height": "25.5px",
+          "letter-spacing": "0%",
+          "text-align": "left",
+          "color": {
+            "raw": "#3D3D3DCC"
+          }
+        },
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\"]}": {
+          "font-size": "22px",
+          "line-height": "54px",
+          "color": {
+            "raw": "#3D3D3D"
+          },
+          "font-weight": "400",
+          "font-family": "Source Sans 3",
+          "letter-spacing": "0%"
+        }
+      },
+      "_widthMax": {
+        "{\"type\":\"string\"}": "872px"
+      },
+      "_padding": {
+        "{\"type\":\"object\",\"keys\":[\"right\"]}": {
+          "right": "3"
+        }
+      },
+      "_margin": {
+        "{\"type\":\"object\",\"keys\":[\"top\"]}": {
+          "top": "11"
+        }
+      },
+      "_cssClasses": {
+        "{\"type\":\"string\"}": "list-m-p"
+      }
+    }
+  },
+  "button": {
+    "count": 9,
+    "observedSettingKeys": [
+      {
+        "key": "text",
+        "count": 9
+      },
+      {
+        "key": "_typography",
+        "count": 9
+      },
+      {
+        "key": "_padding",
+        "count": 9
+      },
+      {
+        "key": "link",
+        "count": 9
+      },
+      {
+        "key": "style",
+        "count": 2
+      },
+      {
+        "key": "_gradient",
+        "count": 2
+      },
+      {
+        "key": "icon",
+        "count": 2
+      },
+      {
+        "key": "iconTypography",
+        "count": 2
+      },
+      {
+        "key": "iconPosition",
+        "count": 2
+      },
+      {
+        "key": "iconGap",
+        "count": 2
+      },
+      {
+        "key": "_border",
+        "count": 2
+      },
+      {
+        "key": "_boxShadow:hover",
+        "count": 2
+      },
+      {
+        "key": "_cssCustom",
+        "count": 2
+      },
+      {
+        "key": "_width",
+        "count": 1
+      }
+    ],
+    "sampleValues": {
+      "text": {
+        "{\"type\":\"string\"}": "Start your Marketing journey"
+      },
+      "style": {
+        "{\"type\":\"string\"}": "primary"
+      },
+      "_gradient": {
+        "{\"type\":\"object\",\"keys\":[\"angle\",\"applyTo\",\"colors\",\"gradientType\"]}": {
+          "applyTo": "background",
+          "gradientType": "linear",
+          "angle": "90.6",
+          "colors": {
+            "__array_length": 2,
+            "__sample_item": {
+              "id": "qtxsva",
+              "color": {
+                "raw": "#EF5366"
+              },
+              "stop": "-4.65%"
+            }
+          }
+        }
+      },
+      "_typography": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\"]}": {
+          "font-size": "19px",
+          "font-weight": "600",
+          "line-height": "140%",
+          "color": {
+            "raw": "#FFFFFF"
+          },
+          "letter-spacing": "0%",
+          "font-family": "Source Sans 3"
+        },
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\",\"text-align\",\"text-decoration\"]}": {
+          "font-size": "17px",
+          "letter-spacing": "0%",
+          "line-height": "140%",
+          "font-weight": "600",
+          "color": {
+            "raw": "#EF5366"
+          },
+          "text-align": "left",
+          "text-decoration": "underline",
+          "font-family": "Source Sans 3"
+        }
+      },
+      "icon": {
+        "{\"type\":\"object\",\"keys\":[\"height\",\"library\",\"svg\",\"width\"]}": {
+          "library": "svg",
+          "svg": {
+            "id": 2784,
+            "filename": "arrow-right.svg",
+            "size": "full",
+            "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/09/arrow-right.svg",
+            "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/09/arrow-right.svg"
+          },
+          "height": "25",
+          "width": "24"
+        }
+      },
+      "iconTypography": {
+        "{\"type\":\"object\",\"keys\":[\"font-size\"]}": {
+          "font-size": "40px"
+        }
+      },
+      "iconPosition": {
+        "{\"type\":\"string\"}": "left"
+      },
+      "iconGap": {
+        "{\"type\":\"string\"}": "10px"
+      },
+      "_padding": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": {
+          "top": "9",
+          "bottom": "11",
+          "left": "20",
+          "right": "20"
+        }
+      },
+      "_border": {
+        "{\"type\":\"object\",\"keys\":[\"radius\"]}": {
+          "radius": {
+            "top": "4px",
+            "right": "4px",
+            "bottom": "4px",
+            "left": "4px"
+          }
+        }
+      },
+      "_boxShadow:hover": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"values\"]}": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "8",
+            "blur": "24",
+            "spread": "0"
+          },
+          "color": {
+            "raw": "#EF536699"
+          }
+        }
+      },
+      "_cssCustom": {
+        "{\"type\":\"string\"}": "#brxe-nquqij {\n  transition: all 0.5s ease;\n}"
+      },
+      "link": {
+        "{\"type\":\"object\",\"keys\":[\"postId\",\"type\",\"url\"]}": {
+          "type": "external",
+          "postId": "31",
+          "url": "#WhoWeAre"
+        },
+        "{\"type\":\"object\",\"keys\":[\"postId\",\"type\"]}": {
+          "type": "internal",
+          "postId": "931"
+        }
+      },
+      "_width": {
+        "{\"type\":\"string\"}": "100%"
+      }
+    }
+  },
+  "image": {
+    "count": 22,
+    "observedSettingKeys": [
+      {
+        "key": "image",
+        "count": 22
+      },
+      {
+        "key": "_width",
+        "count": 18
+      },
+      {
+        "key": "_border",
+        "count": 11
+      },
+      {
+        "key": "_position",
+        "count": 5
+      },
+      {
+        "key": "_width::before",
+        "count": 4
+      },
+      {
+        "key": "_position::before",
+        "count": 4
+      },
+      {
+        "key": "_content::before",
+        "count": 4
+      },
+      {
+        "key": "_border::before",
+        "count": 4
+      },
+      {
+        "key": "_top::before",
+        "count": 4
+      },
+      {
+        "key": "_right::before",
+        "count": 4
+      },
+      {
+        "key": "_bottom::before",
+        "count": 4
+      },
+      {
+        "key": "_left::before",
+        "count": 4
+      },
+      {
+        "key": "_zIndex::before",
+        "count": 4
+      },
+      {
+        "key": "_height::before",
+        "count": 4
+      },
+      {
+        "key": "_height",
+        "count": 4
+      },
+      {
+        "key": "_widthMax",
+        "count": 3
+      },
+      {
+        "key": "_widthMax:tablet_portrait",
+        "count": 1
+      },
+      {
+        "key": "_bottom",
+        "count": 1
+      },
+      {
+        "key": "_left",
+        "count": 1
+      },
+      {
+        "key": "_transform",
+        "count": 1
+      },
+      {
+        "key": "_padding",
+        "count": 1
+      },
+      {
+        "key": "_bottom:mobile_portrait",
+        "count": 1
+      },
+      {
+        "key": "_bottom:mobile_landscape",
+        "count": 1
+      }
+    ],
+    "sampleValues": {
+      "image": {
+        "{\"type\":\"object\",\"keys\":[\"filename\",\"full\",\"id\",\"size\",\"url\"]}": {
+          "id": 2785,
+          "filename": "Machplus-Home-page-banner.png",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/09/Machplus-Home-page-banne…",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/09/Machplus-Home-page-banne…"
+        }
+      },
+      "_widthMax": {
+        "{\"type\":\"string\"}": "663px"
+      },
+      "_width": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_widthMax:tablet_portrait": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_border": {
+        "{\"type\":\"object\",\"keys\":[\"radius\"]}": {
+          "radius": {
+            "top": "4",
+            "right": "4",
+            "bottom": "4",
+            "left": "4"
+          }
+        }
+      },
+      "_position": {
+        "{\"type\":\"string\"}": "absolute"
+      },
+      "_bottom": {
+        "{\"type\":\"string\"}": "-100px"
+      },
+      "_left": {
+        "{\"type\":\"string\"}": "50%"
+      },
+      "_transform": {
+        "{\"type\":\"object\",\"keys\":[\"translateX\"]}": {
+          "translateX": "-50%"
+        }
+      },
+      "_padding": {
+        "{\"type\":\"object\",\"keys\":[\"left\",\"right\"]}": {
+          "right": "16",
+          "left": "16"
+        }
+      },
+      "_bottom:mobile_portrait": {
+        "{\"type\":\"string\"}": "-70px"
+      },
+      "_bottom:mobile_landscape": {
+        "{\"type\":\"string\"}": "-75px"
+      },
+      "_width::before": {
+        "{\"type\":\"string\"}": "84px"
+      },
+      "_position::before": {
+        "{\"type\":\"string\"}": "absolute"
+      },
+      "_content::before": {
+        "{\"type\":\"string\"}": " "
+      },
+      "_border::before": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"style\",\"width\"]}": {
+          "width": {
+            "top": "4",
+            "right": "4",
+            "bottom": "4",
+            "left": "4"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "#000"
+          }
+        }
+      },
+      "_top::before": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_right::before": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_bottom::before": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_left::before": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_zIndex::before": {
+        "{\"type\":\"string\"}": "11"
+      },
+      "_height::before": {
+        "{\"type\":\"string\"}": "84px"
+      },
+      "_height": {
+        "{\"type\":\"string\"}": "84px"
+      }
+    }
+  },
+  "block": {
+    "count": 9,
+    "observedSettingKeys": [
+      {
+        "key": "_display",
+        "count": 8
+      },
+      {
+        "key": "_widthMax",
+        "count": 2
+      },
+      {
+        "key": "_width",
+        "count": 2
+      },
+      {
+        "key": "_widthMax:tablet_portrait",
+        "count": 2
+      }
+    ],
+    "sampleValues": {
+      "_display": {
+        "{\"type\":\"string\"}": "block"
+      },
+      "_widthMax": {
+        "{\"type\":\"string\"}": "513px"
+      },
+      "_width": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "_widthMax:tablet_portrait": {
+        "{\"type\":\"string\"}": "100%"
+      }
+    }
+  },
+  "icon": {
+    "count": 20,
+    "observedSettingKeys": [
+      {
+        "key": "icon",
+        "count": 20
+      },
+      {
+        "key": "iconSize",
+        "count": 8
+      },
+      {
+        "key": "iconColor",
+        "count": 8
+      },
+      {
+        "key": "_flexShrink",
+        "count": 4
+      },
+      {
+        "key": "_position",
+        "count": 4
+      },
+      {
+        "key": "_bottom",
+        "count": 4
+      },
+      {
+        "key": "_left",
+        "count": 4
+      },
+      {
+        "key": "_cssCustom",
+        "count": 4
+      }
+    ],
+    "sampleValues": {
+      "icon": {
+        "{\"type\":\"object\",\"keys\":[\"height\",\"library\",\"svg\",\"width\"]}": {
+          "library": "svg",
+          "svg": {
+            "id": 2796,
+            "filename": "Machplus-track-icon.svg",
+            "size": "full",
+            "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/09/Machplus-track-icon.svg",
+            "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/09/Machplus-track-icon.svg"
+          },
+          "height": "77",
+          "width": "77"
+        },
+        "{\"type\":\"object\",\"keys\":[\"library\",\"svg\"]}": {
+          "library": "svg",
+          "svg": {
+            "id": 2803,
+            "filename": "Machplus-triangle-icon.svg",
+            "size": "full",
+            "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/09/Machplus-triangle-icon.s…",
+            "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/09/Machplus-triangle-icon.s…"
+          }
+        },
+        "{\"type\":\"object\",\"keys\":[\"icon\",\"library\"]}": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        }
+      },
+      "_flexShrink": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_position": {
+        "{\"type\":\"string\"}": "absolute"
+      },
+      "_bottom": {
+        "{\"type\":\"string\"}": "0"
+      },
+      "_left": {
+        "{\"type\":\"string\"}": "16.8%"
+      },
+      "_cssCustom": {
+        "{\"type\":\"string\"}": "#brxe-bassfn {\n  filter: drop-shadow(10.41px 4.16px 41.65px #00000029);\n}"
+      },
+      "iconSize": {
+        "{\"type\":\"string\"}": "14.5px"
+      },
+      "iconColor": {
+        "{\"type\":\"object\",\"keys\":[\"raw\"]}": {
+          "raw": "#EF5366"
+        }
+      }
+    }
+  },
+  "text-basic": {
+    "count": 4,
+    "observedSettingKeys": [
+      {
+        "key": "text",
+        "count": 4
+      },
+      {
+        "key": "_padding",
+        "count": 4
+      },
+      {
+        "key": "_typography",
+        "count": 4
+      }
+    ],
+    "sampleValues": {
+      "text": {
+        "{\"type\":\"string\"}": "CEO of The Motive Point"
+      },
+      "_padding": {
+        "{\"type\":\"object\",\"keys\":[\"right\"]}": {
+          "right": "3"
+        }
+      },
+      "_typography": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\",\"text-align\"]}": {
+          "font-weight": "400",
+          "font-family": "Source Sans 3",
+          "font-size": "17px",
+          "line-height": "25.5px",
+          "letter-spacing": "0%",
+          "text-align": "left",
+          "color": {
+            "raw": "#3D3D3DCC"
+          }
+        }
+      }
+    }
+  },
+  "accordion": {
+    "count": 1,
+    "observedSettingKeys": [
+      {
+        "key": "accordions",
+        "count": 1
+      },
+      {
+        "key": "titleTag",
+        "count": 1
+      },
+      {
+        "key": "icon",
+        "count": 1
+      },
+      {
+        "key": "iconExpanded",
+        "count": 1
+      },
+      {
+        "key": "faqSchema",
+        "count": 1
+      },
+      {
+        "key": "titleBackgroundColor",
+        "count": 1
+      },
+      {
+        "key": "titleBorder",
+        "count": 1
+      },
+      {
+        "key": "_widthMax",
+        "count": 1
+      },
+      {
+        "key": "_width",
+        "count": 1
+      },
+      {
+        "key": "titlePadding",
+        "count": 1
+      },
+      {
+        "key": "iconTypography",
+        "count": 1
+      },
+      {
+        "key": "iconExpandedTypography",
+        "count": 1
+      },
+      {
+        "key": "titleActiveBoxShadow",
+        "count": 1
+      },
+      {
+        "key": "titleTypography",
+        "count": 1
+      },
+      {
+        "key": "titleMargin",
+        "count": 1
+      },
+      {
+        "key": "titleActiveTypography",
+        "count": 1
+      },
+      {
+        "key": "contentPadding",
+        "count": 1
+      },
+      {
+        "key": "contentBackgroundColor",
+        "count": 1
+      },
+      {
+        "key": "contentBorder",
+        "count": 1
+      },
+      {
+        "key": "iconPosition",
+        "count": 1
+      },
+      {
+        "key": "titleActiveBorder",
+        "count": 1
+      },
+      {
+        "key": "contentTypography",
+        "count": 1
+      },
+      {
+        "key": "_cssCustom",
+        "count": 1
+      },
+      {
+        "key": "_display",
+        "count": 1
+      },
+      {
+        "key": "_flexDirection",
+        "count": 1
+      },
+      {
+        "key": "_gap",
+        "count": 1
+      }
+    ],
+    "sampleValues": {
+      "accordions": {
+        "{\"type\":\"array\",\"length\":5,\"itemTypes\":[\"object\"]}": {
+          "__array_length": 5,
+          "__sample_item": {
+            "title": "1. What Services Does Machplus Offer to Enhance Digital Marketing Strategies?",
+            "content": "Machplus offers a comprehensive range of services to enhance your digital market…",
+            "id": "vlbiuo"
+          }
+        }
+      },
+      "titleTag": {
+        "{\"type\":\"string\"}": "h3"
+      },
+      "icon": {
+        "{\"type\":\"object\",\"keys\":[\"icon\",\"library\"]}": {
+          "icon": "ion-ios-arrow-down",
+          "library": "ionicons"
+        }
+      },
+      "iconExpanded": {
+        "{\"type\":\"object\",\"keys\":[\"icon\",\"library\"]}": {
+          "icon": "ion-ios-arrow-up",
+          "library": "ionicons"
+        }
+      },
+      "faqSchema": {
+        "{\"type\":\"boolean\"}": true
+      },
+      "titleBackgroundColor": {
+        "{\"type\":\"object\",\"keys\":[\"raw\"]}": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "titleBorder": {
+        "{\"type\":\"object\",\"keys\":[\"radius\"]}": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        }
+      },
+      "_widthMax": {
+        "{\"type\":\"string\"}": "896px"
+      },
+      "_width": {
+        "{\"type\":\"string\"}": "100%"
+      },
+      "titlePadding": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": {
+          "top": "25",
+          "bottom": "25",
+          "left": "20",
+          "right": "20"
+        }
+      },
+      "iconTypography": {
+        "{\"type\":\"object\",\"keys\":[\"font-size\"]}": {
+          "font-size": "28px"
+        }
+      },
+      "iconExpandedTypography": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-size\"]}": {
+          "font-size": "28px",
+          "color": {
+            "raw": "#EF5366"
+          }
+        }
+      },
+      "titleActiveBoxShadow": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"values\"]}": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "4px",
+            "blur": "12px",
+            "spread": "0"
+          },
+          "color": {
+            "raw": "#C7C7CC3D"
+          }
+        }
+      },
+      "titleTypography": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\"]}": {
+          "font-size": "20px",
+          "line-height": "36px",
+          "letter-spacing": "0%",
+          "font-weight": "600",
+          "color": {
+            "raw": "#3D3D3D"
+          },
+          "font-family": "Source Sans 3"
+        }
+      },
+      "titleMargin": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": {
+          "bottom": "0"
+        }
+      },
+      "titleActiveTypography": {
+        "{\"type\":\"object\",\"keys\":[\"color\"]}": {
+          "color": {
+            "raw": "#EF5366"
+          }
+        }
+      },
+      "contentPadding": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": {
+          "bottom": "25",
+          "left": "20",
+          "right": "20",
+          "top": "0"
+        }
+      },
+      "contentBackgroundColor": {
+        "{\"type\":\"object\",\"keys\":[\"raw\"]}": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "contentBorder": {
+        "{\"type\":\"object\",\"keys\":[\"radius\"]}": {
+          "radius": {
+            "left": "8px",
+            "bottom": "8px"
+          }
+        }
+      },
+      "iconPosition": {
+        "{\"type\":\"string\"}": "right"
+      },
+      "titleActiveBorder": {
+        "{\"type\":\"object\",\"keys\":[\"radius\"]}": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "left": "0",
+            "bottom": "0"
+          }
+        }
+      },
+      "contentTypography": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\"]}": {
+          "font-size": "17px",
+          "font-family": "Source Sans 3",
+          "color": {
+            "raw": "#3D3D3DCC"
+          },
+          "line-height": "25.5px",
+          "letter-spacing": "0",
+          "font-weight": "400"
+        }
+      },
+      "_cssCustom": {
+        "{\"type\":\"string\"}": "#brxe-pwytye .brx-open .accordion-title-wrapper {\n\tpadding-bottom: 10px !importa…"
+      },
+      "_display": {
+        "{\"type\":\"string\"}": "flex"
+      },
+      "_flexDirection": {
+        "{\"type\":\"string\"}": "column"
+      },
+      "_gap": {
+        "{\"type\":\"string\"}": "32px"
+      }
+    }
+  }
+}

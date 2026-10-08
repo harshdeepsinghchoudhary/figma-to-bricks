@@ -1,0 +1,126 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "who-we-are",
+      "figmaNodeId": "32:1326",
+      "background": {
+        "color": "#FBF0F5"
+      },
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "justify": "center",
+        "align": "center",
+        "gap": null
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "who-we-are-heading-block",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 4
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "who-we-are-title",
+              "figmaNodeId": "32:1330",
+              "text": "Who We Are",
+              "level": 3,
+              "typography": {
+                "fontFamily": "Source Sans Pro",
+                "fontSize": 44,
+                "fontWeight": 700,
+                "lineHeight": "140%",
+                "color": "#3D3D3D",
+                "align": "left"
+              }
+            },
+            {
+              "type": "unsupported",
+              "id": "heading-underline",
+              "figmaNodeId": "32:1331",
+              "notes": [
+                "Decorative underline rule; VECTOR asset pruned but treated as a line/separator with no schema equivalent for plain rules."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "intro-row",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 141.4,
+            "align": "start"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "generating-leads-illustration",
+              "figmaNodeId": "32:1332",
+              "asset": {
+                "nodeId": "32:1332",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "intro-copy",
+              "figmaNodeId": "32:1327",
+              "text": "At Machplus, we are passionate about digital marketing and strive to deliver exceptional results to our clients. We consist of a team of experienced professionals who are well-versed in the ever-evolving world of online marketing. Our mission is to help businesses of all sizes harness the power of digital platforms to boost their visibility, drive traffic, and increase conversions. \n\nOur team at Machplus is dedicated to staying ahead of the curve when it comes to digital marketing trends. We continuously educate ourselves on the latest strategies and tools to ensure that we provide cutting-edge solutions to our clients. By combining creativity with data-driven insights, we tailor our approach to each client's unique needs, ensuring that every campaign we launch is optimized for success.",
+              "typography": {
+                "fontFamily": "Source Sans 3",
+                "fontSize": 17,
+                "fontWeight": 400,
+                "lineHeight": "25.5px",
+                "color": "#3D3D3D",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "transparency-row",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 141,
+            "align": "start"
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "transparency-copy",
+              "figmaNodeId": "32:1328",
+              "text": "One of the key pillars of our philosophy at Machplus is transparency. We believe in open communication and collaboration with our clients every step of the way. From setting clear objectives at the beginning of a project to providing detailed reports on campaign performance, we strive to build trust and foster long-lasting partnerships with our clients.\n\nOur dedication to transparency ensures that our clients are always informed and involved in the decision-making process, leading to more effective and impactful digital marketing strategies.",
+              "typography": {
+                "fontFamily": "Source Sans 3",
+                "fontSize": 17,
+                "fontWeight": 400,
+                "lineHeight": "25.5px",
+                "color": "#3D3D3D",
+                "align": "left"
+              }
+            },
+            {
+              "type": "image",
+              "id": "social-share-illustration",
+              "figmaNodeId": "32:1828",
+              "asset": {
+                "nodeId": "32:1828",
+                "kind": "svg"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

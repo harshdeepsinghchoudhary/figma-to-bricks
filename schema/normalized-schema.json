@@ -1,0 +1,548 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "normalized-schema",
+  "title": "Normalized design (builder-agnostic)",
+  "description": "What the LLM produces from Figma and what the Bricks compiler consumes. Describes design meaning and Figma-measured values only. No Bricks setting names, no element ids, no WordPress ids. All lengths are numbers in px unless a field says otherwise. Every value must come from Figma node data, never estimated from the screenshot. If something cannot be expressed here (gradients, strokes, absolute positioning, blend modes, glows, animations), do not invent a field: describe it in the node's `notes` array so it shows up in the QA report.",
+  "$ref": "#/definitions/page",
+  "definitions": {
+    "hex": {
+      "type": "string",
+      "pattern": "^#([0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$",
+      "description": "#RRGGBB or #RRGGBBAA"
+    },
+    "cssUnitValue": {
+      "type": "string",
+      "pattern": "^-?\\d+(\\.\\d+)?(px|%)$",
+      "description": "Number with an explicit unit, e.g. \"135%\" or \"25.5px\". The unit is mandatory because % and px render very differently."
+    },
+    "px": {
+      "type": "number"
+    },
+    "sides": {
+      "type": "object",
+      "description": "Any subset of sides, px. Omitted sides are left unset.",
+      "additionalProperties": false,
+      "properties": {
+        "top": {
+          "$ref": "#/definitions/px"
+        },
+        "right": {
+          "$ref": "#/definitions/px"
+        },
+        "bottom": {
+          "$ref": "#/definitions/px"
+        },
+        "left": {
+          "$ref": "#/definitions/px"
+        }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Auto-layout of THIS node's children plus its own spacing.",
+      "properties": {
+        "display": {
+          "enum": [
+            "flex",
+            "block"
+          ]
+        },
+        "direction": {
+          "enum": [
+            "row",
+            "column"
+          ]
+        },
+        "gap": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Applied to both row and column gap."
+        },
+        "rowGap": {
+          "type": "number",
+          "minimum": 0
+        },
+        "columnGap": {
+          "type": "number",
+          "minimum": 0
+        },
+        "align": {
+          "enum": [
+            "start",
+            "center",
+            "end",
+            "stretch"
+          ],
+          "description": "Cross-axis alignment of children."
+        },
+        "justify": {
+          "enum": [
+            "start",
+            "center",
+            "end",
+            "space-between"
+          ],
+          "description": "Main-axis distribution of children."
+        },
+        "wrap": {
+          "type": "boolean"
+        },
+        "padding": {
+          "$ref": "#/definitions/sides"
+        },
+        "margin": {
+          "$ref": "#/definitions/sides"
+        }
+      }
+    },
+    "size": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "number = px. Strings pass through as CSS (\"100%\", \"calc((100% - 64px) / 3)\"). \"fill\" = stretch to parent (100%). \"hug\" = size to content (left unset).",
+      "properties": {
+        "width": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "maxWidth": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "minHeight": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "background": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Solid fill via `color`, OR a linear gradient via `gradient`. Image fills go in `notes`. Set exactly one of `color` / `gradient`.",
+      "properties": {
+        "color": {
+          "$ref": "#/definitions/hex"
+        },
+        "gradient": {
+          "$ref": "#/definitions/gradient"
+        }
+      }
+    },
+    "gradient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "angle",
+        "stops"
+      ],
+      "description": "Linear gradient only (radial/angular go in `notes`). Matches Bricks' native _gradient setting. `angle` in degrees, from Figma's gradientHandlePositions. `stops` ordered from position 0 to 1.",
+      "properties": {
+        "angle": {
+          "type": "number",
+          "description": "Degrees, e.g. 144.8"
+        },
+        "stops": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "color",
+              "position"
+            ],
+            "properties": {
+              "color": {
+                "$ref": "#/definitions/hex"
+              },
+              "position": {
+                "type": "number",
+                "minimum": -500,
+                "maximum": 600,
+                "description": "Percent along the CSS gradient line. Usually 0-100, but may fall outside it (e.g. -4.65, 107.43) when Figma's gradient handles extend past the box."
+              }
+            }
+          }
+        }
+      }
+    },
+    "border": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Uniform corner radius, and a uniform solid stroke (color as #RRGGBB[AA], width in px). Per-corner radii and non-solid strokes go in `notes`.",
+      "properties": {
+        "radius": {
+          "type": "number",
+          "minimum": 0
+        },
+        "color": {
+          "type": "string",
+          "description": "Stroke colour, hex, alpha baked in as #RRGGBBAA"
+        },
+        "width": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Uniform stroke width in px"
+        }
+      }
+    },
+    "boxShadow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "color",
+        "blur",
+        "offsetX",
+        "offsetY",
+        "spread"
+      ],
+      "description": "A single drop shadow, px.",
+      "properties": {
+        "color": {
+          "$ref": "#/definitions/hex"
+        },
+        "blur": {
+          "type": "number",
+          "minimum": 0
+        },
+        "offsetX": {
+          "type": "number"
+        },
+        "offsetY": {
+          "type": "number"
+        },
+        "spread": {
+          "type": "number"
+        }
+      }
+    },
+    "typography": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fontFamily": {
+          "type": "string",
+          "description": "Exact family name from Figma."
+        },
+        "fontSize": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "px"
+        },
+        "fontWeight": {
+          "type": "number",
+          "minimum": 100,
+          "maximum": 900
+        },
+        "lineHeight": {
+          "$ref": "#/definitions/cssUnitValue"
+        },
+        "letterSpacing": {
+          "$ref": "#/definitions/cssUnitValue"
+        },
+        "color": {
+          "$ref": "#/definitions/hex"
+        },
+        "colorGradient": {
+          "$ref": "#/definitions/gradient",
+          "description": "Linear gradient text fill. Set at most one of `color` / `colorGradient`."
+        },
+        "align": {
+          "enum": [
+            "left",
+            "center",
+            "right",
+            "justify"
+          ]
+        },
+        "textTransform": {
+          "enum": [
+            "uppercase",
+            "lowercase",
+            "capitalize"
+          ],
+          "description": "CSS text-transform, set from the Figma text case"
+        }
+      }
+    },
+    "styleOverride": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Only the style properties that DIFFER from desktop at this breakpoint. Never content, never structure.",
+      "properties": {
+        "layout": {
+          "$ref": "#/definitions/layout"
+        },
+        "size": {
+          "$ref": "#/definitions/size"
+        },
+        "background": {
+          "$ref": "#/definitions/background"
+        },
+        "border": {
+          "$ref": "#/definitions/border"
+        },
+        "boxShadow": {
+          "$ref": "#/definitions/boxShadow"
+        },
+        "typography": {
+          "$ref": "#/definitions/typography"
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "id"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "section",
+            "container",
+            "row",
+            "column",
+            "block",
+            "heading",
+            "text",
+            "text-basic",
+            "button",
+            "image",
+            "icon",
+            "spacer",
+            "unsupported"
+          ],
+          "description": "section = full-width page band. container = width-constrained wrapper inside a section. row/column = flex group with that direction. block = plain non-flex wrapper. text = paragraph copy (may contain inline HTML). text-basic = short plain label/caption, no HTML. unsupported = a Figma element with no equivalent yet (e.g. accordion, tabs, form, slider); describe it in `notes`."
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Unique semantic kebab-case slug, e.g. hero-heading. Not the Figma id."
+        },
+        "figmaNodeId": {
+          "type": "string",
+          "description": "Figma node id this came from (e.g. \"12:345\"). Lets the QA stage match rendered elements back to Figma geometry."
+        },
+        "text": {
+          "type": "string",
+          "description": "Exact text from Figma, character for character."
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6,
+          "description": "Heading level. Default 2."
+        },
+        "href": {
+          "type": "string",
+          "description": "Button link target if the design specifies one."
+        },
+        "asset": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "nodeId",
+            "kind"
+          ],
+          "properties": {
+            "nodeId": {
+              "type": "string",
+              "description": "Figma node id; must exist in asset-manifest.json."
+            },
+            "kind": {
+              "enum": [
+                "image",
+                "svg"
+              ]
+            }
+          }
+        },
+        "layout": {
+          "$ref": "#/definitions/layout"
+        },
+        "size": {
+          "$ref": "#/definitions/size"
+        },
+        "background": {
+          "$ref": "#/definitions/background"
+        },
+        "border": {
+          "$ref": "#/definitions/border"
+        },
+        "boxShadow": {
+          "$ref": "#/definitions/boxShadow"
+        },
+        "typography": {
+          "$ref": "#/definitions/typography"
+        },
+        "responsive": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Only fill this if the Figma file has explicit tablet/mobile designs for this node. Never invent responsive behavior from a desktop-only frame.",
+          "properties": {
+            "tablet_portrait": {
+              "$ref": "#/definitions/styleOverride"
+            },
+            "mobile_landscape": {
+              "$ref": "#/definitions/styleOverride"
+            },
+            "mobile_portrait": {
+              "$ref": "#/definitions/styleOverride"
+            }
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Anything in Figma this schema cannot express. Surfaced in the compile report."
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "heading",
+                  "text",
+                  "text-basic",
+                  "button"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "text"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "image",
+                  "icon"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "asset"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "unsupported"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "notes"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "heading",
+                  "text",
+                  "text-basic",
+                  "button",
+                  "image",
+                  "icon",
+                  "spacer",
+                  "unsupported"
+                ]
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": [
+                "children"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "children"
+      ],
+      "properties": {
+        "type": {
+          "const": "page"
+        },
+        "children": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/node"
+          }
+        },
+        "_uncertain": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Values the Figma data did not contain and you left out rather than guessed."
+        }
+      }
+    }
+  }
+}

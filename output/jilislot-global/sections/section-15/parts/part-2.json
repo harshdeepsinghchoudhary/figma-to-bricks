@@ -1,0 +1,56 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "security-fair-play-section",
+      "children": [
+        {
+          "type": "button",
+          "id": "learn-more-button",
+          "figmaNodeId": "8226:293",
+          "text": "Learn More",
+          "background": {
+            "color": "#FCC40B"
+          },
+          "border": {
+            "radius": 400
+          },
+          "layout": {
+            "padding": {
+              "top": 15,
+              "bottom": 15,
+              "left": 32,
+              "right": 32
+            },
+            "display": "flex",
+            "direction": "row",
+            "align": "center",
+            "justify": "center",
+            "gap": 7
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 600,
+            "lineHeight": "19.36px",
+            "color": "#000000",
+            "align": "left"
+          }
+        },
+        {
+          "type": "image",
+          "id": "cybersecurity-image",
+          "figmaNodeId": "8226:295",
+          "asset": {
+            "nodeId": "8226:295",
+            "kind": "image"
+          },
+          "border": {
+            "radius": 16
+          }
+        }
+      ]
+    }
+  ]
+}

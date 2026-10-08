@@ -1,0 +1,180 @@
+[
+  {
+    "id": "v8fpyf",
+    "name": "heading",
+    "parent": "hz1oaw",
+    "children": [],
+    "settings": {
+      "text": "Jili Slot - Play Jili Online Slot | Free Games Play",
+      "tag": "h1",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "58.09px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "49tpps",
+    "name": "text",
+    "parent": "hz1oaw",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>",
+      "_width": "100%",
+      "_widthMax": "518px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "hz1oaw",
+    "name": "div",
+    "parent": "kv4ay1",
+    "children": [
+      "v8fpyf",
+      "49tpps"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "4iihj6",
+    "name": "button",
+    "parent": "kv4ay1",
+    "children": [],
+    "settings": {
+      "text": "Get Started",
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "7",
+      "_columnGap": "7",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FCC40B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "400px",
+          "right": "400px",
+          "bottom": "400px",
+          "left": "400px"
+        }
+      }
+    }
+  },
+  {
+    "id": "kv4ay1",
+    "name": "div",
+    "parent": "u2gg1j",
+    "children": [
+      "hz1oaw",
+      "4iihj6"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "32",
+      "_columnGap": "32",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "619px"
+    }
+  },
+  {
+    "id": "u2gg1j",
+    "name": "container",
+    "parent": "aogi69",
+    "children": [
+      "kv4ay1"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px",
+      "_position": "relative",
+      "_zIndex": "1"
+    }
+  },
+  {
+    "id": "aogi69",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "u2gg1j"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "126",
+        "right": "16",
+        "bottom": "125",
+        "left": "16"
+      },
+      "_padding:tablet_portrait": {
+        "top": "120",
+        "bottom": "120"
+      },
+      "_padding:mobile_landscape": {
+        "top": "60",
+        "bottom": "60"
+      },
+      "_background": {
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/banner-1-8222_819.png",
+          "url": "../../assets/banner-1-8222_819.png"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll"
+      },
+      "_position": "relative",
+      "_overflow": "hidden"
+    }
+  }
+]

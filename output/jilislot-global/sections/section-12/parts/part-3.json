@@ -1,0 +1,83 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jilislot-global-part3",
+      "figmaNodeId": "scope",
+      "background": {
+        "color": "#181818"
+      },
+      "border": {
+        "radius": 12
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8226:134",
+          "asset": {
+            "nodeId": "8226:134",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-1261152831-1",
+          "figmaNodeId": "8226:136",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-1261152830-1",
+              "figmaNodeId": "8226:137",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fortune-gems",
+                  "figmaNodeId": "8226:138",
+                  "text": "Fortune Gems",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": 600,
+                    "lineHeight": "24.2px",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "rtp-percentage",
+                  "figmaNodeId": "8226:139",
+                  "text": "RTP Percentage: (96%)+ (97%+)",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 500,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "type-classic",
+              "figmaNodeId": "8226:140",
+              "text": "Type: Classic, Bonus Buy, Jackpot",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 500,
+                "lineHeight": "27px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout and size properties omitted"
+  ]
+}

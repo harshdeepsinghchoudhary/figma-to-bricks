@@ -1,0 +1,614 @@
+[
+  {
+    "id": "4zs3yb",
+    "name": "heading",
+    "parent": "t6kd9u",
+    "children": [],
+    "settings": {
+      "text": "FAQ",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "700",
+        "line-height": "41.15px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "dvg11s",
+    "name": "text-basic",
+    "parent": "2f6mqz",
+    "children": [],
+    "settings": {
+      "text": "What makes Jili slots different from other slot providers?",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "30px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "p0c2za",
+    "name": "icon",
+    "parent": "2f6mqz",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-8226_550.svg",
+          "url": "../../assets/frame-8226_550.svg"
+        },
+        "height": "26",
+        "width": "fill"
+      },
+      "_widthMax": "26px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "2f6mqz",
+    "name": "div",
+    "parent": "wje7tw",
+    "children": [
+      "dvg11s",
+      "p0c2za"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "428",
+      "_columnGap": "428",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "wje7tw",
+    "name": "div",
+    "parent": "un6113",
+    "children": [
+      "2f6mqz"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "20",
+        "right": "27",
+        "bottom": "20",
+        "left": "27"
+      },
+      "_background": {
+        "color": {
+          "raw": "#1B1B1B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "jnpawk",
+    "name": "text-basic",
+    "parent": "ucr6hy",
+    "children": [],
+    "settings": {
+      "text": "How can I play Jili games for free before betting real money?",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "30px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "txlncs",
+    "name": "text",
+    "parent": "ehym65",
+    "children": [],
+    "settings": {
+      "text": "<p>How can I play Jili games for free before betting real money?</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "30px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "fhk21d",
+    "name": "icon",
+    "parent": "ehym65",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-8226_550.svg",
+          "url": "../../assets/frame-8226_550.svg"
+        },
+        "height": "26",
+        "width": "fill"
+      },
+      "_widthMax": "26px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "ehym65",
+    "name": "div",
+    "parent": "ucr6hy",
+    "children": [
+      "txlncs",
+      "fhk21d"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "392",
+      "_columnGap": "392",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "ucr6hy",
+    "name": "div",
+    "parent": "un6113",
+    "children": [
+      "jnpawk",
+      "ehym65"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_background": {
+        "color": {
+          "raw": "#1B1B1B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "mcxokw",
+    "name": "text-basic",
+    "parent": "o8qa35",
+    "children": [],
+    "settings": {
+      "text": "What is the RTP percentage of Jili slot games?",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "30px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "m825gd",
+    "name": "icon",
+    "parent": "o8qa35",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-8226_550.svg",
+          "url": "../../assets/frame-8226_550.svg"
+        },
+        "height": "26",
+        "width": "fill"
+      },
+      "_widthMax": "26px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "o8qa35",
+    "name": "div",
+    "parent": "l8ndy6",
+    "children": [
+      "mcxokw",
+      "m825gd"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "526",
+      "_columnGap": "526",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "l8ndy6",
+    "name": "div",
+    "parent": "7sbto3",
+    "children": [
+      "o8qa35"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "7sbto3",
+    "name": "div",
+    "parent": "un6113",
+    "children": [
+      "l8ndy6"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "20",
+        "right": "27",
+        "bottom": "20",
+        "left": "27"
+      },
+      "_background": {
+        "color": {
+          "raw": "#1B1B1B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "x5uwl5",
+    "name": "text-basic",
+    "parent": "qlpl9p",
+    "children": [],
+    "settings": {
+      "text": "Are Jili games safe and fair to play?",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "30px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "chqj9e",
+    "name": "icon",
+    "parent": "qlpl9p",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-8226_550.svg",
+          "url": "../../assets/frame-8226_550.svg"
+        },
+        "height": "26",
+        "width": "fill"
+      },
+      "_widthMax": "26px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "qlpl9p",
+    "name": "div",
+    "parent": "fopq00",
+    "children": [
+      "x5uwl5",
+      "chqj9e"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "631",
+      "_columnGap": "631",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "fopq00",
+    "name": "div",
+    "parent": "un6113",
+    "children": [
+      "qlpl9p"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "20",
+        "right": "27",
+        "bottom": "20",
+        "left": "27"
+      },
+      "_background": {
+        "color": {
+          "raw": "#1B1B1B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "prin15",
+    "name": "text",
+    "parent": "5jqu84",
+    "children": [],
+    "settings": {
+      "text": "<p>How do I claim the Jili Games Free 100 bonus?</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "30px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "yoml68",
+    "name": "icon",
+    "parent": "5jqu84",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-8226_550.svg",
+          "url": "../../assets/frame-8226_550.svg"
+        },
+        "height": "26",
+        "width": "fill"
+      },
+      "_widthMax": "26px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "5jqu84",
+    "name": "div",
+    "parent": "glbu3j",
+    "children": [
+      "prin15",
+      "yoml68"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "526",
+      "_columnGap": "526",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "glbu3j",
+    "name": "div",
+    "parent": "gn8tgf",
+    "children": [
+      "5jqu84"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "turap1",
+    "name": "text",
+    "parent": "gn8tgf",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.</p>",
+      "_width": "100%",
+      "_widthMax": "901px",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFFCC"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "gn8tgf",
+    "name": "div",
+    "parent": "4kvp8d",
+    "children": [
+      "glbu3j",
+      "turap1"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "4kvp8d",
+    "name": "div",
+    "parent": "un6113",
+    "children": [
+      "gn8tgf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "20",
+        "right": "27",
+        "bottom": "20",
+        "left": "27"
+      },
+      "_background": {
+        "color": {
+          "raw": "#1B1B1B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "un6113",
+    "name": "div",
+    "parent": "9dp3ia",
+    "children": [
+      "wje7tw",
+      "ucr6hy",
+      "7sbto3",
+      "fopq00",
+      "4kvp8d"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "12",
+      "_columnGap": "12",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "9dp3ia",
+    "name": "div",
+    "parent": "t6kd9u",
+    "children": [
+      "un6113"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "t6kd9u",
+    "name": "container",
+    "parent": "2lo76b",
+    "children": [
+      "4zs3yb",
+      "9dp3ia"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "50",
+      "_columnGap": "50",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "2lo76b",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "t6kd9u"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

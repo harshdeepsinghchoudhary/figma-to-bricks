@@ -1,0 +1,127 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "card",
+      "figmaNodeId": "8222:1016",
+      "background": {
+        "color": "#191818"
+      },
+      "border": {
+        "radius": 10
+      },
+      "size": {
+        "width": 282,
+        "height": 289
+      },
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 24,
+        "padding": {
+          "top": 14,
+          "left": 14,
+          "right": 14,
+          "bottom": 14
+        },
+        "align": "center"
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "hero-image",
+          "figmaNodeId": "8222:1022",
+          "asset": {
+            "nodeId": "8222:1022",
+            "kind": "image"
+          },
+          "size": {
+            "width": 254,
+            "height": 135
+          },
+          "border": {
+            "radius": 4
+          },
+          "notes": [
+            "imageFill: FILL scale"
+          ]
+        },
+        {
+          "type": "column",
+          "id": "card-content",
+          "figmaNodeId": "8222:1018",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8,
+            "align": "center"
+          },
+          "size": {
+            "width": 227,
+            "height": 92
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "card-title",
+              "figmaNodeId": "8222:1019",
+              "text": "Jili Super Ace Slot",
+              "level": 1,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "21.78px",
+                "color": "#FFFFFF"
+              },
+              "size": {
+                "width": 227
+              }
+            },
+            {
+              "type": "text",
+              "id": "card-subtitle",
+              "figmaNodeId": "8222:1020",
+              "text": "High volatility, combo wins",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF"
+              },
+              "size": {
+                "width": 227
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "card-rtp",
+              "figmaNodeId": "8222:1021",
+              "text": "RTP: 96.00%",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF"
+              },
+              "size": {
+                "width": 110
+              },
+              "layout": {
+                "margin": {
+                  "left": 58.5
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "card-content: dropped unknown field \"offset\""
+  ]
+}

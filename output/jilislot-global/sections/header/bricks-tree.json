@@ -1,0 +1,278 @@
+[
+  {
+    "id": "77sgmz",
+    "name": "image",
+    "parent": "esspm5",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-233-8219_1238.png",
+        "url": "../../assets/image-233-8219_1238.png"
+      },
+      "_width": "100%",
+      "_widthMax": "99px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "04bkcv",
+    "name": "text-basic",
+    "parent": "9lb3a2",
+    "children": [],
+    "settings": {
+      "text": "Home",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left",
+        "text-transform": "uppercase"
+      }
+    }
+  },
+  {
+    "id": "0thc1d",
+    "name": "text-basic",
+    "parent": "9lb3a2",
+    "children": [],
+    "settings": {
+      "text": "Company",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left",
+        "text-transform": "uppercase"
+      }
+    }
+  },
+  {
+    "id": "db41y9",
+    "name": "text-basic",
+    "parent": "9lb3a2",
+    "children": [],
+    "settings": {
+      "text": "GAMES",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "yb1z8x",
+    "name": "text-basic",
+    "parent": "9lb3a2",
+    "children": [],
+    "settings": {
+      "text": "CONTACT US",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "9lb3a2",
+    "name": "div",
+    "parent": "esspm5",
+    "children": [
+      "04bkcv",
+      "0thc1d",
+      "db41y9",
+      "yb1z8x"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "40",
+      "_columnGap": "40",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "414px",
+      "_typography": {
+        "letter-spacing": "0%",
+        "text-align": "left"
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "esspm5",
+    "name": "div",
+    "parent": "uqyekz",
+    "children": [
+      "77sgmz",
+      "9lb3a2"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "294",
+      "_columnGap": "294",
+      "_alignItems": "center",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_widthMax": "807px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "e27ai8",
+    "name": "image",
+    "parent": "qfakkm",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8219_48.png",
+        "url": "../../assets/image-8219_48.png"
+      },
+      "_width": "100%",
+      "_widthMax": "40px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "u33g0z",
+    "name": "icon",
+    "parent": "qfakkm",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-8219_1245.svg",
+          "url": "../../assets/frame-8219_1245.svg"
+        },
+        "height": "14",
+        "width": "fill"
+      },
+      "_widthMax": "14px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "qfakkm",
+    "name": "div",
+    "parent": "uqyekz",
+    "children": [
+      "e27ai8",
+      "u33g0z"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "62px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "uqyekz",
+    "name": "div",
+    "parent": "ncvv1j",
+    "children": [
+      "esspm5",
+      "qfakkm"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "ncvv1j",
+    "name": "container",
+    "parent": "qkij6m",
+    "children": [
+      "uqyekz"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "qkij6m",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "ncvv1j"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "17",
+        "right": "16",
+        "bottom": "18",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#282828"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "top": "9",
+        "bottom": "9"
+      },
+      "_padding:mobile_landscape": {
+        "top": "9",
+        "bottom": "9"
+      }
+    }
+  }
+]
