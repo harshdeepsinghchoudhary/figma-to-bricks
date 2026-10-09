@@ -1,8 +1,8 @@
 [
   {
-    "id": "i3e1eq",
+    "id": "3h3fz2",
     "name": "heading",
-    "parent": "d491sf",
+    "parent": "p4wlp9",
     "children": [],
     "settings": {
       "text": "Secure and Flexible Deposit and Withdrawal Options",
@@ -21,9 +21,9 @@
     }
   },
   {
-    "id": "in6bcm",
+    "id": "eo35ck",
     "name": "heading",
-    "parent": "bg6i6m",
+    "parent": "a1u00l",
     "children": [],
     "settings": {
       "text": "1. Credit/Debit Cards",
@@ -42,9 +42,9 @@
     }
   },
   {
-    "id": "ac8vl5",
+    "id": "u035of",
     "name": "text-basic",
-    "parent": "bg6i6m",
+    "parent": "a1u00l",
     "children": [],
     "settings": {
       "text": "Widely accepted and easy to use, cards are a go-to for many players.",
@@ -62,12 +62,12 @@
     }
   },
   {
-    "id": "bg6i6m",
+    "id": "a1u00l",
     "name": "div",
-    "parent": "wl8yre",
+    "parent": "u1ta8c",
     "children": [
-      "in6bcm",
-      "ac8vl5"
+      "eo35ck",
+      "u035of"
     ],
     "settings": {
       "_display": "flex",
@@ -79,9 +79,9 @@
     }
   },
   {
-    "id": "qq6zya",
+    "id": "4juv95",
     "name": "text",
-    "parent": "9xt2ky",
+    "parent": "o6zbgi",
     "children": [],
     "settings": {
       "text": "<p>✅ Benefits: Instant deposits, high security</p>",
@@ -99,9 +99,9 @@
     }
   },
   {
-    "id": "8zzh06",
+    "id": "6chtf0",
     "name": "text",
-    "parent": "9xt2ky",
+    "parent": "o6zbgi",
     "children": [],
     "settings": {
       "text": "<p>🛠️ How to Use: Enter your card details at checkout</p>",
@@ -119,9 +119,9 @@
     }
   },
   {
-    "id": "jaaaqo",
+    "id": "vyjl5h",
     "name": "text",
-    "parent": "9xt2ky",
+    "parent": "o6zbgi",
     "children": [],
     "settings": {
       "text": "<p>⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days</p>",
@@ -139,9 +139,9 @@
     }
   },
   {
-    "id": "fmk115",
+    "id": "35v78u",
     "name": "text",
-    "parent": "9xt2ky",
+    "parent": "o6zbgi",
     "children": [],
     "settings": {
       "text": "<p>📝 Note: May require verification for large withdrawals</p>",
@@ -159,14 +159,14 @@
     }
   },
   {
-    "id": "9xt2ky",
+    "id": "o6zbgi",
     "name": "div",
-    "parent": "wl8yre",
+    "parent": "u1ta8c",
     "children": [
-      "qq6zya",
-      "8zzh06",
-      "jaaaqo",
-      "fmk115"
+      "4juv95",
+      "6chtf0",
+      "vyjl5h",
+      "35v78u"
     ],
     "settings": {
       "_display": "flex",
@@ -178,12 +178,12 @@
     }
   },
   {
-    "id": "wl8yre",
+    "id": "u1ta8c",
     "name": "div",
-    "parent": "infufw",
+    "parent": "16g13s",
     "children": [
-      "bg6i6m",
-      "9xt2ky"
+      "a1u00l",
+      "o6zbgi"
     ],
     "settings": {
       "_display": "flex",
@@ -194,11 +194,11 @@
     }
   },
   {
-    "id": "infufw",
+    "id": "16g13s",
     "name": "div",
-    "parent": "c8az2t",
+    "parent": "zsdrpi",
     "children": [
-      "wl8yre"
+      "u1ta8c"
     ],
     "settings": {
       "_display": "flex",
@@ -226,9 +226,9 @@
     }
   },
   {
-    "id": "efnu2r",
+    "id": "w9i0tc",
     "name": "heading",
-    "parent": "vj7wgc",
+    "parent": "s9sqjm",
     "children": [],
     "settings": {
       "text": "2. Bank Transfers",
@@ -247,9 +247,9 @@
     }
   },
   {
-    "id": "my7vcu",
+    "id": "eeuaef",
     "name": "text",
-    "parent": "vj7wgc",
+    "parent": "s9sqjm",
     "children": [],
     "settings": {
       "text": "<p>Widely accepted and easy to use, cards are a go-to for many players.</p>",
@@ -267,12 +267,12 @@
     }
   },
   {
-    "id": "vj7wgc",
+    "id": "s9sqjm",
     "name": "div",
-    "parent": "wtqu4d",
+    "parent": "8dk8ah",
     "children": [
-      "efnu2r",
-      "my7vcu"
+      "w9i0tc",
+      "eeuaef"
     ],
     "settings": {
       "_display": "flex",
@@ -284,9 +284,9 @@
     }
   },
   {
-    "id": "30tp8u",
+    "id": "g3nk05",
     "name": "text",
-    "parent": "55uvip",
+    "parent": "k541wu",
     "children": [],
     "settings": {
       "text": "<p>✅ Benefits: Safe for large amounts, trackable</p>",
@@ -304,9 +304,9 @@
     }
   },
   {
-    "id": "v7p02j",
+    "id": "dzvmu9",
     "name": "text",
-    "parent": "55uvip",
+    "parent": "k541wu",
     "children": [],
     "settings": {
       "text": "<p>🛠️ How to Use: Enter your card details at checkout</p>",
@@ -324,9 +324,9 @@
     }
   },
   {
-    "id": "ery83a",
+    "id": "bfh53c",
     "name": "text",
-    "parent": "55uvip",
+    "parent": "k541wu",
     "children": [],
     "settings": {
       "text": "<p>⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days</p>",
@@ -344,9 +344,9 @@
     }
   },
   {
-    "id": "hdh3vl",
+    "id": "u7uz27",
     "name": "text",
-    "parent": "55uvip",
+    "parent": "k541wu",
     "children": [],
     "settings": {
       "text": "<p>📝 Note: May require verification for large withdrawals</p>",
@@ -364,14 +364,14 @@
     }
   },
   {
-    "id": "55uvip",
+    "id": "k541wu",
     "name": "div",
-    "parent": "wtqu4d",
+    "parent": "8dk8ah",
     "children": [
-      "30tp8u",
-      "v7p02j",
-      "ery83a",
-      "hdh3vl"
+      "g3nk05",
+      "dzvmu9",
+      "bfh53c",
+      "u7uz27"
     ],
     "settings": {
       "_display": "flex",
@@ -383,12 +383,12 @@
     }
   },
   {
-    "id": "wtqu4d",
+    "id": "8dk8ah",
     "name": "div",
-    "parent": "ttj12r",
+    "parent": "co8xha",
     "children": [
-      "vj7wgc",
-      "55uvip"
+      "s9sqjm",
+      "k541wu"
     ],
     "settings": {
       "_display": "flex",
@@ -399,11 +399,11 @@
     }
   },
   {
-    "id": "ttj12r",
+    "id": "co8xha",
     "name": "div",
-    "parent": "c8az2t",
+    "parent": "zsdrpi",
     "children": [
-      "wtqu4d"
+      "8dk8ah"
     ],
     "settings": {
       "_display": "flex",
@@ -431,12 +431,12 @@
     }
   },
   {
-    "id": "c8az2t",
+    "id": "zsdrpi",
     "name": "div",
-    "parent": "d491sf",
+    "parent": "p4wlp9",
     "children": [
-      "infufw",
-      "ttj12r"
+      "16g13s",
+      "co8xha"
     ],
     "settings": {
       "_display": "grid",
@@ -452,9 +452,9 @@
     }
   },
   {
-    "id": "0sfl44",
+    "id": "t7if76",
     "name": "heading",
-    "parent": "itd8c4",
+    "parent": "i5lt68",
     "children": [],
     "settings": {
       "text": "3. E-wallets (bKash, Rocket, UCash, Nagad)",
@@ -473,9 +473,9 @@
     }
   },
   {
-    "id": "e2j0lj",
+    "id": "hvtnhg",
     "name": "text",
-    "parent": "itd8c4",
+    "parent": "i5lt68",
     "children": [],
     "settings": {
       "text": "<p>Widely accepted and easy to use, cards are a go-to for many players.</p>",
@@ -493,12 +493,12 @@
     }
   },
   {
-    "id": "itd8c4",
+    "id": "i5lt68",
     "name": "div",
-    "parent": "qv4gdd",
+    "parent": "wvw2qv",
     "children": [
-      "0sfl44",
-      "e2j0lj"
+      "t7if76",
+      "hvtnhg"
     ],
     "settings": {
       "_display": "flex",
@@ -510,9 +510,9 @@
     }
   },
   {
-    "id": "8c8ty3",
+    "id": "nf6212",
     "name": "text-basic",
-    "parent": "ez51dn",
+    "parent": "l1zkk7",
     "children": [],
     "settings": {
       "text": "✅ Benefits: Instant deposits, high security",
@@ -530,9 +530,9 @@
     }
   },
   {
-    "id": "q4tkpg",
+    "id": "h0mdt1",
     "name": "text-basic",
-    "parent": "ez51dn",
+    "parent": "l1zkk7",
     "children": [],
     "settings": {
       "text": "🛠️ How to Use: Enter your card details at checkout",
@@ -550,9 +550,9 @@
     }
   },
   {
-    "id": "smj1p6",
+    "id": "nhieya",
     "name": "text-basic",
-    "parent": "ez51dn",
+    "parent": "l1zkk7",
     "children": [],
     "settings": {
       "text": "⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days",
@@ -570,9 +570,9 @@
     }
   },
   {
-    "id": "wwoatu",
+    "id": "jxf0px",
     "name": "text-basic",
-    "parent": "ez51dn",
+    "parent": "l1zkk7",
     "children": [],
     "settings": {
       "text": "📝 Note: May require verification for large withdrawals",
@@ -590,14 +590,14 @@
     }
   },
   {
-    "id": "ez51dn",
+    "id": "l1zkk7",
     "name": "div",
-    "parent": "qv4gdd",
+    "parent": "wvw2qv",
     "children": [
-      "8c8ty3",
-      "q4tkpg",
-      "smj1p6",
-      "wwoatu"
+      "nf6212",
+      "h0mdt1",
+      "nhieya",
+      "jxf0px"
     ],
     "settings": {
       "_display": "flex",
@@ -609,12 +609,12 @@
     }
   },
   {
-    "id": "qv4gdd",
+    "id": "wvw2qv",
     "name": "div",
-    "parent": "3vhqi4",
+    "parent": "nb7xv1",
     "children": [
-      "itd8c4",
-      "ez51dn"
+      "i5lt68",
+      "l1zkk7"
     ],
     "settings": {
       "_display": "flex",
@@ -625,11 +625,11 @@
     }
   },
   {
-    "id": "3vhqi4",
+    "id": "nb7xv1",
     "name": "div",
-    "parent": "5drfzg",
+    "parent": "s0p6el",
     "children": [
-      "qv4gdd"
+      "wvw2qv"
     ],
     "settings": {
       "_display": "flex",
@@ -657,9 +657,9 @@
     }
   },
   {
-    "id": "zaaei8",
+    "id": "89i6yu",
     "name": "heading",
-    "parent": "6v53mk",
+    "parent": "poyrdl",
     "children": [],
     "settings": {
       "text": "4. Cryptocurrency (BTC, USDT, ETH)",
@@ -678,9 +678,9 @@
     }
   },
   {
-    "id": "15nnl5",
+    "id": "2zs6sc",
     "name": "text-basic",
-    "parent": "6v53mk",
+    "parent": "poyrdl",
     "children": [],
     "settings": {
       "text": "Widely accepted and easy to use, cards are a go-to for many players.",
@@ -698,12 +698,12 @@
     }
   },
   {
-    "id": "6v53mk",
+    "id": "poyrdl",
     "name": "div",
-    "parent": "723w91",
+    "parent": "h4dgs0",
     "children": [
-      "zaaei8",
-      "15nnl5"
+      "89i6yu",
+      "2zs6sc"
     ],
     "settings": {
       "_display": "flex",
@@ -715,9 +715,9 @@
     }
   },
   {
-    "id": "ito8h6",
+    "id": "lzbvqi",
     "name": "text-basic",
-    "parent": "0oeqwj",
+    "parent": "f0kjv1",
     "children": [],
     "settings": {
       "text": "✅ Benefits: Safe for large amounts, trackable",
@@ -735,9 +735,9 @@
     }
   },
   {
-    "id": "sf8qh6",
+    "id": "y3ja9n",
     "name": "text-basic",
-    "parent": "0oeqwj",
+    "parent": "f0kjv1",
     "children": [],
     "settings": {
       "text": "🛠️ How to Use: Enter your card details at checkout",
@@ -755,9 +755,9 @@
     }
   },
   {
-    "id": "1fbvu5",
+    "id": "3bx8co",
     "name": "text-basic",
-    "parent": "0oeqwj",
+    "parent": "f0kjv1",
     "children": [],
     "settings": {
       "text": "⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days",
@@ -775,9 +775,9 @@
     }
   },
   {
-    "id": "b25ds4",
+    "id": "p8f4kn",
     "name": "text-basic",
-    "parent": "0oeqwj",
+    "parent": "f0kjv1",
     "children": [],
     "settings": {
       "text": "📝 Note: May require verification for large withdrawals",
@@ -795,14 +795,14 @@
     }
   },
   {
-    "id": "0oeqwj",
+    "id": "f0kjv1",
     "name": "div",
-    "parent": "723w91",
+    "parent": "h4dgs0",
     "children": [
-      "ito8h6",
-      "sf8qh6",
-      "1fbvu5",
-      "b25ds4"
+      "lzbvqi",
+      "y3ja9n",
+      "3bx8co",
+      "p8f4kn"
     ],
     "settings": {
       "_display": "flex",
@@ -814,12 +814,12 @@
     }
   },
   {
-    "id": "723w91",
+    "id": "h4dgs0",
     "name": "div",
-    "parent": "vhc364",
+    "parent": "8le9bt",
     "children": [
-      "6v53mk",
-      "0oeqwj"
+      "poyrdl",
+      "f0kjv1"
     ],
     "settings": {
       "_display": "flex",
@@ -830,11 +830,11 @@
     }
   },
   {
-    "id": "vhc364",
+    "id": "8le9bt",
     "name": "div",
-    "parent": "5drfzg",
+    "parent": "s0p6el",
     "children": [
-      "723w91"
+      "h4dgs0"
     ],
     "settings": {
       "_display": "flex",
@@ -862,12 +862,12 @@
     }
   },
   {
-    "id": "5drfzg",
+    "id": "s0p6el",
     "name": "div",
-    "parent": "d491sf",
+    "parent": "p4wlp9",
     "children": [
-      "3vhqi4",
-      "vhc364"
+      "nb7xv1",
+      "8le9bt"
     ],
     "settings": {
       "_display": "grid",
@@ -883,13 +883,13 @@
     }
   },
   {
-    "id": "d491sf",
+    "id": "p4wlp9",
     "name": "div",
-    "parent": "6dgv0w",
+    "parent": "zbs2pv",
     "children": [
-      "i3e1eq",
-      "c8az2t",
-      "5drfzg"
+      "3h3fz2",
+      "zsdrpi",
+      "s0p6el"
     ],
     "settings": {
       "_display": "flex",
@@ -899,11 +899,11 @@
     }
   },
   {
-    "id": "6dgv0w",
+    "id": "zbs2pv",
     "name": "container",
-    "parent": "ixddkb",
+    "parent": "yh1rob",
     "children": [
-      "d491sf"
+      "p4wlp9"
     ],
     "settings": {
       "_display": "flex",
@@ -914,11 +914,11 @@
     }
   },
   {
-    "id": "ixddkb",
+    "id": "yh1rob",
     "name": "section",
     "parent": 0,
     "children": [
-      "6dgv0w"
+      "zbs2pv"
     ],
     "settings": {
       "_padding": {

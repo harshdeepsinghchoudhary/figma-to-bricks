@@ -1,8 +1,8 @@
 [
   {
-    "id": "198lwd",
+    "id": "644uu3",
     "name": "heading",
-    "parent": "0qs9ll",
+    "parent": "fw66pm",
     "children": [],
     "settings": {
       "text": "Conclusion",
@@ -31,9 +31,9 @@
     }
   },
   {
-    "id": "i95d3a",
+    "id": "dbefp3",
     "name": "text",
-    "parent": "0qs9ll",
+    "parent": "fw66pm",
     "children": [],
     "settings": {
       "text": "<p>Winning in Aviator takes more than luck. Use smart strategies, stay in control, and play with a clear plan. The key is to enjoy the game while making smart moves!</p>",
@@ -56,12 +56,12 @@
     }
   },
   {
-    "id": "0qs9ll",
+    "id": "fw66pm",
     "name": "div",
-    "parent": "8ko4wh",
+    "parent": "f55hrz",
     "children": [
-      "198lwd",
-      "i95d3a"
+      "644uu3",
+      "dbefp3"
     ],
     "settings": {
       "_display": "flex",
@@ -73,9 +73,9 @@
     }
   },
   {
-    "id": "66vdy7",
+    "id": "zhsm0d",
     "name": "button",
-    "parent": "8ko4wh",
+    "parent": "f55hrz",
     "children": [],
     "settings": {
       "text": "Get Started",
@@ -112,12 +112,12 @@
     }
   },
   {
-    "id": "8ko4wh",
+    "id": "f55hrz",
     "name": "div",
-    "parent": "8jh2sz",
+    "parent": "j52nmq",
     "children": [
-      "0qs9ll",
-      "66vdy7"
+      "fw66pm",
+      "zhsm0d"
     ],
     "settings": {
       "_display": "flex",
@@ -130,11 +130,11 @@
     }
   },
   {
-    "id": "8jh2sz",
+    "id": "j52nmq",
     "name": "container",
-    "parent": "xe63oz",
+    "parent": "erei7j",
     "children": [
-      "8ko4wh"
+      "f55hrz"
     ],
     "settings": {
       "_display": "flex",
@@ -183,15 +183,15 @@
       "_right::before": "0",
       "_bottom::before": "0",
       "_left::before": "0",
-      "_cssCustom": "#brxe-8jh2sz::before, #brxe-8jh2sz::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-8jh2sz > * {\n  position: relative;\n  z-index: 1;\n}"
+      "_cssCustom": "#brxe-j52nmq::before, #brxe-j52nmq::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-j52nmq > * {\n  position: relative;\n  z-index: 1;\n}"
     }
   },
   {
-    "id": "xe63oz",
+    "id": "erei7j",
     "name": "section",
     "parent": 0,
     "children": [
-      "8jh2sz"
+      "j52nmq"
     ],
     "settings": {
       "_padding": {

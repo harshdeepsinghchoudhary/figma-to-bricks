@@ -1,8 +1,8 @@
 [
   {
-    "id": "zgbt6i",
+    "id": "ide7mb",
     "name": "image",
-    "parent": "0t3tu7",
+    "parent": "qoylo4",
     "children": [],
     "settings": {
       "image": {
@@ -18,9 +18,9 @@
     "themeStyles": []
   },
   {
-    "id": "taojpj",
+    "id": "fkqkzk",
     "name": "text-basic",
-    "parent": "xhks84",
+    "parent": "8uodsj",
     "children": [],
     "settings": {
       "text": "Home",
@@ -39,9 +39,9 @@
     }
   },
   {
-    "id": "utk5yn",
+    "id": "9fqzdx",
     "name": "text-basic",
-    "parent": "xhks84",
+    "parent": "8uodsj",
     "children": [],
     "settings": {
       "text": "Company",
@@ -60,9 +60,9 @@
     }
   },
   {
-    "id": "zquj3k",
+    "id": "y2zimd",
     "name": "text-basic",
-    "parent": "xhks84",
+    "parent": "8uodsj",
     "children": [],
     "settings": {
       "text": "GAMES",
@@ -80,9 +80,9 @@
     }
   },
   {
-    "id": "rmhl2e",
+    "id": "piaazc",
     "name": "text-basic",
-    "parent": "xhks84",
+    "parent": "8uodsj",
     "children": [],
     "settings": {
       "text": "CONTACT US",
@@ -100,14 +100,14 @@
     }
   },
   {
-    "id": "xhks84",
+    "id": "8uodsj",
     "name": "div",
-    "parent": "0t3tu7",
+    "parent": "qoylo4",
     "children": [
-      "taojpj",
-      "utk5yn",
-      "zquj3k",
-      "rmhl2e"
+      "fkqkzk",
+      "9fqzdx",
+      "y2zimd",
+      "piaazc"
     ],
     "settings": {
       "_display": "flex",
@@ -121,12 +121,12 @@
     }
   },
   {
-    "id": "0t3tu7",
+    "id": "qoylo4",
     "name": "div",
-    "parent": "ujg74d",
+    "parent": "kogrf1",
     "children": [
-      "zgbt6i",
-      "xhks84"
+      "ide7mb",
+      "8uodsj"
     ],
     "settings": {
       "_display": "flex",
@@ -138,9 +138,9 @@
     }
   },
   {
-    "id": "tlvqnb",
+    "id": "kl844o",
     "name": "text-basic",
-    "parent": "4yvw11",
+    "parent": "ga4a0k",
     "children": [],
     "settings": {
       "text": "LICENSES &amp; CERTIFICATES",
@@ -158,9 +158,9 @@
     }
   },
   {
-    "id": "9462zk",
+    "id": "0hmnxi",
     "name": "image",
-    "parent": "c83m8z",
+    "parent": "c9i94q",
     "children": [],
     "settings": {
       "image": {
@@ -176,9 +176,9 @@
     "themeStyles": []
   },
   {
-    "id": "9xy8zn",
+    "id": "ei7ax0",
     "name": "image",
-    "parent": "c83m8z",
+    "parent": "c9i94q",
     "children": [],
     "settings": {
       "image": {
@@ -194,12 +194,12 @@
     "themeStyles": []
   },
   {
-    "id": "c83m8z",
+    "id": "c9i94q",
     "name": "div",
-    "parent": "4yvw11",
+    "parent": "ga4a0k",
     "children": [
-      "9462zk",
-      "9xy8zn"
+      "0hmnxi",
+      "ei7ax0"
     ],
     "settings": {
       "_display": "flex",
@@ -211,12 +211,12 @@
     }
   },
   {
-    "id": "4yvw11",
+    "id": "ga4a0k",
     "name": "div",
-    "parent": "ujg74d",
+    "parent": "kogrf1",
     "children": [
-      "tlvqnb",
-      "c83m8z"
+      "kl844o",
+      "c9i94q"
     ],
     "settings": {
       "_display": "flex",
@@ -228,12 +228,12 @@
     }
   },
   {
-    "id": "ujg74d",
+    "id": "kogrf1",
     "name": "div",
-    "parent": "any4wz",
+    "parent": "rvr6vn",
     "children": [
-      "0t3tu7",
-      "4yvw11"
+      "qoylo4",
+      "ga4a0k"
     ],
     "settings": {
       "_display": "flex",
@@ -244,9 +244,9 @@
     }
   },
   {
-    "id": "nfnodl",
+    "id": "k1fzz8",
     "name": "text-basic",
-    "parent": "hsn27t",
+    "parent": "83mso9",
     "children": [],
     "settings": {
       "text": "© 2025 JILI Copyrights. All Rights Reserved",
@@ -264,11 +264,11 @@
     }
   },
   {
-    "id": "hsn27t",
+    "id": "83mso9",
     "name": "div",
-    "parent": "any4wz",
+    "parent": "rvr6vn",
     "children": [
-      "nfnodl"
+      "k1fzz8"
     ],
     "settings": {
       "_display": "flex",
@@ -284,9 +284,9 @@
     }
   },
   {
-    "id": "xh6vw5",
+    "id": "wtgrqv",
     "name": "image",
-    "parent": "any4wz",
+    "parent": "rvr6vn",
     "children": [],
     "settings": {
       "image": {
@@ -302,13 +302,13 @@
     "themeStyles": []
   },
   {
-    "id": "any4wz",
+    "id": "rvr6vn",
     "name": "container",
-    "parent": "w0f6fx",
+    "parent": "96w357",
     "children": [
-      "ujg74d",
-      "hsn27t",
-      "xh6vw5"
+      "kogrf1",
+      "83mso9",
+      "wtgrqv"
     ],
     "settings": {
       "_display": "flex",
@@ -320,11 +320,11 @@
     }
   },
   {
-    "id": "w0f6fx",
+    "id": "96w357",
     "name": "section",
     "parent": 0,
     "children": [
-      "any4wz"
+      "rvr6vn"
     ],
     "settings": {
       "_padding": {

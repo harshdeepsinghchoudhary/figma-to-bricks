@@ -1,8 +1,8 @@
 [
   {
-    "id": "qs8ydp",
+    "id": "hyirph",
     "name": "image",
-    "parent": "ipsj42",
+    "parent": "1g4t5c",
     "children": [],
     "settings": {
       "image": {
@@ -18,11 +18,11 @@
     "themeStyles": []
   },
   {
-    "id": "ipsj42",
+    "id": "1g4t5c",
     "name": "div",
-    "parent": "m3uxct",
+    "parent": "zqcbre",
     "children": [
-      "qs8ydp"
+      "hyirph"
     ],
     "settings": {
       "_display": "flex",
@@ -37,9 +37,9 @@
     }
   },
   {
-    "id": "feqdkl",
+    "id": "klj7o4",
     "name": "heading",
-    "parent": "hvxua4",
+    "parent": "v4e0hk",
     "children": [],
     "settings": {
       "text": "Jili Slot - Play Jili Online Slot | Free Games Play",
@@ -58,9 +58,9 @@
     }
   },
   {
-    "id": "hfhfu3",
+    "id": "ivkn80",
     "name": "text",
-    "parent": "hvxua4",
+    "parent": "v4e0hk",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>",
@@ -80,12 +80,12 @@
     }
   },
   {
-    "id": "hvxua4",
+    "id": "v4e0hk",
     "name": "div",
-    "parent": "t8iryf",
+    "parent": "wr0gr0",
     "children": [
-      "feqdkl",
-      "hfhfu3"
+      "klj7o4",
+      "ivkn80"
     ],
     "settings": {
       "_display": "flex",
@@ -97,9 +97,9 @@
     }
   },
   {
-    "id": "xan5dk",
+    "id": "r4kfb9",
     "name": "button",
-    "parent": "t8iryf",
+    "parent": "wr0gr0",
     "children": [],
     "settings": {
       "text": "Get Started",
@@ -136,12 +136,12 @@
     }
   },
   {
-    "id": "t8iryf",
+    "id": "wr0gr0",
     "name": "div",
-    "parent": "m3uxct",
+    "parent": "zqcbre",
     "children": [
-      "hvxua4",
-      "xan5dk"
+      "v4e0hk",
+      "r4kfb9"
     ],
     "settings": {
       "_display": "flex",
@@ -152,12 +152,12 @@
     }
   },
   {
-    "id": "m3uxct",
+    "id": "zqcbre",
     "name": "div",
-    "parent": "fvu2b0",
+    "parent": "uhmrkz",
     "children": [
-      "ipsj42",
-      "t8iryf"
+      "1g4t5c",
+      "wr0gr0"
     ],
     "settings": {
       "_display": "flex",
@@ -166,11 +166,11 @@
     }
   },
   {
-    "id": "fvu2b0",
+    "id": "uhmrkz",
     "name": "container",
-    "parent": "ri6ozo",
+    "parent": "nputg7",
     "children": [
-      "m3uxct"
+      "zqcbre"
     ],
     "settings": {
       "_display": "flex",
@@ -181,11 +181,11 @@
     }
   },
   {
-    "id": "ri6ozo",
+    "id": "nputg7",
     "name": "section",
     "parent": 0,
     "children": [
-      "fvu2b0"
+      "uhmrkz"
     ],
     "settings": {
       "_padding": {
