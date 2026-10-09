@@ -3,52 +3,22 @@
   "children": [
     {
       "type": "section",
-      "id": "nav-section",
-      "figmaNodeId": "8221:6",
-      "layout": {
-        "display": "flex",
-        "direction": "row",
-        "align": "start",
-        "padding": {
-          "top": 17,
-          "right": 120,
-          "bottom": 18,
-          "left": 120
-        }
-      },
-      "background": {
-        "color": "#282828"
-      },
+      "id": "jilislot-global-header",
+      "figmaNodeId": "scope",
       "children": [
         {
           "type": "row",
-          "id": "nav-row",
+          "id": "frame-1261152820-1",
           "figmaNodeId": "8219:1250",
-          "layout": {
-            "display": "flex",
-            "direction": "row",
-            "align": "start",
-            "gap": 331
-          },
           "children": [
             {
               "type": "row",
-              "id": "left-group",
+              "id": "nav-group",
               "figmaNodeId": "8219:1249",
-              "layout": {
-                "display": "flex",
-                "direction": "row",
-                "align": "center",
-                "justify": "space-between",
-                "gap": 294
-              },
-              "size": {
-                "width": 807
-              },
               "children": [
                 {
                   "type": "image",
-                  "id": "logo-image",
+                  "id": "logo",
                   "figmaNodeId": "8219:1238",
                   "asset": {
                     "nodeId": "8219:1238",
@@ -63,92 +33,97 @@
                   "type": "row",
                   "id": "nav-links",
                   "figmaNodeId": "8219:33",
-                  "layout": {
-                    "display": "flex",
-                    "direction": "row",
-                    "align": "start",
-                    "gap": 40
-                  },
-                  "size": {
-                    "width": 414
-                  },
-                  "typography": {
-                    "align": "left"
-                  },
                   "children": [
                     {
                       "type": "text-basic",
-                      "id": "text-home",
+                      "id": "nav-home",
                       "figmaNodeId": "8219:34",
                       "text": "Home",
                       "typography": {
                         "fontFamily": "Inter",
                         "fontSize": 16,
                         "fontWeight": 500,
-                        "lineHeight": "19.36px",
+                        "align": "left",
                         "color": "#FFFFFF",
-                        "align": "left"
-                      }
+                        "lineHeight": "19.36px",
+                        "textTransform": "uppercase"
+                      },
+                      "notes": [
+                        "textCase: UPPER"
+                      ]
                     },
                     {
                       "type": "text-basic",
-                      "id": "text-company",
+                      "id": "nav-company",
                       "figmaNodeId": "8219:35",
                       "text": "Company",
                       "typography": {
                         "fontFamily": "Inter",
                         "fontSize": 16,
                         "fontWeight": 500,
-                        "lineHeight": "19.36px",
+                        "align": "left",
                         "color": "#FFFFFF",
-                        "align": "left"
-                      }
+                        "lineHeight": "19.36px",
+                        "textTransform": "uppercase"
+                      },
+                      "notes": [
+                        "textCase: UPPER"
+                      ]
                     },
                     {
                       "type": "text-basic",
-                      "id": "text-games",
+                      "id": "nav-games",
                       "figmaNodeId": "8219:36",
                       "text": "GAMES",
                       "typography": {
                         "fontFamily": "Inter",
                         "fontSize": 16,
                         "fontWeight": 500,
-                        "lineHeight": "19.36px",
+                        "align": "left",
                         "color": "#FFFFFF",
-                        "align": "left"
+                        "lineHeight": "19.36px"
                       }
                     },
                     {
                       "type": "text-basic",
-                      "id": "text-contact",
+                      "id": "nav-contact",
                       "figmaNodeId": "8219:37",
                       "text": "CONTACT US",
                       "typography": {
                         "fontFamily": "Inter",
                         "fontSize": 16,
                         "fontWeight": 500,
-                        "lineHeight": "19.36px",
+                        "align": "left",
                         "color": "#FFFFFF",
-                        "align": "left"
+                        "lineHeight": "19.36px"
                       }
                     }
-                  ]
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 40,
+                    "align": "start"
+                  },
+                  "size": {
+                    "width": 414
+                  }
                 }
-              ]
-            },
-            {
-              "type": "row",
-              "id": "right-group",
-              "figmaNodeId": "8219:1248",
+              ],
               "layout": {
                 "display": "flex",
                 "direction": "row",
-                "align": "center",
-                "gap": 8
+                "justify": "space-between",
+                "align": "center"
               },
               "size": {
-                "width": 62
-              },
+                "width": 807
+              }
+            },
+            {
+              "type": "row",
+              "id": "frame-1261152818-1",
+              "figmaNodeId": "8219:1248",
               "children": [
                 {
                   "type": "image",
@@ -165,7 +140,7 @@
                 },
                 {
                   "type": "icon",
-                  "id": "dropdown-icon",
+                  "id": "flag-chevron",
                   "figmaNodeId": "8219:1245",
                   "asset": {
                     "nodeId": "8219:1245",
@@ -176,18 +151,37 @@
                     "height": 14
                   }
                 }
-              ]
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 8,
+                "align": "center"
+              },
+              "size": {
+                "width": 62
+              }
             }
-          ]
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "justify": "space-between",
+            "align": "start"
+          },
+          "size": {
+            "width": 1200
+          }
         }
-      ]
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
     }
   ],
   "_uncertain": [
-    "text-home: dropped unknown field \"typography.textAlign\"",
-    "text-home: dropped unknown field \"typography.textCase\"",
-    "text-company: dropped unknown field \"typography.textAlign\"",
-    "text-company: dropped unknown field \"typography.textCase\"",
-    "text-games: dropped unknown field \"typography.textAlign\""
+    "No explicit typography or asset data provided in the Figma node data for child elements (logo, nav items, language selector)."
   ]
 }

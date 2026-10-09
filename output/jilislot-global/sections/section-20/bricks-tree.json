@@ -1,8 +1,8 @@
 [
   {
-    "id": "92m2pn",
+    "id": "u5340p",
     "name": "image",
-    "parent": "omlrk9",
+    "parent": "tjaxmr",
     "children": [],
     "settings": {
       "image": {
@@ -18,9 +18,9 @@
     "themeStyles": []
   },
   {
-    "id": "gh1n7v",
+    "id": "nj8qlq",
     "name": "text",
-    "parent": "wyx6f6",
+    "parent": "lyb1lh",
     "children": [],
     "settings": {
       "text": "<p>Home</p>",
@@ -39,9 +39,9 @@
     }
   },
   {
-    "id": "5bv8zs",
+    "id": "x1wp0y",
     "name": "text",
-    "parent": "wyx6f6",
+    "parent": "lyb1lh",
     "children": [],
     "settings": {
       "text": "<p>Company</p>",
@@ -60,9 +60,9 @@
     }
   },
   {
-    "id": "mhjjvz",
+    "id": "8suym5",
     "name": "text",
-    "parent": "wyx6f6",
+    "parent": "lyb1lh",
     "children": [],
     "settings": {
       "text": "<p>GAMES</p>",
@@ -80,9 +80,9 @@
     }
   },
   {
-    "id": "bg2cfa",
+    "id": "2xjqpn",
     "name": "text",
-    "parent": "wyx6f6",
+    "parent": "lyb1lh",
     "children": [],
     "settings": {
       "text": "<p>CONTACT US</p>",
@@ -100,14 +100,14 @@
     }
   },
   {
-    "id": "wyx6f6",
+    "id": "lyb1lh",
     "name": "div",
-    "parent": "omlrk9",
+    "parent": "tjaxmr",
     "children": [
-      "gh1n7v",
-      "5bv8zs",
-      "mhjjvz",
-      "bg2cfa"
+      "nj8qlq",
+      "x1wp0y",
+      "8suym5",
+      "2xjqpn"
     ],
     "settings": {
       "_display": "flex",
@@ -121,12 +121,12 @@
     }
   },
   {
-    "id": "omlrk9",
+    "id": "tjaxmr",
     "name": "div",
-    "parent": "wj852n",
+    "parent": "z868r8",
     "children": [
-      "92m2pn",
-      "wyx6f6"
+      "u5340p",
+      "lyb1lh"
     ],
     "settings": {
       "_display": "flex",
@@ -137,9 +137,9 @@
     }
   },
   {
-    "id": "6gymml",
+    "id": "vie6b6",
     "name": "text",
-    "parent": "8b7wvm",
+    "parent": "sfs50d",
     "children": [],
     "settings": {
       "text": "<p>LICENSES &amp; CERTIFICATES</p>",
@@ -157,9 +157,9 @@
     }
   },
   {
-    "id": "9yddg9",
+    "id": "5wioy3",
     "name": "image",
-    "parent": "nu8epv",
+    "parent": "eaut6g",
     "children": [],
     "settings": {
       "image": {
@@ -175,9 +175,9 @@
     "themeStyles": []
   },
   {
-    "id": "cgjscz",
+    "id": "vno0sj",
     "name": "image",
-    "parent": "nu8epv",
+    "parent": "eaut6g",
     "children": [],
     "settings": {
       "image": {
@@ -193,12 +193,12 @@
     "themeStyles": []
   },
   {
-    "id": "nu8epv",
+    "id": "eaut6g",
     "name": "div",
-    "parent": "8b7wvm",
+    "parent": "sfs50d",
     "children": [
-      "9yddg9",
-      "cgjscz"
+      "5wioy3",
+      "vno0sj"
     ],
     "settings": {
       "_display": "flex",
@@ -209,12 +209,12 @@
     }
   },
   {
-    "id": "8b7wvm",
+    "id": "sfs50d",
     "name": "div",
-    "parent": "wj852n",
+    "parent": "z868r8",
     "children": [
-      "6gymml",
-      "nu8epv"
+      "vie6b6",
+      "eaut6g"
     ],
     "settings": {
       "_display": "flex",
@@ -225,12 +225,12 @@
     }
   },
   {
-    "id": "wj852n",
+    "id": "z868r8",
     "name": "div",
-    "parent": "pdumbn",
+    "parent": "j9qu82",
     "children": [
-      "omlrk9",
-      "8b7wvm"
+      "tjaxmr",
+      "sfs50d"
     ],
     "settings": {
       "_display": "flex",
@@ -241,9 +241,9 @@
     }
   },
   {
-    "id": "5ttd2m",
+    "id": "9k6eqz",
     "name": "text",
-    "parent": "txsx6i",
+    "parent": "6gnz7e",
     "children": [],
     "settings": {
       "text": "<p>© 2025 JILI Copyrights. All Rights Reserved</p>",
@@ -263,11 +263,11 @@
     }
   },
   {
-    "id": "txsx6i",
+    "id": "6gnz7e",
     "name": "div",
-    "parent": "pdumbn",
+    "parent": "j9qu82",
     "children": [
-      "5ttd2m"
+      "9k6eqz"
     ],
     "settings": {
       "_display": "flex",
@@ -282,9 +282,9 @@
     }
   },
   {
-    "id": "wqb0qa",
+    "id": "za0eet",
     "name": "image",
-    "parent": "pdumbn",
+    "parent": "j9qu82",
     "children": [],
     "settings": {
       "image": {
@@ -300,13 +300,13 @@
     "themeStyles": []
   },
   {
-    "id": "pdumbn",
+    "id": "j9qu82",
     "name": "div",
-    "parent": "czxewq",
+    "parent": "9zf11n",
     "children": [
-      "wj852n",
-      "txsx6i",
-      "wqb0qa"
+      "z868r8",
+      "6gnz7e",
+      "za0eet"
     ],
     "settings": {
       "_display": "flex",
@@ -314,11 +314,11 @@
     }
   },
   {
-    "id": "czxewq",
+    "id": "9zf11n",
     "name": "container",
-    "parent": "i4f8c5",
+    "parent": "rafiob",
     "children": [
-      "pdumbn"
+      "j9qu82"
     ],
     "settings": {
       "_display": "flex",
@@ -329,11 +329,11 @@
     }
   },
   {
-    "id": "i4f8c5",
+    "id": "rafiob",
     "name": "section",
     "parent": 0,
     "children": [
-      "czxewq"
+      "9zf11n"
     ],
     "settings": {
       "_padding": {

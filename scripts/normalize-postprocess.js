@@ -244,7 +244,13 @@ export function finalize(doc, geoTree, opts = {}) {
     const gaps = [];
     for (let i = 1; i < flow.length; i++) gaps.push(Math.max(0, rects[i][mainPos] - (rects[i - 1][mainPos] + rects[i - 1][mainLen])));
     delete n.layout.gap; delete n.layout.rowGap; delete n.layout.columnGap;
-    if (gaps.length && gaps.every((g) => Math.abs(g - gaps[0]) <= 1) && gaps[0] > 0.5) {
+    // Items pushed to opposite ends of a row are "space-between", not a fixed px gap (a 294px gap overflows on small screens).
+    const figSB = dir === "row" && flow.length > 1 && geoOf(n)?.layoutMode === "HORIZONTAL" && geoOf(n)?.primaryAxisAlignItems === "SPACE_BETWEEN";
+    const wideEven = dir === "row" && flow.length > 1 && gaps.length > 0 && gaps.every((g) => Math.abs(g - gaps[0]) <= 1) && gaps[0] >= 120 && gaps[0] > 2 * Math.min(...rects.map((r) => r[mainLen]));
+    if (figSB || wideEven) {
+      n.layout.justify = "space-between";
+      set(`${n.id}: space-between instead of a ${r2(Math.max(...gaps))}px gap (${figSB ? "Figma auto-layout" : "wide even gap measured from geometry"})`);
+    } else if (gaps.length && gaps.every((g) => Math.abs(g - gaps[0]) <= 1) && gaps[0] > 0.5) {
       n.layout.gap = r2(gaps.reduce((a, b) => a + b, 0) / gaps.length);
     } else {
       gaps.forEach((g, i) => { if (g > 0.5) addMargin(flow[i + 1], leadM, g); });
@@ -288,7 +294,8 @@ export function finalize(doc, geoTree, opts = {}) {
     const parentIsRow = parent && (parent.type === "row" || parent.layout?.direction === "row") && parent.children.length > 1;
     if (n.type !== "section") {
       const r = rectOf(n);
-      if (parentIsRow && r) n.size = { ...(n.size || {}), width: r2(r.w) };
+      const sbRow = n.layout?.justify === "space-between" && (n.layout?.direction === "row" || n.type === "row");
+      if ((parentIsRow || sbRow) && r) n.size = { ...(n.size || {}), width: r2(r.w) };
       else if (n.size && typeof n.size.width === "number") delete n.size.width;
     }
     if (n.size && !Object.keys(n.size).length) delete n.size;

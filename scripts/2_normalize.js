@@ -272,6 +272,30 @@ function compactFigma(node) {
       const enoughSiblings = items.length > 2 || (relaxBg && items.length === 2 && items.some((x) => x.c.type !== "RECTANGLE" && x.c.type !== "TEXT"));
       const isBg = (it) => b && it.b && it.c.type === "RECTANGLE" && !it.c.children?.length && !hasImageFill(it.c)
         && it.b.width >= b.width * 0.98 && it.b.height >= b.height * 0.98 && enoughSiblings;
+      // collapseArtGroups: a card drawn as a GROUP of shapes (rectangle + mask + decorative vector) is not a bare RECTANGLE, so it was never
+      // recognised as the background and the text on top of it landed in a separate div. In the measured tree only (prompts are untouched, so
+      // saved --resume parts stay valid) a shapes-only group that covers the parent is replaced by its full-size rectangle, which the code below
+      // flags as the parent's background. Decorative shapes (masked vectors) stay out of the layout flow.
+      if (relaxBg && b && items.length >= 2) {
+        const hasText = (x) => x.type === "TEXT" || (x.children || []).some(hasText);
+        const hasImg = (x) => hasImageFill(x) || (x.children || []).some(hasImg);
+        const covers = (bx) => bx && bx.width >= b.width * 0.98 && bx.height >= b.height * 0.98;
+        const bgRectIn = (x) => {
+          if (x.visible === false) return null;
+          if (x.type === "RECTANGLE" && !x.children?.length && covers(x.absoluteBoundingBox) && (x.fills || []).some((f) => f.visible !== false && (f.type === "SOLID" || String(f.type).startsWith("GRADIENT")))) return x;
+          for (const ch of x.children || []) { const r = bgRectIn(ch); if (r) return r; }
+          return null;
+        };
+        for (const it of items) {
+          if (it.c.type !== "GROUP" || (it.c.layoutMode && it.c.layoutMode !== "NONE") || !covers(it.b) || !it.c.children?.length || hasText(it.c) || hasImg(it.c)) continue;
+          const rect = bgRectIn(it.c);
+          const at = rect ? out.children.indexOf(it.o) : -1;
+          if (at < 0) continue;
+          console.log("  card background: group \"" + it.c.name + "\" collapsed to its rectangle (decorative shapes left out of the flow)");
+          out.children[at] = compactFigma(rect);
+          it.o = out.children[at]; it.c = rect; it.b = rect.absoluteBoundingBox;
+        }
+      }
       const bgItems = items.filter(isBg);
       bgItems.forEach((it) => { it.o.isParentBackground = true; });
       const boxed = items.filter((it) => it.b && !bgItems.includes(it));

@@ -1,8 +1,8 @@
 [
   {
-    "id": "77sgmz",
+    "id": "2joy77",
     "name": "image",
-    "parent": "esspm5",
+    "parent": "tnvp6i",
     "children": [],
     "settings": {
       "image": {
@@ -19,9 +19,9 @@
     "themeStyles": []
   },
   {
-    "id": "04bkcv",
+    "id": "xhe81e",
     "name": "text-basic",
-    "parent": "9lb3a2",
+    "parent": "vbc6eb",
     "children": [],
     "settings": {
       "text": "Home",
@@ -40,9 +40,9 @@
     }
   },
   {
-    "id": "0thc1d",
+    "id": "ct1o51",
     "name": "text-basic",
-    "parent": "9lb3a2",
+    "parent": "vbc6eb",
     "children": [],
     "settings": {
       "text": "Company",
@@ -61,9 +61,9 @@
     }
   },
   {
-    "id": "db41y9",
+    "id": "2wo7mw",
     "name": "text-basic",
-    "parent": "9lb3a2",
+    "parent": "vbc6eb",
     "children": [],
     "settings": {
       "text": "GAMES",
@@ -81,9 +81,9 @@
     }
   },
   {
-    "id": "yb1z8x",
+    "id": "y34y6h",
     "name": "text-basic",
-    "parent": "9lb3a2",
+    "parent": "vbc6eb",
     "children": [],
     "settings": {
       "text": "CONTACT US",
@@ -101,14 +101,14 @@
     }
   },
   {
-    "id": "9lb3a2",
+    "id": "vbc6eb",
     "name": "div",
-    "parent": "esspm5",
+    "parent": "tnvp6i",
     "children": [
-      "04bkcv",
-      "0thc1d",
-      "db41y9",
-      "yb1z8x"
+      "xhe81e",
+      "ct1o51",
+      "2wo7mw",
+      "y34y6h"
     ],
     "settings": {
       "_display": "flex",
@@ -118,10 +118,6 @@
       "_alignItems": "flex-start",
       "_width": "100%",
       "_widthMax": "414px",
-      "_typography": {
-        "letter-spacing": "0%",
-        "text-align": "left"
-      },
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
       "_alignItems:tablet_portrait": "center",
@@ -129,18 +125,16 @@
     }
   },
   {
-    "id": "esspm5",
+    "id": "tnvp6i",
     "name": "div",
-    "parent": "uqyekz",
+    "parent": "1f8mxt",
     "children": [
-      "77sgmz",
-      "9lb3a2"
+      "2joy77",
+      "vbc6eb"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "294",
-      "_columnGap": "294",
       "_alignItems": "center",
       "_justifyContent": "space-between",
       "_width": "100%",
@@ -152,9 +146,9 @@
     }
   },
   {
-    "id": "e27ai8",
+    "id": "z24bgs",
     "name": "image",
-    "parent": "qfakkm",
+    "parent": "yiscqw",
     "children": [],
     "settings": {
       "image": {
@@ -170,9 +164,9 @@
     "themeStyles": []
   },
   {
-    "id": "u33g0z",
+    "id": "j80wn1",
     "name": "icon",
-    "parent": "qfakkm",
+    "parent": "yiscqw",
     "children": [],
     "settings": {
       "icon": {
@@ -192,12 +186,12 @@
     "themeStyles": []
   },
   {
-    "id": "qfakkm",
+    "id": "yiscqw",
     "name": "div",
-    "parent": "uqyekz",
+    "parent": "1f8mxt",
     "children": [
-      "e27ai8",
-      "u33g0z"
+      "z24bgs",
+      "j80wn1"
     ],
     "settings": {
       "_display": "flex",
@@ -211,18 +205,16 @@
     }
   },
   {
-    "id": "uqyekz",
+    "id": "1f8mxt",
     "name": "div",
-    "parent": "ncvv1j",
+    "parent": "lypj7f",
     "children": [
-      "esspm5",
-      "qfakkm"
+      "tnvp6i",
+      "yiscqw"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "20",
-      "_columnGap": "20",
       "_alignItems": "flex-start",
       "_justifyContent": "space-between",
       "_width": "100%",
@@ -232,46 +224,31 @@
     }
   },
   {
-    "id": "ncvv1j",
+    "id": "lypj7f",
     "name": "container",
-    "parent": "qkij6m",
+    "parent": "1q2qae",
     "children": [
-      "uqyekz"
+      "1f8mxt"
     ],
     "settings": {
       "_display": "flex",
-      "_direction": "row",
+      "_direction": "column",
       "_alignItems": "flex-start",
       "_width": "100%",
       "_widthMax": "1200px"
     }
   },
   {
-    "id": "qkij6m",
+    "id": "1q2qae",
     "name": "section",
     "parent": 0,
     "children": [
-      "ncvv1j"
+      "lypj7f"
     ],
     "settings": {
       "_padding": {
-        "top": "17",
         "right": "16",
-        "bottom": "18",
         "left": "16"
-      },
-      "_background": {
-        "color": {
-          "raw": "#282828"
-        }
-      },
-      "_padding:tablet_portrait": {
-        "top": "9",
-        "bottom": "9"
-      },
-      "_padding:mobile_landscape": {
-        "top": "9",
-        "bottom": "9"
       }
     }
   }

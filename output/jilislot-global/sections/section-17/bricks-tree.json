@@ -1,8 +1,8 @@
 [
   {
-    "id": "lhm5bz",
+    "id": "cu4zn8",
     "name": "heading",
-    "parent": "ilkbd0",
+    "parent": "9yfe98",
     "children": [],
     "settings": {
       "text": "Contact Jili Games Customer Services",
@@ -21,9 +21,9 @@
     }
   },
   {
-    "id": "odpblt",
+    "id": "3xuwj5",
     "name": "icon",
-    "parent": "xq9fce",
+    "parent": "kexwwn",
     "children": [],
     "settings": {
       "icon": {
@@ -43,9 +43,9 @@
     "themeStyles": []
   },
   {
-    "id": "kemgo2",
+    "id": "wk835k",
     "name": "heading",
-    "parent": "xq9fce",
+    "parent": "kexwwn",
     "children": [],
     "settings": {
       "text": "Live Chat",
@@ -64,12 +64,12 @@
     }
   },
   {
-    "id": "xq9fce",
+    "id": "kexwwn",
     "name": "div",
-    "parent": "rsw1al",
+    "parent": "eo9ux7",
     "children": [
-      "odpblt",
-      "kemgo2"
+      "3xuwj5",
+      "wk835k"
     ],
     "settings": {
       "_display": "flex",
@@ -83,9 +83,9 @@
     }
   },
   {
-    "id": "rylxkq",
+    "id": "tgrzr1",
     "name": "icon",
-    "parent": "hgskjr",
+    "parent": "drh8uw",
     "children": [],
     "settings": {
       "icon": {
@@ -105,9 +105,9 @@
     "themeStyles": []
   },
   {
-    "id": "kg4tot",
+    "id": "vyvzud",
     "name": "heading",
-    "parent": "hgskjr",
+    "parent": "drh8uw",
     "children": [],
     "settings": {
       "text": "Telegram: @jilislot.global",
@@ -126,12 +126,12 @@
     }
   },
   {
-    "id": "hgskjr",
+    "id": "drh8uw",
     "name": "div",
-    "parent": "rsw1al",
+    "parent": "eo9ux7",
     "children": [
-      "rylxkq",
-      "kg4tot"
+      "tgrzr1",
+      "vyvzud"
     ],
     "settings": {
       "_display": "flex",
@@ -145,9 +145,9 @@
     }
   },
   {
-    "id": "phykh7",
+    "id": "xiv2hg",
     "name": "image",
-    "parent": "d2i6mj",
+    "parent": "wyfoqr",
     "children": [],
     "settings": {
       "image": {
@@ -163,9 +163,9 @@
     "themeStyles": []
   },
   {
-    "id": "0b6bn2",
+    "id": "0x8t79",
     "name": "heading",
-    "parent": "d2i6mj",
+    "parent": "wyfoqr",
     "children": [],
     "settings": {
       "text": "Email: support@jilislot.global",
@@ -184,12 +184,12 @@
     }
   },
   {
-    "id": "d2i6mj",
+    "id": "wyfoqr",
     "name": "div",
-    "parent": "rsw1al",
+    "parent": "eo9ux7",
     "children": [
-      "phykh7",
-      "0b6bn2"
+      "xiv2hg",
+      "0x8t79"
     ],
     "settings": {
       "_display": "flex",
@@ -203,13 +203,13 @@
     }
   },
   {
-    "id": "rsw1al",
+    "id": "eo9ux7",
     "name": "div",
-    "parent": "ilkbd0",
+    "parent": "9yfe98",
     "children": [
-      "xq9fce",
-      "hgskjr",
-      "d2i6mj"
+      "kexwwn",
+      "drh8uw",
+      "wyfoqr"
     ],
     "settings": {
       "_display": "flex",
@@ -225,12 +225,12 @@
     }
   },
   {
-    "id": "ilkbd0",
+    "id": "9yfe98",
     "name": "div",
-    "parent": "90db03",
+    "parent": "88v4lu",
     "children": [
-      "lhm5bz",
-      "rsw1al"
+      "cu4zn8",
+      "eo9ux7"
     ],
     "settings": {
       "_display": "flex",
@@ -243,11 +243,11 @@
     }
   },
   {
-    "id": "90db03",
+    "id": "88v4lu",
     "name": "container",
-    "parent": "v8fxj9",
+    "parent": "9zecbm",
     "children": [
-      "ilkbd0"
+      "9yfe98"
     ],
     "settings": {
       "_display": "flex",
@@ -258,11 +258,11 @@
     }
   },
   {
-    "id": "v8fxj9",
+    "id": "9zecbm",
     "name": "section",
     "parent": 0,
     "children": [
-      "90db03"
+      "88v4lu"
     ],
     "settings": {
       "_padding": {

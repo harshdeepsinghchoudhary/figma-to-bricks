@@ -1,84 +1,8 @@
 [
   {
-    "id": "c0933k",
-    "name": "image",
-    "parent": "k8ydzp",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/vector-1-8226_536.svg",
-        "url": "../../assets/vector-1-8226_536.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "163px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "k8ydzp",
-    "name": "div",
-    "parent": "v0yt55",
-    "children": [
-      "c0933k"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "295.5",
-        "right": "231.5",
-        "bottom": "0",
-        "left": "805.5"
-      },
-      "_background": {
-        "color": {
-          "raw": "#FCC40B"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "16px",
-          "right": "16px",
-          "bottom": "16px",
-          "left": "16px"
-        }
-      }
-    }
-  },
-  {
-    "id": "v0yt55",
-    "name": "div",
-    "parent": "9kmj5u",
-    "children": [
-      "k8ydzp"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_background": {
-        "color": {
-          "raw": "#FCC40B"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "16px",
-          "right": "16px",
-          "bottom": "16px",
-          "left": "16px"
-        }
-      }
-    }
-  },
-  {
-    "id": "hntjc1",
+    "id": "rwnqhr",
     "name": "heading",
-    "parent": "kr5m25",
+    "parent": "6k5jtz",
     "children": [],
     "settings": {
       "text": "Conclusion",
@@ -97,9 +21,9 @@
     }
   },
   {
-    "id": "3gtwjd",
+    "id": "gfxxoj",
     "name": "text",
-    "parent": "kr5m25",
+    "parent": "6k5jtz",
     "children": [],
     "settings": {
       "text": "<p>Winning in Aviator takes more than luck. Use smart strategies, stay in control, and play with a clear plan. The key is to enjoy the game while making smart moves!</p>",
@@ -117,12 +41,12 @@
     }
   },
   {
-    "id": "kr5m25",
+    "id": "6k5jtz",
     "name": "div",
-    "parent": "6na8e2",
+    "parent": "b904be",
     "children": [
-      "hntjc1",
-      "3gtwjd"
+      "rwnqhr",
+      "gfxxoj"
     ],
     "settings": {
       "_display": "flex",
@@ -133,9 +57,9 @@
     }
   },
   {
-    "id": "ab82md",
+    "id": "7qqthg",
     "name": "button",
-    "parent": "6na8e2",
+    "parent": "b904be",
     "children": [],
     "settings": {
       "text": "Get Started",
@@ -172,42 +96,44 @@
     }
   },
   {
-    "id": "6na8e2",
+    "id": "b904be",
     "name": "div",
-    "parent": "9kmj5u",
+    "parent": "suyboe",
     "children": [
-      "kr5m25",
-      "ab82md"
+      "6k5jtz",
+      "7qqthg"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_rowGap": "32",
       "_columnGap": "32",
-      "_alignItems": "center"
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "755px"
     }
   },
   {
-    "id": "9kmj5u",
+    "id": "suyboe",
     "name": "container",
-    "parent": "gxniql",
+    "parent": "pdon57",
     "children": [
-      "v0yt55",
-      "6na8e2"
+      "b904be"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
+      "_alignItems": "flex-start",
       "_width": "100%",
       "_widthMax": "1200px"
     }
   },
   {
-    "id": "gxniql",
+    "id": "pdon57",
     "name": "section",
     "parent": 0,
     "children": [
-      "9kmj5u"
+      "suyboe"
     ],
     "settings": {
       "_padding": {

@@ -172,7 +172,7 @@ function styleSettings(src) {
   }
   if (src.border?.color && src.border?.width > 0) {
     const w = String(src.border.width);
-    out._border = { ...(out._border || {}), color: { raw: src.border.color }, width: { top: w, right: w, bottom: w, left: w } };
+    out._border = { ...(out._border || {}), style: "solid", color: { raw: src.border.color }, width: { top: w, right: w, bottom: w, left: w } };
   }
   if (src.boxShadow) {
     const b = src.boxShadow;

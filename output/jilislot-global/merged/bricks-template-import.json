@@ -1,16 +1,16 @@
 {
   "name": "jilislot-global page",
   "title": "jilislot-global page",
-  "date": "2026-10-08 16:51:13",
+  "date": "2026-10-09 10:27:53",
   "thumbnail": null,
   "bundles": [],
   "tags": [],
   "type": "section",
   "content": [
     {
-      "id": "77sgmz",
+      "id": "2joy77",
       "name": "image",
-      "parent": "esspm5",
+      "parent": "tnvp6i",
       "children": [],
       "settings": {
         "image": {
@@ -27,9 +27,9 @@
       "themeStyles": []
     },
     {
-      "id": "04bkcv",
+      "id": "xhe81e",
       "name": "text-basic",
-      "parent": "9lb3a2",
+      "parent": "vbc6eb",
       "children": [],
       "settings": {
         "text": "Home",
@@ -48,9 +48,9 @@
       }
     },
     {
-      "id": "0thc1d",
+      "id": "ct1o51",
       "name": "text-basic",
-      "parent": "9lb3a2",
+      "parent": "vbc6eb",
       "children": [],
       "settings": {
         "text": "Company",
@@ -69,9 +69,9 @@
       }
     },
     {
-      "id": "db41y9",
+      "id": "2wo7mw",
       "name": "text-basic",
-      "parent": "9lb3a2",
+      "parent": "vbc6eb",
       "children": [],
       "settings": {
         "text": "GAMES",
@@ -89,9 +89,9 @@
       }
     },
     {
-      "id": "yb1z8x",
+      "id": "y34y6h",
       "name": "text-basic",
-      "parent": "9lb3a2",
+      "parent": "vbc6eb",
       "children": [],
       "settings": {
         "text": "CONTACT US",
@@ -109,14 +109,14 @@
       }
     },
     {
-      "id": "9lb3a2",
+      "id": "vbc6eb",
       "name": "div",
-      "parent": "esspm5",
+      "parent": "tnvp6i",
       "children": [
-        "04bkcv",
-        "0thc1d",
-        "db41y9",
-        "yb1z8x"
+        "xhe81e",
+        "ct1o51",
+        "2wo7mw",
+        "y34y6h"
       ],
       "settings": {
         "_display": "flex",
@@ -126,10 +126,6 @@
         "_alignItems": "flex-start",
         "_width": "100%",
         "_widthMax": "414px",
-        "_typography": {
-          "letter-spacing": "0%",
-          "text-align": "left"
-        },
         "_direction:tablet_portrait": "column",
         "_rowGap:tablet_portrait": "40",
         "_alignItems:tablet_portrait": "center",
@@ -137,18 +133,16 @@
       }
     },
     {
-      "id": "esspm5",
+      "id": "tnvp6i",
       "name": "div",
-      "parent": "uqyekz",
+      "parent": "1f8mxt",
       "children": [
-        "77sgmz",
-        "9lb3a2"
+        "2joy77",
+        "vbc6eb"
       ],
       "settings": {
         "_display": "flex",
         "_direction": "row",
-        "_rowGap": "294",
-        "_columnGap": "294",
         "_alignItems": "center",
         "_justifyContent": "space-between",
         "_width": "100%",
@@ -160,9 +154,9 @@
       }
     },
     {
-      "id": "e27ai8",
+      "id": "z24bgs",
       "name": "image",
-      "parent": "qfakkm",
+      "parent": "yiscqw",
       "children": [],
       "settings": {
         "image": {
@@ -178,9 +172,9 @@
       "themeStyles": []
     },
     {
-      "id": "u33g0z",
+      "id": "j80wn1",
       "name": "icon",
-      "parent": "qfakkm",
+      "parent": "yiscqw",
       "children": [],
       "settings": {
         "icon": {
@@ -200,12 +194,12 @@
       "themeStyles": []
     },
     {
-      "id": "qfakkm",
+      "id": "yiscqw",
       "name": "div",
-      "parent": "uqyekz",
+      "parent": "1f8mxt",
       "children": [
-        "e27ai8",
-        "u33g0z"
+        "z24bgs",
+        "j80wn1"
       ],
       "settings": {
         "_display": "flex",
@@ -219,18 +213,16 @@
       }
     },
     {
-      "id": "uqyekz",
+      "id": "1f8mxt",
       "name": "div",
-      "parent": "ncvv1j",
+      "parent": "lypj7f",
       "children": [
-        "esspm5",
-        "qfakkm"
+        "tnvp6i",
+        "yiscqw"
       ],
       "settings": {
         "_display": "flex",
         "_direction": "row",
-        "_rowGap": "20",
-        "_columnGap": "20",
         "_alignItems": "flex-start",
         "_justifyContent": "space-between",
         "_width": "100%",
@@ -240,26 +232,26 @@
       }
     },
     {
-      "id": "ncvv1j",
+      "id": "lypj7f",
       "name": "container",
-      "parent": "qkij6m",
+      "parent": "1q2qae",
       "children": [
-        "uqyekz"
+        "1f8mxt"
       ],
       "settings": {
         "_display": "flex",
-        "_direction": "row",
+        "_direction": "column",
         "_alignItems": "flex-start",
         "_width": "100%",
         "_widthMax": "1200px"
       }
     },
     {
-      "id": "qkij6m",
+      "id": "1q2qae",
       "name": "section",
       "parent": 0,
       "children": [
-        "ncvv1j"
+        "lypj7f"
       ],
       "settings": {
         "_padding": {
@@ -268,11 +260,6 @@
           "bottom": "18",
           "left": "16"
         },
-        "_background": {
-          "color": {
-            "raw": "#282828"
-          }
-        },
         "_padding:tablet_portrait": {
           "top": "9",
           "bottom": "9"
@@ -280,13 +267,18 @@
         "_padding:mobile_landscape": {
           "top": "9",
           "bottom": "9"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "v8fpyf",
+      "id": "r5uq2a",
       "name": "heading",
-      "parent": "hz1oaw",
+      "parent": "q9rjs4",
       "children": [],
       "settings": {
         "text": "Jili Slot - Play Jili Online Slot | Free Games Play",
@@ -305,9 +297,9 @@
       }
     },
     {
-      "id": "49tpps",
+      "id": "01qe2h",
       "name": "text",
-      "parent": "hz1oaw",
+      "parent": "q9rjs4",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>",
@@ -327,12 +319,12 @@
       }
     },
     {
-      "id": "hz1oaw",
+      "id": "q9rjs4",
       "name": "div",
-      "parent": "kv4ay1",
+      "parent": "ajoyhn",
       "children": [
-        "v8fpyf",
-        "49tpps"
+        "r5uq2a",
+        "01qe2h"
       ],
       "settings": {
         "_display": "flex",
@@ -343,9 +335,9 @@
       }
     },
     {
-      "id": "4iihj6",
+      "id": "u4abac",
       "name": "button",
-      "parent": "kv4ay1",
+      "parent": "ajoyhn",
       "children": [],
       "settings": {
         "text": "Get Started",
@@ -388,12 +380,12 @@
       }
     },
     {
-      "id": "kv4ay1",
+      "id": "ajoyhn",
       "name": "div",
-      "parent": "u2gg1j",
+      "parent": "0bop6j",
       "children": [
-        "hz1oaw",
-        "4iihj6"
+        "q9rjs4",
+        "u4abac"
       ],
       "settings": {
         "_display": "flex",
@@ -406,11 +398,11 @@
       }
     },
     {
-      "id": "u2gg1j",
+      "id": "0bop6j",
       "name": "container",
-      "parent": "aogi69",
+      "parent": "oz7dw9",
       "children": [
-        "kv4ay1"
+        "ajoyhn"
       ],
       "settings": {
         "_display": "flex",
@@ -423,11 +415,11 @@
       }
     },
     {
-      "id": "aogi69",
+      "id": "oz7dw9",
       "name": "section",
       "parent": 0,
       "children": [
-        "u2gg1j"
+        "0bop6j"
       ],
       "settings": {
         "_padding": {
@@ -462,9 +454,9 @@
       }
     },
     {
-      "id": "kpo9sg",
+      "id": "jefq5q",
       "name": "image",
-      "parent": "zhq0vt",
+      "parent": "2y8xs0",
       "children": [],
       "settings": {
         "image": {
@@ -481,9 +473,9 @@
       "themeStyles": []
     },
     {
-      "id": "a5maod",
+      "id": "0q87mi",
       "name": "heading",
-      "parent": "zkp0kq",
+      "parent": "8sx8pt",
       "children": [],
       "settings": {
         "text": "What is Jili Software Provider?",
@@ -502,9 +494,9 @@
       }
     },
     {
-      "id": "l6cgxm",
+      "id": "0yfdmp",
       "name": "text",
-      "parent": "zo7cr5",
+      "parent": "rb8qu3",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -522,9 +514,9 @@
       }
     },
     {
-      "id": "kylyzc",
+      "id": "zmzxgh",
       "name": "text",
-      "parent": "zo7cr5",
+      "parent": "rb8qu3",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -542,12 +534,12 @@
       }
     },
     {
-      "id": "zo7cr5",
+      "id": "rb8qu3",
       "name": "div",
-      "parent": "zkp0kq",
+      "parent": "8sx8pt",
       "children": [
-        "l6cgxm",
-        "kylyzc"
+        "0yfdmp",
+        "zmzxgh"
       ],
       "settings": {
         "_display": "flex",
@@ -558,12 +550,12 @@
       }
     },
     {
-      "id": "zkp0kq",
+      "id": "8sx8pt",
       "name": "div",
-      "parent": "d9kcvl",
+      "parent": "t578ig",
       "children": [
-        "a5maod",
-        "zo7cr5"
+        "0q87mi",
+        "rb8qu3"
       ],
       "settings": {
         "_display": "flex",
@@ -574,9 +566,9 @@
       }
     },
     {
-      "id": "3hcyqv",
+      "id": "u4y0ij",
       "name": "button",
-      "parent": "d9kcvl",
+      "parent": "t578ig",
       "children": [],
       "settings": {
         "text": "Learn More",
@@ -613,12 +605,12 @@
       }
     },
     {
-      "id": "d9kcvl",
+      "id": "t578ig",
       "name": "div",
-      "parent": "zhq0vt",
+      "parent": "2y8xs0",
       "children": [
-        "zkp0kq",
-        "3hcyqv"
+        "8sx8pt",
+        "u4y0ij"
       ],
       "settings": {
         "_display": "flex",
@@ -632,12 +624,12 @@
       }
     },
     {
-      "id": "zhq0vt",
+      "id": "2y8xs0",
       "name": "div",
-      "parent": "3iz672",
+      "parent": "s00vc4",
       "children": [
-        "kpo9sg",
-        "d9kcvl"
+        "jefq5q",
+        "t578ig"
       ],
       "settings": {
         "_display": "flex",
@@ -653,11 +645,11 @@
       }
     },
     {
-      "id": "3iz672",
+      "id": "s00vc4",
       "name": "container",
-      "parent": "4jaqsb",
+      "parent": "o81jki",
       "children": [
-        "zhq0vt"
+        "2y8xs0"
       ],
       "settings": {
         "_display": "flex",
@@ -668,11 +660,11 @@
       }
     },
     {
-      "id": "4jaqsb",
+      "id": "o81jki",
       "name": "section",
       "parent": 0,
       "children": [
-        "3iz672"
+        "s00vc4"
       ],
       "settings": {
         "_padding": {
@@ -688,13 +680,18 @@
         "_padding:mobile_landscape": {
           "top": "50",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "8or4tr",
+      "id": "gmbcsz",
       "name": "heading",
-      "parent": "m7hzj4",
+      "parent": "7s43na",
       "children": [],
       "settings": {
         "text": "What Makes Jili a Top Game Provider?",
@@ -714,9 +711,9 @@
       }
     },
     {
-      "id": "v1ivgc",
+      "id": "rkhcq9",
       "name": "icon",
-      "parent": "2y612n",
+      "parent": "zaash6",
       "children": [],
       "settings": {
         "icon": {
@@ -740,9 +737,9 @@
       "themeStyles": []
     },
     {
-      "id": "lgsptz",
+      "id": "kvkk9p",
       "name": "icon",
-      "parent": "2y612n",
+      "parent": "zaash6",
       "children": [],
       "settings": {
         "icon": {
@@ -763,12 +760,12 @@
       "themeStyles": []
     },
     {
-      "id": "2y612n",
+      "id": "zaash6",
       "name": "div",
-      "parent": "jsbgcp",
+      "parent": "ig5cy2",
       "children": [
-        "v1ivgc",
-        "lgsptz"
+        "rkhcq9",
+        "kvkk9p"
       ],
       "settings": {
         "_display": "flex",
@@ -779,9 +776,9 @@
       }
     },
     {
-      "id": "umxmbf",
+      "id": "kls052",
       "name": "heading",
-      "parent": "jdagnm",
+      "parent": "jr96hq",
       "children": [],
       "settings": {
         "text": "Quality Design",
@@ -800,9 +797,9 @@
       }
     },
     {
-      "id": "f2i8bc",
+      "id": "cp4hmr",
       "name": "text",
-      "parent": "jdagnm",
+      "parent": "jr96hq",
       "children": [],
       "settings": {
         "text": "<p>Eye-catching visuals and smooth animations.</p>",
@@ -820,12 +817,12 @@
       }
     },
     {
-      "id": "jdagnm",
+      "id": "jr96hq",
       "name": "div",
-      "parent": "19ntq1",
+      "parent": "cywg33",
       "children": [
-        "umxmbf",
-        "f2i8bc"
+        "kls052",
+        "cp4hmr"
       ],
       "settings": {
         "_display": "flex",
@@ -836,11 +833,11 @@
       }
     },
     {
-      "id": "19ntq1",
+      "id": "cywg33",
       "name": "div",
-      "parent": "o9a9yk",
+      "parent": "olmw2y",
       "children": [
-        "jdagnm"
+        "jr96hq"
       ],
       "settings": {
         "_display": "flex",
@@ -849,9 +846,9 @@
       }
     },
     {
-      "id": "ttra88",
+      "id": "873s49",
       "name": "image",
-      "parent": "c3oddn",
+      "parent": "5so0ks",
       "children": [],
       "settings": {
         "image": {
@@ -867,9 +864,9 @@
       "themeStyles": []
     },
     {
-      "id": "x29b8l",
+      "id": "bgeyoe",
       "name": "icon",
-      "parent": "c3oddn",
+      "parent": "5so0ks",
       "children": [],
       "settings": {
         "icon": {
@@ -889,12 +886,12 @@
       "themeStyles": []
     },
     {
-      "id": "c3oddn",
+      "id": "5so0ks",
       "name": "div",
-      "parent": "o9a9yk",
+      "parent": "olmw2y",
       "children": [
-        "ttra88",
-        "x29b8l"
+        "873s49",
+        "bgeyoe"
       ],
       "settings": {
         "_display": "flex",
@@ -903,12 +900,12 @@
       }
     },
     {
-      "id": "o9a9yk",
+      "id": "olmw2y",
       "name": "div",
-      "parent": "gsb3sb",
+      "parent": "gk3b64",
       "children": [
-        "19ntq1",
-        "c3oddn"
+        "cywg33",
+        "5so0ks"
       ],
       "settings": {
         "_display": "flex",
@@ -919,11 +916,11 @@
       }
     },
     {
-      "id": "gsb3sb",
+      "id": "gk3b64",
       "name": "div",
-      "parent": "axcocr",
+      "parent": "gr4bl1",
       "children": [
-        "o9a9yk"
+        "olmw2y"
       ],
       "settings": {
         "_display": "flex",
@@ -935,9 +932,9 @@
       }
     },
     {
-      "id": "3o2gea",
+      "id": "s9ghpq",
       "name": "image",
-      "parent": "8v0v2g",
+      "parent": "iap2fv",
       "children": [],
       "settings": {
         "image": {
@@ -953,9 +950,9 @@
       "themeStyles": []
     },
     {
-      "id": "vi3d55",
+      "id": "09nzl7",
       "name": "icon",
-      "parent": "8v0v2g",
+      "parent": "iap2fv",
       "children": [],
       "settings": {
         "icon": {
@@ -975,12 +972,12 @@
       "themeStyles": []
     },
     {
-      "id": "8v0v2g",
+      "id": "iap2fv",
       "name": "div",
-      "parent": "at8z3g",
+      "parent": "fe62kx",
       "children": [
-        "3o2gea",
-        "vi3d55"
+        "s9ghpq",
+        "09nzl7"
       ],
       "settings": {
         "_display": "flex",
@@ -989,9 +986,9 @@
       }
     },
     {
-      "id": "rqihir",
+      "id": "e5bhtc",
       "name": "heading",
-      "parent": "lk074z",
+      "parent": "3mu3n0",
       "children": [],
       "settings": {
         "text": "Fast & Reliable",
@@ -1010,9 +1007,9 @@
       }
     },
     {
-      "id": "c4evjn",
+      "id": "xlih1m",
       "name": "text",
-      "parent": "lk074z",
+      "parent": "3mu3n0",
       "children": [],
       "settings": {
         "text": "<p>Optimized for quick, seamless gameplay.</p>",
@@ -1030,12 +1027,12 @@
       }
     },
     {
-      "id": "lk074z",
+      "id": "3mu3n0",
       "name": "div",
-      "parent": "hzg891",
+      "parent": "af3bzy",
       "children": [
-        "rqihir",
-        "c4evjn"
+        "e5bhtc",
+        "xlih1m"
       ],
       "settings": {
         "_display": "flex",
@@ -1046,11 +1043,11 @@
       }
     },
     {
-      "id": "hzg891",
+      "id": "af3bzy",
       "name": "div",
-      "parent": "at8z3g",
+      "parent": "fe62kx",
       "children": [
-        "lk074z"
+        "3mu3n0"
       ],
       "settings": {
         "_display": "flex",
@@ -1059,12 +1056,12 @@
       }
     },
     {
-      "id": "at8z3g",
+      "id": "fe62kx",
       "name": "div",
-      "parent": "yqej95",
+      "parent": "xscq54",
       "children": [
-        "8v0v2g",
-        "hzg891"
+        "iap2fv",
+        "af3bzy"
       ],
       "settings": {
         "_display": "flex",
@@ -1075,11 +1072,11 @@
       }
     },
     {
-      "id": "yqej95",
+      "id": "xscq54",
       "name": "div",
-      "parent": "axcocr",
+      "parent": "gr4bl1",
       "children": [
-        "at8z3g"
+        "fe62kx"
       ],
       "settings": {
         "_display": "flex",
@@ -1094,9 +1091,9 @@
       }
     },
     {
-      "id": "5nvxkt",
+      "id": "em9qxm",
       "name": "heading",
-      "parent": "c5nh1v",
+      "parent": "a6qjoa",
       "children": [],
       "settings": {
         "text": "Unique Features",
@@ -1115,9 +1112,9 @@
       }
     },
     {
-      "id": "b6dq3d",
+      "id": "nkiryr",
       "name": "text",
-      "parent": "c5nh1v",
+      "parent": "a6qjoa",
       "children": [],
       "settings": {
         "text": "<p>Innovative bonuses and mechanics.</p>",
@@ -1135,12 +1132,12 @@
       }
     },
     {
-      "id": "c5nh1v",
+      "id": "a6qjoa",
       "name": "div",
-      "parent": "x30d1z",
+      "parent": "nt19wv",
       "children": [
-        "5nvxkt",
-        "b6dq3d"
+        "em9qxm",
+        "nkiryr"
       ],
       "settings": {
         "_display": "flex",
@@ -1151,11 +1148,11 @@
       }
     },
     {
-      "id": "x30d1z",
+      "id": "nt19wv",
       "name": "div",
-      "parent": "h9hwcx",
+      "parent": "1p2oed",
       "children": [
-        "c5nh1v"
+        "a6qjoa"
       ],
       "settings": {
         "_display": "flex",
@@ -1164,9 +1161,9 @@
       }
     },
     {
-      "id": "3atdti",
+      "id": "cqqiin",
       "name": "image",
-      "parent": "dzkusx",
+      "parent": "1uqgov",
       "children": [],
       "settings": {
         "image": {
@@ -1182,9 +1179,9 @@
       "themeStyles": []
     },
     {
-      "id": "ytf6to",
+      "id": "cfszzt",
       "name": "icon",
-      "parent": "dzkusx",
+      "parent": "1uqgov",
       "children": [],
       "settings": {
         "icon": {
@@ -1204,12 +1201,12 @@
       "themeStyles": []
     },
     {
-      "id": "dzkusx",
+      "id": "1uqgov",
       "name": "div",
-      "parent": "h9hwcx",
+      "parent": "1p2oed",
       "children": [
-        "3atdti",
-        "ytf6to"
+        "cqqiin",
+        "cfszzt"
       ],
       "settings": {
         "_display": "flex",
@@ -1221,12 +1218,12 @@
       }
     },
     {
-      "id": "h9hwcx",
+      "id": "1p2oed",
       "name": "div",
-      "parent": "83084v",
+      "parent": "oo8ceb",
       "children": [
-        "x30d1z",
-        "dzkusx"
+        "nt19wv",
+        "1uqgov"
       ],
       "settings": {
         "_display": "flex",
@@ -1237,11 +1234,11 @@
       }
     },
     {
-      "id": "83084v",
+      "id": "oo8ceb",
       "name": "div",
-      "parent": "axcocr",
+      "parent": "gr4bl1",
       "children": [
-        "h9hwcx"
+        "1p2oed"
       ],
       "settings": {
         "_display": "flex",
@@ -1256,9 +1253,9 @@
       }
     },
     {
-      "id": "2957lv",
+      "id": "gacih5",
       "name": "image",
-      "parent": "g6725v",
+      "parent": "1kcx61",
       "children": [],
       "settings": {
         "image": {
@@ -1274,9 +1271,9 @@
       "themeStyles": []
     },
     {
-      "id": "4umsvt",
+      "id": "lcmbd2",
       "name": "icon",
-      "parent": "g6725v",
+      "parent": "1kcx61",
       "children": [],
       "settings": {
         "icon": {
@@ -1296,12 +1293,12 @@
       "themeStyles": []
     },
     {
-      "id": "g6725v",
+      "id": "1kcx61",
       "name": "div",
-      "parent": "dohykq",
+      "parent": "wwt2wi",
       "children": [
-        "2957lv",
-        "4umsvt"
+        "gacih5",
+        "lcmbd2"
       ],
       "settings": {
         "_display": "flex",
@@ -1310,9 +1307,9 @@
       }
     },
     {
-      "id": "6lo7n0",
+      "id": "or5gq6",
       "name": "heading",
-      "parent": "anaxn7",
+      "parent": "83hlm1",
       "children": [],
       "settings": {
         "text": "Fair & Trusted",
@@ -1331,9 +1328,9 @@
       }
     },
     {
-      "id": "chbafm",
+      "id": "hdjnmt",
       "name": "text",
-      "parent": "anaxn7",
+      "parent": "83hlm1",
       "children": [],
       "settings": {
         "text": "<p>Certified RNG and solid RTP rates.</p>",
@@ -1351,12 +1348,12 @@
       }
     },
     {
-      "id": "anaxn7",
+      "id": "83hlm1",
       "name": "div",
-      "parent": "ml30w5",
+      "parent": "n8idag",
       "children": [
-        "6lo7n0",
-        "chbafm"
+        "or5gq6",
+        "hdjnmt"
       ],
       "settings": {
         "_display": "flex",
@@ -1367,11 +1364,11 @@
       }
     },
     {
-      "id": "ml30w5",
+      "id": "n8idag",
       "name": "div",
-      "parent": "dohykq",
+      "parent": "wwt2wi",
       "children": [
-        "anaxn7"
+        "83hlm1"
       ],
       "settings": {
         "_display": "flex",
@@ -1380,12 +1377,12 @@
       }
     },
     {
-      "id": "dohykq",
+      "id": "wwt2wi",
       "name": "div",
-      "parent": "lu0yai",
+      "parent": "qkt81e",
       "children": [
-        "g6725v",
-        "ml30w5"
+        "1kcx61",
+        "n8idag"
       ],
       "settings": {
         "_display": "flex",
@@ -1396,11 +1393,11 @@
       }
     },
     {
-      "id": "lu0yai",
+      "id": "qkt81e",
       "name": "div",
-      "parent": "axcocr",
+      "parent": "gr4bl1",
       "children": [
-        "dohykq"
+        "wwt2wi"
       ],
       "settings": {
         "_display": "flex",
@@ -1415,14 +1412,14 @@
       }
     },
     {
-      "id": "axcocr",
+      "id": "gr4bl1",
       "name": "div",
-      "parent": "ex98gf",
+      "parent": "0hpu9p",
       "children": [
-        "gsb3sb",
-        "yqej95",
-        "83084v",
-        "lu0yai"
+        "gk3b64",
+        "xscq54",
+        "oo8ceb",
+        "qkt81e"
       ],
       "settings": {
         "_display": "flex",
@@ -1438,11 +1435,11 @@
       }
     },
     {
-      "id": "ex98gf",
+      "id": "0hpu9p",
       "name": "div",
-      "parent": "jsbgcp",
+      "parent": "ig5cy2",
       "children": [
-        "axcocr"
+        "gr4bl1"
       ],
       "settings": {
         "_display": "flex",
@@ -1454,12 +1451,12 @@
       }
     },
     {
-      "id": "jsbgcp",
+      "id": "ig5cy2",
       "name": "div",
-      "parent": "m7hzj4",
+      "parent": "7s43na",
       "children": [
-        "2y612n",
-        "ex98gf"
+        "zaash6",
+        "0hpu9p"
       ],
       "settings": {
         "_display": "flex",
@@ -1467,12 +1464,12 @@
       }
     },
     {
-      "id": "m7hzj4",
+      "id": "7s43na",
       "name": "container",
-      "parent": "ovw0xi",
+      "parent": "grhbdo",
       "children": [
-        "8or4tr",
-        "jsbgcp"
+        "gmbcsz",
+        "ig5cy2"
       ],
       "settings": {
         "_display": "flex",
@@ -1485,11 +1482,11 @@
       }
     },
     {
-      "id": "ovw0xi",
+      "id": "grhbdo",
       "name": "section",
       "parent": 0,
       "children": [
-        "m7hzj4"
+        "7s43na"
       ],
       "settings": {
         "_padding": {
@@ -1505,13 +1502,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "znicfx",
+      "id": "fwj2n6",
       "name": "heading",
-      "parent": "eazrex",
+      "parent": "yff8pd",
       "children": [],
       "settings": {
         "text": "Pros and Cons of Jili Slot Games BD",
@@ -1530,9 +1532,9 @@
       }
     },
     {
-      "id": "ozehsm",
+      "id": "vy3z6y",
       "name": "icon",
-      "parent": "5s3wln",
+      "parent": "tqwtvl",
       "children": [],
       "settings": {
         "icon": {
@@ -1552,9 +1554,9 @@
       "themeStyles": []
     },
     {
-      "id": "6a4b5w",
+      "id": "au0udd",
       "name": "heading",
-      "parent": "5s3wln",
+      "parent": "tqwtvl",
       "children": [],
       "settings": {
         "text": "PROS",
@@ -1573,12 +1575,12 @@
       }
     },
     {
-      "id": "5s3wln",
+      "id": "tqwtvl",
       "name": "div",
-      "parent": "upvroj",
+      "parent": "si6lun",
       "children": [
-        "ozehsm",
-        "6a4b5w"
+        "vy3z6y",
+        "au0udd"
       ],
       "settings": {
         "_display": "flex",
@@ -1589,9 +1591,9 @@
       }
     },
     {
-      "id": "w3d5yo",
+      "id": "n60h9l",
       "name": "icon",
-      "parent": "wrnfl3",
+      "parent": "r2tlr2",
       "children": [],
       "settings": {
         "icon": {
@@ -1611,9 +1613,9 @@
       "themeStyles": []
     },
     {
-      "id": "vjlim7",
+      "id": "db9jh2",
       "name": "text",
-      "parent": "wrnfl3",
+      "parent": "r2tlr2",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -1633,12 +1635,12 @@
       }
     },
     {
-      "id": "wrnfl3",
+      "id": "r2tlr2",
       "name": "div",
-      "parent": "jnm6yc",
+      "parent": "fo9cah",
       "children": [
-        "w3d5yo",
-        "vjlim7"
+        "n60h9l",
+        "db9jh2"
       ],
       "settings": {
         "_display": "flex",
@@ -1649,9 +1651,9 @@
       }
     },
     {
-      "id": "1z35b4",
+      "id": "f01jwz",
       "name": "icon",
-      "parent": "ysd6cw",
+      "parent": "vwqh5x",
       "children": [],
       "settings": {
         "icon": {
@@ -1671,9 +1673,9 @@
       "themeStyles": []
     },
     {
-      "id": "nwrw4c",
+      "id": "nkjks7",
       "name": "text",
-      "parent": "ysd6cw",
+      "parent": "vwqh5x",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
@@ -1691,12 +1693,12 @@
       }
     },
     {
-      "id": "ysd6cw",
+      "id": "vwqh5x",
       "name": "div",
-      "parent": "jnm6yc",
+      "parent": "fo9cah",
       "children": [
-        "1z35b4",
-        "nwrw4c"
+        "f01jwz",
+        "nkjks7"
       ],
       "settings": {
         "_display": "flex",
@@ -1707,9 +1709,9 @@
       }
     },
     {
-      "id": "mg1k38",
+      "id": "1mgkvp",
       "name": "icon",
-      "parent": "18mluh",
+      "parent": "qkulqv",
       "children": [],
       "settings": {
         "icon": {
@@ -1729,9 +1731,9 @@
       "themeStyles": []
     },
     {
-      "id": "osil2g",
+      "id": "hw3s4l",
       "name": "text",
-      "parent": "18mluh",
+      "parent": "qkulqv",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -1751,12 +1753,12 @@
       }
     },
     {
-      "id": "18mluh",
+      "id": "qkulqv",
       "name": "div",
-      "parent": "jnm6yc",
+      "parent": "fo9cah",
       "children": [
-        "mg1k38",
-        "osil2g"
+        "1mgkvp",
+        "hw3s4l"
       ],
       "settings": {
         "_display": "flex",
@@ -1767,13 +1769,13 @@
       }
     },
     {
-      "id": "jnm6yc",
+      "id": "fo9cah",
       "name": "div",
-      "parent": "upvroj",
+      "parent": "si6lun",
       "children": [
-        "wrnfl3",
-        "ysd6cw",
-        "18mluh"
+        "r2tlr2",
+        "vwqh5x",
+        "qkulqv"
       ],
       "settings": {
         "_display": "flex",
@@ -1784,12 +1786,12 @@
       }
     },
     {
-      "id": "upvroj",
+      "id": "si6lun",
       "name": "div",
-      "parent": "5lh9d2",
+      "parent": "tx54bz",
       "children": [
-        "5s3wln",
-        "jnm6yc"
+        "tqwtvl",
+        "fo9cah"
       ],
       "settings": {
         "_display": "flex",
@@ -1800,9 +1802,9 @@
       }
     },
     {
-      "id": "pvpm9u",
+      "id": "ua6due",
       "name": "icon",
-      "parent": "59wif5",
+      "parent": "fozit4",
       "children": [],
       "settings": {
         "icon": {
@@ -1822,9 +1824,9 @@
       "themeStyles": []
     },
     {
-      "id": "ok9p70",
+      "id": "ejmyvw",
       "name": "heading",
-      "parent": "59wif5",
+      "parent": "fozit4",
       "children": [],
       "settings": {
         "text": "Cons",
@@ -1843,12 +1845,12 @@
       }
     },
     {
-      "id": "59wif5",
+      "id": "fozit4",
       "name": "div",
-      "parent": "wg9pdd",
+      "parent": "5c9cgg",
       "children": [
-        "pvpm9u",
-        "ok9p70"
+        "ua6due",
+        "ejmyvw"
       ],
       "settings": {
         "_display": "flex",
@@ -1859,9 +1861,9 @@
       }
     },
     {
-      "id": "3uz5za",
+      "id": "awbaio",
       "name": "icon",
-      "parent": "nvkl9v",
+      "parent": "f8nxzn",
       "children": [],
       "settings": {
         "icon": {
@@ -1882,9 +1884,9 @@
       "themeStyles": []
     },
     {
-      "id": "my5ny3",
+      "id": "rpa0zu",
       "name": "text",
-      "parent": "nvkl9v",
+      "parent": "f8nxzn",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -1904,12 +1906,12 @@
       }
     },
     {
-      "id": "nvkl9v",
+      "id": "f8nxzn",
       "name": "div",
-      "parent": "u56aa1",
+      "parent": "76qrj0",
       "children": [
-        "3uz5za",
-        "my5ny3"
+        "awbaio",
+        "rpa0zu"
       ],
       "settings": {
         "_display": "flex",
@@ -1920,9 +1922,9 @@
       }
     },
     {
-      "id": "dtsfh2",
+      "id": "f0d0ha",
       "name": "icon",
-      "parent": "sa9od6",
+      "parent": "mkvoh5",
       "children": [],
       "settings": {
         "icon": {
@@ -1943,9 +1945,9 @@
       "themeStyles": []
     },
     {
-      "id": "z0r9fm",
+      "id": "8a5l6j",
       "name": "text",
-      "parent": "sa9od6",
+      "parent": "mkvoh5",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
@@ -1963,12 +1965,12 @@
       }
     },
     {
-      "id": "sa9od6",
+      "id": "mkvoh5",
       "name": "div",
-      "parent": "u56aa1",
+      "parent": "76qrj0",
       "children": [
-        "dtsfh2",
-        "z0r9fm"
+        "f0d0ha",
+        "8a5l6j"
       ],
       "settings": {
         "_display": "flex",
@@ -1979,9 +1981,9 @@
       }
     },
     {
-      "id": "vkutga",
+      "id": "7fksmu",
       "name": "icon",
-      "parent": "0imwfr",
+      "parent": "6vnobl",
       "children": [],
       "settings": {
         "icon": {
@@ -2002,9 +2004,9 @@
       "themeStyles": []
     },
     {
-      "id": "r9114c",
+      "id": "81zisr",
       "name": "text",
-      "parent": "0imwfr",
+      "parent": "6vnobl",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -2024,12 +2026,12 @@
       }
     },
     {
-      "id": "0imwfr",
+      "id": "6vnobl",
       "name": "div",
-      "parent": "u56aa1",
+      "parent": "76qrj0",
       "children": [
-        "vkutga",
-        "r9114c"
+        "7fksmu",
+        "81zisr"
       ],
       "settings": {
         "_display": "flex",
@@ -2040,13 +2042,13 @@
       }
     },
     {
-      "id": "u56aa1",
+      "id": "76qrj0",
       "name": "div",
-      "parent": "wg9pdd",
+      "parent": "5c9cgg",
       "children": [
-        "nvkl9v",
-        "sa9od6",
-        "0imwfr"
+        "f8nxzn",
+        "mkvoh5",
+        "6vnobl"
       ],
       "settings": {
         "_display": "flex",
@@ -2057,12 +2059,12 @@
       }
     },
     {
-      "id": "wg9pdd",
+      "id": "5c9cgg",
       "name": "div",
-      "parent": "mae4uw",
+      "parent": "3amapd",
       "children": [
-        "59wif5",
-        "u56aa1"
+        "fozit4",
+        "76qrj0"
       ],
       "settings": {
         "_display": "flex",
@@ -2073,11 +2075,11 @@
       }
     },
     {
-      "id": "mae4uw",
+      "id": "3amapd",
       "name": "div",
-      "parent": "b28w2m",
+      "parent": "5o0e2t",
       "children": [
-        "wg9pdd"
+        "5c9cgg"
       ],
       "settings": {
         "_display": "flex",
@@ -2086,11 +2088,11 @@
       }
     },
     {
-      "id": "b28w2m",
+      "id": "5o0e2t",
       "name": "div",
-      "parent": "5lh9d2",
+      "parent": "tx54bz",
       "children": [
-        "mae4uw"
+        "3amapd"
       ],
       "settings": {
         "_display": "flex",
@@ -2099,12 +2101,12 @@
       }
     },
     {
-      "id": "5lh9d2",
+      "id": "tx54bz",
       "name": "div",
-      "parent": "3xp8su",
+      "parent": "zuxnxb",
       "children": [
-        "upvroj",
-        "b28w2m"
+        "si6lun",
+        "5o0e2t"
       ],
       "settings": {
         "_display": "grid",
@@ -2117,11 +2119,11 @@
       }
     },
     {
-      "id": "3xp8su",
+      "id": "zuxnxb",
       "name": "div",
-      "parent": "eazrex",
+      "parent": "yff8pd",
       "children": [
-        "5lh9d2"
+        "tx54bz"
       ],
       "settings": {
         "_display": "flex",
@@ -2168,9 +2170,9 @@
       }
     },
     {
-      "id": "5656bi",
+      "id": "r1c3c6",
       "name": "icon",
-      "parent": "tmfipk",
+      "parent": "twoajd",
       "children": [],
       "settings": {
         "icon": {
@@ -2190,9 +2192,9 @@
       "themeStyles": []
     },
     {
-      "id": "gbra5g",
+      "id": "tmhogf",
       "name": "heading",
-      "parent": "tmfipk",
+      "parent": "twoajd",
       "children": [],
       "settings": {
         "text": "PROS",
@@ -2211,12 +2213,12 @@
       }
     },
     {
-      "id": "tmfipk",
+      "id": "twoajd",
       "name": "div",
-      "parent": "rhzzgy",
+      "parent": "o2m12h",
       "children": [
-        "5656bi",
-        "gbra5g"
+        "r1c3c6",
+        "tmhogf"
       ],
       "settings": {
         "_display": "flex",
@@ -2227,9 +2229,9 @@
       }
     },
     {
-      "id": "azh5ef",
+      "id": "u3xaf8",
       "name": "icon",
-      "parent": "feyk0m",
+      "parent": "elnnv6",
       "children": [],
       "settings": {
         "icon": {
@@ -2249,9 +2251,9 @@
       "themeStyles": []
     },
     {
-      "id": "vlwqzn",
+      "id": "mokudu",
       "name": "text",
-      "parent": "feyk0m",
+      "parent": "elnnv6",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -2271,12 +2273,12 @@
       }
     },
     {
-      "id": "feyk0m",
+      "id": "elnnv6",
       "name": "div",
-      "parent": "vlbdkg",
+      "parent": "g1vwxk",
       "children": [
-        "azh5ef",
-        "vlwqzn"
+        "u3xaf8",
+        "mokudu"
       ],
       "settings": {
         "_display": "flex",
@@ -2287,9 +2289,9 @@
       }
     },
     {
-      "id": "ap7obp",
+      "id": "7byt6q",
       "name": "icon",
-      "parent": "ecdhkb",
+      "parent": "66s2zs",
       "children": [],
       "settings": {
         "icon": {
@@ -2309,9 +2311,9 @@
       "themeStyles": []
     },
     {
-      "id": "f1no21",
+      "id": "025rkc",
       "name": "text",
-      "parent": "ecdhkb",
+      "parent": "66s2zs",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
@@ -2329,12 +2331,12 @@
       }
     },
     {
-      "id": "ecdhkb",
+      "id": "66s2zs",
       "name": "div",
-      "parent": "vlbdkg",
+      "parent": "g1vwxk",
       "children": [
-        "ap7obp",
-        "f1no21"
+        "7byt6q",
+        "025rkc"
       ],
       "settings": {
         "_display": "flex",
@@ -2345,9 +2347,9 @@
       }
     },
     {
-      "id": "c8f17x",
+      "id": "v2v7ob",
       "name": "icon",
-      "parent": "slnkz2",
+      "parent": "ynl25x",
       "children": [],
       "settings": {
         "icon": {
@@ -2367,9 +2369,9 @@
       "themeStyles": []
     },
     {
-      "id": "cjp7qg",
+      "id": "peycex",
       "name": "text",
-      "parent": "slnkz2",
+      "parent": "ynl25x",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -2389,12 +2391,12 @@
       }
     },
     {
-      "id": "slnkz2",
+      "id": "ynl25x",
       "name": "div",
-      "parent": "vlbdkg",
+      "parent": "g1vwxk",
       "children": [
-        "c8f17x",
-        "cjp7qg"
+        "v2v7ob",
+        "peycex"
       ],
       "settings": {
         "_display": "flex",
@@ -2405,13 +2407,13 @@
       }
     },
     {
-      "id": "vlbdkg",
+      "id": "g1vwxk",
       "name": "div",
-      "parent": "rhzzgy",
+      "parent": "o2m12h",
       "children": [
-        "feyk0m",
-        "ecdhkb",
-        "slnkz2"
+        "elnnv6",
+        "66s2zs",
+        "ynl25x"
       ],
       "settings": {
         "_display": "flex",
@@ -2422,12 +2424,12 @@
       }
     },
     {
-      "id": "rhzzgy",
+      "id": "o2m12h",
       "name": "div",
-      "parent": "2ueyzg",
+      "parent": "w3ysvd",
       "children": [
-        "tmfipk",
-        "vlbdkg"
+        "twoajd",
+        "g1vwxk"
       ],
       "settings": {
         "_display": "flex",
@@ -2438,9 +2440,9 @@
       }
     },
     {
-      "id": "xzqp9o",
+      "id": "e7ub1y",
       "name": "icon",
-      "parent": "q0zyx4",
+      "parent": "nk9zfq",
       "children": [],
       "settings": {
         "icon": {
@@ -2460,9 +2462,9 @@
       "themeStyles": []
     },
     {
-      "id": "h5hw38",
+      "id": "d4mwbi",
       "name": "heading",
-      "parent": "q0zyx4",
+      "parent": "nk9zfq",
       "children": [],
       "settings": {
         "text": "Cons",
@@ -2481,12 +2483,12 @@
       }
     },
     {
-      "id": "q0zyx4",
+      "id": "nk9zfq",
       "name": "div",
-      "parent": "uuy540",
+      "parent": "769buj",
       "children": [
-        "xzqp9o",
-        "h5hw38"
+        "e7ub1y",
+        "d4mwbi"
       ],
       "settings": {
         "_display": "flex",
@@ -2497,9 +2499,9 @@
       }
     },
     {
-      "id": "e8zmvj",
+      "id": "wzx2eq",
       "name": "icon",
-      "parent": "jfy779",
+      "parent": "74sqv6",
       "children": [],
       "settings": {
         "icon": {
@@ -2519,9 +2521,9 @@
       "themeStyles": []
     },
     {
-      "id": "hisblx",
+      "id": "oz4nw3",
       "name": "text",
-      "parent": "jfy779",
+      "parent": "74sqv6",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -2541,12 +2543,12 @@
       }
     },
     {
-      "id": "jfy779",
+      "id": "74sqv6",
       "name": "div",
-      "parent": "7xw7k5",
+      "parent": "do09kg",
       "children": [
-        "e8zmvj",
-        "hisblx"
+        "wzx2eq",
+        "oz4nw3"
       ],
       "settings": {
         "_display": "flex",
@@ -2557,11 +2559,11 @@
       }
     },
     {
-      "id": "7xw7k5",
+      "id": "do09kg",
       "name": "div",
-      "parent": "pqlguz",
+      "parent": "o7nck0",
       "children": [
-        "jfy779"
+        "74sqv6"
       ],
       "settings": {
         "_display": "flex",
@@ -2570,9 +2572,9 @@
       }
     },
     {
-      "id": "5p46hw",
+      "id": "e56m6m",
       "name": "icon",
-      "parent": "ihk90t",
+      "parent": "8isjdc",
       "children": [],
       "settings": {
         "icon": {
@@ -2592,9 +2594,9 @@
       "themeStyles": []
     },
     {
-      "id": "s4vsgr",
+      "id": "a8feq5",
       "name": "text",
-      "parent": "ihk90t",
+      "parent": "8isjdc",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
@@ -2612,12 +2614,12 @@
       }
     },
     {
-      "id": "ihk90t",
+      "id": "8isjdc",
       "name": "div",
-      "parent": "on6zam",
+      "parent": "3yova5",
       "children": [
-        "5p46hw",
-        "s4vsgr"
+        "e56m6m",
+        "a8feq5"
       ],
       "settings": {
         "_display": "flex",
@@ -2628,11 +2630,11 @@
       }
     },
     {
-      "id": "on6zam",
+      "id": "3yova5",
       "name": "div",
-      "parent": "pqlguz",
+      "parent": "o7nck0",
       "children": [
-        "ihk90t"
+        "8isjdc"
       ],
       "settings": {
         "_display": "flex",
@@ -2641,9 +2643,9 @@
       }
     },
     {
-      "id": "1hqqdl",
+      "id": "c2ouxt",
       "name": "icon",
-      "parent": "7dggts",
+      "parent": "bt6hal",
       "children": [],
       "settings": {
         "icon": {
@@ -2663,9 +2665,9 @@
       "themeStyles": []
     },
     {
-      "id": "hq7zmx",
+      "id": "oi92nv",
       "name": "text",
-      "parent": "7dggts",
+      "parent": "bt6hal",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -2685,12 +2687,12 @@
       }
     },
     {
-      "id": "7dggts",
+      "id": "bt6hal",
       "name": "div",
-      "parent": "o3uxkl",
+      "parent": "o0kxw2",
       "children": [
-        "1hqqdl",
-        "hq7zmx"
+        "c2ouxt",
+        "oi92nv"
       ],
       "settings": {
         "_display": "flex",
@@ -2701,11 +2703,11 @@
       }
     },
     {
-      "id": "o3uxkl",
+      "id": "o0kxw2",
       "name": "div",
-      "parent": "pqlguz",
+      "parent": "o7nck0",
       "children": [
-        "7dggts"
+        "bt6hal"
       ],
       "settings": {
         "_display": "flex",
@@ -2714,29 +2716,13 @@
       }
     },
     {
-      "id": "pqlguz",
+      "id": "o7nck0",
       "name": "div",
-      "parent": "uuy540",
+      "parent": "769buj",
       "children": [
-        "7xw7k5",
-        "on6zam",
-        "o3uxkl"
-      ],
-      "settings": {
-        "_display": "flex",
-        "_direction": "column",
-        "_rowGap": "14",
-        "_columnGap": "14",
-        "_alignItems": "flex-start"
-      }
-    },
-    {
-      "id": "uuy540",
-      "name": "div",
-      "parent": "6yomiv",
-      "children": [
-        "q0zyx4",
-        "pqlguz"
+        "do09kg",
+        "3yova5",
+        "o0kxw2"
       ],
       "settings": {
         "_display": "flex",
@@ -2747,11 +2733,27 @@
       }
     },
     {
-      "id": "6yomiv",
+      "id": "769buj",
       "name": "div",
-      "parent": "eu3d0w",
+      "parent": "5alplk",
       "children": [
-        "uuy540"
+        "nk9zfq",
+        "o7nck0"
+      ],
+      "settings": {
+        "_display": "flex",
+        "_direction": "column",
+        "_rowGap": "14",
+        "_columnGap": "14",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "5alplk",
+      "name": "div",
+      "parent": "oywe94",
+      "children": [
+        "769buj"
       ],
       "settings": {
         "_display": "flex",
@@ -2760,11 +2762,11 @@
       }
     },
     {
-      "id": "eu3d0w",
+      "id": "oywe94",
       "name": "div",
-      "parent": "2ueyzg",
+      "parent": "w3ysvd",
       "children": [
-        "6yomiv"
+        "5alplk"
       ],
       "settings": {
         "_display": "flex",
@@ -2773,12 +2775,12 @@
       }
     },
     {
-      "id": "2ueyzg",
+      "id": "w3ysvd",
       "name": "div",
-      "parent": "d6b76g",
+      "parent": "spvhv3",
       "children": [
-        "rhzzgy",
-        "eu3d0w"
+        "o2m12h",
+        "oywe94"
       ],
       "settings": {
         "_display": "grid",
@@ -2791,11 +2793,11 @@
       }
     },
     {
-      "id": "d6b76g",
+      "id": "spvhv3",
       "name": "div",
-      "parent": "eazrex",
+      "parent": "yff8pd",
       "children": [
-        "2ueyzg"
+        "w3ysvd"
       ],
       "settings": {
         "_display": "flex",
@@ -2842,9 +2844,9 @@
       }
     },
     {
-      "id": "334zri",
+      "id": "wad930",
       "name": "icon",
-      "parent": "37ufvv",
+      "parent": "criztm",
       "children": [],
       "settings": {
         "icon": {
@@ -2864,9 +2866,9 @@
       "themeStyles": []
     },
     {
-      "id": "jx89xl",
+      "id": "744vvy",
       "name": "heading",
-      "parent": "37ufvv",
+      "parent": "criztm",
       "children": [],
       "settings": {
         "text": "PROS",
@@ -2885,12 +2887,12 @@
       }
     },
     {
-      "id": "37ufvv",
+      "id": "criztm",
       "name": "div",
-      "parent": "0lcc6x",
+      "parent": "i4i5x3",
       "children": [
-        "334zri",
-        "jx89xl"
+        "wad930",
+        "744vvy"
       ],
       "settings": {
         "_display": "flex",
@@ -2901,9 +2903,9 @@
       }
     },
     {
-      "id": "2y8mbz",
+      "id": "2kqodc",
       "name": "icon",
-      "parent": "wf3x0f",
+      "parent": "qfjyhp",
       "children": [],
       "settings": {
         "icon": {
@@ -2923,9 +2925,9 @@
       "themeStyles": []
     },
     {
-      "id": "9u3up8",
+      "id": "ncxq0q",
       "name": "text",
-      "parent": "wf3x0f",
+      "parent": "qfjyhp",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -2945,12 +2947,12 @@
       }
     },
     {
-      "id": "wf3x0f",
+      "id": "qfjyhp",
       "name": "div",
-      "parent": "pcresu",
+      "parent": "o33mw2",
       "children": [
-        "2y8mbz",
-        "9u3up8"
+        "2kqodc",
+        "ncxq0q"
       ],
       "settings": {
         "_display": "flex",
@@ -2961,9 +2963,9 @@
       }
     },
     {
-      "id": "ctw8ip",
+      "id": "4cm8t3",
       "name": "icon",
-      "parent": "29gtmh",
+      "parent": "6kchpa",
       "children": [],
       "settings": {
         "icon": {
@@ -2983,9 +2985,9 @@
       "themeStyles": []
     },
     {
-      "id": "wxefk2",
+      "id": "mcw116",
       "name": "text",
-      "parent": "29gtmh",
+      "parent": "6kchpa",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
@@ -3003,12 +3005,12 @@
       }
     },
     {
-      "id": "29gtmh",
+      "id": "6kchpa",
       "name": "div",
-      "parent": "pcresu",
+      "parent": "o33mw2",
       "children": [
-        "ctw8ip",
-        "wxefk2"
+        "4cm8t3",
+        "mcw116"
       ],
       "settings": {
         "_display": "flex",
@@ -3019,9 +3021,9 @@
       }
     },
     {
-      "id": "lyhqnk",
+      "id": "ylyvg1",
       "name": "icon",
-      "parent": "rx2stu",
+      "parent": "ivczhs",
       "children": [],
       "settings": {
         "icon": {
@@ -3041,9 +3043,9 @@
       "themeStyles": []
     },
     {
-      "id": "tdlpke",
+      "id": "5pykte",
       "name": "text",
-      "parent": "rx2stu",
+      "parent": "ivczhs",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -3063,12 +3065,12 @@
       }
     },
     {
-      "id": "rx2stu",
+      "id": "ivczhs",
       "name": "div",
-      "parent": "pcresu",
+      "parent": "o33mw2",
       "children": [
-        "lyhqnk",
-        "tdlpke"
+        "ylyvg1",
+        "5pykte"
       ],
       "settings": {
         "_display": "flex",
@@ -3079,13 +3081,13 @@
       }
     },
     {
-      "id": "pcresu",
+      "id": "o33mw2",
       "name": "div",
-      "parent": "0lcc6x",
+      "parent": "i4i5x3",
       "children": [
-        "wf3x0f",
-        "29gtmh",
-        "rx2stu"
+        "qfjyhp",
+        "6kchpa",
+        "ivczhs"
       ],
       "settings": {
         "_display": "flex",
@@ -3096,12 +3098,12 @@
       }
     },
     {
-      "id": "0lcc6x",
+      "id": "i4i5x3",
       "name": "div",
-      "parent": "68yizc",
+      "parent": "0m2kxt",
       "children": [
-        "37ufvv",
-        "pcresu"
+        "criztm",
+        "o33mw2"
       ],
       "settings": {
         "_display": "flex",
@@ -3112,11 +3114,11 @@
       }
     },
     {
-      "id": "68yizc",
+      "id": "0m2kxt",
       "name": "div",
-      "parent": "4lvbud",
+      "parent": "pz1p9s",
       "children": [
-        "0lcc6x"
+        "i4i5x3"
       ],
       "settings": {
         "_display": "flex",
@@ -3125,9 +3127,9 @@
       }
     },
     {
-      "id": "iu6lht",
+      "id": "lr6ibl",
       "name": "icon",
-      "parent": "3vyldk",
+      "parent": "m2mt2i",
       "children": [],
       "settings": {
         "icon": {
@@ -3147,9 +3149,9 @@
       "themeStyles": []
     },
     {
-      "id": "sloqp9",
+      "id": "s1if8u",
       "name": "heading",
-      "parent": "3vyldk",
+      "parent": "m2mt2i",
       "children": [],
       "settings": {
         "text": "Cons",
@@ -3168,12 +3170,12 @@
       }
     },
     {
-      "id": "3vyldk",
+      "id": "m2mt2i",
       "name": "div",
-      "parent": "i4ss11",
+      "parent": "1n2ot8",
       "children": [
-        "iu6lht",
-        "sloqp9"
+        "lr6ibl",
+        "s1if8u"
       ],
       "settings": {
         "_display": "flex",
@@ -3184,9 +3186,9 @@
       }
     },
     {
-      "id": "bfixty",
+      "id": "hmbhyv",
       "name": "icon",
-      "parent": "5ri8db",
+      "parent": "a2mtfq",
       "children": [],
       "settings": {
         "icon": {
@@ -3206,9 +3208,9 @@
       "themeStyles": []
     },
     {
-      "id": "4dvpl5",
+      "id": "ahc2ms",
       "name": "text-basic",
-      "parent": "5ri8db",
+      "parent": "a2mtfq",
       "children": [],
       "settings": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -3228,12 +3230,12 @@
       }
     },
     {
-      "id": "5ri8db",
+      "id": "a2mtfq",
       "name": "div",
-      "parent": "jsfiil",
+      "parent": "50tqwg",
       "children": [
-        "bfixty",
-        "4dvpl5"
+        "hmbhyv",
+        "ahc2ms"
       ],
       "settings": {
         "_display": "flex",
@@ -3244,11 +3246,11 @@
       }
     },
     {
-      "id": "jsfiil",
+      "id": "50tqwg",
       "name": "div",
-      "parent": "514c7g",
+      "parent": "h97ku5",
       "children": [
-        "5ri8db"
+        "a2mtfq"
       ],
       "settings": {
         "_display": "flex",
@@ -3257,9 +3259,9 @@
       }
     },
     {
-      "id": "ujrmf9",
+      "id": "3ve934",
       "name": "icon",
-      "parent": "zhklh6",
+      "parent": "gq0zte",
       "children": [],
       "settings": {
         "icon": {
@@ -3279,9 +3281,9 @@
       "themeStyles": []
     },
     {
-      "id": "z22qim",
+      "id": "m4si7g",
       "name": "text-basic",
-      "parent": "zhklh6",
+      "parent": "gq0zte",
       "children": [],
       "settings": {
         "text": "Lorem Ipsum is simply dummy text of the printing and ",
@@ -3299,12 +3301,12 @@
       }
     },
     {
-      "id": "zhklh6",
+      "id": "gq0zte",
       "name": "div",
-      "parent": "vdygpv",
+      "parent": "rj8qya",
       "children": [
-        "ujrmf9",
-        "z22qim"
+        "3ve934",
+        "m4si7g"
       ],
       "settings": {
         "_display": "flex",
@@ -3315,11 +3317,11 @@
       }
     },
     {
-      "id": "vdygpv",
+      "id": "rj8qya",
       "name": "div",
-      "parent": "514c7g",
+      "parent": "h97ku5",
       "children": [
-        "zhklh6"
+        "gq0zte"
       ],
       "settings": {
         "_display": "flex",
@@ -3328,9 +3330,9 @@
       }
     },
     {
-      "id": "dbvzze",
+      "id": "ng6th1",
       "name": "icon",
-      "parent": "u7pxt0",
+      "parent": "wcpvia",
       "children": [],
       "settings": {
         "icon": {
@@ -3350,9 +3352,9 @@
       "themeStyles": []
     },
     {
-      "id": "43zo73",
+      "id": "z2p5vf",
       "name": "text-basic",
-      "parent": "u7pxt0",
+      "parent": "wcpvia",
       "children": [],
       "settings": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -3372,12 +3374,12 @@
       }
     },
     {
-      "id": "u7pxt0",
+      "id": "wcpvia",
       "name": "div",
-      "parent": "hm3szv",
+      "parent": "1vbn0o",
       "children": [
-        "dbvzze",
-        "43zo73"
+        "ng6th1",
+        "z2p5vf"
       ],
       "settings": {
         "_display": "flex",
@@ -3388,11 +3390,11 @@
       }
     },
     {
-      "id": "hm3szv",
+      "id": "1vbn0o",
       "name": "div",
-      "parent": "514c7g",
+      "parent": "h97ku5",
       "children": [
-        "u7pxt0"
+        "wcpvia"
       ],
       "settings": {
         "_display": "flex",
@@ -3401,29 +3403,13 @@
       }
     },
     {
-      "id": "514c7g",
+      "id": "h97ku5",
       "name": "div",
-      "parent": "i4ss11",
+      "parent": "1n2ot8",
       "children": [
-        "jsfiil",
-        "vdygpv",
-        "hm3szv"
-      ],
-      "settings": {
-        "_display": "flex",
-        "_direction": "column",
-        "_rowGap": "14",
-        "_columnGap": "14",
-        "_alignItems": "flex-start"
-      }
-    },
-    {
-      "id": "i4ss11",
-      "name": "div",
-      "parent": "4lvbud",
-      "children": [
-        "3vyldk",
-        "514c7g"
+        "50tqwg",
+        "rj8qya",
+        "1vbn0o"
       ],
       "settings": {
         "_display": "flex",
@@ -3434,12 +3420,28 @@
       }
     },
     {
-      "id": "4lvbud",
+      "id": "1n2ot8",
       "name": "div",
-      "parent": "xnw9hf",
+      "parent": "pz1p9s",
       "children": [
-        "68yizc",
-        "i4ss11"
+        "m2mt2i",
+        "h97ku5"
+      ],
+      "settings": {
+        "_display": "flex",
+        "_direction": "column",
+        "_rowGap": "14",
+        "_columnGap": "14",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "pz1p9s",
+      "name": "div",
+      "parent": "6reoi8",
+      "children": [
+        "0m2kxt",
+        "1n2ot8"
       ],
       "settings": {
         "_display": "grid",
@@ -3452,11 +3454,11 @@
       }
     },
     {
-      "id": "xnw9hf",
+      "id": "6reoi8",
       "name": "div",
-      "parent": "eazrex",
+      "parent": "yff8pd",
       "children": [
-        "4lvbud"
+        "pz1p9s"
       ],
       "settings": {
         "_display": "flex",
@@ -3503,14 +3505,14 @@
       }
     },
     {
-      "id": "eazrex",
+      "id": "yff8pd",
       "name": "container",
-      "parent": "ht4mn8",
+      "parent": "cfv4ed",
       "children": [
-        "znicfx",
-        "3xp8su",
-        "d6b76g",
-        "xnw9hf"
+        "fwj2n6",
+        "zuxnxb",
+        "spvhv3",
+        "6reoi8"
       ],
       "settings": {
         "_display": "flex",
@@ -3521,11 +3523,11 @@
       }
     },
     {
-      "id": "ht4mn8",
+      "id": "cfv4ed",
       "name": "section",
       "parent": 0,
       "children": [
-        "eazrex"
+        "yff8pd"
       ],
       "settings": {
         "_padding": {
@@ -3541,13 +3543,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "kl7ihm",
+      "id": "eytrg3",
       "name": "heading",
-      "parent": "zsbwu6",
+      "parent": "xb7ut7",
       "children": [],
       "settings": {
         "text": "About Jili Slot Games",
@@ -3566,9 +3573,9 @@
       }
     },
     {
-      "id": "ffplfm",
+      "id": "q6i8ya",
       "name": "image",
-      "parent": "3xw0kl",
+      "parent": "lvte87",
       "children": [],
       "settings": {
         "image": {
@@ -3592,9 +3599,9 @@
       "themeStyles": []
     },
     {
-      "id": "n21afj",
+      "id": "2tsjv4",
       "name": "heading",
-      "parent": "gavns0",
+      "parent": "8dxav6",
       "children": [],
       "settings": {
         "text": "Super Ace Jili",
@@ -3613,9 +3620,9 @@
       }
     },
     {
-      "id": "x7z9x1",
+      "id": "o9gzk6",
       "name": "text",
-      "parent": "gavns0",
+      "parent": "8dxav6",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -3633,9 +3640,9 @@
       }
     },
     {
-      "id": "drmjz8",
+      "id": "l2i595",
       "name": "text",
-      "parent": "gavns0",
+      "parent": "8dxav6",
       "children": [],
       "settings": {
         "text": "<p>RTP: 96.00%</p>",
@@ -3653,13 +3660,13 @@
       }
     },
     {
-      "id": "gavns0",
+      "id": "8dxav6",
       "name": "div",
-      "parent": "3xw0kl",
+      "parent": "lvte87",
       "children": [
-        "n21afj",
-        "x7z9x1",
-        "drmjz8"
+        "2tsjv4",
+        "o9gzk6",
+        "l2i595"
       ],
       "settings": {
         "_display": "flex",
@@ -3670,12 +3677,12 @@
       }
     },
     {
-      "id": "3xw0kl",
+      "id": "lvte87",
       "name": "div",
-      "parent": "z5cnez",
+      "parent": "2cuiry",
       "children": [
-        "ffplfm",
-        "gavns0"
+        "q6i8ya",
+        "8dxav6"
       ],
       "settings": {
         "_display": "flex",
@@ -3686,11 +3693,11 @@
       }
     },
     {
-      "id": "z5cnez",
+      "id": "2cuiry",
       "name": "div",
-      "parent": "4r5fcn",
+      "parent": "m88wo8",
       "children": [
-        "3xw0kl"
+        "lvte87"
       ],
       "settings": {
         "_display": "flex",
@@ -3718,9 +3725,9 @@
       }
     },
     {
-      "id": "2i4bgo",
+      "id": "1j82kt",
       "name": "image",
-      "parent": "5pe9aw",
+      "parent": "w7tz48",
       "children": [],
       "settings": {
         "image": {
@@ -3736,9 +3743,9 @@
       "themeStyles": []
     },
     {
-      "id": "qir7tl",
+      "id": "l4dlmo",
       "name": "heading",
-      "parent": "sdn3v0",
+      "parent": "bmhzje",
       "children": [],
       "settings": {
         "text": "Jili Ludo",
@@ -3757,9 +3764,9 @@
       }
     },
     {
-      "id": "zc18qj",
+      "id": "li4n7u",
       "name": "text-basic",
-      "parent": "sdn3v0",
+      "parent": "bmhzje",
       "children": [],
       "settings": {
         "text": "High volatility, combo wins",
@@ -3777,9 +3784,9 @@
       }
     },
     {
-      "id": "2jyx0s",
+      "id": "xthpl7",
       "name": "text-basic",
-      "parent": "sdn3v0",
+      "parent": "bmhzje",
       "children": [],
       "settings": {
         "text": "RTP: 96.00%",
@@ -3797,13 +3804,13 @@
       }
     },
     {
-      "id": "sdn3v0",
+      "id": "bmhzje",
       "name": "div",
-      "parent": "5pe9aw",
+      "parent": "w7tz48",
       "children": [
-        "qir7tl",
-        "zc18qj",
-        "2jyx0s"
+        "l4dlmo",
+        "li4n7u",
+        "xthpl7"
       ],
       "settings": {
         "_display": "flex",
@@ -3814,12 +3821,12 @@
       }
     },
     {
-      "id": "5pe9aw",
+      "id": "w7tz48",
       "name": "div",
-      "parent": "wainf0",
+      "parent": "7t1vxr",
       "children": [
-        "2i4bgo",
-        "sdn3v0"
+        "1j82kt",
+        "bmhzje"
       ],
       "settings": {
         "_display": "flex",
@@ -3830,11 +3837,11 @@
       }
     },
     {
-      "id": "wainf0",
+      "id": "7t1vxr",
       "name": "div",
-      "parent": "4r5fcn",
+      "parent": "m88wo8",
       "children": [
-        "5pe9aw"
+        "w7tz48"
       ],
       "settings": {
         "_display": "flex",
@@ -3862,9 +3869,9 @@
       }
     },
     {
-      "id": "gik11o",
+      "id": "9n7vsc",
       "name": "image",
-      "parent": "1fcrsh",
+      "parent": "gb7h10",
       "children": [],
       "settings": {
         "image": {
@@ -3888,9 +3895,9 @@
       "themeStyles": []
     },
     {
-      "id": "upl8ac",
+      "id": "98kwug",
       "name": "heading",
-      "parent": "obizuv",
+      "parent": "2r7m5l",
       "children": [],
       "settings": {
         "text": "Jili Money Coming",
@@ -3909,9 +3916,9 @@
       }
     },
     {
-      "id": "wbf4w4",
+      "id": "vuabpu",
       "name": "text",
-      "parent": "obizuv",
+      "parent": "2r7m5l",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -3929,9 +3936,9 @@
       }
     },
     {
-      "id": "d4vdj3",
+      "id": "va59lo",
       "name": "text",
-      "parent": "obizuv",
+      "parent": "2r7m5l",
       "children": [],
       "settings": {
         "text": "<p>RTP: 96.00%</p>",
@@ -3949,13 +3956,13 @@
       }
     },
     {
-      "id": "obizuv",
+      "id": "2r7m5l",
       "name": "div",
-      "parent": "1fcrsh",
+      "parent": "gb7h10",
       "children": [
-        "upl8ac",
-        "wbf4w4",
-        "d4vdj3"
+        "98kwug",
+        "vuabpu",
+        "va59lo"
       ],
       "settings": {
         "_display": "flex",
@@ -3966,12 +3973,12 @@
       }
     },
     {
-      "id": "1fcrsh",
+      "id": "gb7h10",
       "name": "div",
-      "parent": "5zn0uu",
+      "parent": "0jjjf3",
       "children": [
-        "gik11o",
-        "obizuv"
+        "9n7vsc",
+        "2r7m5l"
       ],
       "settings": {
         "_display": "flex",
@@ -3982,11 +3989,11 @@
       }
     },
     {
-      "id": "5zn0uu",
+      "id": "0jjjf3",
       "name": "div",
-      "parent": "bvz3c7",
+      "parent": "t0oav7",
       "children": [
-        "1fcrsh"
+        "gb7h10"
       ],
       "settings": {
         "_display": "flex",
@@ -3995,11 +4002,11 @@
       }
     },
     {
-      "id": "bvz3c7",
+      "id": "t0oav7",
       "name": "div",
-      "parent": "4r5fcn",
+      "parent": "m88wo8",
       "children": [
-        "5zn0uu"
+        "0jjjf3"
       ],
       "settings": {
         "_display": "flex",
@@ -4027,9 +4034,9 @@
       }
     },
     {
-      "id": "7q8jaj",
+      "id": "fd73cj",
       "name": "image",
-      "parent": "wmbjcn",
+      "parent": "5y9i01",
       "children": [],
       "settings": {
         "image": {
@@ -4045,9 +4052,9 @@
       "themeStyles": []
     },
     {
-      "id": "52hizg",
+      "id": "3lk5zs",
       "name": "heading",
-      "parent": "rzgjpd",
+      "parent": "j4fo36",
       "children": [],
       "settings": {
         "text": "Jili Slot Fortune Gems",
@@ -4066,9 +4073,9 @@
       }
     },
     {
-      "id": "sa31j0",
+      "id": "5wt4eb",
       "name": "text",
-      "parent": "rzgjpd",
+      "parent": "j4fo36",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -4086,9 +4093,9 @@
       }
     },
     {
-      "id": "lw8pyd",
+      "id": "i8mj7t",
       "name": "text",
-      "parent": "rzgjpd",
+      "parent": "j4fo36",
       "children": [],
       "settings": {
         "text": "<p>RTP: 96.00%</p>",
@@ -4106,13 +4113,13 @@
       }
     },
     {
-      "id": "rzgjpd",
+      "id": "j4fo36",
       "name": "div",
-      "parent": "wmbjcn",
+      "parent": "5y9i01",
       "children": [
-        "52hizg",
-        "sa31j0",
-        "lw8pyd"
+        "3lk5zs",
+        "5wt4eb",
+        "i8mj7t"
       ],
       "settings": {
         "_display": "flex",
@@ -4123,12 +4130,12 @@
       }
     },
     {
-      "id": "wmbjcn",
+      "id": "5y9i01",
       "name": "div",
-      "parent": "0lmqo9",
+      "parent": "yroper",
       "children": [
-        "7q8jaj",
-        "rzgjpd"
+        "fd73cj",
+        "j4fo36"
       ],
       "settings": {
         "_display": "flex",
@@ -4139,11 +4146,11 @@
       }
     },
     {
-      "id": "0lmqo9",
+      "id": "yroper",
       "name": "div",
-      "parent": "4r5fcn",
+      "parent": "m88wo8",
       "children": [
-        "wmbjcn"
+        "5y9i01"
       ],
       "settings": {
         "_display": "flex",
@@ -4171,14 +4178,14 @@
       }
     },
     {
-      "id": "4r5fcn",
+      "id": "m88wo8",
       "name": "div",
-      "parent": "zsbwu6",
+      "parent": "xb7ut7",
       "children": [
-        "z5cnez",
-        "wainf0",
-        "bvz3c7",
-        "0lmqo9"
+        "2cuiry",
+        "7t1vxr",
+        "t0oav7",
+        "yroper"
       ],
       "settings": {
         "_display": "grid",
@@ -4195,9 +4202,9 @@
       }
     },
     {
-      "id": "c56sn4",
+      "id": "rnisv0",
       "name": "image",
-      "parent": "4oqap0",
+      "parent": "jf2a47",
       "children": [],
       "settings": {
         "image": {
@@ -4221,9 +4228,9 @@
       "themeStyles": []
     },
     {
-      "id": "4yw1an",
+      "id": "1r8ujh",
       "name": "heading",
-      "parent": "169r6l",
+      "parent": "c5kwm0",
       "children": [],
       "settings": {
         "text": "Boxing King Jili Slot",
@@ -4242,9 +4249,9 @@
       }
     },
     {
-      "id": "cq1ks9",
+      "id": "q3fplg",
       "name": "text",
-      "parent": "169r6l",
+      "parent": "c5kwm0",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -4262,9 +4269,9 @@
       }
     },
     {
-      "id": "xc9u6s",
+      "id": "h7p871",
       "name": "text",
-      "parent": "169r6l",
+      "parent": "c5kwm0",
       "children": [],
       "settings": {
         "text": "<p>RTP: 96.00%</p>",
@@ -4282,13 +4289,13 @@
       }
     },
     {
-      "id": "169r6l",
+      "id": "c5kwm0",
       "name": "div",
-      "parent": "4oqap0",
+      "parent": "jf2a47",
       "children": [
-        "4yw1an",
-        "cq1ks9",
-        "xc9u6s"
+        "1r8ujh",
+        "q3fplg",
+        "h7p871"
       ],
       "settings": {
         "_display": "flex",
@@ -4299,12 +4306,12 @@
       }
     },
     {
-      "id": "4oqap0",
+      "id": "jf2a47",
       "name": "div",
-      "parent": "xp0uo7",
+      "parent": "35g7lw",
       "children": [
-        "c56sn4",
-        "169r6l"
+        "rnisv0",
+        "c5kwm0"
       ],
       "settings": {
         "_display": "flex",
@@ -4315,11 +4322,11 @@
       }
     },
     {
-      "id": "xp0uo7",
+      "id": "35g7lw",
       "name": "div",
-      "parent": "fgk036",
+      "parent": "q66lc5",
       "children": [
-        "4oqap0"
+        "jf2a47"
       ],
       "settings": {
         "_display": "flex",
@@ -4347,9 +4354,9 @@
       }
     },
     {
-      "id": "8pfry3",
+      "id": "i8xcwg",
       "name": "image",
-      "parent": "n1v7wj",
+      "parent": "5154sg",
       "children": [],
       "settings": {
         "image": {
@@ -4373,9 +4380,9 @@
       "themeStyles": []
     },
     {
-      "id": "31aml6",
+      "id": "me8rwr",
       "name": "text",
-      "parent": "zks5zu",
+      "parent": "qdlw6b",
       "children": [],
       "settings": {
         "text": "<p>Alibaba Jili Slot</p>",
@@ -4393,9 +4400,9 @@
       }
     },
     {
-      "id": "p9zgy5",
+      "id": "fmuxjf",
       "name": "text",
-      "parent": "zks5zu",
+      "parent": "qdlw6b",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -4413,9 +4420,9 @@
       }
     },
     {
-      "id": "jl81ef",
+      "id": "hyjuju",
       "name": "text",
-      "parent": "zks5zu",
+      "parent": "qdlw6b",
       "children": [],
       "settings": {
         "text": "<p>RTP: 96.00%</p>",
@@ -4433,13 +4440,13 @@
       }
     },
     {
-      "id": "zks5zu",
+      "id": "qdlw6b",
       "name": "div",
-      "parent": "n1v7wj",
+      "parent": "5154sg",
       "children": [
-        "31aml6",
-        "p9zgy5",
-        "jl81ef"
+        "me8rwr",
+        "fmuxjf",
+        "hyjuju"
       ],
       "settings": {
         "_display": "flex",
@@ -4450,12 +4457,12 @@
       }
     },
     {
-      "id": "n1v7wj",
+      "id": "5154sg",
       "name": "div",
-      "parent": "ghle61",
+      "parent": "xg02u2",
       "children": [
-        "8pfry3",
-        "zks5zu"
+        "i8xcwg",
+        "qdlw6b"
       ],
       "settings": {
         "_display": "flex",
@@ -4466,11 +4473,11 @@
       }
     },
     {
-      "id": "ghle61",
+      "id": "xg02u2",
       "name": "div",
-      "parent": "fgk036",
+      "parent": "q66lc5",
       "children": [
-        "n1v7wj"
+        "5154sg"
       ],
       "settings": {
         "_display": "flex",
@@ -4498,9 +4505,9 @@
       }
     },
     {
-      "id": "4vhwt2",
+      "id": "k1kb8o",
       "name": "image",
-      "parent": "ci8ebx",
+      "parent": "iazga5",
       "children": [],
       "settings": {
         "image": {
@@ -4524,9 +4531,9 @@
       "themeStyles": []
     },
     {
-      "id": "clv03i",
+      "id": "f5eaij",
       "name": "heading",
-      "parent": "rrfqpo",
+      "parent": "g74fss",
       "children": [],
       "settings": {
         "text": "Jili Golden Empire",
@@ -4545,9 +4552,9 @@
       }
     },
     {
-      "id": "6lxaan",
+      "id": "1dwgow",
       "name": "text",
-      "parent": "rrfqpo",
+      "parent": "g74fss",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -4565,9 +4572,9 @@
       }
     },
     {
-      "id": "kxu9d5",
+      "id": "8oijuv",
       "name": "text",
-      "parent": "rrfqpo",
+      "parent": "g74fss",
       "children": [],
       "settings": {
         "text": "<p>RTP: 96.00%</p>",
@@ -4585,13 +4592,13 @@
       }
     },
     {
-      "id": "rrfqpo",
+      "id": "g74fss",
       "name": "div",
-      "parent": "ci8ebx",
+      "parent": "iazga5",
       "children": [
-        "clv03i",
-        "6lxaan",
-        "kxu9d5"
+        "f5eaij",
+        "1dwgow",
+        "8oijuv"
       ],
       "settings": {
         "_display": "flex",
@@ -4602,12 +4609,12 @@
       }
     },
     {
-      "id": "ci8ebx",
+      "id": "iazga5",
       "name": "div",
-      "parent": "i27ao9",
+      "parent": "xozwmi",
       "children": [
-        "4vhwt2",
-        "rrfqpo"
+        "k1kb8o",
+        "g74fss"
       ],
       "settings": {
         "_display": "flex",
@@ -4618,11 +4625,11 @@
       }
     },
     {
-      "id": "i27ao9",
+      "id": "xozwmi",
       "name": "div",
-      "parent": "fgk036",
+      "parent": "q66lc5",
       "children": [
-        "ci8ebx"
+        "iazga5"
       ],
       "settings": {
         "_display": "flex",
@@ -4650,9 +4657,9 @@
       }
     },
     {
-      "id": "otb99k",
+      "id": "d212ei",
       "name": "image",
-      "parent": "jiel78",
+      "parent": "aoy3bn",
       "children": [],
       "settings": {
         "image": {
@@ -4668,9 +4675,9 @@
       "themeStyles": []
     },
     {
-      "id": "3sx20k",
+      "id": "i58ftu",
       "name": "text",
-      "parent": "lli6dg",
+      "parent": "evdpgw",
       "children": [],
       "settings": {
         "text": "<p>Jili Fortune Gems 2</p>",
@@ -4688,9 +4695,9 @@
       }
     },
     {
-      "id": "wbl91i",
+      "id": "mepwtn",
       "name": "text",
-      "parent": "lli6dg",
+      "parent": "evdpgw",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -4708,9 +4715,9 @@
       }
     },
     {
-      "id": "c2id7s",
+      "id": "u4l4d7",
       "name": "text",
-      "parent": "lli6dg",
+      "parent": "evdpgw",
       "children": [],
       "settings": {
         "text": "<p>RTP: 96.00%</p>",
@@ -4728,13 +4735,13 @@
       }
     },
     {
-      "id": "lli6dg",
+      "id": "evdpgw",
       "name": "div",
-      "parent": "jiel78",
+      "parent": "aoy3bn",
       "children": [
-        "3sx20k",
-        "wbl91i",
-        "c2id7s"
+        "i58ftu",
+        "mepwtn",
+        "u4l4d7"
       ],
       "settings": {
         "_display": "flex",
@@ -4745,12 +4752,12 @@
       }
     },
     {
-      "id": "jiel78",
+      "id": "aoy3bn",
       "name": "div",
-      "parent": "pqw8xc",
+      "parent": "cb9rbx",
       "children": [
-        "otb99k",
-        "lli6dg"
+        "d212ei",
+        "evdpgw"
       ],
       "settings": {
         "_display": "flex",
@@ -4761,11 +4768,11 @@
       }
     },
     {
-      "id": "pqw8xc",
+      "id": "cb9rbx",
       "name": "div",
-      "parent": "fgk036",
+      "parent": "q66lc5",
       "children": [
-        "jiel78"
+        "aoy3bn"
       ],
       "settings": {
         "_display": "flex",
@@ -4793,14 +4800,14 @@
       }
     },
     {
-      "id": "fgk036",
+      "id": "q66lc5",
       "name": "div",
-      "parent": "zsbwu6",
+      "parent": "xb7ut7",
       "children": [
-        "xp0uo7",
-        "ghle61",
-        "i27ao9",
-        "pqw8xc"
+        "35g7lw",
+        "xg02u2",
+        "xozwmi",
+        "cb9rbx"
       ],
       "settings": {
         "_display": "grid",
@@ -4817,9 +4824,9 @@
       }
     },
     {
-      "id": "ctx5xm",
+      "id": "30oewy",
       "name": "image",
-      "parent": "r6s7im",
+      "parent": "iksxno",
       "children": [],
       "settings": {
         "image": {
@@ -4843,9 +4850,9 @@
       "themeStyles": []
     },
     {
-      "id": "0awix7",
+      "id": "nvdamx",
       "name": "heading",
-      "parent": "lc9lsq",
+      "parent": "2kczkx",
       "children": [],
       "settings": {
         "text": "Jili Super Ace Slot",
@@ -4864,9 +4871,9 @@
       }
     },
     {
-      "id": "eb7okd",
+      "id": "yszorv",
       "name": "text",
-      "parent": "lc9lsq",
+      "parent": "2kczkx",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -4884,9 +4891,9 @@
       }
     },
     {
-      "id": "qtwu20",
+      "id": "xjwpgi",
       "name": "text-basic",
-      "parent": "lc9lsq",
+      "parent": "2kczkx",
       "children": [],
       "settings": {
         "text": "RTP: 96.00%",
@@ -4904,13 +4911,13 @@
       }
     },
     {
-      "id": "lc9lsq",
+      "id": "2kczkx",
       "name": "div",
-      "parent": "r6s7im",
+      "parent": "iksxno",
       "children": [
-        "0awix7",
-        "eb7okd",
-        "qtwu20"
+        "nvdamx",
+        "yszorv",
+        "xjwpgi"
       ],
       "settings": {
         "_display": "flex",
@@ -4921,12 +4928,12 @@
       }
     },
     {
-      "id": "r6s7im",
+      "id": "iksxno",
       "name": "div",
-      "parent": "vqh3b0",
+      "parent": "rrkur1",
       "children": [
-        "ctx5xm",
-        "lc9lsq"
+        "30oewy",
+        "2kczkx"
       ],
       "settings": {
         "_display": "flex",
@@ -4937,11 +4944,11 @@
       }
     },
     {
-      "id": "vqh3b0",
+      "id": "rrkur1",
       "name": "div",
-      "parent": "g7tyje",
+      "parent": "ut6ddp",
       "children": [
-        "r6s7im"
+        "iksxno"
       ],
       "settings": {
         "_display": "flex",
@@ -4969,9 +4976,9 @@
       }
     },
     {
-      "id": "xi0cs6",
+      "id": "tvh1d3",
       "name": "image",
-      "parent": "sda9fb",
+      "parent": "d0oro6",
       "children": [],
       "settings": {
         "image": {
@@ -4995,9 +5002,9 @@
       "themeStyles": []
     },
     {
-      "id": "2qsx13",
+      "id": "y8hlwv",
       "name": "heading",
-      "parent": "wmdb1o",
+      "parent": "2gbycz",
       "children": [],
       "settings": {
         "text": "Wild Ace Jili",
@@ -5016,9 +5023,9 @@
       }
     },
     {
-      "id": "8th9on",
+      "id": "0bb0n3",
       "name": "text",
-      "parent": "wmdb1o",
+      "parent": "2gbycz",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -5036,9 +5043,9 @@
       }
     },
     {
-      "id": "744kft",
+      "id": "b1v3r2",
       "name": "text",
-      "parent": "wmdb1o",
+      "parent": "2gbycz",
       "children": [],
       "settings": {
         "text": "<p>RTP: 96.00%</p>",
@@ -5056,13 +5063,13 @@
       }
     },
     {
-      "id": "wmdb1o",
+      "id": "2gbycz",
       "name": "div",
-      "parent": "sda9fb",
+      "parent": "d0oro6",
       "children": [
-        "2qsx13",
-        "8th9on",
-        "744kft"
+        "y8hlwv",
+        "0bb0n3",
+        "b1v3r2"
       ],
       "settings": {
         "_display": "flex",
@@ -5073,12 +5080,12 @@
       }
     },
     {
-      "id": "sda9fb",
+      "id": "d0oro6",
       "name": "div",
-      "parent": "9nw7y0",
+      "parent": "gd4qhs",
       "children": [
-        "xi0cs6",
-        "wmdb1o"
+        "tvh1d3",
+        "2gbycz"
       ],
       "settings": {
         "_display": "flex",
@@ -5089,11 +5096,11 @@
       }
     },
     {
-      "id": "9nw7y0",
+      "id": "gd4qhs",
       "name": "div",
-      "parent": "g7tyje",
+      "parent": "ut6ddp",
       "children": [
-        "sda9fb"
+        "d0oro6"
       ],
       "settings": {
         "_display": "flex",
@@ -5121,9 +5128,9 @@
       }
     },
     {
-      "id": "zm2sg8",
+      "id": "96mmxr",
       "name": "image",
-      "parent": "jvbi6t",
+      "parent": "ka7q03",
       "children": [],
       "settings": {
         "image": {
@@ -5139,9 +5146,9 @@
       "themeStyles": []
     },
     {
-      "id": "77eazn",
+      "id": "lszc8y",
       "name": "text",
-      "parent": "qaug71",
+      "parent": "4blwgs",
       "children": [],
       "settings": {
         "text": "<p>Jili Crazy 777 Slot</p>",
@@ -5159,9 +5166,9 @@
       }
     },
     {
-      "id": "jw4duq",
+      "id": "unyfxa",
       "name": "text",
-      "parent": "qaug71",
+      "parent": "4blwgs",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -5179,9 +5186,9 @@
       }
     },
     {
-      "id": "ck0cu6",
+      "id": "t1fqio",
       "name": "text",
-      "parent": "qaug71",
+      "parent": "4blwgs",
       "children": [],
       "settings": {
         "text": "<p>RTP: 96.00%</p>",
@@ -5199,13 +5206,13 @@
       }
     },
     {
-      "id": "qaug71",
+      "id": "4blwgs",
       "name": "div",
-      "parent": "jvbi6t",
+      "parent": "ka7q03",
       "children": [
-        "77eazn",
-        "jw4duq",
-        "ck0cu6"
+        "lszc8y",
+        "unyfxa",
+        "t1fqio"
       ],
       "settings": {
         "_display": "flex",
@@ -5216,12 +5223,12 @@
       }
     },
     {
-      "id": "jvbi6t",
+      "id": "ka7q03",
       "name": "div",
-      "parent": "rkpng2",
+      "parent": "8crslv",
       "children": [
-        "zm2sg8",
-        "qaug71"
+        "96mmxr",
+        "4blwgs"
       ],
       "settings": {
         "_display": "flex",
@@ -5232,11 +5239,11 @@
       }
     },
     {
-      "id": "rkpng2",
+      "id": "8crslv",
       "name": "div",
-      "parent": "g7tyje",
+      "parent": "ut6ddp",
       "children": [
-        "jvbi6t"
+        "ka7q03"
       ],
       "settings": {
         "_display": "flex",
@@ -5264,9 +5271,9 @@
       }
     },
     {
-      "id": "uwwyno",
+      "id": "55p0sw",
       "name": "image",
-      "parent": "80bu0i",
+      "parent": "oo1g3f",
       "children": [],
       "settings": {
         "image": {
@@ -5283,9 +5290,9 @@
       "themeStyles": []
     },
     {
-      "id": "4rlwty",
+      "id": "vhs91z",
       "name": "text",
-      "parent": "1d1lra",
+      "parent": "lrabds",
       "children": [],
       "settings": {
         "text": "<p>Jili Caishen</p>",
@@ -5304,9 +5311,9 @@
       }
     },
     {
-      "id": "c8kqw9",
+      "id": "ypss0i",
       "name": "text",
-      "parent": "1d1lra",
+      "parent": "lrabds",
       "children": [],
       "settings": {
         "text": "<p>High volatility, combo wins</p>",
@@ -5325,9 +5332,9 @@
       }
     },
     {
-      "id": "g12lzf",
+      "id": "y3ejv1",
       "name": "text",
-      "parent": "1d1lra",
+      "parent": "lrabds",
       "children": [],
       "settings": {
         "text": "<p>RTP: 96.00%</p>",
@@ -5346,13 +5353,13 @@
       }
     },
     {
-      "id": "1d1lra",
+      "id": "lrabds",
       "name": "div",
-      "parent": "80bu0i",
+      "parent": "oo1g3f",
       "children": [
-        "4rlwty",
-        "c8kqw9",
-        "g12lzf"
+        "vhs91z",
+        "ypss0i",
+        "y3ejv1"
       ],
       "settings": {
         "_display": "flex",
@@ -5363,12 +5370,12 @@
       }
     },
     {
-      "id": "80bu0i",
+      "id": "oo1g3f",
       "name": "div",
-      "parent": "p0o531",
+      "parent": "ropayz",
       "children": [
-        "uwwyno",
-        "1d1lra"
+        "55p0sw",
+        "lrabds"
       ],
       "settings": {
         "_display": "flex",
@@ -5379,11 +5386,11 @@
       }
     },
     {
-      "id": "p0o531",
+      "id": "ropayz",
       "name": "div",
-      "parent": "g7tyje",
+      "parent": "ut6ddp",
       "children": [
-        "80bu0i"
+        "oo1g3f"
       ],
       "settings": {
         "_display": "flex",
@@ -5411,14 +5418,14 @@
       }
     },
     {
-      "id": "g7tyje",
+      "id": "ut6ddp",
       "name": "div",
-      "parent": "zsbwu6",
+      "parent": "xb7ut7",
       "children": [
-        "vqh3b0",
-        "9nw7y0",
-        "rkpng2",
-        "p0o531"
+        "rrkur1",
+        "gd4qhs",
+        "8crslv",
+        "ropayz"
       ],
       "settings": {
         "_display": "grid",
@@ -5435,14 +5442,14 @@
       }
     },
     {
-      "id": "zsbwu6",
+      "id": "xb7ut7",
       "name": "container",
-      "parent": "82e355",
+      "parent": "whap2a",
       "children": [
-        "kl7ihm",
-        "4r5fcn",
-        "fgk036",
-        "g7tyje"
+        "eytrg3",
+        "m88wo8",
+        "q66lc5",
+        "ut6ddp"
       ],
       "settings": {
         "_display": "flex",
@@ -5453,11 +5460,11 @@
       }
     },
     {
-      "id": "82e355",
+      "id": "whap2a",
       "name": "section",
       "parent": 0,
       "children": [
-        "zsbwu6"
+        "xb7ut7"
       ],
       "settings": {
         "_padding": {
@@ -5473,13 +5480,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "3k5pvi",
+      "id": "ajme5a",
       "name": "heading",
-      "parent": "qjdn2x",
+      "parent": "5wdelf",
       "children": [],
       "settings": {
         "text": "About Other Types of Jili Games",
@@ -5498,9 +5510,9 @@
       }
     },
     {
-      "id": "6rgdp3",
+      "id": "wfcxt2",
       "name": "image",
-      "parent": "f5isod",
+      "parent": "xwxlug",
       "children": [],
       "settings": {
         "image": {
@@ -5524,9 +5536,9 @@
       "themeStyles": []
     },
     {
-      "id": "efbilf",
+      "id": "3pytaa",
       "name": "heading",
-      "parent": "x7sw4y",
+      "parent": "z2hqjp",
       "children": [],
       "settings": {
         "text": "Jili Fishing Games",
@@ -5545,9 +5557,9 @@
       }
     },
     {
-      "id": "dsvbp8",
+      "id": "u4ar4m",
       "name": "text",
-      "parent": "x7sw4y",
+      "parent": "z2hqjp",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
@@ -5565,12 +5577,12 @@
       }
     },
     {
-      "id": "x7sw4y",
+      "id": "z2hqjp",
       "name": "div",
-      "parent": "0hz2hi",
+      "parent": "duwluz",
       "children": [
-        "efbilf",
-        "dsvbp8"
+        "3pytaa",
+        "u4ar4m"
       ],
       "settings": {
         "_display": "flex",
@@ -5581,9 +5593,9 @@
       }
     },
     {
-      "id": "7bz246",
+      "id": "kbovf6",
       "name": "button",
-      "parent": "0hz2hi",
+      "parent": "duwluz",
       "children": [],
       "settings": {
         "text": "Play Now",
@@ -5619,12 +5631,12 @@
       }
     },
     {
-      "id": "0hz2hi",
+      "id": "duwluz",
       "name": "div",
-      "parent": "f5isod",
+      "parent": "xwxlug",
       "children": [
-        "x7sw4y",
-        "7bz246"
+        "z2hqjp",
+        "kbovf6"
       ],
       "settings": {
         "_display": "flex",
@@ -5635,12 +5647,12 @@
       }
     },
     {
-      "id": "f5isod",
+      "id": "xwxlug",
       "name": "div",
-      "parent": "xk69ge",
+      "parent": "ezusuu",
       "children": [
-        "6rgdp3",
-        "0hz2hi"
+        "wfcxt2",
+        "duwluz"
       ],
       "settings": {
         "_display": "flex",
@@ -5651,11 +5663,11 @@
       }
     },
     {
-      "id": "xk69ge",
+      "id": "ezusuu",
       "name": "div",
-      "parent": "9dvgyp",
+      "parent": "c0z54j",
       "children": [
-        "f5isod"
+        "xwxlug"
       ],
       "settings": {
         "_display": "flex",
@@ -5664,11 +5676,11 @@
       }
     },
     {
-      "id": "9dvgyp",
+      "id": "c0z54j",
       "name": "div",
-      "parent": "s2gxir",
+      "parent": "5edf2w",
       "children": [
-        "xk69ge"
+        "ezusuu"
       ],
       "settings": {
         "_display": "flex",
@@ -5696,9 +5708,9 @@
       }
     },
     {
-      "id": "gcl098",
+      "id": "qze8pv",
       "name": "image",
-      "parent": "pxcsx2",
+      "parent": "5fh0f7",
       "children": [],
       "settings": {
         "image": {
@@ -5714,9 +5726,9 @@
       "themeStyles": []
     },
     {
-      "id": "vkxw53",
+      "id": "slw8xw",
       "name": "text",
-      "parent": "gf21y3",
+      "parent": "rc8sr6",
       "children": [],
       "settings": {
         "text": "<p>Jili Table Games</p>",
@@ -5734,9 +5746,9 @@
       }
     },
     {
-      "id": "z60plv",
+      "id": "ofe76b",
       "name": "text",
-      "parent": "gf21y3",
+      "parent": "rc8sr6",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
@@ -5754,12 +5766,12 @@
       }
     },
     {
-      "id": "gf21y3",
+      "id": "rc8sr6",
       "name": "div",
-      "parent": "fh3evy",
+      "parent": "8idnsh",
       "children": [
-        "vkxw53",
-        "z60plv"
+        "slw8xw",
+        "ofe76b"
       ],
       "settings": {
         "_display": "flex",
@@ -5770,9 +5782,9 @@
       }
     },
     {
-      "id": "dofsyp",
+      "id": "xydhan",
       "name": "button",
-      "parent": "fh3evy",
+      "parent": "8idnsh",
       "children": [],
       "settings": {
         "text": "Play Now",
@@ -5808,12 +5820,12 @@
       }
     },
     {
-      "id": "fh3evy",
+      "id": "8idnsh",
       "name": "div",
-      "parent": "pxcsx2",
+      "parent": "5fh0f7",
       "children": [
-        "gf21y3",
-        "dofsyp"
+        "rc8sr6",
+        "xydhan"
       ],
       "settings": {
         "_display": "flex",
@@ -5824,12 +5836,12 @@
       }
     },
     {
-      "id": "pxcsx2",
+      "id": "5fh0f7",
       "name": "div",
-      "parent": "q3cry5",
+      "parent": "0623b8",
       "children": [
-        "gcl098",
-        "fh3evy"
+        "qze8pv",
+        "8idnsh"
       ],
       "settings": {
         "_display": "flex",
@@ -5840,11 +5852,11 @@
       }
     },
     {
-      "id": "q3cry5",
+      "id": "0623b8",
       "name": "div",
-      "parent": "s2gxir",
+      "parent": "5edf2w",
       "children": [
-        "pxcsx2"
+        "5fh0f7"
       ],
       "settings": {
         "_display": "flex",
@@ -5872,9 +5884,9 @@
       }
     },
     {
-      "id": "n28iqh",
+      "id": "0b2yuy",
       "name": "image",
-      "parent": "dav92l",
+      "parent": "mhxu0g",
       "children": [],
       "settings": {
         "image": {
@@ -5890,9 +5902,9 @@
       "themeStyles": []
     },
     {
-      "id": "c15mxy",
+      "id": "36198y",
       "name": "heading",
-      "parent": "o2gydm",
+      "parent": "f5ysv9",
       "children": [],
       "settings": {
         "text": "Jili Live Casino",
@@ -5911,9 +5923,9 @@
       }
     },
     {
-      "id": "zam1ep",
+      "id": "2dffgu",
       "name": "text",
-      "parent": "o2gydm",
+      "parent": "f5ysv9",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
@@ -5931,12 +5943,12 @@
       }
     },
     {
-      "id": "o2gydm",
+      "id": "f5ysv9",
       "name": "div",
-      "parent": "gr8pj6",
+      "parent": "d2kri7",
       "children": [
-        "c15mxy",
-        "zam1ep"
+        "36198y",
+        "2dffgu"
       ],
       "settings": {
         "_display": "flex",
@@ -5947,9 +5959,9 @@
       }
     },
     {
-      "id": "l36fn2",
+      "id": "srfv81",
       "name": "button",
-      "parent": "gr8pj6",
+      "parent": "d2kri7",
       "children": [],
       "settings": {
         "text": "Play Now",
@@ -5985,12 +5997,12 @@
       }
     },
     {
-      "id": "gr8pj6",
+      "id": "d2kri7",
       "name": "div",
-      "parent": "dav92l",
+      "parent": "mhxu0g",
       "children": [
-        "o2gydm",
-        "l36fn2"
+        "f5ysv9",
+        "srfv81"
       ],
       "settings": {
         "_display": "flex",
@@ -6001,12 +6013,12 @@
       }
     },
     {
-      "id": "dav92l",
+      "id": "mhxu0g",
       "name": "div",
-      "parent": "w6m9ea",
+      "parent": "rnxhrh",
       "children": [
-        "n28iqh",
-        "gr8pj6"
+        "0b2yuy",
+        "d2kri7"
       ],
       "settings": {
         "_display": "flex",
@@ -6017,11 +6029,11 @@
       }
     },
     {
-      "id": "w6m9ea",
+      "id": "rnxhrh",
       "name": "div",
-      "parent": "s2gxir",
+      "parent": "5edf2w",
       "children": [
-        "dav92l"
+        "mhxu0g"
       ],
       "settings": {
         "_display": "flex",
@@ -6049,9 +6061,9 @@
       }
     },
     {
-      "id": "wiho1d",
+      "id": "5zdmtt",
       "name": "image",
-      "parent": "5u6772",
+      "parent": "g9r2uv",
       "children": [],
       "settings": {
         "image": {
@@ -6067,9 +6079,9 @@
       "themeStyles": []
     },
     {
-      "id": "p139nd",
+      "id": "fx3t0f",
       "name": "text",
-      "parent": "9elc09",
+      "parent": "l5md9w",
       "children": [],
       "settings": {
         "text": "<p>Jili Bingo</p>",
@@ -6087,9 +6099,9 @@
       }
     },
     {
-      "id": "etwgx5",
+      "id": "j44ybq",
       "name": "text",
-      "parent": "9elc09",
+      "parent": "l5md9w",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
@@ -6107,12 +6119,12 @@
       }
     },
     {
-      "id": "9elc09",
+      "id": "l5md9w",
       "name": "div",
-      "parent": "lq1u1u",
+      "parent": "985nbv",
       "children": [
-        "p139nd",
-        "etwgx5"
+        "fx3t0f",
+        "j44ybq"
       ],
       "settings": {
         "_display": "flex",
@@ -6123,9 +6135,9 @@
       }
     },
     {
-      "id": "3nqhuw",
+      "id": "nva9e1",
       "name": "button",
-      "parent": "lq1u1u",
+      "parent": "985nbv",
       "children": [],
       "settings": {
         "text": "Play Now",
@@ -6161,12 +6173,12 @@
       }
     },
     {
-      "id": "lq1u1u",
+      "id": "985nbv",
       "name": "div",
-      "parent": "5u6772",
+      "parent": "g9r2uv",
       "children": [
-        "9elc09",
-        "3nqhuw"
+        "l5md9w",
+        "nva9e1"
       ],
       "settings": {
         "_display": "flex",
@@ -6177,12 +6189,12 @@
       }
     },
     {
-      "id": "5u6772",
+      "id": "g9r2uv",
       "name": "div",
-      "parent": "ftz0pr",
+      "parent": "ltny46",
       "children": [
-        "wiho1d",
-        "lq1u1u"
+        "5zdmtt",
+        "985nbv"
       ],
       "settings": {
         "_display": "flex",
@@ -6193,11 +6205,11 @@
       }
     },
     {
-      "id": "ftz0pr",
+      "id": "ltny46",
       "name": "div",
-      "parent": "s2gxir",
+      "parent": "5edf2w",
       "children": [
-        "5u6772"
+        "g9r2uv"
       ],
       "settings": {
         "_display": "flex",
@@ -6225,14 +6237,14 @@
       }
     },
     {
-      "id": "s2gxir",
+      "id": "5edf2w",
       "name": "div",
-      "parent": "qjdn2x",
+      "parent": "5wdelf",
       "children": [
-        "9dvgyp",
-        "q3cry5",
-        "w6m9ea",
-        "ftz0pr"
+        "c0z54j",
+        "0623b8",
+        "rnxhrh",
+        "ltny46"
       ],
       "settings": {
         "_display": "grid",
@@ -6246,12 +6258,12 @@
       }
     },
     {
-      "id": "qjdn2x",
+      "id": "5wdelf",
       "name": "div",
-      "parent": "ta3jkc",
+      "parent": "mnyz8c",
       "children": [
-        "3k5pvi",
-        "s2gxir"
+        "ajme5a",
+        "5edf2w"
       ],
       "settings": {
         "_display": "flex",
@@ -6262,11 +6274,11 @@
       }
     },
     {
-      "id": "ta3jkc",
+      "id": "mnyz8c",
       "name": "div",
-      "parent": "34ub0z",
+      "parent": "233d29",
       "children": [
-        "qjdn2x"
+        "5wdelf"
       ],
       "settings": {
         "_display": "flex",
@@ -6275,11 +6287,11 @@
       }
     },
     {
-      "id": "34ub0z",
+      "id": "233d29",
       "name": "container",
-      "parent": "qgphp2",
+      "parent": "x36kju",
       "children": [
-        "ta3jkc"
+        "mnyz8c"
       ],
       "settings": {
         "_display": "flex",
@@ -6290,11 +6302,11 @@
       }
     },
     {
-      "id": "qgphp2",
+      "id": "x36kju",
       "name": "section",
       "parent": 0,
       "children": [
-        "34ub0z"
+        "233d29"
       ],
       "settings": {
         "_padding": {
@@ -6310,13 +6322,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "z9dfab",
+      "id": "41noid",
       "name": "heading",
-      "parent": "0kyrur",
+      "parent": "bgo4ft",
       "children": [],
       "settings": {
         "text": "How to Start Playing Jili Games?",
@@ -6335,9 +6352,9 @@
       }
     },
     {
-      "id": "6by7gv",
+      "id": "qwepwi",
       "name": "image",
-      "parent": "57zl51",
+      "parent": "jli8xx",
       "children": [],
       "settings": {
         "image": {
@@ -6353,9 +6370,9 @@
       "themeStyles": []
     },
     {
-      "id": "bbtk9b",
+      "id": "yzi362",
       "name": "heading",
-      "parent": "upkxnv",
+      "parent": "mcpgwl",
       "children": [],
       "settings": {
         "text": "Register an account",
@@ -6374,9 +6391,9 @@
       }
     },
     {
-      "id": "ko9i9h",
+      "id": "4072ma",
       "name": "text",
-      "parent": "upkxnv",
+      "parent": "mcpgwl",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -6394,12 +6411,12 @@
       }
     },
     {
-      "id": "upkxnv",
+      "id": "mcpgwl",
       "name": "div",
-      "parent": "57zl51",
+      "parent": "jli8xx",
       "children": [
-        "bbtk9b",
-        "ko9i9h"
+        "yzi362",
+        "4072ma"
       ],
       "settings": {
         "_display": "flex",
@@ -6410,12 +6427,12 @@
       }
     },
     {
-      "id": "57zl51",
+      "id": "jli8xx",
       "name": "div",
-      "parent": "vd1i7r",
+      "parent": "ms8val",
       "children": [
-        "6by7gv",
-        "upkxnv"
+        "qwepwi",
+        "mcpgwl"
       ],
       "settings": {
         "_display": "flex",
@@ -6426,11 +6443,11 @@
       }
     },
     {
-      "id": "vd1i7r",
+      "id": "ms8val",
       "name": "div",
-      "parent": "bglc3j",
+      "parent": "jjt15i",
       "children": [
-        "57zl51"
+        "jli8xx"
       ],
       "settings": {
         "_display": "flex",
@@ -6449,6 +6466,7 @@
             "bottom": "12px",
             "left": "12px"
           },
+          "style": "solid",
           "color": {
             "raw": "#FFFFFF2E"
           },
@@ -6462,9 +6480,9 @@
       }
     },
     {
-      "id": "byuv0w",
+      "id": "71fxx3",
       "name": "image",
-      "parent": "l373m4",
+      "parent": "fznhcw",
       "children": [],
       "settings": {
         "image": {
@@ -6480,9 +6498,9 @@
       "themeStyles": []
     },
     {
-      "id": "7puske",
+      "id": "lg2c5r",
       "name": "heading",
-      "parent": "q9q5wf",
+      "parent": "ujg88q",
       "children": [],
       "settings": {
         "text": "Log in to your account",
@@ -6501,9 +6519,9 @@
       }
     },
     {
-      "id": "frq1jt",
+      "id": "xgjdm8",
       "name": "text",
-      "parent": "q9q5wf",
+      "parent": "ujg88q",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -6521,12 +6539,12 @@
       }
     },
     {
-      "id": "q9q5wf",
+      "id": "ujg88q",
       "name": "div",
-      "parent": "l373m4",
+      "parent": "fznhcw",
       "children": [
-        "7puske",
-        "frq1jt"
+        "lg2c5r",
+        "xgjdm8"
       ],
       "settings": {
         "_display": "flex",
@@ -6537,12 +6555,12 @@
       }
     },
     {
-      "id": "l373m4",
+      "id": "fznhcw",
       "name": "div",
-      "parent": "c34jka",
+      "parent": "8rlmq5",
       "children": [
-        "byuv0w",
-        "q9q5wf"
+        "71fxx3",
+        "ujg88q"
       ],
       "settings": {
         "_display": "flex",
@@ -6553,11 +6571,11 @@
       }
     },
     {
-      "id": "c34jka",
+      "id": "8rlmq5",
       "name": "div",
-      "parent": "5d5sn8",
+      "parent": "d5r2o7",
       "children": [
-        "l373m4"
+        "fznhcw"
       ],
       "settings": {
         "_display": "flex",
@@ -6566,11 +6584,11 @@
       }
     },
     {
-      "id": "5d5sn8",
+      "id": "d5r2o7",
       "name": "div",
-      "parent": "bglc3j",
+      "parent": "jjt15i",
       "children": [
-        "c34jka"
+        "8rlmq5"
       ],
       "settings": {
         "_display": "flex",
@@ -6589,6 +6607,7 @@
             "bottom": "12px",
             "left": "12px"
           },
+          "style": "solid",
           "color": {
             "raw": "#FFFFFF2E"
           },
@@ -6602,9 +6621,9 @@
       }
     },
     {
-      "id": "rdcok3",
+      "id": "b7h9fn",
       "name": "image",
-      "parent": "6s6rww",
+      "parent": "585vrr",
       "children": [],
       "settings": {
         "image": {
@@ -6620,9 +6639,9 @@
       "themeStyles": []
     },
     {
-      "id": "42smjy",
+      "id": "tq2x3b",
       "name": "heading",
-      "parent": "cvpyqs",
+      "parent": "b39fxk",
       "children": [],
       "settings": {
         "text": "Start playing JILI games",
@@ -6641,9 +6660,9 @@
       }
     },
     {
-      "id": "cg8z11",
+      "id": "unnuvo",
       "name": "text",
-      "parent": "cvpyqs",
+      "parent": "b39fxk",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
@@ -6661,12 +6680,12 @@
       }
     },
     {
-      "id": "cvpyqs",
+      "id": "b39fxk",
       "name": "div",
-      "parent": "6s6rww",
+      "parent": "585vrr",
       "children": [
-        "42smjy",
-        "cg8z11"
+        "tq2x3b",
+        "unnuvo"
       ],
       "settings": {
         "_display": "flex",
@@ -6677,12 +6696,12 @@
       }
     },
     {
-      "id": "6s6rww",
+      "id": "585vrr",
       "name": "div",
-      "parent": "fiqzhq",
+      "parent": "afufy7",
       "children": [
-        "rdcok3",
-        "cvpyqs"
+        "b7h9fn",
+        "b39fxk"
       ],
       "settings": {
         "_display": "flex",
@@ -6693,11 +6712,11 @@
       }
     },
     {
-      "id": "fiqzhq",
+      "id": "afufy7",
       "name": "div",
-      "parent": "t84mx0",
+      "parent": "177m47",
       "children": [
-        "6s6rww"
+        "585vrr"
       ],
       "settings": {
         "_display": "flex",
@@ -6706,11 +6725,11 @@
       }
     },
     {
-      "id": "t84mx0",
+      "id": "177m47",
       "name": "div",
-      "parent": "bglc3j",
+      "parent": "jjt15i",
       "children": [
-        "fiqzhq"
+        "afufy7"
       ],
       "settings": {
         "_display": "flex",
@@ -6729,6 +6748,7 @@
             "bottom": "12px",
             "left": "12px"
           },
+          "style": "solid",
           "color": {
             "raw": "#FFFFFF2E"
           },
@@ -6742,13 +6762,13 @@
       }
     },
     {
-      "id": "bglc3j",
+      "id": "jjt15i",
       "name": "div",
-      "parent": "0kyrur",
+      "parent": "bgo4ft",
       "children": [
-        "vd1i7r",
-        "5d5sn8",
-        "t84mx0"
+        "ms8val",
+        "d5r2o7",
+        "177m47"
       ],
       "settings": {
         "_display": "grid",
@@ -6762,12 +6782,12 @@
       }
     },
     {
-      "id": "0kyrur",
+      "id": "bgo4ft",
       "name": "container",
-      "parent": "oz92y5",
+      "parent": "ax8apy",
       "children": [
-        "z9dfab",
-        "bglc3j"
+        "41noid",
+        "jjt15i"
       ],
       "settings": {
         "_display": "flex",
@@ -6780,11 +6800,11 @@
       }
     },
     {
-      "id": "oz92y5",
+      "id": "ax8apy",
       "name": "section",
       "parent": 0,
       "children": [
-        "0kyrur"
+        "bgo4ft"
       ],
       "settings": {
         "_padding": {
@@ -6800,13 +6820,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "3ugrzx",
+      "id": "py212g",
       "name": "heading",
-      "parent": "pp4r0t",
+      "parent": "oenudf",
       "children": [],
       "settings": {
         "text": "Jili Slot Games Bangladesh Promotions and Bonuses",
@@ -6825,9 +6850,9 @@
       }
     },
     {
-      "id": "78nog4",
+      "id": "rpf9oe",
       "name": "image",
-      "parent": "im6c2h",
+      "parent": "enjjzl",
       "children": [],
       "settings": {
         "image": {
@@ -6843,9 +6868,9 @@
       "themeStyles": []
     },
     {
-      "id": "add5oy",
+      "id": "u2rt6x",
       "name": "heading",
-      "parent": "mrpod4",
+      "parent": "v8x42k",
       "children": [],
       "settings": {
         "text": "Slot Machine Lucky Gold",
@@ -6864,9 +6889,9 @@
       }
     },
     {
-      "id": "qsgqud",
+      "id": "7iqt1c",
       "name": "text",
-      "parent": "mrpod4",
+      "parent": "v8x42k",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of</p>",
@@ -6884,12 +6909,12 @@
       }
     },
     {
-      "id": "mrpod4",
+      "id": "v8x42k",
       "name": "div",
-      "parent": "lcblpe",
+      "parent": "0m8jaz",
       "children": [
-        "add5oy",
-        "qsgqud"
+        "u2rt6x",
+        "7iqt1c"
       ],
       "settings": {
         "_display": "flex",
@@ -6900,9 +6925,9 @@
       }
     },
     {
-      "id": "5xymzi",
+      "id": "ry3rgb",
       "name": "button",
-      "parent": "lcblpe",
+      "parent": "0m8jaz",
       "children": [],
       "settings": {
         "text": "Claim Now",
@@ -6938,12 +6963,12 @@
       }
     },
     {
-      "id": "lcblpe",
+      "id": "0m8jaz",
       "name": "div",
-      "parent": "im6c2h",
+      "parent": "enjjzl",
       "children": [
-        "mrpod4",
-        "5xymzi"
+        "v8x42k",
+        "ry3rgb"
       ],
       "settings": {
         "_display": "flex",
@@ -6954,12 +6979,12 @@
       }
     },
     {
-      "id": "im6c2h",
+      "id": "enjjzl",
       "name": "div",
-      "parent": "907o3k",
+      "parent": "8r1jvu",
       "children": [
-        "78nog4",
-        "lcblpe"
+        "rpf9oe",
+        "0m8jaz"
       ],
       "settings": {
         "_display": "flex",
@@ -6970,11 +6995,11 @@
       }
     },
     {
-      "id": "907o3k",
+      "id": "8r1jvu",
       "name": "div",
-      "parent": "amme96",
+      "parent": "c5v768",
       "children": [
-        "im6c2h"
+        "enjjzl"
       ],
       "settings": {
         "_display": "flex",
@@ -7002,9 +7027,9 @@
       }
     },
     {
-      "id": "i4jpae",
+      "id": "12e9q2",
       "name": "image",
-      "parent": "qrxjjv",
+      "parent": "qfpfw2",
       "children": [],
       "settings": {
         "image": {
@@ -7020,9 +7045,9 @@
       "themeStyles": []
     },
     {
-      "id": "ksj3gk",
+      "id": "7oezef",
       "name": "heading",
-      "parent": "q7ali5",
+      "parent": "4a22m9",
       "children": [],
       "settings": {
         "text": "5% Weekend Bonus",
@@ -7041,9 +7066,9 @@
       }
     },
     {
-      "id": "p7xzgi",
+      "id": "haux04",
       "name": "text",
-      "parent": "q7ali5",
+      "parent": "4a22m9",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of</p>",
@@ -7061,12 +7086,12 @@
       }
     },
     {
-      "id": "q7ali5",
+      "id": "4a22m9",
       "name": "div",
-      "parent": "gdrerr",
+      "parent": "3hzk2s",
       "children": [
-        "ksj3gk",
-        "p7xzgi"
+        "7oezef",
+        "haux04"
       ],
       "settings": {
         "_display": "flex",
@@ -7077,9 +7102,9 @@
       }
     },
     {
-      "id": "9p3vwg",
+      "id": "h7kt3p",
       "name": "button",
-      "parent": "gdrerr",
+      "parent": "3hzk2s",
       "children": [],
       "settings": {
         "text": "Claim Now",
@@ -7115,12 +7140,12 @@
       }
     },
     {
-      "id": "gdrerr",
+      "id": "3hzk2s",
       "name": "div",
-      "parent": "qrxjjv",
+      "parent": "qfpfw2",
       "children": [
-        "q7ali5",
-        "9p3vwg"
+        "4a22m9",
+        "h7kt3p"
       ],
       "settings": {
         "_display": "flex",
@@ -7131,12 +7156,12 @@
       }
     },
     {
-      "id": "qrxjjv",
+      "id": "qfpfw2",
       "name": "div",
-      "parent": "bw1eon",
+      "parent": "984c1t",
       "children": [
-        "i4jpae",
-        "gdrerr"
+        "12e9q2",
+        "3hzk2s"
       ],
       "settings": {
         "_display": "flex",
@@ -7147,11 +7172,11 @@
       }
     },
     {
-      "id": "bw1eon",
+      "id": "984c1t",
       "name": "div",
-      "parent": "amme96",
+      "parent": "c5v768",
       "children": [
-        "qrxjjv"
+        "qfpfw2"
       ],
       "settings": {
         "_display": "flex",
@@ -7179,9 +7204,9 @@
       }
     },
     {
-      "id": "00921i",
+      "id": "ofszqd",
       "name": "image",
-      "parent": "i4i39u",
+      "parent": "05of5l",
       "children": [],
       "settings": {
         "image": {
@@ -7197,9 +7222,9 @@
       "themeStyles": []
     },
     {
-      "id": "rr7jrh",
+      "id": "vn6vzr",
       "name": "heading",
-      "parent": "mzvae5",
+      "parent": "3z2xpc",
       "children": [],
       "settings": {
         "text": "100% First Deposit Bonus",
@@ -7218,9 +7243,9 @@
       }
     },
     {
-      "id": "5svq3s",
+      "id": "yobi25",
       "name": "text",
-      "parent": "mzvae5",
+      "parent": "3z2xpc",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of</p>",
@@ -7238,12 +7263,12 @@
       }
     },
     {
-      "id": "mzvae5",
+      "id": "3z2xpc",
       "name": "div",
-      "parent": "lhqf24",
+      "parent": "n7ig57",
       "children": [
-        "rr7jrh",
-        "5svq3s"
+        "vn6vzr",
+        "yobi25"
       ],
       "settings": {
         "_display": "flex",
@@ -7254,9 +7279,9 @@
       }
     },
     {
-      "id": "nxumoy",
+      "id": "osgcdm",
       "name": "button",
-      "parent": "lhqf24",
+      "parent": "n7ig57",
       "children": [],
       "settings": {
         "text": "Claim Now",
@@ -7292,12 +7317,12 @@
       }
     },
     {
-      "id": "lhqf24",
+      "id": "n7ig57",
       "name": "div",
-      "parent": "i4i39u",
+      "parent": "05of5l",
       "children": [
-        "mzvae5",
-        "nxumoy"
+        "3z2xpc",
+        "osgcdm"
       ],
       "settings": {
         "_display": "flex",
@@ -7308,12 +7333,12 @@
       }
     },
     {
-      "id": "i4i39u",
+      "id": "05of5l",
       "name": "div",
-      "parent": "kuhtgl",
+      "parent": "unlyux",
       "children": [
-        "00921i",
-        "lhqf24"
+        "ofszqd",
+        "n7ig57"
       ],
       "settings": {
         "_display": "flex",
@@ -7324,11 +7349,11 @@
       }
     },
     {
-      "id": "kuhtgl",
+      "id": "unlyux",
       "name": "div",
-      "parent": "amme96",
+      "parent": "c5v768",
       "children": [
-        "i4i39u"
+        "05of5l"
       ],
       "settings": {
         "_display": "flex",
@@ -7356,13 +7381,13 @@
       }
     },
     {
-      "id": "amme96",
+      "id": "c5v768",
       "name": "div",
-      "parent": "pp4r0t",
+      "parent": "oenudf",
       "children": [
-        "907o3k",
-        "bw1eon",
-        "kuhtgl"
+        "8r1jvu",
+        "984c1t",
+        "unlyux"
       ],
       "settings": {
         "_display": "grid",
@@ -7379,9 +7404,9 @@
       }
     },
     {
-      "id": "hvjhkd",
+      "id": "4olqyr",
       "name": "image",
-      "parent": "ejdc2i",
+      "parent": "t53qnd",
       "children": [],
       "settings": {
         "image": {
@@ -7405,9 +7430,9 @@
       "themeStyles": []
     },
     {
-      "id": "foo04k",
+      "id": "tw31dv",
       "name": "heading",
-      "parent": "s6hgw5",
+      "parent": "5n7hud",
       "children": [],
       "settings": {
         "text": "0.5 Cashback",
@@ -7426,9 +7451,9 @@
       }
     },
     {
-      "id": "vbfk0y",
+      "id": "a634xv",
       "name": "button",
-      "parent": "s6hgw5",
+      "parent": "5n7hud",
       "children": [],
       "settings": {
         "text": "Claim Now",
@@ -7464,12 +7489,12 @@
       }
     },
     {
-      "id": "s6hgw5",
+      "id": "5n7hud",
       "name": "div",
-      "parent": "ejdc2i",
+      "parent": "t53qnd",
       "children": [
-        "foo04k",
-        "vbfk0y"
+        "tw31dv",
+        "a634xv"
       ],
       "settings": {
         "_display": "flex",
@@ -7480,12 +7505,12 @@
       }
     },
     {
-      "id": "ejdc2i",
+      "id": "t53qnd",
       "name": "div",
-      "parent": "s6ea0i",
+      "parent": "tt81nj",
       "children": [
-        "hvjhkd",
-        "s6hgw5"
+        "4olqyr",
+        "5n7hud"
       ],
       "settings": {
         "_display": "flex",
@@ -7496,11 +7521,11 @@
       }
     },
     {
-      "id": "s6ea0i",
+      "id": "tt81nj",
       "name": "div",
-      "parent": "4tz43j",
+      "parent": "x1yq95",
       "children": [
-        "ejdc2i"
+        "t53qnd"
       ],
       "settings": {
         "_display": "flex",
@@ -7528,9 +7553,9 @@
       }
     },
     {
-      "id": "x35z8k",
+      "id": "h1pm5y",
       "name": "image",
-      "parent": "0mmjeo",
+      "parent": "9cvknh",
       "children": [],
       "settings": {
         "image": {
@@ -7554,9 +7579,9 @@
       "themeStyles": []
     },
     {
-      "id": "xca3wr",
+      "id": "9zme5k",
       "name": "heading",
-      "parent": "dxif2y",
+      "parent": "jye3r0",
       "children": [],
       "settings": {
         "text": "VIP Program",
@@ -7575,9 +7600,9 @@
       }
     },
     {
-      "id": "c1lj3c",
+      "id": "a3bm10",
       "name": "text",
-      "parent": "dxif2y",
+      "parent": "jye3r0",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of</p>",
@@ -7595,12 +7620,12 @@
       }
     },
     {
-      "id": "dxif2y",
+      "id": "jye3r0",
       "name": "div",
-      "parent": "fld5b1",
+      "parent": "h4ktjn",
       "children": [
-        "xca3wr",
-        "c1lj3c"
+        "9zme5k",
+        "a3bm10"
       ],
       "settings": {
         "_display": "flex",
@@ -7611,9 +7636,9 @@
       }
     },
     {
-      "id": "zh09fd",
+      "id": "tlol8l",
       "name": "button",
-      "parent": "fld5b1",
+      "parent": "h4ktjn",
       "children": [],
       "settings": {
         "text": "Claim Now",
@@ -7649,12 +7674,12 @@
       }
     },
     {
-      "id": "fld5b1",
+      "id": "h4ktjn",
       "name": "div",
-      "parent": "0mmjeo",
+      "parent": "9cvknh",
       "children": [
-        "dxif2y",
-        "zh09fd"
+        "jye3r0",
+        "tlol8l"
       ],
       "settings": {
         "_display": "flex",
@@ -7665,12 +7690,12 @@
       }
     },
     {
-      "id": "0mmjeo",
+      "id": "9cvknh",
       "name": "div",
-      "parent": "9npnvw",
+      "parent": "kktb4k",
       "children": [
-        "x35z8k",
-        "fld5b1"
+        "h1pm5y",
+        "h4ktjn"
       ],
       "settings": {
         "_display": "flex",
@@ -7681,11 +7706,11 @@
       }
     },
     {
-      "id": "9npnvw",
+      "id": "kktb4k",
       "name": "div",
-      "parent": "4tz43j",
+      "parent": "x1yq95",
       "children": [
-        "0mmjeo"
+        "9cvknh"
       ],
       "settings": {
         "_display": "flex",
@@ -7713,9 +7738,9 @@
       }
     },
     {
-      "id": "q1e9da",
+      "id": "kh7y60",
       "name": "image",
-      "parent": "59i2i0",
+      "parent": "59cd2x",
       "children": [],
       "settings": {
         "image": {
@@ -7731,9 +7756,9 @@
       "themeStyles": []
     },
     {
-      "id": "xvv98s",
+      "id": "vzqiky",
       "name": "text",
-      "parent": "veql78",
+      "parent": "fwd1cf",
       "children": [],
       "settings": {
         "text": "<p>Jili Games Free 100</p>",
@@ -7751,9 +7776,9 @@
       }
     },
     {
-      "id": "9do6od",
+      "id": "nhbijf",
       "name": "text",
-      "parent": "veql78",
+      "parent": "fwd1cf",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of</p>",
@@ -7771,12 +7796,12 @@
       }
     },
     {
-      "id": "veql78",
+      "id": "fwd1cf",
       "name": "div",
-      "parent": "l3xknn",
+      "parent": "l4ah79",
       "children": [
-        "xvv98s",
-        "9do6od"
+        "vzqiky",
+        "nhbijf"
       ],
       "settings": {
         "_display": "flex",
@@ -7787,9 +7812,9 @@
       }
     },
     {
-      "id": "ujs4c4",
+      "id": "769wmj",
       "name": "button",
-      "parent": "l3xknn",
+      "parent": "l4ah79",
       "children": [],
       "settings": {
         "text": "Claim Now",
@@ -7825,12 +7850,12 @@
       }
     },
     {
-      "id": "l3xknn",
+      "id": "l4ah79",
       "name": "div",
-      "parent": "59i2i0",
+      "parent": "59cd2x",
       "children": [
-        "veql78",
-        "ujs4c4"
+        "fwd1cf",
+        "769wmj"
       ],
       "settings": {
         "_display": "flex",
@@ -7841,12 +7866,12 @@
       }
     },
     {
-      "id": "59i2i0",
+      "id": "59cd2x",
       "name": "div",
-      "parent": "2rz273",
+      "parent": "ah62vp",
       "children": [
-        "q1e9da",
-        "l3xknn"
+        "kh7y60",
+        "l4ah79"
       ],
       "settings": {
         "_display": "flex",
@@ -7857,11 +7882,11 @@
       }
     },
     {
-      "id": "2rz273",
+      "id": "ah62vp",
       "name": "div",
-      "parent": "4tz43j",
+      "parent": "x1yq95",
       "children": [
-        "59i2i0"
+        "59cd2x"
       ],
       "settings": {
         "_display": "flex",
@@ -7889,13 +7914,13 @@
       }
     },
     {
-      "id": "4tz43j",
+      "id": "x1yq95",
       "name": "div",
-      "parent": "pp4r0t",
+      "parent": "oenudf",
       "children": [
-        "s6ea0i",
-        "9npnvw",
-        "2rz273"
+        "tt81nj",
+        "kktb4k",
+        "ah62vp"
       ],
       "settings": {
         "_display": "grid",
@@ -7912,13 +7937,13 @@
       }
     },
     {
-      "id": "pp4r0t",
+      "id": "oenudf",
       "name": "div",
-      "parent": "w31rqj",
+      "parent": "89ndvo",
       "children": [
-        "3ugrzx",
-        "amme96",
-        "4tz43j"
+        "py212g",
+        "c5v768",
+        "x1yq95"
       ],
       "settings": {
         "_display": "flex",
@@ -7927,11 +7952,11 @@
       }
     },
     {
-      "id": "w31rqj",
+      "id": "89ndvo",
       "name": "div",
-      "parent": "l1n0jf",
+      "parent": "qpq78g",
       "children": [
-        "pp4r0t"
+        "oenudf"
       ],
       "settings": {
         "_display": "flex",
@@ -7940,11 +7965,11 @@
       }
     },
     {
-      "id": "l1n0jf",
+      "id": "qpq78g",
       "name": "container",
-      "parent": "5ra4q3",
+      "parent": "l0cdz3",
       "children": [
-        "w31rqj"
+        "89ndvo"
       ],
       "settings": {
         "_display": "flex",
@@ -7955,11 +7980,11 @@
       }
     },
     {
-      "id": "5ra4q3",
+      "id": "l0cdz3",
       "name": "section",
       "parent": 0,
       "children": [
-        "l1n0jf"
+        "qpq78g"
       ],
       "settings": {
         "_padding": {
@@ -7975,13 +8000,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "9dju5h",
+      "id": "i3c94u",
       "name": "heading",
-      "parent": "uqjwbm",
+      "parent": "0u8qcg",
       "children": [],
       "settings": {
         "text": "Jili Games: Play Seamlessly on Mobile Devices",
@@ -8000,9 +8030,9 @@
       }
     },
     {
-      "id": "ka32is",
+      "id": "gd3g16",
       "name": "text",
-      "parent": "d8d300",
+      "parent": "8e8etf",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.</p>",
@@ -8020,9 +8050,9 @@
       }
     },
     {
-      "id": "5efuho",
+      "id": "vh3i1y",
       "name": "text",
-      "parent": "d8d300",
+      "parent": "8e8etf",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.</p>",
@@ -8040,12 +8070,12 @@
       }
     },
     {
-      "id": "d8d300",
+      "id": "8e8etf",
       "name": "div",
-      "parent": "lzr7hx",
+      "parent": "u5d6lr",
       "children": [
-        "ka32is",
-        "5efuho"
+        "gd3g16",
+        "vh3i1y"
       ],
       "settings": {
         "_display": "flex",
@@ -8056,9 +8086,9 @@
       }
     },
     {
-      "id": "amf0dh",
+      "id": "hum4ne",
       "name": "icon",
-      "parent": "lzr7hx",
+      "parent": "u5d6lr",
       "children": [],
       "settings": {
         "icon": {
@@ -8078,12 +8108,12 @@
       "themeStyles": []
     },
     {
-      "id": "lzr7hx",
+      "id": "u5d6lr",
       "name": "div",
-      "parent": "uqjwbm",
+      "parent": "0u8qcg",
       "children": [
-        "d8d300",
-        "amf0dh"
+        "8e8etf",
+        "hum4ne"
       ],
       "settings": {
         "_display": "flex",
@@ -8094,12 +8124,12 @@
       }
     },
     {
-      "id": "uqjwbm",
+      "id": "0u8qcg",
       "name": "div",
-      "parent": "s0e1to",
+      "parent": "k5ij7y",
       "children": [
-        "9dju5h",
-        "lzr7hx"
+        "i3c94u",
+        "u5d6lr"
       ],
       "settings": {
         "_display": "flex",
@@ -8113,9 +8143,9 @@
       }
     },
     {
-      "id": "cm2kxx",
+      "id": "s2e5lx",
       "name": "image",
-      "parent": "s0e1to",
+      "parent": "k5ij7y",
       "children": [],
       "settings": {
         "image": {
@@ -8140,12 +8170,12 @@
       "themeStyles": []
     },
     {
-      "id": "s0e1to",
+      "id": "k5ij7y",
       "name": "div",
-      "parent": "vn3n0j",
+      "parent": "dmf2hj",
       "children": [
-        "uqjwbm",
-        "cm2kxx"
+        "0u8qcg",
+        "s2e5lx"
       ],
       "settings": {
         "_display": "flex",
@@ -8161,11 +8191,11 @@
       }
     },
     {
-      "id": "vn3n0j",
+      "id": "dmf2hj",
       "name": "div",
-      "parent": "ajma8a",
+      "parent": "xrqmnw",
       "children": [
-        "s0e1to"
+        "k5ij7y"
       ],
       "settings": {
         "_display": "flex",
@@ -8174,11 +8204,11 @@
       }
     },
     {
-      "id": "ajma8a",
+      "id": "xrqmnw",
       "name": "container",
-      "parent": "a23mp8",
+      "parent": "8j7n1u",
       "children": [
-        "vn3n0j"
+        "dmf2hj"
       ],
       "settings": {
         "_display": "flex",
@@ -8189,11 +8219,11 @@
       }
     },
     {
-      "id": "a23mp8",
+      "id": "8j7n1u",
       "name": "section",
       "parent": 0,
       "children": [
-        "ajma8a"
+        "xrqmnw"
       ],
       "settings": {
         "_padding": {
@@ -8209,13 +8239,18 @@
         "_padding:mobile_landscape": {
           "top": "60",
           "bottom": "60"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "kt31nh",
+      "id": "7o7ir4",
       "name": "image",
-      "parent": "zdjm6u",
+      "parent": "aw4gm7",
       "children": [],
       "settings": {
         "image": {
@@ -8232,9 +8267,9 @@
       "themeStyles": []
     },
     {
-      "id": "ffqmsg",
+      "id": "s3jm2u",
       "name": "heading",
-      "parent": "bbpgjd",
+      "parent": "esp55b",
       "children": [],
       "settings": {
         "text": "Innovative Gameplay Mechanics",
@@ -8253,9 +8288,9 @@
       }
     },
     {
-      "id": "6scicr",
+      "id": "dgrr9d",
       "name": "text",
-      "parent": "ptvycd",
+      "parent": "iy41dl",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -8273,9 +8308,9 @@
       }
     },
     {
-      "id": "fkpv56",
+      "id": "7g76h2",
       "name": "text",
-      "parent": "ptvycd",
+      "parent": "iy41dl",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -8293,12 +8328,12 @@
       }
     },
     {
-      "id": "ptvycd",
+      "id": "iy41dl",
       "name": "div",
-      "parent": "bbpgjd",
+      "parent": "esp55b",
       "children": [
-        "6scicr",
-        "fkpv56"
+        "dgrr9d",
+        "7g76h2"
       ],
       "settings": {
         "_display": "flex",
@@ -8309,12 +8344,12 @@
       }
     },
     {
-      "id": "bbpgjd",
+      "id": "esp55b",
       "name": "div",
-      "parent": "6lj11o",
+      "parent": "u7r1z1",
       "children": [
-        "ffqmsg",
-        "ptvycd"
+        "s3jm2u",
+        "iy41dl"
       ],
       "settings": {
         "_display": "flex",
@@ -8325,9 +8360,9 @@
       }
     },
     {
-      "id": "ev5lwk",
+      "id": "vdcevc",
       "name": "button",
-      "parent": "6lj11o",
+      "parent": "u7r1z1",
       "children": [],
       "settings": {
         "text": "Learn More",
@@ -8364,12 +8399,12 @@
       }
     },
     {
-      "id": "6lj11o",
+      "id": "u7r1z1",
       "name": "div",
-      "parent": "zdjm6u",
+      "parent": "aw4gm7",
       "children": [
-        "bbpgjd",
-        "ev5lwk"
+        "esp55b",
+        "vdcevc"
       ],
       "settings": {
         "_display": "flex",
@@ -8383,12 +8418,12 @@
       }
     },
     {
-      "id": "zdjm6u",
+      "id": "aw4gm7",
       "name": "div",
-      "parent": "ni1iz5",
+      "parent": "jrkr15",
       "children": [
-        "kt31nh",
-        "6lj11o"
+        "7o7ir4",
+        "u7r1z1"
       ],
       "settings": {
         "_display": "flex",
@@ -8404,11 +8439,11 @@
       }
     },
     {
-      "id": "ni1iz5",
+      "id": "jrkr15",
       "name": "div",
-      "parent": "q3sk3j",
+      "parent": "m3wac5",
       "children": [
-        "zdjm6u"
+        "aw4gm7"
       ],
       "settings": {
         "_display": "flex",
@@ -8417,11 +8452,11 @@
       }
     },
     {
-      "id": "q3sk3j",
+      "id": "m3wac5",
       "name": "container",
-      "parent": "8h5xr0",
+      "parent": "5hsi8m",
       "children": [
-        "ni1iz5"
+        "jrkr15"
       ],
       "settings": {
         "_display": "flex",
@@ -8432,11 +8467,11 @@
       }
     },
     {
-      "id": "8h5xr0",
+      "id": "5hsi8m",
       "name": "section",
       "parent": 0,
       "children": [
-        "q3sk3j"
+        "m3wac5"
       ],
       "settings": {
         "_padding": {
@@ -8452,13 +8487,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "f8wzvn",
+      "id": "5t4ezw",
       "name": "heading",
-      "parent": "dbfqg1",
+      "parent": "8kqbo3",
       "children": [],
       "settings": {
         "text": "Jili Games Slots with the Highest RTP",
@@ -8477,9 +8517,9 @@
       }
     },
     {
-      "id": "yky8ad",
+      "id": "oo9nch",
       "name": "image",
-      "parent": "6g676w",
+      "parent": "kosua4",
       "children": [],
       "settings": {
         "image": {
@@ -8495,9 +8535,9 @@
       "themeStyles": []
     },
     {
-      "id": "9sn3au",
+      "id": "zrdom7",
       "name": "heading",
-      "parent": "zapfts",
+      "parent": "p53dqh",
       "children": [],
       "settings": {
         "text": "Golden Empire",
@@ -8516,9 +8556,9 @@
       }
     },
     {
-      "id": "a0km63",
+      "id": "wx1t49",
       "name": "text",
-      "parent": "zapfts",
+      "parent": "p53dqh",
       "children": [],
       "settings": {
         "text": "<p>RTP Percentage: (96%)+ (97%+)</p>",
@@ -8536,12 +8576,12 @@
       }
     },
     {
-      "id": "zapfts",
+      "id": "p53dqh",
       "name": "div",
-      "parent": "ysdvxl",
+      "parent": "tui93m",
       "children": [
-        "9sn3au",
-        "a0km63"
+        "zrdom7",
+        "wx1t49"
       ],
       "settings": {
         "_display": "flex",
@@ -8552,9 +8592,9 @@
       }
     },
     {
-      "id": "9t8n96",
+      "id": "ts199u",
       "name": "text",
-      "parent": "ysdvxl",
+      "parent": "tui93m",
       "children": [],
       "settings": {
         "text": "<p>Type: Classic, Bonus Buy, Jackpot</p>",
@@ -8572,12 +8612,12 @@
       }
     },
     {
-      "id": "ysdvxl",
+      "id": "tui93m",
       "name": "div",
-      "parent": "6g676w",
+      "parent": "kosua4",
       "children": [
-        "zapfts",
-        "9t8n96"
+        "p53dqh",
+        "ts199u"
       ],
       "settings": {
         "_display": "flex",
@@ -8588,12 +8628,12 @@
       }
     },
     {
-      "id": "6g676w",
+      "id": "kosua4",
       "name": "div",
-      "parent": "tpqvbu",
+      "parent": "wqhdl7",
       "children": [
-        "yky8ad",
-        "ysdvxl"
+        "oo9nch",
+        "tui93m"
       ],
       "settings": {
         "_display": "flex",
@@ -8604,11 +8644,11 @@
       }
     },
     {
-      "id": "tpqvbu",
+      "id": "wqhdl7",
       "name": "div",
-      "parent": "7vslhb",
+      "parent": "rmohdp",
       "children": [
-        "6g676w"
+        "kosua4"
       ],
       "settings": {
         "_display": "flex",
@@ -8636,9 +8676,9 @@
       }
     },
     {
-      "id": "t4p6i3",
+      "id": "z9zk7u",
       "name": "image",
-      "parent": "twn358",
+      "parent": "gnlnir",
       "children": [],
       "settings": {
         "image": {
@@ -8654,9 +8694,9 @@
       "themeStyles": []
     },
     {
-      "id": "wk2dbv",
+      "id": "a01iyd",
       "name": "text",
-      "parent": "idz1zb",
+      "parent": "d87nz9",
       "children": [],
       "settings": {
         "text": "<p>Fortune Gems</p>",
@@ -8674,9 +8714,9 @@
       }
     },
     {
-      "id": "k9klxk",
+      "id": "e0ubyb",
       "name": "text",
-      "parent": "idz1zb",
+      "parent": "d87nz9",
       "children": [],
       "settings": {
         "text": "<p>RTP Percentage: (96%)+ (97%+)</p>",
@@ -8694,12 +8734,12 @@
       }
     },
     {
-      "id": "idz1zb",
+      "id": "d87nz9",
       "name": "div",
-      "parent": "nw0bl9",
+      "parent": "65h3iz",
       "children": [
-        "wk2dbv",
-        "k9klxk"
+        "a01iyd",
+        "e0ubyb"
       ],
       "settings": {
         "_display": "flex",
@@ -8710,9 +8750,9 @@
       }
     },
     {
-      "id": "22k7hz",
+      "id": "7pimpt",
       "name": "text",
-      "parent": "nw0bl9",
+      "parent": "65h3iz",
       "children": [],
       "settings": {
         "text": "<p>Type: Classic, Bonus Buy, Jackpot</p>",
@@ -8730,12 +8770,12 @@
       }
     },
     {
-      "id": "nw0bl9",
+      "id": "65h3iz",
       "name": "div",
-      "parent": "twn358",
+      "parent": "gnlnir",
       "children": [
-        "idz1zb",
-        "22k7hz"
+        "d87nz9",
+        "7pimpt"
       ],
       "settings": {
         "_display": "flex",
@@ -8746,12 +8786,12 @@
       }
     },
     {
-      "id": "twn358",
+      "id": "gnlnir",
       "name": "div",
-      "parent": "v65i82",
+      "parent": "quhcda",
       "children": [
-        "t4p6i3",
-        "nw0bl9"
+        "z9zk7u",
+        "65h3iz"
       ],
       "settings": {
         "_display": "flex",
@@ -8762,11 +8802,11 @@
       }
     },
     {
-      "id": "v65i82",
+      "id": "quhcda",
       "name": "div",
-      "parent": "7vslhb",
+      "parent": "rmohdp",
       "children": [
-        "twn358"
+        "gnlnir"
       ],
       "settings": {
         "_display": "flex",
@@ -8794,9 +8834,9 @@
       }
     },
     {
-      "id": "26u094",
+      "id": "1r1hry",
       "name": "image",
-      "parent": "yoyzv8",
+      "parent": "c2uogc",
       "children": [],
       "settings": {
         "image": {
@@ -8812,9 +8852,9 @@
       "themeStyles": []
     },
     {
-      "id": "6hs3kp",
+      "id": "41arpv",
       "name": "text",
-      "parent": "n6k5rt",
+      "parent": "9qlxf3",
       "children": [],
       "settings": {
         "text": "<p>Lucky Goldbricks</p>",
@@ -8832,9 +8872,9 @@
       }
     },
     {
-      "id": "xxsrht",
+      "id": "9c7r9u",
       "name": "text",
-      "parent": "n6k5rt",
+      "parent": "9qlxf3",
       "children": [],
       "settings": {
         "text": "<p>RTP Percentage: (96%)+ (97%+)</p>",
@@ -8852,12 +8892,12 @@
       }
     },
     {
-      "id": "n6k5rt",
+      "id": "9qlxf3",
       "name": "div",
-      "parent": "6v7355",
+      "parent": "eub5so",
       "children": [
-        "6hs3kp",
-        "xxsrht"
+        "41arpv",
+        "9c7r9u"
       ],
       "settings": {
         "_display": "flex",
@@ -8868,9 +8908,9 @@
       }
     },
     {
-      "id": "6nm5q8",
+      "id": "iaqz3o",
       "name": "text",
-      "parent": "6v7355",
+      "parent": "eub5so",
       "children": [],
       "settings": {
         "text": "<p>Type: Classic, Bonus Buy, Jackpot</p>",
@@ -8888,12 +8928,12 @@
       }
     },
     {
-      "id": "6v7355",
+      "id": "eub5so",
       "name": "div",
-      "parent": "yoyzv8",
+      "parent": "c2uogc",
       "children": [
-        "n6k5rt",
-        "6nm5q8"
+        "9qlxf3",
+        "iaqz3o"
       ],
       "settings": {
         "_display": "flex",
@@ -8904,12 +8944,12 @@
       }
     },
     {
-      "id": "yoyzv8",
+      "id": "c2uogc",
       "name": "div",
-      "parent": "yhi13u",
+      "parent": "b9km79",
       "children": [
-        "26u094",
-        "6v7355"
+        "1r1hry",
+        "eub5so"
       ],
       "settings": {
         "_display": "flex",
@@ -8920,11 +8960,11 @@
       }
     },
     {
-      "id": "yhi13u",
+      "id": "b9km79",
       "name": "div",
-      "parent": "7vslhb",
+      "parent": "rmohdp",
       "children": [
-        "yoyzv8"
+        "c2uogc"
       ],
       "settings": {
         "_display": "flex",
@@ -8952,13 +8992,13 @@
       }
     },
     {
-      "id": "7vslhb",
+      "id": "rmohdp",
       "name": "div",
-      "parent": "orwl3e",
+      "parent": "3kcny4",
       "children": [
-        "tpqvbu",
-        "v65i82",
-        "yhi13u"
+        "wqhdl7",
+        "quhcda",
+        "b9km79"
       ],
       "settings": {
         "_display": "grid",
@@ -8972,11 +9012,11 @@
       }
     },
     {
-      "id": "orwl3e",
+      "id": "3kcny4",
       "name": "div",
-      "parent": "dbfqg1",
+      "parent": "8kqbo3",
       "children": [
-        "7vslhb"
+        "rmohdp"
       ],
       "settings": {
         "_display": "flex",
@@ -8985,12 +9025,12 @@
       }
     },
     {
-      "id": "dbfqg1",
+      "id": "8kqbo3",
       "name": "container",
-      "parent": "xiniek",
+      "parent": "p7socm",
       "children": [
-        "f8wzvn",
-        "orwl3e"
+        "5t4ezw",
+        "3kcny4"
       ],
       "settings": {
         "_display": "flex",
@@ -9003,11 +9043,11 @@
       }
     },
     {
-      "id": "xiniek",
+      "id": "p7socm",
       "name": "section",
       "parent": 0,
       "children": [
-        "dbfqg1"
+        "8kqbo3"
       ],
       "settings": {
         "_padding": {
@@ -9023,13 +9063,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "1yaxq9",
+      "id": "iuhg8z",
       "name": "heading",
-      "parent": "j9y6lm",
+      "parent": "in4yjj",
       "children": [],
       "settings": {
         "text": "How To Play Jili Games Demo Slots For Free",
@@ -9048,9 +9093,9 @@
       }
     },
     {
-      "id": "m2xkcs",
+      "id": "m3bim7",
       "name": "icon",
-      "parent": "q02dfq",
+      "parent": "nhg8ja",
       "children": [],
       "settings": {
         "icon": {
@@ -9070,9 +9115,9 @@
       "themeStyles": []
     },
     {
-      "id": "ukkwdw",
+      "id": "3xc423",
       "name": "text",
-      "parent": "hcza3z",
+      "parent": "snpanr",
       "children": [],
       "settings": {
         "text": "<p>Visit Website</p>",
@@ -9090,9 +9135,9 @@
       }
     },
     {
-      "id": "7jb9uf",
+      "id": "qtn2rb",
       "name": "text",
-      "parent": "hcza3z",
+      "parent": "snpanr",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
@@ -9110,12 +9155,12 @@
       }
     },
     {
-      "id": "hcza3z",
+      "id": "snpanr",
       "name": "div",
-      "parent": "q02dfq",
+      "parent": "nhg8ja",
       "children": [
-        "ukkwdw",
-        "7jb9uf"
+        "3xc423",
+        "qtn2rb"
       ],
       "settings": {
         "_display": "flex",
@@ -9126,12 +9171,12 @@
       }
     },
     {
-      "id": "q02dfq",
+      "id": "nhg8ja",
       "name": "div",
-      "parent": "n0ksi3",
+      "parent": "3ppyn6",
       "children": [
-        "m2xkcs",
-        "hcza3z"
+        "m3bim7",
+        "snpanr"
       ],
       "settings": {
         "_display": "flex",
@@ -9142,9 +9187,9 @@
       }
     },
     {
-      "id": "36doi6",
+      "id": "wlohqa",
       "name": "icon",
-      "parent": "me1jkj",
+      "parent": "i9w3gz",
       "children": [],
       "settings": {
         "icon": {
@@ -9164,9 +9209,9 @@
       "themeStyles": []
     },
     {
-      "id": "gdb765",
+      "id": "tjfibm",
       "name": "text",
-      "parent": "p4j64p",
+      "parent": "wy3ui4",
       "children": [],
       "settings": {
         "text": "<p>Search for a Jili slot</p>",
@@ -9184,9 +9229,9 @@
       }
     },
     {
-      "id": "6vxlux",
+      "id": "l2gbl9",
       "name": "text",
-      "parent": "p4j64p",
+      "parent": "wy3ui4",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
@@ -9204,12 +9249,12 @@
       }
     },
     {
-      "id": "p4j64p",
+      "id": "wy3ui4",
       "name": "div",
-      "parent": "me1jkj",
+      "parent": "i9w3gz",
       "children": [
-        "gdb765",
-        "6vxlux"
+        "tjfibm",
+        "l2gbl9"
       ],
       "settings": {
         "_display": "flex",
@@ -9220,12 +9265,12 @@
       }
     },
     {
-      "id": "me1jkj",
+      "id": "i9w3gz",
       "name": "div",
-      "parent": "n0ksi3",
+      "parent": "3ppyn6",
       "children": [
-        "36doi6",
-        "p4j64p"
+        "wlohqa",
+        "wy3ui4"
       ],
       "settings": {
         "_display": "flex",
@@ -9236,9 +9281,9 @@
       }
     },
     {
-      "id": "rriktn",
+      "id": "3g05fq",
       "name": "image",
-      "parent": "02jxma",
+      "parent": "o21sf9",
       "children": [],
       "settings": {
         "image": {
@@ -9254,9 +9299,9 @@
       "themeStyles": []
     },
     {
-      "id": "m7l7wc",
+      "id": "wkvyib",
       "name": "text",
-      "parent": "7db1q6",
+      "parent": "iwmlsj",
       "children": [],
       "settings": {
         "text": "<p>Click play game</p>",
@@ -9274,9 +9319,9 @@
       }
     },
     {
-      "id": "gqqfig",
+      "id": "ia0pcj",
       "name": "text",
-      "parent": "7db1q6",
+      "parent": "iwmlsj",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
@@ -9294,12 +9339,12 @@
       }
     },
     {
-      "id": "7db1q6",
+      "id": "iwmlsj",
       "name": "div",
-      "parent": "02jxma",
+      "parent": "o21sf9",
       "children": [
-        "m7l7wc",
-        "gqqfig"
+        "wkvyib",
+        "ia0pcj"
       ],
       "settings": {
         "_display": "flex",
@@ -9310,12 +9355,12 @@
       }
     },
     {
-      "id": "02jxma",
+      "id": "o21sf9",
       "name": "div",
-      "parent": "n0ksi3",
+      "parent": "3ppyn6",
       "children": [
-        "rriktn",
-        "7db1q6"
+        "3g05fq",
+        "iwmlsj"
       ],
       "settings": {
         "_display": "flex",
@@ -9326,9 +9371,9 @@
       }
     },
     {
-      "id": "dp1hm4",
+      "id": "fr36ni",
       "name": "icon",
-      "parent": "76ky1g",
+      "parent": "954e58",
       "children": [],
       "settings": {
         "icon": {
@@ -9348,9 +9393,9 @@
       "themeStyles": []
     },
     {
-      "id": "55xirh",
+      "id": "bbvfiw",
       "name": "heading",
-      "parent": "msosdm",
+      "parent": "f0t20d",
       "children": [],
       "settings": {
         "text": "Start spinning",
@@ -9369,9 +9414,9 @@
       }
     },
     {
-      "id": "8y4db9",
+      "id": "cerye0",
       "name": "text",
-      "parent": "msosdm",
+      "parent": "f0t20d",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and </p>",
@@ -9389,12 +9434,12 @@
       }
     },
     {
-      "id": "msosdm",
+      "id": "f0t20d",
       "name": "div",
-      "parent": "76ky1g",
+      "parent": "954e58",
       "children": [
-        "55xirh",
-        "8y4db9"
+        "bbvfiw",
+        "cerye0"
       ],
       "settings": {
         "_display": "flex",
@@ -9405,12 +9450,12 @@
       }
     },
     {
-      "id": "76ky1g",
+      "id": "954e58",
       "name": "div",
-      "parent": "n0ksi3",
+      "parent": "3ppyn6",
       "children": [
-        "dp1hm4",
-        "msosdm"
+        "fr36ni",
+        "f0t20d"
       ],
       "settings": {
         "_display": "flex",
@@ -9421,14 +9466,14 @@
       }
     },
     {
-      "id": "n0ksi3",
+      "id": "3ppyn6",
       "name": "div",
-      "parent": "j9y6lm",
+      "parent": "in4yjj",
       "children": [
-        "q02dfq",
-        "me1jkj",
-        "02jxma",
-        "76ky1g"
+        "nhg8ja",
+        "i9w3gz",
+        "o21sf9",
+        "954e58"
       ],
       "settings": {
         "_display": "grid",
@@ -9442,12 +9487,12 @@
       }
     },
     {
-      "id": "j9y6lm",
+      "id": "in4yjj",
       "name": "div",
-      "parent": "6wy433",
+      "parent": "z32h3i",
       "children": [
-        "1yaxq9",
-        "n0ksi3"
+        "iuhg8z",
+        "3ppyn6"
       ],
       "settings": {
         "_display": "flex",
@@ -9458,11 +9503,11 @@
       }
     },
     {
-      "id": "6wy433",
+      "id": "z32h3i",
       "name": "container",
-      "parent": "8tvj6u",
+      "parent": "6telso",
       "children": [
-        "j9y6lm"
+        "in4yjj"
       ],
       "settings": {
         "_display": "flex",
@@ -9473,11 +9518,11 @@
       }
     },
     {
-      "id": "8tvj6u",
+      "id": "6telso",
       "name": "section",
       "parent": 0,
       "children": [
-        "6wy433"
+        "z32h3i"
       ],
       "settings": {
         "_padding": {
@@ -9493,13 +9538,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "pwyrea",
+      "id": "ompe49",
       "name": "heading",
-      "parent": "ihcf4y",
+      "parent": "76ot1a",
       "children": [],
       "settings": {
         "text": "Secure and Flexible Deposit and Withdrawal Options",
@@ -9518,9 +9568,9 @@
       }
     },
     {
-      "id": "ruqzqt",
+      "id": "mx7j3w",
       "name": "heading",
-      "parent": "feqbq3",
+      "parent": "46calq",
       "children": [],
       "settings": {
         "text": "1. Credit/Debit Cards",
@@ -9539,9 +9589,9 @@
       }
     },
     {
-      "id": "aasov8",
+      "id": "kddg3v",
       "name": "text-basic",
-      "parent": "feqbq3",
+      "parent": "46calq",
       "children": [],
       "settings": {
         "text": "Widely accepted and easy to use, cards are a go-to for many players.",
@@ -9559,12 +9609,12 @@
       }
     },
     {
-      "id": "feqbq3",
+      "id": "46calq",
       "name": "div",
-      "parent": "cymwwm",
+      "parent": "a0mjzx",
       "children": [
-        "ruqzqt",
-        "aasov8"
+        "mx7j3w",
+        "kddg3v"
       ],
       "settings": {
         "_display": "flex",
@@ -9575,9 +9625,9 @@
       }
     },
     {
-      "id": "5zq0g3",
+      "id": "10vc01",
       "name": "text-basic",
-      "parent": "4uvz6m",
+      "parent": "wuxbui",
       "children": [],
       "settings": {
         "text": "✅ Benefits: Instant deposits, high security",
@@ -9595,9 +9645,9 @@
       }
     },
     {
-      "id": "k6hotp",
+      "id": "xrbnpg",
       "name": "text-basic",
-      "parent": "4uvz6m",
+      "parent": "wuxbui",
       "children": [],
       "settings": {
         "text": "🛠️ How to Use: Enter your card details at checkout",
@@ -9615,9 +9665,9 @@
       }
     },
     {
-      "id": "8yxpwo",
+      "id": "7ghwjk",
       "name": "text-basic",
-      "parent": "4uvz6m",
+      "parent": "wuxbui",
       "children": [],
       "settings": {
         "text": "⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days",
@@ -9635,9 +9685,9 @@
       }
     },
     {
-      "id": "u383gp",
+      "id": "p4bsik",
       "name": "text-basic",
-      "parent": "4uvz6m",
+      "parent": "wuxbui",
       "children": [],
       "settings": {
         "text": "📝 Note: May require verification for large withdrawals",
@@ -9655,14 +9705,14 @@
       }
     },
     {
-      "id": "4uvz6m",
+      "id": "wuxbui",
       "name": "div",
-      "parent": "cymwwm",
+      "parent": "a0mjzx",
       "children": [
-        "5zq0g3",
-        "k6hotp",
-        "8yxpwo",
-        "u383gp"
+        "10vc01",
+        "xrbnpg",
+        "7ghwjk",
+        "p4bsik"
       ],
       "settings": {
         "_display": "flex",
@@ -9673,12 +9723,12 @@
       }
     },
     {
-      "id": "cymwwm",
+      "id": "a0mjzx",
       "name": "div",
-      "parent": "m4orda",
+      "parent": "wtpqam",
       "children": [
-        "feqbq3",
-        "4uvz6m"
+        "46calq",
+        "wuxbui"
       ],
       "settings": {
         "_display": "flex",
@@ -9689,11 +9739,11 @@
       }
     },
     {
-      "id": "m4orda",
+      "id": "wtpqam",
       "name": "div",
-      "parent": "oh95js",
+      "parent": "lxksf3",
       "children": [
-        "cymwwm"
+        "a0mjzx"
       ],
       "settings": {
         "_display": "flex",
@@ -9721,9 +9771,9 @@
       }
     },
     {
-      "id": "6dpd9p",
+      "id": "e4hqg3",
       "name": "heading",
-      "parent": "nz0u89",
+      "parent": "wvuz94",
       "children": [],
       "settings": {
         "text": "2. Bank Transfers",
@@ -9742,9 +9792,9 @@
       }
     },
     {
-      "id": "k0jkkg",
+      "id": "arlm3x",
       "name": "text",
-      "parent": "nz0u89",
+      "parent": "wvuz94",
       "children": [],
       "settings": {
         "text": "<p>Widely accepted and easy to use, cards are a go-to for many players.</p>",
@@ -9762,12 +9812,12 @@
       }
     },
     {
-      "id": "nz0u89",
+      "id": "wvuz94",
       "name": "div",
-      "parent": "7kmo58",
+      "parent": "u8u5je",
       "children": [
-        "6dpd9p",
-        "k0jkkg"
+        "e4hqg3",
+        "arlm3x"
       ],
       "settings": {
         "_display": "flex",
@@ -9778,9 +9828,9 @@
       }
     },
     {
-      "id": "bn655e",
+      "id": "owt7ld",
       "name": "text",
-      "parent": "hkcng7",
+      "parent": "gitqyw",
       "children": [],
       "settings": {
         "text": "<p>✅ Benefits: Safe for large amounts, trackable</p>",
@@ -9798,9 +9848,9 @@
       }
     },
     {
-      "id": "x6ok9w",
+      "id": "jfr9xt",
       "name": "text",
-      "parent": "hkcng7",
+      "parent": "gitqyw",
       "children": [],
       "settings": {
         "text": "<p>🛠️ How to Use: Enter your card details at checkout</p>",
@@ -9818,9 +9868,9 @@
       }
     },
     {
-      "id": "6meja1",
+      "id": "tyjul2",
       "name": "text",
-      "parent": "hkcng7",
+      "parent": "gitqyw",
       "children": [],
       "settings": {
         "text": "<p>⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days</p>",
@@ -9838,9 +9888,9 @@
       }
     },
     {
-      "id": "037nf8",
+      "id": "3bocli",
       "name": "text",
-      "parent": "hkcng7",
+      "parent": "gitqyw",
       "children": [],
       "settings": {
         "text": "<p>📝 Note: May require verification for large withdrawals</p>",
@@ -9858,14 +9908,14 @@
       }
     },
     {
-      "id": "hkcng7",
+      "id": "gitqyw",
       "name": "div",
-      "parent": "7kmo58",
+      "parent": "u8u5je",
       "children": [
-        "bn655e",
-        "x6ok9w",
-        "6meja1",
-        "037nf8"
+        "owt7ld",
+        "jfr9xt",
+        "tyjul2",
+        "3bocli"
       ],
       "settings": {
         "_display": "flex",
@@ -9876,12 +9926,12 @@
       }
     },
     {
-      "id": "7kmo58",
+      "id": "u8u5je",
       "name": "div",
-      "parent": "v9m1vx",
+      "parent": "ubz24h",
       "children": [
-        "nz0u89",
-        "hkcng7"
+        "wvuz94",
+        "gitqyw"
       ],
       "settings": {
         "_display": "flex",
@@ -9892,11 +9942,11 @@
       }
     },
     {
-      "id": "v9m1vx",
+      "id": "ubz24h",
       "name": "div",
-      "parent": "oh95js",
+      "parent": "lxksf3",
       "children": [
-        "7kmo58"
+        "u8u5je"
       ],
       "settings": {
         "_display": "flex",
@@ -9924,12 +9974,12 @@
       }
     },
     {
-      "id": "oh95js",
+      "id": "lxksf3",
       "name": "div",
-      "parent": "ihcf4y",
+      "parent": "76ot1a",
       "children": [
-        "m4orda",
-        "v9m1vx"
+        "wtpqam",
+        "ubz24h"
       ],
       "settings": {
         "_display": "grid",
@@ -9945,9 +9995,9 @@
       }
     },
     {
-      "id": "an2ebw",
+      "id": "hvgsat",
       "name": "heading",
-      "parent": "b1f5a1",
+      "parent": "ubuy80",
       "children": [],
       "settings": {
         "text": "3. E-wallets (bKash, Rocket, UCash, Nagad)",
@@ -9966,9 +10016,9 @@
       }
     },
     {
-      "id": "iyqjr8",
+      "id": "zigt6v",
       "name": "text-basic",
-      "parent": "b1f5a1",
+      "parent": "ubuy80",
       "children": [],
       "settings": {
         "text": "Widely accepted and easy to use, cards are a go-to for many players.",
@@ -9986,12 +10036,12 @@
       }
     },
     {
-      "id": "b1f5a1",
+      "id": "ubuy80",
       "name": "div",
-      "parent": "4k0ut9",
+      "parent": "0dl09h",
       "children": [
-        "an2ebw",
-        "iyqjr8"
+        "hvgsat",
+        "zigt6v"
       ],
       "settings": {
         "_display": "flex",
@@ -10002,9 +10052,9 @@
       }
     },
     {
-      "id": "d83ile",
+      "id": "rzaa8w",
       "name": "text-basic",
-      "parent": "e45qde",
+      "parent": "q1fjy6",
       "children": [],
       "settings": {
         "text": "✅ Benefits: Instant deposits, high security",
@@ -10022,9 +10072,9 @@
       }
     },
     {
-      "id": "fufyng",
+      "id": "ium6sz",
       "name": "text-basic",
-      "parent": "e45qde",
+      "parent": "q1fjy6",
       "children": [],
       "settings": {
         "text": "🛠️ How to Use: Enter your card details at checkout",
@@ -10042,9 +10092,9 @@
       }
     },
     {
-      "id": "m1oyt3",
+      "id": "ccacpl",
       "name": "text-basic",
-      "parent": "e45qde",
+      "parent": "q1fjy6",
       "children": [],
       "settings": {
         "text": "⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days",
@@ -10062,9 +10112,9 @@
       }
     },
     {
-      "id": "08dru8",
+      "id": "ap2205",
       "name": "text-basic",
-      "parent": "e45qde",
+      "parent": "q1fjy6",
       "children": [],
       "settings": {
         "text": "📝 Note: May require verification for large withdrawals",
@@ -10082,14 +10132,14 @@
       }
     },
     {
-      "id": "e45qde",
+      "id": "q1fjy6",
       "name": "div",
-      "parent": "4k0ut9",
+      "parent": "0dl09h",
       "children": [
-        "d83ile",
-        "fufyng",
-        "m1oyt3",
-        "08dru8"
+        "rzaa8w",
+        "ium6sz",
+        "ccacpl",
+        "ap2205"
       ],
       "settings": {
         "_display": "flex",
@@ -10100,12 +10150,12 @@
       }
     },
     {
-      "id": "4k0ut9",
+      "id": "0dl09h",
       "name": "div",
-      "parent": "4rljyw",
+      "parent": "hcttp3",
       "children": [
-        "b1f5a1",
-        "e45qde"
+        "ubuy80",
+        "q1fjy6"
       ],
       "settings": {
         "_display": "flex",
@@ -10116,11 +10166,11 @@
       }
     },
     {
-      "id": "4rljyw",
+      "id": "hcttp3",
       "name": "div",
-      "parent": "3sisiu",
+      "parent": "d4wd1d",
       "children": [
-        "4k0ut9"
+        "0dl09h"
       ],
       "settings": {
         "_display": "flex",
@@ -10148,9 +10198,9 @@
       }
     },
     {
-      "id": "n8f3dk",
+      "id": "3avrmw",
       "name": "heading",
-      "parent": "ax0pvn",
+      "parent": "wcwsyf",
       "children": [],
       "settings": {
         "text": "4. Cryptocurrency (BTC, USDT, ETH)",
@@ -10169,9 +10219,9 @@
       }
     },
     {
-      "id": "yekanu",
+      "id": "7q55xn",
       "name": "text",
-      "parent": "ax0pvn",
+      "parent": "wcwsyf",
       "children": [],
       "settings": {
         "text": "<p>Widely accepted and easy to use, cards are a go-to for many players.</p>",
@@ -10189,12 +10239,12 @@
       }
     },
     {
-      "id": "ax0pvn",
+      "id": "wcwsyf",
       "name": "div",
-      "parent": "urs1q2",
+      "parent": "fdonil",
       "children": [
-        "n8f3dk",
-        "yekanu"
+        "3avrmw",
+        "7q55xn"
       ],
       "settings": {
         "_display": "flex",
@@ -10205,9 +10255,9 @@
       }
     },
     {
-      "id": "e043pn",
+      "id": "qd7t2w",
       "name": "text",
-      "parent": "sq2jcw",
+      "parent": "uhk9rl",
       "children": [],
       "settings": {
         "text": "<p>✅ Benefits: Safe for large amounts, trackable</p>",
@@ -10225,9 +10275,9 @@
       }
     },
     {
-      "id": "aqb4f2",
+      "id": "4ennmv",
       "name": "text",
-      "parent": "sq2jcw",
+      "parent": "uhk9rl",
       "children": [],
       "settings": {
         "text": "<p>🛠️ How to Use: Enter your card details at checkout</p>",
@@ -10245,9 +10295,9 @@
       }
     },
     {
-      "id": "ot3a0g",
+      "id": "f044jh",
       "name": "text",
-      "parent": "sq2jcw",
+      "parent": "uhk9rl",
       "children": [],
       "settings": {
         "text": "<p>⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days</p>",
@@ -10265,9 +10315,9 @@
       }
     },
     {
-      "id": "0hqgzw",
+      "id": "pr44ae",
       "name": "text",
-      "parent": "sq2jcw",
+      "parent": "uhk9rl",
       "children": [],
       "settings": {
         "text": "<p>📝 Note: May require verification for large withdrawals</p>",
@@ -10285,14 +10335,14 @@
       }
     },
     {
-      "id": "sq2jcw",
+      "id": "uhk9rl",
       "name": "div",
-      "parent": "urs1q2",
+      "parent": "fdonil",
       "children": [
-        "e043pn",
-        "aqb4f2",
-        "ot3a0g",
-        "0hqgzw"
+        "qd7t2w",
+        "4ennmv",
+        "f044jh",
+        "pr44ae"
       ],
       "settings": {
         "_display": "flex",
@@ -10303,12 +10353,12 @@
       }
     },
     {
-      "id": "urs1q2",
+      "id": "fdonil",
       "name": "div",
-      "parent": "5ms98h",
+      "parent": "6wc1yp",
       "children": [
-        "ax0pvn",
-        "sq2jcw"
+        "wcwsyf",
+        "uhk9rl"
       ],
       "settings": {
         "_display": "flex",
@@ -10319,11 +10369,11 @@
       }
     },
     {
-      "id": "5ms98h",
+      "id": "6wc1yp",
       "name": "div",
-      "parent": "3sisiu",
+      "parent": "d4wd1d",
       "children": [
-        "urs1q2"
+        "fdonil"
       ],
       "settings": {
         "_display": "flex",
@@ -10351,12 +10401,12 @@
       }
     },
     {
-      "id": "3sisiu",
+      "id": "d4wd1d",
       "name": "div",
-      "parent": "ihcf4y",
+      "parent": "76ot1a",
       "children": [
-        "4rljyw",
-        "5ms98h"
+        "hcttp3",
+        "6wc1yp"
       ],
       "settings": {
         "_display": "grid",
@@ -10372,13 +10422,13 @@
       }
     },
     {
-      "id": "ihcf4y",
+      "id": "76ot1a",
       "name": "div",
-      "parent": "bc8nxe",
+      "parent": "jjlbdx",
       "children": [
-        "pwyrea",
-        "oh95js",
-        "3sisiu"
+        "ompe49",
+        "lxksf3",
+        "d4wd1d"
       ],
       "settings": {
         "_display": "flex",
@@ -10387,11 +10437,11 @@
       }
     },
     {
-      "id": "bc8nxe",
+      "id": "jjlbdx",
       "name": "div",
-      "parent": "w309ea",
+      "parent": "b09ywg",
       "children": [
-        "ihcf4y"
+        "76ot1a"
       ],
       "settings": {
         "_display": "flex",
@@ -10400,11 +10450,11 @@
       }
     },
     {
-      "id": "w309ea",
+      "id": "b09ywg",
       "name": "container",
-      "parent": "l1wa54",
+      "parent": "vekijo",
       "children": [
-        "bc8nxe"
+        "jjlbdx"
       ],
       "settings": {
         "_display": "flex",
@@ -10415,11 +10465,11 @@
       }
     },
     {
-      "id": "l1wa54",
+      "id": "vekijo",
       "name": "section",
       "parent": 0,
       "children": [
-        "w309ea"
+        "b09ywg"
       ],
       "settings": {
         "_padding": {
@@ -10435,13 +10485,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "sdkus1",
+      "id": "5d58dw",
       "name": "heading",
-      "parent": "0yxfvw",
+      "parent": "bawkac",
       "children": [],
       "settings": {
         "text": "Security and Fair Play at Jili Slot",
@@ -10460,9 +10515,9 @@
       }
     },
     {
-      "id": "p9qypp",
+      "id": "8k9zkg",
       "name": "text",
-      "parent": "bex4rg",
+      "parent": "58k3lk",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -10480,9 +10535,9 @@
       }
     },
     {
-      "id": "316531",
+      "id": "1ele29",
       "name": "text",
-      "parent": "bex4rg",
+      "parent": "58k3lk",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -10500,12 +10555,12 @@
       }
     },
     {
-      "id": "bex4rg",
+      "id": "58k3lk",
       "name": "div",
-      "parent": "0yxfvw",
+      "parent": "bawkac",
       "children": [
-        "p9qypp",
-        "316531"
+        "8k9zkg",
+        "1ele29"
       ],
       "settings": {
         "_display": "flex",
@@ -10516,12 +10571,12 @@
       }
     },
     {
-      "id": "0yxfvw",
+      "id": "bawkac",
       "name": "div",
-      "parent": "io18cb",
+      "parent": "nxyosu",
       "children": [
-        "sdkus1",
-        "bex4rg"
+        "5d58dw",
+        "58k3lk"
       ],
       "settings": {
         "_display": "flex",
@@ -10532,9 +10587,9 @@
       }
     },
     {
-      "id": "sdrre3",
+      "id": "7q8xic",
       "name": "button",
-      "parent": "io18cb",
+      "parent": "nxyosu",
       "children": [],
       "settings": {
         "text": "Learn More",
@@ -10571,12 +10626,12 @@
       }
     },
     {
-      "id": "io18cb",
+      "id": "nxyosu",
       "name": "div",
-      "parent": "5fwzdj",
+      "parent": "nfwke8",
       "children": [
-        "0yxfvw",
-        "sdrre3"
+        "bawkac",
+        "7q8xic"
       ],
       "settings": {
         "_display": "flex",
@@ -10590,9 +10645,9 @@
       }
     },
     {
-      "id": "0d3o4x",
+      "id": "1umlrp",
       "name": "image",
-      "parent": "5fwzdj",
+      "parent": "nfwke8",
       "children": [],
       "settings": {
         "image": {
@@ -10617,12 +10672,12 @@
       "themeStyles": []
     },
     {
-      "id": "5fwzdj",
+      "id": "nfwke8",
       "name": "div",
-      "parent": "gx3zru",
+      "parent": "fop3e9",
       "children": [
-        "io18cb",
-        "0d3o4x"
+        "nxyosu",
+        "1umlrp"
       ],
       "settings": {
         "_display": "flex",
@@ -10638,11 +10693,11 @@
       }
     },
     {
-      "id": "gx3zru",
+      "id": "fop3e9",
       "name": "div",
-      "parent": "1mf8kf",
+      "parent": "zl8mrk",
       "children": [
-        "5fwzdj"
+        "nfwke8"
       ],
       "settings": {
         "_display": "flex",
@@ -10651,11 +10706,11 @@
       }
     },
     {
-      "id": "1mf8kf",
+      "id": "zl8mrk",
       "name": "container",
-      "parent": "t3u4hv",
+      "parent": "n51pnw",
       "children": [
-        "gx3zru"
+        "fop3e9"
       ],
       "settings": {
         "_display": "flex",
@@ -10666,11 +10721,11 @@
       }
     },
     {
-      "id": "t3u4hv",
+      "id": "n51pnw",
       "name": "section",
       "parent": 0,
       "children": [
-        "1mf8kf"
+        "zl8mrk"
       ],
       "settings": {
         "_padding": {
@@ -10686,13 +10741,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "rmpbag",
+      "id": "4m3qw8",
       "name": "heading",
-      "parent": "e6zn1j",
+      "parent": "nn3oe0",
       "children": [],
       "settings": {
         "text": "How to Choose the Best Jili Slot Games?",
@@ -10711,9 +10771,9 @@
       }
     },
     {
-      "id": "dyxzk6",
+      "id": "fiwogr",
       "name": "heading",
-      "parent": "93cauj",
+      "parent": "nbkxyz",
       "children": [],
       "settings": {
         "text": "1. RTP (Return to Player)",
@@ -10732,9 +10792,9 @@
       }
     },
     {
-      "id": "kk4dr0",
+      "id": "uv7rkg",
       "name": "text",
-      "parent": "93cauj",
+      "parent": "nbkxyz",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -10752,12 +10812,12 @@
       }
     },
     {
-      "id": "93cauj",
+      "id": "nbkxyz",
       "name": "div",
-      "parent": "ni2l2r",
+      "parent": "pqx6b6",
       "children": [
-        "dyxzk6",
-        "kk4dr0"
+        "fiwogr",
+        "uv7rkg"
       ],
       "settings": {
         "_display": "flex",
@@ -10768,11 +10828,11 @@
       }
     },
     {
-      "id": "ni2l2r",
+      "id": "pqx6b6",
       "name": "div",
-      "parent": "x6vxqh",
+      "parent": "n117nx",
       "children": [
-        "93cauj"
+        "nbkxyz"
       ],
       "settings": {
         "_display": "flex",
@@ -10800,9 +10860,9 @@
       }
     },
     {
-      "id": "cjbj52",
+      "id": "4irzo7",
       "name": "heading",
-      "parent": "entf82",
+      "parent": "rxsbrz",
       "children": [],
       "settings": {
         "text": "2. Volatility",
@@ -10821,9 +10881,9 @@
       }
     },
     {
-      "id": "3s97tz",
+      "id": "0jg0g8",
       "name": "text",
-      "parent": "entf82",
+      "parent": "rxsbrz",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -10841,12 +10901,12 @@
       }
     },
     {
-      "id": "entf82",
+      "id": "rxsbrz",
       "name": "div",
-      "parent": "6wucra",
+      "parent": "7kwxpl",
       "children": [
-        "cjbj52",
-        "3s97tz"
+        "4irzo7",
+        "0jg0g8"
       ],
       "settings": {
         "_display": "flex",
@@ -10857,11 +10917,11 @@
       }
     },
     {
-      "id": "6wucra",
+      "id": "7kwxpl",
       "name": "div",
-      "parent": "x6vxqh",
+      "parent": "n117nx",
       "children": [
-        "entf82"
+        "rxsbrz"
       ],
       "settings": {
         "_display": "flex",
@@ -10889,9 +10949,9 @@
       }
     },
     {
-      "id": "ldgtks",
+      "id": "9abvnr",
       "name": "heading",
-      "parent": "8nmac6",
+      "parent": "7kbczw",
       "children": [],
       "settings": {
         "text": "3. Bonus Features",
@@ -10910,9 +10970,9 @@
       }
     },
     {
-      "id": "vtkidg",
+      "id": "gpljut",
       "name": "text",
-      "parent": "8nmac6",
+      "parent": "7kbczw",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -10930,12 +10990,12 @@
       }
     },
     {
-      "id": "8nmac6",
+      "id": "7kbczw",
       "name": "div",
-      "parent": "xg518l",
+      "parent": "63nks2",
       "children": [
-        "ldgtks",
-        "vtkidg"
+        "9abvnr",
+        "gpljut"
       ],
       "settings": {
         "_display": "flex",
@@ -10946,11 +11006,11 @@
       }
     },
     {
-      "id": "xg518l",
+      "id": "63nks2",
       "name": "div",
-      "parent": "x6vxqh",
+      "parent": "n117nx",
       "children": [
-        "8nmac6"
+        "7kbczw"
       ],
       "settings": {
         "_display": "flex",
@@ -10978,9 +11038,9 @@
       }
     },
     {
-      "id": "79ullw",
+      "id": "948s3b",
       "name": "heading",
-      "parent": "6ty9vt",
+      "parent": "fbome4",
       "children": [],
       "settings": {
         "text": "4. Popularity",
@@ -10999,9 +11059,9 @@
       }
     },
     {
-      "id": "qm16wg",
+      "id": "c1v28j",
       "name": "text",
-      "parent": "6ty9vt",
+      "parent": "fbome4",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -11019,12 +11079,12 @@
       }
     },
     {
-      "id": "6ty9vt",
+      "id": "fbome4",
       "name": "div",
-      "parent": "psekbk",
+      "parent": "cnswfs",
       "children": [
-        "79ullw",
-        "qm16wg"
+        "948s3b",
+        "c1v28j"
       ],
       "settings": {
         "_display": "flex",
@@ -11035,11 +11095,11 @@
       }
     },
     {
-      "id": "psekbk",
+      "id": "cnswfs",
       "name": "div",
-      "parent": "x6vxqh",
+      "parent": "n117nx",
       "children": [
-        "6ty9vt"
+        "fbome4"
       ],
       "settings": {
         "_display": "flex",
@@ -11067,9 +11127,9 @@
       }
     },
     {
-      "id": "b2m79w",
+      "id": "j5ejhr",
       "name": "heading",
-      "parent": "3c45w3",
+      "parent": "9q5s61",
       "children": [],
       "settings": {
         "text": "5. Theme & Graphics",
@@ -11088,9 +11148,9 @@
       }
     },
     {
-      "id": "sj62zf",
+      "id": "nel070",
       "name": "text",
-      "parent": "3c45w3",
+      "parent": "9q5s61",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -11108,12 +11168,12 @@
       }
     },
     {
-      "id": "3c45w3",
+      "id": "9q5s61",
       "name": "div",
-      "parent": "rorwnj",
+      "parent": "9q19ao",
       "children": [
-        "b2m79w",
-        "sj62zf"
+        "j5ejhr",
+        "nel070"
       ],
       "settings": {
         "_display": "flex",
@@ -11124,11 +11184,11 @@
       }
     },
     {
-      "id": "rorwnj",
+      "id": "9q19ao",
       "name": "div",
-      "parent": "x6vxqh",
+      "parent": "n117nx",
       "children": [
-        "3c45w3"
+        "9q5s61"
       ],
       "settings": {
         "_display": "flex",
@@ -11156,9 +11216,9 @@
       }
     },
     {
-      "id": "layg14",
+      "id": "jwkv4i",
       "name": "heading",
-      "parent": "pr7ve6",
+      "parent": "rbopz7",
       "children": [],
       "settings": {
         "text": "6. Demo Availability",
@@ -11177,9 +11237,9 @@
       }
     },
     {
-      "id": "2djm6g",
+      "id": "yiz4gb",
       "name": "text",
-      "parent": "pr7ve6",
+      "parent": "rbopz7",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -11197,12 +11257,12 @@
       }
     },
     {
-      "id": "pr7ve6",
+      "id": "rbopz7",
       "name": "div",
-      "parent": "u6f9oc",
+      "parent": "rro90j",
       "children": [
-        "layg14",
-        "2djm6g"
+        "jwkv4i",
+        "yiz4gb"
       ],
       "settings": {
         "_display": "flex",
@@ -11213,11 +11273,11 @@
       }
     },
     {
-      "id": "u6f9oc",
+      "id": "rro90j",
       "name": "div",
-      "parent": "x6vxqh",
+      "parent": "n117nx",
       "children": [
-        "pr7ve6"
+        "rbopz7"
       ],
       "settings": {
         "_display": "flex",
@@ -11245,16 +11305,16 @@
       }
     },
     {
-      "id": "x6vxqh",
+      "id": "n117nx",
       "name": "div",
-      "parent": "e6zn1j",
+      "parent": "nn3oe0",
       "children": [
-        "ni2l2r",
-        "6wucra",
-        "xg518l",
-        "psekbk",
-        "rorwnj",
-        "u6f9oc"
+        "pqx6b6",
+        "7kwxpl",
+        "63nks2",
+        "cnswfs",
+        "9q19ao",
+        "rro90j"
       ],
       "settings": {
         "_display": "grid",
@@ -11268,12 +11328,12 @@
       }
     },
     {
-      "id": "e6zn1j",
+      "id": "nn3oe0",
       "name": "container",
-      "parent": "b73lls",
+      "parent": "ifytci",
       "children": [
-        "rmpbag",
-        "x6vxqh"
+        "4m3qw8",
+        "n117nx"
       ],
       "settings": {
         "_display": "flex",
@@ -11286,11 +11346,11 @@
       }
     },
     {
-      "id": "b73lls",
+      "id": "ifytci",
       "name": "section",
       "parent": 0,
       "children": [
-        "e6zn1j"
+        "nn3oe0"
       ],
       "settings": {
         "_padding": {
@@ -11306,13 +11366,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "lhm5bz",
+      "id": "cu4zn8",
       "name": "heading",
-      "parent": "ilkbd0",
+      "parent": "9yfe98",
       "children": [],
       "settings": {
         "text": "Contact Jili Games Customer Services",
@@ -11331,9 +11396,9 @@
       }
     },
     {
-      "id": "odpblt",
+      "id": "3xuwj5",
       "name": "icon",
-      "parent": "xq9fce",
+      "parent": "kexwwn",
       "children": [],
       "settings": {
         "icon": {
@@ -11353,9 +11418,9 @@
       "themeStyles": []
     },
     {
-      "id": "kemgo2",
+      "id": "wk835k",
       "name": "heading",
-      "parent": "xq9fce",
+      "parent": "kexwwn",
       "children": [],
       "settings": {
         "text": "Live Chat",
@@ -11374,12 +11439,12 @@
       }
     },
     {
-      "id": "xq9fce",
+      "id": "kexwwn",
       "name": "div",
-      "parent": "rsw1al",
+      "parent": "eo9ux7",
       "children": [
-        "odpblt",
-        "kemgo2"
+        "3xuwj5",
+        "wk835k"
       ],
       "settings": {
         "_display": "flex",
@@ -11393,9 +11458,9 @@
       }
     },
     {
-      "id": "rylxkq",
+      "id": "tgrzr1",
       "name": "icon",
-      "parent": "hgskjr",
+      "parent": "drh8uw",
       "children": [],
       "settings": {
         "icon": {
@@ -11415,9 +11480,9 @@
       "themeStyles": []
     },
     {
-      "id": "kg4tot",
+      "id": "vyvzud",
       "name": "heading",
-      "parent": "hgskjr",
+      "parent": "drh8uw",
       "children": [],
       "settings": {
         "text": "Telegram: @jilislot.global",
@@ -11436,12 +11501,12 @@
       }
     },
     {
-      "id": "hgskjr",
+      "id": "drh8uw",
       "name": "div",
-      "parent": "rsw1al",
+      "parent": "eo9ux7",
       "children": [
-        "rylxkq",
-        "kg4tot"
+        "tgrzr1",
+        "vyvzud"
       ],
       "settings": {
         "_display": "flex",
@@ -11455,9 +11520,9 @@
       }
     },
     {
-      "id": "phykh7",
+      "id": "xiv2hg",
       "name": "image",
-      "parent": "d2i6mj",
+      "parent": "wyfoqr",
       "children": [],
       "settings": {
         "image": {
@@ -11473,9 +11538,9 @@
       "themeStyles": []
     },
     {
-      "id": "0b6bn2",
+      "id": "0x8t79",
       "name": "heading",
-      "parent": "d2i6mj",
+      "parent": "wyfoqr",
       "children": [],
       "settings": {
         "text": "Email: support@jilislot.global",
@@ -11494,12 +11559,12 @@
       }
     },
     {
-      "id": "d2i6mj",
+      "id": "wyfoqr",
       "name": "div",
-      "parent": "rsw1al",
+      "parent": "eo9ux7",
       "children": [
-        "phykh7",
-        "0b6bn2"
+        "xiv2hg",
+        "0x8t79"
       ],
       "settings": {
         "_display": "flex",
@@ -11513,13 +11578,13 @@
       }
     },
     {
-      "id": "rsw1al",
+      "id": "eo9ux7",
       "name": "div",
-      "parent": "ilkbd0",
+      "parent": "9yfe98",
       "children": [
-        "xq9fce",
-        "hgskjr",
-        "d2i6mj"
+        "kexwwn",
+        "drh8uw",
+        "wyfoqr"
       ],
       "settings": {
         "_display": "flex",
@@ -11535,12 +11600,12 @@
       }
     },
     {
-      "id": "ilkbd0",
+      "id": "9yfe98",
       "name": "div",
-      "parent": "90db03",
+      "parent": "88v4lu",
       "children": [
-        "lhm5bz",
-        "rsw1al"
+        "cu4zn8",
+        "eo9ux7"
       ],
       "settings": {
         "_display": "flex",
@@ -11553,11 +11618,11 @@
       }
     },
     {
-      "id": "90db03",
+      "id": "88v4lu",
       "name": "container",
-      "parent": "v8fxj9",
+      "parent": "9zecbm",
       "children": [
-        "ilkbd0"
+        "9yfe98"
       ],
       "settings": {
         "_display": "flex",
@@ -11568,11 +11633,11 @@
       }
     },
     {
-      "id": "v8fxj9",
+      "id": "9zecbm",
       "name": "section",
       "parent": 0,
       "children": [
-        "90db03"
+        "88v4lu"
       ],
       "settings": {
         "_padding": {
@@ -11588,89 +11653,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
-        }
-      }
-    },
-    {
-      "id": "c0933k",
-      "name": "image",
-      "parent": "k8ydzp",
-      "children": [],
-      "settings": {
-        "image": {
-          "id": null,
-          "filename": null,
-          "size": "full",
-          "full": "../assets/vector-1-8226_536.svg",
-          "url": "../assets/vector-1-8226_536.svg"
-        },
-        "_width": "100%",
-        "_widthMax": "163px"
-      },
-      "themeStyles": []
-    },
-    {
-      "id": "k8ydzp",
-      "name": "div",
-      "parent": "v0yt55",
-      "children": [
-        "c0933k"
-      ],
-      "settings": {
-        "_display": "flex",
-        "_direction": "column",
-        "_alignItems": "flex-start",
-        "_padding": {
-          "top": "295.5",
-          "right": "231.5",
-          "bottom": "0",
-          "left": "805.5"
         },
         "_background": {
           "color": {
-            "raw": "#FCC40B"
-          }
-        },
-        "_border": {
-          "radius": {
-            "top": "16px",
-            "right": "16px",
-            "bottom": "16px",
-            "left": "16px"
+            "raw": "#000000"
           }
         }
       }
     },
     {
-      "id": "v0yt55",
-      "name": "div",
-      "parent": "9kmj5u",
-      "children": [
-        "k8ydzp"
-      ],
-      "settings": {
-        "_display": "flex",
-        "_direction": "column",
-        "_alignItems": "flex-start",
-        "_background": {
-          "color": {
-            "raw": "#FCC40B"
-          }
-        },
-        "_border": {
-          "radius": {
-            "top": "16px",
-            "right": "16px",
-            "bottom": "16px",
-            "left": "16px"
-          }
-        }
-      }
-    },
-    {
-      "id": "hntjc1",
+      "id": "rwnqhr",
       "name": "heading",
-      "parent": "kr5m25",
+      "parent": "6k5jtz",
       "children": [],
       "settings": {
         "text": "Conclusion",
@@ -11689,9 +11683,9 @@
       }
     },
     {
-      "id": "3gtwjd",
+      "id": "gfxxoj",
       "name": "text",
-      "parent": "kr5m25",
+      "parent": "6k5jtz",
       "children": [],
       "settings": {
         "text": "<p>Winning in Aviator takes more than luck. Use smart strategies, stay in control, and play with a clear plan. The key is to enjoy the game while making smart moves!</p>",
@@ -11709,12 +11703,12 @@
       }
     },
     {
-      "id": "kr5m25",
+      "id": "6k5jtz",
       "name": "div",
-      "parent": "6na8e2",
+      "parent": "b904be",
       "children": [
-        "hntjc1",
-        "3gtwjd"
+        "rwnqhr",
+        "gfxxoj"
       ],
       "settings": {
         "_display": "flex",
@@ -11725,9 +11719,9 @@
       }
     },
     {
-      "id": "ab82md",
+      "id": "7qqthg",
       "name": "button",
-      "parent": "6na8e2",
+      "parent": "b904be",
       "children": [],
       "settings": {
         "text": "Get Started",
@@ -11764,61 +11758,71 @@
       }
     },
     {
-      "id": "6na8e2",
+      "id": "b904be",
       "name": "div",
-      "parent": "9kmj5u",
+      "parent": "suyboe",
       "children": [
-        "kr5m25",
-        "ab82md"
+        "6k5jtz",
+        "7qqthg"
       ],
       "settings": {
         "_display": "flex",
         "_direction": "column",
         "_rowGap": "32",
         "_columnGap": "32",
-        "_alignItems": "center"
+        "_alignItems": "center",
+        "_width": "100%",
+        "_widthMax": "755px"
       }
     },
     {
-      "id": "9kmj5u",
+      "id": "suyboe",
       "name": "container",
-      "parent": "gxniql",
+      "parent": "pdon57",
       "children": [
-        "v0yt55",
-        "6na8e2"
+        "b904be"
       ],
       "settings": {
         "_display": "flex",
         "_direction": "column",
+        "_alignItems": "flex-start",
         "_width": "100%",
         "_widthMax": "1200px"
       }
     },
     {
-      "id": "gxniql",
+      "id": "pdon57",
       "name": "section",
       "parent": 0,
       "children": [
-        "9kmj5u"
+        "suyboe"
       ],
       "settings": {
         "_padding": {
           "top": "138",
           "right": "16",
+          "bottom": "138",
           "left": "16"
         },
         "_padding:tablet_portrait": {
-          "top": "120"
+          "top": "120",
+          "bottom": "120"
         },
         "_padding:mobile_landscape": {
-          "top": "60"
+          "top": "60",
+          "bottom": "60"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "4zs3yb",
+      "id": "ty9r9p",
       "name": "heading",
-      "parent": "t6kd9u",
+      "parent": "dowb71",
       "children": [],
       "settings": {
         "text": "FAQ",
@@ -11837,9 +11841,9 @@
       }
     },
     {
-      "id": "dvg11s",
+      "id": "kkrocz",
       "name": "text-basic",
-      "parent": "2f6mqz",
+      "parent": "768r4f",
       "children": [],
       "settings": {
         "text": "What makes Jili slots different from other slot providers?",
@@ -11857,9 +11861,9 @@
       }
     },
     {
-      "id": "p0c2za",
+      "id": "b0uvl2",
       "name": "icon",
-      "parent": "2f6mqz",
+      "parent": "768r4f",
       "children": [],
       "settings": {
         "icon": {
@@ -11879,27 +11883,26 @@
       "themeStyles": []
     },
     {
-      "id": "2f6mqz",
+      "id": "768r4f",
       "name": "div",
-      "parent": "wje7tw",
+      "parent": "s8m53p",
       "children": [
-        "dvg11s",
-        "p0c2za"
+        "kkrocz",
+        "b0uvl2"
       ],
       "settings": {
         "_display": "flex",
         "_direction": "row",
-        "_rowGap": "428",
-        "_columnGap": "428",
-        "_alignItems": "flex-start"
+        "_alignItems": "flex-start",
+        "_justifyContent": "space-between"
       }
     },
     {
-      "id": "wje7tw",
+      "id": "s8m53p",
       "name": "div",
-      "parent": "un6113",
+      "parent": "bqjftq",
       "children": [
-        "2f6mqz"
+        "768r4f"
       ],
       "settings": {
         "_display": "flex",
@@ -11927,9 +11930,9 @@
       }
     },
     {
-      "id": "jnpawk",
+      "id": "u84w3j",
       "name": "text-basic",
-      "parent": "ucr6hy",
+      "parent": "cr18hj",
       "children": [],
       "settings": {
         "text": "How can I play Jili games for free before betting real money?",
@@ -11946,9 +11949,9 @@
       }
     },
     {
-      "id": "txlncs",
+      "id": "6eqhb7",
       "name": "text",
-      "parent": "ehym65",
+      "parent": "70z7cq",
       "children": [],
       "settings": {
         "text": "<p>How can I play Jili games for free before betting real money?</p>",
@@ -11966,9 +11969,9 @@
       }
     },
     {
-      "id": "fhk21d",
+      "id": "in12av",
       "name": "icon",
-      "parent": "ehym65",
+      "parent": "70z7cq",
       "children": [],
       "settings": {
         "icon": {
@@ -11988,28 +11991,27 @@
       "themeStyles": []
     },
     {
-      "id": "ehym65",
+      "id": "70z7cq",
       "name": "div",
-      "parent": "ucr6hy",
+      "parent": "cr18hj",
       "children": [
-        "txlncs",
-        "fhk21d"
+        "6eqhb7",
+        "in12av"
       ],
       "settings": {
         "_display": "flex",
         "_direction": "row",
-        "_rowGap": "392",
-        "_columnGap": "392",
-        "_alignItems": "flex-start"
+        "_alignItems": "flex-start",
+        "_justifyContent": "space-between"
       }
     },
     {
-      "id": "ucr6hy",
+      "id": "cr18hj",
       "name": "div",
-      "parent": "un6113",
+      "parent": "bqjftq",
       "children": [
-        "jnpawk",
-        "ehym65"
+        "u84w3j",
+        "70z7cq"
       ],
       "settings": {
         "_display": "flex",
@@ -12030,9 +12032,9 @@
       }
     },
     {
-      "id": "mcxokw",
+      "id": "zpqk8t",
       "name": "text-basic",
-      "parent": "o8qa35",
+      "parent": "hnuwdq",
       "children": [],
       "settings": {
         "text": "What is the RTP percentage of Jili slot games?",
@@ -12050,9 +12052,9 @@
       }
     },
     {
-      "id": "m825gd",
+      "id": "zh8dee",
       "name": "icon",
-      "parent": "o8qa35",
+      "parent": "hnuwdq",
       "children": [],
       "settings": {
         "icon": {
@@ -12072,27 +12074,26 @@
       "themeStyles": []
     },
     {
-      "id": "o8qa35",
+      "id": "hnuwdq",
       "name": "div",
-      "parent": "l8ndy6",
+      "parent": "0lsi2p",
       "children": [
-        "mcxokw",
-        "m825gd"
+        "zpqk8t",
+        "zh8dee"
       ],
       "settings": {
         "_display": "flex",
         "_direction": "row",
-        "_rowGap": "526",
-        "_columnGap": "526",
-        "_alignItems": "flex-start"
+        "_alignItems": "flex-start",
+        "_justifyContent": "space-between"
       }
     },
     {
-      "id": "l8ndy6",
+      "id": "0lsi2p",
       "name": "div",
-      "parent": "7sbto3",
+      "parent": "atpd4l",
       "children": [
-        "o8qa35"
+        "hnuwdq"
       ],
       "settings": {
         "_display": "flex",
@@ -12101,11 +12102,11 @@
       }
     },
     {
-      "id": "7sbto3",
+      "id": "atpd4l",
       "name": "div",
-      "parent": "un6113",
+      "parent": "bqjftq",
       "children": [
-        "l8ndy6"
+        "0lsi2p"
       ],
       "settings": {
         "_display": "flex",
@@ -12133,9 +12134,9 @@
       }
     },
     {
-      "id": "x5uwl5",
+      "id": "eo1j61",
       "name": "text-basic",
-      "parent": "qlpl9p",
+      "parent": "ei8e56",
       "children": [],
       "settings": {
         "text": "Are Jili games safe and fair to play?",
@@ -12153,9 +12154,9 @@
       }
     },
     {
-      "id": "chqj9e",
+      "id": "0gkio9",
       "name": "icon",
-      "parent": "qlpl9p",
+      "parent": "ei8e56",
       "children": [],
       "settings": {
         "icon": {
@@ -12175,27 +12176,26 @@
       "themeStyles": []
     },
     {
-      "id": "qlpl9p",
+      "id": "ei8e56",
       "name": "div",
-      "parent": "fopq00",
+      "parent": "emm5h1",
       "children": [
-        "x5uwl5",
-        "chqj9e"
+        "eo1j61",
+        "0gkio9"
       ],
       "settings": {
         "_display": "flex",
         "_direction": "row",
-        "_rowGap": "631",
-        "_columnGap": "631",
-        "_alignItems": "flex-start"
+        "_alignItems": "flex-start",
+        "_justifyContent": "space-between"
       }
     },
     {
-      "id": "fopq00",
+      "id": "emm5h1",
       "name": "div",
-      "parent": "un6113",
+      "parent": "bqjftq",
       "children": [
-        "qlpl9p"
+        "ei8e56"
       ],
       "settings": {
         "_display": "flex",
@@ -12223,9 +12223,9 @@
       }
     },
     {
-      "id": "prin15",
+      "id": "3sbtlt",
       "name": "text",
-      "parent": "5jqu84",
+      "parent": "tjsfan",
       "children": [],
       "settings": {
         "text": "<p>How do I claim the Jili Games Free 100 bonus?</p>",
@@ -12243,9 +12243,9 @@
       }
     },
     {
-      "id": "yoml68",
+      "id": "sqpkmf",
       "name": "icon",
-      "parent": "5jqu84",
+      "parent": "tjsfan",
       "children": [],
       "settings": {
         "icon": {
@@ -12265,27 +12265,26 @@
       "themeStyles": []
     },
     {
-      "id": "5jqu84",
+      "id": "tjsfan",
       "name": "div",
-      "parent": "glbu3j",
+      "parent": "zdxpvo",
       "children": [
-        "prin15",
-        "yoml68"
+        "3sbtlt",
+        "sqpkmf"
       ],
       "settings": {
         "_display": "flex",
         "_direction": "row",
-        "_rowGap": "526",
-        "_columnGap": "526",
-        "_alignItems": "flex-start"
+        "_alignItems": "flex-start",
+        "_justifyContent": "space-between"
       }
     },
     {
-      "id": "glbu3j",
+      "id": "zdxpvo",
       "name": "div",
-      "parent": "gn8tgf",
+      "parent": "fje8ed",
       "children": [
-        "5jqu84"
+        "tjsfan"
       ],
       "settings": {
         "_display": "flex",
@@ -12294,9 +12293,9 @@
       }
     },
     {
-      "id": "turap1",
+      "id": "jhtfc9",
       "name": "text",
-      "parent": "gn8tgf",
+      "parent": "fje8ed",
       "children": [],
       "settings": {
         "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.</p>",
@@ -12316,12 +12315,12 @@
       }
     },
     {
-      "id": "gn8tgf",
+      "id": "fje8ed",
       "name": "div",
-      "parent": "4kvp8d",
+      "parent": "qviggw",
       "children": [
-        "glbu3j",
-        "turap1"
+        "zdxpvo",
+        "jhtfc9"
       ],
       "settings": {
         "_display": "flex",
@@ -12332,11 +12331,11 @@
       }
     },
     {
-      "id": "4kvp8d",
+      "id": "qviggw",
       "name": "div",
-      "parent": "un6113",
+      "parent": "bqjftq",
       "children": [
-        "gn8tgf"
+        "fje8ed"
       ],
       "settings": {
         "_display": "flex",
@@ -12364,15 +12363,15 @@
       }
     },
     {
-      "id": "un6113",
+      "id": "bqjftq",
       "name": "div",
-      "parent": "9dp3ia",
+      "parent": "oguqz8",
       "children": [
-        "wje7tw",
-        "ucr6hy",
-        "7sbto3",
-        "fopq00",
-        "4kvp8d"
+        "s8m53p",
+        "cr18hj",
+        "atpd4l",
+        "emm5h1",
+        "qviggw"
       ],
       "settings": {
         "_display": "flex",
@@ -12383,11 +12382,11 @@
       }
     },
     {
-      "id": "9dp3ia",
+      "id": "oguqz8",
       "name": "div",
-      "parent": "t6kd9u",
+      "parent": "dowb71",
       "children": [
-        "un6113"
+        "bqjftq"
       ],
       "settings": {
         "_display": "flex",
@@ -12396,12 +12395,12 @@
       }
     },
     {
-      "id": "t6kd9u",
+      "id": "dowb71",
       "name": "container",
-      "parent": "2lo76b",
+      "parent": "pc9qfb",
       "children": [
-        "4zs3yb",
-        "9dp3ia"
+        "ty9r9p",
+        "oguqz8"
       ],
       "settings": {
         "_display": "flex",
@@ -12414,11 +12413,11 @@
       }
     },
     {
-      "id": "2lo76b",
+      "id": "pc9qfb",
       "name": "section",
       "parent": 0,
       "children": [
-        "t6kd9u"
+        "dowb71"
       ],
       "settings": {
         "_padding": {
@@ -12434,13 +12433,18 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     },
     {
-      "id": "92m2pn",
+      "id": "u5340p",
       "name": "image",
-      "parent": "omlrk9",
+      "parent": "tjaxmr",
       "children": [],
       "settings": {
         "image": {
@@ -12456,9 +12460,9 @@
       "themeStyles": []
     },
     {
-      "id": "gh1n7v",
+      "id": "nj8qlq",
       "name": "text",
-      "parent": "wyx6f6",
+      "parent": "lyb1lh",
       "children": [],
       "settings": {
         "text": "<p>Home</p>",
@@ -12477,9 +12481,9 @@
       }
     },
     {
-      "id": "5bv8zs",
+      "id": "x1wp0y",
       "name": "text",
-      "parent": "wyx6f6",
+      "parent": "lyb1lh",
       "children": [],
       "settings": {
         "text": "<p>Company</p>",
@@ -12498,9 +12502,9 @@
       }
     },
     {
-      "id": "mhjjvz",
+      "id": "8suym5",
       "name": "text",
-      "parent": "wyx6f6",
+      "parent": "lyb1lh",
       "children": [],
       "settings": {
         "text": "<p>GAMES</p>",
@@ -12518,9 +12522,9 @@
       }
     },
     {
-      "id": "bg2cfa",
+      "id": "2xjqpn",
       "name": "text",
-      "parent": "wyx6f6",
+      "parent": "lyb1lh",
       "children": [],
       "settings": {
         "text": "<p>CONTACT US</p>",
@@ -12538,14 +12542,14 @@
       }
     },
     {
-      "id": "wyx6f6",
+      "id": "lyb1lh",
       "name": "div",
-      "parent": "omlrk9",
+      "parent": "tjaxmr",
       "children": [
-        "gh1n7v",
-        "5bv8zs",
-        "mhjjvz",
-        "bg2cfa"
+        "nj8qlq",
+        "x1wp0y",
+        "8suym5",
+        "2xjqpn"
       ],
       "settings": {
         "_display": "flex",
@@ -12559,12 +12563,12 @@
       }
     },
     {
-      "id": "omlrk9",
+      "id": "tjaxmr",
       "name": "div",
-      "parent": "wj852n",
+      "parent": "z868r8",
       "children": [
-        "92m2pn",
-        "wyx6f6"
+        "u5340p",
+        "lyb1lh"
       ],
       "settings": {
         "_display": "flex",
@@ -12575,9 +12579,9 @@
       }
     },
     {
-      "id": "6gymml",
+      "id": "vie6b6",
       "name": "text",
-      "parent": "8b7wvm",
+      "parent": "sfs50d",
       "children": [],
       "settings": {
         "text": "<p>LICENSES &amp; CERTIFICATES</p>",
@@ -12595,9 +12599,9 @@
       }
     },
     {
-      "id": "9yddg9",
+      "id": "5wioy3",
       "name": "image",
-      "parent": "nu8epv",
+      "parent": "eaut6g",
       "children": [],
       "settings": {
         "image": {
@@ -12613,9 +12617,9 @@
       "themeStyles": []
     },
     {
-      "id": "cgjscz",
+      "id": "vno0sj",
       "name": "image",
-      "parent": "nu8epv",
+      "parent": "eaut6g",
       "children": [],
       "settings": {
         "image": {
@@ -12631,12 +12635,12 @@
       "themeStyles": []
     },
     {
-      "id": "nu8epv",
+      "id": "eaut6g",
       "name": "div",
-      "parent": "8b7wvm",
+      "parent": "sfs50d",
       "children": [
-        "9yddg9",
-        "cgjscz"
+        "5wioy3",
+        "vno0sj"
       ],
       "settings": {
         "_display": "flex",
@@ -12647,12 +12651,12 @@
       }
     },
     {
-      "id": "8b7wvm",
+      "id": "sfs50d",
       "name": "div",
-      "parent": "wj852n",
+      "parent": "z868r8",
       "children": [
-        "6gymml",
-        "nu8epv"
+        "vie6b6",
+        "eaut6g"
       ],
       "settings": {
         "_display": "flex",
@@ -12663,12 +12667,12 @@
       }
     },
     {
-      "id": "wj852n",
+      "id": "z868r8",
       "name": "div",
-      "parent": "pdumbn",
+      "parent": "j9qu82",
       "children": [
-        "omlrk9",
-        "8b7wvm"
+        "tjaxmr",
+        "sfs50d"
       ],
       "settings": {
         "_display": "flex",
@@ -12679,9 +12683,9 @@
       }
     },
     {
-      "id": "5ttd2m",
+      "id": "9k6eqz",
       "name": "text",
-      "parent": "txsx6i",
+      "parent": "6gnz7e",
       "children": [],
       "settings": {
         "text": "<p>© 2025 JILI Copyrights. All Rights Reserved</p>",
@@ -12701,11 +12705,11 @@
       }
     },
     {
-      "id": "txsx6i",
+      "id": "6gnz7e",
       "name": "div",
-      "parent": "pdumbn",
+      "parent": "j9qu82",
       "children": [
-        "5ttd2m"
+        "9k6eqz"
       ],
       "settings": {
         "_display": "flex",
@@ -12720,9 +12724,9 @@
       }
     },
     {
-      "id": "wqb0qa",
+      "id": "za0eet",
       "name": "image",
-      "parent": "pdumbn",
+      "parent": "j9qu82",
       "children": [],
       "settings": {
         "image": {
@@ -12738,13 +12742,13 @@
       "themeStyles": []
     },
     {
-      "id": "pdumbn",
+      "id": "j9qu82",
       "name": "div",
-      "parent": "czxewq",
+      "parent": "9zf11n",
       "children": [
-        "wj852n",
-        "txsx6i",
-        "wqb0qa"
+        "z868r8",
+        "6gnz7e",
+        "za0eet"
       ],
       "settings": {
         "_display": "flex",
@@ -12752,11 +12756,11 @@
       }
     },
     {
-      "id": "czxewq",
+      "id": "9zf11n",
       "name": "container",
-      "parent": "i4f8c5",
+      "parent": "rafiob",
       "children": [
-        "pdumbn"
+        "j9qu82"
       ],
       "settings": {
         "_display": "flex",
@@ -12767,11 +12771,11 @@
       }
     },
     {
-      "id": "i4f8c5",
+      "id": "rafiob",
       "name": "section",
       "parent": 0,
       "children": [
-        "czxewq"
+        "9zf11n"
       ],
       "settings": {
         "_padding": {
@@ -12787,6 +12791,11 @@
         "_padding:mobile_landscape": {
           "top": "25",
           "bottom": "25"
+        },
+        "_background": {
+          "color": {
+            "raw": "#000000"
+          }
         }
       }
     }

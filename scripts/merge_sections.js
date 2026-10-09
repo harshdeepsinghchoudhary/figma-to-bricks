@@ -129,5 +129,29 @@ for (const name of names) {
   console.log(`+ ${name}: ${tree.length} element(s)`);
 }
 if (!process.argv.includes("--no-spacing")) applyVerticalSpacing(frameDir, names, trees);
+
+// Page background. The Figma root frame's fill belongs to no section, so sections came out transparent
+// (white text on Bricks' default white page). Sections with no background of their own get the page colour.
+function applyPageBackground() {
+  const fp = path.join(frameDir, "figma-node.json");
+  if (!fs.existsSync(fp)) return;
+  const root = JSON.parse(fs.readFileSync(fp, "utf-8"));
+  const fill = (root.fills || []).find((f) => f.visible !== false && f.type === "SOLID");
+  if (!fill) { console.log("  page background: root frame has no solid fill - left sections as they are"); return; }
+  const c = fill.color, a = (fill.opacity ?? 1) * (c.a ?? 1);
+  const hex = (v) => Math.round(v * 255).toString(16).padStart(2, "0");
+  const raw = ("#" + hex(c.r) + hex(c.g) + hex(c.b) + (a < 1 ? hex(a) : "")).toUpperCase();
+  let n = 0;
+  for (const el of merged) {
+    if (el.name !== "section") continue;
+    const bg = el.settings?._background;
+    if (bg?.color || bg?.image || el.settings?._gradient) continue;
+    el.settings = el.settings || {};
+    el.settings._background = { ...(bg || {}), color: { raw } };
+    n++;
+  }
+  console.log("  page background " + raw + " applied to " + n + " section(s) that had no background of their own");
+}
+if (!process.argv.includes("--no-page-bg")) applyPageBackground();
 fs.writeFileSync(path.join(outDir, "bricks-tree.json"), JSON.stringify(merged, null, 2));
 console.log(`Wrote ${path.join(outDir, "bricks-tree.json")} (${merged.length} element(s), top-level sections in order: ${names.join(", ")})`);

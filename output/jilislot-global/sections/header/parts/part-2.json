@@ -1,0 +1,97 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "nav-bar",
+      "figmaNodeId": "8219:1250",
+      "children": [
+        {
+          "type": "row",
+          "id": "nav-group",
+          "figmaNodeId": "8219:1249",
+          "children": [
+            {
+              "type": "image",
+              "id": "logo",
+              "figmaNodeId": "8219:1238",
+              "asset": {
+                "nodeId": "8219:1238",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "row",
+              "id": "nav-links",
+              "figmaNodeId": "8219:33",
+              "children": [
+                {
+                  "type": "text-basic",
+                  "id": "nav-home",
+                  "figmaNodeId": "8219:34",
+                  "text": "Home",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "align": "left",
+                    "color": "#FFFFFF",
+                    "lineHeight": "19.36px"
+                  },
+                  "notes": [
+                    "textCase: UPPER"
+                  ]
+                },
+                {
+                  "type": "text-basic",
+                  "id": "nav-company",
+                  "figmaNodeId": "8219:35",
+                  "text": "Company",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "align": "left",
+                    "color": "#FFFFFF",
+                    "lineHeight": "19.36px"
+                  },
+                  "notes": [
+                    "textCase: UPPER"
+                  ]
+                },
+                {
+                  "type": "text-basic",
+                  "id": "nav-games",
+                  "figmaNodeId": "8219:36",
+                  "text": "GAMES",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "align": "left",
+                    "color": "#FFFFFF",
+                    "lineHeight": "19.36px"
+                  }
+                },
+                {
+                  "type": "text-basic",
+                  "id": "nav-contact",
+                  "figmaNodeId": "8219:37",
+                  "text": "CONTACT US",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "align": "left",
+                    "color": "#FFFFFF",
+                    "lineHeight": "19.36px"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

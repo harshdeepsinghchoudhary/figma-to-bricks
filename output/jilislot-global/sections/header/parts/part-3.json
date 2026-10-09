@@ -1,0 +1,48 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "language-selector",
+      "figmaNodeId": "8219:1248",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 8,
+        "align": "center"
+      },
+      "size": {
+        "width": 62,
+        "height": 40
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "flag-image",
+          "figmaNodeId": "8219:48",
+          "asset": {
+            "nodeId": "8219:48",
+            "kind": "image"
+          },
+          "size": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "type": "icon",
+          "id": "flag-chevron",
+          "figmaNodeId": "8219:1245",
+          "asset": {
+            "nodeId": "8219:1245",
+            "kind": "svg"
+          },
+          "size": {
+            "width": 14,
+            "height": 14
+          }
+        }
+      ]
+    }
+  ]
+}
