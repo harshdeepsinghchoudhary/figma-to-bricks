@@ -1,0 +1,2482 @@
+{
+  "meta": {
+    "inputFile": "./homepage.json",
+    "totalElements": 244,
+    "rootElements": 244,
+    "generatedAt": "2026-09-25T11:51:31.954Z"
+  },
+  "elementTypes": {
+    "section": 13,
+    "container": 13,
+    "div": 96,
+    "heading": 28,
+    "text": 29,
+    "button": 9,
+    "image": 22,
+    "block": 9,
+    "icon": 20,
+    "text-basic": 4,
+    "accordion": 1
+  },
+  "settingKeys": {
+    "_padding": 60,
+    "_padding:tablet_portrait": 14,
+    "_padding:mobile_landscape": 16,
+    "_background": 35,
+    "_direction": 56,
+    "_justifyContent": 40,
+    "_columnGap": 77,
+    "_rowGap": 78,
+    "_direction:tablet_portrait": 5,
+    "_alignItems": 62,
+    "_display": 107,
+    "_margin": 9,
+    "_widthMax": 49,
+    "_width": 52,
+    "_widthMax:tablet_portrait": 17,
+    "_margin:tablet_portrait": 1,
+    "text": 70,
+    "tag": 11,
+    "_gradient": 4,
+    "_typography": 70,
+    "style": 2,
+    "icon": 23,
+    "iconTypography": 3,
+    "iconPosition": 3,
+    "iconGap": 2,
+    "_border": 38,
+    "_boxShadow:hover": 2,
+    "_cssCustom": 9,
+    "link": 9,
+    "_width:tablet_portrait": 1,
+    "image": 22,
+    "_cssId": 1,
+    "_rowGap:mobile_landscape": 16,
+    "_rowGap:tablet_portrait": 7,
+    "_content::after": 7,
+    "_height::after": 7,
+    "_background::after": 7,
+    "_display::after": 7,
+    "_transform::after": 7,
+    "_alignSelf::after": 7,
+    "_flexDirection": 10,
+    "_width::after": 7,
+    "_direction:mobile_landscape": 6,
+    "_widthMax:mobile_landscape": 11,
+    "_flexWrap": 3,
+    "_direction:mobile_portrait": 1,
+    "_boxShadow": 19,
+    "_heightMin": 11,
+    "_width:mobile_landscape": 7,
+    "_columnGap:mobile_landscape": 8,
+    "_alignItems:mobile_landscape": 4,
+    "_flexShrink": 12,
+    "_background:tablet_portrait": 1,
+    "_height": 9,
+    "_position": 18,
+    "_background:mobile_portrait": 1,
+    "_padding:mobile_portrait": 1,
+    "_background:mobile_landscape": 1,
+    "_bottom": 5,
+    "_left": 5,
+    "_transform": 1,
+    "_bottom:mobile_portrait": 1,
+    "_bottom:mobile_landscape": 1,
+    "_gridTemplateColumns": 2,
+    "_gridGap": 2,
+    "_gridTemplateColumns:tablet_portrait": 1,
+    "_cssClasses": 4,
+    "_flexGrow": 4,
+    "_content::before": 8,
+    "_position::before": 8,
+    "_top::before": 8,
+    "_right::before": 8,
+    "_bottom::before": 8,
+    "_left::before": 8,
+    "_zIndex::before": 8,
+    "_display::before": 4,
+    "_border::before": 8,
+    "_overflow": 4,
+    "_width::before": 4,
+    "_height::before": 4,
+    "query": 8,
+    "iconSize": 8,
+    "iconColor": 8,
+    "hasLoop": 3,
+    "_gridTemplateColumns:mobile_landscape": 1,
+    "accordions": 1,
+    "titleTag": 1,
+    "iconExpanded": 1,
+    "faqSchema": 1,
+    "titleBackgroundColor": 1,
+    "titleBorder": 1,
+    "titlePadding": 1,
+    "iconExpandedTypography": 1,
+    "titleActiveBoxShadow": 1,
+    "titleTypography": 1,
+    "titleMargin": 1,
+    "titleActiveTypography": 1,
+    "contentPadding": 1,
+    "contentBackgroundColor": 1,
+    "contentBorder": 1,
+    "titleActiveBorder": 1,
+    "contentTypography": 1,
+    "_gap": 1
+  },
+  "responsiveKeys": {
+    "_padding:tablet_portrait": 14,
+    "_padding:mobile_landscape": 16,
+    "_direction:tablet_portrait": 5,
+    "_widthMax:tablet_portrait": 17,
+    "_margin:tablet_portrait": 1,
+    "_boxShadow:hover": 2,
+    "_width:tablet_portrait": 1,
+    "_rowGap:mobile_landscape": 16,
+    "_rowGap:tablet_portrait": 7,
+    "_content::after": 7,
+    "_height::after": 7,
+    "_background::after": 7,
+    "_display::after": 7,
+    "_transform::after": 7,
+    "_alignSelf::after": 7,
+    "_width::after": 7,
+    "_direction:mobile_landscape": 6,
+    "_widthMax:mobile_landscape": 11,
+    "_direction:mobile_portrait": 1,
+    "_width:mobile_landscape": 7,
+    "_columnGap:mobile_landscape": 8,
+    "_alignItems:mobile_landscape": 4,
+    "_background:tablet_portrait": 1,
+    "_background:mobile_portrait": 1,
+    "_padding:mobile_portrait": 1,
+    "_background:mobile_landscape": 1,
+    "_bottom:mobile_portrait": 1,
+    "_bottom:mobile_landscape": 1,
+    "_gridTemplateColumns:tablet_portrait": 1,
+    "_content::before": 8,
+    "_position::before": 8,
+    "_top::before": 8,
+    "_right::before": 8,
+    "_bottom::before": 8,
+    "_left::before": 8,
+    "_zIndex::before": 8,
+    "_display::before": 4,
+    "_border::before": 8,
+    "_width::before": 4,
+    "_height::before": 4,
+    "_gridTemplateColumns:mobile_landscape": 1
+  },
+  "pseudoKeys": {
+    "_content::after": 7,
+    "_height::after": 7,
+    "_background::after": 7,
+    "_display::after": 7,
+    "_transform::after": 7,
+    "_alignSelf::after": 7,
+    "_width::after": 7,
+    "_content::before": 8,
+    "_position::before": 8,
+    "_top::before": 8,
+    "_right::before": 8,
+    "_bottom::before": 8,
+    "_left::before": 8,
+    "_zIndex::before": 8,
+    "_display::before": 4,
+    "_border::before": 8,
+    "_width::before": 4,
+    "_height::before": 4
+  },
+  "typographyKeys": {
+    "font-weight": 70,
+    "font-family": 68,
+    "text-align": 53,
+    "line-height": 70,
+    "letter-spacing": 70,
+    "font-size": 68,
+    "color": 68,
+    "text-decoration": 7
+  },
+  "backgroundKeys": {
+    "color": 34,
+    "attachment": 2,
+    "position": 2,
+    "repeat": 2,
+    "size": 2,
+    "image": 1,
+    "blendMode": 1,
+    "custom": 1
+  },
+  "borderKeys": {
+    "radius": 38
+  },
+  "shadowKeys": {
+    "values": 19,
+    "color": 19
+  },
+  "gradientKeys": {
+    "applyTo": 4,
+    "gradientType": 4,
+    "angle": 4,
+    "colors": 4
+  },
+  "settingShapes": {
+    "_padding": {
+      "occurrences": 60,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": 39,
+        "{\"type\":\"object\",\"keys\":[\"right\"]}": 15,
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": 5,
+        "{\"type\":\"object\",\"keys\":[\"left\",\"right\"]}": 1
+      }
+    },
+    "_padding:tablet_portrait": {
+      "occurrences": 14,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"top\"]}": 12,
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": 2
+      }
+    },
+    "_padding:mobile_landscape": {
+      "occurrences": 16,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"top\"]}": 10,
+        "{\"type\":\"object\",\"keys\":[\"top\"]}": 1,
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": 3,
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": 2
+      }
+    },
+    "_background": {
+      "occurrences": 35,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"color\"]}": 33,
+        "{\"type\":\"object\",\"keys\":[\"attachment\",\"color\",\"position\",\"repeat\",\"size\"]}": 1,
+        "{\"type\":\"object\",\"keys\":[\"attachment\",\"blendMode\",\"custom\",\"image\",\"position\",\"repeat\",\"size\"]}": 1
+      }
+    },
+    "_direction": {
+      "occurrences": 56,
+      "shapes": {
+        "{\"type\":\"string\"}": 56
+      }
+    },
+    "_justifyContent": {
+      "occurrences": 40,
+      "shapes": {
+        "{\"type\":\"string\"}": 40
+      }
+    },
+    "_columnGap": {
+      "occurrences": 77,
+      "shapes": {
+        "{\"type\":\"string\"}": 77
+      }
+    },
+    "_rowGap": {
+      "occurrences": 78,
+      "shapes": {
+        "{\"type\":\"string\"}": 78
+      }
+    },
+    "_direction:tablet_portrait": {
+      "occurrences": 5,
+      "shapes": {
+        "{\"type\":\"string\"}": 5
+      }
+    },
+    "_alignItems": {
+      "occurrences": 62,
+      "shapes": {
+        "{\"type\":\"string\"}": 62
+      }
+    },
+    "_display": {
+      "occurrences": 107,
+      "shapes": {
+        "{\"type\":\"string\"}": 107
+      }
+    },
+    "_margin": {
+      "occurrences": 9,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": 1,
+        "{\"type\":\"object\",\"keys\":[\"top\"]}": 8
+      }
+    },
+    "_widthMax": {
+      "occurrences": 49,
+      "shapes": {
+        "{\"type\":\"string\"}": 49
+      }
+    },
+    "_width": {
+      "occurrences": 52,
+      "shapes": {
+        "{\"type\":\"string\"}": 52
+      }
+    },
+    "_widthMax:tablet_portrait": {
+      "occurrences": 17,
+      "shapes": {
+        "{\"type\":\"string\"}": 17
+      }
+    },
+    "_margin:tablet_portrait": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": 1
+      }
+    },
+    "text": {
+      "occurrences": 70,
+      "shapes": {
+        "{\"type\":\"string\"}": 70
+      }
+    },
+    "tag": {
+      "occurrences": 11,
+      "shapes": {
+        "{\"type\":\"string\"}": 11
+      }
+    },
+    "_gradient": {
+      "occurrences": 4,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"angle\",\"applyTo\",\"colors\",\"gradientType\"]}": 4
+      }
+    },
+    "_typography": {
+      "occurrences": 70,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"font-family\",\"font-weight\",\"letter-spacing\",\"line-height\",\"text-align\"]}": 2,
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\",\"text-align\"]}": 44,
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\"]}": 15,
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\",\"text-align\",\"text-decoration\"]}": 7,
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\"]}": 2
+      }
+    },
+    "style": {
+      "occurrences": 2,
+      "shapes": {
+        "{\"type\":\"string\"}": 2
+      }
+    },
+    "icon": {
+      "occurrences": 23,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"height\",\"library\",\"svg\",\"width\"]}": 10,
+        "{\"type\":\"object\",\"keys\":[\"library\",\"svg\"]}": 4,
+        "{\"type\":\"object\",\"keys\":[\"icon\",\"library\"]}": 9
+      }
+    },
+    "iconTypography": {
+      "occurrences": 3,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"font-size\"]}": 3
+      }
+    },
+    "iconPosition": {
+      "occurrences": 3,
+      "shapes": {
+        "{\"type\":\"string\"}": 3
+      }
+    },
+    "iconGap": {
+      "occurrences": 2,
+      "shapes": {
+        "{\"type\":\"string\"}": 2
+      }
+    },
+    "_border": {
+      "occurrences": 38,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"radius\"]}": 38
+      }
+    },
+    "_boxShadow:hover": {
+      "occurrences": 2,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"values\"]}": 2
+      }
+    },
+    "_cssCustom": {
+      "occurrences": 9,
+      "shapes": {
+        "{\"type\":\"string\"}": 9
+      }
+    },
+    "link": {
+      "occurrences": 9,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"postId\",\"type\",\"url\"]}": 1,
+        "{\"type\":\"object\",\"keys\":[\"postId\",\"type\"]}": 8
+      }
+    },
+    "_width:tablet_portrait": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"string\"}": 1
+      }
+    },
+    "image": {
+      "occurrences": 22,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"filename\",\"full\",\"id\",\"size\",\"url\"]}": 22
+      }
+    },
+    "_cssId": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"string\"}": 1
+      }
+    },
+    "_rowGap:mobile_landscape": {
+      "occurrences": 16,
+      "shapes": {
+        "{\"type\":\"string\"}": 16
+      }
+    },
+    "_rowGap:tablet_portrait": {
+      "occurrences": 7,
+      "shapes": {
+        "{\"type\":\"string\"}": 7
+      }
+    },
+    "_content::after": {
+      "occurrences": 7,
+      "shapes": {
+        "{\"type\":\"string\"}": 7
+      }
+    },
+    "_height::after": {
+      "occurrences": 7,
+      "shapes": {
+        "{\"type\":\"string\"}": 7
+      }
+    },
+    "_background::after": {
+      "occurrences": 7,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"color\"]}": 7
+      }
+    },
+    "_display::after": {
+      "occurrences": 7,
+      "shapes": {
+        "{\"type\":\"string\"}": 7
+      }
+    },
+    "_transform::after": {
+      "occurrences": 7,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"skewX\"]}": 7
+      }
+    },
+    "_alignSelf::after": {
+      "occurrences": 7,
+      "shapes": {
+        "{\"type\":\"string\"}": 7
+      }
+    },
+    "_flexDirection": {
+      "occurrences": 10,
+      "shapes": {
+        "{\"type\":\"string\"}": 10
+      }
+    },
+    "_width::after": {
+      "occurrences": 7,
+      "shapes": {
+        "{\"type\":\"string\"}": 7
+      }
+    },
+    "_direction:mobile_landscape": {
+      "occurrences": 6,
+      "shapes": {
+        "{\"type\":\"string\"}": 6
+      }
+    },
+    "_widthMax:mobile_landscape": {
+      "occurrences": 11,
+      "shapes": {
+        "{\"type\":\"string\"}": 11
+      }
+    },
+    "_flexWrap": {
+      "occurrences": 3,
+      "shapes": {
+        "{\"type\":\"string\"}": 3
+      }
+    },
+    "_direction:mobile_portrait": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"string\"}": 1
+      }
+    },
+    "_boxShadow": {
+      "occurrences": 19,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"values\"]}": 19
+      }
+    },
+    "_heightMin": {
+      "occurrences": 11,
+      "shapes": {
+        "{\"type\":\"string\"}": 11
+      }
+    },
+    "_width:mobile_landscape": {
+      "occurrences": 7,
+      "shapes": {
+        "{\"type\":\"string\"}": 7
+      }
+    },
+    "_columnGap:mobile_landscape": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"string\"}": 8
+      }
+    },
+    "_alignItems:mobile_landscape": {
+      "occurrences": 4,
+      "shapes": {
+        "{\"type\":\"string\"}": 4
+      }
+    },
+    "_flexShrink": {
+      "occurrences": 12,
+      "shapes": {
+        "{\"type\":\"string\"}": 12
+      }
+    },
+    "_background:tablet_portrait": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"size\"]}": 1
+      }
+    },
+    "_height": {
+      "occurrences": 9,
+      "shapes": {
+        "{\"type\":\"string\"}": 9
+      }
+    },
+    "_position": {
+      "occurrences": 18,
+      "shapes": {
+        "{\"type\":\"string\"}": 18
+      }
+    },
+    "_background:mobile_portrait": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"custom\",\"size\"]}": 1
+      }
+    },
+    "_padding:mobile_portrait": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": 1
+      }
+    },
+    "_background:mobile_landscape": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"custom\",\"size\"]}": 1
+      }
+    },
+    "_bottom": {
+      "occurrences": 5,
+      "shapes": {
+        "{\"type\":\"string\"}": 5
+      }
+    },
+    "_left": {
+      "occurrences": 5,
+      "shapes": {
+        "{\"type\":\"string\"}": 5
+      }
+    },
+    "_transform": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"translateX\"]}": 1
+      }
+    },
+    "_bottom:mobile_portrait": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"string\"}": 1
+      }
+    },
+    "_bottom:mobile_landscape": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"string\"}": 1
+      }
+    },
+    "_gridTemplateColumns": {
+      "occurrences": 2,
+      "shapes": {
+        "{\"type\":\"string\"}": 2
+      }
+    },
+    "_gridGap": {
+      "occurrences": 2,
+      "shapes": {
+        "{\"type\":\"string\"}": 2
+      }
+    },
+    "_gridTemplateColumns:tablet_portrait": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"string\"}": 1
+      }
+    },
+    "_cssClasses": {
+      "occurrences": 4,
+      "shapes": {
+        "{\"type\":\"string\"}": 4
+      }
+    },
+    "_flexGrow": {
+      "occurrences": 4,
+      "shapes": {
+        "{\"type\":\"string\"}": 4
+      }
+    },
+    "_content::before": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"string\"}": 8
+      }
+    },
+    "_position::before": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"string\"}": 8
+      }
+    },
+    "_top::before": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"string\"}": 8
+      }
+    },
+    "_right::before": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"string\"}": 8
+      }
+    },
+    "_bottom::before": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"string\"}": 8
+      }
+    },
+    "_left::before": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"string\"}": 8
+      }
+    },
+    "_zIndex::before": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"string\"}": 8
+      }
+    },
+    "_display::before": {
+      "occurrences": 4,
+      "shapes": {
+        "{\"type\":\"string\"}": 4
+      }
+    },
+    "_border::before": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"radius\",\"style\",\"width\"]}": 4,
+        "{\"type\":\"object\",\"keys\":[\"color\",\"style\",\"width\"]}": 4
+      }
+    },
+    "_overflow": {
+      "occurrences": 4,
+      "shapes": {
+        "{\"type\":\"string\"}": 4
+      }
+    },
+    "_width::before": {
+      "occurrences": 4,
+      "shapes": {
+        "{\"type\":\"string\"}": 4
+      }
+    },
+    "_height::before": {
+      "occurrences": 4,
+      "shapes": {
+        "{\"type\":\"string\"}": 4
+      }
+    },
+    "query": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"number\",\"objectType\"]}": 8
+      }
+    },
+    "iconSize": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"string\"}": 8
+      }
+    },
+    "iconColor": {
+      "occurrences": 8,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"raw\"]}": 8
+      }
+    },
+    "hasLoop": {
+      "occurrences": 3,
+      "shapes": {
+        "{\"type\":\"boolean\"}": 3
+      }
+    },
+    "_gridTemplateColumns:mobile_landscape": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"string\"}": 1
+      }
+    },
+    "accordions": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"array\",\"length\":5,\"itemTypes\":[\"object\"]}": 1
+      }
+    },
+    "titleTag": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"string\"}": 1
+      }
+    },
+    "iconExpanded": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"icon\",\"library\"]}": 1
+      }
+    },
+    "faqSchema": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"boolean\"}": 1
+      }
+    },
+    "titleBackgroundColor": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"raw\"]}": 1
+      }
+    },
+    "titleBorder": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"radius\"]}": 1
+      }
+    },
+    "titlePadding": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": 1
+      }
+    },
+    "iconExpandedTypography": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-size\"]}": 1
+      }
+    },
+    "titleActiveBoxShadow": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"values\"]}": 1
+      }
+    },
+    "titleTypography": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\"]}": 1
+      }
+    },
+    "titleMargin": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\"]}": 1
+      }
+    },
+    "titleActiveTypography": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"color\"]}": 1
+      }
+    },
+    "contentPadding": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"bottom\",\"left\",\"right\",\"top\"]}": 1
+      }
+    },
+    "contentBackgroundColor": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"raw\"]}": 1
+      }
+    },
+    "contentBorder": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"radius\"]}": 1
+      }
+    },
+    "titleActiveBorder": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"radius\"]}": 1
+      }
+    },
+    "contentTypography": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"object\",\"keys\":[\"color\",\"font-family\",\"font-size\",\"font-weight\",\"letter-spacing\",\"line-height\"]}": 1
+      }
+    },
+    "_gap": {
+      "occurrences": 1,
+      "shapes": {
+        "{\"type\":\"string\"}": 1
+      }
+    }
+  },
+  "specialStructures": {
+    "image": [
+      {
+        "elementId": "dlmncs",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "ycaach",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "yfcvzt",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "ykarht",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "dpumgw",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "jqfous",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "wfvbgk",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "lhmvqz",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "mdfwjb",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "zgaihz",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "ukqtcs",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "zbowol",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "ivbdpy",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "pxqgap",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "dnjpsv",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "bpjljj",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "olvxao",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "jtzlnx",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "kgrgpp",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "omedtf",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "qaywnv",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      },
+      {
+        "elementId": "cofzkz",
+        "elementType": "image",
+        "keys": [
+          "id",
+          "filename",
+          "size",
+          "full",
+          "url"
+        ]
+      }
+    ],
+    "icon": [
+      {
+        "elementId": "nquqij",
+        "elementType": "button",
+        "keys": [
+          "library",
+          "svg",
+          "height",
+          "width"
+        ]
+      },
+      {
+        "elementId": "plqxns",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg",
+          "height",
+          "width"
+        ]
+      },
+      {
+        "elementId": "ccblrx",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg",
+          "height",
+          "width"
+        ]
+      },
+      {
+        "elementId": "zyheyh",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg",
+          "height",
+          "width"
+        ]
+      },
+      {
+        "elementId": "yvfwnc",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg",
+          "height",
+          "width"
+        ]
+      },
+      {
+        "elementId": "bassfn",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg"
+        ]
+      },
+      {
+        "elementId": "mkbovd",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "icon"
+        ]
+      },
+      {
+        "elementId": "eiapxg",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "icon"
+        ]
+      },
+      {
+        "elementId": "ruvyhy",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "icon"
+        ]
+      },
+      {
+        "elementId": "ylbchm",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "icon"
+        ]
+      },
+      {
+        "elementId": "okwlvj",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "icon"
+        ]
+      },
+      {
+        "elementId": "whtiur",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg"
+        ]
+      },
+      {
+        "elementId": "jmgqoi",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "icon"
+        ]
+      },
+      {
+        "elementId": "tckprh",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg"
+        ]
+      },
+      {
+        "elementId": "hysnns",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "icon"
+        ]
+      },
+      {
+        "elementId": "kltflu",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg"
+        ]
+      },
+      {
+        "elementId": "wdsvzp",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "icon"
+        ]
+      },
+      {
+        "elementId": "csdsqk",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg",
+          "width",
+          "height"
+        ]
+      },
+      {
+        "elementId": "kekway",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg",
+          "width",
+          "height"
+        ]
+      },
+      {
+        "elementId": "bwnork",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg",
+          "width",
+          "height"
+        ]
+      },
+      {
+        "elementId": "mqhaka",
+        "elementType": "icon",
+        "keys": [
+          "library",
+          "svg",
+          "width",
+          "height"
+        ]
+      },
+      {
+        "elementId": "bxqzzy",
+        "elementType": "button",
+        "keys": [
+          "library",
+          "svg",
+          "height",
+          "width"
+        ]
+      },
+      {
+        "elementId": "pwytye",
+        "elementType": "accordion",
+        "keys": [
+          "icon",
+          "library"
+        ]
+      }
+    ],
+    "link": [
+      {
+        "elementId": "nquqij",
+        "elementType": "button",
+        "keys": [
+          "type",
+          "postId",
+          "url"
+        ]
+      },
+      {
+        "elementId": "ofkqoj",
+        "elementType": "button",
+        "keys": [
+          "type",
+          "postId"
+        ]
+      },
+      {
+        "elementId": "ippvfq",
+        "elementType": "button",
+        "keys": [
+          "type",
+          "postId"
+        ]
+      },
+      {
+        "elementId": "sibsih",
+        "elementType": "button",
+        "keys": [
+          "type",
+          "postId"
+        ]
+      },
+      {
+        "elementId": "tpihof",
+        "elementType": "button",
+        "keys": [
+          "type",
+          "postId"
+        ]
+      },
+      {
+        "elementId": "xxopkb",
+        "elementType": "button",
+        "keys": [
+          "type",
+          "postId"
+        ]
+      },
+      {
+        "elementId": "guaozs",
+        "elementType": "button",
+        "keys": [
+          "type",
+          "postId"
+        ]
+      },
+      {
+        "elementId": "kbbhfa",
+        "elementType": "button",
+        "keys": [
+          "type",
+          "postId"
+        ]
+      },
+      {
+        "elementId": "bxqzzy",
+        "elementType": "button",
+        "keys": [
+          "type",
+          "postId"
+        ]
+      }
+    ]
+  },
+  "customCSS": [
+    {
+      "elementId": "nquqij",
+      "elementType": "button",
+      "css": "#brxe-nquqij {\n  transition: all 0.5s ease;\n}"
+    },
+    {
+      "elementId": "bassfn",
+      "elementType": "icon",
+      "css": "#brxe-bassfn {\n  filter: drop-shadow(10.41px 4.16px 41.65px #00000029);\n}"
+    },
+    {
+      "elementId": "whtiur",
+      "elementType": "icon",
+      "css": "#brxe-whtiur {\n  filter: drop-shadow(10.41px 4.16px 41.65px #00000029);\n}"
+    },
+    {
+      "elementId": "tckprh",
+      "elementType": "icon",
+      "css": "#brxe-tckprh {\n  filter: drop-shadow(10.41px 4.16px 41.65px #00000029);\n}"
+    },
+    {
+      "elementId": "kltflu",
+      "elementType": "icon",
+      "css": "#brxe-kltflu {\n  filter: drop-shadow(10.41px 4.16px 41.65px #00000029);\n}"
+    },
+    {
+      "elementId": "fhgkxv",
+      "elementType": "heading",
+      "css": "\n.span-outline span{\n\tdisplay: inline-flex !important;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n\ttext-align: left;\n}\n\n.span-outline span::after {\n    content: ' ';\n    height: 8px;\n    background-color: #EF536666;\n    display: flex;\n    transform: skewX(-45deg);\n    align-self: center;\n    width: 100%;\n}"
+    },
+    {
+      "elementId": "kaocvv",
+      "elementType": "heading",
+      "css": "\n.span-outline span{\n\tdisplay: inline-flex !important;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n\ttext-align: left;\n}\n\n.span-outline span::after {\n    content: ' ';\n    height: 8px;\n    background-color: #EF536666;\n    display: flex;\n    transform: skewX(-45deg);\n    align-self: center;\n    width: 100%;\n}"
+    },
+    {
+      "elementId": "bxqzzy",
+      "elementType": "button",
+      "css": "#brxe-bxqzzy {\n  transition: all 0.5s ease;\n}"
+    },
+    {
+      "elementId": "pwytye",
+      "elementType": "accordion",
+      "css": "#brxe-pwytye .brx-open .accordion-title-wrapper {\n\tpadding-bottom: 10px !important;\n  box-shadow: unset !important;\n}\n#brxe-pwytye .brx-open {\n  box-shadow: 0px 4px 12px 0px #C7C7CC3D !important;\nborder-radius: 8px !important;\n}\n\n#brxe-pwytye .accordion-title .icon {\n\ttop: -15px !important;\n}"
+    }
+  ],
+  "cssClasses": [
+    {
+      "elementId": "nqbksa",
+      "elementType": "text",
+      "value": "list-m-p"
+    },
+    {
+      "elementId": "jtplao",
+      "elementType": "text",
+      "value": "list-m-p"
+    },
+    {
+      "elementId": "fhgkxv",
+      "elementType": "heading",
+      "value": "span-outline"
+    },
+    {
+      "elementId": "kaocvv",
+      "elementType": "heading",
+      "value": "span-outline"
+    }
+  ],
+  "cssIds": [
+    {
+      "elementId": "zffbiu",
+      "elementType": "section",
+      "value": "WhoWeAre"
+    }
+  ],
+  "parentRelationships": [],
+  "structuralPatterns": {
+    "section -> container": {
+      "count": 13,
+      "elementIds": [
+        "ccitlw",
+        "zffbiu",
+        "ncclsm",
+        "lrdsqg",
+        "eneoky",
+        "srbjxb",
+        "nsbbkn",
+        "wcamvl",
+        "mevkgd",
+        "dhidyp",
+        "sqzhpl",
+        "sszjcq",
+        "nsgiga"
+      ],
+      "elementType": "section",
+      "children": [
+        "container"
+      ]
+    },
+    "container -> div,div": {
+      "count": 6,
+      "elementIds": [
+        "bwzsjl",
+        "uibsqs",
+        "cmlsmi",
+        "thghix",
+        "knoboj",
+        "jioiwi"
+      ],
+      "elementType": "container",
+      "children": [
+        "div",
+        "div"
+      ]
+    },
+    "div -> div,button": {
+      "count": 8,
+      "elementIds": [
+        "vjfkne",
+        "wfmxol",
+        "ndkilq",
+        "ntavkg",
+        "lotkek",
+        "wlavmh",
+        "ovnxef",
+        "esiexc"
+      ],
+      "elementType": "div",
+      "children": [
+        "div",
+        "button"
+      ]
+    },
+    "div -> heading,text": {
+      "count": 15,
+      "elementIds": [
+        "kwzqnl",
+        "unankg",
+        "ujgtaw",
+        "ouxyks",
+        "cokyvb",
+        "zcphwf",
+        "jkipna",
+        "nvxuly",
+        "sxuhma",
+        "arpkfo",
+        "xshroj",
+        "wgqnhv",
+        "zccxfp",
+        "enfiyy",
+        "wlgpwi"
+      ],
+      "elementType": "div",
+      "children": [
+        "heading",
+        "text"
+      ]
+    },
+    "heading -> ": {
+      "count": 28,
+      "elementIds": [
+        "ibutwr",
+        "xwiydp",
+        "pjjvms",
+        "liuloh",
+        "wltcvt",
+        "mgstuc",
+        "srnxst",
+        "pjnotv",
+        "ykyjaz",
+        "rnfkoq",
+        "biuchp",
+        "ktiwjd",
+        "tjiexw",
+        "ncmejy",
+        "zgvoga",
+        "mybopn",
+        "qjglli",
+        "lgwcjt",
+        "pwdvkt",
+        "prbpfs",
+        "fhgkxv",
+        "gkpzon",
+        "eriigc",
+        "vcoyno",
+        "eqttze",
+        "hfgpxa",
+        "kaocvv",
+        "nnxtrq"
+      ],
+      "elementType": "heading",
+      "children": []
+    },
+    "text -> ": {
+      "count": 29,
+      "elementIds": [
+        "qimvtf",
+        "osqgcu",
+        "mrpmad",
+        "sygrqr",
+        "xwkfud",
+        "fcedlr",
+        "eioooo",
+        "zeqhoe",
+        "yhfhsp",
+        "hsgesq",
+        "mjqhwh",
+        "ulspzm",
+        "vapmjt",
+        "ubuqpv",
+        "reomxc",
+        "bgswiv",
+        "exnbkf",
+        "zqdxrc",
+        "nqbksa",
+        "jtplao",
+        "ocjmte",
+        "arxeax",
+        "phyhto",
+        "cwestk",
+        "cefroa",
+        "txmdtr",
+        "pqytzf",
+        "gcmldz",
+        "pkwhvl"
+      ],
+      "elementType": "text",
+      "children": []
+    },
+    "button -> ": {
+      "count": 9,
+      "elementIds": [
+        "nquqij",
+        "ofkqoj",
+        "ippvfq",
+        "sibsih",
+        "tpihof",
+        "xxopkb",
+        "guaozs",
+        "kbbhfa",
+        "bxqzzy"
+      ],
+      "elementType": "button",
+      "children": []
+    },
+    "div -> image": {
+      "count": 12,
+      "elementIds": [
+        "qvwpnw",
+        "iqbylj",
+        "mjgbnf",
+        "dsvbts",
+        "hpkhtd",
+        "ipobac",
+        "wbcctn",
+        "rhvtrl",
+        "ixcdxh",
+        "qyabgj",
+        "mjzboq",
+        "iiwqfb"
+      ],
+      "elementType": "div",
+      "children": [
+        "image"
+      ]
+    },
+    "image -> ": {
+      "count": 22,
+      "elementIds": [
+        "dlmncs",
+        "ycaach",
+        "yfcvzt",
+        "ykarht",
+        "dpumgw",
+        "jqfous",
+        "wfvbgk",
+        "lhmvqz",
+        "mdfwjb",
+        "zgaihz",
+        "ukqtcs",
+        "zbowol",
+        "ivbdpy",
+        "pxqgap",
+        "dnjpsv",
+        "bpjljj",
+        "olvxao",
+        "jtzlnx",
+        "kgrgpp",
+        "omedtf",
+        "qaywnv",
+        "cofzkz"
+      ],
+      "elementType": "image",
+      "children": []
+    },
+    "container -> heading,div": {
+      "count": 1,
+      "elementIds": [
+        "axtqvz"
+      ],
+      "elementType": "container",
+      "children": [
+        "heading",
+        "div"
+      ]
+    },
+    "div -> div,div": {
+      "count": 11,
+      "elementIds": [
+        "zcidlo",
+        "xeaeus",
+        "frnaez",
+        "pffigk",
+        "ojxtzo",
+        "krdhae",
+        "smdnuc",
+        "rzcuta",
+        "kxakem",
+        "qfwulp",
+        "slgipl"
+      ],
+      "elementType": "div",
+      "children": [
+        "div",
+        "div"
+      ]
+    },
+    "div -> text": {
+      "count": 8,
+      "elementIds": [
+        "cfdtxv",
+        "pksrcu",
+        "dtyzmn",
+        "dhispp",
+        "ixpfei",
+        "lizlrd",
+        "dfgxyq",
+        "hzzldt"
+      ],
+      "elementType": "div",
+      "children": [
+        "text"
+      ]
+    },
+    "container -> heading,text": {
+      "count": 1,
+      "elementIds": [
+        "qpiuyg"
+      ],
+      "elementType": "container",
+      "children": [
+        "heading",
+        "text"
+      ]
+    },
+    "container -> div,div,div,div,div,div,div": {
+      "count": 1,
+      "elementIds": [
+        "eiilkf"
+      ],
+      "elementType": "container",
+      "children": [
+        "div",
+        "div",
+        "div",
+        "div",
+        "div",
+        "div",
+        "div"
+      ]
+    },
+    "div -> block,div": {
+      "count": 8,
+      "elementIds": [
+        "ffeszh",
+        "yudail",
+        "scezgc",
+        "tfhhlu",
+        "hqakjq",
+        "lcvmvp",
+        "rxdoea",
+        "sqqikk"
+      ],
+      "elementType": "div",
+      "children": [
+        "block",
+        "div"
+      ]
+    },
+    "block -> image": {
+      "count": 9,
+      "elementIds": [
+        "szjyxo",
+        "ijsgtj",
+        "xpklfh",
+        "kwkcsb",
+        "xhsffs",
+        "lvqziv",
+        "lywjzm",
+        "zywuon",
+        "qfcmep"
+      ],
+      "elementType": "block",
+      "children": [
+        "image"
+      ]
+    },
+    "container -> div,div,text": {
+      "count": 1,
+      "elementIds": [
+        "ovcsrj"
+      ],
+      "elementType": "container",
+      "children": [
+        "div",
+        "div",
+        "text"
+      ]
+    },
+    "div -> div,div,div,div": {
+      "count": 4,
+      "elementIds": [
+        "mvrszj",
+        "jozmpl",
+        "resrre",
+        "kbtuom"
+      ],
+      "elementType": "div",
+      "children": [
+        "div",
+        "div",
+        "div",
+        "div"
+      ]
+    },
+    "div -> icon,text": {
+      "count": 4,
+      "elementIds": [
+        "yyfncq",
+        "jnqjzv",
+        "xatqdp",
+        "gvhdqg"
+      ],
+      "elementType": "div",
+      "children": [
+        "icon",
+        "text"
+      ]
+    },
+    "icon -> ": {
+      "count": 20,
+      "elementIds": [
+        "plqxns",
+        "ccblrx",
+        "zyheyh",
+        "yvfwnc",
+        "bassfn",
+        "mkbovd",
+        "eiapxg",
+        "ruvyhy",
+        "ylbchm",
+        "okwlvj",
+        "whtiur",
+        "jmgqoi",
+        "tckprh",
+        "hysnns",
+        "kltflu",
+        "wdsvzp",
+        "csdsqk",
+        "kekway",
+        "bwnork",
+        "mqhaka"
+      ],
+      "elementType": "icon",
+      "children": []
+    },
+    "container -> image,div": {
+      "count": 1,
+      "elementIds": [
+        "limmph"
+      ],
+      "elementType": "container",
+      "children": [
+        "image",
+        "div"
+      ]
+    },
+    "container -> div,block": {
+      "count": 1,
+      "elementIds": [
+        "qckqxx"
+      ],
+      "elementType": "container",
+      "children": [
+        "div",
+        "block"
+      ]
+    },
+    "div -> div,icon": {
+      "count": 4,
+      "elementIds": [
+        "fpwysz",
+        "yittgd",
+        "oiytmy",
+        "kzqkyw"
+      ],
+      "elementType": "div",
+      "children": [
+        "div",
+        "icon"
+      ]
+    },
+    "div -> heading,text-basic,div": {
+      "count": 4,
+      "elementIds": [
+        "ifypqo",
+        "xxquof",
+        "ovdfxl",
+        "ztqori"
+      ],
+      "elementType": "div",
+      "children": [
+        "heading",
+        "text-basic",
+        "div"
+      ]
+    },
+    "text-basic -> ": {
+      "count": 4,
+      "elementIds": [
+        "clllxk",
+        "vkbvyq",
+        "elwrsv",
+        "gecqgf"
+      ],
+      "elementType": "text-basic",
+      "children": []
+    },
+    "div -> div,div,div,div,div": {
+      "count": 1,
+      "elementIds": [
+        "irxqbc"
+      ],
+      "elementType": "div",
+      "children": [
+        "div",
+        "div",
+        "div",
+        "div",
+        "div"
+      ]
+    },
+    "div -> icon": {
+      "count": 8,
+      "elementIds": [
+        "egazyw",
+        "ioisyv",
+        "liwiwi",
+        "davein",
+        "czfcja",
+        "jdlhnm",
+        "cxruho",
+        "iobkrs"
+      ],
+      "elementType": "div",
+      "children": [
+        "icon"
+      ]
+    },
+    "div -> div": {
+      "count": 3,
+      "elementIds": [
+        "cajyhz",
+        "hktini",
+        "orxmpk"
+      ],
+      "elementType": "div",
+      "children": [
+        "div"
+      ]
+    },
+    "div -> heading,div": {
+      "count": 1,
+      "elementIds": [
+        "qbtuzd"
+      ],
+      "elementType": "div",
+      "children": [
+        "heading",
+        "div"
+      ]
+    },
+    "div -> icon,heading": {
+      "count": 4,
+      "elementIds": [
+        "jpjwrd",
+        "fnxwyx",
+        "pwzpyp",
+        "bmzarj"
+      ],
+      "elementType": "div",
+      "children": [
+        "icon",
+        "heading"
+      ]
+    },
+    "div -> heading,div,button": {
+      "count": 1,
+      "elementIds": [
+        "kjdhor"
+      ],
+      "elementType": "div",
+      "children": [
+        "heading",
+        "div",
+        "button"
+      ]
+    },
+    "container -> heading,accordion": {
+      "count": 1,
+      "elementIds": [
+        "fgbncf"
+      ],
+      "elementType": "container",
+      "children": [
+        "heading",
+        "accordion"
+      ]
+    },
+    "accordion -> ": {
+      "count": 1,
+      "elementIds": [
+        "pwytye"
+      ],
+      "elementType": "accordion",
+      "children": []
+    }
+  },
+  "repeatedPatterns": [
+    {
+      "signature": "text -> ",
+      "count": 29,
+      "elementIds": [
+        "qimvtf",
+        "osqgcu",
+        "mrpmad",
+        "sygrqr",
+        "xwkfud",
+        "fcedlr",
+        "eioooo",
+        "zeqhoe",
+        "yhfhsp",
+        "hsgesq",
+        "mjqhwh",
+        "ulspzm",
+        "vapmjt",
+        "ubuqpv",
+        "reomxc",
+        "bgswiv",
+        "exnbkf",
+        "zqdxrc",
+        "nqbksa",
+        "jtplao",
+        "ocjmte",
+        "arxeax",
+        "phyhto",
+        "cwestk",
+        "cefroa",
+        "txmdtr",
+        "pqytzf",
+        "gcmldz",
+        "pkwhvl"
+      ],
+      "elementType": "text",
+      "children": []
+    },
+    {
+      "signature": "heading -> ",
+      "count": 28,
+      "elementIds": [
+        "ibutwr",
+        "xwiydp",
+        "pjjvms",
+        "liuloh",
+        "wltcvt",
+        "mgstuc",
+        "srnxst",
+        "pjnotv",
+        "ykyjaz",
+        "rnfkoq",
+        "biuchp",
+        "ktiwjd",
+        "tjiexw",
+        "ncmejy",
+        "zgvoga",
+        "mybopn",
+        "qjglli",
+        "lgwcjt",
+        "pwdvkt",
+        "prbpfs",
+        "fhgkxv",
+        "gkpzon",
+        "eriigc",
+        "vcoyno",
+        "eqttze",
+        "hfgpxa",
+        "kaocvv",
+        "nnxtrq"
+      ],
+      "elementType": "heading",
+      "children": []
+    },
+    {
+      "signature": "image -> ",
+      "count": 22,
+      "elementIds": [
+        "dlmncs",
+        "ycaach",
+        "yfcvzt",
+        "ykarht",
+        "dpumgw",
+        "jqfous",
+        "wfvbgk",
+        "lhmvqz",
+        "mdfwjb",
+        "zgaihz",
+        "ukqtcs",
+        "zbowol",
+        "ivbdpy",
+        "pxqgap",
+        "dnjpsv",
+        "bpjljj",
+        "olvxao",
+        "jtzlnx",
+        "kgrgpp",
+        "omedtf",
+        "qaywnv",
+        "cofzkz"
+      ],
+      "elementType": "image",
+      "children": []
+    },
+    {
+      "signature": "icon -> ",
+      "count": 20,
+      "elementIds": [
+        "plqxns",
+        "ccblrx",
+        "zyheyh",
+        "yvfwnc",
+        "bassfn",
+        "mkbovd",
+        "eiapxg",
+        "ruvyhy",
+        "ylbchm",
+        "okwlvj",
+        "whtiur",
+        "jmgqoi",
+        "tckprh",
+        "hysnns",
+        "kltflu",
+        "wdsvzp",
+        "csdsqk",
+        "kekway",
+        "bwnork",
+        "mqhaka"
+      ],
+      "elementType": "icon",
+      "children": []
+    },
+    {
+      "signature": "div -> heading,text",
+      "count": 15,
+      "elementIds": [
+        "kwzqnl",
+        "unankg",
+        "ujgtaw",
+        "ouxyks",
+        "cokyvb",
+        "zcphwf",
+        "jkipna",
+        "nvxuly",
+        "sxuhma",
+        "arpkfo",
+        "xshroj",
+        "wgqnhv",
+        "zccxfp",
+        "enfiyy",
+        "wlgpwi"
+      ],
+      "elementType": "div",
+      "children": [
+        "heading",
+        "text"
+      ]
+    },
+    {
+      "signature": "section -> container",
+      "count": 13,
+      "elementIds": [
+        "ccitlw",
+        "zffbiu",
+        "ncclsm",
+        "lrdsqg",
+        "eneoky",
+        "srbjxb",
+        "nsbbkn",
+        "wcamvl",
+        "mevkgd",
+        "dhidyp",
+        "sqzhpl",
+        "sszjcq",
+        "nsgiga"
+      ],
+      "elementType": "section",
+      "children": [
+        "container"
+      ]
+    },
+    {
+      "signature": "div -> image",
+      "count": 12,
+      "elementIds": [
+        "qvwpnw",
+        "iqbylj",
+        "mjgbnf",
+        "dsvbts",
+        "hpkhtd",
+        "ipobac",
+        "wbcctn",
+        "rhvtrl",
+        "ixcdxh",
+        "qyabgj",
+        "mjzboq",
+        "iiwqfb"
+      ],
+      "elementType": "div",
+      "children": [
+        "image"
+      ]
+    },
+    {
+      "signature": "div -> div,div",
+      "count": 11,
+      "elementIds": [
+        "zcidlo",
+        "xeaeus",
+        "frnaez",
+        "pffigk",
+        "ojxtzo",
+        "krdhae",
+        "smdnuc",
+        "rzcuta",
+        "kxakem",
+        "qfwulp",
+        "slgipl"
+      ],
+      "elementType": "div",
+      "children": [
+        "div",
+        "div"
+      ]
+    },
+    {
+      "signature": "button -> ",
+      "count": 9,
+      "elementIds": [
+        "nquqij",
+        "ofkqoj",
+        "ippvfq",
+        "sibsih",
+        "tpihof",
+        "xxopkb",
+        "guaozs",
+        "kbbhfa",
+        "bxqzzy"
+      ],
+      "elementType": "button",
+      "children": []
+    },
+    {
+      "signature": "block -> image",
+      "count": 9,
+      "elementIds": [
+        "szjyxo",
+        "ijsgtj",
+        "xpklfh",
+        "kwkcsb",
+        "xhsffs",
+        "lvqziv",
+        "lywjzm",
+        "zywuon",
+        "qfcmep"
+      ],
+      "elementType": "block",
+      "children": [
+        "image"
+      ]
+    },
+    {
+      "signature": "div -> div,button",
+      "count": 8,
+      "elementIds": [
+        "vjfkne",
+        "wfmxol",
+        "ndkilq",
+        "ntavkg",
+        "lotkek",
+        "wlavmh",
+        "ovnxef",
+        "esiexc"
+      ],
+      "elementType": "div",
+      "children": [
+        "div",
+        "button"
+      ]
+    },
+    {
+      "signature": "div -> text",
+      "count": 8,
+      "elementIds": [
+        "cfdtxv",
+        "pksrcu",
+        "dtyzmn",
+        "dhispp",
+        "ixpfei",
+        "lizlrd",
+        "dfgxyq",
+        "hzzldt"
+      ],
+      "elementType": "div",
+      "children": [
+        "text"
+      ]
+    },
+    {
+      "signature": "div -> block,div",
+      "count": 8,
+      "elementIds": [
+        "ffeszh",
+        "yudail",
+        "scezgc",
+        "tfhhlu",
+        "hqakjq",
+        "lcvmvp",
+        "rxdoea",
+        "sqqikk"
+      ],
+      "elementType": "div",
+      "children": [
+        "block",
+        "div"
+      ]
+    },
+    {
+      "signature": "div -> icon",
+      "count": 8,
+      "elementIds": [
+        "egazyw",
+        "ioisyv",
+        "liwiwi",
+        "davein",
+        "czfcja",
+        "jdlhnm",
+        "cxruho",
+        "iobkrs"
+      ],
+      "elementType": "div",
+      "children": [
+        "icon"
+      ]
+    },
+    {
+      "signature": "container -> div,div",
+      "count": 6,
+      "elementIds": [
+        "bwzsjl",
+        "uibsqs",
+        "cmlsmi",
+        "thghix",
+        "knoboj",
+        "jioiwi"
+      ],
+      "elementType": "container",
+      "children": [
+        "div",
+        "div"
+      ]
+    },
+    {
+      "signature": "div -> div,div,div,div",
+      "count": 4,
+      "elementIds": [
+        "mvrszj",
+        "jozmpl",
+        "resrre",
+        "kbtuom"
+      ],
+      "elementType": "div",
+      "children": [
+        "div",
+        "div",
+        "div",
+        "div"
+      ]
+    },
+    {
+      "signature": "div -> icon,text",
+      "count": 4,
+      "elementIds": [
+        "yyfncq",
+        "jnqjzv",
+        "xatqdp",
+        "gvhdqg"
+      ],
+      "elementType": "div",
+      "children": [
+        "icon",
+        "text"
+      ]
+    },
+    {
+      "signature": "div -> div,icon",
+      "count": 4,
+      "elementIds": [
+        "fpwysz",
+        "yittgd",
+        "oiytmy",
+        "kzqkyw"
+      ],
+      "elementType": "div",
+      "children": [
+        "div",
+        "icon"
+      ]
+    },
+    {
+      "signature": "div -> heading,text-basic,div",
+      "count": 4,
+      "elementIds": [
+        "ifypqo",
+        "xxquof",
+        "ovdfxl",
+        "ztqori"
+      ],
+      "elementType": "div",
+      "children": [
+        "heading",
+        "text-basic",
+        "div"
+      ]
+    },
+    {
+      "signature": "text-basic -> ",
+      "count": 4,
+      "elementIds": [
+        "clllxk",
+        "vkbvyq",
+        "elwrsv",
+        "gecqgf"
+      ],
+      "elementType": "text-basic",
+      "children": []
+    },
+    {
+      "signature": "div -> icon,heading",
+      "count": 4,
+      "elementIds": [
+        "jpjwrd",
+        "fnxwyx",
+        "pwzpyp",
+        "bmzarj"
+      ],
+      "elementType": "div",
+      "children": [
+        "icon",
+        "heading"
+      ]
+    },
+    {
+      "signature": "div -> div",
+      "count": 3,
+      "elementIds": [
+        "cajyhz",
+        "hktini",
+        "orxmpk"
+      ],
+      "elementType": "div",
+      "children": [
+        "div"
+      ]
+    }
+  ]
+}

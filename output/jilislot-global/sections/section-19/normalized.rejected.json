@@ -1,0 +1,51 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jilislot-global-scoped-part",
+      "background": {
+        "color": "#1B1B1B"
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "are-jili-games-safe-and-fair-to-play",
+          "figmaNodeId": "8226:568",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 424,
+            "justify": "space-between",
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "are-jili-games-safe-and-fair-to-play",
+              "figmaNodeId": "8226:567",
+              "text": "Are Jili games safe and fair to play?",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": 500,
+                "lineHeight": "30px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "icon",
+              "id": "frame",
+              "figmaNodeId": "8226:568",
+              "asset": {
+                "nodeId": "8226:568",
+                "kind": "svg"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

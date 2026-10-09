@@ -1,0 +1,71 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jilislot-pros-cons",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "block",
+          "id": "line-78",
+          "figmaNodeId": "8221:717",
+          "notes": [
+            "Line with stroke #FFFFFF1A, weight 1px"
+          ],
+          "size": {
+            "height": 269
+          }
+        },
+        {
+          "type": "column",
+          "id": "pros-cons-card",
+          "figmaNodeId": "8221:799",
+          "children": [
+            {
+              "type": "row",
+              "id": "pros-header",
+              "figmaNodeId": "8221:722",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 7,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "pros-icon",
+                  "figmaNodeId": "8221:723",
+                  "asset": {
+                    "nodeId": "8221:723",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "heading",
+                  "id": "pros-title",
+                  "figmaNodeId": "8221:725",
+                  "text": "PROS",
+                  "level": 3,
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 24,
+                    "fontWeight": 700,
+                    "lineHeight": "32px",
+                    "align": "left",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Section background color",
+    "Full pros/con text content (present in other parts)"
+  ]
+}

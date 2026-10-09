@@ -1,0 +1,95 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "game-card",
+      "figmaNodeId": "8222:959",
+      "background": {
+        "color": "#191818"
+      },
+      "border": {
+        "radius": 10
+      },
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 24,
+        "align": "stretch",
+        "padding": {
+          "top": 14,
+          "right": 14,
+          "bottom": 14,
+          "left": 14
+        }
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "game-image",
+          "figmaNodeId": "8222:966",
+          "asset": {
+            "nodeId": "8222:966",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "column",
+          "id": "game-details",
+          "figmaNodeId": "8222:962",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "game-title",
+              "figmaNodeId": "8222:963",
+              "text": "Jili Ludo",
+              "level": 3,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "21.78px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "game-description",
+              "figmaNodeId": "8222:964",
+              "text": "High volatility, combo wins",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "game-rtp",
+              "figmaNodeId": "8222:965",
+              "text": "RTP: 96.00%",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

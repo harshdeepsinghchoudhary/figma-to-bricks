@@ -1,0 +1,57 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "id": "jilislot-global-section",
+      "type": "section",
+      "children": [
+        {
+          "id": "group-1261154380",
+          "type": "column",
+          "figmaNodeId": "8221:739"
+        },
+        {
+          "id": "group-1261154377",
+          "type": "column",
+          "figmaNodeId": "8221:740"
+        },
+        {
+          "id": "frame-1261152784",
+          "type": "row",
+          "figmaNodeId": "8221:741",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 7,
+            "align": "center"
+          },
+          "children": [
+            {
+              "id": "frame-1261152784-icon",
+              "type": "image",
+              "figmaNodeId": "8221:742",
+              "asset": {
+                "nodeId": "8221:742",
+                "kind": "svg"
+              }
+            },
+            {
+              "id": "text-cons",
+              "type": "text-basic",
+              "figmaNodeId": "8221:744",
+              "text": "Cons",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 700,
+                "lineHeight": "32px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

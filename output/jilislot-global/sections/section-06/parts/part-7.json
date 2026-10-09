@@ -1,0 +1,107 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jili-money-coming-card",
+      "figmaNodeId": "8222:967",
+      "background": {
+        "color": "#191818"
+      },
+      "border": {
+        "radius": 10
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "jili-money-coming-image",
+          "figmaNodeId": "8222:974",
+          "asset": {
+            "nodeId": "8222:974",
+            "kind": "image"
+          },
+          "size": {
+            "width": 254,
+            "height": 135
+          },
+          "border": {
+            "radius": 4
+          }
+        },
+        {
+          "type": "column",
+          "id": "jili-money-coming-content",
+          "figmaNodeId": "8222:970",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8,
+            "align": "center",
+            "margin": {
+              "left": 13
+            }
+          },
+          "size": {
+            "width": 227,
+            "height": 92
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "jili-money-coming-title",
+              "figmaNodeId": "8222:971",
+              "text": "Jili Money Coming",
+              "level": 2,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "21.78px",
+                "align": "center",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "text",
+              "id": "high-volatility-claim",
+              "figmaNodeId": "8222:972",
+              "text": "High volatility, combo wins",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "align": "left",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "text",
+              "id": "rtp-label",
+              "figmaNodeId": "8222:973",
+              "text": "RTP: 96.00%",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "align": "left",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Outer card has 14px padding to content area (measured from container bounds).",
+        "Image and content column have 24px vertical gap."
+      ]
+    },
+    {
+      "type": "column",
+      "id": "game-display-card",
+      "figmaNodeId": "8222:969",
+      "children": []
+    }
+  ]
+}

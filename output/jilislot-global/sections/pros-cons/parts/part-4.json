@@ -1,0 +1,131 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "faqs-listing",
+      "figmaNodeId": "8221:704",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 14
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "faq-item-one",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "faq-icon-one",
+              "figmaNodeId": "8221:707",
+              "layout": {
+                "align": "center"
+              },
+              "asset": {
+                "nodeId": "8221:707",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "faq-item-one-label",
+              "figmaNodeId": "8221:706",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "faq-item-two",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "faq-icon-two",
+              "figmaNodeId": "8221:711",
+              "layout": {
+                "align": "center"
+              },
+              "asset": {
+                "nodeId": "8221:711",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "faq-item-two-label",
+              "figmaNodeId": "8221:710",
+              "text": "Lorem Ipsum is simply dummy text of the printing and ",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "faq-item-three",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "faq-icon-three",
+              "figmaNodeId": "8221:715",
+              "layout": {
+                "align": "center"
+              },
+              "asset": {
+                "nodeId": "8221:715",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "faq-item-three-label",
+              "figmaNodeId": "8221:714",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "No explicit horizontal/vertical size values were provided in the Figma node data."
+  ]
+}

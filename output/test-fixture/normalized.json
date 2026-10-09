@@ -1,0 +1,72 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "test-section",
+      "layout": {
+        "padding": {
+          "top": 80,
+          "right": 40,
+          "bottom": 80,
+          "left": 40
+        }
+      },
+      "background": { "color": "#FAF9FF" },
+      "children": [
+        {
+          "type": "heading",
+          "id": "test-heading",
+          "text": "Test Heading",
+          "level": 1,
+          "typography": {
+            "fontFamily": "Source Sans 3",
+            "fontSize": 48,
+            "fontWeight": 700,
+            "lineHeight": "135%",
+            "color": "#3D3D3D",
+            "align": "left"
+          }
+        },
+        {
+          "type": "text",
+          "id": "test-text",
+          "text": "This is a test paragraph to confirm the compiler round-trips.",
+          "typography": {
+            "fontFamily": "Source Sans 3",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "lineHeight": "150%",
+            "color": "#555555",
+            "align": "left"
+          }
+        },
+        {
+          "type": "text-basic",
+          "id": "test-caption",
+          "text": "CEO of The Motive Point",
+          "typography": {
+            "fontFamily": "Source Sans 3",
+            "fontSize": 17,
+            "fontWeight": 400,
+            "color": "#3D3D3D",
+            "align": "left"
+          }
+        },
+        {
+          "type": "button",
+          "id": "test-button",
+          "text": "Click Me",
+          "href": "https://example.com",
+          "typography": {
+            "fontFamily": "Source Sans 3",
+            "fontSize": 16,
+            "fontWeight": 600,
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        }
+      ]
+    }
+  ]
+}

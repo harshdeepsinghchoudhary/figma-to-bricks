@@ -1,0 +1,187 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-root",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154425",
+          "figmaNodeId": "8226:286",
+          "children": [
+            {
+              "type": "row",
+              "id": "section-root-row-1",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "frame-44",
+                  "figmaNodeId": "8226:287",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "frame-43",
+                      "figmaNodeId": "8226:288",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "heading-security-and-fair-play-at-jili-slot",
+                          "figmaNodeId": "8226:289",
+                          "text": "Security and Fair Play at Jili Slot",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 34,
+                            "fontWeight": 700,
+                            "lineHeight": "41.15px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 568
+                          },
+                          "level": 2
+                        },
+                        {
+                          "type": "column",
+                          "id": "frame-42",
+                          "figmaNodeId": "8226:290",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "text-1",
+                              "figmaNodeId": "8226:291",
+                              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 16,
+                                "fontWeight": 400,
+                                "lineHeight": "24px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              },
+                              "size": {
+                                "width": 568
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "text-2",
+                              "figmaNodeId": "8226:292",
+                              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 16,
+                                "fontWeight": 400,
+                                "lineHeight": "24px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              },
+                              "size": {
+                                "width": 568
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 10,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 10,
+                        "align": "start"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "id": "learn-more-button",
+                      "figmaNodeId": "8226:293",
+                      "text": "Learn More",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 600,
+                        "lineHeight": "19.36px",
+                        "align": "left",
+                        "color": "#000000"
+                      },
+                      "background": {
+                        "color": "#FCC40B"
+                      },
+                      "border": {
+                        "radius": 400
+                      },
+                      "size": {
+                        "width": 152
+                      },
+                      "layout": {
+                        "padding": {
+                          "top": 15,
+                          "right": 32,
+                          "bottom": 15,
+                          "left": 32
+                        }
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 30,
+                    "align": "start"
+                  },
+                  "size": {
+                    "width": 568
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": "cybersecurity-image",
+                  "figmaNodeId": "8226:295",
+                  "asset": {
+                    "nodeId": "8226:295",
+                    "kind": "image"
+                  },
+                  "border": {
+                    "radius": 16
+                  },
+                  "size": {
+                    "width": 510,
+                    "height": 284
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 122,
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "start"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "border properties omitted where not specified",
+    "background fills omitted where not specified",
+    "stitch: 1 node(s) added from Figma data because the model's parts did not include them"
+  ]
+}

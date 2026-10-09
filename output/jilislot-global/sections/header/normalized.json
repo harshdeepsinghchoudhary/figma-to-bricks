@@ -1,0 +1,193 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "nav-section",
+      "figmaNodeId": "8221:6",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "align": "start",
+        "padding": {
+          "top": 17,
+          "right": 120,
+          "bottom": 18,
+          "left": 120
+        }
+      },
+      "background": {
+        "color": "#282828"
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "nav-row",
+          "figmaNodeId": "8219:1250",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "align": "start",
+            "gap": 331
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "left-group",
+              "figmaNodeId": "8219:1249",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "align": "center",
+                "justify": "space-between",
+                "gap": 294
+              },
+              "size": {
+                "width": 807
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "logo-image",
+                  "figmaNodeId": "8219:1238",
+                  "asset": {
+                    "nodeId": "8219:1238",
+                    "kind": "image"
+                  },
+                  "size": {
+                    "width": 99,
+                    "height": 40
+                  }
+                },
+                {
+                  "type": "row",
+                  "id": "nav-links",
+                  "figmaNodeId": "8219:33",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "align": "start",
+                    "gap": 40
+                  },
+                  "size": {
+                    "width": 414
+                  },
+                  "typography": {
+                    "align": "left"
+                  },
+                  "children": [
+                    {
+                      "type": "text-basic",
+                      "id": "text-home",
+                      "figmaNodeId": "8219:34",
+                      "text": "Home",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "lineHeight": "19.36px",
+                        "color": "#FFFFFF",
+                        "align": "left"
+                      }
+                    },
+                    {
+                      "type": "text-basic",
+                      "id": "text-company",
+                      "figmaNodeId": "8219:35",
+                      "text": "Company",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "lineHeight": "19.36px",
+                        "color": "#FFFFFF",
+                        "align": "left"
+                      }
+                    },
+                    {
+                      "type": "text-basic",
+                      "id": "text-games",
+                      "figmaNodeId": "8219:36",
+                      "text": "GAMES",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "lineHeight": "19.36px",
+                        "color": "#FFFFFF",
+                        "align": "left"
+                      }
+                    },
+                    {
+                      "type": "text-basic",
+                      "id": "text-contact",
+                      "figmaNodeId": "8219:37",
+                      "text": "CONTACT US",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "lineHeight": "19.36px",
+                        "color": "#FFFFFF",
+                        "align": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "id": "right-group",
+              "figmaNodeId": "8219:1248",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "align": "center",
+                "gap": 8
+              },
+              "size": {
+                "width": 62
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "flag-image",
+                  "figmaNodeId": "8219:48",
+                  "asset": {
+                    "nodeId": "8219:48",
+                    "kind": "image"
+                  },
+                  "size": {
+                    "width": 40,
+                    "height": 40
+                  }
+                },
+                {
+                  "type": "icon",
+                  "id": "dropdown-icon",
+                  "figmaNodeId": "8219:1245",
+                  "asset": {
+                    "nodeId": "8219:1245",
+                    "kind": "svg"
+                  },
+                  "size": {
+                    "width": 14,
+                    "height": 14
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "text-home: dropped unknown field \"typography.textAlign\"",
+    "text-home: dropped unknown field \"typography.textCase\"",
+    "text-company: dropped unknown field \"typography.textAlign\"",
+    "text-company: dropped unknown field \"typography.textCase\"",
+    "text-games: dropped unknown field \"typography.textAlign\""
+  ]
+}

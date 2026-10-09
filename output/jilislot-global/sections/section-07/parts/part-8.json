@@ -1,0 +1,42 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "scope",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "image",
+          "id": "image-1",
+          "figmaNodeId": "8222:1116",
+          "asset": {
+            "nodeId": "8222:1116",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "text",
+          "id": "jili-bingo-2",
+          "figmaNodeId": "8222:1119",
+          "text": "Jili Bingo"
+        },
+        {
+          "type": "text",
+          "id": "lorem-ipsum-is-simply-dummy-text-of-the-3",
+          "figmaNodeId": "8222:1120",
+          "text": "Lorem Ipsum is simply dummy text of the "
+        },
+        {
+          "type": "text",
+          "id": "play-now-4",
+          "figmaNodeId": "8222:1122",
+          "text": "Play Now"
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "part 8: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing"
+  ]
+}

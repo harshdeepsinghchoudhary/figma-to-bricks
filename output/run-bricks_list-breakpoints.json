@@ -1,0 +1,76 @@
+{
+  "success": true,
+  "data": {
+    "customEnabled": true,
+    "isMobileFirst": false,
+    "baseKey": "desktop",
+    "baseWidth": 1279,
+    "breakpoints": [
+      {
+        "base": true,
+        "key": "desktop",
+        "label": "Desktop",
+        "width": 1279,
+        "icon": "laptop"
+      },
+      {
+        "key": "tablet_portrait",
+        "label": "Tablet portrait",
+        "width": 1024,
+        "icon": "tablet-portrait",
+        "edited": true
+      },
+      {
+        "key": "mobile_landscape",
+        "label": "Mobile landscape",
+        "width": 767,
+        "icon": "phone-landscape"
+      },
+      {
+        "key": "mobile_portrait",
+        "label": "Mobile portrait",
+        "width": 478,
+        "icon": "phone-portrait"
+      }
+    ],
+    "defaults": [
+      {
+        "base": true,
+        "key": "desktop",
+        "label": "Desktop",
+        "width": 1279,
+        "icon": "laptop"
+      },
+      {
+        "key": "tablet_portrait",
+        "label": "Tablet portrait",
+        "width": 991,
+        "icon": "tablet-portrait"
+      },
+      {
+        "key": "mobile_landscape",
+        "label": "Mobile landscape",
+        "width": 767,
+        "icon": "phone-landscape"
+      },
+      {
+        "key": "mobile_portrait",
+        "label": "Mobile portrait",
+        "width": 478,
+        "icon": "phone-portrait"
+      }
+    ],
+    "breakpointOwnership": {
+      "resource": "breakpoints",
+      "siteId": 1,
+      "version": 2,
+      "resourceDigest": "df94d10fb3bd6fb588376e3397102195f9213638cc9b02c04382aa77fad0ef00"
+    },
+    "globalSettingsOwnership": {
+      "resource": "globalSettings",
+      "siteId": 1,
+      "version": 2,
+      "resourceDigest": "d165fc202272f620468cbf21faa3d8d78b081ac1a6d6ad03893bff6225cb9d3a"
+    }
+  }
+}

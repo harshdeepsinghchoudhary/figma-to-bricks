@@ -1,0 +1,53 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "cons-section",
+      "figmaNodeId": "8221:781",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 7,
+        "align": "center"
+      },
+      "size": {
+        "width": 99,
+        "height": 32
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "cons-icon",
+          "figmaNodeId": "8221:782",
+          "asset": {
+            "nodeId": "8221:782",
+            "kind": "svg"
+          },
+          "size": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        {
+          "type": "text-basic",
+          "id": "cons-text",
+          "figmaNodeId": "8221:784",
+          "text": "Cons",
+          "size": {
+            "width": 62,
+            "height": 32
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 24,
+            "fontWeight": 700,
+            "color": "#FFFFFF",
+            "align": "left",
+            "lineHeight": "32px"
+          }
+        }
+      ]
+    }
+  ]
+}

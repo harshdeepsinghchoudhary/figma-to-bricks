@@ -1,0 +1,106 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "about-jili-slot-games",
+      "children": [
+        {
+          "type": "block",
+          "id": "about-heading",
+          "figmaNodeId": "8221:804",
+          "text": "About Jili Slot Games",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "lineHeight": "41.15px",
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        },
+        {
+          "type": "column",
+          "id": "game-card",
+          "figmaNodeId": "8222:958",
+          "background": {
+            "color": "#191818"
+          },
+          "border": {
+            "radius": 10
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "game-image",
+              "figmaNodeId": "8222:830",
+              "asset": {
+                "nodeId": "8222:830",
+                "kind": "image"
+              },
+              "border": {
+                "radius": 4
+              }
+            },
+            {
+              "type": "column",
+              "id": "game-details",
+              "figmaNodeId": "8222:828",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 8,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "game-title",
+                  "figmaNodeId": "8221:807",
+                  "text": "Super Ace Jili",
+                  "level": 3,
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 700,
+                    "lineHeight": "21.78px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "game-description",
+                  "figmaNodeId": "8222:827",
+                  "text": "High volatility, combo wins",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "game-rtp",
+                  "figmaNodeId": "8222:829",
+                  "text": "RTP: 96.00%",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

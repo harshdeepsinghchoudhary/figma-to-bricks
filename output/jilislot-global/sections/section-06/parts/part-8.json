@@ -1,0 +1,104 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "game-card",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 24
+      },
+      "background": {
+        "color": "#191818"
+      },
+      "border": {
+        "radius": 10
+      },
+      "size": {
+        "width": 282,
+        "height": 289
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "game-image",
+          "asset": {
+            "nodeId": "8222:1006",
+            "kind": "image"
+          },
+          "size": {
+            "width": 254,
+            "height": 135
+          },
+          "border": {
+            "radius": 4
+          },
+          "figmaNodeId": "8222:1006"
+        },
+        {
+          "type": "column",
+          "id": "game-details",
+          "figmaNodeId": "8222:1002",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8,
+            "align": "center"
+          },
+          "size": {
+            "width": 227
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "game-title",
+              "text": "Jili Golden Empire",
+              "level": 2,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "21.78px",
+                "color": "#FFFFFF",
+                "align": "center"
+              },
+              "figmaNodeId": "8222:1003"
+            },
+            {
+              "type": "text",
+              "id": "game-volatility",
+              "text": "High volatility, combo wins",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              },
+              "figmaNodeId": "8222:1004"
+            },
+            {
+              "type": "text",
+              "id": "game-rtp",
+              "text": "RTP: 96.00%",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              },
+              "figmaNodeId": "8222:1005"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "game-details: dropped unknown field \"offCross\""
+  ]
+}

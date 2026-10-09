@@ -1,0 +1,170 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "hero-mobile-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "hero-right",
+          "figmaNodeId": "8226:80",
+          "children": [
+            {
+              "type": "row",
+              "id": "hero-mobile-section-row-1",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "hero-left",
+                  "figmaNodeId": "8226:3",
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "jili-games-play-seamlessly-on-mobile-dev-1",
+                      "figmaNodeId": "8226:4",
+                      "text": "Jili Games: Play Seamlessly on Mobile Devices",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 34,
+                        "fontWeight": 700,
+                        "lineHeight": "40px",
+                        "align": "left",
+                        "color": "#FFFFFF"
+                      },
+                      "level": 2,
+                      "size": {
+                        "width": 569
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "frame-8226-5",
+                      "figmaNodeId": "8226:5",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "frame-8226-6",
+                          "figmaNodeId": "8226:6",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "text-8226-7",
+                              "figmaNodeId": "8226:7",
+                              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 16,
+                                "fontWeight": 400,
+                                "lineHeight": "24px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              },
+                              "size": {
+                                "width": 569
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "text-8226-8",
+                              "figmaNodeId": "8226:8",
+                              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 16,
+                                "fontWeight": 400,
+                                "lineHeight": "24px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              },
+                              "size": {
+                                "width": 569
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 16,
+                            "align": "start"
+                          }
+                        },
+                        {
+                          "type": "icon",
+                          "id": "icon-8226-9",
+                          "figmaNodeId": "8226:9",
+                          "asset": {
+                            "nodeId": "8226:9",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 342,
+                            "height": 46.2
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 30,
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 16,
+                    "align": "start"
+                  },
+                  "size": {
+                    "width": 569
+                  }
+                },
+                {
+                  "type": "image",
+                  "id": "image-8226-77",
+                  "figmaNodeId": "8226:77",
+                  "asset": {
+                    "nodeId": "8226:77",
+                    "kind": "image"
+                  },
+                  "border": {
+                    "radius": 12
+                  },
+                  "size": {
+                    "width": 570,
+                    "height": 381
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 60,
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "start"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "Coverage: 1 content node(s) from the Figma data are missing from your output: 8226:4 (text: Jili Games: Play Seamlessly on Mobile De). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own \"text\", never as a child).",
+    "background or border colors for frames",
+    "exact type mapping for GROUP asset (used as icon)",
+    "stitch: 1 node(s) added from Figma data because the model's parts did not include them"
+  ]
+}

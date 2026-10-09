@@ -1,0 +1,16 @@
+{
+  "_comment": "Setting keys proven to work by importing into real Bricks (v2.3.12) and seeing them render, but not present in any analyzed export. Hand-maintained; the analyzer never overwrites this file. Add a key only after seeing it render. Grid keys (_gridTemplateColumns, _gridTemplateRows, _gridGap, incl. :tablet_portrait / :mobile_portrait) copied from a real Bricks 2.4.2 export of a 3x2 card grid.",
+  "button": [
+    "_background"
+  ],
+  "div": [
+    "_gridGap",
+    "_gridTemplateColumns",
+    "_gridTemplateRows"
+  ],
+  "container": [
+    "_gridGap",
+    "_gridTemplateColumns",
+    "_gridTemplateRows"
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jili-games-start",
+      "notes": [],
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "heading",
+          "id": "how-to-start-playing-jili-games",
+          "figmaNodeId": "8222:1124",
+          "text": "How to Start Playing Jili Games?",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "lineHeight": "41.15px",
+            "color": "#FFFFFF",
+            "align": "center"
+          },
+          "size": {
+            "width": 531
+          },
+          "level": 2
+        },
+        {
+          "type": "row",
+          "id": "jili-games-start-row-1",
+          "children": [
+            {
+              "type": "column",
+              "id": "group-1261154715-1",
+              "figmaNodeId": "8222:1183",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "jili-games-start-column-2",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "group-1261154677",
+                      "figmaNodeId": "8222:1142",
+                      "asset": {
+                        "nodeId": "8222:1142",
+                        "kind": "svg"
+                      },
+                      "size": {
+                        "width": 94,
+                        "height": 110
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "frame-1261152827-1",
+                      "figmaNodeId": "8222:1127",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "register-an-account",
+                          "figmaNodeId": "8222:1125",
+                          "text": "Register an account",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 24,
+                            "fontWeight": 600,
+                            "lineHeight": "29.05px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 297
+                          },
+                          "level": 3
+                        },
+                        {
+                          "type": "text",
+                          "id": "lorem-ipsum",
+                          "figmaNodeId": "8222:1126",
+                          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF",
+                            "align": "center"
+                          },
+                          "size": {
+                            "width": 297
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 16,
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 57,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 50,
+                  "right": 43,
+                  "bottom": 44,
+                  "left": 44
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 384
+              },
+              "border": {
+                "radius": 12,
+                "color": "#FFFFFF2E",
+                "width": 1
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154717-1",
+              "figmaNodeId": "8222:1185",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "group-1261154716",
+                  "figmaNodeId": "8222:1184",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "jili-games-start-column-3",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "group-1261154712",
+                          "figmaNodeId": "8222:1149",
+                          "asset": {
+                            "nodeId": "8222:1149",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 94,
+                            "height": 110
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "frame-1261152828",
+                          "figmaNodeId": "8222:1128",
+                          "children": [
+                            {
+                              "type": "heading",
+                              "id": "login-to-your-account",
+                              "figmaNodeId": "8222:1129",
+                              "text": "Log in to your account",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 24,
+                                "fontWeight": 600,
+                                "lineHeight": "29.05px",
+                                "color": "#FFFFFF",
+                                "align": "center"
+                              },
+                              "level": 3,
+                              "size": {
+                                "width": 297
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "lorem-ipsum-2",
+                              "figmaNodeId": "8222:1130",
+                              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "color": "#FFFFFF",
+                                "align": "center"
+                              },
+                              "size": {
+                                "width": 297
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 16,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 59,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 50,
+                  "right": 43,
+                  "bottom": 42,
+                  "left": 44
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 384
+              },
+              "border": {
+                "radius": 12,
+                "color": "#FFFFFF2E",
+                "width": 1
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154719-1",
+              "figmaNodeId": "8222:1187",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "group-1261154718",
+                  "figmaNodeId": "8222:1186",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "jili-games-start-column-4",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "group-1261154713",
+                          "figmaNodeId": "8222:1156",
+                          "asset": {
+                            "nodeId": "8222:1156",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 94,
+                            "height": 110
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "frame-1261152829-1",
+                          "figmaNodeId": "8222:1131",
+                          "children": [
+                            {
+                              "type": "heading",
+                              "id": "start-playing-jili-games",
+                              "figmaNodeId": "8222:1132",
+                              "text": "Start playing JILI games",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 24,
+                                "fontWeight": 600,
+                                "lineHeight": "29.05px",
+                                "color": "#FFFFFF",
+                                "align": "center"
+                              },
+                              "size": {
+                                "width": 297
+                              },
+                              "level": 3
+                            },
+                            {
+                              "type": "text",
+                              "id": "lorem-ipsum-3",
+                              "figmaNodeId": "8222:1133",
+                              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "color": "#FFFFFF",
+                                "align": "center"
+                              },
+                              "size": {
+                                "width": 297
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 16,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 61,
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 50,
+                  "right": 43,
+                  "bottom": 40,
+                  "left": 44
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 384
+              },
+              "border": {
+                "radius": 12,
+                "color": "#FFFFFF2E",
+                "width": 1
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 24,
+            "align": "start"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 50,
+        "align": "center"
+      }
+    }
+  ],
+  "_uncertain": [
+    "layout",
+    "boxShadow",
+    "layout details for outer container omitted"
+  ]
+}

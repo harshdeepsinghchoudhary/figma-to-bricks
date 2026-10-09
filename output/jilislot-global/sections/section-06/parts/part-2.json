@@ -1,0 +1,86 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "boxing-king-jili-slot-card",
+      "figmaNodeId": "8222:984",
+      "background": {
+        "color": "#191818"
+      },
+      "border": {
+        "radius": 10
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "boxing-king-image",
+          "figmaNodeId": "8222:990",
+          "asset": {
+            "nodeId": "8222:990",
+            "kind": "image"
+          },
+          "border": {
+            "radius": 4
+          }
+        },
+        {
+          "type": "column",
+          "id": "boxing-king-text-column",
+          "figmaNodeId": "8222:986",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "boxing-king-title",
+              "figmaNodeId": "8222:987",
+              "text": "Boxing King Jili Slot",
+              "level": 1,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "21.78px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            },
+            {
+              "type": "text",
+              "id": "boxing-king-description",
+              "figmaNodeId": "8222:988",
+              "text": "High volatility, combo wins",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text",
+              "id": "boxing-king-rtp",
+              "figmaNodeId": "8222:989",
+              "text": "RTP: 96.00%",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

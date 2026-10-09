@@ -1,0 +1,87 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "group-1261154721",
+      "figmaNodeId": "8222:1266",
+      "layout": {
+        "gap": 30
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8222:1265",
+          "asset": {
+            "nodeId": "8222:1265",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-1261152830",
+          "figmaNodeId": "8222:1267",
+          "layout": {
+            "gap": 30
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "heading-5-percent-weekend-bonus",
+              "figmaNodeId": "8222:1268",
+              "text": "5% Weekend Bonus",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": 600,
+                "lineHeight": "24.2px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "text",
+              "id": "text-lorem-ipsum",
+              "figmaNodeId": "8222:1269",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "id": "button-claim-now",
+          "figmaNodeId": "8222:1270",
+          "text": "Claim Now",
+          "background": {
+            "color": "#FCC40B"
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 600,
+            "lineHeight": "19.36px",
+            "color": "#000000"
+          },
+          "layout": {
+            "padding": {
+              "top": 15,
+              "right": 32,
+              "bottom": 15,
+              "left": 32
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Layout: in the measured column, [8222:1266, 8222:1267, 8222:1268, 8222:1269, 8222:1270] and [8222:1265] are separate stacked items, so they must be SIBLING elements. [8222:1265] must not be nested inside the element holding [8222:1266, 8222:1267, 8222:1268, 8222:1269, 8222:1270]."
+  ]
+}

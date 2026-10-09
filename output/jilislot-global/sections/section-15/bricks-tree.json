@@ -1,0 +1,243 @@
+[
+  {
+    "id": "sdkus1",
+    "name": "heading",
+    "parent": "0yxfvw",
+    "children": [],
+    "settings": {
+      "text": "Security and Fair Play at Jili Slot",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "700",
+        "line-height": "41.15px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "p9qypp",
+    "name": "text",
+    "parent": "bex4rg",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "316531",
+    "name": "text",
+    "parent": "bex4rg",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "bex4rg",
+    "name": "div",
+    "parent": "0yxfvw",
+    "children": [
+      "p9qypp",
+      "316531"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "0yxfvw",
+    "name": "div",
+    "parent": "io18cb",
+    "children": [
+      "sdkus1",
+      "bex4rg"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "sdrre3",
+    "name": "button",
+    "parent": "io18cb",
+    "children": [],
+    "settings": {
+      "text": "Learn More",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FCC40B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "400px",
+          "right": "400px",
+          "bottom": "400px",
+          "left": "400px"
+        }
+      }
+    }
+  },
+  {
+    "id": "io18cb",
+    "name": "div",
+    "parent": "5fwzdj",
+    "children": [
+      "0yxfvw",
+      "sdrre3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "30",
+      "_columnGap": "30",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "568px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "0d3o4x",
+    "name": "image",
+    "parent": "5fwzdj",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/cybersecurity-data-protection-concept-8226_295.png",
+        "url": "../../assets/cybersecurity-data-protection-concept-8226_295.png"
+      },
+      "_width": "100%",
+      "_widthMax": "510px",
+      "_border": {
+        "radius": {
+          "top": "16px",
+          "right": "16px",
+          "bottom": "16px",
+          "left": "16px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "5fwzdj",
+    "name": "div",
+    "parent": "gx3zru",
+    "children": [
+      "io18cb",
+      "0d3o4x"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "gx3zru",
+    "name": "div",
+    "parent": "1mf8kf",
+    "children": [
+      "5fwzdj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "1mf8kf",
+    "name": "container",
+    "parent": "t3u4hv",
+    "children": [
+      "gx3zru"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "t3u4hv",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "1mf8kf"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

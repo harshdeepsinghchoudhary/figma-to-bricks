@@ -1,0 +1,101 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "container",
+      "id": "game-card",
+      "figmaNodeId": "8222:992",
+      "background": {
+        "color": "#191818"
+      },
+      "border": {
+        "radius": 10
+      },
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "center",
+        "padding": {
+          "top": 14,
+          "right": 14,
+          "bottom": 14,
+          "left": 14
+        },
+        "gap": 24
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "game-image",
+          "figmaNodeId": "8222:998",
+          "asset": {
+            "nodeId": "8222:998",
+            "kind": "image"
+          },
+          "border": {
+            "radius": 4
+          }
+        },
+        {
+          "type": "column",
+          "id": "game-info",
+          "figmaNodeId": "8222:994",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "center",
+            "gap": 8
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "game-title",
+              "figmaNodeId": "8222:995",
+              "text": "Alibaba Jili Slot",
+              "level": 3,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "21.78px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            },
+            {
+              "type": "text",
+              "id": "game-desc",
+              "figmaNodeId": "8222:996",
+              "text": "High volatility, combo wins",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text",
+              "id": "game-rtp",
+              "figmaNodeId": "8222:997",
+              "text": "RTP: 96.00%",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "column layout for non-auto-layout Group 1261154692; card padding estimated from inner box vs outer box"
+  ]
+}

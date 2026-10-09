@@ -1,0 +1,159 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "who-we-are",
+      "figmaNodeId": "32:1325",
+      "background": {
+        "color": "#FBF0F5"
+      },
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "center",
+        "padding": {
+          "top": 240,
+          "right": 225.6,
+          "bottom": 240,
+          "left": 226
+        }
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-42-1",
+          "figmaNodeId": "32:1329",
+          "children": [
+            {
+              "type": "heading",
+              "id": "who-we-are-heading",
+              "figmaNodeId": "32:1330",
+              "text": "Who We Are",
+              "level": 2,
+              "typography": {
+                "fontFamily": "Source Sans Pro",
+                "fontSize": 44,
+                "fontWeight": 700,
+                "lineHeight": "140%",
+                "color": "#3D3D3D",
+                "align": "left"
+              }
+            },
+            {
+              "type": "icon",
+              "id": "heading-underline",
+              "figmaNodeId": "32:1331",
+              "asset": {
+                "nodeId": "32:1331",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 227,
+                "height": 8
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "start"
+          }
+        },
+        {
+          "type": "row",
+          "id": "who-we-are-row-1",
+          "children": [
+            {
+              "type": "image",
+              "id": "generating-leads-image",
+              "figmaNodeId": "32:1332",
+              "asset": {
+                "nodeId": "32:1332",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 513,
+                "height": 513
+              }
+            },
+            {
+              "type": "text",
+              "id": "leads-text",
+              "figmaNodeId": "32:1327",
+              "text": "At Machplus, we are passionate about digital marketing and strive to deliver exceptional results to our clients. We consist of a team of experienced professionals who are well-versed in the ever-evolving world of online marketing. Our mission is to help businesses of all sizes harness the power of digital platforms to boost their visibility, drive traffic, and increase conversions. \n\nOur team at Machplus is dedicated to staying ahead of the curve when it comes to digital marketing trends. We continuously educate ourselves on the latest strategies and tools to ensure that we provide cutting-edge solutions to our clients. By combining creativity with data-driven insights, we tailor our approach to each client's unique needs, ensuring that every campaign we launch is optimized for success.",
+              "typography": {
+                "fontFamily": "Source Sans 3",
+                "fontSize": 17,
+                "fontWeight": 400,
+                "lineHeight": "25.5px",
+                "color": "#3D3D3D",
+                "align": "left"
+              },
+              "size": {
+                "width": 622
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 141.4,
+            "align": "center",
+            "margin": {
+              "top": 109
+            }
+          }
+        },
+        {
+          "type": "row",
+          "id": "who-we-are-row-2",
+          "children": [
+            {
+              "type": "text",
+              "id": "transparency-text",
+              "figmaNodeId": "32:1328",
+              "text": "One of the key pillars of our philosophy at Machplus is transparency. We believe in open communication and collaboration with our clients every step of the way. From setting clear objectives at the beginning of a project to providing detailed reports on campaign performance, we strive to build trust and foster long-lasting partnerships with our clients.\n\nOur dedication to transparency ensures that our clients are always informed and involved in the decision-making process, leading to more effective and impactful digital marketing strategies.",
+              "typography": {
+                "fontFamily": "Source Sans 3",
+                "fontSize": 17,
+                "fontWeight": 400,
+                "lineHeight": "25.5px",
+                "color": "#3D3D3D",
+                "align": "left"
+              },
+              "size": {
+                "width": 622
+              }
+            },
+            {
+              "type": "image",
+              "id": "social-share-image",
+              "figmaNodeId": "32:1828",
+              "asset": {
+                "nodeId": "32:1828",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 513,
+                "height": 513
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 141,
+            "align": "center",
+            "margin": {
+              "top": 120
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "vertical position/ordering of the heading underline relative to the heading text"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-1261152836",
+          "figmaNodeId": "8226:199",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 24,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "group-1261154677",
+              "figmaNodeId": "8226:200",
+              "asset": {
+                "nodeId": "8226:200",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-1261152833",
+              "figmaNodeId": "8226:207",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 10,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "click-play-game",
+                  "text": "Click play game",
+                  "figmaNodeId": "8226:208",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 700,
+                    "lineHeight": "26px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "lorem-ipsum",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and ",
+                  "figmaNodeId": "8226:209",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeight": "24px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

@@ -1,0 +1,214 @@
+{
+  "id": "scope",
+  "name": "jilislot.global (scoped)",
+  "type": "FRAME",
+  "box": [
+    2791,
+    -3045,
+    1440,
+    518
+  ],
+  "children": [
+    {
+      "id": "8222:820",
+      "name": "Group 1261154691",
+      "type": "GROUP",
+      "clipsContent": false,
+      "strokeWeight": 1,
+      "box": [
+        2791,
+        -3045,
+        1440,
+        518
+      ],
+      "children": [
+        {
+          "id": "8222:819",
+          "name": "Banner 1",
+          "type": "RECTANGLE",
+          "strokeWeight": 1,
+          "box": [
+            2791,
+            -3045,
+            1440,
+            518
+          ],
+          "imageExported": false,
+          "fills": [
+            {
+              "t": "IMAGE",
+              "scale": "FILL"
+            }
+          ]
+        },
+        {
+          "id": "8219:54",
+          "name": "Frame 8",
+          "type": "FRAME",
+          "layoutMode": "VERTICAL",
+          "itemSpacing": 32,
+          "layoutWrap": "NO_WRAP",
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "HUG",
+          "clipsContent": false,
+          "strokeWeight": 1,
+          "box": [
+            2892,
+            -2919,
+            619,
+            267
+          ],
+          "children": [
+            {
+              "id": "8219:55",
+              "name": "Frame 7",
+              "type": "FRAME",
+              "layoutMode": "VERTICAL",
+              "itemSpacing": 16,
+              "layoutWrap": "NO_WRAP",
+              "layoutSizingHorizontal": "FILL",
+              "layoutSizingVertical": "HUG",
+              "layoutGrow": 0,
+              "layoutAlign": "STRETCH",
+              "clipsContent": false,
+              "strokeWeight": 1,
+              "box": [
+                2892,
+                -2919,
+                619,
+                186
+              ],
+              "children": [
+                {
+                  "id": "8219:1261",
+                  "name": "Jili Slot - Play Jili Online Slot | Free Games Play",
+                  "type": "TEXT",
+                  "characters": "Jili Slot - Play Jili Online Slot | Free Games Play",
+                  "layoutSizingHorizontal": "FILL",
+                  "layoutSizingVertical": "HUG",
+                  "layoutGrow": 0,
+                  "layoutAlign": "STRETCH",
+                  "strokeWeight": 1,
+                  "box": [
+                    2892,
+                    -2919,
+                    619,
+                    116
+                  ],
+                  "fills": [
+                    {
+                      "t": "SOLID",
+                      "c": "#FFFFFF"
+                    }
+                  ],
+                  "style": {
+                    "fontFamily": "Inter",
+                    "fontSize": 48,
+                    "fontWeight": 700,
+                    "textAlignHorizontal": "LEFT",
+                    "lineHeight": "58.09px"
+                  }
+                },
+                {
+                  "id": "8219:57",
+                  "name": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+                  "type": "TEXT",
+                  "characters": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+                  "layoutSizingHorizontal": "FIXED",
+                  "layoutSizingVertical": "HUG",
+                  "layoutGrow": 0,
+                  "layoutAlign": "INHERIT",
+                  "strokeWeight": 1,
+                  "box": [
+                    2892,
+                    -2787,
+                    518,
+                    54
+                  ],
+                  "fills": [
+                    {
+                      "t": "SOLID",
+                      "c": "#FFFFFF"
+                    }
+                  ],
+                  "style": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "textAlignHorizontal": "LEFT",
+                    "lineHeight": "27px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "8219:58",
+              "name": "Frame 6",
+              "type": "FRAME",
+              "layoutMode": "HORIZONTAL",
+              "itemSpacing": 7,
+              "paddingLeft": 32,
+              "paddingRight": 32,
+              "paddingTop": 15,
+              "paddingBottom": 15,
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutWrap": "NO_WRAP",
+              "layoutSizingHorizontal": "HUG",
+              "layoutSizingVertical": "HUG",
+              "layoutGrow": 0,
+              "layoutAlign": "INHERIT",
+              "clipsContent": false,
+              "cornerRadius": 400,
+              "strokeWeight": 1,
+              "box": [
+                2892,
+                -2701,
+                154,
+                49
+              ],
+              "fills": [
+                {
+                  "t": "SOLID",
+                  "c": "#FCC40B"
+                }
+              ],
+              "children": [
+                {
+                  "id": "8219:59",
+                  "name": "Get Started",
+                  "type": "TEXT",
+                  "characters": "Get Started",
+                  "layoutSizingHorizontal": "HUG",
+                  "layoutSizingVertical": "HUG",
+                  "layoutGrow": 0,
+                  "layoutAlign": "INHERIT",
+                  "strokeWeight": 1,
+                  "box": [
+                    2924,
+                    -2686,
+                    90,
+                    19
+                  ],
+                  "fills": [
+                    {
+                      "t": "SOLID",
+                      "c": "#000000"
+                    }
+                  ],
+                  "style": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 600,
+                    "textAlignHorizontal": "LEFT",
+                    "lineHeight": "19.36px"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

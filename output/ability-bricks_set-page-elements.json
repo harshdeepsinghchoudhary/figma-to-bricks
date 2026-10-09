@@ -1,0 +1,83 @@
+{
+  "name": "bricks/set-page-elements",
+  "label": "Set page elements",
+  "description": "Replace the entire element tree on a page or template. Destructive: every existing element is overwritten. A pre-save revision is captured automatically; pass the returned `revisionId` to `bricks/restore-revision` to undo. Granular alternatives: `bricks/add-element`, `bricks/update-element`, `bricks/remove-element`.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "postId": {
+        "type": "integer",
+        "description": "Post, page, or template ID. The primary identifier; prefer this whenever it is known."
+      },
+      "slug": {
+        "type": "string",
+        "description": "Post slug. Alternative to postId."
+      },
+      "path": {
+        "type": "string",
+        "description": "Hierarchical path like \"parent/child\". Alternative to postId for nested pages."
+      },
+      "title": {
+        "type": "string",
+        "description": "Exact post title. Alternative to `postId`; ambiguous when multiple posts share the same title."
+      },
+      "elements": {
+        "type": "array",
+        "description": "Element objects, not JSON strings. Accepts nested {name, children} format or flat Bricks format. Element `id` is the internal 6-character Bricks ID used by builder references and the default frontend selector `#brxe-{id}`. In nested format, you may omit `id` and Bricks generates ids while preserving parent-child nesting. In flat format, ids and parent references must be valid 6-character ids.",
+        "items": {
+          "type": "object"
+        }
+      },
+      "expectedDocumentDigest": {
+        "type": "string",
+        "description": "Optional optimistic-concurrency precondition. Pass a SHA-256 document digest returned by a preview workflow; the save is rejected if the current Bricks tree changed before commit."
+      }
+    },
+    "required": [
+      "elements"
+    ],
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "elementIds": {
+        "type": "array",
+        "description": "Array of saved element IDs."
+      },
+      "elementCount": {
+        "type": "integer"
+      },
+      "revisionId": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "description": "Revision ID of the snapshot taken before this save. Pass to bricks/restore-revision to roll back. Null if the page had no prior content."
+      },
+      "documentDigest": {
+        "type": "string",
+        "description": "SHA-256 digest of the saved normalized element tree."
+      },
+      "changed": {
+        "type": "boolean"
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": null,
+      "destructive": true,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "destructive": true
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "name": "bricks/render-elements",
+  "label": "Render elements",
+  "description": "Render HTML + CSS for a proposed Bricks element tree without saving, or omit elements to render a post's current saved tree. Use responseFormat `summary` for compact post-save verification. Read-only.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "postId": {
+        "type": "integer",
+        "description": "The post/page/template ID to use as rendering context. When elements are omitted, the ability renders this post's current saved Bricks tree."
+      },
+      "elements": {
+        "type": "array",
+        "description": "Optional proposed Bricks element tree. Omit after a save to render the current stored tree without reading and resending it.",
+        "items": {
+          "type": "object"
+        }
+      },
+      "area": {
+        "type": "string",
+        "enum": [
+          "header",
+          "content",
+          "footer"
+        ],
+        "description": "Optional frozen Bricks area. When supplied, it must match the target post or template area."
+      },
+      "responseFormat": {
+        "type": "string",
+        "enum": [
+          "detailed",
+          "summary"
+        ],
+        "description": "Use `summary` for compact post-save verification of generated markup, landmarks, headings, and responsive CSS. Default `detailed` returns full HTML and CSS."
+      }
+    },
+    "required": [
+      "postId"
+    ],
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "html": {
+        "type": "string",
+        "description": "Rendered HTML output."
+      },
+      "css": {
+        "type": "string",
+        "description": "Generated inline CSS for the elements."
+      },
+      "summary": {
+        "type": "object",
+        "description": "Compact render verification when responseFormat is summary."
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

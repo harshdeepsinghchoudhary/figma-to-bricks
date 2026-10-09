@@ -1,0 +1,226 @@
+[
+  {
+    "id": "9dju5h",
+    "name": "heading",
+    "parent": "uqjwbm",
+    "children": [],
+    "settings": {
+      "text": "Jili Games: Play Seamlessly on Mobile Devices",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "700",
+        "line-height": "40px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "ka32is",
+    "name": "text",
+    "parent": "d8d300",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "5efuho",
+    "name": "text",
+    "parent": "d8d300",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "d8d300",
+    "name": "div",
+    "parent": "lzr7hx",
+    "children": [
+      "ka32is",
+      "5efuho"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "amf0dh",
+    "name": "icon",
+    "parent": "lzr7hx",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/group-432-8226_9.svg",
+          "url": "../../assets/group-432-8226_9.svg"
+        },
+        "height": "46.2",
+        "width": "fill"
+      },
+      "_widthMax": "342px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "lzr7hx",
+    "name": "div",
+    "parent": "uqjwbm",
+    "children": [
+      "d8d300",
+      "amf0dh"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "30",
+      "_columnGap": "30",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "uqjwbm",
+    "name": "div",
+    "parent": "s0e1to",
+    "children": [
+      "9dju5h",
+      "lzr7hx"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "569px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "cm2kxx",
+    "name": "image",
+    "parent": "s0e1to",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/66bd04ca-3a57-48a3-b863-37adf2edd550-8226_77.png",
+        "url": "../../assets/66bd04ca-3a57-48a3-b863-37adf2edd550-8226_77.png"
+      },
+      "_width": "100%",
+      "_widthMax": "570px",
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "s0e1to",
+    "name": "div",
+    "parent": "vn3n0j",
+    "children": [
+      "uqjwbm",
+      "cm2kxx"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "vn3n0j",
+    "name": "div",
+    "parent": "ajma8a",
+    "children": [
+      "s0e1to"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "ajma8a",
+    "name": "container",
+    "parent": "a23mp8",
+    "children": [
+      "vn3n0j"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "a23mp8",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "ajma8a"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

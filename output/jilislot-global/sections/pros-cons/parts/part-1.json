@@ -1,0 +1,57 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "heading",
+      "id": "pros-and-cons-heading",
+      "text": "Pros and Cons of Jili Slot Games BD",
+      "figmaNodeId": "8221:675",
+      "level": 1,
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 34,
+        "fontWeight": 600,
+        "color": "#FFFFFF",
+        "lineHeight": "41.15px",
+        "align": "center"
+      }
+    },
+    {
+      "type": "column",
+      "id": "pros-cons-card",
+      "figmaNodeId": "8221:678",
+      "background": {
+        "gradient": {
+          "angle": 90,
+          "stops": [
+            {
+              "color": "#0DAE2F",
+              "position": 0
+            },
+            {
+              "color": "#D60906",
+              "position": 100
+            }
+          ]
+        }
+      },
+      "children": [
+        {
+          "type": "icon",
+          "id": "pros-icon",
+          "figmaNodeId": "8221:681",
+          "asset": {
+            "nodeId": "8221:681",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "pros-label",
+          "text": "PROS",
+          "figmaNodeId": "8221:683"
+        }
+      ]
+    }
+  ]
+}

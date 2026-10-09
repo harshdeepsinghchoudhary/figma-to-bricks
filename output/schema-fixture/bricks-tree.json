@@ -1,0 +1,253 @@
+[
+  {
+    "id": "zuswxb",
+    "name": "heading",
+    "parent": "6kp7bg",
+    "children": [],
+    "settings": {
+      "text": "We Don't Just Make AI Videos.",
+      "tag": "h1",
+      "_typography": {
+        "font-family": "Source Sans 3",
+        "font-size": "70px",
+        "font-weight": "600",
+        "line-height": "110%",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#3D3D3D"
+        },
+        "text-align": "left"
+      },
+      "_typography:mobile_landscape": {
+        "font-size": "40px"
+      }
+    }
+  },
+  {
+    "id": "cix9ng",
+    "name": "text",
+    "parent": "6kp7bg",
+    "children": [],
+    "settings": {
+      "text": "<p>Performance creative that converts.</p>",
+      "_typography": {
+        "font-family": "Source Sans 3",
+        "font-size": "17px",
+        "font-weight": "400",
+        "line-height": "25.5px",
+        "color": {
+          "raw": "#3D3D3DCC"
+        }
+      }
+    }
+  },
+  {
+    "id": "tqncid",
+    "name": "text-basic",
+    "parent": "6kp7bg",
+    "children": [],
+    "settings": {
+      "text": "CEO of The Motive Point",
+      "_typography": {
+        "font-size": "14px",
+        "font-weight": "600",
+        "color": {
+          "raw": "#3D3D3D"
+        }
+      }
+    }
+  },
+  {
+    "id": "smhmex",
+    "name": "button",
+    "parent": "6kp7bg",
+    "children": [],
+    "settings": {
+      "text": "GET STARTED",
+      "link": {
+        "type": "external",
+        "url": "#contact",
+        "postId": ""
+      },
+      "_padding": {
+        "top": "14",
+        "right": "28",
+        "bottom": "14",
+        "left": "28"
+      },
+      "_typography": {
+        "font-size": "16px",
+        "font-weight": "600",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      }
+    }
+  },
+  {
+    "id": "7d3pwz",
+    "name": "div",
+    "parent": "6kp7bg",
+    "children": [],
+    "settings": {
+      "_height": "24"
+    }
+  },
+  {
+    "id": "6kp7bg",
+    "name": "div",
+    "parent": "06cwa8",
+    "children": [
+      "zuswxb",
+      "cix9ng",
+      "tqncid",
+      "smhmex",
+      "7d3pwz"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "622px"
+    }
+  },
+  {
+    "id": "wio9lz",
+    "name": "image",
+    "parent": "gzobyz",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "assets/hero-1_3.png",
+        "url": "assets/hero-1_3.png"
+      },
+      "_width": "100%",
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "ofs5ke",
+    "name": "icon",
+    "parent": "gzobyz",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "assets/icon-1_2.svg",
+          "url": "assets/icon-1_2.svg"
+        },
+        "height": "77",
+        "width": "77"
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "gzobyz",
+    "name": "div",
+    "parent": "06cwa8",
+    "children": [
+      "wio9lz",
+      "ofs5ke"
+    ],
+    "settings": {
+      "_display": "block",
+      "_width": "513",
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      },
+      "_boxShadow": {
+        "color": {
+          "raw": "#C7C7CC3D"
+        },
+        "values": {
+          "blur": "14",
+          "offsetX": "0",
+          "offsetY": "4",
+          "spread": "0"
+        }
+      }
+    }
+  },
+  {
+    "id": "06cwa8",
+    "name": "container",
+    "parent": "8izqua",
+    "children": [
+      "6kp7bg",
+      "gzobyz"
+    ],
+    "settings": {
+      "_direction": "row",
+      "_rowGap": "64",
+      "_columnGap": "64",
+      "_alignItems": "center",
+      "_justifyContent": "space-between",
+      "_flexWrap": "wrap",
+      "_widthMax": "1200px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "32"
+    }
+  },
+  {
+    "id": "8izqua",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "06cwa8"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "156",
+        "right": "16",
+        "bottom": "240",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FAF9FF"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "top": "120",
+        "bottom": "120"
+      },
+      "_padding:mobile_landscape": {
+        "top": "60",
+        "bottom": "60"
+      }
+    }
+  }
+]

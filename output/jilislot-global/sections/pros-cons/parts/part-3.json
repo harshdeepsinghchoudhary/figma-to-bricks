@@ -1,0 +1,58 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "cons-section",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154380",
+          "figmaNodeId": "8221:697"
+        },
+        {
+          "type": "column",
+          "id": "group-1261154378",
+          "figmaNodeId": "8221:699"
+        },
+        {
+          "type": "row",
+          "id": "cons-header",
+          "figmaNodeId": "8221:700",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 7,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "cons-icon",
+              "figmaNodeId": "8221:701",
+              "asset": {
+                "nodeId": "8221:701",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "heading",
+              "id": "cons-title",
+              "figmaNodeId": "8221:703",
+              "text": "Cons",
+              "level": 1,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 700,
+                "lineHeight": "32px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

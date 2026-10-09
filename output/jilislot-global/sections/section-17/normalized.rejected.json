@@ -1,0 +1,47 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "contact-section",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-1261152850",
+          "figmaNodeId": "8226:382",
+          "layout": {
+            "display": "flex",
+            "direction": "column"
+          }
+        },
+        {
+          "type": "heading",
+          "id": "contact-jili-games-customer-services",
+          "figmaNodeId": "8226:332",
+          "text": "Contact Jili Games Customer Services",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "lineHeight": "41.15px",
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-1261152849",
+          "figmaNodeId": "8226:360",
+          "layout": {
+            "display": "flex",
+            "direction": "row"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section id semantics",
+    "contact-section: dropped unknown field \"_uncertain\""
+  ]
+}

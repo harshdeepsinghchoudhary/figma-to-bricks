@@ -1,0 +1,133 @@
+/**
+ * Merge several compiled section trees into one page tree, in the order given.
+ *
+ * Usage:
+ *   node scripts/merge_sections.js output/<frame> hero who-we-are [more-section-names...]
+ *
+ * Writes output/<frame>/merged/bricks-tree.json. Asset urls are rewritten relative to that folder,
+ * so you can inject it with:  node scripts/4_inject.js output/<frame>/merged <wp-page-id>
+ */
+import fs from "node:fs";
+import path from "node:path";
+
+const [frameDir, ...names] = process.argv.slice(2).filter((a) => !a.startsWith("--"));
+if (!frameDir || !names.length) {
+  console.error("Usage: node scripts/merge_sections.js output/<frame> <section> [<section> ...]");
+  process.exit(1);
+}
+const outDir = path.join(frameDir, "merged");
+fs.mkdirSync(outDir, { recursive: true });
+
+
+// ---------------------------------------------------------------------------------------------
+// Vertical spacing between sections, matched to Figma.
+//   - band    = the section's visible extent (its top-level Figma node(s), e.g. a hero's background image)
+//   - content = the actual content inside it
+//   - padding inside a band is measured (content offset from the band edge)
+//   - the empty gap between two bands is handed out like this:
+//       * previous section has a background image (or is the nav bar)  -> the WHOLE gap goes to the next section's top padding
+//       * next section has a background image                           -> the WHOLE gap goes to the previous section's bottom padding
+//       * two plain sections                                            -> split in half (bottom of one, top of the other)
+// ---------------------------------------------------------------------------------------------
+function loadGeo(frameDir) {
+  const fp = path.join(frameDir, "figma-node.json");
+  if (!fs.existsSync(fp)) return null;
+  const root = JSON.parse(fs.readFileSync(fp, "utf-8"));
+  const box = new Map(), top = new Map();
+  (function walk(n, topId) {
+    const b = n.absoluteBoundingBox;
+    if (n.id && b) { box.set(n.id, { x: b.x, y: b.y, w: b.width, h: b.height }); top.set(n.id, topId); }
+    for (const c of n.children || []) walk(c, topId);
+  })(root, null);
+  for (const c of root.children || []) (function walk(n) { top.set(n.id, c.id); for (const k of n.children || []) walk(k); })(c);
+  return { box, top, rootBox: box.get(root.id) || null };
+}
+const unionBox = (bs) => {
+  if (!bs.length) return null;
+  const x1 = Math.min(...bs.map((b) => b.x)), y1 = Math.min(...bs.map((b) => b.y));
+  const x2 = Math.max(...bs.map((b) => b.x + b.w)), y2 = Math.max(...bs.map((b) => b.y + b.h));
+  return { x: x1, y: y1, w: x2 - x1, h: y2 - y1 };
+};
+function sectionBands(frameDir, names, trees) {
+  const geo = loadGeo(frameDir);
+  if (!geo) return null;
+  const out = [];
+  for (const [i, name] of names.entries()) {
+    const np = path.join(frameDir, "sections", name, "normalized.json");
+    if (!fs.existsSync(np)) return null;
+    const ids = new Set();
+    (function walk(n) { if (!n || typeof n !== "object") return; if (n.figmaNodeId && geo.box.has(n.figmaNodeId)) ids.add(n.figmaNodeId); if (n.asset?.nodeId && geo.box.has(n.asset.nodeId)) ids.add(n.asset.nodeId); for (const c of n.children || []) walk(c); })(JSON.parse(fs.readFileSync(np, "utf-8")));
+    if (!ids.size) return null;
+    const tops = [...new Set([...ids].map((id) => geo.top.get(id)).filter(Boolean))];
+    const band = unionBox(tops.map((t) => geo.box.get(t)).filter(Boolean));
+    const sec = trees[i].find((e) => e.name === "section");
+    const hasBgImage = !!sec?.settings?._background?.image;
+    let leafBoxes = [...ids].map((id) => geo.box.get(id)).filter((b) => !tops.includes(null));
+    if (hasBgImage) leafBoxes = leafBoxes.filter((b) => !(b.w >= band.w * 0.95 && b.h >= band.h * 0.9)); // drop the background itself
+    const content = unionBox(leafBoxes.filter((b) => !(b.w >= band.w * 0.95 && b.h >= band.h * 0.95 && leafBoxes.length > 1))) || unionBox(leafBoxes) || band;
+    out.push({ name, band, content, bg: hasBgImage, sec });
+  }
+  return out;
+}
+function applyVerticalSpacing(frameDir, names, trees) {
+  const b = sectionBands(frameDir, names, trees);
+  if (!b) { console.log("Spacing: no Figma geometry for these sections - kept the compiler's default padding."); return; }
+  const r = (v) => Math.max(0, Math.round(v));
+  const pad = b.map((s) => ({ top: s.content.y - s.band.y, bottom: s.band.y + s.band.h - (s.content.y + s.content.h) }));
+  const navFirst = (i) => i === 0 && b.length > 1 && b[0].band.h <= 160;
+  for (let i = 0; i + 1 < b.length; i++) {
+    const A = b[i], B = b[i + 1];
+    const G = Math.max(0, B.band.y - (A.band.y + A.band.h));
+    if (G < 1) continue;
+    if (A.bg || navFirst(i)) pad[i + 1].top += G;
+    else if (B.bg) pad[i].bottom += G;
+    else { pad[i].bottom += G / 2; pad[i + 1].top += G / 2; }
+  }
+  const last = pad.length - 1;
+  if (last > 0 && !b[last].bg && pad[last].bottom < 1) pad[last].bottom = pad[last].top; // nothing below it in the selection: mirror the top
+  b.forEach((s, i) => {
+    const st = s.sec?.settings;
+    if (!st) return;
+    st._padding = { ...(st._padding || {}) };
+    delete st._padding["top"]; delete st._padding["bottom"];
+    for (const k of Object.keys(st)) if (/^_padding:/.test(k)) { delete st[k].top; delete st[k].bottom; if (!Object.keys(st[k]).length) delete st[k]; }
+    const tab = {}, mob = {};
+    for (const side of ["top", "bottom"]) {
+      const v = r(pad[i][side]);
+      if (v <= 0) continue;
+      st._padding[side] = String(v);
+      const t = v >= 120 ? 120 : Math.round(v / 2);
+      tab[side] = String(t); mob[side] = String(Math.min(t, 60));
+    }
+    st._padding = { top: st._padding.top, right: st._padding.right, bottom: st._padding.bottom, left: st._padding.left };
+    for (const k of Object.keys(st._padding)) if (st._padding[k] === undefined) delete st._padding[k];
+    if (Object.keys(tab).length) st["_padding:tablet_portrait"] = { ...(st["_padding:tablet_portrait"] || {}), ...tab };
+    if (Object.keys(mob).length) st["_padding:mobile_landscape"] = { ...(st["_padding:mobile_landscape"] || {}), ...mob };
+    console.log(`  spacing ${s.name}: top ${pad[i].top < 1 ? 0 : r(pad[i].top)}px, bottom ${r(pad[i].bottom)}px${s.bg ? " (background image)" : ""}`);
+  });
+}
+
+const merged = [];
+const seen = new Set();
+const trees = [];
+for (const name of names) {
+  const secDir = path.join(frameDir, "sections", name);
+  const treePath = path.join(secDir, "bricks-tree.json");
+  if (!fs.existsSync(treePath)) { console.error(`Missing ${treePath} - compile that section first.`); process.exit(1); }
+  const tree = JSON.parse(fs.readFileSync(treePath, "utf-8"));
+  trees.push(tree);
+  const fix = (u) => (typeof u === "string" && !u.startsWith("http") ? path.relative(outDir, path.resolve(secDir, u)).split(path.sep).join("/") : u);
+  for (const el of tree) {
+    if (seen.has(el.id)) { console.error(`Duplicate Bricks element id ${el.id} in section ${name} - re-run its compile to get new ids.`); process.exit(1); }
+    seen.add(el.id);
+    const s = el.settings || {};
+    if (s.image?.url) { s.image.url = fix(s.image.url); if (s.image.full) s.image.full = fix(s.image.full); }
+    if (s._background?.image?.url) { s._background.image.url = fix(s._background.image.url); if (s._background.image.full) s._background.image.full = fix(s._background.image.full); }
+    if (s.icon?.svg?.url) { s.icon.svg.url = fix(s.icon.svg.url); if (s.icon.svg.full) s.icon.svg.full = fix(s.icon.svg.full); }
+    merged.push(el);
+  }
+  console.log(`+ ${name}: ${tree.length} element(s)`);
+}
+if (!process.argv.includes("--no-spacing")) applyVerticalSpacing(frameDir, names, trees);
+fs.writeFileSync(path.join(outDir, "bricks-tree.json"), JSON.stringify(merged, null, 2));
+console.log(`Wrote ${path.join(outDir, "bricks-tree.json")} (${merged.length} element(s), top-level sections in order: ${names.join(", ")})`);

@@ -1,0 +1,96 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "id": "info-point-list",
+      "figmaNodeId": "8221:766",
+      "type": "column",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 14,
+        "align": "stretch"
+      },
+      "children": [
+        {
+          "id": "info-point-1",
+          "type": "row",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 14
+          },
+          "children": [
+            {
+              "id": "icon-1",
+              "figmaNodeId": "8221:769",
+              "type": "icon",
+              "asset": {
+                "nodeId": "8221:769",
+                "kind": "svg"
+              }
+            },
+            {
+              "id": "text-1",
+              "figmaNodeId": "8221:768",
+              "type": "text",
+              "text": "Lorem Ipsum is simply dummy text of the"
+            }
+          ]
+        },
+        {
+          "id": "info-point-2",
+          "type": "row",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 14
+          },
+          "children": [
+            {
+              "id": "icon-2",
+              "figmaNodeId": "8221:773",
+              "type": "icon",
+              "asset": {
+                "nodeId": "8221:773",
+                "kind": "svg"
+              }
+            },
+            {
+              "id": "text-2",
+              "figmaNodeId": "8221:772",
+              "type": "text",
+              "text": "Lorem Ipsum is simply dummy text of the"
+            }
+          ]
+        },
+        {
+          "id": "info-point-3",
+          "type": "row",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 14
+          },
+          "children": [
+            {
+              "id": "icon-3",
+              "figmaNodeId": "8221:777",
+              "type": "icon",
+              "asset": {
+                "nodeId": "8221:777",
+                "kind": "svg"
+              }
+            },
+            {
+              "id": "text-3",
+              "figmaNodeId": "8221:776",
+              "type": "text",
+              "text": "Lorem Ipsum is simply dummy text of the"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

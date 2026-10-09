@@ -1,0 +1,643 @@
+[
+  {
+    "name": "mcp-adapter-discover-abilities",
+    "title": "Discover Abilities",
+    "description": "Discover all available WordPress abilities in the system. Returns a list of all registered abilities with their basic information.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "abilities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "label",
+              "description"
+            ]
+          }
+        }
+      },
+      "required": [
+        "abilities"
+      ]
+    },
+    "annotations": {
+      "title": "Discover Abilities",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "idempotentHint": true
+    }
+  },
+  {
+    "name": "mcp-adapter-get-ability-info",
+    "title": "Get Ability Info",
+    "description": "Get detailed information about a specific WordPress ability including its input/output schema, description, and usage examples.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ability_name": {
+          "type": "string",
+          "description": "The full name of the ability to get information about"
+        }
+      },
+      "required": [
+        "ability_name"
+      ]
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "input_schema": {
+          "type": "object",
+          "description": "JSON Schema for the ability input parameters"
+        },
+        "output_schema": {
+          "type": "object",
+          "description": "JSON Schema for the ability output structure"
+        },
+        "meta": {
+          "type": "object",
+          "description": "Additional metadata about the ability"
+        }
+      },
+      "required": [
+        "name",
+        "label",
+        "description",
+        "input_schema"
+      ]
+    },
+    "annotations": {
+      "title": "Get Ability Info",
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "idempotentHint": true
+    }
+  },
+  {
+    "name": "mcp-adapter-execute-ability",
+    "title": "Execute Ability",
+    "description": "Execute a WordPress ability with the provided parameters. This is the primary execution layer that can run any registered ability.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ability_name": {
+          "type": "string",
+          "description": "The full name of the ability to execute"
+        },
+        "parameters": {
+          "type": "object",
+          "description": "Parameters to pass to the ability"
+        }
+      },
+      "required": [
+        "ability_name",
+        "parameters"
+      ]
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean"
+        },
+        "data": {
+          "type": [
+            "object",
+            "array",
+            "string",
+            "number",
+            "integer",
+            "boolean",
+            "null"
+          ],
+          "description": "The result data from the ability execution"
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message if execution failed"
+        }
+      },
+      "required": [
+        "success"
+      ]
+    },
+    "annotations": {
+      "title": "Execute Ability",
+      "readOnlyHint": false,
+      "destructiveHint": true,
+      "idempotentHint": false
+    }
+  },
+  {
+    "name": "bricks-get-design-context",
+    "title": "Get design context",
+    "description": "One-call summary of the site design context: color palettes, global classes, theme styles, components, global variables, and responsive breakpoints. Pass `responseFormat: \"summary\"` for capped orientation output, or `includeUsage: true` to add `usedOnPosts` per component.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "includeUsage": {
+          "type": "boolean",
+          "description": "Include `usedOnPosts` per component, limited to posts the caller can edit in the Builder. Off by default: the first computation scans every Bricks post and can take a few seconds on large sites. Usage is cached for one hour and filtered for the current caller on every read."
+        },
+        "responseFormat": {
+          "type": "string",
+          "enum": [
+            "detailed",
+            "summary"
+          ],
+          "description": "Use `summary` for session orientation: includes counts, breakpoints, and capped resource lists. Default `detailed` preserves the full current response."
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 500,
+          "description": "Maximum items per large list when `responseFormat` is `summary`. Default 100."
+        }
+      },
+      "additionalProperties": false,
+      "default": []
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "counts": {
+          "type": "object"
+        },
+        "colorPalettes": {
+          "type": "array"
+        },
+        "globalClasses": {
+          "type": "array"
+        },
+        "themeStyles": {
+          "type": "array"
+        },
+        "components": {
+          "type": "array"
+        },
+        "globalVariables": {
+          "type": "array"
+        },
+        "variableCategories": {
+          "type": "array",
+          "description": "Global variable categories, including scale configs used by generate-scale-variables."
+        },
+        "breakpoints": {
+          "type": "object",
+          "description": "Current responsive breakpoint contract: customEnabled, isMobileFirst, baseKey, baseWidth, and active breakpoint items."
+        },
+        "truncated": {
+          "type": "object",
+          "description": "Present in summary responses when large lists were capped."
+        },
+        "version": {
+          "type": "integer",
+          "description": "Legacy current-site design counter. On mixed-authority multisite setups, use designSystemSnapshot and the resource-specific versions instead."
+        },
+        "designSystemSnapshot": {
+          "type": "object",
+          "description": "Authority-correct design snapshot. Use its resource version for focused writes and its token for workspace drift checks.",
+          "properties": {
+            "token": {
+              "type": "string"
+            },
+            "authorities": {
+              "type": "array"
+            },
+            "resources": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "token",
+            "authorities",
+            "resources"
+          ],
+          "additionalProperties": false
+        },
+        "usageCached": {
+          "type": "boolean",
+          "description": "True when component usage was served from the transient. Absent when `includeUsage` was not requested."
+        }
+      }
+    },
+    "annotations": {
+      "title": "Get design context",
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "bricks-checkout-site-repository",
+    "title": "Checkout site repository",
+    "description": "Return a cursor-bounded, filterable file manifest for editable Bricks pages, templates, and design resources without loading every complete document. Known design lookups can omit documents and select one resource kind/query. Includes exact page digests and optional best-effort direct dependency hints; hints are not proof that a resource is unused or safe to delete.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "cursor": {
+          "type": "string",
+          "description": "Opaque continuation cursor returned by the previous manifest call."
+        },
+        "perPage": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 200,
+          "description": "Documents per index page. Default 100, maximum 200."
+        },
+        "postTypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Optional subset of Bricks-enabled post types. Templates use the bricks_template post type."
+        },
+        "includeDependencies": {
+          "type": "boolean",
+          "description": "Include class, variable, and component references for each indexed document. Default true."
+        },
+        "includeDocuments": {
+          "type": "boolean",
+          "description": "Include page/template summaries. Set false for a design-resource-only lookup. Default true."
+        },
+        "includeDesign": {
+          "type": "boolean",
+          "description": "Include the bounded design-system manifest. Default true and requires design-system access."
+        },
+        "designKinds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "colorPalettes",
+              "globalClasses",
+              "themeStyles",
+              "components",
+              "globalVariables",
+              "variableCategories",
+              "breakpoints"
+            ]
+          },
+          "description": "Optional design-summary kinds to return. Ownership/version metadata is always preserved."
+        },
+        "query": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "Optional case-insensitive title search for documents and ID/name/label search for design summaries. Use a known post ID directly with the page workspace."
+        }
+      },
+      "additionalProperties": false,
+      "default": []
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "contractVersion": {
+          "type": "string"
+        },
+        "root": {
+          "type": "string"
+        },
+        "documents": {
+          "type": "object"
+        },
+        "design": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "routes": {
+          "type": "object"
+        }
+      }
+    },
+    "annotations": {
+      "title": "Checkout site repository",
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "bricks-resolve-agent-file",
+    "title": "Resolve agent file",
+    "description": "Resolve an exact or unambiguous page or design-resource name, ID, or canonical path to one editable Bricks file and an opaque baseline for a two-call edit. Matching is normalized exact-then-prefix, never fuzzy; incomplete or ambiguous discovery returns summaries only.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "scope": {
+          "type": "string",
+          "enum": [
+            "page",
+            "design"
+          ]
+        },
+        "resourceKinds": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "globalClass",
+              "globalVariable",
+              "themeStyle",
+              "component"
+            ]
+          }
+        },
+        "maxMatches": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        }
+      },
+      "required": [
+        "query",
+        "scope"
+      ],
+      "additionalProperties": false,
+      "default": []
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "contractVersion": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "target": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "matches": {
+          "type": "array"
+        },
+        "path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "document": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "editingContract": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "coverage": {
+          "type": "object"
+        },
+        "routes": {
+          "type": "object"
+        }
+      }
+    },
+    "annotations": {
+      "title": "Resolve agent file",
+      "readOnlyHint": true,
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "bricks-checkout-site-edit-map",
+    "title": "Checkout site edit map",
+    "description": "Checkout up to 25 explicit targets through the targets array, using {scope: page, postId} or {scope: design, resource, id}. When IDs are known, filter element outlines with elementIds. Canonical files remain server-side; short selectionRef values bind each typed edit to an authenticated exact selection.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "targets": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 25,
+          "description": "Pass exact targets only, for example {\"scope\":\"page\",\"postId\":13} or {\"scope\":\"design\",\"resource\":\"globalVariable\",\"id\":\"accent\"}. Do not pass pageIds, resourceIds, or responseFormat.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "scope": {
+                "type": "string",
+                "enum": [
+                  "page",
+                  "design"
+                ],
+                "description": "Use page with postId, or design with resource and id."
+              },
+              "postId": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "resource": {
+                "type": "string",
+                "enum": [
+                  "globalClass",
+                  "globalVariable",
+                  "themeStyle",
+                  "component"
+                ]
+              },
+              "id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "scope"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "elementIds": {
+          "type": "array",
+          "maxItems": 64,
+          "description": "When exact element IDs are known, return only those element outlines. Design resources without elements remain visible.",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        },
+        "elementNames": {
+          "type": "array",
+          "maxItems": 32,
+          "description": "Optionally restrict element outlines to exact Bricks element names.",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          }
+        },
+        "textQuery": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "Optionally restrict outlines to visible text containing this case-insensitive query."
+        },
+        "editableOnly": {
+          "type": "boolean",
+          "description": "Return only element outlines that advertise at least one typed editable operation."
+        }
+      },
+      "required": [
+        "targets"
+      ],
+      "additionalProperties": false,
+      "default": []
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "contractVersion": {
+          "type": "string"
+        },
+        "workspaceToken": {
+          "type": "string"
+        },
+        "expiresAt": {
+          "type": "integer"
+        },
+        "atomic": {
+          "type": "boolean"
+        },
+        "resources": {
+          "type": "array"
+        },
+        "manifest": {
+          "type": "object"
+        }
+      }
+    },
+    "annotations": {
+      "title": "Checkout site edit map",
+      "destructiveHint": false
+    }
+  },
+  {
+    "name": "bricks-create-post",
+    "title": "Create post",
+    "description": "Create a new page or post. Optionally seed a Bricks element tree atomically with creation. Returns the new post ID, builder URL, and revision ID.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Post title."
+        },
+        "postType": {
+          "type": "string",
+          "description": "Post type slug. Default: page. Must be a Bricks-enabled post type."
+        },
+        "status": {
+          "type": "string",
+          "description": "Post status. Default: draft.",
+          "enum": [
+            "draft",
+            "publish",
+            "pending",
+            "private",
+            "future"
+          ]
+        },
+        "slug": {
+          "type": "string",
+          "description": "URL slug. Auto-generated from title if omitted."
+        },
+        "parent": {
+          "type": "integer",
+          "description": "Parent post ID (for hierarchical post types like pages)."
+        },
+        "elements": {
+          "type": "array",
+          "description": "Bricks element objects to seed the page with, not JSON strings. When provided, the tree is saved atomically with the post; partial state is never written. Element `id` values are internal 6-character Bricks IDs used by builder references and default frontend selectors. In nested format, you may omit ids and Bricks generates them while preserving parent-child nesting. In flat format, ids and parent references must be valid 6-character ids.",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "additionalProperties": false,
+      "default": []
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "postId": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "postType": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "editUrl": {
+          "type": "string"
+        },
+        "builderUrl": {
+          "type": "string"
+        },
+        "permalink": {
+          "type": "string"
+        },
+        "revisionId": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Revision ID if elements were seeded."
+        }
+      }
+    },
+    "annotations": {
+      "title": "Create post",
+      "destructiveHint": false
+    }
+  }
+]

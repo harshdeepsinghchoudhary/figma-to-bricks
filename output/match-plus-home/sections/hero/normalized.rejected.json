@@ -1,0 +1,153 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "match-plus-home",
+      "figmaNodeId": "scope",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 99,
+        "align": "center"
+      },
+      "size": {
+        "width": 1275.55,
+        "height": 503.72
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "left-column",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "rowGap": 32
+          },
+          "size": {
+            "width": 513,
+            "height": 390
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "masthead-title",
+              "figmaNodeId": "32:1321",
+              "level": 1,
+              "text": "Machplus: Best Digital Marketing Agency in Malaysia",
+              "layout": {
+                "display": "block"
+              },
+              "size": {
+                "width": 509,
+                "height": 195
+              },
+              "typography": {
+                "fontFamily": "Source Sans 3",
+                "fontSize": 48,
+                "fontWeight": 700,
+                "lineHeight": "135%",
+                "align": "left",
+                "colorGradient": {
+                  "angle": 172.73,
+                  "stops": [
+                    {
+                      "color": "#3D3D3D",
+                      "position": 0
+                    },
+                    {
+                      "color": "#EF5366",
+                      "position": 100
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "intro-copy",
+              "figmaNodeId": "32:1322",
+              "text": "In today's fast-paced digital world, having a strong online presence is crucial for businesses to thrive and succeed. That's where Machplus, the best digital marketing agency in Malaysia, comes into play. With our expertise and innovative strategies, we help businesses effectively reach their target audience and achieve their goals.",
+              "layout": {
+                "display": "block"
+              },
+              "size": {
+                "width": 513,
+                "height": 128
+              },
+              "typography": {
+                "fontFamily": "Source Sans 3",
+                "fontSize": 17,
+                "fontWeight": 400,
+                "lineHeight": "25.5px",
+                "align": "left",
+                "color": "#3D3D3DCC"
+              }
+            },
+            {
+              "type": "button",
+              "id": "start-journey-button",
+              "figmaNodeId": "32:1324",
+              "href": "",
+              "text": "Start your Marketing journey",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 10,
+                "padding": {
+                  "top": 9,
+                  "right": 20,
+                  "bottom": 11,
+                  "left": 20
+                },
+                "justify": "center",
+                "align": "center"
+              },
+              "size": {
+                "width": 513,
+                "height": 47
+              },
+              "background": {
+                "gradient": {
+                  "angle": 96.52,
+                  "stops": [
+                    {
+                      "color": "#EF5366",
+                      "position": 0
+                    },
+                    {
+                      "color": "#D64A5B",
+                      "position": 100
+                    }
+                  ]
+                },
+                "border": {
+                  "radius": 4
+                },
+                "notes": [
+                  "Icon 'I32:1324;32:17847;137:2597' rendered inside button; not a child."
+                ]
+              }
+            },
+            {
+              "type": "image",
+              "id": "group-38",
+              "figmaNodeId": "32:1097",
+              "asset": {
+                "nodeId": "32:1097",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 663.55,
+                "height": 456.6
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Button '32:1324' has no link target in Figma data; href left empty."
+  ]
+}

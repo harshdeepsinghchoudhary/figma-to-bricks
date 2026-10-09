@@ -1,0 +1,73 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "group-1261154717",
+      "figmaNodeId": "8222:1185",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154716",
+          "figmaNodeId": "8222:1184",
+          "layout": {
+            "direction": "column",
+            "gap": 59
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "group-1261154712",
+              "figmaNodeId": "8222:1149",
+              "asset": {
+                "nodeId": "8222:1149",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-1261152828",
+              "figmaNodeId": "8222:1128",
+              "layout": {
+                "direction": "column",
+                "gap": 16,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "login-to-your-account",
+                  "figmaNodeId": "8222:1129",
+                  "text": "Log in to your account",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 24,
+                    "fontWeight": 600,
+                    "lineHeight": "29.05px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "lorem-ipsum",
+                  "figmaNodeId": "8222:1130",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

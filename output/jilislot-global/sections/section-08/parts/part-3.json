@@ -1,0 +1,75 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jilislot-global-part3",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154718",
+          "figmaNodeId": "8222:1186",
+          "layout": {
+            "direction": "column",
+            "gap": 16,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "jilislot-global-part3-column-1",
+              "children": [
+                {
+                  "type": "image",
+                  "id": "group-1261154713",
+                  "figmaNodeId": "8222:1156",
+                  "asset": {
+                    "nodeId": "8222:1156",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "frame-1261152829-1",
+                  "figmaNodeId": "8222:1131",
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "start-playing-jili-games",
+                      "figmaNodeId": "8222:1132",
+                      "text": "Start playing JILI games",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 24,
+                        "fontWeight": 600,
+                        "lineHeight": "29.05px",
+                        "color": "#FFFFFF"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "lorem-ipsum",
+                      "figmaNodeId": "8222:1133",
+                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 18,
+                        "fontWeight": 400,
+                        "lineHeight": "27px",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout details for outer container omitted"
+  ]
+}
