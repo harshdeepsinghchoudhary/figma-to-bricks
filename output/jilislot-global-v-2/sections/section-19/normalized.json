@@ -1,0 +1,128 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "group-1261154751",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-1261152809-1",
+          "figmaNodeId": "8232:744",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-1261152808-1",
+              "figmaNodeId": "8232:745",
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "conclusion",
+                  "figmaNodeId": "8232:746",
+                  "text": "Conclusion",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 0,
+                    "justify": "start"
+                  },
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 48,
+                    "fontWeight": 700,
+                    "lineHeight": "58.09px",
+                    "color": "#000000",
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 755
+                  },
+                  "background": {
+                    "color": "#FFFFFF"
+                  },
+                  "level": 2
+                },
+                {
+                  "type": "text",
+                  "id": "winning-in-aviator",
+                  "figmaNodeId": "8232:747",
+                  "text": "Winning in Aviator takes more than luck. Use smart strategies, stay in control, and play with a clear plan. The key is to enjoy the game while making smart moves!",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 0,
+                    "justify": "start"
+                  },
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 500,
+                    "lineHeight": "30px",
+                    "color": "#000000",
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 755
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 10,
+                "align": "start"
+              }
+            },
+            {
+              "type": "button",
+              "id": "get-started",
+              "figmaNodeId": "8232:748",
+              "text": "Get Started",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 600,
+                "lineHeight": "19.36px",
+                "align": "left",
+                "color": "#000000"
+              },
+              "background": {
+                "color": "#FFFFFF"
+              },
+              "border": {
+                "radius": 400
+              },
+              "size": {
+                "width": 154
+              },
+              "layout": {
+                "padding": {
+                  "top": 15,
+                  "right": 32,
+                  "bottom": 15,
+                  "left": 32
+                }
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 32,
+            "align": "center"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "stitch: 1 node(s) added from Figma data because the model's parts did not include them",
+    "stitch: dropped 0 duplicate element(s) emitted by overlapping parts and 1 element(s) whose Figma node id does not exist (vector-1)"
+  ]
+}

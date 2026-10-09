@@ -1,0 +1,41 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "frame-1261152823",
+      "figmaNodeId": "8232:25",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 100,
+        "align": "stretch"
+      },
+      "size": {
+        "width": 1200,
+        "height": 297
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8232:26",
+          "asset": {
+            "nodeId": "8232:26",
+            "kind": "image"
+          },
+          "size": {
+            "width": 532,
+            "height": 297
+          },
+          "border": {
+            "radius": 12
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Height of the text/button content (right side) was not present in this part of the Figma data; its size, fills and typography will be supplied by later parts."
+  ]
+}

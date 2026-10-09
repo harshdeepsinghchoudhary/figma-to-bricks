@@ -1,0 +1,85 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-1261152835",
+          "figmaNodeId": "8232:574",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 24
+          },
+          "size": {
+            "width": 235,
+            "height": 218
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "group-1261154677",
+              "figmaNodeId": "8232:575",
+              "asset": {
+                "nodeId": "8232:575",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 94,
+                "height": 110
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-1261152833",
+              "figmaNodeId": "8232:582",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 10
+              },
+              "size": {
+                "width": 235,
+                "height": 84
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "search-for-a-jili-slot",
+                  "figmaNodeId": "8232:583",
+                  "text": "Search for a Jili slot",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 700,
+                    "lineHeight": "26px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "lorem-ipsum",
+                  "figmaNodeId": "8232:584",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and ",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeight": "24px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

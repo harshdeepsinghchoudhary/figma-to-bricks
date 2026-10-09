@@ -1,0 +1,124 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "features-row",
+      "figmaNodeId": "8232:54",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 68
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "unique-features",
+          "figmaNodeId": "8232:55",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "center",
+            "justify": "center"
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "unique-features-icon",
+              "figmaNodeId": "8232:58",
+              "asset": {
+                "nodeId": "8232:58",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "heading",
+              "id": "unique-features-heading",
+              "figmaNodeId": "8232:56",
+              "text": "Unique Features",
+              "level": 3,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "26px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            },
+            {
+              "type": "text",
+              "id": "unique-features-desc",
+              "figmaNodeId": "8232:57",
+              "text": "Innovative bonuses and mechanics.",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "22px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "id": "fairness-features",
+          "figmaNodeId": "8232:65",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "center",
+            "justify": "center"
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "fairness-icon",
+              "figmaNodeId": "8232:68",
+              "asset": {
+                "nodeId": "8232:68",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "heading",
+              "id": "fairness-heading",
+              "figmaNodeId": "8232:66",
+              "text": "Fair & Trusted",
+              "level": 3,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "26px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            },
+            {
+              "type": "text",
+              "id": "fairness-desc",
+              "figmaNodeId": "8232:67",
+              "text": "Certified RNG and solid RTP rates.",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "22px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Layout: in the measured row, [8232:54, 8232:55, 8232:56, 8232:57, 8232:58] and [8232:68, 8232:65, 8232:66, 8232:67] are separate side-by-side items, so they must be SIBLING elements. [8232:68, 8232:65, 8232:66, 8232:67] must not be nested inside the element holding [8232:54, 8232:55, 8232:56, 8232:57, 8232:58].",
+    "Layout: in the measured column, [8232:55, 8232:56, 8232:57] and [8232:58] are separate stacked items, so they must be SIBLING elements. [8232:58] must not be nested inside the element holding [8232:55, 8232:56, 8232:57].",
+    "Layout: in the measured column, [8232:65, 8232:66, 8232:67] and [8232:68] are separate stacked items, so they must be SIBLING elements. [8232:68] must not be nested inside the element holding [8232:65, 8232:66, 8232:67]."
+  ]
+}

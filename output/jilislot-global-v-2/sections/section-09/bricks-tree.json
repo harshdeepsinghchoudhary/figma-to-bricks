@@ -1,0 +1,476 @@
+[
+  {
+    "id": "umsiww",
+    "name": "heading",
+    "parent": "5vn2ti",
+    "children": [],
+    "settings": {
+      "text": "How to Start Playing Jili Games?",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "600",
+        "line-height": "41.15px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "xzcj9t",
+    "name": "image",
+    "parent": "8g9mqs",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154677-8232_355.svg",
+        "url": "../../assets/group-1261154677-8232_355.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "94px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "4eovw9",
+    "name": "heading",
+    "parent": "try4wn",
+    "children": [],
+    "settings": {
+      "text": "Register an account",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "29.05px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "184cr2",
+    "name": "text",
+    "parent": "try4wn",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "try4wn",
+    "name": "div",
+    "parent": "8g9mqs",
+    "children": [
+      "4eovw9",
+      "184cr2"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "8g9mqs",
+    "name": "div",
+    "parent": "azj1st",
+    "children": [
+      "xzcj9t",
+      "try4wn"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "57",
+      "_columnGap": "57",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "azj1st",
+    "name": "div",
+    "parent": "xc2nel",
+    "children": [
+      "8g9mqs"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "50",
+        "right": "43",
+        "bottom": "44",
+        "left": "44"
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#FFFFFF2E"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      }
+    }
+  },
+  {
+    "id": "p3l7kh",
+    "name": "image",
+    "parent": "fnxy6f",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154712-8232_367.svg",
+        "url": "../../assets/group-1261154712-8232_367.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "94px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "3xdhf0",
+    "name": "heading",
+    "parent": "iuy5nv",
+    "children": [],
+    "settings": {
+      "text": "Log in to your account",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "29.05px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "hfvx6y",
+    "name": "text",
+    "parent": "iuy5nv",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "iuy5nv",
+    "name": "div",
+    "parent": "fnxy6f",
+    "children": [
+      "3xdhf0",
+      "hfvx6y"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "fnxy6f",
+    "name": "div",
+    "parent": "2n1g5d",
+    "children": [
+      "p3l7kh",
+      "iuy5nv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "59",
+      "_columnGap": "59",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "2n1g5d",
+    "name": "div",
+    "parent": "xc2nel",
+    "children": [
+      "fnxy6f"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "50",
+        "right": "43",
+        "bottom": "44",
+        "left": "44"
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#FFFFFF2E"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      }
+    }
+  },
+  {
+    "id": "wi9awr",
+    "name": "image",
+    "parent": "soz1nb",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154713-8232_381.svg",
+        "url": "../../assets/group-1261154713-8232_381.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "94px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "y6n3w9",
+    "name": "heading",
+    "parent": "hgxu11",
+    "children": [],
+    "settings": {
+      "text": "Start playing JILI games",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "29.05px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "vr48gf",
+    "name": "text",
+    "parent": "hgxu11",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "hgxu11",
+    "name": "div",
+    "parent": "soz1nb",
+    "children": [
+      "y6n3w9",
+      "vr48gf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "soz1nb",
+    "name": "div",
+    "parent": "w8qjn5",
+    "children": [
+      "wi9awr",
+      "hgxu11"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "61",
+      "_columnGap": "61",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "w8qjn5",
+    "name": "div",
+    "parent": "xc2nel",
+    "children": [
+      "soz1nb"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "50",
+        "right": "43",
+        "bottom": "44",
+        "left": "44"
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#FFFFFF2E"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      }
+    }
+  },
+  {
+    "id": "xc2nel",
+    "name": "div",
+    "parent": "5vn2ti",
+    "children": [
+      "azj1st",
+      "2n1g5d",
+      "w8qjn5"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(3, 1fr)",
+      "_gridGap": "24",
+      "_alignItemsGrid": "stretch",
+      "_width": "100%",
+      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
+      "_gridGap:tablet_portrait": "24",
+      "_gridTemplateColumns:mobile_portrait": "1fr"
+    }
+  },
+  {
+    "id": "5vn2ti",
+    "name": "div",
+    "parent": "d4gbs6",
+    "children": [
+      "umsiww",
+      "xc2nel"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "50",
+      "_columnGap": "50",
+      "_alignItems": "center",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "d4gbs6",
+    "name": "container",
+    "parent": "9r4l51",
+    "children": [
+      "5vn2ti"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "9r4l51",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "d4gbs6"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

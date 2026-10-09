@@ -228,6 +228,23 @@ function applyLayers(node, settings) {
   if (node._overlay) {
     css.push(`#brxe-__ID__::before {\n  content: "";\n  position: absolute;\n  inset: 0;\n  background: ${gradientCss(node._overlay)};\n  pointer-events: none;\n  z-index: 0;\n}`);
   }
+  if (node._pseudo?.length) {
+    // Decoration layers as pseudo-element background images (Bricks stores them as "_key::before" / "_key::after").
+    // The pseudo-element is absolutely placed, drawn under the content, and never takes clicks.
+    settings._position = "relative"; settings._overflow = "hidden";
+    for (const l of node._pseudo) {
+      const P = `::${l.placement}`;
+      settings[`_content${P}`] = " ";
+      settings[`_position${P}`] = "absolute";
+      settings[`_background${P}`] = { image: assetRef(l), size: l.inset ? "cover" : "contain", position: "center center", repeat: "no-repeat", attachment: "scroll", blendMode: "normal" };
+      if (l.inset) for (const side of ["top", "right", "bottom", "left"]) settings[`_${side}${P}`] = "0";
+      else {
+        settings[`_left${P}`] = `${l.box.left}%`; settings[`_top${P}`] = `${l.box.top}px`;
+        settings[`_width${P}`] = `${l.box.width}px`; settings[`_height${P}`] = `${l.box.height}px`;
+      }
+    }
+    css.push(`#brxe-__ID__::before, #brxe-__ID__::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-__ID__ > * {\n  position: relative;\n  z-index: 1;\n}`);
+  }
   if (node._layered) { settings._position = "relative"; settings._overflow = "hidden"; }
   if (node._raise) { settings._position = "relative"; settings._zIndex = "1"; }
   if (node.abs) {

@@ -1,0 +1,40 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "support-email-section",
+      "children": [
+        {
+          "type": "image",
+          "id": "support-email-image",
+          "figmaNodeId": "8232:729",
+          "asset": {
+            "nodeId": "8232:729",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "text-basic",
+          "id": "support-email-text",
+          "figmaNodeId": "8232:736",
+          "text": "Email: support@jilislot.global",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 24,
+            "fontWeight": 700,
+            "lineHeight": "29.05px",
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 31
+      }
+    }
+  ],
+  "_uncertain": []
+}

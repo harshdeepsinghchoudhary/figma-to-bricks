@@ -1,0 +1,73 @@
+{
+  "type": "page",
+  "_uncertain": [
+    "Section background color not specified in Figma data; omitted",
+    "Specific border radius and padding values for the outer container were not in the data; omitted"
+  ],
+  "children": [
+    {
+      "type": "section",
+      "id": "section-jili-info",
+      "figmaNodeId": "8232:27",
+      "children": [
+        {
+          "type": "container",
+          "id": "container-jili-intro",
+          "figmaNodeId": "8232:28",
+          "children": [
+            {
+              "type": "heading",
+              "id": "heading-jili-software-provider",
+              "figmaNodeId": "8232:29",
+              "text": "What is Jili Software Provider?",
+              "level": 2,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 34,
+                "fontWeight": 600,
+                "color": "#FFFFFF",
+                "lineHeight": "41.15px",
+                "align": "left"
+              }
+            },
+            {
+              "type": "container",
+              "id": "container-paragraph-group",
+              "figmaNodeId": "8232:30",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "text-paragraph-1",
+                  "figmaNodeId": "8232:31",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "color": "#FFFFFF",
+                    "lineHeight": "24px",
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "text-paragraph-2",
+                  "figmaNodeId": "8232:32",
+                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "color": "#FFFFFF",
+                    "lineHeight": "24px",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

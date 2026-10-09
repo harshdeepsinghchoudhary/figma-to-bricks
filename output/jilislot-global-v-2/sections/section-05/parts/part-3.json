@@ -1,0 +1,76 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "fast-reliable-section",
+      "figmaNodeId": "8232:74",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 16,
+        "align": "center",
+        "justify": "center"
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "fast-reliable-icon",
+          "figmaNodeId": "8232:78",
+          "asset": {
+            "nodeId": "8232:78",
+            "kind": "svg"
+          },
+          "layout": {
+            "margin": {
+              "left": 51
+            }
+          }
+        },
+        {
+          "type": "column",
+          "id": "fast-reliable-text",
+          "figmaNodeId": "8232:75",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8,
+            "align": "center",
+            "justify": "center"
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "fast-reliable-heading",
+              "figmaNodeId": "8232:76",
+              "text": "Fast & Reliable",
+              "level": 1,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "26px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            },
+            {
+              "type": "text",
+              "id": "fast-reliable-description",
+              "figmaNodeId": "8232:77",
+              "text": "Optimized for quick, seamless gameplay.",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "22px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

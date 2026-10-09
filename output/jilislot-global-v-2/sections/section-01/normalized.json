@@ -1,0 +1,32 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jilislot-header",
+      "figmaNodeId": "scope",
+      "size": {
+        "height": 75
+      },
+      "notes": [
+        "Placeholder section for part 1 of 3; nav bar contents arrive in later parts"
+      ],
+      "children": [
+        {
+          "type": "unsupported",
+          "id": "header-decoration-group",
+          "figmaNodeId": "8232:3",
+          "notes": [
+            "Group node without explicit children in this part; contents handled in later parts"
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Nav bar children (logo, link texts, language selector) not in this part of the Figma data; section content will be added in parts 2-3",
+    "jilislot-header: dropped unknown field \"figmaNodeName\"",
+    "The value of 'textCase' was not in the schema and is included in the 'notes'",
+    "stitch: dropped 7 duplicate element(s) emitted by overlapping parts"
+  ]
+}

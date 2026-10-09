@@ -1,0 +1,202 @@
+[
+  {
+    "id": "qs8ydp",
+    "name": "image",
+    "parent": "ipsj42",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/woman-with-toothbrush-her-hand-card-background-1-8232_803.png",
+        "url": "../../assets/woman-with-toothbrush-her-hand-card-background-1-8232_803.png"
+      },
+      "_width": "100%",
+      "_widthMax": "1440px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "ipsj42",
+    "name": "div",
+    "parent": "m3uxct",
+    "children": [
+      "qs8ydp"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_background": {
+        "color": {
+          "raw": "#D9D9D9"
+        }
+      }
+    }
+  },
+  {
+    "id": "feqdkl",
+    "name": "heading",
+    "parent": "hvxua4",
+    "children": [],
+    "settings": {
+      "text": "Jili Slot - Play Jili Online Slot | Free Games Play",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "58.09px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "hfhfu3",
+    "name": "text",
+    "parent": "hvxua4",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>",
+      "_width": "100%",
+      "_widthMax": "518px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "hvxua4",
+    "name": "div",
+    "parent": "t8iryf",
+    "children": [
+      "feqdkl",
+      "hfhfu3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "xan5dk",
+    "name": "button",
+    "parent": "t8iryf",
+    "children": [],
+    "settings": {
+      "text": "Get Started",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FCC40B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "400px",
+          "right": "400px",
+          "bottom": "400px",
+          "left": "400px"
+        }
+      }
+    }
+  },
+  {
+    "id": "t8iryf",
+    "name": "div",
+    "parent": "m3uxct",
+    "children": [
+      "hvxua4",
+      "xan5dk"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "32",
+      "_columnGap": "32",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "m3uxct",
+    "name": "div",
+    "parent": "fvu2b0",
+    "children": [
+      "ipsj42",
+      "t8iryf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "fvu2b0",
+    "name": "container",
+    "parent": "ri6ozo",
+    "children": [
+      "m3uxct"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "ri6ozo",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "fvu2b0"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#D9D9D9"
+        }
+      }
+    }
+  }
+]

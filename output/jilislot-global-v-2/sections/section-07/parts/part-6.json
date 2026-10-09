@@ -1,0 +1,71 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "block",
+      "id": "rectangle-5755",
+      "figmaNodeId": "8232:250",
+      "background": {
+        "color": "#191818"
+      },
+      "border": {
+        "radius": 10
+      }
+    },
+    {
+      "type": "image",
+      "id": "image",
+      "figmaNodeId": "8232:256",
+      "asset": {
+        "nodeId": "8232:256",
+        "kind": "image"
+      }
+    },
+    {
+      "type": "text",
+      "id": "wild-ace-jili",
+      "figmaNodeId": "8232:253",
+      "text": "Wild Ace Jili",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 18,
+        "fontWeight": 700,
+        "lineHeight": "21.78px",
+        "color": "#FFFFFF",
+        "align": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "high-volatility-combo-wins",
+      "figmaNodeId": "8232:254",
+      "text": "High volatility, combo wins",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 18,
+        "fontWeight": 400,
+        "lineHeight": "27px",
+        "color": "#FFFFFF",
+        "align": "left"
+      }
+    },
+    {
+      "type": "text",
+      "id": "rtp-96-00",
+      "figmaNodeId": "8232:255",
+      "text": "RTP: 96.00%",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 18,
+        "fontWeight": 400,
+        "lineHeight": "27px",
+        "color": "#FFFFFF",
+        "align": "left"
+      }
+    }
+  ],
+  "_uncertain": [
+    "layout and size properties not provided",
+    "Layout: in the measured column, [8232:253, 8232:254, 8232:255] and [8232:256] are separate stacked items, so they must be SIBLING elements. [8232:256] must not be nested inside the element holding [8232:253, 8232:254, 8232:255]."
+  ]
+}

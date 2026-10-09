@@ -1,0 +1,38 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "id": "feature-item-1",
+      "type": "row",
+      "figmaNodeId": "8232:154",
+      "children": [
+        {
+          "id": "feature-icon-1",
+          "type": "icon",
+          "figmaNodeId": "8232:156",
+          "asset": {
+            "nodeId": "8232:156",
+            "kind": "svg"
+          }
+        },
+        {
+          "id": "feature-text-1",
+          "type": "text",
+          "figmaNodeId": "8232:155",
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 400,
+            "lineHeight": "27px",
+            "color": "#FFFFFF",
+            "align": "left"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Coverage: 2 content node(s) from the Figma data are missing from your output: 8232:160 (asset: Frame), 8232:164 (asset: Frame). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own \"text\", never as a child)."
+  ]
+}

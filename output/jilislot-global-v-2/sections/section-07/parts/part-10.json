@@ -1,0 +1,73 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "figmaNodeId": "8232:281",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 24
+      },
+      "background": {
+        "color": "#191818"
+      },
+      "border": {
+        "radius": 10
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8232:288",
+          "asset": {
+            "nodeId": "8232:288",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "heading",
+          "id": "jili-slot-fortune-gems",
+          "text": "Jili Slot Fortune Gems",
+          "level": 1,
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 700,
+            "lineHeight": "21.78px",
+            "align": "center",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "text",
+          "id": "high-volatility-combo-wins",
+          "text": "High volatility, combo wins",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 400,
+            "lineHeight": "27px",
+            "align": "left",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "text",
+          "id": "rtp-96-00",
+          "text": "RTP: 96.00%",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 400,
+            "lineHeight": "27px",
+            "align": "left",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

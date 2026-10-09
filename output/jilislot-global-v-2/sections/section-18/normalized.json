@@ -1,0 +1,205 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "contact-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-1261152850",
+          "figmaNodeId": "8232:708",
+          "children": [
+            {
+              "type": "heading",
+              "id": "contact-jili-games-customer-services",
+              "figmaNodeId": "8232:709",
+              "text": "Contact Jili Games Customer Services",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 34,
+                "fontWeight": 600,
+                "lineHeight": "41.15px",
+                "color": "#FFFFFF",
+                "align": "center"
+              },
+              "size": {
+                "width": 1003
+              },
+              "level": 2
+            },
+            {
+              "type": "row",
+              "id": "frame-1261152849",
+              "figmaNodeId": "8232:710",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "frame-1261152848",
+                  "figmaNodeId": "8232:711",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "group-1261154677",
+                      "figmaNodeId": "8232:712",
+                      "asset": {
+                        "nodeId": "8232:712",
+                        "kind": "svg"
+                      },
+                      "size": {
+                        "width": 94,
+                        "height": 110
+                      }
+                    },
+                    {
+                      "type": "heading",
+                      "id": "live-chat",
+                      "figmaNodeId": "8232:718",
+                      "text": "Live Chat",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 24,
+                        "fontWeight": 700,
+                        "lineHeight": "29.05px",
+                        "color": "#FFFFFF",
+                        "align": "center"
+                      },
+                      "size": {
+                        "width": 110
+                      },
+                      "level": 3
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 31,
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 110
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "frame-1261152846",
+                  "figmaNodeId": "8232:719",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "group-1261154743",
+                      "figmaNodeId": "8232:720",
+                      "asset": {
+                        "nodeId": "8232:720",
+                        "kind": "svg"
+                      },
+                      "size": {
+                        "width": 94,
+                        "height": 110
+                      }
+                    },
+                    {
+                      "type": "heading",
+                      "id": "telegram-jilislot-global",
+                      "figmaNodeId": "8232:727",
+                      "text": "Telegram: @jilislot.global",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 24,
+                        "fontWeight": 700,
+                        "lineHeight": "29.05px",
+                        "color": "#FFFFFF",
+                        "align": "center"
+                      },
+                      "size": {
+                        "width": 297
+                      },
+                      "level": 3
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 31,
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 297
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "frame-1261152847-1",
+                  "figmaNodeId": "8232:728",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "support-email-image",
+                      "figmaNodeId": "8232:729",
+                      "asset": {
+                        "nodeId": "8232:729",
+                        "kind": "svg"
+                      },
+                      "size": {
+                        "width": 94,
+                        "height": 110
+                      }
+                    },
+                    {
+                      "type": "heading",
+                      "id": "support-email-text",
+                      "figmaNodeId": "8232:736",
+                      "text": "Email: support@jilislot.global",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 24,
+                        "fontWeight": 700,
+                        "lineHeight": "29.05px",
+                        "color": "#FFFFFF",
+                        "align": "center"
+                      },
+                      "level": 3,
+                      "size": {
+                        "width": 344
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 31,
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 344
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 126,
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 50,
+            "align": "start"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "contact-section: dropped unknown field \"_uncertain\""
+  ]
+}

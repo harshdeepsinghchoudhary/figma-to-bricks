@@ -18,6 +18,7 @@ import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
 import fetch from "node-fetch";
+import { findPanels } from "./decoration-detect.js";
 
 const args = process.argv.slice(2);
 const figmaUrl = args.find((a) => !a.startsWith("--"));
@@ -206,6 +207,15 @@ async function main() {
   console.log(
     `Candidates: ${pngNodes.length} image fill(s), ${svgAll.length} icon node(s) -> ${svgGroups.length} UNIQUE icon(s) after dedupe`
   );
+
+  // decoration layers (pattern/vector groups behind a card or section) are exported as ONE svg each, used as ::before/::after backgrounds
+  if (!NO_SVG) {
+    for (const panel of findPanels(rootNode)) for (const l of panel.layers) {
+      if (svgGroups.some((g) => g.members.some((m) => m.id === l.id))) continue;
+      svgGroups.push({ rep: { id: l.id, name: l.name, w: l.w, h: l.h, nodeType: l.type, vectorCount: 0, parent: "decoration layer" }, members: [{ id: l.id, name: l.name }] });
+      console.log(`Decoration layer ${l.id} "${l.name}" ${l.w}x${l.h} (panel ${panel.id}) -> svg export`);
+    }
+  }
 
   const bySize = svgGroups
     .map((g) => ({ name: g.rep.name, size: `${g.rep.w}x${g.rep.h}`, copies: g.members.length, type: g.rep.nodeType, vectors: g.rep.vectorCount, parent: g.rep.parent }))

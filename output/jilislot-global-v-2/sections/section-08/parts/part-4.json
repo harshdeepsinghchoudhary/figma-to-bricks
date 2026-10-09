@@ -1,0 +1,67 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "image",
+      "id": "image",
+      "figmaNodeId": "8232:320",
+      "asset": {
+        "nodeId": "8232:320",
+        "kind": "image"
+      }
+    },
+    {
+      "type": "text",
+      "id": "jili-table-games",
+      "figmaNodeId": "8232:323",
+      "text": "Jili Table Games",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 18,
+        "fontWeight": 600,
+        "lineHeight": "21.78px",
+        "color": "#FFFFFF",
+        "align": "center"
+      }
+    },
+    {
+      "type": "text",
+      "id": "lorem-ipsum",
+      "figmaNodeId": "8232:324",
+      "text": "Lorem Ipsum is simply dummy text of the ",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 18,
+        "fontWeight": 400,
+        "lineHeight": "27px",
+        "color": "#FFFFFF",
+        "align": "center"
+      }
+    },
+    {
+      "type": "button",
+      "id": "play-now-button",
+      "figmaNodeId": "8232:326",
+      "text": "Play Now",
+      "background": {
+        "color": "#FCC40B"
+      },
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": 600,
+        "lineHeight": "16.94px",
+        "color": "#000000",
+        "align": "left"
+      }
+    }
+  ],
+  "_uncertain": [
+    "layout",
+    "size",
+    "border",
+    "boxShadow",
+    "notes",
+    "Layout: in the measured column, [8232:323, 8232:324, 8232:326] and [8232:320] are separate stacked items, so they must be SIBLING elements. [8232:320] must not be nested inside the element holding [8232:323, 8232:324, 8232:326]."
+  ]
+}

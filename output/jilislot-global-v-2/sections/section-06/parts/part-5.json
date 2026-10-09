@@ -1,0 +1,68 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "pros-block",
+      "figmaNodeId": "8232:127",
+      "background": {
+        "color": "#FFFFFF"
+      },
+      "border": {
+        "radius": 12
+      },
+      "boxShadow": {
+        "color": "#FFFFFF1A",
+        "blur": 0,
+        "offsetX": 0,
+        "offsetY": 0,
+        "spread": 26
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "pros-header",
+          "figmaNodeId": "8232:127",
+          "children": [
+            {
+              "type": "container",
+              "id": "pros-header-container",
+              "figmaNodeId": "8232:127",
+              "children": []
+            },
+            {
+              "type": "row",
+              "id": "pros-heading",
+              "figmaNodeId": "8232:130",
+              "background": {
+                "color": "#FFFFFF"
+              },
+              "border": {
+                "radius": 12
+              },
+              "boxShadow": {
+                "color": "#FFFFFF1A",
+                "blur": 0,
+                "offsetX": 0,
+                "offsetY": 0,
+                "spread": 26
+              },
+              "typography": {
+                "fontSize": 24,
+                "fontWeight": 700,
+                "lineHeight": "32px",
+                "color": "#FFFFFF",
+                "align": "left"
+              },
+              "asset": {
+                "nodeId": "8232:131",
+                "kind": "svg"
+              },
+              "text": "PROS"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+[
+  {
+    "id": "nzkdar",
+    "name": "heading",
+    "parent": "fmfv4v",
+    "children": [],
+    "settings": {
+      "text": "Contact Jili Games Customer Services",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "600",
+        "line-height": "41.15px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "r19cou",
+    "name": "image",
+    "parent": "8qnl1n",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154677-8232_712.svg",
+        "url": "../../assets/group-1261154677-8232_712.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "94px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "cpw8zd",
+    "name": "heading",
+    "parent": "8qnl1n",
+    "children": [],
+    "settings": {
+      "text": "Live Chat",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "29.05px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "8qnl1n",
+    "name": "div",
+    "parent": "adhm87",
+    "children": [
+      "r19cou",
+      "cpw8zd"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "31",
+      "_columnGap": "31",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "110px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "sora9j",
+    "name": "image",
+    "parent": "c1fyr0",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154743-8232_720.svg",
+        "url": "../../assets/group-1261154743-8232_720.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "94px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "mktx47",
+    "name": "heading",
+    "parent": "c1fyr0",
+    "children": [],
+    "settings": {
+      "text": "Telegram: @jilislot.global",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "29.05px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "c1fyr0",
+    "name": "div",
+    "parent": "adhm87",
+    "children": [
+      "sora9j",
+      "mktx47"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "31",
+      "_columnGap": "31",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "297px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "6rmsxs",
+    "name": "image",
+    "parent": "1z79iw",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154744-8232_729.svg",
+        "url": "../../assets/group-1261154744-8232_729.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "94px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "getl68",
+    "name": "heading",
+    "parent": "1z79iw",
+    "children": [],
+    "settings": {
+      "text": "Email: support@jilislot.global",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "29.05px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "1z79iw",
+    "name": "div",
+    "parent": "adhm87",
+    "children": [
+      "6rmsxs",
+      "getl68"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "31",
+      "_columnGap": "31",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "344px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "adhm87",
+    "name": "div",
+    "parent": "fmfv4v",
+    "children": [
+      "8qnl1n",
+      "c1fyr0",
+      "1z79iw"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "fmfv4v",
+    "name": "div",
+    "parent": "ru6fi4",
+    "children": [
+      "nzkdar",
+      "adhm87"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "50",
+      "_columnGap": "50",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "ru6fi4",
+    "name": "container",
+    "parent": "z2yjoh",
+    "children": [
+      "fmfv4v"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1003px"
+    }
+  },
+  {
+    "id": "z2yjoh",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "ru6fi4"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

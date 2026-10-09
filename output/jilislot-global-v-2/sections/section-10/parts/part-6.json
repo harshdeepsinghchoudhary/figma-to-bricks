@@ -1,0 +1,97 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-part-6",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "content-column",
+          "figmaNodeId": "8232:411",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 30
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "section-part-6-column-2",
+              "children": [
+                {
+                  "type": "image",
+                  "id": "image",
+                  "figmaNodeId": "8232:412",
+                  "asset": {
+                    "nodeId": "8232:412",
+                    "kind": "image"
+                  },
+                  "size": {
+                    "width": 360,
+                    "height": 185
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "section-part-6-column-1",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "frame-1261152830-1",
+                      "figmaNodeId": "8232:414",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "5-percent-weekend-bonus",
+                          "figmaNodeId": "8232:415",
+                          "text": "5% Weekend Bonus",
+                          "size": {
+                            "width": 325,
+                            "height": 24
+                          },
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 20,
+                            "fontWeight": 600,
+                            "lineHeight": "24.2px",
+                            "color": "#FFFFFF"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "lorem-ipsum",
+                          "figmaNodeId": "8232:416",
+                          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of",
+                          "size": {
+                            "width": 325,
+                            "height": 81
+                          },
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "button",
+                      "id": "claim-now-button",
+                      "figmaNodeId": "8232:417",
+                      "text": "Claim Now"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

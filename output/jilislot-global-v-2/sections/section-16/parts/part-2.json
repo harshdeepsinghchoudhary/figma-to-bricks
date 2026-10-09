@@ -1,0 +1,50 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "main",
+      "children": [
+        {
+          "type": "container",
+          "id": "row-1",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 538
+          },
+          "children": [
+            {
+              "type": "button",
+              "id": "learn-more",
+              "figmaNodeId": "8232:672",
+              "text": "Learn More",
+              "background": {
+                "color": "#FCC40B"
+              },
+              "border": {
+                "radius": 400
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 600,
+                "lineHeight": "19.36px",
+                "color": "#000000"
+              }
+            },
+            {
+              "type": "image",
+              "id": "cybersecurity-data-protection-concept",
+              "figmaNodeId": "8232:674",
+              "asset": {
+                "nodeId": "8232:674",
+                "kind": "image"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

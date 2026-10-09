@@ -1,0 +1,113 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "heading",
+          "id": "conclusion",
+          "figmaNodeId": "8232:746",
+          "text": "Conclusion",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 0,
+            "align": "center",
+            "justify": "start"
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 48,
+            "fontWeight": 700,
+            "lineHeight": "58.09px",
+            "color": "#000000"
+          },
+          "size": {
+            "width": 755
+          },
+          "background": {
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "text-basic",
+          "id": "winning-in-aviator",
+          "figmaNodeId": "8232:747",
+          "text": "Winning in Aviator takes more than luck. Use smart strategies, stay in control, and play with a clear plan. The key is to enjoy the game while making smart moves!",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 0,
+            "align": "center",
+            "justify": "start"
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 500,
+            "lineHeight": "30px",
+            "color": "#000000"
+          },
+          "size": {
+            "width": 755
+          }
+        },
+        {
+          "type": "button",
+          "id": "get-started",
+          "figmaNodeId": "8232:748",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 7,
+            "padding": {
+              "top": 15,
+              "right": 32,
+              "bottom": 15,
+              "left": 32
+            },
+            "align": "center",
+            "justify": "center",
+            "wrap": false
+          },
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 400
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "get-started-text",
+              "figmaNodeId": "8232:749",
+              "text": "Get Started",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 0,
+                "align": "center",
+                "justify": "start"
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 600,
+                "lineHeight": "19.36px",
+                "color": "#000000"
+              },
+              "size": {
+                "width": 90
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "_uncertain",
+    ":",
+    []
+  ]
+}

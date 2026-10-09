@@ -1,0 +1,1639 @@
+PS C:\figma-to-bricks> node --env-file=.env scripts/pipeline.js "https://www.figma.com/design/9ZC7Ja7QmEw4bpH7ue8zdC/Online-Betting-Website?node-id=8232-2&t=MOHPK4LVMaHNyihr-0"
+
+=== 1/5 extract from Figma: node scripts/1_extract_figma.js https://www.figma.com/design/9ZC7Ja7QmEw4bpH7ue8zdC/Online-Betting-Website?node-id=8232-2&t=MOHPK4LVMaHNyihr-0 ===
+File: 9ZC7Ja7QmEw4bpH7ue8zdC  Node: 8232:2
+Fetching node tree...
+Wrote output\jilislot-global-v-2/figma-node.json
+Candidates: 35 image fill(s), 49 icon node(s) -> 23 UNIQUE icon(s) after dedupe
+Decoration layer 8232:741 "Mask group" 1200x385 (panel 8232:739) -> svg export
+Wrote output\jilislot-global-v-2/candidates.json
+Wrote output\jilislot-global-v-2/asset-manifest.planned.json (85 entries)
+Requesting frame screenshot...
+Wrote output\jilislot-global-v-2\screenshot.png
+Exporting png: 35/35
+
+Figma rate limit (429). Stopping on purpose - do NOT keep re-running.
+  Retry-After:              211107  (~58.6 hours)
+  X-Figma-Plan-Tier:        starter
+  X-Figma-Rate-Limit-Type:  low
+  X-Figma-Upgrade-Link:     https://www.figma.com/files?api_paywall=true
+Everything downloaded so far is saved; re-running later resumes from there.
+
+STOPPED: Figma extraction failed (check FIGMA_TOKEN and the URL).
+PS C:\figma-to-bricks> node --env-file=.env scripts/pipeline.js "https://www.figma.com/design/9ZC7Ja7QmEw4bpH7ue8zdC/Online-Betting-Website?node-id=8232-2&t=2znXmW7agnAMipfO-0"
+
+=== 1/5 extract from Figma: node scripts/1_extract_figma.js https://www.figma.com/design/9ZC7Ja7QmEw4bpH7ue8zdC/Online-Betting-Website?node-id=8232-2&t=2znXmW7agnAMipfO-0 ===
+File: 9ZC7Ja7QmEw4bpH7ue8zdC  Node: 8232:2
+Using cached output\jilislot-global-v-2/figma-node.json (no API call)
+Candidates: 35 image fill(s), 49 icon node(s) -> 23 UNIQUE icon(s) after dedupe
+Decoration layer 8232:741 "Mask group" 1200x385 (panel 8232:739) -> svg export
+Wrote output\jilislot-global-v-2/candidates.json
+Wrote output\jilislot-global-v-2/asset-manifest.planned.json (85 entries)
+screenshot.png already exists, skipping
+Exporting png: 35/35
+Exporting svg: 24/24
+Manifest has 85 node->file mapping(s). Done. Output in output\jilislot-global-v-2/
+Frame folder: output\jilislot-global-v-2
+
+=== 2-3/5 AI normalize + compile + merge: node scripts/run-sections.js output\jilislot-global-v-2 ===
+
+21 top-level section(s) in output\jilislot-global-v-2:
+
+   1  8232:3    section-01     1440x75    to do           "Group 1261154665"
+   2  8232:17   section-02     1440x518   to do           "Group 1261154691"
+   3  8232:811  section-03     1440x518   to do           "Group 1261154760"
+   4  8232:25   section-04     1200x297   to do           "Frame 1261152823"
+   5  8232:35   section-05     1200x314   to do           "Group 1261154686"
+   6  8232:85   section-06     1200x930   to do           "Group 1261154690"
+   7  8232:207  section-07     1200x1006  to do           "Group 1261154705"
+   8  8232:305  section-08     1200x451   to do           "Group 1261154711"
+   9  8232:347  section-09     1200x478   to do           "Group 1261154720"
+  10  8232:387  section-10     1200x1007  to do           "Group 1261154729"
+  11  8232:449  section-11     1440x561   to do           "Group 1261154731"
+  12  8232:517  section-12     1200x284   to do           "Group 1261154425"
+  13  8232:527  section-13     1200x452   to do           "Group 1261154737"
+  14  8232:560  section-14     1201x309   to do           "Frame 1261152839"
+  15  8232:607  section-15     1200x845   to do           "Group 1261154742"
+  16  8232:665  section-16     1200x284   to do           "Group 1261154425"
+  17  8232:675  section-17     1200x658   to do           "Frame 1261152845"
+  18  8232:708  section-18     1003x261   to do           "Frame 1261152850"
+  19  8232:737  section-19     1200x385   to do           "Group 1261154751"
+  20  8232:750  section-20     1049x571   to do           "Group 1261154758"
+  21  8232:785  section-21     1440x424   to do           "Frame 1261152867"
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:3 --name=section-01 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:3 (Group 1261154665)
+Scoped output will go to output\jilislot-global-v-2\sections\section-01/ (the full-page figma-node.json / screenshot.png are untouched).
+Pruned 1 graphic subtree(s) (icons/illustrations) out of the prompt - they're already exported assets, not something the model needs raw vector data for. Saved ~1,415 chars (12% of the raw JSON size).
+Asset manifest trimmed to 3/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 3 part(s), prompt sizes ~3,697, 4,553, 3,888 tokens (budget 4,600).
+
+=== Part 1/3: Group 1261154665, Rectangle 5754 ===
+Calling LLM (attempt 1/2) for part 1/3...
+Models your Groq key can use: openai/gpt-oss-20b, openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b
+Estimated prompt size: ~3,697 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+Using qwen/qwen3.8-27b.
+  Dropped 1 field(s) the schema has no place for: jilislot-header: dropped unknown field "figmaNodeName"
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/3: Frame 1261152820, Frame 1261152819 ===
+Calling LLM (attempt 1/2) for part 2/3...
+Estimated prompt size: ~4,553 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/3: Frame 1261152818 ===
+Calling LLM (attempt 1/2) for part 3/3...
+Estimated prompt size: ~3,888 tokens (text only).
+  stitch: dropped 7 duplicate element(s) emitted by overlapping parts
+
+Stitched 3 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 0 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Wrote output\jilislot-global-v-2\sections\section-01\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'Nav bar children (logo, link texts, language selector) not in this part of the Figma data; section content will be added in parts 2-3',
+  'jilislot-header: dropped unknown field "figmaNodeName"',
+  "The value of 'textCase' was not in the schema and is included in the 'notes'",
+  'stitch: dropped 7 duplicate element(s) emitted by overlapping parts'
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-01 ===
+  structure: section jilislot-header: background #282828 from full-width Figma rectangle 8232:4
+  structure: MISSING TEXT "Home" (figma 8232:9) is not in the normalized tree - check this section
+  structure: MISSING TEXT "Company" (figma 8232:10) is not in the normalized tree - check this section
+  structure: MISSING TEXT "GAMES" (figma 8232:11) is not in the normalized tree - check this section
+  structure: MISSING TEXT "CONTACT US" (figma 8232:12) is not in the normalized tree - check this section
+  structure: summary: background 1, unwrapped 0, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section jilislot-header: wrapped in container (widthMax -px), side padding 0/0 -> 16
+Wrote output\jilislot-global-v-2\sections\section-01\bricks-tree.json (2 element(s))
+
+Warnings:
+ - /jilislot-header: note: Placeholder section for part 1 of 3; nav bar contents arrive in later parts
+ - /jilislot-header/header-decoration-group: type "unsupported" will be skipped by the compiler. Notes: Group node without explicit children in this part; contents handled in later parts
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:17 --name=section-02 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:17 (Group 1261154691)
+Scoped output will go to output\jilislot-global-v-2\sections\section-02/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 0/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 1 part(s), prompt sizes ~3,701 tokens (budget 4,600).
+
+=== Part 1/1: Group 1261154691 ===
+Calling LLM (attempt 1/2) for part 1/1...
+Models your Groq key can use: allam-2-7b, openai/gpt-oss-20b, openai/gpt-oss-120b, qwen/qwen3.8-27b
+Estimated prompt size: ~3,701 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 37s and retrying once...
+Using qwen/qwen3.8-27b.
+  Stitch: could not place the model's elements (none of the model's elements matched a node in the Figma layout) - building the section from the Figma data instead.
+Error: Split mode: could not stitch the parts together (none of the model's elements matched a node in the Figma layout). Check the files in the parts/ folder, or re-run with a different --split=<tokens> budget.
+    at askInParts (file:///C:/figma-to-bricks/scripts/2_normalize.js:1390:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async main (file:///C:/figma-to-bricks/scripts/2_normalize.js:1400:14)
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:811 --name=section-03 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:811 (Group 1261154760)
+Scoped output will go to output\jilislot-global-v-2\sections\section-03/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 1/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+  card background: group "Group 1261154759" collapsed to its rectangle (decorative shapes left out of the flow)
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 2 part(s), prompt sizes ~3,913, 4,428 tokens (budget 4,600).
+
+=== Part 1/2: Group 1261154760, Mask group ===
+Calling LLM (attempt 1/2) for part 1/2...
+Models your Groq key can use: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+Estimated prompt size: ~3,913 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 42s and retrying once...
+Using qwen/qwen3.8-27b.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/2: Frame 8 ===
+Calling LLM (attempt 1/2) for part 2/2...
+Estimated prompt size: ~4,428 tokens (text only).
+Attempt 1: 1 layout/coverage problem(s):
+  - Coverage: 1 content node(s) from the Figma data are missing from your output: 8232:24 (text: Get Started). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own "text", never as a child).
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 2/2...
+Estimated prompt size: ~3,810 tokens (text only).
+
+Stitched 2 part(s) back into one section from the Figma geometry.
+  card background: group "Group 1261154759" collapsed to its rectangle (decorative shapes left out of the flow)
+Post-processed from Figma data: 10 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+  WARNING group-1261154760: skipped layout (children overlap or are out of order along the column axis - check the nesting)
+Wrote output\jilislot-global-v-2\sections\section-03\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'Banner 1 (#D9D9D9) is a non-exported image/rectangle; it appears layered with the exported background image 8232:803 (overlapping) and is described in notes rather than emitted.',
+  'Group 1261154760 (8232:811) has no children in this part; emitted as an empty column.',
+  'No text, heading, or button nodes were present in the Figma data for this part; they may belong to another part of the section.'
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-03 ===
+  structure: section banner: background #D9D9D9 from full-width Figma rectangle 8232:18
+  structure: summary: background 1, unwrapped 0, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section banner: wrapped in container (widthMax 1440px), side padding 0/0 -> 16
+Wrote output\jilislot-global-v-2\sections\section-03\bricks-tree.json (10 element(s))
+
+Warnings:
+ - /banner/group-1261154760/banner-backgrounds/banner-1: type "unsupported" will be skipped by the compiler. Notes: Rectangle with solid fill #D9D9D9, no exported image (imageExported not set / not in manifest). Likely a fallback or colored banner layer.
+ - /banner/group-1261154760/banner-backgrounds/woman-with-toothbrush: note: Background image layered with banner-1.
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:25 --name=section-04 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:25 (Frame 1261152823)
+Scoped output will go to output\jilislot-global-v-2\sections\section-04/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 1/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 3 part(s), prompt sizes ~3,814, 4,538, 3,894 tokens (budget 4,600).
+
+=== Part 1/3: Frame 1261152823, image ===
+Calling LLM (attempt 1/2) for part 1/3...
+Models your Groq key can use: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+Estimated prompt size: ~3,814 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 4s and retrying once...
+Using qwen/qwen3.8-27b.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/3: Frame 1261152822, Frame 1261152821 ===
+Calling LLM (attempt 1/2) for part 2/3...
+Estimated prompt size: ~4,538 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/3: Frame 8 ===
+Calling LLM (attempt 1/2) for part 3/3...
+Estimated prompt size: ~3,894 tokens (text only).
+
+Stitched 3 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 11 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Removed 2 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-04\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [ 'Section background color not specified in Figma data; omitted' ]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-04 ===
+  structure: summary: background 0, unwrapped 0, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section frame-1261152823: wrapped in container (widthMax 1200px), side padding 0/0 -> 16
+Wrote output\jilislot-global-v-2\sections\section-04\bricks-tree.json (11 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:35 --name=section-05 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:35 (Group 1261154686)
+Scoped output will go to output\jilislot-global-v-2\sections\section-05/ (the full-page figma-node.json / screenshot.png are untouched).
+Pruned 6 graphic subtree(s) (icons/illustrations) out of the prompt - they're already exported assets, not something the model needs raw vector data for. Saved ~16,426 chars (48% of the raw JSON size).
+Asset manifest trimmed to 6/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 3 part(s), prompt sizes ~4,516, 4,433, 4,017 tokens (budget 4,600).
+
+=== Part 1/3: Group 1261154686, What Makes Jili a Top Game Provider?, Group 1261154685, Group 1261154667, Group 1261154684, Group 1261 ===
+Calling LLM (attempt 1/2) for part 1/3...
+Models your Groq key can use: qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-120b, openai/gpt-oss-20b
+Estimated prompt size: ~4,516 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 38s and retrying once...
+Using qwen/qwen3.8-27b.
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/3: Group 1261154682, Group 1261154683 ===
+Calling LLM (attempt 1/2) for part 2/3...
+Estimated prompt size: ~4,433 tokens (text only).
+Attempt 1: 2 layout/coverage problem(s):
+  - Coverage: 3 content node(s) from the Figma data are missing from your output: 8232:68 (asset: Group 1261154679), 8232:66 (text: Fair & Trusted), 8232:67 (text: Certified RNG and solid RTP rates.). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own "text", never as a child).
+  - Layout: in the measured column, [8232:56, 8232:57] and [8232:58] are separate stacked items, so they must be SIBLING elements. [8232:58] must not be nested inside the element holding [8232:56, 8232:57].
+Attempt 1: 2 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 2/3...
+Estimated prompt size: ~3,706 tokens (text only).
+Accepting output with layout-nesting warnings (recorded in _uncertain):
+  - Layout: in the measured row, [8232:54, 8232:55, 8232:56, 8232:57, 8232:58] and [8232:68, 8232:65, 8232:66, 8232:67] are separate side-by-side items, so they must be SIBLING elements. [8232:68, 8232:65, 8232:66, 8232:67] must not be nested inside the element holding [8232:54, 8232:55, 8232:56, 8232:57, 8232:58].
+  - Layout: in the measured column, [8232:55, 8232:56, 8232:57] and [8232:58] are separate stacked items, so they must be SIBLING elements. [8232:58] must not be nested inside the element holding [8232:55, 8232:56, 8232:57].
+  - Layout: in the measured column, [8232:65, 8232:66, 8232:67] and [8232:68] are separate stacked items, so they must be SIBLING elements. [8232:68] must not be nested inside the element holding [8232:65, 8232:66, 8232:67].
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/3: Group 1261154681 ===
+Calling LLM (attempt 1/2) for part 3/3...
+Estimated prompt size: ~4,017 tokens (text only).
+  Auto-corrected 1 misplaced field(s) (e.g. fast-reliable-icon: moved "margin" from element to layout).
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 3/3...
+Estimated prompt size: ~3,597 tokens (text only).
+  Auto-corrected 1 misplaced field(s) (e.g. fast-reliable-icon: moved "margin" from element to layout).
+
+Stitched 3 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 31 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+  WARNING decorative-line-group: skipped layout (children overlap or are out of order along the column axis - check the nesting)
+  WARNING group-1261154685-1: skipped layout (children overlap or are out of order along the column axis - check the nesting)
+Removed 1 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-05\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'Layout: in the measured row, [8232:54, 8232:55, 8232:56, 8232:57, 8232:58] and [8232:68, 8232:65, 8232:66, 8232:67] are separate side-by-side items, so they must be SIBLING elements. [8232:68, 8232:65, 8232:66, 8232:67] must not be nested inside the element holding [8232:54, 8232:55, 8232:56, 8232:57, 8232:58].',
+  'Layout: in the measured column, [8232:55, 8232:56, 8232:57] and [8232:58] are separate stacked items, so they must be SIBLING elements. [8232:58] must not be nested inside the element holding [8232:55, 8232:56, 8232:57].',
+  'Layout: in the measured column, [8232:65, 8232:66, 8232:67] and [8232:68] are separate stacked items, so they must be SIBLING elements. [8232:68] must not be nested inside the element holding [8232:65, 8232:66, 8232:67].'
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-05 ===
+  structure: removed single-child wrapper fast-reliable-text around top-game-provider-column-5
+  structure: removed single-child wrapper unique-features around top-game-provider-column-7
+  structure: removed single-child wrapper fairness-features around top-game-provider-column-9
+  structure: summary: background 0, unwrapped 3, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section top-game-provider: wrapped in container (widthMax 760px), side padding 0/0 -> 16
+  responsive: single-line text top-provider-heading: no fixed width (avoids wrapping from font differences)
+  responsive: single-line text quality-design-heading: no fixed width (avoids wrapping from font differences)
+  responsive: single-line text fast-reliable-heading: no fixed width (avoids wrapping from font differences)
+  responsive: single-line text unique-features-heading: no fixed width (avoids wrapping from font differences)
+  responsive: single-line text fairness-heading: no fixed width (avoids wrapping from font differences)
+Wrote output\jilislot-global-v-2\sections\section-05\bricks-tree.json (30 element(s))
+
+Warnings:
+ - /top-game-provider/group-1261154685-1/decorative-line-group/left-row-group/decorative-vector-line: type "unsupported" will be skipped by the compiler. Notes: Fills solid dark grey decorative vector wave line; no direct schema mapping
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:85 --name=section-06 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:85 (Group 1261154690)
+Scoped output will go to output\jilislot-global-v-2\sections\section-06/ (the full-page figma-node.json / screenshot.png are untouched).
+Precomputed 3 linear gradient(s) deterministically (angle + stops already converted - the model is told to copy these, not recalculate them).
+Left out 24 gradient(s) that sit inside exported graphics (already part of those images).
+Pruned 24 graphic subtree(s) (icons/illustrations) out of the prompt - they're already exported assets, not something the model needs raw vector data for. Saved ~37,902 chars (39% of the raw JSON size).
+Asset manifest trimmed to 24/85 entries reachable from the scoped nodes.
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Loaded 0 example pair(s) from examples/
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 12 part(s), prompt sizes ~4,253, 4,538, 3,965, 4,541, 4,185, 4,540, 3,965, 4,541, 4,183, 4,536, 3,963, 4,598 tokens (budget 4,600).
+
+=== Part 1/12: Group 1261154690, Pros and Cons of Jili Slot Games BD, Group 1261154687, Rectangle 5700, Group 1261154378, Frame 1261152 ===
+Calling LLM (attempt 1/2) for part 1/12...
+Models your Groq key can use: qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b, openai/gpt-oss-120b
+Estimated prompt size: ~4,253 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 10s and retrying once...
+  qwen/qwen3.8-27b allows only 1000 output tokens per request/minute on your Groq tier - retrying with max_tokens=950 (long answers will be cut off and re-split automatically).
+  rate limited (429), waiting 2s and retrying once...
+Using qwen/qwen3.8-27b.
+  Dropped 1 field(s) the schema has no place for: jili-slot-games-section: dropped unknown field "_uncertain"
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/12: Frame 1261152785 ===
+Calling LLM (attempt 1/2) for part 2/12...
+Estimated prompt size: ~4,538 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/12: Group 1261154380, Group 1261154378, Frame 1261152784 ===
+Calling LLM (attempt 1/2) for part 3/12...
+Estimated prompt size: ~3,966 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 4/12: Frame 1261152785 ===
+Calling LLM (attempt 1/2) for part 4/12...
+Estimated prompt size: ~4,541 tokens (text only).
+WARNING: response was cut off at max_tokens before finishing - the JSON is likely incomplete/truncated, not just invalid. Raise AI_MAX_TOKENS in .env, or use --split.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 5/12: Line 78, Group 1261154688, Rectangle 5701, Group 1261154378, Frame 1261152784 ===
+Calling LLM (attempt 1/2) for part 5/12...
+Estimated prompt size: ~4,186 tokens (text only).
+  Auto-corrected 4 misplaced field(s) (e.g. pros-heading: moved "boxShadow" out of border onto the element).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 6/12: Frame 1261152785 ===
+Calling LLM (attempt 1/2) for part 6/12...
+Estimated prompt size: ~4,540 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 7/12: Group 1261154380, Group 1261154378, Frame 1261152784 ===
+Calling LLM (attempt 1/2) for part 7/12...
+Estimated prompt size: ~3,966 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 8/12: Frame 1261152785 ===
+Calling LLM (attempt 1/2) for part 8/12...
+Estimated prompt size: ~4,541 tokens (text only).
+Attempt 1: 3 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 8/12...
+Estimated prompt size: ~3,549 tokens (text only).
+Accepting output with layout-nesting warnings (recorded in _uncertain):
+  - Coverage: 2 content node(s) from the Figma data are missing from your output: 8232:160 (asset: Frame), 8232:164 (asset: Frame). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own "text", never as a child).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 9/12: Line 78, Group 1261154689, Rectangle 5701, Group 1261154378, Frame 1261152784 ===
+Calling LLM (attempt 1/2) for part 9/12...
+Estimated prompt size: ~4,184 tokens (text only).
+WARNING: response was cut off at max_tokens before finishing - the JSON is likely incomplete/truncated, not just invalid. Raise AI_MAX_TOKENS in .env, or use --split.
+Attempt 1: 1 layout/coverage problem(s):
+  - Coverage: 1 content node(s) from the Figma data are missing from your output: 8232:173 (text: PROS). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own "text", never as a child).
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 9/12...
+Estimated prompt size: ~4,419 tokens (text only).
+WARNING: response was cut off at max_tokens before finishing - the JSON is likely incomplete/truncated, not just invalid. Raise AI_MAX_TOKENS in .env, or use --split.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 10/12: Frame 1261152785 ===
+Calling LLM (attempt 1/2) for part 10/12...
+Estimated prompt size: ~4,537 tokens (text only).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196846, Requested 6580. Please try again in 24m40.032s. Need more tokens? Upgrade to Dev Tier today at https://co
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+  Dropped 1 field(s) the schema has no place for: undefined: dropped unknown field "_uncertain"
+Attempt 1: 5 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 10/12...
+Estimated prompt size: ~3,871 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 11/12: Group 1261154380, Group 1261154378, Frame 1261152784 ===
+Calling LLM (attempt 1/2) for part 11/12...
+Estimated prompt size: ~3,964 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 12/12: Frame 1261152785, Line 78 ===
+Calling LLM (attempt 1/2) for part 12/12...
+Estimated prompt size: ~4,599 tokens (text only).
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+  Stitch check: 7 node(s) were missing from the model's parts (8232:123, 8232:133, 8232:160, 8232:159, 8232:164, 8232:163, ...) - added from the Figma data.
+  stitch: dropped 11 duplicate element(s) emitted by overlapping parts
+
+Stitched 12 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 97 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Removed 4 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-06\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'Missing specific fontFamily weight for all elements (Inter used as default for most)',
+  'jili-slot-games-section: dropped unknown field "_uncertain"',
+  'section background not specified in Figma data (screenshot shows dark fill, left unspecified)',
+  `Coverage: 2 content node(s) from the Figma data are missing from your output: 8232:160 (asset: Frame), 8232:164 (asset: Frame). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own "text", never as a child).`,
+  'row-1',
+  'row-2',
+  'row-3',
+  'image-1',
+  'image-2',
+  'image-3',
+  'text-1',
+  'text-2',
+  'text-3',
+  'section-part-10',
+  "stitch: 7 node(s) added from Figma data because the model's parts did not include them",
+  'stitch: dropped 11 duplicate element(s) emitted by overlapping parts'
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-06 ===
+  structure: removed single-child wrapper feature-row-one around jili-slot-games-section-row-1
+  structure: removed single-child wrapper feature-row-two around jili-slot-games-section-row-2
+  structure: removed single-child wrapper feature-row-three around jili-slot-games-section-row-3
+  structure: removed single-child wrapper g1261154378 around jili-slot-games-section-column-3
+  structure: removed single-child wrapper group-1261154378-3 around jili-slot-games-section-column-5
+  structure: summary: background 0, unwrapped 5, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section jili-slot-games-section: wrapped in container (widthMax 1116px), side padding 0/0 -> 16
+  responsive: single-line text pros-cons-heading: no fixed width (avoids wrapping from font differences)
+  responsive: single-line text feature-text-two: no fixed width (avoids wrapping from font differences)
+  responsive: grid: jili-slot-games-section-row-11 -> 2 equal columns, gap 108
+  responsive: single-line text feature-list-item-2-text: no fixed width (avoids wrapping from font differences)
+  responsive: image img-frame8232150 -> icon (30px SVG)
+  responsive: image frame-30 -> icon (18px SVG)
+  responsive: single-line text lorem-ipsum-is-simply-dummy-text-of-the-31: no fixed width (avoids wrapping from font differences)
+  responsive: image frame-32 -> icon (18px SVG)
+  responsive: grid: jili-slot-games-section-row-17 -> 2 equal columns, gap 108
+  responsive: image frame-8232-171 -> icon (30px SVG)
+  responsive: image image-2 -> icon (18px SVG)
+  responsive: single-line text text-2: no fixed width (avoids wrapping from font differences)
+  responsive: image image-3 -> icon (18px SVG)
+  responsive: image frame -> icon (30px SVG)
+  responsive: image icon-1 -> icon (18px SVG)
+  responsive: image icon-2 -> icon (18px SVG)
+  responsive: single-line text text-2-2: no fixed width (avoids wrapping from font differences)
+  responsive: image icon-3 -> icon (18px SVG)
+Wrote output\jilislot-global-v-2\sections\section-06\bricks-tree.json (80 element(s))
+
+Warnings:
+ - /jili-slot-games-section/pros-cons-grid-row/jili-slot-games-section-row-4/pros-section-column/jili-slot-games-section-column-1/frame-1261152785-1/feature-row-one/jili-slot-games-section-row-1/feature-icon-one: note: 6px top offset from row top (offCross)
+ - /jili-slot-games-section/pros-cons-grid-row/jili-slot-games-section-row-4/pros-section-column/jili-slot-games-section-column-1/frame-1261152785-1/feature-row-one/jili-slot-games-section-row-1/feature-icon-one: note: layer overlaps row content
+ - /jili-slot-games-section/pros-cons-grid-row/jili-slot-games-section-row-4/pros-section-column/jili-slot-games-section-column-1/frame-1261152785-1/feature-row-two/jili-slot-games-section-row-2/feature-icon-two: note: 6px top offset from row top (offCross)
+ - /jili-slot-games-section/pros-cons-grid-row/jili-slot-games-section-row-4/pros-section-column/jili-slot-games-section-column-1/frame-1261152785-1/feature-row-two/jili-slot-games-section-row-2/feature-icon-two: note: layer overlaps row content
+ - /jili-slot-games-section/pros-cons-grid-row/jili-slot-games-section-row-4/pros-section-column/jili-slot-games-section-column-1/frame-1261152785-1/feature-row-three/jili-slot-games-section-row-3/feature-icon-three: note: 6px top offset from row top (offCross)
+ - /jili-slot-games-section/pros-cons-grid-row/jili-slot-games-section-row-4/pros-section-column/jili-slot-games-section-column-1/frame-1261152785-1/feature-row-three/jili-slot-games-section-row-3/feature-icon-three: note: layer overlaps row content
+ - /jili-slot-games-section/pros-cons-grid-row/jili-slot-games-section-row-4/group-1261154380: type "unsupported" will be skipped by the compiler. Notes: No sibling children to group with; empty group omitted as visible content
+ - /jili-slot-games-section/group-1261154689/jili-slot-games-section-row-17/line-78-2: type "unsupported" will be skipped by the compiler. Notes: Line element with stroke color #FFFFFF1A
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:207 --name=section-07 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:207 (Group 1261154705)
+Scoped output will go to output\jilislot-global-v-2\sections\section-07/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 12/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 12 part(s), prompt sizes ~4,515, 4,365, 4,363, 4,359, 4,362, 4,359, 4,365, 4,363, 4,363, 4,368, 4,363, 4,358 tokens (budget 4,600).
+
+=== Part 1/12: Group 1261154705, About Jili Slot Games, Group 1261154693 ===
+Calling LLM (attempt 1/2) for part 1/12...
+Models your Groq key can use: openai/gpt-oss-20b, openai/gpt-oss-120b, allam-2-7b, qwen/qwen3.8-27b
+Estimated prompt size: ~4,515 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  qwen/qwen3.8-27b allows only 1000 output tokens per request/minute on your Groq tier - retrying with max_tokens=950 (long answers will be cut off and re-split automatically).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196209, Requested 5823. Please try again in 14m37.824s. Need more tokens? Upgrade to Dev Tier today at https://co
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+  Dropped 1 field(s) the schema has no place for: section-1: dropped unknown field "_uncertain"
+Attempt 1: 1 layout/coverage problem(s):
+  - Coverage: 3 content node(s) from the Figma data are missing from your output: 8232:213 (text: Super Ace Jili), 8232:214 (text: High volatility, combo wins), 8232:215 (text: RTP: 96.00%). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own "text", never as a child).
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 1/12...
+Estimated prompt size: ~3,656 tokens (text only).
+  Dropped 1 field(s) the schema has no place for: section-1: dropped unknown field "_uncertain"
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/12: Group 1261154697 ===
+Calling LLM (attempt 1/2) for part 2/12...
+Estimated prompt size: ~4,365 tokens (text only).
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/12: Group 1261154701 ===
+Calling LLM (attempt 1/2) for part 3/12...
+Estimated prompt size: ~4,363 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 4/12: Group 1261154694 ===
+Calling LLM (attempt 1/2) for part 4/12...
+Estimated prompt size: ~4,360 tokens (text only).
+  Dropped 1 field(s) the schema has no place for: jilislot-global-v-2-part-4: dropped unknown field "_uncertain"
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 5/12: Group 1261154698 ===
+Calling LLM (attempt 1/2) for part 5/12...
+Estimated prompt size: ~4,362 tokens (text only).
+  Dropped 1 field(s) the schema has no place for: section-part-5: dropped unknown field "_uncertain"
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 6/12: Group 1261154702 ===
+Calling LLM (attempt 1/2) for part 6/12...
+Estimated prompt size: ~4,359 tokens (text only).
+Attempt 1: 2 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 6/12...
+Estimated prompt size: ~3,772 tokens (text only).
+Accepting output with layout-nesting warnings (recorded in _uncertain):
+  - Layout: in the measured column, [8232:253, 8232:254, 8232:255] and [8232:256] are separate stacked items, so they must be SIBLING elements. [8232:256] must not be nested inside the element holding [8232:253, 8232:254, 8232:255].
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 7/12: Group 1261154695 ===
+Calling LLM (attempt 1/2) for part 7/12...
+Estimated prompt size: ~4,365 tokens (text only).
+  Dropped 1 field(s) the schema has no place for: section-part-7: dropped unknown field "_uncertain"
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 8/12: Group 1261154699 ===
+Calling LLM (attempt 1/2) for part 8/12...
+Estimated prompt size: ~4,363 tokens (text only).
+  Dropped 1 field(s) the schema has no place for: section-part-8: dropped unknown field "_uncertain"
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 9/12: Group 1261154703 ===
+Calling LLM (attempt 1/2) for part 9/12...
+Estimated prompt size: ~4,363 tokens (text only).
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 10/12: Group 1261154696 ===
+Calling LLM (attempt 1/2) for part 10/12...
+Estimated prompt size: ~4,369 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 11/12: Group 1261154700 ===
+Calling LLM (attempt 1/2) for part 11/12...
+Estimated prompt size: ~4,364 tokens (text only).
+  Dropped 1 field(s) the schema has no place for: section-part-11: dropped unknown field "_uncertain"
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 12/12: Group 1261154704 ===
+Calling LLM (attempt 1/2) for part 12/12...
+Estimated prompt size: ~4,359 tokens (text only).
+  Stitch check: 7 node(s) were missing from the model's parts (8232:216, 8232:285, 8232:286, 8232:287, 8232:245, 8232:246, ...) - added from the Figma data.
+  stitch: dropped 0 duplicate element(s) emitted by overlapping parts and 6 element(s) whose Figma node id does not exist (alibaba-jili-slot, high-volatility-combo-wins-4, rtp-96-4, jili-slot-fortune-gems)
+
+Stitched 12 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 128 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Removed 3 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-07\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'section-1: dropped unknown field "_uncertain"',
+  'top-level synthetic wrapper omitted',
+  'jilislot-global-v-2-part-4: dropped unknown field "_uncertain"',
+  'section-part-5: dropped unknown field "_uncertain"',
+  'Layout: in the measured column, [8232:253, 8232:254, 8232:255] and [8232:256] are separate stacked items, so they must be SIBLING elements. [8232:256] must not be nested inside the element holding [8232:253, 8232:254, 8232:255].',
+  'overall page structure beyond provided nodes',
+  'section-part-7: dropped unknown field "_uncertain"',
+  'section-part-8: dropped unknown field "_uncertain"',
+  'section-part-11: dropped unknown field "_uncertain"',
+  "stitch: 7 node(s) added from Figma data because the model's parts did not include them",
+  'stitch: dropped 0 duplicate element(s) emitted by overlapping parts and 6 element(s) whose Figma node id does not exist (alibaba-jili-slot, high-volatility-combo-wins-4, rtp-96-4, jili-slot-fortune-gems)'
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-07 ===
+  structure: card title "Jili Money Coming" (jili-money-coming) -> h3
+  structure: removed single-child wrapper group-1261154692 around section-1-column-4
+  structure: card title "Jili Slot Fortune Gems" (jili-slot-fortune-gems-15) -> h3
+  structure: card title "Alibaba Jili Slot" (alibaba-jili-slot-23) -> h3
+  structure: card title "Jili Super Ace Slot" (text-jili-super-ace-slot) -> h3
+  structure: card title "Wild Ace Jili" (wild-ace-jili) -> h3
+  structure: removed single-child wrapper group-1261154705 around section-1-column-14
+  structure: summary: background 0, unwrapped 2, headings 5, cards 0, layers 0, scope widths 0
+  responsive: section section-1: wrapped in container (widthMax 1200px), side padding 0/0 -> 16
+  responsive: single-line text about-jili-slot-games: no fixed width (avoids wrapping from font differences)
+  responsive: grid: section-1-row-1 -> 4 equal columns, gap 24
+  responsive: grid: section-1-row-2 -> 4 equal columns, gap 24
+  responsive: grid: section-1-row-3 -> 4 equal columns, gap 24
+Wrote output\jilislot-global-v-2\sections\section-07\bricks-tree.json (91 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:305 --name=section-08 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:305 (Group 1261154711)
+Scoped output will go to output\jilislot-global-v-2\sections\section-08/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 4/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 8 part(s), prompt sizes ~3,871, 4,533, 3,714, 4,532, 3,714, 4,532, 3,714, 4,528 tokens (budget 4,600).
+
+=== Part 1/8: Group 1261154711, About Other Types of Jili Games, Group 1261154707, Rectangle 5756 ===
+Calling LLM (attempt 1/2) for part 1/8...
+Models your Groq key can use: allam-2-7b, openai/gpt-oss-20b, qwen/qwen3.8-27b, openai/gpt-oss-120b
+Estimated prompt size: ~3,871 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+Using qwen/qwen3.8-27b.
+  Dropped 1 field(s) the schema has no place for: part-section: dropped unknown field "_uncertain"
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/8: Group 1261154706 ===
+Calling LLM (attempt 1/2) for part 2/8...
+Estimated prompt size: ~4,533 tokens (text only).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199695, Requested 6054. Please try again in 41m23.568s. Need more tokens? Upgrade to Dev Tier today at https://co
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 2/8...
+Estimated prompt size: ~3,717 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/8: Group 1261154708, Rectangle 5756 ===
+Calling LLM (attempt 1/2) for part 3/8...
+Estimated prompt size: ~3,714 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 4/8: Group 1261154706 ===
+Calling LLM (attempt 1/2) for part 4/8...
+Estimated prompt size: ~4,532 tokens (text only).
+Attempt 1: 3 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 4/8...
+Estimated prompt size: ~3,769 tokens (text only).
+Accepting output with layout-nesting warnings (recorded in _uncertain):
+  - Layout: in the measured column, [8232:323, 8232:324, 8232:326] and [8232:320] are separate stacked items, so they must be SIBLING elements. [8232:320] must not be nested inside the element holding [8232:323, 8232:324, 8232:326].
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 5/8: Group 1261154709, Rectangle 5756 ===
+Calling LLM (attempt 1/2) for part 5/8...
+Estimated prompt size: ~3,714 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 6/8: Group 1261154706 ===
+Calling LLM (attempt 1/2) for part 6/8...
+Estimated prompt size: ~4,532 tokens (text only).
+Attempt 1: 2 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 6/8...
+Estimated prompt size: ~3,728 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 7/8: Group 1261154710, Rectangle 5756 ===
+Calling LLM (attempt 1/2) for part 7/8...
+Estimated prompt size: ~3,714 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 8/8: Group 1261154706 ===
+Calling LLM (attempt 1/2) for part 8/8...
+Estimated prompt size: ~4,528 tokens (text only).
+  Stitch check: 4 node(s) were missing from the model's parts (8232:316, 8232:320, 8232:330, 8232:336) - added from the Figma data.
+
+Stitched 8 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 54 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Removed 4 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-08\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'part-section: dropped unknown field "_uncertain"',
+  'layout',
+  'border',
+  'boxShadow',
+  'notes',
+  'Layout: in the measured column, [8232:323, 8232:324, 8232:326] and [8232:320] are separate stacked items, so they must be SIBLING elements. [8232:320] must not be nested inside the element holding [8232:323, 8232:324, 8232:326].',
+  'layout for group',
+  'border stroke for rectangle',
+  'exact layout justification for column container',
+  "stitch: 4 node(s) added from Figma data because the model's parts did not include them"
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-08 ===
+  structure: card title "Jili Fishing Games" (jili-fishing-games) -> h3
+  structure: removed single-child wrapper group-1261154706 around part-section-column-1
+  structure: card title "Jili Table Games" (jili-table-games) -> h3
+  structure: removed single-child wrapper group-container-1 around part-section-column-5
+  structure: summary: background 0, unwrapped 2, headings 2, cards 0, layers 0, scope widths 0
+  responsive: section part-section: wrapped in container (widthMax 1200px), side padding 0/0 -> 16
+  responsive: single-line text about-heading: no fixed width (avoids wrapping from font differences)
+  responsive: grid: part-section-row-1 -> 4 equal columns, gap 24
+Wrote output\jilislot-global-v-2\sections\section-08\bricks-tree.json (37 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:347 --name=section-09 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:347 (Group 1261154720)
+Scoped output will go to output\jilislot-global-v-2\sections\section-09/ (the full-page figma-node.json / screenshot.png are untouched).
+Pruned 3 graphic subtree(s) (icons/illustrations) out of the prompt - they're already exported assets, not something the model needs raw vector data for. Saved ~12,137 chars (43% of the raw JSON size).
+Asset manifest trimmed to 3/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 3 part(s), prompt sizes ~4,406, 4,249, 4,250 tokens (budget 4,600).
+
+=== Part 1/3: Group 1261154720, How to Start Playing Jili Games?, Group 1261154715 ===
+Calling LLM (attempt 1/2) for part 1/3...
+Models your Groq key can use: qwen/qwen3.8-27b, openai/gpt-oss-120b, openai/gpt-oss-20b, allam-2-7b
+Estimated prompt size: ~4,406 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198132, Requested 5713. Please try again in 27m41.04s. Need more tokens? Upgrade to Dev Tier today at https://con
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+  Dropped 1 field(s) the schema has no place for: group-1261154677: dropped unknown field "offCross"
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/3: Group 1261154717 ===
+Calling LLM (attempt 1/2) for part 2/3...
+Estimated prompt size: ~4,249 tokens (text only).
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/3: Group 1261154719 ===
+Calling LLM (attempt 1/2) for part 3/3...
+Estimated prompt size: ~4,250 tokens (text only).
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 3/3...
+Estimated prompt size: ~3,510 tokens (text only).
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+
+Stitched 3 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 35 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Removed 1 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-09\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'group-1261154677: dropped unknown field "offCross"',
+  'container background and border details omitted'
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-09 ===
+  structure: removed single-child wrapper group-1261154714 around section-1-column-2
+  structure: removed single-child wrapper group-8232-363 around section-1-column-3
+  structure: removed single-child wrapper group-1261154720 around section-1-column-5
+  structure: summary: background 0, unwrapped 3, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section section-1: wrapped in container (widthMax 1200px), side padding 0/0 -> 16
+  responsive: single-line text how-to-start-playing-jili-games: no fixed width (avoids wrapping from font differences)
+  responsive: grid: section-1-row-1 cards share padding 50/43/44/44
+  responsive: grid: section-1-row-1 -> 3 equal columns, gap 24
+Wrote output\jilislot-global-v-2\sections\section-09\bricks-tree.json (23 element(s))
+
+Warnings:
+ - /section-1/group-1261154720/section-1-column-5/section-1-row-1/group-1261154715/rectangle-5757: type "unsupported" will be skipped by the compiler. Notes: Rectangle with cornerRadius 12 and stroke #FFFFFF2E, no fill.
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:387 --name=section-10 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:387 (Group 1261154729)
+Scoped output will go to output\jilislot-global-v-2\sections\section-10/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 6/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 12 part(s), prompt sizes ~3,885, 4,521, 3,715, 4,514, 3,715, 4,516, 3,715, 4,513, 3,715, 4,522, 3,715, 4,518 tokens (budget 4,600).
+
+=== Part 1/12: Group 1261154729, Jili Slot Games Bangladesh Promotions and Bonuses, Group 1261154723, Rectangle 5757 ===
+Calling LLM (attempt 1/2) for part 1/12...
+Models your Groq key can use: openai/gpt-oss-20b, allam-2-7b, openai/gpt-oss-120b, qwen/qwen3.8-27b
+Estimated prompt size: ~3,886 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197500, Requested 5188. Please try again in 19m21.216s. Need more tokens? Upgrade to Dev Tier today at https://co
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/12: Group 1261154722 ===
+Calling LLM (attempt 1/2) for part 2/12...
+Estimated prompt size: ~4,521 tokens (text only).
+Attempt 1: 2 layout/coverage problem(s):
+  - Layout: in the measured column, [8232:395, 8232:396, 8232:398] and [8232:392] are separate stacked items, so they must be SIBLING elements. [8232:392] must not be nested inside the element holding [8232:395, 8232:396, 8232:398].
+  - Layout: in the measured column, [8232:395, 8232:396] and [8232:398] are separate stacked items, so they must be SIBLING elements. [8232:398] must not be nested inside the element holding [8232:395, 8232:396].
+Attempt 1: 2 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 2/12...
+Estimated prompt size: ~3,751 tokens (text only).
+Accepting output with layout-nesting warnings (recorded in _uncertain):
+  - Layout: in the measured column, [8232:395, 8232:396, 8232:398] and [8232:392] are separate stacked items, so they must be SIBLING elements. [8232:392] must not be nested inside the element holding [8232:395, 8232:396, 8232:398].
+  - Layout: in the measured column, [8232:395, 8232:396] and [8232:398] are separate stacked items, so they must be SIBLING elements. [8232:398] must not be nested inside the element holding [8232:395, 8232:396].
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/12: Group 1261154726, Rectangle 5757 ===
+Calling LLM (attempt 1/2) for part 3/12...
+Estimated prompt size: ~3,715 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 4/12: Group 1261154722 ===
+Calling LLM (attempt 1/2) for part 4/12...
+Estimated prompt size: ~4,514 tokens (text only).
+  Dropped 1 field(s) the schema has no place for: section-part4: dropped unknown field "_uncertain"
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 5/12: Group 1261154724, Rectangle 5757 ===
+Calling LLM (attempt 1/2) for part 5/12...
+Estimated prompt size: ~3,715 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 6/12: Group 1261154722 ===
+Calling LLM (attempt 1/2) for part 6/12...
+Estimated prompt size: ~4,517 tokens (text only).
+  Layout nesting did not match the measured layout (1 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 7/12: Group 1261154727, Rectangle 5757 ===
+Calling LLM (attempt 1/2) for part 7/12...
+Estimated prompt size: ~3,715 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 8/12: Group 1261154722 ===
+Calling LLM (attempt 1/2) for part 8/12...
+Estimated prompt size: ~4,513 tokens (text only).
+  Layout nesting did not match the measured layout (2 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 9/12: Group 1261154725, Rectangle 5757 ===
+Calling LLM (attempt 1/2) for part 9/12...
+Estimated prompt size: ~3,715 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 10/12: Group 1261154722 ===
+Calling LLM (attempt 1/2) for part 10/12...
+Estimated prompt size: ~4,522 tokens (text only).
+  Layout nesting did not match the measured layout (2 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 11/12: Group 1261154728, Rectangle 5757 ===
+Calling LLM (attempt 1/2) for part 11/12...
+Estimated prompt size: ~3,715 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 12/12: Group 1261154722 ===
+Calling LLM (attempt 1/2) for part 12/12...
+Estimated prompt size: ~4,519 tokens (text only).
+  Layout nesting did not match the measured layout (2 problem(s)); rebuilt the grouping from Figma geometry instead of retrying.
+  Stitch check: 5 node(s) were missing from the model's parts (8232:418, 8232:438, 8232:408, 8232:428, 8232:448) - added from the Figma data.
+  stitch: dropped 1 duplicate element(s) emitted by overlapping parts
+
+Stitched 12 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 79 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Removed 4 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-10\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'Layout: in the measured column, [8232:395, 8232:396, 8232:398] and [8232:392] are separate stacked items, so they must be SIBLING elements. [8232:392] must not be nested inside the element holding [8232:395, 8232:396, 8232:398].',
+  'Layout: in the measured column, [8232:395, 8232:396] and [8232:398] are separate stacked items, so they must be SIBLING elements. [8232:398] must not be nested inside the element holding [8232:395, 8232:396].',
+  'section-part4: dropped unknown field "_uncertain"',
+  'heading level',
+  'text sizing for heading and paragraph',
+  'layout details for group and rectangle omitted',
+  'layout details for group container',
+  "stitch: 5 node(s) added from Figma data because the model's parts did not include them",
+  'stitch: dropped 1 duplicate element(s) emitted by overlapping parts'
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-10 ===
+  structure: removed single-child wrapper content-column around section-1-column-4
+  structure: removed single-child wrapper group-1261154729 around section-1-column-13
+  structure: summary: background 0, unwrapped 2, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section section-1: wrapped in container (widthMax 1200px), side padding 0/0 -> 16
+  responsive: single-line text jili-slot-games-bangladesh-promotions-and-bonuses: no fixed width (avoids wrapping from font differences)
+  responsive: grid: section-1-row-1 -> 3 equal columns, gap 24
+  responsive: grid: section-1-row-2 -> 3 equal columns, gap 24
+Wrote output\jilislot-global-v-2\sections\section-10\bricks-tree.json (54 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:449 --name=section-11 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:449 (Group 1261154731)
+Scoped output will go to output\jilislot-global-v-2\sections\section-11/ (the full-page figma-node.json / screenshot.png are untouched).
+Left out 4 gradient(s) that sit inside exported graphics (already part of those images).
+Pruned 1 graphic subtree(s) (icons/illustrations) out of the prompt - they're already exported assets, not something the model needs raw vector data for. Saved ~40,461 chars (81% of the raw JSON size).
+Asset manifest trimmed to 2/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 2 part(s), prompt sizes ~4,002, 4,571 tokens (budget 4,600).
+
+=== Part 1/2: Group 1261154731, Rectangle 5762, Group 1261154730, Frame 1261152805, Jili Games: Play Seamlessly on Mobile Devices ===
+Calling LLM (attempt 1/2) for part 1/2...
+Models your Groq key can use: openai/gpt-oss-20b, allam-2-7b, qwen/qwen3.8-27b, openai/gpt-oss-120b
+Estimated prompt size: ~4,002 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 195438, Requested 5242. Please try again in 4m53.76s. Need more tokens? Upgrade to Dev Tier today at https://cons
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+Attempt 1: 4 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 1/2...
+Estimated prompt size: ~3,488 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/2: Frame 1261152804, 66bd04ca-3a57-48a3-b863-37adf2edd550 ===
+Calling LLM (attempt 1/2) for part 2/2...
+Estimated prompt size: ~4,571 tokens (text only).
+
+Stitched 2 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 13 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Removed 1 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-11\normalized.json (validated against schema/normalized-schema.json)
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-11 ===
+  structure: section rectangle-5762: background #101010 from full-width Figma rectangle 8232:450
+  structure: summary: background 1, unwrapped 0, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section rectangle-5762: wrapped in container (widthMax 1200px), side padding 0/0 -> 16
+Wrote output\jilislot-global-v-2\sections\section-11\bricks-tree.json (12 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:517 --name=section-12 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:517 (Group 1261154425)
+Scoped output will go to output\jilislot-global-v-2\sections\section-12/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 1/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 2 part(s), prompt sizes ~4,570, 4,029 tokens (budget 4,600).
+
+=== Part 1/2: Group 1261154425, Frame 44, Frame 43 ===
+Calling LLM (attempt 1/2) for part 1/2...
+Models your Groq key can use: openai/gpt-oss-20b, allam-2-7b, openai/gpt-oss-120b, qwen/qwen3.8-27b
+Estimated prompt size: ~4,570 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194964, Requested 5817. Please try again in 5m37.392s. Need more tokens? Upgrade to Dev Tier today at https://con
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+Attempt 1: 3 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 1/2...
+Estimated prompt size: ~3,687 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/2: Frame 44, a5927452-5ef0-4eec-a45d-dba41aa77da0 ===
+Calling LLM (attempt 1/2) for part 2/2...
+Estimated prompt size: ~4,029 tokens (text only).
+  Stitch check: 1 node(s) were missing from the model's parts (8232:525) - added from the Figma data.
+
+Stitched 2 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 12 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Removed 2 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-12\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  "stitch: 1 node(s) added from Figma data because the model's parts did not include them"
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-12 ===
+  structure: removed single-child wrapper group-1261154425 around section-1-row-1
+  structure: summary: background 0, unwrapped 1, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section section-1: wrapped in container (widthMax 1200px), side padding 0/0 -> 16
+Wrote output\jilislot-global-v-2\sections\section-12\bricks-tree.json (11 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:527 --name=section-13 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:527 (Group 1261154737)
+Scoped output will go to output\jilislot-global-v-2\sections\section-13/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 3/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 4 part(s), prompt sizes ~3,771, 4,619, 4,565, 4,568 tokens (budget 4,600).
+
+=== Part 1/4: Group 1261154737, Jili Games Slots with the Highest RTP ===
+Calling LLM (attempt 1/2) for part 1/4...
+Models your Groq key can use: openai/gpt-oss-20b, allam-2-7b, qwen/qwen3.8-27b, openai/gpt-oss-120b
+Estimated prompt size: ~3,771 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+Using qwen/qwen3.8-27b.
+Attempt 1: 1 layout/coverage problem(s):
+  - Coverage: 1 content node(s) from the Figma data are missing from your output: 8232:528 (text: Jili Games Slots with the Highest RTP). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own "text", never as a child).
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 1/4...
+Estimated prompt size: ~3,304 tokens (text only).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199703, Requested 2452. Please try again in 15m30.96s. Need more tokens? Upgrade to Dev Tier today at https://con
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/4: Group 1261154736, Group 1261154733 ===
+Calling LLM (attempt 1/2) for part 2/4...
+Estimated prompt size: ~4,619 tokens (text only).
+Attempt 1: 1 layout/coverage problem(s):
+  - Coverage: 3 content node(s) from the Figma data are missing from your output: 8232:537 (text: Golden Empire), 8232:538 (text: RTP Percentage: (96%)+ (97%+)), 8232:539 (text: Type: Classic, Bonus Buy, Jackpot). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own "text", never as a child).
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 2/4...
+Estimated prompt size: ~3,523 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/4: Group 1261154734 ===
+Calling LLM (attempt 1/2) for part 3/4...
+Estimated prompt size: ~4,565 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 4/4: Group 1261154735 ===
+Calling LLM (attempt 1/2) for part 4/4...
+Estimated prompt size: ~4,568 tokens (text only).
+  Stitch check: 7 node(s) were missing from the model's parts (8232:533, 8232:547, 8232:548, 8232:549, 8232:557, 8232:558, ...) - added from the Figma data.
+  stitch: dropped 0 duplicate element(s) emitted by overlapping parts and 6 element(s) whose Figma node id does not exist (fortune-gems, rtp-percentage, type-classic, lucky-goldbricks)
+
+Stitched 4 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 40 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Removed 3 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-13\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  "stitch: 7 node(s) added from Figma data because the model's parts did not include them",
+  'stitch: dropped 0 duplicate element(s) emitted by overlapping parts and 6 element(s) whose Figma node id does not exist (fortune-gems, rtp-percentage, type-classic, lucky-goldbricks)'
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-13 ===
+  structure: card title "Golden Empire" (text-golden-empire) -> h3
+  structure: card title "Fortune Gems" (fortune-gems-7) -> h3
+  structure: removed single-child wrapper group-1261154732 around jili-games-highest-rtp-column-2
+  structure: card title "Lucky Goldbricks" (lucky-goldbricks-11) -> h3
+  structure: removed single-child wrapper group-1261154736 around jili-games-highest-rtp-row-1
+  structure: summary: background 0, unwrapped 2, headings 3, cards 0, layers 0, scope widths 0
+  responsive: section jili-games-highest-rtp: wrapped in container (widthMax 1200px), side padding 0/0 -> 16
+  responsive: single-line text jili-games-slots-highest-rtp: no fixed width (avoids wrapping from font differences)
+  responsive: grid: jili-games-highest-rtp-row-1 -> 3 equal columns, gap 24
+Wrote output\jilislot-global-v-2\sections\section-13\bricks-tree.json (29 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:560 --name=section-14 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:560 (Frame 1261152839)
+Scoped output will go to output\jilislot-global-v-2\sections\section-14/ (the full-page figma-node.json / screenshot.png are untouched).
+Pruned 4 graphic subtree(s) (icons/illustrations) out of the prompt - they're already exported assets, not something the model needs raw vector data for. Saved ~17,420 chars (49% of the raw JSON size).
+Asset manifest trimmed to 4/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 4 part(s), prompt sizes ~4,526, 4,183, 4,179, 4,178 tokens (budget 4,600).
+
+=== Part 1/4: Frame 1261152839, How To Play Jili Games Demo Slots For Free, Frame 1261152838, Frame 1261152834 ===
+Calling LLM (attempt 1/2) for part 1/4...
+Models your Groq key can use: qwen/qwen3.8-27b, openai/gpt-oss-20b, allam-2-7b, openai/gpt-oss-120b
+Estimated prompt size: ~4,526 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198906, Requested 5687. Please try again in 33m4.176s. Need more tokens? Upgrade to Dev Tier today at https://con
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/4: Frame 1261152835 ===
+Calling LLM (attempt 1/2) for part 2/4...
+Estimated prompt size: ~4,183 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/4: Frame 1261152836 ===
+Calling LLM (attempt 1/2) for part 3/4...
+Estimated prompt size: ~4,179 tokens (text only).
+Attempt 1: 2 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 3/4...
+Estimated prompt size: ~3,513 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 4/4: Frame 1261152837 ===
+Calling LLM (attempt 1/2) for part 4/4...
+Estimated prompt size: ~4,178 tokens (text only).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199197, Requested 3908. Please try again in 22m21.36s. Need more tokens? Upgrade to Dev Tier today at https://
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197968, Requested 5376. Please try again in 24m4.608s. Need more tokens? Upgrade to Dev Tier today at https://con
+Trying openai/gpt-oss-20b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-20b.
+
+Stitched 4 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 24 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Wrote output\jilislot-global-v-2\sections\section-14\normalized.json (validated against schema/normalized-schema.json)
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-14 ===
+  structure: card title "Search for a Jili slot" (search-for-a-jili-slot) -> h3
+  structure: card title "Click play game" (click-play-game) -> h3
+  structure: summary: background 0, unwrapped 0, headings 2, cards 0, layers 0, scope widths 0
+  responsive: section section: wrapped in container (widthMax 1201px), side padding 0/0 -> 16
+  responsive: grid: frame-1261152838 -> 4 equal columns, gap 87
+Wrote output\jilislot-global-v-2\sections\section-14\bricks-tree.json (25 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:607 --name=section-15 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:607 (Group 1261154742)
+Scoped output will go to output\jilislot-global-v-2\sections\section-15/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 0/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 8 part(s), prompt sizes ~4,362, 4,566, 4,211, 4,566, 4,203, 4,565, 4,217, 4,565 tokens (budget 4,600).
+
+=== Part 1/8: Group 1261154742, Secure and Flexible Deposit and Withdrawal Options, Group 1261154739, Rectangle 5763, Frame 1261152842 ===
+Calling LLM (attempt 1/2) for part 1/8...
+Models your Groq key can use: openai/gpt-oss-120b, qwen/qwen3.8-27b, allam-2-7b, openai/gpt-oss-20b
+Estimated prompt size: ~4,362 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197807, Requested 5543. Please try again in 24m7.2s. Need more tokens? Upgrade to Dev Tier today at https://conso
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198728, Requested 3814. Please try again in 18m18.144s. Need more tokens? Upgrade to Dev Tier today at https:/
+Trying openai/gpt-oss-20b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-20b.
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 1/8...
+Estimated prompt size: ~3,659 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/8: Frame 1261152841 ===
+Calling LLM (attempt 1/2) for part 2/8...
+Estimated prompt size: ~4,566 tokens (text only).
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 2/8...
+Estimated prompt size: ~3,628 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/8: Group 1261154740, Rectangle 5763, Frame 1261152842, Frame 1261152840 ===
+Calling LLM (attempt 1/2) for part 3/8...
+Estimated prompt size: ~4,211 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 4/8: Frame 1261152841 ===
+Calling LLM (attempt 1/2) for part 4/8...
+Estimated prompt size: ~4,566 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 5/8: Group 1261154738, Rectangle 5763, Frame 1261152842, Frame 1261152840 ===
+Calling LLM (attempt 1/2) for part 5/8...
+Estimated prompt size: ~4,203 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 6/8: Frame 1261152841 ===
+Calling LLM (attempt 1/2) for part 6/8...
+Estimated prompt size: ~4,565 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 7/8: Group 1261154741, Rectangle 5763, Frame 1261152842, Frame 1261152840 ===
+Calling LLM (attempt 1/2) for part 7/8...
+Estimated prompt size: ~4,217 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 8/8: Frame 1261152841 ===
+Calling LLM (attempt 1/2) for part 8/8...
+Estimated prompt size: ~4,565 tokens (text only).
+  Stitch check: 2 node(s) were missing from the model's parts (8232:644, 8232:616) - added from the Figma data.
+
+Stitched 8 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 61 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Removed 1 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-15\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'layout details for group-1261154742 and group-1261154739',
+  "stitch: 2 node(s) added from Figma data because the model's parts did not include them"
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-15 ===
+  structure: removed single-child wrapper group-1261154742 around section-1-column-1
+  structure: summary: background 0, unwrapped 1, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section section-1: wrapped in container (widthMax 1200px), side padding 0/0 -> 16
+  responsive: single-line text heading-8232-608: no fixed width (avoids wrapping from font differences)
+  responsive: grid: section-1-row-1 -> 2 equal columns, gap 24
+  responsive: grid: section-1-row-2 -> 2 equal columns, gap 24
+Wrote output\jilislot-global-v-2\sections\section-15\bricks-tree.json (46 element(s))
+
+Warnings:
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-1/group-1261154738/frame-1261152842-3/frame-1261152841-1/line-79-2: type "unsupported" will be skipped by the compiler. Notes: LINE type
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-1/group-1261154738/frame-1261152842-3/frame-1261152841-1/line-80-2: type "unsupported" will be skipped by the compiler. Notes: LINE type
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-1/group-1261154738/frame-1261152842-3/frame-1261152841-1/line-81-2: type "unsupported" will be skipped by the compiler. Notes: LINE type
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-1/group-1261154739/frame-1261152842/frame-1261152841-2/line-79: type "unsupported" will be skipped by the compiler. Notes: Line 79
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-1/group-1261154739/frame-1261152842/frame-1261152841-2/line-80: type "unsupported" will be skipped by the compiler. Notes: Line 80
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-1/group-1261154739/frame-1261152842/frame-1261152841-2/line-81: type "unsupported" will be skipped by the compiler. Notes: Line 81
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-2/group-1261154741-1/frame-1261152842-4/frame-1261152841-3/line-79-3: type "unsupported" will be skipped by the compiler. Notes: Line separator
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-2/group-1261154741-1/frame-1261152842-4/frame-1261152841-3/line-80-3: type "unsupported" will be skipped by the compiler. Notes: Line separator
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-2/group-1261154741-1/frame-1261152842-4/frame-1261152841-3/line-81-3: type "unsupported" will be skipped by the compiler. Notes: Line separator
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-2/group-1261154740-1/frame-1261152842-2/frame-1261152841-4/line-1: type "unsupported" will be skipped by the compiler. Notes: Horizontal line
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-2/group-1261154740-1/frame-1261152842-2/frame-1261152841-4/line-2: type "unsupported" will be skipped by the compiler. Notes: Horizontal line
+ - /section-1/group-1261154742/section-1-column-1/section-1-row-2/group-1261154740-1/frame-1261152842-2/frame-1261152841-4/line-3: type "unsupported" will be skipped by the compiler. Notes: Horizontal line
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:665 --name=section-16 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:665 (Group 1261154425)
+Scoped output will go to output\jilislot-global-v-2\sections\section-16/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 1/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 2 part(s), prompt sizes ~4,574, 4,030 tokens (budget 4,600).
+
+=== Part 1/2: Group 1261154425, Frame 44, Frame 43 ===
+Calling LLM (attempt 1/2) for part 1/2...
+Models your Groq key can use: qwen/qwen3.8-27b, openai/gpt-oss-120b, openai/gpt-oss-20b, allam-2-7b
+Estimated prompt size: ~4,574 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196091, Requested 5683. Please try again in 12m46.367999999s. Need more tokens? Upgrade to Dev Tier today at http
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197013, Requested 3866. Please try again in 6m19.727999999s. Need more tokens? Upgrade to Dev Tier today at ht
+Trying openai/gpt-oss-20b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-20b.
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 1/2...
+Estimated prompt size: ~3,731 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/2: Frame 44, cybersecurity-data-protection-concept ===
+Calling LLM (attempt 1/2) for part 2/2...
+Estimated prompt size: ~4,030 tokens (text only).
+  Dropped 1 field(s) the schema has no place for: undefined: dropped unknown field "gaps"
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 2/2...
+Estimated prompt size: ~3,464 tokens (text only).
+  Stitch check: 4 node(s) were missing from the model's parts (8232:668, 8232:670, 8232:671, 8232:673) - added from the Figma data.
+  stitch: dropped 0 duplicate element(s) emitted by overlapping parts and 3 element(s) whose Figma node id does not exist (heading-security-and-fair-play, lorem-1, lorem-2)
+
+Stitched 2 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 13 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Wrote output\jilislot-global-v-2\sections\section-16\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  "stitch: 4 node(s) added from Figma data because the model's parts did not include them",
+  'stitch: dropped 0 duplicate element(s) emitted by overlapping parts and 3 element(s) whose Figma node id does not exist (heading-security-and-fair-play, lorem-1, lorem-2)'
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-16 ===
+  structure: removed single-child wrapper group-1261154425 around scope-row-1
+  structure: summary: background 0, unwrapped 1, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section scope: wrapped in container (widthMax 1200px), side padding 0/0 -> 16
+Wrote output\jilislot-global-v-2\sections\section-16\bricks-tree.json (11 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:675 --name=section-17 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:675 (Frame 1261152845)
+Scoped output will go to output\jilislot-global-v-2\sections\section-17/ (the full-page figma-node.json / screenshot.png are untouched).
+Asset manifest trimmed to 0/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 6 part(s), prompt sizes ~4,566, 4,215, 4,218, 4,215, 4,219, 4,220 tokens (budget 4,600).
+
+=== Part 1/6: Frame 1261152845, How to Choose the Best Jili Slot Games?, Frame 1261152844, Group 1261154743 ===
+Calling LLM (attempt 1/2) for part 1/6...
+Models your Groq key can use: openai/gpt-oss-120b, openai/gpt-oss-20b, qwen/qwen3.8-27b, allam-2-7b
+Estimated prompt size: ~4,566 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 195323, Requested 5850. Please try again in 8m26.736s. Need more tokens? Upgrade to Dev Tier today at https://con
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196247, Requested 3871. Please try again in 50.976s. Need more tokens? Upgrade to Dev Tier today at https://co
+Trying openai/gpt-oss-20b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-20b.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/6: Group 1261154744 ===
+Calling LLM (attempt 1/2) for part 2/6...
+Estimated prompt size: ~4,215 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/6: Group 1261154746 ===
+Calling LLM (attempt 1/2) for part 3/6...
+Estimated prompt size: ~4,218 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 4/6: Group 1261154745 ===
+Calling LLM (attempt 1/2) for part 4/6...
+Estimated prompt size: ~4,215 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 5/6: Group 1261154748 ===
+Calling LLM (attempt 1/2) for part 5/6...
+Estimated prompt size: ~4,219 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 6/6: Group 1261154747 ===
+Calling LLM (attempt 1/2) for part 6/6...
+Estimated prompt size: ~4,220 tokens (text only).
+  Stitch check: 1 node(s) were missing from the model's parts (8232:676) - added from the Figma data.
+
+Stitched 6 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 50 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+  WARNING frame-1261152844-1: skipped layout (children overlap or are out of order along the row axis - check the nesting)
+Wrote output\jilislot-global-v-2\sections\section-17\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  "stitch: 1 node(s) added from Figma data because the model's parts did not include them"
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-17 ===
+  structure: summary: background 0, unwrapped 0, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section how-to-choose-the-best-jili-slot-games: wrapped in container (widthMax 3528px), side padding 0/0 -> 16
+  responsive: single-line text how-to-choose-the-best-jili-slot-games-1: no fixed width (avoids wrapping from font differences)
+  responsive: grid: frame-1261152844-1 -> 6 equal columns, gap 0
+Wrote output\jilislot-global-v-2\sections\section-17\bricks-tree.json (28 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:708 --name=section-18 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:708 (Frame 1261152850)
+Scoped output will go to output\jilislot-global-v-2\sections\section-18/ (the full-page figma-node.json / screenshot.png are untouched).
+Pruned 3 graphic subtree(s) (icons/illustrations) out of the prompt - they're already exported assets, not something the model needs raw vector data for. Saved ~12,554 chars (60% of the raw JSON size).
+Asset manifest trimmed to 3/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 2 part(s), prompt sizes ~4,573, 3,926 tokens (budget 4,600).
+
+=== Part 1/2: Frame 1261152850, Contact Jili Games Customer Services, Frame 1261152849, Frame 1261152848, Frame 1261152846 ===
+Calling LLM (attempt 1/2) for part 1/2...
+Models your Groq key can use: qwen/qwen3.8-27b, openai/gpt-oss-120b, allam-2-7b, openai/gpt-oss-20b
+Estimated prompt size: ~4,573 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194225, Requested 5954. Please try again in 1m17.328s. Need more tokens? Upgrade to Dev Tier today at https://con
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+  Auto-corrected 3 misplaced field(s) (e.g. undefined: moved "direction" from element to layout).
+Attempt 1: 35 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 1/2...
+Estimated prompt size: ~4,310 tokens (text only).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196799, Requested 3827. Please try again in 4m30.432s. Need more tokens? Upgrade to Dev Tier today at https://
+Trying qwen/qwen3.8-27b (vision)...
+Using qwen/qwen3.8-27b.
+  Dropped 1 field(s) the schema has no place for: contact-section: dropped unknown field "_uncertain"
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/2: Frame 1261152847 ===
+Calling LLM (attempt 1/2) for part 2/2...
+Estimated prompt size: ~3,926 tokens (text only).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197641, Requested 5247. Please try again in 20m47.616s. Need more tokens? Upgrade to Dev Tier today at https://co
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196334, Requested 3788. Please try again in 52.704s. Need more tokens? Upgrade to Dev Tier today at https://co
+Trying openai/gpt-oss-20b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-20b.
+
+Stitched 2 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 14 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Wrote output\jilislot-global-v-2\sections\section-18\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [ 'contact-section: dropped unknown field "_uncertain"' ]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-18 ===
+  structure: section contact-section: scope is 1003px wide -> container max-width 1003px
+  structure: summary: background 0, unwrapped 0, headings 0, cards 0, layers 0, scope widths 1
+  responsive: section contact-section: container max-width 1003px from the Figma frame width
+  responsive: section contact-section: wrapped in container (widthMax 1003px), side padding 0/0 -> 16
+Wrote output\jilislot-global-v-2\sections\section-18\bricks-tree.json (14 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:737 --name=section-19 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:737 (Group 1261154751)
+Scoped output will go to output\jilislot-global-v-2\sections\section-19/ (the full-page figma-node.json / screenshot.png are untouched).
+Pruned 1 graphic subtree(s) (icons/illustrations) out of the prompt - they're already exported assets, not something the model needs raw vector data for. Saved ~571 chars (5% of the raw JSON size).
+Asset manifest trimmed to 2/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+  card background: group "Mask group" collapsed to its rectangle (decorative shapes left out of the flow)
+  card background: group "Group 1261154750" collapsed to its rectangle (decorative shapes left out of the flow)
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 2 part(s), prompt sizes ~4,031, 4,458 tokens (budget 4,600).
+
+=== Part 1/2: Group 1261154751, Group 1261154750 ===
+Calling LLM (attempt 1/2) for part 1/2...
+Models your Groq key can use: qwen/qwen3.8-27b, openai/gpt-oss-120b, openai/gpt-oss-20b, allam-2-7b
+Estimated prompt size: ~4,031 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197324, Requested 5346. Please try again in 19m13.44s. Need more tokens? Upgrade to Dev Tier today at https://con
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-120b.
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 1/2...
+Estimated prompt size: ~3,766 tokens (text only).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199701, Requested 3733. Please try again in 24m43.488s. Need more tokens? Upgrade to Dev Tier today at https:/
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 41s and retrying once...
+Using qwen/qwen3.8-27b.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/2: Frame 1261152809 ===
+Calling LLM (attempt 1/2) for part 2/2...
+Estimated prompt size: ~4,458 tokens (text only).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199693, Requested 5968. Please try again in 40m45.552s. Need more tokens? Upgrade to Dev Tier today at https://co
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199139, Requested 3797. Please try again in 21m8.352s. Need more tokens? Upgrade to Dev Tier today at https://
+Trying openai/gpt-oss-20b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-20b.
+Attempt 1: 8 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 2/2...
+Estimated prompt size: ~3,778 tokens (text only).
+  Stitch check: 1 node(s) were missing from the model's parts (8232:749) - added from the Figma data.
+  stitch: dropped 0 duplicate element(s) emitted by overlapping parts and 1 element(s) whose Figma node id does not exist (vector-1)
+
+Stitched 2 part(s) back into one section from the Figma geometry.
+  card background: group "Mask group" collapsed to its rectangle (decorative shapes left out of the flow)
+  card background: group "Group 1261154750" collapsed to its rectangle (decorative shapes left out of the flow)
+Post-processed from Figma data: 10 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+Wrote output\jilislot-global-v-2\sections\section-19\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  "stitch: 1 node(s) added from Figma data because the model's parts did not include them",
+  'stitch: dropped 0 duplicate element(s) emitted by overlapping parts and 1 element(s) whose Figma node id does not exist (vector-1)'
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-19 ===
+  structure: section group-1261154751: card #FCC40B radius 16, 1200px wide, padding 88/88 (panel 8232:739); 1 decoration layer(s) -> ::before/::after
+  structure: summary: background 0, unwrapped 0, headings 0, cards 1, layers 1, scope widths 0
+  responsive: section group-1261154751: container is the 1200px card (#FCC40B, padding 88/16/88/16, 1 pseudo-element layer(s))
+  responsive: section group-1261154751: wrapped in container (widthMax 755px), side padding 0/0 -> 16
+Wrote output\jilislot-global-v-2\sections\section-19\bricks-tree.json (7 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:750 --name=section-20 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:750 (Group 1261154758)
+Scoped output will go to output\jilislot-global-v-2\sections\section-20/ (the full-page figma-node.json / screenshot.png are untouched).
+Pruned 5 graphic subtree(s) (icons/illustrations) out of the prompt - they're already exported assets, not something the model needs raw vector data for. Saved ~6,604 chars (25% of the raw JSON size).
+Asset manifest trimmed to 5/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 4 part(s), prompt sizes ~4,234, 4,400, 4,028, 4,262 tokens (budget 4,600).
+
+=== Part 1/4: Group 1261154758, FAQ, Group 1261154757, Group 1261154637 ===
+Calling LLM (attempt 1/2) for part 1/4...
+Models your Groq key can use: openai/gpt-oss-120b, allam-2-7b, qwen/qwen3.8-27b, openai/gpt-oss-20b
+Estimated prompt size: ~4,234 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199224, Requested 5553. Please try again in 34m23.664s. Need more tokens? Upgrade to Dev Tier today at https://co
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198670, Requested 3713. Please try again in 17m9.456s. Need more tokens? Upgrade to Dev Tier today at https://
+Trying openai/gpt-oss-20b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-20b.
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 1/4...
+Estimated prompt size: ~3,593 tokens (text only).
+Attempt 2: 1 schema error(s).
+Model output still failed validation after 2 attempts:
+Waiting 65s (Groq per-minute window)...
+  - (root): must be object
+Last rejected output saved next to normalized.json as normalized.rejected.json / normalized.raw.txt.
+  Part 1 failed validation - splitting it into two smaller requests...
+Calling LLM (attempt 1/2) for part 1/4...
+Estimated prompt size: ~3,748 tokens (text only).
+  Dropped 1 field(s) the schema has no place for: undefined: dropped unknown field "_uncertain"
+Attempt 1: 5 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 1/4...
+Estimated prompt size: ~3,397 tokens (text only).
+Waiting 65s (Groq per-minute window)...
+Calling LLM (attempt 1/2) for part 1/4...
+Estimated prompt size: ~4,095 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/4: Group 1261154638, Group 1261154756 ===
+Calling LLM (attempt 1/2) for part 2/4...
+Estimated prompt size: ~4,400 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/4: Group 1261154640 ===
+Calling LLM (attempt 1/2) for part 3/4...
+Estimated prompt size: ~4,028 tokens (text only).
+Attempt 1: 1 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 3/4...
+Estimated prompt size: ~3,384 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 4/4: Group 1261154754 ===
+Calling LLM (attempt 1/2) for part 4/4...
+Estimated prompt size: ~4,262 tokens (text only).
+  Stitch check: 4 node(s) were missing from the model's parts (8232:751, 8232:756, 8232:757, 8232:762) - added from the Figma data.
+
+Stitched 4 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 47 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+  WARNING group-1261154638: skipped layout (children overlap or are out of order along the column axis - check the nesting)
+Wrote output\jilislot-global-v-2\sections\section-20\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'border',
+  "stitch: 4 node(s) added from Figma data because the model's parts did not include them"
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-20 ===
+  structure: section section: scope is 1049px wide -> container max-width 1049px
+  structure: removed single-child wrapper row-8232-780 around section-row-2
+  structure: removed single-child wrapper column-8232-779 around section-column-1
+  structure: removed single-child wrapper group-1261154758 around section-column-3
+  structure: summary: background 0, unwrapped 3, headings 0, cards 0, layers 0, scope widths 1
+  responsive: section section: container max-width 1049px from the Figma frame width
+  responsive: section section: wrapped in container (widthMax 995px), side padding 0/0 -> 16
+  responsive: single-line text faq-1: no fixed width (avoids wrapping from font differences)
+  responsive: image frame-3 -> icon (26px SVG)
+  responsive: single-line text question-2: no fixed width (avoids wrapping from font differences)
+  responsive: single-line text heading-8232-781: no fixed width (avoids wrapping from font differences)
+Wrote output\jilislot-global-v-2\sections\section-20\bricks-tree.json (28 element(s))
+
+=== node scripts/2_normalize.js output\jilislot-global-v-2 --nodes=8232:785 --name=section-21 --split=4600 --resume ===
+Scoped to 1 node(s): 8232:785 (Frame 1261152867)
+Scoped output will go to output\jilislot-global-v-2\sections\section-21/ (the full-page figma-node.json / screenshot.png are untouched).
+Pruned 1 graphic subtree(s) (icons/illustrations) out of the prompt - they're already exported assets, not something the model needs raw vector data for. Saved ~806 chars (5% of the raw JSON size).
+Asset manifest trimmed to 4/85 entries reachable from the scoped nodes.
+Loaded 0 example pair(s) from examples/
+WARNING: no examples found. Output quality will be much lower until you add real pairs — see examples/README.md.
+Compact prompt mode on: trimmed Figma keys, hex colors, short schema/rules. Set AI_COMPACT=0 to disable.
+Split mode: 4 part(s), prompt sizes ~3,708, 4,551, 4,569, 3,678 tokens (budget 4,600).
+
+=== Part 1/4: Frame 1261152867 ===
+Calling LLM (attempt 1/2) for part 1/4...
+Models your Groq key can use: openai/gpt-oss-120b, openai/gpt-oss-20b, qwen/qwen3.8-27b, allam-2-7b
+Estimated prompt size: ~3,708 tokens (text only).
+Trying qwen/qwen3.8-27b (vision)...
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197666, Requested 4955. Please try again in 18m52.272s. Need more tokens? Upgrade to Dev Tier today at https://co
+Trying openai/gpt-oss-120b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+  rate limited (429), waiting 65s and retrying once...
+  failed (429): {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m455ts9pe89bxnzxke9v5j6x` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197113, Requested 3173. Please try again in 2m3.552s. Need more tokens? Upgrade to Dev Tier today at https://c
+Trying openai/gpt-oss-20b (TEXT-ONLY - screenshot dropped, model can't see the design, only the Figma data).
+Using openai/gpt-oss-20b.
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 2/4: Frame 1261152865, Frame 1261152864 ===
+Calling LLM (attempt 1/2) for part 2/4...
+Estimated prompt size: ~4,551 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 3/4: Frame 1261152863, Frame 1261152866 ===
+Calling LLM (attempt 1/2) for part 3/4...
+Estimated prompt size: ~4,569 tokens (text only).
+  Groq JSON mode flagged malformed output - repairing locally.
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 3/4...
+Estimated prompt size: ~3,683 tokens (text only).
+Waiting 65s before the next part (Groq's per-minute token window)...
+
+=== Part 4/4: Vector 1 ===
+Calling LLM (attempt 1/2) for part 4/4...
+Estimated prompt size: ~3,678 tokens (text only).
+Attempt 1: 2 schema error(s).
+Waiting 62s so Groq's per-minute token window resets before the repair call...
+Calling LLM (attempt 2/2) for part 4/4...
+Estimated prompt size: ~3,297 tokens (text only).
+  Stitch check: 1 node(s) were missing from the model's parts (8232:802) - added from the Figma data.
+
+Stitched 4 part(s) back into one section from the Figma geometry.
+Post-processed from Figma data: 17 field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).
+  WARNING frame-1261152867: skipped layout (children overlap or are out of order along the column axis - check the nesting)
+Removed 1 model note(s) about spacing/size (now measured from Figma).
+Wrote output\jilislot-global-v-2\sections\section-21\normalized.json (validated against schema/normalized-schema.json)
+Model flagged uncertain values: [
+  'layout',
+  "stitch: 1 node(s) added from Figma data because the model's parts did not include them"
+]
+
+=== node scripts/3_compile_bricks.js output\jilislot-global-v-2\sections\section-21 ===
+  structure: summary: background 0, unwrapped 0, headings 0, cards 0, layers 0, scope widths 0
+  responsive: section frame-1261152867: wrapped in container (widthMax 1440px), side padding 0/0 -> 16
+Wrote output\jilislot-global-v-2\sections\section-21\bricks-tree.json (18 element(s))
+
+Warnings:
+ - /frame-1261152867/frame-8232-799/line-8232-800: type "unsupported" will be skipped by the compiler. Notes: Line 82
+
+Note: 1 section(s) are not built yet and are left out of the merge: section-02
+
+=== node scripts/merge_sections.js output\jilislot-global-v-2 section-01 section-03 section-04 section-05 section-06 section-07 section-08 section-09 section-10 section-11 section-12 section-13 section-14 section-15 section-16 section-17 section-18 section-19 section-20 section-21 ===
++ section-01: 2 element(s)
++ section-03: 10 element(s)
++ section-04: 11 element(s)
++ section-05: 30 element(s)
++ section-06: 80 element(s)
++ section-07: 91 element(s)
++ section-08: 37 element(s)
++ section-09: 23 element(s)
++ section-10: 54 element(s)
++ section-11: 12 element(s)
++ section-12: 11 element(s)
++ section-13: 29 element(s)
++ section-14: 25 element(s)
++ section-15: 46 element(s)
++ section-16: 11 element(s)
++ section-17: 28 element(s)
++ section-18: 14 element(s)
++ section-19: 7 element(s)
++ section-20: 28 element(s)
++ section-21: 18 element(s)
+  spacing section-01: top 0px, bottom 0px
+  spacing section-03: top 126px, bottom 175px
+  spacing section-04: top 50px, bottom 50px
+  spacing section-05: top 50px, bottom 50px
+  spacing section-06: top 50px, bottom 50px
+  spacing section-07: top 50px, bottom 50px
+  spacing section-08: top 50px, bottom 50px
+  spacing section-09: top 50px, bottom 50px
+  spacing section-10: top 50px, bottom 50px
+  spacing section-11: top 140px, bottom 140px
+  spacing section-12: top 50px, bottom 50px
+  spacing section-13: top 50px, bottom 50px
+  spacing section-14: top 50px, bottom 50px
+  spacing section-15: top 50px, bottom 50px
+  spacing section-16: top 50px, bottom 50px
+  spacing section-17: top 50px, bottom 50px
+  spacing section-18: top 50px, bottom 50px
+  spacing section-19: top 138px, bottom 138px
+  spacing section-20: top 50px, bottom 50px
+  spacing section-21: top 50px, bottom 50px
+  page background #000000 applied to 17 section(s) that had no background of their own
+Wrote output\jilislot-global-v-2\merged\bricks-tree.json (567 element(s), top-level sections in order: section-01, section-03, section-04, section-05, section-06, section-07, section-08, section-09, section-10, section-11, section-12, section-13, section-14, section-15, section-16, section-17, section-18, section-19, section-20, section-21)
+
+=== node scripts/wrap-template.js output\jilislot-global-v-2\merged jilislot-global-v-2 page ===
+Wrote output\jilislot-global-v-2\merged\bricks-template-import.json (567 elements, templateType "section")
+
+Import this into Bricks: output\jilislot-global-v-2\merged\bricks-template-import.json
+
+1 problem(s):
+  - section-02 (8232:17): model step failed - re-run the same command, it resumes from the saved parts
+
+4/5 push to WordPress: SKIPPED because some sections failed. Re-run the same command (it resumes), or add --inject-partial.
+
+=== 5/5 save dataset: node scripts/export-dataset.js output\jilislot-global-v-2 ===
+Dataset: 20 section record(s) -> output\jilislot-global-v-2\dataset\sections.jsonl, pairs.jsonl, page.json
+
+Done (with failed sections - see above).
+  frame folder : output\jilislot-global-v-2
+  dataset      : output\jilislot-global-v-2\dataset
+PS C:\figma-to-bricks> 

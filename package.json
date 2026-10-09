@@ -10,7 +10,8 @@
     "inject": "node scripts/4_inject.js",
     "inject:mcp": "node scripts/4_inject_mcp.js",
     "measure": "node scripts/5_measure.js",
-    "all": "node scripts/run-all.js"
+    "all": "node scripts/run-all.js",
+    "pipeline": "node --env-file=.env scripts/pipeline.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",

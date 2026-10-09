@@ -1,0 +1,75 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-8232-688",
+      "figmaNodeId": "8232:688",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 0,
+        "align": "stretch",
+        "justify": "start"
+      },
+      "background": {
+        "color": "#181818"
+      },
+      "border": {
+        "radius": 12
+      },
+      "size": {
+        "width": 588,
+        "height": 173
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "column-8232-690",
+          "figmaNodeId": "8232:690",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 12,
+            "align": "stretch",
+            "justify": "start"
+          },
+          "size": {
+            "width": 525,
+            "height": 113
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "heading-8232-691",
+              "figmaNodeId": "8232:691",
+              "text": "3. Bonus Features",
+              "level": 3,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 700,
+                "lineHeight": "29.05px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "text",
+              "id": "text-8232-692",
+              "figmaNodeId": "8232:692",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "24px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

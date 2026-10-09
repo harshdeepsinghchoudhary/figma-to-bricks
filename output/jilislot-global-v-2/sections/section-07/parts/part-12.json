@@ -1,0 +1,90 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "background-rectangle",
+          "figmaNodeId": "8232:298",
+          "background": {
+            "color": "#191818"
+          },
+          "border": {
+            "radius": 10
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "column"
+          }
+        },
+        {
+          "type": "image",
+          "id": "image-8232-304",
+          "figmaNodeId": "8232:304",
+          "asset": {
+            "nodeId": "8232:304",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "column",
+          "id": "text-block",
+          "figmaNodeId": "8232:300",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "jili-caishen",
+              "figmaNodeId": "8232:301",
+              "text": "Jili Caishen",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 700,
+                "lineHeight": "21.78px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "text",
+              "id": "high-volatility",
+              "figmaNodeId": "8232:302",
+              "text": "High volatility, combo wins",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "text",
+              "id": "rtp",
+              "figmaNodeId": "8232:303",
+              "text": "RTP: 96.00%",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout.gap values estimated"
+  ]
+}

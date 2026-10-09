@@ -1,0 +1,34 @@
+[
+  {
+    "id": "9voykv",
+    "name": "container",
+    "parent": "3wuejx",
+    "children": [],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "3wuejx",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "9voykv"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_height": "75",
+      "_background": {
+        "color": {
+          "raw": "#282828"
+        }
+      }
+    }
+  }
+]

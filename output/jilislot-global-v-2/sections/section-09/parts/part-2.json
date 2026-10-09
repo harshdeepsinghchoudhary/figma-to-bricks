@@ -1,0 +1,91 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-8232-361",
+          "figmaNodeId": "8232:361",
+          "layout": {
+            "display": "flex",
+            "direction": "column"
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "group-8232-363",
+              "figmaNodeId": "8232:363",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 16,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "id": "section-1-column-1",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "group-8232-367",
+                      "figmaNodeId": "8232:367",
+                      "asset": {
+                        "nodeId": "8232:367",
+                        "kind": "svg"
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "frame-8232-364",
+                      "figmaNodeId": "8232:364",
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 0
+                      },
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "text-8232-365",
+                          "figmaNodeId": "8232:365",
+                          "text": "Log in to your account",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 24,
+                            "fontWeight": 600,
+                            "lineHeight": "29.05px",
+                            "color": "#FFFFFF"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "text-8232-366",
+                          "figmaNodeId": "8232:366",
+                          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 400,
+                            "lineHeight": "27px",
+                            "color": "#FFFFFF"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "container background and border details omitted"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "type": "section",
+  "id": "section-part3",
+  "children": [
+    {
+      "type": "image",
+      "id": "group-1261154677",
+      "figmaNodeId": "8232:586",
+      "asset": {
+        "nodeId": "8232:586",
+        "kind": "svg"
+      }
+    },
+    {
+      "type": "column",
+      "id": "frame-1261152833",
+      "figmaNodeId": "8232:593",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 10
+      },
+      "children": [
+        {
+          "type": "text",
+          "id": "click-play-game",
+          "figmaNodeId": "8232:594",
+          "text": "Click play game",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 700,
+            "lineHeight": "26px",
+            "color": "#FFFFFF"
+          },
+          "size": {
+            "width": 235,
+            "height": 26
+          }
+        },
+        {
+          "type": "text",
+          "id": "lorem-ipsum",
+          "figmaNodeId": "8232:595",
+          "text": "Lorem Ipsum is simply dummy text of the printing and ",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "lineHeight": "24px",
+            "color": "#FFFFFF"
+          },
+          "size": {
+            "width": 235,
+            "height": 48
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

@@ -1,0 +1,59 @@
+{
+  "type": "page",
+  "_uncertain": [
+    "Banner 1 (#D9D9D9) is a non-exported image/rectangle; it appears layered with the exported background image 8232:803 (overlapping) and is described in notes rather than emitted.",
+    "Group 1261154760 (8232:811) has no children in this part; emitted as an empty column.",
+    "No text, heading, or button nodes were present in the Figma data for this part; they may belong to another part of the section."
+  ],
+  "children": [
+    {
+      "type": "section",
+      "id": "banner",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "banner-backgrounds",
+          "figmaNodeId": "8232:806",
+          "children": [
+            {
+              "type": "column",
+              "id": "banner-inner",
+              "figmaNodeId": "8232:804",
+              "children": [
+                {
+                  "type": "unsupported",
+                  "id": "banner-1",
+                  "figmaNodeId": "8232:805",
+                  "notes": [
+                    "Rectangle with solid fill #D9D9D9, no exported image (imageExported not set / not in manifest). Likely a fallback or colored banner layer."
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "woman-with-toothbrush",
+                  "figmaNodeId": "8232:803",
+                  "asset": {
+                    "nodeId": "8232:803",
+                    "kind": "image"
+                  },
+                  "notes": [
+                    "Background image layered with banner-1."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "id": "group-1261154760",
+          "figmaNodeId": "8232:811",
+          "notes": [
+            "Empty container in this part; children handled in other parts."
+          ]
+        }
+      ]
+    }
+  ]
+}

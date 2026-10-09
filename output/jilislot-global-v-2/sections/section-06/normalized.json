@@ -1,0 +1,1296 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jili-slot-games-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "heading",
+          "id": "pros-cons-heading",
+          "figmaNodeId": "8232:86",
+          "text": "Pros and Cons of Jili Slot Games BD",
+          "level": 2,
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "lineHeight": "41.15px",
+            "color": "#FFFFFF",
+            "align": "center"
+          },
+          "size": {
+            "width": 586
+          }
+        },
+        {
+          "type": "column",
+          "id": "pros-cons-grid-row",
+          "figmaNodeId": "8232:87",
+          "background": {
+            "gradient": {
+              "angle": 90,
+              "stops": [
+                {
+                  "color": "#0DAE2F1F",
+                  "position": 0
+                },
+                {
+                  "color": "#D609061F",
+                  "position": 100
+                }
+              ]
+            }
+          },
+          "border": {
+            "radius": 12
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "jili-slot-games-section-row-4",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "pros-section-column",
+                  "figmaNodeId": "8232:89",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "jili-slot-games-section-column-1",
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "frame-1261152784-1",
+                          "figmaNodeId": "8232:90",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "pros-icon",
+                              "figmaNodeId": "8232:91",
+                              "asset": {
+                                "nodeId": "8232:91",
+                                "kind": "svg"
+                              },
+                              "size": {
+                                "width": 30,
+                                "height": 30
+                              }
+                            },
+                            {
+                              "type": "heading",
+                              "id": "pros-heading",
+                              "figmaNodeId": "8232:93",
+                              "text": "PROS",
+                              "level": 3,
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 24,
+                                "fontWeight": 700,
+                                "lineHeight": "32px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 7,
+                            "align": "start"
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "frame-1261152785-1",
+                          "figmaNodeId": "8232:94",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "feature-row-one",
+                              "figmaNodeId": "8232:95",
+                              "children": [
+                                {
+                                  "type": "row",
+                                  "id": "jili-slot-games-section-row-1",
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "feature-icon-one",
+                                      "figmaNodeId": "8232:97",
+                                      "asset": {
+                                        "nodeId": "8232:97",
+                                        "kind": "svg"
+                                      },
+                                      "size": {
+                                        "width": 18,
+                                        "height": 18
+                                      },
+                                      "notes": [
+                                        "6px top offset from row top (offCross)",
+                                        "layer overlaps row content"
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "feature-text-one",
+                                      "figmaNodeId": "8232:96",
+                                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 400,
+                                        "lineHeight": "27px",
+                                        "color": "#FFFFFF",
+                                        "align": "left"
+                                      },
+                                      "size": {
+                                        "width": 470
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 10,
+                                    "align": "start"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "align": "start"
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "feature-row-two",
+                              "figmaNodeId": "8232:99",
+                              "children": [
+                                {
+                                  "type": "row",
+                                  "id": "jili-slot-games-section-row-2",
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "feature-icon-two",
+                                      "figmaNodeId": "8232:101",
+                                      "asset": {
+                                        "nodeId": "8232:101",
+                                        "kind": "svg"
+                                      },
+                                      "size": {
+                                        "width": 18,
+                                        "height": 18
+                                      },
+                                      "notes": [
+                                        "6px top offset from row top (offCross)",
+                                        "layer overlaps row content"
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "feature-text-two",
+                                      "figmaNodeId": "8232:100",
+                                      "text": "Lorem Ipsum is simply dummy text of the printing and ",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 400,
+                                        "lineHeight": "27px",
+                                        "color": "#FFFFFF",
+                                        "align": "left"
+                                      },
+                                      "size": {
+                                        "width": 470
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 10,
+                                    "align": "start"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "align": "start"
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "feature-row-three",
+                              "figmaNodeId": "8232:103",
+                              "children": [
+                                {
+                                  "type": "row",
+                                  "id": "jili-slot-games-section-row-3",
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "feature-icon-three",
+                                      "figmaNodeId": "8232:105",
+                                      "asset": {
+                                        "nodeId": "8232:105",
+                                        "kind": "svg"
+                                      },
+                                      "size": {
+                                        "width": 18,
+                                        "height": 18
+                                      },
+                                      "notes": [
+                                        "6px top offset from row top (offCross)",
+                                        "layer overlaps row content"
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "feature-text-three",
+                                      "figmaNodeId": "8232:104",
+                                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 400,
+                                        "lineHeight": "27px",
+                                        "color": "#FFFFFF",
+                                        "align": "left"
+                                      },
+                                      "size": {
+                                        "width": 470
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 10,
+                                    "align": "start"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "align": "start"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 14,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 14,
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "align": "start"
+                  },
+                  "size": {
+                    "width": 504
+                  }
+                },
+                {
+                  "type": "unsupported",
+                  "id": "group-1261154380",
+                  "figmaNodeId": "8232:107",
+                  "notes": [
+                    "No sibling children to group with; empty group omitted as visible content"
+                  ]
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "padding": {
+              "top": 30,
+              "right": 666,
+              "bottom": 30,
+              "left": 30
+            },
+            "align": "start",
+            "margin": {
+              "top": 50
+            }
+          }
+        },
+        {
+          "type": "column",
+          "id": "pros-header-container",
+          "figmaNodeId": "8232:127",
+          "children": [
+            {
+              "type": "row",
+              "id": "jili-slot-games-section-row-11",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "jili-slot-games-section-column-2",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "pros-heading-2",
+                      "figmaNodeId": "8232:130",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 12
+                      },
+                      "boxShadow": {
+                        "color": "#FFFFFF1A",
+                        "blur": 0,
+                        "offsetX": 0,
+                        "offsetY": 0,
+                        "spread": 26
+                      },
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "pros-19",
+                          "figmaNodeId": "8232:133",
+                          "text": "PROS",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 24,
+                            "fontWeight": 700,
+                            "lineHeight": "32px",
+                            "align": "left",
+                            "color": "#FFFFFF"
+                          },
+                          "level": 3
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "padding": {
+                          "top": 0,
+                          "right": 0,
+                          "bottom": 0,
+                          "left": 37
+                        },
+                        "align": "start"
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "frame-1261152785-2",
+                      "figmaNodeId": "8232:134",
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "jili-slot-games-section-row-5",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "feature-check-icon-1",
+                              "asset": {
+                                "nodeId": "8232:137",
+                                "kind": "svg"
+                              },
+                              "figmaNodeId": "8232:137",
+                              "size": {
+                                "width": 18,
+                                "height": 18
+                              }
+                            },
+                            {
+                              "type": "text-basic",
+                              "id": "feature-list-item-1-text",
+                              "figmaNodeId": "8232:136",
+                              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              },
+                              "size": {
+                                "width": 470
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 10,
+                            "align": "start"
+                          }
+                        },
+                        {
+                          "type": "row",
+                          "id": "jili-slot-games-section-row-6",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "feature-check-icon-2",
+                              "asset": {
+                                "nodeId": "8232:141",
+                                "kind": "svg"
+                              },
+                              "figmaNodeId": "8232:141",
+                              "size": {
+                                "width": 18,
+                                "height": 18
+                              }
+                            },
+                            {
+                              "type": "text-basic",
+                              "id": "feature-list-item-2-text",
+                              "figmaNodeId": "8232:140",
+                              "text": "Lorem Ipsum is simply dummy text of the printing and ",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              },
+                              "size": {
+                                "width": 470
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 10,
+                            "align": "start"
+                          }
+                        },
+                        {
+                          "type": "row",
+                          "id": "jili-slot-games-section-row-7",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "feature-check-icon-3",
+                              "asset": {
+                                "nodeId": "8232:145",
+                                "kind": "svg"
+                              },
+                              "figmaNodeId": "8232:145",
+                              "size": {
+                                "width": 18,
+                                "height": 18
+                              }
+                            },
+                            {
+                              "type": "text-basic",
+                              "id": "feature-list-item-3-text",
+                              "figmaNodeId": "8232:144",
+                              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              },
+                              "size": {
+                                "width": 470
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 10,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 14,
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 14,
+                    "align": "start"
+                  },
+                  "size": {
+                    "width": 504
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "g1261154380",
+                  "figmaNodeId": "8232:147",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "g1261154378",
+                      "figmaNodeId": "8232:148",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "jili-slot-games-section-column-3",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "frame1261152784",
+                              "figmaNodeId": "8232:149",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "img-frame8232150",
+                                  "figmaNodeId": "8232:150",
+                                  "asset": {
+                                    "nodeId": "8232:150",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 30,
+                                    "height": 30
+                                  }
+                                },
+                                {
+                                  "type": "heading",
+                                  "id": "txt-cons8232152",
+                                  "figmaNodeId": "8232:152",
+                                  "text": "Cons",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 24,
+                                    "fontWeight": 700,
+                                    "lineHeight": "32px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  },
+                                  "level": 3
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 7,
+                                "align": "start"
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "frame-1261152785-3",
+                              "figmaNodeId": "8232:153",
+                              "children": [
+                                {
+                                  "type": "row",
+                                  "id": "jili-slot-games-section-row-8",
+                                  "children": [
+                                    {
+                                      "id": "feature-icon-1",
+                                      "type": "icon",
+                                      "figmaNodeId": "8232:156",
+                                      "asset": {
+                                        "nodeId": "8232:156",
+                                        "kind": "svg"
+                                      },
+                                      "size": {
+                                        "width": 18,
+                                        "height": 18
+                                      }
+                                    },
+                                    {
+                                      "id": "feature-text-1",
+                                      "type": "text",
+                                      "figmaNodeId": "8232:155",
+                                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 400,
+                                        "lineHeight": "27px",
+                                        "color": "#FFFFFF",
+                                        "align": "left"
+                                      },
+                                      "size": {
+                                        "width": 470
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 10,
+                                    "align": "start"
+                                  }
+                                },
+                                {
+                                  "type": "row",
+                                  "id": "jili-slot-games-section-row-9",
+                                  "children": [
+                                    {
+                                      "type": "image",
+                                      "id": "frame-30",
+                                      "figmaNodeId": "8232:160",
+                                      "asset": {
+                                        "nodeId": "8232:160",
+                                        "kind": "svg"
+                                      },
+                                      "size": {
+                                        "width": 18,
+                                        "height": 18
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "lorem-ipsum-is-simply-dummy-text-of-the-31",
+                                      "figmaNodeId": "8232:159",
+                                      "text": "Lorem Ipsum is simply dummy text of the printing and ",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 400,
+                                        "lineHeight": "27px",
+                                        "align": "left",
+                                        "color": "#FFFFFF"
+                                      },
+                                      "size": {
+                                        "width": 470
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 10,
+                                    "align": "start"
+                                  }
+                                },
+                                {
+                                  "type": "row",
+                                  "id": "jili-slot-games-section-row-10",
+                                  "children": [
+                                    {
+                                      "type": "image",
+                                      "id": "frame-32",
+                                      "figmaNodeId": "8232:164",
+                                      "asset": {
+                                        "nodeId": "8232:164",
+                                        "kind": "svg"
+                                      },
+                                      "size": {
+                                        "width": 18,
+                                        "height": 18
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "lorem-ipsum-is-simply-dummy-text-of-the-33",
+                                      "figmaNodeId": "8232:163",
+                                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 400,
+                                        "lineHeight": "27px",
+                                        "align": "left",
+                                        "color": "#FFFFFF"
+                                      },
+                                      "size": {
+                                        "width": 470
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 10,
+                                    "align": "start"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "gap": 14,
+                                "align": "start"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 14,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "align": "start"
+                  },
+                  "size": {
+                    "width": 504
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 108,
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "padding": {
+              "top": 30,
+              "right": 54,
+              "bottom": 30,
+              "left": 30
+            },
+            "align": "start",
+            "margin": {
+              "top": 16
+            }
+          },
+          "background": {
+            "gradient": {
+              "angle": 90,
+              "stops": [
+                {
+                  "color": "#0DAE2F1F",
+                  "position": 0
+                },
+                {
+                  "color": "#D609061F",
+                  "position": 100
+                }
+              ]
+            }
+          },
+          "border": {
+            "radius": 12
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-1261154689",
+          "figmaNodeId": "8232:167",
+          "children": [
+            {
+              "type": "row",
+              "id": "jili-slot-games-section-row-17",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "group-1261154378-2",
+                  "figmaNodeId": "8232:169",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "jili-slot-games-section-column-4",
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "frame-1261152784",
+                          "figmaNodeId": "8232:170",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "frame-8232-171",
+                              "figmaNodeId": "8232:171",
+                              "asset": {
+                                "nodeId": "8232:171",
+                                "kind": "svg"
+                              },
+                              "size": {
+                                "width": 30,
+                                "height": 30
+                              }
+                            },
+                            {
+                              "type": "heading",
+                              "id": "heading-pros",
+                              "figmaNodeId": "8232:173",
+                              "text": "PROS",
+                              "level": 3,
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 24,
+                                "fontWeight": 700,
+                                "lineHeight": "32px",
+                                "align": "left",
+                                "color": "#FFFFFF"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 7,
+                            "align": "start"
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "frame-1261152785-4",
+                          "figmaNodeId": "8232:174",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "text-1",
+                              "figmaNodeId": "8232:175",
+                              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              },
+                              "size": {
+                                "width": 470
+                              }
+                            },
+                            {
+                              "type": "row",
+                              "id": "jili-slot-games-section-row-12",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "image-2",
+                                  "figmaNodeId": "8232:181",
+                                  "asset": {
+                                    "nodeId": "8232:181",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 18,
+                                    "height": 18
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "text-2",
+                                  "figmaNodeId": "8232:180",
+                                  "text": "Lorem Ipsum is simply dummy text of the printing and ",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 18,
+                                    "fontWeight": 400,
+                                    "lineHeight": "27px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  },
+                                  "size": {
+                                    "width": 470
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 10,
+                                "align": "start"
+                              }
+                            },
+                            {
+                              "type": "row",
+                              "id": "jili-slot-games-section-row-13",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "image-3",
+                                  "figmaNodeId": "8232:185",
+                                  "asset": {
+                                    "nodeId": "8232:185",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 18,
+                                    "height": 18
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "text-3",
+                                  "figmaNodeId": "8232:184",
+                                  "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 18,
+                                    "fontWeight": 400,
+                                    "lineHeight": "27px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  },
+                                  "size": {
+                                    "width": 470
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 10,
+                                "align": "start"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 14,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 14,
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "align": "start"
+                  },
+                  "size": {
+                    "width": 504
+                  }
+                },
+                {
+                  "type": "unsupported",
+                  "id": "line-78-2",
+                  "figmaNodeId": "8232:206",
+                  "notes": [
+                    "Line element with stroke color #FFFFFF1A"
+                  ]
+                },
+                {
+                  "type": "column",
+                  "id": "group-1261154380-2",
+                  "figmaNodeId": "8232:187",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "group-1261154378-3",
+                      "figmaNodeId": "8232:188",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "jili-slot-games-section-column-5",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "frame-1261152784-2",
+                              "figmaNodeId": "8232:189",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "frame",
+                                  "figmaNodeId": "8232:190",
+                                  "asset": {
+                                    "nodeId": "8232:190",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 30,
+                                    "height": 30
+                                  }
+                                },
+                                {
+                                  "type": "heading",
+                                  "id": "cons",
+                                  "figmaNodeId": "8232:192",
+                                  "text": "Cons",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 24,
+                                    "fontWeight": 700,
+                                    "lineHeight": "32px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  },
+                                  "level": 3
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 7,
+                                "align": "start"
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "frame-1261152785",
+                              "figmaNodeId": "8232:193",
+                              "children": [
+                                {
+                                  "type": "row",
+                                  "id": "jili-slot-games-section-row-14",
+                                  "children": [
+                                    {
+                                      "type": "image",
+                                      "id": "icon-1",
+                                      "figmaNodeId": "8232:196",
+                                      "asset": {
+                                        "nodeId": "8232:196",
+                                        "kind": "svg"
+                                      },
+                                      "size": {
+                                        "width": 18,
+                                        "height": 18
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "text-1-2",
+                                      "figmaNodeId": "8232:195",
+                                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 400,
+                                        "lineHeight": "27px",
+                                        "color": "#FFFFFF",
+                                        "align": "left"
+                                      },
+                                      "size": {
+                                        "width": 470
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 10,
+                                    "align": "start"
+                                  }
+                                },
+                                {
+                                  "type": "row",
+                                  "id": "jili-slot-games-section-row-15",
+                                  "children": [
+                                    {
+                                      "type": "image",
+                                      "id": "icon-2",
+                                      "figmaNodeId": "8232:200",
+                                      "asset": {
+                                        "nodeId": "8232:200",
+                                        "kind": "svg"
+                                      },
+                                      "size": {
+                                        "width": 18,
+                                        "height": 18
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "text-2-2",
+                                      "figmaNodeId": "8232:199",
+                                      "text": "Lorem Ipsum is simply dummy text of the printing and ",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 400,
+                                        "lineHeight": "27px",
+                                        "color": "#FFFFFF",
+                                        "align": "left"
+                                      },
+                                      "size": {
+                                        "width": 470
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 10,
+                                    "align": "start"
+                                  }
+                                },
+                                {
+                                  "type": "row",
+                                  "id": "jili-slot-games-section-row-16",
+                                  "children": [
+                                    {
+                                      "type": "image",
+                                      "id": "icon-3",
+                                      "figmaNodeId": "8232:204",
+                                      "asset": {
+                                        "nodeId": "8232:204",
+                                        "kind": "svg"
+                                      },
+                                      "size": {
+                                        "width": 18,
+                                        "height": 18
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "text-3-2",
+                                      "figmaNodeId": "8232:203",
+                                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 18,
+                                        "fontWeight": 400,
+                                        "lineHeight": "27px",
+                                        "color": "#FFFFFF",
+                                        "align": "left"
+                                      },
+                                      "size": {
+                                        "width": 470
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 10,
+                                    "align": "start"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "gap": 14,
+                                "align": "start"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 14,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "align": "start"
+                  },
+                  "size": {
+                    "width": 504
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 108,
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "padding": {
+              "top": 30,
+              "right": 54,
+              "bottom": 30,
+              "left": 30
+            },
+            "align": "start",
+            "margin": {
+              "top": 16
+            }
+          },
+          "background": {
+            "gradient": {
+              "angle": 90,
+              "stops": [
+                {
+                  "color": "#0DAE2F1F",
+                  "position": 0
+                },
+                {
+                  "color": "#D609061F",
+                  "position": 100
+                }
+              ]
+            }
+          },
+          "border": {
+            "radius": 12
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "center"
+      }
+    }
+  ],
+  "_uncertain": [
+    "Missing specific fontFamily weight for all elements (Inter used as default for most)",
+    "jili-slot-games-section: dropped unknown field \"_uncertain\"",
+    "section background not specified in Figma data (screenshot shows dark fill, left unspecified)",
+    "Coverage: 2 content node(s) from the Figma data are missing from your output: 8232:160 (asset: Frame), 8232:164 (asset: Frame). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own \"text\", never as a child).",
+    "row-1",
+    "row-2",
+    "row-3",
+    "image-1",
+    "image-2",
+    "image-3",
+    "text-1",
+    "text-2",
+    "text-3",
+    "section-part-10",
+    "stitch: 7 node(s) added from Figma data because the model's parts did not include them",
+    "stitch: dropped 11 duplicate element(s) emitted by overlapping parts"
+  ]
+}

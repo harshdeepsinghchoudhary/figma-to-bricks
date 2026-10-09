@@ -1,0 +1,56 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "part-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-container-1",
+          "figmaNodeId": "8232:305"
+        },
+        {
+          "type": "heading",
+          "id": "about-heading",
+          "figmaNodeId": "8232:306",
+          "text": "About Other Types of Jili Games",
+          "level": 1,
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "align": "center",
+            "color": "#FFFFFF",
+            "lineHeight": "41.15px"
+          }
+        },
+        {
+          "type": "column",
+          "id": "card-container",
+          "figmaNodeId": "8232:307",
+          "border": {
+            "radius": 12
+          },
+          "children": [
+            {
+              "type": "block",
+              "id": "card-background",
+              "figmaNodeId": "8232:308",
+              "background": {
+                "color": "#181818"
+              },
+              "border": {
+                "radius": 12
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "part-section: dropped unknown field \"_uncertain\""
+  ]
+}

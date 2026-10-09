@@ -1,0 +1,129 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "scope-container",
+      "figmaNodeId": "scope",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 16
+      },
+      "size": {
+        "width": 1200,
+        "height": 554
+      },
+      "children": [
+        {
+          "type": "container",
+          "id": "line-78",
+          "figmaNodeId": "8232:166",
+          "notes": [
+            "Lines, borders and decorative geometry are not expressible in this schema.",
+            "Border or line with stroke #FFFFFF1A, 1px."
+          ],
+          "layout": {
+            "margin": {
+              "left": 588
+            }
+          },
+          "size": {
+            "width": 0,
+            "height": 269
+          }
+        },
+        {
+          "type": "column",
+          "id": "overlapping-group",
+          "notes": [
+            "Layers overlap; no auto-layout; the listed children are rendered as a stack.",
+            "Fills, gradients, outline and geometry of this grouping layer refer to nodes inside it."
+          ],
+          "children": [
+            {
+              "type": "column",
+              "id": "group-1261154689",
+              "figmaNodeId": "8232:167",
+              "size": {
+                "width": 1200,
+                "height": 269
+              }
+            },
+            {
+              "type": "column",
+              "id": "rectangle-5701",
+              "figmaNodeId": "8232:168",
+              "background": {
+                "gradient": {
+                  "angle": 90,
+                  "stops": [
+                    {
+                      "color": "#0DAE2F1F",
+                      "position": 0
+                    },
+                    {
+                      "color": "#D609061F",
+                      "position": 100
+                    }
+                  ]
+                }
+              },
+              "border": {
+                "radius": 12
+              },
+              "size": {
+                "width": 1200,
+                "height": 269
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-1261154378",
+              "figmaNodeId": "8232:169",
+              "size": {
+                "width": 504,
+                "height": 209
+              },
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "heading-pros",
+                  "figmaNodeId": "8232:173",
+                  "text": "PROS",
+                  "level": 3
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "id": "frame-1261152784",
+              "figmaNodeId": "8232:170",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 7,
+                "align": "center"
+              },
+              "size": {
+                "width": 103,
+                "height": 32
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "frame-8232-171",
+                  "figmaNodeId": "8232:171",
+                  "asset": {
+                    "nodeId": "8232:171",
+                    "kind": "svg"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

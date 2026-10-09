@@ -1,0 +1,107 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "figmaNodeId": "8232:607",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154742",
+          "figmaNodeId": "8232:607"
+        },
+        {
+          "type": "heading",
+          "id": "heading-8232-608",
+          "figmaNodeId": "8232:608",
+          "text": "Secure and Flexible Deposit and Withdrawal Options",
+          "level": 2,
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "lineHeight": "41.15px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-1261154739",
+          "figmaNodeId": "8232:609",
+          "children": [
+            {
+              "type": "block",
+              "id": "block-5763",
+              "figmaNodeId": "8232:610",
+              "background": {
+                "color": "#181818"
+              },
+              "border": {
+                "radius": 12
+              },
+              "size": {
+                "width": 588,
+                "height": 365
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-1261152842",
+              "figmaNodeId": "8232:611",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 20
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "id": "frame-1261152840",
+                  "figmaNodeId": "8232:612",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 8
+                  },
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "heading-2-612-613",
+                      "figmaNodeId": "8232:613",
+                      "text": "2. Bank Transfers",
+                      "level": 2,
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 24,
+                        "fontWeight": 700,
+                        "lineHeight": "29.05px",
+                        "color": "#FFFFFF"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "text-612-614",
+                      "figmaNodeId": "8232:614",
+                      "text": "Widely accepted and easy to use, cards are a go-to for many players.",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "24px",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout details for group-1261154742 and group-1261154739"
+  ]
+}

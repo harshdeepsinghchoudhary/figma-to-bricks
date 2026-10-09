@@ -1,0 +1,179 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "top-game-provider",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "heading",
+          "id": "top-provider-heading",
+          "figmaNodeId": "8232:36",
+          "text": "What Makes Jili a Top Game Provider?",
+          "level": 2,
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "color": "#FFFFFF",
+            "align": "center",
+            "lineHeight": "41.15px"
+          },
+          "size": {
+            "width": 626,
+            "height": 41
+          }
+        },
+        {
+          "type": "row",
+          "id": "decorative-line-group",
+          "figmaNodeId": "8232:38",
+          "size": {
+            "width": 1200,
+            "height": 130.19
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "left-row-group",
+              "figmaNodeId": "8232:39",
+              "size": {
+                "width": 1193.01,
+                "height": 122.8
+              },
+              "children": [
+                {
+                  "type": "unsupported",
+                  "id": "decorative-vector-line",
+                  "figmaNodeId": "8232:40",
+                  "notes": [
+                    "Fills solid dark grey decorative vector wave line; no direct schema mapping"
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "id": "timeline-end-dot-left",
+                  "figmaNodeId": "8232:41",
+                  "asset": {
+                    "nodeId": "8232:41",
+                    "kind": "svg"
+                  },
+                  "size": {
+                    "width": 19.99,
+                    "height": 19.95
+                  }
+                }
+              ]
+            },
+            {
+              "type": "icon",
+              "id": "timeline-end-dot-right",
+              "figmaNodeId": "8232:42",
+              "asset": {
+                "nodeId": "8232:42",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 19.99,
+                "height": 19.95
+              },
+              "layout": {
+                "margin": {
+                  "left": 1180
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "id": "quality-design-feature",
+          "figmaNodeId": "8232:44",
+          "size": {
+            "width": 195,
+            "height": 204
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "top-game-provider-column-2",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "top-game-provider-column-1",
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "quality-design-heading",
+                      "figmaNodeId": "8232:46",
+                      "text": "Quality Design",
+                      "level": 3,
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 18,
+                        "fontWeight": 700,
+                        "color": "#FFFFFF",
+                        "align": "center",
+                        "lineHeight": "26px"
+                      },
+                      "layout": {
+                        "margin": {
+                          "left": 0,
+                          "right": 0
+                        }
+                      },
+                      "size": {
+                        "width": 129,
+                        "height": 26
+                      }
+                    },
+                    {
+                      "type": "text-basic",
+                      "id": "quality-design-description",
+                      "figmaNodeId": "8232:47",
+                      "text": "Eye-catching visuals and smooth animations.",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "color": "#FFFFFF",
+                        "align": "center",
+                        "lineHeight": "22px"
+                      },
+                      "size": {
+                        "width": 195,
+                        "height": 44
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "quality-design-icon-svg",
+                  "figmaNodeId": "8232:48",
+                  "asset": {
+                    "nodeId": "8232:48",
+                    "kind": "svg"
+                  },
+                  "size": {
+                    "width": 94,
+                    "height": 110
+                  },
+                  "layout": {
+                    "margin": {
+                      "left": 51
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Figma node 8232:42 (right end dot) margin-left estimated from box geometry; not derived directly from layout data"
+  ]
+}

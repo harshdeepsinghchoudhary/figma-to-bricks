@@ -1,0 +1,64 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-global-v2-scoped",
+      "background": {
+        "color": "#181818"
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-1261152842",
+          "figmaNodeId": "8232:625",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 20
+          },
+          "children": []
+        },
+        {
+          "type": "column",
+          "id": "frame-1261152840",
+          "figmaNodeId": "8232:626",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "text-4-cryptocurrency",
+              "figmaNodeId": "8232:627",
+              "text": "4. Cryptocurrency (BTC, USDT, ETH)",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 700,
+                "lineHeight": "29.05px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "text-widely-accepted",
+              "figmaNodeId": "8232:628",
+              "text": "Widely accepted and easy to use, cards are a go-to for many players.",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "24px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

@@ -17,6 +17,7 @@ import path from "node:path";
 import { ELEMENT_TEMPLATES, makeId } from "./bricks-schema.js";
 import { validateNormalized } from "./normalized-validator.js";
 import { responsify } from "./responsive-pass.js";
+import { structurePass } from "./structure-pass.js";
 
 const frameDir = process.argv[2];
 if (!frameDir) {
@@ -57,6 +58,10 @@ let assetManifest = [];
 // swapping this for a real attachment id/URL before writing to the DB.
 function resolveAsset(node) {
   if (node._buttonIconFile) node._buttonIconUrl = node._buttonIconFile;
+  for (const l of node._pseudo || []) {
+    const m = assetManifest.find((a) => a.nodeId === l.asset?.nodeId);
+    if (m) l._resolvedAssetUrl = m.file; else warnings.push(`decoration layer ${l.asset?.nodeId} on ${node.id} has no asset - run stage 1 again to export it`);
+  }
   if (!node.asset) return node;
   const match = assetManifest.find((a) => a.nodeId === node.asset.nodeId);
   if (match) {
@@ -155,7 +160,18 @@ if (!process.argv.includes("--no-responsive")) {
     (function walk(n) { if (n?.id && n.absoluteBoundingBox) geo[n.id] = n.absoluteBoundingBox; if (n?.type === "TEXT") texts[n.id] = { textCase: n.style?.textCase, characters: n.characters }; for (const c of n?.children || []) walk(c); })(JSON.parse(fs.readFileSync(fp, "utf-8")));
     break;
   }
-  const rp = responsify(normalized, { manifest: assetManifest, fontAliases, geo, texts });
+  let src = normalized;
+  if (!process.argv.includes("--no-structure")) {
+    let figmaRoot = null;
+    for (const dir of [frameDir, path.join(frameDir, ".."), path.join(frameDir, "..", "..")]) {
+      const fp = path.join(dir, "figma-node.json");
+      if (fs.existsSync(fp)) { figmaRoot = JSON.parse(fs.readFileSync(fp, "utf-8")); break; }
+    }
+    const sp = structurePass(normalized, { figmaRoot: figmaRoot?.document || figmaRoot });
+    src = sp.doc;
+    for (const line of sp.report) console.log("  structure:", line);
+  }
+  const rp = responsify(src, { manifest: assetManifest, fontAliases, geo, texts });
   toCompile = rp.doc;
   for (const line of rp.report) console.log("  responsive:", line);
 }

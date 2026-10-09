@@ -1,0 +1,256 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "frame-1261152867",
+      "figmaNodeId": "scope",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 45
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-1261152865",
+          "figmaNodeId": "8232:786",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-1261152864",
+              "figmaNodeId": "8232:787",
+              "children": [
+                {
+                  "type": "image",
+                  "id": "image-233",
+                  "figmaNodeId": "8232:788",
+                  "asset": {
+                    "nodeId": "8232:788",
+                    "kind": "image"
+                  },
+                  "size": {
+                    "width": 99,
+                    "height": 40
+                  }
+                },
+                {
+                  "type": "row",
+                  "id": "frame-3",
+                  "figmaNodeId": "8232:789",
+                  "children": [
+                    {
+                      "type": "text-basic",
+                      "id": "home",
+                      "figmaNodeId": "8232:790",
+                      "text": "Home",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 18,
+                        "fontWeight": 500,
+                        "lineHeight": "21.78px",
+                        "color": "#FFFFFF",
+                        "textTransform": "uppercase",
+                        "align": "left"
+                      }
+                    },
+                    {
+                      "type": "text-basic",
+                      "id": "company",
+                      "figmaNodeId": "8232:791",
+                      "text": "Company",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 18,
+                        "fontWeight": 500,
+                        "lineHeight": "21.78px",
+                        "color": "#FFFFFF",
+                        "textTransform": "uppercase",
+                        "align": "left"
+                      }
+                    },
+                    {
+                      "type": "text-basic",
+                      "id": "games",
+                      "figmaNodeId": "8232:792",
+                      "text": "GAMES",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 18,
+                        "fontWeight": 500,
+                        "lineHeight": "21.78px",
+                        "color": "#FFFFFF",
+                        "align": "left"
+                      }
+                    },
+                    {
+                      "type": "text-basic",
+                      "id": "contact-us",
+                      "figmaNodeId": "8232:793",
+                      "text": "CONTACT US",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 18,
+                        "fontWeight": 500,
+                        "lineHeight": "21.78px",
+                        "color": "#FFFFFF",
+                        "align": "left"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 40,
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 40,
+                "align": "center"
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-8232-794",
+              "figmaNodeId": "8232:794",
+              "children": [
+                {
+                  "type": "text-basic",
+                  "id": "license-and-certificates",
+                  "figmaNodeId": "8232:795",
+                  "text": "LICENSES &amp; CERTIFICATES",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 19,
+                    "fontWeight": 500,
+                    "lineHeight": "28px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 301
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "frame-8232-796",
+                  "figmaNodeId": "8232:796",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-234",
+                      "figmaNodeId": "8232:797",
+                      "asset": {
+                        "nodeId": "8232:797",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 136,
+                        "height": 48
+                      }
+                    },
+                    {
+                      "type": "image",
+                      "id": "image-235",
+                      "figmaNodeId": "8232:798",
+                      "asset": {
+                        "nodeId": "8232:798",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 246,
+                        "height": 41
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 27,
+                "align": "center"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 60,
+            "align": "center"
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-8232-799",
+          "figmaNodeId": "8232:799",
+          "children": [
+            {
+              "type": "unsupported",
+              "id": "line-8232-800",
+              "figmaNodeId": "8232:800",
+              "notes": [
+                "Line 82"
+              ]
+            },
+            {
+              "type": "text-basic",
+              "id": "copyright",
+              "figmaNodeId": "8232:801",
+              "text": "© 2025 JILI Copyrights. All Rights Reserved",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "20px",
+                "color": "#FFFFFFCC",
+                "align": "center"
+              },
+              "size": {
+                "width": 1440.03
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "padding": {
+              "top": 29,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "align": "start"
+          }
+        },
+        {
+          "type": "image",
+          "id": "vector-1-10",
+          "figmaNodeId": "8232:802",
+          "asset": {
+            "nodeId": "8232:802",
+            "kind": "svg"
+          },
+          "size": {
+            "width": 231.98,
+            "height": 224.87
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout",
+    "stitch: 1 node(s) added from Figma data because the model's parts did not include them"
+  ]
+}

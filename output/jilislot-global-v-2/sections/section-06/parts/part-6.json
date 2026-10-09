@@ -1,0 +1,131 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "feature-list-group",
+      "figmaNodeId": "8232:134",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 14
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "feature-list-item-1",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "feature-check-icon-1",
+              "asset": {
+                "nodeId": "8232:137",
+                "kind": "svg"
+              },
+              "layout": {
+                "margin": {
+                  "top": 6
+                }
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "feature-list-item-1-text",
+              "figmaNodeId": "8232:136",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "feature-list-item-2",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "feature-check-icon-2",
+              "asset": {
+                "nodeId": "8232:141",
+                "kind": "svg"
+              },
+              "layout": {
+                "margin": {
+                  "top": 6
+                }
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "feature-list-item-2-text",
+              "figmaNodeId": "8232:140",
+              "text": "Lorem Ipsum is simply dummy text of the printing and ",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "feature-list-item-3",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "feature-check-icon-3",
+              "asset": {
+                "nodeId": "8232:145",
+                "kind": "svg"
+              },
+              "layout": {
+                "margin": {
+                  "top": 6
+                }
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "feature-list-item-3-text",
+              "figmaNodeId": "8232:144",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

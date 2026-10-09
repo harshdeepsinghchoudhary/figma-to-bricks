@@ -1,0 +1,174 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "frame-1261152823",
+      "figmaNodeId": "scope",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "align": "start"
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "frame-1261152823-1",
+          "figmaNodeId": "8232:25",
+          "children": [
+            {
+              "type": "image",
+              "id": "image",
+              "figmaNodeId": "8232:26",
+              "asset": {
+                "nodeId": "8232:26",
+                "kind": "image"
+              },
+              "size": {
+                "width": 532,
+                "height": 297
+              },
+              "border": {
+                "radius": 12
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-1261152822-1",
+              "figmaNodeId": "8232:27",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "container-jili-intro",
+                  "figmaNodeId": "8232:28",
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "heading-jili-software-provider",
+                      "figmaNodeId": "8232:29",
+                      "text": "What is Jili Software Provider?",
+                      "level": 2,
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 34,
+                        "fontWeight": 600,
+                        "color": "#FFFFFF",
+                        "lineHeight": "41.15px",
+                        "align": "left"
+                      },
+                      "size": {
+                        "width": 568
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "container-paragraph-group",
+                      "figmaNodeId": "8232:30",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "text-paragraph-1",
+                          "figmaNodeId": "8232:31",
+                          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 16,
+                            "fontWeight": 400,
+                            "color": "#FFFFFF",
+                            "lineHeight": "24px",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 568
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "text-paragraph-2",
+                          "figmaNodeId": "8232:32",
+                          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 16,
+                            "fontWeight": 400,
+                            "color": "#FFFFFF",
+                            "lineHeight": "24px",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 568
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 10,
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 10,
+                    "align": "start"
+                  }
+                },
+                {
+                  "type": "button",
+                  "id": "learn-more-label",
+                  "figmaNodeId": "8232:33",
+                  "text": "Learn More",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 600,
+                    "lineHeight": "19.36px",
+                    "align": "left",
+                    "color": "#000000"
+                  },
+                  "background": {
+                    "color": "#FCC40B"
+                  },
+                  "border": {
+                    "radius": 400
+                  },
+                  "size": {
+                    "width": 152
+                  },
+                  "layout": {
+                    "padding": {
+                      "top": 15,
+                      "right": 32,
+                      "bottom": 15,
+                      "left": 32
+                    }
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 40,
+                "align": "start"
+              },
+              "size": {
+                "width": 568
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 100,
+            "align": "start"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Section background color not specified in Figma data; omitted"
+  ]
+}

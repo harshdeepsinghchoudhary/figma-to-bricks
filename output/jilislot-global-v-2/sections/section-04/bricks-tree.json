@@ -1,0 +1,232 @@
+[
+  {
+    "id": "7lmc0m",
+    "name": "image",
+    "parent": "i16m37",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8232_26.png",
+        "url": "../../assets/image-8232_26.png"
+      },
+      "_width": "100%",
+      "_widthMax": "532px",
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "6a7dr0",
+    "name": "heading",
+    "parent": "9r39i6",
+    "children": [],
+    "settings": {
+      "text": "What is Jili Software Provider?",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "600",
+        "line-height": "41.15px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "lsl4j6",
+    "name": "text",
+    "parent": "vmwm3d",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "dapjmb",
+    "name": "text",
+    "parent": "vmwm3d",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "vmwm3d",
+    "name": "div",
+    "parent": "9r39i6",
+    "children": [
+      "lsl4j6",
+      "dapjmb"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "9r39i6",
+    "name": "div",
+    "parent": "qor9vu",
+    "children": [
+      "6a7dr0",
+      "vmwm3d"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "3hp20j",
+    "name": "button",
+    "parent": "qor9vu",
+    "children": [],
+    "settings": {
+      "text": "Learn More",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FCC40B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "400px",
+          "right": "400px",
+          "bottom": "400px",
+          "left": "400px"
+        }
+      }
+    }
+  },
+  {
+    "id": "qor9vu",
+    "name": "div",
+    "parent": "i16m37",
+    "children": [
+      "9r39i6",
+      "3hp20j"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "40",
+      "_columnGap": "40",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "568px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "i16m37",
+    "name": "div",
+    "parent": "uq6sem",
+    "children": [
+      "7lmc0m",
+      "qor9vu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "uq6sem",
+    "name": "container",
+    "parent": "m9ujwm",
+    "children": [
+      "i16m37"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "m9ujwm",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "uq6sem"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154701",
+          "figmaNodeId": "8232:225",
+          "background": {
+            "color": "#191818"
+          },
+          "border": {
+            "radius": 10
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "image-8232-232",
+              "figmaNodeId": "8232:232",
+              "asset": {
+                "nodeId": "8232:232",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "column",
+              "id": "inner-group-1261154692",
+              "layout": {
+                "direction": "column",
+                "gap": 24
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "text-jili-super-ace-slot",
+                  "figmaNodeId": "8232:229",
+                  "text": "Jili Super Ace Slot",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 700,
+                    "lineHeight": "21.78px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "text-high-volatility",
+                  "figmaNodeId": "8232:230",
+                  "text": "High volatility, combo wins",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "text-rtp",
+                  "figmaNodeId": "8232:231",
+                  "text": "RTP: 96.00%",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fontWeight": 400,
+                    "lineHeight": "27px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

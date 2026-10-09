@@ -1,0 +1,70 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jilislot-global-v2-part4",
+      "children": [
+        {
+          "type": "block",
+          "id": "background-rectangle",
+          "figmaNodeId": "8232:551",
+          "background": {
+            "color": "#181818"
+          },
+          "border": {
+            "radius": 12
+          }
+        },
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8232:553",
+          "asset": {
+            "nodeId": "8232:553",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "heading",
+          "id": "lucky-goldbricks",
+          "text": "Lucky Goldbricks",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": 600,
+            "lineHeight": "24.2px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "text",
+          "id": "rtp-percentage",
+          "text": "RTP Percentage: (96%)+ (97%+)",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 500,
+            "lineHeight": "27px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "text",
+          "id": "type-classic",
+          "text": "Type: Classic, Bonus Buy, Jackpot",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 500,
+            "lineHeight": "27px",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout and spacing details omitted"
+  ]
+}

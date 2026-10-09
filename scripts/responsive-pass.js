@@ -129,6 +129,14 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
         if (parentRow && !parent._inline) setResp(n, T, { size: { maxWidth: "100%" } });
       }
     }
+    // a container-div with no width of its own inside a column shrinks to its content (flex-start / center), so it states width 100%.
+    // When the parent centres it and it is narrower than the parent, its measured width becomes the max-width.
+    if (!isNum(w) && parent && !parentGrid && !parentRow && parent.type !== "page" && parent.type !== "section"
+        && (n.type === "row" || n.type === "column") && (n.children || []).length > 0 && !n.size?.width && !n._inline) {
+      const nw = nodeWidth({ ...n, size: undefined }), pw = parent._origW ?? parent._contentW ?? 0;
+      if (pw > 0 && nw >= pw * 0.9) n.size = { ...(n.size || {}), width: "fill" };
+      if (parent.layout?.align === "center" && nw > 0 && pw > nw + 2 && parent.size?.maxWidth !== Math.floor(nw) && !isNum(n.size?.maxWidth)) n.size = { ...(n.size || {}), maxWidth: Math.floor(nw) };
+    }
     // a child nudged down to line up with a sibling in a row doesn't need that once stacked
     if (parentRow && n.layout?.margin?.top) setResp(n, T, { layout: { margin: { top: 0 } } });
 
@@ -250,7 +258,26 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
     };
     // content narrower than the site container (a 619px hero column): the single block inside the container carries that width
     const only = container.children.length === 1 ? container.children[0] : null;
-    if (only && !TEXTLEAF.has(only.type) && cw > 0 && cw < SITE_WIDTH - 1 && !isNum(only.size?.maxWidth)) only.size = { ...(only.size || {}), width: "fill", maxWidth: cw };
+    if (sec._scopeW) {
+      // the whole scope is narrower than the site container (a 1003px FAQ frame): the container itself carries that width, its content fills it
+      container.size.maxWidth = sec._scopeW;
+      if (only && !TEXTLEAF.has(only.type) && !isNum(only.size?.maxWidth)) only.size = { ...(only.size || {}), width: "fill" };
+      log(`section ${sec.id}: container max-width ${sec._scopeW}px from the Figma frame width`);
+    } else if (only && !TEXTLEAF.has(only.type) && cw > 0 && cw < SITE_WIDTH - 1 && !isNum(only.size?.maxWidth)) only.size = { ...(only.size || {}), width: "fill", maxWidth: cw };
+    if (sec._card) {
+      // a card panel (rectangle + decoration) behind the content: the container IS the card
+      const c = sec._card;
+      container.background = { color: c.color };
+      if (c.radius) container.border = { radius: c.radius };
+      container.layout.padding = { top: c.top, right: SIDE_PADDING, bottom: c.bottom, left: SIDE_PADDING };
+      container.layout.align = "center";
+      container.size.maxWidth = c.width;
+      container._pseudo = c.layers;
+      container.children.forEach((k) => { if (isNum(k.size?.width)) { k.size.maxWidth = k.size.maxWidth ?? k.size.width; k.size.width = "fill"; } });
+      log(`section ${sec.id}: container is the ${c.width}px card (${c.color}, padding ${c.top}/${SIDE_PADDING}/${c.bottom}/${SIDE_PADDING}, ${c.layers.length} pseudo-element layer(s))`);
+      delete sec._card;
+    }
+    if (sec._pseudo) { sec._layered = true; container._raise = true; }
     sec.layout = { padding: { ...pad, left: SIDE_PADDING, right: SIDE_PADDING }, ...(margin ? { margin } : {}) };
     if (sec.size) { delete sec.size.width; delete sec.size.maxWidth; if (!Object.keys(sec.size).length) delete sec.size; } // sections are full-width by nature
     if (sec._bgImage || decor.length) { sec._layered = true; container._raise = true; }

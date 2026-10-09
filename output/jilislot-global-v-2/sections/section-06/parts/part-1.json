@@ -1,0 +1,90 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "jili-slot-games-section",
+      "figmaNodeId": "scope",
+      "border": {
+        "radius": 12
+      },
+      "children": [
+        {
+          "type": "heading",
+          "id": "pros-cons-heading",
+          "figmaNodeId": "8232:86",
+          "text": "Pros and Cons of Jili Slot Games BD",
+          "level": 2,
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "lineHeight": "41.15px",
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        },
+        {
+          "type": "column",
+          "id": "pros-cons-grid-row",
+          "figmaNodeId": "8232:87",
+          "background": {
+            "gradient": {
+              "angle": 90,
+              "stops": [
+                {
+                  "color": "#0DAE2F1F",
+                  "position": 0
+                },
+                {
+                  "color": "#D609061F",
+                  "position": 100
+                }
+              ]
+            }
+          },
+          "border": {
+            "radius": 12
+          }
+        },
+        {
+          "type": "column",
+          "id": "pros-section-column",
+          "figmaNodeId": "8232:89",
+          "children": [
+            {
+              "type": "icon",
+              "id": "pros-icon",
+              "figmaNodeId": "8232:91",
+              "asset": {
+                "nodeId": "8232:91",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "heading",
+              "id": "pros-heading",
+              "figmaNodeId": "8232:93",
+              "text": "PROS",
+              "level": 3,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 700,
+                "lineHeight": "32px",
+                "color": "#FFFFFF",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Exact text alignment from Figma not always explicit, using textAlignHorizontal if present",
+    "Missing specific fontFamily weight for all elements (Inter used as default for most)",
+    "letterSpacing not provided in Figma data",
+    "jili-slot-games-section: dropped unknown field \"_uncertain\""
+  ]
+}

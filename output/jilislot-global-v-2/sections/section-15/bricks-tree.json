@@ -1,0 +1,930 @@
+[
+  {
+    "id": "i3e1eq",
+    "name": "heading",
+    "parent": "d491sf",
+    "children": [],
+    "settings": {
+      "text": "Secure and Flexible Deposit and Withdrawal Options",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "600",
+        "line-height": "41.15px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "in6bcm",
+    "name": "heading",
+    "parent": "bg6i6m",
+    "children": [],
+    "settings": {
+      "text": "1. Credit/Debit Cards",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "29.05px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "ac8vl5",
+    "name": "text-basic",
+    "parent": "bg6i6m",
+    "children": [],
+    "settings": {
+      "text": "Widely accepted and easy to use, cards are a go-to for many players.",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "bg6i6m",
+    "name": "div",
+    "parent": "wl8yre",
+    "children": [
+      "in6bcm",
+      "ac8vl5"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "qq6zya",
+    "name": "text",
+    "parent": "9xt2ky",
+    "children": [],
+    "settings": {
+      "text": "<p>✅ Benefits: Instant deposits, high security</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "8zzh06",
+    "name": "text",
+    "parent": "9xt2ky",
+    "children": [],
+    "settings": {
+      "text": "<p>🛠️ How to Use: Enter your card details at checkout</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "jaaaqo",
+    "name": "text",
+    "parent": "9xt2ky",
+    "children": [],
+    "settings": {
+      "text": "<p>⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "fmk115",
+    "name": "text",
+    "parent": "9xt2ky",
+    "children": [],
+    "settings": {
+      "text": "<p>📝 Note: May require verification for large withdrawals</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "9xt2ky",
+    "name": "div",
+    "parent": "wl8yre",
+    "children": [
+      "qq6zya",
+      "8zzh06",
+      "jaaaqo",
+      "fmk115"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "wl8yre",
+    "name": "div",
+    "parent": "infufw",
+    "children": [
+      "bg6i6m",
+      "9xt2ky"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "infufw",
+    "name": "div",
+    "parent": "c8az2t",
+    "children": [
+      "wl8yre"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "30",
+        "right": "29.99",
+        "bottom": "32",
+        "left": "30"
+      },
+      "_background": {
+        "color": {
+          "raw": "#181818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        }
+      }
+    }
+  },
+  {
+    "id": "efnu2r",
+    "name": "heading",
+    "parent": "vj7wgc",
+    "children": [],
+    "settings": {
+      "text": "2. Bank Transfers",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "29.05px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "my7vcu",
+    "name": "text",
+    "parent": "vj7wgc",
+    "children": [],
+    "settings": {
+      "text": "<p>Widely accepted and easy to use, cards are a go-to for many players.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "vj7wgc",
+    "name": "div",
+    "parent": "wtqu4d",
+    "children": [
+      "efnu2r",
+      "my7vcu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "30tp8u",
+    "name": "text",
+    "parent": "55uvip",
+    "children": [],
+    "settings": {
+      "text": "<p>✅ Benefits: Safe for large amounts, trackable</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "v7p02j",
+    "name": "text",
+    "parent": "55uvip",
+    "children": [],
+    "settings": {
+      "text": "<p>🛠️ How to Use: Enter your card details at checkout</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "ery83a",
+    "name": "text",
+    "parent": "55uvip",
+    "children": [],
+    "settings": {
+      "text": "<p>⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "hdh3vl",
+    "name": "text",
+    "parent": "55uvip",
+    "children": [],
+    "settings": {
+      "text": "<p>📝 Note: May require verification for large withdrawals</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "55uvip",
+    "name": "div",
+    "parent": "wtqu4d",
+    "children": [
+      "30tp8u",
+      "v7p02j",
+      "ery83a",
+      "hdh3vl"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "wtqu4d",
+    "name": "div",
+    "parent": "ttj12r",
+    "children": [
+      "vj7wgc",
+      "55uvip"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "ttj12r",
+    "name": "div",
+    "parent": "c8az2t",
+    "children": [
+      "wtqu4d"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "30",
+        "right": "29.99",
+        "bottom": "32",
+        "left": "30"
+      },
+      "_background": {
+        "color": {
+          "raw": "#181818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        }
+      }
+    }
+  },
+  {
+    "id": "c8az2t",
+    "name": "div",
+    "parent": "d491sf",
+    "children": [
+      "infufw",
+      "ttj12r"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(2, 1fr)",
+      "_gridGap": "24",
+      "_alignItemsGrid": "stretch",
+      "_margin": {
+        "top": "50"
+      },
+      "_width": "100%",
+      "_gridTemplateColumns:tablet_portrait": "1fr",
+      "_gridGap:tablet_portrait": "24"
+    }
+  },
+  {
+    "id": "0sfl44",
+    "name": "heading",
+    "parent": "itd8c4",
+    "children": [],
+    "settings": {
+      "text": "3. E-wallets (bKash, Rocket, UCash, Nagad)",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "29.05px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "e2j0lj",
+    "name": "text",
+    "parent": "itd8c4",
+    "children": [],
+    "settings": {
+      "text": "<p>Widely accepted and easy to use, cards are a go-to for many players.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "itd8c4",
+    "name": "div",
+    "parent": "qv4gdd",
+    "children": [
+      "0sfl44",
+      "e2j0lj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "8c8ty3",
+    "name": "text-basic",
+    "parent": "ez51dn",
+    "children": [],
+    "settings": {
+      "text": "✅ Benefits: Instant deposits, high security",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "q4tkpg",
+    "name": "text-basic",
+    "parent": "ez51dn",
+    "children": [],
+    "settings": {
+      "text": "🛠️ How to Use: Enter your card details at checkout",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "smj1p6",
+    "name": "text-basic",
+    "parent": "ez51dn",
+    "children": [],
+    "settings": {
+      "text": "⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "wwoatu",
+    "name": "text-basic",
+    "parent": "ez51dn",
+    "children": [],
+    "settings": {
+      "text": "📝 Note: May require verification for large withdrawals",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "ez51dn",
+    "name": "div",
+    "parent": "qv4gdd",
+    "children": [
+      "8c8ty3",
+      "q4tkpg",
+      "smj1p6",
+      "wwoatu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "qv4gdd",
+    "name": "div",
+    "parent": "3vhqi4",
+    "children": [
+      "itd8c4",
+      "ez51dn"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "3vhqi4",
+    "name": "div",
+    "parent": "5drfzg",
+    "children": [
+      "qv4gdd"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "30",
+        "right": "29.99",
+        "bottom": "32",
+        "left": "30"
+      },
+      "_background": {
+        "color": {
+          "raw": "#181818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        }
+      }
+    }
+  },
+  {
+    "id": "zaaei8",
+    "name": "heading",
+    "parent": "6v53mk",
+    "children": [],
+    "settings": {
+      "text": "4. Cryptocurrency (BTC, USDT, ETH)",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "29.05px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "15nnl5",
+    "name": "text-basic",
+    "parent": "6v53mk",
+    "children": [],
+    "settings": {
+      "text": "Widely accepted and easy to use, cards are a go-to for many players.",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "6v53mk",
+    "name": "div",
+    "parent": "723w91",
+    "children": [
+      "zaaei8",
+      "15nnl5"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "ito8h6",
+    "name": "text-basic",
+    "parent": "0oeqwj",
+    "children": [],
+    "settings": {
+      "text": "✅ Benefits: Safe for large amounts, trackable",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "sf8qh6",
+    "name": "text-basic",
+    "parent": "0oeqwj",
+    "children": [],
+    "settings": {
+      "text": "🛠️ How to Use: Enter your card details at checkout",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "1fbvu5",
+    "name": "text-basic",
+    "parent": "0oeqwj",
+    "children": [],
+    "settings": {
+      "text": "⏱️ Transaction Time: Deposits — Instant, Withdrawals — 1–3 business days",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "b25ds4",
+    "name": "text-basic",
+    "parent": "0oeqwj",
+    "children": [],
+    "settings": {
+      "text": "📝 Note: May require verification for large withdrawals",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "0oeqwj",
+    "name": "div",
+    "parent": "723w91",
+    "children": [
+      "ito8h6",
+      "sf8qh6",
+      "1fbvu5",
+      "b25ds4"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "723w91",
+    "name": "div",
+    "parent": "vhc364",
+    "children": [
+      "6v53mk",
+      "0oeqwj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "vhc364",
+    "name": "div",
+    "parent": "5drfzg",
+    "children": [
+      "723w91"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "30",
+        "right": "29.99",
+        "bottom": "32",
+        "left": "30"
+      },
+      "_background": {
+        "color": {
+          "raw": "#181818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        }
+      }
+    }
+  },
+  {
+    "id": "5drfzg",
+    "name": "div",
+    "parent": "d491sf",
+    "children": [
+      "3vhqi4",
+      "vhc364"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(2, 1fr)",
+      "_gridGap": "24",
+      "_alignItemsGrid": "stretch",
+      "_margin": {
+        "top": "24"
+      },
+      "_width": "100%",
+      "_gridTemplateColumns:tablet_portrait": "1fr",
+      "_gridGap:tablet_portrait": "24"
+    }
+  },
+  {
+    "id": "d491sf",
+    "name": "div",
+    "parent": "6dgv0w",
+    "children": [
+      "i3e1eq",
+      "c8az2t",
+      "5drfzg"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "6dgv0w",
+    "name": "container",
+    "parent": "ixddkb",
+    "children": [
+      "d491sf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "ixddkb",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "6dgv0w"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

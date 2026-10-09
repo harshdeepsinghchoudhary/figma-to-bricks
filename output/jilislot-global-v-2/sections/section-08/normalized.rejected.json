@@ -1,0 +1,108 @@
+{
+  "type": "section",
+  "id": "jilislot-global-v-2-part-6",
+  "children": [
+    {
+      "type": "image",
+      "id": "image",
+      "figmaNodeId": "8232:330",
+      "asset": {
+        "nodeId": "8232:330",
+        "kind": "image"
+      },
+      "size": {
+        "width": 254,
+        "height": 135
+      },
+      "background": {
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "column",
+      "id": "frame-1261152826",
+      "figmaNodeId": "8232:331",
+      "layout": {
+        "direction": "column",
+        "gap": 30
+      },
+      "children": [
+        {
+          "type": "heading",
+          "id": "jili-live-casino",
+          "figmaNodeId": "8232:333",
+          "text": "Jili Live Casino",
+          "size": {
+            "width": 206,
+            "height": 22
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 600,
+            "lineHeight": "21.78px",
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        },
+        {
+          "type": "text",
+          "id": "lorem-ipsum",
+          "figmaNodeId": "8232:334",
+          "text": "Lorem Ipsum is simply dummy text of the ",
+          "size": {
+            "width": 206,
+            "height": 54
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 400,
+            "lineHeight": "27px",
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        },
+        {
+          "type": "button",
+          "id": "play-now",
+          "figmaNodeId": "8232:335",
+          "text": "Play Now",
+          "size": {
+            "width": 242,
+            "height": 47
+          },
+          "background": {
+            "color": "#FCC40B"
+          },
+          "border": {
+            "radius": 400
+          },
+          "layout": {
+            "padding": {
+              "top": 15,
+              "right": 32,
+              "bottom": 15,
+              "left": 32
+            },
+            "display": "flex",
+            "direction": "row",
+            "align": "center",
+            "justify": "center"
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "16.94px",
+            "color": "#000000",
+            "align": "left"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout details for column container beyond provided gap"
+  ]
+}

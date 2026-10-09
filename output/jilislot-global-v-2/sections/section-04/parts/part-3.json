@@ -1,0 +1,44 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "learn-more",
+      "figmaNodeId": "8232:33",
+      "background": {
+        "color": "#FCC40B"
+      },
+      "border": {
+        "radius": 400
+      },
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "align": "center",
+        "justify": "center",
+        "padding": {
+          "left": 32,
+          "right": 32,
+          "top": 15,
+          "bottom": 15
+        }
+      },
+      "children": [
+        {
+          "type": "text",
+          "id": "learn-more-label",
+          "figmaNodeId": "8232:34",
+          "text": "Learn More",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 600,
+            "color": "#000000",
+            "lineHeight": "19.36px",
+            "align": "left"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8232:392",
+          "asset": {
+            "nodeId": "8232:392",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "heading",
+          "id": "slot-machine-lucky-gold",
+          "figmaNodeId": "8232:395",
+          "text": "Slot Machine Lucky Gold",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": 600,
+            "lineHeight": "24.2px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "text",
+          "id": "lorem-ipsum",
+          "figmaNodeId": "8232:396",
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum is simply dummy text of",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 400,
+            "lineHeight": "27px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "button",
+          "id": "claim-now",
+          "figmaNodeId": "8232:398",
+          "text": "Claim Now",
+          "background": {
+            "color": "#FCC40B"
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 600,
+            "lineHeight": "19.36px",
+            "color": "#000000"
+          }
+        }
+      ],
+      "notes": []
+    },
+    {
+      "type": "unsupported",
+      "id": "unsupported-wrapper",
+      "figmaNodeId": "scope",
+      "notes": [
+        "Synthetic wrapper not emitted as element"
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout and size details omitted"
+  ]
+}

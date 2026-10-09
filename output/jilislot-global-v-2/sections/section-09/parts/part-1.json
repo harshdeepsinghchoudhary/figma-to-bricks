@@ -1,0 +1,106 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154720",
+          "figmaNodeId": "8232:347"
+        },
+        {
+          "type": "heading",
+          "id": "how-to-start-playing-jili-games",
+          "figmaNodeId": "8232:348",
+          "text": "How to Start Playing Jili Games?",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 34,
+            "fontWeight": 600,
+            "lineHeight": "41.15px",
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-1261154715",
+          "figmaNodeId": "8232:349",
+          "children": [
+            {
+              "type": "unsupported",
+              "id": "rectangle-5757",
+              "figmaNodeId": "8232:350",
+              "notes": [
+                "Rectangle with cornerRadius 12 and stroke #FFFFFF2E, no fill."
+              ]
+            },
+            {
+              "type": "column",
+              "id": "group-1261154714",
+              "figmaNodeId": "8232:351",
+              "children": [
+                {
+                  "type": "image",
+                  "id": "group-1261154677",
+                  "figmaNodeId": "8232:355",
+                  "asset": {
+                    "nodeId": "8232:355",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "frame-1261152827",
+                  "figmaNodeId": "8232:352",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 16,
+                    "align": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "register-an-account",
+                      "figmaNodeId": "8232:353",
+                      "text": "Register an account",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 24,
+                        "fontWeight": 600,
+                        "lineHeight": "29.05px",
+                        "color": "#FFFFFF",
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "lorem-ipsum",
+                      "figmaNodeId": "8232:354",
+                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 18,
+                        "fontWeight": 400,
+                        "lineHeight": "27px",
+                        "color": "#FFFFFF",
+                        "align": "center"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout and size details for many containers were omitted due to lack of data",
+    "group-1261154677: dropped unknown field \"offCross\""
+  ]
+}

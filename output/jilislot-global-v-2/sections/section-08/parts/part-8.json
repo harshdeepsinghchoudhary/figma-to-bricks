@@ -1,0 +1,118 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-part-8",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "image",
+          "id": "image",
+          "figmaNodeId": "8232:340",
+          "asset": {
+            "nodeId": "8232:340",
+            "kind": "image"
+          },
+          "layout": {
+            "display": "flex"
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-1261152826",
+          "figmaNodeId": "8232:341",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 30,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "jili-bingo",
+              "figmaNodeId": "8232:343",
+              "text": "Jili Bingo",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 600,
+                "lineHeight": "21.78px",
+                "color": "#FFFFFF",
+                "align": "center"
+              },
+              "layout": {
+                "display": "flex"
+              }
+            },
+            {
+              "type": "text",
+              "id": "lorem-ipsum",
+              "figmaNodeId": "8232:344",
+              "text": "Lorem Ipsum is simply dummy text of the ",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "27px",
+                "color": "#FFFFFF",
+                "align": "center"
+              },
+              "layout": {
+                "display": "flex"
+              }
+            },
+            {
+              "type": "row",
+              "id": "play-now-button",
+              "figmaNodeId": "8232:345",
+              "background": {
+                "color": "#FCC40B"
+              },
+              "border": {
+                "radius": 400
+              },
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 7,
+                "align": "center",
+                "justify": "center",
+                "padding": {
+                  "top": 15,
+                  "right": 32,
+                  "bottom": 15,
+                  "left": 32
+                }
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "play-now",
+                  "figmaNodeId": "8232:346",
+                  "text": "Play Now",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 600,
+                    "lineHeight": "16.94px",
+                    "color": "#000000",
+                    "align": "left"
+                  },
+                  "layout": {
+                    "display": "flex"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "size properties omitted where not provided",
+    "exact layout justification for column container"
+  ]
+}

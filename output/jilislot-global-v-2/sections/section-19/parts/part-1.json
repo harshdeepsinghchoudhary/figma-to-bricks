@@ -1,0 +1,63 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "group-1261154751",
+      "figmaNodeId": "8232:737"
+    },
+    {
+      "type": "column",
+      "id": "group-1261154750",
+      "figmaNodeId": "8232:738",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154749",
+          "figmaNodeId": "8232:739",
+          "children": [
+            {
+              "type": "block",
+              "id": "rectangle-5752",
+              "figmaNodeId": "8232:740",
+              "background": {
+                "color": "#FCC40B"
+              },
+              "border": {
+                "radius": 16
+              }
+            },
+            {
+              "type": "column",
+              "id": "mask-group",
+              "figmaNodeId": "8232:741",
+              "children": [
+                {
+                  "type": "block",
+                  "id": "rectangle-5753",
+                  "figmaNodeId": "8232:742",
+                  "background": {
+                    "color": "#FCC40B"
+                  },
+                  "border": {
+                    "radius": 16
+                  }
+                },
+                {
+                  "type": "icon",
+                  "id": "vector-1",
+                  "figmaNodeId": "8232:743",
+                  "asset": {
+                    "nodeId": "8232:743",
+                    "kind": "svg"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

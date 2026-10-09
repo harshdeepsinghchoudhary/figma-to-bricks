@@ -1,0 +1,87 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "figmaNodeId": "8232:777",
+      "background": {
+        "color": "#1B1B1B"
+      },
+      "border": {
+        "radius": 10
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "column-8232-779",
+          "figmaNodeId": "8232:779",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 10
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "row-8232-780",
+              "figmaNodeId": "8232:780",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 526
+              },
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "heading-8232-781",
+                  "figmaNodeId": "8232:781",
+                  "text": "How do I claim the Jili Games Free 100 bonus?",
+                  "level": 4,
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": 500,
+                    "lineHeight": "30px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "icon",
+                  "id": "icon-8232-782",
+                  "figmaNodeId": "8232:782",
+                  "asset": {
+                    "nodeId": "8232:782",
+                    "kind": "svg"
+                  }
+                }
+              ],
+              "notes": []
+            },
+            {
+              "type": "text-basic",
+              "id": "text-8232-784",
+              "figmaNodeId": "8232:784",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "24px",
+                "color": "#FFFFFFCC"
+              },
+              "layout": {
+                "margin": {
+                  "top": 3
+                }
+              },
+              "notes": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

@@ -1,0 +1,73 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "jili-slot-hero-jilislot-global",
+      "figmaNodeId": "8232:19",
+      "size": {
+        "width": 619,
+        "height": 267
+      },
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 32
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "jili-slot-text-block",
+          "figmaNodeId": "8232:20",
+          "size": {
+            "width": 619,
+            "height": 186
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 16
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 500,
+            "lineHeight": "27px",
+            "align": "left"
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "jili-slot-play-text",
+              "figmaNodeId": "8232:21",
+              "text": "Jili Slot - Play Jili Online Slot | Free Games Play",
+              "level": 1,
+              "size": {
+                "width": 619,
+                "height": 116
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 48,
+                "fontWeight": 700,
+                "color": "#FFFFFF",
+                "lineHeight": "58.09px",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text",
+              "id": "lorem-ipsum-dummy-text",
+              "figmaNodeId": "8232:22",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+              "size": {
+                "width": 518,
+                "height": 54
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

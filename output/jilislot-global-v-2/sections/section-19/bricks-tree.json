@@ -1,0 +1,203 @@
+[
+  {
+    "id": "198lwd",
+    "name": "heading",
+    "parent": "0qs9ll",
+    "children": [],
+    "settings": {
+      "text": "Conclusion",
+      "tag": "h2",
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "0",
+      "_columnGap": "0",
+      "_justifyContent": "flex-start",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "58.09px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "i95d3a",
+    "name": "text",
+    "parent": "0qs9ll",
+    "children": [],
+    "settings": {
+      "text": "<p>Winning in Aviator takes more than luck. Use smart strategies, stay in control, and play with a clear plan. The key is to enjoy the game while making smart moves!</p>",
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "0",
+      "_columnGap": "0",
+      "_justifyContent": "flex-start",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "500",
+        "line-height": "30px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "0qs9ll",
+    "name": "div",
+    "parent": "8ko4wh",
+    "children": [
+      "198lwd",
+      "i95d3a"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "66vdy7",
+    "name": "button",
+    "parent": "8ko4wh",
+    "children": [],
+    "settings": {
+      "text": "Get Started",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "400px",
+          "right": "400px",
+          "bottom": "400px",
+          "left": "400px"
+        }
+      }
+    }
+  },
+  {
+    "id": "8ko4wh",
+    "name": "div",
+    "parent": "8jh2sz",
+    "children": [
+      "0qs9ll",
+      "66vdy7"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "32",
+      "_columnGap": "32",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "755px"
+    }
+  },
+  {
+    "id": "8jh2sz",
+    "name": "container",
+    "parent": "xe63oz",
+    "children": [
+      "8ko4wh"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "88",
+        "right": "16",
+        "bottom": "88",
+        "left": "16"
+      },
+      "_width": "100%",
+      "_widthMax": "1200px",
+      "_background": {
+        "color": {
+          "raw": "#FCC40B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "16px",
+          "right": "16px",
+          "bottom": "16px",
+          "left": "16px"
+        }
+      },
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/mask-group-8232_741.svg",
+          "url": "../../assets/mask-group-8232_741.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
+      },
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-8jh2sz::before, #brxe-8jh2sz::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-8jh2sz > * {\n  position: relative;\n  z-index: 1;\n}"
+    }
+  },
+  {
+    "id": "xe63oz",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "8jh2sz"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

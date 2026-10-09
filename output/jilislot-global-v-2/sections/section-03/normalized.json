@@ -1,0 +1,160 @@
+{
+  "type": "page",
+  "_uncertain": [
+    "Banner 1 (#D9D9D9) is a non-exported image/rectangle; it appears layered with the exported background image 8232:803 (overlapping) and is described in notes rather than emitted.",
+    "Group 1261154760 (8232:811) has no children in this part; emitted as an empty column.",
+    "No text, heading, or button nodes were present in the Figma data for this part; they may belong to another part of the section."
+  ],
+  "children": [
+    {
+      "type": "section",
+      "id": "banner",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-1261154760",
+          "figmaNodeId": "8232:811",
+          "children": [
+            {
+              "type": "column",
+              "id": "banner-backgrounds",
+              "figmaNodeId": "8232:806",
+              "children": [
+                {
+                  "type": "unsupported",
+                  "id": "banner-1",
+                  "figmaNodeId": "8232:805",
+                  "notes": [
+                    "Rectangle with solid fill #D9D9D9, no exported image (imageExported not set / not in manifest). Likely a fallback or colored banner layer."
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "woman-with-toothbrush",
+                  "figmaNodeId": "8232:803",
+                  "asset": {
+                    "nodeId": "8232:803",
+                    "kind": "image"
+                  },
+                  "notes": [
+                    "Background image layered with banner-1."
+                  ],
+                  "size": {
+                    "width": 1440,
+                    "height": 518
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "align": "start"
+              },
+              "background": {
+                "color": "#D9D9D9"
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-8-1",
+              "figmaNodeId": "8232:19",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "jili-slot-text-block",
+                  "figmaNodeId": "8232:20",
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "jili-slot-play-text",
+                      "figmaNodeId": "8232:21",
+                      "text": "Jili Slot - Play Jili Online Slot | Free Games Play",
+                      "level": 2,
+                      "size": {
+                        "width": 619
+                      },
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 48,
+                        "fontWeight": 700,
+                        "color": "#FFFFFF",
+                        "lineHeight": "58.09px",
+                        "align": "left"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "lorem-ipsum-dummy-text",
+                      "figmaNodeId": "8232:22",
+                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+                      "size": {
+                        "width": 518
+                      },
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "lineHeight": "27px",
+                        "align": "left",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 16,
+                    "align": "start"
+                  }
+                },
+                {
+                  "type": "button",
+                  "id": "get-started-button",
+                  "figmaNodeId": "8232:23",
+                  "text": "Get Started",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 600,
+                    "lineHeight": "19.36px",
+                    "align": "left",
+                    "color": "#000000"
+                  },
+                  "background": {
+                    "color": "#FCC40B"
+                  },
+                  "border": {
+                    "radius": 400
+                  },
+                  "size": {
+                    "width": 154
+                  },
+                  "layout": {
+                    "padding": {
+                      "top": 15,
+                      "right": 32,
+                      "bottom": 15,
+                      "left": 32
+                    }
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 32,
+                "align": "start"
+              }
+            }
+          ]
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ]
+}

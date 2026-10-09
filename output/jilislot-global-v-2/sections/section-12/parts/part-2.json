@@ -1,0 +1,35 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-part2",
+      "children": [
+        {
+          "type": "image",
+          "id": "a5927452-5ef0-4eec-a45d-dba41aa77da0",
+          "figmaNodeId": "8232:526",
+          "asset": {
+            "nodeId": "8232:526",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "button",
+          "id": "learn-more-button",
+          "figmaNodeId": "8232:524",
+          "text": "Learn More",
+          "background": {
+            "color": "#FCC40B"
+          },
+          "border": {
+            "radius": 400
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout and size details for image and button nodes were not provided"
+  ]
+}
