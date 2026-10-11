@@ -1,0 +1,147 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "row",
+          "id": "row-outer",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 42
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "container-2214-176",
+              "figmaNodeId": "2214:176",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 8,
+                "align": "center",
+                "justify": "start"
+              },
+              "children": [
+                {
+                  "type": "row",
+                  "id": "container-2214-177",
+                  "figmaNodeId": "2214:177",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 10,
+                    "align": "center",
+                    "justify": "center",
+                    "padding": {
+                      "top": 3,
+                      "right": 4,
+                      "bottom": 3,
+                      "left": 4
+                    }
+                  },
+                  "background": {
+                    "color": "#E3E6E8"
+                  },
+                  "border": {
+                    "radius": 2
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "text-verified",
+                      "figmaNodeId": "2214:178",
+                      "text": "Verified",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "lineHeight": "16.94px",
+                        "color": "#000000"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "id": "container-2214-179",
+                  "figmaNodeId": "2214:179",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 10,
+                    "align": "center",
+                    "justify": "center",
+                    "padding": {
+                      "top": 3,
+                      "right": 4,
+                      "bottom": 3,
+                      "left": 4
+                    }
+                  },
+                  "background": {
+                    "color": "#E3E6E8"
+                  },
+                  "border": {
+                    "radius": 2
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "text-4plus-years",
+                      "figmaNodeId": "2214:180",
+                      "text": "4+ Years",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "lineHeight": "16.94px",
+                        "color": "#000000"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "id": "group-2214-181",
+              "figmaNodeId": "2214:181",
+              "children": [
+                {
+                  "type": "image",
+                  "id": "image-vector-1",
+                  "figmaNodeId": "2214:182",
+                  "asset": {
+                    "nodeId": "2214:182",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "text-5",
+                  "figmaNodeId": "2214:183",
+                  "text": "5",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 24,
+                    "fontWeight": 600,
+                    "lineHeight": "29.05px",
+                    "color": "#000000"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section id generated as section-1",
+    "section-1: dropped unknown field \"_uncertain\""
+  ]
+}

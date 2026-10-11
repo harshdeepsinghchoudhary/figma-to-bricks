@@ -1,0 +1,129 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "trust-stats",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "align": "center",
+        "gap": 48
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "licensed-item",
+          "figmaNodeId": "2214:69",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "align": "center",
+            "gap": 10
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "licensed-circle",
+              "figmaNodeId": "2214:71",
+              "asset": {
+                "nodeId": "2214:71",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 45,
+                "height": 45
+              }
+            },
+            {
+              "type": "image",
+              "id": "licensed-icon",
+              "figmaNodeId": "2214:72",
+              "asset": {
+                "nodeId": "2214:72",
+                "kind": "image"
+              },
+              "size": {
+                "width": 23,
+                "height": 23
+              }
+            },
+            {
+              "type": "text",
+              "id": "licensed-text",
+              "figmaNodeId": "2214:73",
+              "text": "Licensed: 1,800+",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 600,
+                "lineHeight": "21.78px",
+                "color": "#000000",
+                "align": "left"
+              },
+              "layout": {
+                "margin": {
+                  "left": -34,
+                  "top": -11.5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "solved-cases-item",
+          "figmaNodeId": "2214:74",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "align": "center",
+            "gap": 10
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "solved-circle",
+              "figmaNodeId": "2214:76",
+              "asset": {
+                "nodeId": "2214:76",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 45,
+                "height": 45
+              }
+            },
+            {
+              "type": "image",
+              "id": "solved-icon",
+              "figmaNodeId": "2214:77",
+              "asset": {
+                "nodeId": "2214:77",
+                "kind": "image"
+              },
+              "size": {
+                "width": 23,
+                "height": 23
+              }
+            },
+            {
+              "type": "text",
+              "id": "solved-cases-text",
+              "figmaNodeId": "2214:78",
+              "text": "Solved Cases: 500+",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "lineHeight": "21.78px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "ad-card",
+      "children": [
+        {
+          "type": "block",
+          "id": "ad-card-back",
+          "figmaNodeId": "2214:357",
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 6
+          }
+        },
+        {
+          "type": "image",
+          "id": "lucky-nugget-logo",
+          "figmaNodeId": "2216:13",
+          "asset": {
+            "nodeId": "2216:13",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "container",
+          "id": "ad-badge",
+          "figmaNodeId": "2214:369",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "padding": {
+              "left": 6,
+              "right": 6,
+              "top": 3,
+              "bottom": 3
+            },
+            "align": "center",
+            "justify": "center"
+          },
+          "background": {
+            "color": "#5B99E2"
+          },
+          "border": {
+            "radius": 6
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "ad-badge-text",
+              "figmaNodeId": "2214:370",
+              "text": "AD",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "color": "#FFFFFF",
+                "align": "left",
+                "lineHeight": "19.36px"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

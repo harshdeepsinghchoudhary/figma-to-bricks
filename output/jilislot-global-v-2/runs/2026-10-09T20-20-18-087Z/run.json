@@ -1,0 +1,40 @@
+{
+  "figmaUrl": "https://www.figma.com/design/9ZC7Ja7QmEw4bpH7ue8zdC/Online-Betting-Website?node-id=8232-2&t=2znXmW7agnAMipfO-0",
+  "frameDir": "output\\jilislot-global-v-2",
+  "postId": null,
+  "startedAt": "2026-10-09T20:20:18.093Z",
+  "args": [
+    "https://www.figma.com/design/9ZC7Ja7QmEw4bpH7ue8zdC/Online-Betting-Website?node-id=8232-2&t=2znXmW7agnAMipfO-0"
+  ],
+  "steps": [
+    {
+      "label": "1/5 extract from Figma",
+      "script": "1_extract_figma.js",
+      "args": [
+        "https://www.figma.com/design/9ZC7Ja7QmEw4bpH7ue8zdC/Online-Betting-Website?node-id=8232-2&t=2znXmW7agnAMipfO-0"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "2-3/5 AI normalize + compile + merge",
+      "script": "run-sections.js",
+      "args": [
+        "output\\jilislot-global-v-2"
+      ],
+      "code": 1,
+      "seconds": 4
+    },
+    {
+      "label": "5/5 save dataset",
+      "script": "export-dataset.js",
+      "args": [
+        "output\\jilislot-global-v-2"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-09T20:20:22.716Z",
+  "exitCode": 1
+}

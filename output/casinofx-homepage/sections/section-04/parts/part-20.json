@@ -1,0 +1,89 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "scam-alert-section",
+      "children": [
+        {
+          "type": "text",
+          "id": "scam-alert-heading",
+          "figmaNodeId": "2214:200",
+          "text": "[Scam Alert] BK8 blocked my account after I won $5,000!",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 24,
+            "fontWeight": 500,
+            "lineHeight": "32px",
+            "color": "#000000"
+          }
+        },
+        {
+          "type": "text",
+          "id": "user-report-text",
+          "figmaNodeId": "2214:202",
+          "text": "User reports casino refuses withdrawal after I won $5,000 ...",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "lineHeight": "22px",
+            "color": "#000000C2"
+          }
+        },
+        {
+          "type": "row",
+          "id": "date-row",
+          "figmaNodeId": "2214:203",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 6,
+            "align": "center",
+            "justify": "start",
+            "padding": {
+              "top": 3,
+              "right": 7,
+              "bottom": 3,
+              "left": 7
+            }
+          },
+          "background": {
+            "color": "#DDDDDD80"
+          },
+          "border": {
+            "radius": 2
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "icon-2026-05-19",
+              "figmaNodeId": "2214:204",
+              "asset": {
+                "nodeId": "2214:204",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "date-text",
+              "figmaNodeId": "2214:206",
+              "text": "2026-05-19",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "16.94px",
+                "color": "#00000099"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout properties for row width/height",
+    "exact heading level"
+  ]
+}

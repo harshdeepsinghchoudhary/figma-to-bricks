@@ -1,0 +1,80 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-55",
+          "figmaNodeId": "2214:166"
+        },
+        {
+          "type": "column",
+          "id": "group-50",
+          "figmaNodeId": "2214:167",
+          "children": [
+            {
+              "type": "block",
+              "id": "rectangle-18",
+              "figmaNodeId": "2214:168",
+              "background": {
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "image",
+              "id": "image-7-sultans",
+              "figmaNodeId": "2214:169",
+              "asset": {
+                "nodeId": "2214:169",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "row",
+              "id": "frame-40",
+              "figmaNodeId": "2214:170",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 10,
+                "padding": {
+                  "top": 4,
+                  "right": 8,
+                  "bottom": 4,
+                  "left": 8
+                },
+                "align": "center",
+                "justify": "center"
+              },
+              "background": {
+                "color": "#30A453"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pagcor-certified",
+                  "figmaNodeId": "2214:171",
+                  "text": "PAGCOR Certified",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "align": "center",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section-1: dropped unknown field \"_uncertain\""
+  ]
+}

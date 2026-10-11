@@ -167,7 +167,10 @@ if (!process.argv.includes("--no-responsive")) {
       const fp = path.join(dir, "figma-node.json");
       if (fs.existsSync(fp)) { figmaRoot = JSON.parse(fs.readFileSync(fp, "utf-8")); break; }
     }
-    const sp = structurePass(normalized, { figmaRoot: figmaRoot?.document || figmaRoot });
+    // --no-structure=a,b switches single rule groups off (hoist, dividers, rebuild, missingText, decoration, wrappers, grids, spanning, roles, sanity, rules)
+    const arg = process.argv.find((a) => a.startsWith("--no-structure="));
+    const enable = Object.fromEntries((arg ? arg.slice("--no-structure=".length).split(",") : []).filter(Boolean).map((k) => [k, false]));
+    const sp = structurePass(normalized, { figmaRoot: figmaRoot?.document || figmaRoot, manifest: assetManifest, enable });
     src = sp.doc;
     for (const line of sp.report) console.log("  structure:", line);
   }

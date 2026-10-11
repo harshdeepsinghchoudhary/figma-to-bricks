@@ -1,0 +1,132 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casinofx-homepage",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-74",
+          "figmaNodeId": "2222:74",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 14
+          },
+          "size": {
+            "width": 111,
+            "height": 126
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "parklane-casino-1",
+              "figmaNodeId": "2222:118",
+              "asset": {
+                "nodeId": "2222:118",
+                "kind": "image"
+              },
+              "size": {
+                "width": 70,
+                "height": 70
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-71",
+              "figmaNodeId": "2222:71",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 6
+              },
+              "size": {
+                "width": 111,
+                "height": 42
+              },
+              "children": [
+                {
+                  "type": "text-basic",
+                  "id": "parklane",
+                  "text": "Parklane",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeight": "19.36px",
+                    "color": "#000000",
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 111,
+                    "height": 19
+                  }
+                },
+                {
+                  "type": "row",
+                  "id": "frame-70",
+                  "figmaNodeId": "2222:70",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 4
+                  },
+                  "size": {
+                    "width": 86,
+                    "height": 17
+                  },
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "frame-69",
+                      "figmaNodeId": "2222:122",
+                      "asset": {
+                        "nodeId": "2222:122",
+                        "kind": "svg"
+                      },
+                      "size": {
+                        "width": 14,
+                        "height": 14
+                      }
+                    },
+                    {
+                      "type": "text-basic",
+                      "id": "4229947",
+                      "text": "4,229,947",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "lineHeight": "16.94px",
+                        "color": "#00000073",
+                        "align": "center"
+                      },
+                      "size": {
+                        "width": 68,
+                        "height": 17
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "block",
+      "id": "rectangle-35",
+      "figmaNodeId": "2222:35",
+      "background": {
+        "color": "#F6F6F6"
+      },
+      "size": {
+        "width": 144,
+        "height": 174
+      }
+    }
+  ],
+  "_uncertain": []
+}

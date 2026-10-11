@@ -33,8 +33,12 @@ const gapOf = (n) => n.layout?.columnGap ?? n.layout?.gap ?? 0;
 // cap: ignore explicit widths above it (full-bleed bands / backgrounds say nothing about the content width)
 function nodeWidth(n, cap = Infinity) {
   if (isNum(n.size?.width)) return n.size.width > cap ? 0 : n.size.width;
-  const kids = (n.children || []).map((c) => nodeWidth(c, cap)).filter((w) => w > 0);
+  const kids = (n.children || []).filter((c) => !c.abs).map((c) => nodeWidth(c, cap)).filter((w) => w > 0);
   if (!kids.length) return 0;
+  if (n.layout?.display === "grid" && n._grid && n.layout.gridColumns > 0) { // a measured grid: columns x widest card + gaps
+    const cols = Math.min(n.layout.gridColumns, kids.length);
+    return Math.max(...kids) * cols + (n.layout.gridGap ?? 0) * (cols - 1);
+  }
   return isRowish(n) ? kids.reduce((a, b) => a + b, 0) + gapOf(n) * (kids.length - 1) : Math.max(...kids);
 }
 
@@ -50,7 +54,7 @@ function isInlineRow(n) {
 // A row is a grid when it has 2+ children that are all containers (not icons/text/images) of (nearly) the same width.
 const TEXTLEAF = new Set(["heading", "text", "text-basic", "button", "image", "icon"]);
 const GRID_LEAVES = new Set(["heading", "text", "text-basic", "button", "image", "icon", "unsupported", "spacer"]);
-const rendered = (n) => (n.children || []).filter((k) => k.type !== "unsupported"); // dividers the compiler skips don't take part in layout
+const rendered = (n) => (n.children || []).filter((k) => k.type !== "unsupported" && !k.abs); // absolutely placed layers and dividers the compiler skips don't take part in layout
 function gridCandidate(n) {
   const kids = rendered(n);
   if (kids.length < 2 || kids.length > 6) return false;
@@ -101,6 +105,9 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       if (a && /\.svg$/i.test(a.file)) { n.type = "icon"; log(`image ${n.id} -> icon (${r1(n.size.width)}px SVG)`); }
     }
 
+    // absolutely placed layer (structure rules): size and position come from `abs`, none of the flow rules below apply
+    if (n.abs) { for (const c of n.children || []) fixNode(c, n, contentW); return; }
+
     n._inline = isInlineRow(n); // decided before the children are rewritten (their widths change below)
     const parentGrid = parent && parent.layout?.display === "grid";
     const parentRow = parent && isRowish(parent) && !parentGrid;
@@ -122,7 +129,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       // a child that fills its parent says so (width 100%) when the parent is a container or centres its children - otherwise a centred flex
       // column shrinks it to its content, and the container is now wider than the measured content
       if (fillsParent && n.type === "button") n.size.width = "fill";
-      else if (fillsParent) { if (!TEXTLEAF.has(n.type) && (parent.type === "container" || parent.layout?.align === "center")) n.size.width = "fill"; else delete n.size.width; }
+      else if (fillsParent) { if (!TEXTLEAF.has(n.type) && (parent.type === "container" || ["start", "center", "end"].includes(parent.layout?.align))) n.size.width = "fill"; else if (["center", "right"].includes(n.typography?.align)) n.size.width = "fill"; else delete n.size.width; }
       else if (singleLine) { delete n.size.width; log(`single-line text ${n.id}: no fixed width (avoids wrapping from font differences)`); }
       else {
         n.size.maxWidth = Math.floor(w); n.size.width = "fill";
@@ -139,6 +146,16 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
     }
     // a child nudged down to line up with a sibling in a row doesn't need that once stacked
     if (parentRow && n.layout?.margin?.top) setResp(n, T, { layout: { margin: { top: 0 } } });
+    // a child that is 100% wide and also has a side margin is wider than its parent: let a stretching parent do the filling instead
+    if (n.size?.width === "fill" && (n.layout?.margin?.left || n.layout?.margin?.right) && parent && !parentRow && !parentGrid
+        && !["center", "start", "end"].includes(parent.layout?.align)) delete n.size.width;
+    // very wide side padding is a desktop-only offset (text pushed to one side of a banner): shrink it on small screens
+    for (const side of ["left", "right"]) {
+      const pv = Number(n.layout?.padding?.[side]);
+      if (pv > 60) { setResp(n, T, { layout: { padding: { [side]: Math.min(pv, 40) } } }); setResp(n, M, { layout: { padding: { [side]: Math.min(pv, 20) } } }); }
+    }
+    // side offsets that only line a child up inside a row would push the stacked (100% wide) child out of the screen
+    if (parentRow && (n.layout?.margin?.left || n.layout?.margin?.right)) setResp(n, T, { layout: { margin: { left: 0, right: 0 } } });
 
     // big vertical margins shrink on smaller screens
     const mt = n.layout?.margin?.top;
@@ -149,11 +166,9 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
     }
 
     // rows of equal-width containers (cards, pros/cons columns, feature blocks) are a grid, not a flex row
-    if (isRowish(n) && n.type !== "section" && gridCandidate(n)) {
-      n.children = rendered(n); // an equal-column grid has no room for a divider cell
-      const cols = n.children.length;
-      const gap = gapOf(n);
-      n.layout = { ...n.layout, display: "grid", gridColumns: cols, gridGap: gap, align: "stretch" }; // cards in a row are as tall as the tallest
+    // finishGrid: what every grid needs once its columns are known - shared card padding, fill width, tablet / mobile column counts
+    const finishGrid = (cols, gap) => {
+      const stacked = Math.min(gap || STACKED_GAP, STACKED_GAP);
       // sibling cards share one padding (Figma measures each from its own content, which differs by a pixel or two between cards)
       const pads = n.children.map((k) => k.layout?.padding).filter(Boolean);
       if (pads.length === n.children.length) {
@@ -161,14 +176,26 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
         const spread = Math.max(...sides.map((sd) => Math.max(...pads.map((q) => q[sd] ?? 0)) - Math.min(...pads.map((q) => q[sd] ?? 0))));
         if (spread > 0 && spread <= 8) { const m = Object.fromEntries(sides.map((sd) => [sd, Math.max(...pads.map((q) => q[sd] ?? 0))])); for (const k of n.children) k.layout.padding = { ...m }; log(`grid: ${n.id} cards share padding ${m.top}/${m.right}/${m.bottom}/${m.left}`); }
       }
-      delete n.layout.justify; delete n.layout.gap; delete n.layout.columnGap; delete n.layout.rowGap; delete n.layout.direction;
       if (!n.size?.width || n.size.width === "fill") n.size = { ...(n.size || {}), width: "fill" };
-      const stacked = Math.min(gap || STACKED_GAP, STACKED_GAP);
-      if (cols <= 2) setResp(n, T, { layout: { gridColumns: 1, gridGap: stacked } });
+      const rowGapOverride = n.layout.gridRowGap !== undefined ? { gridRowGap: stacked } : {};
+      if (cols <= 2) setResp(n, T, { layout: { gridColumns: 1, gridGap: stacked, ...rowGapOverride } });
       else {
-        setResp(n, T, { layout: { gridColumns: 2, gridGap: stacked } });
+        setResp(n, T, { layout: { gridColumns: 2, gridGap: stacked, ...rowGapOverride } });
         setResp(n, "mobile_portrait", { layout: { gridColumns: 1 } });
       }
+    };
+    if (n.layout?.display === "grid" && n._grid && n.layout.gridColumns) {
+      // already a measured grid (structure rules): keep its columns and gaps, add the responsive behaviour
+      finishGrid(n.layout.gridColumns, n.layout.gridGap);
+      log(`grid: ${n.id} -> ${n.layout.gridColumns} columns (measured), gap ${n.layout.gridGap}`);
+    }
+    else if (isRowish(n) && n.type !== "section" && gridCandidate(n)) {
+      n.children = rendered(n); // an equal-column grid has no room for a divider cell
+      const cols = n.children.length;
+      const gap = gapOf(n);
+      n.layout = { ...n.layout, display: "grid", gridColumns: cols, gridGap: gap, align: "stretch" }; // cards in a row are as tall as the tallest
+      delete n.layout.justify; delete n.layout.gap; delete n.layout.columnGap; delete n.layout.rowGap; delete n.layout.direction;
+      finishGrid(cols, gap);
       log(`grid: ${n.id} -> ${cols} equal columns, gap ${gap}`);
     }
     // rows: spread across the width, collapse on tablet
@@ -195,10 +222,17 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
   function pullLayers(sec) {
     const secBox = geo[sec.figmaNodeId];
     const secW = sec.size?.width ?? secBox?.width;
-    if (!secW) return { cap: Infinity, decor: [] };
     const decor = [];
+    if (!secW) {
+      // no Figma width for the section: layers placed by structure-rules.js are still pulled out of the flow
+      const keepAll = [];
+      for (const c of sec.children || []) { if (c.abs && c.abs.z !== undefined) { decor.push(c); log(`section ${sec.id}: ${c.id} -> absolute decoration layer at ${c.abs.left}, ${c.abs.top}`); } else keepAll.push(c); }
+      sec.children = keepAll;
+      return { cap: Infinity, decor };
+    }
     const keep = [];
     for (const c of sec.children || []) {
+      if (c.abs && c.abs.z !== undefined) { decor.push(c); log(`section ${sec.id}: ${c.id} -> absolute decoration layer at ${c.abs.left}, ${c.abs.top}`); continue; } // placed by structure-rules.js
       const w = c.size?.width;
       if (c.type === "image" && !sec._bgImage && isNum(w) && w >= secW * 0.9) {
         sec._bgImage = c;
@@ -241,6 +275,9 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       delete sec.asset;
       log(`section ${sec.id}: its own picture asset ${ownAsset.nodeId} -> section background image`);
     }
+    // full-width strips (a footer's line + copyright) are not part of the site-width container: they sit beside it in the section
+    const strips = (sec.children || []).filter((c) => c._fullBleed);
+    if (strips.length) sec.children = sec.children.filter((c) => !c._fullBleed);
     const { cap, decor } = pullLayers(sec);
     const contentW = Math.round(Math.max(nodeWidth({ ...sec, size: undefined, layout: sec.layout }, cap), 0));
     const kidsW = Math.round(Math.max(0, ...(sec.children || []).map((c) => nodeWidth(c, cap))));
@@ -278,10 +315,23 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       delete sec._card;
     }
     if (sec._pseudo) { sec._layered = true; container._raise = true; }
-    sec.layout = { padding: { ...pad, left: SIDE_PADDING, right: SIDE_PADDING }, ...(margin ? { margin } : {}) };
+    // with a full-width strip beside it the section cannot have side padding (the strip would stop short of the screen edge): the container
+    // carries the side padding instead
+    sec.layout = { padding: strips.length ? { ...pad, left: 0, right: 0 } : { ...pad, left: SIDE_PADDING, right: SIDE_PADDING }, ...(margin ? { margin } : {}) };
+    if (strips.length) {
+      container.layout.padding = { ...(container.layout.padding || {}), left: SIDE_PADDING, right: SIDE_PADDING };
+      const gapAbove = Math.max(0, ...strips.map((c) => c._stripGap || 0));
+      if (gapAbove > 0) container.layout.padding.bottom = gapAbove;
+    }
     if (sec.size) { delete sec.size.width; delete sec.size.maxWidth; if (!Object.keys(sec.size).length) delete sec.size; } // sections are full-width by nature
     if (sec._bgImage || decor.length) { sec._layered = true; container._raise = true; }
-    sec.children = [container, ...decor];
+    const stripEls = strips.map((c) => {
+      delete c._fullBleed; delete c._stripGap;
+      const lay = { display: "flex", direction: "column", ...(c.layout || {}) };
+      delete lay.margin;
+      return { ...c, type: "container", layout: lay, size: { ...(c.size || {}), width: "fill", minWidth: "fill", maxWidth: undefined } };
+    });
+    sec.children = [container, ...stripEls, ...decor];
     log(`section ${sec.id}: wrapped in container (widthMax ${cw || "-"}px), side padding ${pad.left ?? 0}/${pad.right ?? 0} -> ${SIDE_PADDING}`);
 
     // 5/6) vertical padding scales down
@@ -297,6 +347,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
 
     // the container is handled like any other row/column node (no parent), then recursion covers its children
     fixNode(container, undefined, cw);
+    for (const st of stripEls) fixNode(st, undefined, Infinity);
   }
 
   function walk(n) {

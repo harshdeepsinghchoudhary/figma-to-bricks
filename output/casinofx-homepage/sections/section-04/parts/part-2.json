@@ -1,0 +1,106 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "frame-42",
+      "figmaNodeId": "2214:88"
+    },
+    {
+      "type": "column",
+      "id": "group-51",
+      "figmaNodeId": "2214:89"
+    },
+    {
+      "type": "column",
+      "id": "group-46",
+      "figmaNodeId": "2214:90",
+      "children": [
+        {
+          "type": "section",
+          "id": "rectangle-16",
+          "figmaNodeId": "2214:91",
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 8
+          },
+          "boxShadow": {
+            "color": "#0000000F",
+            "blur": 0,
+            "offsetX": 0,
+            "offsetY": 0,
+            "spread": 0
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-45",
+          "figmaNodeId": "2214:92",
+          "layout": {
+            "display": "block",
+            "direction": "column",
+            "gap": 22
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "frame-22",
+              "figmaNodeId": "2214:94",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 10,
+                "padding": {
+                  "left": 8,
+                  "right": 8,
+                  "top": 4,
+                  "bottom": 4
+                },
+                "align": "center",
+                "justify": "center"
+              },
+              "background": {
+                "color": "#30A453"
+              },
+              "border": {
+                "radius": 4
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pagcor-certified",
+                  "figmaNodeId": "2214:95",
+                  "text": "PAGCOR Certified",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "align": "center",
+                    "color": "#FFFFFF",
+                    "lineHeight": "16.94px"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "id": "casino-logo",
+              "figmaNodeId": "2214:93",
+              "asset": {
+                "nodeId": "2214:93",
+                "kind": "image"
+              },
+              "layout": {
+                "margin": {
+                  "top": 19
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

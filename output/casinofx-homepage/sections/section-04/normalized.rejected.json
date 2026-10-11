@@ -1,0 +1,63 @@
+{
+  "type": "section",
+  "id": "casinofx-homepage-part-23",
+  "children": [
+    {
+      "type": "block",
+      "id": "rectangle-18",
+      "figmaNodeId": "2214:220",
+      "size": {
+        "width": 876,
+        "height": 203
+      },
+      "background": {
+        "color": "#F7F7F7"
+      },
+      "border": {
+        "radius": 8
+      }
+    },
+    {
+      "type": "column",
+      "id": "group-43",
+      "figmaNodeId": "2214:219",
+      "size": {
+        "width": 876,
+        "height": 203
+      }
+    },
+    {
+      "type": "row",
+      "id": "frame-34",
+      "figmaNodeId": "2214:221",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 30,
+        "align": "center"
+      },
+      "size": {
+        "width": 735,
+        "height": 162
+      }
+    },
+    {
+      "type": "image",
+      "id": "rectangle-20",
+      "figmaNodeId": "2214:222",
+      "size": {
+        "width": 258,
+        "height": 162
+      },
+      "asset": {
+        "nodeId": "2214:222",
+        "kind": "image"
+      }
+    }
+  ],
+  "_uncertain": [
+    "border strokeWeight for rectangle-18",
+    "layout align for row frame-34 beyond center",
+    "any missing padding/margin values"
+  ]
+}

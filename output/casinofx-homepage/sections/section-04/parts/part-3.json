@@ -1,0 +1,32 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "container",
+      "id": "frame-27",
+      "figmaNodeId": "2214:96",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 10
+      },
+      "size": {
+        "width": 134
+      },
+      "children": [
+        {
+          "type": "text-basic",
+          "id": "unibet-label",
+          "figmaNodeId": "2214:98",
+          "text": "Unibet"
+        },
+        {
+          "type": "text-basic",
+          "id": "score-label",
+          "figmaNodeId": "2214:99",
+          "text": "9.2 Score"
+        }
+      ]
+    }
+  ]
+}

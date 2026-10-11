@@ -1,0 +1,94 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-39",
+          "figmaNodeId": "2214:184",
+          "size": {
+            "width": 876,
+            "height": 939
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 29
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-35",
+          "figmaNodeId": "2214:185",
+          "size": {
+            "width": 615,
+            "height": 38
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 18,
+            "align": "center"
+          }
+        },
+        {
+          "type": "button",
+          "id": "lest-exposure",
+          "figmaNodeId": "2214:186",
+          "text": "Lest Exposure",
+          "size": {
+            "width": 144,
+            "height": 38
+          },
+          "background": {
+            "color": "#FFD733"
+          },
+          "border": {
+            "radius": 4
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 600,
+            "lineHeight": "21.78px",
+            "color": "#000000",
+            "align": "center"
+          }
+        },
+        {
+          "type": "button",
+          "id": "scam-alerts",
+          "figmaNodeId": "2214:188",
+          "text": "Scam Alerts",
+          "size": {
+            "width": 126,
+            "height": 38
+          },
+          "background": {
+            "color": "#FFD73329"
+          },
+          "border": {
+            "radius": 4
+          },
+          "notes": [
+            "stroke color #00000033 not represented"
+          ],
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 600,
+            "lineHeight": "21.78px",
+            "color": "#000000",
+            "align": "center"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "boxShadow omitted for button scam-alerts"
+  ]
+}

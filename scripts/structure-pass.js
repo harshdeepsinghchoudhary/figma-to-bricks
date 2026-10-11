@@ -13,13 +13,27 @@
  * Skip the whole pass with --no-structure.
  */
 import { findPanels } from "./decoration-detect.js";
+import { applyStructureRules, buildFigmaIndex } from "./structure-rules.js";
 const isNum = (v) => typeof v === "number" && isFinite(v);
 const LEAF = new Set(["heading", "text", "text-basic", "button", "image", "icon", "unsupported", "spacer"]);
 const hex = (c) => "#" + [c.r, c.g, c.b].map((v) => Math.round(v * 255).toString(16).padStart(2, "0")).join("").toUpperCase();
 
-export function structurePass(input, { figmaRoot = null } = {}) {
-  const doc = JSON.parse(JSON.stringify(input));
-  const report = [];
+export function structurePass(input, { figmaRoot = null, manifest = [], enable = {} } = {}) {
+  // general structure rules first (hoist, dividers, rebuild, decoration, wrappers, grids, spanning, roles, sanity): see structure-rules.js
+  const pre = [];
+  let base = input;
+  const ruleStats = {};
+  if (figmaRoot && enable.rules !== false) {
+    const idx = buildFigmaIndex(figmaRoot, new Set(manifest.map((a) => a.nodeId)));
+    // shapes the decoration step places later as pseudo-element layers of a card - they are not "missing pictures"
+    const claimed = new Set();
+    const mark = (id) => { claimed.add(id); for (const c of idx[id]?.children || []) mark(c); };
+    try { for (const panel of findPanels(figmaRoot)) for (const l of panel.layers) mark(l.id); } catch { /* no panels */ }
+    const r = applyStructureRules(input, { figma: idx, rootBox: idx[figmaRoot.id]?.box || null, manifest, enable, claimed });
+    base = r.doc; pre.push(...r.report); Object.assign(ruleStats, r.stats);
+  }
+  const doc = JSON.parse(JSON.stringify(base));
+  const report = [...pre];
   const log = (m) => report.push(m);
   const stats = { background: 0, unwrapped: 0, headings: 0, cards: 0, layers: 0, scopeW: 0 };
 
@@ -37,7 +51,9 @@ export function structurePass(input, { figmaRoot = null } = {}) {
     };
     const idsIn = (n, out = []) => { if (n.figmaNodeId && nodes[n.figmaNodeId]) out.push(n.figmaNodeId); if (n.asset?.nodeId && nodes[n.asset.nodeId]) out.push(n.asset.nodeId); for (const c of n.children || []) idsIn(c, out); return out; };
     const rects = Object.values(nodes).filter((n) => (n.type === "RECTANGLE" || n.type === "FRAME") && n.absoluteBoundingBox && n.visible !== false
-      && (n.fills || []).some((f) => f.type === "SOLID" && f.visible !== false) && !(n.children || []).length
+      && (n.fills || []).some((f) => f.type === "SOLID" && f.visible !== false) && !(n.fills || []).some((f) => f.type === "IMAGE" && f.visible !== false)
+      && hex((n.fills.find((f) => f.type === "SOLID" && f.visible !== false)).color) !== "#D9D9D9" // Figma's default placeholder grey sits behind a photo; it is not the design's background
+      && !(n.children || []).length
       && n.absoluteBoundingBox.width >= (rootBox?.width || 1440) * 0.95);
     for (const sec of (doc.children || []).filter((c) => c.type === "section")) {
       if (sec.background || sec.asset) continue;
@@ -111,7 +127,7 @@ export function structurePass(input, { figmaRoot = null } = {}) {
   }
 
   // ---------- 2 + 3 ----------
-  const plain = (n) => n.layout && !n.background && !n.border && !n.size && !(n.notes || []).length
+  const plain = (n) => n.layout && !n.background && !n._bgImage && !n._relative && !n._fullBleed && !n.border && !n.size && !(n.notes || []).length
     && !n.layout.padding && !n.layout.margin && !n.layout.justify;
   function visit(n, parent) {
     n.children = (n.children || []).map((c) => visit(c, n));
@@ -140,5 +156,5 @@ export function structurePass(input, { figmaRoot = null } = {}) {
   }
   doc.children = (doc.children || []).map((c) => visit(c, doc));
   log(`summary: background ${stats.background}, unwrapped ${stats.unwrapped}, headings ${stats.headings}, cards ${stats.cards}, layers ${stats.layers}, scope widths ${stats.scopeW}`);
-  return { doc, report, stats };
+  return { doc, report, stats: { ...stats, ...ruleStats } };
 }

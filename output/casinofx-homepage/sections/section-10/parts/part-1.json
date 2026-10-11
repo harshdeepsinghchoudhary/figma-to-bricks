@@ -1,0 +1,65 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casino-inspection",
+      "figmaNodeId": "2219:242",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 32
+      },
+      "size": {
+        "width": 1320
+      },
+      "children": [
+        {
+          "type": "heading",
+          "id": "casino-inspection-title",
+          "figmaNodeId": "2219:243",
+          "text": "Casino Inspection",
+          "level": 1,
+          "size": {
+            "width": 1320
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 32,
+            "fontWeight": 600,
+            "lineHeight": "38.73px",
+            "align": "center"
+          }
+        },
+        {
+          "type": "row",
+          "id": "inspections-row",
+          "figmaNodeId": "2219:244",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 24,
+            "align": "center"
+          },
+          "size": {
+            "width": 1320
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "inspection-card-1",
+              "figmaNodeId": "2219:245",
+              "size": {
+                "width": 424,
+                "height": 420
+              },
+              "background": {
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

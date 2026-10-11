@@ -1,0 +1,53 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-part-16",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-58",
+          "figmaNodeId": "2214:326"
+        },
+        {
+          "type": "row",
+          "id": "frame-46",
+          "figmaNodeId": "2214:327",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 16,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "jackpot-city-image",
+              "figmaNodeId": "2214:328",
+              "asset": {
+                "nodeId": "2214:328",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "text",
+              "id": "jackpot-city",
+              "figmaNodeId": "2214:329",
+              "text": "Jackpot City",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "32px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

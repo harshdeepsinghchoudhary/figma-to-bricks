@@ -1,0 +1,98 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "frame-72",
+      "figmaNodeId": "2222:78",
+      "size": {
+        "width": 111,
+        "height": 126
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "ricardos-casino-1",
+          "figmaNodeId": "2222:79",
+          "asset": {
+            "nodeId": "2222:79",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-71",
+          "figmaNodeId": "2222:80",
+          "size": {
+            "width": 111,
+            "height": 42
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "ricardos",
+              "figmaNodeId": "2222:81",
+              "text": "Ricardo's",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "19.36px",
+                "color": "#000000"
+              }
+            },
+            {
+              "type": "row",
+              "id": "frame-70",
+              "figmaNodeId": "2222:82",
+              "size": {
+                "width": 98,
+                "height": 17
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "frame",
+                  "figmaNodeId": "2223:12",
+                  "asset": {
+                    "nodeId": "2223:12",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "text-basic",
+                  "id": "500-bonus",
+                  "figmaNodeId": "2222:85",
+                  "text": "$500 Bonus",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000073"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "block",
+      "id": "rectangle-36",
+      "figmaNodeId": "2222:100",
+      "size": {
+        "width": 144,
+        "height": 174
+      },
+      "border": {
+        "radius": 12
+      },
+      "background": {
+        "color": "#F7F7F7"
+      }
+    }
+  ],
+  "_uncertain": []
+}

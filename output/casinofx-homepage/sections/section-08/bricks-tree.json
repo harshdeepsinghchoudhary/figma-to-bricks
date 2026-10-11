@@ -1,0 +1,28 @@
+[
+  {
+    "id": "a2ts4q",
+    "name": "container",
+    "parent": "a1q9sp",
+    "children": [],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "a1q9sp",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "a2ts4q"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

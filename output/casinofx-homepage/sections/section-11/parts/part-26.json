@@ -1,0 +1,87 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casinofx-homepage",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "image",
+          "id": "domgame-casino-logo",
+          "figmaNodeId": "2222:214",
+          "asset": {
+            "nodeId": "2222:214",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "column",
+          "id": "logo-text-group",
+          "figmaNodeId": "2222:215",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 6,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "domgame-text",
+              "figmaNodeId": "2222:216",
+              "text": "DomGame",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "19.36px",
+                "color": "#000000",
+                "align": "center"
+              }
+            },
+            {
+              "type": "row",
+              "id": "bonus-row",
+              "figmaNodeId": "2222:217",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 4,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "bonus-icon",
+                  "figmaNodeId": "2223:27",
+                  "asset": {
+                    "nodeId": "2223:27",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "bonus-text",
+                  "figmaNodeId": "2222:220",
+                  "text": "$1,000 + 50 FS",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000073",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout sizes and margins not provided"
+  ]
+}

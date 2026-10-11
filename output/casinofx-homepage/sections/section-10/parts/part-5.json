@@ -1,0 +1,78 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "part-5",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-106",
+          "figmaNodeId": "2219:268",
+          "border": {
+            "radius": 0
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "column"
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-46",
+          "figmaNodeId": "2219:269",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 16,
+            "align": "center",
+            "justify": "start"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "image-25",
+              "figmaNodeId": "2219:270",
+              "asset": {
+                "nodeId": "2219:270",
+                "kind": "image"
+              },
+              "border": {
+                "radius": 180
+              }
+            },
+            {
+              "type": "text",
+              "id": "betwin99-casino",
+              "figmaNodeId": "2219:271",
+              "text": "BetWin99 Casino",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "32px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "no-office-found",
+          "figmaNodeId": "2219:272",
+          "text": "No Office Found ➔ A Visit to the...",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": 500,
+            "lineHeight": "26px",
+            "color": "#000000"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "size and margin values omitted where not provided"
+  ]
+}

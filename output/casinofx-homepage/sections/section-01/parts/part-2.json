@@ -1,0 +1,80 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "row",
+          "id": "frame-6",
+          "figmaNodeId": "2214:33",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 14,
+            "align": "center"
+          },
+          "size": {
+            "width": 253,
+            "height": 43
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-4",
+          "figmaNodeId": "2214:34",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 10,
+            "padding": {
+              "top": 12,
+              "right": 12,
+              "bottom": 12,
+              "left": 12
+            }
+          },
+          "size": {
+            "width": 116,
+            "height": 43
+          },
+          "background": {
+            "color": "#FFFFFF1A"
+          },
+          "border": {
+            "radius": 4
+          },
+          "notes": [
+            "stroke color #FFFFFF0F"
+          ]
+        },
+        {
+          "type": "image",
+          "id": "frame-37",
+          "figmaNodeId": "2214:37",
+          "asset": {
+            "nodeId": "2214:37",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "text-english",
+          "figmaNodeId": "2214:39",
+          "text": "English"
+        },
+        {
+          "type": "image",
+          "id": "frame-40",
+          "figmaNodeId": "2214:40",
+          "asset": {
+            "nodeId": "2214:40",
+            "kind": "svg"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

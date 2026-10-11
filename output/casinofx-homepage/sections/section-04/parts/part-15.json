@@ -1,0 +1,72 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-casinofx-homepage-part15",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-41",
+          "figmaNodeId": "2214:172",
+          "size": {
+            "width": 134,
+            "height": 91
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-26",
+          "figmaNodeId": "2214:173",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 2
+          },
+          "size": {
+            "width": 92,
+            "height": 58
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "7-sultans",
+              "figmaNodeId": "2214:174",
+              "text": "7 Sultans",
+              "size": {
+                "width": 109,
+                "height": 27
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 22,
+                "fontWeight": 600,
+                "lineHeight": "26.63px",
+                "color": "#000000"
+              }
+            },
+            {
+              "type": "text",
+              "id": "9-4-score",
+              "figmaNodeId": "2214:175",
+              "text": "9.4 Score",
+              "size": {
+                "width": 90,
+                "height": 29
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "29.05px",
+                "color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

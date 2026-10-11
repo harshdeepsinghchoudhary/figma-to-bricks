@@ -1,0 +1,119 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "frame-73",
+      "figmaNodeId": "2222:174",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 14,
+        "align": "center",
+        "margin": {
+          "top": 24
+        }
+      },
+      "size": {
+        "width": 111,
+        "height": 126
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "boombet-1",
+          "figmaNodeId": "2222:175",
+          "asset": {
+            "nodeId": "2222:175",
+            "kind": "image"
+          },
+          "size": {
+            "width": 70,
+            "height": 70
+          }
+        },
+        {
+          "type": "text-basic",
+          "id": "boombet",
+          "figmaNodeId": "2222:177",
+          "text": "Boombet",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "lineHeight": "19.36px",
+            "align": "center",
+            "color": "#000000"
+          },
+          "size": {
+            "width": 111,
+            "height": 19
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-70",
+          "figmaNodeId": "2222:178",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 4,
+            "align": "center"
+          },
+          "size": {
+            "width": 85,
+            "height": 17
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "icon-1",
+              "figmaNodeId": "2223:33",
+              "asset": {
+                "nodeId": "2223:33",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 14,
+                "height": "14"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "number-1",
+              "figmaNodeId": "2222:181",
+              "text": "5,308,749",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "16.94px",
+                "color": "#00000073"
+              },
+              "size": {
+                "width": 67,
+                "height": 17
+              }
+            }
+          ]
+        },
+        {
+          "type": "block",
+          "id": "rectangle-37",
+          "figmaNodeId": "2222:196",
+          "size": {
+            "width": 145,
+            "height": 174
+          },
+          "border": {
+            "radius": 12
+          },
+          "background": {
+            "color": "#F6F6F6"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

@@ -1,0 +1,96 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-part-8",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-103",
+          "figmaNodeId": "2219:288",
+          "border": {
+            "radius": 0
+          },
+          "notes": [
+            "strokeWeight:1"
+          ]
+        },
+        {
+          "type": "row",
+          "id": "frame-46",
+          "figmaNodeId": "2219:289",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 16,
+            "align": "center",
+            "justify": "start"
+          },
+          "size": {
+            "width": 235,
+            "height": 60
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "images-2",
+              "figmaNodeId": "2219:290",
+              "asset": {
+                "nodeId": "2219:290",
+                "kind": "image"
+              },
+              "size": {
+                "width": 60,
+                "height": 60
+              },
+              "border": {
+                "radius": 120
+              }
+            },
+            {
+              "type": "text",
+              "id": "royalslots-fx",
+              "figmaNodeId": "2219:291",
+              "text": "RoyalSlots FX",
+              "size": {
+                "width": 159,
+                "height": 32
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "32px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "royalslots-hq-in-curacao-no-offic",
+          "figmaNodeId": "2219:292",
+          "text": "RoyalSlots HQ in Curacao -- No offic...",
+          "size": {
+            "width": 376,
+            "height": 26
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": 500,
+            "lineHeight": "26px",
+            "color": "#000000",
+            "align": "left"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Exact border style for group-103 not specified",
+    "strokeWeight handling converted to notes"
+  ]
+}

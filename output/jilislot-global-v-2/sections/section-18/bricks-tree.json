@@ -1,12 +1,13 @@
 [
   {
-    "id": "2bshc8",
+    "id": "6conz6",
     "name": "heading",
-    "parent": "1p02oi",
+    "parent": "761fyv",
     "children": [],
     "settings": {
       "text": "Contact Jili Games Customer Services",
       "tag": "h2",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "34px",
@@ -21,9 +22,9 @@
     }
   },
   {
-    "id": "iufubk",
+    "id": "cg94a4",
     "name": "image",
-    "parent": "3g9c6q",
+    "parent": "mt4ltu",
     "children": [],
     "settings": {
       "image": {
@@ -39,13 +40,14 @@
     "themeStyles": []
   },
   {
-    "id": "syy8kj",
+    "id": "y7co24",
     "name": "heading",
-    "parent": "3g9c6q",
+    "parent": "mt4ltu",
     "children": [],
     "settings": {
       "text": "Live Chat",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -60,12 +62,12 @@
     }
   },
   {
-    "id": "3g9c6q",
+    "id": "mt4ltu",
     "name": "div",
-    "parent": "tgc9r8",
+    "parent": "7rqswt",
     "children": [
-      "iufubk",
-      "syy8kj"
+      "cg94a4",
+      "y7co24"
     ],
     "settings": {
       "_display": "flex",
@@ -79,9 +81,9 @@
     }
   },
   {
-    "id": "0pq5fp",
+    "id": "m0biyo",
     "name": "image",
-    "parent": "9w0mkl",
+    "parent": "i399a7",
     "children": [],
     "settings": {
       "image": {
@@ -97,13 +99,14 @@
     "themeStyles": []
   },
   {
-    "id": "xg2wxf",
+    "id": "7bi4xq",
     "name": "heading",
-    "parent": "9w0mkl",
+    "parent": "i399a7",
     "children": [],
     "settings": {
       "text": "Telegram: @jilislot.global",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -118,12 +121,12 @@
     }
   },
   {
-    "id": "9w0mkl",
+    "id": "i399a7",
     "name": "div",
-    "parent": "tgc9r8",
+    "parent": "7rqswt",
     "children": [
-      "0pq5fp",
-      "xg2wxf"
+      "m0biyo",
+      "7bi4xq"
     ],
     "settings": {
       "_display": "flex",
@@ -137,9 +140,9 @@
     }
   },
   {
-    "id": "sj4zss",
+    "id": "bcg2wp",
     "name": "image",
-    "parent": "2ozifl",
+    "parent": "8yx2dt",
     "children": [],
     "settings": {
       "image": {
@@ -155,13 +158,14 @@
     "themeStyles": []
   },
   {
-    "id": "ze0s11",
+    "id": "npjtw5",
     "name": "heading",
-    "parent": "2ozifl",
+    "parent": "8yx2dt",
     "children": [],
     "settings": {
       "text": "Email: support@jilislot.global",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -176,12 +180,12 @@
     }
   },
   {
-    "id": "2ozifl",
+    "id": "8yx2dt",
     "name": "div",
-    "parent": "tgc9r8",
+    "parent": "7rqswt",
     "children": [
-      "sj4zss",
-      "ze0s11"
+      "bcg2wp",
+      "npjtw5"
     ],
     "settings": {
       "_display": "flex",
@@ -195,13 +199,13 @@
     }
   },
   {
-    "id": "tgc9r8",
+    "id": "7rqswt",
     "name": "div",
-    "parent": "1p02oi",
+    "parent": "761fyv",
     "children": [
-      "3g9c6q",
-      "9w0mkl",
-      "2ozifl"
+      "mt4ltu",
+      "i399a7",
+      "8yx2dt"
     ],
     "settings": {
       "_display": "flex",
@@ -217,12 +221,12 @@
     }
   },
   {
-    "id": "1p02oi",
+    "id": "761fyv",
     "name": "div",
-    "parent": "7t80h1",
+    "parent": "qwyhca",
     "children": [
-      "2bshc8",
-      "tgc9r8"
+      "6conz6",
+      "7rqswt"
     ],
     "settings": {
       "_display": "flex",
@@ -234,11 +238,11 @@
     }
   },
   {
-    "id": "7t80h1",
+    "id": "qwyhca",
     "name": "container",
-    "parent": "k61mhg",
+    "parent": "efs2q3",
     "children": [
-      "1p02oi"
+      "761fyv"
     ],
     "settings": {
       "_display": "flex",
@@ -249,11 +253,11 @@
     }
   },
   {
-    "id": "k61mhg",
+    "id": "efs2q3",
     "name": "section",
     "parent": 0,
     "children": [
-      "7t80h1"
+      "qwyhca"
     ],
     "settings": {
       "_padding": {

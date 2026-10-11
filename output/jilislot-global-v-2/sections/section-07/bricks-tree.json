@@ -1,8 +1,8 @@
 [
   {
-    "id": "seknm8",
+    "id": "9j00f8",
     "name": "heading",
-    "parent": "a2u91q",
+    "parent": "glnb55",
     "children": [],
     "settings": {
       "text": "About Jili Slot Games",
@@ -21,9 +21,9 @@
     }
   },
   {
-    "id": "bu0jw4",
+    "id": "cdxa87",
     "name": "image",
-    "parent": "1138ko",
+    "parent": "dnifxq",
     "children": [],
     "settings": {
       "image": {
@@ -39,13 +39,14 @@
     "themeStyles": []
   },
   {
-    "id": "imfjc9",
+    "id": "0miecf",
     "name": "heading",
-    "parent": "jjrbxv",
+    "parent": "blxvch",
     "children": [],
     "settings": {
       "text": "Super Ace Jili",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "18px",
@@ -60,9 +61,9 @@
     }
   },
   {
-    "id": "8odvdt",
+    "id": "npo06v",
     "name": "text",
-    "parent": "jjrbxv",
+    "parent": "blxvch",
     "children": [],
     "settings": {
       "text": "<p>High volatility, combo wins</p>",
@@ -80,9 +81,9 @@
     }
   },
   {
-    "id": "8sudzy",
+    "id": "t5sdec",
     "name": "text",
-    "parent": "jjrbxv",
+    "parent": "blxvch",
     "children": [],
     "settings": {
       "text": "<p>RTP: 96.00%</p>",
@@ -100,13 +101,13 @@
     }
   },
   {
-    "id": "jjrbxv",
+    "id": "blxvch",
     "name": "div",
-    "parent": "1138ko",
+    "parent": "dnifxq",
     "children": [
-      "imfjc9",
-      "8odvdt",
-      "8sudzy"
+      "0miecf",
+      "npo06v",
+      "t5sdec"
     ],
     "settings": {
       "_display": "flex",
@@ -118,12 +119,12 @@
     }
   },
   {
-    "id": "1138ko",
+    "id": "dnifxq",
     "name": "div",
-    "parent": "3gn4bw",
+    "parent": "tvq1tt",
     "children": [
-      "bu0jw4",
-      "jjrbxv"
+      "cdxa87",
+      "blxvch"
     ],
     "settings": {
       "_display": "flex",
@@ -131,20 +132,6 @@
       "_rowGap": "24",
       "_columnGap": "24",
       "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "3gn4bw",
-    "name": "div",
-    "parent": "g03e4i",
-    "children": [
-      "1138ko"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
       "_padding": {
         "top": "14",
         "right": "14",
@@ -167,9 +154,9 @@
     }
   },
   {
-    "id": "hb6mcx",
+    "id": "6qvmkd",
     "name": "image",
-    "parent": "3uak02",
+    "parent": "ct703r",
     "children": [],
     "settings": {
       "image": {
@@ -185,13 +172,14 @@
     "themeStyles": []
   },
   {
-    "id": "arghev",
+    "id": "0qcj51",
     "name": "heading",
-    "parent": "a3nf3r",
+    "parent": "doofud",
     "children": [],
     "settings": {
       "text": "Jili Ludo",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "18px",
@@ -206,9 +194,9 @@
     }
   },
   {
-    "id": "c78cpg",
+    "id": "pn1bea",
     "name": "text",
-    "parent": "a3nf3r",
+    "parent": "doofud",
     "children": [],
     "settings": {
       "text": "<p>High volatility, combo wins</p>",
@@ -226,9 +214,9 @@
     }
   },
   {
-    "id": "hco5t4",
+    "id": "qu5rrs",
     "name": "text",
-    "parent": "a3nf3r",
+    "parent": "doofud",
     "children": [],
     "settings": {
       "text": "<p>RTP: 96.00%</p>",
@@ -246,13 +234,13 @@
     }
   },
   {
-    "id": "a3nf3r",
+    "id": "doofud",
     "name": "div",
-    "parent": "3uak02",
+    "parent": "ct703r",
     "children": [
-      "arghev",
-      "c78cpg",
-      "hco5t4"
+      "0qcj51",
+      "pn1bea",
+      "qu5rrs"
     ],
     "settings": {
       "_display": "flex",
@@ -264,12 +252,12 @@
     }
   },
   {
-    "id": "3uak02",
+    "id": "ct703r",
     "name": "div",
-    "parent": "h7wp2h",
+    "parent": "tvq1tt",
     "children": [
-      "hb6mcx",
-      "a3nf3r"
+      "6qvmkd",
+      "doofud"
     ],
     "settings": {
       "_display": "flex",
@@ -277,20 +265,6 @@
       "_rowGap": "24",
       "_columnGap": "24",
       "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "h7wp2h",
-    "name": "div",
-    "parent": "g03e4i",
-    "children": [
-      "3uak02"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
       "_padding": {
         "top": "14",
         "right": "14",
@@ -313,9 +287,9 @@
     }
   },
   {
-    "id": "6vq48r",
+    "id": "52b1om",
     "name": "image",
-    "parent": "k2sham",
+    "parent": "m1eou2",
     "children": [],
     "settings": {
       "image": {
@@ -331,13 +305,14 @@
     "themeStyles": []
   },
   {
-    "id": "0vepxw",
+    "id": "ysh9bs",
     "name": "heading",
-    "parent": "n72a6b",
+    "parent": "3eygdc",
     "children": [],
     "settings": {
       "text": "Jili Money Coming",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "18px",
@@ -352,9 +327,9 @@
     }
   },
   {
-    "id": "1krxd2",
+    "id": "j80r8z",
     "name": "text",
-    "parent": "n72a6b",
+    "parent": "3eygdc",
     "children": [],
     "settings": {
       "text": "<p>High volatility, combo wins</p>",
@@ -372,9 +347,9 @@
     }
   },
   {
-    "id": "ubwi8k",
+    "id": "fo7ohc",
     "name": "text",
-    "parent": "n72a6b",
+    "parent": "3eygdc",
     "children": [],
     "settings": {
       "text": "<p>RTP: 96.00%</p>",
@@ -392,13 +367,13 @@
     }
   },
   {
-    "id": "n72a6b",
+    "id": "3eygdc",
     "name": "div",
-    "parent": "k2sham",
+    "parent": "m1eou2",
     "children": [
-      "0vepxw",
-      "1krxd2",
-      "ubwi8k"
+      "ysh9bs",
+      "j80r8z",
+      "fo7ohc"
     ],
     "settings": {
       "_display": "flex",
@@ -410,12 +385,12 @@
     }
   },
   {
-    "id": "k2sham",
+    "id": "m1eou2",
     "name": "div",
-    "parent": "mfv10m",
+    "parent": "tvq1tt",
     "children": [
-      "6vq48r",
-      "n72a6b"
+      "52b1om",
+      "3eygdc"
     ],
     "settings": {
       "_display": "flex",
@@ -423,20 +398,6 @@
       "_rowGap": "24",
       "_columnGap": "24",
       "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "mfv10m",
-    "name": "div",
-    "parent": "g03e4i",
-    "children": [
-      "k2sham"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
       "_padding": {
         "top": "14",
         "right": "14",
@@ -459,9 +420,9 @@
     }
   },
   {
-    "id": "kjlx2y",
+    "id": "rac3e4",
     "name": "image",
-    "parent": "l3kjy3",
+    "parent": "i3b70t",
     "children": [],
     "settings": {
       "image": {
@@ -477,13 +438,14 @@
     "themeStyles": []
   },
   {
-    "id": "gho11c",
+    "id": "p8ornj",
     "name": "heading",
-    "parent": "07z3yc",
+    "parent": "chtd7t",
     "children": [],
     "settings": {
       "text": "Jili Slot Fortune Gems",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "18px",
@@ -498,9 +460,9 @@
     }
   },
   {
-    "id": "2447ta",
+    "id": "pumtor",
     "name": "text",
-    "parent": "07z3yc",
+    "parent": "chtd7t",
     "children": [],
     "settings": {
       "text": "<p>High volatility, combo wins</p>",
@@ -518,9 +480,9 @@
     }
   },
   {
-    "id": "5l34yz",
+    "id": "nbrb1l",
     "name": "text",
-    "parent": "07z3yc",
+    "parent": "chtd7t",
     "children": [],
     "settings": {
       "text": "<p>RTP: 96.00%</p>",
@@ -538,13 +500,13 @@
     }
   },
   {
-    "id": "07z3yc",
+    "id": "chtd7t",
     "name": "div",
-    "parent": "l3kjy3",
+    "parent": "i3b70t",
     "children": [
-      "gho11c",
-      "2447ta",
-      "5l34yz"
+      "p8ornj",
+      "pumtor",
+      "nbrb1l"
     ],
     "settings": {
       "_display": "flex",
@@ -556,12 +518,12 @@
     }
   },
   {
-    "id": "l3kjy3",
+    "id": "i3b70t",
     "name": "div",
-    "parent": "x4g177",
+    "parent": "tvq1tt",
     "children": [
-      "kjlx2y",
-      "07z3yc"
+      "rac3e4",
+      "chtd7t"
     ],
     "settings": {
       "_display": "flex",
@@ -569,20 +531,6 @@
       "_rowGap": "24",
       "_columnGap": "24",
       "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "x4g177",
-    "name": "div",
-    "parent": "g03e4i",
-    "children": [
-      "l3kjy3"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
       "_padding": {
         "top": "14",
         "right": "14",
@@ -605,14 +553,1086 @@
     }
   },
   {
-    "id": "g03e4i",
+    "id": "haa974",
+    "name": "image",
+    "parent": "nayokm",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8232_224.png",
+        "url": "../../assets/image-8232_224.png"
+      },
+      "_width": "100%",
+      "_widthMax": "254px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "njxlmk",
+    "name": "heading",
+    "parent": "70nwtv",
+    "children": [],
+    "settings": {
+      "text": "Boxing King Jili Slot",
+      "tag": "h3",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "45mo5b",
+    "name": "text",
+    "parent": "70nwtv",
+    "children": [],
+    "settings": {
+      "text": "<p>High volatility, combo wins</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "xy4s0j",
+    "name": "text",
+    "parent": "70nwtv",
+    "children": [],
+    "settings": {
+      "text": "<p>RTP: 96.00%</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "70nwtv",
     "name": "div",
-    "parent": "a2u91q",
+    "parent": "nayokm",
     "children": [
-      "3gn4bw",
-      "h7wp2h",
-      "mfv10m",
-      "x4g177"
+      "njxlmk",
+      "45mo5b",
+      "xy4s0j"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "center",
+      "_widthMax": "227px"
+    }
+  },
+  {
+    "id": "nayokm",
+    "name": "div",
+    "parent": "tvq1tt",
+    "children": [
+      "haa974",
+      "70nwtv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "14",
+        "right": "14",
+        "bottom": "24",
+        "left": "14"
+      },
+      "_background": {
+        "color": {
+          "raw": "#191818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "sc8ihc",
+    "name": "image",
+    "parent": "fqeoy5",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8232_248.png",
+        "url": "../../assets/image-8232_248.png"
+      },
+      "_width": "100%",
+      "_widthMax": "254px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "uanyps",
+    "name": "heading",
+    "parent": "d294wa",
+    "children": [],
+    "settings": {
+      "text": "Alibaba Jili Slot",
+      "tag": "h3",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "m84yy1",
+    "name": "text",
+    "parent": "d294wa",
+    "children": [],
+    "settings": {
+      "text": "<p>High volatility, combo wins</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "i3hhha",
+    "name": "text",
+    "parent": "d294wa",
+    "children": [],
+    "settings": {
+      "text": "<p>RTP: 96.00%</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "d294wa",
+    "name": "div",
+    "parent": "fqeoy5",
+    "children": [
+      "uanyps",
+      "m84yy1",
+      "i3hhha"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "center",
+      "_widthMax": "227px"
+    }
+  },
+  {
+    "id": "fqeoy5",
+    "name": "div",
+    "parent": "tvq1tt",
+    "children": [
+      "sc8ihc",
+      "d294wa"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "14",
+        "right": "14",
+        "bottom": "24",
+        "left": "14"
+      },
+      "_background": {
+        "color": {
+          "raw": "#191818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "g37w5o",
+    "name": "image",
+    "parent": "siutnh",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8232_272.png",
+        "url": "../../assets/image-8232_272.png"
+      },
+      "_width": "100%",
+      "_widthMax": "254px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "c6auit",
+    "name": "heading",
+    "parent": "xw8bwj",
+    "children": [],
+    "settings": {
+      "text": "Jili Golden Empire",
+      "tag": "h3",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "ap5y7r",
+    "name": "text",
+    "parent": "xw8bwj",
+    "children": [],
+    "settings": {
+      "text": "<p>High volatility, combo wins</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "4vx7lv",
+    "name": "text",
+    "parent": "xw8bwj",
+    "children": [],
+    "settings": {
+      "text": "<p>RTP: 96.00%</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "xw8bwj",
+    "name": "div",
+    "parent": "siutnh",
+    "children": [
+      "c6auit",
+      "ap5y7r",
+      "4vx7lv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "center",
+      "_widthMax": "227px"
+    }
+  },
+  {
+    "id": "siutnh",
+    "name": "div",
+    "parent": "tvq1tt",
+    "children": [
+      "g37w5o",
+      "xw8bwj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "14",
+        "right": "14",
+        "bottom": "24",
+        "left": "14"
+      },
+      "_background": {
+        "color": {
+          "raw": "#191818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "g07reh",
+    "name": "image",
+    "parent": "3vcize",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8232_296.png",
+        "url": "../../assets/image-8232_296.png"
+      },
+      "_width": "100%",
+      "_widthMax": "254px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "kv7015",
+    "name": "heading",
+    "parent": "p4uihr",
+    "children": [],
+    "settings": {
+      "text": "Jili Fortune Gems 2",
+      "tag": "h3",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "pntqxq",
+    "name": "text",
+    "parent": "p4uihr",
+    "children": [],
+    "settings": {
+      "text": "<p>High volatility, combo wins</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "kmkg8t",
+    "name": "text",
+    "parent": "p4uihr",
+    "children": [],
+    "settings": {
+      "text": "<p>RTP: 96.00%</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "p4uihr",
+    "name": "div",
+    "parent": "3vcize",
+    "children": [
+      "kv7015",
+      "pntqxq",
+      "kmkg8t"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "center",
+      "_widthMax": "227px"
+    }
+  },
+  {
+    "id": "3vcize",
+    "name": "div",
+    "parent": "tvq1tt",
+    "children": [
+      "g07reh",
+      "p4uihr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "14",
+        "right": "14",
+        "bottom": "24",
+        "left": "14"
+      },
+      "_background": {
+        "color": {
+          "raw": "#191818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "vhppsk",
+    "name": "image",
+    "parent": "whgi6i",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8232_232.png",
+        "url": "../../assets/image-8232_232.png"
+      },
+      "_width": "100%",
+      "_widthMax": "254px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "y0ww55",
+    "name": "heading",
+    "parent": "mobf3q",
+    "children": [],
+    "settings": {
+      "text": "Jili Super Ace Slot",
+      "tag": "h3",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "9pq3j6",
+    "name": "text",
+    "parent": "mobf3q",
+    "children": [],
+    "settings": {
+      "text": "<p>High volatility, combo wins</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "co5ulr",
+    "name": "text",
+    "parent": "mobf3q",
+    "children": [],
+    "settings": {
+      "text": "<p>RTP: 96.00%</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "mobf3q",
+    "name": "div",
+    "parent": "whgi6i",
+    "children": [
+      "y0ww55",
+      "9pq3j6",
+      "co5ulr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "center",
+      "_widthMax": "227px"
+    }
+  },
+  {
+    "id": "whgi6i",
+    "name": "div",
+    "parent": "tvq1tt",
+    "children": [
+      "vhppsk",
+      "mobf3q"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "14",
+        "right": "14",
+        "bottom": "24",
+        "left": "14"
+      },
+      "_background": {
+        "color": {
+          "raw": "#191818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "v3mirg",
+    "name": "image",
+    "parent": "a3r3p2",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8232_256.png",
+        "url": "../../assets/image-8232_256.png"
+      },
+      "_width": "100%",
+      "_widthMax": "254px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "8316l1",
+    "name": "heading",
+    "parent": "61upoi",
+    "children": [],
+    "settings": {
+      "text": "Wild Ace Jili",
+      "tag": "h3",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "9jnvew",
+    "name": "text",
+    "parent": "61upoi",
+    "children": [],
+    "settings": {
+      "text": "<p>High volatility, combo wins</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "wg0lj7",
+    "name": "text",
+    "parent": "61upoi",
+    "children": [],
+    "settings": {
+      "text": "<p>RTP: 96.00%</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "61upoi",
+    "name": "div",
+    "parent": "a3r3p2",
+    "children": [
+      "8316l1",
+      "9jnvew",
+      "wg0lj7"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "center",
+      "_widthMax": "227px"
+    }
+  },
+  {
+    "id": "a3r3p2",
+    "name": "div",
+    "parent": "tvq1tt",
+    "children": [
+      "v3mirg",
+      "61upoi"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "14",
+        "right": "14",
+        "bottom": "24",
+        "left": "14"
+      },
+      "_background": {
+        "color": {
+          "raw": "#191818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "4ctlf5",
+    "name": "image",
+    "parent": "75xzuu",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8232_280.png",
+        "url": "../../assets/image-8232_280.png"
+      },
+      "_width": "100%",
+      "_widthMax": "254px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "qsdfg8",
+    "name": "heading",
+    "parent": "c8bnsu",
+    "children": [],
+    "settings": {
+      "text": "Jili Crazy 777 Slot",
+      "tag": "h3",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "artxjo",
+    "name": "text",
+    "parent": "c8bnsu",
+    "children": [],
+    "settings": {
+      "text": "<p>High volatility, combo wins</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "8htctw",
+    "name": "text",
+    "parent": "c8bnsu",
+    "children": [],
+    "settings": {
+      "text": "<p>RTP: 96.00%</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "c8bnsu",
+    "name": "div",
+    "parent": "75xzuu",
+    "children": [
+      "qsdfg8",
+      "artxjo",
+      "8htctw"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "center",
+      "_widthMax": "227px"
+    }
+  },
+  {
+    "id": "75xzuu",
+    "name": "div",
+    "parent": "tvq1tt",
+    "children": [
+      "4ctlf5",
+      "c8bnsu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "14",
+        "right": "14",
+        "bottom": "24",
+        "left": "14"
+      },
+      "_background": {
+        "color": {
+          "raw": "#191818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "21amhu",
+    "name": "image",
+    "parent": "f6lhxy",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8232_304.png",
+        "url": "../../assets/image-8232_304.png"
+      },
+      "_width": "100%",
+      "_widthMax": "254px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "kt25rn",
+    "name": "heading",
+    "parent": "1zzecw",
+    "children": [],
+    "settings": {
+      "text": "Jili Caishen",
+      "tag": "h3",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "700",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "woz9mn",
+    "name": "text",
+    "parent": "1zzecw",
+    "children": [],
+    "settings": {
+      "text": "<p>High volatility, combo wins</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "zei6kd",
+    "name": "text",
+    "parent": "1zzecw",
+    "children": [],
+    "settings": {
+      "text": "<p>RTP: 96.00%</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "1zzecw",
+    "name": "div",
+    "parent": "f6lhxy",
+    "children": [
+      "kt25rn",
+      "woz9mn",
+      "zei6kd"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "center",
+      "_widthMax": "227px"
+    }
+  },
+  {
+    "id": "f6lhxy",
+    "name": "div",
+    "parent": "tvq1tt",
+    "children": [
+      "21amhu",
+      "1zzecw"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "14",
+        "right": "14",
+        "bottom": "24",
+        "left": "14"
+      },
+      "_background": {
+        "color": {
+          "raw": "#191818"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      }
+    }
+  },
+  {
+    "id": "tvq1tt",
+    "name": "div",
+    "parent": "glnb55",
+    "children": [
+      "dnifxq",
+      "ct703r",
+      "m1eou2",
+      "i3b70t",
+      "nayokm",
+      "fqeoy5",
+      "siutnh",
+      "3vcize",
+      "whgi6i",
+      "a3r3p2",
+      "75xzuu",
+      "f6lhxy"
     ],
     "settings": {
       "_display": "grid",
@@ -629,1230 +1649,12 @@
     }
   },
   {
-    "id": "yvizdf",
-    "name": "image",
-    "parent": "zt6dy9",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/image-8232_224.png",
-        "url": "../../assets/image-8232_224.png"
-      },
-      "_width": "100%",
-      "_widthMax": "254px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "yvvf4q",
-    "name": "heading",
-    "parent": "0yywhc",
-    "children": [],
-    "settings": {
-      "text": "Boxing King Jili Slot",
-      "tag": "h3",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "700",
-        "line-height": "21.78px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "center"
-      }
-    }
-  },
-  {
-    "id": "t6peur",
-    "name": "text",
-    "parent": "0yywhc",
-    "children": [],
-    "settings": {
-      "text": "<p>High volatility, combo wins</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "e2pc6q",
-    "name": "text",
-    "parent": "0yywhc",
-    "children": [],
-    "settings": {
-      "text": "<p>RTP: 96.00%</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "0yywhc",
+    "id": "glnb55",
     "name": "div",
-    "parent": "zt6dy9",
+    "parent": "cg76pq",
     "children": [
-      "yvvf4q",
-      "t6peur",
-      "e2pc6q"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "8",
-      "_columnGap": "8",
-      "_alignItems": "center",
-      "_widthMax": "227px"
-    }
-  },
-  {
-    "id": "zt6dy9",
-    "name": "div",
-    "parent": "vmi040",
-    "children": [
-      "yvizdf",
-      "0yywhc"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "24",
-      "_columnGap": "24",
-      "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "vmi040",
-    "name": "div",
-    "parent": "esexoz",
-    "children": [
-      "zt6dy9"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "14",
-        "right": "14",
-        "bottom": "24",
-        "left": "14"
-      },
-      "_background": {
-        "color": {
-          "raw": "#191818"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "10px",
-          "right": "10px",
-          "bottom": "10px",
-          "left": "10px"
-        }
-      }
-    }
-  },
-  {
-    "id": "gn7ckg",
-    "name": "image",
-    "parent": "gwqrli",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/image-8232_248.png",
-        "url": "../../assets/image-8232_248.png"
-      },
-      "_width": "100%",
-      "_widthMax": "254px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "673n36",
-    "name": "heading",
-    "parent": "9rur5f",
-    "children": [],
-    "settings": {
-      "text": "Alibaba Jili Slot",
-      "tag": "h3",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "700",
-        "line-height": "21.78px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "center"
-      }
-    }
-  },
-  {
-    "id": "a2anab",
-    "name": "text",
-    "parent": "9rur5f",
-    "children": [],
-    "settings": {
-      "text": "<p>High volatility, combo wins</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "s1kjkz",
-    "name": "text",
-    "parent": "9rur5f",
-    "children": [],
-    "settings": {
-      "text": "<p>RTP: 96.00%</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "9rur5f",
-    "name": "div",
-    "parent": "gwqrli",
-    "children": [
-      "673n36",
-      "a2anab",
-      "s1kjkz"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "8",
-      "_columnGap": "8",
-      "_alignItems": "center",
-      "_widthMax": "227px"
-    }
-  },
-  {
-    "id": "gwqrli",
-    "name": "div",
-    "parent": "f6i9kj",
-    "children": [
-      "gn7ckg",
-      "9rur5f"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "24",
-      "_columnGap": "24",
-      "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "f6i9kj",
-    "name": "div",
-    "parent": "esexoz",
-    "children": [
-      "gwqrli"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "14",
-        "right": "14",
-        "bottom": "24",
-        "left": "14"
-      },
-      "_background": {
-        "color": {
-          "raw": "#191818"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "10px",
-          "right": "10px",
-          "bottom": "10px",
-          "left": "10px"
-        }
-      }
-    }
-  },
-  {
-    "id": "yk3lvy",
-    "name": "image",
-    "parent": "n0rmvz",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/image-8232_272.png",
-        "url": "../../assets/image-8232_272.png"
-      },
-      "_width": "100%",
-      "_widthMax": "254px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "su38r6",
-    "name": "heading",
-    "parent": "0qwe7k",
-    "children": [],
-    "settings": {
-      "text": "Jili Golden Empire",
-      "tag": "h3",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "700",
-        "line-height": "21.78px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "center"
-      }
-    }
-  },
-  {
-    "id": "mnnlfh",
-    "name": "text",
-    "parent": "0qwe7k",
-    "children": [],
-    "settings": {
-      "text": "<p>High volatility, combo wins</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "3m8ckv",
-    "name": "text",
-    "parent": "0qwe7k",
-    "children": [],
-    "settings": {
-      "text": "<p>RTP: 96.00%</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "0qwe7k",
-    "name": "div",
-    "parent": "n0rmvz",
-    "children": [
-      "su38r6",
-      "mnnlfh",
-      "3m8ckv"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "8",
-      "_columnGap": "8",
-      "_alignItems": "center",
-      "_widthMax": "227px"
-    }
-  },
-  {
-    "id": "n0rmvz",
-    "name": "div",
-    "parent": "kxi1v4",
-    "children": [
-      "yk3lvy",
-      "0qwe7k"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "24",
-      "_columnGap": "24",
-      "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "kxi1v4",
-    "name": "div",
-    "parent": "esexoz",
-    "children": [
-      "n0rmvz"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "14",
-        "right": "14",
-        "bottom": "24",
-        "left": "14"
-      },
-      "_background": {
-        "color": {
-          "raw": "#191818"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "10px",
-          "right": "10px",
-          "bottom": "10px",
-          "left": "10px"
-        }
-      }
-    }
-  },
-  {
-    "id": "aebjih",
-    "name": "image",
-    "parent": "0ud4ro",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/image-8232_296.png",
-        "url": "../../assets/image-8232_296.png"
-      },
-      "_width": "100%",
-      "_widthMax": "254px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "3a8u9m",
-    "name": "heading",
-    "parent": "u80d3a",
-    "children": [],
-    "settings": {
-      "text": "Jili Fortune Gems 2",
-      "tag": "h3",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "700",
-        "line-height": "21.78px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "center"
-      }
-    }
-  },
-  {
-    "id": "a4v68n",
-    "name": "text",
-    "parent": "u80d3a",
-    "children": [],
-    "settings": {
-      "text": "<p>High volatility, combo wins</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "btrvcd",
-    "name": "text",
-    "parent": "u80d3a",
-    "children": [],
-    "settings": {
-      "text": "<p>RTP: 96.00%</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "u80d3a",
-    "name": "div",
-    "parent": "0ud4ro",
-    "children": [
-      "3a8u9m",
-      "a4v68n",
-      "btrvcd"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "8",
-      "_columnGap": "8",
-      "_alignItems": "center",
-      "_widthMax": "227px"
-    }
-  },
-  {
-    "id": "0ud4ro",
-    "name": "div",
-    "parent": "9ma8ck",
-    "children": [
-      "aebjih",
-      "u80d3a"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "24",
-      "_columnGap": "24",
-      "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "9ma8ck",
-    "name": "div",
-    "parent": "esexoz",
-    "children": [
-      "0ud4ro"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "14",
-        "right": "14",
-        "bottom": "24",
-        "left": "14"
-      },
-      "_background": {
-        "color": {
-          "raw": "#191818"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "10px",
-          "right": "10px",
-          "bottom": "10px",
-          "left": "10px"
-        }
-      }
-    }
-  },
-  {
-    "id": "esexoz",
-    "name": "div",
-    "parent": "a2u91q",
-    "children": [
-      "vmi040",
-      "f6i9kj",
-      "kxi1v4",
-      "9ma8ck"
-    ],
-    "settings": {
-      "_display": "grid",
-      "_gridTemplateColumns": "repeat(4, 1fr)",
-      "_gridGap": "24",
-      "_alignItemsGrid": "stretch",
-      "_margin": {
-        "top": "24"
-      },
-      "_width": "100%",
-      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
-      "_gridGap:tablet_portrait": "24",
-      "_gridTemplateColumns:mobile_portrait": "1fr"
-    }
-  },
-  {
-    "id": "fj83ql",
-    "name": "image",
-    "parent": "1ywqm1",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/image-8232_232.png",
-        "url": "../../assets/image-8232_232.png"
-      },
-      "_width": "100%",
-      "_widthMax": "254px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "4i49im",
-    "name": "heading",
-    "parent": "tvnvh6",
-    "children": [],
-    "settings": {
-      "text": "Jili Super Ace Slot",
-      "tag": "h3",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "700",
-        "line-height": "21.78px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "center"
-      }
-    }
-  },
-  {
-    "id": "pbl5js",
-    "name": "text",
-    "parent": "tvnvh6",
-    "children": [],
-    "settings": {
-      "text": "<p>High volatility, combo wins</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "t2wvl6",
-    "name": "text",
-    "parent": "tvnvh6",
-    "children": [],
-    "settings": {
-      "text": "<p>RTP: 96.00%</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "tvnvh6",
-    "name": "div",
-    "parent": "1ywqm1",
-    "children": [
-      "4i49im",
-      "pbl5js",
-      "t2wvl6"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "8",
-      "_columnGap": "8",
-      "_alignItems": "center",
-      "_widthMax": "227px"
-    }
-  },
-  {
-    "id": "1ywqm1",
-    "name": "div",
-    "parent": "7s7xac",
-    "children": [
-      "fj83ql",
-      "tvnvh6"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "24",
-      "_columnGap": "24",
-      "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "7s7xac",
-    "name": "div",
-    "parent": "vq4izc",
-    "children": [
-      "1ywqm1"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "14",
-        "right": "14",
-        "bottom": "24",
-        "left": "14"
-      },
-      "_background": {
-        "color": {
-          "raw": "#191818"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "10px",
-          "right": "10px",
-          "bottom": "10px",
-          "left": "10px"
-        }
-      }
-    }
-  },
-  {
-    "id": "qox2pd",
-    "name": "image",
-    "parent": "1hj84s",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/image-8232_256.png",
-        "url": "../../assets/image-8232_256.png"
-      },
-      "_width": "100%",
-      "_widthMax": "254px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "2y1dqq",
-    "name": "heading",
-    "parent": "h0qchc",
-    "children": [],
-    "settings": {
-      "text": "Wild Ace Jili",
-      "tag": "h3",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "700",
-        "line-height": "21.78px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "center"
-      }
-    }
-  },
-  {
-    "id": "1f7e3j",
-    "name": "text",
-    "parent": "h0qchc",
-    "children": [],
-    "settings": {
-      "text": "<p>High volatility, combo wins</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "h56slm",
-    "name": "text",
-    "parent": "h0qchc",
-    "children": [],
-    "settings": {
-      "text": "<p>RTP: 96.00%</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "h0qchc",
-    "name": "div",
-    "parent": "1hj84s",
-    "children": [
-      "2y1dqq",
-      "1f7e3j",
-      "h56slm"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "8",
-      "_columnGap": "8",
-      "_alignItems": "center",
-      "_widthMax": "227px"
-    }
-  },
-  {
-    "id": "1hj84s",
-    "name": "div",
-    "parent": "ipuucg",
-    "children": [
-      "qox2pd",
-      "h0qchc"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "24",
-      "_columnGap": "24",
-      "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "ipuucg",
-    "name": "div",
-    "parent": "vq4izc",
-    "children": [
-      "1hj84s"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "14",
-        "right": "14",
-        "bottom": "24",
-        "left": "14"
-      },
-      "_background": {
-        "color": {
-          "raw": "#191818"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "10px",
-          "right": "10px",
-          "bottom": "10px",
-          "left": "10px"
-        }
-      }
-    }
-  },
-  {
-    "id": "xbj27y",
-    "name": "image",
-    "parent": "572rdq",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/image-8232_280.png",
-        "url": "../../assets/image-8232_280.png"
-      },
-      "_width": "100%",
-      "_widthMax": "254px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "v6oywb",
-    "name": "heading",
-    "parent": "tfrg6z",
-    "children": [],
-    "settings": {
-      "text": "Jili Crazy 777 Slot",
-      "tag": "h3",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "700",
-        "line-height": "21.78px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "center"
-      }
-    }
-  },
-  {
-    "id": "2pfb9p",
-    "name": "text",
-    "parent": "tfrg6z",
-    "children": [],
-    "settings": {
-      "text": "<p>High volatility, combo wins</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "n00vz9",
-    "name": "text",
-    "parent": "tfrg6z",
-    "children": [],
-    "settings": {
-      "text": "<p>RTP: 96.00%</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "tfrg6z",
-    "name": "div",
-    "parent": "572rdq",
-    "children": [
-      "v6oywb",
-      "2pfb9p",
-      "n00vz9"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "8",
-      "_columnGap": "8",
-      "_alignItems": "center",
-      "_widthMax": "227px"
-    }
-  },
-  {
-    "id": "572rdq",
-    "name": "div",
-    "parent": "ibgod3",
-    "children": [
-      "xbj27y",
-      "tfrg6z"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "24",
-      "_columnGap": "24",
-      "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "ibgod3",
-    "name": "div",
-    "parent": "vq4izc",
-    "children": [
-      "572rdq"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "14",
-        "right": "14",
-        "bottom": "24",
-        "left": "14"
-      },
-      "_background": {
-        "color": {
-          "raw": "#191818"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "10px",
-          "right": "10px",
-          "bottom": "10px",
-          "left": "10px"
-        }
-      }
-    }
-  },
-  {
-    "id": "25rb0n",
-    "name": "image",
-    "parent": "kkkb3x",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/image-8232_304.png",
-        "url": "../../assets/image-8232_304.png"
-      },
-      "_width": "100%",
-      "_widthMax": "254px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "dln7s0",
-    "name": "heading",
-    "parent": "ismjs0",
-    "children": [],
-    "settings": {
-      "text": "Jili Caishen",
-      "tag": "h3",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "700",
-        "line-height": "21.78px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "center"
-      }
-    }
-  },
-  {
-    "id": "j4p4l5",
-    "name": "text",
-    "parent": "ismjs0",
-    "children": [],
-    "settings": {
-      "text": "<p>High volatility, combo wins</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "6mu8tt",
-    "name": "text",
-    "parent": "ismjs0",
-    "children": [],
-    "settings": {
-      "text": "<p>RTP: 96.00%</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0%",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "ismjs0",
-    "name": "div",
-    "parent": "kkkb3x",
-    "children": [
-      "dln7s0",
-      "j4p4l5",
-      "6mu8tt"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "8",
-      "_columnGap": "8",
-      "_alignItems": "center",
-      "_widthMax": "227px"
-    }
-  },
-  {
-    "id": "kkkb3x",
-    "name": "div",
-    "parent": "h45btb",
-    "children": [
-      "25rb0n",
-      "ismjs0"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "24",
-      "_columnGap": "24",
-      "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "h45btb",
-    "name": "div",
-    "parent": "vq4izc",
-    "children": [
-      "kkkb3x"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "14",
-        "right": "14",
-        "bottom": "24",
-        "left": "14"
-      },
-      "_background": {
-        "color": {
-          "raw": "#191818"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "10px",
-          "right": "10px",
-          "bottom": "10px",
-          "left": "10px"
-        }
-      }
-    }
-  },
-  {
-    "id": "vq4izc",
-    "name": "div",
-    "parent": "a2u91q",
-    "children": [
-      "7s7xac",
-      "ipuucg",
-      "ibgod3",
-      "h45btb"
-    ],
-    "settings": {
-      "_display": "grid",
-      "_gridTemplateColumns": "repeat(4, 1fr)",
-      "_gridGap": "24",
-      "_alignItemsGrid": "stretch",
-      "_margin": {
-        "top": "24"
-      },
-      "_width": "100%",
-      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
-      "_gridGap:tablet_portrait": "24",
-      "_gridTemplateColumns:mobile_portrait": "1fr"
-    }
-  },
-  {
-    "id": "a2u91q",
-    "name": "div",
-    "parent": "0f9n33",
-    "children": [
-      "seknm8",
-      "g03e4i",
-      "esexoz",
-      "vq4izc"
+      "9j00f8",
+      "tvq1tt"
     ],
     "settings": {
       "_display": "flex",
@@ -1862,11 +1664,11 @@
     }
   },
   {
-    "id": "0f9n33",
+    "id": "cg76pq",
     "name": "container",
-    "parent": "p6r2ia",
+    "parent": "mau47e",
     "children": [
-      "a2u91q"
+      "glnb55"
     ],
     "settings": {
       "_display": "flex",
@@ -1877,11 +1679,11 @@
     }
   },
   {
-    "id": "p6r2ia",
+    "id": "mau47e",
     "name": "section",
     "parent": 0,
     "children": [
-      "0f9n33"
+      "cg76pq"
     ],
     "settings": {
       "_padding": {

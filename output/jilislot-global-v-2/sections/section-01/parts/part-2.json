@@ -2,126 +2,90 @@
   "type": "page",
   "children": [
     {
-      "type": "row",
-      "id": "top-nav",
-      "figmaNodeId": "8232:5",
-      "layout": {
-        "display": "flex",
-        "direction": "row",
-        "gap": 331,
-        "align": "center"
-      },
-      "size": {
-        "width": 1200,
-        "height": 40
-      },
+      "type": "section",
+      "id": "nav-header",
       "children": [
         {
+          "type": "image",
+          "id": "logo-image",
+          "figmaNodeId": "8232:7",
+          "asset": {
+            "nodeId": "8232:7",
+            "kind": "image"
+          },
+          "size": {
+            "width": 99,
+            "height": 40
+          }
+        },
+        {
           "type": "row",
-          "id": "nav-left",
-          "figmaNodeId": "8232:6",
+          "id": "main-nav",
+          "figmaNodeId": "8232:8",
           "layout": {
             "display": "flex",
             "direction": "row",
-            "justify": "space-between",
+            "gap": 40,
             "align": "center"
-          },
-          "size": {
-            "width": 807,
-            "height": 40
           },
           "children": [
             {
-              "type": "image",
-              "id": "nav-logo",
-              "figmaNodeId": "8232:7",
-              "asset": {
-                "nodeId": "8232:7",
-                "kind": "image"
+              "type": "text",
+              "id": "nav-home",
+              "figmaNodeId": "8232:9",
+              "text": "Home",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#FFFFFF"
               },
-              "size": {
-                "width": 99,
-                "height": 40
+              "notes": [
+                "textCase: UPPER"
+              ]
+            },
+            {
+              "type": "text",
+              "id": "nav-company",
+              "figmaNodeId": "8232:10",
+              "text": "Company",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#FFFFFF"
+              },
+              "notes": [
+                "textCase: UPPER"
+              ]
+            },
+            {
+              "type": "text",
+              "id": "nav-games",
+              "figmaNodeId": "8232:11",
+              "text": "GAMES",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#FFFFFF"
               }
             },
             {
-              "type": "row",
-              "id": "nav-links",
-              "figmaNodeId": "8232:8",
-              "layout": {
-                "display": "flex",
-                "direction": "row",
-                "gap": 40,
-                "align": "center"
-              },
-              "size": {
-                "width": 414,
-                "height": 19
-              },
-              "children": [
-                {
-                  "type": "text-basic",
-                  "id": "nav-link-home",
-                  "figmaNodeId": "8232:9",
-                  "text": "Home",
-                  "typography": {
-                    "fontFamily": "Inter",
-                    "fontSize": 16,
-                    "fontWeight": 500,
-                    "lineHeight": "19.36px",
-                    "color": "#FFFFFF"
-                  },
-                  "notes": [
-                    "textCase",
-                    ":",
-                    "UPPER"
-                  ]
-                },
-                {
-                  "type": "text-basic",
-                  "id": "nav-link-company",
-                  "figmaNodeId": "8232:10",
-                  "text": "Company",
-                  "typography": {
-                    "fontFamily": "Inter",
-                    "fontSize": 16,
-                    "fontWeight": 500,
-                    "lineHeight": "19.36px",
-                    "color": "#FFFFFF"
-                  },
-                  "notes": [
-                    "textCase",
-                    ":",
-                    "UPPER"
-                  ]
-                },
-                {
-                  "type": "text-basic",
-                  "id": "nav-link-games",
-                  "figmaNodeId": "8232:11",
-                  "text": "GAMES",
-                  "typography": {
-                    "fontFamily": "Inter",
-                    "fontSize": 16,
-                    "fontWeight": 500,
-                    "lineHeight": "19.36px",
-                    "color": "#FFFFFF"
-                  }
-                },
-                {
-                  "type": "text-basic",
-                  "id": "nav-link-contact",
-                  "figmaNodeId": "8232:12",
-                  "text": "CONTACT US",
-                  "typography": {
-                    "fontFamily": "Inter",
-                    "fontSize": 16,
-                    "fontWeight": 500,
-                    "lineHeight": "19.36px",
-                    "color": "#FFFFFF"
-                  }
-                }
-              ]
+              "type": "text",
+              "id": "nav-contact-us",
+              "figmaNodeId": "8232:12",
+              "text": "CONTACT US",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#FFFFFF"
+              }
             }
           ]
         }
@@ -129,6 +93,9 @@
     }
   ],
   "_uncertain": [
-    "The value of 'textCase' was not in the schema and is included in the 'notes'"
+    "nav-home: dropped unknown field \"typography.textAlign\"",
+    "nav-company: dropped unknown field \"typography.textAlign\"",
+    "nav-games: dropped unknown field \"typography.textAlign\"",
+    "nav-contact-us: dropped unknown field \"typography.textAlign\""
   ]
 }

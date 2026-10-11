@@ -1,0 +1,114 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casino-fx-page",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "container",
+          "id": "group-53",
+          "figmaNodeId": "2214:128",
+          "size": {
+            "width": 380,
+            "height": 108
+          },
+          "border": {
+            "radius": 0
+          }
+        },
+        {
+          "type": "container",
+          "id": "group-48",
+          "figmaNodeId": "2214:129",
+          "size": {
+            "width": 135,
+            "height": 108
+          },
+          "border": {
+            "radius": 0
+          },
+          "children": [
+            {
+              "type": "container",
+              "id": "rectangle-16",
+              "figmaNodeId": "2214:130",
+              "size": {
+                "width": 135,
+                "height": 93
+              },
+              "border": {
+                "radius": 8
+              },
+              "background": {
+                "color": "#FFFFFF"
+              },
+              "notes": [
+                "Single border stroke #0000000F on all sides"
+              ]
+            },
+            {
+              "type": "image",
+              "id": "d2b0458cdbbfc9c697f3e6d26357cf45-2",
+              "figmaNodeId": "2214:131",
+              "size": {
+                "width": 107,
+                "height": 34
+              },
+              "asset": {
+                "nodeId": "2214:131",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "row",
+              "id": "frame-22",
+              "figmaNodeId": "2214:132",
+              "size": {
+                "width": 135,
+                "height": 25
+              },
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 10,
+                "align": "center",
+                "justify": "center",
+                "padding": {
+                  "left": 8,
+                  "right": 8,
+                  "top": 4,
+                  "bottom": 4
+                }
+              },
+              "border": {
+                "radius": 4
+              },
+              "background": {
+                "color": "#30A453"
+              },
+              "children": [
+                {
+                  "type": "text-basic",
+                  "id": "pagcor-certified",
+                  "figmaNodeId": "2214:133",
+                  "text": "PAGCOR Certified",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

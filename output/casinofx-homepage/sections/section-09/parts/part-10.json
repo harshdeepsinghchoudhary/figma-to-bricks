@@ -1,0 +1,55 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casinofx-homepage-part10",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-58",
+          "figmaNodeId": "2214:284"
+        },
+        {
+          "type": "row",
+          "id": "frame-46",
+          "figmaNodeId": "2214:285",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 16,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "platinum-play-casino-1",
+              "figmaNodeId": "2214:286",
+              "asset": {
+                "nodeId": "2214:286",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "text",
+              "id": "platinum-play",
+              "figmaNodeId": "2214:287",
+              "text": "Platinum Play",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "32px",
+                "color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "size and background properties omitted where not provided"
+  ]
+}

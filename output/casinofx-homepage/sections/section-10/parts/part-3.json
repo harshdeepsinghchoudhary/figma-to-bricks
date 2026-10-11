@@ -1,0 +1,51 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-part-3",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-91",
+          "figmaNodeId": "2219:253"
+        },
+        {
+          "type": "row",
+          "id": "frame-63",
+          "figmaNodeId": "2219:254",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 175
+          }
+        },
+        {
+          "type": "text",
+          "id": "text-malta",
+          "figmaNodeId": "2219:257",
+          "text": "Malta"
+        },
+        {
+          "type": "image",
+          "id": "image-frame",
+          "figmaNodeId": "2219:259",
+          "asset": {
+            "nodeId": "2219:259",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "text-date",
+          "figmaNodeId": "2219:261",
+          "text": "2026-05-19"
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section id semantics",
+    "section-part-3: dropped unknown field \"_uncertain\""
+  ]
+}

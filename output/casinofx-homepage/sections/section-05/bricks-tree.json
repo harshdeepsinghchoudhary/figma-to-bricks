@@ -1,0 +1,28 @@
+[
+  {
+    "id": "5fbbzl",
+    "name": "container",
+    "parent": "3eq4ow",
+    "children": [],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "3eq4ow",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "5fbbzl"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

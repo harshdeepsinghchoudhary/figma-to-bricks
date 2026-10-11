@@ -1,0 +1,110 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-33",
+          "figmaNodeId": "2214:211",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "delayed-payout-me88-withdrawal-pending-for-over-72-hours",
+              "figmaNodeId": "2214:212",
+              "text": "[Delayed Payout] me88 withdrawal pending for over 72 hours.",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 500,
+                "lineHeight": "32px",
+                "color": "#000000"
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-32",
+              "figmaNodeId": "2214:213",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 16
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "multiple-users-complaining-of-payment-delays",
+                  "figmaNodeId": "2214:214",
+                  "text": "Multiple users complaining of payment delays ...",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeight": "22px",
+                    "color": "#000000C2"
+                  }
+                },
+                {
+                  "type": "row",
+                  "id": "frame-25",
+                  "figmaNodeId": "2214:215",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 6,
+                    "align": "center",
+                    "justify": "center",
+                    "padding": {
+                      "top": 3,
+                      "right": 7,
+                      "bottom": 3,
+                      "left": 7
+                    }
+                  },
+                  "background": {
+                    "color": "#DDDDDD80"
+                  },
+                  "border": {
+                    "radius": 2
+                  },
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "icon-frame",
+                      "figmaNodeId": "2214:216",
+                      "asset": {
+                        "nodeId": "2214:216",
+                        "kind": "svg"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "date-2026-05-19",
+                      "figmaNodeId": "2214:218",
+                      "text": "2026-05-19",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "lineHeight": "16.94px",
+                        "color": "#00000099"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

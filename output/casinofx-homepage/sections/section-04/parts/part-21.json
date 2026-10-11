@@ -1,0 +1,72 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-21",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "container",
+          "id": "rectangle-18",
+          "figmaNodeId": "2214:208",
+          "size": {
+            "width": 876,
+            "height": 203
+          },
+          "background": {
+            "color": "#F7F7F7"
+          },
+          "border": {
+            "radius": 8
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-42",
+          "figmaNodeId": "2214:207",
+          "border": {
+            "radius": 0
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-34",
+          "figmaNodeId": "2214:209",
+          "size": {
+            "width": 735,
+            "height": 162
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 30,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "image-11",
+              "figmaNodeId": "2214:210",
+              "size": {
+                "width": 258,
+                "height": 162
+              },
+              "border": {
+                "radius": 8
+              },
+              "asset": {
+                "nodeId": "2214:210",
+                "kind": "image"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "border color for rectangle-18",
+    "stroke weight handling for group-42 and frame-34"
+  ]
+}

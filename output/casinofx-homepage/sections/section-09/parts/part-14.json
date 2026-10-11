@@ -1,0 +1,61 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-14",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-58",
+          "figmaNodeId": "2214:312"
+        },
+        {
+          "type": "row",
+          "id": "frame-46",
+          "figmaNodeId": "2214:313",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 16,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "europalace-colored-logo-1",
+              "figmaNodeId": "2214:314",
+              "asset": {
+                "nodeId": "2214:314",
+                "kind": "image"
+              },
+              "size": {
+                "width": 60,
+                "height": 60
+              }
+            },
+            {
+              "type": "text",
+              "id": "euro-palace",
+              "figmaNodeId": "2214:315",
+              "text": "Euro Palace",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "32px",
+                "color": "#000000",
+                "align": "left"
+              },
+              "size": {
+                "width": 136,
+                "height": 32
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

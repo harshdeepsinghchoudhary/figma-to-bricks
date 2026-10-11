@@ -65,6 +65,7 @@ export const BREAKPOINTS = ["tablet_portrait", "mobile_landscape", "mobile_portr
 const ALIGN = { start: "flex-start", center: "center", end: "flex-end", stretch: "stretch" };
 const JUSTIFY = { start: "flex-start", center: "center", end: "flex-end", "space-between": "space-between" };
 
+const isNum = (v) => typeof v === "number" && isFinite(v);
 const bare = (n) => (n === undefined || n === null ? undefined : String(n));
 
 function sidesToBricks(s) {
@@ -87,7 +88,7 @@ function layoutSettings(l = {}) {
   return {
     _display: l.display,
     _direction: grid ? undefined : l.direction,
-    _rowGap: grid ? undefined : bare(l.rowGap ?? l.gap),
+    _rowGap: grid ? bare(l.gridRowGap) : bare(l.rowGap ?? l.gap), // grid: only set when its row gap differs from the column gap (_gridGap sets both)
     _columnGap: grid ? undefined : bare(l.columnGap ?? l.gap),
     // Grid (key names taken from a real Bricks 2.4.2 export): columns as a repeat() template, one gap value for both axes.
     _gridTemplateColumns: l.gridColumns ? (l.gridColumns === 1 ? "1fr" : `repeat(${l.gridColumns}, 1fr)`) : undefined,
@@ -107,6 +108,7 @@ function sizeSettings(z = {}) {
     _widthMax: dimension(z.maxWidth, "px"),
     _height: dimension(z.height, "bare"),
     _heightMin: dimension(z.minHeight, "bare"),
+    _widthMin: z.minWidth === "fill" ? "100%" : dimension(z.minWidth, "bare"),
   };
 }
 
@@ -151,6 +153,11 @@ function styleSettings(src) {
     ...sizeSettings(src.size),
     _typography: typographyFromNode(src.typography),
   };
+  // 100% wide plus a side margin is wider than the parent: take the margin out of the width
+  if (out._width === "100%" && out._widthMax === undefined) {
+    const m = src.layout?.margin, side = (Number(m?.left) || 0) + (Number(m?.right) || 0);
+    if (side > 0) out._width = `calc(100% - ${side}px)`;
+  }
   // Background: solid color OR gradient, never both (schema enforces this on the normalized side).
   if (src.background?.gradient) {
     out._gradient = gradientSettings(src.background.gradient, "background");
@@ -172,7 +179,9 @@ function styleSettings(src) {
   }
   if (src.border?.color && src.border?.width > 0) {
     const w = String(src.border.width);
-    out._border = { ...(out._border || {}), style: "solid", color: { raw: src.border.color }, width: { top: w, right: w, bottom: w, left: w } };
+    // border.sides (a divider line on one edge of its parent, from structure-rules.js) limits the stroke to those sides
+    const sides = Array.isArray(src.border.sides) && src.border.sides.length ? src.border.sides : ["top", "right", "bottom", "left"];
+    out._border = { ...(out._border || {}), style: "solid", color: { raw: src.border.color }, width: Object.fromEntries(sides.map((sd) => [sd, w])) };
   }
   if (src.boxShadow) {
     const b = src.boxShadow;
@@ -204,9 +213,15 @@ function build(name, node, { content = {}, implied = {}, themeStyles } = {}) {
     settings: { ...content, ...styleSettings(merged), ...responsiveSettings(node) },
   };
   applyLayers(node, el.settings);
+  // Leaf elements (text, heading, icon, image) are not flex containers: Bricks rejects _direction / _rowGap / _columnGap on them
+  // ("Invalid value for settings._direction"). A model sometimes puts layout on a heading; drop those keys, also their breakpoint forms.
+  if (LEAF_NAMES.has(name)) {
+    for (const k of Object.keys(el.settings)) if (/^(_direction|_rowGap|_columnGap)(:|$)/.test(k)) delete el.settings[k];
+  }
   if (themeStyles !== undefined) el.themeStyles = themeStyles;
   return el;
 }
+const LEAF_NAMES = new Set(["heading", "text", "text-basic", "icon", "image"]);
 
 // Layer support (set by responsive-pass.js): section background image + gradient overlay, absolutely placed decoration.
 // "__ID__" in _cssCustom is replaced with the real Bricks element id by the compiler once it is known.
@@ -219,7 +234,7 @@ function applyLayers(node, settings) {
     settings._background = {
       ...(settings._background || {}),
       image: assetRef(node._bgImage),
-      size: "cover",
+      size: node._bgSize || "cover", // a raster photo covers its box; a vector backdrop (a curve line) is shown whole
       position: "center center",
       repeat: "no-repeat",
       attachment: "scroll",
@@ -236,6 +251,9 @@ function applyLayers(node, settings) {
       const P = `::${l.placement}`;
       settings[`_content${P}`] = " ";
       settings[`_position${P}`] = "absolute";
+      // Bricks does not carry a pseudo-element's position down to the smaller breakpoints by itself: without these the layer falls back
+      // into the flow on tablet / phone (the hand-made file has to set `_position:tablet_portrait::after` for the same reason)
+      for (const bp of ["tablet_portrait", "mobile_landscape", "mobile_portrait"]) settings[`_position:${bp}${P}`] = "absolute";
       settings[`_background${P}`] = { image: assetRef(l), size: l.inset ? "cover" : "contain", position: "center center", repeat: "no-repeat", attachment: "scroll", blendMode: "normal" };
       if (l.inset) for (const side of ["top", "right", "bottom", "left"]) settings[`_${side}${P}`] = "0";
       else {
@@ -245,14 +263,15 @@ function applyLayers(node, settings) {
     }
     css.push(`#brxe-__ID__::before, #brxe-__ID__::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-__ID__ > * {\n  position: relative;\n  z-index: 1;\n}`);
   }
+  if (node._relative) settings._position = "relative"; // positioning context for absolutely placed layers
   if (node._layered) { settings._position = "relative"; settings._overflow = "hidden"; }
   if (node._raise) { settings._position = "relative"; settings._zIndex = "1"; }
   if (node.abs) {
     settings._position = "absolute";
     settings._left = node.abs.left;
     settings._top = node.abs.top;
-    settings._width = `${node.abs.width}px`;
-    settings._zIndex = "0";
+    if (node.abs.width !== undefined) settings._width = `${node.abs.width}px`;
+    settings._zIndex = node.abs.z ?? "0"; // decoration sits behind the content (0); a layer on a picture (badge, label) above it (1)
     delete settings._widthMax;
     delete settings._height; // aspect ratio comes from the asset
     delete settings._margin;
@@ -261,9 +280,17 @@ function applyLayers(node, settings) {
   if (css.length) settings._cssCustom = css.join("\n");
 }
 
+// Bricks heading/text/button content is HTML. Plain copy from Figma ("Theme & Graphics", "RTP < 90%") must be escaped or the browser reads the
+// & / < as markup. Text that already holds a tag or a finished entity (&amp;) is left exactly as it is.
+export function escapeText(text) {
+  if (typeof text !== "string" || !text) return text;
+  if (/<\/?[a-z!][^>]*>/i.test(text)) return text;
+  return text.replace(/&(?!#?\w+;)/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
 function wrapAsParagraphIfNeeded(text) {
   if (!text) return text;
-  return /^\s*<[a-z][\s\S]*>/i.test(text.trim()) ? text : `<p>${text}</p>`;
+  return /^\s*<[a-z][\s\S]*>/i.test(text.trim()) ? text : `<p>${escapeText(text)}</p>`;
 }
 
 function assetRef(node) {
@@ -285,16 +312,16 @@ export const ELEMENT_TEMPLATES = {
   block: (n) => build("div", n, { implied: { display: "block" } }),
   spacer: (n) => build("div", n),
 
-  heading: (n) => build("heading", n, { content: { text: n.text, tag: `h${n.level || 2}` } }),
+  heading: (n) => build("heading", n, { content: { text: escapeText(n.text), tag: `h${n.level || 2}` } }),
 
   // "text" = rich paragraph (HTML-wrapped), "text-basic" = plain label. Distinct in your real data.
   text: (n) => build("text", n, { content: { text: wrapAsParagraphIfNeeded(n.text) } }),
-  "text-basic": (n) => build("text-basic", n, { content: { text: n.text } }),
+  "text-basic": (n) => build("text-basic", n, { content: { text: escapeText(n.text) } }),
 
   button: (n) => hugButton(
     build("button", n, {
       content: {
-        text: n.text,
+        text: escapeText(n.text),
         // Observed shape: {type, url, postId}. postId is present even on external links.
         link: n.href ? { type: "external", url: n.href, postId: "" } : undefined,
         // Pre-exported icon (found by the responsive pass from the node's notes) becomes a real Bricks button icon.
@@ -313,7 +340,7 @@ export const ELEMENT_TEMPLATES = {
           library: "svg",
           svg: assetRef(n),
           height: bare(n.size?.height),
-          width: bare(n.size?.width),
+          width: isNum(n.size?.width) ? bare(n.size.width) : undefined, // "fill" is not a valid icon width
         },
       },
       themeStyles: [],

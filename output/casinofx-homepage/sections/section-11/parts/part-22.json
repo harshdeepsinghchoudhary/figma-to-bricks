@@ -1,0 +1,100 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-72",
+          "figmaNodeId": "2222:161",
+          "size": {
+            "width": 111,
+            "height": 126
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 14,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "majestic-slots-1",
+              "figmaNodeId": "2222:162",
+              "asset": {
+                "nodeId": "2222:162",
+                "kind": "image"
+              },
+              "size": {
+                "width": 70,
+                "height": 70
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-71",
+              "figmaNodeId": "2222:163",
+              "size": {
+                "width": 111,
+                "height": 42
+              },
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "type": "text-basic",
+                  "id": "majestic-slots",
+                  "figmaNodeId": "2222:164",
+                  "text": "Majestic Slots",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeight": "19.36px",
+                    "color": "#000000"
+                  }
+                },
+                {
+                  "type": "row",
+                  "id": "frame-70",
+                  "figmaNodeId": "2222:165",
+                  "size": {
+                    "width": 98,
+                    "height": 17
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 4,
+                    "align": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "frame-icon",
+                      "figmaNodeId": "2223:21",
+                      "asset": {
+                        "nodeId": "2223:21",
+                        "kind": "svg"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Coverage: 1 content node(s) from the Figma data are missing from your output: 2222:168 (text: $500 Bonus). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own \"text\", never as a child)."
+  ]
+}

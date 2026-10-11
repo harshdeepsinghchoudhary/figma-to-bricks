@@ -1,0 +1,80 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casino-fx-section",
+      "children": [
+        {
+          "type": "container",
+          "id": "group-121",
+          "figmaNodeId": "2222:837",
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 6
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "group-120",
+              "figmaNodeId": "2222:836",
+              "children": [
+                {
+                  "type": "image",
+                  "id": "bravoplay-casino-1",
+                  "figmaNodeId": "2216:15",
+                  "asset": {
+                    "nodeId": "2216:15",
+                    "kind": "image"
+                  }
+                },
+                {
+                  "type": "row",
+                  "id": "frame-52",
+                  "figmaNodeId": "2214:373",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 10,
+                    "padding": {
+                      "left": 6,
+                      "right": 6,
+                      "top": 3,
+                      "bottom": 3
+                    },
+                    "align": "center",
+                    "justify": "center"
+                  },
+                  "background": {
+                    "color": "#5B99E2"
+                  },
+                  "border": {
+                    "radius": 6
+                  },
+                  "children": [
+                    {
+                      "type": "text-basic",
+                      "id": "ad-tag",
+                      "figmaNodeId": "2214:374",
+                      "text": "AD",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "lineHeight": "19.36px",
+                        "color": "#FFFFFF",
+                        "align": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 [
   {
-    "id": "ala95u",
+    "id": "r8rzca",
     "name": "heading",
-    "parent": "b6lng1",
+    "parent": "y3cij1",
     "children": [],
     "settings": {
       "text": "Jili Games Slots with the Highest RTP",
@@ -21,9 +21,9 @@
     }
   },
   {
-    "id": "1foz7l",
+    "id": "qbubv3",
     "name": "image",
-    "parent": "ze1a05",
+    "parent": "um9h4p",
     "children": [],
     "settings": {
       "image": {
@@ -39,9 +39,9 @@
     "themeStyles": []
   },
   {
-    "id": "kygasr",
+    "id": "xvpisa",
     "name": "heading",
-    "parent": "xsz077",
+    "parent": "kmqvhx",
     "children": [],
     "settings": {
       "text": "Golden Empire",
@@ -60,9 +60,9 @@
     }
   },
   {
-    "id": "4cnzu2",
+    "id": "ke1gnm",
     "name": "text",
-    "parent": "xsz077",
+    "parent": "kmqvhx",
     "children": [],
     "settings": {
       "text": "<p>RTP Percentage: (96%)+ (97%+)</p>",
@@ -80,26 +80,9 @@
     }
   },
   {
-    "id": "xsz077",
-    "name": "div",
-    "parent": "373axi",
-    "children": [
-      "kygasr",
-      "4cnzu2"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "12",
-      "_columnGap": "12",
-      "_alignItems": "flex-start",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "qk9tkv",
+    "id": "hy9ylm",
     "name": "text",
-    "parent": "373axi",
+    "parent": "kmqvhx",
     "children": [],
     "settings": {
       "text": "<p>Type: Classic, Bonus Buy, Jackpot</p>",
@@ -117,12 +100,13 @@
     }
   },
   {
-    "id": "373axi",
+    "id": "kmqvhx",
     "name": "div",
-    "parent": "ze1a05",
+    "parent": "um9h4p",
     "children": [
-      "xsz077",
-      "qk9tkv"
+      "xvpisa",
+      "ke1gnm",
+      "hy9ylm"
     ],
     "settings": {
       "_display": "flex",
@@ -130,17 +114,16 @@
       "_rowGap": "12",
       "_columnGap": "12",
       "_alignItems": "flex-start",
-      "_width": "100%",
       "_widthMax": "325px"
     }
   },
   {
-    "id": "ze1a05",
+    "id": "um9h4p",
     "name": "div",
-    "parent": "iuj5vd",
+    "parent": "jpu62h",
     "children": [
-      "1foz7l",
-      "373axi"
+      "qbubv3",
+      "kmqvhx"
     ],
     "settings": {
       "_display": "flex",
@@ -148,20 +131,6 @@
       "_rowGap": "30",
       "_columnGap": "30",
       "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "iuj5vd",
-    "name": "div",
-    "parent": "2ouc56",
-    "children": [
-      "ze1a05"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
       "_padding": {
         "top": "12",
         "right": "12",
@@ -184,9 +153,9 @@
     }
   },
   {
-    "id": "7diuge",
+    "id": "1nw9mo",
     "name": "image",
-    "parent": "ismq2h",
+    "parent": "csodiw",
     "children": [],
     "settings": {
       "image": {
@@ -202,9 +171,9 @@
     "themeStyles": []
   },
   {
-    "id": "kk62oc",
+    "id": "x763xg",
     "name": "heading",
-    "parent": "gcaztd",
+    "parent": "u0bk6a",
     "children": [],
     "settings": {
       "text": "Fortune Gems",
@@ -223,9 +192,9 @@
     }
   },
   {
-    "id": "m5ld3v",
+    "id": "fbknzg",
     "name": "text",
-    "parent": "gcaztd",
+    "parent": "u0bk6a",
     "children": [],
     "settings": {
       "text": "<p>RTP Percentage: (96%)+ (97%+)</p>",
@@ -243,26 +212,9 @@
     }
   },
   {
-    "id": "gcaztd",
-    "name": "div",
-    "parent": "3cfko2",
-    "children": [
-      "kk62oc",
-      "m5ld3v"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "12",
-      "_columnGap": "12",
-      "_alignItems": "flex-start",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "j524xv",
+    "id": "euk2t0",
     "name": "text",
-    "parent": "3cfko2",
+    "parent": "u0bk6a",
     "children": [],
     "settings": {
       "text": "<p>Type: Classic, Bonus Buy, Jackpot</p>",
@@ -280,12 +232,13 @@
     }
   },
   {
-    "id": "3cfko2",
+    "id": "u0bk6a",
     "name": "div",
-    "parent": "jnkaca",
+    "parent": "csodiw",
     "children": [
-      "gcaztd",
-      "j524xv"
+      "x763xg",
+      "fbknzg",
+      "euk2t0"
     ],
     "settings": {
       "_display": "flex",
@@ -293,37 +246,22 @@
       "_rowGap": "12",
       "_columnGap": "12",
       "_alignItems": "flex-start",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "jnkaca",
-    "name": "div",
-    "parent": "ismq2h",
-    "children": [
-      "3cfko2"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
       "_padding": {
         "top": "0",
         "right": "11",
         "bottom": "0",
         "left": "0"
       },
-      "_width": "100%",
       "_widthMax": "325px"
     }
   },
   {
-    "id": "ismq2h",
+    "id": "csodiw",
     "name": "div",
-    "parent": "vchvgj",
+    "parent": "jpu62h",
     "children": [
-      "7diuge",
-      "jnkaca"
+      "1nw9mo",
+      "u0bk6a"
     ],
     "settings": {
       "_display": "flex",
@@ -331,20 +269,6 @@
       "_rowGap": "30",
       "_columnGap": "30",
       "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "vchvgj",
-    "name": "div",
-    "parent": "2ouc56",
-    "children": [
-      "ismq2h"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
       "_padding": {
         "top": "12",
         "right": "12",
@@ -367,9 +291,9 @@
     }
   },
   {
-    "id": "6kfgj3",
+    "id": "zorq6u",
     "name": "image",
-    "parent": "fn4gl9",
+    "parent": "4p3alv",
     "children": [],
     "settings": {
       "image": {
@@ -385,9 +309,9 @@
     "themeStyles": []
   },
   {
-    "id": "wuszbp",
+    "id": "cbpvv0",
     "name": "heading",
-    "parent": "t23qiy",
+    "parent": "vpe7ta",
     "children": [],
     "settings": {
       "text": "Lucky Goldbricks",
@@ -406,9 +330,9 @@
     }
   },
   {
-    "id": "crijjs",
+    "id": "3vxtbk",
     "name": "text",
-    "parent": "t23qiy",
+    "parent": "vpe7ta",
     "children": [],
     "settings": {
       "text": "<p>RTP Percentage: (96%)+ (97%+)</p>",
@@ -426,26 +350,9 @@
     }
   },
   {
-    "id": "t23qiy",
-    "name": "div",
-    "parent": "m4cnld",
-    "children": [
-      "wuszbp",
-      "crijjs"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "12",
-      "_columnGap": "12",
-      "_alignItems": "flex-start",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "kunr13",
+    "id": "l1bw74",
     "name": "text",
-    "parent": "m4cnld",
+    "parent": "vpe7ta",
     "children": [],
     "settings": {
       "text": "<p>Type: Classic, Bonus Buy, Jackpot</p>",
@@ -463,12 +370,13 @@
     }
   },
   {
-    "id": "m4cnld",
+    "id": "vpe7ta",
     "name": "div",
-    "parent": "fn4gl9",
+    "parent": "4p3alv",
     "children": [
-      "t23qiy",
-      "kunr13"
+      "cbpvv0",
+      "3vxtbk",
+      "l1bw74"
     ],
     "settings": {
       "_display": "flex",
@@ -476,17 +384,16 @@
       "_rowGap": "12",
       "_columnGap": "12",
       "_alignItems": "flex-start",
-      "_width": "100%",
       "_widthMax": "325px"
     }
   },
   {
-    "id": "fn4gl9",
+    "id": "4p3alv",
     "name": "div",
-    "parent": "u20210",
+    "parent": "jpu62h",
     "children": [
-      "6kfgj3",
-      "m4cnld"
+      "zorq6u",
+      "vpe7ta"
     ],
     "settings": {
       "_display": "flex",
@@ -494,20 +401,6 @@
       "_rowGap": "30",
       "_columnGap": "30",
       "_alignItems": "center",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "u20210",
-    "name": "div",
-    "parent": "2ouc56",
-    "children": [
-      "fn4gl9"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
       "_padding": {
         "top": "12",
         "right": "12",
@@ -530,13 +423,13 @@
     }
   },
   {
-    "id": "2ouc56",
+    "id": "jpu62h",
     "name": "div",
-    "parent": "b6lng1",
+    "parent": "y3cij1",
     "children": [
-      "iuj5vd",
-      "vchvgj",
-      "u20210"
+      "um9h4p",
+      "csodiw",
+      "4p3alv"
     ],
     "settings": {
       "_display": "grid",
@@ -550,12 +443,12 @@
     }
   },
   {
-    "id": "b6lng1",
+    "id": "y3cij1",
     "name": "container",
-    "parent": "ncqsdv",
+    "parent": "4pmmtz",
     "children": [
-      "ala95u",
-      "2ouc56"
+      "r8rzca",
+      "jpu62h"
     ],
     "settings": {
       "_display": "flex",
@@ -568,11 +461,11 @@
     }
   },
   {
-    "id": "ncqsdv",
+    "id": "4pmmtz",
     "name": "section",
     "parent": 0,
     "children": [
-      "b6lng1"
+      "y3cij1"
     ],
     "settings": {
       "_padding": {

@@ -1,0 +1,111 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "figmaNodeId": "2223:40",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-127",
+          "figmaNodeId": "2223:4",
+          "layout": {
+            "display": "flex",
+            "direction": "column"
+          },
+          "size": {
+            "width": 330,
+            "height": 123
+          },
+          "background": {
+            "color": "#FFD73312"
+          },
+          "border": {
+            "radius": 8
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "text-506",
+              "text": "2,506\nTotal Casinos",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 32,
+                "fontWeight": 600,
+                "lineHeight": "30px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "id": "group-128",
+          "figmaNodeId": "2223:5",
+          "layout": {
+            "display": "flex",
+            "direction": "column"
+          },
+          "size": {
+            "width": 330,
+            "height": 123
+          },
+          "background": {
+            "color": "#FFD733"
+          },
+          "border": {
+            "radius": 8
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "text-150",
+              "text": "150+\nCountries Covered",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 32,
+                "fontWeight": 600,
+                "lineHeight": "30px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "id": "group-129",
+          "figmaNodeId": "2223:6",
+          "layout": {
+            "display": "flex",
+            "direction": "column"
+          },
+          "size": {
+            "width": 330,
+            "height": 123
+          },
+          "background": {
+            "color": "#FFD73312"
+          },
+          "border": {
+            "radius": 8
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "text-2508",
+              "text": "2,508,210\nActive Users",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 32,
+                "fontWeight": 600,
+                "lineHeight": "30px",
+                "color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

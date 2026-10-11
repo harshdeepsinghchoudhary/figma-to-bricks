@@ -1,0 +1,55 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "scope",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "row",
+          "id": "frame-124-1",
+          "figmaNodeId": "2231:231",
+          "children": []
+        },
+        {
+          "type": "column",
+          "id": "frame-119-1",
+          "figmaNodeId": "2231:225",
+          "children": []
+        },
+        {
+          "type": "text",
+          "id": "most-rigged-games",
+          "figmaNodeId": "2223:49",
+          "text": "Most Rigged Games",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 32,
+            "fontWeight": 600,
+            "lineHeight": "38.73px",
+            "color": "#000000",
+            "align": "left"
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-118",
+          "figmaNodeId": "2231:224",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 16
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "part 1aaa: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing",
+    "part 1aab: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing",
+    "size properties omitted where not provided",
+    "level for heading not determined, using text node instead",
+    "No content nodes available in this part of the data; Frame 117 and Group 157 lack explicit auto-layout, fills, or detailed geometry data for full styling"
+  ]
+}

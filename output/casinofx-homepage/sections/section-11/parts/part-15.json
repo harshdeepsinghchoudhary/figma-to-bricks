@@ -1,0 +1,58 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-89",
+          "figmaNodeId": "2223:43",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 20,
+            "align": "stretch"
+          }
+        },
+        {
+          "type": "text-basic",
+          "id": "monthly-bonus-ranking",
+          "figmaNodeId": "2222:139",
+          "text": "Monthly Bonus Ranking",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 24,
+            "fontWeight": 500,
+            "lineHeight": "29.05px",
+            "color": "#000000"
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-85",
+          "figmaNodeId": "2223:8",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 20,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "block",
+              "id": "group-84",
+              "figmaNodeId": "2222:72"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "size",
+    "background",
+    "border"
+  ]
+}

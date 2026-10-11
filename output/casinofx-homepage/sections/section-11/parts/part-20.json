@@ -1,0 +1,93 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "row",
+          "id": "2222-130-row",
+          "children": [
+            {
+              "type": "column",
+              "id": "2222-130",
+              "figmaNodeId": "2222:130",
+              "border": {
+                "radius": 2000
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "2222-131",
+                  "figmaNodeId": "2222:131",
+                  "asset": {
+                    "nodeId": "2222:131",
+                    "kind": "image"
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "2222-132",
+                  "figmaNodeId": "2222:132",
+                  "children": [
+                    {
+                      "type": "text-basic",
+                      "id": "2222-133",
+                      "figmaNodeId": "2222:133",
+                      "text": "Sekabet",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "19.36px",
+                        "color": "#000000"
+                      }
+                    },
+                    {
+                      "type": "row",
+                      "id": "2222-134",
+                      "figmaNodeId": "2222:134",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "2223-18",
+                          "figmaNodeId": "2223:18",
+                          "asset": {
+                            "nodeId": "2223:18",
+                            "kind": "svg"
+                          }
+                        },
+                        {
+                          "type": "text-basic",
+                          "id": "2222-137",
+                          "figmaNodeId": "2222:137",
+                          "text": "$1,000 + 50 FS",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 14,
+                            "fontWeight": 400,
+                            "lineHeight": "16.94px",
+                            "color": "#00000073"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "container",
+              "id": "2222-155",
+              "figmaNodeId": "2222:155"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "2222-130-row: dropped unknown field \"gaps\""
+  ]
+}

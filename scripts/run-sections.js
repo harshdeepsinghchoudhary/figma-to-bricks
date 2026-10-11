@@ -8,6 +8,11 @@
  *   node scripts/run-sections.js output/<frame> --force         redo the model step even for finished sections
  *   node scripts/run-sections.js output/<frame> --split=4600    token budget per model request (default 4600)
  *   node scripts/run-sections.js output/<frame> --no-merge      skip the merge + template step
+ *   node scripts/run-sections.js output/<frame> --skip=section-02   leave a section out on purpose (a broken or duplicate frame)
+ *   node scripts/run-sections.js output/<frame> --keep-duplicates   do not auto-skip duplicate frames (see below)
+ *
+ * Duplicate frames: two top-level nodes in the same place with (nearly) the same size are one section drawn twice. The one that is already
+ * built is kept; if neither is, the later one on the page is skipped. Skipped sections are listed and never count as a failure.
  *
  * What it does, per top-level child of the page (sorted top to bottom):
  *   2_normalize.js <frame> --nodes=<id> --name=<name> --split=N --resume     (the model step; --resume reuses saved parts, so a
@@ -87,22 +92,44 @@ fs.writeFileSync(namesPath, JSON.stringify(names, null, 2) + "\n");
 
 const only = opt("only") ? new Set(opt("only").split(",").map((s) => s.trim()).filter(Boolean)) : null;
 if (only) for (const o of only) if (!sections.some((s) => s.name === o || s.id === o)) { console.error(`--only: no section called "${o}". Known: ${sections.map((s) => s.name).join(", ")}`); process.exit(1); }
-const picked = (s) => !only || only.has(s.name) || only.has(s.id);
+const skipSet = new Set((opt("skip", "") || "").split(",").map((x) => x.trim()).filter(Boolean));
+const iou = (a, b) => {
+  const w = Math.min(a.x + a.width, b.x + b.width) - Math.max(a.x, b.x), h = Math.min(a.y + a.height, b.y + b.height) - Math.max(a.y, b.y);
+  if (w <= 0 || h <= 0) return 0;
+  return (w * h) / (a.width * a.height + b.width * b.height - w * h);
+};
+const skipReason = {};
+for (const s of sections) if (skipSet.has(s.name) || skipSet.has(s.id)) skipReason[s.name] = "left out (--skip)";
+if (!flag("keep-duplicates")) {
+  for (const s of sections) {
+    for (const o of sections) {
+      if (o === s || skipReason[s.name] || skipReason[o.name] || iou(s.box, o.box) < 0.9) continue;
+      const sDone = fs.existsSync(path.join(secRoot, s.name, "normalized.json")), oDone = fs.existsSync(path.join(secRoot, o.name, "normalized.json"));
+      if ((oDone && !sDone) || (oDone === sDone && o.index < s.index)) { skipReason[s.name] = `duplicate of ${o.name} (same position and size)`; break; }
+    }
+  }
+}
+const isSkipped = (s) => !!skipReason[s.name];
+const picked = (s) => !isSkipped(s) && (!only || only.has(s.name) || only.has(s.id));
 const normalizedOf = (s) => path.join(secRoot, s.name, "normalized.json");
 const isDone = (s) => fs.existsSync(normalizedOf(s));
 
 // ---- plan ----
 console.log(`\n${top.length} top-level section(s) in ${frameDir}:\n`);
 for (const s of sections) {
-  const state = isDone(s) ? (flag("force") && picked(s) ? "redo (--force)" : "done") : "to do";
+  const state = isSkipped(s) ? `SKIPPED: ${skipReason[s.name]}` : isDone(s) ? (flag("force") && picked(s) ? "redo (--force)" : "done") : "to do";
   console.log(`  ${String(s.index).padStart(2)}  ${s.id.padEnd(9)} ${s.name.padEnd(14)} ${String(Math.round(s.box.width)).padStart(4)}x${String(Math.round(s.box.height)).padEnd(5)} ${state.padEnd(15)} "${String(s.figmaName).slice(0, 30)}"${picked(s) ? "" : "  (not selected)"}`);
 }
 if (flag("dry-run")) { console.log(`\nDry run - nothing was run. Names are in ${namesPath}.`); process.exit(0); }
 
 // ---- run ----
+let lastOut = "";
 function node(script, a) {
   console.log(`\n=== node scripts/${script} ${a.join(" ")} ===`);
-  return spawnSync(process.execPath, [path.join("scripts", script), ...a], { stdio: "inherit" }).status === 0;
+  const r = spawnSync(process.execPath, [path.join("scripts", script), ...a], { encoding: "utf8", maxBuffer: 64 * 1024 * 1024, stdio: ["inherit", "pipe", "pipe"] });
+  lastOut = (r.stdout || "") + (r.stderr || "");
+  process.stdout.write(r.stdout || ""); process.stderr.write(r.stderr || "");
+  return r.status === 0;
 }
 const failed = [];
 const split = opt("split", "4600");
@@ -113,16 +140,22 @@ for (const s of sections) {
     // --force means redo: saved parts would otherwise be reused by --resume, and they were answered for the old input
     if (flag("force") && fs.existsSync(path.join(dir, "parts"))) { fs.rmSync(path.join(dir, "parts"), { recursive: true, force: true }); console.log(`\n--- ${s.name}: removed saved parts (--force)`); }
     const ok = node("2_normalize.js", [frameDir, `--nodes=${s.id}`, `--name=${s.name}`, `--split=${split}`, "--resume"]);
-    if (!ok || !isDone(s)) { failed.push(`${s.name} (${s.id}): model step failed - re-run the same command, it resumes from the saved parts`); continue; }
+    if (!ok || !isDone(s)) { failed.push(`${s.name} (${s.id}): model step failed, section left out - re-run the same command to retry it, or add --skip=${s.name} to leave it out on purpose`); continue; }
   } else {
     console.log(`\n--- ${s.name}: already normalized, skipping the model step (use --force to redo)`);
   }
   if (!node("3_compile_bricks.js", [dir])) failed.push(`${s.name} (${s.id}): compile failed`);
+  else {
+    // The compile step lists Figma text that never made it into the section. A few lost texts (a nav bar, a card body) mean the model
+    // dropped part of the section, even though it validated. Do not let that pass silently.
+    const lost = (lastOut.match(/MISSING TEXT/g) || []).length;
+    if (lost >= 3) failed.push(`${s.name} (${s.id}): INCOMPLETE - ${lost} Figma text(s) are missing from it. Redo it with: --only=${s.name} --force`);
+  }
 }
 
 // ---- merge, in page order, everything that compiled ----
 if (!flag("no-merge")) {
-  const built = sections.filter((s) => fs.existsSync(path.join(secRoot, s.name, "bricks-tree.json")));
+  const built = sections.filter((s) => !isSkipped(s) && fs.existsSync(path.join(secRoot, s.name, "bricks-tree.json")));
   const missing = sections.filter((s) => !built.includes(s));
   if (!built.length) console.log("\nNothing compiled yet - nothing to merge.");
   else {
@@ -133,5 +166,7 @@ if (!flag("no-merge")) {
   }
 }
 
+const skippedList = sections.filter(isSkipped);
+if (skippedList.length) console.log(`\nSkipped ${skippedList.length} section(s): ${skippedList.map((s) => `${s.name} (${skipReason[s.name]})`).join("; ")}`);
 console.log(failed.length ? `\n${failed.length} problem(s):\n${failed.map((f) => "  - " + f).join("\n")}` : "\nAll selected sections built.");
 process.exit(failed.length ? 1 : 0);

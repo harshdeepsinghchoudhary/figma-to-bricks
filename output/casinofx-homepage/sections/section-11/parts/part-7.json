@@ -1,0 +1,73 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-80",
+          "figmaNodeId": "2222:114",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 0,
+            "padding": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "notes": [
+            "Non-uniform corner radii not supported (12,0,12,0)."
+          ],
+          "background": {
+            "color": "#E5DACF"
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-69",
+              "figmaNodeId": "2222:115",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 10,
+                "padding": {
+                  "top": 6,
+                  "right": 10,
+                  "bottom": 6,
+                  "left": 10
+                },
+                "align": "center",
+                "justify": "center"
+              },
+              "background": {
+                "color": "#E5DACF"
+              },
+              "children": [
+                {
+                  "type": "text-basic",
+                  "id": "text-3",
+                  "figmaNodeId": "2222:116",
+                  "text": "3",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 500,
+                    "lineHeight": "16.94px"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section: dropped unknown field \"_uncertain\""
+  ]
+}

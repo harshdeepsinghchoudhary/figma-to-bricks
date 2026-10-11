@@ -1,0 +1,67 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "casino-verification-transparency-index",
+      "figmaNodeId": "2214:83",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 32
+      },
+      "children": [
+        {
+          "type": "heading",
+          "id": "casino-verification-transparency-index-title",
+          "figmaNodeId": "2214:84",
+          "text": "Casino Verification & Transparency Index",
+          "level": 2,
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 32,
+            "fontWeight": 600,
+            "lineHeight": "38.73px",
+            "color": "#000000",
+            "align": "center"
+          }
+        },
+        {
+          "type": "row",
+          "id": "casino-report-container",
+          "figmaNodeId": "2214:85",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 24,
+            "align": "center",
+            "justify": "space-between"
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "casino-leaderboard",
+              "figmaNodeId": "2214:86",
+              "children": []
+            },
+            {
+              "type": "column",
+              "id": "casino-reports",
+              "figmaNodeId": "2214:87",
+              "size": {
+                "width": 420,
+                "height": 939
+              },
+              "background": {
+                "color": "#F7F7F7"
+              },
+              "border": {
+                "radius": 14
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

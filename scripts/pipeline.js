@@ -9,7 +9,8 @@
  *   --page <id> | --title "<t>"   target page (default: new DRAFT page "Figma import - <frame> <date>")
  *   --frame output/<name>         skip stage 1 and use an existing frame folder (no URL needed)
  *   --no-inject                   build everything, do not touch WordPress
- *   --inject-partial              push even when some sections failed (default: stop before WordPress)
+ *   --strict                      stop before WordPress when any section failed (default: push the finished sections and list the rest)
+ *   --skip=section-02             leave a broken or duplicate section out on purpose (passed to run-sections.js)
  *   --force                       redo the AI step for finished sections (spends tokens)
  *   --only=a,b   --split=N        passed to run-sections.js
  *   --no-dataset                  do not write the dataset
@@ -78,8 +79,8 @@ log(`Frame folder: ${frameDir}`);
 
 // ---- 2+3. AI normalize + compile + merge (run-sections.js) ----
 const rs = [frameDir];
-for (const f of ["--force"]) if (has(f)) rs.push(f);
-for (const o of ["--only", "--split"]) { const v = val(o); if (v) rs.push(`${o}=${v}`); }
+for (const f of ["--force", "--keep-duplicates"]) if (has(f)) rs.push(f);
+for (const o of ["--only", "--split", "--skip"]) { const v = val(o); if (v) rs.push(`${o}=${v}`); }
 const r2 = await run("2-3/5 AI normalize + compile + merge", "run-sections.js", rs);
 const sectionsFailed = r2.code !== 0;
 const mergedTree = path.join(frameDir, "merged", "bricks-tree.json");
@@ -87,7 +88,7 @@ if (!fs.existsSync(mergedTree)) fail("nothing was compiled, so there is nothing 
 
 // ---- 4. inject ----
 if (has("--no-inject")) log("\n4/5 push to WordPress: skipped (--no-inject)");
-else if (sectionsFailed && !has("--inject-partial")) log("\n4/5 push to WordPress: SKIPPED because some sections failed. Re-run the same command (it resumes), or add --inject-partial.");
+else if (sectionsFailed && has("--strict")) log("\n4/5 push to WordPress: SKIPPED (--strict) because some sections failed. Re-run the same command (it resumes).");
 else {
   const ia = [path.join(frameDir, "merged"), "--fix-keys"];
   if (val("--page")) ia.push("--page", val("--page"));

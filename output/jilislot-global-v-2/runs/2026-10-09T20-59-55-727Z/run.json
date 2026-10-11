@@ -1,0 +1,54 @@
+{
+  "figmaUrl": "https://www.figma.com/design/9ZC7Ja7QmEw4bpH7ue8zdC/Online-Betting-Website?node-id=8232-2&t=2znXmW7agnAMipfO-0",
+  "frameDir": "output\\jilislot-global-v-2",
+  "postId": 3288,
+  "startedAt": "2026-10-09T20:59:55.728Z",
+  "args": [
+    "https://www.figma.com/design/9ZC7Ja7QmEw4bpH7ue8zdC/Online-Betting-Website?node-id=8232-2&t=2znXmW7agnAMipfO-0"
+  ],
+  "steps": [
+    {
+      "label": "1/5 extract from Figma",
+      "script": "1_extract_figma.js",
+      "args": [
+        "https://www.figma.com/design/9ZC7Ja7QmEw4bpH7ue8zdC/Online-Betting-Website?node-id=8232-2&t=2znXmW7agnAMipfO-0"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "2-3/5 AI normalize + compile + merge",
+      "script": "run-sections.js",
+      "args": [
+        "output\\jilislot-global-v-2"
+      ],
+      "code": 0,
+      "seconds": 4
+    },
+    {
+      "label": "4/5 push into Bricks page",
+      "script": "4_inject_mcp.js",
+      "args": [
+        "output\\jilislot-global-v-2\\merged",
+        "--fix-keys",
+        "--title",
+        "Figma import - jilislot-global-v-2 2026-10-09"
+      ],
+      "code": 0,
+      "seconds": 3
+    },
+    {
+      "label": "5/5 save dataset",
+      "script": "export-dataset.js",
+      "args": [
+        "output\\jilislot-global-v-2",
+        "--page",
+        "3288"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-09T21:00:02.689Z",
+  "exitCode": 0
+}

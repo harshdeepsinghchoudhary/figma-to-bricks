@@ -1,0 +1,109 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "block",
+          "id": "group-59",
+          "figmaNodeId": "2214:310",
+          "background": {
+            "color": "#F7F7F7"
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-57",
+          "figmaNodeId": "2214:302",
+          "children": [
+            {
+              "type": "column",
+              "id": "inner-column-45",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "refuse-withdrawal",
+                  "figmaNodeId": "2214:304",
+                  "text": "Refuse withdrawal and blocked my access",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": 500,
+                    "lineHeight": "26px",
+                    "color": "#000000"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "withdrawal-description",
+                  "figmaNodeId": "2214:305",
+                  "text": "I created an account with this casino and made a deposit. Initially, my games went well, but when I tried to withdraw my $3,500...",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeight": "22px",
+                    "color": "#000000C2"
+                  }
+                }
+              ],
+              "layout": {
+                "direction": "column",
+                "gap": 17
+              }
+            },
+            {
+              "type": "row",
+              "id": "frame-24-row",
+              "figmaNodeId": "2214:306",
+              "layout": {
+                "direction": "row",
+                "gap": 5,
+                "align": "center",
+                "justify": "center",
+                "padding": {
+                  "top": 3,
+                  "right": 7,
+                  "bottom": 3,
+                  "left": 7
+                }
+              },
+              "background": {
+                "color": "#DDDDDD80"
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "icon-frame",
+                  "figmaNodeId": "2214:307",
+                  "asset": {
+                    "nodeId": "2214:307",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "date-text",
+                  "figmaNodeId": "2214:309",
+                  "text": "2026-05-19",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000099"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout sizes, gaps beyond provided measurements, padding values for outer containers"
+  ]
+}

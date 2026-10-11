@@ -75,11 +75,20 @@ function applyVerticalSpacing(frameDir, names, trees) {
   const r = (v) => Math.max(0, Math.round(v));
   const pad = b.map((s) => ({ top: s.content.y - s.band.y, bottom: s.band.y + s.band.h - (s.content.y + s.content.h) }));
   const navFirst = (i) => i === 0 && b.length > 1 && b[0].band.h <= 160;
+  // A section with its own fill (a different colour from the page) is a visible band, like one with a background image: the empty gap
+  // between it and a plain section belongs to the plain one (a band keeps the padding its content was measured with).
+  const colourOf = (s) => s.sec?.settings?._background?.color?.raw || null;
+  const counts = {};
+  b.forEach((s) => { const c = colourOf(s); if (c) counts[c] = (counts[c] || 0) + 1; });
+  const pageColour = Object.entries(counts).sort((x, y) => y[1] - x[1])[0]?.[0] || null;
+  const isBand = (s) => s.bg || (!!colourOf(s) && colourOf(s) !== pageColour);
   for (let i = 0; i + 1 < b.length; i++) {
     const A = b[i], B = b[i + 1];
     const G = Math.max(0, B.band.y - (A.band.y + A.band.h));
     if (G < 1) continue;
-    if (A.bg || navFirst(i)) pad[i + 1].top += G;
+    if (isBand(A) && !isBand(B)) pad[i + 1].top += G;
+    else if (isBand(B) && !isBand(A)) pad[i].bottom += G;
+    else if (A.bg || navFirst(i)) pad[i + 1].top += G;
     else if (B.bg) pad[i].bottom += G;
     else { pad[i].bottom += G / 2; pad[i + 1].top += G / 2; }
   }
@@ -122,7 +131,12 @@ for (const name of names) {
     seen.add(el.id);
     const s = el.settings || {};
     if (s.image?.url) { s.image.url = fix(s.image.url); if (s.image.full) s.image.full = fix(s.image.full); }
-    if (s._background?.image?.url) { s._background.image.url = fix(s._background.image.url); if (s._background.image.full) s._background.image.full = fix(s._background.image.full); }
+    // section/container background image, and the ::before / ::after background images of decoration layers (_background::before ...)
+    for (const k of Object.keys(s)) {
+      if (!/^_background(:|$)/.test(k) || !s[k]?.image?.url) continue;
+      s[k].image.url = fix(s[k].image.url);
+      if (s[k].image.full) s[k].image.full = fix(s[k].image.full);
+    }
     if (s.icon?.svg?.url) { s.icon.svg.url = fix(s.icon.svg.url); if (s.icon.svg.full) s.icon.svg.full = fix(s.icon.svg.full); }
     merged.push(el);
   }

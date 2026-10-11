@@ -1,0 +1,83 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casino-fx-part-10",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-33-1",
+          "figmaNodeId": "2214:143",
+          "children": [
+            {
+              "type": "icon",
+              "id": "rank-badge-vector",
+              "figmaNodeId": "2214:144",
+              "asset": {
+                "nodeId": "2214:144",
+                "kind": "svg"
+              },
+              "notes": [
+                "Part of Group 33 (2214:143, box 2125,1316,47,57) which also contains text node 2214:145 '3' (Inter 24/600, #000000). Group has no exported asset."
+              ]
+            },
+            {
+              "type": "text-basic",
+              "id": "rank-number",
+              "figmaNodeId": "2214:145",
+              "text": "3",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "color": "#000000",
+                "lineHeight": "29.05px",
+                "align": "left"
+              },
+              "notes": [
+                "Measured 14px right of Group 33 left edge; 14px top of Group 33 top edge."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "trust-badges",
+          "figmaNodeId": "2214:138",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 8,
+            "align": "center"
+          },
+          "size": {
+            "width": "100%"
+          },
+          "children": [
+            {
+              "type": "button",
+              "id": "text-verified",
+              "figmaNodeId": "2214:139",
+              "text": "Verified"
+            },
+            {
+              "type": "button",
+              "id": "text-years",
+              "figmaNodeId": "2214:141",
+              "text": "4+ Years"
+            }
+          ]
+        },
+        {
+          "type": "spacer",
+          "id": "divider-line",
+          "figmaNodeId": "2214:146",
+          "notes": [
+            "Line node, 1px solid stroke #0000001F"
+          ]
+        }
+      ]
+    }
+  ]
+}

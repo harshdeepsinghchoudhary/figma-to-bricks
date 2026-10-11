@@ -1,0 +1,134 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casino-fx-nav",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "row",
+          "id": "frame-16-1",
+          "figmaNodeId": "2214:7",
+          "children": [
+            {
+              "type": "button",
+              "id": "home-link",
+              "figmaNodeId": "2214:8",
+              "text": "Home",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 500,
+                "lineHeight": "21.78px",
+                "align": "left",
+                "color": "#000000"
+              },
+              "background": {
+                "color": "#0000001F"
+              },
+              "border": {
+                "radius": 4
+              },
+              "size": {
+                "width": 63
+              },
+              "layout": {
+                "padding": {
+                  "top": 5,
+                  "right": 6,
+                  "bottom": 5,
+                  "left": 6
+                }
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "top-casinos-link",
+              "figmaNodeId": "2214:10",
+              "text": "Top Casinos",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "21.78px",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "live-betting-link",
+              "figmaNodeId": "2214:11",
+              "text": "Live Betting",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "21.78px",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "new-casinos-link",
+              "figmaNodeId": "2214:12",
+              "text": "New Casinos",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "21.78px",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "blacklist-link",
+              "figmaNodeId": "2214:13",
+              "text": "Blacklist",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "21.78px",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "casino-news-link",
+              "figmaNodeId": "2214:14",
+              "text": "Casino News",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "21.78px",
+                "align": "left"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 74,
+            "align": "start"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "stitch: 1 node(s) added from Figma data because the model's parts did not include them"
+  ]
+}

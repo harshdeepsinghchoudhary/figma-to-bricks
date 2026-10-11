@@ -1,0 +1,120 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-57",
+          "figmaNodeId": "2214:288",
+          "layout": {
+            "direction": "column",
+            "gap": 17
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "section-1-column-1",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "frame-45-1",
+                  "figmaNodeId": "2214:289",
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "title-1",
+                      "figmaNodeId": "2214:290",
+                      "text": "Spin Palace scammed account 49****, with $9,410.",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": 500,
+                        "lineHeight": "26px",
+                        "color": "#000000"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "desc-1",
+                      "figmaNodeId": "2214:291",
+                      "text": "Account: 49**** | Total Loss: $9,410 USD. Spin Palace Casino has illegally withheld funds and manipulated my game balance.",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "22px",
+                        "color": "#000000C2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "id": "date-row",
+                  "figmaNodeId": "2214:292",
+                  "layout": {
+                    "direction": "row",
+                    "gap": 5,
+                    "justify": "center",
+                    "align": "center",
+                    "padding": {
+                      "top": 3,
+                      "right": 7,
+                      "bottom": 3,
+                      "left": 7
+                    }
+                  },
+                  "background": {
+                    "color": "#DDDDDD80"
+                  },
+                  "border": {
+                    "radius": 2
+                  },
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "icon-1",
+                      "figmaNodeId": "2214:293",
+                      "asset": {
+                        "nodeId": "2214:293",
+                        "kind": "svg"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "date-1",
+                      "figmaNodeId": "2214:295",
+                      "text": "2026-05-19",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "lineHeight": "16.94px",
+                        "color": "#00000099"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "unsupported",
+          "id": "rect-21",
+          "figmaNodeId": "2214:297",
+          "notes": [
+            "Rectangle with fill #F7F7F7 and corner radius 8"
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "ids generated heuristically"
+  ]
+}

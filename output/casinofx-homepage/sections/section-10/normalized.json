@@ -1,0 +1,895 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casino-inspection",
+      "figmaNodeId": "scope",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 32,
+        "align": "start"
+      },
+      "children": [
+        {
+          "type": "heading",
+          "id": "casino-inspection-1",
+          "figmaNodeId": "2219:243",
+          "text": "Casino Inspection",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 32,
+            "fontWeight": 600,
+            "lineHeight": "38.73px",
+            "align": "center",
+            "color": "#000000"
+          },
+          "level": 2,
+          "size": {
+            "width": 1320
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-76-1",
+          "figmaNodeId": "2219:244",
+          "children": [
+            {
+              "type": "column",
+              "id": "group-94-1",
+              "figmaNodeId": "2219:245",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "casino-inspection-column-3",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "casino-inspection-column-1",
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "frame-46-1",
+                          "figmaNodeId": "2219:249",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "image-24-2",
+                              "figmaNodeId": "2219:250",
+                              "asset": {
+                                "nodeId": "2219:250",
+                                "kind": "image"
+                              },
+                              "size": {
+                                "width": 60,
+                                "height": 60
+                              }
+                            },
+                            {
+                              "type": "heading",
+                              "id": "spinpalace-casino-3",
+                              "figmaNodeId": "2219:251",
+                              "text": "SpinPalace Casino",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 24,
+                                "fontWeight": 600,
+                                "lineHeight": "32px",
+                                "align": "left",
+                                "color": "#000000"
+                              },
+                              "level": 3
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 16,
+                            "align": "center"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "spinpalace-headquarters-in-malta-4",
+                          "figmaNodeId": "2219:252",
+                          "text": "SpinPalace Headquarters in Malta",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 20,
+                            "fontWeight": 500,
+                            "lineHeight": "26px",
+                            "align": "left",
+                            "color": "#000000"
+                          },
+                          "size": {
+                            "width": 376
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 18,
+                        "align": "start"
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "casino-inspection-column-2",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "group-90-1",
+                          "figmaNodeId": "2219:262",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "rectangle-32-5",
+                              "figmaNodeId": "2219:263",
+                              "asset": {
+                                "nodeId": "2219:263",
+                                "kind": "image"
+                              },
+                              "size": {
+                                "width": 376,
+                                "height": 200
+                              }
+                            },
+                            {
+                              "type": "button",
+                              "id": "good-6",
+                              "figmaNodeId": "2219:264",
+                              "text": "Good",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 14,
+                                "fontWeight": 600,
+                                "lineHeight": "16.94px",
+                                "align": "left",
+                                "color": "#FFFFFF"
+                              },
+                              "background": {
+                                "color": "#338066"
+                              },
+                              "border": {
+                                "radius": 2
+                              },
+                              "size": {
+                                "width": 51
+                              },
+                              "layout": {
+                                "padding": {
+                                  "top": 3,
+                                  "right": 7,
+                                  "bottom": 3,
+                                  "left": 7
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "row",
+                          "id": "frame-63-1",
+                          "figmaNodeId": "2219:254",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "frame-62-1",
+                              "figmaNodeId": "2219:255",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "images-1-7",
+                                  "figmaNodeId": "2219:256",
+                                  "asset": {
+                                    "nodeId": "2219:256",
+                                    "kind": "image"
+                                  },
+                                  "size": {
+                                    "width": 33,
+                                    "height": 22
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "malta-8",
+                                  "figmaNodeId": "2219:257",
+                                  "text": "Malta",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "align": "left",
+                                    "color": "#000000B3"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 12,
+                                "align": "start"
+                              },
+                              "size": {
+                                "width": 88
+                              }
+                            },
+                            {
+                              "type": "row",
+                              "id": "frame-24-1",
+                              "figmaNodeId": "2219:258",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "frame-9",
+                                  "figmaNodeId": "2219:259",
+                                  "asset": {
+                                    "nodeId": "2219:259",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 14,
+                                    "height": 14
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "2026-05-19-10",
+                                  "figmaNodeId": "2219:261",
+                                  "text": "2026-05-19",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 14,
+                                    "fontWeight": 400,
+                                    "lineHeight": "16.94px",
+                                    "align": "left",
+                                    "color": "#00000099"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 5,
+                                "padding": {
+                                  "top": 3,
+                                  "right": 7,
+                                  "bottom": 3,
+                                  "left": 7
+                                },
+                                "align": "start"
+                              },
+                              "size": {
+                                "width": 113
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "justify": "space-between",
+                            "align": "start"
+                          },
+                          "size": {
+                            "width": 376
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 20,
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 24,
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 24,
+                  "right": 24,
+                  "bottom": 24,
+                  "left": 24
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 424
+              },
+              "background": {
+                "color": "#FFFFFF"
+              },
+              "border": {
+                "radius": 8,
+                "color": "#00000033",
+                "width": 1
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-107-1",
+              "figmaNodeId": "2219:266",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "casino-inspection-column-5",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "frame-46-2",
+                      "figmaNodeId": "2219:269",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "image-25-11",
+                          "figmaNodeId": "2219:270",
+                          "asset": {
+                            "nodeId": "2219:270",
+                            "kind": "image"
+                          },
+                          "size": {
+                            "width": 60,
+                            "height": 60
+                          }
+                        },
+                        {
+                          "type": "heading",
+                          "id": "betwin99-casino-12",
+                          "figmaNodeId": "2219:271",
+                          "text": "BetWin99 Casino",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 24,
+                            "fontWeight": 600,
+                            "lineHeight": "32px",
+                            "align": "left",
+                            "color": "#000000"
+                          },
+                          "level": 3
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "gap": 16,
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "no-office-found-a-visit-to-the-13",
+                      "figmaNodeId": "2219:272",
+                      "text": "No Office Found ➔ A Visit to the...",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": 500,
+                        "lineHeight": "26px",
+                        "align": "left",
+                        "color": "#000000"
+                      },
+                      "size": {
+                        "width": 376
+                      },
+                      "layout": {
+                        "margin": {
+                          "top": 18
+                        }
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "casino-inspection-column-4",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "group-100-1",
+                          "figmaNodeId": "2219:282",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "rectangle-32-14",
+                              "figmaNodeId": "2219:283",
+                              "asset": {
+                                "nodeId": "2219:283",
+                                "kind": "image"
+                              },
+                              "size": {
+                                "width": 376,
+                                "height": 200
+                              }
+                            },
+                            {
+                              "type": "button",
+                              "id": "danger-15",
+                              "figmaNodeId": "2219:284",
+                              "text": "Danger",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 14,
+                                "fontWeight": 600,
+                                "lineHeight": "16.94px",
+                                "align": "left",
+                                "color": "#FFFFFF"
+                              },
+                              "background": {
+                                "color": "#9B273A"
+                              },
+                              "border": {
+                                "radius": 2
+                              },
+                              "size": {
+                                "width": 64
+                              },
+                              "layout": {
+                                "padding": {
+                                  "top": 3,
+                                  "right": 7,
+                                  "bottom": 3,
+                                  "left": 7
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "row",
+                          "id": "frame-63-2",
+                          "figmaNodeId": "2219:274",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "frame-62-2",
+                              "figmaNodeId": "2219:275",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "cyprus-flag-icon-1-16",
+                                  "figmaNodeId": "2219:276",
+                                  "asset": {
+                                    "nodeId": "2219:276",
+                                    "kind": "image"
+                                  },
+                                  "size": {
+                                    "width": 33,
+                                    "height": 22
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "cyprus-17",
+                                  "figmaNodeId": "2219:277",
+                                  "text": "Cyprus",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "align": "left",
+                                    "color": "#000000B3"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 12,
+                                "align": "start"
+                              },
+                              "size": {
+                                "width": 100
+                              }
+                            },
+                            {
+                              "type": "row",
+                              "id": "frame-24-2",
+                              "figmaNodeId": "2219:278",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "frame-18",
+                                  "figmaNodeId": "2219:279",
+                                  "asset": {
+                                    "nodeId": "2219:279",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 14,
+                                    "height": 14
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "2026-05-19-19",
+                                  "figmaNodeId": "2219:281",
+                                  "text": "2026-05-19",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 14,
+                                    "fontWeight": 400,
+                                    "lineHeight": "16.94px",
+                                    "align": "left",
+                                    "color": "#00000099"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 5,
+                                "padding": {
+                                  "top": 3,
+                                  "right": 7,
+                                  "bottom": 3,
+                                  "left": 7
+                                },
+                                "align": "start"
+                              },
+                              "size": {
+                                "width": 113
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "justify": "space-between",
+                            "align": "start"
+                          },
+                          "size": {
+                            "width": 376
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 20,
+                        "align": "start",
+                        "margin": {
+                          "top": 24
+                        }
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 24,
+                  "right": 24,
+                  "bottom": 24,
+                  "left": 24
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 424
+              },
+              "background": {
+                "color": "#FFFFFF"
+              },
+              "border": {
+                "radius": 8,
+                "color": "#0000001A",
+                "width": 1
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-104-1",
+              "figmaNodeId": "2219:286",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "casino-inspection-column-7",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "frame-46-3",
+                      "figmaNodeId": "2219:289",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "images-2-20",
+                          "figmaNodeId": "2219:290",
+                          "asset": {
+                            "nodeId": "2219:290",
+                            "kind": "image"
+                          },
+                          "size": {
+                            "width": 60,
+                            "height": 60
+                          }
+                        },
+                        {
+                          "type": "heading",
+                          "id": "royalslots-fx-21",
+                          "figmaNodeId": "2219:291",
+                          "text": "RoyalSlots FX",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 24,
+                            "fontWeight": 600,
+                            "lineHeight": "32px",
+                            "align": "left",
+                            "color": "#000000"
+                          },
+                          "level": 3
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "gap": 16,
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "royalslots-hq-in-curacao-no-offic-22",
+                      "figmaNodeId": "2219:292",
+                      "text": "RoyalSlots HQ in Curacao -- No offic...",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": 500,
+                        "lineHeight": "26px",
+                        "align": "left",
+                        "color": "#000000"
+                      },
+                      "size": {
+                        "width": 376
+                      },
+                      "layout": {
+                        "margin": {
+                          "top": 18
+                        }
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "casino-inspection-column-6",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "group-101-1",
+                          "figmaNodeId": "2219:302",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "rectangle-32-23",
+                              "figmaNodeId": "2219:303",
+                              "asset": {
+                                "nodeId": "2219:303",
+                                "kind": "image"
+                              },
+                              "size": {
+                                "width": 376,
+                                "height": 200
+                              }
+                            },
+                            {
+                              "type": "button",
+                              "id": "danger-24",
+                              "figmaNodeId": "2219:304",
+                              "text": "Danger",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 14,
+                                "fontWeight": 600,
+                                "lineHeight": "16.94px",
+                                "align": "left",
+                                "color": "#FFFFFF"
+                              },
+                              "background": {
+                                "color": "#9B273A"
+                              },
+                              "border": {
+                                "radius": 2
+                              },
+                              "size": {
+                                "width": 64
+                              },
+                              "layout": {
+                                "padding": {
+                                  "top": 3,
+                                  "right": 7,
+                                  "bottom": 3,
+                                  "left": 7
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "row",
+                          "id": "frame-63-3",
+                          "figmaNodeId": "2219:294",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "frame-62-3",
+                              "figmaNodeId": "2219:295",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "360-f-1807511741-jigkdouqjbaxo5du768oaox-25",
+                                  "figmaNodeId": "2219:296",
+                                  "asset": {
+                                    "nodeId": "2219:296",
+                                    "kind": "image"
+                                  },
+                                  "size": {
+                                    "width": 33,
+                                    "height": 22
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "curacao-26",
+                                  "figmaNodeId": "2219:297",
+                                  "text": "Curacao",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "align": "left",
+                                    "color": "#000000B3"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 12,
+                                "align": "start"
+                              },
+                              "size": {
+                                "width": 110
+                              }
+                            },
+                            {
+                              "type": "row",
+                              "id": "frame-24-3",
+                              "figmaNodeId": "2219:298",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "frame-27",
+                                  "figmaNodeId": "2219:299",
+                                  "asset": {
+                                    "nodeId": "2219:299",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 14,
+                                    "height": 14
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "2026-05-19-28",
+                                  "figmaNodeId": "2219:301",
+                                  "text": "2026-05-19",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 14,
+                                    "fontWeight": 400,
+                                    "lineHeight": "16.94px",
+                                    "align": "left",
+                                    "color": "#00000099"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 5,
+                                "padding": {
+                                  "top": 3,
+                                  "right": 7,
+                                  "bottom": 3,
+                                  "left": 7
+                                },
+                                "align": "start"
+                              },
+                              "size": {
+                                "width": 113
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "justify": "space-between",
+                            "align": "start"
+                          },
+                          "size": {
+                            "width": 376
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 20,
+                        "align": "start",
+                        "margin": {
+                          "top": 24
+                        }
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 24,
+                  "right": 24,
+                  "bottom": 24,
+                  "left": 24
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 424
+              },
+              "background": {
+                "color": "#FFFFFF"
+              },
+              "border": {
+                "radius": 8,
+                "color": "#0000001A",
+                "width": 1
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 24,
+            "align": "start"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section id semantics",
+    "section-part-3: dropped unknown field \"_uncertain\"",
+    "layout details omitted",
+    "boxShadow details for overlapping group",
+    "Exact border style for group-103 not specified",
+    "strokeWeight handling converted to notes",
+    "stitch: 3 node(s) added from Figma data because the model's parts did not include them",
+    "stitch: only 13/16 Figma texts were covered by the model parts; section rebuilt from Figma data"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-8",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-58",
+          "figmaNodeId": "2214:270"
+        },
+        {
+          "type": "row",
+          "id": "frame-46",
+          "figmaNodeId": "2214:271",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 16,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "mummys-gold-1",
+              "figmaNodeId": "2214:272",
+              "asset": {
+                "nodeId": "2214:272",
+                "kind": "image"
+              },
+              "size": {
+                "width": 60,
+                "height": 60
+              }
+            },
+            {
+              "type": "text",
+              "id": "mummys-gold",
+              "figmaNodeId": "2214:273",
+              "text": "Mummys Gold",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "32px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

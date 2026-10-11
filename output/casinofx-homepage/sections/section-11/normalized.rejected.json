@@ -1,0 +1,105 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casinofx-homepage-scoped",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-73",
+          "figmaNodeId": "2222:187",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 14
+          },
+          "size": {
+            "width": 111,
+            "height": 126
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "cash-o-lot-1",
+              "figmaNodeId": "2222:188",
+              "asset": {
+                "nodeId": "2222:188",
+                "kind": "image"
+              },
+              "size": {
+                "width": 70,
+                "height": 70
+              },
+              "border": {
+                "radius": 35
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "cash-o-lot",
+              "figmaNodeId": "2222:190",
+              "text": "Cash o' Lot",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "19.36px",
+                "color": "#000000"
+              },
+              "size": {
+                "width": 111,
+                "height": 19
+              }
+            },
+            {
+              "type": "row",
+              "id": "match-row",
+              "figmaNodeId": "2222:191",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 4
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "frame-icon",
+                  "figmaNodeId": "2223:24",
+                  "asset": {
+                    "nodeId": "2223:24",
+                    "kind": "svg"
+                  },
+                  "size": {
+                    "width": 14,
+                    "height": 14
+                  }
+                },
+                {
+                  "type": "text-basic",
+                  "id": "200-match",
+                  "figmaNodeId": "2222:194",
+                  "text": "200% Match",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000073"
+                  },
+                  "size": {
+                    "width": 83,
+                    "height": 17
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "_uncertain",
+    ":",
+    []
+  ]
+}

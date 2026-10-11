@@ -1,0 +1,131 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-part-9",
+      "children": [
+        {
+          "type": "unsupported",
+          "id": "group-102",
+          "figmaNodeId": "2219:293",
+          "notes": [
+            "Group node without direct equivalent."
+          ]
+        },
+        {
+          "type": "row",
+          "id": "frame-63",
+          "figmaNodeId": "2219:294",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 175,
+            "justify": "space-between"
+          },
+          "size": {
+            "width": 376,
+            "height": 24
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-62",
+          "figmaNodeId": "2219:295",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 12,
+            "align": "center",
+            "justify": "center"
+          },
+          "size": {
+            "width": 110,
+            "height": 24
+          }
+        },
+        {
+          "type": "image",
+          "id": "image-360",
+          "figmaNodeId": "2219:296",
+          "asset": {
+            "nodeId": "2219:296",
+            "kind": "image"
+          },
+          "size": {
+            "width": 33,
+            "height": 22
+          }
+        },
+        {
+          "type": "text",
+          "id": "text-curacao",
+          "figmaNodeId": "2219:297",
+          "text": "Curacao",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 500,
+            "lineHeight": "24px",
+            "color": "#000000B3"
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-24",
+          "figmaNodeId": "2219:298",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 5,
+            "padding": {
+              "top": 3,
+              "right": 7,
+              "bottom": 3,
+              "left": 7
+            }
+          },
+          "background": {
+            "color": "#DDDDDD80"
+          },
+          "border": {
+            "radius": 2
+          },
+          "size": {
+            "width": 113,
+            "height": 23
+          }
+        },
+        {
+          "type": "icon",
+          "id": "icon-frame",
+          "figmaNodeId": "2219:299",
+          "asset": {
+            "nodeId": "2219:299",
+            "kind": "svg"
+          },
+          "size": {
+            "width": 14,
+            "height": 14
+          }
+        },
+        {
+          "type": "text",
+          "id": "text-date",
+          "figmaNodeId": "2219:301",
+          "text": "2026-05-19",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "lineHeight": "16.94px",
+            "color": "#00000099"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Any omitted layout or size properties not provided in the data."
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "asset": {
+                "kind": "svg",
+                "nodeId": "2214:106"
+              },
+              "figmaNodeId": "2214:106",
+              "id": "rank-1-shape",
+              "type": "icon"
+            },
+            {
+              "figmaNodeId": "2214:107",
+              "id": "rank-1-number",
+              "text": "1",
+              "type": "text-basic",
+              "typography": {
+                "align": "left",
+                "color": "#000000",
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "29.05px"
+              }
+            }
+          ],
+          "figmaNodeId": "2214:105",
+          "id": "group-rank-1",
+          "layout": {
+            "align": "start",
+            "direction": "column",
+            "display": "flex"
+          },
+          "size": {
+            "height": 57,
+            "width": 47
+          },
+          "type": "column"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "figmaNodeId": "2214:102",
+                  "id": "badge-verified-text",
+                  "text": "Verified",
+                  "type": "text",
+                  "typography": {
+                    "align": "left",
+                    "color": "#000000",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px"
+                  }
+                }
+              ],
+              "figmaNodeId": "2214:101",
+              "id": "badge-verified",
+              "layout": {
+                "align": "center",
+                "direction": "row",
+                "display": "flex",
+                "gap": 10,
+                "justify": "center",
+                "padding": {
+                  "bottom": 3,
+                  "left": 4,
+                  "right": 4,
+                  "top": 3
+                },
+                "wrap": false
+              },
+              "size": {
+                "height": 23,
+                "width": 59
+              },
+              "type": "column"
+            },
+            {
+              "children": [
+                {
+                  "figmaNodeId": "2214:104",
+                  "id": "badge-4-years-text",
+                  "text": "4+ Years",
+                  "type": "text",
+                  "typography": {
+                    "align": "left",
+                    "color": "#000000",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px"
+                  }
+                }
+              ],
+              "figmaNodeId": "2214:103",
+              "id": "badge-4-years",
+              "layout": {
+                "align": "center",
+                "direction": "row",
+                "display": "flex",
+                "gap": 10,
+                "justify": "center",
+                "padding": {
+                  "bottom": 3,
+                  "left": 4,
+                  "right": 4,
+                  "top": 3
+                },
+                "wrap": false
+              },
+              "size": {
+                "height": 23,
+                "width": 67
+              },
+              "type": "column"
+            }
+          ],
+          "figmaNodeId": "2214:100",
+          "id": "badge-row-1",
+          "layout": {
+            "align": "center",
+            "direction": "row",
+            "display": "flex",
+            "gap": 8,
+            "justify": "start",
+            "wrap": false
+          },
+          "size": {
+            "height": 23
+          },
+          "type": "row"
+        },
+        {
+          "figmaNodeId": "2214:108",
+          "id": "divider-1",
+          "layout": {
+            "display": "block"
+          },
+          "notes": [
+            "Horizontal separator line, stroke #0000001F, weight 1px, width 380px, height 0"
+          ],
+          "size": {
+            "height": 1,
+            "width": 380
+          },
+          "type": "spacer"
+        }
+      ],
+      "id": "casino-fx-part-4",
+      "type": "section"
+    }
+  ],
+  "type": "page"
+}

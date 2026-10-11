@@ -1,0 +1,60 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "group-82",
+      "figmaNodeId": "2222:171",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 0
+      },
+      "notes": [
+        "stroke not represented"
+      ]
+    },
+    {
+      "type": "column",
+      "id": "frame-68",
+      "figmaNodeId": "2222:172",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 10,
+        "padding": {
+          "top": 6,
+          "right": 10,
+          "bottom": 6,
+          "left": 10
+        },
+        "align": "center",
+        "justify": "center"
+      },
+      "background": {
+        "color": "#E0E0E0"
+      },
+      "notes": [
+        "stroke not represented"
+      ],
+      "children": [
+        {
+          "type": "text-basic",
+          "id": "text-5",
+          "figmaNodeId": "2222:173",
+          "text": "5",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 500,
+            "lineHeight": "16.94px",
+            "color": "#86909C"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "border radius cannot be represented due to non-uniform"
+  ]
+}

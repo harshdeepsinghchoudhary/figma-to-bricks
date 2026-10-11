@@ -1,0 +1,73 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "image",
+      "id": "parklane-casino-1",
+      "figmaNodeId": "2222:201",
+      "asset": {
+        "nodeId": "2222:201",
+        "kind": "image"
+      }
+    },
+    {
+      "type": "column",
+      "id": "parklane-container",
+      "figmaNodeId": "2222:202",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 6
+      },
+      "children": [
+        {
+          "type": "text",
+          "id": "parklane",
+          "figmaNodeId": "2222:203",
+          "text": "Parklane",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "lineHeight": "19.36px",
+            "color": "#000000"
+          }
+        },
+        {
+          "type": "row",
+          "id": "parklane-stats",
+          "figmaNodeId": "2222:204",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 4
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "frame-icon",
+              "figmaNodeId": "2223:36",
+              "asset": {
+                "nodeId": "2223:36",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "parklane-count",
+              "figmaNodeId": "2222:207",
+              "text": "4,229,947",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "16.94px",
+                "color": "#00000073"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

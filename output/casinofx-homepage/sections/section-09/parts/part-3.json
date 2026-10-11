@@ -1,0 +1,49 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-56",
+          "figmaNodeId": "2216:2",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 24
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-55",
+          "figmaNodeId": "2214:389",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 24,
+            "align": "center"
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-74",
+          "figmaNodeId": "2214:382",
+          "background": {
+            "color": "#F7F7F7"
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "text-amount-resolved",
+              "figmaNodeId": "2214:4",
+              "text": "Amount Resolved: $68,843,697"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

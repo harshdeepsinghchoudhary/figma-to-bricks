@@ -1,0 +1,133 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "row",
+          "id": "section-row-1",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-72-1",
+              "figmaNodeId": "2222:147",
+              "children": [
+                {
+                  "type": "image",
+                  "id": "goldenlady-casino-1",
+                  "figmaNodeId": "2222:148",
+                  "asset": {
+                    "nodeId": "2222:148",
+                    "kind": "image"
+                  },
+                  "size": {
+                    "width": 70,
+                    "height": 70
+                  },
+                  "border": {
+                    "radius": 2000
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "frame-72",
+                  "figmaNodeId": "2222:149",
+                  "size": {
+                    "width": 111,
+                    "height": 42
+                  },
+                  "children": [
+                    {
+                      "type": "text-basic",
+                      "id": "goldenlady",
+                      "figmaNodeId": "2222:150",
+                      "text": "GoldenLady",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "19.36px",
+                        "color": "#000000"
+                      },
+                      "size": {
+                        "width": 111,
+                        "height": 19
+                      }
+                    },
+                    {
+                      "type": "row",
+                      "id": "frame-71",
+                      "figmaNodeId": "2222:151",
+                      "size": {
+                        "width": 95,
+                        "height": 17
+                      },
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "icon-frame",
+                          "figmaNodeId": "2223:30",
+                          "asset": {
+                            "nodeId": "2223:30",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 14,
+                            "height": 14
+                          }
+                        },
+                        {
+                          "type": "text-basic",
+                          "id": "amount",
+                          "figmaNodeId": "2222:154",
+                          "text": "29,409,848",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 14,
+                            "fontWeight": 400,
+                            "lineHeight": "16.94px",
+                            "color": "#00000073"
+                          },
+                          "size": {
+                            "width": 77,
+                            "height": 17
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "id": "section-column-1",
+              "children": [
+                {
+                  "type": "unsupported",
+                  "id": "group-83",
+                  "figmaNodeId": "2222:169",
+                  "notes": [
+                    "Group 83 is a fixed-size group with no auto-layout; treated as unsupported."
+                  ]
+                },
+                {
+                  "type": "unsupported",
+                  "id": "rectangle-36",
+                  "figmaNodeId": "2222:170",
+                  "notes": [
+                    "Rectangle 36 is a background shape; treated as unsupported."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

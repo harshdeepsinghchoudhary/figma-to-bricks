@@ -1,0 +1,87 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "row",
+          "id": "row-1",
+          "layout": {
+            "direction": "row",
+            "gap": 48
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "rectangle-32",
+              "figmaNodeId": "2219:283",
+              "asset": {
+                "nodeId": "2219:283",
+                "kind": "image"
+              },
+              "size": {
+                "width": 376,
+                "height": 200
+              }
+            },
+            {
+              "type": "row",
+              "id": "inner-row-1",
+              "figmaNodeId": "2219:284",
+              "layout": {
+                "direction": "row",
+                "gap": 5,
+                "justify": "center",
+                "align": "center",
+                "padding": {
+                  "left": 7,
+                  "right": 7,
+                  "top": 3,
+                  "bottom": 3
+                }
+              },
+              "background": {
+                "color": "#9B273A"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "danger-text",
+                  "figmaNodeId": "2219:285",
+                  "text": "Danger",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 600,
+                    "lineHeight": "16.94px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "unsupported",
+          "id": "overlap-group",
+          "figmaNodeId": "2219:286",
+          "notes": [
+            "layers overlap; no auto-layout possible"
+          ],
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 8
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "margin/top for row-1 due to offCross",
+    "boxShadow details for overlapping group"
+  ]
+}

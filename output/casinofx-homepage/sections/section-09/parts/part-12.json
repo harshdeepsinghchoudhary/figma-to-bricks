@@ -1,0 +1,60 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "part-12",
+      "children": [
+        {
+          "type": "row",
+          "id": "frame-46",
+          "figmaNodeId": "2214:299",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 16,
+            "align": "center"
+          },
+          "size": {
+            "width": 225,
+            "height": 60
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "vegas-palms-colored-logo-1",
+              "figmaNodeId": "2214:300",
+              "asset": {
+                "nodeId": "2214:300",
+                "kind": "image"
+              },
+              "size": {
+                "width": 60,
+                "height": 60
+              }
+            },
+            {
+              "type": "text",
+              "id": "vegas-palms",
+              "figmaNodeId": "2214:301",
+              "text": "Vegas Palms",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "32px",
+                "color": "#000000",
+                "align": "left"
+              },
+              "size": {
+                "width": 149,
+                "height": 32
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

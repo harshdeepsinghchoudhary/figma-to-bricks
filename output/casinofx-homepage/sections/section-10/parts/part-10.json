@@ -1,0 +1,40 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "part-10-section",
+      "children": [
+        {
+          "type": "image",
+          "id": "rectangle-32",
+          "figmaNodeId": "2219:303",
+          "asset": {
+            "nodeId": "2219:303",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "button",
+          "id": "danger-button",
+          "figmaNodeId": "2219:304",
+          "text": "Danger",
+          "background": {
+            "color": "#9B273A"
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "16.94px",
+            "color": "#FFFFFF",
+            "align": "left"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout and size details for image and button are omitted"
+  ]
+}

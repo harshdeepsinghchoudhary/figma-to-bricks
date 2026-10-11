@@ -1,0 +1,72 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casino-fx-part-6",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-27",
+          "figmaNodeId": "2214:115",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 10
+          },
+          "size": {
+            "width": 134
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-26",
+          "figmaNodeId": "2214:116",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 2
+          },
+          "size": {
+            "width": 92
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "las-atlantis",
+              "figmaNodeId": "2214:117",
+              "text": "Las Atlantis",
+              "level": 1,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 22,
+                "fontWeight": 600,
+                "align": "left"
+              },
+              "size": {
+                "width": 145
+              }
+            },
+            {
+              "type": "heading",
+              "id": "9-7-score",
+              "figmaNodeId": "2214:118",
+              "text": "9.7 Score",
+              "level": 1,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "align": "left"
+              },
+              "size": {
+                "width": "100%",
+                "minHeight": 29
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

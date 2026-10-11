@@ -1,0 +1,114 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-57",
+          "figmaNodeId": "2214:260",
+          "children": [
+            {
+              "type": "column",
+              "id": "inner-column-57",
+              "layout": {
+                "direction": "column",
+                "gap": 17
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "text-1",
+                  "figmaNodeId": "2214:262",
+                  "text": "FortuneJack is a scam casino platform...",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": 500,
+                    "lineHeight": "26px",
+                    "color": "#000000"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "text-2",
+                  "figmaNodeId": "2214:263",
+                  "text": "FortuneJack is a fraudulent platform that has caused me significant losses. They blocked my account with no solid reasons.",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "lineHeight": "22px",
+                    "color": "#000000C2"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "id": "row-24",
+              "figmaNodeId": "2214:264",
+              "layout": {
+                "direction": "row",
+                "gap": 5,
+                "padding": {
+                  "top": 3,
+                  "right": 7,
+                  "bottom": 3,
+                  "left": 7
+                }
+              },
+              "background": {
+                "color": "#DDDDDD80"
+              },
+              "border": {
+                "radius": 2
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "image-265",
+                  "figmaNodeId": "2214:265",
+                  "asset": {
+                    "nodeId": "2214:265",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "date-text",
+                  "figmaNodeId": "2214:267",
+                  "text": "2026-05-19",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000099"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "id": "background-overlay",
+          "figmaNodeId": "2214:269",
+          "background": {
+            "color": "#F7F7F7"
+          },
+          "border": {
+            "radius": 8
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "size values omitted"
+  ]
+}

@@ -3,43 +3,25 @@
   "children": [
     {
       "type": "row",
-      "id": "language-selector",
+      "id": "frame-1261152818",
       "figmaNodeId": "8232:13",
-      "layout": {
-        "display": "flex",
-        "direction": "row",
-        "gap": 8,
-        "align": "center"
-      },
-      "size": {
-        "width": 62,
-        "height": 40
-      },
       "children": [
         {
           "type": "image",
-          "id": "flag",
+          "id": "frame-image",
           "figmaNodeId": "8232:14",
           "asset": {
             "nodeId": "8232:14",
             "kind": "image"
-          },
-          "size": {
-            "width": 40,
-            "height": 40
           }
         },
         {
           "type": "icon",
-          "id": "chevron-down",
+          "id": "frame-vector",
           "figmaNodeId": "8232:15",
           "asset": {
             "nodeId": "8232:15",
             "kind": "svg"
-          },
-          "size": {
-            "width": 14,
-            "height": 14
           }
         }
       ]

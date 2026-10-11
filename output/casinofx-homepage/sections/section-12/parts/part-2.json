@@ -1,0 +1,80 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-156",
+          "figmaNodeId": "2231:216"
+        },
+        {
+          "type": "image",
+          "id": "spin-casino-colored-logo-1",
+          "figmaNodeId": "2228:263",
+          "asset": {
+            "nodeId": "2228:263",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "unsupported",
+          "id": "group-142",
+          "figmaNodeId": "2227:127",
+          "notes": [
+            "Contains vector and text layers."
+          ]
+        },
+        {
+          "type": "column",
+          "id": "frame-104",
+          "figmaNodeId": "2226:12"
+        },
+        {
+          "type": "row",
+          "id": "frame-28",
+          "figmaNodeId": "2226:13"
+        },
+        {
+          "type": "image",
+          "id": "vector-2",
+          "figmaNodeId": "2227:125",
+          "asset": {
+            "nodeId": "2227:125",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "text-126",
+          "figmaNodeId": "2227:126",
+          "text": "1"
+        },
+        {
+          "type": "text",
+          "id": "text-10",
+          "figmaNodeId": "2226:10",
+          "text": "Spin"
+        },
+        {
+          "type": "text",
+          "id": "text-11",
+          "figmaNodeId": "2226:11",
+          "text": "🛑 94.2% Rigged"
+        },
+        {
+          "type": "text",
+          "id": "text-14",
+          "figmaNodeId": "2226:14",
+          "text": "Proof"
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Missing layout and size details for container nodes.",
+    "Layout: in the measured column, [2227:127, 2227:125, 2227:126] and [2228:263] are separate stacked items, so they must be SIBLING elements. [2228:263] must not be nested inside the element holding [2227:127, 2227:125, 2227:126]."
+  ]
+}

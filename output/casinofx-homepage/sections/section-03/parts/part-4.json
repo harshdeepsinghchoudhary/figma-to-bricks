@@ -1,0 +1,90 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "container",
+      "id": "group-119",
+      "figmaNodeId": "2222:835",
+      "children": [
+        {
+          "type": "container",
+          "id": "rectangle-27",
+          "figmaNodeId": "2214:358",
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 6
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-118",
+          "figmaNodeId": "2222:834",
+          "children": [
+            {
+              "type": "image",
+              "id": "riverbelle-500x500-dark",
+              "figmaNodeId": "2216:14",
+              "asset": {
+                "nodeId": "2216:14",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "row",
+              "id": "frame-51",
+              "figmaNodeId": "2214:371",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 10,
+                "align": "center",
+                "justify": "center",
+                "padding": {
+                  "left": 6,
+                  "right": 6,
+                  "top": 3,
+                  "bottom": 3
+                }
+              },
+              "background": {
+                "color": "#5B99E2"
+              },
+              "border": {
+                "radius": 6
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#FFFFFF"
+              },
+              "children": [
+                {
+                  "type": "text-basic",
+                  "id": "ad",
+                  "figmaNodeId": "2214:372",
+                  "text": "AD",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "lineHeight": "19.36px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "button radius uses single uniform value 6 (Figma radii [6,0,6,0])",
+    "group-118 column gap 3 from g object"
+  ]
+}

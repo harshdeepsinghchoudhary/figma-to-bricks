@@ -1,0 +1,64 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "container",
+      "id": "group-78",
+      "figmaNodeId": "2222:157",
+      "size": {
+        "width": 127,
+        "height": "150"
+      }
+    },
+    {
+      "type": "container",
+      "id": "mask-group",
+      "figmaNodeId": "2222:158",
+      "size": {
+        "width": 29,
+        "height": "29"
+      }
+    },
+    {
+      "type": "container",
+      "id": "frame-67",
+      "figmaNodeId": "2222:159",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 10,
+        "padding": {
+          "top": 6,
+          "right": 10,
+          "bottom": 6,
+          "left": 10
+        }
+      },
+      "size": {
+        "width": 29,
+        "height": 29
+      },
+      "background": {
+        "color": "#E0E0E0"
+      },
+      "border": {
+        "radius": 12
+      }
+    },
+    {
+      "type": "text-basic",
+      "id": "text-4",
+      "figmaNodeId": "2222:160",
+      "text": "4",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": 500,
+        "lineHeight": "16.94px",
+        "color": "#86909C",
+        "align": "center"
+      }
+    }
+  ],
+  "_uncertain": []
+}

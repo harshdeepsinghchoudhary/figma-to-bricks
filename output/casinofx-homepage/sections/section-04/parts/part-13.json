@@ -1,0 +1,78 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-13",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-33-1",
+          "figmaNodeId": "2214:162",
+          "children": [
+            {
+              "type": "image",
+              "id": "vector-1",
+              "figmaNodeId": "2214:163",
+              "asset": {
+                "nodeId": "2214:163",
+                "kind": "svg"
+              },
+              "size": {
+                "width": 47,
+                "height": 57
+              }
+            },
+            {
+              "type": "text",
+              "id": "text-4",
+              "figmaNodeId": "2214:164",
+              "text": "4",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "29.05px",
+                "color": "#000000"
+              },
+              "size": {
+                "width": 16,
+                "height": 29
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "frame-25-1",
+          "figmaNodeId": "2214:157",
+          "children": [
+            {
+              "type": "button",
+              "id": "text-verified",
+              "figmaNodeId": "2214:158",
+              "text": "Verified"
+            },
+            {
+              "type": "button",
+              "id": "text-4-years",
+              "figmaNodeId": "2214:160",
+              "text": "4+ Years"
+            }
+          ]
+        },
+        {
+          "type": "unsupported",
+          "id": "line-4",
+          "figmaNodeId": "2214:165",
+          "notes": [
+            "Horizontal line with stroke #0000001F; no direct mapping."
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Exact layout gaps for the top-level column grouping are omitted; spacing may need adjustment."
+  ]
+}

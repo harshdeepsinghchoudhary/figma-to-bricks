@@ -1,8 +1,8 @@
 [
   {
-    "id": "cardgh",
+    "id": "6xv23u",
     "name": "heading",
-    "parent": "h9e35n",
+    "parent": "5fy0ru",
     "children": [],
     "settings": {
       "text": "Jili Games: Play Seamlessly on Mobile Devices",
@@ -21,9 +21,9 @@
     }
   },
   {
-    "id": "mpo599",
+    "id": "1k44jo",
     "name": "text",
-    "parent": "t98ksz",
+    "parent": "3ddx8f",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.</p>",
@@ -41,9 +41,9 @@
     }
   },
   {
-    "id": "gly0ex",
+    "id": "bx72it",
     "name": "text",
-    "parent": "t98ksz",
+    "parent": "3ddx8f",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  is simply dummy text of the printing and typesetting industry.</p>",
@@ -61,12 +61,12 @@
     }
   },
   {
-    "id": "t98ksz",
+    "id": "3ddx8f",
     "name": "div",
-    "parent": "ipoj1y",
+    "parent": "wqmvgw",
     "children": [
-      "mpo599",
-      "gly0ex"
+      "1k44jo",
+      "bx72it"
     ],
     "settings": {
       "_display": "flex",
@@ -78,9 +78,9 @@
     }
   },
   {
-    "id": "wrnqpj",
+    "id": "k3asi8",
     "name": "image",
-    "parent": "ipoj1y",
+    "parent": "wqmvgw",
     "children": [],
     "settings": {
       "image": {
@@ -96,12 +96,12 @@
     "themeStyles": []
   },
   {
-    "id": "ipoj1y",
+    "id": "wqmvgw",
     "name": "div",
-    "parent": "h9e35n",
+    "parent": "5fy0ru",
     "children": [
-      "t98ksz",
-      "wrnqpj"
+      "3ddx8f",
+      "k3asi8"
     ],
     "settings": {
       "_display": "flex",
@@ -113,12 +113,12 @@
     }
   },
   {
-    "id": "h9e35n",
+    "id": "5fy0ru",
     "name": "div",
-    "parent": "h1u7nb",
+    "parent": "vdxjca",
     "children": [
-      "cardgh",
-      "ipoj1y"
+      "6xv23u",
+      "wqmvgw"
     ],
     "settings": {
       "_display": "flex",
@@ -132,9 +132,9 @@
     }
   },
   {
-    "id": "0b2hvw",
+    "id": "opmnuj",
     "name": "image",
-    "parent": "h1u7nb",
+    "parent": "vdxjca",
     "children": [],
     "settings": {
       "image": {
@@ -151,12 +151,12 @@
     "themeStyles": []
   },
   {
-    "id": "h1u7nb",
+    "id": "vdxjca",
     "name": "div",
-    "parent": "s0zv68",
+    "parent": "vfk6v9",
     "children": [
-      "h9e35n",
-      "0b2hvw"
+      "5fy0ru",
+      "opmnuj"
     ],
     "settings": {
       "_display": "flex",
@@ -172,36 +172,11 @@
     }
   },
   {
-    "id": "s0zv68",
-    "name": "div",
-    "parent": "wkbkth",
-    "children": [
-      "h1u7nb"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "90",
-        "right": "120",
-        "bottom": "90",
-        "left": "120"
-      },
-      "_width": "100%",
-      "_background": {
-        "color": {
-          "raw": "#101010"
-        }
-      }
-    }
-  },
-  {
-    "id": "wkbkth",
+    "id": "vfk6v9",
     "name": "container",
-    "parent": "zi98j1",
+    "parent": "2a0sb9",
     "children": [
-      "s0zv68"
+      "vdxjca"
     ],
     "settings": {
       "_display": "flex",
@@ -212,21 +187,31 @@
     }
   },
   {
-    "id": "zi98j1",
+    "id": "2a0sb9",
     "name": "section",
     "parent": 0,
     "children": [
-      "wkbkth"
+      "vfk6v9"
     ],
     "settings": {
       "_padding": {
+        "top": "90",
         "right": "16",
+        "bottom": "90",
         "left": "16"
       },
       "_background": {
         "color": {
           "raw": "#101010"
         }
+      },
+      "_padding:tablet_portrait": {
+        "top": "45",
+        "bottom": "45"
+      },
+      "_padding:mobile_landscape": {
+        "top": "45",
+        "bottom": "45"
       }
     }
   }

@@ -1,0 +1,151 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-90",
+          "figmaNodeId": "2223:44",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 24,
+            "align": "stretch",
+            "justify": "start"
+          },
+          "size": {
+            "width": 966,
+            "height": 470
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-86",
+          "figmaNodeId": "2223:39",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 20,
+            "align": "stretch",
+            "justify": "start"
+          },
+          "size": {
+            "width": 966,
+            "height": 223
+          }
+        },
+        {
+          "type": "text-basic",
+          "id": "monthly-active-rankings",
+          "figmaNodeId": "2222:56",
+          "text": "Monthly Active Rankings",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 24,
+            "fontWeight": 500,
+            "lineHeight": "29.05px",
+            "color": "#000000"
+          },
+          "size": {
+            "width": 966,
+            "height": 29
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-84",
+          "figmaNodeId": "2223:7",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 20,
+            "align": "center",
+            "justify": "start"
+          },
+          "size": {
+            "width": 966,
+            "height": 174
+          }
+        },
+        {
+          "type": "block",
+          "id": "2222-59",
+          "figmaNodeId": "2222:59",
+          "size": {
+            "width": 144,
+            "height": 174
+          },
+          "border": {
+            "radius": 12
+          },
+          "background": {
+            "color": "#F7F7F7"
+          }
+        },
+        {
+          "type": "container",
+          "id": "2222-58",
+          "figmaNodeId": "2222:58",
+          "size": {
+            "width": 144,
+            "height": 174
+          }
+        },
+        {
+          "type": "container",
+          "id": "2222-60",
+          "figmaNodeId": "2222:60",
+          "size": {
+            "width": 127,
+            "height": 150
+          }
+        },
+        {
+          "type": "column",
+          "id": "2222-61",
+          "figmaNodeId": "2222:61",
+          "size": {
+            "width": 29,
+            "height": 29
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "2222-62",
+              "figmaNodeId": "2222:62",
+              "size": {
+                "width": 29,
+                "height": 29
+              },
+              "border": {
+                "radius": 12
+              },
+              "background": {
+                "color": "#FFCC66"
+              },
+              "children": [
+                {
+                  "type": "text-basic",
+                  "id": "2222-63",
+                  "figmaNodeId": "2222:63",
+                  "text": "1",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 500,
+                    "lineHeight": "16.94px",
+                    "color": "#000000"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

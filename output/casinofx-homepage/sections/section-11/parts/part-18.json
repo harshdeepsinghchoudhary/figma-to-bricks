@@ -1,0 +1,93 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "frame-73",
+      "figmaNodeId": "2222:104",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 14,
+        "align": "center"
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "sahara-sands",
+          "figmaNodeId": "2222:105",
+          "asset": {
+            "nodeId": "2222:105",
+            "kind": "image"
+          },
+          "responsive": {}
+        },
+        {
+          "type": "column",
+          "id": "frame-71",
+          "figmaNodeId": "2222:106",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 6,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "sahara-sands-text",
+              "figmaNodeId": "2222:107",
+              "text": "Sahara Sands",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "19.36px",
+                "color": "#000000"
+              }
+            },
+            {
+              "type": "row",
+              "id": "frame-70",
+              "figmaNodeId": "2222:108",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 4,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "frame-icon",
+                  "figmaNodeId": "2223:15",
+                  "asset": {
+                    "nodeId": "2223:15",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "match-text",
+                  "figmaNodeId": "2222:111",
+                  "text": "200% Match",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000073"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "frame-73: dropped unknown field \"unsupported\"",
+    "frame-73: dropped unknown field \"_uncertain\""
+  ]
+}

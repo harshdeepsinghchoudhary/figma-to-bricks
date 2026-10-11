@@ -1,0 +1,156 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "column",
+          "id": "casino-ad-card",
+          "figmaNodeId": "2222:839",
+          "size": {
+            "width": 200,
+            "height": 107
+          },
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 6
+          },
+          "notes": [
+            "Stroke #00000014 present on Figma Rectangle 29; schema border supports radius only.",
+            "inner 'Group 122' logo row: gap 5px; AD badge row measured offCross 68px from card top (margin-top: 68px)."
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 5
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "casino-logo",
+              "figmaNodeId": "2216:16",
+              "asset": {
+                "nodeId": "2216:16",
+                "kind": "image"
+              },
+              "size": {
+                "width": 119,
+                "height": 80
+              }
+            },
+            {
+              "type": "column",
+              "id": "ad-badge",
+              "figmaNodeId": "2214:375",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "align": "center",
+                "justify": "center",
+                "padding": {
+                  "top": 3,
+                  "bottom": 3,
+                  "left": 6,
+                  "right": 6
+                }
+              },
+              "size": {
+                "width": 35,
+                "height": 25
+              },
+              "background": {
+                "color": "#5B99E2"
+              },
+              "border": {
+                "radius": 6
+              },
+              "notes": [
+                "Rendered with margin-top-px relative to logo row top in source (ad-badge offCross 68px)."
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ad-label",
+                  "figmaNodeId": "2214:376",
+                  "text": "AD",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "lineHeight": "19.36px",
+                    "color": "#FFFFFF",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "main-content-area",
+          "size": {
+            "height": 365
+          },
+          "notes": [
+            "overlapping flag: children absolutely/overlappingly positioned; no auto-layout."
+          ],
+          "children": [
+            {
+              "type": "row",
+              "id": "frame-82",
+              "figmaNodeId": "2222:843",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 100,
+                "justify": "space-between",
+                "align": "center"
+              },
+              "size": {
+                "width": 1321
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-54",
+              "figmaNodeId": "2214:378",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 32
+              },
+              "size": {
+                "width": 772,
+                "height": 299
+              }
+            },
+            {
+              "type": "heading",
+              "id": "safety-heading",
+              "figmaNodeId": "2214:377",
+              "text": "Find Safest & Fully Regulated Online Casinos",
+              "level": 1,
+              "size": {
+                "width": 772,
+                "height": 116
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 48,
+                "fontWeight": 600,
+                "lineHeight": "58.09px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

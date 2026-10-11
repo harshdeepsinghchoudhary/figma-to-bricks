@@ -1,0 +1,104 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-45",
+          "figmaNodeId": "2214:331",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8,
+            "align": "stretch",
+            "justify": "start"
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "text-1",
+              "figmaNodeId": "2214:332",
+              "text": "SCAM ALERT!! STOLE MY DEPOSIT",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": 500,
+                "lineHeight": "26px",
+                "color": "#000000"
+              }
+            },
+            {
+              "type": "text",
+              "id": "text-2",
+              "figmaNodeId": "2214:333",
+              "text": "STOLE USD 5,000 from us! Live support agent only talks sweet but never processes any withdrawal requests. Avoid them!",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "22px",
+                "color": "#000000C2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "frame-24",
+          "figmaNodeId": "2214:334",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 5,
+            "align": "center",
+            "justify": "center",
+            "padding": {
+              "top": 3,
+              "right": 7,
+              "bottom": 3,
+              "left": 7
+            }
+          },
+          "background": {
+            "color": "#DDDDDD80"
+          },
+          "border": {
+            "radius": 2
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "icon-1",
+              "figmaNodeId": "2214:335",
+              "asset": {
+                "nodeId": "2214:335",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "text-3",
+              "figmaNodeId": "2214:337",
+              "text": "2026-05-19",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "16.94px",
+                "color": "#00000099"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section id generated",
+    "column and row layout numbers (padding, margins) omitted where not provided"
+  ]
+}

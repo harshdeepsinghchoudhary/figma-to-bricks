@@ -1,0 +1,101 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-casinofx-homepage-part-24",
+      "children": [
+        {
+          "type": "text",
+          "id": "warning-fake-license",
+          "figmaNodeId": "2214:224",
+          "text": "[Fake License] Warning: maxim88 using unverified PAGCOR badge.",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 24,
+            "fontWeight": 500,
+            "lineHeight": "32px",
+            "color": "#000000"
+          }
+        },
+        {
+          "type": "column",
+          "id": "compliance-info",
+          "figmaNodeId": "2214:225",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 16
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "compliance-message",
+              "figmaNodeId": "2214:226",
+              "text": "Our compliance team caught fake badge usage ...",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "22px",
+                "color": "#000000C2"
+              }
+            },
+            {
+              "type": "row",
+              "id": "date-badge",
+              "figmaNodeId": "2214:227",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 6,
+                "padding": {
+                  "top": 3,
+                  "right": 7,
+                  "bottom": 3,
+                  "left": 7
+                },
+                "align": "center",
+                "justify": "center"
+              },
+              "background": {
+                "color": "#DDDDDD80"
+              },
+              "border": {
+                "radius": 2
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "icon-frame",
+                  "figmaNodeId": "2214:228",
+                  "asset": {
+                    "nodeId": "2214:228",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "date-text",
+                  "figmaNodeId": "2214:230",
+                  "text": "2026-05-18",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000099"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section id generated",
+    "column and row layout exact sizing omitted"
+  ]
+}

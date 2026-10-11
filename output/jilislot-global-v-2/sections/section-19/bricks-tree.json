@@ -1,17 +1,13 @@
 [
   {
-    "id": "644uu3",
+    "id": "78w1qf",
     "name": "heading",
-    "parent": "fw66pm",
+    "parent": "ka1r0h",
     "children": [],
     "settings": {
       "text": "Conclusion",
       "tag": "h2",
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "0",
-      "_columnGap": "0",
-      "_justifyContent": "flex-start",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "48px",
@@ -22,26 +18,17 @@
           "raw": "#000000"
         },
         "text-align": "center"
-      },
-      "_background": {
-        "color": {
-          "raw": "#FFFFFF"
-        }
       }
     }
   },
   {
-    "id": "dbefp3",
+    "id": "wklhsn",
     "name": "text",
-    "parent": "fw66pm",
+    "parent": "ka1r0h",
     "children": [],
     "settings": {
       "text": "<p>Winning in Aviator takes more than luck. Use smart strategies, stay in control, and play with a clear plan. The key is to enjoy the game while making smart moves!</p>",
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "0",
-      "_columnGap": "0",
-      "_justifyContent": "flex-start",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "18px",
@@ -56,12 +43,12 @@
     }
   },
   {
-    "id": "fw66pm",
+    "id": "ka1r0h",
     "name": "div",
-    "parent": "f55hrz",
+    "parent": "osrr55",
     "children": [
-      "644uu3",
-      "dbefp3"
+      "78w1qf",
+      "wklhsn"
     ],
     "settings": {
       "_display": "flex",
@@ -73,9 +60,9 @@
     }
   },
   {
-    "id": "zhsm0d",
+    "id": "a6eocb",
     "name": "button",
-    "parent": "f55hrz",
+    "parent": "osrr55",
     "children": [],
     "settings": {
       "text": "Get Started",
@@ -112,12 +99,12 @@
     }
   },
   {
-    "id": "f55hrz",
+    "id": "osrr55",
     "name": "div",
-    "parent": "j52nmq",
+    "parent": "cgpuyj",
     "children": [
-      "fw66pm",
-      "zhsm0d"
+      "ka1r0h",
+      "a6eocb"
     ],
     "settings": {
       "_display": "flex",
@@ -130,11 +117,11 @@
     }
   },
   {
-    "id": "j52nmq",
+    "id": "cgpuyj",
     "name": "container",
-    "parent": "erei7j",
+    "parent": "ei8li7",
     "children": [
-      "f55hrz"
+      "osrr55"
     ],
     "settings": {
       "_display": "flex",
@@ -165,6 +152,9 @@
       "_overflow": "hidden",
       "_content::before": " ",
       "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
       "_background::before": {
         "image": {
           "id": null,
@@ -183,15 +173,15 @@
       "_right::before": "0",
       "_bottom::before": "0",
       "_left::before": "0",
-      "_cssCustom": "#brxe-j52nmq::before, #brxe-j52nmq::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-j52nmq > * {\n  position: relative;\n  z-index: 1;\n}"
+      "_cssCustom": "#brxe-cgpuyj::before, #brxe-cgpuyj::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-cgpuyj > * {\n  position: relative;\n  z-index: 1;\n}"
     }
   },
   {
-    "id": "erei7j",
+    "id": "ei8li7",
     "name": "section",
     "parent": 0,
     "children": [
-      "j52nmq"
+      "cgpuyj"
     ],
     "settings": {
       "_padding": {

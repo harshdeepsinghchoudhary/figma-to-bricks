@@ -1,0 +1,86 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "container",
+      "id": "casino-ad-card",
+      "figmaNodeId": "2222:831",
+      "background": {
+        "color": "#FFFFFF"
+      },
+      "border": {
+        "radius": 6
+      },
+      "notes": [
+        "Stroke #00000014 (not expressible in border object, which has no color property)"
+      ],
+      "children": [
+        {
+          "type": "section",
+          "id": "casino-ad-content",
+          "figmaNodeId": "2222:830",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 2,
+            "justify": "end"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "casino-logo",
+              "figmaNodeId": "2216:12",
+              "asset": {
+                "nodeId": "2216:12",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "container",
+              "id": "ad-badge",
+              "figmaNodeId": "2214:367",
+              "size": {
+                "width": 80
+              },
+              "background": {
+                "color": "#5B99E2"
+              },
+              "border": {
+                "radius": 6
+              },
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 10,
+                "align": "center",
+                "justify": "center",
+                "padding": {
+                  "top": 3,
+                  "bottom": 3,
+                  "left": 6,
+                  "right": 6
+                }
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ad-label",
+                  "figmaNodeId": "2214:368",
+                  "text": "AD",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "color": "#FFFFFF",
+                    "lineHeight": "19.36px",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2083 @@
+[
+  {
+    "id": "ub4vji",
+    "name": "heading",
+    "parent": "v8ytfw",
+    "children": [],
+    "settings": {
+      "text": "Scam Alerts &amp; Cases",
+      "tag": "h2",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "32px",
+        "font-weight": "600",
+        "line-height": "38.73px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "kzps55",
+    "name": "button",
+    "parent": "cfb2ft",
+    "children": [],
+    "settings": {
+      "text": "Unable to Withdraw",
+      "_padding": {
+        "top": "8",
+        "right": "10",
+        "bottom": "8",
+        "left": "10"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "600",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFD733"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "bnp3xj",
+    "name": "button",
+    "parent": "cfb2ft",
+    "children": [],
+    "settings": {
+      "text": "Fake License",
+      "_padding": {
+        "top": "8",
+        "right": "10",
+        "bottom": "8",
+        "left": "10"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "600",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFD73329"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "bjec8f",
+    "name": "button",
+    "parent": "cfb2ft",
+    "children": [],
+    "settings": {
+      "text": "Scam",
+      "_padding": {
+        "top": "8",
+        "right": "10",
+        "bottom": "8",
+        "left": "10"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "600",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFD73329"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "gsclrj",
+    "name": "button",
+    "parent": "cfb2ft",
+    "children": [],
+    "settings": {
+      "text": "Others",
+      "_padding": {
+        "top": "8",
+        "right": "10",
+        "bottom": "8",
+        "left": "10"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "600",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFD73329"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "cfb2ft",
+    "name": "div",
+    "parent": "rhta81",
+    "children": [
+      "kzps55",
+      "bnp3xj",
+      "bjec8f",
+      "gsclrj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "18",
+      "_columnGap": "18",
+      "_alignItems": "flex-start",
+      "_widthMax": "530px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "si6sya",
+    "name": "image",
+    "parent": "856av8",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-18-2214_347.png",
+        "url": "../../assets/image-18-2214_347.png"
+      },
+      "_width": "100%",
+      "_widthMax": "23px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "856av8",
+    "name": "div",
+    "parent": "1lzx4r",
+    "children": [
+      "si6sya"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "9",
+        "right": "8",
+        "bottom": "8",
+        "left": "9"
+      },
+      "_width": "100%",
+      "_widthMax": "40px",
+      "_background": {
+        "color": {
+          "raw": "#DDDDDD"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "sj6xiv",
+    "name": "text",
+    "parent": "1lzx4r",
+    "children": [],
+    "settings": {
+      "text": "<p>Amount Resolved: $68,843,697</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "400",
+        "line-height": "22px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "1lzx4r",
+    "name": "div",
+    "parent": "h39ugo",
+    "children": [
+      "856av8",
+      "sj6xiv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "h39ugo",
+    "name": "div",
+    "parent": "q8xr0u",
+    "children": [
+      "1lzx4r"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "10",
+        "right": "56",
+        "bottom": "10",
+        "left": "10"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F7F7F7"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      }
+    }
+  },
+  {
+    "id": "srdymb",
+    "name": "image",
+    "parent": "wmob8u",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-17-2214_351.png",
+        "url": "../../assets/image-17-2214_351.png"
+      },
+      "_width": "100%",
+      "_widthMax": "24px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "wmob8u",
+    "name": "div",
+    "parent": "y7rsw7",
+    "children": [
+      "srdymb"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "8",
+        "right": "8",
+        "bottom": "8",
+        "left": "8"
+      },
+      "_width": "100%",
+      "_widthMax": "40px",
+      "_background": {
+        "color": {
+          "raw": "#DDDDDD"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "qxq9fl",
+    "name": "text",
+    "parent": "y7rsw7",
+    "children": [],
+    "settings": {
+      "text": "<p>Resolved Cases: 15,427</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "400",
+        "line-height": "22px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "y7rsw7",
+    "name": "div",
+    "parent": "q94p0f",
+    "children": [
+      "wmob8u",
+      "qxq9fl"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "q94p0f",
+    "name": "div",
+    "parent": "q8xr0u",
+    "children": [
+      "y7rsw7"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "10",
+        "right": "131",
+        "bottom": "10",
+        "left": "10"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F7F7F7"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "40"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20"
+      }
+    }
+  },
+  {
+    "id": "cnwclr",
+    "name": "image",
+    "parent": "wu94p0",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-15-2214_342.png",
+        "url": "../../assets/image-15-2214_342.png"
+      },
+      "_width": "100%",
+      "_widthMax": "20px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "e5v6g7",
+    "name": "text",
+    "parent": "wu94p0",
+    "children": [],
+    "settings": {
+      "text": "<p>Exposure</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "600",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "wu94p0",
+    "name": "div",
+    "parent": "q8xr0u",
+    "children": [
+      "cnwclr",
+      "e5v6g7"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "17",
+        "right": "156",
+        "bottom": "17",
+        "left": "156"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFD733"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "6px",
+          "right": "6px",
+          "bottom": "6px",
+          "left": "6px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "40"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20"
+      }
+    }
+  },
+  {
+    "id": "zdik1y",
+    "name": "image",
+    "parent": "u6jaqf",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/europalace-colored-logo-1-2214_314.png",
+        "url": "../../assets/europalace-colored-logo-1-2214_314.png"
+      },
+      "_width": "100%",
+      "_widthMax": "60px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "0c4h3x",
+    "name": "heading",
+    "parent": "u6jaqf",
+    "children": [],
+    "settings": {
+      "text": "Euro Palace",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "u6jaqf",
+    "name": "div",
+    "parent": "sbvgkj",
+    "children": [
+      "zdik1y",
+      "0c4h3x"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "center",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "vc6wsg",
+    "name": "heading",
+    "parent": "e8voxh",
+    "children": [],
+    "settings": {
+      "text": "Warning for players about delayed payout...",
+      "tag": "h4",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "jr1tij",
+    "name": "text",
+    "parent": "e8voxh",
+    "children": [],
+    "settings": {
+      "text": "<p>Warning for players about my experience with Unibet. I requested a withdrawal after winning, but support keeps delaying...</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "22px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000C2"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "e8voxh",
+    "name": "div",
+    "parent": "lt3ptu",
+    "children": [
+      "vc6wsg",
+      "jr1tij"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "khc2r6",
+    "name": "icon",
+    "parent": "o472cf",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-2214_204.svg",
+          "url": "../../assets/frame-2214_204.svg"
+        },
+        "height": "14"
+      },
+      "_widthMax": "14px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "4hgjyd",
+    "name": "text",
+    "parent": "o472cf",
+    "children": [],
+    "settings": {
+      "text": "<p>2026-05-19</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "14px",
+        "font-weight": "400",
+        "line-height": "16.94px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#00000099"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "o472cf",
+    "name": "div",
+    "parent": "lt3ptu",
+    "children": [
+      "khc2r6",
+      "4hgjyd"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "5",
+      "_columnGap": "5",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "3",
+        "right": "7",
+        "bottom": "3",
+        "left": "7"
+      },
+      "_background": {
+        "color": {
+          "raw": "#DDDDDD80"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "2px",
+          "right": "2px",
+          "bottom": "2px",
+          "left": "2px"
+        }
+      }
+    }
+  },
+  {
+    "id": "lt3ptu",
+    "name": "div",
+    "parent": "sbvgkj",
+    "children": [
+      "e8voxh",
+      "o472cf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "17",
+      "_columnGap": "17",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sbvgkj",
+    "name": "div",
+    "parent": "q8xr0u",
+    "children": [
+      "u6jaqf",
+      "lt3ptu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "24",
+        "right": "55",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F7F7F7"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      }
+    }
+  },
+  {
+    "id": "ik0yg0",
+    "name": "image",
+    "parent": "wj7kzb",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/ruby-fortune-1-2214_258.png",
+        "url": "../../assets/ruby-fortune-1-2214_258.png"
+      },
+      "_width": "100%",
+      "_widthMax": "60px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "p7tkb3",
+    "name": "heading",
+    "parent": "wj7kzb",
+    "children": [],
+    "settings": {
+      "text": "Ruby Fortune",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "wj7kzb",
+    "name": "div",
+    "parent": "sje8e8",
+    "children": [
+      "ik0yg0",
+      "p7tkb3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "center",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "6s7x2o",
+    "name": "text",
+    "parent": "ebqjwy",
+    "children": [],
+    "settings": {
+      "text": "<p>FortuneJack is a scam casino platform...</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "fb0qqs",
+    "name": "text",
+    "parent": "ebqjwy",
+    "children": [],
+    "settings": {
+      "text": "<p>FortuneJack is a fraudulent platform that has caused me significant losses. They blocked my account with no solid reasons.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "22px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000C2"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "ebqjwy",
+    "name": "div",
+    "parent": "pu66gf",
+    "children": [
+      "6s7x2o",
+      "fb0qqs"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "3fcoya",
+    "name": "icon",
+    "parent": "7ybw4d",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-2214_204.svg",
+          "url": "../../assets/frame-2214_204.svg"
+        },
+        "height": "14"
+      },
+      "_widthMax": "14px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "d0oii6",
+    "name": "text",
+    "parent": "7ybw4d",
+    "children": [],
+    "settings": {
+      "text": "<p>2026-05-19</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "14px",
+        "font-weight": "400",
+        "line-height": "16.94px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#00000099"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "7ybw4d",
+    "name": "div",
+    "parent": "pu66gf",
+    "children": [
+      "3fcoya",
+      "d0oii6"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "5",
+      "_columnGap": "5",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "3",
+        "right": "7",
+        "bottom": "3",
+        "left": "7"
+      },
+      "_background": {
+        "color": {
+          "raw": "#DDDDDD80"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "2px",
+          "right": "2px",
+          "bottom": "2px",
+          "left": "2px"
+        }
+      }
+    }
+  },
+  {
+    "id": "pu66gf",
+    "name": "div",
+    "parent": "sje8e8",
+    "children": [
+      "ebqjwy",
+      "7ybw4d"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "17",
+      "_columnGap": "17",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sje8e8",
+    "name": "div",
+    "parent": "q8xr0u",
+    "children": [
+      "wj7kzb",
+      "pu66gf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "24",
+        "right": "55",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F7F7F7"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      }
+    }
+  },
+  {
+    "id": "0dwp0k",
+    "name": "image",
+    "parent": "rhjo42",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/platinum-play-casino-1-2214_286.png",
+        "url": "../../assets/platinum-play-casino-1-2214_286.png"
+      },
+      "_width": "100%",
+      "_widthMax": "60px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "yh8735",
+    "name": "heading",
+    "parent": "rhjo42",
+    "children": [],
+    "settings": {
+      "text": "Platinum Play",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "rhjo42",
+    "name": "div",
+    "parent": "r4546r",
+    "children": [
+      "0dwp0k",
+      "yh8735"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "center",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "0qlj5j",
+    "name": "heading",
+    "parent": "c5npgs",
+    "children": [],
+    "settings": {
+      "text": "Spin Palace scammed account 49****, with $9,410.",
+      "tag": "h4",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "gd4sk5",
+    "name": "text",
+    "parent": "c5npgs",
+    "children": [],
+    "settings": {
+      "text": "<p>Account: 49**** | Total Loss: $9,410 USD. Spin Palace Casino has illegally withheld funds and manipulated my game balance.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "22px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000C2"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "c5npgs",
+    "name": "div",
+    "parent": "9ai6ts",
+    "children": [
+      "0qlj5j",
+      "gd4sk5"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "0bjh1a",
+    "name": "icon",
+    "parent": "23liyv",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-2214_204.svg",
+          "url": "../../assets/frame-2214_204.svg"
+        },
+        "height": "14"
+      },
+      "_widthMax": "14px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "8ms9dy",
+    "name": "text",
+    "parent": "23liyv",
+    "children": [],
+    "settings": {
+      "text": "<p>2026-05-19</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "14px",
+        "font-weight": "400",
+        "line-height": "16.94px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#00000099"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "23liyv",
+    "name": "div",
+    "parent": "9ai6ts",
+    "children": [
+      "0bjh1a",
+      "8ms9dy"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "5",
+      "_columnGap": "5",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "3",
+        "right": "7",
+        "bottom": "3",
+        "left": "7"
+      },
+      "_background": {
+        "color": {
+          "raw": "#DDDDDD80"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "2px",
+          "right": "2px",
+          "bottom": "2px",
+          "left": "2px"
+        }
+      }
+    }
+  },
+  {
+    "id": "9ai6ts",
+    "name": "div",
+    "parent": "r4546r",
+    "children": [
+      "c5npgs",
+      "23liyv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "17",
+      "_columnGap": "17",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "r4546r",
+    "name": "div",
+    "parent": "q8xr0u",
+    "children": [
+      "rhjo42",
+      "9ai6ts"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "24",
+        "right": "55",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F7F7F7"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      }
+    }
+  },
+  {
+    "id": "zlf31j",
+    "name": "image",
+    "parent": "sm3z5w",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/jackpot-city-23-12-2021-1-2214_328.png",
+        "url": "../../assets/jackpot-city-23-12-2021-1-2214_328.png"
+      },
+      "_width": "100%",
+      "_widthMax": "60px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "kakxar",
+    "name": "heading",
+    "parent": "sm3z5w",
+    "children": [],
+    "settings": {
+      "text": "Jackpot City",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "sm3z5w",
+    "name": "div",
+    "parent": "td0rbz",
+    "children": [
+      "zlf31j",
+      "kakxar"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "center",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "gbv0rv",
+    "name": "heading",
+    "parent": "dkewf0",
+    "children": [],
+    "settings": {
+      "text": "SCAM ALERT!! STOLE MY DEPOSIT",
+      "tag": "h4",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "3zry1v",
+    "name": "text",
+    "parent": "dkewf0",
+    "children": [],
+    "settings": {
+      "text": "<p>STOLE USD 5,000 from us! Live support agent only talks sweet but never processes any withdrawal requests. Avoid them!</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "22px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000C2"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "dkewf0",
+    "name": "div",
+    "parent": "ghf800",
+    "children": [
+      "gbv0rv",
+      "3zry1v"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "6g8645",
+    "name": "icon",
+    "parent": "8r9hcs",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-2214_204.svg",
+          "url": "../../assets/frame-2214_204.svg"
+        },
+        "height": "14"
+      },
+      "_widthMax": "14px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "z5jhzi",
+    "name": "text",
+    "parent": "8r9hcs",
+    "children": [],
+    "settings": {
+      "text": "<p>2026-05-19</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "14px",
+        "font-weight": "400",
+        "line-height": "16.94px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#00000099"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "8r9hcs",
+    "name": "div",
+    "parent": "ghf800",
+    "children": [
+      "6g8645",
+      "z5jhzi"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "5",
+      "_columnGap": "5",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "3",
+        "right": "7",
+        "bottom": "3",
+        "left": "7"
+      },
+      "_background": {
+        "color": {
+          "raw": "#DDDDDD80"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "2px",
+          "right": "2px",
+          "bottom": "2px",
+          "left": "2px"
+        }
+      }
+    }
+  },
+  {
+    "id": "ghf800",
+    "name": "div",
+    "parent": "td0rbz",
+    "children": [
+      "dkewf0",
+      "8r9hcs"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "43",
+      "_columnGap": "43",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "td0rbz",
+    "name": "div",
+    "parent": "q8xr0u",
+    "children": [
+      "sm3z5w",
+      "ghf800"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "24",
+        "right": "55",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F7F7F7"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      }
+    }
+  },
+  {
+    "id": "hb3vd7",
+    "name": "image",
+    "parent": "3rooem",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/mummys-gold-1-2214_272.png",
+        "url": "../../assets/mummys-gold-1-2214_272.png"
+      },
+      "_width": "100%",
+      "_widthMax": "60px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "4pywgr",
+    "name": "heading",
+    "parent": "3rooem",
+    "children": [],
+    "settings": {
+      "text": "Mummys Gold",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "3rooem",
+    "name": "div",
+    "parent": "sz32jk",
+    "children": [
+      "hb3vd7",
+      "4pywgr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "center",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "hgvnc9",
+    "name": "heading",
+    "parent": "yhycjt",
+    "children": [],
+    "settings": {
+      "text": "Illegal deduction of fresh deposit by 7 Sultans",
+      "tag": "h4",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "zpz5iz",
+    "name": "text",
+    "parent": "yhycjt",
+    "children": [],
+    "settings": {
+      "text": "<p>I deposited $1,200 via crypto. The transaction was successful on blockchain but the casino group refuses to credit it.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "22px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000C2"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "yhycjt",
+    "name": "div",
+    "parent": "0qrxgf",
+    "children": [
+      "hgvnc9",
+      "zpz5iz"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "nap1s1",
+    "name": "icon",
+    "parent": "to6yak",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-2214_204.svg",
+          "url": "../../assets/frame-2214_204.svg"
+        },
+        "height": "14"
+      },
+      "_widthMax": "14px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "hgznj7",
+    "name": "text",
+    "parent": "to6yak",
+    "children": [],
+    "settings": {
+      "text": "<p>2026-05-19</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "14px",
+        "font-weight": "400",
+        "line-height": "16.94px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#00000099"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "to6yak",
+    "name": "div",
+    "parent": "0qrxgf",
+    "children": [
+      "nap1s1",
+      "hgznj7"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "5",
+      "_columnGap": "5",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "3",
+        "right": "7",
+        "bottom": "3",
+        "left": "7"
+      },
+      "_background": {
+        "color": {
+          "raw": "#DDDDDD80"
+        }
+      }
+    }
+  },
+  {
+    "id": "0qrxgf",
+    "name": "div",
+    "parent": "sz32jk",
+    "children": [
+      "yhycjt",
+      "to6yak"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "17",
+      "_columnGap": "17",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sz32jk",
+    "name": "div",
+    "parent": "q8xr0u",
+    "children": [
+      "3rooem",
+      "0qrxgf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "24",
+        "right": "52",
+        "bottom": "24",
+        "left": "27"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F7F7F7"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      }
+    }
+  },
+  {
+    "id": "lbn12a",
+    "name": "image",
+    "parent": "mb97ub",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/vegas-palms-colored-logo-1-2214_300.png",
+        "url": "../../assets/vegas-palms-colored-logo-1-2214_300.png"
+      },
+      "_width": "100%",
+      "_widthMax": "60px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "o90p67",
+    "name": "heading",
+    "parent": "mb97ub",
+    "children": [],
+    "settings": {
+      "text": "Vegas Palms",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "mb97ub",
+    "name": "div",
+    "parent": "16n8ug",
+    "children": [
+      "lbn12a",
+      "o90p67"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "center",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "nnb6hc",
+    "name": "heading",
+    "parent": "v2smrv",
+    "children": [],
+    "settings": {
+      "text": "Refuse withdrawal and blocked my access",
+      "tag": "h4",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "26px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "pmg86c",
+    "name": "text",
+    "parent": "v2smrv",
+    "children": [],
+    "settings": {
+      "text": "<p>I created an account with this casino and made a deposit. Initially, my games went well, but when I tried to withdraw my $3,500...</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "22px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000C2"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "v2smrv",
+    "name": "div",
+    "parent": "xgqxy5",
+    "children": [
+      "nnb6hc",
+      "pmg86c"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "c87tte",
+    "name": "icon",
+    "parent": "y03u2z",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-2214_204.svg",
+          "url": "../../assets/frame-2214_204.svg"
+        },
+        "height": "14"
+      },
+      "_widthMax": "14px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "c3xqqf",
+    "name": "text",
+    "parent": "y03u2z",
+    "children": [],
+    "settings": {
+      "text": "<p>2026-05-19</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "14px",
+        "font-weight": "400",
+        "line-height": "16.94px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#00000099"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "y03u2z",
+    "name": "div",
+    "parent": "xgqxy5",
+    "children": [
+      "c87tte",
+      "c3xqqf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "5",
+      "_columnGap": "5",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "3",
+        "right": "7",
+        "bottom": "3",
+        "left": "7"
+      },
+      "_background": {
+        "color": {
+          "raw": "#DDDDDD80"
+        }
+      }
+    }
+  },
+  {
+    "id": "xgqxy5",
+    "name": "div",
+    "parent": "16n8ug",
+    "children": [
+      "v2smrv",
+      "y03u2z"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "17",
+      "_columnGap": "17",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "16n8ug",
+    "name": "div",
+    "parent": "q8xr0u",
+    "children": [
+      "mb97ub",
+      "xgqxy5"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "24",
+        "right": "52",
+        "bottom": "24",
+        "left": "27"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F7F7F7"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        }
+      }
+    }
+  },
+  {
+    "id": "q8xr0u",
+    "name": "div",
+    "parent": "rhta81",
+    "children": [
+      "h39ugo",
+      "q94p0f",
+      "wu94p0",
+      "sbvgkj",
+      "sje8e8",
+      "r4546r",
+      "td0rbz",
+      "sz32jk",
+      "16n8ug"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(3, 1fr)",
+      "_gridGap": "24",
+      "_alignItemsGrid": "stretch",
+      "_width": "100%",
+      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
+      "_gridGap:tablet_portrait": "24",
+      "_gridTemplateColumns:mobile_portrait": "1fr"
+    }
+  },
+  {
+    "id": "rhta81",
+    "name": "div",
+    "parent": "v8ytfw",
+    "children": [
+      "cfb2ft",
+      "q8xr0u"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "32",
+      "_columnGap": "32",
+      "_alignItems": "center",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "v8ytfw",
+    "name": "div",
+    "parent": "80k7oz",
+    "children": [
+      "ub4vji",
+      "rhta81"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "31",
+      "_columnGap": "31",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "80k7oz",
+    "name": "container",
+    "parent": "15bmcd",
+    "children": [
+      "v8ytfw"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "15bmcd",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "80k7oz"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

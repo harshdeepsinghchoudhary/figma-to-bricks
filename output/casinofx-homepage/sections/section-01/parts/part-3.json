@@ -1,0 +1,106 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-5",
+          "figmaNodeId": "2214:42",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 10,
+            "padding": {
+              "top": 12,
+              "right": 12,
+              "bottom": 12,
+              "left": 12
+            }
+          },
+          "size": {
+            "width": 123,
+            "height": 43
+          },
+          "background": {
+            "color": "#FFD733"
+          },
+          "border": {
+            "radius": 4
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "frame-3",
+              "figmaNodeId": "2214:43",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 4,
+                "align": "center"
+              },
+              "size": {
+                "width": 99,
+                "height": 19
+              },
+              "children": [
+                {
+                  "type": "row",
+                  "id": "frame-2",
+                  "figmaNodeId": "2214:44",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 4,
+                    "align": "center",
+                    "justify": "center"
+                  },
+                  "size": {
+                    "width": 97,
+                    "height": 19
+                  },
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "arrow-to-bottom-1",
+                      "figmaNodeId": "2214:45",
+                      "asset": {
+                        "nodeId": "2214:45",
+                        "kind": "svg"
+                      },
+                      "size": {
+                        "width": 16,
+                        "height": 16
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "download",
+                      "figmaNodeId": "2214:47",
+                      "text": "Download",
+                      "size": {
+                        "width": 77,
+                        "height": 19
+                      },
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "lineHeight": "19.36px",
+                        "color": "#000000",
+                        "align": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

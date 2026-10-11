@@ -1,0 +1,155 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "casino-fx-badge-card",
+      "figmaNodeId": "scope",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start",
+        "justify": "start",
+        "gap": 0
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "rank-badge",
+          "figmaNodeId": "2214:124",
+          "layout": {
+            "display": "flex",
+            "direction": "row"
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "rank-badge-shield",
+              "figmaNodeId": "2214:125",
+              "asset": {
+                "nodeId": "2214:125",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "rank-badge-number",
+              "figmaNodeId": "2214:126",
+              "text": "2",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "color": "#000000",
+                "align": "left",
+                "lineHeight": "29.05px"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "tag-row",
+          "figmaNodeId": "2214:119",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "align": "center",
+            "gap": 8
+          },
+          "children": [
+            {
+              "type": "container",
+              "id": "tag-verified",
+              "figmaNodeId": "2214:120",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "align": "center",
+                "justify": "center",
+                "padding": {
+                  "top": 3,
+                  "bottom": 3,
+                  "left": 4,
+                  "right": 4
+                }
+              },
+              "background": {
+                "color": "#E3E6E8"
+              },
+              "border": {
+                "radius": 2
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tag-verified-label",
+                  "figmaNodeId": "2214:121",
+                  "text": "Verified",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "color": "#000000",
+                    "align": "left",
+                    "lineHeight": "16.94px"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "container",
+              "id": "tag-4-years",
+              "figmaNodeId": "2214:122",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "align": "center",
+                "justify": "center",
+                "padding": {
+                  "top": 3,
+                  "bottom": 3,
+                  "left": 4,
+                  "right": 4
+                }
+              },
+              "background": {
+                "color": "#E3E6E8"
+              },
+              "border": {
+                "radius": 2
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tag-4-years-label",
+                  "figmaNodeId": "2214:123",
+                  "text": "4+ Years",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "color": "#000000",
+                    "align": "left",
+                    "lineHeight": "16.94px"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "unsupported",
+          "id": "divider-line-2",
+          "figmaNodeId": "2214:127",
+          "notes": [
+            "Horizontal divider LINE node (strokes SOLID #0000001F, height 0)."
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Page background fill is not given in the scoped Figma node data and was left out."
+  ]
+}

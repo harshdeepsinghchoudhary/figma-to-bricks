@@ -1,0 +1,99 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casino-fx-homepage-part-5",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-52",
+          "figmaNodeId": "2214:109"
+        },
+        {
+          "type": "column",
+          "id": "group-47",
+          "figmaNodeId": "2214:110",
+          "children": [
+            {
+              "type": "container",
+              "id": "rectangle-16",
+              "figmaNodeId": "2214:111",
+              "background": {
+                "color": "#FFFFFF"
+              },
+              "border": {
+                "radius": 8
+              },
+              "size": {
+                "width": 135,
+                "height": 93
+              },
+              "notes": [
+                "stroke color #0000000F width 1"
+              ]
+            },
+            {
+              "type": "image",
+              "id": "image-14",
+              "figmaNodeId": "2214:112",
+              "asset": {
+                "nodeId": "2214:112",
+                "kind": "image"
+              },
+              "size": {
+                "width": 108,
+                "height": 81
+              }
+            },
+            {
+              "type": "row",
+              "id": "frame-22",
+              "figmaNodeId": "2214:113",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 10,
+                "align": "center",
+                "justify": "center",
+                "wrap": false,
+                "padding": {
+                  "left": 8,
+                  "right": 8,
+                  "top": 4,
+                  "bottom": 4
+                }
+              },
+              "background": {
+                "color": "#30A453"
+              },
+              "border": {
+                "radius": 4
+              },
+              "size": {
+                "width": 135,
+                "height": 25
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pagcor-certified",
+                  "figmaNodeId": "2214:114",
+                  "text": "PAGCOR Certified",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#FFFFFF",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

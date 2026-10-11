@@ -1386,6 +1386,30 @@ how gaps/padding/typography are expressed, when notes are used).` : ""}`,
       m2._uncertain = [...new Set([...(merged._uncertain || []), `stitch: model parts could not be matched (${reason.why || "unknown"}); section built from Figma data only`])];
       dedupeIds(m2);
       rebuilt = rebuildFromGeometry(m2, measuredHint, { lenient: true, reason });
+      if (!rebuilt) {
+        // Never lose the whole section: keep every text/image in Figma order, flat. Post-processing still measures sizes, gaps and alignment.
+        console.warn(`  Stitch: the Figma-only rebuild could not be nested either (${reason.why || "unknown"}) - keeping every text and image as a flat list in Figma order.`);
+        rebuilt = m2;
+      }
+    }
+    // Coverage guard: a stitched section that lost most of the Figma text (a nav bar answered only as a placeholder, for example) is worse than
+    // the plain Figma-data build. Compare by node id or by copy.
+    {
+      const norm = (t) => String(t || "").replace(/<[^>]+>/g, "").replace(/[\s\u00a0]+/g, " ").trim().toLowerCase();
+      const figmaTexts = [];
+      (function w(n) { if (!n || typeof n !== "object" || n.visible === false) return; if (n.type === "TEXT" && norm(n.characters)) figmaTexts.push({ id: n.id, t: norm(n.characters) }); for (const c of n.children || []) w(c); })({ children: prunedRoot.children || [] });
+      const ids = new Set(), copy = [];
+      (function w(n) { if (!n || typeof n !== "object") return; if (n.figmaNodeId) ids.add(n.figmaNodeId); if (n.text) copy.push(norm(n.text)); for (const c of n.children || []) w(c); })(rebuilt);
+      const covered = figmaTexts.filter((x) => ids.has(x.id) || copy.some((c) => c.includes(x.t))).length;
+      if (figmaTexts.length >= 3 && covered < figmaTexts.length * 0.9) {
+        console.warn(`  Stitch coverage: only ${covered}/${figmaTexts.length} Figma text nodes are in the stitched section - rebuilding it from the Figma data so nothing is lost.`);
+        const fb4 = fallbackDoc(prunedRoot.children || []);
+        const leaves4 = (fb4.children?.[0]?.children || []).filter((e) => e.type === "text" || e.type === "image");
+        const m4 = { ...first, children: [{ ...secRest, type: "section", figmaNodeId: "scope", children: leaves4 }, ...first.children.slice(1)] };
+        m4._uncertain = [...new Set([...(merged._uncertain || []), `stitch: only ${covered}/${figmaTexts.length} Figma texts were covered by the model parts; section rebuilt from Figma data`])];
+        dedupeIds(m4);
+        rebuilt = rebuildFromGeometry(m4, measuredHint, { lenient: true, reason: {} }) || m4;
+      }
     }
     if (!rebuilt) throw new Error(`Split mode: could not stitch the parts together (${reason.why || "an element did not match the measured layout"}). Check the files in the parts/ folder, or re-run with a different --split=<tokens> budget.`);
     dedupeIds(rebuilt); // the rebuild can reuse an id the model gave two elements; make them unique before validating

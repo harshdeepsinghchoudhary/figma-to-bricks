@@ -1,0 +1,45 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "banner-1",
+      "figmaNodeId": "8232:18",
+      "size": {
+        "width": 1440,
+        "height": 518
+      },
+      "background": {
+        "color": "#D9D9D9"
+      },
+      "notes": [
+        "strokeWeight: 1 px"
+      ]
+    },
+    {
+      "type": "spacer",
+      "id": "spacer-1",
+      "notes": [
+        "Rectangular spacer"
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "heading-1",
+      "text": "Jili Slot - Play Jili Online Slot | Free Games Play"
+    },
+    {
+      "type": "text-basic",
+      "id": "text-1",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    },
+    {
+      "type": "button",
+      "id": "button-1",
+      "text": "Get Started"
+    }
+  ],
+  "_uncertain": [
+    "No explicit figmaNodeId for the spacer"
+  ]
+}

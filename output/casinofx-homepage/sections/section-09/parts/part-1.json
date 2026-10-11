@@ -1,0 +1,116 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-58",
+          "figmaNodeId": "2216:4",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 31,
+            "align": "center"
+          },
+          "size": {
+            "width": 1320,
+            "height": 844
+          }
+        },
+        {
+          "type": "text",
+          "id": "scam-alerts-cases",
+          "figmaNodeId": "2214:252",
+          "text": "Scam Alerts & Cases",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 32,
+            "fontWeight": 600,
+            "lineHeight": "38.73px",
+            "color": "#000000",
+            "align": "center"
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-57",
+          "figmaNodeId": "2216:3",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 32,
+            "align": "center"
+          },
+          "size": {
+            "width": 1320,
+            "height": 774
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-35",
+          "figmaNodeId": "2214:243",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 18,
+            "align": "center"
+          },
+          "size": {
+            "width": 530,
+            "height": 38
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-28",
+          "figmaNodeId": "2214:244",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "align": "center",
+            "padding": {
+              "top": 8,
+              "right": 10,
+              "bottom": 8,
+              "left": 10
+            }
+          },
+          "size": {
+            "width": 193,
+            "height": 38
+          },
+          "background": {
+            "color": "#FFD733"
+          },
+          "border": {
+            "radius": 4
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "unable-to-withdraw",
+              "figmaNodeId": "2214:245",
+              "text": "Unable to Withdraw",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 600,
+                "lineHeight": "21.78px",
+                "color": "#000000",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section-1: dropped unknown field \"_uncertain\""
+  ]
+}

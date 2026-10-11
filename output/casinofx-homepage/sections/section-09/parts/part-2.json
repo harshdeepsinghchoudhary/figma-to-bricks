@@ -1,0 +1,120 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "row",
+          "id": "fake-license",
+          "figmaNodeId": "2214:246",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "padding": {
+              "top": 8,
+              "right": 10,
+              "bottom": 8,
+              "left": 10
+            }
+          },
+          "background": {
+            "color": "#FFD73329"
+          },
+          "border": {
+            "radius": 4
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "fake-license-text",
+              "text": "Fake License",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 600,
+                "lineHeight": "21.78px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "scam",
+          "figmaNodeId": "2214:248",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "padding": {
+              "top": 8,
+              "right": 10,
+              "bottom": 8,
+              "left": 10
+            }
+          },
+          "background": {
+            "color": "#FFD73329"
+          },
+          "border": {
+            "radius": 4
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "scam-text",
+              "text": "Scam",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 600,
+                "lineHeight": "21.78px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "others",
+          "figmaNodeId": "2214:250",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "padding": {
+              "top": 8,
+              "right": 10,
+              "bottom": 8,
+              "left": 10
+            }
+          },
+          "background": {
+            "color": "#FFD73329"
+          },
+          "border": {
+            "radius": 4
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "others-text",
+              "text": "Others",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 600,
+                "lineHeight": "21.78px",
+                "color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

@@ -1,0 +1,54 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "frame-13",
+      "figmaNodeId": "2214:63",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 48,
+        "align": "center"
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "frame-12",
+          "figmaNodeId": "2214:64",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "frame-12-casino-icon",
+              "figmaNodeId": "2214:65",
+              "asset": {
+                "nodeId": "2214:65",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "frame-12-casino-label",
+              "figmaNodeId": "2214:68",
+              "text": "Casinos: 3,000+",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "21.78px",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

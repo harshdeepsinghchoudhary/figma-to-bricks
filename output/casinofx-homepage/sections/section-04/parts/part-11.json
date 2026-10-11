@@ -1,0 +1,71 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "group-54",
+      "figmaNodeId": "2214:147"
+    },
+    {
+      "type": "row",
+      "id": "group-49",
+      "figmaNodeId": "2214:148",
+      "children": [
+        {
+          "type": "column",
+          "id": "game-card",
+          "figmaNodeId": "2214:149"
+        },
+        {
+          "type": "image",
+          "id": "all-slots-badge",
+          "figmaNodeId": "2214:150",
+          "asset": {
+            "nodeId": "2214:150",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "row",
+          "id": "pagcor-certified-tag",
+          "figmaNodeId": "2214:151",
+          "background": {
+            "color": "#30A453"
+          },
+          "border": {
+            "radius": 4
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "align": "center",
+            "justify": "center",
+            "padding": {
+              "left": 8,
+              "right": 8,
+              "top": 4,
+              "bottom": 4
+            }
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "pagcor-text",
+              "figmaNodeId": "2214:152",
+              "text": "PAGCOR Certified",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "16.94px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

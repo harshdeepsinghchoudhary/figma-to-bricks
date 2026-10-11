@@ -1,0 +1,200 @@
+[
+  {
+    "id": "bzyy45",
+    "name": "button",
+    "parent": "7h66rm",
+    "children": [],
+    "settings": {
+      "text": "Home",
+      "_padding": {
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "500",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#0000001F"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "gwakgf",
+    "name": "text-basic",
+    "parent": "7h66rm",
+    "children": [],
+    "settings": {
+      "text": "Top Casinos",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "jklwwb",
+    "name": "text-basic",
+    "parent": "7h66rm",
+    "children": [],
+    "settings": {
+      "text": "Live Betting",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "pplbwl",
+    "name": "text-basic",
+    "parent": "7h66rm",
+    "children": [],
+    "settings": {
+      "text": "New Casinos",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "a3ml9x",
+    "name": "text-basic",
+    "parent": "7h66rm",
+    "children": [],
+    "settings": {
+      "text": "Blacklist",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "5u23rn",
+    "name": "text-basic",
+    "parent": "7h66rm",
+    "children": [],
+    "settings": {
+      "text": "Casino News",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "7h66rm",
+    "name": "div",
+    "parent": "zfimlq",
+    "children": [
+      "bzyy45",
+      "gwakgf",
+      "jklwwb",
+      "pplbwl",
+      "a3ml9x",
+      "5u23rn"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "74",
+      "_columnGap": "74",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "zfimlq",
+    "name": "container",
+    "parent": "g5ihsd",
+    "children": [
+      "7h66rm"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "934px"
+    }
+  },
+  {
+    "id": "g5ihsd",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "zfimlq"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFD733"
+        }
+      }
+    }
+  }
+]

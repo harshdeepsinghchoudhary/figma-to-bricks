@@ -1,0 +1,71 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casinofx-homepage-part2",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-93",
+          "figmaNodeId": "2219:247",
+          "border": {
+            "radius": 0
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-46",
+          "figmaNodeId": "2219:250",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 16,
+            "align": "center",
+            "justify": "start"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "image-24",
+              "figmaNodeId": "2219:250",
+              "asset": {
+                "nodeId": "2219:250",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "heading",
+              "id": "spinpalace-casino",
+              "figmaNodeId": "2219:251",
+              "text": "SpinPalace Casino",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": "32px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "spinpalace-headquarters-in-malta",
+          "figmaNodeId": "2219:252",
+          "text": "SpinPalace Headquarters in Malta",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": 500,
+            "lineHeight": "26px",
+            "color": "#000000"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout gaps for column container group-92 not provided"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-90",
+          "figmaNodeId": "2219:262",
+          "children": [
+            {
+              "type": "image",
+              "id": "rectangle-32",
+              "figmaNodeId": "2219:263",
+              "asset": {
+                "nodeId": "2219:263",
+                "kind": "image"
+              }
+            },
+            {
+              "type": "button",
+              "id": "button-good",
+              "figmaNodeId": "2219:264",
+              "text": "Good",
+              "background": {
+                "color": "#338066"
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": "16.94px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "type": "block",
+          "id": "rectangle-21",
+          "figmaNodeId": "2219:267",
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 8
+          },
+          "notes": [
+            "Drop shadow effect not represented"
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "layout details omitted"
+  ]
+}

@@ -1,8 +1,8 @@
 [
   {
-    "id": "j199as",
+    "id": "1w43xj",
     "name": "image",
-    "parent": "1tndeb",
+    "parent": "7a2vt1",
     "children": [],
     "settings": {
       "image": {
@@ -19,9 +19,9 @@
     "themeStyles": []
   },
   {
-    "id": "xamvqd",
+    "id": "hxv7z1",
     "name": "heading",
-    "parent": "qyhok0",
+    "parent": "630uc9",
     "children": [],
     "settings": {
       "text": "Innovative Gameplay Mechanics",
@@ -40,9 +40,9 @@
     }
   },
   {
-    "id": "vdhh19",
+    "id": "8k4h35",
     "name": "text",
-    "parent": "rncqsa",
+    "parent": "630uc9",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -60,9 +60,9 @@
     }
   },
   {
-    "id": "tbtbw8",
+    "id": "jwu1dp",
     "name": "text",
-    "parent": "rncqsa",
+    "parent": "630uc9",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
@@ -80,12 +80,13 @@
     }
   },
   {
-    "id": "rncqsa",
+    "id": "630uc9",
     "name": "div",
-    "parent": "qyhok0",
+    "parent": "ntyvtl",
     "children": [
-      "vdhh19",
-      "tbtbw8"
+      "hxv7z1",
+      "8k4h35",
+      "jwu1dp"
     ],
     "settings": {
       "_display": "flex",
@@ -97,26 +98,9 @@
     }
   },
   {
-    "id": "qyhok0",
-    "name": "div",
-    "parent": "z3aumb",
-    "children": [
-      "xamvqd",
-      "rncqsa"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "10",
-      "_columnGap": "10",
-      "_alignItems": "flex-start",
-      "_width": "100%"
-    }
-  },
-  {
-    "id": "5dlo5q",
+    "id": "9gt4sw",
     "name": "button",
-    "parent": "z3aumb",
+    "parent": "ntyvtl",
     "children": [],
     "settings": {
       "text": "Learn More",
@@ -153,12 +137,12 @@
     }
   },
   {
-    "id": "z3aumb",
+    "id": "ntyvtl",
     "name": "div",
-    "parent": "1tndeb",
+    "parent": "7a2vt1",
     "children": [
-      "qyhok0",
-      "5dlo5q"
+      "630uc9",
+      "9gt4sw"
     ],
     "settings": {
       "_display": "flex",
@@ -172,12 +156,12 @@
     }
   },
   {
-    "id": "1tndeb",
+    "id": "7a2vt1",
     "name": "div",
-    "parent": "q935ao",
+    "parent": "lyfzap",
     "children": [
-      "j199as",
-      "z3aumb"
+      "1w43xj",
+      "ntyvtl"
     ],
     "settings": {
       "_display": "flex",
@@ -193,11 +177,11 @@
     }
   },
   {
-    "id": "q935ao",
+    "id": "lyfzap",
     "name": "container",
-    "parent": "wzw336",
+    "parent": "7eqil1",
     "children": [
-      "1tndeb"
+      "7a2vt1"
     ],
     "settings": {
       "_display": "flex",
@@ -208,11 +192,11 @@
     }
   },
   {
-    "id": "wzw336",
+    "id": "7eqil1",
     "name": "section",
     "parent": 0,
     "children": [
-      "q935ao"
+      "lyfzap"
     ],
     "settings": {
       "_padding": {

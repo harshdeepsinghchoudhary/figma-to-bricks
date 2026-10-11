@@ -1,0 +1,28 @@
+[
+  {
+    "id": "l1xff1",
+    "name": "container",
+    "parent": "gnuzhd",
+    "children": [],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "gnuzhd",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "l1xff1"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

@@ -1,8 +1,8 @@
 [
   {
-    "id": "ekyxfz",
+    "id": "vjji60",
     "name": "heading",
-    "parent": "jh407z",
+    "parent": "nqb7hm",
     "children": [],
     "settings": {
       "text": "How to Start Playing Jili Games?",
@@ -21,9 +21,9 @@
     }
   },
   {
-    "id": "rd0st0",
+    "id": "5ihzgq",
     "name": "image",
-    "parent": "q9oqye",
+    "parent": "hfy28m",
     "children": [],
     "settings": {
       "image": {
@@ -39,13 +39,14 @@
     "themeStyles": []
   },
   {
-    "id": "xm0swh",
+    "id": "9eky8p",
     "name": "heading",
-    "parent": "36rp45",
+    "parent": "tz66hf",
     "children": [],
     "settings": {
       "text": "Register an account",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -60,12 +61,13 @@
     }
   },
   {
-    "id": "1ez788",
+    "id": "ssvfvn",
     "name": "text",
-    "parent": "36rp45",
+    "parent": "tz66hf",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "18px",
@@ -80,12 +82,12 @@
     }
   },
   {
-    "id": "36rp45",
+    "id": "tz66hf",
     "name": "div",
-    "parent": "q9oqye",
+    "parent": "hfy28m",
     "children": [
-      "xm0swh",
-      "1ez788"
+      "9eky8p",
+      "ssvfvn"
     ],
     "settings": {
       "_display": "flex",
@@ -97,32 +99,19 @@
     }
   },
   {
-    "id": "q9oqye",
+    "id": "hfy28m",
     "name": "div",
-    "parent": "uh2op1",
+    "parent": "li6ziu",
     "children": [
-      "rd0st0",
-      "36rp45"
+      "5ihzgq",
+      "tz66hf"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_rowGap": "57",
       "_columnGap": "57",
-      "_alignItems": "center"
-    }
-  },
-  {
-    "id": "uh2op1",
-    "name": "div",
-    "parent": "0ip4qd",
-    "children": [
-      "q9oqye"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_padding": {
         "top": "50",
         "right": "43",
@@ -150,9 +139,9 @@
     }
   },
   {
-    "id": "96bxyl",
+    "id": "y75pnj",
     "name": "image",
-    "parent": "40guv6",
+    "parent": "pyr307",
     "children": [],
     "settings": {
       "image": {
@@ -168,13 +157,14 @@
     "themeStyles": []
   },
   {
-    "id": "pgx7i7",
+    "id": "t2zg9o",
     "name": "heading",
-    "parent": "yap7rw",
+    "parent": "byjwyj",
     "children": [],
     "settings": {
       "text": "Log in to your account",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -189,12 +179,13 @@
     }
   },
   {
-    "id": "mhnm8i",
+    "id": "tk4lh2",
     "name": "text",
-    "parent": "yap7rw",
+    "parent": "byjwyj",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "18px",
@@ -209,12 +200,12 @@
     }
   },
   {
-    "id": "yap7rw",
+    "id": "byjwyj",
     "name": "div",
-    "parent": "40guv6",
+    "parent": "pyr307",
     "children": [
-      "pgx7i7",
-      "mhnm8i"
+      "t2zg9o",
+      "tk4lh2"
     ],
     "settings": {
       "_display": "flex",
@@ -226,32 +217,19 @@
     }
   },
   {
-    "id": "40guv6",
+    "id": "pyr307",
     "name": "div",
-    "parent": "vo3n12",
+    "parent": "li6ziu",
     "children": [
-      "96bxyl",
-      "yap7rw"
+      "y75pnj",
+      "byjwyj"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_rowGap": "59",
       "_columnGap": "59",
-      "_alignItems": "center"
-    }
-  },
-  {
-    "id": "vo3n12",
-    "name": "div",
-    "parent": "0ip4qd",
-    "children": [
-      "40guv6"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_padding": {
         "top": "50",
         "right": "43",
@@ -279,9 +257,9 @@
     }
   },
   {
-    "id": "8xo9sn",
+    "id": "stnwgh",
     "name": "image",
-    "parent": "a8imnp",
+    "parent": "wqcw3p",
     "children": [],
     "settings": {
       "image": {
@@ -297,13 +275,14 @@
     "themeStyles": []
   },
   {
-    "id": "9cngzk",
+    "id": "rr594y",
     "name": "heading",
-    "parent": "wpghlu",
+    "parent": "68umr5",
     "children": [],
     "settings": {
       "text": "Start playing JILI games",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -318,12 +297,13 @@
     }
   },
   {
-    "id": "aah3ig",
+    "id": "ce085i",
     "name": "text",
-    "parent": "wpghlu",
+    "parent": "68umr5",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "18px",
@@ -338,12 +318,12 @@
     }
   },
   {
-    "id": "wpghlu",
+    "id": "68umr5",
     "name": "div",
-    "parent": "a8imnp",
+    "parent": "wqcw3p",
     "children": [
-      "9cngzk",
-      "aah3ig"
+      "rr594y",
+      "ce085i"
     ],
     "settings": {
       "_display": "flex",
@@ -355,32 +335,19 @@
     }
   },
   {
-    "id": "a8imnp",
+    "id": "wqcw3p",
     "name": "div",
-    "parent": "9eywr8",
+    "parent": "li6ziu",
     "children": [
-      "8xo9sn",
-      "wpghlu"
+      "stnwgh",
+      "68umr5"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_rowGap": "61",
       "_columnGap": "61",
-      "_alignItems": "center"
-    }
-  },
-  {
-    "id": "9eywr8",
-    "name": "div",
-    "parent": "0ip4qd",
-    "children": [
-      "a8imnp"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_padding": {
         "top": "50",
         "right": "43",
@@ -408,13 +375,13 @@
     }
   },
   {
-    "id": "0ip4qd",
+    "id": "li6ziu",
     "name": "div",
-    "parent": "jh407z",
+    "parent": "nqb7hm",
     "children": [
-      "uh2op1",
-      "vo3n12",
-      "9eywr8"
+      "hfy28m",
+      "pyr307",
+      "wqcw3p"
     ],
     "settings": {
       "_display": "grid",
@@ -428,12 +395,12 @@
     }
   },
   {
-    "id": "jh407z",
+    "id": "nqb7hm",
     "name": "div",
-    "parent": "5dmf3m",
+    "parent": "vj3mnh",
     "children": [
-      "ekyxfz",
-      "0ip4qd"
+      "vjji60",
+      "li6ziu"
     ],
     "settings": {
       "_display": "flex",
@@ -445,11 +412,11 @@
     }
   },
   {
-    "id": "5dmf3m",
+    "id": "vj3mnh",
     "name": "container",
-    "parent": "csq79w",
+    "parent": "902j54",
     "children": [
-      "jh407z"
+      "nqb7hm"
     ],
     "settings": {
       "_display": "flex",
@@ -460,11 +427,11 @@
     }
   },
   {
-    "id": "csq79w",
+    "id": "902j54",
     "name": "section",
     "parent": 0,
     "children": [
-      "5dmf3m"
+      "vj3mnh"
     ],
     "settings": {
       "_padding": {

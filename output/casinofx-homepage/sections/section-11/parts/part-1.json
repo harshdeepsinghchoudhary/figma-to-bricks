@@ -1,0 +1,38 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casinofx-homepage-part",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "row",
+          "id": "frame-125",
+          "figmaNodeId": "2231:232"
+        },
+        {
+          "type": "column",
+          "id": "frame-88",
+          "figmaNodeId": "2223:42"
+        },
+        {
+          "type": "heading",
+          "id": "brand-name",
+          "figmaNodeId": "2222:50",
+          "text": "Brand Name",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 32,
+            "fontWeight": 600,
+            "lineHeight": "38.73px",
+            "color": "#000000"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "size and layout details for containers omitted"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "part-18-section",
+      "children": [
+        {
+          "type": "row",
+          "id": "part-18-section-row-1",
+          "children": [
+            {
+              "type": "button",
+              "id": "user-reports",
+              "figmaNodeId": "2214:190",
+              "text": "User Reports"
+            },
+            {
+              "type": "button",
+              "id": "expert-analysis",
+              "figmaNodeId": "2214:192",
+              "text": "Expert Analysis"
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "id": "group-41",
+          "figmaNodeId": "2214:195"
+        },
+        {
+          "type": "container",
+          "id": "rectangle-18",
+          "figmaNodeId": "2214:196",
+          "background": {
+            "color": "#F7F7F7"
+          },
+          "border": {
+            "radius": 8
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "part-18-section: dropped unknown field \"_uncertain\"",
+    "layout modes for group and rectangle"
+  ]
+}
