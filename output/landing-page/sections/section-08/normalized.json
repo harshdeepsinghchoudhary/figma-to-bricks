@@ -1,0 +1,365 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "landing-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-26",
+          "figmaNodeId": "1039:182",
+          "children": [
+            {
+              "type": "column",
+              "id": "landing-section-column-1",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "logo",
+                  "figmaNodeId": "1039:137",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "landing-section-row-1",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "subtract",
+                          "figmaNodeId": "1039:139",
+                          "asset": {
+                            "nodeId": "1039:139",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 67,
+                            "height": 67
+                          }
+                        },
+                        {
+                          "type": "heading",
+                          "id": "mumair",
+                          "figmaNodeId": "1039:138",
+                          "text": "Mumair ",
+                          "typography": {
+                            "fontFamily": "Montserrat",
+                            "fontSize": 48,
+                            "fontWeight": 600,
+                            "lineHeight": "58.51px",
+                            "color": "#1E1E1E",
+                            "align": "left"
+                          },
+                          "level": 2,
+                          "size": {
+                            "width": 190
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "gap": 20,
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "padding": {
+                      "top": 0,
+                      "right": 2,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "align": "start"
+                  }
+                },
+                {
+                  "type": "row",
+                  "id": "frame-3",
+                  "figmaNodeId": "1039:142",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "frame-1",
+                      "figmaNodeId": "1039:143",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "home",
+                          "figmaNodeId": "1039:144",
+                          "text": "Home",
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 21,
+                            "fontWeight": 400,
+                            "lineHeight": "31.5px",
+                            "letterSpacing": "0.63px",
+                            "color": "#000000",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "padding": {
+                          "top": 10,
+                          "right": 14,
+                          "bottom": 10,
+                          "left": 14
+                        },
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 93
+                      }
+                    },
+                    {
+                      "type": "row",
+                      "id": "frame-2",
+                      "figmaNodeId": "1039:145",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "about-me",
+                          "figmaNodeId": "1039:146",
+                          "text": "About Me",
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 21,
+                            "fontWeight": 400,
+                            "lineHeight": "31.5px",
+                            "letterSpacing": "0.63px",
+                            "color": "#000000",
+                            "align": "left"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "padding": {
+                          "top": 10,
+                          "right": 14,
+                          "bottom": 10,
+                          "left": 14
+                        },
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 132
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "id": "services-button",
+                      "figmaNodeId": "1039:147",
+                      "text": "Services",
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "padding": {
+                          "top": 10,
+                          "right": 14,
+                          "bottom": 10,
+                          "left": 14
+                        }
+                      },
+                      "typography": {
+                        "fontFamily": "Poppins",
+                        "fontSize": 21,
+                        "fontWeight": 400,
+                        "color": "#000000",
+                        "lineHeight": "31.5px",
+                        "letterSpacing": "0.63px",
+                        "align": "left"
+                      },
+                      "size": {
+                        "width": 120
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "id": "projects-button",
+                      "figmaNodeId": "1039:149",
+                      "text": "Projects",
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "padding": {
+                          "top": 10,
+                          "right": 14,
+                          "bottom": 10,
+                          "left": 14
+                        }
+                      },
+                      "typography": {
+                        "fontFamily": "Poppins",
+                        "fontSize": 21,
+                        "fontWeight": 400,
+                        "color": "#000000",
+                        "lineHeight": "31.5px",
+                        "letterSpacing": "0.63px",
+                        "align": "left"
+                      },
+                      "size": {
+                        "width": 116
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "id": "testimonials-button",
+                      "figmaNodeId": "1039:151",
+                      "text": "Testimonials",
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "padding": {
+                          "top": 10,
+                          "right": 14,
+                          "bottom": 10,
+                          "left": 14
+                        }
+                      },
+                      "typography": {
+                        "fontFamily": "Poppins",
+                        "fontSize": 21,
+                        "fontWeight": 400,
+                        "color": "#000000",
+                        "lineHeight": "31.5px",
+                        "letterSpacing": "0.63px",
+                        "align": "left"
+                      },
+                      "size": {
+                        "width": 168
+                      }
+                    },
+                    {
+                      "type": "row",
+                      "id": "contact-button",
+                      "figmaNodeId": "1039:153",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "contact",
+                          "figmaNodeId": "1039:154",
+                          "text": "Contact",
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 21,
+                            "fontWeight": 400,
+                            "align": "left",
+                            "lineHeight": "31.5px",
+                            "letterSpacing": "0.63px",
+                            "color": "#000000"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "padding": {
+                          "top": 10,
+                          "right": 14,
+                          "bottom": 10,
+                          "left": 14
+                        },
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 118
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 12,
+                    "align": "start",
+                    "margin": {
+                      "top": 65
+                    }
+                  }
+                },
+                {
+                  "type": "icon",
+                  "id": "social-icons",
+                  "figmaNodeId": "1039:168",
+                  "asset": {
+                    "nodeId": "1039:168",
+                    "kind": "svg"
+                  },
+                  "size": {
+                    "width": 205,
+                    "height": 32.48
+                  },
+                  "layout": {
+                    "margin": {
+                      "top": 80.52
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "copyright-notice",
+                  "figmaNodeId": "1039:170",
+                  "text": "© 2023 Mumair All Rights Reserved , Inc.",
+                  "typography": {
+                    "fontFamily": "Poppins",
+                    "fontSize": 21,
+                    "fontWeight": 400,
+                    "align": "left",
+                    "lineHeight": "31.5px",
+                    "letterSpacing": "0.63px",
+                    "color": "#FFFFFF"
+                  },
+                  "size": {
+                    "width": 440
+                  },
+                  "layout": {
+                    "margin": {
+                      "top": 88
+                    }
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "align": "center"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "padding": {
+              "top": 109,
+              "right": 562,
+              "bottom": 26,
+              "left": 556
+            },
+            "align": "start"
+          },
+          "background": {
+            "color": "#F8F8F8"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "Exact section background color (not visible in data, appears light gray in screenshot)",
+    "Inferred section grouping - Footer section and Copyright bar have no explicit background info",
+    "stitch: 3 node(s) added from Figma data because the model's parts did not include them",
+    "stitch: dropped 3 duplicate element(s) emitted by overlapping parts"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "navigation-bar",
+      "figmaNodeId": "scope",
+      "layout": {
+        "display": "flex",
+        "direction": "row"
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "nav-links",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 12
+          },
+          "children": [
+            {
+              "type": "button",
+              "id": "services-button",
+              "figmaNodeId": "1039:147",
+              "text": "Services",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "padding": {
+                  "top": 10,
+                  "right": 14,
+                  "bottom": 10,
+                  "left": 14
+                }
+              },
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px"
+              }
+            },
+            {
+              "type": "button",
+              "id": "projects-button",
+              "figmaNodeId": "1039:149",
+              "text": "Projects",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "padding": {
+                  "top": 10,
+                  "right": 14,
+                  "bottom": 10,
+                  "left": 14
+                }
+              },
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px"
+              }
+            },
+            {
+              "type": "button",
+              "id": "testimonials-button",
+              "figmaNodeId": "1039:151",
+              "text": "Testimonials",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "padding": {
+                  "top": 10,
+                  "right": 14,
+                  "bottom": 10,
+                  "left": 14
+                }
+              },
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

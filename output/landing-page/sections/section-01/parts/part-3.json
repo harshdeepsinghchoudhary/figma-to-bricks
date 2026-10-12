@@ -1,0 +1,63 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "contact-download-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "button",
+          "id": "contact-button",
+          "figmaNodeId": "260:144",
+          "text": "Contact",
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "align": "center",
+            "justify": "center",
+            "padding": {
+              "left": 14,
+              "right": 14,
+              "top": 10,
+              "bottom": 10
+            }
+          },
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 21,
+            "fontWeight": 400,
+            "color": "#000000",
+            "align": "left",
+            "lineHeight": "31.5px",
+            "letterSpacing": "0.63px"
+          }
+        },
+        {
+          "type": "button",
+          "id": "download-cv-button",
+          "figmaNodeId": "372:73",
+          "text": "Downlaod CV",
+          "background": {
+            "color": "#FD6F00"
+          },
+          "border": {
+            "radius": 5
+          },
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 21,
+            "fontWeight": 400,
+            "color": "#FFFFFF",
+            "align": "justify",
+            "lineHeight": "31.5px",
+            "letterSpacing": "0.63px"
+          }
+        }
+      ]
+    }
+  ]
+}

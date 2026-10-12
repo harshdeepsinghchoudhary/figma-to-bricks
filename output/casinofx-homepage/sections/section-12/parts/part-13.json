@@ -1,0 +1,111 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "post-meta-row",
+      "children": [
+        {
+          "type": "row",
+          "id": "user-row",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 45,
+            "align": "center",
+            "justify": "start"
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "user-profile",
+              "figmaNodeId": "2227:182",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 8,
+                "align": "center",
+                "justify": "start"
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "user-avatar",
+                  "figmaNodeId": "2227:173",
+                  "asset": {
+                    "nodeId": "2227:173",
+                    "kind": "image"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "user-username",
+                  "figmaNodeId": "2227:172",
+                  "text": "CodeBreaker",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000099",
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "id": "user-stats",
+              "figmaNodeId": "2227:179",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 6,
+                "align": "center",
+                "justify": "start"
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "stats-icon",
+                  "figmaNodeId": "2227:174",
+                  "asset": {
+                    "nodeId": "2227:174",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "stats-value",
+                  "figmaNodeId": "2227:177",
+                  "text": "1.2K",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000099",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "id": "content-groups",
+          "notes": [
+            "Layers overlap; no auto-layout possible for this group of overlapping elements."
+          ],
+          "background": {
+            "color": "#F7F7F7"
+          },
+          "border": {
+            "radius": 0
+          }
+        }
+      ]
+    }
+  ]
+}

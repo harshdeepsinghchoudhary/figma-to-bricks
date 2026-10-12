@@ -1,0 +1,105 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "landing-section",
+      "figmaNodeId": "scope",
+      "background": {
+        "color": "#F8F8F8"
+      },
+      "children": [
+        {
+          "type": "container",
+          "id": "frame-26",
+          "figmaNodeId": "1039:182"
+        },
+        {
+          "type": "block",
+          "id": "rectangle-40",
+          "figmaNodeId": "1039:169",
+          "background": {
+            "color": "#545454"
+          }
+        },
+        {
+          "type": "row",
+          "id": "logo",
+          "figmaNodeId": "1039:137",
+          "children": [
+            {
+              "type": "icon",
+              "id": "subtract",
+              "figmaNodeId": "1039:139",
+              "asset": {
+                "nodeId": "1039:139",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "mumair",
+              "figmaNodeId": "1039:138",
+              "text": "Mumair ",
+              "typography": {
+                "fontFamily": "Montserrat",
+                "fontSize": 48,
+                "fontWeight": 600,
+                "lineHeight": "58.51px",
+                "color": "#1E1E1E"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "frame-3",
+          "figmaNodeId": "1039:142",
+          "children": []
+        },
+        {
+          "type": "row",
+          "id": "frame-1",
+          "figmaNodeId": "1039:143",
+          "children": [
+            {
+              "type": "text",
+              "id": "home",
+              "figmaNodeId": "1039:144",
+              "text": "Home",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "frame-2",
+          "figmaNodeId": "1039:145",
+          "children": [
+            {
+              "type": "text",
+              "id": "about-me",
+              "figmaNodeId": "1039:146",
+              "text": "About Me",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px",
+                "color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -124,8 +124,14 @@ if (flag("dry-run")) { console.log(`\nDry run - nothing was run. Names are in ${
 
 // ---- run ----
 let lastOut = "";
-function node(script, a) {
+function node(script, a, live = false) {
   console.log(`\n=== node scripts/${script} ${a.join(" ")} ===`);
+  // live: the model step takes many minutes (one call per part, 65s apart) - show its output as it happens instead of after it ends
+  if (live) {
+    const r = spawnSync(process.execPath, [path.join("scripts", script), ...a], { stdio: "inherit" });
+    lastOut = "";
+    return r.status === 0;
+  }
   const r = spawnSync(process.execPath, [path.join("scripts", script), ...a], { encoding: "utf8", maxBuffer: 64 * 1024 * 1024, stdio: ["inherit", "pipe", "pipe"] });
   lastOut = (r.stdout || "") + (r.stderr || "");
   process.stdout.write(r.stdout || ""); process.stderr.write(r.stderr || "");
@@ -139,7 +145,7 @@ for (const s of sections) {
   if (!isDone(s) || flag("force")) {
     // --force means redo: saved parts would otherwise be reused by --resume, and they were answered for the old input
     if (flag("force") && fs.existsSync(path.join(dir, "parts"))) { fs.rmSync(path.join(dir, "parts"), { recursive: true, force: true }); console.log(`\n--- ${s.name}: removed saved parts (--force)`); }
-    const ok = node("2_normalize.js", [frameDir, `--nodes=${s.id}`, `--name=${s.name}`, `--split=${split}`, "--resume"]);
+    const ok = node("2_normalize.js", [frameDir, `--nodes=${s.id}`, `--name=${s.name}`, `--split=${split}`, "--resume"], true);
     if (!ok || !isDone(s)) { failed.push(`${s.name} (${s.id}): model step failed, section left out - re-run the same command to retry it, or add --skip=${s.name} to leave it out on purpose`); continue; }
   } else {
     console.log(`\n--- ${s.name}: already normalized, skipping the model step (use --force to redo)`);

@@ -71,7 +71,9 @@ function setResp(n, bp, patch) {
 }
 const r1 = (v) => Math.round(v * 10) / 10;
 
-export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, texts = {} } = {}) {
+export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, texts = {}, siteWidth = 0 } = {}) {
+  // the page container width comes from the design (see 3_compile_bricks.js); SITE_WIDTH is only the fallback when the design has no usable frames
+  const SITE = siteWidth > 0 ? siteWidth : SITE_WIDTH;
   const doc = JSON.parse(JSON.stringify(input));
   const report = [];
   const log = (m) => report.push(m);
@@ -290,7 +292,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       id: `${sec.id}-container`,
       layout: { display: "flex", direction: "column", ...flexLayout },
       // width fill + widthMax: Bricks containers default to a fixed 1100px wide, which would beat a larger max-width
-      size: { width: "fill", maxWidth: SITE_WIDTH },
+      size: { width: "fill", maxWidth: SITE },
       children: sec.children || [],
     };
     // content narrower than the site container (a 619px hero column): the single block inside the container carries that width
@@ -300,7 +302,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       container.size.maxWidth = sec._scopeW;
       if (only && !TEXTLEAF.has(only.type) && !isNum(only.size?.maxWidth)) only.size = { ...(only.size || {}), width: "fill" };
       log(`section ${sec.id}: container max-width ${sec._scopeW}px from the Figma frame width`);
-    } else if (only && !TEXTLEAF.has(only.type) && cw > 0 && cw < SITE_WIDTH - 1 && !isNum(only.size?.maxWidth)) only.size = { ...(only.size || {}), width: "fill", maxWidth: cw };
+    } else if (only && !TEXTLEAF.has(only.type) && cw > 0 && cw < SITE - 1 && !isNum(only.size?.maxWidth)) only.size = { ...(only.size || {}), width: "fill", maxWidth: cw };
     if (sec._card) {
       // a card panel (rectangle + decoration) behind the content: the container IS the card
       const c = sec._card;

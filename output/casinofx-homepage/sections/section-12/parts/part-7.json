@@ -1,0 +1,123 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "slot-powers-row",
+      "figmaNodeId": "2227:138",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 45,
+        "align": "center"
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "slot-powers-info",
+          "figmaNodeId": "2227:137",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 19,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "slot-powers-icon",
+              "figmaNodeId": "2228:271",
+              "asset": {
+                "nodeId": "2228:271",
+                "kind": "image"
+              },
+              "size": {
+                "width": 68,
+                "height": 68
+              }
+            },
+            {
+              "type": "column",
+              "id": "slot-powers-text",
+              "figmaNodeId": "2227:120",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 6
+              },
+              "size": {
+                "width": 138
+              },
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "slot-powers-title",
+                  "figmaNodeId": "2227:121",
+                  "text": "Slot Powers",
+                  "level": 3,
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "color": "#000000",
+                    "lineHeight": "19.36px",
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "slot-powers-rigged",
+                  "figmaNodeId": "2227:122",
+                  "text": "🛑 94.2% Rigged",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "color": "#00000080",
+                    "lineHeight": "16.94px",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "id": "proof-button",
+          "figmaNodeId": "2227:123",
+          "text": "Proof",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "align": "center",
+            "justify": "center",
+            "padding": {
+              "left": 20,
+              "right": 20,
+              "top": 12,
+              "bottom": 12
+            }
+          },
+          "size": {
+            "width": 138
+          },
+          "background": {
+            "color": "#FFD733"
+          },
+          "border": {
+            "radius": 4
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "color": "#000000",
+            "lineHeight": "16.94px",
+            "align": "center"
+          }
+        }
+      ]
+    }
+  ]
+}

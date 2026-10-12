@@ -1,0 +1,72 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "footer-section",
+      "children": [
+        {
+          "type": "row",
+          "id": "contact-button",
+          "figmaNodeId": "1039:153",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "padding": {
+              "left": 14,
+              "right": 14,
+              "top": 10,
+              "bottom": 10
+            }
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "contact",
+              "figmaNodeId": "1039:154",
+              "text": "Contact",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "align": "left",
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "icon",
+          "id": "social-icons",
+          "figmaNodeId": "1039:168",
+          "asset": {
+            "nodeId": "1039:168",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "copyright-notice",
+          "figmaNodeId": "1039:170",
+          "text": "© 2023 Mumair All Rights Reserved , Inc.",
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 21,
+            "fontWeight": 400,
+            "align": "left",
+            "lineHeight": "31.5px",
+            "letterSpacing": "0.63px",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Exact section background color (not visible in data, appears light gray in screenshot)",
+    "Inferred section grouping - Footer section and Copyright bar have no explicit background info",
+    "The offCross values (505, 117) are ambiguous for determining exact horizontal positioning"
+  ]
+}

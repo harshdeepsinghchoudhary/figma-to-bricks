@@ -1,0 +1,103 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "landing-page-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "container",
+          "id": "nav-bar",
+          "figmaNodeId": "375:58"
+        },
+        {
+          "type": "container",
+          "id": "group-11",
+          "figmaNodeId": "375:57"
+        },
+        {
+          "type": "column",
+          "id": "group-7",
+          "figmaNodeId": "372:90",
+          "children": [
+            {
+              "type": "image",
+              "id": "ellipse-4",
+              "figmaNodeId": "372:85",
+              "asset": {
+                "nodeId": "372:85",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "column",
+              "id": "mask-group",
+              "figmaNodeId": "372:89",
+              "children": [
+                {
+                  "type": "image",
+                  "id": "background-copy-1",
+                  "figmaNodeId": "372:86",
+                  "asset": {
+                    "nodeId": "372:86",
+                    "kind": "image"
+                  }
+                },
+                {
+                  "type": "unsupported",
+                  "id": "ellipse-5",
+                  "figmaNodeId": "372:88",
+                  "notes": [
+                    "Node 372:88 (Ellipse 5) has an image fill but was not exported in the asset manifest."
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "id": "background-copy-2",
+              "figmaNodeId": "372:87",
+              "asset": {
+                "nodeId": "372:87",
+                "kind": "image"
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "lorem-ipsum-text",
+          "figmaNodeId": "372:84",
+          "text": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 21,
+            "fontWeight": 400,
+            "lineHeight": "31.5px",
+            "letterSpacing": "0.63px",
+            "color": "#000000",
+            "align": "left"
+          }
+        },
+        {
+          "type": "heading",
+          "id": "about-me",
+          "figmaNodeId": "372:83",
+          "text": "About Me ",
+          "level": 1,
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 65,
+            "fontWeight": 600,
+            "lineHeight": "97.5px",
+            "letterSpacing": "1.95px",
+            "color": "#000000",
+            "align": "left"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

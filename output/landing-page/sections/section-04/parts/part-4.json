@@ -1,0 +1,96 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "icon-strip",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "columnGap": 293
+      },
+      "children": [
+        {
+          "type": "icon",
+          "id": "icon-layer-1",
+          "figmaNodeId": "645:441",
+          "asset": {
+            "nodeId": "645:441",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "icon",
+          "id": "icon-group-18",
+          "figmaNodeId": "645:457",
+          "asset": {
+            "nodeId": "645:457",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "row",
+          "id": "logo-mark-container",
+          "layout": {
+            "display": "flex",
+            "direction": "row"
+          },
+          "notes": [
+            "Layers overlap. 645:465, 645:466, and 645:467 share the same exported SVG file.",
+            "645:468 (small dot with stroke #FD6F00) has no exported asset."
+          ],
+          "children": [
+            {
+              "type": "icon",
+              "id": "logo-vector-part-1",
+              "figmaNodeId": "645:464",
+              "asset": {
+                "nodeId": "645:464",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "icon",
+              "id": "logo-vector-part-2",
+              "figmaNodeId": "645:466",
+              "asset": {
+                "nodeId": "645:466",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "icon",
+              "id": "logo-vector-part-3",
+              "figmaNodeId": "645:465",
+              "asset": {
+                "nodeId": "645:465",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "icon",
+              "id": "logo-vector-part-4",
+              "figmaNodeId": "645:467",
+              "asset": {
+                "nodeId": "645:467",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "unsupported",
+              "id": "logo-accent-dot",
+              "figmaNodeId": "645:468",
+              "notes": [
+                "Small dot/point with 1px stroke and fill #FD6F00 (size ~3x3 px); no exported SVG asset available"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Spacing between 645:457 and the logo-mark group measured as 310px in first gap list, 293px in second. The logo mark container position relative to siblings is ambiguous in the g-object.",
+    "No background color provided for the section."
+  ]
+}

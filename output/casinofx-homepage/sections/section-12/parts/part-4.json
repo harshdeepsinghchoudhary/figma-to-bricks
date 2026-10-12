@@ -1,0 +1,60 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "casino-cards-part",
+      "figmaNodeId": "scope",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 75
+      },
+      "children": [
+        {
+          "type": "container",
+          "id": "group-143",
+          "figmaNodeId": "2227:128",
+          "layout": {
+            "margin": {
+              "top": 105
+            }
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "vector-2",
+              "figmaNodeId": "2227:129",
+              "asset": {
+                "nodeId": "2227:129",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "rank-2-label",
+              "figmaNodeId": "2227:130",
+              "text": "2",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "id": "group-161",
+          "figmaNodeId": "2231:221"
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Card children (Irish Luck logo image, rank badge, name text, rigged-percentage text, Proof button) not provided in this part of the data."
+  ]
+}

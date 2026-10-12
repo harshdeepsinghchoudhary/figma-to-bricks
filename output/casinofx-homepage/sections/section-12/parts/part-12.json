@@ -1,0 +1,95 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "rtp-manipulation-tactics-section",
+      "children": [
+        {
+          "type": "heading",
+          "id": "rtp-manipulation-tactics-heading",
+          "figmaNodeId": "2226:9",
+          "level": 1,
+          "text": "RTP Manipulation & Tactics",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 32,
+            "fontWeight": 600,
+            "lineHeight": "38.73px",
+            "color": "#000000",
+            "align": "left"
+          }
+        },
+        {
+          "type": "row",
+          "id": "article-cards-row",
+          "figmaNodeId": "2231:228",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 26,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "article-card-group",
+              "figmaNodeId": "2227:188",
+              "children": [
+                {
+                  "type": "image",
+                  "id": "carousel-light-roulette",
+                  "figmaNodeId": "2227:79",
+                  "asset": {
+                    "nodeId": "2227:79",
+                    "kind": "image"
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "article-card-content",
+                  "figmaNodeId": "2227:186",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 20
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "article-card-description",
+                      "figmaNodeId": "2227:81",
+                      "text": "How Light Roulette uses a custom software script to avoid paying out on ",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "19.36px",
+                        "color": "#000000CC",
+                        "align": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "fallback-card-content",
+                  "figmaNodeId": "2226:9",
+                  "text": "RTP Manipulation & Tactics",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 32,
+                    "fontWeight": 600,
+                    "lineHeight": "38.73px",
+                    "color": "#000000",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "irish-luck-card",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "image",
+          "id": "irish-luck-logo",
+          "figmaNodeId": "2228:267",
+          "asset": {
+            "nodeId": "2228:267",
+            "kind": "image"
+          }
+        },
+        {
+          "type": "row",
+          "id": "vector-badge",
+          "figmaNodeId": "2227:131",
+          "children": [
+            {
+              "type": "icon",
+              "id": "vector-badge-icon",
+              "figmaNodeId": "2227:132",
+              "asset": {
+                "nodeId": "2227:132",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "vector-badge-number",
+              "figmaNodeId": "2227:133",
+              "text": "3",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "id": "irish-luck-info",
+          "figmaNodeId": "2226:33",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 6,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "irish-luck-name",
+              "figmaNodeId": "2226:34",
+              "text": "Irish Luck",
+              "level": 3,
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#000000",
+                "align": "center"
+              }
+            },
+            {
+              "type": "text",
+              "id": "rigged-label",
+              "figmaNodeId": "2226:35",
+              "text": "🛑 85.1% Rigged",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "16.94px",
+                "color": "#00000080",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "id": "proof-button",
+          "figmaNodeId": "2226:36",
+          "text": "Proof",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "justify": "center",
+            "align": "center",
+            "gap": 10,
+            "padding": {
+              "left": 20,
+              "right": 20,
+              "top": 12,
+              "bottom": 12
+            }
+          },
+          "background": {
+            "color": "#FFD733"
+          },
+          "border": {
+            "radius": 4
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "16.94px",
+            "color": "#000000",
+            "align": "center"
+          }
+        }
+      ]
+    }
+  ]
+}

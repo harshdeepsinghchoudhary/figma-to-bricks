@@ -1,0 +1,80 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casinofx-homepage-section",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-138",
+          "figmaNodeId": "2236:73"
+        },
+        {
+          "type": "column",
+          "id": "frame-137",
+          "figmaNodeId": "2236:72"
+        },
+        {
+          "type": "row",
+          "id": "frame-136",
+          "figmaNodeId": "2236:71"
+        },
+        {
+          "type": "row",
+          "id": "frame-135",
+          "figmaNodeId": "2236:68",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 18,
+            "align": "center",
+            "justify": "start"
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "select-country-region",
+              "figmaNodeId": "2236:54",
+              "text": "Select Country/Region",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fontWeight": 500,
+                "lineHeight": "22px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "type": "unsupported",
+              "id": "group-166",
+              "figmaNodeId": "2236:67",
+              "notes": [
+                "Group containing rectangle background and inner frames"
+              ]
+            },
+            {
+              "type": "text",
+              "id": "bengal",
+              "figmaNodeId": "2236:59",
+              "text": "Bengal"
+            },
+            {
+              "type": "image",
+              "id": "frame-asset",
+              "figmaNodeId": "2236:62",
+              "asset": {
+                "nodeId": "2236:62",
+                "kind": "svg"
+              }
+            }
+          ]
+        }
+      ],
+      "figmaNodeId": "scope"
+    }
+  ],
+  "_uncertain": [
+    "casinofx-homepage-section: dropped unknown field \"_uncertain\""
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "category-tabs",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 17,
+        "justify": "space-between"
+      },
+      "children": [
+        {
+          "type": "text",
+          "id": "all-label",
+          "figmaNodeId": "1014:86",
+          "text": "All",
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 24,
+            "fontWeight": 400,
+            "lineHeight": "36px",
+            "letterSpacing": "0.72px",
+            "color": "#000000",
+            "align": "center"
+          },
+          "size": {
+            "width": 194,
+            "height": 36
+          }
+        },
+        {
+          "type": "text",
+          "id": "app-design-label",
+          "figmaNodeId": "1014:24",
+          "text": "App Design",
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 24,
+            "fontWeight": 400,
+            "lineHeight": "36px",
+            "letterSpacing": "0.72px",
+            "color": "#000000",
+            "align": "center"
+          },
+          "size": {
+            "width": 194,
+            "height": 36
+          }
+        },
+        {
+          "type": "text",
+          "id": "graphic-design-label",
+          "figmaNodeId": "1014:26",
+          "text": "Graphic Design",
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 24,
+            "fontWeight": 400,
+            "lineHeight": "36px",
+            "letterSpacing": "0.72px",
+            "color": "#000000",
+            "align": "center"
+          },
+          "size": {
+            "width": 194,
+            "height": 36
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "No Figma data provided for typography values of nodes 1014:86 and 1014:24; copied from 1014:26.",
+    "No Figma data provided for sizes of nodes 1014:86 and 1014:24; copied from 1014:26."
+  ]
+}

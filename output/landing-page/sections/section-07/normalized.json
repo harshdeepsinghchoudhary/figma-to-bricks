@@ -1,0 +1,140 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "id": "lets-design-together-section",
+      "figmaNodeId": "scope",
+      "type": "section",
+      "children": [
+        {
+          "type": "column",
+          "id": "lets-design-together-section-column-1",
+          "children": [
+            {
+              "id": "lets-design-together-heading",
+              "figmaNodeId": "1039:127",
+              "type": "heading",
+              "text": "Lets Design Together",
+              "level": 2,
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 65,
+                "fontWeight": 600,
+                "lineHeight": "97.5px",
+                "letterSpacing": "1.95px",
+                "align": "center",
+                "color": "#000000"
+              },
+              "size": {
+                "width": 724
+              }
+            },
+            {
+              "id": "lorem-ipsum-subheading",
+              "figmaNodeId": "1039:126",
+              "type": "text",
+              "text": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px",
+                "align": "center",
+                "color": "#000000"
+              },
+              "size": {
+                "width": 932
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 15,
+            "align": "center"
+          }
+        },
+        {
+          "type": "column",
+          "id": "contact-form-group",
+          "figmaNodeId": "1039:133",
+          "children": [
+            {
+              "type": "row",
+              "id": "lets-design-together-section-row-1",
+              "children": [
+                {
+                  "id": "email-placeholder-text",
+                  "figmaNodeId": "1039:130",
+                  "type": "text-basic",
+                  "text": "Enter Your Email",
+                  "typography": {
+                    "fontFamily": "Poppins",
+                    "fontSize": 21,
+                    "fontWeight": 400,
+                    "lineHeight": "31.5px",
+                    "letterSpacing": "0.63px",
+                    "align": "center",
+                    "color": "#797979"
+                  },
+                  "size": {
+                    "width": 178
+                  }
+                },
+                {
+                  "type": "heading",
+                  "id": "contact-me-4",
+                  "figmaNodeId": "1039:132",
+                  "text": "Contact Me ",
+                  "typography": {
+                    "fontFamily": "Poppins",
+                    "fontSize": 24,
+                    "fontWeight": 600,
+                    "lineHeight": "36px",
+                    "align": "center",
+                    "color": "#FFFFFF"
+                  },
+                  "level": 3,
+                  "size": {
+                    "width": 149
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "justify": "space-between",
+                "align": "start"
+              },
+              "size": {
+                "width": 811
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "padding": {
+              "top": 20,
+              "right": 37,
+              "bottom": 19,
+              "left": 26
+            },
+            "align": "start"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 48,
+        "align": "center"
+      }
+    }
+  ],
+  "_uncertain": [
+    "stitch: 1 node(s) added from Figma data because the model's parts did not include them",
+    "stitch: dropped 0 duplicate element(s) emitted by overlapping parts and 1 element(s) whose Figma node id does not exist (contact-submit-btn)"
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "hero-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "header-frame",
+          "figmaNodeId": "372:79",
+          "children": [
+            {
+              "type": "column",
+              "id": "header-group",
+              "figmaNodeId": "372:78",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "hero-section-row-1",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "hero-section-column-3",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "hero-section-column-2",
+                          "children": [
+                            {
+                              "type": "heading",
+                              "id": "hi-i-am",
+                              "figmaNodeId": "260:147",
+                              "text": "Hi I am ",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 24,
+                                "fontWeight": 600,
+                                "color": "#000000",
+                                "lineHeight": "36px",
+                                "letterSpacing": "0.72px",
+                                "align": "left"
+                              },
+                              "level": 4,
+                              "size": {
+                                "width": 89
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "hero-section-column-1",
+                              "children": [
+                                {
+                                  "type": "heading",
+                                  "id": "muhammad-umair",
+                                  "figmaNodeId": "260:149",
+                                  "text": "Muhammad Umair ",
+                                  "typography": {
+                                    "fontFamily": "Poppins",
+                                    "fontSize": 32,
+                                    "fontWeight": 600,
+                                    "color": "#FD6F00",
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "0.96px",
+                                    "align": "left"
+                                  },
+                                  "level": 3,
+                                  "size": {
+                                    "width": 324
+                                  }
+                                },
+                                {
+                                  "type": "heading",
+                                  "id": "ui-ux",
+                                  "figmaNodeId": "260:150",
+                                  "text": "UI & UX",
+                                  "typography": {
+                                    "fontFamily": "Poppins",
+                                    "fontSize": 100,
+                                    "fontWeight": 700,
+                                    "color": "#000000",
+                                    "lineHeight": "120%",
+                                    "letterSpacing": "3px",
+                                    "align": "left"
+                                  },
+                                  "level": 2,
+                                  "size": {
+                                    "width": 383
+                                  }
+                                },
+                                {
+                                  "type": "heading",
+                                  "id": "designer",
+                                  "figmaNodeId": "260:153",
+                                  "text": "Designer ",
+                                  "typography": {
+                                    "fontFamily": "Poppins",
+                                    "fontSize": 100,
+                                    "fontWeight": 700,
+                                    "color": "#000000",
+                                    "lineHeight": "120%",
+                                    "letterSpacing": "3px",
+                                    "align": "left"
+                                  },
+                                  "level": 2,
+                                  "size": {
+                                    "width": 484
+                                  }
+                                }
+                              ]
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 6,
+                            "align": "start"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "lorem-paragraph",
+                          "figmaNodeId": "260:161",
+                          "text": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 21,
+                            "fontWeight": 400,
+                            "color": "#000000",
+                            "lineHeight": "31.5px",
+                            "letterSpacing": "0.63px",
+                            "align": "justify"
+                          },
+                          "layout": {
+                            "margin": {
+                              "top": 28
+                            }
+                          },
+                          "size": {
+                            "width": 698
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "id": "hire-me-btn",
+                          "figmaNodeId": "260:173",
+                          "text": "Hire Me ",
+                          "background": {
+                            "color": "#FD6F00"
+                          },
+                          "border": {
+                            "radius": 5
+                          },
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 21,
+                            "fontWeight": 400,
+                            "color": "#FFFFFF",
+                            "lineHeight": "31.5px",
+                            "letterSpacing": "0.63px",
+                            "align": "justify"
+                          },
+                          "layout": {
+                            "margin": {
+                              "top": 22
+                            },
+                            "padding": {
+                              "top": 17,
+                              "right": 52,
+                              "bottom": 18,
+                              "left": 53
+                            }
+                          },
+                          "size": {
+                            "width": 188
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start",
+                        "margin": {
+                          "top": 97
+                        }
+                      },
+                      "size": {
+                        "width": 714
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "group-2-1",
+                      "figmaNodeId": "372:66",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "ellipse-4",
+                          "figmaNodeId": "372:61",
+                          "asset": {
+                            "nodeId": "372:61",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 485.87,
+                            "height": 485.87
+                          }
+                        },
+                        {
+                          "type": "image",
+                          "id": "layer-0-copy-3",
+                          "figmaNodeId": "372:62",
+                          "asset": {
+                            "nodeId": "372:62",
+                            "kind": "image"
+                          },
+                          "size": {
+                            "width": 538,
+                            "height": 617.24
+                          }
+                        },
+                        {
+                          "type": "image",
+                          "id": "layer-0-copy-4",
+                          "figmaNodeId": "372:63",
+                          "asset": {
+                            "nodeId": "372:63",
+                            "kind": "image"
+                          },
+                          "size": {
+                            "width": 538,
+                            "height": 352.41
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 148,
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "start"
+          }
+        },
+        {
+          "type": "image",
+          "id": "group-39",
+          "figmaNodeId": "1039:171",
+          "asset": {
+            "nodeId": "1039:171",
+            "kind": "svg"
+          },
+          "size": {
+            "width": 205,
+            "height": 32.48
+          },
+          "layout": {
+            "margin": {
+              "left": 1018
+            }
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 36.76,
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "Coverage: 1 content node(s) from the Figma data are missing from your output: 372:64 (asset: Ellipse 5). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own \"text\", never as a child).",
+    "section id generated",
+    "stitch: 1 node(s) added from Figma data because the model's parts did not include them",
+    "stitch: dropped 1 duplicate element(s) emitted by overlapping parts"
+  ]
+}

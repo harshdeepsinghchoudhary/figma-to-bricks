@@ -1,0 +1,390 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "landing-page-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "nav-bar",
+          "figmaNodeId": "375:58",
+          "children": [
+            {
+              "type": "column",
+              "id": "group-11",
+              "figmaNodeId": "375:57",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "landing-page-section-row-1",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "group-7",
+                      "figmaNodeId": "372:90",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "ellipse-4",
+                          "figmaNodeId": "372:85",
+                          "asset": {
+                            "nodeId": "372:85",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 545.81,
+                            "height": 545.81
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "mask-group",
+                          "figmaNodeId": "372:89",
+                          "children": [
+                            {
+                              "type": "unsupported",
+                              "id": "ellipse-5",
+                              "figmaNodeId": "372:88",
+                              "notes": [
+                                "Node 372:88 (Ellipse 5) has an image fill but was not exported in the asset manifest."
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "background-copy-1",
+                              "figmaNodeId": "372:86",
+                              "asset": {
+                                "nodeId": "372:86",
+                                "kind": "image"
+                              },
+                              "size": {
+                                "width": 680.76,
+                                "height": 693.12
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "align": "start"
+                          }
+                        },
+                        {
+                          "type": "image",
+                          "id": "background-copy-2",
+                          "figmaNodeId": "372:87",
+                          "asset": {
+                            "nodeId": "372:87",
+                            "kind": "image"
+                          },
+                          "size": {
+                            "width": 681,
+                            "height": 407
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "landing-page-section-column-3",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "about-me",
+                          "figmaNodeId": "372:83",
+                          "text": "About Me ",
+                          "level": 2,
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 65,
+                            "fontWeight": 600,
+                            "lineHeight": "97.5px",
+                            "letterSpacing": "1.95px",
+                            "color": "#000000",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 330
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "lorem-ipsum-text",
+                          "figmaNodeId": "372:84",
+                          "text": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 21,
+                            "fontWeight": 400,
+                            "lineHeight": "31.5px",
+                            "letterSpacing": "0.63px",
+                            "color": "#000000",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 756
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "landing-page-section-column-2",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "ux-group",
+                              "figmaNodeId": "375:35",
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "landing-page-section-column-1",
+                                  "children": [
+                                    {
+                                      "type": "heading",
+                                      "id": "ux-text",
+                                      "figmaNodeId": "372:93",
+                                      "text": "UX",
+                                      "typography": {
+                                        "fontFamily": "Poppins",
+                                        "fontSize": 24,
+                                        "fontWeight": 600,
+                                        "color": "#000000",
+                                        "lineHeight": "36px",
+                                        "letterSpacing": "0.72px",
+                                        "align": "left"
+                                      },
+                                      "level": 3,
+                                      "size": {
+                                        "width": 34
+                                      }
+                                    },
+                                    {
+                                      "type": "column",
+                                      "id": "ux-slider-row",
+                                      "figmaNodeId": "375:30",
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "ux-slider-knob",
+                                          "figmaNodeId": "375:29",
+                                          "asset": {
+                                            "nodeId": "375:29",
+                                            "kind": "svg"
+                                          },
+                                          "size": {
+                                            "width": 32,
+                                            "height": 32
+                                          }
+                                        }
+                                      ],
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "column",
+                                        "padding": {
+                                          "top": 0,
+                                          "right": 52,
+                                          "bottom": 0,
+                                          "left": 669
+                                        },
+                                        "align": "start"
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "column",
+                                    "gap": 8,
+                                    "align": "start"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "align": "start"
+                              }
+                            },
+                            {
+                              "type": "heading",
+                              "id": "website-design-text",
+                              "figmaNodeId": "375:37",
+                              "text": "Website Design",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 24,
+                                "fontWeight": 600,
+                                "color": "#000000",
+                                "lineHeight": "36px",
+                                "letterSpacing": "0.72px",
+                                "align": "left"
+                              },
+                              "level": 3,
+                              "size": {
+                                "width": 199
+                              },
+                              "layout": {
+                                "margin": {
+                                  "top": 15
+                                }
+                              }
+                            },
+                            {
+                              "type": "image",
+                              "id": "ellipse-9-9",
+                              "figmaNodeId": "375:41",
+                              "asset": {
+                                "nodeId": "375:41",
+                                "kind": "svg"
+                              },
+                              "size": {
+                                "width": 32,
+                                "height": 32
+                              },
+                              "layout": {
+                                "margin": {
+                                  "top": 8,
+                                  "left": 637
+                                }
+                              }
+                            },
+                            {
+                              "type": "heading",
+                              "id": "app-design-10",
+                              "figmaNodeId": "375:43",
+                              "text": "App Design ",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 24,
+                                "fontWeight": 600,
+                                "lineHeight": "36px",
+                                "align": "left",
+                                "color": "#000000"
+                              },
+                              "level": 3,
+                              "size": {
+                                "width": 147
+                              },
+                              "layout": {
+                                "margin": {
+                                  "top": 15
+                                }
+                              }
+                            },
+                            {
+                              "type": "image",
+                              "id": "ellipse-9-11",
+                              "figmaNodeId": "375:47",
+                              "asset": {
+                                "nodeId": "375:47",
+                                "kind": "svg"
+                              },
+                              "size": {
+                                "width": 32,
+                                "height": 32
+                              },
+                              "layout": {
+                                "margin": {
+                                  "top": 8,
+                                  "left": 701
+                                }
+                              }
+                            },
+                            {
+                              "type": "heading",
+                              "id": "graphic-design-label",
+                              "figmaNodeId": "375:50",
+                              "level": 3,
+                              "text": "Graphic Design ",
+                              "layout": {
+                                "margin": {
+                                  "top": 15
+                                }
+                              },
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 24,
+                                "fontWeight": 600,
+                                "lineHeight": "36px",
+                                "letterSpacing": "0.72px",
+                                "color": "#000000",
+                                "align": "left"
+                              },
+                              "size": {
+                                "width": 198
+                              }
+                            },
+                            {
+                              "type": "icon",
+                              "id": "progress-graphic-design-handle",
+                              "figmaNodeId": "375:55",
+                              "asset": {
+                                "nodeId": "375:55",
+                                "kind": "svg"
+                              },
+                              "size": {
+                                "width": 32,
+                                "height": 32
+                              },
+                              "layout": {
+                                "margin": {
+                                  "top": 8,
+                                  "left": 669
+                                }
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 15,
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 756
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 33,
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "start"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "Coverage: 3 content node(s) from the Figma data are missing from your output: 375:41 (asset: Ellipse 9), 375:43 (text: App Design), 375:47 (asset: Ellipse 9). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own \"text\", never as a child).",
+    "375:55 (Ellipse 9): handle x-offset within its slider row not provided; absolute layout assumed",
+    "375:54 (Rectangle 6): x/y offset within slider track not provided; absolute layout assumed",
+    "stitch: 3 node(s) added from Figma data because the model's parts did not include them"
+  ]
+}

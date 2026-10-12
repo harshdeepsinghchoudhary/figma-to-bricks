@@ -1,0 +1,172 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "sliders-part-2",
+      "children": [
+        {
+          "type": "column",
+          "id": "ux-group",
+          "figmaNodeId": "375:35",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 8
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "ux-text",
+              "figmaNodeId": "372:93",
+              "text": "UX",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "color": "#000000",
+                "lineHeight": "36px",
+                "letterSpacing": "0.72px",
+                "align": "left"
+              }
+            },
+            {
+              "type": "block",
+              "id": "ux-slider-row",
+              "figmaNodeId": "375:30",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 0
+              },
+              "children": [
+                {
+                  "type": "block",
+                  "id": "ux-slider-track-bg",
+                  "figmaNodeId": "375:12",
+                  "background": {
+                    "color": "#EDECEC"
+                  },
+                  "border": {
+                    "radius": 6
+                  }
+                },
+                {
+                  "type": "block",
+                  "id": "ux-slider-track-fill",
+                  "figmaNodeId": "375:13",
+                  "background": {
+                    "color": "#FD6F00"
+                  },
+                  "border": {
+                    "radius": 6
+                  }
+                },
+                {
+                  "type": "icon",
+                  "id": "ux-slider-knob",
+                  "figmaNodeId": "375:29",
+                  "asset": {
+                    "nodeId": "375:29",
+                    "kind": "svg"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "website-design-text",
+          "figmaNodeId": "375:37",
+          "text": "Website Design",
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 24,
+            "fontWeight": 600,
+            "color": "#000000",
+            "lineHeight": "36px",
+            "letterSpacing": "0.72px",
+            "align": "left"
+          }
+        },
+        {
+          "type": "block",
+          "id": "website-design-slider-bg",
+          "figmaNodeId": "375:39",
+          "background": {
+            "color": "#EDECEC"
+          },
+          "border": {
+            "radius": 6
+          }
+        },
+        {
+          "type": "block",
+          "id": "website-design-slider-fill",
+          "figmaNodeId": "375:40",
+          "background": {
+            "color": "#FD6F00"
+          },
+          "border": {
+            "radius": 6
+          }
+        },
+        {
+          "type": "icon",
+          "id": "website-design-slider-knob",
+          "figmaNodeId": "375:41",
+          "asset": {
+            "nodeId": "375:41",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "text",
+          "id": "app-design-text",
+          "figmaNodeId": "375:43",
+          "text": "App Design "
+        },
+        {
+          "type": "block",
+          "id": "app-design-slider-bg",
+          "figmaNodeId": "375:45",
+          "background": {
+            "color": "#EDECEC"
+          },
+          "border": {
+            "radius": 6
+          }
+        },
+        {
+          "type": "block",
+          "id": "app-design-slider-fill",
+          "figmaNodeId": "375:46",
+          "background": {
+            "color": "#FD6F00"
+          },
+          "border": {
+            "radius": 6
+          }
+        },
+        {
+          "type": "icon",
+          "id": "app-design-slider-knob",
+          "figmaNodeId": "375:47",
+          "asset": {
+            "nodeId": "375:47",
+            "kind": "svg"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Spacings between flat nodes (Website Design, App Design, slider tracks and knobs) are controlled internally by the absolute layout of Group 10 and the g objects were not provided for these parts."
+  ],
+  "notes": [
+    "Group 10 (375:56) has no children in this partial data, so its layout and structure are handled in other parts of the section.",
+    "Slider track elements (gray and orange) and the corresponding knob ellipses are arranged based on their absolute positions in the Figma data.",
+    "The typography (font family, size, weight, line height, letter spacing, and color) has been uniformly applied to all text nodes within this frame."
+  ]
+}

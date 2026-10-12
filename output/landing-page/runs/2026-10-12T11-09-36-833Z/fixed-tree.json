@@ -1,0 +1,4459 @@
+[
+  {
+    "id": "t3094n",
+    "name": "icon",
+    "parent": "hgme17",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3550,
+          "filename": "subtract-638_185.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/subtract-638_185.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/subtract-638_185.svg"
+        },
+        "height": "67"
+      },
+      "_widthMax": "67px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "4dsnlk",
+    "name": "heading",
+    "parent": "hgme17",
+    "children": [],
+    "settings": {
+      "text": "M<span>umair</span> ",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Montserrat",
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "58.51px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#1E1E1E"
+        },
+        "text-align": "left"
+      },
+      "_cssCustom": "#brxe-4dsnlk span {\n  font-weight: 400;\n  color: #545454;\n}"
+    }
+  },
+  {
+    "id": "hgme17",
+    "name": "div",
+    "parent": "nbs6q6",
+    "children": [
+      "t3094n",
+      "4dsnlk"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "2",
+        "bottom": "0",
+        "left": "0"
+      },
+      "_width": "100%",
+      "_widthMax": "279px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "gbcp8r",
+    "name": "button",
+    "parent": "5rwszu",
+    "children": [],
+    "settings": {
+      "text": "Home",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "nmrq8q",
+    "name": "button",
+    "parent": "5rwszu",
+    "children": [],
+    "settings": {
+      "text": "About Me",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "7lfejb",
+    "name": "text-basic",
+    "parent": "sl0abe",
+    "children": [],
+    "settings": {
+      "text": "Services",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "sl0abe",
+    "name": "div",
+    "parent": "5rwszu",
+    "children": [
+      "7lfejb"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_widthMax": "120px",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "lshqwu",
+    "name": "text-basic",
+    "parent": "1kn5am",
+    "children": [],
+    "settings": {
+      "text": "Projects",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "1kn5am",
+    "name": "div",
+    "parent": "5rwszu",
+    "children": [
+      "lshqwu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_widthMax": "116px",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "8tbgo3",
+    "name": "text-basic",
+    "parent": "axsrg8",
+    "children": [],
+    "settings": {
+      "text": "Testimonials",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "axsrg8",
+    "name": "div",
+    "parent": "5rwszu",
+    "children": [
+      "8tbgo3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_widthMax": "168px",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "w0n7cu",
+    "name": "button",
+    "parent": "5rwszu",
+    "children": [],
+    "settings": {
+      "text": "Contact",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_flexDirection": "row"
+    }
+  },
+  {
+    "id": "5rwszu",
+    "name": "div",
+    "parent": "nbs6q6",
+    "children": [
+      "gbcp8r",
+      "nmrq8q",
+      "sl0abe",
+      "1kn5am",
+      "axsrg8",
+      "w0n7cu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "12",
+      "_columnGap": "12",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "left": "122"
+      },
+      "_width": "100%",
+      "_widthMax": "807px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "0lap9i",
+    "name": "button",
+    "parent": "nbs6q6",
+    "children": [],
+    "settings": {
+      "text": "Downlaod CV",
+      "_padding": {
+        "top": "17",
+        "right": "18",
+        "bottom": "18",
+        "left": "18"
+      },
+      "_margin": {
+        "left": "24"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "justify"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FD6F00"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "5px",
+          "right": "5px",
+          "bottom": "5px",
+          "left": "5px"
+        }
+      },
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "nbs6q6",
+    "name": "div",
+    "parent": "yzr0g0",
+    "children": [
+      "hgme17",
+      "5rwszu",
+      "0lap9i"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_widthMax": "1274px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "yzr0g0",
+    "name": "container",
+    "parent": "cvfhc0",
+    "children": [
+      "nbs6q6"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1470px"
+    }
+  },
+  {
+    "id": "cvfhc0",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "yzr0g0"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "r9w5lu",
+    "name": "heading",
+    "parent": "i6fonn",
+    "children": [],
+    "settings": {
+      "text": "Hi I am ",
+      "tag": "h4",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "36px",
+        "letter-spacing": "0.72px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "aope4s",
+    "name": "heading",
+    "parent": "piklwe",
+    "children": [],
+    "settings": {
+      "text": "Muhammad Umair ",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "600",
+        "line-height": "48px",
+        "letter-spacing": "0.96px",
+        "color": {
+          "raw": "#FD6F00"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "gexp5r",
+    "name": "heading",
+    "parent": "piklwe",
+    "children": [],
+    "settings": {
+      "text": "UI &amp; UX",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "100px",
+        "font-weight": "700",
+        "line-height": "120%",
+        "letter-spacing": "3px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "bz40wq",
+    "name": "heading",
+    "parent": "piklwe",
+    "children": [],
+    "settings": {
+      "text": "Designer ",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "100px",
+        "font-weight": "700",
+        "line-height": "120%",
+        "letter-spacing": "3px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "piklwe",
+    "name": "div",
+    "parent": "i6fonn",
+    "children": [
+      "aope4s",
+      "gexp5r",
+      "bz40wq"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "i6fonn",
+    "name": "div",
+    "parent": "kl64hf",
+    "children": [
+      "r9w5lu",
+      "piklwe"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "6",
+      "_columnGap": "6",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "bmz3jf",
+    "name": "text",
+    "parent": "kl64hf",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>",
+      "_margin": {
+        "top": "28"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "h18cw7",
+    "name": "button",
+    "parent": "kl64hf",
+    "children": [],
+    "settings": {
+      "text": "Hire Me ",
+      "_padding": {
+        "top": "17",
+        "right": "52",
+        "bottom": "18",
+        "left": "53"
+      },
+      "_margin": {
+        "top": "22"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "justify"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FD6F00"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "5px",
+          "right": "5px",
+          "bottom": "5px",
+          "left": "5px"
+        }
+      }
+    }
+  },
+  {
+    "id": "kl64hf",
+    "name": "div",
+    "parent": "r8i1ue",
+    "children": [
+      "i6fonn",
+      "bmz3jf",
+      "h18cw7"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "97"
+      },
+      "_width": "100%",
+      "_widthMax": "714px",
+      "_margin:tablet_portrait": {
+        "top": "49"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_margin:mobile_landscape": {
+        "top": "40"
+      }
+    }
+  },
+  {
+    "id": "aixmyp",
+    "name": "image",
+    "parent": "8wenxc",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3551,
+        "filename": "layer-0-copy-3-372_62.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/layer-0-copy-3-372_62.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/layer-0-copy-3-372_62.png"
+      },
+      "_width": "100%",
+      "_widthMax": "538px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "7irt4e",
+    "name": "image",
+    "parent": "8wenxc",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3552,
+        "filename": "ellipse-4-372_61.svg",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-4-372_61.svg",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-4-372_61.svg"
+      },
+      "_width": "486px",
+      "_position": "absolute",
+      "_left": "2.9%",
+      "_top": "131px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "pbb55c",
+    "name": "image",
+    "parent": "8wenxc",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3553,
+        "filename": "layer-0-copy-4-372_63.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/layer-0-copy-4-372_63.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/layer-0-copy-4-372_63.png"
+      },
+      "_width": "538px",
+      "_position": "absolute",
+      "_left": "0%",
+      "_top": "0px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "8wenxc",
+    "name": "div",
+    "parent": "r8i1ue",
+    "children": [
+      "aixmyp",
+      "7irt4e",
+      "pbb55c"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_position": "relative"
+    }
+  },
+  {
+    "id": "r8i1ue",
+    "name": "div",
+    "parent": "c1ivwa",
+    "children": [
+      "kl64hf",
+      "8wenxc"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "y85dtw",
+    "name": "image",
+    "parent": "c1ivwa",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3554,
+        "filename": "group-39-1039_171.svg",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-39-1039_171.svg",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-39-1039_171.svg"
+      },
+      "_margin": {
+        "left": "1018"
+      },
+      "_width": "100%",
+      "_widthMax": "205px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "c1ivwa",
+    "name": "container",
+    "parent": "lohriu",
+    "children": [
+      "r8i1ue",
+      "y85dtw"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "36.76",
+      "_columnGap": "36.76",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1470px"
+    }
+  },
+  {
+    "id": "lohriu",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "c1ivwa"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "120",
+        "right": "16",
+        "bottom": "35",
+        "left": "16"
+      },
+      "_padding:tablet_portrait": {
+        "top": "120",
+        "bottom": "18"
+      },
+      "_padding:mobile_landscape": {
+        "top": "60",
+        "bottom": "18"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "0cl1au",
+    "name": "image",
+    "parent": "5mi58g",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3555,
+        "filename": "ellipse-4-372_85.svg",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-4-372_85.svg",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-4-372_85.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "545px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "xy9gmu",
+    "name": "image",
+    "parent": "xb6cn3",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3556,
+        "filename": "background-copy-1-372_86.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/background-copy-1-372_86.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/background-copy-1-372_86.png"
+      },
+      "_width": "100%",
+      "_widthMax": "680px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "xb6cn3",
+    "name": "div",
+    "parent": "5mi58g",
+    "children": [
+      "xy9gmu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "zg9s69",
+    "name": "image",
+    "parent": "5mi58g",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3557,
+        "filename": "background-copy-2-372_87.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/background-copy-2-372_87.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/background-copy-2-372_87.png"
+      },
+      "_width": "100%",
+      "_widthMax": "681px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "5mi58g",
+    "name": "div",
+    "parent": "fd9zw7",
+    "children": [
+      "0cl1au",
+      "xb6cn3",
+      "zg9s69"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "7i6af6",
+    "name": "heading",
+    "parent": "20hbt0",
+    "children": [],
+    "settings": {
+      "text": "About Me ",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "65px",
+        "font-weight": "600",
+        "line-height": "97.5px",
+        "letter-spacing": "1.95px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "qd6yau",
+    "name": "text",
+    "parent": "20hbt0",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "cv86kp",
+    "name": "heading",
+    "parent": "wd8yi3",
+    "children": [],
+    "settings": {
+      "text": "UX",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "36px",
+        "letter-spacing": "0.72px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "kr67xq",
+    "name": "icon",
+    "parent": "99ojye",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3558,
+          "filename": "ellipse-9-375_29.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-9-375_29.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-9-375_29.svg"
+        },
+        "height": "32"
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "99ojye",
+    "name": "div",
+    "parent": "wd8yi3",
+    "children": [
+      "kr67xq"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "52",
+        "bottom": "0",
+        "left": "669"
+      },
+      "_width": "100%",
+      "_padding:tablet_portrait": {
+        "left": "40"
+      },
+      "_padding:mobile_landscape": {
+        "left": "20"
+      }
+    }
+  },
+  {
+    "id": "wd8yi3",
+    "name": "div",
+    "parent": "uo7zet",
+    "children": [
+      "cv86kp",
+      "99ojye"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "rnn0qx",
+    "name": "heading",
+    "parent": "uo7zet",
+    "children": [],
+    "settings": {
+      "text": "Website Design",
+      "tag": "h3",
+      "_margin": {
+        "top": "15"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "36px",
+        "letter-spacing": "0.72px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "ategdv",
+    "name": "icon",
+    "parent": "uo7zet",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3558,
+          "filename": "ellipse-9-375_29.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-9-375_29.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-9-375_29.svg"
+        },
+        "height": "32"
+      },
+      "_margin": {
+        "top": "8",
+        "left": "637"
+      },
+      "_widthMax": "32px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "50o0z1",
+    "name": "heading",
+    "parent": "uo7zet",
+    "children": [],
+    "settings": {
+      "text": "App Design ",
+      "tag": "h3",
+      "_margin": {
+        "top": "15"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "e11d0f",
+    "name": "icon",
+    "parent": "uo7zet",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3558,
+          "filename": "ellipse-9-375_29.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-9-375_29.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-9-375_29.svg"
+        },
+        "height": "32"
+      },
+      "_margin": {
+        "top": "8",
+        "left": "701"
+      },
+      "_widthMax": "32px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "y2zl9k",
+    "name": "heading",
+    "parent": "uo7zet",
+    "children": [],
+    "settings": {
+      "text": "Graphic Design ",
+      "tag": "h3",
+      "_margin": {
+        "top": "15"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "36px",
+        "letter-spacing": "0.72px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "qhrupx",
+    "name": "icon",
+    "parent": "uo7zet",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3558,
+          "filename": "ellipse-9-375_29.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-9-375_29.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-9-375_29.svg"
+        },
+        "height": "32"
+      },
+      "_margin": {
+        "top": "8",
+        "left": "669"
+      },
+      "_widthMax": "32px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "uo7zet",
+    "name": "div",
+    "parent": "20hbt0",
+    "children": [
+      "wd8yi3",
+      "rnn0qx",
+      "ategdv",
+      "50o0z1",
+      "e11d0f",
+      "y2zl9k",
+      "qhrupx"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "20hbt0",
+    "name": "div",
+    "parent": "fd9zw7",
+    "children": [
+      "7i6af6",
+      "qd6yau",
+      "uo7zet"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "15",
+      "_columnGap": "15",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "756px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "fd9zw7",
+    "name": "div",
+    "parent": "z2c5vl",
+    "children": [
+      "5mi58g",
+      "20hbt0"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "z2c5vl",
+    "name": "container",
+    "parent": "olfngh",
+    "children": [
+      "fd9zw7"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1470px"
+    }
+  },
+  {
+    "id": "olfngh",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "z2c5vl"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "35",
+        "right": "16",
+        "bottom": "51",
+        "left": "16"
+      },
+      "_padding:tablet_portrait": {
+        "top": "18",
+        "bottom": "26"
+      },
+      "_padding:mobile_landscape": {
+        "top": "18",
+        "bottom": "26"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "9dq67s",
+    "name": "heading",
+    "parent": "05pyxh",
+    "children": [],
+    "settings": {
+      "text": "Services",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "65px",
+        "font-weight": "600",
+        "line-height": "97.5px",
+        "letter-spacing": "1.95px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "h86nwa",
+    "name": "text",
+    "parent": "05pyxh",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "05pyxh",
+    "name": "div",
+    "parent": "ravugn",
+    "children": [
+      "9dq67s",
+      "h86nwa"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "15",
+      "_columnGap": "15",
+      "_alignItems": "center",
+      "_widthMax": "932px"
+    }
+  },
+  {
+    "id": "ar6qfx",
+    "name": "icon",
+    "parent": "k9ukon",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3559,
+          "filename": "vector-645_392.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_392.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_392.svg"
+        },
+        "height": "70"
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "zu6rt0",
+    "name": "icon",
+    "parent": "k9ukon",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3560,
+          "filename": "vector-645_395.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_395.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_395.svg"
+        },
+        "height": "2.74",
+        "width": "16.94"
+      },
+      "_position": "absolute",
+      "_left": "32.4%",
+      "_top": "20px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "zsz8q9",
+    "name": "icon",
+    "parent": "k9ukon",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3561,
+          "filename": "vector-645_394.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_394.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_394.svg"
+        },
+        "height": "9.3",
+        "width": "12.31"
+      },
+      "_position": "absolute",
+      "_left": "9.4%",
+      "_top": "20px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "kxd2ih",
+    "name": "div",
+    "parent": "k9ukon",
+    "children": [],
+    "settings": {
+      "_width": "3px",
+      "_background": {
+        "color": {
+          "raw": "#FD6F00"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "99px",
+          "right": "99px",
+          "bottom": "99px",
+          "left": "99px"
+        }
+      },
+      "_position": "absolute",
+      "_left": "80.5%",
+      "_top": "24px",
+      "_zIndex": "1"
+    }
+  },
+  {
+    "id": "xht6i4",
+    "name": "icon",
+    "parent": "k9ukon",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3560,
+          "filename": "vector-645_395.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_395.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_395.svg"
+        },
+        "height": "2.74",
+        "width": "16.94"
+      },
+      "_position": "absolute",
+      "_left": "32.4%",
+      "_top": "27px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "5byaza",
+    "name": "icon",
+    "parent": "k9ukon",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3561,
+          "filename": "vector-645_394.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_394.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_394.svg"
+        },
+        "height": "9.3",
+        "width": "12.31"
+      },
+      "_position": "absolute",
+      "_left": "43.4%",
+      "_top": "47px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "7yhc7c",
+    "name": "icon",
+    "parent": "k9ukon",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3560,
+          "filename": "vector-645_395.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_395.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_395.svg"
+        },
+        "height": "2.74",
+        "width": "16.94"
+      },
+      "_position": "absolute",
+      "_left": "66.4%",
+      "_top": "47px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "29rhc5",
+    "name": "icon",
+    "parent": "k9ukon",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3560,
+          "filename": "vector-645_395.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_395.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_395.svg"
+        },
+        "height": "2.73",
+        "width": "16.95"
+      },
+      "_position": "absolute",
+      "_left": "66.4%",
+      "_top": "53px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "k9ukon",
+    "name": "div",
+    "parent": "c0k7vl",
+    "children": [
+      "ar6qfx",
+      "zu6rt0",
+      "zsz8q9",
+      "kxd2ih",
+      "xht6i4",
+      "5byaza",
+      "7yhc7c",
+      "29rhc5"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_position": "relative"
+    }
+  },
+  {
+    "id": "rt88lg",
+    "name": "heading",
+    "parent": "c0k7vl",
+    "children": [],
+    "settings": {
+      "text": "UI/UX",
+      "tag": "h3",
+      "_margin": {
+        "top": "26"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "600",
+        "line-height": "48px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "xfe570",
+    "name": "text",
+    "parent": "c0k7vl",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>",
+      "_margin": {
+        "top": "15"
+      },
+      "_width": "100%",
+      "_widthMax": "290px",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "19px",
+        "font-weight": "400",
+        "line-height": "28.5px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "c0k7vl",
+    "name": "div",
+    "parent": "ws3wom",
+    "children": [
+      "k9ukon",
+      "rt88lg",
+      "xfe570"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "57",
+        "right": "18",
+        "bottom": "10",
+        "left": "18"
+      },
+      "_width": "100%",
+      "_widthMax": "330px",
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "14px",
+          "right": "14px",
+          "bottom": "14px",
+          "left": "14px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "ovvsrn",
+    "name": "heading",
+    "parent": "o3mxkx",
+    "children": [],
+    "settings": {
+      "text": "Web Design ",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "600",
+        "line-height": "48px",
+        "letter-spacing": "0.96px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "fap1uh",
+    "name": "icon",
+    "parent": "o3mxkx",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3562,
+          "filename": "layer-1-645_441.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/layer-1-645_441.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/layer-1-645_441.svg"
+        },
+        "height": "82"
+      },
+      "_widthMax": "72px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "pbf9fr",
+    "name": "text",
+    "parent": "o3mxkx",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "19px",
+        "font-weight": "400",
+        "line-height": "28.5px",
+        "letter-spacing": "0.57px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "o3mxkx",
+    "name": "div",
+    "parent": "ws3wom",
+    "children": [
+      "ovvsrn",
+      "fap1uh",
+      "pbf9fr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_margin": {
+        "top": "54",
+        "left": "49"
+      },
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      }
+    }
+  },
+  {
+    "id": "3uv1b6",
+    "name": "heading",
+    "parent": "kp8xsr",
+    "children": [],
+    "settings": {
+      "text": "App Design",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "600",
+        "line-height": "48px",
+        "letter-spacing": "0.96px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "927vqx",
+    "name": "text",
+    "parent": "kp8xsr",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "19px",
+        "font-weight": "400",
+        "line-height": "28.5px",
+        "letter-spacing": "0.57px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "ikah27",
+    "name": "icon",
+    "parent": "kp8xsr",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3563,
+          "filename": "group-18-645_457.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-18-645_457.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-18-645_457.svg"
+        },
+        "height": "82.47"
+      },
+      "_widthMax": "47px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "kp8xsr",
+    "name": "div",
+    "parent": "ws3wom",
+    "children": [
+      "3uv1b6",
+      "927vqx",
+      "ikah27"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_margin": {
+        "top": "51",
+        "left": "67"
+      },
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      }
+    }
+  },
+  {
+    "id": "8y6tt6",
+    "name": "heading",
+    "parent": "t2mqij",
+    "children": [],
+    "settings": {
+      "text": "Graphic Design ",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "600",
+        "line-height": "48px",
+        "letter-spacing": "0.96px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "81zpmt",
+    "name": "icon",
+    "parent": "c8wfea",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3564,
+          "filename": "vector-645_464.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_464.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_464.svg"
+        },
+        "height": "70"
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "7w8lrf",
+    "name": "icon",
+    "parent": "c8wfea",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3565,
+          "filename": "vector-645_465.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_465.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_465.svg"
+        },
+        "height": "10.24",
+        "width": "9.65"
+      },
+      "_position": "absolute",
+      "_left": "8%",
+      "_top": "7px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "hu731b",
+    "name": "icon",
+    "parent": "c8wfea",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3565,
+          "filename": "vector-645_465.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_465.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_465.svg"
+        },
+        "height": "10.24",
+        "width": "9.7"
+      },
+      "_position": "absolute",
+      "_left": "23.9%",
+      "_top": "7px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "kwx73e",
+    "name": "icon",
+    "parent": "c8wfea",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3565,
+          "filename": "vector-645_465.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_465.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/vector-645_465.svg"
+        },
+        "height": "10.24",
+        "width": "9.65"
+      },
+      "_position": "absolute",
+      "_left": "39.8%",
+      "_top": "7px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "c8wfea",
+    "name": "div",
+    "parent": "t2mqij",
+    "children": [
+      "81zpmt",
+      "7w8lrf",
+      "hu731b",
+      "kwx73e"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_position": "relative"
+    }
+  },
+  {
+    "id": "lj9kw0",
+    "name": "text",
+    "parent": "t2mqij",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "19px",
+        "font-weight": "400",
+        "line-height": "28.5px",
+        "letter-spacing": "0.57px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "t2mqij",
+    "name": "div",
+    "parent": "ws3wom",
+    "children": [
+      "8y6tt6",
+      "c8wfea",
+      "lj9kw0"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_margin": {
+        "top": "57",
+        "left": "67"
+      },
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      }
+    }
+  },
+  {
+    "id": "ws3wom",
+    "name": "div",
+    "parent": "ravugn",
+    "children": [
+      "c0k7vl",
+      "o3mxkx",
+      "kp8xsr",
+      "t2mqij"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "ravugn",
+    "name": "div",
+    "parent": "ivvsib",
+    "children": [
+      "05pyxh",
+      "ws3wom"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "0",
+        "right": "18",
+        "bottom": "0",
+        "left": "0"
+      },
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "ivvsib",
+    "name": "container",
+    "parent": "f4iz0g",
+    "children": [
+      "ravugn"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1470px"
+    }
+  },
+  {
+    "id": "f4iz0g",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "ivvsib"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "70",
+        "right": "16",
+        "bottom": "70",
+        "left": "16"
+      },
+      "_padding:tablet_portrait": {
+        "top": "35",
+        "bottom": "35"
+      },
+      "_padding:mobile_landscape": {
+        "top": "35",
+        "bottom": "35"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "3rorqt",
+    "name": "heading",
+    "parent": "db72iv",
+    "children": [],
+    "settings": {
+      "text": "My Projects",
+      "tag": "h2",
+      "_margin": {
+        "left": "510"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "65px",
+        "font-weight": "600",
+        "line-height": "97.5px",
+        "letter-spacing": "1.95px",
+        "color": {
+          "raw": "#1E1E1E"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "b0ahnd",
+    "name": "text",
+    "parent": "db72iv",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat urna tellus</p>",
+      "_margin": {
+        "top": "22",
+        "left": "249"
+      },
+      "_width": "100%",
+      "_widthMax": "921px",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "4ofp09",
+    "name": "button",
+    "parent": "jlib2a",
+    "children": [],
+    "settings": {
+      "text": "All",
+      "_padding": {
+        "top": "10",
+        "right": "20",
+        "bottom": "10",
+        "left": "20"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "400",
+        "line-height": "36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#545454"
+        },
+        "width": {
+          "top": "0.4",
+          "right": "0.4",
+          "bottom": "0.4",
+          "left": "0.4"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "1wdt1q",
+    "name": "button",
+    "parent": "8srqec",
+    "children": [],
+    "settings": {
+      "text": "UI/UX",
+      "_padding": {
+        "top": "10",
+        "bottom": "10"
+      },
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "400",
+        "line-height": "36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#545454"
+        },
+        "width": {
+          "top": "0.4",
+          "right": "0.4",
+          "bottom": "0.4",
+          "left": "0.4"
+        }
+      }
+    }
+  },
+  {
+    "id": "d6zdq9",
+    "name": "button",
+    "parent": "8srqec",
+    "children": [],
+    "settings": {
+      "text": "UI/UX",
+      "_padding": {
+        "top": "10",
+        "bottom": "10"
+      },
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "400",
+        "line-height": "36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#545454"
+        },
+        "width": {
+          "top": "0.4",
+          "right": "0.4",
+          "bottom": "0.4",
+          "left": "0.4"
+        }
+      }
+    }
+  },
+  {
+    "id": "lweirw",
+    "name": "button",
+    "parent": "8srqec",
+    "children": [],
+    "settings": {
+      "text": "UI/UX",
+      "_padding": {
+        "top": "10",
+        "bottom": "10"
+      },
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "400",
+        "line-height": "36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#545454"
+        },
+        "width": {
+          "top": "0.4",
+          "right": "0.4",
+          "bottom": "0.4",
+          "left": "0.4"
+        }
+      }
+    }
+  },
+  {
+    "id": "v3pcgq",
+    "name": "button",
+    "parent": "8srqec",
+    "children": [],
+    "settings": {
+      "text": "UI/UX",
+      "_padding": {
+        "top": "10",
+        "bottom": "10"
+      },
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "400",
+        "line-height": "36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#545454"
+        },
+        "width": {
+          "top": "0.4",
+          "right": "0.4",
+          "bottom": "0.4",
+          "left": "0.4"
+        }
+      }
+    }
+  },
+  {
+    "id": "8srqec",
+    "name": "div",
+    "parent": "tj3hxp",
+    "children": [
+      "1wdt1q",
+      "d6zdq9",
+      "lweirw",
+      "v3pcgq"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column"
+    }
+  },
+  {
+    "id": "w8j1vr",
+    "name": "button",
+    "parent": "tj3hxp",
+    "children": [],
+    "settings": {
+      "text": "Web Design",
+      "_padding": {
+        "top": "10",
+        "right": "20",
+        "bottom": "10",
+        "left": "20"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "400",
+        "line-height": "36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FD6F00"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#545454"
+        },
+        "width": {
+          "top": "0.4",
+          "right": "0.4",
+          "bottom": "0.4",
+          "left": "0.4"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "zxu4rm",
+    "name": "button",
+    "parent": "tj3hxp",
+    "children": [],
+    "settings": {
+      "text": "App Design",
+      "_padding": {
+        "top": "10",
+        "right": "20",
+        "bottom": "10",
+        "left": "20"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "400",
+        "line-height": "36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#545454"
+        },
+        "width": {
+          "top": "0.4",
+          "right": "0.4",
+          "bottom": "0.4",
+          "left": "0.4"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "1vtjyc",
+    "name": "button",
+    "parent": "tj3hxp",
+    "children": [],
+    "settings": {
+      "text": "Graphic Design",
+      "_padding": {
+        "top": "10",
+        "right": "20",
+        "bottom": "10",
+        "left": "20"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "400",
+        "line-height": "36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#545454"
+        },
+        "width": {
+          "top": "0.4",
+          "right": "0.4",
+          "bottom": "0.4",
+          "left": "0.4"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "tj3hxp",
+    "name": "div",
+    "parent": "jlib2a",
+    "children": [
+      "8srqec",
+      "w8j1vr",
+      "zxu4rm",
+      "1vtjyc"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "17",
+      "_columnGap": "17",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "767px",
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        }
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "jlib2a",
+    "name": "div",
+    "parent": "db72iv",
+    "children": [
+      "4ofp09",
+      "tj3hxp"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "22",
+      "_columnGap": "22",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "59",
+        "left": "234"
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "up27tu",
+    "name": "image",
+    "parent": "zvfhe0",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3566,
+        "filename": "web-designs-1014_30.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_30.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_30.png"
+      },
+      "_width": "100%",
+      "_widthMax": "274px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "g0794y",
+    "name": "image",
+    "parent": "zvfhe0",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3567,
+        "filename": "web-designs-1014_31.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_31.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_31.png"
+      },
+      "_width": "100%",
+      "_widthMax": "274px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "zvfhe0",
+    "name": "div",
+    "parent": "mto473",
+    "children": [
+      "up27tu",
+      "g0794y"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column"
+    }
+  },
+  {
+    "id": "kregmh",
+    "name": "text",
+    "parent": "mto473",
+    "children": [],
+    "settings": {
+      "text": "<p>Web Design </p>",
+      "_margin": {
+        "top": "37"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "19px",
+        "font-weight": "400",
+        "line-height": "28.5px",
+        "letter-spacing": "0.57px",
+        "color": {
+          "raw": "#FD6F00"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "fn7h1a",
+    "name": "heading",
+    "parent": "mto473",
+    "children": [],
+    "settings": {
+      "text": "AirCalling Landing Page Design ",
+      "tag": "h3",
+      "_margin": {
+        "top": "10"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "36px",
+        "letter-spacing": "0.72px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "mto473",
+    "name": "div",
+    "parent": "tc9ynx",
+    "children": [
+      "zvfhe0",
+      "kregmh",
+      "fn7h1a"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "445px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "uczowc",
+    "name": "image",
+    "parent": "8oyxoe",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3568,
+        "filename": "web-designs-1014_37.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_37.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_37.png"
+      },
+      "_width": "100%",
+      "_widthMax": "273px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "810z06",
+    "name": "image",
+    "parent": "8oyxoe",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3569,
+        "filename": "web-designs-1014_38.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_38.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_38.png"
+      },
+      "_width": "100%",
+      "_widthMax": "273px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "8oyxoe",
+    "name": "div",
+    "parent": "qbcw1b",
+    "children": [
+      "uczowc",
+      "810z06"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_margin": {
+        "left": "39"
+      }
+    }
+  },
+  {
+    "id": "mz9ze9",
+    "name": "text",
+    "parent": "qbcw1b",
+    "children": [],
+    "settings": {
+      "text": "<p>Web Design </p>",
+      "_margin": {
+        "top": "37"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "19px",
+        "font-weight": "400",
+        "line-height": "28.5px",
+        "letter-spacing": "0.57px",
+        "color": {
+          "raw": "#FD6F00"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "cp1agw",
+    "name": "heading",
+    "parent": "qbcw1b",
+    "children": [],
+    "settings": {
+      "text": "Business Landing Page Design ",
+      "tag": "h3",
+      "_margin": {
+        "top": "10"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "36px",
+        "letter-spacing": "0.72px",
+        "color": {
+          "raw": "#1E1E1E"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "qbcw1b",
+    "name": "div",
+    "parent": "tc9ynx",
+    "children": [
+      "8oyxoe",
+      "mz9ze9",
+      "cp1agw"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "left": "44"
+      },
+      "_width": "100%",
+      "_widthMax": "417px",
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "qbexki",
+    "name": "image",
+    "parent": "r6lhb7",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3570,
+        "filename": "web-designs-1014_43.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_43.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_43.png"
+      },
+      "_width": "100%",
+      "_widthMax": "274px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "6miukk",
+    "name": "image",
+    "parent": "r6lhb7",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3571,
+        "filename": "web-designs-1014_44.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_44.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/web-designs-1014_44.png"
+      },
+      "_width": "100%",
+      "_widthMax": "274px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "r6lhb7",
+    "name": "div",
+    "parent": "6pdwo4",
+    "children": [
+      "qbexki",
+      "6miukk"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_margin": {
+        "left": "39"
+      }
+    }
+  },
+  {
+    "id": "ggsfcn",
+    "name": "text-basic",
+    "parent": "6pdwo4",
+    "children": [],
+    "settings": {
+      "text": "Web Design ",
+      "_margin": {
+        "top": "37"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "19px",
+        "font-weight": "400",
+        "line-height": "28.5px",
+        "letter-spacing": "0.57px",
+        "color": {
+          "raw": "#FD6F00"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "7w7mak",
+    "name": "heading",
+    "parent": "6pdwo4",
+    "children": [],
+    "settings": {
+      "text": "Ecom Web Page Design ",
+      "tag": "h3",
+      "_margin": {
+        "top": "10"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "700",
+        "line-height": "36px",
+        "letter-spacing": "0.72px",
+        "color": {
+          "raw": "#1E1E1E"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "6pdwo4",
+    "name": "div",
+    "parent": "tc9ynx",
+    "children": [
+      "r6lhb7",
+      "ggsfcn",
+      "7w7mak"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "left": "72"
+      },
+      "_width": "100%",
+      "_widthMax": "418px",
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "tc9ynx",
+    "name": "div",
+    "parent": "db72iv",
+    "children": [
+      "mto473",
+      "qbcw1b",
+      "6pdwo4"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_margin": {
+        "top": "106"
+      },
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_margin:tablet_portrait": {
+        "top": "53"
+      },
+      "_margin:mobile_landscape": {
+        "top": "40"
+      }
+    }
+  },
+  {
+    "id": "db72iv",
+    "name": "div",
+    "parent": "j05svi",
+    "children": [
+      "3rorqt",
+      "b0ahnd",
+      "jlib2a",
+      "tc9ynx"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "27",
+        "bottom": "0",
+        "left": "0"
+      },
+      "_width": "100%",
+      "_widthMax": "1280px"
+    }
+  },
+  {
+    "id": "j05svi",
+    "name": "container",
+    "parent": "81zi4p",
+    "children": [
+      "db72iv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1470px"
+    }
+  },
+  {
+    "id": "81zi4p",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "j05svi"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "70",
+        "right": "16",
+        "bottom": "70",
+        "left": "16"
+      },
+      "_padding:tablet_portrait": {
+        "top": "35",
+        "bottom": "35"
+      },
+      "_padding:mobile_landscape": {
+        "top": "35",
+        "bottom": "35"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "hcil5l",
+    "name": "heading",
+    "parent": "lpkc85",
+    "children": [],
+    "settings": {
+      "text": "Testimonials",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "65px",
+        "font-weight": "600",
+        "line-height": "97.5px",
+        "letter-spacing": "1.95px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "y2v31f",
+    "name": "text",
+    "parent": "lpkc85",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "lpkc85",
+    "name": "div",
+    "parent": "9uwhfz",
+    "children": [
+      "hcil5l",
+      "y2v31f"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "15",
+      "_columnGap": "15",
+      "_alignItems": "center",
+      "_widthMax": "932px"
+    }
+  },
+  {
+    "id": "133p6c",
+    "name": "image",
+    "parent": "c6aysl",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3572,
+        "filename": "ellipse-12-1039_108.svg",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-12-1039_108.svg",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-12-1039_108.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "235px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "m0vx96",
+    "name": "heading",
+    "parent": "qo125n",
+    "children": [],
+    "settings": {
+      "text": "“",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0.64px",
+        "color": {
+          "raw": "#FD6F00"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "j713dr",
+    "name": "text",
+    "parent": "zfx1ag",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.</p>",
+      "_margin": {
+        "top": "25"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.42px",
+        "color": {
+          "raw": "#424242"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "url2ix",
+    "name": "text-basic",
+    "parent": "zfx1ag",
+    "children": [],
+    "settings": {
+      "text": "Name",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "500",
+        "line-height": "36px",
+        "letter-spacing": "0.48px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "e8frh4",
+    "name": "heading",
+    "parent": "zfx1ag",
+    "children": [],
+    "settings": {
+      "text": "“",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0.64px",
+        "color": {
+          "raw": "#FD6F00"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "zfx1ag",
+    "name": "div",
+    "parent": "qo125n",
+    "children": [
+      "j713dr",
+      "url2ix",
+      "e8frh4"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_margin": {
+        "top": "25"
+      },
+      "_margin:tablet_portrait": {
+        "top": "0"
+      }
+    }
+  },
+  {
+    "id": "qo125n",
+    "name": "div",
+    "parent": "xbrt1q",
+    "children": [
+      "m0vx96",
+      "zfx1ag"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "m46tx4",
+    "name": "text-basic",
+    "parent": "xbrt1q",
+    "children": [],
+    "settings": {
+      "text": "CEO",
+      "_margin": {
+        "left": "18"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "19px",
+        "font-weight": "400",
+        "line-height": "28.5px",
+        "letter-spacing": "0.38px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "xbrt1q",
+    "name": "div",
+    "parent": "c6aysl",
+    "children": [
+      "qo125n",
+      "m46tx4"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "716px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "c6aysl",
+    "name": "div",
+    "parent": "8pjlg5",
+    "children": [
+      "133p6c",
+      "xbrt1q"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "11",
+      "_columnGap": "11",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "55",
+        "right": "77",
+        "bottom": "53",
+        "left": "48"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "14px",
+          "right": "14px",
+          "bottom": "14px",
+          "left": "14px"
+        }
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_padding:tablet_portrait": {
+        "right": "40"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20"
+      }
+    }
+  },
+  {
+    "id": "fw7zbd",
+    "name": "image",
+    "parent": "bzmuy8",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3573,
+        "filename": "ellipse-10-1039_92.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-10-1039_92.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-10-1039_92.png"
+      },
+      "_width": "100%",
+      "_widthMax": "235px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "2wch16",
+    "name": "heading",
+    "parent": "6j2rxw",
+    "children": [],
+    "settings": {
+      "text": "“",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0.64px",
+        "color": {
+          "raw": "#FD6F00"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "6n4wvj",
+    "name": "text",
+    "parent": "mfyxdr",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.</p>",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.42px",
+        "color": {
+          "raw": "#424242"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "btd0pm",
+    "name": "text",
+    "parent": "mfyxdr",
+    "children": [],
+    "settings": {
+      "text": "<p>Name</p>",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "500",
+        "line-height": "36px",
+        "letter-spacing": "0.48px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "h2jc9z",
+    "name": "heading",
+    "parent": "mfyxdr",
+    "children": [],
+    "settings": {
+      "text": "“",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0.64px",
+        "color": {
+          "raw": "#FD6F00"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "mfyxdr",
+    "name": "div",
+    "parent": "6j2rxw",
+    "children": [
+      "6n4wvj",
+      "btd0pm",
+      "h2jc9z"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_margin": {
+        "top": "25"
+      },
+      "_margin:tablet_portrait": {
+        "top": "0"
+      }
+    }
+  },
+  {
+    "id": "6j2rxw",
+    "name": "div",
+    "parent": "nt2jmz",
+    "children": [
+      "2wch16",
+      "mfyxdr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "qsvv8f",
+    "name": "text",
+    "parent": "nt2jmz",
+    "children": [],
+    "settings": {
+      "text": "<p>CEO</p>",
+      "_margin": {
+        "left": "18"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "19px",
+        "font-weight": "400",
+        "line-height": "28.5px",
+        "letter-spacing": "0.38px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "nt2jmz",
+    "name": "div",
+    "parent": "bzmuy8",
+    "children": [
+      "6j2rxw",
+      "qsvv8f"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "716px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "bzmuy8",
+    "name": "div",
+    "parent": "8pjlg5",
+    "children": [
+      "fw7zbd",
+      "nt2jmz"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "11",
+      "_columnGap": "11",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "55",
+        "right": "77",
+        "bottom": "53",
+        "left": "48"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "14px",
+          "right": "14px",
+          "bottom": "14px",
+          "left": "14px"
+        }
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_padding:tablet_portrait": {
+        "right": "40"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20"
+      }
+    }
+  },
+  {
+    "id": "nlnp2e",
+    "name": "image",
+    "parent": "dtwet2",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3574,
+        "filename": "ellipse-11-1039_100.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-11-1039_100.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-11-1039_100.png"
+      },
+      "_width": "100%",
+      "_widthMax": "235px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "f6vi16",
+    "name": "heading",
+    "parent": "qym2rb",
+    "children": [],
+    "settings": {
+      "text": "“",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0.64px",
+        "color": {
+          "raw": "#FD6F00"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "48xqq2",
+    "name": "text",
+    "parent": "wxhhqd",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.</p>",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.42px",
+        "color": {
+          "raw": "#424242"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "f2s2u4",
+    "name": "text-basic",
+    "parent": "wxhhqd",
+    "children": [],
+    "settings": {
+      "text": "Name",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "500",
+        "line-height": "36px",
+        "letter-spacing": "0.48px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "iy32cv",
+    "name": "heading",
+    "parent": "wxhhqd",
+    "children": [],
+    "settings": {
+      "text": "“",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "32px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0.64px",
+        "color": {
+          "raw": "#FD6F00"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "wxhhqd",
+    "name": "div",
+    "parent": "qym2rb",
+    "children": [
+      "48xqq2",
+      "f2s2u4",
+      "iy32cv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_margin": {
+        "top": "25"
+      },
+      "_margin:tablet_portrait": {
+        "top": "0"
+      }
+    }
+  },
+  {
+    "id": "qym2rb",
+    "name": "div",
+    "parent": "7v9y4j",
+    "children": [
+      "f6vi16",
+      "wxhhqd"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "hknola",
+    "name": "text-basic",
+    "parent": "7v9y4j",
+    "children": [],
+    "settings": {
+      "text": "CEO",
+      "_margin": {
+        "left": "18"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "19px",
+        "font-weight": "400",
+        "line-height": "28.5px",
+        "letter-spacing": "0.38px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "justify"
+      }
+    }
+  },
+  {
+    "id": "7v9y4j",
+    "name": "div",
+    "parent": "dtwet2",
+    "children": [
+      "qym2rb",
+      "hknola"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "716px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "dtwet2",
+    "name": "div",
+    "parent": "8pjlg5",
+    "children": [
+      "nlnp2e",
+      "7v9y4j"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "11",
+      "_columnGap": "11",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "55",
+        "right": "77",
+        "bottom": "53",
+        "left": "48"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "14px",
+          "right": "14px",
+          "bottom": "14px",
+          "left": "14px"
+        }
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_padding:tablet_portrait": {
+        "right": "40"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20"
+      }
+    }
+  },
+  {
+    "id": "8pjlg5",
+    "name": "div",
+    "parent": "9uwhfz",
+    "children": [
+      "c6aysl",
+      "bzmuy8",
+      "dtwet2"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(3, 1fr)",
+      "_gridGap": "62",
+      "_alignItemsGrid": "stretch",
+      "_width": "100%",
+      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
+      "_gridGap:tablet_portrait": "40",
+      "_gridTemplateColumns:mobile_portrait": "1fr"
+    }
+  },
+  {
+    "id": "9uwhfz",
+    "name": "container",
+    "parent": "0dgxfd",
+    "children": [
+      "lpkc85",
+      "8pjlg5"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "72",
+      "_columnGap": "72",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "1470px"
+    }
+  },
+  {
+    "id": "0dgxfd",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "9uwhfz"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "70",
+        "right": "16",
+        "bottom": "173",
+        "left": "16"
+      },
+      "_padding:tablet_portrait": {
+        "top": "35",
+        "bottom": "120"
+      },
+      "_padding:mobile_landscape": {
+        "top": "35",
+        "bottom": "60"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "75kjhs",
+    "name": "heading",
+    "parent": "2gpk17",
+    "children": [],
+    "settings": {
+      "text": "Lets Design Together",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "65px",
+        "font-weight": "600",
+        "line-height": "97.5px",
+        "letter-spacing": "1.95px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "hxrbgc",
+    "name": "text",
+    "parent": "2gpk17",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "2gpk17",
+    "name": "div",
+    "parent": "qfoekg",
+    "children": [
+      "75kjhs",
+      "hxrbgc"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "15",
+      "_columnGap": "15",
+      "_alignItems": "center",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "pk6bl3",
+    "name": "text-basic",
+    "parent": "en6gkp",
+    "children": [],
+    "settings": {
+      "text": "Enter Your Email",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#797979"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "f9sy6z",
+    "name": "heading",
+    "parent": "en6gkp",
+    "children": [],
+    "settings": {
+      "text": "Contact Me ",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "en6gkp",
+    "name": "div",
+    "parent": "qfoekg",
+    "children": [
+      "pk6bl3",
+      "f9sy6z"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_padding": {
+        "top": "20",
+        "right": "37",
+        "bottom": "19",
+        "left": "26"
+      },
+      "_width": "100%",
+      "_widthMax": "874px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "qfoekg",
+    "name": "container",
+    "parent": "2lprv7",
+    "children": [
+      "2gpk17",
+      "en6gkp"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "48",
+      "_columnGap": "48",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "932px"
+    }
+  },
+  {
+    "id": "2lprv7",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "qfoekg"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "70",
+        "right": "16",
+        "bottom": "70",
+        "left": "16"
+      },
+      "_padding:tablet_portrait": {
+        "top": "35",
+        "bottom": "35"
+      },
+      "_padding:mobile_landscape": {
+        "top": "35",
+        "bottom": "35"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "h45agg",
+    "name": "icon",
+    "parent": "42bkqk",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3550,
+          "filename": "subtract-638_185.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/subtract-638_185.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/subtract-638_185.svg"
+        },
+        "height": "67"
+      },
+      "_widthMax": "67px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "78n0xv",
+    "name": "heading",
+    "parent": "42bkqk",
+    "children": [],
+    "settings": {
+      "text": "M<span>umair</span> ",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Montserrat",
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "58.51px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#1E1E1E"
+        },
+        "text-align": "left"
+      },
+      "_cssCustom": "#brxe-78n0xv span {\n  font-weight: 400;\n  color: #545454;\n}"
+    }
+  },
+  {
+    "id": "42bkqk",
+    "name": "div",
+    "parent": "7amj4u",
+    "children": [
+      "h45agg",
+      "78n0xv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "2",
+        "bottom": "0",
+        "left": "0"
+      },
+      "_widthMax": "277px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "rkm9fl",
+    "name": "text",
+    "parent": "v4fiam",
+    "children": [],
+    "settings": {
+      "text": "<p>Home</p>",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "v4fiam",
+    "name": "div",
+    "parent": "2mfxsi",
+    "children": [
+      "rkm9fl"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_widthMax": "93px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "skfq13",
+    "name": "text",
+    "parent": "jfafn5",
+    "children": [],
+    "settings": {
+      "text": "<p>About Me</p>",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "jfafn5",
+    "name": "div",
+    "parent": "2mfxsi",
+    "children": [
+      "skfq13"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_widthMax": "132px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "ekbq2v",
+    "name": "button",
+    "parent": "2mfxsi",
+    "children": [],
+    "settings": {
+      "text": "Services",
+      "_display": "flex",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_flexDirection": "row"
+    }
+  },
+  {
+    "id": "zko0qx",
+    "name": "button",
+    "parent": "2mfxsi",
+    "children": [],
+    "settings": {
+      "text": "Projects",
+      "_display": "flex",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_flexDirection": "row"
+    }
+  },
+  {
+    "id": "22qgla",
+    "name": "button",
+    "parent": "2mfxsi",
+    "children": [],
+    "settings": {
+      "text": "Testimonials",
+      "_display": "flex",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_flexDirection": "row"
+    }
+  },
+  {
+    "id": "1vjafj",
+    "name": "text",
+    "parent": "xnrxx1",
+    "children": [],
+    "settings": {
+      "text": "<p>Contact</p>",
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "xnrxx1",
+    "name": "div",
+    "parent": "2mfxsi",
+    "children": [
+      "1vjafj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "10",
+        "right": "14",
+        "bottom": "10",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_widthMax": "118px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "2mfxsi",
+    "name": "div",
+    "parent": "7amj4u",
+    "children": [
+      "v4fiam",
+      "jfafn5",
+      "ekbq2v",
+      "zko0qx",
+      "22qgla",
+      "xnrxx1"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_margin": {
+        "top": "65"
+      },
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_margin:tablet_portrait": {
+        "top": "33"
+      },
+      "_margin:mobile_landscape": {
+        "top": "33"
+      }
+    }
+  },
+  {
+    "id": "3v4tyn",
+    "name": "icon",
+    "parent": "7amj4u",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": 3575,
+          "filename": "group-38-1039_168.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-38-1039_168.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-38-1039_168.svg"
+        },
+        "height": "32.48"
+      },
+      "_margin": {
+        "top": "80.52"
+      },
+      "_widthMax": "205px",
+      "_margin:tablet_portrait": {
+        "top": "40"
+      },
+      "_margin:mobile_landscape": {
+        "top": "40"
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "fc80zm",
+    "name": "text",
+    "parent": "7amj4u",
+    "children": [],
+    "settings": {
+      "text": "<p>© 2023 <span>Mumair</span> All Rights Reserved , Inc.</p>",
+      "_margin": {
+        "top": "88"
+      },
+      "_typography": {
+        "font-family": "Poppins",
+        "font-size": "21px",
+        "font-weight": "400",
+        "line-height": "31.5px",
+        "letter-spacing": "0.63px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_margin:tablet_portrait": {
+        "top": "44"
+      },
+      "_margin:mobile_landscape": {
+        "top": "40"
+      },
+      "_cssCustom": "#brxe-fc80zm span {\n  font-weight: 700;\n  color: #FD6F00;\n}"
+    }
+  },
+  {
+    "id": "7amj4u",
+    "name": "div",
+    "parent": "qt0d8t",
+    "children": [
+      "42bkqk",
+      "2mfxsi",
+      "3v4tyn",
+      "fc80zm"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "807px"
+    }
+  },
+  {
+    "id": "qt0d8t",
+    "name": "container",
+    "parent": "djf9l1",
+    "children": [
+      "7amj4u"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1470px"
+    }
+  },
+  {
+    "id": "djf9l1",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "qt0d8t"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "179",
+        "right": "16",
+        "bottom": "26",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#F8F8F8"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "top": "120",
+        "bottom": "13"
+      },
+      "_padding:mobile_landscape": {
+        "top": "60",
+        "bottom": "13"
+      }
+    }
+  }
+]

@@ -1,0 +1,719 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "my-projects-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-21-wrapper",
+          "figmaNodeId": "1014:15",
+          "children": [
+            {
+              "type": "column",
+              "id": "my-projects-section-column-7",
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "my-projects",
+                  "figmaNodeId": "1014:17",
+                  "text": "My Projects",
+                  "level": 2,
+                  "typography": {
+                    "fontFamily": "Poppins",
+                    "fontSize": 65,
+                    "fontWeight": 600,
+                    "align": "left",
+                    "color": "#1E1E1E",
+                    "lineHeight": "97.5px",
+                    "letterSpacing": "1.95px"
+                  },
+                  "size": {
+                    "width": 399
+                  },
+                  "layout": {
+                    "margin": {
+                      "left": 510
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "project-description",
+                  "figmaNodeId": "1014:16",
+                  "text": "Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat urna tellus",
+                  "typography": {
+                    "fontFamily": "Poppins",
+                    "fontSize": 21,
+                    "fontWeight": 400,
+                    "align": "center",
+                    "color": "#000000",
+                    "lineHeight": "31.5px",
+                    "letterSpacing": "0.63px"
+                  },
+                  "size": {
+                    "width": 921
+                  },
+                  "layout": {
+                    "margin": {
+                      "top": 22,
+                      "left": 249
+                    }
+                  }
+                },
+                {
+                  "type": "row",
+                  "id": "my-projects-section-row-2",
+                  "children": [
+                    {
+                      "type": "button",
+                      "id": "all-label",
+                      "figmaNodeId": "1014:85",
+                      "text": "All",
+                      "typography": {
+                        "fontFamily": "Poppins",
+                        "fontSize": 24,
+                        "fontWeight": 400,
+                        "lineHeight": "36px",
+                        "align": "center",
+                        "color": "#000000"
+                      },
+                      "background": {
+                        "color": "#F8F8F8"
+                      },
+                      "border": {
+                        "radius": 12
+                      },
+                      "size": {
+                        "width": 70
+                      },
+                      "layout": {
+                        "padding": {
+                          "top": 10,
+                          "right": 20,
+                          "bottom": 10,
+                          "left": 20
+                        }
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "group-28",
+                      "figmaNodeId": "1014:18",
+                      "border": {
+                        "radius": 12
+                      },
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "my-projects-section-row-1",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "my-projects-section-column-1",
+                              "children": [
+                                {
+                                  "type": "button",
+                                  "id": "ui-ux-button",
+                                  "figmaNodeId": "1014:19",
+                                  "text": "UI/UX",
+                                  "typography": {
+                                    "fontFamily": "Poppins",
+                                    "fontSize": 24,
+                                    "fontWeight": 400,
+                                    "lineHeight": "36px",
+                                    "align": "center",
+                                    "color": "#000000"
+                                  },
+                                  "background": {
+                                    "color": "#F8F8F8"
+                                  },
+                                  "border": {
+                                    "radius": 12
+                                  },
+                                  "size": {
+                                    "width": "fill"
+                                  },
+                                  "layout": {
+                                    "padding": {
+                                      "top": 10,
+                                      "bottom": 10
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "button",
+                                  "id": "ui-ux-button-2",
+                                  "figmaNodeId": "1014:79",
+                                  "text": "UI/UX",
+                                  "typography": {
+                                    "fontFamily": "Poppins",
+                                    "fontSize": 24,
+                                    "fontWeight": 400,
+                                    "lineHeight": "36px",
+                                    "align": "center",
+                                    "color": "#000000"
+                                  },
+                                  "background": {
+                                    "color": "#F8F8F8"
+                                  },
+                                  "border": {
+                                    "radius": 12
+                                  },
+                                  "size": {
+                                    "width": "fill"
+                                  },
+                                  "layout": {
+                                    "padding": {
+                                      "top": 10,
+                                      "bottom": 10
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "button",
+                                  "id": "uiux-text",
+                                  "figmaNodeId": "1014:81",
+                                  "text": "UI/UX",
+                                  "typography": {
+                                    "fontFamily": "Poppins",
+                                    "fontSize": 24,
+                                    "fontWeight": 400,
+                                    "lineHeight": "36px",
+                                    "align": "center",
+                                    "color": "#000000"
+                                  },
+                                  "background": {
+                                    "color": "#F8F8F8"
+                                  },
+                                  "border": {
+                                    "radius": 12
+                                  },
+                                  "size": {
+                                    "width": "fill"
+                                  },
+                                  "layout": {
+                                    "padding": {
+                                      "top": 10,
+                                      "bottom": 10
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "button",
+                                  "id": "uiux-text-2",
+                                  "figmaNodeId": "1014:83",
+                                  "text": "UI/UX",
+                                  "typography": {
+                                    "fontFamily": "Poppins",
+                                    "fontSize": 24,
+                                    "fontWeight": 400,
+                                    "lineHeight": "36px",
+                                    "align": "center",
+                                    "color": "#000000"
+                                  },
+                                  "background": {
+                                    "color": "#F8F8F8"
+                                  },
+                                  "border": {
+                                    "radius": 12
+                                  },
+                                  "size": {
+                                    "width": "fill"
+                                  },
+                                  "layout": {
+                                    "padding": {
+                                      "top": 10,
+                                      "bottom": 10
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "button",
+                              "id": "web-design-text",
+                              "figmaNodeId": "1014:21",
+                              "text": "Web Design",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 24,
+                                "fontWeight": 400,
+                                "lineHeight": "36px",
+                                "align": "center",
+                                "color": "#FFFFFF"
+                              },
+                              "background": {
+                                "color": "#FD6F00"
+                              },
+                              "border": {
+                                "radius": 12
+                              },
+                              "size": {
+                                "width": 190
+                              },
+                              "layout": {
+                                "padding": {
+                                  "top": 10,
+                                  "right": 20,
+                                  "bottom": 10,
+                                  "left": 20
+                                }
+                              }
+                            },
+                            {
+                              "type": "button",
+                              "id": "app-design-label",
+                              "figmaNodeId": "1014:23",
+                              "text": "App Design",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 24,
+                                "fontWeight": 400,
+                                "lineHeight": "36px",
+                                "align": "center",
+                                "color": "#000000"
+                              },
+                              "background": {
+                                "color": "#F8F8F8"
+                              },
+                              "border": {
+                                "radius": 12
+                              },
+                              "size": {
+                                "width": 184
+                              },
+                              "layout": {
+                                "padding": {
+                                  "top": 10,
+                                  "right": 20,
+                                  "bottom": 10,
+                                  "left": 20
+                                }
+                              }
+                            },
+                            {
+                              "type": "button",
+                              "id": "graphic-design-label",
+                              "figmaNodeId": "1014:25",
+                              "text": "Graphic Design",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 24,
+                                "fontWeight": 400,
+                                "lineHeight": "36px",
+                                "align": "center",
+                                "color": "#000000"
+                              },
+                              "background": {
+                                "color": "#F8F8F8"
+                              },
+                              "border": {
+                                "radius": 12
+                              },
+                              "size": {
+                                "width": 234
+                              },
+                              "layout": {
+                                "padding": {
+                                  "top": 10,
+                                  "right": 20,
+                                  "bottom": 10,
+                                  "left": 20
+                                }
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 17,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 767
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 22,
+                    "align": "start",
+                    "margin": {
+                      "top": 59,
+                      "left": 234
+                    }
+                  }
+                },
+                {
+                  "type": "row",
+                  "id": "my-projects-section-row-3",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "my-projects-section-column-2",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "group-24-1",
+                          "figmaNodeId": "1014:28",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "web-designs-image",
+                              "figmaNodeId": "1014:30",
+                              "asset": {
+                                "nodeId": "1014:30",
+                                "kind": "image"
+                              },
+                              "size": {
+                                "width": 274,
+                                "height": 489
+                              }
+                            },
+                            {
+                              "type": "image",
+                              "id": "web-designs-image-overlay",
+                              "figmaNodeId": "1014:31",
+                              "asset": {
+                                "nodeId": "1014:31",
+                                "kind": "image"
+                              },
+                              "size": {
+                                "width": 274,
+                                "height": 405
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "web-design-label",
+                          "figmaNodeId": "1014:33",
+                          "text": "Web Design ",
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 19,
+                            "fontWeight": 400,
+                            "color": "#FD6F00",
+                            "align": "left",
+                            "lineHeight": "28.5px",
+                            "letterSpacing": "0.57px"
+                          },
+                          "size": {
+                            "width": 119
+                          },
+                          "layout": {
+                            "margin": {
+                              "top": 37
+                            }
+                          }
+                        },
+                        {
+                          "type": "heading",
+                          "id": "aircalling-landing-page-design",
+                          "figmaNodeId": "1014:34",
+                          "text": "AirCalling Landing Page Design ",
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 24,
+                            "fontWeight": 700,
+                            "color": "#000000",
+                            "align": "left",
+                            "lineHeight": "36px",
+                            "letterSpacing": "0.72px"
+                          },
+                          "level": 3,
+                          "size": {
+                            "width": 408
+                          },
+                          "layout": {
+                            "margin": {
+                              "top": 10
+                            }
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 445
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "my-projects-section-column-4",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "my-projects-section-column-3",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "web-designs-1",
+                              "figmaNodeId": "1014:37",
+                              "asset": {
+                                "nodeId": "1014:37",
+                                "kind": "image"
+                              },
+                              "notes": [
+                                "Layer overlaps with other layers in this group"
+                              ],
+                              "size": {
+                                "width": 273,
+                                "height": 489
+                              }
+                            },
+                            {
+                              "type": "image",
+                              "id": "web-designs-2",
+                              "figmaNodeId": "1014:38",
+                              "asset": {
+                                "nodeId": "1014:38",
+                                "kind": "image"
+                              },
+                              "notes": [
+                                "Layer overlaps with other layers in this group",
+                                "Has drop shadow effect not fully captured in schema"
+                              ],
+                              "size": {
+                                "width": 273,
+                                "height": 412
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "margin": {
+                              "left": 39
+                            }
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "web-design-heading",
+                          "figmaNodeId": "1014:39",
+                          "text": "Web Design ",
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 19,
+                            "fontWeight": 400,
+                            "lineHeight": "28.5px",
+                            "letterSpacing": "0.57px",
+                            "color": "#FD6F00",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 119
+                          },
+                          "layout": {
+                            "margin": {
+                              "top": 37
+                            }
+                          }
+                        },
+                        {
+                          "type": "heading",
+                          "id": "business-landing-page-heading",
+                          "figmaNodeId": "1014:40",
+                          "text": "Business Landing Page Design ",
+                          "level": 3,
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 24,
+                            "fontWeight": 700,
+                            "lineHeight": "36px",
+                            "letterSpacing": "0.72px",
+                            "color": "#1E1E1E",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 393
+                          },
+                          "layout": {
+                            "margin": {
+                              "top": 10
+                            }
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start",
+                        "margin": {
+                          "left": 44
+                        }
+                      },
+                      "size": {
+                        "width": 417
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "my-projects-section-column-6",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "my-projects-section-column-5",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "web-design-image-mockup",
+                              "figmaNodeId": "1014:43",
+                              "asset": {
+                                "nodeId": "1014:43",
+                                "kind": "image"
+                              },
+                              "size": {
+                                "width": 274,
+                                "height": 489
+                              }
+                            },
+                            {
+                              "type": "image",
+                              "id": "web-design-image-mockup-2",
+                              "figmaNodeId": "1014:44",
+                              "asset": {
+                                "nodeId": "1014:44",
+                                "kind": "image"
+                              },
+                              "notes": [
+                                "Has a drop shadow effect"
+                              ],
+                              "size": {
+                                "width": 274,
+                                "height": 412
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "margin": {
+                              "left": 39
+                            }
+                          }
+                        },
+                        {
+                          "type": "text-basic",
+                          "id": "web-design-heading-2",
+                          "figmaNodeId": "1014:45",
+                          "text": "Web Design ",
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 19,
+                            "fontWeight": 400,
+                            "lineHeight": "28.5px",
+                            "letterSpacing": "0.57px",
+                            "color": "#FD6F00",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 119
+                          },
+                          "layout": {
+                            "margin": {
+                              "top": 37
+                            }
+                          }
+                        },
+                        {
+                          "type": "heading",
+                          "id": "ecom-web-heading",
+                          "figmaNodeId": "1014:46",
+                          "text": "Ecom Web Page Design ",
+                          "level": 3,
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 24,
+                            "fontWeight": 700,
+                            "lineHeight": "36px",
+                            "letterSpacing": "0.72px",
+                            "color": "#1E1E1E",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 302
+                          },
+                          "layout": {
+                            "margin": {
+                              "top": 10
+                            }
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start",
+                        "margin": {
+                          "left": 72
+                        }
+                      },
+                      "size": {
+                        "width": 418
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "align": "start",
+                    "margin": {
+                      "top": 106
+                    }
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "padding": {
+              "top": 0,
+              "right": 27,
+              "bottom": 0,
+              "left": 0
+            },
+            "align": "start"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "The stroke/border for buttons 1014:19 and 1014:79 was noted instead of expressed.",
+    "Text nodes 1014:16 and 1014:17 do not use 'text-basic' style so the 'multilineText' field was added in 'typography' (actually the schema didn't include multilineText in the given version — this field was assumed; revert to the text field instead). | (Correction: the text field already has the exact string.)",
+    "project-description: dropped unknown field \"typography.multilineText\"",
+    "my-projects: dropped unknown field \"typography.multilineText\"",
+    "The overlapping group 'overlapping' contains two UI/UX frames (1014:81, 1014:83) that are layered on top of each other; both are emitted as siblings in the row, their exact overlap cannot be expressed",
+    "Layout: in the measured row, [1014:81, 1014:82, 1014:83, 1014:84] and [1014:21, 1014:22] are separate side-by-side items, so they must be SIBLING elements. [1014:21, 1014:22] must not be nested inside the element holding [1014:81, 1014:82, 1014:83, 1014:84].",
+    "No Figma data provided for typography values of nodes 1014:86 and 1014:24; copied from 1014:26.",
+    "Exact positioning of the overlapping web design images is not captured in the schema",
+    "web-design-heading: dropped unknown field \"typography.textAlignHorizontal\"",
+    "ecom-web-heading: dropped unknown field \"typography.textAlignHorizontal\"",
+    "stitch: 2 node(s) added from Figma data because the model's parts did not include them"
+  ]
+}

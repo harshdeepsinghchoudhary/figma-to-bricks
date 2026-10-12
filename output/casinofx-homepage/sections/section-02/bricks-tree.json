@@ -1,8 +1,8 @@
 [
   {
-    "id": "bzyy45",
+    "id": "iw7mox",
     "name": "button",
-    "parent": "7h66rm",
+    "parent": "rrkib8",
     "children": [],
     "settings": {
       "text": "Home",
@@ -40,9 +40,9 @@
     }
   },
   {
-    "id": "gwakgf",
+    "id": "83rs0q",
     "name": "text-basic",
-    "parent": "7h66rm",
+    "parent": "rrkib8",
     "children": [],
     "settings": {
       "text": "Top Casinos",
@@ -60,9 +60,9 @@
     }
   },
   {
-    "id": "jklwwb",
+    "id": "3ksti3",
     "name": "text-basic",
-    "parent": "7h66rm",
+    "parent": "rrkib8",
     "children": [],
     "settings": {
       "text": "Live Betting",
@@ -80,9 +80,9 @@
     }
   },
   {
-    "id": "pplbwl",
+    "id": "qt972e",
     "name": "text-basic",
-    "parent": "7h66rm",
+    "parent": "rrkib8",
     "children": [],
     "settings": {
       "text": "New Casinos",
@@ -100,9 +100,9 @@
     }
   },
   {
-    "id": "a3ml9x",
+    "id": "51v5cl",
     "name": "text-basic",
-    "parent": "7h66rm",
+    "parent": "rrkib8",
     "children": [],
     "settings": {
       "text": "Blacklist",
@@ -120,9 +120,9 @@
     }
   },
   {
-    "id": "5u23rn",
+    "id": "05912h",
     "name": "text-basic",
-    "parent": "7h66rm",
+    "parent": "rrkib8",
     "children": [],
     "settings": {
       "text": "Casino News",
@@ -140,23 +140,23 @@
     }
   },
   {
-    "id": "7h66rm",
+    "id": "rrkib8",
     "name": "div",
-    "parent": "zfimlq",
+    "parent": "a01hk6",
     "children": [
-      "bzyy45",
-      "gwakgf",
-      "jklwwb",
-      "pplbwl",
-      "a3ml9x",
-      "5u23rn"
+      "iw7mox",
+      "83rs0q",
+      "3ksti3",
+      "qt972e",
+      "51v5cl",
+      "05912h"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
       "_rowGap": "74",
       "_columnGap": "74",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_width": "100%",
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
@@ -164,11 +164,11 @@
     }
   },
   {
-    "id": "zfimlq",
+    "id": "a01hk6",
     "name": "container",
-    "parent": "g5ihsd",
+    "parent": "bg6pjc",
     "children": [
-      "7h66rm"
+      "rrkib8"
     ],
     "settings": {
       "_display": "flex",
@@ -179,11 +179,11 @@
     }
   },
   {
-    "id": "g5ihsd",
+    "id": "bg6pjc",
     "name": "section",
     "parent": 0,
     "children": [
-      "zfimlq"
+      "a01hk6"
     ],
     "settings": {
       "_padding": {

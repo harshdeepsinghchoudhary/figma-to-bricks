@@ -1,0 +1,75 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "casino-list",
+      "figmaNodeId": "2231:222",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 16
+      }
+    },
+    {
+      "type": "row",
+      "id": "casino-row-slot-powers",
+      "figmaNodeId": "2227:140",
+      "background": {
+        "color": "#F7F7F7"
+      },
+      "border": {
+        "radius": 8
+      }
+    },
+    {
+      "type": "row",
+      "id": "casino-row-inner",
+      "figmaNodeId": "2227:139",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 28,
+        "align": "center"
+      },
+      "size": {
+        "width": 483,
+        "height": 68
+      }
+    },
+    {
+      "type": "column",
+      "id": "casino-number-slot-powers",
+      "figmaNodeId": "2227:134",
+      "children": [
+        {
+          "type": "icon",
+          "id": "casino-number-icon-slot-powers",
+          "figmaNodeId": "2227:135",
+          "asset": {
+            "nodeId": "2227:135",
+            "kind": "svg"
+          },
+          "size": {
+            "width": 47,
+            "height": 41.5
+          }
+        },
+        {
+          "type": "text-basic",
+          "id": "casino-number-text-slot-powers",
+          "figmaNodeId": "2227:136",
+          "text": "4",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 500,
+            "color": "#8B8B8B",
+            "lineHeight": "19.36px",
+            "align": "left"
+          }
+        }
+      ]
+    }
+  ]
+}

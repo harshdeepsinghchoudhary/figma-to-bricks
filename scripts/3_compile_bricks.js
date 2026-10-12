@@ -174,7 +174,19 @@ if (!process.argv.includes("--no-responsive")) {
     src = sp.doc;
     for (const line of sp.report) console.log("  structure:", line);
   }
-  const rp = responsify(src, { manifest: assetManifest, fontAliases, geo, texts });
+  // site (container) width = the most common width of the page's top-level frames that are narrower than the page itself (1320 in a 1440 page)
+  let siteWidth = 0;
+  for (const dir of [frameDir, path.join(frameDir, ".."), path.join(frameDir, "..", "..")]) {
+    const fp = path.join(dir, "figma-node.json");
+    if (!fs.existsSync(fp)) continue;
+    const root = JSON.parse(fs.readFileSync(fp, "utf-8")); const r = root.document || root;
+    const pw = r.absoluteBoundingBox?.width || 0, counts = {};
+    for (const k of r.children || []) { const w = Math.round(k.absoluteBoundingBox?.width || 0); if (w >= 600 && (!pw || w < pw * 0.99)) counts[w] = (counts[w] || 0) + 1; }
+    const best = Object.entries(counts).sort((a, b) => b[1] - a[1] || b[0] - a[0])[0];
+    if (best) siteWidth = Number(best[0]);
+    break;
+  }
+  const rp = responsify(src, { manifest: assetManifest, fontAliases, geo, texts, siteWidth });
   toCompile = rp.doc;
   for (const line of rp.report) console.log("  responsive:", line);
 }

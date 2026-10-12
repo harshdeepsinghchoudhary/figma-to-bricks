@@ -1,0 +1,147 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "service-cards",
+      "children": [
+        {
+          "type": "column",
+          "id": "web-design-card",
+          "figmaNodeId": "645:403",
+          "background": {
+            "color": "#F8F8F8"
+          },
+          "border": {
+            "radius": 14
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "web-design-title",
+              "figmaNodeId": "645:405",
+              "level": 2,
+              "text": "Web Design ",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 32,
+                "fontWeight": 600,
+                "lineHeight": "48px",
+                "letterSpacing": "0.96px",
+                "color": "#000000",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text",
+              "id": "web-design-text",
+              "figmaNodeId": "645:406",
+              "text": "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 19,
+                "fontWeight": 400,
+                "lineHeight": "28.5px",
+                "letterSpacing": "0.57px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "id": "app-design-card",
+          "figmaNodeId": "645:416",
+          "background": {
+            "color": "#F8F8F8"
+          },
+          "border": {
+            "radius": 14
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "app-design-title",
+              "figmaNodeId": "645:418",
+              "level": 2,
+              "text": "App Design",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 32,
+                "fontWeight": 600,
+                "lineHeight": "48px",
+                "letterSpacing": "0.96px",
+                "color": "#000000",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text",
+              "id": "app-design-text",
+              "figmaNodeId": "645:419",
+              "text": "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 19,
+                "fontWeight": 400,
+                "lineHeight": "28.5px",
+                "letterSpacing": "0.57px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        },
+        {
+          "type": "column",
+          "id": "graphic-design-card",
+          "figmaNodeId": "645:429",
+          "background": {
+            "color": "#F8F8F8"
+          },
+          "border": {
+            "radius": 14
+          },
+          "children": [
+            {
+              "type": "heading",
+              "id": "graphic-design-title",
+              "figmaNodeId": "645:431",
+              "level": 2,
+              "text": "Graphic Design ",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 32,
+                "fontWeight": 600,
+                "lineHeight": "48px",
+                "letterSpacing": "0.96px",
+                "color": "#000000",
+                "align": "left"
+              }
+            },
+            {
+              "type": "text",
+              "id": "graphic-design-text",
+              "figmaNodeId": "645:432",
+              "text": "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 19,
+                "fontWeight": 400,
+                "lineHeight": "28.5px",
+                "letterSpacing": "0.57px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "The \"Web Design \" heading has a trailing space exactly as provided in Figma",
+    "Card text exact wrapping behavior not specified"
+  ]
+}

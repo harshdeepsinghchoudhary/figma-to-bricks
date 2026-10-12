@@ -1,0 +1,43 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "icon-strip",
+      "children": [
+        {
+          "type": "icon",
+          "id": "icon-layer-1",
+          "figmaNodeId": "645:441",
+          "asset": {
+            "nodeId": "645:441",
+            "kind": "svg"
+          },
+          "notes": [
+            "Cross-axis offset 3px (top) from the parent row"
+          ]
+        },
+        {
+          "type": "icon",
+          "id": "icon-group-18",
+          "figmaNodeId": "645:457",
+          "asset": {
+            "nodeId": "645:457",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "row",
+          "id": "logo-mark",
+          "figmaNodeId": "645:464"
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Section background color (not present on the provided synthetic wrapper frame)",
+    "Icon offsets: 3px cross-axis offset on 645:441, 6px cross-axis offset on 645:464 group",
+    "5th dot 645:468 has no exported SVG asset; rendered as an unsupported placeholder within logo-mark",
+    "logo-mark: dropped unknown field \"data\""
+  ]
+}

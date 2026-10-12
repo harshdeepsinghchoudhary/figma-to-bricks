@@ -1,0 +1,68 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "services",
+      "figmaNodeId": "645:472",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-22",
+          "figmaNodeId": "645:471",
+          "children": [
+            {
+              "type": "column",
+              "id": "group-14",
+              "figmaNodeId": "638:246",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 15,
+                "align": "stretch"
+              },
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "services-heading",
+                  "figmaNodeId": "638:245",
+                  "text": "Services",
+                  "level": 1,
+                  "layout": {
+                    "padding": {
+                      "left": 320
+                    }
+                  },
+                  "typography": {
+                    "fontFamily": "Poppins",
+                    "fontSize": 65,
+                    "fontWeight": 600,
+                    "lineHeight": "97.5px",
+                    "letterSpacing": "1.95px",
+                    "color": "#000000",
+                    "align": "center"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "services-description",
+                  "figmaNodeId": "638:244",
+                  "text": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium",
+                  "typography": {
+                    "fontFamily": "Poppins",
+                    "fontSize": 21,
+                    "fontWeight": 400,
+                    "lineHeight": "31.5px",
+                    "letterSpacing": "0.63px",
+                    "color": "#000000",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

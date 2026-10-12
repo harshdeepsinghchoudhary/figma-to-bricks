@@ -1,0 +1,86 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "progress-graphic-design-row",
+      "figmaNodeId": "375:52",
+      "layout": {
+        "display": "block"
+      },
+      "size": {
+        "width": 753,
+        "height": 32
+      },
+      "background": {
+        "color": "#EDECEC"
+      },
+      "border": {
+        "radius": 6
+      },
+      "children": [
+        {
+          "type": "container",
+          "id": "progress-graphic-design-fill",
+          "figmaNodeId": "375:54",
+          "size": {
+            "width": 687,
+            "height": 12
+          },
+          "background": {
+            "color": "#FD6F00"
+          },
+          "border": {
+            "radius": 6
+          }
+        },
+        {
+          "type": "icon",
+          "id": "progress-graphic-design-handle",
+          "figmaNodeId": "375:55",
+          "asset": {
+            "nodeId": "375:55",
+            "kind": "svg"
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "id": "graphic-design-label",
+      "figmaNodeId": "375:50",
+      "level": 2,
+      "text": "Graphic Design ",
+      "layout": {
+        "margin": {
+          "left": 561
+        }
+      },
+      "typography": {
+        "fontFamily": "Poppins",
+        "fontSize": 24,
+        "fontWeight": 600,
+        "lineHeight": "36px",
+        "letterSpacing": "0.72px",
+        "color": "#000000",
+        "align": "left"
+      }
+    },
+    {
+      "type": "container",
+      "id": "scope-rectangle-4-accent",
+      "figmaNodeId": "375:59",
+      "size": {
+        "width": 374,
+        "height": 83
+      },
+      "background": {
+        "color": "#FD6F0099"
+      }
+    }
+  ],
+  "_uncertain": [
+    "375:55 (Ellipse 9): handle x-offset within its slider row not provided; absolute layout assumed",
+    "375:54 (Rectangle 6): x/y offset within slider track not provided; absolute layout assumed"
+  ]
+}

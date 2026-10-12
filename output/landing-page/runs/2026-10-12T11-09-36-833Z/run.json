@@ -1,0 +1,54 @@
+{
+  "figmaUrl": "https://www.figma.com/design/4wF81rXzm2dJqTSIKbNuJe/Personal-Portfolio-Landing-Page-For-Free--Community-?node-id=260-49&t=0PO9yZJpIinfFJO8-0",
+  "frameDir": "output\\landing-page",
+  "postId": 3576,
+  "startedAt": "2026-10-12T11:09:36.835Z",
+  "args": [
+    "https://www.figma.com/design/4wF81rXzm2dJqTSIKbNuJe/Personal-Portfolio-Landing-Page-For-Free--Community-?node-id=260-49&t=0PO9yZJpIinfFJO8-0"
+  ],
+  "steps": [
+    {
+      "label": "1/5 extract from Figma",
+      "script": "1_extract_figma.js",
+      "args": [
+        "https://www.figma.com/design/4wF81rXzm2dJqTSIKbNuJe/Personal-Portfolio-Landing-Page-For-Free--Community-?node-id=260-49&t=0PO9yZJpIinfFJO8-0"
+      ],
+      "code": 0,
+      "seconds": 6
+    },
+    {
+      "label": "2-3/5 AI normalize + compile + merge",
+      "script": "run-sections.js",
+      "args": [
+        "output\\landing-page"
+      ],
+      "code": 0,
+      "seconds": 1875
+    },
+    {
+      "label": "4/5 push into Bricks page",
+      "script": "4_inject_mcp.js",
+      "args": [
+        "output\\landing-page\\merged",
+        "--fix-keys",
+        "--title",
+        "Figma import - landing-page 2026-10-12"
+      ],
+      "code": 0,
+      "seconds": 18
+    },
+    {
+      "label": "5/5 save dataset",
+      "script": "export-dataset.js",
+      "args": [
+        "output\\landing-page",
+        "--page",
+        "3576"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-12T11:41:16.265Z",
+  "exitCode": 0
+}

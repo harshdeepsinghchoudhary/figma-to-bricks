@@ -1,0 +1,627 @@
+[
+  {
+    "id": "6cf6ea",
+    "name": "heading",
+    "parent": "fqsrv8",
+    "children": [],
+    "settings": {
+      "text": "Download the CASINOFX",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "44px",
+        "font-weight": "600",
+        "line-height": "53.25px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#B38936"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "413b9x",
+    "name": "text",
+    "parent": "fqsrv8",
+    "children": [],
+    "settings": {
+      "text": "<p>Join the official CasinoFX VIP Telegram community — exposing casino scams, RTP manipulation, fake licenses, and player reports worldwide while giving serious players access to exclusive high-limit gaming, fast withdrawals, and premium 1-to-1 VIP concierge support.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "22px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000C2"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "fqsrv8",
+    "name": "div",
+    "parent": "uib62y",
+    "children": [
+      "6cf6ea",
+      "413b9x"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "40",
+        "bottom": "0",
+        "left": "0"
+      },
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "xv5yqa",
+    "name": "button",
+    "parent": "w9avob",
+    "children": [],
+    "settings": {
+      "text": "Welcome to CASINOFX",
+      "_padding": {
+        "top": "21",
+        "bottom": "21"
+      },
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "19.36px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFD733"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      }
+    }
+  },
+  {
+    "id": "io43mr",
+    "name": "icon",
+    "parent": "w9avob",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/group-177-2238_108.svg",
+          "url": "../../assets/group-177-2238_108.svg"
+        },
+        "height": "40"
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "w9avob",
+    "name": "div",
+    "parent": "rlux8s",
+    "children": [
+      "xv5yqa",
+      "io43mr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "ocshmy",
+    "name": "image",
+    "parent": "kg1ufi",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-38-2238_83.png",
+        "url": "../../assets/image-38-2238_83.png"
+      },
+      "_width": "100%",
+      "_widthMax": "32px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "c64pnc",
+    "name": "text",
+    "parent": "qrzbhf",
+    "children": [],
+    "settings": {
+      "text": "<p>Download on the</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "12px",
+        "font-weight": "400",
+        "line-height": "14.52px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#00000066"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "mhww9r",
+    "name": "text",
+    "parent": "qrzbhf",
+    "children": [],
+    "settings": {
+      "text": "<p>Google Play</p>",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "500",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "qrzbhf",
+    "name": "div",
+    "parent": "kg1ufi",
+    "children": [
+      "c64pnc",
+      "mhww9r"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "103px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "kg1ufi",
+    "name": "div",
+    "parent": "4ihitd",
+    "children": [
+      "ocshmy",
+      "qrzbhf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "145px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "gqg5yq",
+    "name": "icon",
+    "parent": "4ihitd",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-2238_86.svg",
+          "url": "../../assets/frame-2238_86.svg"
+        },
+        "height": "26"
+      },
+      "_widthMax": "26px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "4ihitd",
+    "name": "div",
+    "parent": "hv3zh7",
+    "children": [
+      "kg1ufi",
+      "gqg5yq"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "40",
+      "_columnGap": "40",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "14",
+        "right": "20",
+        "bottom": "14",
+        "left": "20"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#E6DBC4"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      },
+      "_boxShadow": {
+        "color": {
+          "raw": "#0202021A"
+        },
+        "values": {
+          "blur": "64",
+          "offsetX": "0",
+          "offsetY": "0",
+          "spread": "0"
+        }
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "jr2eb1",
+    "name": "image",
+    "parent": "pd4gdd",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-39-2238_102.png",
+        "url": "../../assets/image-39-2238_102.png"
+      },
+      "_width": "100%",
+      "_widthMax": "32px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "24tjtm",
+    "name": "text",
+    "parent": "2go4vq",
+    "children": [],
+    "settings": {
+      "text": "<p>Download on the</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "12px",
+        "font-weight": "400",
+        "line-height": "14.52px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#00000066"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "kae1d2",
+    "name": "text",
+    "parent": "2go4vq",
+    "children": [],
+    "settings": {
+      "text": "<p>Apple Store</p>",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "500",
+        "line-height": "21.78px",
+        "letter-spacing": "0%",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "2go4vq",
+    "name": "div",
+    "parent": "pd4gdd",
+    "children": [
+      "24tjtm",
+      "kae1d2"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "103px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "pd4gdd",
+    "name": "div",
+    "parent": "8qkgbb",
+    "children": [
+      "jr2eb1",
+      "2go4vq"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "145px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "1wmusc",
+    "name": "icon",
+    "parent": "8qkgbb",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/frame-2238_86.svg",
+          "url": "../../assets/frame-2238_86.svg"
+        },
+        "height": "26"
+      },
+      "_widthMax": "26px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "8qkgbb",
+    "name": "div",
+    "parent": "hv3zh7",
+    "children": [
+      "pd4gdd",
+      "1wmusc"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "40",
+      "_columnGap": "40",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "14",
+        "right": "20",
+        "bottom": "14",
+        "left": "20"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "8px",
+          "right": "8px",
+          "bottom": "8px",
+          "left": "8px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#E6DBC4"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      },
+      "_boxShadow": {
+        "color": {
+          "raw": "#0202021A"
+        },
+        "values": {
+          "blur": "64",
+          "offsetX": "0",
+          "offsetY": "0",
+          "spread": "0"
+        }
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "hv3zh7",
+    "name": "div",
+    "parent": "rlux8s",
+    "children": [
+      "4ihitd",
+      "8qkgbb"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(2, 1fr)",
+      "_gridGap": "18",
+      "_alignItemsGrid": "stretch",
+      "_width": "100%",
+      "_gridTemplateColumns:tablet_portrait": "1fr",
+      "_gridGap:tablet_portrait": "18"
+    }
+  },
+  {
+    "id": "rlux8s",
+    "name": "div",
+    "parent": "uib62y",
+    "children": [
+      "w9avob",
+      "hv3zh7"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "uib62y",
+    "name": "div",
+    "parent": "o6hboy",
+    "children": [
+      "fqsrv8",
+      "rlux8s"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "32",
+      "_columnGap": "32",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "42"
+      },
+      "_width": "100%",
+      "_widthMax": "581px",
+      "_margin:tablet_portrait": {
+        "top": "0"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "gw7f9r",
+    "name": "image",
+    "parent": "o6hboy",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-179-1-2240_304.png",
+        "url": "../../assets/group-179-1-2240_304.png"
+      },
+      "_width": "100%",
+      "_widthMax": "625px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "o6hboy",
+    "name": "div",
+    "parent": "t4sq8z",
+    "children": [
+      "uib62y",
+      "gw7f9r"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_widthMax": "1283px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "t4sq8z",
+    "name": "container",
+    "parent": "vfiaax",
+    "children": [
+      "o6hboy"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1320px"
+    }
+  },
+  {
+    "id": "vfiaax",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "t4sq8z"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

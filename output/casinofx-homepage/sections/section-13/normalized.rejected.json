@@ -1,20 +1,36 @@
-[
-  {
-    "page": {
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
       "children": [
         {
-          "nodeId": "60",
-          "nodeName": "Section 40",
-          "type": "svg",
-          "file": "assets/section-40.svg"
+          "type": "row",
+          "id": "frame-190",
+          "figmaNodeId": "2238:113",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 18,
+            "align": "center"
+          },
+          "size": {
+            "width": 520,
+            "height": 65
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-175",
+          "figmaNodeId": "2238:89",
+          "size": {
+            "width": 251,
+            "height": 65
+          }
         }
       ]
-    },
-    "Works": "The following is output of the object."
-  },
-  {
-    "page": {
-      "offCross": true
     }
-  }
-]
+  ],
+  "_uncertain": []
+}

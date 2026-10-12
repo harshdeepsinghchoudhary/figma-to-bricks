@@ -1,0 +1,124 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "casino-fx-logo-row",
+      "figmaNodeId": "2227:162",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 45,
+        "align": "center",
+        "justify": "start",
+        "wrap": false
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "slots-amigo-info",
+          "figmaNodeId": "2227:161",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 19,
+            "align": "center",
+            "justify": "start",
+            "wrap": false
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "slots-amigo-logo",
+              "figmaNodeId": "2228:277",
+              "asset": {
+                "nodeId": "2228:277",
+                "kind": "image"
+              },
+              "border": {
+                "radius": 2000
+              }
+            },
+            {
+              "type": "column",
+              "id": "slots-amigo-details",
+              "figmaNodeId": "2227:164",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 6,
+                "wrap": false
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "slots-amigo-name",
+                  "figmaNodeId": "2227:165",
+                  "text": "SlotsAmigo",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "lineHeight": "19.36px",
+                    "align": "left",
+                    "color": "#000000"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "slots-amigo-rigged",
+                  "figmaNodeId": "2227:166",
+                  "text": "🛑 94.2% Rigged",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "align": "left",
+                    "color": "#00000080"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "id": "proof-button",
+          "figmaNodeId": "2227:167",
+          "text": "Proof",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "16.94px",
+            "align": "center",
+            "color": "#000000"
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "justify": "center",
+            "align": "center",
+            "wrap": false,
+            "padding": {
+              "top": 12,
+              "right": 20,
+              "bottom": 12,
+              "left": 20
+            }
+          },
+          "size": {
+            "width": 138
+          },
+          "background": {
+            "color": "#FFD733"
+          },
+          "border": {
+            "radius": 4
+          }
+        }
+      ]
+    }
+  ]
+}

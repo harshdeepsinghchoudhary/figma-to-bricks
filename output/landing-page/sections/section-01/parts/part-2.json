@@ -1,0 +1,124 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "nav-links",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 12
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "services-button",
+          "figmaNodeId": "260:138",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "padding": {
+              "left": 14,
+              "right": 14,
+              "top": 10,
+              "bottom": 10
+            }
+          },
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "services-text",
+              "figmaNodeId": "260:139",
+              "text": "Services",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "align": "left",
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "projects-button",
+          "figmaNodeId": "260:140",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "padding": {
+              "left": 14,
+              "right": 14,
+              "top": 10,
+              "bottom": 10
+            }
+          },
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "projects-text",
+              "figmaNodeId": "260:141",
+              "text": "Projects",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "align": "left",
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px",
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "testimonials-button",
+          "figmaNodeId": "260:142",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "padding": {
+              "left": 14,
+              "right": 14,
+              "top": 10,
+              "bottom": 10
+            }
+          },
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "testimonials-text",
+              "figmaNodeId": "260:143",
+              "text": "Testimonials",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "align": "left",
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px",
+                "color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

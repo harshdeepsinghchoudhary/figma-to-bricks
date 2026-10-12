@@ -1,0 +1,568 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "scope",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-167-1",
+          "figmaNodeId": "2236:74",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-138",
+              "figmaNodeId": "2236:73",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "frame-137",
+                  "figmaNodeId": "2236:72",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "frame-136",
+                      "figmaNodeId": "2236:71",
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "frame-135",
+                          "figmaNodeId": "2236:68",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "select-country-region",
+                              "figmaNodeId": "2236:54",
+                              "text": "Select Country/Region",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 500,
+                                "lineHeight": "22px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              }
+                            },
+                            {
+                              "type": "unsupported",
+                              "id": "group-166",
+                              "figmaNodeId": "2236:67",
+                              "notes": [
+                                "Group containing rectangle background and inner frames"
+                              ]
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "padding": {
+                              "top": 9,
+                              "right": 220,
+                              "bottom": 9,
+                              "left": 0
+                            },
+                            "align": "start"
+                          },
+                          "size": {
+                            "width": 414
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "lorem-ipsum",
+                          "figmaNodeId": "2236:70",
+                          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap ",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 14,
+                            "fontWeight": 400,
+                            "lineHeight": "20px",
+                            "color": "#FFFFFFB3",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 870
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "gap": 24,
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "type": "unsupported",
+                      "id": "line-1",
+                      "figmaNodeId": "2236:69",
+                      "notes": [
+                        "Line element not directly supported"
+                      ]
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "padding": {
+                      "top": 0,
+                      "right": 12.01,
+                      "bottom": 30,
+                      "left": 0
+                    },
+                    "align": "start"
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "frame-132-1",
+                  "figmaNodeId": "2236:11",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "frame-131",
+                      "figmaNodeId": "2236:12",
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "brand-logo",
+                          "figmaNodeId": "2236:13",
+                          "text": "Brand Logo",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 26,
+                            "fontWeight": 600,
+                            "lineHeight": "31.47px",
+                            "color": "#FFFFFF",
+                            "align": "left"
+                          },
+                          "level": 2
+                        },
+                        {
+                          "type": "image",
+                          "id": "frame-130",
+                          "figmaNodeId": "2236:14",
+                          "asset": {
+                            "nodeId": "2236:14",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 114,
+                            "height": 48
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "justify": "space-between",
+                        "align": "center"
+                      },
+                      "size": {
+                        "width": 1320.01
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "frame-129",
+                      "figmaNodeId": "2236:23",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "frame-128",
+                          "figmaNodeId": "2236:24",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "frame-126",
+                              "figmaNodeId": "2236:25",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "about-us",
+                                  "figmaNodeId": "2236:26",
+                                  "text": "About Us",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-5",
+                                  "figmaNodeId": "2236:27",
+                                  "notes": [
+                                    "Line element not representable in schema"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "contact-us",
+                                  "figmaNodeId": "2236:28",
+                                  "text": "Contact Us",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-6",
+                                  "figmaNodeId": "2236:29",
+                                  "notes": [
+                                    "Line element not representable in schema"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "risk-warning",
+                                  "figmaNodeId": "2236:30",
+                                  "text": "Risk Warning",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-7",
+                                  "figmaNodeId": "2236:31",
+                                  "notes": [
+                                    "Line element not representable in schema"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "terms-of-use-11",
+                                  "figmaNodeId": "2236:32",
+                                  "text": "Terms of Use",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "align": "left",
+                                    "color": "#FFFFFF"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-8",
+                                  "figmaNodeId": "2236:33",
+                                  "notes": [
+                                    "Line element with stroke #FFFFFF33"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "privacy-policy",
+                                  "figmaNodeId": "2236:34",
+                                  "text": "Privacy Policy",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-9",
+                                  "figmaNodeId": "2236:35",
+                                  "notes": [
+                                    "Line element with stroke #FFFFFF33"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "search-api",
+                                  "figmaNodeId": "2236:36",
+                                  "text": "Search API",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-10",
+                                  "figmaNodeId": "2236:37",
+                                  "notes": [
+                                    "Line element with stroke #FFFFFF33"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "brand-enterprise",
+                                  "figmaNodeId": "2236:38",
+                                  "text": "Brand Enterprise",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-11",
+                                  "figmaNodeId": "2236:39",
+                                  "notes": [
+                                    "Line element with stroke #FFFFFF33"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "official-verification",
+                                  "figmaNodeId": "2236:40",
+                                  "text": "Official Verification",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "expo",
+                                  "figmaNodeId": "2236:42",
+                                  "text": "Expo",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-13",
+                                  "figmaNodeId": "2236:43",
+                                  "notes": [
+                                    "Line element with stroke #FFFFFF33, width 0, height 15, offset cross 4.5px"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "brand-research",
+                                  "figmaNodeId": "2236:44",
+                                  "text": "Brand Research",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 36,
+                                "align": "start"
+                              }
+                            },
+                            {
+                              "type": "row",
+                              "id": "frame-127-1",
+                              "figmaNodeId": "2236:45",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "vps-help-18",
+                                  "figmaNodeId": "2236:46",
+                                  "text": "VPS Help",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "align": "left",
+                                    "color": "#FFFFFF"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-5-2",
+                                  "figmaNodeId": "2236:47",
+                                  "notes": [
+                                    "Line element with stroke color #FFFFFF33"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "business-cooperation",
+                                  "figmaNodeId": "2236:48",
+                                  "text": "Business Cooperation",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-6-2",
+                                  "figmaNodeId": "2236:49",
+                                  "notes": [
+                                    "Line element with stroke color #FFFFFF33"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "regional-divisions",
+                                  "figmaNodeId": "2236:50",
+                                  "text": "Regional Divisions",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                },
+                                {
+                                  "type": "unsupported",
+                                  "id": "line-7-2",
+                                  "figmaNodeId": "2236:51",
+                                  "notes": [
+                                    "Line element with stroke color #FFFFFF33"
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "media-reports",
+                                  "figmaNodeId": "2236:52",
+                                  "text": "Media Reports",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 16,
+                                    "fontWeight": 500,
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF",
+                                    "align": "left"
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "gap": 36,
+                                "align": "start"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "gap": 16,
+                            "align": "start"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "visitor-info",
+                          "figmaNodeId": "2236:53",
+                          "text": "You are visiting the WikiFX website. WikiFX Internet and its mobile products are an enterprise information searching tool for global users. When using WikiFX products, users should consciously abide by the relevant laws and regulations of the country and region where they are located.\n\nConsumer hotline：006531290538\nOfficial Email：support@wikifx.com\nMobile Phone Number：234 706 777 7762, 61 449895363\nLicense or other information error corrections, please send the information to：qa@wikifx.com\nCooperation：business@wikifx.com",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 16,
+                            "fontWeight": 400,
+                            "lineHeight": "26px",
+                            "color": "#FFFFFFCC",
+                            "align": "left"
+                          },
+                          "size": {
+                            "width": 1308
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 32,
+                        "align": "start"
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 32,
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 30,
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "padding": {
+              "top": 60,
+              "right": 60,
+              "bottom": 50,
+              "left": 59.99
+            },
+            "align": "start"
+          },
+          "background": {
+            "color": "#191400"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "part 1a: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing",
+    "part 1b: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing",
+    "casinofx-homepage-section: dropped unknown field \"_uncertain\"",
+    "layout",
+    "stitch: 3 node(s) added from Figma data because the model's parts did not include them",
+    "stitch: dropped 3 duplicate element(s) emitted by overlapping parts"
+  ]
+}

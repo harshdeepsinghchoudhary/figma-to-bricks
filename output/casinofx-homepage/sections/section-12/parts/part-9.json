@@ -1,0 +1,108 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "casino-card",
+      "figmaNodeId": "2227:148",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 45,
+        "align": "center"
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "casino-info",
+          "figmaNodeId": "2227:148",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 19,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "image",
+              "id": "casino-logo",
+              "figmaNodeId": "2228:274",
+              "asset": {
+                "nodeId": "2228:274",
+                "kind": "image"
+              },
+              "border": {
+                "radius": 2000
+              }
+            },
+            {
+              "type": "column",
+              "id": "casino-name",
+              "figmaNodeId": "2227:150",
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 6
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "id": "casino-title",
+                  "figmaNodeId": "2227:151",
+                  "text": "Wcasino Online",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "lineHeight": "19.36px",
+                    "color": "#000000",
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "casino-rigged",
+                  "figmaNodeId": "2227:152",
+                  "text": "🛑 94.2% Rigged",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000080",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "id": "proof-button",
+          "figmaNodeId": "2227:153",
+          "text": "Proof",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "align": "center",
+            "justify": "center",
+            "padding": {
+              "left": 20,
+              "right": 20,
+              "top": 12,
+              "bottom": 12
+            }
+          },
+          "background": {
+            "color": "#FFD733"
+          },
+          "border": {
+            "radius": 4
+          }
+        }
+      ]
+    }
+  ]
+}

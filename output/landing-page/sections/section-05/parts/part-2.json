@@ -1,0 +1,154 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "landing-page-part",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 17
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "uiux-frame",
+          "figmaNodeId": "1014:81",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "align": "center",
+            "justify": "center",
+            "padding": {
+              "top": 10,
+              "right": 20,
+              "bottom": 10,
+              "left": 20
+            }
+          },
+          "background": {
+            "color": "#F8F8F8"
+          },
+          "border": {
+            "radius": 12
+          },
+          "notes": [
+            "Frame has a 0.4px solid stroke #545454 that is not expressible in the schema",
+            "Overlaps with frame 1014:83"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "uiux-text",
+              "figmaNodeId": "1014:82",
+              "text": "UI/UX",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 24,
+                "fontWeight": 400,
+                "lineHeight": "36px",
+                "letterSpacing": "0.72px",
+                "color": "#000000",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "uiux-frame-2",
+          "figmaNodeId": "1014:83",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "align": "center",
+            "justify": "center",
+            "padding": {
+              "top": 10,
+              "right": 20,
+              "bottom": 10,
+              "left": 20
+            }
+          },
+          "background": {
+            "color": "#F8F8F8"
+          },
+          "border": {
+            "radius": 12
+          },
+          "notes": [
+            "Frame has a 0.4px solid stroke #545454 that is not expressible in the schema",
+            "Overlaps with frame 1014:81"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "uiux-text-2",
+              "figmaNodeId": "1014:84",
+              "text": "UI/UX",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 24,
+                "fontWeight": 400,
+                "lineHeight": "36px",
+                "letterSpacing": "0.72px",
+                "color": "#000000",
+                "align": "center"
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "web-design-frame",
+          "figmaNodeId": "1014:21",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "align": "center",
+            "justify": "center",
+            "padding": {
+              "top": 10,
+              "right": 20,
+              "bottom": 10,
+              "left": 20
+            }
+          },
+          "background": {
+            "color": "#FD6F00"
+          },
+          "border": {
+            "radius": 12
+          },
+          "notes": [
+            "Frame has a 0.4px solid stroke #545454 that is not expressible in the schema"
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "web-design-text",
+              "figmaNodeId": "1014:22",
+              "text": "Web Design",
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 24,
+                "fontWeight": 400,
+                "lineHeight": "36px",
+                "letterSpacing": "0.72px",
+                "color": "#FFFFFF",
+                "align": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "The overlapping group 'overlapping' contains two UI/UX frames (1014:81, 1014:83) that are layered on top of each other; both are emitted as siblings in the row, their exact overlap cannot be expressed",
+    "Layout: in the measured row, [1014:81, 1014:82, 1014:83, 1014:84] and [1014:21, 1014:22] are separate side-by-side items, so they must be SIBLING elements. [1014:21, 1014:22] must not be nested inside the element holding [1014:81, 1014:82, 1014:83, 1014:84]."
+  ]
+}

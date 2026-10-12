@@ -295,3 +295,66 @@ your file has two layers); `text` vs `heading` tags on some copy.
 ## Round 4 - curve nested inside a decoration group
 
 Page 3301 showed the section-4 curve exported correctly but left as an in-flow `image` (inside a group next to the end dot), so it pushed the cards down instead of sitting behind them. `backdrop` now also finds a wide SVG (>= 0.9 of the block width) anywhere below a sibling group, and when it lies behind the block's text it becomes that block's `_background.image` (`size contain`). Same rule, no design-specific ids.
+
+## Round 5 - second site (CasinoFX) and what it showed
+
+Run on a different design (`casinofx-homepage`, 14 top-level frames). Findings and the changes made:
+
+| # | What happened | Cause | Change |
+|---|---|---|---|
+| 1 | Terminal showed only the `=== node scripts/2_normalize.js ... ===` header for 20-30 minutes, then all output at once | `run-sections.js` ran each step with `spawnSync` and piped output, so it was printed only after the step ended. A section with 19 parts waits ~65s between parts | `run-sections.js`: the model step now uses `stdio: "inherit"` and prints live (compile/merge output is still captured because the script counts `MISSING TEXT` in it) |
+| 2 | Section-11 stopped: `stitched result failed validation ... must have required property 'text'` | The stitch added nodes from Figma data; one text element ended up with no copy | `2_normalize.js`: before validating, a text/heading/button without `text` is filled from the Figma node with the same id, else dropped, with a warning. A section is no longer lost for one empty element |
+| 3 | `Spacing: no Figma geometry for these sections - kept the compiler's default padding.` (all sections got default padding) | `merge_sections.js` returned "no geometry" for the whole page when any one section had no Figma ids (here the four stray `Rectangle 9` frames, sections 05-08) | `merge_sections.js`: a section without geometry is skipped (and logged); the others are still measured |
+| 4 | New `backdrop` case (curve nested in a decoration group) | The curve SVG sat two levels down beside an end dot, so it stayed an in-flow image | `structure-rules.js` (Round 4): a wide SVG (>= 0.9 of the block width) below a sibling group that lies behind the block's text becomes that block's background image (`contain`) |
+
+### Not compiler problems
+- **Sections 05-08 ("Rectangle 9", 412x140)** are stray frames in the Figma file. Delete them in Figma or run with `--skip=section-05,section-06,section-07,section-08`.
+- **Groq daily token limit (200,000 per day, shared by all models).** When it runs out every model returns 429 and later sections fall back to Figma-data-only builds (no model styling, sometimes without the screenshot). Re-run only the incomplete sections with `--resume`; a paid tier or another provider removes the limit.
+- **`examples/` is empty.** The model step logs `Loaded 0 example pair(s)`; corrected section pairs there reduce validation failures, retries and token use.
+
+### Known open items
+- `button._direction`, `_rowGap`, `_columnGap` are rejected by Bricks and renamed by the injector (`_flexDirection`, `_gap`, `iconGap`); the compiler should emit these keys itself.
+- Icon `2214:65` (section-03) is not in the manifest; re-run extraction to export it.
+- Section-11 was built partly from Figma data only (12 nodes added by the stitch, part 19b failed validation); groups reported as `skipped layout` stay flat.
+- Spacing is measured only for sections that are built. A missing section (e.g. section-11 before it was built) makes the gap between its neighbours too large.
+
+### Recommended workflow
+1. Run the pipeline, then fix the page in the Bricks builder, correcting compiler mistakes only (not one-off taste).
+2. Save the page, then: `node --env-file=.env scripts/export-dataset.js output\<frame> --page <id> --sync`.
+3. Copy a few corrected sections into `examples/`.
+4. Compare the corrected export with the original `merged/bricks-tree.json` to find missing compiler rules, and test each new rule on every site so far.
+5. Save terminal output with `... 2>&1 | Tee-Object -FilePath logs\run.txt`.
+
+## Round 6 - container width from Figma, and what the hand edits showed (CasinoFX page 3435)
+
+Compared the compiled template with the hand-edited page, section by section. The structure was already close: 7 of 10 sections had the same elements in the same order; the 40% of edits were mostly values.
+
+- **Container max-width was a constant (fixed).** `responsive-pass.js` used `SITE_WIDTH = 1200` for every section container, so a 1320px design got 1200px containers. The site width is now measured: `3_compile_bricks.js` takes the most common width of the page's top-level frames that are narrower than the page (and at least 600px) and passes it as `siteWidth`; `SITE_WIDTH` stays only as the fallback. On the first test design (frames of 1200 in a 1440 page) nothing changes; on CasinoFX it gives 1320. Not run on the CasinoFX files here (not available in this workspace) - check the section containers after the next compile.
+- **Edits that are real compiler gaps (not done yet):** vertical alignment of columns (`align-items: center` set by hand on several rows), nav items that are buttons in the design but came out as `text-basic` (5 elements), a card's box-shadow / fixed height / background picture in the inspection cards, small paddings on pills and buttons, hover states and `<p>` wrapping of text.
+- **Edits that are taste/Figma, not rules:** per-element hover states and custom CSS (`span { font-weight:600 }`), which are not in the Figma file.
+
+## Round 7 - take more from the Figma frame (no model re-run needed)
+
+Both rules run in `structure-rules.js` at compile time, so existing `normalized.json` files pick them up without calling the model again.
+
+- **`figmaAlign` (rule name `align`)**: when the element's Figma frame has auto-layout, its cross-axis setting (MIN / CENTER / MAX) decides `align` if the children fit it. Geometry alone cannot tell start from centre for a single child or children as wide as the box, so the measured `start` used to win. On the first design this changes 27 elements; parent alignment now equals the hand-made file on 189 of 206 matched texts (was 176). The text-position metric moved by +2 texts over 8px (64 -> 66), so check results after compile.
+- **`shadows`**: a visible Figma DROP_SHADOW on a frame that has a fill becomes the element's `boxShadow` when the model did not set one. The first design has no drop shadows, so this was tested only with an injected shadow (3 elements got it); check it on a design that has shadows (CasinoFX inspection cards).
+- Switch off with `--no-structure=align` / `--no-structure=shadows`.
+
+### Still not taken from Figma
+- Fixed heights (the 200px inspection cards): Figma's height is a measured result, not always a setting. Not done.
+- Nav pills as `button`: Figma has no button type; the nav items stay `text-basic`.
+- Hover states, custom CSS, `<p>` text wrapping: not in the Figma file.
+
+## Round 8 - borders, separators and mixed-style text from Figma (compile time, no model re-run)
+
+Files: `scripts/structure-rules.js` (replace), `scripts/bricks-schema.js` (replace; one added line so `_spanCss` reaches `_cssCustom`).
+
+- `shadows` (extended): a card is often a frame with a solid RECTANGLE behind it that carries the drop shadow. The rectangle's shadow is used when it covers the frame. CasinoFX: 7 shadows (hand-made has 5).
+- `strokes` (new): a solid Figma stroke on the frame (or on the covering rectangle) becomes `border` colour + width. Bordered elements 16 -> 25; the missing border settings against the hand-made file go from 83 to 13.
+- `separators` (new): a thin LINE between two siblings of a row/column becomes the previous item's border on that side + padding = the gap before the line, and the row gap becomes the gap after it. Reproduces the footer links exactly (padding-right 18, 1px #FFFFFF33, gap 18).
+- `textRuns` (new): one Figma text with two styles becomes `Label <span>value</span>` with `#brxe-ID span { ... }` in `_cssCustom`. Reproduces 13 hand-made span texts (e.g. `9.2 <span>Score</span>` with weight 400 / 18px).
+- Switch off: `--no-structure=strokes` / `separators` / `textRuns` / `shadows` / `align`.
+
+Measured against the hand-made files (leaf settings that match): CasinoFX 96.5% -> 98.1%; first design 94.7% -> 93.9% (its hand file keeps one style in mixed texts; textRuns follows Figma). `align` is design dependent: first design +17 parents matched, CasinoFX -42 (use `--no-structure=align` there).
+Note: stage 3 only sees assets that exist on disk; with an empty `assets/` folder icon/image decisions and asset recovery are skipped.

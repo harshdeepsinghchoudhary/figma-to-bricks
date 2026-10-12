@@ -1,0 +1,115 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-part-15",
+      "children": [
+        {
+          "type": "image",
+          "id": "rectangle-43",
+          "figmaNodeId": "2227:80",
+          "asset": {
+            "nodeId": "2227:80",
+            "kind": "image"
+          },
+          "size": {
+            "width": 365,
+            "height": 180
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-112",
+          "figmaNodeId": "2227:195",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 144,
+            "justify": "space-between",
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "frame-111",
+              "figmaNodeId": "2227:196",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 8,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "ellipse-4",
+                  "figmaNodeId": "2227:197",
+                  "asset": {
+                    "nodeId": "2227:197",
+                    "kind": "image"
+                  },
+                  "size": {
+                    "width": 30,
+                    "height": 30
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "lottowatch",
+                  "figmaNodeId": "2227:198",
+                  "text": "LottoWatch",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000099"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "id": "frame-110",
+              "figmaNodeId": "2227:199",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 6,
+                "align": "center"
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "frame-icon",
+                  "figmaNodeId": "2227:200",
+                  "asset": {
+                    "nodeId": "2227:200",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "text-845",
+                  "figmaNodeId": "2227:202",
+                  "text": "845",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000099"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "gap values derived from itemSpacing are taken from Figma data"
+  ]
+}

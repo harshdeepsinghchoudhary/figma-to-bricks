@@ -1,0 +1,53 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "frame-109-section",
+      "figmaNodeId": "2227:143",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 28,
+        "align": "center",
+        "justify": "start"
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "group-145",
+          "figmaNodeId": "2227:144",
+          "children": [
+            {
+              "type": "icon",
+              "id": "vector-2",
+              "figmaNodeId": "2227:145",
+              "asset": {
+                "nodeId": "2227:145",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "text-5",
+              "figmaNodeId": "2227:146",
+              "text": "5",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#8B8B8B",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Group 145 gaps: children offsets measured only from box coordinates; no auto-layout provided for that group.",
+    "Frame 109 background / fills / radius inherited from parent 'Rectangle 44' solid #F7F7F7 (radius 8)."
+  ]
+}

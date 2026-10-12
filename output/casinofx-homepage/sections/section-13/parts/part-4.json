@@ -1,0 +1,109 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "column-2238-90",
+          "figmaNodeId": "2238:90",
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 8
+          },
+          "notes": [
+            "stroke color #E6DBC4 not represented",
+            "drop shadow effect not represented"
+          ],
+          "children": [
+            {
+              "type": "row",
+              "id": "row-auto-1",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 40
+              },
+              "children": [
+                {
+                  "type": "row",
+                  "id": "row-2238-189",
+                  "figmaNodeId": "2238:189",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 10,
+                    "align": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-2238-102",
+                      "figmaNodeId": "2238:102",
+                      "asset": {
+                        "nodeId": "2238:102",
+                        "kind": "image"
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "column-2238-188",
+                      "figmaNodeId": "2238:188",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "text-2238-95",
+                          "figmaNodeId": "2238:95",
+                          "text": "Download on the",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 12,
+                            "fontWeight": 400,
+                            "lineHeight": "14.52px",
+                            "color": "#00000066",
+                            "align": "left"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "text-2238-96",
+                          "figmaNodeId": "2238:96",
+                          "text": "Apple Store",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 18,
+                            "fontWeight": 500,
+                            "lineHeight": "21.78px",
+                            "color": "#000000",
+                            "align": "center"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "id": "icon-2238-97",
+                  "figmaNodeId": "2238:97",
+                  "asset": {
+                    "nodeId": "2238:97",
+                    "kind": "svg"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Exact border stroke handling for group container",
+    "Drop shadow details"
+  ]
+}

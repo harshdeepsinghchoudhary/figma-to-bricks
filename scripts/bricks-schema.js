@@ -263,6 +263,7 @@ function applyLayers(node, settings) {
     }
     css.push(`#brxe-__ID__::before, #brxe-__ID__::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-__ID__ > * {\n  position: relative;\n  z-index: 1;\n}`);
   }
+  if (node._spanCss) css.push(node._spanCss); // a second text style inside the element: #brxe-__ID__ span { ... }
   if (node._relative) settings._position = "relative"; // positioning context for absolutely placed layers
   if (node._layered) { settings._position = "relative"; settings._overflow = "hidden"; }
   if (node._raise) { settings._position = "relative"; settings._zIndex = "1"; }

@@ -1,0 +1,138 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "header",
+      "children": [
+        {
+          "type": "column",
+          "id": "about-me",
+          "figmaNodeId": "638:189"
+        },
+        {
+          "type": "column",
+          "id": "group-13",
+          "figmaNodeId": "638:188"
+        },
+        {
+          "type": "row",
+          "id": "logo",
+          "figmaNodeId": "638:183",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 20,
+            "align": "start"
+          },
+          "children": [
+            {
+              "type": "icon",
+              "id": "logo-mark",
+              "figmaNodeId": "638:185",
+              "asset": {
+                "nodeId": "638:185",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text",
+              "id": "logo-text",
+              "figmaNodeId": "638:184",
+              "text": "Mumair ",
+              "typography": {
+                "fontFamily": "Montserrat",
+                "fontSize": 48,
+                "fontWeight": 600,
+                "color": "#1E1E1E",
+                "align": "left",
+                "lineHeight": "58.51px"
+              },
+              "layout": {
+                "margin": {
+                  "top": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "id": "nav",
+          "figmaNodeId": "260:137",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 12
+          },
+          "children": [
+            {
+              "type": "button",
+              "id": "nav-home",
+              "figmaNodeId": "260:114",
+              "text": "Home",
+              "layout": {
+                "padding": {
+                  "top": 10,
+                  "right": 14,
+                  "bottom": 10,
+                  "left": 14
+                }
+              },
+              "background": {
+                "color": "#FFFFFF"
+              },
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px",
+                "align": "left"
+              },
+              "notes": [
+                "Contains direct text child in Figma; extracted as label"
+              ]
+            },
+            {
+              "type": "button",
+              "id": "nav-about",
+              "figmaNodeId": "260:135",
+              "text": "About Me",
+              "layout": {
+                "padding": {
+                  "top": 10,
+                  "right": 14,
+                  "bottom": 10,
+                  "left": 14
+                }
+              },
+              "background": {
+                "color": "#FFFFFF"
+              },
+              "typography": {
+                "fontFamily": "Poppins",
+                "fontSize": 21,
+                "fontWeight": 400,
+                "color": "#000000",
+                "lineHeight": "31.5px",
+                "letterSpacing": "0.63px",
+                "align": "left"
+              },
+              "notes": [
+                "Contains direct text child in Figma; extracted as label"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "About Me (638:189) background unspecified",
+    "Group 13 (638:188) background unspecified",
+    "Logo row (638:183) no auto-layout data; used measured gap 20px",
+    "Nav items Home/About Me emitted as buttons with text extracted from direct text children"
+  ]
+}

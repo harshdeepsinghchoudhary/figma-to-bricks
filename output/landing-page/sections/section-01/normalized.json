@@ -1,0 +1,391 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "header",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "about-me",
+          "figmaNodeId": "638:189",
+          "children": [
+            {
+              "type": "column",
+              "id": "group-13",
+              "figmaNodeId": "638:188",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "header-row-2",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "logo",
+                      "figmaNodeId": "638:183",
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "header-row-1",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "logo-mark",
+                              "figmaNodeId": "638:185",
+                              "asset": {
+                                "nodeId": "638:185",
+                                "kind": "svg"
+                              },
+                              "size": {
+                                "width": 67,
+                                "height": 67
+                              }
+                            },
+                            {
+                              "type": "heading",
+                              "id": "logo-text",
+                              "figmaNodeId": "638:184",
+                              "text": "Mumair ",
+                              "typography": {
+                                "fontFamily": "Montserrat",
+                                "fontSize": 48,
+                                "fontWeight": 600,
+                                "color": "#1E1E1E",
+                                "align": "left",
+                                "lineHeight": "58.51px"
+                              },
+                              "level": 2,
+                              "size": {
+                                "width": 190
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 20,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "padding": {
+                          "top": 0,
+                          "right": 2,
+                          "bottom": 0,
+                          "left": 0
+                        },
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 279
+                      }
+                    },
+                    {
+                      "type": "row",
+                      "id": "nav",
+                      "figmaNodeId": "260:137",
+                      "children": [
+                        {
+                          "type": "button",
+                          "id": "nav-home",
+                          "figmaNodeId": "260:114",
+                          "text": "Home",
+                          "layout": {
+                            "padding": {
+                              "top": 10,
+                              "right": 14,
+                              "bottom": 10,
+                              "left": 14
+                            }
+                          },
+                          "background": {
+                            "color": "#FFFFFF"
+                          },
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 21,
+                            "fontWeight": 400,
+                            "color": "#000000",
+                            "lineHeight": "31.5px",
+                            "letterSpacing": "0.63px",
+                            "align": "left"
+                          },
+                          "notes": [
+                            "Contains direct text child in Figma; extracted as label"
+                          ],
+                          "size": {
+                            "width": 93
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "id": "nav-about",
+                          "figmaNodeId": "260:135",
+                          "text": "About Me",
+                          "layout": {
+                            "padding": {
+                              "top": 10,
+                              "right": 14,
+                              "bottom": 10,
+                              "left": 14
+                            }
+                          },
+                          "background": {
+                            "color": "#FFFFFF"
+                          },
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 21,
+                            "fontWeight": 400,
+                            "color": "#000000",
+                            "lineHeight": "31.5px",
+                            "letterSpacing": "0.63px",
+                            "align": "left"
+                          },
+                          "notes": [
+                            "Contains direct text child in Figma; extracted as label"
+                          ],
+                          "size": {
+                            "width": 132
+                          }
+                        },
+                        {
+                          "type": "row",
+                          "id": "services-button",
+                          "figmaNodeId": "260:138",
+                          "background": {
+                            "color": "#FFFFFF"
+                          },
+                          "children": [
+                            {
+                              "type": "text-basic",
+                              "id": "services-text",
+                              "figmaNodeId": "260:139",
+                              "text": "Services",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 21,
+                                "fontWeight": 400,
+                                "align": "left",
+                                "lineHeight": "31.5px",
+                                "letterSpacing": "0.63px",
+                                "color": "#000000"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "padding": {
+                              "top": 10,
+                              "right": 14,
+                              "bottom": 10,
+                              "left": 14
+                            },
+                            "align": "start"
+                          },
+                          "size": {
+                            "width": 120
+                          }
+                        },
+                        {
+                          "type": "row",
+                          "id": "projects-button",
+                          "figmaNodeId": "260:140",
+                          "background": {
+                            "color": "#FFFFFF"
+                          },
+                          "children": [
+                            {
+                              "type": "text-basic",
+                              "id": "projects-text",
+                              "figmaNodeId": "260:141",
+                              "text": "Projects",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 21,
+                                "fontWeight": 400,
+                                "align": "left",
+                                "lineHeight": "31.5px",
+                                "letterSpacing": "0.63px",
+                                "color": "#000000"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "padding": {
+                              "top": 10,
+                              "right": 14,
+                              "bottom": 10,
+                              "left": 14
+                            },
+                            "align": "start"
+                          },
+                          "size": {
+                            "width": 116
+                          }
+                        },
+                        {
+                          "type": "row",
+                          "id": "testimonials-button",
+                          "figmaNodeId": "260:142",
+                          "background": {
+                            "color": "#FFFFFF"
+                          },
+                          "children": [
+                            {
+                              "type": "text-basic",
+                              "id": "testimonials-text",
+                              "figmaNodeId": "260:143",
+                              "text": "Testimonials",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 21,
+                                "fontWeight": 400,
+                                "align": "left",
+                                "lineHeight": "31.5px",
+                                "letterSpacing": "0.63px",
+                                "color": "#000000"
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "padding": {
+                              "top": 10,
+                              "right": 14,
+                              "bottom": 10,
+                              "left": 14
+                            },
+                            "align": "start"
+                          },
+                          "size": {
+                            "width": 168
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "id": "contact-button",
+                          "figmaNodeId": "260:144",
+                          "text": "Contact",
+                          "background": {
+                            "color": "#FFFFFF"
+                          },
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "align": "center",
+                            "justify": "center",
+                            "padding": {
+                              "top": 10,
+                              "right": 14,
+                              "bottom": 10,
+                              "left": 14
+                            }
+                          },
+                          "typography": {
+                            "fontFamily": "Poppins",
+                            "fontSize": 21,
+                            "fontWeight": 400,
+                            "color": "#000000",
+                            "align": "left",
+                            "lineHeight": "31.5px",
+                            "letterSpacing": "0.63px"
+                          },
+                          "size": {
+                            "width": 118
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "gap": 12,
+                        "align": "start",
+                        "margin": {
+                          "left": 122
+                        }
+                      },
+                      "size": {
+                        "width": 807
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "id": "download-cv-button",
+                      "figmaNodeId": "372:73",
+                      "text": "Downlaod CV",
+                      "background": {
+                        "color": "#FD6F00"
+                      },
+                      "border": {
+                        "radius": 5
+                      },
+                      "typography": {
+                        "fontFamily": "Poppins",
+                        "fontSize": 21,
+                        "fontWeight": 400,
+                        "color": "#FFFFFF",
+                        "align": "justify",
+                        "lineHeight": "31.5px",
+                        "letterSpacing": "0.63px"
+                      },
+                      "size": {
+                        "width": 188
+                      },
+                      "layout": {
+                        "padding": {
+                          "top": 17,
+                          "right": 18,
+                          "bottom": 18,
+                          "left": 18
+                        },
+                        "margin": {
+                          "left": 24
+                        }
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "align": "center"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "align": "start"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "start"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      }
+    }
+  ],
+  "_uncertain": [
+    "About Me (638:189) background unspecified",
+    "Group 13 (638:188) background unspecified",
+    "Nav items Home/About Me emitted as buttons with text extracted from direct text children",
+    "stitch: 4 node(s) added from Figma data because the model's parts did not include them",
+    "stitch: dropped 4 duplicate element(s) emitted by overlapping parts"
+  ]
+}

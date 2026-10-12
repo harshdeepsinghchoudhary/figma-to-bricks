@@ -1,0 +1,68 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "group-149",
+          "figmaNodeId": "2227:234",
+          "size": {
+            "width": 365,
+            "height": 288
+          }
+        },
+        {
+          "type": "image",
+          "id": "rectangle-42",
+          "figmaNodeId": "2227:235",
+          "asset": {
+            "nodeId": "2227:235",
+            "kind": "image"
+          },
+          "size": {
+            "width": 365,
+            "height": 180
+          }
+        },
+        {
+          "type": "column",
+          "id": "frame-113",
+          "figmaNodeId": "2227:236",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 20
+          },
+          "size": {
+            "width": 326,
+            "height": 88
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "text-237",
+              "figmaNodeId": "2227:237",
+              "text": "How Light Roulette uses a custom software script to avoid paying out on ",
+              "size": {
+                "width": 326,
+                "height": 38
+              },
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "19.36px",
+                "color": "#000000CC",
+                "align": "left"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": []
+}

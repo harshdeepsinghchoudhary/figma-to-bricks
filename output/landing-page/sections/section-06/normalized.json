@@ -1,0 +1,697 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "frame-24",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "testimonials-group",
+          "figmaNodeId": "1039:88",
+          "children": [
+            {
+              "type": "column",
+              "id": "frame-24-column-1",
+              "children": [
+                {
+                  "type": "heading",
+                  "id": "testimonials-heading",
+                  "figmaNodeId": "1039:90",
+                  "text": "Testimonials",
+                  "level": 2,
+                  "typography": {
+                    "fontFamily": "Poppins",
+                    "fontSize": 65,
+                    "fontWeight": 600,
+                    "lineHeight": "97.5px",
+                    "letterSpacing": "1.95px",
+                    "color": "#000000",
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 446
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "testimonials-subtitle",
+                  "figmaNodeId": "1039:89",
+                  "text": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium",
+                  "typography": {
+                    "fontFamily": "Poppins",
+                    "fontSize": 21,
+                    "fontWeight": 400,
+                    "lineHeight": "31.5px",
+                    "letterSpacing": "0.63px",
+                    "color": "#000000",
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 932
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "gap": 15,
+                "align": "center"
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "start"
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-24-row-7",
+          "children": [
+            {
+              "type": "column",
+              "id": "group-32-1",
+              "figmaNodeId": "1039:115",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "frame-24-row-2",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "avatar",
+                      "figmaNodeId": "1039:108",
+                      "asset": {
+                        "nodeId": "1039:108",
+                        "kind": "svg"
+                      },
+                      "size": {
+                        "width": 235,
+                        "height": 235
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "testimonial-content-2",
+                      "figmaNodeId": "1039:109",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "frame-24-column-3",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "frame-24-row-1",
+                              "children": [
+                                {
+                                  "type": "heading",
+                                  "id": "opening-quote",
+                                  "figmaNodeId": "1039:111",
+                                  "text": "“",
+                                  "typography": {
+                                    "fontFamily": "Poppins",
+                                    "fontSize": 32,
+                                    "fontWeight": 700,
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "0.64px",
+                                    "color": "#FD6F00",
+                                    "align": "justify"
+                                  },
+                                  "level": 3,
+                                  "size": {
+                                    "width": 18
+                                  }
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "frame-24-column-2",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "testimonial-text",
+                                      "figmaNodeId": "1039:110",
+                                      "text": "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.",
+                                      "typography": {
+                                        "fontFamily": "Poppins",
+                                        "fontSize": 21,
+                                        "fontWeight": 400,
+                                        "lineHeight": "31.5px",
+                                        "letterSpacing": "0.42px",
+                                        "color": "#424242",
+                                        "align": "justify"
+                                      },
+                                      "layout": {
+                                        "margin": {
+                                          "top": 25
+                                        }
+                                      },
+                                      "size": {
+                                        "width": 698
+                                      }
+                                    },
+                                    {
+                                      "type": "text-basic",
+                                      "id": "testimonial-name",
+                                      "figmaNodeId": "1039:113",
+                                      "text": "Name",
+                                      "typography": {
+                                        "fontFamily": "Poppins",
+                                        "fontSize": 24,
+                                        "fontWeight": 500,
+                                        "lineHeight": "36px",
+                                        "letterSpacing": "0.48px",
+                                        "color": "#000000",
+                                        "align": "justify"
+                                      },
+                                      "size": {
+                                        "width": 75
+                                      }
+                                    },
+                                    {
+                                      "type": "heading",
+                                      "id": "closing-quote",
+                                      "figmaNodeId": "1039:112",
+                                      "text": "“",
+                                      "typography": {
+                                        "fontFamily": "Poppins",
+                                        "fontSize": 32,
+                                        "fontWeight": 700,
+                                        "lineHeight": "48px",
+                                        "letterSpacing": "0.64px",
+                                        "color": "#FD6F00",
+                                        "align": "justify"
+                                      },
+                                      "level": 3,
+                                      "size": {
+                                        "width": 18
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "margin": {
+                                      "top": 25
+                                    }
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "align": "start"
+                              }
+                            },
+                            {
+                              "type": "text-basic",
+                              "id": "testimonial-title",
+                              "figmaNodeId": "1039:114",
+                              "text": "CEO",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 19,
+                                "fontWeight": 400,
+                                "lineHeight": "28.5px",
+                                "letterSpacing": "0.38px",
+                                "color": "#000000",
+                                "align": "justify"
+                              },
+                              "size": {
+                                "width": 41
+                              },
+                              "layout": {
+                                "margin": {
+                                  "left": 18
+                                }
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 716
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 11,
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 55,
+                  "right": 77,
+                  "bottom": 53,
+                  "left": 48
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 1087
+              },
+              "background": {
+                "color": "#F8F8F8"
+              },
+              "border": {
+                "radius": 14
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-34-1",
+              "figmaNodeId": "1039:118",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "frame-24-row-4",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "author-photo",
+                      "figmaNodeId": "1039:92",
+                      "asset": {
+                        "nodeId": "1039:92",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 235,
+                        "height": 235
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "testimonial-content",
+                      "figmaNodeId": "1039:98",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "frame-24-column-5",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "frame-24-row-3",
+                              "children": [
+                                {
+                                  "type": "heading",
+                                  "id": "quote-open",
+                                  "figmaNodeId": "1039:94",
+                                  "text": "“",
+                                  "typography": {
+                                    "fontFamily": "Poppins",
+                                    "fontSize": 32,
+                                    "fontWeight": 700,
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "0.64px",
+                                    "color": "#FD6F00",
+                                    "align": "justify"
+                                  },
+                                  "level": 3,
+                                  "size": {
+                                    "width": 18
+                                  }
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "frame-24-column-4",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "quote-text",
+                                      "figmaNodeId": "1039:93",
+                                      "text": "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.",
+                                      "typography": {
+                                        "fontFamily": "Poppins",
+                                        "fontSize": 21,
+                                        "fontWeight": 400,
+                                        "lineHeight": "31.5px",
+                                        "letterSpacing": "0.42px",
+                                        "color": "#424242",
+                                        "align": "justify"
+                                      },
+                                      "size": {
+                                        "width": 698
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "quote-author",
+                                      "figmaNodeId": "1039:96",
+                                      "text": "Name",
+                                      "typography": {
+                                        "fontFamily": "Poppins",
+                                        "fontSize": 24,
+                                        "fontWeight": 500,
+                                        "lineHeight": "36px",
+                                        "letterSpacing": "0.48px",
+                                        "color": "#000000",
+                                        "align": "justify"
+                                      },
+                                      "size": {
+                                        "width": 75
+                                      }
+                                    },
+                                    {
+                                      "type": "heading",
+                                      "id": "quote-close",
+                                      "figmaNodeId": "1039:95",
+                                      "text": "“",
+                                      "typography": {
+                                        "fontFamily": "Poppins",
+                                        "fontSize": 32,
+                                        "fontWeight": 700,
+                                        "lineHeight": "48px",
+                                        "letterSpacing": "0.64px",
+                                        "color": "#FD6F00",
+                                        "align": "justify"
+                                      },
+                                      "level": 3,
+                                      "size": {
+                                        "width": 18
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "margin": {
+                                      "top": 25
+                                    }
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "align": "start"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "quote-title",
+                              "figmaNodeId": "1039:97",
+                              "text": "CEO",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 19,
+                                "fontWeight": 400,
+                                "lineHeight": "28.5px",
+                                "letterSpacing": "0.38px",
+                                "color": "#000000",
+                                "align": "justify"
+                              },
+                              "notes": [
+                                "offCross offset 18px from column edge"
+                              ],
+                              "size": {
+                                "width": 41
+                              },
+                              "layout": {
+                                "margin": {
+                                  "left": 18
+                                }
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 716
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 11,
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 55,
+                  "right": 77,
+                  "bottom": 53,
+                  "left": 48
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 1087
+              },
+              "background": {
+                "color": "#F8F8F8"
+              },
+              "border": {
+                "radius": 14
+              }
+            },
+            {
+              "type": "column",
+              "id": "group-33-1",
+              "figmaNodeId": "1039:117",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "frame-24-row-6",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "testimonial-avatar-3",
+                      "figmaNodeId": "1039:100",
+                      "asset": {
+                        "nodeId": "1039:100",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 235,
+                        "height": 235
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "testimonial-quote-3",
+                      "figmaNodeId": "1039:101",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "frame-24-column-7",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "frame-24-row-5",
+                              "children": [
+                                {
+                                  "type": "heading",
+                                  "id": "quote-opening-3",
+                                  "figmaNodeId": "1039:103",
+                                  "text": "“",
+                                  "typography": {
+                                    "fontFamily": "Poppins",
+                                    "fontSize": 32,
+                                    "fontWeight": 700,
+                                    "align": "justify",
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "0.64px",
+                                    "color": "#FD6F00"
+                                  },
+                                  "level": 3,
+                                  "size": {
+                                    "width": 18
+                                  }
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "frame-24-column-6",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "testimony-text-3",
+                                      "figmaNodeId": "1039:102",
+                                      "text": "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.",
+                                      "typography": {
+                                        "fontFamily": "Poppins",
+                                        "fontSize": 21,
+                                        "fontWeight": 400,
+                                        "align": "justify",
+                                        "lineHeight": "31.5px",
+                                        "letterSpacing": "0.42px",
+                                        "color": "#424242"
+                                      },
+                                      "size": {
+                                        "width": 698
+                                      }
+                                    },
+                                    {
+                                      "type": "text-basic",
+                                      "id": "testimony-name-3",
+                                      "figmaNodeId": "1039:105",
+                                      "text": "Name",
+                                      "typography": {
+                                        "fontFamily": "Poppins",
+                                        "fontSize": 24,
+                                        "fontWeight": 500,
+                                        "align": "justify",
+                                        "lineHeight": "36px",
+                                        "letterSpacing": "0.48px",
+                                        "color": "#000000"
+                                      },
+                                      "size": {
+                                        "width": 75
+                                      }
+                                    },
+                                    {
+                                      "type": "heading",
+                                      "id": "quote-closing-3",
+                                      "figmaNodeId": "1039:104",
+                                      "text": "“",
+                                      "typography": {
+                                        "fontFamily": "Poppins",
+                                        "fontSize": 32,
+                                        "fontWeight": 700,
+                                        "align": "justify",
+                                        "lineHeight": "48px",
+                                        "letterSpacing": "0.64px",
+                                        "color": "#FD6F00"
+                                      },
+                                      "notes": [
+                                        "layer overlaps surrounding content; emits quote in its given position"
+                                      ],
+                                      "level": 3,
+                                      "size": {
+                                        "width": 18
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "margin": {
+                                      "top": 25
+                                    }
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "row",
+                                "align": "start"
+                              }
+                            },
+                            {
+                              "type": "text-basic",
+                              "id": "testimony-title-3",
+                              "figmaNodeId": "1039:106",
+                              "text": "CEO",
+                              "typography": {
+                                "fontFamily": "Poppins",
+                                "fontSize": 19,
+                                "fontWeight": 400,
+                                "align": "justify",
+                                "lineHeight": "28.5px",
+                                "letterSpacing": "0.38px",
+                                "color": "#000000"
+                              },
+                              "size": {
+                                "width": 41
+                              },
+                              "layout": {
+                                "margin": {
+                                  "left": 18
+                                }
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 716
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 11,
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "padding": {
+                  "top": 55,
+                  "right": 77,
+                  "bottom": 53,
+                  "left": 48
+                },
+                "align": "start"
+              },
+              "size": {
+                "width": 1087
+              },
+              "background": {
+                "color": "#F8F8F8"
+              },
+              "border": {
+                "radius": 14
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 62,
+            "align": "start"
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 72,
+        "align": "center"
+      }
+    }
+  ],
+  "_uncertain": [
+    "opacity 0.2 of node 1039:117 without a representative schema key",
+    "testimonial-card: dropped unknown field \"opacity\""
+  ]
+}

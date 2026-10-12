@@ -1,0 +1,54 @@
+{
+  "figmaUrl": "https://www.figma.com/design/mMJsY2EiHFk4VaFghaUh4L/CasinoFX-Homepage?node-id=2214-2&t=rN1CQ3SBEKKk4P17-0",
+  "frameDir": "output\\casinofx-homepage",
+  "postId": 3435,
+  "startedAt": "2026-10-12T04:27:36.262Z",
+  "args": [
+    "https://www.figma.com/design/mMJsY2EiHFk4VaFghaUh4L/CasinoFX-Homepage?node-id=2214-2&t=rN1CQ3SBEKKk4P17-0"
+  ],
+  "steps": [
+    {
+      "label": "1/5 extract from Figma",
+      "script": "1_extract_figma.js",
+      "args": [
+        "https://www.figma.com/design/mMJsY2EiHFk4VaFghaUh4L/CasinoFX-Homepage?node-id=2214-2&t=rN1CQ3SBEKKk4P17-0"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "2-3/5 AI normalize + compile + merge",
+      "script": "run-sections.js",
+      "args": [
+        "output\\casinofx-homepage"
+      ],
+      "code": 1,
+      "seconds": 935
+    },
+    {
+      "label": "4/5 push into Bricks page",
+      "script": "4_inject_mcp.js",
+      "args": [
+        "output\\casinofx-homepage\\merged",
+        "--fix-keys",
+        "--title",
+        "Figma import - casinofx-homepage 2026-10-12"
+      ],
+      "code": 0,
+      "seconds": 20
+    },
+    {
+      "label": "5/5 save dataset",
+      "script": "export-dataset.js",
+      "args": [
+        "output\\casinofx-homepage",
+        "--page",
+        "3435"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-12T04:43:32.314Z",
+  "exitCode": 1
+}

@@ -1,0 +1,109 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "casino-card",
+      "figmaNodeId": "2231:219",
+      "children": [
+        {
+          "type": "image",
+          "id": "classy-slots-logo",
+          "figmaNodeId": "2228:265",
+          "asset": {
+            "nodeId": "2228:265",
+            "kind": "image"
+          },
+          "size": {
+            "width": 68,
+            "height": 68
+          },
+          "border": {
+            "radius": 2000
+          }
+        },
+        {
+          "type": "column",
+          "id": "classy-slots-text",
+          "figmaNodeId": "2226:23",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "center",
+            "gap": 6
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "classy-slots-label",
+              "figmaNodeId": "2226:24",
+              "text": "Classy Slots",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#000000"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "rigged-label",
+              "figmaNodeId": "2226:25",
+              "text": "🛑 88.5% Rigged",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "16.94px",
+                "color": "#00000080"
+              }
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "id": "proof-button",
+          "figmaNodeId": "2226:26",
+          "text": "Proof",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "justify": "center",
+            "align": "center",
+            "padding": {
+              "left": 20,
+              "right": 20,
+              "top": 12,
+              "bottom": 12
+            }
+          },
+          "background": {
+            "color": "#FFD733"
+          },
+          "border": {
+            "radius": 4
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "16.94px",
+            "color": "#000000",
+            "align": "center"
+          }
+        }
+      ],
+      "background": {
+        "color": "#F7F7F7"
+      },
+      "border": {
+        "radius": 8
+      }
+    }
+  ],
+  "_uncertain": [
+    "classy-slots-label: dropped unknown field \"typography.textAlignHorizontal\"",
+    "rigged-label: dropped unknown field \"typography.textAlignHorizontal\""
+  ]
+}

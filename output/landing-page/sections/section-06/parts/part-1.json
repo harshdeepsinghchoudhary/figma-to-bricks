@@ -1,0 +1,54 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "container",
+      "id": "frame-24",
+      "figmaNodeId": "1039:124"
+    },
+    {
+      "type": "column",
+      "id": "testimonials-group",
+      "figmaNodeId": "1039:88",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 15,
+        "align": "center"
+      },
+      "children": [
+        {
+          "type": "heading",
+          "id": "testimonials-heading",
+          "figmaNodeId": "1039:90",
+          "text": "Testimonials",
+          "level": 1,
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 65,
+            "fontWeight": 600,
+            "lineHeight": "97.5px",
+            "letterSpacing": "1.95px",
+            "color": "#000000",
+            "align": "center"
+          }
+        },
+        {
+          "type": "text",
+          "id": "testimonials-subtitle",
+          "figmaNodeId": "1039:89",
+          "text": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium",
+          "typography": {
+            "fontFamily": "Poppins",
+            "fontSize": 21,
+            "fontWeight": 400,
+            "lineHeight": "31.5px",
+            "letterSpacing": "0.63px",
+            "color": "#000000",
+            "align": "center"
+          }
+        }
+      ]
+    }
+  ]
+}

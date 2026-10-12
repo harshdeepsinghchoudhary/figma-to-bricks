@@ -1,0 +1,110 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section",
+      "children": [
+        {
+          "type": "row",
+          "id": "frame-112",
+          "figmaNodeId": "2227:252",
+          "size": {
+            "width": 326,
+            "height": 30
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "frame-111",
+              "figmaNodeId": "2227:253",
+              "size": {
+                "width": 118,
+                "height": 30
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "ellipse-4",
+                  "figmaNodeId": "2227:254",
+                  "asset": {
+                    "nodeId": "2227:254",
+                    "kind": "image"
+                  },
+                  "size": {
+                    "width": 30,
+                    "height": 30
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "mathgenius",
+                  "figmaNodeId": "2227:255",
+                  "text": "MathGenius",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000099"
+                  },
+                  "size": {
+                    "width": 80,
+                    "height": 17
+                  }
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "id": "frame-110",
+              "figmaNodeId": "2227:256",
+              "size": {
+                "width": 52,
+                "height": 22
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "id": "frame",
+                  "figmaNodeId": "2227:257",
+                  "asset": {
+                    "nodeId": "2227:257",
+                    "kind": "svg"
+                  },
+                  "size": {
+                    "width": 22,
+                    "height": 22
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "612",
+                  "figmaNodeId": "2227:259",
+                  "text": "612",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 400,
+                    "lineHeight": "16.94px",
+                    "color": "#00000099"
+                  },
+                  "size": {
+                    "width": 24,
+                    "height": 17
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Overlapping layers: Group 152 and Rectangle 40 with fill #F7F7F7."
+      ]
+    }
+  ],
+  "_uncertain": [
+    "section: dropped unknown field \"_uncertain\""
+  ]
+}

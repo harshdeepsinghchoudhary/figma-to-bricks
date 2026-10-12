@@ -54,10 +54,11 @@ function sectionBands(frameDir, names, trees) {
   const out = [];
   for (const [i, name] of names.entries()) {
     const np = path.join(frameDir, "sections", name, "normalized.json");
-    if (!fs.existsSync(np)) return null;
+    if (!fs.existsSync(np)) { console.log(`  spacing: ${name} has no normalized.json - left out of the spacing`); continue; }
     const ids = new Set();
     (function walk(n) { if (!n || typeof n !== "object") return; if (n.figmaNodeId && geo.box.has(n.figmaNodeId)) ids.add(n.figmaNodeId); if (n.asset?.nodeId && geo.box.has(n.asset.nodeId)) ids.add(n.asset.nodeId); for (const c of n.children || []) walk(c); })(JSON.parse(fs.readFileSync(np, "utf-8")));
-    if (!ids.size) return null;
+    // one section without Figma ids (an empty stub, say) must not switch the spacing off for the whole page
+    if (!ids.size) { console.log(`  spacing: ${name} has no Figma geometry - kept its default padding, the others are still measured`); continue; }
     const tops = [...new Set([...ids].map((id) => geo.top.get(id)).filter(Boolean))];
     const band = unionBox(tops.map((t) => geo.box.get(t)).filter(Boolean));
     const sec = trees[i].find((e) => e.name === "section");
@@ -71,7 +72,7 @@ function sectionBands(frameDir, names, trees) {
 }
 function applyVerticalSpacing(frameDir, names, trees) {
   const b = sectionBands(frameDir, names, trees);
-  if (!b) { console.log("Spacing: no Figma geometry for these sections - kept the compiler's default padding."); return; }
+  if (!b || !b.length) { console.log("Spacing: no Figma geometry for these sections - kept the compiler's default padding."); return; }
   const r = (v) => Math.max(0, Math.round(v));
   const pad = b.map((s) => ({ top: s.content.y - s.band.y, bottom: s.band.y + s.band.h - (s.content.y + s.content.h) }));
   const navFirst = (i) => i === 0 && b.length > 1 && b[0].band.h <= 160;

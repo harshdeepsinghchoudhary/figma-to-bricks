@@ -1,152 +1,85 @@
 {
-  "page": {
-    "type": "page",
-    "children": [
-      {
-        "type": "section",
-        "id": "section-1",
-        "figmaNodeId": "2236:70",
-        "children": [
-          {
-            "type": "column",
-            "id": "frame-138",
-            "figmaNodeId": "2236:73",
-            "layout": {
-              "display": "flex",
-              "direction": "column",
-              "gap": 30,
-              "align": "start",
-              "justify": "start"
-            }
-          },
-          {
-            "type": "column",
-            "id": "frame-137",
-            "figmaNodeId": "2236:72",
-            "layout": {
-              "display": "flex",
-              "direction": "column",
-              "gap": 30,
-              "align": "start",
-              "justify": "start"
-            }
-          },
-          {
-            "type": "row",
-            "id": "frame-136",
-            "figmaNodeId": "2236:71",
-            "layout": {
-              "display": "flex",
-              "direction": "row",
-              "gap": 24,
-              "align": "center",
-              "justify": "start"
-            }
-          },
-          {
-            "type": "row",
-            "id": "frame-135",
-            "figmaNodeId": "2236:68",
-            "layout": {
-              "display": "flex",
-              "direction": "row",
-              "gap": 18,
-              "align": "center",
-              "justify": "start"
-            },
-            "children": [
-              {
-                "type": "text",
-                "id": "select-country-region",
-                "figmaNodeId": "2236:54",
-                "text": "Select Country/Region",
-                "typography": {
-                  "fontFamily": "Inter",
-                  "fontSize": 18,
-                  "fontWeight": 500,
-                  "lineHeight": "22px",
-                  "color": "#FFFFFF"
-                }
-              },
-              {
-                "type": "row",
-                "id": "group-166",
-                "figmaNodeId": "2236:67",
-                "layout": {
-                  "display": "flex",
-                  "direction": "row",
-                  "gap": 55,
-                  "align": "center",
-                  "justify": "space-between"
-                },
-                "border": {
-                  "radius": 4
-                },
-                "background": {
-                  "color": "#FFFFFF1A"
-                },
-                "children": [
-                  {
-                    "type": "row",
-                    "id": "frame-134",
-                    "figmaNodeId": "2236:65",
-                    "layout": {
-                      "display": "flex",
-                      "direction": "row",
-                      "gap": 8,
-                      "align": "center",
-                      "justify": "start"
-                    },
-                    "children": [
-                      {
-                        "type": "image",
-                        "id": "image-flag",
-                        "figmaNodeId": "2236:60",
-                        "asset": {
-                          "nodeId": "2236:60",
-                          "kind": "image"
-                        }
-                      },
-                      {
-                        "type": "text",
-                        "id": "text-bengal",
-                        "figmaNodeId": "2236:59",
-                        "text": "Bengal",
-                        "typography": {
-                          "fontFamily": "Inter",
-                          "fontSize": 18,
-                          "fontWeight": 500,
-                          "lineHeight": "22px",
-                          "color": "#FFFFFF"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "icon",
-                    "id": "icon-2236-62",
-                    "figmaNodeId": "2236:62",
-                    "asset": {
-                      "nodeId": "2236:62",
-                      "kind": "svg"
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "icon",
-                "id": "icon-2236-62-2",
-                "figmaNodeId": "2236:62",
-                "asset": {
-                  "nodeId": "2236:62",
-                  "kind": "svg"
-                }
-              }
-            ]
-          }
-        ]
+  "type": "section",
+  "id": "part-7",
+  "children": [
+    {
+      "type": "text",
+      "id": "vps-help",
+      "figmaNodeId": "2236:46",
+      "text": "VPS Help",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 500,
+        "lineHeight": "24px",
+        "color": "#FFFFFF"
       }
-    ],
-    "_uncertain": []
-  }
+    },
+    {
+      "type": "unsupported",
+      "id": "line-5",
+      "figmaNodeId": "2236:47",
+      "notes": [
+        "Line element with stroke color #FFFFFF33"
+      ]
+    },
+    {
+      "type": "text",
+      "id": "business-cooperation",
+      "figmaNodeId": "2236:48",
+      "text": "Business Cooperation",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 500,
+        "lineHeight": "24px",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "unsupported",
+      "id": "line-6",
+      "figmaNodeId": "2236:49",
+      "notes": [
+        "Line element with stroke color #FFFFFF33"
+      ]
+    },
+    {
+      "type": "text",
+      "id": "regional-divisions",
+      "figmaNodeId": "2236:50",
+      "text": "Regional Divisions",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 500,
+        "lineHeight": "24px",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "type": "unsupported",
+      "id": "line-7",
+      "figmaNodeId": "2236:51",
+      "notes": [
+        "Line element with stroke color #FFFFFF33"
+      ]
+    },
+    {
+      "type": "text",
+      "id": "media-reports",
+      "figmaNodeId": "2236:52",
+      "text": "Media Reports",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 500,
+        "lineHeight": "24px",
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "_uncertain": [
+    "layout and size details omitted"
+  ]
 }

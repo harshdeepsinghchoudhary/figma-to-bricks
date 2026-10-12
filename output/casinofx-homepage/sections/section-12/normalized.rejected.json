@@ -1,46 +1,58 @@
 {
-  "type": "page",
+  "type": "section",
   "children": [
     {
-      "type": "section",
-      "id": "section",
-      "children": [
-        {
-          "type": "column",
-          "id": "group-156",
-          "figmaNodeId": "2231:216"
-        },
-        {
-          "type": "image",
-          "id": "spin-casino-colored-logo-1",
-          "figmaNodeId": "2228:263",
-          "asset": {
-            "nodeId": "2228:263",
-            "kind": "image"
-          }
-        },
-        {
-          "type": "unsupported",
-          "id": "group-142",
-          "figmaNodeId": "2227:127",
-          "notes": [
-            "Contains vector and text layers."
-          ]
-        },
-        {
-          "type": "column",
-          "id": "frame-104",
-          "figmaNodeId": "2226:12"
-        },
-        {
-          "type": "row",
-          "id": "frame-28",
-          "figmaNodeId": "2226:13"
-        }
-      ]
+      "type": "row",
+      "id": "frame-120",
+      "figmaNodeId": "2231:227"
+    },
+    {
+      "type": "column",
+      "id": "group-153",
+      "figmaNodeId": "2227:246"
+    },
+    {
+      "type": "block",
+      "id": "rectangle-40",
+      "figmaNodeId": "2227:247",
+      "background": {
+        "color": "#F7F7F7"
+      }
+    },
+    {
+      "type": "column",
+      "id": "group-149",
+      "figmaNodeId": "2227:248"
+    },
+    {
+      "type": "image",
+      "id": "rectangle-43",
+      "figmaNodeId": "2228:279",
+      "asset": {
+        "nodeId": "2228:279",
+        "kind": "image"
+      }
+    },
+    {
+      "type": "column",
+      "id": "frame-113",
+      "figmaNodeId": "2227:250"
+    },
+    {
+      "type": "text",
+      "id": "leaked-admin-backend-screenshot-where-lucky-draw-ticket-numbers-are-altered",
+      "figmaNodeId": "2227:251",
+      "text": "Leaked admin backend screenshot where lucky draw ticket numbers are altered.",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "lineHeight": "19.36px",
+        "color": "#000000CC"
+      }
     }
   ],
   "_uncertain": [
-    "Missing layout and size details for container nodes."
+    "size and layout details omitted"
   ]
 }

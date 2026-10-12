@@ -1,0 +1,75 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casino-fx-homepage-part-10",
+      "figmaNodeId": "scope",
+      "background": {
+        "color": "#F7F7F7"
+      },
+      "border": {
+        "radius": 8
+      },
+      "children": [
+        {
+          "type": "container",
+          "id": "group-148",
+          "figmaNodeId": "2227:155"
+        },
+        {
+          "type": "row",
+          "id": "frame-109",
+          "figmaNodeId": "2227:157",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 28,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "container",
+              "id": "group-145",
+              "figmaNodeId": "2227:158",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "vector-2",
+                  "figmaNodeId": "2227:159",
+                  "asset": {
+                    "nodeId": "2227:159",
+                    "kind": "svg"
+                  }
+                },
+                {
+                  "type": "text-basic",
+                  "id": "text-6",
+                  "figmaNodeId": "2227:160",
+                  "text": "6",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 500,
+                    "lineHeight": "19.36px",
+                    "color": "#8B8B8B",
+                    "align": "left"
+                  },
+                  "layout": {
+                    "margin": {
+                      "left": 19,
+                      "top": 11
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "frame-109: dropped unknown field \"_uncertain\""
+  ]
+}

@@ -1413,6 +1413,27 @@ how gaps/padding/typography are expressed, when notes are used).` : ""}`,
     }
     if (!rebuilt) throw new Error(`Split mode: could not stitch the parts together (${reason.why || "an element did not match the measured layout"}). Check the files in the parts/ folder, or re-run with a different --split=<tokens> budget.`);
     dedupeIds(rebuilt); // the rebuild can reuse an id the model gave two elements; make them unique before validating
+    // A text element the model (or the stitch) left without its "text": take the copy from the Figma node with the same id, else drop the empty element
+    // rather than failing the whole section.
+    {
+      const figmaText = new Map();
+      (function w(n) { if (!n || typeof n !== "object") return; if (n.type === "TEXT" && typeof n.characters === "string" && n.characters.trim()) figmaText.set(n.id, n.characters); for (const c of n.children || []) w(c); })({ children: prunedRoot.children || [] });
+      const TEXTY = new Set(["text", "text-basic", "heading", "button"]);
+      let fixed = 0, dropped = 0;
+      (function w(n) {
+        if (!n || !Array.isArray(n.children)) return;
+        n.children = n.children.filter((c) => {
+          if (c && TEXTY.has(c.type) && !(typeof c.text === "string" && c.text.length)) {
+            const t = c.figmaNodeId && figmaText.get(c.figmaNodeId);
+            if (t) { c.text = t; fixed++; return true; }
+            dropped++; return false;
+          }
+          return true;
+        });
+        for (const c of n.children) w(c);
+      })(rebuilt);
+      if (fixed || dropped) console.warn(`  Stitch: ${fixed} text element(s) had no copy - filled from Figma; ${dropped} empty one(s) dropped.`);
+    }
     const errs = validateNormalized(rebuilt, manifest.length ? manifest : null).errors;
     if (errs.length) throw new Error("Split mode: stitched result failed validation:\n  - " + errs.slice(0, 10).join("\n  - "));
     console.log(`\nStitched ${parts.length} part(s) back into one section from the Figma geometry.`);

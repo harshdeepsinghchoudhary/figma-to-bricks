@@ -1,8 +1,8 @@
 [
   {
-    "id": "58eff6",
+    "id": "way4hu",
     "name": "image",
-    "parent": "nqmrnc",
+    "parent": "b5ifhz",
     "children": [],
     "settings": {
       "image": {
@@ -18,9 +18,9 @@
     "themeStyles": []
   },
   {
-    "id": "1l8ebo",
+    "id": "7su3p8",
     "name": "button",
-    "parent": "nqmrnc",
+    "parent": "b5ifhz",
     "children": [],
     "settings": {
       "text": "AD",
@@ -66,12 +66,12 @@
     }
   },
   {
-    "id": "nqmrnc",
+    "id": "b5ifhz",
     "name": "div",
-    "parent": "j1ryu0",
+    "parent": "n63omr",
     "children": [
-      "58eff6",
-      "1l8ebo"
+      "way4hu",
+      "7su3p8"
     ],
     "settings": {
       "_display": "flex",
@@ -114,9 +114,9 @@
     }
   },
   {
-    "id": "bnotqn",
+    "id": "fxu8by",
     "name": "image",
-    "parent": "zsmq8m",
+    "parent": "kmju81",
     "children": [],
     "settings": {
       "image": {
@@ -132,9 +132,9 @@
     "themeStyles": []
   },
   {
-    "id": "5rxmcy",
+    "id": "am8xqp",
     "name": "text",
-    "parent": "7wafjs",
+    "parent": "tpp7fb",
     "children": [],
     "settings": {
       "text": "<p>AD</p>",
@@ -152,16 +152,16 @@
     }
   },
   {
-    "id": "7wafjs",
+    "id": "tpp7fb",
     "name": "div",
-    "parent": "zsmq8m",
+    "parent": "kmju81",
     "children": [
-      "5rxmcy"
+      "am8xqp"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_padding": {
         "top": "3",
         "right": "6",
@@ -187,12 +187,12 @@
     }
   },
   {
-    "id": "zsmq8m",
+    "id": "kmju81",
     "name": "div",
-    "parent": "j1ryu0",
+    "parent": "n63omr",
     "children": [
-      "bnotqn",
-      "7wafjs"
+      "fxu8by",
+      "tpp7fb"
     ],
     "settings": {
       "_display": "flex",
@@ -235,9 +235,9 @@
     }
   },
   {
-    "id": "eb5oxm",
+    "id": "5px3a4",
     "name": "text-basic",
-    "parent": "m5usuv",
+    "parent": "i7x6yu",
     "children": [],
     "settings": {
       "text": "AD",
@@ -255,16 +255,16 @@
     }
   },
   {
-    "id": "m5usuv",
+    "id": "i7x6yu",
     "name": "div",
-    "parent": "bq5nus",
+    "parent": "6l3hal",
     "children": [
-      "eb5oxm"
+      "5px3a4"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_padding": {
         "top": "3",
         "right": "6",
@@ -287,9 +287,9 @@
     }
   },
   {
-    "id": "auxh2t",
+    "id": "snobw6",
     "name": "image",
-    "parent": "bq5nus",
+    "parent": "6l3hal",
     "children": [],
     "settings": {
       "image": {
@@ -305,12 +305,12 @@
     "themeStyles": []
   },
   {
-    "id": "bq5nus",
+    "id": "6l3hal",
     "name": "div",
-    "parent": "j1ryu0",
+    "parent": "n63omr",
     "children": [
-      "m5usuv",
-      "auxh2t"
+      "i7x6yu",
+      "snobw6"
     ],
     "settings": {
       "_display": "flex",
@@ -351,9 +351,9 @@
     }
   },
   {
-    "id": "plsft9",
+    "id": "5tl2go",
     "name": "image",
-    "parent": "hlws17",
+    "parent": "99dmol",
     "children": [],
     "settings": {
       "image": {
@@ -369,9 +369,9 @@
     "themeStyles": []
   },
   {
-    "id": "nqw3ci",
+    "id": "wqo47o",
     "name": "text-basic",
-    "parent": "l74ox6",
+    "parent": "v85tge",
     "children": [],
     "settings": {
       "text": "AD",
@@ -389,16 +389,16 @@
     }
   },
   {
-    "id": "l74ox6",
+    "id": "v85tge",
     "name": "div",
-    "parent": "hlws17",
+    "parent": "99dmol",
     "children": [
-      "nqw3ci"
+      "wqo47o"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_padding": {
         "top": "3",
         "right": "6",
@@ -424,12 +424,12 @@
     }
   },
   {
-    "id": "hlws17",
+    "id": "99dmol",
     "name": "div",
-    "parent": "j1ryu0",
+    "parent": "n63omr",
     "children": [
-      "plsft9",
-      "l74ox6"
+      "5tl2go",
+      "v85tge"
     ],
     "settings": {
       "_display": "flex",
@@ -472,9 +472,9 @@
     }
   },
   {
-    "id": "in8z1e",
+    "id": "24i5eo",
     "name": "text-basic",
-    "parent": "bmmt4x",
+    "parent": "j5g1fs",
     "children": [],
     "settings": {
       "text": "AD",
@@ -492,16 +492,16 @@
     }
   },
   {
-    "id": "bmmt4x",
+    "id": "j5g1fs",
     "name": "div",
-    "parent": "29vr9e",
+    "parent": "tdq5p9",
     "children": [
-      "in8z1e"
+      "24i5eo"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_padding": {
         "top": "3",
         "right": "6",
@@ -524,9 +524,9 @@
     }
   },
   {
-    "id": "dgcika",
+    "id": "1wo8bl",
     "name": "image",
-    "parent": "29vr9e",
+    "parent": "tdq5p9",
     "children": [],
     "settings": {
       "image": {
@@ -542,12 +542,12 @@
     "themeStyles": []
   },
   {
-    "id": "29vr9e",
+    "id": "tdq5p9",
     "name": "div",
-    "parent": "j1ryu0",
+    "parent": "n63omr",
     "children": [
-      "bmmt4x",
-      "dgcika"
+      "j5g1fs",
+      "1wo8bl"
     ],
     "settings": {
       "_display": "flex",
@@ -578,9 +578,9 @@
     }
   },
   {
-    "id": "5zzh0j",
+    "id": "z2jmtb",
     "name": "image",
-    "parent": "ydqpf7",
+    "parent": "242i22",
     "children": [],
     "settings": {
       "image": {
@@ -597,9 +597,9 @@
     "themeStyles": []
   },
   {
-    "id": "xd0yh9",
+    "id": "hfqo9e",
     "name": "text",
-    "parent": "4vulfk",
+    "parent": "xbn72w",
     "children": [],
     "settings": {
       "text": "<p>AD</p>",
@@ -617,16 +617,16 @@
     }
   },
   {
-    "id": "4vulfk",
+    "id": "xbn72w",
     "name": "div",
-    "parent": "ydqpf7",
+    "parent": "242i22",
     "children": [
-      "xd0yh9"
+      "hfqo9e"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_padding": {
         "top": "3",
         "right": "6",
@@ -661,12 +661,12 @@
     }
   },
   {
-    "id": "ydqpf7",
+    "id": "242i22",
     "name": "div",
-    "parent": "j1ryu0",
+    "parent": "n63omr",
     "children": [
-      "5zzh0j",
-      "4vulfk"
+      "z2jmtb",
+      "xbn72w"
     ],
     "settings": {
       "_display": "flex",
@@ -712,23 +712,23 @@
     }
   },
   {
-    "id": "j1ryu0",
+    "id": "n63omr",
     "name": "div",
-    "parent": "g9qwh5",
+    "parent": "nie62y",
     "children": [
-      "nqmrnc",
-      "zsmq8m",
-      "bq5nus",
-      "hlws17",
-      "29vr9e",
-      "ydqpf7"
+      "b5ifhz",
+      "kmju81",
+      "6l3hal",
+      "99dmol",
+      "tdq5p9",
+      "242i22"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
       "_rowGap": "20",
       "_columnGap": "20",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_justifyContent": "space-between",
       "_width": "100%",
       "_direction:tablet_portrait": "column",
@@ -737,9 +737,9 @@
     }
   },
   {
-    "id": "kh56db",
+    "id": "1i5x2a",
     "name": "heading",
-    "parent": "i13uq3",
+    "parent": "bci5cn",
     "children": [],
     "settings": {
       "text": "Find Safest &amp; Fully Regulated Online Casinos",
@@ -758,9 +758,9 @@
     }
   },
   {
-    "id": "m2d6vx",
+    "id": "mlftfm",
     "name": "icon",
-    "parent": "loqap5",
+    "parent": "ryb8gw",
     "children": [],
     "settings": {
       "icon": {
@@ -779,9 +779,9 @@
     "themeStyles": []
   },
   {
-    "id": "ooxeg2",
+    "id": "lta84f",
     "name": "text",
-    "parent": "loqap5",
+    "parent": "ryb8gw",
     "children": [],
     "settings": {
       "text": "<p>Find and Verify the Best Online Casinos Safely</p>",
@@ -799,28 +799,28 @@
     }
   },
   {
-    "id": "loqap5",
+    "id": "ryb8gw",
     "name": "div",
-    "parent": "14gqyi",
+    "parent": "k0wgdd",
     "children": [
-      "m2d6vx",
-      "ooxeg2"
+      "mlftfm",
+      "lta84f"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
       "_rowGap": "12",
       "_columnGap": "12",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_width": "100%",
       "_widthMax": "386px",
       "_widthMax:tablet_portrait": "100%"
     }
   },
   {
-    "id": "phvg2c",
+    "id": "o9a8mg",
     "name": "text",
-    "parent": "14gqyi",
+    "parent": "k0wgdd",
     "children": [],
     "settings": {
       "text": "<p>Search</p>",
@@ -838,12 +838,12 @@
     }
   },
   {
-    "id": "14gqyi",
+    "id": "k0wgdd",
     "name": "div",
-    "parent": "179mc1",
+    "parent": "wtdozl",
     "children": [
-      "loqap5",
-      "phvg2c"
+      "ryb8gw",
+      "o9a8mg"
     ],
     "settings": {
       "_display": "flex",
@@ -863,11 +863,11 @@
     }
   },
   {
-    "id": "179mc1",
+    "id": "wtdozl",
     "name": "div",
-    "parent": "p22dk1",
+    "parent": "jivj3w",
     "children": [
-      "14gqyi"
+      "k0wgdd"
     ],
     "settings": {
       "_display": "flex",
@@ -902,13 +902,24 @@
           "bottom": "1",
           "left": "1"
         }
+      },
+      "_boxShadow": {
+        "color": {
+          "raw": "#3F3F3F1A"
+        },
+        "values": {
+          "blur": "39",
+          "offsetX": "0",
+          "offsetY": "0",
+          "spread": "0"
+        }
       }
     }
   },
   {
-    "id": "m4ype1",
+    "id": "sqki0f",
     "name": "icon",
-    "parent": "zbupmg",
+    "parent": "dv3wdz",
     "children": [],
     "settings": {
       "icon": {
@@ -928,9 +939,9 @@
     "themeStyles": []
   },
   {
-    "id": "kg8o7y",
+    "id": "1vw1b0",
     "name": "image",
-    "parent": "zbupmg",
+    "parent": "dv3wdz",
     "children": [],
     "settings": {
       "image": {
@@ -949,12 +960,12 @@
     "themeStyles": []
   },
   {
-    "id": "zbupmg",
+    "id": "dv3wdz",
     "name": "div",
-    "parent": "kn8v8w",
+    "parent": "86ghe5",
     "children": [
-      "m4ype1",
-      "kg8o7y"
+      "sqki0f",
+      "1vw1b0"
     ],
     "settings": {
       "_display": "flex",
@@ -963,12 +974,12 @@
     }
   },
   {
-    "id": "t9vhos",
+    "id": "nubpr7",
     "name": "text",
-    "parent": "kn8v8w",
+    "parent": "86ghe5",
     "children": [],
     "settings": {
-      "text": "<p>Casinos: 3,000+</p>",
+      "text": "<p>Casinos: <span>3,000+</span></p>",
       "_typography": {
         "font-family": "Inter",
         "font-size": "18px",
@@ -976,24 +987,25 @@
         "line-height": "21.78px",
         "letter-spacing": "0%",
         "color": {
-          "raw": "#000000"
+          "raw": "#000000CC"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "#brxe-nubpr7 span {\n  font-weight: 600;\n  color: #000000;\n}"
     }
   },
   {
-    "id": "kn8v8w",
+    "id": "86ghe5",
     "name": "div",
-    "parent": "bciwqs",
+    "parent": "rb5gmu",
     "children": [
-      "zbupmg",
-      "t9vhos"
+      "dv3wdz",
+      "nubpr7"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_padding": {
         "top": "11.5",
         "right": "0",
@@ -1009,9 +1021,9 @@
     }
   },
   {
-    "id": "4g5h08",
+    "id": "4ypxf1",
     "name": "icon",
-    "parent": "ivg7et",
+    "parent": "dd0sge",
     "children": [],
     "settings": {
       "icon": {
@@ -1029,9 +1041,9 @@
     "themeStyles": []
   },
   {
-    "id": "q054fm",
+    "id": "86d1ll",
     "name": "image",
-    "parent": "ivg7et",
+    "parent": "dd0sge",
     "children": [],
     "settings": {
       "image": {
@@ -1050,12 +1062,12 @@
     "themeStyles": []
   },
   {
-    "id": "ivg7et",
+    "id": "dd0sge",
     "name": "div",
-    "parent": "x62pmx",
+    "parent": "sl2g65",
     "children": [
-      "4g5h08",
-      "q054fm"
+      "4ypxf1",
+      "86d1ll"
     ],
     "settings": {
       "_display": "flex",
@@ -1064,9 +1076,9 @@
     }
   },
   {
-    "id": "s82ek2",
+    "id": "b4xidm",
     "name": "text",
-    "parent": "x62pmx",
+    "parent": "sl2g65",
     "children": [],
     "settings": {
       "text": "<p>Licensed: 1,800+</p>",
@@ -1084,12 +1096,12 @@
     }
   },
   {
-    "id": "x62pmx",
+    "id": "sl2g65",
     "name": "div",
-    "parent": "bciwqs",
+    "parent": "rb5gmu",
     "children": [
-      "ivg7et",
-      "s82ek2"
+      "dd0sge",
+      "b4xidm"
     ],
     "settings": {
       "_display": "flex",
@@ -1106,9 +1118,9 @@
     }
   },
   {
-    "id": "tjmx23",
+    "id": "aec6tv",
     "name": "icon",
-    "parent": "lqjp2s",
+    "parent": "cpsdth",
     "children": [],
     "settings": {
       "icon": {
@@ -1126,9 +1138,9 @@
     "themeStyles": []
   },
   {
-    "id": "cqqtqw",
+    "id": "1a3jlg",
     "name": "image",
-    "parent": "lqjp2s",
+    "parent": "cpsdth",
     "children": [],
     "settings": {
       "image": {
@@ -1147,12 +1159,12 @@
     "themeStyles": []
   },
   {
-    "id": "lqjp2s",
+    "id": "cpsdth",
     "name": "div",
-    "parent": "052ibt",
+    "parent": "p2i9ta",
     "children": [
-      "tjmx23",
-      "cqqtqw"
+      "aec6tv",
+      "1a3jlg"
     ],
     "settings": {
       "_display": "flex",
@@ -1161,9 +1173,9 @@
     }
   },
   {
-    "id": "82bhmz",
+    "id": "ewqtjk",
     "name": "text",
-    "parent": "052ibt",
+    "parent": "p2i9ta",
     "children": [],
     "settings": {
       "text": "<p>Solved Cases: 500+</p>",
@@ -1181,12 +1193,12 @@
     }
   },
   {
-    "id": "052ibt",
+    "id": "p2i9ta",
     "name": "div",
-    "parent": "bciwqs",
+    "parent": "rb5gmu",
     "children": [
-      "lqjp2s",
-      "82bhmz"
+      "cpsdth",
+      "ewqtjk"
     ],
     "settings": {
       "_display": "flex",
@@ -1203,20 +1215,20 @@
     }
   },
   {
-    "id": "bciwqs",
+    "id": "rb5gmu",
     "name": "div",
-    "parent": "p22dk1",
+    "parent": "jivj3w",
     "children": [
-      "kn8v8w",
-      "x62pmx",
-      "052ibt"
+      "86ghe5",
+      "sl2g65",
+      "p2i9ta"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
       "_rowGap": "48",
       "_columnGap": "48",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_width": "100%",
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
@@ -1224,12 +1236,12 @@
     }
   },
   {
-    "id": "p22dk1",
+    "id": "jivj3w",
     "name": "div",
-    "parent": "i13uq3",
+    "parent": "bci5cn",
     "children": [
-      "179mc1",
-      "bciwqs"
+      "wtdozl",
+      "rb5gmu"
     ],
     "settings": {
       "_display": "flex",
@@ -1241,12 +1253,12 @@
     }
   },
   {
-    "id": "i13uq3",
+    "id": "bci5cn",
     "name": "div",
-    "parent": "wupljk",
+    "parent": "6r5262",
     "children": [
-      "kh56db",
-      "p22dk1"
+      "1i5x2a",
+      "jivj3w"
     ],
     "settings": {
       "_display": "flex",
@@ -1260,9 +1272,9 @@
     }
   },
   {
-    "id": "qjpxi4",
+    "id": "otqxin",
     "name": "image",
-    "parent": "23qwzd",
+    "parent": "rd1853",
     "children": [],
     "settings": {
       "image": {
@@ -1278,9 +1290,9 @@
     "themeStyles": []
   },
   {
-    "id": "dbjkyl",
+    "id": "9iaca1",
     "name": "text",
-    "parent": "0rs432",
+    "parent": "lhfe6h",
     "children": [],
     "settings": {
       "text": "<p>[Scam Alert] BK8 blocked my account after I won $5,000!</p>",
@@ -1298,9 +1310,9 @@
     }
   },
   {
-    "id": "anitf8",
+    "id": "byyp8d",
     "name": "icon",
-    "parent": "hx36fp",
+    "parent": "h96cyj",
     "children": [],
     "settings": {
       "icon": {
@@ -1319,9 +1331,9 @@
     "themeStyles": []
   },
   {
-    "id": "v51rfg",
+    "id": "paqsup",
     "name": "text",
-    "parent": "hx36fp",
+    "parent": "h96cyj",
     "children": [],
     "settings": {
       "text": "<p>2026-05-19</p>",
@@ -1339,19 +1351,19 @@
     }
   },
   {
-    "id": "hx36fp",
+    "id": "h96cyj",
     "name": "div",
-    "parent": "1wemb4",
+    "parent": "fubnjm",
     "children": [
-      "anitf8",
-      "v51rfg"
+      "byyp8d",
+      "paqsup"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
       "_rowGap": "6",
       "_columnGap": "6",
-      "_alignItems": "flex-start",
+      "_alignItems": "center",
       "_padding": {
         "top": "3",
         "right": "7",
@@ -1377,9 +1389,9 @@
     }
   },
   {
-    "id": "psw19g",
+    "id": "whign9",
     "name": "text",
-    "parent": "1wemb4",
+    "parent": "fubnjm",
     "children": [],
     "settings": {
       "text": "<p>2/3</p>",
@@ -1397,12 +1409,12 @@
     }
   },
   {
-    "id": "1wemb4",
+    "id": "fubnjm",
     "name": "div",
-    "parent": "0rs432",
+    "parent": "lhfe6h",
     "children": [
-      "hx36fp",
-      "psw19g"
+      "h96cyj",
+      "whign9"
     ],
     "settings": {
       "_display": "flex",
@@ -1416,12 +1428,12 @@
     }
   },
   {
-    "id": "0rs432",
+    "id": "lhfe6h",
     "name": "div",
-    "parent": "23qwzd",
+    "parent": "rd1853",
     "children": [
-      "dbjkyl",
-      "1wemb4"
+      "9iaca1",
+      "fubnjm"
     ],
     "settings": {
       "_display": "flex",
@@ -1433,12 +1445,12 @@
     }
   },
   {
-    "id": "23qwzd",
+    "id": "rd1853",
     "name": "div",
-    "parent": "wupljk",
+    "parent": "6r5262",
     "children": [
-      "qjpxi4",
-      "0rs432"
+      "otqxin",
+      "lhfe6h"
     ],
     "settings": {
       "_display": "flex",
@@ -1463,12 +1475,12 @@
     }
   },
   {
-    "id": "wupljk",
+    "id": "6r5262",
     "name": "div",
-    "parent": "g9qwh5",
+    "parent": "nie62y",
     "children": [
-      "i13uq3",
-      "23qwzd"
+      "bci5cn",
+      "rd1853"
     ],
     "settings": {
       "_display": "flex",
@@ -1484,12 +1496,12 @@
     }
   },
   {
-    "id": "g9qwh5",
+    "id": "nie62y",
     "name": "div",
-    "parent": "95kocx",
+    "parent": "d4js9p",
     "children": [
-      "j1ryu0",
-      "wupljk"
+      "n63omr",
+      "6r5262"
     ],
     "settings": {
       "_display": "flex",
@@ -1501,26 +1513,26 @@
     }
   },
   {
-    "id": "95kocx",
+    "id": "d4js9p",
     "name": "container",
-    "parent": "euxgy4",
+    "parent": "e7h44m",
     "children": [
-      "g9qwh5"
+      "nie62y"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_alignItems": "flex-start",
       "_width": "100%",
-      "_widthMax": "1200px"
+      "_widthMax": "1320px"
     }
   },
   {
-    "id": "euxgy4",
+    "id": "e7h44m",
     "name": "section",
     "parent": 0,
     "children": [
-      "95kocx"
+      "d4js9p"
     ],
     "settings": {
       "_padding": {

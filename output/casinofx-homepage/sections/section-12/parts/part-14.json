@@ -1,0 +1,45 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "casino-fx-part-14",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "unsupported",
+          "id": "casino-fx-card-image",
+          "figmaNodeId": "2227:192",
+          "notes": [
+            "Rectangle 42 has a solid fill #E8E8E8 but no exported asset (imageExported false / empty manifest); represent as image placeholder per part breakdown."
+          ]
+        },
+        {
+          "type": "column",
+          "id": "casino-fx-stat-caption",
+          "figmaNodeId": "2227:193",
+          "children": [
+            {
+              "type": "text",
+              "id": "statistical-proof-caption",
+              "figmaNodeId": "2227:194",
+              "text": "Statistical proof of 20+ consecutive Black outcomes designed to wipe bets....",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "color": "#000000CC",
+                "lineHeight": "19.36px"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Section wrapper background and exact positioning of card image vs. caption column (flat per part instructions)",
+    "Rectangle 42 image asset missing from manifest; emitted as unsupported node instead of image",
+    "statistical-proof-caption: dropped unknown field \"typography.textAlign\""
+  ]
+}
