@@ -14,7 +14,8 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { ELEMENT_TEMPLATES, makeId } from "./bricks-schema.js";
+import { createHash } from "node:crypto";
+import { ELEMENT_TEMPLATES } from "./bricks-schema.js";
 import { validateNormalized } from "./normalized-validator.js";
 import { responsify } from "./responsive-pass.js";
 import { structurePass } from "./structure-pass.js";
@@ -81,6 +82,13 @@ if (gate.errors.length) {
 }
 
 const flatElements = [];
+const emittedIds = new Set();
+const sourceMap = {};
+// Persist the initial seed so IDs (and expensive visual caches) survive moving the project.
+const idNamespacePath = path.join(frameDir, "bricks-id-namespace.json");
+const idNamespace = fs.existsSync(idNamespacePath) ? JSON.parse(fs.readFileSync(idNamespacePath, "utf8")).namespace : path.resolve(frameDir);
+if (typeof idNamespace !== "string" || !idNamespace) throw new Error("Invalid bricks-id-namespace.json");
+if (!fs.existsSync(idNamespacePath)) fs.writeFileSync(idNamespacePath, JSON.stringify({ namespace: idNamespace }, null, 2));
 const warnings = [...gate.warnings]; // QA notes + unsupported elements from the normalized layer
 
 function compileNode(node, parentId) {
@@ -109,7 +117,13 @@ function compileNode(node, parentId) {
   if (node._bgImage) resolveAsset(node._bgImage);
 
   const el = template(node);
-  const bricksId = makeId();
+  let salt = 0, bricksId;
+  do {
+    const hash = createHash("sha256").update(`${idNamespace}|${node.id}|${salt++}`).digest("hex");
+    bricksId = (parseInt(hash.slice(0, 12), 16) % (36 ** 6)).toString(36).padStart(6, "0");
+  } while (emittedIds.has(bricksId));
+  emittedIds.add(bricksId);
+  sourceMap[bricksId] = { normalizedId: node.id, figmaNodeId: node.figmaNodeId || node.asset?.nodeId || node.id };
   if (el.settings?._cssCustom) el.settings._cssCustom = el.settings._cssCustom.replaceAll("__ID__", bricksId);
 
   const childIds = [];
@@ -194,6 +208,7 @@ compileNode(toCompile, 0);
 
 const outPath = path.join(frameDir, "bricks-tree.json");
 fs.writeFileSync(outPath, JSON.stringify(flatElements, null, 2));
+fs.writeFileSync(path.join(frameDir, "bricks-source-map.json"), JSON.stringify(sourceMap, null, 2));
 console.log(`Wrote ${outPath} (${flatElements.length} element(s))`);
 
 if (warnings.length) {

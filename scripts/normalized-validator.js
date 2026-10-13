@@ -53,7 +53,7 @@ export function validateNormalized(doc, manifest = null) {
         errors.push(`${here}: asset nodeId "${child.asset.nodeId}" is not in asset-manifest.json.`);
       }
       if (child.type === "unsupported") {
-        warnings.push(`${here}: type "unsupported" will be skipped by the compiler. Notes: ${child.notes.join(" | ")}`);
+        warnings.push(`${here}: input type "unsupported"; the compiler may recover it from Figma, otherwise it is skipped. Notes: ${child.notes.join(" | ")}`);
       }
       for (const n of child.notes || []) {
         if (child.type !== "unsupported") warnings.push(`${here}: note: ${n}`);

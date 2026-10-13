@@ -3,64 +3,109 @@
   "children": [
     {
       "type": "section",
-      "id": "casino-fx-homepage-part-10",
-      "figmaNodeId": "scope",
-      "background": {
-        "color": "#F7F7F7"
-      },
-      "border": {
-        "radius": 8
-      },
+      "id": "section-casino-fx",
       "children": [
         {
-          "type": "container",
-          "id": "group-148",
-          "figmaNodeId": "2227:155"
+          "type": "image",
+          "id": "rectangle-42",
+          "figmaNodeId": "2227:235",
+          "asset": {
+            "nodeId": "2227:235",
+            "kind": "image"
+          },
+          "notes": [
+            "image fill from rectangle"
+          ]
         },
         {
-          "type": "row",
-          "id": "frame-109",
-          "figmaNodeId": "2227:157",
-          "layout": {
-            "display": "flex",
-            "direction": "row",
-            "gap": 28,
-            "align": "center"
-          },
+          "type": "column",
+          "id": "frame-113-1",
+          "figmaNodeId": "2227:236",
           "children": [
             {
-              "type": "container",
-              "id": "group-145",
-              "figmaNodeId": "2227:158",
+              "type": "text",
+              "id": "how-light-roulette-uses-a-custom-software-script-to-avoid-paying-out-on",
+              "figmaNodeId": "2227:237",
+              "text": "How Light Roulette uses a custom software script to avoid paying out on ",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": "19.36px",
+                "color": "#000000CC",
+                "align": "left"
+              }
+            },
+            {
+              "type": "row",
+              "id": "frame-112-1",
+              "figmaNodeId": "2227:238",
               "children": [
                 {
-                  "type": "icon",
-                  "id": "vector-2",
-                  "figmaNodeId": "2227:159",
-                  "asset": {
-                    "nodeId": "2227:159",
-                    "kind": "svg"
-                  }
+                  "type": "row",
+                  "id": "frame-111-1",
+                  "figmaNodeId": "2227:239",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "avatar-jhonson-d",
+                      "figmaNodeId": "2227:240",
+                      "asset": {
+                        "nodeId": "2227:240",
+                        "kind": "image"
+                      },
+                      "notes": [
+                        "avatar image"
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "author-name",
+                      "figmaNodeId": "2227:241",
+                      "text": "Jhonson D.",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "lineHeight": "16.94px",
+                        "color": "#00000099",
+                        "align": "left"
+                      }
+                    }
+                  ]
                 },
                 {
-                  "type": "text-basic",
-                  "id": "text-6",
-                  "figmaNodeId": "2227:160",
-                  "text": "6",
-                  "typography": {
-                    "fontFamily": "Inter",
-                    "fontSize": 16,
-                    "fontWeight": 500,
-                    "lineHeight": "19.36px",
-                    "color": "#8B8B8B",
-                    "align": "left"
-                  },
-                  "layout": {
-                    "margin": {
-                      "left": 19,
-                      "top": 11
+                  "type": "row",
+                  "id": "frame-110-1",
+                  "figmaNodeId": "2227:242",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "icon-views",
+                      "figmaNodeId": "2227:243",
+                      "asset": {
+                        "nodeId": "2227:243",
+                        "kind": "svg"
+                      },
+                      "notes": [
+                        "views icon"
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "views-count",
+                      "figmaNodeId": "2227:245",
+                      "text": "2.5K",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": 400,
+                        "lineHeight": "16.94px",
+                        "color": "#00000099",
+                        "align": "left"
+                      }
                     }
-                  }
+                  ]
                 }
               ]
             }
@@ -70,6 +115,6 @@
     }
   ],
   "_uncertain": [
-    "frame-109: dropped unknown field \"_uncertain\""
+    "size and spacing values for image and rows are omitted"
   ]
 }

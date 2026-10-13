@@ -1,8 +1,8 @@
 [
   {
-    "id": "fqfll8",
+    "id": "vq49lm",
     "name": "heading",
-    "parent": "nzej92",
+    "parent": "d43kta",
     "children": [],
     "settings": {
       "text": "Most Rigged Games",
@@ -21,9 +21,9 @@
     }
   },
   {
-    "id": "vit1xm",
+    "id": "5j36bk",
     "name": "image",
-    "parent": "8463d0",
+    "parent": "wn5fjz",
     "children": [],
     "settings": {
       "image": {
@@ -39,12 +39,12 @@
     "themeStyles": []
   },
   {
-    "id": "8yi0mh",
-    "name": "text-basic",
-    "parent": "we317v",
+    "id": "f9gw4k",
+    "name": "text",
+    "parent": "eia1pq",
     "children": [],
     "settings": {
-      "text": "1",
+      "text": "<p>1</p>",
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
@@ -59,16 +59,19 @@
     }
   },
   {
-    "id": "we317v",
+    "id": "eia1pq",
     "name": "div",
-    "parent": "8463d0",
+    "parent": "wn5fjz",
     "children": [
-      "8yi0mh"
+      "f9gw4k"
     ],
     "settings": {
       "_display": "flex",
-      "_direction": "row",
+      "_direction": "column",
       "_alignItems": "center",
+      "_margin": {
+        "top": "13"
+      },
       "_widthMax": "8px",
       "_background": {
         "image": {
@@ -86,12 +89,13 @@
     }
   },
   {
-    "id": "elzms3",
-    "name": "text",
-    "parent": "otk697",
+    "id": "zp93lo",
+    "name": "heading",
+    "parent": "d8enhe",
     "children": [],
     "settings": {
-      "text": "<p>Spin</p>",
+      "text": "Spin",
+      "tag": "h3",
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
@@ -106,9 +110,9 @@
     }
   },
   {
-    "id": "hw0iq7",
+    "id": "olonjj",
     "name": "text",
-    "parent": "otk697",
+    "parent": "d8enhe",
     "children": [],
     "settings": {
       "text": "<p>🛑 94.2% Rigged</p>",
@@ -127,12 +131,12 @@
     }
   },
   {
-    "id": "otk697",
+    "id": "d8enhe",
     "name": "div",
-    "parent": "8463d0",
+    "parent": "wn5fjz",
     "children": [
-      "elzms3",
-      "hw0iq7"
+      "zp93lo",
+      "olonjj"
     ],
     "settings": {
       "_display": "flex",
@@ -141,21 +145,15 @@
       "_columnGap": "6",
       "_alignItems": "center",
       "_margin": {
-        "top": "67"
+        "top": "12.5"
       },
-      "_width": "100%",
-      "_margin:tablet_portrait": {
-        "top": "34"
-      },
-      "_margin:mobile_landscape": {
-        "top": "34"
-      }
+      "_width": "100%"
     }
   },
   {
-    "id": "c6ci2w",
+    "id": "fiilej",
     "name": "button",
-    "parent": "8463d0",
+    "parent": "wn5fjz",
     "children": [],
     "settings": {
       "text": "Proof",
@@ -194,14 +192,14 @@
     }
   },
   {
-    "id": "8463d0",
+    "id": "wn5fjz",
     "name": "div",
-    "parent": "5x14b3",
+    "parent": "5lrar6",
     "children": [
-      "vit1xm",
-      "we317v",
-      "otk697",
-      "c6ci2w"
+      "5j36bk",
+      "eia1pq",
+      "d8enhe",
+      "fiilej"
     ],
     "settings": {
       "_display": "flex",
@@ -229,9 +227,9 @@
     }
   },
   {
-    "id": "48il75",
+    "id": "af5jeq",
     "name": "image",
-    "parent": "fe3jwi",
+    "parent": "7eiq4k",
     "children": [],
     "settings": {
       "image": {
@@ -242,25 +240,17 @@
         "url": "../../assets/classy-slots-colored-logo-1-2228_265.png"
       },
       "_width": "100%",
-      "_widthMax": "68px",
-      "_border": {
-        "radius": {
-          "top": "2000px",
-          "right": "2000px",
-          "bottom": "2000px",
-          "left": "2000px"
-        }
-      }
+      "_widthMax": "68px"
     },
     "themeStyles": []
   },
   {
-    "id": "6gk80m",
-    "name": "text",
-    "parent": "wztcto",
+    "id": "wgac8t",
+    "name": "text-basic",
+    "parent": "r8ailw",
     "children": [],
     "settings": {
-      "text": "<p>2</p>",
+      "text": "2",
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
@@ -275,11 +265,11 @@
     }
   },
   {
-    "id": "wztcto",
+    "id": "r8ailw",
     "name": "div",
-    "parent": "fe3jwi",
+    "parent": "7eiq4k",
     "children": [
-      "6gk80m"
+      "wgac8t"
     ],
     "settings": {
       "_display": "flex",
@@ -305,9 +295,9 @@
     }
   },
   {
-    "id": "7gt0yr",
+    "id": "8dtbz3",
     "name": "heading",
-    "parent": "w3jol2",
+    "parent": "f6e23t",
     "children": [],
     "settings": {
       "text": "Classy Slots",
@@ -327,9 +317,9 @@
     }
   },
   {
-    "id": "7ogpw2",
+    "id": "3dd51k",
     "name": "text-basic",
-    "parent": "w3jol2",
+    "parent": "f6e23t",
     "children": [],
     "settings": {
       "text": "🛑 88.5% Rigged",
@@ -348,12 +338,12 @@
     }
   },
   {
-    "id": "w3jol2",
+    "id": "f6e23t",
     "name": "div",
-    "parent": "fe3jwi",
+    "parent": "7eiq4k",
     "children": [
-      "7gt0yr",
-      "7ogpw2"
+      "8dtbz3",
+      "3dd51k"
     ],
     "settings": {
       "_display": "flex",
@@ -368,9 +358,9 @@
     }
   },
   {
-    "id": "u26s5u",
+    "id": "5tjnp6",
     "name": "button",
-    "parent": "fe3jwi",
+    "parent": "7eiq4k",
     "children": [],
     "settings": {
       "text": "Proof",
@@ -409,14 +399,14 @@
     }
   },
   {
-    "id": "fe3jwi",
+    "id": "7eiq4k",
     "name": "div",
-    "parent": "5x14b3",
+    "parent": "5lrar6",
     "children": [
-      "48il75",
-      "wztcto",
-      "w3jol2",
-      "u26s5u"
+      "af5jeq",
+      "r8ailw",
+      "f6e23t",
+      "5tjnp6"
     ],
     "settings": {
       "_display": "flex",
@@ -444,9 +434,9 @@
     }
   },
   {
-    "id": "y5q5uh",
+    "id": "x7lb1h",
     "name": "image",
-    "parent": "apj6pp",
+    "parent": "0smgte",
     "children": [],
     "settings": {
       "image": {
@@ -457,14 +447,22 @@
         "url": "../../assets/irish-luck-casino-1-2228_267.png"
       },
       "_width": "100%",
-      "_widthMax": "68px"
+      "_widthMax": "68px",
+      "_border": {
+        "radius": {
+          "top": "2000px",
+          "right": "2000px",
+          "bottom": "2000px",
+          "left": "2000px"
+        }
+      }
     },
     "themeStyles": []
   },
   {
-    "id": "0anjrh",
+    "id": "61fyoy",
     "name": "text",
-    "parent": "dw6vjm",
+    "parent": "2j65xl",
     "children": [],
     "settings": {
       "text": "<p>3</p>",
@@ -482,11 +480,11 @@
     }
   },
   {
-    "id": "dw6vjm",
+    "id": "2j65xl",
     "name": "div",
-    "parent": "apj6pp",
+    "parent": "0smgte",
     "children": [
-      "0anjrh"
+      "61fyoy"
     ],
     "settings": {
       "_display": "flex",
@@ -512,9 +510,9 @@
     }
   },
   {
-    "id": "kci8yb",
+    "id": "12uyli",
     "name": "heading",
-    "parent": "e90790",
+    "parent": "jqs836",
     "children": [],
     "settings": {
       "text": "Irish Luck",
@@ -534,9 +532,9 @@
     }
   },
   {
-    "id": "eufhgr",
+    "id": "iq23je",
     "name": "text",
-    "parent": "e90790",
+    "parent": "jqs836",
     "children": [],
     "settings": {
       "text": "<p>🛑 85.1% Rigged</p>",
@@ -555,12 +553,12 @@
     }
   },
   {
-    "id": "e90790",
+    "id": "jqs836",
     "name": "div",
-    "parent": "apj6pp",
+    "parent": "0smgte",
     "children": [
-      "kci8yb",
-      "eufhgr"
+      "12uyli",
+      "iq23je"
     ],
     "settings": {
       "_display": "flex",
@@ -575,9 +573,9 @@
     }
   },
   {
-    "id": "j7ek6f",
+    "id": "ipqbzi",
     "name": "button",
-    "parent": "apj6pp",
+    "parent": "0smgte",
     "children": [],
     "settings": {
       "text": "Proof",
@@ -616,14 +614,14 @@
     }
   },
   {
-    "id": "apj6pp",
+    "id": "0smgte",
     "name": "div",
-    "parent": "5x14b3",
+    "parent": "5lrar6",
     "children": [
-      "y5q5uh",
-      "dw6vjm",
-      "e90790",
-      "j7ek6f"
+      "x7lb1h",
+      "2j65xl",
+      "jqs836",
+      "ipqbzi"
     ],
     "settings": {
       "_display": "flex",
@@ -651,13 +649,13 @@
     }
   },
   {
-    "id": "5x14b3",
+    "id": "5lrar6",
     "name": "div",
-    "parent": "qqs5ms",
+    "parent": "6vjtb3",
     "children": [
-      "8463d0",
-      "fe3jwi",
-      "apj6pp"
+      "wn5fjz",
+      "7eiq4k",
+      "0smgte"
     ],
     "settings": {
       "_display": "grid",
@@ -671,12 +669,12 @@
     }
   },
   {
-    "id": "zwgflg",
-    "name": "text-basic",
-    "parent": "wscbww",
+    "id": "90mcnb",
+    "name": "text",
+    "parent": "y5j85i",
     "children": [],
     "settings": {
-      "text": "4",
+      "text": "<p>4</p>",
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
@@ -691,11 +689,11 @@
     }
   },
   {
-    "id": "wscbww",
+    "id": "y5j85i",
     "name": "div",
-    "parent": "ndo592",
+    "parent": "q7ilsm",
     "children": [
-      "zwgflg"
+      "90mcnb"
     ],
     "settings": {
       "_display": "flex",
@@ -717,9 +715,9 @@
     }
   },
   {
-    "id": "pnvkan",
+    "id": "v9w6v9",
     "name": "image",
-    "parent": "oljxwy",
+    "parent": "972q0j",
     "children": [],
     "settings": {
       "image": {
@@ -736,9 +734,9 @@
     "themeStyles": []
   },
   {
-    "id": "b2jd75",
+    "id": "dw7cwi",
     "name": "heading",
-    "parent": "xlil9a",
+    "parent": "yd6nak",
     "children": [],
     "settings": {
       "text": "Slot Powers",
@@ -757,9 +755,9 @@
     }
   },
   {
-    "id": "5xpoeo",
+    "id": "iyz7cg",
     "name": "text",
-    "parent": "xlil9a",
+    "parent": "yd6nak",
     "children": [],
     "settings": {
       "text": "<p>🛑 94.2% Rigged</p>",
@@ -777,12 +775,12 @@
     }
   },
   {
-    "id": "xlil9a",
+    "id": "yd6nak",
     "name": "div",
-    "parent": "oljxwy",
+    "parent": "972q0j",
     "children": [
-      "b2jd75",
-      "5xpoeo"
+      "dw7cwi",
+      "iyz7cg"
     ],
     "settings": {
       "_display": "flex",
@@ -796,12 +794,12 @@
     }
   },
   {
-    "id": "oljxwy",
+    "id": "972q0j",
     "name": "div",
-    "parent": "g7cc1r",
+    "parent": "u7853j",
     "children": [
-      "pnvkan",
-      "xlil9a"
+      "v9w6v9",
+      "yd6nak"
     ],
     "settings": {
       "_display": "flex",
@@ -818,9 +816,9 @@
     }
   },
   {
-    "id": "od2g7c",
+    "id": "ckfiup",
     "name": "button",
-    "parent": "g7cc1r",
+    "parent": "u7853j",
     "children": [],
     "settings": {
       "text": "Proof",
@@ -858,12 +856,12 @@
     }
   },
   {
-    "id": "g7cc1r",
+    "id": "u7853j",
     "name": "div",
-    "parent": "ndo592",
+    "parent": "q7ilsm",
     "children": [
-      "oljxwy",
-      "od2g7c"
+      "972q0j",
+      "ckfiup"
     ],
     "settings": {
       "_display": "flex",
@@ -880,12 +878,12 @@
     }
   },
   {
-    "id": "ndo592",
+    "id": "q7ilsm",
     "name": "div",
-    "parent": "qnxawy",
+    "parent": "kyx53n",
     "children": [
-      "wscbww",
-      "g7cc1r"
+      "y5j85i",
+      "u7853j"
     ],
     "settings": {
       "_display": "flex",
@@ -900,11 +898,11 @@
     }
   },
   {
-    "id": "qnxawy",
+    "id": "kyx53n",
     "name": "div",
-    "parent": "qqs5ms",
+    "parent": "6vjtb3",
     "children": [
-      "ndo592"
+      "q7ilsm"
     ],
     "settings": {
       "_display": "flex",
@@ -933,9 +931,9 @@
     }
   },
   {
-    "id": "kwp5bd",
+    "id": "4yc2t9",
     "name": "text",
-    "parent": "am3swi",
+    "parent": "g72tcm",
     "children": [],
     "settings": {
       "text": "<p>5</p>",
@@ -953,11 +951,11 @@
     }
   },
   {
-    "id": "am3swi",
+    "id": "g72tcm",
     "name": "div",
-    "parent": "gmsmd1",
+    "parent": "oum9uo",
     "children": [
-      "kwp5bd"
+      "4yc2t9"
     ],
     "settings": {
       "_display": "flex",
@@ -979,9 +977,9 @@
     }
   },
   {
-    "id": "4uqcej",
+    "id": "4up4g6",
     "name": "image",
-    "parent": "9qgnzi",
+    "parent": "iqhocb",
     "children": [],
     "settings": {
       "image": {
@@ -993,22 +991,14 @@
       },
       "_width": "100%",
       "_widthMax": "68px",
-      "_border": {
-        "radius": {
-          "top": "2000px",
-          "right": "2000px",
-          "bottom": "2000px",
-          "left": "2000px"
-        }
-      },
       "_widthMax:tablet_portrait": "100%"
     },
     "themeStyles": []
   },
   {
-    "id": "oa7mmv",
+    "id": "24kg3l",
     "name": "heading",
-    "parent": "lwp5gt",
+    "parent": "arsm1p",
     "children": [],
     "settings": {
       "text": "Wcasino Online",
@@ -1027,9 +1017,9 @@
     }
   },
   {
-    "id": "064nsa",
+    "id": "r39pgn",
     "name": "text",
-    "parent": "lwp5gt",
+    "parent": "arsm1p",
     "children": [],
     "settings": {
       "text": "<p>🛑 94.2% Rigged</p>",
@@ -1047,12 +1037,12 @@
     }
   },
   {
-    "id": "lwp5gt",
+    "id": "arsm1p",
     "name": "div",
-    "parent": "9qgnzi",
+    "parent": "iqhocb",
     "children": [
-      "oa7mmv",
-      "064nsa"
+      "24kg3l",
+      "r39pgn"
     ],
     "settings": {
       "_display": "flex",
@@ -1066,12 +1056,12 @@
     }
   },
   {
-    "id": "9qgnzi",
+    "id": "iqhocb",
     "name": "div",
-    "parent": "se0hpw",
+    "parent": "xblqcr",
     "children": [
-      "4uqcej",
-      "lwp5gt"
+      "4up4g6",
+      "arsm1p"
     ],
     "settings": {
       "_display": "flex",
@@ -1088,9 +1078,9 @@
     }
   },
   {
-    "id": "ygufa3",
+    "id": "8dmuxg",
     "name": "button",
-    "parent": "se0hpw",
+    "parent": "xblqcr",
     "children": [],
     "settings": {
       "text": "Proof",
@@ -1128,12 +1118,12 @@
     }
   },
   {
-    "id": "se0hpw",
+    "id": "xblqcr",
     "name": "div",
-    "parent": "gmsmd1",
+    "parent": "oum9uo",
     "children": [
-      "9qgnzi",
-      "ygufa3"
+      "iqhocb",
+      "8dmuxg"
     ],
     "settings": {
       "_display": "flex",
@@ -1150,12 +1140,12 @@
     }
   },
   {
-    "id": "gmsmd1",
+    "id": "oum9uo",
     "name": "div",
-    "parent": "z61si0",
+    "parent": "0rvl2f",
     "children": [
-      "am3swi",
-      "se0hpw"
+      "g72tcm",
+      "xblqcr"
     ],
     "settings": {
       "_display": "flex",
@@ -1170,11 +1160,11 @@
     }
   },
   {
-    "id": "z61si0",
+    "id": "0rvl2f",
     "name": "div",
-    "parent": "qqs5ms",
+    "parent": "6vjtb3",
     "children": [
-      "gmsmd1"
+      "oum9uo"
     ],
     "settings": {
       "_display": "flex",
@@ -1203,12 +1193,12 @@
     }
   },
   {
-    "id": "jgm2he",
-    "name": "text-basic",
-    "parent": "nfubjk",
+    "id": "3ldbo6",
+    "name": "text",
+    "parent": "l8lt1v",
     "children": [],
     "settings": {
-      "text": "6",
+      "text": "<p>6</p>",
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
@@ -1223,11 +1213,11 @@
     }
   },
   {
-    "id": "nfubjk",
+    "id": "l8lt1v",
     "name": "div",
-    "parent": "f4o4n7",
+    "parent": "kgcg6k",
     "children": [
-      "jgm2he"
+      "3ldbo6"
     ],
     "settings": {
       "_display": "flex",
@@ -1249,9 +1239,9 @@
     }
   },
   {
-    "id": "0w9uvy",
+    "id": "82dky6",
     "name": "image",
-    "parent": "h6cg68",
+    "parent": "zvmpze",
     "children": [],
     "settings": {
       "image": {
@@ -1263,22 +1253,14 @@
       },
       "_width": "100%",
       "_widthMax": "68px",
-      "_border": {
-        "radius": {
-          "top": "2000px",
-          "right": "2000px",
-          "bottom": "2000px",
-          "left": "2000px"
-        }
-      },
       "_widthMax:tablet_portrait": "100%"
     },
     "themeStyles": []
   },
   {
-    "id": "4pob3o",
+    "id": "vpzj8e",
     "name": "heading",
-    "parent": "acuv9l",
+    "parent": "ufd7vm",
     "children": [],
     "settings": {
       "text": "SlotsAmigo",
@@ -1297,9 +1279,9 @@
     }
   },
   {
-    "id": "9tch1l",
+    "id": "j9k18g",
     "name": "text",
-    "parent": "acuv9l",
+    "parent": "ufd7vm",
     "children": [],
     "settings": {
       "text": "<p>🛑 94.2% Rigged</p>",
@@ -1317,12 +1299,12 @@
     }
   },
   {
-    "id": "acuv9l",
+    "id": "ufd7vm",
     "name": "div",
-    "parent": "h6cg68",
+    "parent": "zvmpze",
     "children": [
-      "4pob3o",
-      "9tch1l"
+      "vpzj8e",
+      "j9k18g"
     ],
     "settings": {
       "_display": "flex",
@@ -1336,12 +1318,12 @@
     }
   },
   {
-    "id": "h6cg68",
+    "id": "zvmpze",
     "name": "div",
-    "parent": "kbi25z",
+    "parent": "cpeqgn",
     "children": [
-      "0w9uvy",
-      "acuv9l"
+      "82dky6",
+      "ufd7vm"
     ],
     "settings": {
       "_display": "flex",
@@ -1358,9 +1340,9 @@
     }
   },
   {
-    "id": "qmsobt",
+    "id": "rj8w49",
     "name": "button",
-    "parent": "kbi25z",
+    "parent": "cpeqgn",
     "children": [],
     "settings": {
       "text": "Proof",
@@ -1398,12 +1380,12 @@
     }
   },
   {
-    "id": "kbi25z",
+    "id": "cpeqgn",
     "name": "div",
-    "parent": "f4o4n7",
+    "parent": "kgcg6k",
     "children": [
-      "h6cg68",
-      "qmsobt"
+      "zvmpze",
+      "rj8w49"
     ],
     "settings": {
       "_display": "flex",
@@ -1420,12 +1402,12 @@
     }
   },
   {
-    "id": "f4o4n7",
+    "id": "kgcg6k",
     "name": "div",
-    "parent": "qfb2h5",
+    "parent": "nk00nh",
     "children": [
-      "nfubjk",
-      "kbi25z"
+      "l8lt1v",
+      "cpeqgn"
     ],
     "settings": {
       "_display": "flex",
@@ -1440,11 +1422,11 @@
     }
   },
   {
-    "id": "qfb2h5",
+    "id": "nk00nh",
     "name": "div",
-    "parent": "qqs5ms",
+    "parent": "6vjtb3",
     "children": [
-      "f4o4n7"
+      "kgcg6k"
     ],
     "settings": {
       "_display": "flex",
@@ -1473,14 +1455,14 @@
     }
   },
   {
-    "id": "qqs5ms",
+    "id": "6vjtb3",
     "name": "div",
-    "parent": "nzej92",
+    "parent": "d43kta",
     "children": [
-      "5x14b3",
-      "qnxawy",
-      "z61si0",
-      "qfb2h5"
+      "5lrar6",
+      "kyx53n",
+      "0rvl2f",
+      "nk00nh"
     ],
     "settings": {
       "_display": "flex",
@@ -1492,12 +1474,12 @@
     }
   },
   {
-    "id": "nzej92",
+    "id": "d43kta",
     "name": "div",
-    "parent": "gswjbv",
+    "parent": "rbwgnn",
     "children": [
-      "fqfll8",
-      "qqs5ms"
+      "vq49lm",
+      "6vjtb3"
     ],
     "settings": {
       "_display": "flex",
@@ -1511,9 +1493,9 @@
     }
   },
   {
-    "id": "fjfqhy",
+    "id": "4zbdbw",
     "name": "heading",
-    "parent": "trkw6t",
+    "parent": "pdk1hl",
     "children": [],
     "settings": {
       "text": "RTP Manipulation &amp; Tactics",
@@ -1532,9 +1514,9 @@
     }
   },
   {
-    "id": "pfb0l4",
+    "id": "89scmq",
     "name": "image",
-    "parent": "pqxss3",
+    "parent": "fxpwd3",
     "children": [],
     "settings": {
       "image": {
@@ -1550,9 +1532,9 @@
     "themeStyles": []
   },
   {
-    "id": "v550g4",
+    "id": "ps3xyg",
     "name": "text",
-    "parent": "nh5ixk",
+    "parent": "gufbdc",
     "children": [],
     "settings": {
       "text": "<p>How Light Roulette uses a custom software script to avoid paying out on </p>",
@@ -1570,9 +1552,9 @@
     }
   },
   {
-    "id": "g418a0",
+    "id": "ctxb1k",
     "name": "image",
-    "parent": "vecave",
+    "parent": "wmr8le",
     "children": [],
     "settings": {
       "image": {
@@ -1588,12 +1570,13 @@
     "themeStyles": []
   },
   {
-    "id": "z9dcnd",
-    "name": "text",
-    "parent": "vecave",
+    "id": "cgdybn",
+    "name": "heading",
+    "parent": "wmr8le",
     "children": [],
     "settings": {
-      "text": "<p>CodeBreaker</p>",
+      "text": "CodeBreaker",
+      "tag": "h4",
       "_typography": {
         "font-family": "Inter",
         "font-size": "14px",
@@ -1608,12 +1591,12 @@
     }
   },
   {
-    "id": "vecave",
+    "id": "wmr8le",
     "name": "div",
-    "parent": "f5ysqx",
+    "parent": "lezo6p",
     "children": [
-      "g418a0",
-      "z9dcnd"
+      "ctxb1k",
+      "cgdybn"
     ],
     "settings": {
       "_display": "flex",
@@ -1627,9 +1610,9 @@
     }
   },
   {
-    "id": "hfzin7",
+    "id": "xxl4fo",
     "name": "icon",
-    "parent": "v73rfr",
+    "parent": "gpa1jb",
     "children": [],
     "settings": {
       "icon": {
@@ -1648,12 +1631,13 @@
     "themeStyles": []
   },
   {
-    "id": "690sd9",
-    "name": "text",
-    "parent": "v73rfr",
+    "id": "eswz9j",
+    "name": "heading",
+    "parent": "gpa1jb",
     "children": [],
     "settings": {
-      "text": "<p>1.2K</p>",
+      "text": "1.2K",
+      "tag": "h4",
       "_typography": {
         "font-family": "Inter",
         "font-size": "14px",
@@ -1668,12 +1652,12 @@
     }
   },
   {
-    "id": "v73rfr",
+    "id": "gpa1jb",
     "name": "div",
-    "parent": "f5ysqx",
+    "parent": "lezo6p",
     "children": [
-      "hfzin7",
-      "690sd9"
+      "xxl4fo",
+      "eswz9j"
     ],
     "settings": {
       "_display": "flex",
@@ -1687,12 +1671,12 @@
     }
   },
   {
-    "id": "f5ysqx",
+    "id": "lezo6p",
     "name": "div",
-    "parent": "nh5ixk",
+    "parent": "gufbdc",
     "children": [
-      "vecave",
-      "v73rfr"
+      "wmr8le",
+      "gpa1jb"
     ],
     "settings": {
       "_display": "flex",
@@ -1706,12 +1690,12 @@
     }
   },
   {
-    "id": "nh5ixk",
+    "id": "gufbdc",
     "name": "div",
-    "parent": "pqxss3",
+    "parent": "fxpwd3",
     "children": [
-      "v550g4",
-      "f5ysqx"
+      "ps3xyg",
+      "lezo6p"
     ],
     "settings": {
       "_display": "flex",
@@ -1723,12 +1707,12 @@
     }
   },
   {
-    "id": "pqxss3",
+    "id": "fxpwd3",
     "name": "div",
-    "parent": "7k9x2i",
+    "parent": "1qx924",
     "children": [
-      "pfb0l4",
-      "nh5ixk"
+      "89scmq",
+      "gufbdc"
     ],
     "settings": {
       "_display": "flex",
@@ -1748,6 +1732,12 @@
         }
       },
       "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        },
         "style": "solid",
         "color": {
           "raw": "#00000024"
@@ -1761,10 +1751,10 @@
       },
       "_boxShadow": {
         "color": {
-          "raw": "#0202021A"
+          "raw": "#00000024"
         },
         "values": {
-          "blur": "64",
+          "blur": "0",
           "offsetX": "0",
           "offsetY": "0",
           "spread": "0"
@@ -1773,9 +1763,9 @@
     }
   },
   {
-    "id": "7fkum3",
+    "id": "odpd44",
     "name": "text",
-    "parent": "9ts4qu",
+    "parent": "46nwj2",
     "children": [],
     "settings": {
       "text": "<p>Statistical proof of 20+ consecutive Black outcomes designed to wipe bets....</p>",
@@ -1793,9 +1783,9 @@
     }
   },
   {
-    "id": "ndzgml",
+    "id": "itnf2u",
     "name": "image",
-    "parent": "0h7r9z",
+    "parent": "j9h2ub",
     "children": [],
     "settings": {
       "image": {
@@ -1811,9 +1801,9 @@
     "themeStyles": []
   },
   {
-    "id": "kc4wjn",
+    "id": "eky5dp",
     "name": "text",
-    "parent": "0h7r9z",
+    "parent": "j9h2ub",
     "children": [],
     "settings": {
       "text": "<p>LottoWatch</p>",
@@ -1831,12 +1821,12 @@
     }
   },
   {
-    "id": "0h7r9z",
+    "id": "j9h2ub",
     "name": "div",
-    "parent": "ojz84r",
+    "parent": "atyb85",
     "children": [
-      "ndzgml",
-      "kc4wjn"
+      "itnf2u",
+      "eky5dp"
     ],
     "settings": {
       "_display": "flex",
@@ -1850,9 +1840,9 @@
     }
   },
   {
-    "id": "w7cbec",
+    "id": "qbh3ax",
     "name": "icon",
-    "parent": "w9dbul",
+    "parent": "9hxii5",
     "children": [],
     "settings": {
       "icon": {
@@ -1871,9 +1861,9 @@
     "themeStyles": []
   },
   {
-    "id": "z9p5jv",
+    "id": "djke5r",
     "name": "text",
-    "parent": "w9dbul",
+    "parent": "9hxii5",
     "children": [],
     "settings": {
       "text": "<p>845</p>",
@@ -1891,12 +1881,12 @@
     }
   },
   {
-    "id": "w9dbul",
+    "id": "9hxii5",
     "name": "div",
-    "parent": "ojz84r",
+    "parent": "atyb85",
     "children": [
-      "w7cbec",
-      "z9p5jv"
+      "qbh3ax",
+      "djke5r"
     ],
     "settings": {
       "_display": "flex",
@@ -1910,12 +1900,12 @@
     }
   },
   {
-    "id": "ojz84r",
+    "id": "atyb85",
     "name": "div",
-    "parent": "9ts4qu",
+    "parent": "46nwj2",
     "children": [
-      "0h7r9z",
-      "w9dbul"
+      "j9h2ub",
+      "9hxii5"
     ],
     "settings": {
       "_display": "flex",
@@ -1929,12 +1919,12 @@
     }
   },
   {
-    "id": "9ts4qu",
+    "id": "46nwj2",
     "name": "div",
-    "parent": "jqmwns",
+    "parent": "ag0oyf",
     "children": [
-      "7fkum3",
-      "ojz84r"
+      "odpd44",
+      "atyb85"
     ],
     "settings": {
       "_display": "flex",
@@ -1968,9 +1958,9 @@
     }
   },
   {
-    "id": "gt299i",
+    "id": "oa60ih",
     "name": "image",
-    "parent": "jqmwns",
+    "parent": "ag0oyf",
     "children": [],
     "settings": {
       "image": {
@@ -1986,12 +1976,12 @@
     "themeStyles": []
   },
   {
-    "id": "jqmwns",
+    "id": "ag0oyf",
     "name": "div",
-    "parent": "7k9x2i",
+    "parent": "1qx924",
     "children": [
-      "9ts4qu",
-      "gt299i"
+      "46nwj2",
+      "oa60ih"
     ],
     "settings": {
       "_display": "flex",
@@ -1999,9 +1989,9 @@
     }
   },
   {
-    "id": "2ts9gj",
+    "id": "yu2qan",
     "name": "image",
-    "parent": "tadkbq",
+    "parent": "qit630",
     "children": [],
     "settings": {
       "image": {
@@ -2017,9 +2007,9 @@
     "themeStyles": []
   },
   {
-    "id": "cxq6kp",
+    "id": "12dtk3",
     "name": "text",
-    "parent": "yw4tts",
+    "parent": "f37v7h",
     "children": [],
     "settings": {
       "text": "<p>Leaked admin backend screenshot where lucky draw ticket numbers are altered.</p>",
@@ -2037,9 +2027,9 @@
     }
   },
   {
-    "id": "dsydra",
+    "id": "hx9jlr",
     "name": "image",
-    "parent": "k9cja4",
+    "parent": "myeuh1",
     "children": [],
     "settings": {
       "image": {
@@ -2055,12 +2045,13 @@
     "themeStyles": []
   },
   {
-    "id": "jhft43",
-    "name": "text",
-    "parent": "k9cja4",
+    "id": "0fjppz",
+    "name": "heading",
+    "parent": "myeuh1",
     "children": [],
     "settings": {
-      "text": "<p>MathGenius</p>",
+      "text": "MathGenius",
+      "tag": "h4",
       "_typography": {
         "font-family": "Inter",
         "font-size": "14px",
@@ -2075,12 +2066,12 @@
     }
   },
   {
-    "id": "k9cja4",
+    "id": "myeuh1",
     "name": "div",
-    "parent": "8521ta",
+    "parent": "03gda8",
     "children": [
-      "dsydra",
-      "jhft43"
+      "hx9jlr",
+      "0fjppz"
     ],
     "settings": {
       "_display": "flex",
@@ -2094,9 +2085,9 @@
     }
   },
   {
-    "id": "i8hnp8",
+    "id": "8lgxvs",
     "name": "icon",
-    "parent": "hdfqm8",
+    "parent": "821fgd",
     "children": [],
     "settings": {
       "icon": {
@@ -2115,12 +2106,13 @@
     "themeStyles": []
   },
   {
-    "id": "etffr6",
-    "name": "text",
-    "parent": "hdfqm8",
+    "id": "r99thd",
+    "name": "heading",
+    "parent": "821fgd",
     "children": [],
     "settings": {
-      "text": "<p>612</p>",
+      "text": "612",
+      "tag": "h4",
       "_typography": {
         "font-family": "Inter",
         "font-size": "14px",
@@ -2135,12 +2127,12 @@
     }
   },
   {
-    "id": "hdfqm8",
+    "id": "821fgd",
     "name": "div",
-    "parent": "8521ta",
+    "parent": "03gda8",
     "children": [
-      "i8hnp8",
-      "etffr6"
+      "8lgxvs",
+      "r99thd"
     ],
     "settings": {
       "_display": "flex",
@@ -2154,12 +2146,12 @@
     }
   },
   {
-    "id": "8521ta",
+    "id": "03gda8",
     "name": "div",
-    "parent": "yw4tts",
+    "parent": "f37v7h",
     "children": [
-      "k9cja4",
-      "hdfqm8"
+      "myeuh1",
+      "821fgd"
     ],
     "settings": {
       "_display": "flex",
@@ -2173,12 +2165,12 @@
     }
   },
   {
-    "id": "yw4tts",
+    "id": "f37v7h",
     "name": "div",
-    "parent": "tadkbq",
+    "parent": "qit630",
     "children": [
-      "cxq6kp",
-      "8521ta"
+      "12dtk3",
+      "03gda8"
     ],
     "settings": {
       "_display": "flex",
@@ -2190,12 +2182,12 @@
     }
   },
   {
-    "id": "tadkbq",
+    "id": "qit630",
     "name": "div",
-    "parent": "7k9x2i",
+    "parent": "1qx924",
     "children": [
-      "2ts9gj",
-      "yw4tts"
+      "yu2qan",
+      "f37v7h"
     ],
     "settings": {
       "_display": "flex",
@@ -2215,6 +2207,12 @@
         }
       },
       "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        },
         "style": "solid",
         "color": {
           "raw": "#0000000A"
@@ -2229,9 +2227,9 @@
     }
   },
   {
-    "id": "d59a2x",
+    "id": "j6q998",
     "name": "image",
-    "parent": "oxucqd",
+    "parent": "sn85il",
     "children": [],
     "settings": {
       "image": {
@@ -2247,9 +2245,9 @@
     "themeStyles": []
   },
   {
-    "id": "renfoz",
+    "id": "e5gdhm",
     "name": "text",
-    "parent": "wryl1a",
+    "parent": "t8dtuy",
     "children": [],
     "settings": {
       "text": "<p>How Light Roulette uses a custom software script to avoid paying out on </p>",
@@ -2267,9 +2265,9 @@
     }
   },
   {
-    "id": "fv01ir",
+    "id": "nvnqsw",
     "name": "image",
-    "parent": "muhcu4",
+    "parent": "nd0n4j",
     "children": [],
     "settings": {
       "image": {
@@ -2285,9 +2283,9 @@
     "themeStyles": []
   },
   {
-    "id": "3hhs9b",
+    "id": "5rrp1d",
     "name": "text",
-    "parent": "muhcu4",
+    "parent": "nd0n4j",
     "children": [],
     "settings": {
       "text": "<p>Jhonson D.</p>",
@@ -2305,12 +2303,12 @@
     }
   },
   {
-    "id": "muhcu4",
+    "id": "nd0n4j",
     "name": "div",
-    "parent": "b1j1ni",
+    "parent": "8ufmob",
     "children": [
-      "fv01ir",
-      "3hhs9b"
+      "nvnqsw",
+      "5rrp1d"
     ],
     "settings": {
       "_display": "flex",
@@ -2324,9 +2322,9 @@
     }
   },
   {
-    "id": "m4w59y",
+    "id": "ar83sf",
     "name": "icon",
-    "parent": "xs9vpb",
+    "parent": "ox4ay0",
     "children": [],
     "settings": {
       "icon": {
@@ -2345,9 +2343,9 @@
     "themeStyles": []
   },
   {
-    "id": "sk8neb",
+    "id": "vpwopm",
     "name": "text",
-    "parent": "xs9vpb",
+    "parent": "ox4ay0",
     "children": [],
     "settings": {
       "text": "<p>2.5K</p>",
@@ -2365,12 +2363,12 @@
     }
   },
   {
-    "id": "xs9vpb",
+    "id": "ox4ay0",
     "name": "div",
-    "parent": "b1j1ni",
+    "parent": "8ufmob",
     "children": [
-      "m4w59y",
-      "sk8neb"
+      "ar83sf",
+      "vpwopm"
     ],
     "settings": {
       "_display": "flex",
@@ -2384,12 +2382,12 @@
     }
   },
   {
-    "id": "b1j1ni",
+    "id": "8ufmob",
     "name": "div",
-    "parent": "wryl1a",
+    "parent": "t8dtuy",
     "children": [
-      "muhcu4",
-      "xs9vpb"
+      "nd0n4j",
+      "ox4ay0"
     ],
     "settings": {
       "_display": "flex",
@@ -2403,12 +2401,12 @@
     }
   },
   {
-    "id": "wryl1a",
+    "id": "t8dtuy",
     "name": "div",
-    "parent": "oxucqd",
+    "parent": "sn85il",
     "children": [
-      "renfoz",
-      "b1j1ni"
+      "e5gdhm",
+      "8ufmob"
     ],
     "settings": {
       "_display": "flex",
@@ -2420,12 +2418,12 @@
     }
   },
   {
-    "id": "oxucqd",
+    "id": "sn85il",
     "name": "div",
-    "parent": "7k9x2i",
+    "parent": "1qx924",
     "children": [
-      "d59a2x",
-      "wryl1a"
+      "j6q998",
+      "t8dtuy"
     ],
     "settings": {
       "_display": "flex",
@@ -2459,14 +2457,14 @@
     }
   },
   {
-    "id": "7k9x2i",
+    "id": "1qx924",
     "name": "div",
-    "parent": "trkw6t",
+    "parent": "pdk1hl",
     "children": [
-      "pqxss3",
-      "jqmwns",
-      "tadkbq",
-      "oxucqd"
+      "fxpwd3",
+      "ag0oyf",
+      "qit630",
+      "sn85il"
     ],
     "settings": {
       "_display": "grid",
@@ -2480,12 +2478,12 @@
     }
   },
   {
-    "id": "trkw6t",
+    "id": "pdk1hl",
     "name": "div",
-    "parent": "gswjbv",
+    "parent": "rbwgnn",
     "children": [
-      "fjfqhy",
-      "7k9x2i"
+      "4zbdbw",
+      "1qx924"
     ],
     "settings": {
       "_display": "flex",
@@ -2499,12 +2497,12 @@
     }
   },
   {
-    "id": "gswjbv",
+    "id": "rbwgnn",
     "name": "div",
-    "parent": "eknwey",
+    "parent": "4i9huc",
     "children": [
-      "nzej92",
-      "trkw6t"
+      "d43kta",
+      "pdk1hl"
     ],
     "settings": {
       "_display": "flex",
@@ -2520,11 +2518,11 @@
     }
   },
   {
-    "id": "eknwey",
+    "id": "4i9huc",
     "name": "container",
-    "parent": "6brm6y",
+    "parent": "5h5qe8",
     "children": [
-      "gswjbv"
+      "rbwgnn"
     ],
     "settings": {
       "_display": "flex",
@@ -2535,11 +2533,11 @@
     }
   },
   {
-    "id": "6brm6y",
+    "id": "5h5qe8",
     "name": "section",
     "parent": 0,
     "children": [
-      "eknwey"
+      "4i9huc"
     ],
     "settings": {
       "_padding": {

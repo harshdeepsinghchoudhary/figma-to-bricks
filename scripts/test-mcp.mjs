@@ -126,7 +126,7 @@ try {
     fs.writeFileSync(file, JSON.stringify(out, null, 2));
     console.log(typeof out === 'string' ? out : JSON.stringify(out, null, 2).slice(0, 3000));
     console.log('\nFull result saved to', file);
-    if (r?.isError) process.exitCode = 2;
+    if (r?.isError || out?.success === false || out?.error) process.exitCode = 2;
     process.exit(process.exitCode || 0);
   }
 

@@ -31,6 +31,8 @@
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
+import { decorationOwner } from "./section-detect.js";
 
 const args = process.argv.slice(2);
 const frameDir = args.find((a) => !a.startsWith("--"));
@@ -79,6 +81,7 @@ if (fs.existsSync(secRoot)) {
   }
 }
 const used = new Set(Object.values(names));
+for (const name of used) if (typeof name !== "string" || !/^[a-zA-Z0-9_-]+$/.test(name)) throw new Error(`Unsafe section folder name: ${name}`);
 const pad = String(top.length).length < 2 ? 2 : String(top.length).length;
 const sections = top.map((n, i) => {
   if (!names[n.id]) {
@@ -100,6 +103,11 @@ const iou = (a, b) => {
 };
 const skipReason = {};
 for (const s of sections) if (skipSet.has(s.name) || skipSet.has(s.id)) skipReason[s.name] = "left out (--skip)";
+for (const s of sections) {
+  if (skipReason[s.name] || only?.has(s.name) || only?.has(s.id)) continue;
+  const owner = decorationOwner(top.find((n) => n.id === s.id), top);
+  if (owner) skipReason[s.name] = `decorative shape inside ${names[owner.id]} (not a standalone section)`;
+}
 if (!flag("keep-duplicates")) {
   for (const s of sections) {
     for (const o of sections) {
@@ -138,19 +146,33 @@ function node(script, a, live = false) {
   return r.status === 0;
 }
 const failed = [];
+const failedNames = new Set();
 const split = opt("split", "4600");
+let merged = false;
+fs.writeFileSync(path.join(frameDir, "build-report.json"), JSON.stringify({ status: "running", merged: false }));
 for (const s of sections) {
   if (!picked(s)) continue;
   const dir = path.join(secRoot, s.name);
-  if (!isDone(s) || flag("force")) {
+  const sourceHash = createHash("sha256").update(JSON.stringify(top.find((n) => n.id === s.id))).digest("hex");
+  const metaPath = path.join(dir, "normalized-source.json");
+  let cachedHash = null;
+  if (fs.existsSync(metaPath)) { try { cachedHash = JSON.parse(fs.readFileSync(metaPath, "utf8")).hash; } catch {} }
+  const changed = cachedHash && cachedHash !== sourceHash;
+  if (changed) console.log(`\n--- ${s.name}: Figma input changed, rebuilding normalization.`);
+  if (!isDone(s) || flag("force") || changed) {
     // --force means redo: saved parts would otherwise be reused by --resume, and they were answered for the old input
-    if (flag("force") && fs.existsSync(path.join(dir, "parts"))) { fs.rmSync(path.join(dir, "parts"), { recursive: true, force: true }); console.log(`\n--- ${s.name}: removed saved parts (--force)`); }
+    if (flag("force") && fs.existsSync(path.join(dir, "parts"))) {
+      const partsPath = path.resolve(dir, "parts"), sectionRoot = path.resolve(secRoot) + path.sep;
+      if (!partsPath.startsWith(sectionRoot)) throw new Error("Parts path is outside the section workspace.");
+      fs.rmSync(partsPath, { recursive: true, force: true }); console.log(`\n--- ${s.name}: removed saved parts (--force)`);
+    }
     const ok = node("2_normalize.js", [frameDir, `--nodes=${s.id}`, `--name=${s.name}`, `--split=${split}`, "--resume"], true);
-    if (!ok || !isDone(s)) { failed.push(`${s.name} (${s.id}): model step failed, section left out - re-run the same command to retry it, or add --skip=${s.name} to leave it out on purpose`); continue; }
+    if (!ok || !isDone(s)) { failedNames.add(s.name); failed.push(`${s.name} (${s.id}): model step failed, section left out - re-run the same command to retry it, or add --skip=${s.name} to leave it out on purpose`); continue; }
   } else {
     console.log(`\n--- ${s.name}: already normalized, skipping the model step (use --force to redo)`);
   }
-  if (!node("3_compile_bricks.js", [dir])) failed.push(`${s.name} (${s.id}): compile failed`);
+  fs.writeFileSync(metaPath, JSON.stringify({ hash: sourceHash, figmaNodeId: s.id }, null, 2));
+  if (!node("3_compile_bricks.js", [dir])) { failedNames.add(s.name); failed.push(`${s.name} (${s.id}): compile failed`); }
   else {
     // The compile step lists Figma text that never made it into the section. A few lost texts (a nav bar, a card body) mean the model
     // dropped part of the section, even though it validated. Do not let that pass silently.
@@ -161,18 +183,19 @@ for (const s of sections) {
 
 // ---- merge, in page order, everything that compiled ----
 if (!flag("no-merge")) {
-  const built = sections.filter((s) => !isSkipped(s) && fs.existsSync(path.join(secRoot, s.name, "bricks-tree.json")));
-  const missing = sections.filter((s) => !built.includes(s));
-  if (!built.length) console.log("\nNothing compiled yet - nothing to merge.");
+  const built = sections.filter((s) => !isSkipped(s) && !failedNames.has(s.name) && fs.existsSync(path.join(secRoot, s.name, "bricks-tree.json")));
+  const missing = sections.filter((s) => !isSkipped(s) && !built.includes(s));
+  if (!built.length) { failed.push("nothing compiled for this run"); console.log("\nNothing compiled yet - nothing to merge."); }
   else {
     if (missing.length) console.log(`\nNote: ${missing.length} section(s) are not built yet and are left out of the merge: ${missing.map((s) => s.name).join(", ")}`);
     if (!node("merge_sections.js", [frameDir, ...built.map((s) => s.name)])) failed.push("merge failed");
     else if (!node("wrap-template.js", [path.join(frameDir, "merged"), opt("template-name", `${path.basename(frameDir)} page`)])) failed.push("template wrap failed");
-    else console.log(`\nImport this into Bricks: ${path.join(frameDir, "merged", "bricks-template-import.json")}`);
+    else { merged = true; console.log(`\nImport this into Bricks: ${path.join(frameDir, "merged", "bricks-template-import.json")}`); }
   }
 }
 
 const skippedList = sections.filter(isSkipped);
 if (skippedList.length) console.log(`\nSkipped ${skippedList.length} section(s): ${skippedList.map((s) => `${s.name} (${skipReason[s.name]})`).join("; ")}`);
 console.log(failed.length ? `\n${failed.length} problem(s):\n${failed.map((f) => "  - " + f).join("\n")}` : "\nAll selected sections built.");
+fs.writeFileSync(path.join(frameDir, "build-report.json"), JSON.stringify({ status: failed.length ? "incomplete" : "built", merged, failures: failed, failedSections: [...failedNames], finishedAt: new Date().toISOString() }, null, 2));
 process.exit(failed.length ? 1 : 0);

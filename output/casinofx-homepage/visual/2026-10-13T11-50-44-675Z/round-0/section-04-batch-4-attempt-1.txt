@@ -1,0 +1,39 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "elementId": "05f15a",
+      "description": "The 'PAGCOR Certified' badge is positioned below the logo image in the local preview, whereas in the Figma target it is overlaid on the top-left corner of the image."
+    },
+    {
+      "severity": "medium",
+      "elementId": "5s7bor",
+      "description": "The text and badge container is vertically centered relative to the image in the local preview, but in the Figma target it is aligned to the top of the image."
+    }
+  ],
+  "patches": [
+    {
+      "op": "settings",
+      "id": "05f15a",
+      "set": {
+        "_position": "relative"
+      }
+    },
+    {
+      "op": "settings",
+      "id": "p9saqa",
+      "set": {
+        "_position": "absolute",
+        "_top": "0",
+        "_left": "0"
+      }
+    },
+    {
+      "op": "settings",
+      "id": "ebws37",
+      "set": {
+        "_alignItems": "flex-start"
+      }
+    }
+  ]
+}

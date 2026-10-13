@@ -1,8 +1,8 @@
 [
   {
-    "id": "yqdplu",
+    "id": "gze1zy",
     "name": "heading",
-    "parent": "jfdmha",
+    "parent": "n65714",
     "children": [],
     "settings": {
       "text": "Scam Alerts &amp; Cases",
@@ -22,9 +22,9 @@
     }
   },
   {
-    "id": "5ezffm",
+    "id": "ua31ds",
     "name": "button",
-    "parent": "pa124y",
+    "parent": "zucuhb",
     "children": [],
     "settings": {
       "text": "Unable to Withdraw",
@@ -62,9 +62,9 @@
     }
   },
   {
-    "id": "9d67k9",
+    "id": "w7cy3q",
     "name": "button",
-    "parent": "pa124y",
+    "parent": "zucuhb",
     "children": [],
     "settings": {
       "text": "Fake License",
@@ -96,25 +96,15 @@
           "right": "4px",
           "bottom": "4px",
           "left": "4px"
-        },
-        "style": "solid",
-        "color": {
-          "raw": "#00000033"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
         }
       },
       "_widthMax:tablet_portrait": "100%"
     }
   },
   {
-    "id": "ti79ik",
+    "id": "tim0n2",
     "name": "button",
-    "parent": "pa124y",
+    "parent": "zucuhb",
     "children": [],
     "settings": {
       "text": "Scam",
@@ -146,25 +136,15 @@
           "right": "4px",
           "bottom": "4px",
           "left": "4px"
-        },
-        "style": "solid",
-        "color": {
-          "raw": "#00000033"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
         }
       },
       "_widthMax:tablet_portrait": "100%"
     }
   },
   {
-    "id": "3r0sb1",
+    "id": "93w15t",
     "name": "button",
-    "parent": "pa124y",
+    "parent": "zucuhb",
     "children": [],
     "settings": {
       "text": "Others",
@@ -196,30 +176,20 @@
           "right": "4px",
           "bottom": "4px",
           "left": "4px"
-        },
-        "style": "solid",
-        "color": {
-          "raw": "#00000033"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
         }
       },
       "_widthMax:tablet_portrait": "100%"
     }
   },
   {
-    "id": "pa124y",
+    "id": "zucuhb",
     "name": "div",
-    "parent": "4k8ha7",
+    "parent": "yby2aq",
     "children": [
-      "5ezffm",
-      "9d67k9",
-      "ti79ik",
-      "3r0sb1"
+      "ua31ds",
+      "w7cy3q",
+      "tim0n2",
+      "93w15t"
     ],
     "settings": {
       "_display": "flex",
@@ -234,9 +204,9 @@
     }
   },
   {
-    "id": "mebf1k",
+    "id": "v1jsf9",
     "name": "image",
-    "parent": "84zajf",
+    "parent": "ivbxds",
     "children": [],
     "settings": {
       "image": {
@@ -252,11 +222,11 @@
     "themeStyles": []
   },
   {
-    "id": "84zajf",
+    "id": "ivbxds",
     "name": "div",
-    "parent": "h5ht6g",
+    "parent": "laoed2",
     "children": [
-      "mebf1k"
+      "v1jsf9"
     ],
     "settings": {
       "_display": "flex",
@@ -287,12 +257,12 @@
     }
   },
   {
-    "id": "b742qd",
+    "id": "7kmct5",
     "name": "text",
-    "parent": "h5ht6g",
+    "parent": "laoed2",
     "children": [],
     "settings": {
-      "text": "<p>Amount Resolved: <span>$68,843,697</span></p>",
+      "text": "<p>Amount Resolved: $68,843,697</p>",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -300,20 +270,19 @@
         "line-height": "22px",
         "letter-spacing": "0%",
         "color": {
-          "raw": "#000000CC"
+          "raw": "#000000"
         },
         "text-align": "left"
-      },
-      "_cssCustom": "#brxe-b742qd span {\n  font-weight: 600;\n  color: #000000;\n}"
+      }
     }
   },
   {
-    "id": "h5ht6g",
+    "id": "laoed2",
     "name": "div",
-    "parent": "abfqa2",
+    "parent": "nwlxus",
     "children": [
-      "84zajf",
-      "b742qd"
+      "ivbxds",
+      "7kmct5"
     ],
     "settings": {
       "_display": "flex",
@@ -328,11 +297,11 @@
     }
   },
   {
-    "id": "abfqa2",
+    "id": "nwlxus",
     "name": "div",
-    "parent": "7ut45y",
+    "parent": "s5onzg",
     "children": [
-      "h5ht6g"
+      "laoed2"
     ],
     "settings": {
       "_display": "flex",
@@ -360,9 +329,9 @@
     }
   },
   {
-    "id": "c4bq14",
+    "id": "iai4id",
     "name": "image",
-    "parent": "lw294p",
+    "parent": "gl8pen",
     "children": [],
     "settings": {
       "image": {
@@ -378,11 +347,11 @@
     "themeStyles": []
   },
   {
-    "id": "lw294p",
+    "id": "gl8pen",
     "name": "div",
-    "parent": "934isz",
+    "parent": "87i589",
     "children": [
-      "c4bq14"
+      "iai4id"
     ],
     "settings": {
       "_display": "flex",
@@ -413,9 +382,9 @@
     }
   },
   {
-    "id": "bf16c6",
+    "id": "7yn1o6",
     "name": "text",
-    "parent": "934isz",
+    "parent": "87i589",
     "children": [],
     "settings": {
       "text": "<p>Resolved Cases: 15,427</p>",
@@ -433,12 +402,12 @@
     }
   },
   {
-    "id": "934isz",
+    "id": "87i589",
     "name": "div",
-    "parent": "k5ob07",
+    "parent": "cr88hg",
     "children": [
-      "lw294p",
-      "bf16c6"
+      "gl8pen",
+      "7yn1o6"
     ],
     "settings": {
       "_display": "flex",
@@ -453,11 +422,11 @@
     }
   },
   {
-    "id": "k5ob07",
+    "id": "cr88hg",
     "name": "div",
-    "parent": "7ut45y",
+    "parent": "s5onzg",
     "children": [
-      "934isz"
+      "87i589"
     ],
     "settings": {
       "_display": "flex",
@@ -491,9 +460,9 @@
     }
   },
   {
-    "id": "jo6cew",
+    "id": "0347t0",
     "name": "image",
-    "parent": "6prckc",
+    "parent": "1kb9hx",
     "children": [],
     "settings": {
       "image": {
@@ -509,9 +478,9 @@
     "themeStyles": []
   },
   {
-    "id": "biw3wy",
+    "id": "jlrou6",
     "name": "text",
-    "parent": "6prckc",
+    "parent": "1kb9hx",
     "children": [],
     "settings": {
       "text": "<p>Exposure</p>",
@@ -529,12 +498,12 @@
     }
   },
   {
-    "id": "6prckc",
+    "id": "1kb9hx",
     "name": "div",
-    "parent": "7ut45y",
+    "parent": "s5onzg",
     "children": [
-      "jo6cew",
-      "biw3wy"
+      "0347t0",
+      "jlrou6"
     ],
     "settings": {
       "_display": "flex",
@@ -570,9 +539,9 @@
     }
   },
   {
-    "id": "csy23a",
+    "id": "nu8p95",
     "name": "image",
-    "parent": "sz59kt",
+    "parent": "4vbm3m",
     "children": [],
     "settings": {
       "image": {
@@ -589,9 +558,9 @@
     "themeStyles": []
   },
   {
-    "id": "0zbj7t",
+    "id": "o4zxvv",
     "name": "heading",
-    "parent": "sz59kt",
+    "parent": "4vbm3m",
     "children": [],
     "settings": {
       "text": "Euro Palace",
@@ -610,12 +579,12 @@
     }
   },
   {
-    "id": "sz59kt",
+    "id": "4vbm3m",
     "name": "div",
-    "parent": "iopb27",
+    "parent": "ida11r",
     "children": [
-      "csy23a",
-      "0zbj7t"
+      "nu8p95",
+      "o4zxvv"
     ],
     "settings": {
       "_display": "flex",
@@ -629,9 +598,9 @@
     }
   },
   {
-    "id": "v6v2d2",
+    "id": "51vffd",
     "name": "heading",
-    "parent": "dqzoge",
+    "parent": "h07wj1",
     "children": [],
     "settings": {
       "text": "Warning for players about delayed payout...",
@@ -650,9 +619,9 @@
     }
   },
   {
-    "id": "iyeg7m",
+    "id": "xqph7w",
     "name": "text",
-    "parent": "dqzoge",
+    "parent": "h07wj1",
     "children": [],
     "settings": {
       "text": "<p>Warning for players about my experience with Unibet. I requested a withdrawal after winning, but support keeps delaying...</p>",
@@ -670,12 +639,12 @@
     }
   },
   {
-    "id": "dqzoge",
+    "id": "h07wj1",
     "name": "div",
-    "parent": "3e7kkc",
+    "parent": "ij2jj9",
     "children": [
-      "v6v2d2",
-      "iyeg7m"
+      "51vffd",
+      "xqph7w"
     ],
     "settings": {
       "_display": "flex",
@@ -687,9 +656,9 @@
     }
   },
   {
-    "id": "fomnka",
+    "id": "ky9dt0",
     "name": "icon",
-    "parent": "4uwhid",
+    "parent": "snkpan",
     "children": [],
     "settings": {
       "icon": {
@@ -708,9 +677,9 @@
     "themeStyles": []
   },
   {
-    "id": "5i28jq",
+    "id": "64lxvt",
     "name": "text",
-    "parent": "4uwhid",
+    "parent": "snkpan",
     "children": [],
     "settings": {
       "text": "<p>2026-05-19</p>",
@@ -728,12 +697,12 @@
     }
   },
   {
-    "id": "4uwhid",
+    "id": "snkpan",
     "name": "div",
-    "parent": "3e7kkc",
+    "parent": "ij2jj9",
     "children": [
-      "fomnka",
-      "5i28jq"
+      "ky9dt0",
+      "64lxvt"
     ],
     "settings": {
       "_display": "flex",
@@ -763,12 +732,12 @@
     }
   },
   {
-    "id": "3e7kkc",
+    "id": "ij2jj9",
     "name": "div",
-    "parent": "iopb27",
+    "parent": "ida11r",
     "children": [
-      "dqzoge",
-      "4uwhid"
+      "h07wj1",
+      "snkpan"
     ],
     "settings": {
       "_display": "flex",
@@ -780,12 +749,12 @@
     }
   },
   {
-    "id": "iopb27",
+    "id": "ida11r",
     "name": "div",
-    "parent": "7ut45y",
+    "parent": "s5onzg",
     "children": [
-      "sz59kt",
-      "3e7kkc"
+      "4vbm3m",
+      "ij2jj9"
     ],
     "settings": {
       "_display": "flex",
@@ -815,9 +784,9 @@
     }
   },
   {
-    "id": "60kl60",
+    "id": "3g88rw",
     "name": "image",
-    "parent": "24h64j",
+    "parent": "734931",
     "children": [],
     "settings": {
       "image": {
@@ -834,9 +803,9 @@
     "themeStyles": []
   },
   {
-    "id": "ngdaq6",
+    "id": "9gaprt",
     "name": "heading",
-    "parent": "24h64j",
+    "parent": "734931",
     "children": [],
     "settings": {
       "text": "Ruby Fortune",
@@ -855,12 +824,12 @@
     }
   },
   {
-    "id": "24h64j",
+    "id": "734931",
     "name": "div",
-    "parent": "ln8zil",
+    "parent": "x9er3l",
     "children": [
-      "60kl60",
-      "ngdaq6"
+      "3g88rw",
+      "9gaprt"
     ],
     "settings": {
       "_display": "flex",
@@ -874,9 +843,9 @@
     }
   },
   {
-    "id": "7zjbvb",
+    "id": "te4dba",
     "name": "text",
-    "parent": "pbwqo5",
+    "parent": "8qokeq",
     "children": [],
     "settings": {
       "text": "<p>FortuneJack is a scam casino platform...</p>",
@@ -894,9 +863,9 @@
     }
   },
   {
-    "id": "eggble",
+    "id": "tly2k0",
     "name": "text",
-    "parent": "pbwqo5",
+    "parent": "8qokeq",
     "children": [],
     "settings": {
       "text": "<p>FortuneJack is a fraudulent platform that has caused me significant losses. They blocked my account with no solid reasons.</p>",
@@ -914,12 +883,12 @@
     }
   },
   {
-    "id": "pbwqo5",
+    "id": "8qokeq",
     "name": "div",
-    "parent": "nbv753",
+    "parent": "n5jlwa",
     "children": [
-      "7zjbvb",
-      "eggble"
+      "te4dba",
+      "tly2k0"
     ],
     "settings": {
       "_display": "flex",
@@ -931,9 +900,9 @@
     }
   },
   {
-    "id": "zv99e0",
+    "id": "10m50o",
     "name": "icon",
-    "parent": "a2tgc9",
+    "parent": "85aoct",
     "children": [],
     "settings": {
       "icon": {
@@ -952,9 +921,9 @@
     "themeStyles": []
   },
   {
-    "id": "bn84uf",
+    "id": "lwwpet",
     "name": "text",
-    "parent": "a2tgc9",
+    "parent": "85aoct",
     "children": [],
     "settings": {
       "text": "<p>2026-05-19</p>",
@@ -972,12 +941,12 @@
     }
   },
   {
-    "id": "a2tgc9",
+    "id": "85aoct",
     "name": "div",
-    "parent": "nbv753",
+    "parent": "n5jlwa",
     "children": [
-      "zv99e0",
-      "bn84uf"
+      "10m50o",
+      "lwwpet"
     ],
     "settings": {
       "_display": "flex",
@@ -1007,12 +976,12 @@
     }
   },
   {
-    "id": "nbv753",
+    "id": "n5jlwa",
     "name": "div",
-    "parent": "ln8zil",
+    "parent": "x9er3l",
     "children": [
-      "pbwqo5",
-      "a2tgc9"
+      "8qokeq",
+      "85aoct"
     ],
     "settings": {
       "_display": "flex",
@@ -1024,12 +993,12 @@
     }
   },
   {
-    "id": "ln8zil",
+    "id": "x9er3l",
     "name": "div",
-    "parent": "7ut45y",
+    "parent": "s5onzg",
     "children": [
-      "24h64j",
-      "nbv753"
+      "734931",
+      "n5jlwa"
     ],
     "settings": {
       "_display": "flex",
@@ -1059,9 +1028,9 @@
     }
   },
   {
-    "id": "075r2p",
+    "id": "fjzsat",
     "name": "image",
-    "parent": "p450m8",
+    "parent": "0gl9gh",
     "children": [],
     "settings": {
       "image": {
@@ -1078,9 +1047,9 @@
     "themeStyles": []
   },
   {
-    "id": "tq6y6o",
+    "id": "f507ol",
     "name": "heading",
-    "parent": "p450m8",
+    "parent": "0gl9gh",
     "children": [],
     "settings": {
       "text": "Platinum Play",
@@ -1099,12 +1068,12 @@
     }
   },
   {
-    "id": "p450m8",
+    "id": "0gl9gh",
     "name": "div",
-    "parent": "g9vxc0",
+    "parent": "k1ie5g",
     "children": [
-      "075r2p",
-      "tq6y6o"
+      "fjzsat",
+      "f507ol"
     ],
     "settings": {
       "_display": "flex",
@@ -1118,9 +1087,9 @@
     }
   },
   {
-    "id": "pqvjml",
+    "id": "x11s4i",
     "name": "heading",
-    "parent": "4gwvjp",
+    "parent": "nnal49",
     "children": [],
     "settings": {
       "text": "Spin Palace scammed account 49****, with $9,410.",
@@ -1139,9 +1108,9 @@
     }
   },
   {
-    "id": "9z8sf2",
+    "id": "ytm24m",
     "name": "text",
-    "parent": "4gwvjp",
+    "parent": "nnal49",
     "children": [],
     "settings": {
       "text": "<p>Account: 49**** | Total Loss: $9,410 USD. Spin Palace Casino has illegally withheld funds and manipulated my game balance.</p>",
@@ -1159,12 +1128,12 @@
     }
   },
   {
-    "id": "4gwvjp",
+    "id": "nnal49",
     "name": "div",
-    "parent": "zr5vwt",
+    "parent": "v2hl7b",
     "children": [
-      "pqvjml",
-      "9z8sf2"
+      "x11s4i",
+      "ytm24m"
     ],
     "settings": {
       "_display": "flex",
@@ -1176,9 +1145,9 @@
     }
   },
   {
-    "id": "ohlwed",
+    "id": "ezw64l",
     "name": "icon",
-    "parent": "9fuf7e",
+    "parent": "dlfr9f",
     "children": [],
     "settings": {
       "icon": {
@@ -1197,9 +1166,9 @@
     "themeStyles": []
   },
   {
-    "id": "ri3ogj",
+    "id": "1ew7xl",
     "name": "text",
-    "parent": "9fuf7e",
+    "parent": "dlfr9f",
     "children": [],
     "settings": {
       "text": "<p>2026-05-19</p>",
@@ -1217,12 +1186,12 @@
     }
   },
   {
-    "id": "9fuf7e",
+    "id": "dlfr9f",
     "name": "div",
-    "parent": "zr5vwt",
+    "parent": "v2hl7b",
     "children": [
-      "ohlwed",
-      "ri3ogj"
+      "ezw64l",
+      "1ew7xl"
     ],
     "settings": {
       "_display": "flex",
@@ -1252,12 +1221,12 @@
     }
   },
   {
-    "id": "zr5vwt",
+    "id": "v2hl7b",
     "name": "div",
-    "parent": "g9vxc0",
+    "parent": "k1ie5g",
     "children": [
-      "4gwvjp",
-      "9fuf7e"
+      "nnal49",
+      "dlfr9f"
     ],
     "settings": {
       "_display": "flex",
@@ -1269,12 +1238,12 @@
     }
   },
   {
-    "id": "g9vxc0",
+    "id": "k1ie5g",
     "name": "div",
-    "parent": "7ut45y",
+    "parent": "s5onzg",
     "children": [
-      "p450m8",
-      "zr5vwt"
+      "0gl9gh",
+      "v2hl7b"
     ],
     "settings": {
       "_display": "flex",
@@ -1304,9 +1273,9 @@
     }
   },
   {
-    "id": "4r1a5p",
+    "id": "0ito7c",
     "name": "image",
-    "parent": "fnindi",
+    "parent": "4g2vaa",
     "children": [],
     "settings": {
       "image": {
@@ -1323,9 +1292,9 @@
     "themeStyles": []
   },
   {
-    "id": "p9ox0e",
+    "id": "07bb80",
     "name": "heading",
-    "parent": "fnindi",
+    "parent": "4g2vaa",
     "children": [],
     "settings": {
       "text": "Jackpot City",
@@ -1344,12 +1313,12 @@
     }
   },
   {
-    "id": "fnindi",
+    "id": "4g2vaa",
     "name": "div",
-    "parent": "60ipfl",
+    "parent": "p8ikt4",
     "children": [
-      "4r1a5p",
-      "p9ox0e"
+      "0ito7c",
+      "07bb80"
     ],
     "settings": {
       "_display": "flex",
@@ -1363,9 +1332,9 @@
     }
   },
   {
-    "id": "lkeipm",
+    "id": "loc0y8",
     "name": "heading",
-    "parent": "f6twso",
+    "parent": "t36bkj",
     "children": [],
     "settings": {
       "text": "SCAM ALERT!! STOLE MY DEPOSIT",
@@ -1384,9 +1353,9 @@
     }
   },
   {
-    "id": "mzaifm",
+    "id": "3dgz64",
     "name": "text",
-    "parent": "f6twso",
+    "parent": "t36bkj",
     "children": [],
     "settings": {
       "text": "<p>STOLE USD 5,000 from us! Live support agent only talks sweet but never processes any withdrawal requests. Avoid them!</p>",
@@ -1404,12 +1373,12 @@
     }
   },
   {
-    "id": "f6twso",
+    "id": "t36bkj",
     "name": "div",
-    "parent": "zdhrpw",
+    "parent": "i9oqqi",
     "children": [
-      "lkeipm",
-      "mzaifm"
+      "loc0y8",
+      "3dgz64"
     ],
     "settings": {
       "_display": "flex",
@@ -1421,9 +1390,9 @@
     }
   },
   {
-    "id": "fcqqo0",
+    "id": "ykrr21",
     "name": "icon",
-    "parent": "i7o34q",
+    "parent": "ina2im",
     "children": [],
     "settings": {
       "icon": {
@@ -1442,9 +1411,9 @@
     "themeStyles": []
   },
   {
-    "id": "jm0n6m",
+    "id": "v038pm",
     "name": "text",
-    "parent": "i7o34q",
+    "parent": "ina2im",
     "children": [],
     "settings": {
       "text": "<p>2026-05-19</p>",
@@ -1462,12 +1431,12 @@
     }
   },
   {
-    "id": "i7o34q",
+    "id": "ina2im",
     "name": "div",
-    "parent": "zdhrpw",
+    "parent": "i9oqqi",
     "children": [
-      "fcqqo0",
-      "jm0n6m"
+      "ykrr21",
+      "v038pm"
     ],
     "settings": {
       "_display": "flex",
@@ -1497,12 +1466,12 @@
     }
   },
   {
-    "id": "zdhrpw",
+    "id": "i9oqqi",
     "name": "div",
-    "parent": "60ipfl",
+    "parent": "p8ikt4",
     "children": [
-      "f6twso",
-      "i7o34q"
+      "t36bkj",
+      "ina2im"
     ],
     "settings": {
       "_display": "flex",
@@ -1514,12 +1483,12 @@
     }
   },
   {
-    "id": "60ipfl",
+    "id": "p8ikt4",
     "name": "div",
-    "parent": "7ut45y",
+    "parent": "s5onzg",
     "children": [
-      "fnindi",
-      "zdhrpw"
+      "4g2vaa",
+      "i9oqqi"
     ],
     "settings": {
       "_display": "flex",
@@ -1549,9 +1518,9 @@
     }
   },
   {
-    "id": "sre67f",
+    "id": "m1sx2x",
     "name": "image",
-    "parent": "zuju82",
+    "parent": "ghuib1",
     "children": [],
     "settings": {
       "image": {
@@ -1568,9 +1537,9 @@
     "themeStyles": []
   },
   {
-    "id": "74wkdk",
+    "id": "eirm0n",
     "name": "heading",
-    "parent": "zuju82",
+    "parent": "ghuib1",
     "children": [],
     "settings": {
       "text": "Mummys Gold",
@@ -1589,12 +1558,12 @@
     }
   },
   {
-    "id": "zuju82",
+    "id": "ghuib1",
     "name": "div",
-    "parent": "zhugpx",
+    "parent": "t3ads6",
     "children": [
-      "sre67f",
-      "74wkdk"
+      "m1sx2x",
+      "eirm0n"
     ],
     "settings": {
       "_display": "flex",
@@ -1608,9 +1577,9 @@
     }
   },
   {
-    "id": "3ooheo",
+    "id": "uzmkch",
     "name": "heading",
-    "parent": "65znh6",
+    "parent": "o7m6k9",
     "children": [],
     "settings": {
       "text": "Illegal deduction of fresh deposit by 7 Sultans",
@@ -1629,9 +1598,9 @@
     }
   },
   {
-    "id": "dv8bcr",
+    "id": "xyk707",
     "name": "text",
-    "parent": "65znh6",
+    "parent": "o7m6k9",
     "children": [],
     "settings": {
       "text": "<p>I deposited $1,200 via crypto. The transaction was successful on blockchain but the casino group refuses to credit it.</p>",
@@ -1649,12 +1618,12 @@
     }
   },
   {
-    "id": "65znh6",
+    "id": "o7m6k9",
     "name": "div",
-    "parent": "avw7d9",
+    "parent": "zqpwdb",
     "children": [
-      "3ooheo",
-      "dv8bcr"
+      "uzmkch",
+      "xyk707"
     ],
     "settings": {
       "_display": "flex",
@@ -1666,9 +1635,9 @@
     }
   },
   {
-    "id": "tpdsz4",
+    "id": "onl3s2",
     "name": "icon",
-    "parent": "n3kni7",
+    "parent": "41tgky",
     "children": [],
     "settings": {
       "icon": {
@@ -1687,9 +1656,9 @@
     "themeStyles": []
   },
   {
-    "id": "eagmso",
+    "id": "zarp9b",
     "name": "text",
-    "parent": "n3kni7",
+    "parent": "41tgky",
     "children": [],
     "settings": {
       "text": "<p>2026-05-19</p>",
@@ -1707,12 +1676,12 @@
     }
   },
   {
-    "id": "n3kni7",
+    "id": "41tgky",
     "name": "div",
-    "parent": "avw7d9",
+    "parent": "zqpwdb",
     "children": [
-      "tpdsz4",
-      "eagmso"
+      "onl3s2",
+      "zarp9b"
     ],
     "settings": {
       "_display": "flex",
@@ -1734,12 +1703,12 @@
     }
   },
   {
-    "id": "avw7d9",
+    "id": "zqpwdb",
     "name": "div",
-    "parent": "zhugpx",
+    "parent": "t3ads6",
     "children": [
-      "65znh6",
-      "n3kni7"
+      "o7m6k9",
+      "41tgky"
     ],
     "settings": {
       "_display": "flex",
@@ -1751,12 +1720,12 @@
     }
   },
   {
-    "id": "zhugpx",
+    "id": "t3ads6",
     "name": "div",
-    "parent": "7ut45y",
+    "parent": "s5onzg",
     "children": [
-      "zuju82",
-      "avw7d9"
+      "ghuib1",
+      "zqpwdb"
     ],
     "settings": {
       "_display": "flex",
@@ -1786,9 +1755,9 @@
     }
   },
   {
-    "id": "xvra0u",
+    "id": "jw1e9q",
     "name": "image",
-    "parent": "fvlb1g",
+    "parent": "y3zijj",
     "children": [],
     "settings": {
       "image": {
@@ -1805,9 +1774,9 @@
     "themeStyles": []
   },
   {
-    "id": "wrf5mg",
+    "id": "emvdlo",
     "name": "heading",
-    "parent": "fvlb1g",
+    "parent": "y3zijj",
     "children": [],
     "settings": {
       "text": "Vegas Palms",
@@ -1826,12 +1795,12 @@
     }
   },
   {
-    "id": "fvlb1g",
+    "id": "y3zijj",
     "name": "div",
-    "parent": "5dboo0",
+    "parent": "x5zfdn",
     "children": [
-      "xvra0u",
-      "wrf5mg"
+      "jw1e9q",
+      "emvdlo"
     ],
     "settings": {
       "_display": "flex",
@@ -1845,9 +1814,9 @@
     }
   },
   {
-    "id": "5310sn",
+    "id": "ji8z7v",
     "name": "heading",
-    "parent": "3mdum9",
+    "parent": "lux7q5",
     "children": [],
     "settings": {
       "text": "Refuse withdrawal and blocked my access",
@@ -1866,9 +1835,9 @@
     }
   },
   {
-    "id": "iwoy91",
+    "id": "nx3438",
     "name": "text",
-    "parent": "3mdum9",
+    "parent": "lux7q5",
     "children": [],
     "settings": {
       "text": "<p>I created an account with this casino and made a deposit. Initially, my games went well, but when I tried to withdraw my $3,500...</p>",
@@ -1886,12 +1855,12 @@
     }
   },
   {
-    "id": "3mdum9",
+    "id": "lux7q5",
     "name": "div",
-    "parent": "uzw6ka",
+    "parent": "akxqy8",
     "children": [
-      "5310sn",
-      "iwoy91"
+      "ji8z7v",
+      "nx3438"
     ],
     "settings": {
       "_display": "flex",
@@ -1903,9 +1872,9 @@
     }
   },
   {
-    "id": "ue6s8j",
+    "id": "5kqyzz",
     "name": "icon",
-    "parent": "w5tx24",
+    "parent": "lgvzod",
     "children": [],
     "settings": {
       "icon": {
@@ -1924,9 +1893,9 @@
     "themeStyles": []
   },
   {
-    "id": "50z8rp",
+    "id": "efsaa8",
     "name": "text",
-    "parent": "w5tx24",
+    "parent": "lgvzod",
     "children": [],
     "settings": {
       "text": "<p>2026-05-19</p>",
@@ -1944,12 +1913,12 @@
     }
   },
   {
-    "id": "w5tx24",
+    "id": "lgvzod",
     "name": "div",
-    "parent": "uzw6ka",
+    "parent": "akxqy8",
     "children": [
-      "ue6s8j",
-      "50z8rp"
+      "5kqyzz",
+      "efsaa8"
     ],
     "settings": {
       "_display": "flex",
@@ -1971,12 +1940,12 @@
     }
   },
   {
-    "id": "uzw6ka",
+    "id": "akxqy8",
     "name": "div",
-    "parent": "5dboo0",
+    "parent": "x5zfdn",
     "children": [
-      "3mdum9",
-      "w5tx24"
+      "lux7q5",
+      "lgvzod"
     ],
     "settings": {
       "_display": "flex",
@@ -1988,12 +1957,12 @@
     }
   },
   {
-    "id": "5dboo0",
+    "id": "x5zfdn",
     "name": "div",
-    "parent": "7ut45y",
+    "parent": "s5onzg",
     "children": [
-      "fvlb1g",
-      "uzw6ka"
+      "y3zijj",
+      "akxqy8"
     ],
     "settings": {
       "_display": "flex",
@@ -2023,19 +1992,19 @@
     }
   },
   {
-    "id": "7ut45y",
+    "id": "s5onzg",
     "name": "div",
-    "parent": "4k8ha7",
+    "parent": "yby2aq",
     "children": [
-      "abfqa2",
-      "k5ob07",
-      "6prckc",
-      "iopb27",
-      "ln8zil",
-      "g9vxc0",
-      "60ipfl",
-      "zhugpx",
-      "5dboo0"
+      "nwlxus",
+      "cr88hg",
+      "1kb9hx",
+      "ida11r",
+      "x9er3l",
+      "k1ie5g",
+      "p8ikt4",
+      "t3ads6",
+      "x5zfdn"
     ],
     "settings": {
       "_display": "grid",
@@ -2049,12 +2018,12 @@
     }
   },
   {
-    "id": "4k8ha7",
+    "id": "yby2aq",
     "name": "div",
-    "parent": "jfdmha",
+    "parent": "n65714",
     "children": [
-      "pa124y",
-      "7ut45y"
+      "zucuhb",
+      "s5onzg"
     ],
     "settings": {
       "_display": "flex",
@@ -2066,12 +2035,12 @@
     }
   },
   {
-    "id": "jfdmha",
+    "id": "n65714",
     "name": "div",
-    "parent": "0ru2j9",
+    "parent": "o23zsp",
     "children": [
-      "yqdplu",
-      "4k8ha7"
+      "gze1zy",
+      "yby2aq"
     ],
     "settings": {
       "_display": "flex",
@@ -2083,11 +2052,11 @@
     }
   },
   {
-    "id": "0ru2j9",
+    "id": "o23zsp",
     "name": "container",
-    "parent": "z8yp77",
+    "parent": "b7xxij",
     "children": [
-      "jfdmha"
+      "n65714"
     ],
     "settings": {
       "_display": "flex",
@@ -2098,11 +2067,11 @@
     }
   },
   {
-    "id": "z8yp77",
+    "id": "b7xxij",
     "name": "section",
     "parent": 0,
     "children": [
-      "0ru2j9"
+      "o23zsp"
     ],
     "settings": {
       "_padding": {

@@ -1,0 +1,34 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "elementId": "05f15a",
+      "description": "The 'PAGCOR Certified' badge is positioned below the logo image in the local preview, whereas in the Figma target it is positioned above the logo image."
+    },
+    {
+      "severity": "medium",
+      "elementId": "5s7bor",
+      "description": "The text and badge container has a left margin of 22px, creating a gap from the logo that is not present in the Figma target where the elements are closer together."
+    }
+  ],
+  "patches": [
+    {
+      "op": "reorder",
+      "id": "05f15a",
+      "children": [
+        "p9saqa",
+        "b7p0h5"
+      ]
+    },
+    {
+      "op": "settings",
+      "id": "5s7bor",
+      "set": {
+        "_margin": {
+          "top": "8",
+          "left": "0"
+        }
+      }
+    }
+  ]
+}

@@ -120,13 +120,19 @@ function applyVerticalSpacing(frameDir, names, trees) {
 const merged = [];
 const seen = new Set();
 const trees = [];
+const sectionMap = [];
+const sourceMap = {};
+const sectionNames = fs.existsSync(path.join(frameDir, "sections.json")) ? JSON.parse(fs.readFileSync(path.join(frameDir, "sections.json"), "utf8")) : {};
 for (const name of names) {
   const secDir = path.join(frameDir, "sections", name);
   const treePath = path.join(secDir, "bricks-tree.json");
   if (!fs.existsSync(treePath)) { console.error(`Missing ${treePath} - compile that section first.`); process.exit(1); }
   const tree = JSON.parse(fs.readFileSync(treePath, "utf-8"));
   trees.push(tree);
-  const fix = (u) => (typeof u === "string" && !u.startsWith("http") ? path.relative(outDir, path.resolve(secDir, u)).split(path.sep).join("/") : u);
+  const sourceFile = path.join(secDir, "bricks-source-map.json");
+  if (fs.existsSync(sourceFile)) Object.assign(sourceMap, JSON.parse(fs.readFileSync(sourceFile, "utf8")));
+  sectionMap.push({ name, figmaNodeId: Object.keys(sectionNames).find((id) => sectionNames[id] === name) || null, rootIds: tree.filter((e) => !e.parent || e.parent === "0").map((e) => e.id) });
+  const fix = (u) => (typeof u === "string" && !/^(https?:|data:|\/\/)/i.test(u) ? path.relative(outDir, path.resolve(secDir, u)).split(path.sep).join("/") : u);
   for (const el of tree) {
     if (seen.has(el.id)) { console.error(`Duplicate Bricks element id ${el.id} in section ${name} - re-run its compile to get new ids.`); process.exit(1); }
     seen.add(el.id);
@@ -169,4 +175,6 @@ function applyPageBackground() {
 }
 if (!process.argv.includes("--no-page-bg")) applyPageBackground();
 fs.writeFileSync(path.join(outDir, "bricks-tree.json"), JSON.stringify(merged, null, 2));
+fs.writeFileSync(path.join(outDir, "section-map.json"), JSON.stringify(sectionMap, null, 2));
+fs.writeFileSync(path.join(outDir, "bricks-source-map.json"), JSON.stringify(sourceMap, null, 2));
 console.log(`Wrote ${path.join(outDir, "bricks-tree.json")} (${merged.length} element(s), top-level sections in order: ${names.join(", ")})`);

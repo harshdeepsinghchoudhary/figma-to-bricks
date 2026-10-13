@@ -3,17 +3,74 @@
 Milestone 1 pipeline: one Figma frame → normalized design JSON (via LLM) →
 Bricks JSON → import into WordPress/Bricks → measure against Figma → iterate.
 
+## Current workflow (13 October 2026)
+
+For your RTX 3050 6 GB / 16 GB RAM device and GitHub transfer, see [MIGRATION.md](MIGRATION.md) and [the Ollama profile](config/ollama-6gb.env.example). `npm.cmd run doctor -- --ollama` checks server/model availability. Quota errors preserve a retry checkpoint with exit code 75. `npm.cmd run schema:sync` reads element controls from the configured site into `schema/runtime/` for more accurate validation. Section `bricks-id-namespace.json` files preserve IDs when moving the project.
+
+Use Node.js 20+ and Chrome, Edge or Chromium. Run `npm install`, copy `.env.example` to `.env`, and configure Figma, normalization and WordPress credentials. On PowerShell systems that block `npm.ps1`, use `npm.cmd`.
+
+```powershell
+npm.cmd test
+npm.cmd run check:vision
+# Build and visually review locally; WordPress is untouched.
+npm.cmd run pipeline -- --frame output/casinofx-homepage --no-inject
+# Complete extraction, build, visual correction and injection to a new draft.
+npm.cmd run pipeline -- "<figma-url-with-node-id>"
+# Re-fetch changed Figma data, screenshot and assets.
+npm.cmd run pipeline -- "<figma-url-with-node-id>" --refresh --no-inject
+```
+
+Visual review is now a pipeline gate before injection. Stage 6 renders actual local images, backgrounds and pseudo layers at the Figma desktop width, 1024 and 390; checks overflow/broken images; then sends matching Figma/render crops and small element batches to a vision model. It validates settings, child reordering and container moves; re-renders corrections; and retains only a reviewed round with fewer visual issues. Unresolved high/medium issues or provider failures stop injection and return a nonzero exit code. Original trees, candidate patches, model answers, usage and screenshots are retained under `output/<frame>/visual/<timestamp>/`.
+
+Visual responses use JSON mode where supported, repair JSON punctuation before schema/ID validation, and retry an invalid answer once with both images. Valid reviews are cached in `visual-cache/` by provider/model, prompt and screenshot contents, so unchanged batches resume without another model call. A primitive shape wholly inside a content-bearing top-level sibling is treated as decoration rather than an extra section; it stays in the Figma tree for compiler rules. Explicit `--only` selection can still build such a shape for inspection.
+
+Small screenshot crops are padded to at least 32 pixels in each dimension, preserving the original design proportions; this covers icons and thin dividers that vision APIs otherwise reject.
+
+`node tools/visual-preflight.mjs output/casinofx-homepage` checks every request's crop dimensions and prompt budget in an isolated copy using a local mock endpoint. It spends no provider quota and does not judge visual quality. Datasets include the sections in the current merge, excluding skipped decoration folders.
+
+Existing provider: leave `VISUAL_PROVIDER` empty to use `AI_PROVIDER`. Groq defaults to `qwen/qwen3.8-27b`; other providers require an explicitly configured image-capable `VISUAL_MODEL` or provider model. Visual review never drops the images to fall back to a text-only request. Groq comparisons wait 65 seconds between requests by default; set `VISUAL_DELAY_MS` for your tier. `VISUAL_BATCH_SIZE` controls request size. `npm.cmd run check:vision` checks the selected provider/model.
+
+Local Ollama: run your Ollama server, install an image-capable model, then set `VISUAL_PROVIDER=ollama` and `VISUAL_MODEL=<installed-model-name>`. Set `OLLAMA_VISION_MODEL=<installed-model-name>` to use local vision as a fallback when the existing remote provider fails. `OLLAMA_HOST` defaults to `http://localhost:11434`. No model is automatically downloaded or silently substituted.
+
+```powershell
+# Standalone review/correction of an already merged page.
+npm.cmd run visual -- output/casinofx-homepage --fix --iterations=2
+# Focused review of one section.
+npm.cmd run visual -- output/casinofx-homepage --only=section-12
+# Provider-free rendering, overflow and broken-image checks.
+npm.cmd run visual -- output/casinofx-homepage --render-only
+# One diagnostic request; sampled reports deliberately do not pass the full QA gate.
+npm.cmd run visual -- output/casinofx-homepage --only=section-12 --sample=1
+# Explicitly bypass visual QA when performing a compiler-only build.
+npm.cmd run pipeline -- --frame output/casinofx-homepage --no-inject --no-visual
+```
+
+The preview approximates Bricks CSS; it does not reproduce a site's global styles or guarantee pixel-perfect output. Fonts need to be available locally. Optionally create `preview-fonts.json` containing `[{"family":"Inter","file":"assets/fonts/Inter.ttf","weight":"100 900"}]` to embed your actual fonts in the preview. Tablet/phone are checked for overflow and missing images; they are not compared against nonexistent Figma mobile designs. Confirm the final result in WordPress.
+
+Reliability changes: extraction cache identity includes the Figma file and node; new frame folders have an identity suffix; `--refresh` updates cached input. Normalized sections rebuild when their recorded Figma input changes, and saved model parts are keyed by prompt content. Legacy normalized folders acquire a source record on their first run; use `--force` once if their provenance is uncertain. Compiled IDs are stable within the same workspace path. Failed sections cannot merge an old tree. Partial injection requires `--inject-partial` (legacy `--strict` remains compatible). Failed injection/export/measurement steps return failure. Missing assets prevent saving. Media cache entries include the WordPress site. Both injectors resolve background/pseudo assets.
+
+Each run preserves logs, compiled/injected snapshots and its dataset. Capture hand edits against the actual injected tree:
+
+```powershell
+node scripts/export-dataset.js output/casinofx-homepage --page <id> --sync
+# Select a particular captured run when recompilation happened after injection.
+node scripts/export-dataset.js output/casinofx-homepage --page <id> --sync --run output/casinofx-homepage/runs/<timestamp>
+```
+
+Human diffs include settings, child order, parent changes, element types, additions and removals. When an injected snapshot is unavailable, the report explicitly identifies its compiler baseline. Offline regression: `node tools/regression.mjs` compiles saved normalized files in `.review-work/` and renders CasinoFX without touching the original design folders, calling models or changing WordPress. Historical change logs below describe earlier versions; this section defines the current command behavior.
+
 ## Pipeline stages
 
 ```
 1_extract_figma.js      Figma REST API  -> figma-node.json + assets/*
 2_normalize.js          figma-node.json + screenshot + examples -> normalized.json  (LLM)
 3_compile_bricks.js     normalized.json -> bricks-tree.json                          (deterministic)
+6_visual_review.js      Bricks render + Figma screenshot -> review/correct (before injection)
 4_inject.js             bricks-tree.json -> writes _bricks_page_content_2 via WP REST
 5_measure.js            wraps dom-measure.js: rendered page vs figma-geom.py output
 ```
 
-Run them in order, or `node run-all.js <figma-url> <wp-page-id>`.
+Run them in order, or use `npm run pipeline -- <figma-url>`. `node scripts/run-all.js <figma-url>` is a local build alias that skips injection and visual QA.
 
 ## Setup
 
@@ -58,7 +115,7 @@ what Bricks expects (required keys, default settings, your actual global class
 names). This is Phase 0 from the earlier roadmap — do it by inspection, not by
 guessing. I've left `// VERIFY AGAINST YOUR EXPORTS` markers everywhere this matters.
 
-## What this prototype deliberately does NOT do yet
+## Original milestone 1 limitations (historical)
 - No auto-correction loop (step 5 produces a diff report; you or a second LLM
   call decide the fix — wiring that up is milestone 2)
 - No component-reuse detection ("this looks like our Card component")
@@ -346,15 +403,43 @@ Both rules run in `structure-rules.js` at compile time, so existing `normalized.
 - Nav pills as `button`: Figma has no button type; the nav items stay `text-basic`.
 - Hover states, custom CSS, `<p>` text wrapping: not in the Figma file.
 
-## Round 8 - borders, separators and mixed-style text from Figma (compile time, no model re-run)
+## Round 8 - CasinoFX run (real Figma data)
 
-Files: `scripts/structure-rules.js` (replace), `scripts/bricks-schema.js` (replace; one added line so `_spanCss` reaches `_cssCustom`).
+I compiled the 10 CasinoFX sections you attached (`figma-node.json` + the `normalized.json` files) with the current compiler and compared the result with your edited page. Four more things that are in Figma were being lost. All four are general rules in `structure-rules.js` (switch off with `--no-structure=<name>`):
 
-- `shadows` (extended): a card is often a frame with a solid RECTANGLE behind it that carries the drop shadow. The rectangle's shadow is used when it covers the frame. CasinoFX: 7 shadows (hand-made has 5).
-- `strokes` (new): a solid Figma stroke on the frame (or on the covering rectangle) becomes `border` colour + width. Bordered elements 16 -> 25; the missing border settings against the hand-made file go from 83 to 13.
-- `separators` (new): a thin LINE between two siblings of a row/column becomes the previous item's border on that side + padding = the gap before the line, and the row gap becomes the gap after it. Reproduces the footer links exactly (padding-right 18, 1px #FFFFFF33, gap 18).
-- `textRuns` (new): one Figma text with two styles becomes `Label <span>value</span>` with `#brxe-ID span { ... }` in `_cssCustom`. Reproduces 13 hand-made span texts (e.g. `9.2 <span>Score</span>` with weight 400 / 18px).
-- Switch off: `--no-structure=strokes` / `separators` / `textRuns` / `shadows` / `align`.
+| Rule | What it does | Where it showed |
+|---|---|---|
+| `separators` | A thin LINE between two siblings (the `\|` between footer links, rules between ranked rows) becomes a border on the next sibling: 1px colour from the line, padding = the Figma spacing after the line. Also finds lines the model left out entirely (Figma line 2236:41 "Expo"). Needs equal spacing before and after the line. | footer links, leaderboard rows |
+| `figmaSpacing` (under `align`) | Gap and left/top padding of a frame come from its Figma auto-layout `itemSpacing` / padding, but only when the rendered boxes agree with that value. | footer link rows 36 -> 18, a rank badge padding 0 -> 6 |
+| `pills` | A frame that only wraps one text and shrink-wraps it (tag, badge, pill, number chip) becomes that text with background, padding and radius, so there is no extra div. Not applied when the text is centred or stretched inside a wider frame, or when it has a link/image. | 22 elements on CasinoFX (PAGCOR tags, AD badges, rank numbers) |
+| line gap | `measureFlow` and `figmaSpacing` ignore the space a separator owns when they measure the gap | footer |
 
-Measured against the hand-made files (leaf settings that match): CasinoFX 96.5% -> 98.1%; first design 94.7% -> 93.9% (its hand file keeps one style in mixed texts; textRuns follows Figma). `align` is design dependent: first design +17 parents matched, CasinoFX -42 (use `--no-structure=align` there).
-Note: stage 3 only sees assets that exist on disk; with an empty `assets/` folder icon/image decisions and asset recovery are skipped.
+Checked: the first design scores the same as before (texts 204/209, mean error 6.7/6.4 px), no horizontal overflow at 1024 or 390.
+
+Not done, and why:
+- Nav "pills" as buttons: your edited page keeps them as text in a div, so there was nothing to copy.
+- `margin-left` 137/139/144 on the AD badges is a model value tied to its flow guess; it is not a Figma property.
+- Hover colours, custom CSS (`span` weight) and fixed card heights are not stored in Figma data.
+- Footer separators are borders on the link, so they are as tall as the link (24px) instead of Figma's 15px.
+- Icon 2214:65 is missing from the asset manifest: that is the extract step, not the compiler.
+
+## Round 9 - `--estimate` (know the token use before calling the model)
+
+`node scripts/2_normalize.js output/<frame> --nodes=<id> --name=section-NN --split=5500 --estimate`
+
+Builds exactly the prompts the run would send (same pruning, same parts), prints the number of model calls, input tokens, output tokens and a worst case with one repair call per part, then exits. Nothing is sent to any provider, so it costs nothing and needs no working key. The output size is measured from the section's existing `normalized.json` (or `normalized.rejected.json`) when there is one; otherwise it is guessed. Put `PRICE_IN_PER_MTOK` and `PRICE_OUT_PER_MTOK` (the model's dollar prices per million tokens) in `.env` to get the cost in dollars. Screenshots, if the run sends one, add roughly 1,500 input tokens each and are not counted in split mode.
+
+Anthropic keys that are not scoped to a workspace are refused with "must include the anthropic-workspace-id header". Either create the key inside a workspace in the console, or set `ANTHROPIC_WORKSPACE_ID=<id>` in `.env`; `2_normalize.js` then sends it as the `anthropic-workspace-id` header.
+
+With the Anthropic provider, each model call now prints the tokens the API reports (input/output), the running total for the run and, if `PRICE_IN_PER_MTOK`/`PRICE_OUT_PER_MTOK` are set, the cost so far.
+
+## Round 10 - paid model gave the same layout: two compiler faults, fixed
+
+Running section 12 with the paid model (all 10 parts accepted, no part rebuilt from Figma only) gave the same layout problems as Groq. So the cause is in the compiler's layout handling, not in the model. Two were found on your section-12 export and fixed with general rules:
+
+| Rule | Fault | Fix |
+|---|---|---|
+| `badges` (inside `backdrop`) | A small group of one shape + one number (rank badge) became a block as wide as the digit (8px) with the shape as a background that was squashed into it. In the first card the badge also left a 67px margin on the name below it. | The block takes the shape's Figma size (47x42), the number is centred in it, and the gaps in the parent column are measured again. All six cards now have the same 13px / 12.5px gaps as in Figma. |
+| `cardPictures` | In the article cards the picture came after the text in document order, and the card used a 200px top padding to leave room for it. | The picture becomes the first child of the card, the padding is cleared, and the text goes in an inner block that keeps the side padding. Same structure as the other cards. |
+
+Switch off with `--no-structure=badges` is not available (it runs with `backdrop`); `--no-structure=cardPictures` turns the second off. The first design scores the same as before (texts 204/209, mean error 6.7/6.4 px).

@@ -2,107 +2,164 @@
   "type": "page",
   "children": [
     {
-      "type": "row",
-      "id": "casino-card",
-      "figmaNodeId": "2227:148",
-      "layout": {
-        "display": "flex",
-        "direction": "row",
-        "gap": 45,
-        "align": "center"
-      },
+      "type": "section",
+      "id": "section-1",
       "children": [
         {
           "type": "row",
-          "id": "casino-info",
-          "figmaNodeId": "2227:148",
-          "layout": {
-            "display": "flex",
-            "direction": "row",
-            "gap": 19,
-            "align": "center"
+          "id": "frame-120",
+          "figmaNodeId": "2231:227"
+        },
+        {
+          "type": "column",
+          "id": "group-153",
+          "figmaNodeId": "2227:246",
+          "background": {
+            "color": "#F7F7F7"
+          },
+          "border": {
+            "radius": 0
           },
           "children": [
             {
-              "type": "image",
-              "id": "casino-logo",
-              "figmaNodeId": "2228:274",
-              "asset": {
-                "nodeId": "2228:274",
-                "kind": "image"
-              },
-              "border": {
-                "radius": 2000
-              }
-            },
-            {
               "type": "column",
-              "id": "casino-name",
-              "figmaNodeId": "2227:150",
+              "id": "inner-column-149",
               "layout": {
                 "display": "flex",
                 "direction": "column",
-                "gap": 6
+                "gap": 20
               },
               "children": [
                 {
-                  "type": "text",
-                  "id": "casino-title",
-                  "figmaNodeId": "2227:151",
-                  "text": "Wcasino Online",
-                  "typography": {
-                    "fontFamily": "Inter",
-                    "fontSize": 16,
-                    "fontWeight": 500,
-                    "lineHeight": "19.36px",
-                    "color": "#000000",
-                    "align": "left"
+                  "type": "image",
+                  "id": "rectangle-43",
+                  "figmaNodeId": "2228:279",
+                  "asset": {
+                    "nodeId": "2228:279",
+                    "kind": "image"
                   }
                 },
                 {
-                  "type": "text",
-                  "id": "casino-rigged",
-                  "figmaNodeId": "2227:152",
-                  "text": "🛑 94.2% Rigged",
-                  "typography": {
-                    "fontFamily": "Inter",
-                    "fontSize": 14,
-                    "fontWeight": 400,
-                    "lineHeight": "16.94px",
-                    "color": "#00000080",
-                    "align": "left"
-                  }
+                  "type": "column",
+                  "id": "frame-113",
+                  "figmaNodeId": "2227:250",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "gap": 20
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "leaked-admin-backend-screenshot-where-lucky-draw-ticket-numbers-are-altered",
+                      "figmaNodeId": "2227:251",
+                      "text": "Leaked admin backend screenshot where lucky draw ticket numbers are altered.",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "19.36px",
+                        "color": "#000000CC",
+                        "align": "left"
+                      }
+                    },
+                    {
+                      "type": "row",
+                      "id": "frame-112",
+                      "figmaNodeId": "2227:252",
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "gap": 144,
+                        "justify": "space-between",
+                        "align": "center"
+                      },
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "frame-111",
+                          "figmaNodeId": "2227:253",
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 8,
+                            "align": "center"
+                          },
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "ellipse-4",
+                              "figmaNodeId": "2227:254",
+                              "asset": {
+                                "nodeId": "2227:254",
+                                "kind": "image"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "mathgenius",
+                              "figmaNodeId": "2227:255",
+                              "text": "MathGenius",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 14,
+                                "fontWeight": 400,
+                                "lineHeight": "16.94px",
+                                "color": "#00000099",
+                                "align": "left"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "row",
+                          "id": "frame-110",
+                          "figmaNodeId": "2227:256",
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 6,
+                            "align": "center"
+                          },
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "frame-svg",
+                              "figmaNodeId": "2227:257",
+                              "asset": {
+                                "nodeId": "2227:257",
+                                "kind": "svg"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "612",
+                              "figmaNodeId": "2227:259",
+                              "text": "612",
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 14,
+                                "fontWeight": 400,
+                                "lineHeight": "16.94px",
+                                "color": "#00000099",
+                                "align": "left"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
           ]
-        },
-        {
-          "type": "button",
-          "id": "proof-button",
-          "figmaNodeId": "2227:153",
-          "text": "Proof",
-          "layout": {
-            "display": "flex",
-            "direction": "row",
-            "gap": 10,
-            "align": "center",
-            "justify": "center",
-            "padding": {
-              "left": 20,
-              "right": 20,
-              "top": 12,
-              "bottom": 12
-            }
-          },
-          "background": {
-            "color": "#FFD733"
-          },
-          "border": {
-            "radius": 4
-          }
         }
       ]
     }
+  ],
+  "_uncertain": [
+    "layout gaps and alignments inferred where not explicit",
+    "border radius omitted (assumed 0)"
   ]
 }

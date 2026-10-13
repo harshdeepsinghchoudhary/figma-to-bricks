@@ -2,74 +2,129 @@
   "type": "page",
   "children": [
     {
-      "type": "column",
-      "id": "casino-list",
-      "figmaNodeId": "2231:222",
-      "layout": {
-        "display": "flex",
-        "direction": "column",
-        "gap": 16
-      }
-    },
-    {
-      "type": "row",
-      "id": "casino-row-slot-powers",
-      "figmaNodeId": "2227:140",
-      "background": {
-        "color": "#F7F7F7"
-      },
-      "border": {
-        "radius": 8
-      }
-    },
-    {
-      "type": "row",
-      "id": "casino-row-inner",
-      "figmaNodeId": "2227:139",
-      "layout": {
-        "display": "flex",
-        "direction": "row",
-        "gap": 28,
-        "align": "center"
-      },
-      "size": {
-        "width": 483,
-        "height": 68
-      }
-    },
-    {
-      "type": "column",
-      "id": "casino-number-slot-powers",
-      "figmaNodeId": "2227:134",
+      "type": "section",
+      "id": "section-1",
+      "notes": [
+        "Layout hierarchy omitted due to lack of explicit auto‑layout data."
+      ],
       "children": [
         {
-          "type": "icon",
-          "id": "casino-number-icon-slot-powers",
-          "figmaNodeId": "2227:135",
-          "asset": {
-            "nodeId": "2227:135",
-            "kind": "svg"
-          },
-          "size": {
-            "width": 47,
-            "height": 41.5
-          }
-        },
-        {
-          "type": "text-basic",
-          "id": "casino-number-text-slot-powers",
-          "figmaNodeId": "2227:136",
-          "text": "4",
-          "typography": {
-            "fontFamily": "Inter",
-            "fontSize": 16,
-            "fontWeight": 500,
-            "color": "#8B8B8B",
-            "lineHeight": "19.36px",
-            "align": "left"
-          }
+          "type": "row",
+          "id": "section-1-row-1",
+          "children": [
+            {
+              "type": "container",
+              "id": "group-148",
+              "figmaNodeId": "2227:155",
+              "background": {
+                "color": "#F7F7F7"
+              },
+              "border": {
+                "radius": 8
+              },
+              "size": {
+                "width": 527,
+                "height": 104
+              },
+              "children": [
+                {
+                  "type": "row",
+                  "id": "frame-109-1",
+                  "figmaNodeId": "2227:157",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "group-145-1",
+                      "figmaNodeId": "2227:158",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "vector-2",
+                          "figmaNodeId": "2227:159",
+                          "asset": {
+                            "nodeId": "2227:159",
+                            "kind": "svg"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "text-160",
+                          "figmaNodeId": "2227:160",
+                          "text": "6"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "frame-108-1",
+                      "figmaNodeId": "2227:161",
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "frame-107-1",
+                          "figmaNodeId": "2227:162",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "slots-amigo",
+                              "figmaNodeId": "2228:277",
+                              "asset": {
+                                "nodeId": "2228:277",
+                                "kind": "image"
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "frame-104-1",
+                              "figmaNodeId": "2227:164",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "text-165",
+                                  "figmaNodeId": "2227:165",
+                                  "text": "SlotsAmigo"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "text-166",
+                                  "figmaNodeId": "2227:166",
+                                  "text": "🛑 94.2% Rigged"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "button",
+                          "id": "proof-button",
+                          "figmaNodeId": "2227:167",
+                          "text": "Proof"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "id": "rtp-heading",
+              "figmaNodeId": "2226:9",
+              "text": "RTP Manipulation & Tactics",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 32,
+                "fontWeight": 600,
+                "lineHeight": "38.73px",
+                "color": "#000000"
+              }
+            }
+          ]
         }
       ]
     }
+  ],
+  "_uncertain": [
+    "Exact layout mode (row/column) and gap values for containers not provided."
   ]
 }

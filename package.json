@@ -11,7 +11,12 @@
     "inject:mcp": "node scripts/4_inject_mcp.js",
     "measure": "node scripts/5_measure.js",
     "all": "node scripts/run-all.js",
-    "pipeline": "node --env-file=.env scripts/pipeline.js"
+    "pipeline": "node scripts/pipeline.js",
+    "visual": "node scripts/6_visual_review.js",
+    "check:vision": "node scripts/check-vision.js",
+    "doctor": "node scripts/doctor.js",
+    "schema:sync": "node scripts/sync-bricks-schema.js",
+    "test": "node --test tests/project.test.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",
@@ -19,9 +24,7 @@
     "dotenv": "^16.6.1",
     "jsonrepair": "^3.8.0",
     "node-fetch": "^3.3.2",
-    "playwright-core": "^1.48.0"
-  },
-  "optionalDependencies": {
+    "playwright-core": "^1.48.0",
     "sharp": "^0.33.5"
   }
 }

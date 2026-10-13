@@ -1,8 +1,8 @@
 [
   {
-    "id": "wnmx7t",
+    "id": "r27mla",
     "name": "text",
-    "parent": "bamybh",
+    "parent": "odymyp",
     "children": [],
     "settings": {
       "text": "<p>Brand Logo</p>",
@@ -20,9 +20,9 @@
     }
   },
   {
-    "id": "d2c67a",
+    "id": "4ys8bu",
     "name": "text",
-    "parent": "lz6csh",
+    "parent": "p0du1w",
     "children": [],
     "settings": {
       "text": "<p>Find and Verify the Best Online Casinos Safely</p>",
@@ -40,9 +40,9 @@
     }
   },
   {
-    "id": "mm34bj",
+    "id": "0haes2",
     "name": "icon",
-    "parent": "lz6csh",
+    "parent": "p0du1w",
     "children": [],
     "settings": {
       "icon": {
@@ -61,12 +61,12 @@
     "themeStyles": []
   },
   {
-    "id": "lz6csh",
+    "id": "p0du1w",
     "name": "div",
-    "parent": "culu3q",
+    "parent": "x0gtk1",
     "children": [
-      "d2c67a",
-      "mm34bj"
+      "4ys8bu",
+      "0haes2"
     ],
     "settings": {
       "_display": "flex",
@@ -78,11 +78,11 @@
     }
   },
   {
-    "id": "culu3q",
+    "id": "x0gtk1",
     "name": "div",
-    "parent": "lz1w1a",
+    "parent": "cznt9v",
     "children": [
-      "lz6csh"
+      "p0du1w"
     ],
     "settings": {
       "_display": "flex",
@@ -113,9 +113,9 @@
     }
   },
   {
-    "id": "wbb615",
+    "id": "48twk3",
     "name": "icon",
-    "parent": "cmaixk",
+    "parent": "68iqyv",
     "children": [],
     "settings": {
       "icon": {
@@ -135,9 +135,9 @@
     "themeStyles": []
   },
   {
-    "id": "3eo9cz",
+    "id": "bkn5l0",
     "name": "icon",
-    "parent": "m6eqz1",
+    "parent": "f3ts5g",
     "children": [],
     "settings": {
       "icon": {
@@ -156,9 +156,9 @@
     "themeStyles": []
   },
   {
-    "id": "om7uzj",
+    "id": "hsibys",
     "name": "text",
-    "parent": "m6eqz1",
+    "parent": "f3ts5g",
     "children": [],
     "settings": {
       "text": "<p>English</p>",
@@ -176,12 +176,12 @@
     }
   },
   {
-    "id": "m6eqz1",
+    "id": "f3ts5g",
     "name": "div",
-    "parent": "j2yzpn",
+    "parent": "z3lrth",
     "children": [
-      "3eo9cz",
-      "om7uzj"
+      "bkn5l0",
+      "hsibys"
     ],
     "settings": {
       "_display": "flex",
@@ -195,9 +195,9 @@
     }
   },
   {
-    "id": "zosmrh",
+    "id": "7rne70",
     "name": "icon",
-    "parent": "j2yzpn",
+    "parent": "z3lrth",
     "children": [],
     "settings": {
       "icon": {
@@ -217,12 +217,12 @@
     "themeStyles": []
   },
   {
-    "id": "j2yzpn",
+    "id": "z3lrth",
     "name": "div",
-    "parent": "wcsfn7",
+    "parent": "5w0bxw",
     "children": [
-      "m6eqz1",
-      "zosmrh"
+      "f3ts5g",
+      "7rne70"
     ],
     "settings": {
       "_display": "flex",
@@ -249,16 +249,6 @@
           "right": "4px",
           "bottom": "4px",
           "left": "4px"
-        },
-        "style": "solid",
-        "color": {
-          "raw": "#FFFFFF0F"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
         }
       },
       "_direction:tablet_portrait": "column",
@@ -268,9 +258,9 @@
     }
   },
   {
-    "id": "blbr1k",
+    "id": "yv060z",
     "name": "icon",
-    "parent": "ggrmfa",
+    "parent": "emicqt",
     "children": [],
     "settings": {
       "icon": {
@@ -289,9 +279,9 @@
     "themeStyles": []
   },
   {
-    "id": "fbivd0",
+    "id": "4lmvwt",
     "name": "text",
-    "parent": "ggrmfa",
+    "parent": "emicqt",
     "children": [],
     "settings": {
       "text": "<p>Download</p>",
@@ -309,12 +299,12 @@
     }
   },
   {
-    "id": "ggrmfa",
+    "id": "emicqt",
     "name": "div",
-    "parent": "apviyo",
+    "parent": "5zr0dg",
     "children": [
-      "blbr1k",
-      "fbivd0"
+      "yv060z",
+      "4lmvwt"
     ],
     "settings": {
       "_display": "flex",
@@ -332,11 +322,11 @@
     }
   },
   {
-    "id": "apviyo",
+    "id": "5zr0dg",
     "name": "div",
-    "parent": "wcsfn7",
+    "parent": "5w0bxw",
     "children": [
-      "ggrmfa"
+      "emicqt"
     ],
     "settings": {
       "_display": "flex",
@@ -367,12 +357,12 @@
     }
   },
   {
-    "id": "wcsfn7",
+    "id": "5w0bxw",
     "name": "div",
-    "parent": "cmaixk",
+    "parent": "68iqyv",
     "children": [
-      "j2yzpn",
-      "apviyo"
+      "z3lrth",
+      "5zr0dg"
     ],
     "settings": {
       "_display": "flex",
@@ -389,12 +379,12 @@
     }
   },
   {
-    "id": "cmaixk",
+    "id": "68iqyv",
     "name": "div",
-    "parent": "lz1w1a",
+    "parent": "cznt9v",
     "children": [
-      "wbb615",
-      "wcsfn7"
+      "48twk3",
+      "5w0bxw"
     ],
     "settings": {
       "_display": "flex",
@@ -411,12 +401,12 @@
     }
   },
   {
-    "id": "lz1w1a",
+    "id": "cznt9v",
     "name": "div",
-    "parent": "bamybh",
+    "parent": "odymyp",
     "children": [
-      "culu3q",
-      "cmaixk"
+      "x0gtk1",
+      "68iqyv"
     ],
     "settings": {
       "_display": "flex",
@@ -433,12 +423,12 @@
     }
   },
   {
-    "id": "bamybh",
+    "id": "odymyp",
     "name": "div",
-    "parent": "t643ro",
+    "parent": "xt4xr3",
     "children": [
-      "wnmx7t",
-      "lz1w1a"
+      "r27mla",
+      "cznt9v"
     ],
     "settings": {
       "_display": "flex",
@@ -452,11 +442,11 @@
     }
   },
   {
-    "id": "t643ro",
+    "id": "xt4xr3",
     "name": "container",
-    "parent": "wd68ln",
+    "parent": "iifi1n",
     "children": [
-      "bamybh"
+      "odymyp"
     ],
     "settings": {
       "_display": "flex",
@@ -467,11 +457,11 @@
     }
   },
   {
-    "id": "wd68ln",
+    "id": "iifi1n",
     "name": "section",
     "parent": 0,
     "children": [
-      "t643ro"
+      "xt4xr3"
     ],
     "settings": {
       "_padding": {

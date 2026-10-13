@@ -17,6 +17,7 @@
 import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import fetch from "node-fetch";
 import { findPanels } from "./decoration-detect.js";
 
@@ -24,6 +25,7 @@ const args = process.argv.slice(2);
 const figmaUrl = args.find((a) => !a.startsWith("--"));
 const DRY_RUN = args.includes("--dry-run");
 const NO_SVG = args.includes("--no-svg");
+const REFRESH = args.includes("--refresh");
 
 const FIGMA_TOKEN = process.env.FIGMA_TOKEN;
 if (!FIGMA_TOKEN && !DRY_RUN) {
@@ -116,12 +118,19 @@ function visualSig(node) {
   const hex = (c) => (c ? [c.r, c.g, c.b, c.a ?? 1].map((v) => Math.round(v * 255)).join(",") : "");
   const paints = (arr) => (arr || []).filter((p) => p.visible !== false).map((p) => `${p.type}:${hex(p.color)}:${(p.gradientStops || []).map((s) => hex(s.color) + "@" + Math.round(s.position * 100)).join(";")}`).join("|");
   const parts = [];
+  let hasPathGeometry = false;
   (function walk(n) {
     if (n.visible === false) return;
     const b = n.absoluteBoundingBox;
     parts.push(`${n.type}[${paints(n.fills)}][${paints(n.strokes)}]${n.strokeWeight || 0}/${n.cornerRadius || 0}/${b ? Math.round(b.width) + "x" + Math.round(b.height) : ""}`);
+    const geometry = n.vectorPaths || n.fillGeometry || n.vectorNetwork;
+    if (geometry) { hasPathGeometry = true; parts.push(JSON.stringify(geometry)); }
+    parts.push(JSON.stringify({ transform: n.relativeTransform, opacity: n.opacity, effects: n.effects, strokeGeometry: n.strokeGeometry, radii: n.rectangleCornerRadii }));
     for (const c of n.children || []) walk(c);
   })(node);
+  // Equal names/colours/boxes are not proof of equal paths (e.g. a check and an X).
+  // Without path geometry, only known component instances may share an export.
+  if (!node.componentId && !hasPathGeometry) parts.push(node.id);
   let h = 0;
   const str = parts.join("~");
   for (let i = 0; i < str.length; i++) h = (Math.imul(31, h) + str.charCodeAt(i)) | 0;
@@ -141,13 +150,20 @@ function dedupeSvg(nodes) {
 function slugify(s) {
   return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "").slice(0, 60) || "frame";
 }
-function findCachedDir(nodeId) {
+function findCachedDir(fileKey, nodeId) {
   if (!fs.existsSync("output")) return null;
   for (const d of fs.readdirSync("output")) {
     const p = path.join("output", d, "figma-node.json");
     if (!fs.existsSync(p)) continue;
     try {
-      if (JSON.parse(fs.readFileSync(p, "utf8")).id === nodeId) return path.join("output", d);
+      if (JSON.parse(fs.readFileSync(p, "utf8")).id !== nodeId) continue;
+      const dir = path.join("output", d);
+      const identityPath = path.join(dir, "extract-source.json");
+      const identity = fs.existsSync(identityPath) ? JSON.parse(fs.readFileSync(identityPath, "utf8")) : null;
+      const sourcePath = path.join(dir, "source.json");
+      const legacy = fs.existsSync(sourcePath) ? JSON.parse(fs.readFileSync(sourcePath, "utf8")) : null;
+      if (identity?.fileKey === fileKey && identity.nodeId === nodeId) return dir;
+      if (!identity && legacy?.figmaUrl && parseFigmaUrl(legacy.figmaUrl).fileKey === fileKey) return dir;
     } catch {}
   }
   return null;
@@ -179,9 +195,9 @@ async function main() {
   console.log(`File: ${fileKey}  Node: ${nodeId}${DRY_RUN ? "   [DRY RUN]" : ""}`);
 
   // 1) node tree (cached -> no API call)
-  let outDir = findCachedDir(nodeId);
+  let outDir = findCachedDir(fileKey, nodeId);
   let rootNode;
-  if (outDir) {
+  if (outDir && (!REFRESH || DRY_RUN)) {
     console.log(`Using cached ${outDir}/figma-node.json (no API call)`);
     rootNode = JSON.parse(fs.readFileSync(path.join(outDir, "figma-node.json"), "utf8"));
   } else {
@@ -191,11 +207,13 @@ async function main() {
     const nodeResult = nodeData.nodes[nodeId];
     if (!nodeResult) throw new Error(`Node ${nodeId} not found in response`);
     rootNode = nodeResult.document;
-    outDir = path.join("output", slugify(rootNode.name));
+    const suffix = createHash("sha256").update(`${fileKey}:${nodeId}`).digest("hex").slice(0, 8);
+    outDir ||= path.join("output", `${slugify(rootNode.name)}-${suffix}`);
     fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(path.join(outDir, "figma-node.json"), JSON.stringify(rootNode, null, 2));
     console.log(`Wrote ${outDir}/figma-node.json`);
   }
+  fs.writeFileSync(path.join(outDir, "extract-source.json"), JSON.stringify({ fileKey, nodeId, figmaUrl }, null, 2));
   const assetsDir = path.join(outDir, "assets");
   fs.mkdirSync(assetsDir, { recursive: true });
 
@@ -248,13 +266,13 @@ async function main() {
 
   // 3) screenshot (skip if cached)
   const shot = path.join(outDir, "screenshot.png");
-  if (fs.existsSync(shot)) {
+  if (fs.existsSync(shot) && !REFRESH) {
     console.log("screenshot.png already exists, skipping");
   } else {
     console.log("Requesting frame screenshot...");
     const s = await figmaGet(`/images/${fileKey}?ids=${encodeURIComponent(nodeId)}&scale=2&format=png`);
     if (s.images[nodeId] && (await download(s.images[nodeId], shot))) console.log(`Wrote ${shot}`);
-    else console.warn("No screenshot returned.");
+    else throw new Error("Frame screenshot download failed; extraction is incomplete.");
   }
 
   // 4) assets, resumable, manifest saved after every batch
@@ -262,7 +280,7 @@ async function main() {
   // Entries from an earlier run are kept only if they still match the current grouping: before icons were told apart by colour,
   // a red X could be mapped onto the green check's file. Those stale entries are dropped so the right icon is exported.
   const plannedFileOf = new Map(planned.map((p) => [p.nodeId, p.file]));
-  const manifest = (fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, "utf8")) : []).filter(
+  const manifest = (!REFRESH && fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, "utf8")) : []).filter(
     (m) => fs.existsSync(path.join(outDir, m.file)) && (!plannedFileOf.has(m.nodeId) || plannedFileOf.get(m.nodeId) === m.file)
   );
   const dropped = (fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, "utf8")).length : 0) - manifest.length;
@@ -271,6 +289,15 @@ async function main() {
   const have = new Set(manifest.map((m) => m.nodeId));
 
   async function exportAndSave(items, format) {
+    // New instances of a cached graphic still need their node -> file mapping.
+    for (const it of items) {
+      const cached = manifest.find((m) => m.nodeId === it.rep.id);
+      if (!cached) continue;
+      for (const member of it.members) if (!have.has(member.id)) {
+        manifest.push({ ...cached, nodeId: member.id, name: member.name }); have.add(member.id);
+      }
+    }
+    saveManifest();
     // items: [{ rep, members }]; only the rep is exported, every member maps to that file
     const todo = items.filter((it) => !have.has(it.rep.id));
     if (!todo.length) return console.log(`${format}: nothing left to export`);
@@ -301,6 +328,8 @@ async function main() {
   await exportAndSave(svgGroups, "svg");
 
   saveManifest();
+  const missing = planned.filter((p) => !have.has(p.nodeId));
+  if (missing.length) throw new Error(`${missing.length} assets were not exported. Re-run extraction to resume; pipeline stopped before normalization.`);
   console.log(`Manifest has ${manifest.length} node->file mapping(s). Done. Output in ${outDir}/`);
 }
 

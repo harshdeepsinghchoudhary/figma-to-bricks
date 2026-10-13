@@ -1,118 +1,102 @@
-/**
- * ONE COMMAND: Figma -> extract -> AI normalize -> compile -> merge -> push into a Bricks page -> save everything as a dataset.
- *
- *   node --env-file=.env scripts/pipeline.js "<figma-url-with-node-id>"                      new draft page
- *   node --env-file=.env scripts/pipeline.js "<figma-url>" --page 123                         write into page 123
- *   node --env-file=.env scripts/pipeline.js "<figma-url>" --title "Jili home" --split=4600
- *
- * Options
- *   --page <id> | --title "<t>"   target page (default: new DRAFT page "Figma import - <frame> <date>")
- *   --frame output/<name>         skip stage 1 and use an existing frame folder (no URL needed)
- *   --no-inject                   build everything, do not touch WordPress
- *   --strict                      stop before WordPress when any section failed (default: push the finished sections and list the rest)
- *   --skip=section-02             leave a broken or duplicate section out on purpose (passed to run-sections.js)
- *   --force                       redo the AI step for finished sections (spends tokens)
- *   --only=a,b   --split=N        passed to run-sections.js
- *   --no-dataset                  do not write the dataset
- *
- * Every run writes output/<frame>/runs/<timestamp>/ (run.json + run.log) and refreshes output/<frame>/dataset/ (see export-dataset.js).
- * Stages are resumable: re-running the same command reuses the cached Figma data, assets and finished sections.
- */
+/** Resumable Figma -> Bricks pipeline; visual QA and complete builds gate injection. */
+import "dotenv/config";
 import { spawn } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
 const args = process.argv.slice(2);
-const val = (n) => { const i = args.indexOf(n); if (i >= 0) return args[i + 1]; const a = args.find((x) => x.startsWith(n + "=")); return a ? a.slice(n.length + 1) : undefined; };
-const has = (n) => args.includes(n);
-const valued = new Set(["--page", "--title", "--frame"]);
+const valued = new Set(["--page", "--title", "--frame", "--only", "--split", "--skip", "--visual-iterations"]);
+const val = (name) => { const i = args.indexOf(name); if (i >= 0) { if (!args[i + 1] || args[i + 1].startsWith("--")) throw new Error(`${name} needs a value`); return args[i + 1]; } return args.find((a) => a.startsWith(name + "="))?.slice(name.length + 1); };
+const has = (name) => args.includes(name);
 const url = args.find((a, i) => !a.startsWith("--") && !valued.has(args[i - 1]));
-let frameDir = val("--frame");
-if (!url && !frameDir) { console.error('Usage: node --env-file=.env scripts/pipeline.js "<figma-url-with-node-id>" [--page <id> | --title "<t>"] [--no-inject] [--force]'); process.exit(1); }
-
+const allowed = new Set([...valued, "--refresh", "--no-inject", "--inject-partial", "--strict", "--force", "--keep-duplicates", "--no-dataset", "--no-visual", "--visual-review-only"]);
 const stamp = new Date().toISOString().replace(/[:.]/g, "-");
-const steps = [];
-let logStream = null;
-const log = (s) => { process.stdout.write(s + "\n"); logStream?.write(s + "\n"); };
-
-function run(label, script, a, { capture } = {}) {
+const steps = [], state = { figmaUrl: url || null, frameDir: null, postId: null, startedAt: new Date().toISOString() };
+let runDir, logFile, pendingLog = "";
+function write(s) { process.stdout.write(s); if (logFile) fs.appendFileSync(logFile, s); else pendingLog += s; }
+const log = (s) => write(s + "\n");
+function run(label, script, argv) {
   return new Promise((resolve) => {
-    log(`\n=== ${label}: node scripts/${script} ${a.join(" ")} ===`);
-    const t0 = Date.now();
-    const p = spawn(process.execPath, [path.join("scripts", script), ...a], { stdio: ["inherit", "pipe", "pipe"], env: process.env });
-    let out = "";
-    const onData = (d) => { const s = d.toString(); out += s; process.stdout.write(s); logStream?.write(s); };
-    p.stdout.on("data", onData); p.stderr.on("data", onData);
-    p.on("close", (code) => { steps.push({ label, script, args: a, code, seconds: Math.round((Date.now() - t0) / 1000) }); resolve({ code, out }); });
+    log(`\n=== ${label}: node scripts/${script} ${argv.join(" ")} ===`);
+    const started = Date.now(); let out = "", settled = false;
+    const child = spawn(process.execPath, [path.join("scripts", script), ...argv], { stdio: ["inherit", "pipe", "pipe"], env: process.env });
+    const done = (code, error) => { if (settled) return; settled = true; steps.push({ label, script, args: argv, code, seconds: Math.round((Date.now() - started) / 1000), ...(error ? { error } : {}) }); resolve({ code, out }); };
+    const onData = (d) => { const s = d.toString(); out += s; write(s); };
+    child.stdout.on("data", onData); child.stderr.on("data", onData);
+    child.on("error", (e) => { log(e.message); done(1, e.message); });
+    child.on("close", (code) => done(code ?? 1));
   });
 }
-const fail = (m) => { log(`\nSTOPPED: ${m}`); finish(1); };
-let state = { figmaUrl: url || null, frameDir: null, postId: null, startedAt: new Date().toISOString() };
-function finish(code) {
-  if (state.frameDir) {
-    const dir = path.join(state.frameDir, "runs", stamp);
-    fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, "run.json"), JSON.stringify({ ...state, args, steps, finishedAt: new Date().toISOString(), exitCode: code }, null, 2));
+async function main() {
+  for (const arg of args.filter((a) => a.startsWith("--"))) if (!allowed.has(arg.split("=")[0])) throw new Error(`Unknown option ${arg}`);
+  let frameDir = val("--frame");
+  if (!url && !frameDir) throw new Error('Usage: npm run pipeline -- "<figma-url>" [--page <id>] [--no-inject] [--no-visual]');
+  if (val("--page") && (!/^\d+$/.test(val("--page")) || Number(val("--page")) < 1)) throw new Error("--page must be a positive numeric post ID.");
+  if (has("--strict") && has("--inject-partial")) throw new Error("--strict and --inject-partial cannot be combined.");
+  if (!frameDir) {
+    const extraction = await run("1 extract", "1_extract_figma.js", [url, ...(has("--refresh") ? ["--refresh"] : [])]);
+    if (extraction.code) throw new Error("Figma extraction failed.");
+    frameDir = [...extraction.out.matchAll(/Output in (.+)[\\/]\s*$/gm)].at(-1)?.[1];
+    if (!frameDir) throw new Error("Extraction did not identify its output folder.");
   }
-  logStream?.end();
-  process.exit(code);
-}
-
-// ---- 1. extract ----
-if (!frameDir) {
-  const before = new Map();
-  if (fs.existsSync("output")) for (const d of fs.readdirSync("output")) { const f = path.join("output", d, "figma-node.json"); if (fs.existsSync(f)) before.set(d, fs.statSync(f).mtimeMs); }
-  const r = await run("1/5 extract from Figma", "1_extract_figma.js", [url]);
-  if (r.code !== 0) fail("Figma extraction failed (check FIGMA_TOKEN and the URL).");
-  const touched = fs.readdirSync("output").map((d) => ({ d, f: path.join("output", d, "figma-node.json") })).filter((x) => fs.existsSync(x.f))
-    .map((x) => ({ ...x, t: fs.statSync(x.f).mtimeMs, changed: !before.has(x.d) || before.get(x.d) !== fs.statSync(x.f).mtimeMs }))
-    .sort((a, b) => Number(b.changed) - Number(a.changed) || b.t - a.t);
-  const m = /output[\\/]([^\\/\s]+)[\\/]/.exec(r.out);
-  frameDir = path.join("output", (m && fs.existsSync(path.join("output", m[1], "figma-node.json")) ? m[1] : touched[0]?.d) || "");
-}
-if (!fs.existsSync(path.join(frameDir, "figma-node.json"))) { console.error(`No figma-node.json in ${frameDir}`); process.exit(1); }
-state.frameDir = frameDir;
-fs.mkdirSync(path.join(frameDir, "runs", stamp), { recursive: true });
-logStream = fs.createWriteStream(path.join(frameDir, "runs", stamp, "run.log"));
-if (url) fs.writeFileSync(path.join(frameDir, "source.json"), JSON.stringify({ figmaUrl: url, extractedAt: new Date().toISOString() }, null, 2));
-log(`Frame folder: ${frameDir}`);
-
-// ---- 2+3. AI normalize + compile + merge (run-sections.js) ----
-const rs = [frameDir];
-for (const f of ["--force", "--keep-duplicates"]) if (has(f)) rs.push(f);
-for (const o of ["--only", "--split", "--skip"]) { const v = val(o); if (v) rs.push(`${o}=${v}`); }
-const r2 = await run("2-3/5 AI normalize + compile + merge", "run-sections.js", rs);
-const sectionsFailed = r2.code !== 0;
-const mergedTree = path.join(frameDir, "merged", "bricks-tree.json");
-if (!fs.existsSync(mergedTree)) fail("nothing was compiled, so there is nothing to push.");
-
-// ---- 4. inject ----
-if (has("--no-inject")) log("\n4/5 push to WordPress: skipped (--no-inject)");
-else if (sectionsFailed && has("--strict")) log("\n4/5 push to WordPress: SKIPPED (--strict) because some sections failed. Re-run the same command (it resumes).");
-else {
-  const ia = [path.join(frameDir, "merged"), "--fix-keys"];
-  if (val("--page")) ia.push("--page", val("--page"));
-  else ia.push("--title", val("--title") || `Figma import - ${path.basename(frameDir)} ${new Date().toISOString().slice(0, 10)}`);
-  const r4 = await run("4/5 push into Bricks page", "4_inject_mcp.js", ia);
-  if (r4.code !== 0) log("\nWordPress push failed. Everything built so far is saved; fix the error above and re-run (cached steps are skipped).");
+  if (!fs.existsSync(path.join(frameDir, "figma-node.json"))) throw new Error(`No figma-node.json in ${frameDir}`);
+  state.frameDir = frameDir;
+  runDir = path.join(frameDir, "runs", stamp); fs.mkdirSync(runDir, { recursive: true });
+  logFile = path.join(runDir, "run.log"); fs.writeFileSync(logFile, pendingLog); pendingLog = "";
+  if (url) fs.writeFileSync(path.join(frameDir, "source.json"), JSON.stringify({ figmaUrl: url, extractedAt: new Date().toISOString() }, null, 2));
+  log(`Frame folder: ${frameDir}`);
+  const sectionArgs = [frameDir];
+  for (const name of ["--force", "--keep-duplicates"]) if (has(name)) sectionArgs.push(name);
+  for (const name of ["--only", "--split", "--skip"]) if (val(name)) sectionArgs.push(`${name}=${val(name)}`);
+  const reportFile = path.join(frameDir, "build-report.json");
+  // A failed child must not inherit a previous successful build report.
+  fs.writeFileSync(reportFile, JSON.stringify({ status: "pending", merged: false }));
+  const build = await run("2-3 normalize, compile, merge", "run-sections.js", sectionArgs);
+  const buildReport = JSON.parse(fs.readFileSync(reportFile, "utf8"));
+  if (!buildReport.merged) throw new Error("This run did not produce a merge; old merged output will not be injected.");
+  const mergedDir = path.join(frameDir, "merged"), mergedTree = path.join(mergedDir, "bricks-tree.json");
+  if ((await run("validate merged tree", "bricks-validator.js", [mergedTree])).code) throw new Error("Merged tree failed structural validation.");
+  let visualFailed = false;
+  let providerWaiting = false;
+  if (!has("--no-visual")) {
+    const visualArgs = [frameDir, `--iterations=${val("--visual-iterations") || 2}`];
+    if (!has("--visual-review-only")) visualArgs.push("--fix");
+    const reviewed = await run("visual screenshot review", "6_visual_review.js", visualArgs);
+    visualFailed = reviewed.code !== 0;
+    providerWaiting = reviewed.code === 75;
+    if (providerWaiting) state.status = "waiting-for-provider";
+    // Corrections can be retained even if other issues still need review; always refresh the template.
+    if ((await run("wrap reviewed tree", "wrap-template.js", [mergedDir, val("--title") || `${path.basename(frameDir)} page`])).code) throw new Error("Reviewed template wrap failed.");
+  } else log("Visual review explicitly skipped (--no-visual).");
+  let failed = !!build.code || visualFailed;
+  const blocked = visualFailed || (build.code && !has("--inject-partial"));
+  if (has("--no-inject")) log("WordPress injection skipped (--no-inject).");
+  else if (blocked) log("WordPress injection stopped because build/visual QA has unresolved failures.");
   else {
-    try { state.postId = JSON.parse(fs.readFileSync(path.join("output", "mcp-inject-merged.json"), "utf8")).postId; } catch {}
-    const rep = path.join("output", "mcp-inject-merged.json");
-    if (fs.existsSync(rep)) fs.copyFileSync(rep, path.join(frameDir, "runs", stamp, "inject-report.json"));
-    const rn = path.join("output", "mcp-fixed-tree-merged.json");
-    if (fs.existsSync(rn)) fs.copyFileSync(rn, path.join(frameDir, "runs", stamp, "fixed-tree.json"));
+    const injectArgs = [mergedDir, "--fix-keys", "--report-dir", path.join(runDir, "mcp")];
+    if (val("--page")) injectArgs.push("--page", val("--page"));
+    else injectArgs.push("--title", val("--title") || `Figma import - ${path.basename(frameDir)} ${new Date().toISOString().slice(0, 10)}`);
+    const injected = await run("4 inject into Bricks", "4_inject_mcp.js", injectArgs);
+    failed = !!injected.code || failed;
+    if (!injected.code) {
+      const report = JSON.parse(fs.readFileSync(path.join(mergedDir, "inject-report.json"), "utf8")); state.postId = report.postId;
+      for (const file of ["inject-report.json", "injected-tree.json"]) fs.copyFileSync(path.join(mergedDir, file), path.join(runDir, file));
+    }
   }
+  fs.copyFileSync(mergedTree, path.join(runDir, "compiled-tree.json"));
+  const visualFile = path.join(mergedDir, "visual-report.json");
+  if (!has("--no-visual") && fs.existsSync(visualFile)) fs.copyFileSync(visualFile, path.join(runDir, "visual-report.json"));
+  if (!has("--no-dataset")) {
+    const datasetArgs = [frameDir, "--run", runDir];
+    if (state.postId) datasetArgs.push("--page", String(state.postId));
+    const exported = await run("5 export dataset", "export-dataset.js", datasetArgs);
+    failed = !!exported.code || failed;
+  }
+  log(providerWaiting ? "\nWaiting for provider quota. Cached work and dataset are saved; see visual-report.json for the retry time." : failed ? "\nFinished with failures. See run.json and run.log." : "\nCompleted successfully.");
+  return providerWaiting && !build.code && !steps.some((s) => s.code && !["6_visual_review.js"].includes(s.script)) ? 75 : failed ? 1 : 0;
 }
-
-// ---- 5. dataset ----
-if (!has("--no-dataset")) {
-  const da = [frameDir];
-  if (state.postId) da.push("--page", String(state.postId));
-  await run("5/5 save dataset", "export-dataset.js", da);
-}
-
-log(`\nDone${sectionsFailed ? " (with failed sections - see above)" : ""}.`);
-log(`  frame folder : ${frameDir}`);
-log(`  dataset      : ${path.join(frameDir, "dataset")}`);
-if (state.postId) log(`  Bricks page  : ${state.postId}   (after you edit it in the builder: node --env-file=.env scripts/export-dataset.js ${frameDir} --page ${state.postId} --sync)`);
-finish(sectionsFailed ? 1 : 0);
+let exitCode = 1;
+try { exitCode = await main(); } catch (error) { state.error = error.message; log(`\nSTOPPED: ${error.message}`); }
+if (!runDir) { runDir = path.join("output", "pipeline-runs", stamp); fs.mkdirSync(runDir, { recursive: true }); fs.writeFileSync(path.join(runDir, "run.log"), pendingLog); }
+fs.writeFileSync(path.join(runDir, "run.json"), JSON.stringify({ ...state, args, steps, finishedAt: new Date().toISOString(), exitCode }, null, 2));
+process.exitCode = exitCode;

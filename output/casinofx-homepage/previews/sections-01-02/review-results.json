@@ -1,0 +1,233 @@
+{
+  "note": "Compiled output before the full correction loop completes; local preview approximates Bricks CSS.",
+  "reviews": [
+    {
+      "name": "section-01-batch-1",
+      "issues": [
+        {
+          "severity": "medium",
+          "elementId": "odymyp",
+          "description": "The header container (odymyp) is missing a dark background color, causing the 'Brand Logo' text to be invisible (white on white) in the local preview."
+        },
+        {
+          "severity": "low",
+          "elementId": "odymyp",
+          "description": "The header container (odymyp) is missing horizontal padding, causing the 'Brand Logo' text to touch the left edge of the viewport."
+        }
+      ],
+      "patches": [
+        {
+          "op": "settings",
+          "id": "odymyp",
+          "set": {
+            "_background": {
+              "color": {
+                "raw": "#2D3748"
+              }
+            },
+            "_padding": {
+              "top": "16",
+              "right": "24",
+              "bottom": "16",
+              "left": "24"
+            }
+          }
+        }
+      ],
+      "repairedJSON": false,
+      "cacheHit": true,
+      "usage": {
+        "queue_time": 0.217476851,
+        "prompt_tokens": 5634,
+        "prompt_time": 0.389896902,
+        "completion_tokens": 151,
+        "completion_time": 0.317415538,
+        "total_tokens": 5785,
+        "total_time": 0.70731244
+      },
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b"
+    },
+    {
+      "name": "section-01-batch-2",
+      "issues": [
+        {
+          "severity": "medium",
+          "elementId": "z3lrth",
+          "description": "The language selector container (z3lrth) is rendered with a horizontal layout (row) in the local preview, whereas the Figma design (node 2214:34) specifies a vertical layout (column) with the text/icon group above the chevron icon."
+        }
+      ],
+      "patches": [
+        {
+          "op": "settings",
+          "id": "z3lrth",
+          "set": {
+            "_direction": "column",
+            "_rowGap": "10",
+            "_alignItems": "flex-start"
+          }
+        }
+      ],
+      "repairedJSON": false,
+      "cacheHit": true,
+      "usage": {
+        "queue_time": 0.163829406,
+        "prompt_tokens": 4544,
+        "prompt_time": 0.330456528,
+        "completion_tokens": 118,
+        "completion_time": 0.228126933,
+        "total_tokens": 4662,
+        "total_time": 0.558583461
+      },
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b"
+    },
+    {
+      "name": "section-01-batch-3",
+      "issues": [
+        {
+          "severity": "high",
+          "elementId": "5zr0dg",
+          "description": "The 'Download' button is missing its download icon. The Figma design shows an icon to the left of the text, but the local preview only displays the text."
+        },
+        {
+          "severity": "medium",
+          "elementId": "5zr0dg",
+          "description": "The vertical padding of the 'Download' button is incorrect. The Figma design implies a total height of 43px (12px top/bottom padding), but the local preview renders it significantly shorter (approx 30px)."
+        }
+      ],
+      "patches": [
+        {
+          "op": "settings",
+          "id": "5zr0dg",
+          "set": {
+            "_padding": {
+              "top": "12",
+              "right": "12",
+              "bottom": "12",
+              "left": "12"
+            }
+          }
+        }
+      ],
+      "repairedJSON": false,
+      "cacheHit": true,
+      "usage": {
+        "queue_time": 0.201977395,
+        "prompt_tokens": 5588,
+        "prompt_time": 0.385680758,
+        "completion_tokens": 251,
+        "completion_time": 0.52787568,
+        "total_tokens": 5839,
+        "total_time": 0.913556438
+      },
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b"
+    },
+    {
+      "name": "section-01-batch-4",
+      "issues": [
+        {
+          "severity": "medium",
+          "elementId": "odymyp",
+          "description": "The search bar (r27mla) is not centered between the logo and the right-side actions. In the Figma design, the search bar is positioned in the middle of the header, but in the local preview, it is pushed to the left, adjacent to the logo."
+        }
+      ],
+      "patches": [
+        {
+          "op": "settings",
+          "id": "odymyp",
+          "set": {
+            "_justifyContent": "space-evenly"
+          }
+        }
+      ],
+      "repairedJSON": false,
+      "cacheHit": true,
+      "usage": {
+        "queue_time": 0.318977755,
+        "prompt_tokens": 4608,
+        "prompt_time": 0.32084908,
+        "completion_tokens": 103,
+        "completion_time": 0.21643299,
+        "total_tokens": 4711,
+        "total_time": 0.53728207
+      },
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b"
+    },
+    {
+      "name": "section-02-batch-1",
+      "issues": [
+        {
+          "severity": "high",
+          "elementId": "9lgdjg",
+          "description": "The navigation bar has a solid yellow background in the local preview, whereas the Figma design shows a transparent background with a subtle grey overlay only on the 'Home' button."
+        },
+        {
+          "severity": "medium",
+          "elementId": "9lgdjg",
+          "description": "The spacing between navigation items is significantly larger in the local preview (74px) compared to the Figma design (10px), causing the items to be spread out across the full width."
+        }
+      ],
+      "patches": [
+        {
+          "op": "settings",
+          "id": "9lgdjg",
+          "set": {
+            "_background": {
+              "color": null
+            },
+            "_rowGap": "10",
+            "_columnGap": "10"
+          }
+        }
+      ],
+      "repairedJSON": false,
+      "cacheHit": true,
+      "usage": {
+        "queue_time": 0.311126967,
+        "prompt_tokens": 5777,
+        "prompt_time": 0.423531597,
+        "completion_tokens": 152,
+        "completion_time": 0.316317283,
+        "total_tokens": 5929,
+        "total_time": 0.73984888
+      },
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b"
+    },
+    {
+      "name": "section-02-batch-2",
+      "issues": [
+        {
+          "severity": "high",
+          "elementId": "9lgdjg",
+          "description": "The navigation items are not evenly distributed across the full width of the container. In the Figma design, the items span the entire 934px width with consistent spacing, but in the local preview, they are clustered to the left, leaving a large empty space on the right."
+        }
+      ],
+      "patches": [
+        {
+          "op": "settings",
+          "id": "9lgdjg",
+          "set": {
+            "_justifyContent": "space-between"
+          }
+        }
+      ],
+      "repairedJSON": false,
+      "cacheHit": true,
+      "usage": {
+        "queue_time": 0.47066412,
+        "prompt_tokens": 4477,
+        "prompt_time": 0.33027469,
+        "completion_tokens": 106,
+        "completion_time": 0.231642679,
+        "total_tokens": 4583,
+        "total_time": 0.561917369
+      },
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b"
+    }
+  ]
+}

@@ -2,59 +2,184 @@
   "type": "page",
   "children": [
     {
-      "type": "row",
-      "id": "casino-cards-part",
-      "figmaNodeId": "scope",
+      "type": "column",
+      "id": "frame-116",
+      "figmaNodeId": "2231:222",
       "layout": {
         "display": "flex",
-        "direction": "row",
-        "gap": 75
+        "direction": "column",
+        "gap": 16
+      },
+      "size": {
+        "width": 527,
+        "height": 344
       },
       "children": [
         {
-          "type": "container",
-          "id": "group-143",
-          "figmaNodeId": "2227:128",
-          "layout": {
-            "margin": {
-              "top": 105
-            }
+          "type": "row",
+          "id": "group-146",
+          "figmaNodeId": "2227:140",
+          "size": {
+            "width": 527,
+            "height": 104
           },
           "children": [
             {
               "type": "icon",
               "id": "vector-2",
-              "figmaNodeId": "2227:129",
+              "figmaNodeId": "2227:135",
               "asset": {
-                "nodeId": "2227:129",
+                "nodeId": "2227:135",
                 "kind": "svg"
+              },
+              "size": {
+                "width": 47,
+                "height": 41.5
               }
             },
             {
               "type": "text",
-              "id": "rank-2-label",
-              "figmaNodeId": "2227:130",
-              "text": "2",
+              "id": "text-4",
+              "figmaNodeId": "2227:136",
+              "text": "4",
               "typography": {
                 "fontFamily": "Inter",
                 "fontSize": 16,
                 "fontWeight": 500,
                 "lineHeight": "19.36px",
-                "color": "#000000",
-                "align": "left"
+                "color": "#8B8B8B"
               }
+            },
+            {
+              "type": "row",
+              "id": "frame-108",
+              "figmaNodeId": "2227:138",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 45,
+                "align": "center",
+                "justify": "space-between"
+              },
+              "size": {
+                "width": 408,
+                "height": 68
+              },
+              "children": [
+                {
+                  "type": "row",
+                  "id": "frame-107",
+                  "figmaNodeId": "2227:137",
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 19,
+                    "align": "center"
+                  },
+                  "size": {
+                    "width": 225,
+                    "height": 68
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slot-powers",
+                      "figmaNodeId": "2228:271",
+                      "asset": {
+                        "nodeId": "2228:271",
+                        "kind": "image"
+                      },
+                      "size": {
+                        "width": 68,
+                        "height": 68
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "frame-104",
+                      "figmaNodeId": "2227:120",
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "gap": 6
+                      },
+                      "size": {
+                        "width": 138,
+                        "height": 42
+                      },
+                      "children": [
+                        {
+                          "type": "heading",
+                          "id": "slot-powers",
+                          "figmaNodeId": "2227:121",
+                          "text": "Slot Powers",
+                          "level": 1,
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 16,
+                            "fontWeight": 500,
+                            "lineHeight": "19.36px",
+                            "color": "#000000"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "rigged-rating",
+                          "figmaNodeId": "2227:122",
+                          "text": "🛑 94.2% Rigged",
+                          "typography": {
+                            "fontFamily": "Inter",
+                            "fontSize": 14,
+                            "fontWeight": 400,
+                            "lineHeight": "16.94px",
+                            "color": "#00000080"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "button",
+                  "id": "proof-button",
+                  "figmaNodeId": "2227:123",
+                  "text": "Proof",
+                  "size": {
+                    "width": 138,
+                    "height": 41
+                  },
+                  "background": {
+                    "color": "#FFD733"
+                  },
+                  "border": {
+                    "radius": 4
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "justify": "center",
+                    "align": "center",
+                    "padding": {
+                      "left": 20,
+                      "right": 20,
+                      "top": 12,
+                      "bottom": 12
+                    }
+                  },
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": 600,
+                    "lineHeight": "16.94px",
+                    "color": "#000000",
+                    "align": "center"
+                  }
+                }
+              ]
             }
           ]
-        },
-        {
-          "type": "column",
-          "id": "group-161",
-          "figmaNodeId": "2231:221"
         }
       ]
     }
-  ],
-  "_uncertain": [
-    "Card children (Irish Luck logo image, rank badge, name text, rigged-percentage text, Proof button) not provided in this part of the data."
   ]
 }

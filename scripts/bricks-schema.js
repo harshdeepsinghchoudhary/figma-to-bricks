@@ -218,6 +218,16 @@ function build(name, node, { content = {}, implied = {}, themeStyles } = {}) {
   if (LEAF_NAMES.has(name)) {
     for (const k of Object.keys(el.settings)) if (/^(_direction|_rowGap|_columnGap)(:|$)/.test(k)) delete el.settings[k];
   }
+  if (name === "button") {
+    for (const key of Object.keys(el.settings)) {
+      const replacements = { _direction: "_flexDirection", _rowGap: "_gap", _columnGap: "iconGap" };
+      const base = key.split(":")[0];
+      if (!replacements[base]) continue;
+      const target = replacements[base] + key.slice(base.length);
+      if (el.settings[target] === undefined) el.settings[target] = el.settings[key];
+      delete el.settings[key];
+    }
+  }
   if (themeStyles !== undefined) el.themeStyles = themeStyles;
   return el;
 }

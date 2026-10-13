@@ -1,0 +1,45 @@
+{
+  "figmaUrl": null,
+  "frameDir": "output/casinofx-homepage",
+  "postId": null,
+  "startedAt": "2026-10-13T10:47:05.588Z",
+  "args": [
+    "--frame",
+    "output/casinofx-homepage",
+    "--no-inject",
+    "--no-visual"
+  ],
+  "steps": [
+    {
+      "label": "2-3 normalize, compile, merge",
+      "script": "run-sections.js",
+      "args": [
+        "output/casinofx-homepage"
+      ],
+      "code": 0,
+      "seconds": 3
+    },
+    {
+      "label": "validate merged tree",
+      "script": "bricks-validator.js",
+      "args": [
+        "output\\casinofx-homepage\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "5 export dataset",
+      "script": "export-dataset.js",
+      "args": [
+        "output/casinofx-homepage",
+        "--run",
+        "output\\casinofx-homepage\\runs\\2026-10-13T10-47-05-587Z"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-13T10:47:08.952Z",
+  "exitCode": 0
+}

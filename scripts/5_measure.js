@@ -55,6 +55,7 @@ try {
   );
 } catch (e) {
   console.error("dom-measure.js failed — is the page reachable at", pageUrl, "?");
+  process.exitCode = 1;
 }
 
 console.log("\n--- Overflow sweep (multi-viewport gate) ---");
@@ -70,6 +71,7 @@ try {
   );
 } catch (e) {
   console.warn("Overflow detected at one or more widths — see output above.");
+  process.exitCode = 1;
 }
 
 console.log(

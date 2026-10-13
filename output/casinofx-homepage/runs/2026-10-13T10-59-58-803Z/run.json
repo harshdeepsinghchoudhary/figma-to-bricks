@@ -1,0 +1,65 @@
+{
+  "figmaUrl": null,
+  "frameDir": "output/casinofx-homepage",
+  "postId": null,
+  "startedAt": "2026-10-13T10:59:58.803Z",
+  "args": [
+    "--frame",
+    "output/casinofx-homepage",
+    "--no-inject"
+  ],
+  "steps": [
+    {
+      "label": "2-3 normalize, compile, merge",
+      "script": "run-sections.js",
+      "args": [
+        "output/casinofx-homepage"
+      ],
+      "code": 0,
+      "seconds": 3
+    },
+    {
+      "label": "validate merged tree",
+      "script": "bricks-validator.js",
+      "args": [
+        "output\\casinofx-homepage\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "visual screenshot review",
+      "script": "6_visual_review.js",
+      "args": [
+        "output/casinofx-homepage",
+        "--iterations=2",
+        "--fix"
+      ],
+      "code": 1,
+      "seconds": 477
+    },
+    {
+      "label": "wrap reviewed tree",
+      "script": "wrap-template.js",
+      "args": [
+        "output\\casinofx-homepage\\merged",
+        "casinofx-homepage page"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "5 export dataset",
+      "script": "export-dataset.js",
+      "args": [
+        "output/casinofx-homepage",
+        "--run",
+        "output\\casinofx-homepage\\runs\\2026-10-13T10-59-58-803Z"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-13T11:07:59.276Z",
+  "exitCode": 1
+}

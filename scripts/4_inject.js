@@ -25,6 +25,8 @@ import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
 import fetch from "node-fetch";
+import { isDeepStrictEqual } from "node:util";
+import { validateBricks } from "./bricks-validator.js";
 
 const frameDir = process.argv[2];
 const pageId = process.argv[3];
@@ -59,6 +61,7 @@ async function uploadAsset(localPath) {
   });
   if (!res.ok) throw new Error(`Media upload failed for ${filename}: ${res.status} ${await res.text()}`);
   const data = await res.json();
+  if (!Number.isInteger(data.id) || data.id < 1 || !/^https?:\/\//i.test(data.source_url || "")) throw new Error("Media endpoint did not confirm a valid attachment ID and URL.");
   return { id: data.id, url: data.source_url };
 }
 
@@ -69,16 +72,17 @@ async function main() {
     process.exit(1);
   }
   const tree = JSON.parse(fs.readFileSync(treePath, "utf-8"));
+  const checked = validateBricks(tree);
+  if (checked.errors.length) throw new Error(`Invalid Bricks tree: ${checked.errors.join("; ")}`);
 
   // Resolve local asset paths to real WP attachments.
   const uploadCache = new Map();
   // Image elements use settings.image, icon elements use settings.icon.svg: both hold local paths to swap for WP attachments.
   async function resolveAssetRef(ref) {
-    if (!ref?.url || ref.url.startsWith("http")) return;
+    if (!ref?.url || /^(https?:|data:|\/\/)/i.test(ref.url)) return;
     const localPath = path.join(frameDir, ref.url);
     if (!fs.existsSync(localPath)) {
-      console.warn(`Asset file missing, skipping: ${localPath}`);
-      return;
+      throw new Error(`Asset file missing: ${localPath}. Not saving broken image URLs.`);
     }
     if (!uploadCache.has(localPath)) {
       console.log(`Uploading ${localPath}...`);
@@ -90,10 +94,12 @@ async function main() {
     if (ref.full) ref.full = uploaded.url;
     if (ref.filename !== undefined) ref.filename = path.basename(localPath);
   }
-  for (const el of tree) {
-    await resolveAssetRef(el.settings?.image);
-    await resolveAssetRef(el.settings?.icon?.svg);
+  async function resolveRefs(value) {
+    if (!value || typeof value !== "object") return;
+    if (typeof value.url === "string" && /\.(png|jpe?g|svg|webp|gif)$/i.test(value.url)) await resolveAssetRef(value);
+    for (const child of Object.values(value)) await resolveRefs(child);
   }
+  for (const el of tree) await resolveRefs(el.settings);
 
   // --- Option A: mu-plugin exposes _bricks_page_content_2 via REST ---
   const res = await fetch(`${WP_BASE_URL}/wp-json/wp/v2/pages/${pageId}`, {
@@ -110,6 +116,12 @@ async function main() {
     );
     process.exit(1);
   }
+  const updated = await res.json();
+  let persisted = updated.meta?._bricks_page_content_2;
+  if (typeof persisted === "string") { try { persisted = JSON.parse(persisted); } catch {} }
+  if (!isDeepStrictEqual(persisted, tree)) throw new Error("REST response did not confirm the Bricks content was saved. Check the registered postmeta schema; an HTTP 200 alone is not proof of injection.");
+  fs.writeFileSync(path.join(frameDir, "injected-tree.json"), JSON.stringify(tree, null, 2));
+  fs.writeFileSync(path.join(frameDir, "inject-report.json"), JSON.stringify({ postId: Number(pageId), elementCount: tree.length, at: new Date().toISOString(), transport: "rest" }, null, 2));
   console.log(`Injected ${tree.length} element(s) into page ${pageId}.`);
   console.log(`Now: regenerate Bricks CSS cache (Bricks → Tools → Clear Cache) before measuring.`);
 

@@ -3,7 +3,7 @@
   "children": [
     {
       "type": "section",
-      "id": "scope",
+      "id": "casino-fx-homepage",
       "figmaNodeId": "scope",
       "children": [
         {
@@ -18,7 +18,7 @@
               "children": [
                 {
                   "type": "heading",
-                  "id": "most-rigged-games",
+                  "id": "most-rigged-games-label",
                   "figmaNodeId": "2223:49",
                   "text": "Most Rigged Games",
                   "typography": {
@@ -36,7 +36,7 @@
                 },
                 {
                   "type": "column",
-                  "id": "frame-118",
+                  "id": "frame-118-1",
                   "figmaNodeId": "2231:224",
                   "children": [
                     {
@@ -51,125 +51,147 @@
                           "children": [
                             {
                               "type": "column",
-                              "id": "group-156",
-                              "figmaNodeId": "2231:216",
+                              "id": "casino-fx-homepage-column-1",
                               "children": [
                                 {
+                                  "type": "image",
+                                  "id": "spin-casino-colored-logo-1-2",
+                                  "figmaNodeId": "2228:263",
+                                  "asset": {
+                                    "nodeId": "2228:263",
+                                    "kind": "image"
+                                  },
+                                  "size": {
+                                    "width": 68,
+                                    "height": 68
+                                  }
+                                },
+                                {
                                   "type": "column",
-                                  "id": "scope-column-1",
+                                  "id": "group-142-1",
+                                  "figmaNodeId": "2227:127",
                                   "children": [
                                     {
                                       "type": "image",
-                                      "id": "spin-casino-colored-logo-1",
-                                      "figmaNodeId": "2228:263",
+                                      "id": "vector-2-3",
+                                      "figmaNodeId": "2227:125",
                                       "asset": {
-                                        "nodeId": "2228:263",
-                                        "kind": "image"
+                                        "nodeId": "2227:125",
+                                        "kind": "svg"
                                       },
                                       "size": {
-                                        "width": 68,
-                                        "height": 68
+                                        "width": 47,
+                                        "height": 41.5
                                       }
                                     },
                                     {
-                                      "type": "unsupported",
-                                      "id": "group-142",
-                                      "figmaNodeId": "2227:127",
-                                      "notes": [
-                                        "Contains vector and text layers."
-                                      ]
-                                    },
+                                      "type": "text",
+                                      "id": "1-4",
+                                      "figmaNodeId": "2227:126",
+                                      "text": "1",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 16,
+                                        "fontWeight": 500,
+                                        "lineHeight": "19.36px",
+                                        "align": "left",
+                                        "color": "#000000"
+                                      },
+                                      "size": {
+                                        "width": 8
+                                      }
+                                    }
+                                  ],
+                                  "layout": {
+                                    "margin": {
+                                      "top": 13
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "frame-104-2",
+                                  "figmaNodeId": "2226:12",
+                                  "children": [
                                     {
-                                      "type": "column",
-                                      "id": "frame-104",
-                                      "figmaNodeId": "2226:12",
-                                      "children": [
-                                        {
-                                          "type": "text",
-                                          "id": "text-10",
-                                          "figmaNodeId": "2226:10",
-                                          "text": "Spin",
-                                          "typography": {
-                                            "fontFamily": "Inter",
-                                            "fontSize": 16,
-                                            "fontWeight": 500,
-                                            "lineHeight": "19.36px",
-                                            "align": "center",
-                                            "color": "#000000"
-                                          }
-                                        },
-                                        {
-                                          "type": "text",
-                                          "id": "text-11",
-                                          "figmaNodeId": "2226:11",
-                                          "text": "🛑 94.2% Rigged",
-                                          "typography": {
-                                            "fontFamily": "Inter",
-                                            "fontSize": 14,
-                                            "fontWeight": 400,
-                                            "lineHeight": "16.94px",
-                                            "align": "center",
-                                            "color": "#00000080"
-                                          },
-                                          "size": {
-                                            "width": 138
-                                          }
-                                        }
-                                      ],
-                                      "layout": {
-                                        "display": "flex",
-                                        "direction": "column",
-                                        "gap": 6,
+                                      "type": "text",
+                                      "id": "spin-5",
+                                      "figmaNodeId": "2226:10",
+                                      "text": "Spin",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 16,
+                                        "fontWeight": 500,
+                                        "lineHeight": "19.36px",
                                         "align": "center",
-                                        "margin": {
-                                          "top": 67
-                                        }
+                                        "color": "#000000"
                                       }
                                     },
                                     {
-                                      "type": "button",
-                                      "id": "text-14",
-                                      "figmaNodeId": "2226:13",
-                                      "text": "Proof",
+                                      "type": "text",
+                                      "id": "94-2-rigged-6",
+                                      "figmaNodeId": "2226:11",
+                                      "text": "🛑 94.2% Rigged",
                                       "typography": {
                                         "fontFamily": "Inter",
                                         "fontSize": 14,
-                                        "fontWeight": 600,
+                                        "fontWeight": 400,
                                         "lineHeight": "16.94px",
                                         "align": "center",
-                                        "color": "#000000"
-                                      },
-                                      "background": {
-                                        "color": "#FFD733"
-                                      },
-                                      "border": {
-                                        "radius": 4
+                                        "color": "#00000080"
                                       },
                                       "size": {
-                                        "width": "fill"
-                                      },
-                                      "layout": {
-                                        "padding": {
-                                          "top": 12,
-                                          "bottom": 12
-                                        },
-                                        "margin": {
-                                          "top": 24
-                                        }
+                                        "width": 138
                                       }
                                     }
                                   ],
                                   "layout": {
                                     "display": "flex",
                                     "direction": "column",
-                                    "align": "center"
+                                    "gap": 6,
+                                    "align": "center",
+                                    "margin": {
+                                      "top": 12.5
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "button",
+                                  "id": "proof-7",
+                                  "figmaNodeId": "2226:13",
+                                  "text": "Proof",
+                                  "typography": {
+                                    "fontFamily": "Inter",
+                                    "fontSize": 14,
+                                    "fontWeight": 600,
+                                    "lineHeight": "16.94px",
+                                    "align": "center",
+                                    "color": "#000000"
+                                  },
+                                  "background": {
+                                    "color": "#FFD733"
+                                  },
+                                  "border": {
+                                    "radius": 4
+                                  },
+                                  "size": {
+                                    "width": "fill"
+                                  },
+                                  "layout": {
+                                    "padding": {
+                                      "top": 12,
+                                      "bottom": 12
+                                    },
+                                    "margin": {
+                                      "top": 24
+                                    }
                                   }
                                 }
                               ],
                               "layout": {
                                 "display": "flex",
                                 "direction": "column",
-                                "align": "start"
+                                "align": "center"
                               }
                             }
                           ],
@@ -201,7 +223,7 @@
                           "children": [
                             {
                               "type": "column",
-                              "id": "scope-column-2",
+                              "id": "casino-fx-homepage-column-2",
                               "children": [
                                 {
                                   "type": "image",
@@ -214,19 +236,16 @@
                                   "size": {
                                     "width": 68,
                                     "height": 68
-                                  },
-                                  "border": {
-                                    "radius": 2000
                                   }
                                 },
                                 {
                                   "type": "column",
-                                  "id": "group-143",
+                                  "id": "rank-label",
                                   "figmaNodeId": "2227:128",
                                   "children": [
                                     {
                                       "type": "icon",
-                                      "id": "vector-2-2",
+                                      "id": "rank-seal",
                                       "figmaNodeId": "2227:129",
                                       "asset": {
                                         "nodeId": "2227:129",
@@ -238,8 +257,8 @@
                                       }
                                     },
                                     {
-                                      "type": "text",
-                                      "id": "rank-2-label",
+                                      "type": "text-basic",
+                                      "id": "rank-number",
                                       "figmaNodeId": "2227:130",
                                       "text": "2",
                                       "typography": {
@@ -263,12 +282,12 @@
                                 },
                                 {
                                   "type": "column",
-                                  "id": "classy-slots-text",
+                                  "id": "classy-slots-info",
                                   "figmaNodeId": "2226:23",
                                   "children": [
                                     {
                                       "type": "text-basic",
-                                      "id": "classy-slots-label",
+                                      "id": "classy-slots-name",
                                       "figmaNodeId": "2226:24",
                                       "text": "Classy Slots",
                                       "typography": {
@@ -285,7 +304,7 @@
                                     },
                                     {
                                       "type": "text-basic",
-                                      "id": "rigged-label",
+                                      "id": "classy-slots-rigor",
                                       "figmaNodeId": "2226:25",
                                       "text": "🛑 88.5% Rigged",
                                       "typography": {
@@ -313,7 +332,7 @@
                                 },
                                 {
                                   "type": "button",
-                                  "id": "proof-button",
+                                  "id": "classy-slots-proof",
                                   "figmaNodeId": "2226:26",
                                   "text": "Proof",
                                   "typography": {
@@ -374,16 +393,16 @@
                         },
                         {
                           "type": "column",
-                          "id": "group-161",
+                          "id": "group-161-1",
                           "figmaNodeId": "2231:221",
                           "children": [
                             {
                               "type": "column",
-                              "id": "scope-column-3",
+                              "id": "casino-fx-homepage-column-3",
                               "children": [
                                 {
                                   "type": "image",
-                                  "id": "irish-luck-logo",
+                                  "id": "irish-luck-casino-avatar",
                                   "figmaNodeId": "2228:267",
                                   "asset": {
                                     "nodeId": "2228:267",
@@ -392,16 +411,19 @@
                                   "size": {
                                     "width": 68,
                                     "height": 68
+                                  },
+                                  "border": {
+                                    "radius": 2000
                                   }
                                 },
                                 {
                                   "type": "column",
-                                  "id": "vector-badge",
+                                  "id": "rank-icon-wrapper",
                                   "figmaNodeId": "2227:131",
                                   "children": [
                                     {
                                       "type": "icon",
-                                      "id": "vector-badge-icon",
+                                      "id": "rank-badge-icon",
                                       "figmaNodeId": "2227:132",
                                       "asset": {
                                         "nodeId": "2227:132",
@@ -414,7 +436,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "vector-badge-number",
+                                      "id": "rank-number-2",
                                       "figmaNodeId": "2227:133",
                                       "text": "3",
                                       "typography": {
@@ -438,12 +460,12 @@
                                 },
                                 {
                                   "type": "column",
-                                  "id": "irish-luck-info",
+                                  "id": "casino-labels",
                                   "figmaNodeId": "2226:33",
                                   "children": [
                                     {
                                       "type": "heading",
-                                      "id": "irish-luck-name",
+                                      "id": "casino-name",
                                       "figmaNodeId": "2226:34",
                                       "text": "Irish Luck",
                                       "level": 3,
@@ -461,7 +483,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "rigged-label-2",
+                                      "id": "rigged-label",
                                       "figmaNodeId": "2226:35",
                                       "text": "🛑 85.1% Rigged",
                                       "typography": {
@@ -489,7 +511,7 @@
                                 },
                                 {
                                   "type": "button",
-                                  "id": "proof-button-2",
+                                  "id": "proof-button",
                                   "figmaNodeId": "2226:36",
                                   "text": "Proof",
                                   "typography": {
@@ -563,28 +585,22 @@
                       "children": [
                         {
                           "type": "column",
-                          "id": "casino-row-slot-powers",
+                          "id": "group-146",
                           "figmaNodeId": "2227:140",
-                          "background": {
-                            "color": "#F7F7F7"
-                          },
-                          "border": {
-                            "radius": 8
-                          },
                           "children": [
                             {
                               "type": "row",
-                              "id": "casino-row-inner",
+                              "id": "frame-109-2",
                               "figmaNodeId": "2227:139",
                               "children": [
                                 {
                                   "type": "column",
-                                  "id": "casino-number-slot-powers",
+                                  "id": "group-145-2",
                                   "figmaNodeId": "2227:134",
                                   "children": [
                                     {
                                       "type": "icon",
-                                      "id": "casino-number-icon-slot-powers",
+                                      "id": "vector-2",
                                       "figmaNodeId": "2227:135",
                                       "asset": {
                                         "nodeId": "2227:135",
@@ -596,16 +612,16 @@
                                       }
                                     },
                                     {
-                                      "type": "text-basic",
-                                      "id": "casino-number-text-slot-powers",
+                                      "type": "text",
+                                      "id": "text-4",
                                       "figmaNodeId": "2227:136",
                                       "text": "4",
                                       "typography": {
                                         "fontFamily": "Inter",
                                         "fontSize": 16,
                                         "fontWeight": 500,
-                                        "color": "#8B8B8B",
                                         "lineHeight": "19.36px",
+                                        "color": "#8B8B8B",
                                         "align": "left"
                                       },
                                       "size": {
@@ -616,17 +632,17 @@
                                 },
                                 {
                                   "type": "row",
-                                  "id": "frame-108-1",
+                                  "id": "frame-108",
                                   "figmaNodeId": "2227:138",
                                   "children": [
                                     {
                                       "type": "row",
-                                      "id": "slot-powers-info",
+                                      "id": "frame-107",
                                       "figmaNodeId": "2227:137",
                                       "children": [
                                         {
                                           "type": "image",
-                                          "id": "slot-powers-icon",
+                                          "id": "image-slot-powers",
                                           "figmaNodeId": "2228:271",
                                           "asset": {
                                             "nodeId": "2228:271",
@@ -639,12 +655,12 @@
                                         },
                                         {
                                           "type": "column",
-                                          "id": "slot-powers-text",
+                                          "id": "frame-104",
                                           "figmaNodeId": "2227:120",
                                           "children": [
                                             {
                                               "type": "heading",
-                                              "id": "slot-powers-title",
+                                              "id": "slot-powers",
                                               "figmaNodeId": "2227:121",
                                               "text": "Slot Powers",
                                               "level": 3,
@@ -652,22 +668,22 @@
                                                 "fontFamily": "Inter",
                                                 "fontSize": 16,
                                                 "fontWeight": 500,
-                                                "color": "#000000",
                                                 "lineHeight": "19.36px",
+                                                "color": "#000000",
                                                 "align": "left"
                                               }
                                             },
                                             {
                                               "type": "text",
-                                              "id": "slot-powers-rigged",
+                                              "id": "rigged-rating",
                                               "figmaNodeId": "2227:122",
                                               "text": "🛑 94.2% Rigged",
                                               "typography": {
                                                 "fontFamily": "Inter",
                                                 "fontSize": 14,
                                                 "fontWeight": 400,
-                                                "color": "#00000080",
                                                 "lineHeight": "16.94px",
+                                                "color": "#00000080",
                                                 "align": "left"
                                               },
                                               "size": {
@@ -698,7 +714,7 @@
                                     },
                                     {
                                       "type": "button",
-                                      "id": "proof-button-3",
+                                      "id": "proof-button-2",
                                       "figmaNodeId": "2227:123",
                                       "text": "Proof",
                                       "typography": {
@@ -757,6 +773,12 @@
                               "left": 20
                             },
                             "align": "start"
+                          },
+                          "background": {
+                            "color": "#F7F7F7"
+                          },
+                          "border": {
+                            "radius": 8
                           }
                         },
                         {
@@ -766,17 +788,17 @@
                           "children": [
                             {
                               "type": "row",
-                              "id": "frame-109-1",
+                              "id": "frame-109-3",
                               "figmaNodeId": "2227:143",
                               "children": [
                                 {
                                   "type": "column",
-                                  "id": "group-145",
+                                  "id": "group-145-3",
                                   "figmaNodeId": "2227:144",
                                   "children": [
                                     {
-                                      "type": "icon",
-                                      "id": "vector-2-3",
+                                      "type": "image",
+                                      "id": "vector-2-1",
                                       "figmaNodeId": "2227:145",
                                       "asset": {
                                         "nodeId": "2227:145",
@@ -789,7 +811,7 @@
                                     },
                                     {
                                       "type": "text",
-                                      "id": "text-5",
+                                      "id": "5-2",
                                       "figmaNodeId": "2227:146",
                                       "text": "5",
                                       "typography": {
@@ -797,8 +819,8 @@
                                         "fontSize": 16,
                                         "fontWeight": 500,
                                         "lineHeight": "19.36px",
-                                        "color": "#8B8B8B",
-                                        "align": "left"
+                                        "align": "left",
+                                        "color": "#8B8B8B"
                                       },
                                       "size": {
                                         "width": 10
@@ -813,19 +835,16 @@
                                   "children": [
                                     {
                                       "type": "row",
-                                      "id": "casino-info",
+                                      "id": "frame-107-2",
                                       "figmaNodeId": "2227:148",
                                       "children": [
                                         {
                                           "type": "image",
-                                          "id": "casino-logo",
+                                          "id": "wcasino-online-1-3",
                                           "figmaNodeId": "2228:274",
                                           "asset": {
                                             "nodeId": "2228:274",
                                             "kind": "image"
-                                          },
-                                          "border": {
-                                            "radius": 2000
                                           },
                                           "size": {
                                             "width": 68,
@@ -834,12 +853,12 @@
                                         },
                                         {
                                           "type": "column",
-                                          "id": "casino-name",
+                                          "id": "frame-104-3",
                                           "figmaNodeId": "2227:150",
                                           "children": [
                                             {
                                               "type": "text",
-                                              "id": "casino-title",
+                                              "id": "wcasino-online-4",
                                               "figmaNodeId": "2227:151",
                                               "text": "Wcasino Online",
                                               "typography": {
@@ -847,13 +866,13 @@
                                                 "fontSize": 16,
                                                 "fontWeight": 500,
                                                 "lineHeight": "19.36px",
-                                                "color": "#000000",
-                                                "align": "left"
+                                                "align": "left",
+                                                "color": "#000000"
                                               }
                                             },
                                             {
                                               "type": "text",
-                                              "id": "casino-rigged",
+                                              "id": "94-2-rigged-5",
                                               "figmaNodeId": "2227:152",
                                               "text": "🛑 94.2% Rigged",
                                               "typography": {
@@ -861,8 +880,8 @@
                                                 "fontSize": 14,
                                                 "fontWeight": 400,
                                                 "lineHeight": "16.94px",
-                                                "color": "#00000080",
-                                                "align": "left"
+                                                "align": "left",
+                                                "color": "#00000080"
                                               },
                                               "size": {
                                                 "width": 138
@@ -892,7 +911,7 @@
                                     },
                                     {
                                       "type": "button",
-                                      "id": "proof-button-4",
+                                      "id": "proof-6",
                                       "figmaNodeId": "2227:153",
                                       "text": "Proof",
                                       "typography": {
@@ -963,20 +982,26 @@
                           "type": "column",
                           "id": "group-148",
                           "figmaNodeId": "2227:155",
+                          "background": {
+                            "color": "#F7F7F7"
+                          },
+                          "border": {
+                            "radius": 8
+                          },
                           "children": [
                             {
                               "type": "row",
-                              "id": "frame-109",
+                              "id": "frame-109-1",
                               "figmaNodeId": "2227:157",
                               "children": [
                                 {
                                   "type": "column",
-                                  "id": "group-145-2",
+                                  "id": "group-145-1",
                                   "figmaNodeId": "2227:158",
                                   "children": [
                                     {
                                       "type": "icon",
-                                      "id": "vector-2-4",
+                                      "id": "vector-2-2",
                                       "figmaNodeId": "2227:159",
                                       "asset": {
                                         "nodeId": "2227:159",
@@ -988,8 +1013,8 @@
                                       }
                                     },
                                     {
-                                      "type": "text-basic",
-                                      "id": "text-6",
+                                      "type": "text",
+                                      "id": "text-160",
                                       "figmaNodeId": "2227:160",
                                       "text": "6",
                                       "typography": {
@@ -997,14 +1022,8 @@
                                         "fontSize": 16,
                                         "fontWeight": 500,
                                         "lineHeight": "19.36px",
-                                        "color": "#8B8B8B",
-                                        "align": "left"
-                                      },
-                                      "layout": {
-                                        "margin": {
-                                          "left": 19,
-                                          "top": 11
-                                        }
+                                        "align": "left",
+                                        "color": "#8B8B8B"
                                       },
                                       "size": {
                                         "width": 11
@@ -1014,7 +1033,7 @@
                                 },
                                 {
                                   "type": "row",
-                                  "id": "slots-amigo-info",
+                                  "id": "frame-108-1",
                                   "figmaNodeId": "2227:161",
                                   "children": [
                                     {
@@ -1024,14 +1043,11 @@
                                       "children": [
                                         {
                                           "type": "image",
-                                          "id": "slots-amigo-logo",
+                                          "id": "slots-amigo",
                                           "figmaNodeId": "2228:277",
                                           "asset": {
                                             "nodeId": "2228:277",
                                             "kind": "image"
-                                          },
-                                          "border": {
-                                            "radius": 2000
                                           },
                                           "size": {
                                             "width": 68,
@@ -1040,12 +1056,12 @@
                                         },
                                         {
                                           "type": "column",
-                                          "id": "slots-amigo-details",
+                                          "id": "frame-104-1",
                                           "figmaNodeId": "2227:164",
                                           "children": [
                                             {
                                               "type": "text",
-                                              "id": "slots-amigo-name",
+                                              "id": "text-165",
                                               "figmaNodeId": "2227:165",
                                               "text": "SlotsAmigo",
                                               "typography": {
@@ -1059,7 +1075,7 @@
                                             },
                                             {
                                               "type": "text",
-                                              "id": "slots-amigo-rigged",
+                                              "id": "text-166",
                                               "figmaNodeId": "2227:166",
                                               "text": "🛑 94.2% Rigged",
                                               "typography": {
@@ -1098,7 +1114,7 @@
                                     },
                                     {
                                       "type": "button",
-                                      "id": "proof-button-5",
+                                      "id": "proof-button-3",
                                       "figmaNodeId": "2227:167",
                                       "text": "Proof",
                                       "typography": {
@@ -1157,12 +1173,6 @@
                               "left": 20
                             },
                             "align": "start"
-                          },
-                          "background": {
-                            "color": "#F7F7F7"
-                          },
-                          "border": {
-                            "radius": 8
                           }
                         }
                       ],
@@ -1199,9 +1209,8 @@
               "children": [
                 {
                   "type": "heading",
-                  "id": "rtp-manipulation-tactics-heading",
+                  "id": "rtp-heading",
                   "figmaNodeId": "2226:9",
-                  "level": 2,
                   "text": "RTP Manipulation & Tactics",
                   "typography": {
                     "fontFamily": "Inter",
@@ -1213,30 +1222,46 @@
                   },
                   "size": {
                     "width": 756
-                  }
+                  },
+                  "level": 2
                 },
                 {
                   "type": "column",
-                  "id": "frame-122-1",
+                  "id": "frame-122",
                   "figmaNodeId": "2231:229",
                   "children": [
                     {
                       "type": "row",
-                      "id": "article-cards-row",
+                      "id": "frame-121",
                       "figmaNodeId": "2231:228",
                       "children": [
                         {
                           "type": "column",
-                          "id": "article-card-group",
+                          "id": "group-150",
                           "figmaNodeId": "2227:188",
+                          "background": {
+                            "color": "#FFFFFF"
+                          },
+                          "border": {
+                            "radius": 0,
+                            "color": "#00000024",
+                            "width": 1
+                          },
+                          "boxShadow": {
+                            "color": "#00000024",
+                            "blur": 0,
+                            "offsetX": 0,
+                            "offsetY": 0,
+                            "spread": 0
+                          },
                           "children": [
                             {
                               "type": "column",
-                              "id": "scope-column-4",
+                              "id": "casino-fx-homepage-column-4",
                               "children": [
                                 {
                                   "type": "image",
-                                  "id": "carousel-light-roulette",
+                                  "id": "rectangle-42-39",
                                   "figmaNodeId": "2227:79",
                                   "asset": {
                                     "nodeId": "2227:79",
@@ -1249,12 +1274,12 @@
                                 },
                                 {
                                   "type": "column",
-                                  "id": "article-card-content",
+                                  "id": "frame-113-3",
                                   "figmaNodeId": "2227:186",
                                   "children": [
                                     {
                                       "type": "text",
-                                      "id": "article-card-description",
+                                      "id": "text-how-light-roulette",
                                       "figmaNodeId": "2227:81",
                                       "text": "How Light Roulette uses a custom software script to avoid paying out on ",
                                       "typography": {
@@ -1262,8 +1287,8 @@
                                         "fontSize": 16,
                                         "fontWeight": 400,
                                         "lineHeight": "19.36px",
-                                        "color": "#000000CC",
-                                        "align": "left"
+                                        "align": "left",
+                                        "color": "#000000CC"
                                       },
                                       "size": {
                                         "width": 326
@@ -1271,17 +1296,17 @@
                                     },
                                     {
                                       "type": "row",
-                                      "id": "frame-112-1",
+                                      "id": "frame-112-3",
                                       "figmaNodeId": "2227:185",
                                       "children": [
                                         {
                                           "type": "row",
-                                          "id": "user-profile",
+                                          "id": "frame-111-3",
                                           "figmaNodeId": "2227:182",
                                           "children": [
                                             {
                                               "type": "image",
-                                              "id": "user-avatar",
+                                              "id": "ellipse-4-41",
                                               "figmaNodeId": "2227:173",
                                               "asset": {
                                                 "nodeId": "2227:173",
@@ -1293,17 +1318,18 @@
                                               }
                                             },
                                             {
-                                              "type": "text",
-                                              "id": "user-username",
+                                              "type": "heading",
+                                              "id": "heading-codebreaker",
                                               "figmaNodeId": "2227:172",
                                               "text": "CodeBreaker",
+                                              "level": 4,
                                               "typography": {
                                                 "fontFamily": "Inter",
                                                 "fontSize": 14,
                                                 "fontWeight": 400,
                                                 "lineHeight": "16.94px",
-                                                "color": "#00000099",
-                                                "align": "left"
+                                                "align": "left",
+                                                "color": "#00000099"
                                               }
                                             }
                                           ],
@@ -1319,12 +1345,12 @@
                                         },
                                         {
                                           "type": "row",
-                                          "id": "user-stats",
+                                          "id": "frame-110-3",
                                           "figmaNodeId": "2227:179",
                                           "children": [
                                             {
-                                              "type": "icon",
-                                              "id": "stats-icon",
+                                              "type": "image",
+                                              "id": "image-frame",
                                               "figmaNodeId": "2227:174",
                                               "asset": {
                                                 "nodeId": "2227:174",
@@ -1337,7 +1363,7 @@
                                             },
                                             {
                                               "type": "text",
-                                              "id": "stats-value",
+                                              "id": "text-1-2k",
                                               "figmaNodeId": "2227:177",
                                               "text": "1.2K",
                                               "typography": {
@@ -1345,8 +1371,8 @@
                                                 "fontSize": 14,
                                                 "fontWeight": 400,
                                                 "lineHeight": "16.94px",
-                                                "color": "#00000099",
-                                                "align": "left"
+                                                "align": "left",
+                                                "color": "#00000099"
                                               }
                                             }
                                           ],
@@ -1401,13 +1427,6 @@
                           },
                           "size": {
                             "width": 365
-                          },
-                          "background": {
-                            "color": "#FFFFFF"
-                          },
-                          "border": {
-                            "color": "#00000024",
-                            "width": 1
                           }
                         },
                         {
@@ -1422,152 +1441,133 @@
                               "children": [
                                 {
                                   "type": "column",
-                                  "id": "scope-column-5",
+                                  "id": "frame-113",
+                                  "figmaNodeId": "2227:193",
                                   "children": [
                                     {
-                                      "type": "unsupported",
-                                      "id": "casino-fx-card-image",
-                                      "figmaNodeId": "2227:192",
-                                      "notes": [
-                                        "Rectangle 42 has a solid fill #E8E8E8 but no exported asset (imageExported false / empty manifest); represent as image placeholder per part breakdown."
-                                      ]
+                                      "type": "text",
+                                      "id": "statistical-proof",
+                                      "figmaNodeId": "2227:194",
+                                      "text": "Statistical proof of 20+ consecutive Black outcomes designed to wipe bets....",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 16,
+                                        "fontWeight": 400,
+                                        "lineHeight": "19.36px",
+                                        "color": "#000000CC",
+                                        "align": "left"
+                                      },
+                                      "size": {
+                                        "width": 326
+                                      }
                                     },
                                     {
-                                      "type": "column",
-                                      "id": "casino-fx-stat-caption",
-                                      "figmaNodeId": "2227:193",
+                                      "type": "row",
+                                      "id": "frame-112",
+                                      "figmaNodeId": "2227:195",
                                       "children": [
                                         {
-                                          "type": "text",
-                                          "id": "statistical-proof-caption",
-                                          "figmaNodeId": "2227:194",
-                                          "text": "Statistical proof of 20+ consecutive Black outcomes designed to wipe bets....",
-                                          "typography": {
-                                            "fontFamily": "Inter",
-                                            "fontSize": 16,
-                                            "fontWeight": 400,
-                                            "color": "#000000CC",
-                                            "lineHeight": "19.36px",
-                                            "align": "left"
-                                          },
-                                          "size": {
-                                            "width": 326
-                                          }
-                                        },
-                                        {
                                           "type": "row",
-                                          "id": "frame-112",
-                                          "figmaNodeId": "2227:195",
+                                          "id": "frame-111",
+                                          "figmaNodeId": "2227:196",
                                           "children": [
                                             {
-                                              "type": "row",
-                                              "id": "frame-111",
-                                              "figmaNodeId": "2227:196",
-                                              "children": [
-                                                {
-                                                  "type": "image",
-                                                  "id": "ellipse-4",
-                                                  "figmaNodeId": "2227:197",
-                                                  "asset": {
-                                                    "nodeId": "2227:197",
-                                                    "kind": "image"
-                                                  },
-                                                  "size": {
-                                                    "width": 30,
-                                                    "height": 30
-                                                  }
-                                                },
-                                                {
-                                                  "type": "text",
-                                                  "id": "lottowatch",
-                                                  "figmaNodeId": "2227:198",
-                                                  "text": "LottoWatch",
-                                                  "typography": {
-                                                    "fontFamily": "Inter",
-                                                    "fontSize": 14,
-                                                    "fontWeight": 400,
-                                                    "lineHeight": "16.94px",
-                                                    "color": "#00000099",
-                                                    "align": "left"
-                                                  }
-                                                }
-                                              ],
-                                              "layout": {
-                                                "display": "flex",
-                                                "direction": "row",
-                                                "gap": 8,
-                                                "align": "center"
+                                              "type": "image",
+                                              "id": "ellipse-4",
+                                              "figmaNodeId": "2227:197",
+                                              "asset": {
+                                                "nodeId": "2227:197",
+                                                "kind": "image"
                                               },
                                               "size": {
-                                                "width": 114
+                                                "width": 30,
+                                                "height": 30
                                               }
                                             },
                                             {
-                                              "type": "row",
-                                              "id": "frame-110",
-                                              "figmaNodeId": "2227:199",
-                                              "children": [
-                                                {
-                                                  "type": "icon",
-                                                  "id": "frame-icon",
-                                                  "figmaNodeId": "2227:200",
-                                                  "asset": {
-                                                    "nodeId": "2227:200",
-                                                    "kind": "svg"
-                                                  },
-                                                  "size": {
-                                                    "width": 22,
-                                                    "height": 22
-                                                  }
-                                                },
-                                                {
-                                                  "type": "text",
-                                                  "id": "text-845",
-                                                  "figmaNodeId": "2227:202",
-                                                  "text": "845",
-                                                  "typography": {
-                                                    "fontFamily": "Inter",
-                                                    "fontSize": 14,
-                                                    "fontWeight": 400,
-                                                    "lineHeight": "16.94px",
-                                                    "color": "#00000099",
-                                                    "align": "left"
-                                                  }
-                                                }
-                                              ],
-                                              "layout": {
-                                                "display": "flex",
-                                                "direction": "row",
-                                                "gap": 6,
-                                                "align": "start"
-                                              },
-                                              "size": {
-                                                "width": 55
+                                              "type": "text",
+                                              "id": "lottowatch",
+                                              "figmaNodeId": "2227:198",
+                                              "text": "LottoWatch",
+                                              "typography": {
+                                                "fontFamily": "Inter",
+                                                "fontSize": 14,
+                                                "fontWeight": 400,
+                                                "lineHeight": "16.94px",
+                                                "color": "#00000099",
+                                                "align": "left"
                                               }
                                             }
                                           ],
                                           "layout": {
                                             "display": "flex",
                                             "direction": "row",
-                                            "justify": "space-between",
+                                            "gap": 8,
+                                            "align": "center"
+                                          },
+                                          "size": {
+                                            "width": 114
+                                          }
+                                        },
+                                        {
+                                          "type": "row",
+                                          "id": "frame-110",
+                                          "figmaNodeId": "2227:199",
+                                          "children": [
+                                            {
+                                              "type": "image",
+                                              "id": "frame-svg",
+                                              "figmaNodeId": "2227:200",
+                                              "asset": {
+                                                "nodeId": "2227:200",
+                                                "kind": "svg"
+                                              },
+                                              "size": {
+                                                "width": 22,
+                                                "height": 22
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "845",
+                                              "figmaNodeId": "2227:202",
+                                              "text": "845",
+                                              "typography": {
+                                                "fontFamily": "Inter",
+                                                "fontSize": 14,
+                                                "fontWeight": 400,
+                                                "lineHeight": "16.94px",
+                                                "color": "#00000099",
+                                                "align": "left"
+                                              }
+                                            }
+                                          ],
+                                          "layout": {
+                                            "display": "flex",
+                                            "direction": "row",
+                                            "gap": 6,
                                             "align": "start"
                                           },
                                           "size": {
-                                            "width": 326
+                                            "width": 55
                                           }
                                         }
                                       ],
                                       "layout": {
                                         "display": "flex",
-                                        "direction": "column",
-                                        "gap": 20,
+                                        "direction": "row",
+                                        "justify": "space-between",
                                         "align": "start"
+                                      },
+                                      "size": {
+                                        "width": 326
                                       }
                                     }
                                   ],
                                   "layout": {
                                     "display": "flex",
                                     "direction": "column",
+                                    "gap": 20,
                                     "align": "start"
                                   }
                                 }
@@ -1616,166 +1616,161 @@
                     },
                     {
                       "type": "row",
-                      "id": "frame-120-1",
+                      "id": "frame-120",
                       "figmaNodeId": "2231:227",
                       "children": [
                         {
                           "type": "column",
                           "id": "group-153",
                           "figmaNodeId": "2227:246",
+                          "background": {
+                            "color": "#F7F7F7"
+                          },
+                          "border": {
+                            "radius": 0,
+                            "color": "#0000000A",
+                            "width": 1
+                          },
                           "children": [
                             {
                               "type": "column",
-                              "id": "group-149",
-                              "figmaNodeId": "2227:248",
+                              "id": "casino-fx-homepage-column-5",
                               "children": [
                                 {
+                                  "type": "image",
+                                  "id": "rectangle-43-2",
+                                  "figmaNodeId": "2228:279",
+                                  "asset": {
+                                    "nodeId": "2228:279",
+                                    "kind": "image"
+                                  },
+                                  "size": {
+                                    "width": 365,
+                                    "height": 180
+                                  }
+                                },
+                                {
                                   "type": "column",
-                                  "id": "scope-column-6",
+                                  "id": "frame-113-2",
+                                  "figmaNodeId": "2227:250",
                                   "children": [
                                     {
-                                      "type": "image",
-                                      "id": "rectangle-43-2",
-                                      "figmaNodeId": "2228:279",
-                                      "asset": {
-                                        "nodeId": "2228:279",
-                                        "kind": "image"
+                                      "type": "text",
+                                      "id": "leaked-admin-backend-screenshot-where-lucky-draw-ticket-numbers-are-altered",
+                                      "figmaNodeId": "2227:251",
+                                      "text": "Leaked admin backend screenshot where lucky draw ticket numbers are altered.",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 16,
+                                        "fontWeight": 400,
+                                        "lineHeight": "19.36px",
+                                        "color": "#000000CC",
+                                        "align": "left"
                                       },
                                       "size": {
-                                        "width": 365,
-                                        "height": 180
+                                        "width": 326
                                       }
                                     },
                                     {
-                                      "type": "column",
-                                      "id": "frame-113",
-                                      "figmaNodeId": "2227:250",
+                                      "type": "row",
+                                      "id": "frame-112-2",
+                                      "figmaNodeId": "2227:252",
                                       "children": [
                                         {
-                                          "type": "text",
-                                          "id": "leaked-admin-backend-screenshot-where-lucky-draw-ticket-numbers-are-altered",
-                                          "figmaNodeId": "2227:251",
-                                          "text": "Leaked admin backend screenshot where lucky draw ticket numbers are altered.",
-                                          "typography": {
-                                            "fontFamily": "Inter",
-                                            "fontSize": 16,
-                                            "fontWeight": 400,
-                                            "lineHeight": "19.36px",
-                                            "color": "#000000CC",
-                                            "align": "left"
-                                          },
-                                          "size": {
-                                            "width": 326
-                                          }
-                                        },
-                                        {
                                           "type": "row",
-                                          "id": "frame-112-2",
-                                          "figmaNodeId": "2227:252",
+                                          "id": "frame-111-2",
+                                          "figmaNodeId": "2227:253",
                                           "children": [
                                             {
-                                              "type": "row",
-                                              "id": "frame-111-2",
-                                              "figmaNodeId": "2227:253",
-                                              "children": [
-                                                {
-                                                  "type": "image",
-                                                  "id": "ellipse-4-2",
-                                                  "figmaNodeId": "2227:254",
-                                                  "asset": {
-                                                    "nodeId": "2227:254",
-                                                    "kind": "image"
-                                                  },
-                                                  "size": {
-                                                    "width": 30,
-                                                    "height": 30
-                                                  }
-                                                },
-                                                {
-                                                  "type": "text",
-                                                  "id": "mathgenius",
-                                                  "figmaNodeId": "2227:255",
-                                                  "text": "MathGenius",
-                                                  "typography": {
-                                                    "fontFamily": "Inter",
-                                                    "fontSize": 14,
-                                                    "fontWeight": 400,
-                                                    "lineHeight": "16.94px",
-                                                    "color": "#00000099",
-                                                    "align": "left"
-                                                  }
-                                                }
-                                              ],
-                                              "layout": {
-                                                "display": "flex",
-                                                "direction": "row",
-                                                "gap": 8,
-                                                "align": "center"
+                                              "type": "image",
+                                              "id": "ellipse-4-2",
+                                              "figmaNodeId": "2227:254",
+                                              "asset": {
+                                                "nodeId": "2227:254",
+                                                "kind": "image"
                                               },
                                               "size": {
-                                                "width": 118
+                                                "width": 30,
+                                                "height": 30
                                               }
                                             },
                                             {
-                                              "type": "row",
-                                              "id": "frame-110-2",
-                                              "figmaNodeId": "2227:256",
-                                              "children": [
-                                                {
-                                                  "type": "image",
-                                                  "id": "frame",
-                                                  "figmaNodeId": "2227:257",
-                                                  "asset": {
-                                                    "nodeId": "2227:257",
-                                                    "kind": "svg"
-                                                  },
-                                                  "size": {
-                                                    "width": 22,
-                                                    "height": 22
-                                                  }
-                                                },
-                                                {
-                                                  "type": "text",
-                                                  "id": "612",
-                                                  "figmaNodeId": "2227:259",
-                                                  "text": "612",
-                                                  "typography": {
-                                                    "fontFamily": "Inter",
-                                                    "fontSize": 14,
-                                                    "fontWeight": 400,
-                                                    "lineHeight": "16.94px",
-                                                    "color": "#00000099",
-                                                    "align": "left"
-                                                  }
-                                                }
-                                              ],
-                                              "layout": {
-                                                "display": "flex",
-                                                "direction": "row",
-                                                "gap": 6,
-                                                "align": "start"
-                                              },
-                                              "size": {
-                                                "width": 52
+                                              "type": "text",
+                                              "id": "mathgenius",
+                                              "figmaNodeId": "2227:255",
+                                              "text": "MathGenius",
+                                              "typography": {
+                                                "fontFamily": "Inter",
+                                                "fontSize": 14,
+                                                "fontWeight": 400,
+                                                "lineHeight": "16.94px",
+                                                "color": "#00000099",
+                                                "align": "left"
                                               }
                                             }
                                           ],
                                           "layout": {
                                             "display": "flex",
                                             "direction": "row",
-                                            "justify": "space-between",
+                                            "gap": 8,
+                                            "align": "center"
+                                          },
+                                          "size": {
+                                            "width": 118
+                                          }
+                                        },
+                                        {
+                                          "type": "row",
+                                          "id": "frame-110-2",
+                                          "figmaNodeId": "2227:256",
+                                          "children": [
+                                            {
+                                              "type": "image",
+                                              "id": "frame-svg-2",
+                                              "figmaNodeId": "2227:257",
+                                              "asset": {
+                                                "nodeId": "2227:257",
+                                                "kind": "svg"
+                                              },
+                                              "size": {
+                                                "width": 22,
+                                                "height": 22
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "612",
+                                              "figmaNodeId": "2227:259",
+                                              "text": "612",
+                                              "typography": {
+                                                "fontFamily": "Inter",
+                                                "fontSize": 14,
+                                                "fontWeight": 400,
+                                                "lineHeight": "16.94px",
+                                                "color": "#00000099",
+                                                "align": "left"
+                                              }
+                                            }
+                                          ],
+                                          "layout": {
+                                            "display": "flex",
+                                            "direction": "row",
+                                            "gap": 6,
                                             "align": "start"
                                           },
                                           "size": {
-                                            "width": 326
+                                            "width": 52
                                           }
                                         }
                                       ],
                                       "layout": {
                                         "display": "flex",
-                                        "direction": "column",
-                                        "gap": 20,
+                                        "direction": "row",
+                                        "justify": "space-between",
                                         "align": "start"
+                                      },
+                                      "size": {
+                                        "width": 326
                                       }
                                     }
                                   ],
@@ -1783,14 +1778,15 @@
                                     "display": "flex",
                                     "direction": "column",
                                     "gap": 20,
-                                    "align": "center"
+                                    "align": "start"
                                   }
                                 }
                               ],
                               "layout": {
                                 "display": "flex",
                                 "direction": "column",
-                                "align": "start"
+                                "gap": 20,
+                                "align": "center"
                               }
                             }
                           ],
@@ -1807,13 +1803,6 @@
                           },
                           "size": {
                             "width": 365
-                          },
-                          "background": {
-                            "color": "#F7F7F7"
-                          },
-                          "border": {
-                            "color": "#0000000A",
-                            "width": 1
                           }
                         },
                         {
@@ -1823,156 +1812,152 @@
                           "children": [
                             {
                               "type": "column",
-                              "id": "group-149-2",
-                              "figmaNodeId": "2227:234",
+                              "id": "casino-fx-homepage-column-6",
                               "children": [
                                 {
+                                  "type": "image",
+                                  "id": "rectangle-42",
+                                  "figmaNodeId": "2227:235",
+                                  "asset": {
+                                    "nodeId": "2227:235",
+                                    "kind": "image"
+                                  },
+                                  "notes": [
+                                    "image fill from rectangle"
+                                  ],
+                                  "size": {
+                                    "width": 365,
+                                    "height": 180
+                                  }
+                                },
+                                {
                                   "type": "column",
-                                  "id": "scope-column-7",
+                                  "id": "frame-113-1",
+                                  "figmaNodeId": "2227:236",
                                   "children": [
                                     {
-                                      "type": "image",
-                                      "id": "rectangle-42",
-                                      "figmaNodeId": "2227:235",
-                                      "asset": {
-                                        "nodeId": "2227:235",
-                                        "kind": "image"
+                                      "type": "text",
+                                      "id": "how-light-roulette-uses-a-custom-software-script-to-avoid-paying-out-on",
+                                      "figmaNodeId": "2227:237",
+                                      "text": "How Light Roulette uses a custom software script to avoid paying out on ",
+                                      "typography": {
+                                        "fontFamily": "Inter",
+                                        "fontSize": 16,
+                                        "fontWeight": 400,
+                                        "lineHeight": "19.36px",
+                                        "color": "#000000CC",
+                                        "align": "left"
                                       },
                                       "size": {
-                                        "width": 365,
-                                        "height": 180
+                                        "width": 326
                                       }
                                     },
                                     {
-                                      "type": "column",
-                                      "id": "frame-113-2",
-                                      "figmaNodeId": "2227:236",
+                                      "type": "row",
+                                      "id": "frame-112-1",
+                                      "figmaNodeId": "2227:238",
                                       "children": [
                                         {
-                                          "type": "text",
-                                          "id": "text-237",
-                                          "figmaNodeId": "2227:237",
-                                          "text": "How Light Roulette uses a custom software script to avoid paying out on ",
-                                          "size": {
-                                            "width": 326
-                                          },
-                                          "typography": {
-                                            "fontFamily": "Inter",
-                                            "fontSize": 16,
-                                            "fontWeight": 400,
-                                            "lineHeight": "19.36px",
-                                            "color": "#000000CC",
-                                            "align": "left"
-                                          }
-                                        },
-                                        {
                                           "type": "row",
-                                          "id": "frame-112-3",
-                                          "figmaNodeId": "2227:238",
+                                          "id": "frame-111-1",
+                                          "figmaNodeId": "2227:239",
                                           "children": [
                                             {
-                                              "type": "row",
-                                              "id": "frame-111-3",
-                                              "figmaNodeId": "2227:239",
-                                              "children": [
-                                                {
-                                                  "type": "image",
-                                                  "id": "ellipse-4-3",
-                                                  "figmaNodeId": "2227:240",
-                                                  "asset": {
-                                                    "nodeId": "2227:240",
-                                                    "kind": "image"
-                                                  },
-                                                  "size": {
-                                                    "width": 30,
-                                                    "height": 30
-                                                  }
-                                                },
-                                                {
-                                                  "type": "text",
-                                                  "id": "jhonson-d",
-                                                  "figmaNodeId": "2227:241",
-                                                  "text": "Jhonson D.",
-                                                  "typography": {
-                                                    "fontFamily": "Inter",
-                                                    "fontSize": 14,
-                                                    "fontWeight": 400,
-                                                    "lineHeight": "16.94px",
-                                                    "color": "#00000099",
-                                                    "align": "left"
-                                                  }
-                                                }
-                                              ],
-                                              "layout": {
-                                                "display": "flex",
-                                                "direction": "row",
-                                                "gap": 8,
-                                                "align": "center"
+                                              "type": "image",
+                                              "id": "avatar-jhonson-d",
+                                              "figmaNodeId": "2227:240",
+                                              "asset": {
+                                                "nodeId": "2227:240",
+                                                "kind": "image"
                                               },
+                                              "notes": [
+                                                "avatar image"
+                                              ],
                                               "size": {
-                                                "width": 112
+                                                "width": 30,
+                                                "height": 30
                                               }
                                             },
                                             {
-                                              "type": "row",
-                                              "id": "frame-110-3",
-                                              "figmaNodeId": "2227:242",
-                                              "children": [
-                                                {
-                                                  "type": "icon",
-                                                  "id": "frame-icon-2",
-                                                  "figmaNodeId": "2227:243",
-                                                  "asset": {
-                                                    "nodeId": "2227:243",
-                                                    "kind": "svg"
-                                                  },
-                                                  "size": {
-                                                    "width": 22,
-                                                    "height": 22
-                                                  }
-                                                },
-                                                {
-                                                  "type": "text",
-                                                  "id": "2-5k",
-                                                  "figmaNodeId": "2227:245",
-                                                  "text": "2.5K",
-                                                  "typography": {
-                                                    "fontFamily": "Inter",
-                                                    "fontSize": 14,
-                                                    "fontWeight": 400,
-                                                    "lineHeight": "16.94px",
-                                                    "color": "#00000099",
-                                                    "align": "left"
-                                                  }
-                                                }
-                                              ],
-                                              "layout": {
-                                                "display": "flex",
-                                                "direction": "row",
-                                                "gap": 6,
-                                                "align": "start"
-                                              },
-                                              "size": {
-                                                "width": 58
+                                              "type": "text",
+                                              "id": "author-name",
+                                              "figmaNodeId": "2227:241",
+                                              "text": "Jhonson D.",
+                                              "typography": {
+                                                "fontFamily": "Inter",
+                                                "fontSize": 14,
+                                                "fontWeight": 400,
+                                                "lineHeight": "16.94px",
+                                                "color": "#00000099",
+                                                "align": "left"
                                               }
                                             }
                                           ],
                                           "layout": {
                                             "display": "flex",
                                             "direction": "row",
-                                            "justify": "space-between",
+                                            "gap": 8,
+                                            "align": "center"
+                                          },
+                                          "size": {
+                                            "width": 112
+                                          }
+                                        },
+                                        {
+                                          "type": "row",
+                                          "id": "frame-110-1",
+                                          "figmaNodeId": "2227:242",
+                                          "children": [
+                                            {
+                                              "type": "icon",
+                                              "id": "icon-views",
+                                              "figmaNodeId": "2227:243",
+                                              "asset": {
+                                                "nodeId": "2227:243",
+                                                "kind": "svg"
+                                              },
+                                              "notes": [
+                                                "views icon"
+                                              ],
+                                              "size": {
+                                                "width": 22,
+                                                "height": 22
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "views-count",
+                                              "figmaNodeId": "2227:245",
+                                              "text": "2.5K",
+                                              "typography": {
+                                                "fontFamily": "Inter",
+                                                "fontSize": 14,
+                                                "fontWeight": 400,
+                                                "lineHeight": "16.94px",
+                                                "color": "#00000099",
+                                                "align": "left"
+                                              }
+                                            }
+                                          ],
+                                          "layout": {
+                                            "display": "flex",
+                                            "direction": "row",
+                                            "gap": 6,
                                             "align": "start"
                                           },
                                           "size": {
-                                            "width": 326
+                                            "width": 58
                                           }
                                         }
                                       ],
                                       "layout": {
                                         "display": "flex",
-                                        "direction": "column",
-                                        "gap": 20,
+                                        "direction": "row",
+                                        "justify": "space-between",
                                         "align": "start"
+                                      },
+                                      "size": {
+                                        "width": 326
                                       }
                                     }
                                   ],
@@ -1980,14 +1965,15 @@
                                     "display": "flex",
                                     "direction": "column",
                                     "gap": 20,
-                                    "align": "center"
+                                    "align": "start"
                                   }
                                 }
                               ],
                               "layout": {
                                 "display": "flex",
                                 "direction": "column",
-                                "align": "start"
+                                "gap": 20,
+                                "align": "center"
                               }
                             }
                           ],
@@ -2060,21 +2046,14 @@
     }
   ],
   "_uncertain": [
-    "part 1aaa: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing",
-    "part 1aab: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing",
-    "level for heading not determined, using text node instead",
-    "No content nodes available in this part of the data; Frame 117 and Group 157 lack explicit auto-layout, fills, or detailed geometry data for full styling",
-    "Layout: in the measured column, [2227:127, 2227:125, 2227:126] and [2228:263] are separate stacked items, so they must be SIBLING elements. [2228:263] must not be nested inside the element holding [2227:127, 2227:125, 2227:126].",
-    "classy-slots-label: dropped unknown field \"typography.textAlignHorizontal\"",
-    "rigged-label: dropped unknown field \"typography.textAlignHorizontal\"",
-    "Card children (Irish Luck logo image, rank badge, name text, rigged-percentage text, Proof button) not provided in this part of the data.",
-    "Frame 109 background / fills / radius inherited from parent 'Rectangle 44' solid #F7F7F7 (radius 8).",
-    "frame-109: dropped unknown field \"_uncertain\"",
-    "Section wrapper background and exact positioning of card image vs. caption column (flat per part instructions)",
-    "Rectangle 42 image asset missing from manifest; emitted as unsupported node instead of image",
-    "statistical-proof-caption: dropped unknown field \"typography.textAlign\"",
-    "section: dropped unknown field \"_uncertain\"",
-    "stitch: 5 node(s) added from Figma data because the model's parts did not include them",
-    "stitch: dropped 3 duplicate element(s) emitted by overlapping parts"
+    "The synthetic top-level section corresponds to only this partial portion of the larger CasinoFX card",
+    "Exact centering of Group 143 (rank seal + rank number) is inferred from the row object — its figmaNodeId is the GROUP itself, not a real auto-layout wrapper (Figma group). Kept as a row to express the two children side‑by‑side.",
+    "No href provided for the Proof button in the Figma data.",
+    "classy-slots-logo: dropped unknown field \"offCross\"",
+    "rank-label: dropped unknown field \"offCross\"",
+    "part 5: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing",
+    "border radius and boxShadow details are approximated from stroke and effects data",
+    "border radius omitted (assumed 0)",
+    "stitch: 12 node(s) added from Figma data because the model's parts did not include them"
   ]
 }

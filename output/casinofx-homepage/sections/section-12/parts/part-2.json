@@ -3,78 +3,136 @@
   "children": [
     {
       "type": "section",
-      "id": "section",
+      "id": "classy-slots-card",
+      "figmaNodeId": "2231:219",
+      "background": {
+        "color": "#F7F7F7"
+      },
+      "border": {
+        "radius": 8
+      },
       "children": [
         {
-          "type": "column",
-          "id": "group-156",
-          "figmaNodeId": "2231:216"
-        },
-        {
           "type": "image",
-          "id": "spin-casino-colored-logo-1",
-          "figmaNodeId": "2228:263",
+          "id": "classy-slots-logo",
+          "figmaNodeId": "2228:265",
           "asset": {
-            "nodeId": "2228:263",
+            "nodeId": "2228:265",
             "kind": "image"
           }
         },
         {
-          "type": "unsupported",
-          "id": "group-142",
-          "figmaNodeId": "2227:127",
-          "notes": [
-            "Contains vector and text layers."
+          "type": "row",
+          "id": "rank-label",
+          "figmaNodeId": "2227:128",
+          "children": [
+            {
+              "type": "icon",
+              "id": "rank-seal",
+              "figmaNodeId": "2227:129",
+              "asset": {
+                "nodeId": "2227:129",
+                "kind": "svg"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "rank-number",
+              "figmaNodeId": "2227:130",
+              "text": "2",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#000000",
+                "align": "left"
+              }
+            }
           ]
         },
         {
           "type": "column",
-          "id": "frame-104",
-          "figmaNodeId": "2226:12"
+          "id": "classy-slots-info",
+          "figmaNodeId": "2226:23",
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 6,
+            "align": "center"
+          },
+          "children": [
+            {
+              "type": "text-basic",
+              "id": "classy-slots-name",
+              "figmaNodeId": "2226:24",
+              "text": "Classy Slots",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": 500,
+                "lineHeight": "19.36px",
+                "color": "#000000",
+                "align": "center"
+              }
+            },
+            {
+              "type": "text-basic",
+              "id": "classy-slots-rigor",
+              "figmaNodeId": "2226:25",
+              "text": "🛑 88.5% Rigged",
+              "typography": {
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": "16.94px",
+                "color": "#00000080",
+                "align": "center"
+              }
+            }
+          ]
         },
         {
-          "type": "row",
-          "id": "frame-28",
-          "figmaNodeId": "2226:13"
-        },
-        {
-          "type": "image",
-          "id": "vector-2",
-          "figmaNodeId": "2227:125",
-          "asset": {
-            "nodeId": "2227:125",
-            "kind": "svg"
+          "type": "button",
+          "id": "classy-slots-proof",
+          "figmaNodeId": "2226:26",
+          "background": {
+            "color": "#FFD733"
+          },
+          "border": {
+            "radius": 4
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "justify": "center",
+            "align": "center",
+            "padding": {
+              "top": 12,
+              "bottom": 12,
+              "left": 20,
+              "right": 20
+            }
+          },
+          "text": "Proof",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "16.94px",
+            "color": "#000000",
+            "align": "center"
           }
-        },
-        {
-          "type": "text",
-          "id": "text-126",
-          "figmaNodeId": "2227:126",
-          "text": "1"
-        },
-        {
-          "type": "text",
-          "id": "text-10",
-          "figmaNodeId": "2226:10",
-          "text": "Spin"
-        },
-        {
-          "type": "text",
-          "id": "text-11",
-          "figmaNodeId": "2226:11",
-          "text": "🛑 94.2% Rigged"
-        },
-        {
-          "type": "text",
-          "id": "text-14",
-          "figmaNodeId": "2226:14",
-          "text": "Proof"
         }
       ]
     }
   ],
   "_uncertain": [
-    "Missing layout and size details for container nodes.",
-    "Layout: in the measured column, [2227:127, 2227:125, 2227:126] and [2228:263] are separate stacked items, so they must be SIBLING elements. [2228:263] must not be nested inside the element holding [2227:127, 2227:125, 2227:126]."
+    "offCross applied to child elements of the column group without a parent layout object; preserved as an extra property for clarity",
+    "The synthetic top-level section corresponds to only this partial portion of the larger CasinoFX card",
+    "Exact centering of Group 143 (rank seal + rank number) is inferred from the row object — its figmaNodeId is the GROUP itself, not a real auto-layout wrapper (Figma group). Kept as a row to express the two children side‑by‑side.",
+    "No href provided for the Proof button in the Figma data.",
+    "classy-slots-logo: dropped unknown field \"offCross\"",
+    "rank-label: dropped unknown field \"offCross\""
   ]
 }

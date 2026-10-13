@@ -26,6 +26,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { validateBricks } from "./bricks-validator.js";
 
 // ---------- args ----------
 const argv = process.argv.slice(2);
@@ -34,7 +35,7 @@ const opt = (name) => {
   const i = argv.indexOf(name);
   return i >= 0 ? argv[i + 1] : undefined;
 };
-const optNames = new Set(["--page", "--title"]);
+const optNames = new Set(["--page", "--title", "--report-dir"]);
 const positional = argv.filter((a, i) => !a.startsWith("--") && !optNames.has(argv[i - 1]));
 const target = positional[0];
 if (!target) {
@@ -84,7 +85,9 @@ if (!Array.isArray(tree) || !tree.length) {
   process.exit(1);
 }
 const label = path.basename(path.dirname(path.resolve(treePath))) || "tree";
-const outDir = path.resolve("output");
+const validation = validateBricks(tree);
+if (validation.errors.length) throw new Error(`Invalid Bricks tree: ${validation.errors.join("; ")}`);
+const outDir = path.resolve(opt("--report-dir") || "output");
 fs.mkdirSync(outDir, { recursive: true });
 
 // ---------- MCP client ----------
@@ -143,7 +146,7 @@ async function ability(name, params = {}) {
 
 // ---------- assets (WordPress core REST media endpoint) ----------
 const MIME = { png: "image/png", jpg: "image/jpeg", jpeg: "image/jpeg", svg: "image/svg+xml", webp: "image/webp", gif: "image/gif" };
-const cachePath = path.join(outDir, "mcp-media-cache.json");
+const cachePath = path.resolve("output", "mcp-media-cache.json");
 let cache = {};
 try { cache = JSON.parse(fs.readFileSync(cachePath, "utf8")); } catch {}
 
@@ -159,7 +162,7 @@ function findLocal(url) {
 async function uploadAsset(localPath) {
   const filename = path.basename(localPath);
   const stat = fs.statSync(localPath);
-  const key = `${localPath}|${stat.size}|${Math.floor(stat.mtimeMs)}`;
+  const key = `${SITE_BASE}|${localPath}|${stat.size}|${Math.floor(stat.mtimeMs)}`;
   if (cache[key]) return cache[key];
   const ext = path.extname(filename).slice(1).toLowerCase();
   const res = await fetch(`${SITE_BASE}/wp-json/wp/v2/media`, {
@@ -174,7 +177,9 @@ async function uploadAsset(localPath) {
   const text = await res.text();
   if (!res.ok) throw new Error(`${res.status} ${text.slice(0, 200)}`);
   const data = JSON.parse(text);
+  if (!Number.isInteger(data.id) || data.id < 1 || !/^https?:\/\//i.test(data.source_url || "")) throw new Error("Media endpoint did not return a valid attachment ID and URL.");
   cache[key] = { id: data.id, url: data.source_url, filename };
+  fs.mkdirSync(path.dirname(cachePath), { recursive: true });
   fs.writeFileSync(cachePath, JSON.stringify(cache, null, 2));
   return cache[key];
 }
@@ -269,6 +274,7 @@ async function main() {
   } else {
     console.log("2) Uploading assets...");
     assetFailures = await resolveAssets();
+    if (assetFailures.length) throw new Error(`Asset resolution failed (${assetFailures.length} references). Not saving broken image URLs.`);
   }
 
   let postId = PAGE_ARG;
@@ -304,6 +310,7 @@ async function main() {
 
   console.log("5) Saving elements (set-page-elements)...");
   const { saved, renames } = await saveElements(postId);
+  fs.writeFileSync(path.join(treeDir, "injected-tree.json"), JSON.stringify(tree, null, 2));
   if (renames.length) {
     const fixedPath = path.join(outDir, `mcp-fixed-tree-${label}.json`);
     fs.writeFileSync(fixedPath, JSON.stringify(tree, null, 2));
@@ -321,6 +328,7 @@ async function main() {
 
   const report = { postId, created: !!created, builderUrl: created?.builderUrl, permalink: created?.permalink, elementCount: saved.elementCount, revisionId: saved.revisionId, assetFailures, keyRenames: renames, tree: treePath, at: new Date().toISOString() };
   fs.writeFileSync(path.join(outDir, `mcp-inject-${label}.json`), JSON.stringify(report, null, 2));
+  fs.writeFileSync(path.join(treeDir, "inject-report.json"), JSON.stringify(report, null, 2));
   console.log("\nDone.");
   if (created?.builderUrl) console.log("Open in builder: " + created.builderUrl);
   if (created?.permalink) console.log("Preview (draft, log in first): " + created.permalink);

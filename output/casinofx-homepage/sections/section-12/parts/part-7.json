@@ -2,122 +2,97 @@
   "type": "page",
   "children": [
     {
-      "type": "row",
-      "id": "slot-powers-row",
-      "figmaNodeId": "2227:138",
-      "layout": {
-        "display": "flex",
-        "direction": "row",
-        "gap": 45,
-        "align": "center"
-      },
+      "type": "section",
+      "id": "section-1",
       "children": [
         {
+          "type": "column",
+          "id": "frame-122",
+          "figmaNodeId": "2231:229",
+          "size": {
+            "width": 756,
+            "height": 647
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 23,
+            "align": "stretch",
+            "justify": "start"
+          }
+        },
+        {
           "type": "row",
-          "id": "slot-powers-info",
-          "figmaNodeId": "2227:137",
+          "id": "frame-121",
+          "figmaNodeId": "2231:228",
+          "size": {
+            "width": 756,
+            "height": 312
+          },
           "layout": {
             "display": "flex",
             "direction": "row",
-            "gap": 19,
-            "align": "center"
+            "gap": 26,
+            "align": "center",
+            "justify": "start"
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-150",
+          "figmaNodeId": "2227:188",
+          "size": {
+            "width": 365,
+            "height": 312
+          },
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 0
+          },
+          "boxShadow": {
+            "color": "#00000024",
+            "blur": 0,
+            "offsetX": 0,
+            "offsetY": 0,
+            "spread": 0
           },
           "children": [
             {
+              "type": "text",
+              "id": "text-how-light-roulette",
+              "figmaNodeId": "2227:81",
+              "text": "How Light Roulette uses a custom softwar"
+            },
+            {
+              "type": "heading",
+              "id": "heading-codebreaker",
+              "figmaNodeId": "2227:172",
+              "text": "CodeBreaker",
+              "level": 1
+            },
+            {
               "type": "image",
-              "id": "slot-powers-icon",
-              "figmaNodeId": "2228:271",
+              "id": "image-frame",
+              "figmaNodeId": "2227:174",
               "asset": {
-                "nodeId": "2228:271",
-                "kind": "image"
-              },
-              "size": {
-                "width": 68,
-                "height": 68
+                "nodeId": "2227:174",
+                "kind": "svg"
               }
             },
             {
-              "type": "column",
-              "id": "slot-powers-text",
-              "figmaNodeId": "2227:120",
-              "layout": {
-                "display": "flex",
-                "direction": "column",
-                "gap": 6
-              },
-              "size": {
-                "width": 138
-              },
-              "children": [
-                {
-                  "type": "heading",
-                  "id": "slot-powers-title",
-                  "figmaNodeId": "2227:121",
-                  "text": "Slot Powers",
-                  "level": 3,
-                  "typography": {
-                    "fontFamily": "Inter",
-                    "fontSize": 16,
-                    "fontWeight": 500,
-                    "color": "#000000",
-                    "lineHeight": "19.36px",
-                    "align": "left"
-                  }
-                },
-                {
-                  "type": "text",
-                  "id": "slot-powers-rigged",
-                  "figmaNodeId": "2227:122",
-                  "text": "🛑 94.2% Rigged",
-                  "typography": {
-                    "fontFamily": "Inter",
-                    "fontSize": 14,
-                    "fontWeight": 400,
-                    "color": "#00000080",
-                    "lineHeight": "16.94px",
-                    "align": "left"
-                  }
-                }
-              ]
+              "type": "text",
+              "id": "text-1-2k",
+              "figmaNodeId": "2227:177",
+              "text": "1.2K"
             }
           ]
-        },
-        {
-          "type": "button",
-          "id": "proof-button",
-          "figmaNodeId": "2227:123",
-          "text": "Proof",
-          "layout": {
-            "display": "flex",
-            "direction": "row",
-            "align": "center",
-            "justify": "center",
-            "padding": {
-              "left": 20,
-              "right": 20,
-              "top": 12,
-              "bottom": 12
-            }
-          },
-          "size": {
-            "width": 138
-          },
-          "background": {
-            "color": "#FFD733"
-          },
-          "border": {
-            "radius": 4
-          },
-          "typography": {
-            "fontFamily": "Inter",
-            "fontSize": 14,
-            "fontWeight": 600,
-            "color": "#000000",
-            "lineHeight": "16.94px",
-            "align": "center"
-          }
         }
       ]
     }
+  ],
+  "_uncertain": [
+    "border radius and boxShadow details are approximated from stroke and effects data"
   ]
 }

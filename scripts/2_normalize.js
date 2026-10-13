@@ -13,6 +13,7 @@
 import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import fetch from "node-fetch";
 import { validateNormalized } from "./normalized-validator.js";
 import { collectGradients } from "./gradient-utils.js";
@@ -63,6 +64,8 @@ const splitArg = process.argv.find((a) => a === "--split" || a.startsWith("--spl
 const SPLIT = !!splitArg;
 const splitBudgetArg = splitArg && splitArg.includes("=") ? Number(splitArg.split("=")[1]) : null;
 const RESUME = process.argv.includes("--resume");
+// --estimate     build exactly the prompts this run would send, print the token count and cost range, and stop. Nothing is sent to any model.
+const ESTIMATE = process.argv.includes("--estimate");
 const frameDir = process.argv[2];
 // --nodes=id1,id2,... scopes the run to just those top-level children of the cached
 // figma-node.json (e.g. testing "just the hero" before spending a real call on the
@@ -359,15 +362,22 @@ function toOpenAIContent(content) {
 
 // Returns { text, finishReason } regardless of provider, so the retry loop in main()
 // never needs to know which one it's talking to.
+const usageTotal = { calls: 0, input: 0, output: 0 };
 async function callAnthropic(turns, { model, maxTokens }) {
   const { default: Anthropic } = await import("@anthropic-ai/sdk");
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+  // A key that is not tied to one workspace needs the workspace id on every request (ANTHROPIC_WORKSPACE_ID in .env).
+  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, ...(process.env.ANTHROPIC_WORKSPACE_ID ? { defaultHeaders: { "anthropic-workspace-id": process.env.ANTHROPIC_WORKSPACE_ID } } : {}) });
   const response = await client.messages.create({
     model,
     max_tokens: maxTokens,
     messages: turns.map((t) => ({ role: t.role, content: toAnthropicContent(t.content) })),
   });
   const text = response.content.map((b) => (b.type === "text" ? b.text : "")).join("\n");
+  // running token total for this run, from the numbers the API reports (what you are billed for)
+  const u = response.usage || {};
+  usageTotal.calls++; usageTotal.input += u.input_tokens || 0; usageTotal.output += u.output_tokens || 0;
+  const pIn = Number(process.env.PRICE_IN_PER_MTOK), pOut = Number(process.env.PRICE_OUT_PER_MTOK);
+  console.log(`  Tokens this call: ${(u.input_tokens || 0).toLocaleString()} in / ${(u.output_tokens || 0).toLocaleString()} out | run total (${usageTotal.calls} calls): ${usageTotal.input.toLocaleString()} in / ${usageTotal.output.toLocaleString()} out${pIn > 0 && pOut > 0 ? ` = ~$${((usageTotal.input * pIn + usageTotal.output * pOut) / 1e6).toFixed(4)}` : ""}`);
   return { text, finishReason: response.stop_reason };
 }
 
@@ -1040,6 +1050,27 @@ async function main() {
   const gradientsFor = (root) => { const ids = collectIds(root); return gradients.filter((g) => ids.has(g.nodeId)); };
   const manifestFor = (root) => { const ids = collectIds(root); return manifest.filter((m) => ids.has(m.nodeId)); };
 
+  // --estimate: tokens for the calls this run would make; the answer size is judged from the section's earlier normalized.json when there is one.
+  function reportEstimate(inputs, { imagePerCall = 0, label = "" } = {}) {
+    const inTok = inputs.reduce((a, b) => a + b, 0) + imagePerCall * inputs.length;
+    let outTok, outNote;
+    const prev = [outPath, outPath.replace(/normalized\.json$/, "normalized.rejected.json")].find((f) => fs.existsSync(f));
+    if (prev) { outTok = Math.round(fs.readFileSync(prev, "utf-8").length / 3.2); outNote = `from the existing ${path.basename(prev)}`; }
+    else { outTok = Math.round(inTok * 0.45); outNote = "guessed as 45% of the input (no earlier result to measure)"; }
+    const pIn = Number(process.env.PRICE_IN_PER_MTOK), pOut = Number(process.env.PRICE_OUT_PER_MTOK);
+    const line = "-".repeat(64);
+    console.log(`\n${line}\nESTIMATE ${label} - nothing was sent to any model\n${line}`);
+    console.log(`Model calls (best case, every answer valid): ${inputs.length}`);
+    console.log(`Input tokens : ~${inTok.toLocaleString()}${imagePerCall ? ` (includes ~${imagePerCall} per screenshot)` : ""}`);
+    console.log(`Output tokens: ~${outTok.toLocaleString()}  (${outNote})`);
+    console.log(`If every part needs one repair call: input ~${(inTok * 2).toLocaleString()}, output ~${(outTok * 2).toLocaleString()} (worst case)`);
+    if (pIn > 0 && pOut > 0) {
+      const cost = (i, o) => (i * pIn + o * pOut) / 1e6;
+      console.log(`Cost at $${pIn}/$${pOut} per million tokens: ~$${cost(inTok, outTok).toFixed(4)} (worst case ~$${cost(inTok * 2, outTok * 2).toFixed(4)})`);
+    } else console.log("Set PRICE_IN_PER_MTOK and PRICE_OUT_PER_MTOK in .env (the model's prices per million tokens) to also see the cost in dollars.");
+    console.log(`${line}\n`);
+  }
+
   // Builds the whole prompt for `root` (the full scope, or one part of it).
   async function buildPrompt(root, part, withImage = true) {
     const hint = root === prunedRoot ? fullHint : compactFigma(root);
@@ -1092,6 +1123,7 @@ how gaps/padding/typography are expressed, when notes are used).` : ""}`,
   // Ask the model about `root`, validate (retrying once), and return the validated (not yet post-processed) normalized JSON.
   async function ask(root, part) {
     const { content, hint: hintTree, man, manifestText } = await buildPrompt(root, part);
+    if (ESTIMATE) { reportEstimate([estimateTokens([{ role: "user", content }])], { label: `for ${scopeName || path.basename(outDir)}` }); process.exit(0); }
     const model = modelFor(CHAIN[0]);
     const maxTokens = maxTokensFor(CHAIN[0]);
     if (!part) console.log(CHAIN.length > 1 ? `Providers (in order): ${CHAIN.map((p) => `${p} [${modelFor(p) || "auto"}]`).join(" -> ")}` : CHAIN[0] === "groq" ? `Provider: groq  Model: ${model || "auto (fallback chain)"}` : `Provider: ${CHAIN[0]}  Model: ${model}  max_tokens: ${maxTokens}`);
@@ -1294,12 +1326,17 @@ how gaps/padding/typography are expressed, when notes are used).` : ""}`,
     const sizes = [];
     for (const p of parts) sizes.push(await promptTokens(p));
     console.log(`Split mode: ${parts.length} part(s), prompt sizes ~${sizes.map((n) => n.toLocaleString()).join(", ")} tokens (budget ${budget.toLocaleString()}).`);
+    if (ESTIMATE) { reportEstimate(sizes, { label: `for ${scopeName || path.basename(outDir)} (${parts.length} parts)` }); process.exit(0); }
     const partsDir = path.join(outDir, "parts");
     fs.mkdirSync(partsDir, { recursive: true });
     const docs = [];
     // Saved parts are only reused if they were made for exactly the same node grouping (done.json records which node
     // set each finished part covers): otherwise the pieces would not fit together.
-    const planKeys = parts.map((p) => p.map((n) => `${n.id}${n._shell ? "s" : ""}`).join("|"));
+    const planKeys = [];
+    for (const [i, p] of parts.entries()) {
+      const prompt = await buildPrompt(wrapNodes(p), { i: i + 1, n: parts.length });
+      planKeys.push(createHash("sha256").update(JSON.stringify(prompt.content)).digest("hex"));
+    }
     const doneFile = path.join(partsDir, "done.json");
     let done = {};
     if (RESUME && fs.existsSync(doneFile)) { try { done = JSON.parse(fs.readFileSync(doneFile, "utf-8")); } catch {} }

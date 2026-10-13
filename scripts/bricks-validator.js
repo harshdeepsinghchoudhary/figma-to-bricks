@@ -26,9 +26,12 @@
  *   9. image / icon / link settings match one of the observed real shapes
  */
 import fs from "fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ELEMENTS_SCHEMA_PATH = "./schema/bricks-elements.json";
-const SETTINGS_SCHEMA_PATH = "./schema/bricks-settings.json";
+const schemaDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "schema");
+const ELEMENTS_SCHEMA_PATH = path.join(schemaDir, "bricks-elements.json");
+const SETTINGS_SCHEMA_PATH = path.join(schemaDir, "bricks-settings.json");
 
 function loadJson(p, label) {
   if (!fs.existsSync(p)) {
@@ -48,6 +51,7 @@ const knownElementTypes = new Set(Object.keys(elementsSchema));
 // (":tablet_portrait") or pseudo ("::after") suffix stripped. Used to flag
 // keys the compiler emits that have never appeared in a real export.
 const knownKeysByType = {};
+const runtimeTypes = new Set();
 for (const [type, info] of Object.entries(elementsSchema)) {
   knownKeysByType[type] = new Set(
     (info.observedSettingKeys || []).map((o) => o.key.split(":")[0])
@@ -65,7 +69,7 @@ const knownBreakpoints = new Set(
 const knownPseudoSuffixes = new Set(["::before", "::after"]);
 
 // Keys proven by rendering in real Bricks but absent from analyzed exports (hand-maintained).
-const VERIFIED_PATH = "./schema/bricks-verified-keys.json";
+const VERIFIED_PATH = path.join(schemaDir, "bricks-verified-keys.json");
 if (fs.existsSync(VERIFIED_PATH)) {
   const verified = JSON.parse(fs.readFileSync(VERIFIED_PATH, "utf8"));
   for (const [type, keys] of Object.entries(verified)) {
@@ -74,12 +78,21 @@ if (fs.existsSync(VERIFIED_PATH)) {
     for (const k of keys) knownKeysByType[type].add(k);
   }
 }
+const runtimeManifest = path.join(schemaDir, "runtime", "manifest.json");
+if (fs.existsSync(runtimeManifest)) {
+  const manifest = loadJson(runtimeManifest, "runtime manifest");
+  for (const type of manifest.elements || []) {
+    const schema = loadJson(path.join(schemaDir, "runtime", `${type}.json`), `${type} runtime schema`);
+    if (schema.name !== type || !schema.controls) throw new Error(`Invalid runtime schema for ${type}`);
+    knownKeysByType[type] = new Set(Object.keys(schema.controls)); runtimeTypes.add(type); knownElementTypes.add(type);
+  }
+}
 
 function isPlainObject(v) {
   return v !== null && typeof v === "object" && !Array.isArray(v);
 }
 
-function validate(tree) {
+export function validateBricks(tree) {
   const errors = [];
   const warnings = [];
 
@@ -139,7 +152,11 @@ function validate(tree) {
       }
     }
 
-    for (const childId of el.children || []) {
+    const childIds = Array.isArray(el.children) ? el.children : [];
+    if (new Set(childIds).size !== childIds.length) errors.push(`Element ${el.id}: duplicate child ids.`);
+    const parent = byId.get(el.parent);
+    if (parent && !(Array.isArray(parent.children) && parent.children.includes(el.id))) errors.push(`Element ${el.id}: parent ${el.parent} does not list it as a child.`);
+    for (const childId of childIds) {
       if (typeof childId !== "string") {
         errors.push(`Element ${el.id}: children array contains a non-string value.`);
         continue;
@@ -188,8 +205,9 @@ function validate(tree) {
       const known = knownKeysByType[el.name];
       if (known && !known.has(baseKey)) {
         warnings.push(
-          `Element ${el.id} (${el.name}): setting "${baseKey}" has never been observed on a real ` +
-            `"${el.name}" element — likely a wrong key name. Check schema/bricks-elements.json.`
+          runtimeTypes.has(el.name)
+            ? `Element ${el.id} (${el.name}): setting "${key}" is absent from the saved runtime control schema; confirm support before writing.`
+            : `Element ${el.id} (${el.name}): setting "${key}" is absent from the sampled exports; site support has not been established.`
         );
       }
       if (key.includes("::")) {
@@ -252,6 +270,7 @@ function checkLinkShape(el, warnings) {
 // CLI
 // --------------------------------------------------
 
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
 const inputArg = process.argv[2];
 let tree;
 let sourceLabel;
@@ -278,7 +297,7 @@ console.log("Input:", sourceLabel);
 console.log("Elements:", Array.isArray(tree) ? tree.length : "N/A");
 console.log("");
 
-const { errors, warnings } = validate(tree);
+const { errors, warnings } = validateBricks(tree);
 
 if (errors.length) {
   console.log(`✗ ${errors.length} error(s):`);
@@ -298,3 +317,4 @@ if (warnings.length) {
 
 console.log("");
 process.exit(errors.length ? 1 : 0);
+}

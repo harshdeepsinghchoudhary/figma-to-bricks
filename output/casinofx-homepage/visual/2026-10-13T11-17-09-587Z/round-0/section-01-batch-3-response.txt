@@ -1,0 +1,28 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "elementId": "5zr0dg",
+      "description": "The 'Download' button is missing its download icon. The Figma design shows an icon to the left of the text, but the local preview only displays the text."
+    },
+    {
+      "severity": "medium",
+      "elementId": "5zr0dg",
+      "description": "The vertical padding of the 'Download' button is incorrect. The Figma design implies a total height of 43px (12px top/bottom padding), but the local preview renders it significantly shorter (approx 30px)."
+    }
+  ],
+  "patches": [
+    {
+      "op": "settings",
+      "id": "5zr0dg",
+      "set": {
+        "_padding": {
+          "top": "12",
+          "right": "12",
+          "bottom": "12",
+          "left": "12"
+        }
+      }
+    }
+  ]
+}

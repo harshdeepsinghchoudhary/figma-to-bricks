@@ -1,58 +1,68 @@
 {
-  "type": "section",
+  "type": "page",
   "children": [
     {
-      "type": "row",
-      "id": "frame-120",
-      "figmaNodeId": "2231:227"
-    },
-    {
-      "type": "column",
-      "id": "group-153",
-      "figmaNodeId": "2227:246"
-    },
-    {
-      "type": "block",
-      "id": "rectangle-40",
-      "figmaNodeId": "2227:247",
-      "background": {
-        "color": "#F7F7F7"
-      }
-    },
-    {
-      "type": "column",
-      "id": "group-149",
-      "figmaNodeId": "2227:248"
-    },
-    {
-      "type": "image",
-      "id": "rectangle-43",
-      "figmaNodeId": "2228:279",
-      "asset": {
-        "nodeId": "2228:279",
-        "kind": "image"
-      }
-    },
-    {
-      "type": "column",
-      "id": "frame-113",
-      "figmaNodeId": "2227:250"
-    },
-    {
-      "type": "text",
-      "id": "leaked-admin-backend-screenshot-where-lucky-draw-ticket-numbers-are-altered",
-      "figmaNodeId": "2227:251",
-      "text": "Leaked admin backend screenshot where lucky draw ticket numbers are altered.",
-      "typography": {
-        "fontFamily": "Inter",
-        "fontSize": 16,
-        "fontWeight": 400,
-        "lineHeight": "19.36px",
-        "color": "#000000CC"
-      }
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-122",
+          "figmaNodeId": "2231:229",
+          "size": {
+            "width": 756,
+            "height": 647
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "gap": 23,
+            "align": "stretch",
+            "justify": "start"
+          }
+        },
+        {
+          "type": "row",
+          "id": "frame-121",
+          "figmaNodeId": "2231:228",
+          "size": {
+            "width": 756,
+            "height": 312
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 26,
+            "align": "center",
+            "justify": "start"
+          }
+        },
+        {
+          "type": "column",
+          "id": "group-150",
+          "figmaNodeId": "2227:188",
+          "size": {
+            "width": 365,
+            "height": 312
+          },
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 0
+          },
+          "boxShadow": {
+            "color": "#00000024",
+            "blur": 0,
+            "offsetX": 0,
+            "offsetY": 0,
+            "spread": 0
+          }
+        }
+      ]
     }
   ],
   "_uncertain": [
-    "size and layout details omitted"
+    "border radius and boxShadow details are approximated from stroke and effects data"
   ]
 }

@@ -65,8 +65,8 @@ export function buildFigmaIndex(root, assetIds = new Set()) {
         id: n.id, name: n.name, type: n.type, parent, visible: n.visible !== false, isMask: !!n.isMask,
         box: b ? { x: b.x, y: b.y, w: b.width, h: b.height } : null,
         fills: n.fills, strokes: n.strokes, strokeWeight: n.strokeWeight, characters: n.characters, style: n.style,
-        characterStyleOverrides: n.characterStyleOverrides, styleOverrideTable: n.styleOverrideTable, strokeAlign: n.strokeAlign,
-        cornerRadius: n.cornerRadius, layoutMode: n.layoutMode, itemSpacing: n.itemSpacing, effects: n.effects, counterAxisAlignItems: n.counterAxisAlignItems, primaryAxisAlignItems: n.primaryAxisAlignItems,
+        cornerRadius: n.cornerRadius, layoutMode: n.layoutMode, itemSpacing: n.itemSpacing, effects: n.effects, counterAxisAlignItems: n.counterAxisAlignItems, primaryAxisAlignItems: n.primaryAxisAlignItems, layoutWrap: n.layoutWrap,
+        pad: { top: n.paddingTop, right: n.paddingRight, bottom: n.paddingBottom, left: n.paddingLeft }, radii: n.rectangleCornerRadii,
         children: (n.children || []).map((c) => c.id), asset: assetIds.has(n.id),
       };
     }
@@ -189,7 +189,7 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
     for (let i = 1; i < flow.length; i++) if (boxes[i][mainPos] < boxes[i - 1][mainPos] + boxes[i - 1][mainLen] - 0.5) return false;
     flow.forEach((c) => dropMargin(c, [lead, trail]));
     const gaps = [];
-    for (let i = 1; i < flow.length; i++) gaps.push(Math.max(0, boxes[i][mainPos] - (boxes[i - 1][mainPos] + boxes[i - 1][mainLen])));
+    for (let i = 1; i < flow.length; i++) gaps.push(Math.max(0, boxes[i][mainPos] - (flow[i]._sepLead || 0) - (boxes[i - 1][mainPos] + boxes[i - 1][mainLen])));
     const patch = { gap: undefined, rowGap: undefined, columnGap: undefined };
     const keepSB = n.layout?.justify === "space-between";
     if (!keepSB) {
@@ -276,35 +276,67 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
         if (Math.abs(f.box.x - pb.x) <= TOL.px) side = "left";
         else if (Math.abs(f.box.x + f.box.w - (pb.x + pb.w)) <= TOL.px) side = "right";
       }
-      if (!side) { // a thin line BETWEEN two siblings (footer links, a pipe between meta items) is the previous item's border on that side
-        const dir = dirOf(n), row = dir === "row";
-        if (!dir || row === horizontal) continue; // a vertical line separates items in a row, a horizontal one items in a column
-        const at = n.children.indexOf(c);
-        const prev = [...n.children.slice(0, at)].reverse().find((x) => x.type !== "unsupported" && !x.abs), next = n.children.slice(at + 1).find((x) => x.type !== "unsupported" && !x.abs);
-        const pbx = prev && boxOf(prev), nbx = next && boxOf(next);
-        if (!pbx || !nbx || prev.border?.color) continue;
-        const g1 = row ? f.box.x - (pbx.x + pbx.w) : f.box.y - (pbx.y + pbx.h), g2 = row ? nbx.x - (f.box.x + f.box.w) : nbx.y - (f.box.y + f.box.h);
-        if (g1 < 0 || g2 < 0 || g1 > 100 || g2 > 100) continue;
-        const sd = row ? "right" : "bottom";
-        prev.border = { ...(prev.border || {}), color: hex, width: r2(w), sides: [sd] };
-        prev.layout = { ...(prev.layout || {}), padding: { ...(prev.layout?.padding || {}), [sd]: r2(g1) } };
-        n.children = n.children.filter((x) => x !== c);
-        n._sepGap = [...(n._sepGap || []), { g1, g2, w }];
-        log(`${prev.id}: ${sd} border ${r2(w)}px ${hex} + ${r2(g1)}px padding from the separator line ${c.figmaNodeId}`);
-        bump("separators");
-        continue;
-      }
-      if (n.border?.color) continue;
+      if (!side || n.border?.color) continue;
       n.border = { ...(n.border || {}), color: hex, width: r2(w), sides: [side] };
       n.children = n.children.filter((x) => x !== c);
       log(`${n.id}: ${side} border ${r2(w)}px ${hex} from divider ${c.figmaNodeId}`);
       bump("dividers");
     }
-    // the gap measured across "item | line | item" counted the line twice: the items now carry the first half as padding
-    if (n._sepGap?.length) {
-      const g = n._sepGap, same = g.every((x) => Math.abs(x.g2 - g[0].g2) <= 1);
-      if (same && n.layout && n.layout.gap !== undefined) { n.layout.gap = r2(g[0].g2); log(`${n.id}: gap ${r2(g[0].g2)}px (the rest sits in the separators' padding)`); }
-      delete n._sepGap;
+  }
+
+
+  // ====================================================================================================
+  // B2  thin separator lines between siblings (the "|" between footer links, rules between list rows) -> border on the next sibling
+  // ====================================================================================================
+  function separatorsToBorders(n) {
+    for (const c of n.children || []) separatorsToBorders(c);
+    if (!(CONTAINER_TYPES.has(n.type) || n.type === "section") || (n.children || []).length < 3) return;
+    const dir = dirOf(n);
+    if (!dir || n.layout?.display === "grid") return;
+    const kids = n.children;
+    // a separator the model left out altogether is still a Figma child of this frame: treat it as a skipped line
+    const own = n.figmaNodeId && n.figmaNodeId !== "scope" && figma[n.figmaNodeId];
+    const have = new Set(); (function g(x) { if (x.figmaNodeId) have.add(x.figmaNodeId); for (const k of x.children || []) g(k); })(n);
+    const virtual = [];
+    if (own?.children && hasOwnBox(n)) for (const id of own.children) {
+      const fc = figma[id];
+      if (fc && fc.type === "LINE" && fc.visible !== false && !have.has(id) && !claimed.has(id)) virtual.push({ type: "unsupported", id: `sep-${id}`, figmaNodeId: id, _virtual: true });
+    }
+    // place each virtual line where it sits in the flow
+    for (const v of virtual) {
+      const vb = figma[v.figmaNodeId].box; if (!vb) continue;
+      const dirRow = dir === "row";
+      let at = kids.findIndex((k) => { const kb = k.type === "unsupported" ? null : boxOf(k); return kb && (dirRow ? kb.x : kb.y) > (dirRow ? vb.x : vb.y); });
+      if (at < 0) at = kids.length;
+      kids.splice(at, 0, v);
+    }
+    for (const c of [...kids]) {
+      if (c.type !== "unsupported") continue;
+      const f = c.figmaNodeId && figma[c.figmaNodeId];
+      if (!f?.box || !["LINE", "VECTOR", "RECTANGLE"].includes(f.type)) continue;
+      const stroke = (f.strokes || []).find((s) => s.visible !== false && s.type === "SOLID");
+      const fill = (f.fills || []).find((s) => s.visible !== false && s.type === "SOLID");
+      const hex = solidHex(stroke) || solidHex(fill);
+      const w = f.type === "RECTANGLE" || !stroke ? Math.min(f.box.w, f.box.h) : f.strokeWeight || 1;
+      const vertical = f.box.h > f.box.w;
+      if (!hex || !(w > 0) || w > 6 || (vertical ? f.box.w : f.box.h) > 6) continue;
+      if ((dir === "row") !== vertical) continue; // a line across the flow direction only
+      const i = kids.indexOf(c);
+      const prev = kids.slice(0, i).reverse().find((k) => k.type !== "unsupported" && !k.abs);
+      const next = kids.slice(i + 1).find((k) => k.type !== "unsupported" && !k.abs);
+      const pb = prev && boxOf(prev), nb = next && boxOf(next);
+      if (!pb || !nb || next.border?.color) continue;
+      const side = vertical ? "left" : "top";
+      const lead = vertical ? nb.x - f.box.x : nb.y - f.box.y; // line start -> next sibling's own start
+      const after = vertical ? nb.x - (f.box.x + f.box.w) : nb.y - (f.box.y + f.box.h);
+      const before = vertical ? f.box.x - (pb.x + pb.w) : f.box.y - (pb.y + pb.h);
+      if (lead <= 0 || before < 0 || after < 0 || Math.abs(before - after) > 2) continue; // symmetric spacing only
+      next.border = { ...(next.border || {}), color: hex, width: r2(w), sides: [side] };
+      next.layout = { ...(next.layout || {}), padding: { ...(next.layout?.padding || {}), [side]: r2(after) } };
+      next._sepLead = r2(lead);
+      n.children = n.children.filter((x) => x !== c);
+      log(`${next.id}: ${side} border ${r2(w)}px ${hex} + ${r2(after)}px padding from separator ${c.figmaNodeId}`);
+      bump("separators");
     }
   }
 
@@ -814,9 +846,38 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
         if (widthSafe && !(Object.keys(n.size || {}).some((k) => !["width", "maxWidth", "minHeight"].includes(k)))) return unwrap(n, W);
       }
       if (CONTAINER_TYPES.has(W.type) && W.children?.length && canAbsorb(n, W)) { absorb(n, W); continue; }
+      if (on("pills") && canMergeText(n, W)) return mergeText(n, W);
       return n;
     }
     return n;
+  }
+
+  // ====================================================================================================
+  // P  a frame that only wraps one text and shrink-wraps it (tag, badge, pill, label) is that text with a background, padding and radius
+  // ====================================================================================================
+  function canMergeText(n, W) {
+    if (!["text", "text-basic", "heading"].includes(W.type) || !(n.background || n.border || n.boxShadow)) return false;
+    if (n.asset || n._bgImage || n.abs || n._grid || n.layout?.display === "grid" || n.href || n.link) return false;
+    if (n.size && Object.keys(n.size).some((k) => k !== "width" && k !== "maxWidth")) return false;
+    if (W.layout?.margin && Object.values(W.layout.margin).some((v) => Math.abs(v) > 0.5)) return false;
+    const nb = hasOwnBox(n) ? boxOf(n) : null, tb = boxOf(W);
+    if (!nb || !tb) return false;
+    const bw = n.border?.width || 0, p = padOf(n);
+    const slackX = nb.w - (p.left || 0) - (p.right || 0) - 2 * bw - tb.w, slackY = nb.h - (p.top || 0) - (p.bottom || 0) - 2 * bw - tb.h;
+    return Math.abs(slackX) <= 2 && Math.abs(slackY) <= 2; // the text really fills the frame (no centring/stretching inside a wider box)
+  }
+  function mergeText(n, W) {
+    const t = { ...W };
+    for (const k of ["background", "border", "boxShadow", "_sepLead"]) if (n[k] !== undefined) t[k] = n[k];
+    const lay = { ...(W.layout || {}) };
+    if (n.layout?.padding) lay.padding = n.layout.padding;
+    if (n.layout?.margin) lay.margin = n.layout.margin;
+    t.layout = lay;
+    if (!Object.keys(lay).length) delete t.layout;
+    if (n.size?.width !== undefined) t.size = { ...(W.size || {}), width: n.size.width };
+    log(`${n.id}: shrink-wrapped frame merged into its text ${W.id} (background/padding/radius now on the text)`);
+    bump("pills");
+    return t;
   }
 
   // ====================================================================================================
@@ -1026,99 +1087,59 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
     log(`${n.id}: align ${fa} from the Figma auto-layout setting`);
   }
   // ====================================================================================================
+  // A4  gap and padding of a frame come from its Figma auto-layout (item spacing / padding) - only where the rendered boxes agree
+  // ====================================================================================================
+  function figmaSpacing(n) {
+    for (const c of n.children || []) figmaSpacing(c);
+    if (!CONTAINER_TYPES.has(n.type) || n.type === "section" || n.layout?.display === "grid" || !hasOwnBox(n)) return;
+    const f = figma[n.figmaNodeId];
+    if (!f?.layoutMode || f.layoutMode === "NONE" || f.layoutWrap === "WRAP") return;
+    const dir = f.layoutMode === "HORIZONTAL" ? "row" : "column";
+    if (dirOf(n) !== dir) return;
+    const flow = rendered(n);
+    const nb = boxOf(n);
+    if (!flow.length || !nb) return;
+    const boxes = flow.map(boxOf);
+    if (boxes.some((b) => !b)) return;
+    const [mp, ml] = dir === "row" ? ["x", "w"] : ["y", "h"];
+    // gap
+    const sp = f.itemSpacing;
+    if (flow.length > 1 && sp > 0 && n.layout?.justify !== "space-between" && f.primaryAxisAlignItems !== "SPACE_BETWEEN") {
+      const gaps = [];
+      for (let i = 1; i < flow.length; i++) gaps.push(boxes[i][mp] - (flow[i]._sepLead || 0) - (boxes[i - 1][mp] + boxes[i - 1][ml]));
+      const cur = n.layout?.columnGap ?? n.layout?.gap ?? 0;
+      if (gaps.every((g) => Math.abs(g - sp) <= 1.5) && Math.abs(cur - sp) > 1) {
+        setLayout(n, { gap: sp, columnGap: undefined, rowGap: undefined }); bump("figmaGap");
+        log(`${n.id}: gap ${r2(cur)} -> ${sp} from the Figma item spacing`);
+      }
+    }
+    // padding: the Figma value stands where the first/last child really sits that far from the frame edge
+    const u = unionOf(boxes);
+    const edge = { left: u.x - nb.x, top: u.y - nb.y, right: nb.x + nb.w - (u.x + u.w), bottom: nb.y + nb.h - (u.y + u.h) };
+    const startSides = dir === "row" ? ["left"] : ["top"];
+    for (const side of startSides) {
+      const want = f.pad?.[side];
+      const cur = n.layout?.padding?.[side] || 0;
+      if (want > 0 && Math.abs(cur - want) > 1 && Math.abs(edge[side] - want) <= 1.5) {
+        setLayout(n, { padding: { ...(n.layout?.padding || {}), [side]: want } }); bump("figmaPadding");
+        log(`${n.id}: padding-${side} ${r2(cur)} -> ${want} from the Figma padding`);
+      }
+    }
+  }
+  // ====================================================================================================
   // A3  a drop shadow set on the Figma frame is the element's box-shadow (the model rarely carries it over)
   // ====================================================================================================
   function shadows(n) {
     for (const c of n.children || []) shadows(c);
     if (!CONTAINER_TYPES.has(n.type) || n.type === "section" || n.boxShadow || !hasOwnBox(n)) return;
     const f = figma[n.figmaNodeId];
-    const dropOf = (g) => (g?.effects || []).find((x) => x.type === "DROP_SHADOW" && x.visible !== false && x.color);
-    let e = dropOf(f), filled = (f?.fills || []).some((p) => p.visible !== false);
-    if (!e && f?.box) { // cards are often a frame with a solid RECTANGLE behind the content that carries the shadow: use it when it covers the frame
-      const near = (a, b) => Math.abs(a - b) <= 2;
-      const r = (f.children || []).map((id) => figma[id]).find((c) => c?.type === "RECTANGLE" && c.visible !== false && c.box && dropOf(c)
-        && near(c.box.x, f.box.x) && near(c.box.y, f.box.y) && near(c.box.w, f.box.w) && near(c.box.h, f.box.h) && (c.fills || []).some((p) => p.visible !== false && p.type === "SOLID"));
-      if (r) { e = dropOf(r); filled = true; }
-    }
-    if (!e || !filled && !n.background) return; // a shadow with no fill under it would not show as a box shadow
+    const e = (f?.effects || []).find((x) => x.type === "DROP_SHADOW" && x.visible !== false && x.color);
+    if (!e || !(f.fills || []).some((p) => p.visible !== false) && !n.background) return; // a shadow with no fill under it would not show as a box shadow
     const color = solidHex({ type: "SOLID", color: e.color, opacity: 1 });
     if (!color) return;
     n.boxShadow = { color, blur: Math.round(e.radius || 0), offsetX: Math.round(e.offset?.x || 0), offsetY: Math.round(e.offset?.y || 0), spread: Math.round(e.spread || 0) };
     bump("shadows");
     log(`${n.id}: box-shadow from the Figma drop shadow`);
-  }
-  // ====================================================================================================
-  // A4  a solid stroke on the Figma frame (or on the rectangle that backs it) is the element's border: colour + width. The model only keeps a
-  //     corner radius, so outlined pills, cards and buttons lost their 1px line. The corner radius already on the element is left alone.
-  // ====================================================================================================
-  function strokes(n) {
-    for (const c of n.children || []) strokes(c);
-    if (!(CONTAINER_TYPES.has(n.type) || n.type === "button") || n.type === "section" || n.border?.color || n.border?.sides) return;
-    const f = figma[n.figmaNodeId];
-    if (!f || f.type === "TEXT" || f.asset || !f.box) return;
-    const strokeOf = (g) => {
-      const st = (g?.strokes || []).find((p) => p.visible !== false && p.type === "SOLID");
-      return st && g.strokeWeight > 0 ? { color: solidHex(st), width: g.strokeWeight } : null;
-    };
-    let hit = strokeOf(f);
-    if (!hit) { // a card is often a frame with a stroked RECTANGLE behind the content that covers it
-      const near = (a, b) => Math.abs(a - b) <= 2;
-      const r = (f.children || []).map((id) => figma[id]).find((c) => c?.type === "RECTANGLE" && c.visible !== false && c.box && strokeOf(c)
-        && near(c.box.x, f.box.x) && near(c.box.y, f.box.y) && near(c.box.w, f.box.w) && near(c.box.h, f.box.h));
-      if (r) hit = strokeOf(r);
-    }
-    if (!hit?.color) return;
-    n.border = { ...(n.border || {}), color: hit.color, width: r2(hit.width) };
-    bump("strokes");
-    log(`${n.id}: border ${r2(hit.width)}px ${hit.color} from the Figma stroke`);
-  }
-  // ====================================================================================================
-  // A5  one Figma text with two styles ("Licensed: **1,800+**", "9.2 <small>Score</small>"): the element takes the style of the first run and the
-  //     other run becomes a <span> styled by a custom-CSS rule (#brxe-<id> span { ... }), the way a hand-built page does it. The model and the
-  //     text pass only see the base style, so the whole text came out in one weight / size.
-  // ====================================================================================================
-  function textRuns(n) {
-    for (const c of n.children || []) textRuns(c);
-    if (!["heading", "text", "text-basic"].includes(n.type) || n._spanCss) return;
-    const f = figma[n.figmaNodeId];
-    const ov = f?.characterStyleOverrides, table = f?.styleOverrideTable, chars = f?.characters;
-    if (f?.type !== "TEXT" || !Array.isArray(ov) || !ov.some((v) => v) || !table || typeof chars !== "string") return;
-    const base = f.style || {};
-    const paint = (st, id) => (id && table[id]?.fills ? table[id].fills : f.fills || []).find((p) => p.visible !== false && p.type === "SOLID");
-    const styleOf = (id) => {
-      const st = id ? { ...base, ...(table[id] || {}) } : base;
-      return { fontWeight: st.fontWeight, fontSize: st.fontSize, fontFamily: st.fontFamily, lineHeightPx: st.lineHeightPx, color: solidHex(paint(st, id)) };
-    };
-    const runs = [];
-    for (let i = 0; i < chars.length; i++) {
-      const st = styleOf(ov[i] || 0), key = JSON.stringify([st.fontWeight, st.fontSize, st.fontFamily, st.color]);
-      if (runs.length && runs[runs.length - 1].key === key) runs[runs.length - 1].text += chars[i];
-      else runs.push({ key, st, text: chars[i] });
-    }
-    const keys = [...new Set(runs.map((r) => r.key))];
-    if (keys.length !== 2) { if (keys.length > 2) log(`${n.id}: ${keys.length} different styles in one text - left as one style`); return; }
-    const A = runs[0], B = runs.find((r) => r.key !== A.key);
-    const esc = (t) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\u00a0/g, " ").replace(/\r?\n/g, "<br>");
-    // spaces at the edge of a run stay outside the span ("Casinos: <span>3,000+</span>", not "Casinos:<span> 3,000+</span>")
-    n.text = runs.map((r) => {
-      if (r.key === A.key) return esc(r.text);
-      const m = /^(\s*)([\s\S]*?)(\s*)$/.exec(r.text);
-      return m[2] ? `${esc(m[1])}<span>${esc(m[2])}</span>${esc(m[3])}` : esc(r.text);
-    }).join("");
-    const props = [];
-    if (B.st.fontWeight !== A.st.fontWeight && B.st.fontWeight) props.push(`font-weight: ${B.st.fontWeight};`);
-    if (B.st.fontSize !== A.st.fontSize && B.st.fontSize) props.push(`font-size: ${B.st.fontSize}px;`);
-    if (B.st.fontFamily !== A.st.fontFamily && B.st.fontFamily) props.push(`font-family: ${B.st.fontFamily};`);
-    if (B.st.color !== A.st.color && B.st.color) props.push(`color: ${B.st.color};`);
-    if (!props.length) return;
-    n._spanCss = `#brxe-__ID__ span {\n  ${props.join("\n  ")}\n}`;
-    const ty = (n.typography = { ...(n.typography || {}) });
-    if (A.st.fontWeight) ty.fontWeight = A.st.fontWeight;
-    if (A.st.fontSize) ty.fontSize = A.st.fontSize;
-    if (A.st.color) ty.color = A.st.color;
-    if (A.st.lineHeightPx && A.st.lineHeightPx !== base.lineHeightPx) ty.lineHeight = `${r2(A.st.lineHeightPx)}px`;
-    bump("textRuns");
-    log(`${n.id}: two text styles -> <span> (${props.join(" ")})`);
   }
   const TEXT_LEAF = new Set(["heading", "text", "text-basic"]);
   function sanity(n, parent) {
@@ -1167,7 +1188,7 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
   const sections = (doc.children || []).filter((c) => c.type === "section");
   for (const sec of sections) {
     if (on("hoist")) hoist(sec);
-    if (on("dividers")) dividersToBorders(sec);
+    if (on("dividers")) { dividersToBorders(sec); separatorsToBorders(sec); }
     if (on("rebuild")) rebuildUnsupported(sec);
     if (on("fills")) reconcileFills(sec);
     const covered = on("missingText") || on("assets") ? coverage(sec) : null;
@@ -1179,10 +1200,8 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
     if (on("grids")) mergeGrids(sec);
     if (on("wrappers")) sec.children = (sec.children || []).map((c) => simplify(c, sec));
     if (on("spanning")) spanning(sec);
-    if (on("align")) { alignCentre(sec); figmaAlign(sec); }
+    if (on("align")) { alignCentre(sec); figmaAlign(sec); figmaSpacing(sec); }
     if (on("shadows")) shadows(sec);
-    if (on("strokes")) strokes(sec);
-    if (on("textRuns")) textRuns(sec);
     if (on("roles")) roles(sec);
     if (on("sanity")) sanity(sec, null);
     if (on("fullBleed")) fullBleedStrips(sec);
