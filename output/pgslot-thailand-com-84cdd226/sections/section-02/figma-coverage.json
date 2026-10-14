@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "sourceHash": "a71f62873100ae9e9cf1c2e42846fbbe880e9a613280a61bebb9573ea9bc647a",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "pgslot-thailand.com (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "247:27",
+      "parentId": "scope",
+      "name": "Group 1261154196",
+      "type": "GROUP",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:15",
+      "parentId": "247:27",
+      "name": "Group 1261154187",
+      "type": "GROUP",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:16",
+      "parentId": "202:15",
+      "name": "Group 1261154186",
+      "type": "GROUP",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:17",
+      "parentId": "202:16",
+      "name": "Login",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:18",
+      "parentId": "202:16",
+      "name": "Frame 25",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:19",
+      "parentId": "202:18",
+      "name": "Apply for membership",
+      "type": "TEXT",
+      "status": "button-label",
+      "representedBy": "202:18"
+    },
+    {
+      "nodeId": "202:20",
+      "parentId": "202:15",
+      "name": "Group 1261154185",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:21",
+      "parentId": "202:20",
+      "name": "image 25",
+      "type": "RECTANGLE",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:22",
+      "parentId": "202:20",
+      "name": "Group 1261154067",
+      "type": "GROUP",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:23",
+      "parentId": "202:22",
+      "name": "Rectangle 5748",
+      "type": "RECTANGLE",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:24",
+      "parentId": "202:22",
+      "name": "Rectangle 5749",
+      "type": "RECTANGLE",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:25",
+      "parentId": "202:22",
+      "name": "Rectangle 5750",
+      "type": "RECTANGLE",
+      "status": "unrepresented"
+    }
+  ],
+  "summary": {
+    "represented": 5,
+    "covered-by-export": 0,
+    "button-label": 1,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 7
+  }
+}

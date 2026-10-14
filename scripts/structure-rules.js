@@ -31,6 +31,7 @@
  * flags: border.sides, abs, _relative, _grid, layout.gridRowGap.
  */
 
+import { hasLayoutBoundary } from "./layout-boundaries.js";
 const r1 = (v) => Math.round(v * 10) / 10;
 const r2 = (v) => Math.round(v * 100) / 100;
 const isNum = (v) => typeof v === "number" && isFinite(v);
@@ -136,7 +137,7 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
   const hasSize = (n) => !!n.size && Object.keys(n.size).length > 0;
   const hasNotes = (n) => Array.isArray(n.notes) && n.notes.length > 0;
   const isPure = (n, { margin = false, size = false } = {}) =>
-    CONTAINER_TYPES.has(n.type) && !hasVisual(n) && !hasPad(n) && !n.responsive && !n.abs && !n._relative && !n.href
+    CONTAINER_TYPES.has(n.type) && !hasLayoutBoundary(n) && !hasVisual(n) && !hasPad(n) && !n.responsive && !n.abs && !n._relative && !n.href
     && (margin || !hasMargin(n)) && (size || !hasSize(n));
   const gapOf = (n) => n.layout?.gap ?? n.layout?.columnGap ?? n.layout?.rowGap ?? 0;
   const dirOf = (n) => n.layout?.direction || (n.type === "row" ? "row" : n.type === "column" ? "column" : undefined);
@@ -226,6 +227,7 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
       const kids = rendered(sec);
       if (kids.length !== 1) return;
       const g = kids[0];
+      if (hasLayoutBoundary(g)) return;
       if (!CONTAINER_TYPES.has(g.type) || !hasOwnBox(g)) return;
       const b = boxOf(g);
       if (b.w < pageW * TOL.bleed) return;

@@ -1,0 +1,28 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "id": "section-variety-of-games",
+      "figmaNodeId": "202:389",
+      "type": "section",
+      "layout": {
+        "display": "flex",
+        "direction": "column"
+      },
+      "children": [
+        {
+          "id": "games-content-container",
+          "figmaNodeId": "202\n          :389",
+          "type": "column",
+          "layout": {
+            "display": "flex",
+            "direction": "column"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "The group node has explicit fills, border and radius information to preserve"
+  ]
+}

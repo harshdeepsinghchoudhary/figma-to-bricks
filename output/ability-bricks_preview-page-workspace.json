@@ -1,0 +1,212 @@
+{
+  "name": "bricks/preview-page-workspace",
+  "label": "Preview page workspace",
+  "description": "Validate, normalize, permission-check, render, diff, and freeze an edited canonical page workspace without saving. Code-sensitive candidates fail closed without execute-code permission. Rejects stale page or design-system baselines.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "document": {
+        "type": "object",
+        "properties": {
+          "schemaVersion": {
+            "type": "integer"
+          },
+          "target": {
+            "type": "object",
+            "properties": {
+              "postId": {
+                "type": "integer"
+              },
+              "area": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "postId",
+              "area"
+            ],
+            "additionalProperties": false
+          },
+          "baseline": {
+            "type": "object",
+            "properties": {
+              "documentDigest": {
+                "type": "string"
+              },
+              "designSystemVersion": {
+                "type": "integer"
+              },
+              "designSystemSnapshot": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "documentDigest",
+              "designSystemVersion"
+            ],
+            "additionalProperties": false
+          },
+          "elements": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "target",
+          "baseline",
+          "elements"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "document"
+    ],
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string"
+      },
+      "workflow": {
+        "type": "string"
+      },
+      "contractVersion": {
+        "type": "string"
+      },
+      "postId": {
+        "type": "integer"
+      },
+      "previewToken": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "expiresAt": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "candidateDigest": {
+        "type": "string"
+      },
+      "expectedDocumentDigest": {
+        "type": "string"
+      },
+      "savedDocumentDigest": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "designSystemVersionBefore": {
+        "type": "integer"
+      },
+      "designSystemVersion": {
+        "type": "integer"
+      },
+      "designSystemSnapshotBefore": {
+        "type": "object"
+      },
+      "designSystemSnapshot": {
+        "type": "object"
+      },
+      "plan": {
+        "type": "object"
+      },
+      "partial": {
+        "type": "boolean",
+        "description": "Whether restricted elements were omitted from the imported content."
+      },
+      "omittedElements": {
+        "type": "array",
+        "description": "Omitted element IDs and types with permission reason codes. Source code is not returned.",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "reason"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "diagnostics": {
+        "type": "object"
+      },
+      "render": {
+        "type": "object"
+      },
+      "committed": {
+        "type": "boolean"
+      },
+      "transactionState": {
+        "type": "string"
+      },
+      "revisionId": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "journalId": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "autoApplied": {
+        "type": "boolean"
+      },
+      "nextAction": {
+        "type": "string"
+      },
+      "facadeRequestDigest": {
+        "type": "string"
+      },
+      "responseFormat": {
+        "type": "string"
+      },
+      "designSystemSnapshotHash": {
+        "type": "string"
+      },
+      "routes": {
+        "type": "object"
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

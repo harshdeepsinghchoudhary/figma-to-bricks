@@ -3,28 +3,760 @@
   "data": {
     "abilities": [
       {
-        "name": "bricks/delete-post",
-        "category": "bricks-content",
-        "enabled": false,
+        "name": "bricks/list-element-types",
+        "category": "bricks-reference",
+        "enabled": true,
         "defaultEnabled": true
       },
       {
-        "name": "bricks/set-global-settings",
+        "name": "bricks/get-element-schema",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-query-loop-types",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-dynamic-tag",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-dynamic-data-tags",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-builder-guide",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-page-structure",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-page-elements",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-page-elements",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/add-element",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-element",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/batch-update-elements",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-page-settings",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-page-settings",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/find-post",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/render-elements",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/checkout-site-repository",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/resolve-agent-file",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/convert-html-css-to-bricks-data",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-html-css-page-import",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/checkout-page-workspace",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-page-workspace",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/checkout-design-resource-workspace",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-design-resource-workspace",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/checkout-site-edit-map",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-site-edit-plan",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/checkout-site-changeset",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-site-changeset",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-templates",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-template",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-template",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-template-settings",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-template-settings",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-template-conditions",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-template-sources",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-remote-templates",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/insert-template",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/insert-remote-template",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-design-context",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-color-palettes",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-color",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-color",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-color-palette",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-color-palette",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-global-classes",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-global-class",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/batch-create-global-classes",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-global-class",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-theme-styles",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-theme-styles",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-theme-style",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-theme-style",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-components",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-component",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-component",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-global-variables",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-global-variables",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/generate-scale-variables",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/audit-design-system",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/generate-color-shades",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-post",
+        "category": "bricks-content",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/duplicate-post",
+        "category": "bricks-content",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-revisions",
+        "category": "bricks-revisions",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-revision",
+        "category": "bricks-revisions",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/restore-revision",
+        "category": "bricks-revisions",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/upload-media",
+        "category": "bricks-media",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/find-media",
+        "category": "bricks-media",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-mcp-version",
+        "category": "bricks-meta",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-ability-status",
+        "category": "bricks-meta",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/start-here",
+        "category": "bricks-meta",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-cms-sources",
+        "category": "bricks-cms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-reading-settings",
+        "category": "bricks-cms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-nav-menus",
+        "category": "bricks-navigation",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-nav-menu",
+        "category": "bricks-navigation",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/save-nav-menu",
+        "category": "bricks-navigation",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-form-config",
+        "category": "bricks-forms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-form-fields",
+        "category": "bricks-forms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-form-actions",
+        "category": "bricks-forms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-form-submissions",
+        "category": "bricks-forms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-query-filters",
+        "category": "bricks-filters",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-filter-element",
+        "category": "bricks-filters",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-filter-element",
+        "category": "bricks-filters",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-filter-target-query",
+        "category": "bricks-filters",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/reindex-filters",
+        "category": "bricks-filters",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-popups",
+        "category": "bricks-popups",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-popup-config",
+        "category": "bricks-popups",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-popup-settings",
+        "category": "bricks-popups",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-element-interactions",
+        "category": "bricks-interactions",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-element-interactions",
+        "category": "bricks-interactions",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-element-conditions",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-element-conditions",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-settings-schema",
         "category": "bricks-settings",
         "enabled": true,
         "defaultEnabled": true
       },
       {
-        "name": "bricks/execute-php",
+        "name": "bricks/list-credential-status",
+        "category": "bricks-settings",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-global-settings",
+        "category": "bricks-settings",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-woo-setup-status",
+        "category": "bricks-woocommerce",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/plan-woo-setup",
+        "category": "bricks-woocommerce",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-woo-setup-options",
+        "category": "bricks-woocommerce",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-woo-setup-options",
+        "category": "bricks-woocommerce",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-breakpoints",
+        "category": "bricks-breakpoints",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-global-queries",
+        "category": "bricks-queries",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-global-query",
+        "category": "bricks-queries",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-global-query",
+        "category": "bricks-queries",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-global-query",
+        "category": "bricks-queries",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-global-query-category",
+        "category": "bricks-queries",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-sidebars",
+        "category": "bricks-sidebars",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-sidebar",
+        "category": "bricks-sidebars",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-sidebar",
+        "category": "bricks-sidebars",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-custom-fonts",
+        "category": "bricks-fonts",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-custom-font",
+        "category": "bricks-fonts",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-custom-font",
+        "category": "bricks-fonts",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-custom-font",
+        "category": "bricks-fonts",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/upload-custom-font-file",
+        "category": "bricks-fonts",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-icon-sets",
+        "category": "bricks-icons",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-disabled-icon-sets",
+        "category": "bricks-icons",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-custom-icons",
+        "category": "bricks-icons",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/upload-custom-icon",
+        "category": "bricks-icons",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-custom-icon-set",
+        "category": "bricks-icons",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-pseudo-classes",
+        "category": "bricks-pseudo-classes",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-style-manager",
+        "category": "bricks-style-manager",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/regenerate-css-files",
+        "category": "bricks-maintenance",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-orphaned-elements",
+        "category": "bricks-maintenance",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-transfer-items",
+        "category": "bricks-import-export",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/export-transfer-package",
+        "category": "bricks-import-export",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/inspect-transfer-package",
+        "category": "bricks-import-export",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-system-information",
         "category": "bricks-system",
-        "enabled": false,
-        "defaultEnabled": false
+        "enabled": true,
+        "defaultEnabled": true
       }
     ],
     "responseFormat": "summary",
-    "returned": 3,
+    "returned": 125,
     "total": 170,
-    "enabled": 128,
-    "disabled": 42
+    "enabled": 125,
+    "disabled": 45
   }
 }

@@ -1,0 +1,54 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "elementId": "un7p7x",
+      "description": "The article card container (un7p7x) is missing a border, which is visible in the Figma target but absent in the local preview."
+    },
+    {
+      "severity": "medium",
+      "elementId": "un7p7x",
+      "description": "The article card container (un7p7x) is missing a drop shadow, which is present in the Figma target."
+    },
+    {
+      "severity": "low",
+      "elementId": "un7p7x",
+      "description": "The article card container (un7p7x) is missing rounded corners (border-radius), which are visible in the Figma target."
+    }
+  ],
+  "patches": [
+    {
+      "op": "settings",
+      "id": "un7p7x",
+      "set": {
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "#E5E5E5"
+          },
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_boxShadow": {
+          "xOffset": "0px",
+          "yOffset": "4px",
+          "blur": "12px",
+          "spread": "0px",
+          "color": {
+            "raw": "#0000001A"
+          }
+        }
+      }
+    }
+  ]
+}

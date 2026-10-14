@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "sourceHash": "c40c1807276d58cf2ea366c7365a6116a24e2b72ca197914a132208d4b156306",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "pgslot-thailand.com (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:419",
+      "parentId": "scope",
+      "name": "Group 1261154195",
+      "type": "GROUP",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:420",
+      "parentId": "202:419",
+      "name": "Group 1261154194 1",
+      "type": "RECTANGLE",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:421",
+      "parentId": "202:419",
+      "name": "Group 1261154066",
+      "type": "GROUP",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:422",
+      "parentId": "202:421",
+      "name": "PG Slot - Trusted License Online Slot Thailand | Official PG Slot Website",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:423",
+      "parentId": "202:421",
+      "name": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:424",
+      "parentId": "202:421",
+      "name": "Frame 25",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:425",
+      "parentId": "202:424",
+      "name": "More info",
+      "type": "TEXT",
+      "status": "button-label",
+      "representedBy": "202:424"
+    }
+  ],
+  "summary": {
+    "represented": 5,
+    "covered-by-export": 0,
+    "button-label": 1,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 2
+  }
+}

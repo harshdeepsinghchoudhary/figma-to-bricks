@@ -1,0 +1,76 @@
+{
+  "name": "bricks/find-post",
+  "label": "Find post",
+  "description": "Search posts, pages, and templates by slug, title, or free-text fragment. Returns only the records the current user can edit, annotated with Bricks metadata (`bricksEnabled`, `hasBricksData`, `locked`, `builderUrl`).",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "Slug/title fragment for text search. Omit to list most recently modified posts. Mutually exclusive with postId/slug/path."
+      },
+      "postId": {
+        "type": "integer",
+        "description": "Direct lookup by post ID. Returns a single-result list. Mutually exclusive with query/slug/path."
+      },
+      "slug": {
+        "type": "string",
+        "description": "Direct lookup by exact post_name. Returns posts matching the slug across allowed post types. Mutually exclusive with query/postId/path."
+      },
+      "path": {
+        "type": "string",
+        "description": "Direct lookup by hierarchical path (e.g. \"parent/child\"). Mutually exclusive with query/postId/slug."
+      },
+      "postType": {
+        "type": "string",
+        "description": "Filter to a single post type. Omit to search all editable types."
+      },
+      "status": {
+        "type": "string",
+        "description": "draft | publish | pending | private | future | any. Default: any."
+      },
+      "bricksOnly": {
+        "type": "boolean",
+        "description": "Restrict to Bricks-enabled post types + template CPT. Default: false (so non-Bricks posts are surfaced with bricksEnabled: false)."
+      },
+      "limit": {
+        "type": "integer",
+        "description": "Max results, 1..50. Default 10."
+      },
+      "orderBy": {
+        "type": "string",
+        "description": "modified | title | relevance. Default modified."
+      }
+    },
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "results": {
+        "type": "array",
+        "description": "Matched posts with edit/builder URLs and Bricks metadata."
+      },
+      "total": {
+        "type": "integer"
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

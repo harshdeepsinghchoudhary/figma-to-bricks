@@ -1,0 +1,35 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "elementId": "i8vq5l",
+      "description": "The main card image is missing in the local preview, showing only the colored status bar (e.g., 'Good', 'Danger') instead of the full image with the badge overlay."
+    },
+    {
+      "severity": "medium",
+      "elementId": "10vynp",
+      "description": "The date badge background is missing in the local preview, whereas the Figma design shows a light grey rounded background behind the date text."
+    }
+  ],
+  "patches": [
+    {
+      "op": "settings",
+      "id": "10vynp",
+      "set": {
+        "_background": {
+          "color": {
+            "raw": "#0000001A"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "4px",
+            "right": "4px",
+            "bottom": "4px",
+            "left": "4px"
+          }
+        }
+      }
+    }
+  ]
+}

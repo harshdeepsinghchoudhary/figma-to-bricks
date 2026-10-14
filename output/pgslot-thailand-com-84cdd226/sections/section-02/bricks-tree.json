@@ -1,0 +1,197 @@
+[
+  {
+    "id": "wi755n",
+    "name": "image",
+    "parent": "vbihz3",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-25-202_21.png",
+        "url": "../../assets/image-25-202_21.png"
+      },
+      "_width": "100%",
+      "_widthMax": "86px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vbihz3",
+    "name": "div",
+    "parent": "p8vvjr",
+    "children": [
+      "wi755n"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "32"
+      },
+      "_width": "100%",
+      "_widthMax": "118px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "683zco",
+    "name": "button",
+    "parent": "eqzd5n",
+    "children": [],
+    "settings": {
+      "text": "Login",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "8zalol",
+    "name": "button",
+    "parent": "eqzd5n",
+    "children": [],
+    "settings": {
+      "text": "Apply for membership",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "14",
+        "right": "28",
+        "bottom": "14",
+        "left": "28"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "100px",
+          "right": "100px",
+          "bottom": "100px",
+          "left": "100px"
+        }
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10"
+    }
+  },
+  {
+    "id": "eqzd5n",
+    "name": "div",
+    "parent": "p8vvjr",
+    "children": [
+      "683zco",
+      "8zalol"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "24",
+      "_columnGap": "24",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "293px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "p8vvjr",
+    "name": "div",
+    "parent": "rr6ak2",
+    "children": [
+      "vbihz3",
+      "eqzd5n"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "rr6ak2",
+    "name": "container",
+    "parent": "cwj0dr",
+    "children": [
+      "p8vvjr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1120px"
+    }
+  },
+  {
+    "id": "cwj0dr",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "rr6ak2"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#290A12"
+        }
+      }
+    }
+  }
+]

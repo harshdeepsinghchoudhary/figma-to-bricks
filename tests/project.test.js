@@ -7,15 +7,16 @@ import { spawn } from "node:child_process";
 import sharp from "sharp";
 import { validateBricks } from "../scripts/bricks-validator.js";
 import { diffTrees } from "../scripts/dataset-diff.js";
-import { applyVisualPatches, validateReview } from "../scripts/visual-patches.js";
+import { applyVisualPatches, validateReview, filterVisualPatches } from "../scripts/visual-patches.js";
 import { previewHTML, renderScreenshots } from "../scripts/preview.js";
 import { visionConfig, callVision } from "../scripts/vision-client.js";
-import { visualReview, cropImage } from "../scripts/6_visual_review.js";
+import { visualReview, cropImage, sectionComparison, comparisonError } from "../scripts/6_visual_review.js";
 import { ELEMENT_TEMPLATES } from "../scripts/bricks-schema.js";
 import { parseVisualResponse } from "../scripts/visual-response.js";
 import { decorationOwner } from "../scripts/section-detect.js";
 import { providerHttpError, checkOllama } from "../scripts/provider-health.js";
 import { createHash } from "node:crypto";
+import { validateBuild } from "../scripts/validate-build.js";
 
 const workRoot = path.resolve(".test-work"); fs.mkdirSync(workRoot, { recursive: true });
 const work = fs.mkdtempSync(path.join(workRoot, "run-"));
@@ -48,6 +49,15 @@ test("Bricks validator catches reverse links, duplicates, cycles and malformed c
     const t = tree(); mutate(t); assert.ok(validateBricks(t).errors.length);
   }
 });
+test("visual proposals discard no-ops and conflicting fields regardless of ordering", () => {
+  const p = value => ({ op: "settings", id: "aaaaaa", set: { _padding: value } });
+  const noOp = p({ bottom: "20", top: "20" });
+  assert.equal(filterVisualPatches(tree(), [noOp]).patches.length, 0);
+  const proposals = [p({ top: "0" }), p({ top: "10" }), { op: "settings", id: "aaaaaa", set: { _height: "100" } }];
+  assert.deepEqual(filterVisualPatches(tree(), proposals).patches, filterVisualPatches(tree(), proposals.reverse()).patches);
+  assert.equal(filterVisualPatches(tree(), proposals).patches.length, 1);
+});
+
 test("vision JSON punctuation is repaired but invalid IDs/schema remain rejected", () => {
   const ids = new Set(["aaaaaa"]);
   const text = '```json\n{"issues":[],"patches":[{"op":"settings","id":"aaaaaa","set":{"_padding":{"top":"16"}}}]\n```';
@@ -128,18 +138,7 @@ test("preview embeds original assets, pseudo breakpoints, and fails for missing 
   const html = previewHTML(t, work); assert.match(html, /data:image\/png;base64/); assert.match(html, /@media\(max-width:767px\).*::before\{position:absolute/);
   t[0].settings._background.image.url = "missing.png"; assert.throws(() => previewHTML(t, work), /missing/);
 });
-test("small and thin screenshot crops meet the provider minimum without stretching", async () => {
-  const file = path.join(work, "crop-source.png");
-  await sharp({ create: { width: 100, height: 100, channels: 4, background: "red" } }).png().toFile(file);
-  for (const rect of [{ x: 0, y: 0, width: 14, height: 16 }, { x: 0, y: 0, width: 100, height: 1 }, { x: 0, y: 0, width: 1, height: 100 }]) {
-    const result = await cropImage(file, rect); const meta = await sharp(result).metadata();
-    assert.equal(meta.width, Math.max(32, rect.width)); assert.equal(meta.height, Math.max(32, rect.height));
-    const { data, info } = await sharp(result).raw().toBuffer({ resolveWithObject: true });
-    let redPixels = 0;
-    for (let i = 0; i < data.length; i += info.channels) if (data[i] === 255 && data[i + 1] === 0 && data[i + 2] === 0) redPixels++;
-    assert.equal(redPixels, rect.width * rect.height);
-  }
-});
+
 test("compilation produces stable IDs and valid links", async () => {
   const dir = fixture("compile"); const section = path.join(dir, "sections", "section-01");
   const first = await child("scripts/3_compile_bricks.js", [section]); assert.equal(first.code, 0, first.output);
@@ -159,12 +158,33 @@ test("failed section cannot reuse stale tree during merge", async () => {
 });
 test("pipeline builds cached sections without model calls and records failures truthfully", async () => {
   const dir = fixture("pipeline");
-  const ok = await child("scripts/pipeline.js", ["--frame", dir, "--no-inject", "--no-visual"]); assert.equal(ok.code, 0, ok.output);
+  const ok = await child("scripts/pipeline.js", ["--frame", dir, "--no-inject"], { VISUAL_PROVIDER: "invalid-provider", BROWSER_EXECUTABLE: "missing-browser" }); assert.equal(ok.code, 0, ok.output);
   const run = fs.readdirSync(path.join(dir, "runs"))[0]; const report = JSON.parse(fs.readFileSync(path.join(dir, "runs", run, "run.json")));
   assert.equal(report.exitCode, 0); assert.ok(fs.existsSync(path.join(dir, "runs", run, "dataset", "page.json")));
+  assert.equal(report.visualDebugging, "manual-only; never invoked by the pipeline");
+  assert.equal(report.steps.some(s => /visual|measure|preview/.test(s.script)), false);
+  assert.ok(report.steps.some(s => s.script === "validate-build.js"));
   const failed = await child("scripts/pipeline.js", ["--frame", dir, "--no-visual", "--page", "123"], { WP_API_URL: "", WP_API_USERNAME: "", WP_API_PASSWORD: "" });
   assert.equal(failed.code, 1, failed.output); assert.match(failed.output, /Missing in .env/);
   const log = fs.readFileSync(path.join(dir, "runs", fs.readdirSync(path.join(dir, "runs")).sort().at(-1), "run.log"), "utf8"); assert.match(log, /Finished with failures/);
+});
+test("manual visual debugging rejects unreported or unscoped runs before rendering", async () => {
+  await assert.rejects(visualReview("nonexistent"), /one --only section/);
+  await assert.rejects(visualReview("nonexistent", { only: ["a", "b"], problem: "Overlap", localPreview: true }), /one --only/);
+  await assert.rejects(visualReview("nonexistent", { only: ["a"], problem: "Overlap" }), /--page-url/);
+  await assert.rejects(visualReview("nonexistent", { only: ["a"], problem: "Overlap", localPreview: true, iterations: 2 }), /one targeted correction/);
+});
+test("nonvisual validation rejects unknown native settings and missing local assets", () => {
+  const doc = tree();
+  doc[0].settings._invented = "yes";
+  assert.ok(validateBuild(doc, work).errors.some(e => /unsupported setting/.test(e)));
+  delete doc[0].settings._invented;
+  doc[0].settings._cssGlobalClasses = ["unknown-class-id"];
+  assert.ok(validateBuild(doc, work).errors.some(e => /global class.*saved site/.test(e)));
+  delete doc[0].settings._cssGlobalClasses;
+  doc.push({ id: "eeeeee", name: "image", parent: "bbbbbb", children: [], settings: { image: { id: 0, filename: "missing.png", size: "full", full: "missing.png", url: "missing.png" } } });
+  doc[1].children.push("eeeeee");
+  assert.ok(validateBuild(doc, work).errors.some(e => /Missing media/.test(e)));
 });
 test("measurement failures return nonzero instead of passing the QA gate", async () => {
   const repo = path.join(work, "measurement-tools");
@@ -189,56 +209,12 @@ test("dataset snapshots preserve earlier human edits without exporting them as c
   const records = fs.readFileSync(path.join(dir, "dataset", "sections.jsonl"), "utf8").trim().split("\n").map(JSON.parse);
   assert.deepEqual(records.map((r) => r.section), ["section-01"]);
 });
-test("Ollama receives two images; visual correction re-renders and rejects regression", async () => {
-  const dir = fixture("visual"); write(path.join(dir, "merged", "bricks-tree.json"), tree());
-  write(path.join(dir, "merged", "section-map.json"), [{ name: "section-01", figmaNodeId: "1:1", rootIds: ["aaaaaa"] }]);
-  await sharp({ create: { width: 800, height: 300, channels: 4, background: "white" } }).png().toFile(path.join(dir, "screenshot.png"));
-  let calls = 0;
-  const server = http.createServer(async (req, res) => {
-    let raw = ""; for await (const chunk of req) raw += chunk;
-    const body = JSON.parse(raw); assert.equal(body.messages[0].images.length, 2); calls++;
-    const value = calls === 1 ? { issues: [{ severity: "medium", elementId: "aaaaaa", description: "Padding too small" }], patches: [{ op: "settings", id: "aaaaaa", set: { _padding: { top: "30", bottom: "20" } } }] }
-      : calls === 2 ? { issues: [], patches: [] } : { issues: [{ severity: "high", description: "Regression" }], patches: [] };
-    res.setHeader("Content-Type", "application/json"); res.end(JSON.stringify({ message: { content: calls === 1 ? JSON.stringify(value).slice(0, -1) : JSON.stringify(value) }, done_reason: "stop" }));
-  });
-  await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
-  const config = { provider: "ollama", model: "test-vision", host: `http://127.0.0.1:${server.address().port}` };
-  try {
-    const response = await visualReview(dir, { config, fix: true, iterations: 1 }); assert.equal(response.ok, true); assert.equal(calls, 2);
-    assert.equal(JSON.parse(fs.readFileSync(path.join(dir, "merged", "bricks-tree.json")))[0].settings._padding.top, "30");
-    assert.ok(response.report.corrected);
-    assert.equal(response.report.rounds[0].sections[0].repairedJSON, true);
-    const cached = await visualReview(dir, { config, iterations: 0 }); assert.equal(cached.ok, true); assert.equal(calls, 2); assert.equal(cached.report.rounds[0].sections[0].cacheHit, true);
-    calls = 0;
-    server.removeAllListeners("request");
-    server.on("request", async (req, res) => { for await (const ignored of req) {} calls++; res.setHeader("Content-Type", "application/json"); res.end(JSON.stringify({ message: { content: JSON.stringify({ issues: [{ severity: calls === 1 ? "medium" : "high", description: "Remaining difference" }], patches: [{ op: "settings", id: "aaaaaa", set: { _padding: { top: "100" } } }] }) } })); });
-    const original = fs.readFileSync(path.join(dir, "merged", "bricks-tree.json"), "utf8");
-    const regression = await visualReview(dir, { config: { ...config, model: "test-regression" }, fix: true, iterations: 1 }); assert.equal(regression.ok, false); assert.equal(regression.report.acceptedRound, 0);
-    assert.equal(fs.readFileSync(path.join(dir, "merged", "bricks-tree.json"), "utf8"), original);
-  } finally { await new Promise((resolve) => server.close(resolve)); }
-});
+
 test("vision config requires a model and never invents a text-only fallback", () => {
   assert.throws(() => visionConfig({ VISUAL_PROVIDER: "ollama" }), /model/i);
   assert.equal(visionConfig({ AI_PROVIDER: "groq", GROQ_API_KEY: "test" }).model, "qwen/qwen3.8-27b");
   assert.equal(visionConfig({ GROQ_API_KEY: "test" }).provider, "groq");
   assert.equal(visionConfig({ VISUAL_PROVIDER: "ollama", OLLAMA_MODEL: "text-model", OLLAMA_VISION_MODEL: "image-model" }).model, "image-model");
-});
-test("daily quota checkpoints prevent repeated provider requests during cooldown", async () => {
-  const dir = fixture("quota"); write(path.join(dir, "merged", "bricks-tree.json"), tree());
-  write(path.join(dir, "merged", "section-map.json"), [{ name: "section-01", figmaNodeId: "1:1", rootIds: ["aaaaaa"] }]);
-  await sharp({ create: { width: 800, height: 300, channels: 4, background: "white" } }).png().toFile(path.join(dir, "screenshot.png"));
-  let calls = 0;
-  const server = http.createServer(async (req, res) => { for await (const ignored of req) {} calls++; res.statusCode = 429; res.setHeader("Content-Type", "application/json"); res.end(JSON.stringify({ error: { message: "tokens per day (TPD). Please try again in 10m19.92s." } })); });
-  await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
-  const config = { provider: "groq", model: "test-quota", key: work, endpoint: `http://127.0.0.1:${server.address().port}` };
-  const key = createHash("sha256").update(`${config.provider}|${config.model}|${config.key}`).digest("hex");
-  const stateFile = path.resolve("output", "provider-state", `${key}.json`);
-  const fallbackBefore = process.env.OLLAMA_VISION_MODEL; delete process.env.OLLAMA_VISION_MODEL;
-  try {
-    await assert.rejects(visualReview(dir, { config, iterations: 0 }), (e) => e.code === "RATE_LIMITED"); assert.equal(calls, 1);
-    assert.equal(JSON.parse(fs.readFileSync(path.join(dir, "merged", "visual-report.json"))).status, "waiting-for-provider");
-    await assert.rejects(visualReview(dir, { config, iterations: 0 }), /cooling down/); assert.equal(calls, 1);
-  } finally { if (fallbackBefore === undefined) delete process.env.OLLAMA_VISION_MODEL; else process.env.OLLAMA_VISION_MODEL = fallbackBefore; if (fs.existsSync(stateFile)) fs.unlinkSync(stateFile); await new Promise((resolve) => server.close(resolve)); }
 });
 
 test.after(() => {

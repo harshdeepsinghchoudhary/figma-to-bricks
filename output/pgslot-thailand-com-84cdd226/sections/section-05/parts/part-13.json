@@ -1,0 +1,34 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "game-variety-card",
+      "children": [
+        {
+          "type": "block",
+          "id": "game-card",
+          "figmaNodeId": "202:388",
+          "background": {
+            "gradient": {
+              "angle": 180,
+              "stops": [
+                {
+                  "color": "#1A070C",
+                  "position": 20
+                },
+                {
+                  "color": "#611530",
+                  "position": 100
+                }
+              ]
+            }
+          },
+          "border": {
+            "radius": 6
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "elementId": "9xt9lw",
+      "description": "The 'Search' button is missing its yellow background color and border, appearing as plain text in the local preview."
+    },
+    {
+      "severity": "medium",
+      "elementId": "9xt9lw",
+      "description": "The search bar container is missing the light grey background fill and rounded corners visible in the Figma target."
+    },
+    {
+      "severity": "low",
+      "elementId": "ujx1j3",
+      "description": "The 'Search' text is missing the specific padding and alignment to center it within the button area."
+    }
+  ],
+  "patches": [
+    {
+      "op": "settings",
+      "id": "9xt9lw",
+      "set": {
+        "_background": {
+          "color": {
+            "raw": "#F5F5F5"
+          }
+        },
+        "_borderRadius": "8px"
+      }
+    },
+    {
+      "op": "settings",
+      "id": "ujx1j3",
+      "set": {
+        "_background": {
+          "color": {
+            "raw": "#FFD700"
+          }
+        },
+        "_padding": {
+          "top": "10",
+          "right": "20",
+          "bottom": "10",
+          "left": "20"
+        },
+        "_borderRadius": "4px",
+        "_typography": {
+          "font-family": "Inter",
+          "font-size": "18px",
+          "font-weight": "400",
+          "line-height": "21.78px",
+          "letter-spacing": "0%",
+          "color": {
+            "raw": "#000000"
+          },
+          "text-align": "center"
+        }
+      }
+    }
+  ]
+}

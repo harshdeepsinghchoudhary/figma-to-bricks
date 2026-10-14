@@ -28,6 +28,7 @@
 import fs from "fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { BRICKS_BREAKPOINTS } from "./breakpoints.js";
 
 const schemaDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "schema");
 const ELEMENTS_SCHEMA_PATH = path.join(schemaDir, "bricks-elements.json");
@@ -67,6 +68,7 @@ const knownBreakpoints = new Set(
     .map((k) => k.split(":").pop())
 );
 const knownPseudoSuffixes = new Set(["::before", "::after"]);
+for (const key of BRICKS_BREAKPOINTS.keys) knownBreakpoints.add(key);
 
 // Keys proven by rendering in real Bricks but absent from analyzed exports (hand-maintained).
 const VERIFIED_PATH = path.join(schemaDir, "bricks-verified-keys.json");
@@ -92,7 +94,7 @@ function isPlainObject(v) {
   return v !== null && typeof v === "object" && !Array.isArray(v);
 }
 
-export function validateBricks(tree) {
+export function validateBricks(tree, { strict = false } = {}) {
   const errors = [];
   const warnings = [];
 
@@ -114,6 +116,7 @@ export function validateBricks(tree) {
       errors.push(`Element at index ${i} (name: ${el.name || "?"}) has a missing/invalid id.`);
       continue;
     }
+    if (strict && !/^[a-z0-9]{6}$/.test(el.id)) errors.push(`Element ${el.id}: native Bricks IDs must contain six lowercase letters/digits.`);
     idCounts[el.id] = (idCounts[el.id] || 0) + 1;
     byId.set(el.id, el);
 
@@ -230,7 +233,11 @@ export function validateBricks(tree) {
     checkLinkShape(el, warnings);
   }
 
-  return { errors, warnings };
+  if (strict) {
+    for (const el of tree) if (el?.name && !runtimeTypes.has(el.name)) errors.push(`Element ${el.id}: ${el.name} has no verified runtime schema.`);
+    errors.push(...warnings);
+  }
+  return { errors: [...new Set(errors)], warnings: strict ? [] : warnings };
 }
 
 function checkSpecialShape(el, key, requiredKeys, warnings) {

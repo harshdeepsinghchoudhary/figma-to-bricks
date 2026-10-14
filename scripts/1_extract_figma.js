@@ -19,7 +19,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
 import fetch from "node-fetch";
+import sharp from "sharp";
 import { findPanels } from "./decoration-detect.js";
+import { preserveFigma, collectImageFillSources, backupExtraction } from "./figma-preservation.js";
 
 const args = process.argv.slice(2);
 const figmaUrl = args.find((a) => !a.startsWith("--"));
@@ -85,18 +87,18 @@ async function figmaGet(endpoint) {
 import { hasImageFill, isGraphicNode } from "./graphic-detect.js";
 
 function collectAssetNodes(node, acc = [], parent = null) {
-  if (node.visible === false) return acc;
+  if (node.visible === false || node.isMask) return acc;
 
   if (hasImageFill(node)) acc.push({ id: node.id, name: node.name, kind: "image" });
 
   if (!hasImageFill(node) && node.absoluteBoundingBox && node.type !== "TEXT") {
-    const { isGraphic, vectors } = isGraphicNode(node);
+    const { isGraphic, vectors, format } = isGraphicNode(node);
     if (isGraphic) {
       const box = node.absoluteBoundingBox;
       acc.push({
         id: node.id,
         name: node.name,
-        kind: "svg",
+        kind: format === "png" ? "image" : "svg",
         componentId: node.componentId || null,
         sig: visualSig(node),
         w: Math.round(box.width),
@@ -125,7 +127,7 @@ function visualSig(node) {
     parts.push(`${n.type}[${paints(n.fills)}][${paints(n.strokes)}]${n.strokeWeight || 0}/${n.cornerRadius || 0}/${b ? Math.round(b.width) + "x" + Math.round(b.height) : ""}`);
     const geometry = n.vectorPaths || n.fillGeometry || n.vectorNetwork;
     if (geometry) { hasPathGeometry = true; parts.push(JSON.stringify(geometry)); }
-    parts.push(JSON.stringify({ transform: n.relativeTransform, opacity: n.opacity, effects: n.effects, strokeGeometry: n.strokeGeometry, radii: n.rectangleCornerRadii }));
+    parts.push(JSON.stringify({ transform: n.relativeTransform, opacity: n.opacity, effects: n.effects, strokeGeometry: n.strokeGeometry, radii: n.rectangleCornerRadii, isMask: n.isMask, maskType: n.maskType, images: (n.fills || []).filter(p => p.visible !== false && p.type === "IMAGE").map(p => ({ imageRef: p.imageRef, scaleMode: p.scaleMode, transform: p.imageTransform })) }));
     for (const c of n.children || []) walk(c);
   })(node);
   // Equal names/colours/boxes are not proof of equal paths (e.g. a check and an X).
@@ -196,6 +198,7 @@ async function main() {
 
   // 1) node tree (cached -> no API call)
   let outDir = findCachedDir(fileKey, nodeId);
+  if (outDir && REFRESH && !DRY_RUN) console.log(`Refresh backup: ${backupExtraction(outDir)}`);
   let rootNode;
   if (outDir && (!REFRESH || DRY_RUN)) {
     console.log(`Using cached ${outDir}/figma-node.json (no API call)`);
@@ -203,7 +206,7 @@ async function main() {
   } else {
     if (DRY_RUN) throw new Error("--dry-run needs an existing figma-node.json in output/<frame>/");
     console.log("Fetching node tree...");
-    const nodeData = await figmaGet(`/files/${fileKey}/nodes?ids=${encodeURIComponent(nodeId)}`);
+    const nodeData = await figmaGet(`/files/${fileKey}/nodes?ids=${encodeURIComponent(nodeId)}&geometry=paths`);
     const nodeResult = nodeData.nodes[nodeId];
     if (!nodeResult) throw new Error(`Node ${nodeId} not found in response`);
     rootNode = nodeResult.document;
@@ -211,15 +214,20 @@ async function main() {
     outDir ||= path.join("output", `${slugify(rootNode.name)}-${suffix}`);
     fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(path.join(outDir, "figma-node.json"), JSON.stringify(rootNode, null, 2));
+    fs.writeFileSync(path.join(outDir, "figma-file-metadata.json"), JSON.stringify({ name: nodeData.name, version: nodeData.version, lastModified: nodeData.lastModified, components: nodeResult.components || {}, componentSets: nodeResult.componentSets || {}, styles: nodeResult.styles || {} }, null, 2));
     console.log(`Wrote ${outDir}/figma-node.json`);
   }
   fs.writeFileSync(path.join(outDir, "extract-source.json"), JSON.stringify({ fileKey, nodeId, figmaUrl }, null, 2));
+  const metadataFile = path.join(outDir, "figma-file-metadata.json");
+  const metadata = fs.existsSync(metadataFile) ? JSON.parse(fs.readFileSync(metadataFile, "utf8")) : {};
+  fs.writeFileSync(path.join(outDir, "figma-preserved.json"), JSON.stringify(preserveFigma(rootNode, metadata), null, 2));
   const assetsDir = path.join(outDir, "assets");
   fs.mkdirSync(assetsDir, { recursive: true });
 
   // 2) candidates
   const assetNodes = collectAssetNodes(rootNode);
   const pngNodes = assetNodes.filter((n) => n.kind === "image");
+  const imageFillSources = collectImageFillSources(rootNode);
   const svgAll = NO_SVG ? [] : assetNodes.filter((n) => n.kind === "svg");
   const svgGroups = dedupeSvg(svgAll);
   console.log(
@@ -251,6 +259,7 @@ async function main() {
     ...svgGroups.flatMap((g) =>
       g.members.map((m) => ({ nodeId: m.id, name: m.name, type: "svg", file: plannedFile("svg", g.rep) }))
     ),
+    ...imageFillSources.map((fill) => ({ ...fill, file: `assets/image-fill-${createHash("sha256").update(fill.imageRef).digest("hex").slice(0, 20)}.png` })),
   ];
   fs.writeFileSync(path.join(outDir, "asset-manifest.planned.json"), JSON.stringify(planned, null, 2));
   console.log(`Wrote ${outDir}/asset-manifest.planned.json (${planned.length} entries)`);
@@ -311,9 +320,9 @@ async function main() {
       );
       for (const it of batch) {
         const url = data.images?.[it.rep.id];
-        if (!url) continue;
+        if (!url) { console.warn(`  ${format} export returned no URL for ${it.rep.id} "${it.rep.name}"${data.err ? `: ${data.err}` : ""}`); continue; }
         const filename = `${slugify(it.rep.name)}-${it.rep.id.replace(/[:;]/g, "_")}.${format}`;
-        if (!(await download(url, path.join(assetsDir, filename)))) continue;
+        if (!(await download(url, path.join(assetsDir, filename)))) { console.warn(`  ${format} download failed for ${it.rep.id} "${it.rep.name}"`); continue; }
         for (const m of it.members) {
           manifest.push({ nodeId: m.id, name: m.name, type: format === "png" ? "image" : "svg", file: `assets/${filename}` });
           have.add(m.id);
@@ -327,9 +336,35 @@ async function main() {
   await exportAndSave(pngNodes.map((n) => ({ rep: n, members: [n] })), "png");
   await exportAndSave(svgGroups, "svg");
 
+  const fillTodo = planned.filter((entry) => entry.exportMode === "source-image" && !have.has(entry.nodeId));
+  if (fillTodo.length) {
+    console.log(`Exporting ${fillTodo.length} source image fill(s) separately from editable child content`);
+    const fillResponse = await figmaGet(`/files/${fileKey}/images`);
+    const fillUrls = fillResponse.meta?.images || fillResponse.images || {};
+    const downloaded = new Set();
+    for (const entry of fillTodo) {
+      const destination = path.join(outDir, entry.file);
+      if (!downloaded.has(entry.imageRef)) {
+        const url = fillUrls[entry.imageRef];
+        if (!url || !await download(url, destination)) continue;
+        const bytes = fs.readFileSync(destination);
+        await sharp(bytes).png().toFile(`${destination}.converted`);
+        fs.renameSync(`${destination}.converted`, destination);
+        downloaded.add(entry.imageRef);
+      }
+      manifest.push(entry);
+      have.add(entry.nodeId);
+      saveManifest();
+    }
+  }
+
   saveManifest();
   const missing = planned.filter((p) => !have.has(p.nodeId));
-  if (missing.length) throw new Error(`${missing.length} assets were not exported. Re-run extraction to resume; pipeline stopped before normalization.`);
+  if (missing.length) {
+    fs.writeFileSync(path.join(outDir, "asset-export-report.json"), JSON.stringify({ status: "incomplete", missing, at: new Date().toISOString() }, null, 2));
+    throw new Error(`${missing.length} assets were not exported: ${missing.map(a => `${a.nodeId} "${a.name}" (${a.type})`).join(", ")}. See asset-export-report.json. Re-run extraction to resume; pipeline stopped before normalization.`);
+  }
+  fs.writeFileSync(path.join(outDir, "asset-export-report.json"), JSON.stringify({ status: "complete", missing: [], mappings: manifest.length, at: new Date().toISOString() }, null, 2));
   console.log(`Manifest has ${manifest.length} node->file mapping(s). Done. Output in ${outDir}/`);
 }
 

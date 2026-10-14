@@ -1,0 +1,52 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "scope-section",
+      "children": [
+        {
+          "type": "button",
+          "id": "more-info",
+          "figmaNodeId": "202:424",
+          "text": "More info",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "align": "center",
+            "justify": "center",
+            "padding": {
+              "left": 38,
+              "right": 38,
+              "top": 17,
+              "bottom": 17
+            }
+          },
+          "size": {
+            "width": 149,
+            "height": 53
+          },
+          "background": {
+            "gradient": {
+              "angle": 90,
+              "stops": [
+                {
+                  "color": "#F5CB6A",
+                  "position": 0
+                },
+                {
+                  "color": "#BA8C30",
+                  "position": 100
+                }
+              ]
+            }
+          },
+          "border": {
+            "radius": 100
+          }
+        }
+      ]
+    }
+  ]
+}

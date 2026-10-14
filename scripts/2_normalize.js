@@ -19,6 +19,8 @@ import { validateNormalized } from "./normalized-validator.js";
 import { collectGradients } from "./gradient-utils.js";
 import { sanitize, finalize, rebuildFromGeometry } from "./normalize-postprocess.js";
 import { isGraphicNode, hasImageFill } from "./graphic-detect.js";
+import { deterministicNormalize, reconcileFigmaProperties } from "./figma-preservation.js";
+const DETERMINISTIC = process.argv.includes("--deterministic") || process.env.NORMALIZE_MODE === "deterministic";
 
 // Provider is chosen explicitly via AI_PROVIDER=groq|anthropic in .env, or auto-detected
 // from whichever API key is present (GROQ_API_KEY -> groq, else ANTHROPIC_API_KEY ->
@@ -28,7 +30,7 @@ import { isGraphicNode, hasImageFill } from "./graphic-detect.js";
 const PROVIDER = (process.env.AI_PROVIDER || (process.env.GROQ_API_KEY ? "groq" : "anthropic")).toLowerCase();
 // Also supported: AI_PROVIDER=gemini (free tier, big context, needs GEMINI_API_KEY) and
 // AI_PROVIDER=ollama (fully local, no key, no limits).
-if (!["groq", "anthropic", "gemini", "ollama", "nvidia", "auto"].includes(PROVIDER)) {
+if (!DETERMINISTIC && !["groq", "anthropic", "gemini", "ollama", "nvidia", "auto"].includes(PROVIDER)) {
   console.error(`Unknown AI_PROVIDER "${PROVIDER}" - expected "groq", "anthropic", "gemini", "ollama", "nvidia" or "auto".`);
   process.exit(1);
 }
@@ -39,7 +41,7 @@ const HAS_KEY = { gemini: !!process.env.GEMINI_API_KEY, nvidia: !!process.env.NV
 let CHAIN = PROVIDER === "auto"
   ? (process.env.AI_PROVIDER_CHAIN || "nvidia,groq").split(",").map((p) => p.trim().toLowerCase()).filter((p) => HAS_KEY[p])
   : [PROVIDER];
-if (!CHAIN.length) {
+if (!CHAIN.length && !DETERMINISTIC) {
   console.error("AI_PROVIDER=auto but none of the providers in the chain has an API key in .env (NVIDIA_API_KEY, GROQ_API_KEY).");
   process.exit(1);
 }
@@ -179,7 +181,7 @@ function compactPaint(p) {
   if (p.type === "IMAGE") return { t: "IMAGE", scale: p.scaleMode };
   return { t: p.type, note: "unsupported" };
 }
-const KEEP_NODE = ["id", "name", "type", "characters", "layoutMode", "itemSpacing", "counterAxisSpacing", "paddingLeft", "paddingRight", "paddingTop", "paddingBottom", "primaryAxisAlignItems", "counterAxisAlignItems", "layoutWrap", "layoutSizingHorizontal", "layoutSizingVertical", "layoutGrow", "layoutAlign", "clipsContent", "cornerRadius", "rectangleCornerRadii", "strokeWeight"];
+const KEEP_NODE = ["id", "name", "type", "characters", "visible", "layoutMode", "itemSpacing", "counterAxisSpacing", "paddingLeft", "paddingRight", "paddingTop", "paddingBottom", "primaryAxisAlignItems", "counterAxisAlignItems", "layoutWrap", "layoutSizingHorizontal", "layoutSizingVertical", "layoutGrow", "layoutAlign", "layoutPositioning", "constraints", "minWidth", "maxWidth", "minHeight", "maxHeight", "clipsContent", "isMask", "maskType", "cornerRadius", "rectangleCornerRadii", "strokeWeight", "strokeAlign", "componentId", "componentProperties", "variantProperties", "reactions"];
 const KEEP_STYLE = ["fontFamily", "fontSize", "fontWeight", "textAlignHorizontal", "textCase", "textDecoration"];
 // Units are resolved here, never left to the model (it copied 135% as "135px" before).
 function compactTextStyle(style) {
@@ -331,7 +333,8 @@ const COMPACT_RULES = `Output ONE JSON object valid for the schema. No markdown,
 - Code fills in sizes, gaps, margins, padding, text styling and button colours from the Figma data AFTER you answer. Get type, nesting, ids, exact text and assets right; leave out layout/size numbers you are unsure about.
 - Value missing from data: omit the key, add a short string to root "_uncertain".
 - No Bricks/Elementor/WordPress terms, element ids, attachment ids or CSS classes.
-- Gradients: for a node listed in PRECOMPUTED GRADIENTS copy its "gradient" object verbatim into background.gradient (appliesTo:"background") or typography.colorGradient (appliesTo:"text"). Other gradient types, strokes, effects, absolute positioning, animation, forms, tabs go in that node's "notes" array; type "unsupported" only for whole elements with no equivalent.
+- Gradients: copy PRECOMPUTED GRADIENTS verbatim. Other paints, effects and transforms remain in the deterministically added "figma" metadata; describe unmapped features in "notes". Never emit or invent "figma" metadata yourself.
+- Interactive components keep ordinary row/column/block wrappers and a semantic "component" annotation. Use kind navigation, slider, tabs, accordion, form or card only with design evidence. Navigation needs link groups; never invent URLs. A slider needs carousel evidence such as arrows/dots/clipping plus repeated slides, not merely a horizontal card row. Tabs need matching titles and all panels; accordions need title/content pairs. Forms need explicit typed fields; never invent submission actions. Set options only from explicit Figma data.
 - No responsive overrides unless Figma has explicit tablet/mobile frames.
 - "id": unique kebab-case slug; "figmaNodeId": the Figma id.
 - Images/icons: use nodeIds from the asset manifest. A node with "asset":true was pruned to one exported graphic: emit one image-type element for it.
@@ -825,7 +828,8 @@ Rules:
 - If a value is absent from the Figma data, omit the key and add a short entry to the root "_uncertain" array. Do not guess.
 - Do not output Bricks, Elementor or WordPress terms, element ids, attachment ids or CSS class names.
 - Linear gradients ARE supported: background.gradient for fills, typography.colorGradient for gradient text. See "PRECOMPUTED GRADIENTS" below - use those exact values verbatim for the listed nodeIds, do not compute your own angle or stop positions from gradientHandlePositions (that math is done deterministically outside this prompt so it's correct every time). Any gradient NOT in that precomputed list (radial, angular/conic, or a linear gradient missing handle data) is not supported - put it in that node's "notes" array instead.
-- Anything else the schema cannot express (strokes, glows, absolute positioning, animation, accordions, tabs, forms) goes in that node's "notes" array. Use type "unsupported" only for whole elements with no equivalent type.
+- Source constraints, transforms, paints, clipping and typography runs are copied by code into "figma" after your answer. Do not emit or invent that metadata. Describe unsupported source effects in "notes"; reserve type "unsupported" for elements with no available representation.
+- Use ordinary container/row/column/block nodes with "component.kind" for recognized navigation, slider, tabs, accordion, form and card components. Options require explicit Figma evidence. Navigation requires links and must not receive invented URLs. Sliders require carousel evidence (arrows, dots, clipping or repeated slider instances), not merely a horizontal card group. Tabs require matched titles and complete panels; accordions require title/content pairs. Forms require typed fields and explicit submission actions; do not invent actions. The compiler discovers supported native structures separately.
 - Do not invent responsive overrides. Only fill "responsive" when the Figma file contains explicit tablet/mobile frames for the node.
 - "id" values are unique semantic kebab-case slugs. Put the Figma node id in "figmaNodeId".
 - Include asset nodes (images, icons) using the nodeId values that appear in the asset manifest provided.
@@ -990,6 +994,27 @@ async function main() {
   const outDir = outSubdir ? path.join(frameDir, outSubdir) : frameDir;
   fs.mkdirSync(outDir, { recursive: true });
   const outPath = path.join(outDir, "normalized.json");
+  const sourceMetadataFile = path.join(frameDir, "figma-file-metadata.json");
+  const sourceMetadata = fs.existsSync(sourceMetadataFile) ? JSON.parse(fs.readFileSync(sourceMetadataFile, "utf8")) : {};
+
+  if (DETERMINISTIC) {
+    const manifestFile = path.join(frameDir, "asset-manifest.json");
+    const deterministicManifest = fs.existsSync(manifestFile) ? JSON.parse(fs.readFileSync(manifestFile, "utf8")) : [];
+    const result = deterministicNormalize(scopedRoot, deterministicManifest, { metadata: sourceMetadata });
+    // Reuse measured loose-layout handling; authoritative Auto Layout is reapplied afterwards.
+    const deterministicStats = { count: 0, charsSaved: 0 };
+    const deterministicPruned = pruneGraphics(scopedRoot, deterministicStats);
+    manifestIds = new Set(deterministicManifest.map((entry) => entry.nodeId));
+    finalize(result.doc, compactMeasured(deterministicPruned), { gradients: collectGradients(scopedRoot), isHero: /hero/i.test(scopeName || "") || process.argv.includes("--h1") });
+    const source = reconcileFigmaProperties(result.doc, scopedRoot, { manifest: deterministicManifest, metadata: sourceMetadata });
+    const errors = validateNormalized(result.doc, deterministicManifest).errors;
+    if (errors.length) throw new Error(`Deterministic normalization failed validation:\n${errors.join("\n")}`);
+    fs.writeFileSync(path.join(outDir, "figma-preserved.json"), JSON.stringify(source.preserved, null, 2));
+    fs.writeFileSync(path.join(outDir, "figma-coverage.json"), JSON.stringify(source.report, null, 2));
+    fs.writeFileSync(outPath, JSON.stringify(result.doc, null, 2));
+    console.log(`Deterministic normalization wrote ${outPath}; no AI provider or screenshot used. ${source.report.summary.unrepresented} source node(s) explicitly listed as unrepresented in figma-coverage.json.`);
+    return;
+  }
 
   const allGradients = collectGradients(scopedRoot);
   const rawSize = JSON.stringify(scopedRoot).length;
@@ -1496,6 +1521,11 @@ how gaps/padding/typography are expressed, when notes are used).` : ""}`,
   const isHero = /hero/i.test(scopeName || "") || process.argv.includes("--h1");
   const geoTree = compactMeasured(prunedRoot);
   const fin = finalize(parsed, geoTree, { gradients, isHero });
+  const source = reconcileFigmaProperties(parsed, scopedRoot, { manifest: fullManifest, metadata: sourceMetadata });
+  fs.writeFileSync(path.join(outDir, "figma-preserved.json"), JSON.stringify(source.preserved, null, 2));
+  fs.writeFileSync(path.join(outDir, "figma-coverage.json"), JSON.stringify(source.report, null, 2));
+  if (source.report.summary.unrepresented) console.warn(`Source coverage: ${source.report.summary.unrepresented} node(s) remain unrepresented; each is listed in figma-coverage.json rather than silently discarded.`);
+  for (const warning of source.report.warnings) console.warn(`  SOURCE ${warning}`);
   const skipped = fin.filter((l) => l.includes("skipped"));
   console.log(`Post-processed from Figma data: ${fin.length - skipped.length} field group(s) set (text, typography, sizes, gaps, margins, padding, alignment, heading levels).`);
   for (const l of skipped) console.warn("  WARNING " + l);

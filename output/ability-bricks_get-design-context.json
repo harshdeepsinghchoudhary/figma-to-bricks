@@ -1,0 +1,110 @@
+{
+  "name": "bricks/get-design-context",
+  "label": "Get design context",
+  "description": "One-call summary of the site design context: color palettes, global classes, theme styles, components, global variables, and responsive breakpoints. Pass `responseFormat: \"summary\"` for capped orientation output, or `includeUsage: true` to add `usedOnPosts` per component.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "includeUsage": {
+        "type": "boolean",
+        "description": "Include `usedOnPosts` per component, limited to posts the caller can edit in the Builder. Off by default: the first computation scans every Bricks post and can take a few seconds on large sites. Usage is cached for one hour and filtered for the current caller on every read."
+      },
+      "responseFormat": {
+        "type": "string",
+        "enum": [
+          "detailed",
+          "summary"
+        ],
+        "description": "Use `summary` for session orientation: includes counts, breakpoints, and capped resource lists. Default `detailed` preserves the full current response."
+      },
+      "limit": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 500,
+        "description": "Maximum items per large list when `responseFormat` is `summary`. Default 100."
+      }
+    },
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "counts": {
+        "type": "object"
+      },
+      "colorPalettes": {
+        "type": "array"
+      },
+      "globalClasses": {
+        "type": "array"
+      },
+      "themeStyles": {
+        "type": "array"
+      },
+      "components": {
+        "type": "array"
+      },
+      "globalVariables": {
+        "type": "array"
+      },
+      "variableCategories": {
+        "type": "array",
+        "description": "Global variable categories, including scale configs used by generate-scale-variables."
+      },
+      "breakpoints": {
+        "type": "object",
+        "description": "Current responsive breakpoint contract: customEnabled, isMobileFirst, baseKey, baseWidth, and active breakpoint items."
+      },
+      "truncated": {
+        "type": "object",
+        "description": "Present in summary responses when large lists were capped."
+      },
+      "version": {
+        "type": "integer",
+        "description": "Legacy current-site design counter. On mixed-authority multisite setups, use designSystemSnapshot and the resource-specific versions instead."
+      },
+      "designSystemSnapshot": {
+        "type": "object",
+        "description": "Authority-correct design snapshot. Use its resource version for focused writes and its token for workspace drift checks.",
+        "properties": {
+          "token": {
+            "type": "string"
+          },
+          "authorities": {
+            "type": "array"
+          },
+          "resources": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "token",
+          "authorities",
+          "resources"
+        ],
+        "additionalProperties": false
+      },
+      "usageCached": {
+        "type": "boolean",
+        "description": "True when component usage was served from the transient. Absent when `includeUsage` was not requested."
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

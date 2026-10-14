@@ -1,0 +1,38 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "frame-26",
+      "figmaNodeId": "202:51",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "gap": 10,
+        "padding": {
+          "left": 30,
+          "right": 30,
+          "top": 14,
+          "bottom": 14
+        },
+        "justify": "center",
+        "align": "center"
+      },
+      "background": {
+        "gradient": {
+          "angle": 90,
+          "stops": [
+            {
+              "color": "#F5CB6A",
+              "position": 0
+            },
+            {
+              "color": "#BA8C30",
+              "position": 100
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

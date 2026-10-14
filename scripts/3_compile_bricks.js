@@ -15,7 +15,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
-import { ELEMENT_TEMPLATES } from "./bricks-schema.js";
+import { ELEMENT_TEMPLATES, buildBricksElement, escapeText } from "./bricks-schema.js";
+import { recognizeComponents, protectNativeStructures, runtimeKeys, validateNativeComponents } from "./native-components.js";
+import { applyFigmaSettings } from "./figma-settings.js";
+import { validateBricks } from "./bricks-validator.js";
+import { applyResponsiveSourceFile } from "./responsive-sources.js";
+import { reconcileFigmaProperties } from "./figma-preservation.js";
 import { validateNormalized } from "./normalized-validator.js";
 import { responsify } from "./responsive-pass.js";
 import { structurePass } from "./structure-pass.js";
@@ -91,7 +96,7 @@ if (typeof idNamespace !== "string" || !idNamespace) throw new Error("Invalid br
 if (!fs.existsSync(idNamespacePath)) fs.writeFileSync(idNamespacePath, JSON.stringify({ namespace: idNamespace }, null, 2));
 const warnings = [...gate.warnings]; // QA notes + unsupported elements from the normalized layer
 
-function compileNode(node, parentId) {
+function compileNode(node, parentId, parentNode = null) {
   // "page" is a normalized-schema convenience root, not a real Bricks
   // element — pass its children straight through without emitting anything
   // for "page" itself. (Needed because our fixture/roadmap examples wrap
@@ -100,14 +105,16 @@ function compileNode(node, parentId) {
   if (node.type === "page") {
     const childIds = [];
     for (const child of node.children || []) {
-      const childId = compileNode(child, parentId || 0);
+      const childId = compileNode(child, parentId || 0, parentNode);
       if (childId) childIds.push(childId);
     }
     return null; // nothing to report upward — caller (root call) ignores this
   }
 
   if (node.type === "unsupported") return; // already reported by the normalized validator
-  const template = ELEMENT_TEMPLATES[node.type];
+  const template = node._nativeName
+    ? n => buildBricksElement(n._nativeName, n, { content: { ...n._nativeSettings, ...(n._nativeSettings?.text !== undefined ? { text: escapeText(n._nativeSettings.text) } : {}) } })
+    : ELEMENT_TEMPLATES[node.type];
   if (!template) {
     warnings.push(`No Bricks template for normalized type "${node.type}" (id: ${node.id}) — skipped.`);
     return;
@@ -117,6 +124,26 @@ function compileNode(node, parentId) {
   if (node._bgImage) resolveAsset(node._bgImage);
 
   const el = template(node);
+  if (node._nativeSettings) Object.assign(el.settings, node._nativeSettings);
+  const supportedKeys = runtimeKeys(el.name);
+  warnings.push(...applyFigmaSettings(node, el.settings, { supportedKeys, parentNode,
+    assetUrl: id => assetManifest.find(a => a.nodeId === id)?.file }));
+  if (node._nativeName) {
+    for (const key of Object.keys(el.settings)) {
+      const sourceKey = key.split(":")[0], targetKey = { _direction: "_flexDirection", _rowGap: "_gap", _columnGap: "_gap" }[sourceKey];
+      if (!targetKey || supportedKeys.has(sourceKey) || !supportedKeys.has(targetKey) || el.settings[key] === undefined) continue;
+      const target = targetKey + key.slice(sourceKey.length);
+      if (el.settings[target] === undefined) el.settings[target] = el.settings[key];
+      delete el.settings[key];
+    }
+    // Shared styles need this native element's runtime controls. Pane visibility
+    // is managed by Bricks, rather than the hidden Figma variant's display state.
+    for (const key of Object.keys(el.settings)) {
+      if (el.settings[key] === undefined) continue;
+      if (node._nativeManagedDisplay && /^_display(:|$)/.test(key)) { delete el.settings[key]; continue; }
+      if (!supportedKeys.has(key.split(":")[0])) { warnings.push(`${node.id}: ${el.name} does not support ${key}; measured style retained in normalized input.`); delete el.settings[key]; }
+    }
+  }
   let salt = 0, bricksId;
   do {
     const hash = createHash("sha256").update(`${idNamespace}|${node.id}|${salt++}`).digest("hex");
@@ -124,11 +151,12 @@ function compileNode(node, parentId) {
   } while (emittedIds.has(bricksId));
   emittedIds.add(bricksId);
   sourceMap[bricksId] = { normalizedId: node.id, figmaNodeId: node.figmaNodeId || node.asset?.nodeId || node.id };
+  if (node._absorbedSourceIds?.length) sourceMap[bricksId].figmaNodeIds = [...new Set([sourceMap[bricksId].figmaNodeId, ...node._absorbedSourceIds])];
   if (el.settings?._cssCustom) el.settings._cssCustom = el.settings._cssCustom.replaceAll("__ID__", bricksId);
 
   const childIds = [];
   for (const child of node.children || []) {
-    const childId = compileNode(child, bricksId);
+    const childId = compileNode(child, bricksId, node);
     if (childId) childIds.push(childId);
   }
 
@@ -139,6 +167,7 @@ function compileNode(node, parentId) {
     children: childIds,
     settings: stripUndefined(el.settings),
   };
+  if (node._nativeFlags) Object.assign(compiled, node._nativeFlags);
   // Carry themeStyles through when the template provides it — confirmed
   // real Bricks image/icon elements include "themeStyles": [] (see
   // schema/bricks-elements.json sampleValues). Omit entirely rather than
@@ -162,6 +191,7 @@ function stripUndefined(obj) {
 
 // Responsive pass (deterministic): container wrapper, fluid widths, breakpoints, button icon. Skip with --no-responsive.
 let toCompile = normalized;
+let componentReport = { report: [], decisions: [] };
 if (!process.argv.includes("--no-responsive")) {
   let fontAliases = {};
   if (fs.existsSync("font-aliases.json")) fontAliases = JSON.parse(fs.readFileSync("font-aliases.json", "utf-8"));
@@ -175,16 +205,24 @@ if (!process.argv.includes("--no-responsive")) {
     break;
   }
   let src = normalized;
+  let figmaRoot = null;
+  for (const dir of [frameDir, path.join(frameDir, ".."), path.join(frameDir, "..", "..")]) {
+    const fp = path.join(dir, "figma-node.json");
+    if (fs.existsSync(fp)) { figmaRoot = JSON.parse(fs.readFileSync(fp, "utf-8")); break; }
+  }
+  if (figmaRoot) {
+    src = structuredClone(src);
+    const measured = reconcileFigmaProperties(src, figmaRoot.document || figmaRoot, { manifest: assetManifest });
+    warnings.push(...(measured.report?.warnings || []));
+  }
+  componentReport = recognizeComponents(src, { figmaRoot });
+  src = componentReport.doc;
+  for (const line of componentReport.report) console.log("  component:", line);
   if (!process.argv.includes("--no-structure")) {
-    let figmaRoot = null;
-    for (const dir of [frameDir, path.join(frameDir, ".."), path.join(frameDir, "..", "..")]) {
-      const fp = path.join(dir, "figma-node.json");
-      if (fs.existsSync(fp)) { figmaRoot = JSON.parse(fs.readFileSync(fp, "utf-8")); break; }
-    }
     // --no-structure=a,b switches single rule groups off (hoist, dividers, rebuild, missingText, decoration, wrappers, grids, spanning, roles, sanity, rules)
     const arg = process.argv.find((a) => a.startsWith("--no-structure="));
     const enable = Object.fromEntries((arg ? arg.slice("--no-structure=".length).split(",") : []).filter(Boolean).map((k) => [k, false]));
-    const sp = structurePass(normalized, { figmaRoot: figmaRoot?.document || figmaRoot, manifest: assetManifest, enable });
+    const sp = protectNativeStructures(src, masked => structurePass(masked, { figmaRoot: figmaRoot?.document || figmaRoot, manifest: assetManifest, enable }));
     src = sp.doc;
     for (const line of sp.report) console.log("  structure:", line);
   }
@@ -204,7 +242,28 @@ if (!process.argv.includes("--no-responsive")) {
   toCompile = rp.doc;
   for (const line of rp.report) console.log("  responsive:", line);
 }
+else {
+  let figmaRoot = null;
+  for (const dir of [frameDir, path.join(frameDir, ".."), path.join(frameDir, "..", "..")]) {
+    const fp = path.join(dir, "figma-node.json"); if (fs.existsSync(fp)) { figmaRoot = JSON.parse(fs.readFileSync(fp, "utf8")); break; }
+  }
+  let src = structuredClone(normalized);
+  if (figmaRoot) { const measured = reconcileFigmaProperties(src, figmaRoot.document || figmaRoot, { manifest: assetManifest }); warnings.push(...(measured.report?.warnings || [])); }
+  componentReport = recognizeComponents(src, { figmaRoot }); toCompile = componentReport.doc;
+  for (const line of componentReport.report) console.log("  component:", line);
+}
+const responsiveSources = applyResponsiveSourceFile(toCompile, frameDir);
+toCompile = responsiveSources.doc;
+for (const line of responsiveSources.report) console.log("  responsive source:", line);
 compileNode(toCompile, 0);
+
+const validation = validateBricks(flatElements, { strict: true });
+const nativeValidation = validation.errors.length ? { errors: [], warnings: [] } : validateNativeComponents(flatElements);
+const compileErrors = [...validation.errors, ...nativeValidation.errors];
+warnings.push(...validation.warnings, ...nativeValidation.warnings);
+const compileReport = { status: compileErrors.length ? "failed" : "compiled", elementCount: flatElements.length, components: componentReport.decisions, errors: compileErrors, warnings, frontendBehaviorVerified: false };
+fs.writeFileSync(path.join(frameDir, "compile-report.json"), JSON.stringify(compileReport, null, 2));
+if (compileErrors.length) { for (const error of compileErrors) console.error(" -", error); console.error("Compiled tree failed nonvisual validation; existing output was preserved."); process.exit(1); }
 
 const outPath = path.join(frameDir, "bricks-tree.json");
 fs.writeFileSync(outPath, JSON.stringify(flatElements, null, 2));

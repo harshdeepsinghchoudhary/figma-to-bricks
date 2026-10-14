@@ -1,7 +1,17 @@
 {
   "source": "Bricks runtime get-element-schema",
   "site": "https://casinodesign.bcit.in",
-  "fetchedAt": "2026-10-13T11:31:17.027Z",
+  "fetchedAt": "2026-10-14T05:28:23.400Z",
+  "version": {
+    "bricksVersion": "2.4.2",
+    "bricksAbilitiesVersion": "2.0.0",
+    "adapterVersion": "0.6.1",
+    "wordpressVersion": "7.1.3",
+    "abilitiesApiActive": true,
+    "disabledAbilityCount": 45,
+    "adminDisabledAbilityCount": 40,
+    "defaultDisabledAbilityCount": 5
+  },
   "elements": [
     "section",
     "container",
@@ -12,6 +22,15 @@
     "text-basic",
     "button",
     "image",
-    "icon"
+    "icon",
+    "text-link",
+    "nav-nested",
+    "dropdown",
+    "toggle",
+    "offcanvas",
+    "slider-nested",
+    "tabs-nested",
+    "accordion-nested",
+    "form"
   ]
 }

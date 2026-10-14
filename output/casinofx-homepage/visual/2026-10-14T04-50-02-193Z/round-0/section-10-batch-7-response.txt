@@ -1,0 +1,47 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "elementId": "f9ldvs",
+      "description": "The background image is not visible in the local preview; the container appears as a solid red block instead of displaying the photo with the 'Danger' badge overlaid."
+    },
+    {
+      "severity": "medium",
+      "elementId": "2kwm5d",
+      "description": "The 'Danger' button is stretched to full width (100%) in the local preview, whereas in the Figma target it is a compact badge positioned in the top-left corner."
+    },
+    {
+      "severity": "medium",
+      "elementId": "10vynp",
+      "description": "The date badge (icon and text) is missing its light grey background pill in the local preview, appearing as plain text on the white background."
+    }
+  ],
+  "patches": [
+    {
+      "op": "settings",
+      "id": "2kwm5d",
+      "set": {
+        "_width": null
+      }
+    },
+    {
+      "op": "settings",
+      "id": "10vynp",
+      "set": {
+        "_background": {
+          "color": {
+            "raw": "#F3F4F6"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "4px",
+            "right": "4px",
+            "bottom": "4px",
+            "left": "4px"
+          }
+        }
+      }
+    }
+  ]
+}

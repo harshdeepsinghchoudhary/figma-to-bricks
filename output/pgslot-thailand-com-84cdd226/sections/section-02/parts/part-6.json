@@ -1,0 +1,27 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "part-6-section",
+      "children": [
+        {
+          "type": "text",
+          "id": "apply-for-membership",
+          "figmaNodeId": "202:19",
+          "text": "Apply for membership",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 500,
+            "lineHeight": "19.36px",
+            "color": "#1A070C"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "apply-for-membership: dropped unknown field \"typography.textAlign\""
+  ]
+}

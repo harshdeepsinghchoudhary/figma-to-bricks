@@ -26,6 +26,8 @@
  *     partially observed — see schema/bricks-settings.json, re-run analyzer on more pages).
  */
 
+import { BRICKS_BREAKPOINTS } from "./breakpoints.js";
+
 export function makeId() {
   // Confirmed shape from real data: 6 lowercase alphanumeric chars, e.g. "ccitlw".
   const chars = "abcdefghijklmnopqrstuvwxyz0123456789";
@@ -60,7 +62,7 @@ function hugButton(el, fill = false) {
   return el;
 }
 
-export const BREAKPOINTS = ["tablet_portrait", "mobile_landscape", "mobile_portrait"];
+export const BREAKPOINTS = BRICKS_BREAKPOINTS.keys;
 
 const ALIGN = { start: "flex-start", center: "center", end: "flex-end", stretch: "stretch" };
 const JUSTIFY = { start: "flex-start", center: "center", end: "flex-end", "space-between": "space-between" };
@@ -108,6 +110,7 @@ function sizeSettings(z = {}) {
     _widthMax: dimension(z.maxWidth, "px"),
     _height: dimension(z.height, "bare"),
     _heightMin: dimension(z.minHeight, "bare"),
+    _heightMax: dimension(z.maxHeight, "bare"),
     _widthMin: z.minWidth === "fill" ? "100%" : dimension(z.minWidth, "bare"),
   };
 }
@@ -206,13 +209,15 @@ function responsiveSettings(node) {
 }
 
 // Layout the element type implies on its own; explicit node.layout wins.
-function build(name, node, { content = {}, implied = {}, themeStyles } = {}) {
+export function buildBricksElement(name, node, { content = {}, implied = {}, themeStyles } = {}) {
   const merged = { ...node, layout: { ...implied, ...(node.layout || {}) } };
   const el = {
     name,
     settings: { ...content, ...styleSettings(merged), ...responsiveSettings(node) },
   };
   applyLayers(node, el.settings);
+  if (node.globalClasses?.length) el.settings._cssGlobalClasses = [...new Set(node.globalClasses)];
+  if (node.cssClasses?.length) el.settings._cssClasses = [...new Set(node.cssClasses)].join(" ");
   // Leaf elements (text, heading, icon, image) are not flex containers: Bricks rejects _direction / _rowGap / _columnGap on them
   // ("Invalid value for settings._direction"). A model sometimes puts layout on a heading; drop those keys, also their breakpoint forms.
   if (LEAF_NAMES.has(name)) {
@@ -231,6 +236,7 @@ function build(name, node, { content = {}, implied = {}, themeStyles } = {}) {
   if (themeStyles !== undefined) el.themeStyles = themeStyles;
   return el;
 }
+const build = buildBricksElement;
 const LEAF_NAMES = new Set(["heading", "text", "text-basic", "icon", "image"]);
 
 // Layer support (set by responsive-pass.js): section background image + gradient overlay, absolutely placed decoration.
@@ -263,7 +269,7 @@ function applyLayers(node, settings) {
       settings[`_position${P}`] = "absolute";
       // Bricks does not carry a pseudo-element's position down to the smaller breakpoints by itself: without these the layer falls back
       // into the flow on tablet / phone (the hand-made file has to set `_position:tablet_portrait::after` for the same reason)
-      for (const bp of ["tablet_portrait", "mobile_landscape", "mobile_portrait"]) settings[`_position:${bp}${P}`] = "absolute";
+      for (const bp of BREAKPOINTS) settings[`_position:${bp}${P}`] = "absolute";
       settings[`_background${P}`] = { image: assetRef(l), size: l.inset ? "cover" : "contain", position: "center center", repeat: "no-repeat", attachment: "scroll", blendMode: "normal" };
       if (l.inset) for (const side of ["top", "right", "bottom", "left"]) settings[`_${side}${P}`] = "0";
       else {

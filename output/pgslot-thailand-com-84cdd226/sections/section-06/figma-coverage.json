@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "sourceHash": "f7d039b07b8f1943e1d504c8be225a69be14619834aefff642346967a57037a8",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "pgslot-thailand.com (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:26",
+      "parentId": "scope",
+      "name": "Rectangle 5741",
+      "type": "RECTANGLE",
+      "status": "unrepresented"
+    }
+  ],
+  "summary": {
+    "represented": 1,
+    "covered-by-export": 0,
+    "button-label": 0,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 1
+  }
+}

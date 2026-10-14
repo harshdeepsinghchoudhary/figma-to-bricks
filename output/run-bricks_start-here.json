@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "data": {
+    "responseFormat": "compact",
+    "orientation": "# Bricks task routing\n\nKnown existing target: call `bricks-resolve-agent-file` first, edit only its canonical file, then call `bricks-commit-agent-file` once with the unchanged target, complete document (including its opaque baseline), and a stable idempotency key. Do not send a duplicate top-level baseline digest or call version, design context, the ability catalog, or a site manifest before this self-contained path.\n\nNew visual page, section, or template shell: author semantic HTML/CSS and use the preview/apply HTML import workflow. Broad or ambiguous discovery: use `bricks-checkout-site-repository`. Coordinated edits across 2-25 existing resources: use the site changeset checkout/preview/apply/resume workflow.\n\nRendered HTML and screenshots are verification evidence, never reverse-sync authority. Stop on stale, ambiguous, incomplete, partial-commit, or manual-recovery output instead of guessing or changing the idempotency key. Request `{ \"responseFormat\": \"detailed\" }` only when the complete workflow guide is needed.",
+    "fastPath": [
+      "bricks-get-design-context",
+      "bricks-checkout-site-repository",
+      "bricks-resolve-agent-file",
+      "bricks-checkout-site-edit-map",
+      "bricks-create-post"
+    ],
+    "dispatcherInvocation": {
+      "tool": "mcp-adapter-execute-ability",
+      "argsExample": {
+        "ability_name": "bricks/<long-tail-ability>",
+        "parameters": {
+          "<key>": "<value>"
+        }
+      },
+      "note": "Use this shape for a known long-tail ability whose hyphenated tool name is not present in `fastPath`. Do not enumerate the full catalog unless the task is genuinely ambiguous."
+    }
+  }
+}

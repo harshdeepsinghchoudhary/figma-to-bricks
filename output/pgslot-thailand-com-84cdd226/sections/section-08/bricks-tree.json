@@ -1,0 +1,466 @@
+[
+  {
+    "id": "s31w3e",
+    "name": "heading",
+    "parent": "f2o1ia",
+    "children": [],
+    "settings": {
+      "text": "How To Sign Up PG Slot Account?",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "hi3m51",
+    "name": "image",
+    "parent": "ni4rta",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/globe-12657881-1-202_430.png",
+        "url": "../../assets/globe-12657881-1-202_430.png"
+      },
+      "_width": "100%",
+      "_widthMax": "85px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "t5ovte",
+    "name": "heading",
+    "parent": "ni4rta",
+    "children": [],
+    "settings": {
+      "text": "Access the PG Slot Website",
+      "tag": "h3",
+      "_margin": {
+        "top": "20"
+      },
+      "_width": "100%",
+      "_widthMax": "184px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "22px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "7rrowu",
+    "name": "text",
+    "parent": "ni4rta",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
+      "_margin": {
+        "top": "12"
+      },
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "ni4rta",
+    "name": "div",
+    "parent": "vyq07o",
+    "children": [
+      "hi3m51",
+      "t5ovte",
+      "7rrowu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "208px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "3l2lms",
+    "name": "image",
+    "parent": "x00aox",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/id-card-4729741-1-202_447.png",
+        "url": "../../assets/id-card-4729741-1-202_447.png"
+      },
+      "_width": "100%",
+      "_widthMax": "85px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "jjdg4i",
+    "name": "heading",
+    "parent": "tdw4k3",
+    "children": [],
+    "settings": {
+      "text": "Enter Personal Information",
+      "tag": "h3",
+      "_width": "100%",
+      "_widthMax": "172px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "22px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "e6qgab",
+    "name": "text",
+    "parent": "tdw4k3",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "tdw4k3",
+    "name": "div",
+    "parent": "x00aox",
+    "children": [
+      "jjdg4i",
+      "e6qgab"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "12",
+      "_columnGap": "12",
+      "_alignItems": "center",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "x00aox",
+    "name": "div",
+    "parent": "vyq07o",
+    "children": [
+      "3l2lms",
+      "tdw4k3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "208px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "0bvyr7",
+    "name": "image",
+    "parent": "qoplnj",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/accepted-1376350-1-202_434.png",
+        "url": "../../assets/accepted-1376350-1-202_434.png"
+      },
+      "_width": "100%",
+      "_widthMax": "78px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "cpxp78",
+    "name": "heading",
+    "parent": "jx464i",
+    "children": [],
+    "settings": {
+      "text": "Account Verification and Confirmation",
+      "tag": "h3",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "22px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "yt8np3",
+    "name": "text-basic",
+    "parent": "jx464i",
+    "children": [],
+    "settings": {
+      "text": "Lorem Ipsum is simply dummy text of the ",
+      "_width": "100%",
+      "_widthMax": "208px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "jx464i",
+    "name": "div",
+    "parent": "qoplnj",
+    "children": [
+      "cpxp78",
+      "yt8np3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "12",
+      "_columnGap": "12",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    }
+  },
+  {
+    "id": "qoplnj",
+    "name": "div",
+    "parent": "vyq07o",
+    "children": [
+      "0bvyr7",
+      "jx464i"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "22",
+      "_columnGap": "22",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "233px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "ysqp8b",
+    "name": "image",
+    "parent": "oaieuu",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/joystick-5817732-1-202_439.png",
+        "url": "../../assets/joystick-5817732-1-202_439.png"
+      },
+      "_width": "100%",
+      "_widthMax": "85px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "9js09h",
+    "name": "heading",
+    "parent": "jz6j9r",
+    "children": [],
+    "settings": {
+      "text": "Start Play PG Slot Games",
+      "tag": "h3",
+      "_width": "100%",
+      "_widthMax": "167px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "22px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "wjoya7",
+    "name": "text",
+    "parent": "jz6j9r",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "jz6j9r",
+    "name": "div",
+    "parent": "oaieuu",
+    "children": [
+      "9js09h",
+      "wjoya7"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "12",
+      "_columnGap": "12",
+      "_alignItems": "center",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "oaieuu",
+    "name": "div",
+    "parent": "vyq07o",
+    "children": [
+      "ysqp8b",
+      "jz6j9r"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "17",
+      "_columnGap": "17",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "208px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "vyq07o",
+    "name": "div",
+    "parent": "f2o1ia",
+    "children": [
+      "ni4rta",
+      "x00aox",
+      "qoplnj",
+      "oaieuu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "f2o1ia",
+    "name": "container",
+    "parent": "jgyean",
+    "children": [
+      "s31w3e",
+      "vyq07o"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "42",
+      "_columnGap": "42",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "1121px"
+    }
+  },
+  {
+    "id": "jgyean",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "f2o1ia"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

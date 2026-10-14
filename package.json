@@ -16,7 +16,9 @@
     "check:vision": "node scripts/check-vision.js",
     "doctor": "node scripts/doctor.js",
     "schema:sync": "node scripts/sync-bricks-schema.js",
-    "test": "node --test tests/project.test.js"
+    "test": "node --test tests/*.test.js",
+    "validate": "node scripts/validate-build.js",
+    "regression": "node tools/regression.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",

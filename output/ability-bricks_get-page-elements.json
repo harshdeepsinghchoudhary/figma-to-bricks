@@ -1,0 +1,104 @@
+{
+  "name": "bricks/get-page-elements",
+  "label": "Get page elements",
+  "description": "Full element data for a page/template with all settings. Optionally filter to a specific element and its children.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "postId": {
+        "type": "integer",
+        "description": "Post, page, or template ID. The primary identifier; prefer this whenever it is known."
+      },
+      "slug": {
+        "type": "string",
+        "description": "Post slug. Alternative to postId."
+      },
+      "path": {
+        "type": "string",
+        "description": "Hierarchical path like \"parent/child\". Alternative to postId for nested pages."
+      },
+      "title": {
+        "type": "string",
+        "description": "Exact post title. Alternative to `postId`; ambiguous when multiple posts share the same title."
+      },
+      "elementId": {
+        "type": "string",
+        "description": "Optional: return only this element and its children."
+      },
+      "maxDepth": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "Optional descendant depth to include. 0 returns only the root element(s), 1 includes direct children, and so on."
+      },
+      "includeSettings": {
+        "type": "boolean",
+        "description": "Whether to include full settings on returned elements. Defaults to true."
+      },
+      "responseFormat": {
+        "type": "string",
+        "enum": [
+          "detailed",
+          "summary"
+        ],
+        "description": "Use `summary` after broad writes to verify element counts, hierarchy, headings, global-class references, and SVG Image fallback sizing contracts without returning the full settings payload. Default `detailed` preserves the full element response."
+      },
+      "returnFields": {
+        "type": "array",
+        "description": "Optional list of element fields to return. `id` is always included. Defaults to all fields.",
+        "items": {
+          "type": "string",
+          "enum": [
+            "id",
+            "name",
+            "parent",
+            "label",
+            "settings",
+            "children",
+            "cid",
+            "properties",
+            "variant",
+            "slotChildren",
+            "selectors"
+          ]
+        }
+      }
+    },
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "elements": {
+        "type": "array"
+      },
+      "summary": {
+        "type": "object",
+        "description": "Compact structural and reference-integrity verification when responseFormat is summary."
+      },
+      "postId": {
+        "type": "integer"
+      },
+      "documentDigest": {
+        "type": "string",
+        "description": "SHA-256 digest of the complete current Bricks element tree. Use as expectedDocumentDigest for optimistic-concurrency writes and import previews."
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

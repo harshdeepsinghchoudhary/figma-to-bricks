@@ -1,0 +1,67 @@
+{
+  "name": "bricks/get-mcp-version",
+  "label": "Get Bricks MCP version",
+  "description": "Report the Bricks plugin version, the Bricks abilities contract version, the WordPress MCP Adapter version, and the WordPress core version. Call once at the start of a session to detect version drift mid-conversation. `disabledAbilityCount` includes both admin-disabled and default-off abilities; `adminDisabledAbilityCount` and `defaultDisabledAbilityCount` split those states.",
+  "input_schema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "bricksVersion": {
+        "type": "string",
+        "description": "Version of the active Bricks plugin."
+      },
+      "bricksAbilitiesVersion": {
+        "type": "string",
+        "description": "Version of the Bricks abilities contract. Bumps on breaking changes to ability signatures, error codes, or response shapes."
+      },
+      "adapterVersion": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Version of the WordPress mcp-adapter plugin, or null if not detected."
+      },
+      "wordpressVersion": {
+        "type": "string",
+        "description": "WordPress core version."
+      },
+      "abilitiesApiActive": {
+        "type": "boolean",
+        "description": "Whether wp_register_ability is available."
+      },
+      "disabledAbilityCount": {
+        "type": "integer",
+        "description": "Total number of currently disabled abilities, including admin-disabled abilities and default-off categories. Call `bricks-list-ability-status` to see which."
+      },
+      "adminDisabledAbilityCount": {
+        "type": "integer",
+        "description": "Number of abilities explicitly disabled by the admin under Bricks > Settings > AI."
+      },
+      "defaultDisabledAbilityCount": {
+        "type": "integer",
+        "description": "Number of abilities disabled because their category is default-off and has not been explicitly enabled."
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "bricks/get-builder-guide",
+  "label": "Get builder guide",
+  "description": "Reference documentation for generating valid Bricks element JSON. Requires a topic: elements, layout, styling, dynamic-data, query-loops, or components.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "topic": {
+        "type": "string",
+        "description": "Topic to retrieve: elements, layout, styling, dynamic-data, query-loops, or components.",
+        "required": true
+      }
+    },
+    "required": [
+      "topic"
+    ],
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "content": {
+        "type": "string"
+      },
+      "topic": {
+        "type": "string"
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

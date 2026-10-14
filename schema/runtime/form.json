@@ -1,0 +1,4190 @@
+{
+  "name": "form",
+  "label": "Form",
+  "nestable": false,
+  "controls": {
+    "_conditions": {
+      "type": "conditions",
+      "virtual": true,
+      "internal": true
+    },
+    "_cssGlobalClasses": {
+      "type": "array",
+      "virtual": true,
+      "internal": true
+    },
+    "_hidden": {
+      "tab": "style",
+      "type": "object",
+      "virtual": true,
+      "internal": true,
+      "properties": {
+        "_cssClasses": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "_hideElementBuilder": {
+      "type": "checkbox",
+      "virtual": true,
+      "internal": true
+    },
+    "_hideElementFrontend": {
+      "type": "checkbox",
+      "virtual": true,
+      "internal": true
+    },
+    "_interactions": {
+      "type": "interactions",
+      "virtual": true,
+      "internal": true
+    },
+    "_content": {
+      "tab": "content",
+      "label": "Content",
+      "type": "text",
+      "hidden": true,
+      "css": [
+        {
+          "property": "content",
+          "value": "%s"
+        }
+      ]
+    },
+    "_spacingSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Spacing",
+      "type": "separator"
+    },
+    "_margin": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Margin",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "margin",
+          "selector": ""
+        }
+      ]
+    },
+    "_padding": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Padding",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "padding"
+        }
+      ]
+    },
+    "_sizingSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Sizing",
+      "type": "separator"
+    },
+    "_width": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Width",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "width",
+          "selector": ""
+        }
+      ]
+    },
+    "_widthMin": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Min. width",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "min-width",
+          "selector": ""
+        }
+      ]
+    },
+    "_widthMax": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Max. width",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "max-width",
+          "selector": ""
+        }
+      ]
+    },
+    "_height": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Height",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "height"
+        }
+      ]
+    },
+    "_heightMin": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Min. height",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "min-height"
+        }
+      ]
+    },
+    "_heightMax": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Max. height",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "max-height"
+        }
+      ]
+    },
+    "_aspectRatio": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Aspect ratio",
+      "type": "text",
+      "inline": true,
+      "hasDynamicData": false,
+      "hasVariables": true,
+      "placeholder": "",
+      "css": [
+        {
+          "property": "aspect-ratio"
+        }
+      ]
+    },
+    "_positionSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Positioning",
+      "type": "separator"
+    },
+    "_position": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Position",
+      "type": "select",
+      "options": {
+        "static": "static",
+        "relative": "relative",
+        "absolute": "absolute",
+        "fixed": "fixed",
+        "sticky": "sticky"
+      },
+      "css": [
+        {
+          "property": "position",
+          "selector": ""
+        }
+      ],
+      "inline": true
+    },
+    "_positionInfo": {
+      "type": "info",
+      "content": "Set &quot;Top&quot; value to make this element &quot;sticky&quot;.",
+      "tab": "style",
+      "group": "_layout",
+      "required": [
+        "_position",
+        "=",
+        "sticky"
+      ]
+    },
+    "_top": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Top",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "top",
+          "selector": ""
+        }
+      ]
+    },
+    "_right": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Right",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "right",
+          "selector": ""
+        }
+      ]
+    },
+    "_bottom": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Bottom",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "bottom",
+          "selector": ""
+        }
+      ]
+    },
+    "_left": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Left",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "left",
+          "selector": ""
+        }
+      ]
+    },
+    "_zIndex": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Z-index",
+      "type": "number",
+      "css": [
+        {
+          "property": "z-index",
+          "selector": ""
+        }
+      ],
+      "min": -999,
+      "placeholder": 0
+    },
+    "_order": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Order",
+      "type": "number",
+      "css": [
+        {
+          "selector": "",
+          "property": "order"
+        }
+      ],
+      "min": -999,
+      "placeholder": 0
+    },
+    "_scrollSnapSep": {
+      "group": "_layout",
+      "label": "Scroll snap",
+      "desc": "<a href=\"https://academy.bricksbuilder.io/builder/styling/scroll-snap/\" target=\"_blank\" rel=\"noopener\">Learn more</a> about scroll snap in the Bricks Academy. View on frontend.",
+      "type": "separator",
+      "tab": "content"
+    },
+    "_scrollSnapType": {
+      "group": "_layout",
+      "label": "Type",
+      "placeholder": "Select",
+      "tooltip": "scroll-snap-type",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "unset": "Unset",
+        "y mandatory": "Mandatory (y-axis)",
+        "y proximity": "Proximity (y-axis)",
+        "x mandatory": "Mandatory (x-axis)",
+        "x proximity": "Proximity (x-axis)"
+      },
+      "css": [
+        {
+          "property": "scroll-snap-type"
+        }
+      ],
+      "tab": "content"
+    },
+    "_scrollSnapAlign": {
+      "group": "_layout",
+      "label": "Align",
+      "tooltip": "scroll-snap-align",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "start": "start",
+        "center": "center",
+        "end": "end"
+      },
+      "css": [
+        {
+          "property": "scroll-snap-align"
+        }
+      ],
+      "tab": "content"
+    },
+    "_scrollSnapStop": {
+      "group": "_layout",
+      "label": "Stop",
+      "tooltip": "scroll-snap-stop",
+      "placeholder": "normal",
+      "type": "select",
+      "inline": true,
+      "small": true,
+      "options": {
+        "normal": "normal",
+        "always": "always"
+      },
+      "css": [
+        {
+          "property": "scroll-snap-stop"
+        }
+      ],
+      "tab": "content"
+    },
+    "_miscSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Misc",
+      "type": "separator"
+    },
+    "_display": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Display",
+      "type": "select",
+      "options": {
+        "flex": "flex",
+        "inline-flex": "inline-flex",
+        "block": "block",
+        "inline-block": "inline-block",
+        "inline": "inline",
+        "none": "none"
+      },
+      "add": true,
+      "inline": true,
+      "lowercase": true,
+      "css": [
+        {
+          "selector": "",
+          "property": "display"
+        },
+        {
+          "selector": "",
+          "property": "align-items",
+          "value": "initial",
+          "required": "grid"
+        }
+      ]
+    },
+    "_visibility": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Visibility",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "visible": "visible",
+        "hidden": "hidden",
+        "collapse": "collapse"
+      },
+      "css": [
+        {
+          "property": "visibility"
+        }
+      ]
+    },
+    "_overflow": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Overflow",
+      "type": "text",
+      "css": [
+        {
+          "property": "overflow"
+        }
+      ],
+      "inline": true,
+      "hasDynamicData": false,
+      "placeholder": "visible"
+    },
+    "_opacity": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Opacity",
+      "type": "number",
+      "step": ".01",
+      "min": "0",
+      "max": "1",
+      "placeholder": 1,
+      "css": [
+        {
+          "property": "opacity"
+        }
+      ]
+    },
+    "_cursor": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Cursor",
+      "type": "select",
+      "options": {
+        "generalGroupTitle": "General",
+        "auto": "auto",
+        "default": "default",
+        "none": "none",
+        "linkGroupTitle": "Link &amp; status",
+        "pointer": "pointer",
+        "context-menu": "context-menu",
+        "help": "help",
+        "progress": "progress",
+        "wait": "wait",
+        "selectionGroupTitle": "Selection",
+        "cell": "cell",
+        "crosshair": "crosshair",
+        "text": "text",
+        "vertical-text": "vertical-text",
+        "dndGroupTitle": "Drag &amp; drop",
+        "alias": "alias",
+        "copy": "copy",
+        "move": "move",
+        "no-drop": "no-drop",
+        "not-allowed": "not-allowed",
+        "grab": "grab",
+        "grabbing": "grabbing",
+        "zoomGroupTitle": "Zoom",
+        "zoom-in": "zoom-in",
+        "zoom-out": "zoom-out",
+        "scrollGroupTitle": "Resize",
+        "col-resize": "col-resize",
+        "row-resize": "row-resize",
+        "n-resize": "n-resize",
+        "e-resize": "e-resize",
+        "s-resize": "s-resize",
+        "w-resize": "w-resize",
+        "ne-resize": "ne-resize",
+        "nw-resize": "nw-resize",
+        "se-resize": "se-resize",
+        "sw-resize": "sw-resize",
+        "ew-resize": "ew-resize",
+        "ns-resize": "ns-resize",
+        "nesw-resize": "nesw-resize",
+        "nwse-resize": "nwse-resize",
+        "all-scroll": "all-scroll"
+      },
+      "css": [
+        {
+          "selector": "",
+          "property": "cursor"
+        }
+      ],
+      "inline": true,
+      "placeholder": "auto"
+    },
+    "_isolation": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Isolation",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "auto": "auto",
+        "isolate": "isolate"
+      },
+      "css": [
+        {
+          "property": "isolation"
+        }
+      ]
+    },
+    "_mixBlendMode": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Mix blend mode",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "normal": "normal",
+        "multiply": "multiply",
+        "screen": "screen",
+        "overlay": "overlay",
+        "darken": "darken",
+        "lighten": "lighten",
+        "color-dodge": "color-dodge",
+        "color-burn": "color-burn",
+        "hard-light": "hard-light",
+        "soft-light": "soft-light",
+        "difference": "difference",
+        "exclusion": "exclusion",
+        "hue": "hue",
+        "saturation": "saturation",
+        "color": "color",
+        "luminosity": "luminosity"
+      },
+      "css": [
+        {
+          "property": "mix-blend-mode"
+        }
+      ]
+    },
+    "_pointerEvents": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Pointer events",
+      "type": "text",
+      "inline": true,
+      "dd": false,
+      "css": [
+        {
+          "property": "pointer-events"
+        }
+      ]
+    },
+    "_perspective": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Perspective",
+      "type": "number",
+      "units": true,
+      "inline": true,
+      "hasDynamicData": false,
+      "css": [
+        {
+          "property": "perspective"
+        }
+      ]
+    },
+    "_perspectiveOrigin": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Perspective origin",
+      "type": "text",
+      "inline": true,
+      "hasDynamicData": false,
+      "css": [
+        {
+          "property": "perspective-origin"
+        }
+      ]
+    },
+    "_gridItemSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Grid item",
+      "type": "separator"
+    },
+    "_gridItemJustifySelf": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Justify self",
+      "type": "align-items",
+      "hasDynamicData": false,
+      "css": [
+        {
+          "property": "justify-self"
+        }
+      ]
+    },
+    "_flexSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Flex",
+      "type": "separator"
+    },
+    "_flexDirection": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Direction",
+      "tooltip": {
+        "content": "flex-direction",
+        "position": "top-left"
+      },
+      "type": "direction",
+      "css": [
+        {
+          "selector": "",
+          "property": "flex-direction"
+        }
+      ],
+      "inline": true,
+      "rerender": true,
+      "required": [
+        "_display",
+        "=",
+        "flex"
+      ]
+    },
+    "_alignSelf": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Align self",
+      "type": "align-items",
+      "tooltip": {
+        "content": "align-self",
+        "position": "top-left"
+      },
+      "css": [
+        {
+          "selector": "",
+          "property": "align-self"
+        }
+      ]
+    },
+    "_justifyContent": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Align main axis",
+      "tooltip": {
+        "content": "justify-content",
+        "position": "top-left"
+      },
+      "type": "justify-content",
+      "css": [
+        {
+          "selector": "",
+          "property": "justify-content"
+        }
+      ],
+      "required": [
+        "_display",
+        "=",
+        [
+          "flex",
+          "inline-flex"
+        ]
+      ]
+    },
+    "_alignItems": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Align cross axis",
+      "tooltip": {
+        "content": "align-items",
+        "position": "top-left"
+      },
+      "type": "align-items",
+      "css": [
+        {
+          "selector": "",
+          "property": "align-items"
+        }
+      ],
+      "required": [
+        "_display",
+        "=",
+        [
+          "flex",
+          "inline-flex"
+        ]
+      ]
+    },
+    "_gap": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Gap",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "gap",
+          "selector": ""
+        }
+      ],
+      "required": [
+        "_display",
+        "=",
+        [
+          "flex",
+          "inline-flex"
+        ]
+      ]
+    },
+    "_flexGrow": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Flex grow",
+      "type": "number",
+      "tooltip": {
+        "content": "flex-grow",
+        "position": "top-left"
+      },
+      "css": [
+        {
+          "selector": "",
+          "property": "flex-grow"
+        }
+      ],
+      "min": 0,
+      "placeholder": 0
+    },
+    "_flexShrink": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Flex shrink",
+      "type": "number",
+      "tooltip": {
+        "content": "flex-shrink",
+        "position": "top-left"
+      },
+      "css": [
+        {
+          "selector": "",
+          "property": "flex-shrink"
+        }
+      ],
+      "min": 0,
+      "placeholder": 1
+    },
+    "_flexBasis": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Flex basis",
+      "type": "text",
+      "tooltip": {
+        "content": "flex-basis",
+        "position": "top-left"
+      },
+      "css": [
+        {
+          "selector": "",
+          "property": "flex-basis"
+        }
+      ],
+      "inline": true,
+      "hasDynamicData": false,
+      "hasVariables": true,
+      "placeholder": "auto"
+    },
+    "_typography": {
+      "tab": "style",
+      "group": "_typography",
+      "type": "typography",
+      "popup": false,
+      "css": [
+        {
+          "property": "font"
+        }
+      ]
+    },
+    "_background": {
+      "tab": "style",
+      "group": "_background",
+      "type": "background",
+      "popup": false,
+      "css": [
+        {
+          "property": "background"
+        }
+      ],
+      "exclude": "video"
+    },
+    "_gradient": {
+      "tab": "style",
+      "group": "_gradient",
+      "type": "gradient",
+      "css": [
+        {
+          "property": "background-image"
+        }
+      ]
+    },
+    "_border": {
+      "tab": "style",
+      "group": "_border",
+      "type": "border",
+      "label": "Border",
+      "css": [
+        {
+          "property": "border"
+        }
+      ]
+    },
+    "_boxShadow": {
+      "tab": "style",
+      "group": "_border",
+      "label": "Box shadow",
+      "type": "box-shadow",
+      "css": [
+        {
+          "property": "box-shadow"
+        }
+      ]
+    },
+    "_transform": {
+      "tab": "style",
+      "group": "_transform",
+      "type": "transform",
+      "label": "Transform",
+      "css": [
+        {
+          "property": "transform"
+        }
+      ],
+      "inline": true,
+      "small": true,
+      "description": "<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/transform\" target=\"_blank\" rel=\"noopener\">Learn more about CSS transform</a>"
+    },
+    "_transformOrigin": {
+      "tab": "style",
+      "group": "_transform",
+      "type": "text",
+      "label": "Transform origin",
+      "css": [
+        {
+          "property": "transform-origin"
+        }
+      ],
+      "inline": true,
+      "hasDynamicData": false,
+      "description": "<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin\" target=\"_blank\" rel=\"noopener\">Learn more about CSS transform-origin</a>",
+      "placeholder": "center"
+    },
+    "_motionParallaxSeparator": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Parallax",
+      "type": "separator"
+    },
+    "_motionParallaxBuilderInfo": {
+      "tab": "style",
+      "group": "_transform",
+      "type": "info",
+      "content": "Parallax effects are not active in the builder preview."
+    },
+    "_motionElementParallax": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Element parallax",
+      "type": "checkbox",
+      "description": "Move this element while scrolling."
+    },
+    "_motionElementParallaxSpeedX": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Horizontal speed  (%)",
+      "type": "number",
+      "placeholder": 0,
+      "inline": true,
+      "small": true,
+      "hasVariables": false,
+      "css": [
+        {
+          "property": "--brx-motion-parallax-speed-x"
+        }
+      ],
+      "required": [
+        "_motionElementParallax",
+        "=",
+        true
+      ]
+    },
+    "_motionElementParallaxSpeedY": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Vertical speed  (%)",
+      "type": "number",
+      "placeholder": 0,
+      "inline": true,
+      "small": true,
+      "hasVariables": false,
+      "css": [
+        {
+          "property": "--brx-motion-parallax-speed-y"
+        }
+      ],
+      "required": [
+        "_motionElementParallax",
+        "=",
+        true
+      ]
+    },
+    "_motionBackgroundParallax": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Background parallax",
+      "type": "checkbox",
+      "description": "Move the background image while scrolling."
+    },
+    "_motionBackgroundParallaxSpeed": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Background speed  (%)",
+      "type": "number",
+      "inline": true,
+      "small": true,
+      "placeholder": 0,
+      "hasVariables": false,
+      "css": [
+        {
+          "property": "--brx-motion-background-speed"
+        }
+      ],
+      "required": [
+        "_motionBackgroundParallax",
+        "=",
+        true
+      ]
+    },
+    "_motionStartVisiblePercent": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Parallax start point  (%)",
+      "type": "number",
+      "min": 0,
+      "max": 100,
+      "placeholder": 0,
+      "hasVariables": false,
+      "inline": true,
+      "small": true,
+      "description": "Set where the parallax effect starts based on the viewport scroll progress (0 = when entering, 50 = near center)."
+    },
+    "_cssCustom": {
+      "tab": "style",
+      "group": "_css",
+      "label": "Custom CSS",
+      "type": "code",
+      "mode": "css",
+      "hasVariables": true,
+      "pasteStyles": true,
+      "css": [],
+      "description": "Use &quot;%root%&quot; to target the element wrapper. Add &quot;%root%&quot; via keyboard shortcut &quot;r + TAB&quot;.",
+      "placeholder": "%root% {\n  color: firebrick;\n}"
+    },
+    "_cssClasses": {
+      "tab": "style",
+      "group": "_css",
+      "label": "CSS classes",
+      "class": "ltr",
+      "type": "text",
+      "description": "Separated by space. Without class dot."
+    },
+    "_cssId": {
+      "tab": "style",
+      "group": "_css",
+      "label": "CSS ID",
+      "class": "ltr",
+      "type": "text",
+      "description": "No spaces. No pound (#) sign."
+    },
+    "_cssIdComponentInfo": {
+      "tab": "style",
+      "group": "_css",
+      "type": "info",
+      "content": "Connect the CSS ID to a property to set it on an per-instance basis to avoid same ID conflicts.",
+      "required": [
+        [
+          "_cssId",
+          "!=",
+          ""
+        ],
+        [
+          "id",
+          "!=",
+          "",
+          "activeComponent"
+        ]
+      ]
+    },
+    "_cssFilters": {
+      "tab": "style",
+      "group": "_css",
+      "label": "CSS Filters",
+      "titleProperty": "type",
+      "type": "filters",
+      "inline": true,
+      "small": true,
+      "css": [
+        {
+          "property": "filter"
+        }
+      ],
+      "description": "<a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/filter#Syntax\">Learn more about CSS filters</a>"
+    },
+    "_cssTransition": {
+      "tab": "style",
+      "group": "_css",
+      "label": "Transition",
+      "class": "ltr",
+      "css": [
+        {
+          "property": "transition",
+          "selector": ""
+        }
+      ],
+      "type": "text",
+      "hasVariables": true,
+      "hasDynamicData": false,
+      "description": "<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions\" target=\"_blank\">Learn more about CSS transitions</a>"
+    },
+    "infoAttributes": {
+      "tab": "style",
+      "group": "_attributes",
+      "content": "<a href=\"https://academy.bricksbuilder.io/builder/features/custom-attributes/\" target=\"_blank\" rel=\"noopener\">Custom attributes</a> will be added to the most relevant HTML node.",
+      "type": "info"
+    },
+    "_attributes": {
+      "tab": "style",
+      "group": "_attributes",
+      "placeholder": "Attributes",
+      "type": "repeater",
+      "titleProperty": "name",
+      "fields": {
+        "name": {
+          "label": "Name",
+          "type": "text",
+          "rerender": false
+        },
+        "value": {
+          "label": "Value",
+          "type": "text",
+          "rerender": false
+        }
+      }
+    },
+    "fields": {
+      "tab": "content",
+      "group": "fields",
+      "placeholder": "Field",
+      "type": "repeater",
+      "selector": ".form-group",
+      "titleProperty": "label",
+      "fields": {
+        "type": {
+          "label": "Type",
+          "type": "select",
+          "options": {
+            "email": "Email",
+            "text": "Text",
+            "textarea": "Textarea",
+            "richtext": "Rich text",
+            "tel": "Telephone",
+            "number": "Number",
+            "url": "URL",
+            "image": "Image (Media library)",
+            "gallery": "Gallery (Media library)",
+            "checkbox": "Checkbox",
+            "select": "Select",
+            "radio": "Radio",
+            "file": "Files",
+            "datepicker": "Datepicker",
+            "password": "Password",
+            "rememberme": "Remember me",
+            "html": "HTML",
+            "hidden": "Hidden"
+          },
+          "clearable": false
+        },
+        "passwordToggle": {
+          "label": "Password toggle",
+          "type": "checkbox",
+          "required": [
+            "type",
+            "=",
+            "password"
+          ]
+        },
+        "passwordShowIcon": {
+          "label": "Show password: Icon",
+          "type": "icon",
+          "required": [
+            [
+              "type",
+              "=",
+              "password"
+            ],
+            [
+              "passwordToggle",
+              "=",
+              true
+            ]
+          ]
+        },
+        "passwordHideIcon": {
+          "label": "Hide password: Icon",
+          "type": "icon",
+          "required": [
+            [
+              "type",
+              "=",
+              "password"
+            ],
+            [
+              "passwordToggle",
+              "=",
+              true
+            ]
+          ]
+        },
+        "passwordShowIconTypography": {
+          "label": "Show password: Typography",
+          "type": "typography",
+          "css": [
+            {
+              "property": "font",
+              "selector": ".password-toggle .show-password i"
+            }
+          ],
+          "required": [
+            [
+              "type",
+              "=",
+              "password"
+            ],
+            [
+              "passwordToggle",
+              "=",
+              true
+            ]
+          ]
+        },
+        "passwordHideIconTypography": {
+          "label": "Hide password: Typography",
+          "type": "typography",
+          "css": [
+            {
+              "property": "font",
+              "selector": ".password-toggle .hide-password i"
+            }
+          ],
+          "required": [
+            [
+              "type",
+              "=",
+              "password"
+            ],
+            [
+              "passwordToggle",
+              "=",
+              true
+            ]
+          ]
+        },
+        "passwordIconPosition": {
+          "label": "Icon position",
+          "type": "dimensions",
+          "css": [
+            {
+              "selector": ".password-toggle"
+            }
+          ],
+          "placeholder": {
+            "top": "50%",
+            "right": "12px"
+          },
+          "required": [
+            [
+              "type",
+              "=",
+              "password"
+            ],
+            [
+              "passwordToggle",
+              "=",
+              true
+            ]
+          ]
+        },
+        "passwordIsConfirmation": {
+          "label": "Mark as confirmation password",
+          "type": "checkbox",
+          "required": [
+            "type",
+            "=",
+            "password"
+          ],
+          "description": "When enabled, this field becomes a confirmation field for another password field."
+        },
+        "passwordMainFieldId": {
+          "label": "Main password field ID",
+          "type": "text",
+          "required": [
+            [
+              "type",
+              "=",
+              "password"
+            ],
+            [
+              "passwordIsConfirmation",
+              "=",
+              true
+            ]
+          ],
+          "info": "Enter the field ID of the main password field to confirm.",
+          "placeholder": "password"
+        },
+        "passwordConfirmationErrorMessage": {
+          "label": "Password mismatch error message",
+          "type": "text",
+          "required": [
+            [
+              "type",
+              "=",
+              "password"
+            ],
+            [
+              "passwordIsConfirmation",
+              "=",
+              true
+            ]
+          ],
+          "placeholder": "Passwords do not match"
+        },
+        "min": {
+          "label": "Min",
+          "type": "number",
+          "min": 0,
+          "max": 100,
+          "required": [
+            "type",
+            "=",
+            [
+              "number"
+            ]
+          ]
+        },
+        "max": {
+          "label": "Max",
+          "type": "number",
+          "min": 0,
+          "max": 100,
+          "required": [
+            "type",
+            "=",
+            [
+              "number"
+            ]
+          ]
+        },
+        "step": {
+          "label": "Step",
+          "type": "number",
+          "min": 0,
+          "required": [
+            "type",
+            "=",
+            [
+              "number"
+            ]
+          ]
+        },
+        "label": {
+          "label": "Label",
+          "type": "text"
+        },
+        "placeholder": {
+          "label": "Placeholder",
+          "type": "text",
+          "required": [
+            "type",
+            "!=",
+            [
+              "file",
+              "hidden",
+              "html"
+            ]
+          ]
+        },
+        "value": {
+          "label": "Value",
+          "type": "text",
+          "info": "Set the default field value/content.",
+          "required": [
+            [
+              "type",
+              "!=",
+              [
+                "file",
+                "html"
+              ]
+            ],
+            [
+              "isHoneypot",
+              "!=",
+              true
+            ]
+          ]
+        },
+        "minLength": {
+          "label": "Min. length",
+          "type": "number",
+          "min": 0,
+          "required": [
+            "type",
+            "=",
+            [
+              "email",
+              "number",
+              "text",
+              "tel",
+              "url",
+              "password",
+              "textarea"
+            ]
+          ]
+        },
+        "maxLength": {
+          "label": "Max. length",
+          "type": "number",
+          "min": 0,
+          "required": [
+            "type",
+            "=",
+            [
+              "email",
+              "number",
+              "text",
+              "tel",
+              "url",
+              "password",
+              "textarea"
+            ]
+          ]
+        },
+        "checkboxInfo": {
+          "content": "Separate values by comma.",
+          "type": "info",
+          "required": [
+            [
+              "type",
+              "=",
+              "checkbox"
+            ],
+            [
+              "value",
+              "!=",
+              ""
+            ]
+          ]
+        },
+        "datepickerInfo": {
+          "content": "Use the date format as set under Settings &gt; General &gt; Date format ()",
+          "type": "info",
+          "required": [
+            [
+              "type",
+              "=",
+              "datepicker"
+            ],
+            [
+              "isHoneypot",
+              "!=",
+              true
+            ]
+          ]
+        },
+        "name": {
+          "label": "Attribute: Name",
+          "type": "text",
+          "info": "Use valid HTML syntax. No spaces.",
+          "required": [
+            "type",
+            "!=",
+            [
+              "html"
+            ]
+          ]
+        },
+        "autocomplete": {
+          "label": "Attribute: Autocomplete",
+          "type": "text",
+          "info": "on/off",
+          "required": [
+            [
+              "type",
+              "=",
+              [
+                "text",
+                "textarea",
+                "email",
+                "number",
+                "password",
+                "tel",
+                "url"
+              ]
+            ],
+            [
+              "isHoneypot",
+              "!=",
+              true
+            ]
+          ]
+        },
+        "spellcheck": {
+          "label": "Attribute: Spellcheck",
+          "type": "text",
+          "info": "off, etc.",
+          "required": [
+            "type",
+            "=",
+            [
+              "text",
+              "textarea",
+              "email",
+              "url"
+            ]
+          ]
+        },
+        "pattern": {
+          "label": "Attribute: Pattern",
+          "type": "text",
+          "info": "Regular expression to validate the input.",
+          "required": [
+            "type",
+            "=",
+            [
+              "text",
+              "tel",
+              "email",
+              "url",
+              "password",
+              "search"
+            ]
+          ],
+          "desc": "Example: ^[a-zA-Z0-9]+$ (alphanumeric characters only). <a href=\"https://academy.bricksbuilder.io/builder/elements/general/form/#pattern-validation\" target=\"_blank\" rel=\"noopener\">Learn more</a>"
+        },
+        "title": {
+          "label": "Attribute: Title",
+          "type": "text",
+          "info": "Text to display when hovering over the field.",
+          "required": [
+            "type",
+            "!=",
+            [
+              "hidden",
+              "radio",
+              "checkbox",
+              "files",
+              "html",
+              "rememberme"
+            ]
+          ]
+        },
+        "titleInfo": {
+          "content": "You can use the title attribute to provide a description of the expected input value to meet the &quot;pattern&quot; requirement set above.",
+          "type": "info",
+          "required": [
+            "pattern",
+            "!=",
+            ""
+          ]
+        },
+        "errorMessage": {
+          "label": "Error message",
+          "type": "text",
+          "info": "On input, blur and submit",
+          "required": [
+            "type",
+            "!=",
+            [
+              "hidden",
+              "html",
+              "rememberme"
+            ]
+          ]
+        },
+        "fileUploadSeparator": {
+          "label": "Files",
+          "type": "separator",
+          "required": [
+            "type",
+            "=",
+            "file"
+          ]
+        },
+        "fileUploadButtonText": {
+          "type": "text",
+          "placeholder": "Choose files",
+          "default": "Choose files",
+          "required": [
+            "type",
+            "=",
+            "file"
+          ]
+        },
+        "fileUploadLimit": {
+          "label": "Max. files (#)",
+          "type": "number",
+          "min": 1,
+          "max": 50,
+          "required": [
+            "type",
+            "=",
+            "file"
+          ]
+        },
+        "fileUploadSize": {
+          "label": "Max. size (MB)",
+          "type": "number",
+          "min": 1,
+          "max": 50,
+          "required": [
+            "type",
+            "=",
+            "file"
+          ]
+        },
+        "fileUploadStorage": {
+          "label": "Save file",
+          "type": "select",
+          "options": {
+            "attachment": "Save in media library",
+            "directory": "Save in custom directory"
+          },
+          "placeholder": "No",
+          "required": [
+            "type",
+            "=",
+            "file"
+          ]
+        },
+        "fileUploadStorageDirectory": {
+          "label": "Directory name",
+          "type": "text",
+          "placeholder": "form-files",
+          "desc": "Directory is created in your &quot;uploads&quot; directory if it doesn&#039;t exist.",
+          "required": [
+            [
+              "type",
+              "=",
+              "file"
+            ],
+            [
+              "fileUploadStorage",
+              "=",
+              "directory"
+            ]
+          ]
+        },
+        "fileUploadStorageInfo": {
+          "type": "info",
+          "content": "Users could upload potentially malicious files through your form. To minimize this risk, please specify the &quot;Allowed file formats&quot; below.",
+          "required": [
+            [
+              "type",
+              "=",
+              "file"
+            ],
+            [
+              "fileUploadStorage",
+              "!=",
+              ""
+            ]
+          ]
+        },
+        "fileUploadAllowedTypes": {
+          "label": "Allowed file formats",
+          "placeholder": "pdf,jpg,...",
+          "type": "text",
+          "required": [
+            "type",
+            "=",
+            "file"
+          ]
+        },
+        "fileUploadTypography": {
+          "tab": "content",
+          "label": "Typography",
+          "type": "typography",
+          "css": [
+            {
+              "property": "font",
+              "selector": ".choose-files"
+            }
+          ],
+          "required": [
+            "type",
+            "=",
+            "file"
+          ]
+        },
+        "fileUploadBackground": {
+          "tab": "content",
+          "label": "Background",
+          "type": "color",
+          "css": [
+            {
+              "property": "background-color",
+              "selector": ".choose-files"
+            }
+          ],
+          "required": [
+            "type",
+            "=",
+            "file"
+          ]
+        },
+        "fileUploadBorder": {
+          "tab": "content",
+          "label": "Border",
+          "type": "border",
+          "css": [
+            {
+              "property": "border",
+              "selector": ".choose-files"
+            }
+          ],
+          "required": [
+            "type",
+            "=",
+            "file"
+          ]
+        },
+        "width": {
+          "label": "Width (%)",
+          "type": "number",
+          "unit": "%",
+          "min": 0,
+          "max": 100,
+          "placeholder": 100,
+          "css": [
+            {
+              "property": "width"
+            }
+          ],
+          "required": [
+            [
+              "type",
+              "!=",
+              [
+                "hidden"
+              ]
+            ]
+          ]
+        },
+        "height": {
+          "label": "Height",
+          "type": "number",
+          "units": true,
+          "css": [
+            {
+              "property": "height"
+            }
+          ],
+          "required": [
+            "type",
+            "=",
+            [
+              "textarea",
+              "richtext"
+            ]
+          ]
+        },
+        "resize": {
+          "label": "Resize",
+          "type": "select",
+          "options": {
+            "none": "None",
+            "vertical": "Vertical",
+            "horizontal": "Horizontal",
+            "both": "Both"
+          },
+          "css": [
+            {
+              "property": "resize",
+              "selector": "textarea"
+            }
+          ],
+          "inline": true,
+          "placeholder": "Vertical",
+          "required": [
+            "type",
+            "=",
+            [
+              "textarea"
+            ]
+          ]
+        },
+        "time": {
+          "label": "Enable time",
+          "type": "checkbox",
+          "required": [
+            "type",
+            "=",
+            "datepicker"
+          ]
+        },
+        "l10n": {
+          "label": "Language",
+          "type": "text",
+          "inline": true,
+          "description": "<a href=\"https://github.com/flatpickr/flatpickr/tree/master/src/l10n\" target=\"_blank\">Language codes</a> (de, es, fr, etc.)",
+          "required": [
+            "type",
+            "=",
+            [
+              "datepicker"
+            ]
+          ]
+        },
+        "minTime": {
+          "label": "Min. time",
+          "type": "text",
+          "placeholder": "09:00",
+          "required": [
+            [
+              "type",
+              "=",
+              "datepicker"
+            ],
+            [
+              "time",
+              "!=",
+              ""
+            ]
+          ]
+        },
+        "maxTime": {
+          "label": "Max. time",
+          "type": "text",
+          "placeholder": "20:00",
+          "required": [
+            [
+              "type",
+              "=",
+              "datepicker"
+            ],
+            [
+              "time",
+              "!=",
+              ""
+            ]
+          ]
+        },
+        "isHoneypot": {
+          "label": "Honeypot",
+          "type": "checkbox",
+          "required": [
+            "type",
+            "=",
+            [
+              "email",
+              "text",
+              "textarea",
+              "tel",
+              "number",
+              "url",
+              "checkbox",
+              "select",
+              "radio",
+              "datepicker",
+              "password"
+            ]
+          ],
+          "description": "When enabled, this field acts as a spam trap. It will not be visible to users, but will capture any bots that fill it out."
+        },
+        "required": {
+          "label": "Required",
+          "type": "checkbox",
+          "inline": true,
+          "required": [
+            [
+              "type",
+              "!=",
+              [
+                "hidden",
+                "html"
+              ]
+            ],
+            [
+              "isHoneypot",
+              "!=",
+              true
+            ]
+          ]
+        },
+        "options": {
+          "label": "Options (one per line)",
+          "type": "textarea",
+          "required": [
+            "type",
+            "=",
+            [
+              "checkbox",
+              "select",
+              "radio"
+            ]
+          ]
+        },
+        "valueLabelOptions": {
+          "label": "Set options as value:label",
+          "type": "checkbox",
+          "inline": true,
+          "required": [
+            "type",
+            "=",
+            [
+              "checkbox",
+              "select",
+              "radio"
+            ]
+          ]
+        },
+        "valueLabelInfo": {
+          "content": "Separate value &amp; label by &quot;:&quot;. Example<strong>: DE:Germany</strong>",
+          "type": "info",
+          "required": [
+            [
+              "type",
+              "=",
+              [
+                "checkbox",
+                "select",
+                "radio"
+              ]
+            ],
+            [
+              "valueLabelOptions",
+              "=",
+              true
+            ]
+          ]
+        },
+        "html": {
+          "label": "HTML",
+          "type": "code",
+          "mode": "text/html",
+          "hasVariables": false,
+          "description": "To add decorative text, but not user input. Runs through <a href=\"https://developer.wordpress.org/reference/functions/wp_kses_post/\" target=\"_blank\">wp_kses_post</a>.",
+          "required": [
+            "type",
+            "=",
+            [
+              "html"
+            ]
+          ]
+        },
+        "tinyMceShowMenuBar": {
+          "label": "Menu bar",
+          "type": "checkbox",
+          "required": [
+            "type",
+            "=",
+            "richtext"
+          ]
+        },
+        "tinyMceShowStatusBar": {
+          "label": "Status bar",
+          "type": "checkbox",
+          "required": [
+            "type",
+            "=",
+            "richtext"
+          ]
+        },
+        "tinyMceHighlightOnFocus": {
+          "label": "Highlight on focus",
+          "type": "checkbox",
+          "default": false,
+          "required": [
+            "type",
+            "=",
+            "richtext"
+          ]
+        },
+        "tinyMceToolbarSticky": {
+          "label": "Toolbar: Sticky",
+          "type": "checkbox",
+          "required": [
+            "type",
+            "=",
+            "richtext"
+          ]
+        },
+        "tinyMceToolbarLocation": {
+          "label": "Toolbar: Location",
+          "type": "select",
+          "options": {
+            "top": "Top",
+            "bottom": "Bottom",
+            "auto": "Auto"
+          },
+          "placeholder": "Top",
+          "required": [
+            "type",
+            "=",
+            "richtext"
+          ]
+        },
+        "tinyMceSkin": {
+          "label": "Skin",
+          "type": "select",
+          "options": {
+            "oxide": "Oxide light",
+            "oxide-dark": "Oxide dark"
+          },
+          "placeholder": "Oxide light",
+          "required": [
+            "type",
+            "=",
+            "richtext"
+          ]
+        },
+        "tinyMceContentCss": {
+          "label": "Content: Style",
+          "type": "select",
+          "options": {
+            "default": "Light",
+            "dark": "Dark",
+            "document": "Document",
+            "writer": "Writer",
+            "tinymce-5": "TinyMCE 5",
+            "tinymce-5-dark": "TinyMCE 5 Dark"
+          },
+          "placeholder": "Light",
+          "required": [
+            "type",
+            "=",
+            "richtext"
+          ]
+        },
+        "tinyMceResize": {
+          "label": "Resize",
+          "type": "select",
+          "options": {
+            "both": "Horizontal & Vertical",
+            "vertically": "Vertical",
+            "disabled": "Disabled"
+          },
+          "placeholder": "Horizontal & Vertical",
+          "required": [
+            [
+              "tinyMceShowStatusBar",
+              "=",
+              true
+            ],
+            [
+              "type",
+              "=",
+              "richtext"
+            ]
+          ]
+        },
+        "tinyMceImagesFileTypes": {
+          "label": "Images file types",
+          "type": "text",
+          "placeholder": "jpeg,jpg,jpe,jfi,jif,jfif,png,gif,bmp,webp",
+          "required": [
+            "type",
+            "=",
+            "richtext"
+          ]
+        },
+        "tinyMceHeight": {
+          "label": "Height",
+          "type": "text",
+          "inline": true,
+          "required": [
+            "type",
+            "=",
+            "richtext"
+          ]
+        },
+        "tinyMceWidth": {
+          "label": "Width",
+          "type": "text",
+          "inline": true,
+          "required": [
+            "type",
+            "=",
+            "richtext"
+          ]
+        }
+      },
+      "default": [
+        {
+          "type": "text",
+          "label": "Name",
+          "placeholder": "Your Name",
+          "id": "0d6747"
+        },
+        {
+          "type": "email",
+          "label": "Email",
+          "placeholder": "Your Email",
+          "required": true,
+          "id": "dbb730"
+        },
+        {
+          "type": "textarea",
+          "label": "Message",
+          "placeholder": "Your Message",
+          "required": true,
+          "id": "16386b"
+        }
+      ]
+    },
+    "requiredAsterisk": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Show required asterisk",
+      "type": "checkbox"
+    },
+    "disableRequiredAsteriskInPlaceholder": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Disable required asterisk in placeholder",
+      "type": "checkbox",
+      "required": [
+        "requiredAsterisk",
+        "!=",
+        ""
+      ]
+    },
+    "showLabels": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Show labels",
+      "type": "checkbox"
+    },
+    "labelTypography": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Label typography",
+      "type": "typography",
+      "css": [
+        {
+          "property": "font",
+          "selector": "label"
+        },
+        {
+          "property": "font",
+          "selector": ".label"
+        }
+      ],
+      "required": [
+        "showLabels"
+      ]
+    },
+    "placeholderTypography": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Placeholder typography",
+      "type": "typography",
+      "css": [
+        {
+          "property": "font",
+          "selector": "::placeholder"
+        },
+        {
+          "property": "font",
+          "selector": "select"
+        }
+      ]
+    },
+    "disableFormValidationOn": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Disable form validation",
+      "placeholder": "Select",
+      "type": "select",
+      "multiple": true,
+      "options": {
+        "input": "On input",
+        "blur": "On blur"
+      },
+      "description": "By default, form fields are validated on input, blur and submit."
+    },
+    "disableBrowserValidation": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Don&#039;t use browser validation",
+      "type": "checkbox",
+      "description": "Adds the &quot;novalidate&quot; attribute to prevent browser validation and use custom validation instead."
+    },
+    "validateAllFieldsOnSubmit": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Validate all fields on submit",
+      "type": "checkbox",
+      "description": "Show error messages for all invalid fields on form submission, not just the first invalid field.",
+      "required": [
+        "disableBrowserValidation",
+        "=",
+        true
+      ]
+    },
+    "fieldSeparator": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Field",
+      "type": "separator"
+    },
+    "fieldMargin": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Spacing",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "padding",
+          "selector": ".form-group:not(.submit-button-wrapper):not(.message):not(.captcha)"
+        }
+      ]
+    },
+    "fieldPadding": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Padding",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "padding",
+          "selector": ".form-group input"
+        },
+        {
+          "property": "padding",
+          "selector": ".flatpickr"
+        },
+        {
+          "property": "padding",
+          "selector": "select"
+        },
+        {
+          "property": "padding",
+          "selector": "textarea"
+        },
+        {
+          "property": "padding",
+          "selector": ".form-field-richtext + .tox-tinymce"
+        }
+      ]
+    },
+    "horizontalAlignFields": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Alignment",
+      "type": "justify-content",
+      "css": [
+        {
+          "property": "justify-content"
+        }
+      ]
+    },
+    "fieldBackgroundColor": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Background color",
+      "type": "color",
+      "css": [
+        {
+          "property": "background-color",
+          "selector": ".form-group input"
+        },
+        {
+          "property": "background-color",
+          "selector": ".flatpickr"
+        },
+        {
+          "property": "background-color",
+          "selector": "select"
+        },
+        {
+          "property": "background-color",
+          "selector": "textarea"
+        },
+        {
+          "property": "background-color",
+          "selector": ".form-field-richtext + .tox-tinymce"
+        }
+      ]
+    },
+    "fieldBorder": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Border",
+      "type": "border",
+      "css": [
+        {
+          "property": "border",
+          "selector": ".form-group input"
+        },
+        {
+          "property": "border",
+          "selector": ".flatpickr"
+        },
+        {
+          "property": "border",
+          "selector": "select"
+        },
+        {
+          "property": "border",
+          "selector": "textarea"
+        },
+        {
+          "property": "border",
+          "selector": ".form-field-richtext + .tox-tinymce"
+        },
+        {
+          "property": "border",
+          "selector": ".bricks-button:not([type=submit])"
+        },
+        {
+          "property": "border",
+          "selector": ".choose-files"
+        }
+      ]
+    },
+    "fieldTypography": {
+      "tab": "content",
+      "group": "fields",
+      "label": "Typography",
+      "type": "typography",
+      "css": [
+        {
+          "property": "font",
+          "selector": ".form-group input"
+        },
+        {
+          "property": "font",
+          "selector": "select"
+        },
+        {
+          "property": "font",
+          "selector": "textarea"
+        }
+      ]
+    },
+    "submitButtonText": {
+      "tab": "content",
+      "group": "submitButton",
+      "label": "Text",
+      "type": "text",
+      "inline": true,
+      "placeholder": "Send"
+    },
+    "submitButtonSize": {
+      "tab": "content",
+      "group": "submitButton",
+      "label": "Size",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "sm": "Small",
+        "md": "Medium",
+        "lg": "Large",
+        "xl": "Extra large"
+      }
+    },
+    "submitButtonStyle": {
+      "tab": "content",
+      "group": "submitButton",
+      "label": "Style",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "primary": "Primary",
+        "secondary": "Secondary",
+        "light": "Light",
+        "dark": "Dark",
+        "muted": "Muted",
+        "info": "Info",
+        "success": "Success",
+        "warning": "Warning",
+        "danger": "Danger"
+      },
+      "default": "primary",
+      "placeholder": "Custom"
+    },
+    "submitButtonWidth": {
+      "tab": "content",
+      "group": "submitButton",
+      "label": "Width (%)",
+      "type": "number",
+      "unit": "%",
+      "css": [
+        {
+          "property": "width",
+          "selector": ".submit-button-wrapper"
+        }
+      ]
+    },
+    "submitButtonMargin": {
+      "tab": "content",
+      "group": "submitButton",
+      "label": "Margin",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "margin",
+          "selector": ".submit-button-wrapper"
+        }
+      ]
+    },
+    "submitButtonTypography": {
+      "tab": "content",
+      "group": "submitButton",
+      "label": "Typography",
+      "type": "typography",
+      "css": [
+        {
+          "property": "font",
+          "selector": ".bricks-button"
+        }
+      ]
+    },
+    "submitButtonBackgroundColor": {
+      "tab": "content",
+      "group": "submitButton",
+      "label": "Background",
+      "type": "color",
+      "css": [
+        {
+          "property": "background-color",
+          "selector": ".bricks-button"
+        }
+      ]
+    },
+    "submitButtonBorder": {
+      "tab": "content",
+      "group": "submitButton",
+      "label": "Border",
+      "type": "border",
+      "css": [
+        {
+          "property": "border",
+          "selector": "button[type=submit].bricks-button"
+        }
+      ]
+    },
+    "submitButtonIcon": {
+      "tab": "content",
+      "group": "submitButton",
+      "label": "Icon",
+      "type": "icon",
+      "css": [
+        {
+          "selector": "button[type=submit] svg"
+        }
+      ]
+    },
+    "submitButtonAriaLabelInfo": {
+      "group": "submitButton",
+      "content": "You have set an icon, but no text. Please provide the &quot;aria-label&quot; for accessibility.",
+      "type": "info",
+      "required": [
+        [
+          "submitButtonAriaLabel",
+          "=",
+          ""
+        ],
+        [
+          "submitButtonText",
+          "=",
+          ""
+        ],
+        [
+          "submitButtonIcon",
+          "!=",
+          ""
+        ]
+      ],
+      "tab": "content"
+    },
+    "submitButtonAriaLabel": {
+      "group": "submitButton",
+      "label": "aria-label",
+      "type": "text",
+      "inline": true,
+      "tab": "content"
+    },
+    "submitButtonIconPosition": {
+      "tab": "content",
+      "group": "submitButton",
+      "label": "Icon position",
+      "type": "select",
+      "options": {
+        "left": "Left",
+        "right": "Right"
+      },
+      "inline": true,
+      "placeholder": "Right",
+      "required": [
+        "submitButtonIcon",
+        "!=",
+        ""
+      ]
+    },
+    "actions": {
+      "tab": "content",
+      "group": "actions",
+      "type": "select",
+      "label": "Actions after successful form submit",
+      "placeholder": "None",
+      "options": {
+        "custom": "Custom",
+        "email": "Email",
+        "webhook": "Webhook",
+        "redirect": "Redirect",
+        "mailchimp": "Mailchimp",
+        "sendgrid": "SendGrid",
+        "login": "User login",
+        "registration": "User registration",
+        "lost-password": "Lost password",
+        "reset-password": "Reset password",
+        "create-post": "Create post",
+        "update-post": "Update post"
+      },
+      "multiple": true,
+      "description": "Select action(s) you want to perform after form has been successfully submitted.",
+      "default": [
+        "email"
+      ]
+    },
+    "info": {
+      "tab": "content",
+      "group": "actions",
+      "content": "You did not select any action(s). So when this form is submitted nothing happens.",
+      "type": "info",
+      "required": [
+        "actions",
+        "=",
+        ""
+      ]
+    },
+    "actionConditions": {
+      "tab": "content",
+      "group": "actions",
+      "type": "repeater",
+      "label": "Action conditions",
+      "placeholder": "Action",
+      "addItemLabel": "Add action rule",
+      "titleProperty": "action",
+      "description": "Add conditions to control when individual actions run. Actions without conditions always run.",
+      "fields": {
+        "action": {
+          "label": "Action",
+          "type": "select",
+          "options": {
+            "custom": "Custom",
+            "email": "Email",
+            "webhook": "Webhook",
+            "redirect": "Redirect",
+            "mailchimp": "Mailchimp",
+            "sendgrid": "SendGrid",
+            "login": "User login",
+            "registration": "User registration",
+            "lost-password": "Lost password",
+            "reset-password": "Reset password",
+            "create-post": "Create post",
+            "update-post": "Update post"
+          },
+          "map_actions": true,
+          "placeholder": "Select"
+        },
+        "conditions": {
+          "label": "Run action if",
+          "type": "repeater",
+          "placeholder": "Condition",
+          "titleProperty": "fieldId",
+          "fields": {
+            "fieldId": {
+              "label": "Field",
+              "type": "select",
+              "options": [],
+              "map_fields": {
+                "exclude": [
+                  "html"
+                ]
+              },
+              "placeholder": "Select"
+            },
+            "compare": {
+              "label": "Compare",
+              "type": "select",
+              "options": {
+                "==": "is",
+                "!=": "is not",
+                "contains": "contains",
+                "not_contains": "does not contain",
+                "empty": "is empty",
+                "not_empty": "is not empty"
+              },
+              "placeholder": "is",
+              "default": "not_empty"
+            },
+            "value": {
+              "label": "Value",
+              "type": "text",
+              "placeholder": "Enter value",
+              "required": [
+                "compare",
+                "!=",
+                [
+                  "",
+                  "empty",
+                  "not_empty"
+                ]
+              ]
+            }
+          },
+          "default": [
+            {
+              "compare": "not_empty"
+            }
+          ]
+        },
+        "conditionsRelation": {
+          "label": "Relation",
+          "type": "select",
+          "options": {
+            "and": "And",
+            "or": "Or"
+          },
+          "placeholder": "And",
+          "inline": true
+        }
+      }
+    },
+    "successMessage": {
+      "tab": "content",
+      "group": "actions",
+      "label": "Success message",
+      "type": "text",
+      "default": "Message successfully sent. We will get back to you as soon as possible."
+    },
+    "noticeCloseAfter": {
+      "tab": "content",
+      "group": "notices",
+      "label": "Close after (ms)",
+      "type": "number",
+      "min": 1
+    },
+    "noticeCloseButton": {
+      "tab": "content",
+      "group": "notices",
+      "label": "Close button",
+      "type": "checkbox"
+    },
+    "emailInfo": {
+      "tab": "content",
+      "group": "email",
+      "type": "info",
+      "content": "Use any form field value via it&#039;s ID like this: {{form_field}}. Replace &quot;form_field&quot; with the actual field ID."
+    },
+    "emailSubject": {
+      "tab": "content",
+      "group": "email",
+      "label": "Subject",
+      "type": "text",
+      "default": "Contact form request"
+    },
+    "emailTo": {
+      "tab": "content",
+      "group": "email",
+      "label": "Send to email address",
+      "type": "select",
+      "options": {
+        "admin_email": "Admin email (akshdeep@blackcapit.com)",
+        "custom": "Custom email address"
+      },
+      "default": "admin_email",
+      "clearable": false
+    },
+    "emailToCustom": {
+      "tab": "content",
+      "group": "email",
+      "label": "Send to custom email address",
+      "description": "Accepts multiple addresses separated by comma",
+      "type": "text",
+      "required": [
+        "emailTo",
+        "=",
+        "custom"
+      ]
+    },
+    "emailBcc": {
+      "tab": "content",
+      "group": "email",
+      "label": "BCC email address",
+      "type": "text"
+    },
+    "fromEmail": {
+      "tab": "content",
+      "group": "email",
+      "label": "From email address",
+      "type": "text"
+    },
+    "fromName": {
+      "tab": "content",
+      "group": "email",
+      "label": "From name",
+      "type": "text",
+      "description": "Default: Site title",
+      "default": "casinodesign.bcit.in"
+    },
+    "replyToEmail": {
+      "tab": "content",
+      "group": "email",
+      "label": "Reply to email address",
+      "type": "text",
+      "placeholder": "Name <reply@domain.com>",
+      "description": "Comma-separated list of name and email address or email addresses only. Default: Email address in submitted form"
+    },
+    "emailContent": {
+      "tab": "content",
+      "group": "email",
+      "label": "Email content",
+      "type": "textarea",
+      "description": "Use field IDs to personalize your message. Type {{all_fields}} to output all the field labels and values of the submitted form. <a href=\"https://academy.bricksbuilder.io/builder/elements/general/form/#email\" target=\"_blank\" rel=\"noopener\">Learn more</a>"
+    },
+    "emailErrorMessage": {
+      "tab": "content",
+      "group": "email",
+      "label": "Error message",
+      "type": "text",
+      "default": "Submission failed. Please reload the page and try to submit the form again."
+    },
+    "htmlEmail": {
+      "tab": "content",
+      "group": "email",
+      "label": "HTML email",
+      "type": "checkbox",
+      "default": true
+    },
+    "webhooks": {
+      "tab": "content",
+      "group": "webhook",
+      "type": "repeater",
+      "label": "Endpoints",
+      "placeholder": "Endpoint",
+      "desc": "The webhook endpoint(s) to send the submitted form data to.",
+      "titleProperty": "name",
+      "fields": {
+        "name": {
+          "label": "Name",
+          "type": "text"
+        },
+        "url": {
+          "label": "Endpoint URL",
+          "type": "text",
+          "description": "The URL to send the form data to."
+        },
+        "contentType": {
+          "label": "Data format",
+          "type": "select",
+          "options": {
+            "json": "JSON",
+            "form-data": "Form data"
+          },
+          "default": "json",
+          "placeholder": "JSON",
+          "description": "Format to send the data in."
+        },
+        "dataTemplate": {
+          "label": "Data",
+          "type": "code",
+          "hasDynamicData": true,
+          "description": "Customize how the data is structured. Leave empty to send all form fields. Example: {&quot;name&quot;: &quot;{{43f295}}&quot;, &quot;email&quot;: &quot;{{a5c626}}&quot;}<br>Files: {{field_id:name|type|size|id|url}}"
+        },
+        "headers": {
+          "label": "Headers",
+          "type": "code",
+          "hasDynamicData": true,
+          "description": "Add custom headers in JSON format. Leave empty for default headers. Example: {&quot;Authorization&quot;: &quot;Bearer token&quot;}"
+        }
+      }
+    },
+    "webhookMaxSize": {
+      "tab": "content",
+      "group": "webhook",
+      "label": "Max payload size (KB)",
+      "type": "number",
+      "placeholder": "1024",
+      "min": 1,
+      "description": "Maximum size of the webhook payload in kilobytes. (Default: 1024)"
+    },
+    "webhookRateLimit": {
+      "tab": "content",
+      "group": "webhook",
+      "label": "Rate limiting",
+      "type": "checkbox",
+      "description": "Limit the number of webhook requests that can be sent per hour."
+    },
+    "webhookRateLimitRequests": {
+      "tab": "content",
+      "group": "webhook",
+      "label": "Max requests per hour",
+      "type": "number",
+      "min": 1,
+      "placeholder": "60",
+      "description": "Maximum number of webhook requests allowed per hour. (Default: 60)",
+      "required": [
+        "webhookRateLimit",
+        "=",
+        true
+      ]
+    },
+    "webhookErrorIgnore": {
+      "tab": "content",
+      "group": "webhook",
+      "label": "Continue on error",
+      "type": "checkbox",
+      "description": "If enabled, form submission will succeed even if the webhook fails. Errors will be logged to the server error log."
+    },
+    "webhookErrorMessage": {
+      "tab": "content",
+      "group": "webhook",
+      "label": "Error message",
+      "type": "text",
+      "required": [
+        "webhookErrorIgnore",
+        "=",
+        false
+      ]
+    },
+    "confirmationEmailDescription": {
+      "tab": "content",
+      "group": "confirmation",
+      "type": "info",
+      "content": "<a href=\"https://academy.bricksbuilder.io/builder/elements/general/form/#confirmation-email\" target=\"_blank\" rel=\"noopener\">Please ensure SMTP is set up on this site so all outgoing emails are delivered properly.</a>"
+    },
+    "confirmationEmailSubject": {
+      "tab": "content",
+      "group": "confirmation",
+      "label": "Subject",
+      "type": "text"
+    },
+    "confirmationEmailTo": {
+      "tab": "content",
+      "group": "confirmation",
+      "label": "Send to email address",
+      "type": "text",
+      "description": "Default: Email address in submitted form"
+    },
+    "confirmationFromEmail": {
+      "tab": "content",
+      "group": "confirmation",
+      "label": "From email address",
+      "type": "text",
+      "description": "Default: Admin email"
+    },
+    "confirmationFromName": {
+      "tab": "content",
+      "group": "confirmation",
+      "label": "From name",
+      "description": "Default: Site title",
+      "type": "text"
+    },
+    "confirmationReplyToEmail": {
+      "tab": "content",
+      "group": "confirmation",
+      "label": "Reply to email address",
+      "type": "text",
+      "placeholder": "Name <reply@domain.com>",
+      "description": "Comma-separated list of name and email address or email addresses only. Default: From email address"
+    },
+    "confirmationEmailContent": {
+      "tab": "content",
+      "group": "confirmation",
+      "label": "Email content",
+      "type": "textarea",
+      "description": "Use field IDs to personalize your message. Type {{all_fields}} to output all the field labels and values of the submitted form. <a href=\"https://academy.bricksbuilder.io/builder/elements/general/form/#email\" target=\"_blank\" rel=\"noopener\">Learn more</a>"
+    },
+    "confirmationEmailHTML": {
+      "tab": "content",
+      "group": "confirmation",
+      "label": "HTML email",
+      "type": "checkbox"
+    },
+    "redirectInfo": {
+      "tab": "content",
+      "group": "redirect",
+      "content": "Redirect is only triggered after successful form submit.",
+      "type": "info"
+    },
+    "redirectAdminUrl": {
+      "tab": "content",
+      "group": "redirect",
+      "label": "Redirect to admin area",
+      "type": "checkbox",
+      "placeholder": "https://casinodesign.bcit.in/wp-admin/"
+    },
+    "redirect": {
+      "tab": "content",
+      "group": "redirect",
+      "label": "Custom redirect URL",
+      "type": "text",
+      "placeholder": "https://casinodesign.bcit.in"
+    },
+    "redirectTimeout": {
+      "tab": "content",
+      "group": "redirect",
+      "label": "Redirect after (ms)",
+      "type": "number"
+    },
+    "mailchimpInfo": {
+      "tab": "content",
+      "group": "mailchimp",
+      "content": "Mailchimp API key required! Add key in dashboard under: <a href=\"https://casinodesign.bcit.in/wp-admin/admin.php?page=bricks-settings#tab-api-keys\" target=\"_blank\">Bricks > Settings > API keys</a>",
+      "type": "info",
+      "required": [
+        "apiKeyMailchimp",
+        "=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "mailchimpDoubleOptIn": {
+      "tab": "content",
+      "group": "mailchimp",
+      "label": "Double opt-in",
+      "type": "checkbox",
+      "required": [
+        "apiKeyMailchimp",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "mailchimpList": {
+      "tab": "content",
+      "group": "mailchimp",
+      "label": "List",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "required": [
+        "apiKeyMailchimp",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "mailchimpGroups": {
+      "tab": "content",
+      "group": "mailchimp",
+      "label": "Groups",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "multiple": true,
+      "required": [
+        [
+          "apiKeyMailchimp",
+          "!=",
+          "",
+          "globalSettings"
+        ],
+        [
+          "mailchimpList",
+          "!=",
+          ""
+        ]
+      ]
+    },
+    "mailchimpEmail": {
+      "tab": "content",
+      "group": "mailchimp",
+      "label": "Field: Email",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "required": [
+        "apiKeyMailchimp",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "mailchimpFirstName": {
+      "tab": "content",
+      "group": "mailchimp",
+      "label": "First name",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "required": [
+        "apiKeyMailchimp",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "mailchimpLastName": {
+      "tab": "content",
+      "group": "mailchimp",
+      "label": "Last name",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "required": [
+        "apiKeyMailchimp",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "mailchimpPendingMessage": {
+      "tab": "content",
+      "group": "mailchimp",
+      "label": "Pending message",
+      "type": "text",
+      "required": [
+        "apiKeyMailchimp",
+        "!=",
+        "",
+        "globalSettings"
+      ],
+      "default": "Please check your email to confirm your subscription."
+    },
+    "mailchimpErrorMessage": {
+      "tab": "content",
+      "group": "mailchimp",
+      "label": "Error message",
+      "type": "text",
+      "required": [
+        "apiKeyMailchimp",
+        "!=",
+        "",
+        "globalSettings"
+      ],
+      "default": "Sorry, but we could not subscribe you."
+    },
+    "sendgridInfo": {
+      "tab": "content",
+      "group": "sendgrid",
+      "content": "SendGrid API key required! Add key in dashboard under: <a href=\"https://casinodesign.bcit.in/wp-admin/admin.php?page=bricks-settings#tab-api-keys\" target=\"_blank\">Bricks > Settings > API keys</a>",
+      "type": "info",
+      "required": [
+        "apiKeySendgrid",
+        "=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "sendgridList": {
+      "tab": "content",
+      "group": "sendgrid",
+      "label": "List",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "required": [
+        "apiKeySendgrid",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "sendgridEmail": {
+      "tab": "content",
+      "group": "sendgrid",
+      "label": "Field: Email",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "required": [
+        "apiKeySendgrid",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "sendgridFirstName": {
+      "tab": "content",
+      "group": "sendgrid",
+      "label": "Field: First name",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "required": [
+        "apiKeySendgrid",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "sendgridLastName": {
+      "tab": "content",
+      "group": "sendgrid",
+      "label": "Field: Last name",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "required": [
+        "apiKeySendgrid",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "sendgridErrorMessage": {
+      "tab": "content",
+      "group": "sendgrid",
+      "label": "Error message",
+      "type": "text",
+      "required": [
+        "apiKeySendgrid",
+        "!=",
+        "",
+        "globalSettings"
+      ],
+      "default": "Sorry, but we could not subscribe you."
+    },
+    "loginName": {
+      "tab": "content",
+      "group": "login",
+      "label": "Field: Login",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "loginPassword": {
+      "tab": "content",
+      "group": "login",
+      "label": "Field: Password",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "loginRemember": {
+      "tab": "content",
+      "group": "login",
+      "label": "Field: Remember me",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "loginErrorMessage": {
+      "tab": "content",
+      "group": "login",
+      "label": "Error message",
+      "description": "Enter a generic error message. Otherwise the reason why the login failed is displayed.",
+      "type": "text"
+    },
+    "registrationEmail": {
+      "tab": "content",
+      "group": "registration",
+      "label": "Field: Email",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "registrationPassword": {
+      "tab": "content",
+      "group": "registration",
+      "label": "Field: Password",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "description": "Autogenerated if no password is required/submitted."
+    },
+    "registrationPasswordMinLength": {
+      "tab": "content",
+      "group": "registration",
+      "label": "Password min. length",
+      "type": "number",
+      "placeholder": 6
+    },
+    "registrationUserName": {
+      "tab": "content",
+      "group": "registration",
+      "label": "Field: User name",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "placeholder": "Select",
+      "description": "Auto-generated if form only requires email address for registration."
+    },
+    "registrationFirstName": {
+      "tab": "content",
+      "group": "registration",
+      "label": "Field: First name",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "registrationLastName": {
+      "tab": "content",
+      "group": "registration",
+      "label": "Field: Last name",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "registrationRole": {
+      "tab": "content",
+      "group": "registration",
+      "label": "Role",
+      "desc": "Administrator role is not allowed as a security precaution.",
+      "type": "select",
+      "options": {
+        "editor": "Editor",
+        "author": "Author",
+        "contributor": "Contributor",
+        "subscriber": "Subscriber"
+      },
+      "placeholder": "Subscriber"
+    },
+    "registrationAutoLogin": {
+      "tab": "content",
+      "group": "registration",
+      "label": "Auto log in user",
+      "type": "checkbox",
+      "description": "Log in user after successful registration. Tip: Set action &quot;Redirect&quot; to redirect user to the account/admin area."
+    },
+    "registrationWPNotification": {
+      "tab": "content",
+      "group": "registration",
+      "label": "Send WordPress notification",
+      "type": "checkbox",
+      "description": "Trigger &quot;register_new_user&quot; action to send WordPress notification. <a href=\"https://academy.bricksbuilder.io/builder/elements/general/form/#login-registration\" target=\"_blank\" rel=\"noopener\">Learn more</a>"
+    },
+    "lostPasswordEmailUsername": {
+      "tab": "content",
+      "group": "lostPassword",
+      "label": "Field: Email or username",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "resetPasswordNew": {
+      "tab": "content",
+      "group": "resetPassword",
+      "label": "Field: Password",
+      "placeholder": "Select",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "createPostType": {
+      "tab": "content",
+      "group": "createPost",
+      "label": "Post type",
+      "type": "select",
+      "options": []
+    },
+    "createPostCapabilityCheck": {
+      "tab": "content",
+      "group": "createPost",
+      "type": "info",
+      "content": "The form is not rendered if the current user is lacking the required capability.",
+      "required": [
+        "createPostDisableCapabilityCheck",
+        "=",
+        false
+      ]
+    },
+    "createPostErrorMessage": {
+      "tab": "content",
+      "group": "createPost",
+      "label": "Error message",
+      "desc": "Custom error message to display when the current user does not have the required capability to create the post.",
+      "type": "text",
+      "required": [
+        [
+          "createPostType",
+          "!=",
+          ""
+        ],
+        [
+          "createPostDisableCapabilityCheck",
+          "=",
+          false
+        ]
+      ]
+    },
+    "createPostDisableCapabilityCheck": {
+      "tab": "content",
+      "group": "createPost",
+      "label": "Disable capability checks",
+      "type": "checkbox",
+      "required": [
+        "createPostType",
+        "!=",
+        ""
+      ]
+    },
+    "createPostSecurityWarning": {
+      "tab": "content",
+      "group": "createPost",
+      "type": "info",
+      "error": true,
+      "content": "<strong>Security warning</strong>: You have disabled the capability checks. Now anyone, including non-logged-in visitors, can create posts through this form. This can lead to unauthorized content creation, spam and malicious posts, database pollution, and potential security breaches. Only use this setting if you have alternative security measures in place, the form is on a protected page, or you fully understand the security implications.",
+      "required": [
+        "createPostDisableCapabilityCheck",
+        "=",
+        true
+      ]
+    },
+    "createPostSep": {
+      "tab": "content",
+      "group": "createPost",
+      "type": "separator",
+      "label": "Field mapping",
+      "desc": "Connect the form fields to the post data that you want to create on form submit."
+    },
+    "createPostTitle": {
+      "tab": "content",
+      "group": "createPost",
+      "label": "Post title",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "placeholder": "Select (Field)",
+      "required": [
+        "createPostType",
+        "!=",
+        ""
+      ]
+    },
+    "createPostContent": {
+      "tab": "content",
+      "group": "createPost",
+      "label": "Post content",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "placeholder": "Select (Field)",
+      "required": [
+        "createPostType",
+        "!=",
+        ""
+      ]
+    },
+    "createPostExcerpt": {
+      "tab": "content",
+      "group": "createPost",
+      "label": "Post excerpt",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "placeholder": "Select (Field)",
+      "required": [
+        "createPostType",
+        "!=",
+        ""
+      ]
+    },
+    "createPostFeaturedImage": {
+      "tab": "content",
+      "group": "createPost",
+      "label": "Featured image",
+      "type": "select",
+      "options": [],
+      "map_fields": {
+        "type": "image"
+      },
+      "placeholder": "Select (Field)",
+      "required": [
+        "createPostType",
+        "!=",
+        ""
+      ]
+    },
+    "createPostStatus": {
+      "tab": "content",
+      "group": "createPost",
+      "label": "Post status",
+      "placeholder": "Draft",
+      "type": "select",
+      "options": [],
+      "required": [
+        "createPostType",
+        "!=",
+        ""
+      ]
+    },
+    "createPostMeta": {
+      "tab": "content",
+      "group": "createPost",
+      "label": "Post meta",
+      "type": "repeater",
+      "titleProperty": "metaKey",
+      "fields": {
+        "metaKey": {
+          "label": "Meta key",
+          "type": "text"
+        },
+        "metaValue": {
+          "label": "Meta value",
+          "type": "select",
+          "options": [],
+          "map_fields": true,
+          "placeholder": "Select (Field)"
+        },
+        "sanitizationMethod": {
+          "label": "Sanitization method",
+          "type": "select",
+          "options": {
+            "sanitize_text_field": "Text (sanitize_text_field)",
+            "intval": "Integer (intval)",
+            "floatval": "Float (floatval)",
+            "sanitize_email": "Email (sanitize_email)",
+            "esc_url": "URL (esc_url)",
+            "wp_kses_post": "Post (wp_kses_post)"
+          },
+          "placeholder": "Text (sanitize_text_field)"
+        }
+      },
+      "required": [
+        "createPostType",
+        "!=",
+        ""
+      ]
+    },
+    "createPostTaxonomies": {
+      "tab": "content",
+      "group": "createPost",
+      "label": "Taxonomies",
+      "type": "repeater",
+      "titleProperty": "taxonomy",
+      "fields": {
+        "taxonomy": {
+          "label": "Taxonomy",
+          "type": "select",
+          "options": [],
+          "placeholder": "Select"
+        },
+        "fieldId": {
+          "label": "Field",
+          "type": "select",
+          "options": [],
+          "map_fields": true,
+          "placeholder": "Select (Field)"
+        }
+      },
+      "required": [
+        "createPostType",
+        "!=",
+        ""
+      ]
+    },
+    "updatePostId": {
+      "tab": "content",
+      "group": "updatePost",
+      "label": "Post to update",
+      "type": "select",
+      "optionsAjax": {
+        "action": "bricks_get_posts",
+        "postType": "any"
+      },
+      "searchable": true,
+      "placeholder": "Select post/page",
+      "desc": "Leave empty to update the current post."
+    },
+    "updatePostCapabilityCheck": {
+      "tab": "content",
+      "group": "updatePost",
+      "type": "info",
+      "content": "The form is not rendered if the current user is lacking the required capability.",
+      "required": [
+        "updatePostDisableCapabilityCheck",
+        "=",
+        false
+      ]
+    },
+    "updatePostErrorMessage": {
+      "tab": "content",
+      "group": "updatePost",
+      "label": "Error message",
+      "desc": "Custom error message to display when the current user does not have the required capability to edit the post.",
+      "type": "text"
+    },
+    "updatePostDisableCapabilityCheck": {
+      "tab": "content",
+      "group": "updatePost",
+      "label": "Disable capability checks",
+      "type": "checkbox"
+    },
+    "updatePostSecurityWarning": {
+      "tab": "content",
+      "group": "updatePost",
+      "type": "info",
+      "error": true,
+      "content": "<strong>Security warning</strong>: You have disabled the capability checks. Now anyone, including non-logged-in visitors, can edit the post through this form. This can lead to unauthorized content creation, spam and malicious posts, database pollution, and potential security breaches. Only use this setting if you have alternative security measures in place, the form is on a protected page, or you fully understand the security implications.",
+      "required": [
+        "updatePostDisableCapabilityCheck",
+        "=",
+        true
+      ]
+    },
+    "updatePostSep": {
+      "tab": "content",
+      "group": "updatePost",
+      "type": "separator",
+      "label": "Field mapping",
+      "desc": "Connect the form fields to the post data that you want to update on form submit."
+    },
+    "updatePostTitle": {
+      "tab": "content",
+      "group": "updatePost",
+      "label": "Post title",
+      "placeholder": "Select (Field)",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "updatePostContent": {
+      "tab": "content",
+      "group": "updatePost",
+      "label": "Post content",
+      "placeholder": "Select (Field)",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "updatePostExcerpt": {
+      "tab": "content",
+      "group": "updatePost",
+      "label": "Post excerpt",
+      "placeholder": "Select (Field)",
+      "type": "select",
+      "options": [],
+      "map_fields": true
+    },
+    "updatePostFeaturedImage": {
+      "tab": "content",
+      "group": "updatePost",
+      "label": "Featured image",
+      "placeholder": "Select (Field)",
+      "type": "select",
+      "options": [],
+      "map_fields": {
+        "type": "image"
+      }
+    },
+    "updatePostStatus": {
+      "tab": "content",
+      "group": "updatePost",
+      "label": "Post status",
+      "placeholder": "Current",
+      "type": "select",
+      "options": []
+    },
+    "updatePostMeta": {
+      "tab": "content",
+      "group": "updatePost",
+      "label": "Post meta",
+      "type": "repeater",
+      "titleProperty": "metaKey",
+      "fields": {
+        "metaKey": {
+          "label": "Meta key",
+          "type": "text"
+        },
+        "metaValue": {
+          "label": "Meta value",
+          "type": "select",
+          "options": [],
+          "map_fields": true,
+          "placeholder": "Select (Field)"
+        },
+        "sanitizationMethod": {
+          "label": "Sanitization method",
+          "type": "select",
+          "options": {
+            "sanitize_text_field": "Text (sanitize_text_field)",
+            "intval": "Integer (intval)",
+            "floatval": "Float (floatval)",
+            "sanitize_email": "Email (sanitize_email)",
+            "esc_url": "URL (esc_url)",
+            "wp_kses_post": "Post (wp_kses_post)",
+            "none": "None"
+          },
+          "placeholder": "Text (sanitize_text_field)"
+        }
+      }
+    },
+    "updatePostTaxonomies": {
+      "tab": "content",
+      "group": "updatePost",
+      "label": "Taxonomies",
+      "type": "repeater",
+      "titleProperty": "taxonomy",
+      "fields": {
+        "taxonomy": {
+          "label": "Taxonomy",
+          "type": "select",
+          "options": [],
+          "placeholder": "Select"
+        },
+        "fieldId": {
+          "label": "Field",
+          "type": "select",
+          "options": [],
+          "map_fields": true,
+          "placeholder": "Select (Field)"
+        }
+      }
+    },
+    "recaptchaInfo": {
+      "tab": "content",
+      "group": "spam",
+      "content": "Google reCAPTCHA API key required! Add key in dashboard under: <a href=\"https://casinodesign.bcit.in/wp-admin/admin.php?page=bricks-settings#tab-api-keys\" target=\"_blank\">Bricks > Settings > API keys</a>",
+      "type": "info",
+      "required": [
+        "apiKeyGoogleRecaptcha",
+        "=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "enableRecaptcha": {
+      "tab": "content",
+      "group": "spam",
+      "label": "reCAPTCHA (Google)",
+      "type": "checkbox",
+      "required": [
+        "apiKeyGoogleRecaptcha",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "turnstileInfo": {
+      "tab": "content",
+      "group": "spam",
+      "content": "Cloudflare Turnstile API key required! Add key in dashboard under: <a href=\"https://casinodesign.bcit.in/wp-admin/admin.php?page=bricks-settings#tab-api-keys\" target=\"_blank\">Bricks > Settings > </a>",
+      "type": "info",
+      "required": [
+        "apiKeyTurnstile",
+        "=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "enableTurnstile": {
+      "tab": "content",
+      "group": "spam",
+      "label": "Turnstile (Cloudflare)",
+      "info": "View on frontend",
+      "type": "checkbox",
+      "required": [
+        "apiKeyTurnstile",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "turnstileSize": {
+      "tab": "content",
+      "group": "spam",
+      "label": "Turnstile: Size",
+      "type": "select",
+      "options": {
+        "normal": "Normal",
+        "compact": "Compact",
+        "flexible": "Flexible"
+      },
+      "placeholder": "Normal",
+      "required": [
+        "enableTurnstile",
+        "=",
+        true
+      ]
+    },
+    "turnstileTheme": {
+      "tab": "content",
+      "group": "spam",
+      "label": "Turnstile: Theme",
+      "type": "select",
+      "options": {
+        "light": "Light",
+        "dark": "Dark"
+      },
+      "placeholder": "Auto",
+      "required": [
+        "enableTurnstile",
+        "=",
+        true
+      ]
+    },
+    "turnstileInitialization": {
+      "tab": "content",
+      "group": "spam",
+      "label": "Turnstile: Initialization",
+      "type": "select",
+      "options": {
+        "viewport": "Approaching viewport",
+        "interaction": "On interaction"
+      },
+      "placeholder": "Page load",
+      "description": "Deferred modes also initialize Turnstile when the form is submitted.",
+      "required": [
+        "enableTurnstile",
+        "=",
+        true
+      ]
+    },
+    "turnstileViewportDistance": {
+      "tab": "content",
+      "group": "spam",
+      "label": "Viewport distance (px)",
+      "type": "number",
+      "inline": false,
+      "min": 0,
+      "max": 5000,
+      "step": 10,
+      "placeholder": 300,
+      "description": "Initialize Turnstile when the widget is within this distance of the viewport.",
+      "required": [
+        [
+          "enableTurnstile",
+          "=",
+          true
+        ],
+        [
+          "turnstileInitialization",
+          "=",
+          "viewport"
+        ]
+      ]
+    },
+    "turnstileExecution": {
+      "tab": "content",
+      "group": "spam",
+      "label": "Turnstile: Execution",
+      "type": "select",
+      "options": {
+        "execute": "On submit"
+      },
+      "placeholder": "On initialization",
+      "required": [
+        "enableTurnstile",
+        "=",
+        true
+      ]
+    },
+    "turnstileAppearance": {
+      "tab": "content",
+      "group": "spam",
+      "label": "Turnstile: Appearance",
+      "type": "select",
+      "options": {
+        "execute": "On execution",
+        "interaction-only": "Interaction only"
+      },
+      "placeholder": "Always",
+      "required": [
+        "enableTurnstile",
+        "=",
+        true
+      ]
+    },
+    "turnstileLabel": {
+      "tab": "content",
+      "group": "spam",
+      "label": "Turnstile: Label",
+      "type": "text",
+      "required": [
+        "enableTurnstile",
+        "=",
+        true
+      ]
+    },
+    "hCaptchaInfo": {
+      "tab": "content",
+      "group": "spam",
+      "content": "hCaptcha key required! Add key in dashboard under: <a href=\"https://casinodesign.bcit.in/wp-admin/admin.php?page=bricks-settings#tab-api-keys\" target=\"_blank\">Bricks > Settings > API keys</a>",
+      "type": "info",
+      "required": [
+        "apiKeyHCaptcha",
+        "=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "enableHCaptcha": {
+      "tab": "content",
+      "group": "spam",
+      "label": "hCaptcha",
+      "type": "select",
+      "inline": true,
+      "info": "View on frontend",
+      "options": {
+        "visible": "Visible",
+        "invisible": "Invisible"
+      },
+      "placeholder": "Disabled",
+      "required": [
+        "apiKeyHCaptcha",
+        "!=",
+        "",
+        "globalSettings"
+      ]
+    },
+    "hCaptchaSize": {
+      "tab": "content",
+      "group": "spam",
+      "label": "hCaptcha: Size",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "normal": "Normal",
+        "compact": "Compact"
+      },
+      "placeholder": "Normal",
+      "required": [
+        "enableHCaptcha",
+        "=",
+        "visible"
+      ]
+    },
+    "hCaptchaTheme": {
+      "tab": "content",
+      "group": "spam",
+      "label": "hCaptcha: Theme",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "light": "Light",
+        "dark": "Dark"
+      },
+      "placeholder": "Light",
+      "required": [
+        "enableHCaptcha",
+        "=",
+        "visible"
+      ]
+    },
+    "honeypotInfo": {
+      "tab": "content",
+      "group": "spam",
+      "content": "Honeypot: Create form field(s) and enable the &quot;Honeypot&quot; checkbox. Those honeypot fields aren&#039;t visible to users, but add an extra layer of protection against spam submissions.",
+      "type": "info"
+    },
+    "uploadButtonTypography": {
+      "tab": "content",
+      "label": "Files - Typography",
+      "type": "typography",
+      "css": [
+        {
+          "property": "font",
+          "selector": ".choose-files"
+        }
+      ],
+      "deprecated": true
+    },
+    "uploadButtonBackgroundColor": {
+      "tab": "content",
+      "label": "Files - Background",
+      "type": "color",
+      "css": [
+        {
+          "property": "background-color",
+          "selector": ".choose-files"
+        }
+      ],
+      "deprecated": true
+    },
+    "uploadButtonBorder": {
+      "tab": "content",
+      "label": "Files - Border",
+      "type": "border",
+      "css": [
+        {
+          "property": "border",
+          "selector": ".choose-files"
+        }
+      ],
+      "deprecated": true
+    },
+    "passwordProtectionPassword": {
+      "tab": "content",
+      "group": "unlock-password-protection",
+      "label": "Field: Password",
+      "type": "select",
+      "options": [],
+      "map_fields": true,
+      "description": "If no form field is selected, the first password field in the form is used."
+    },
+    "passwordProtectionErrorMessage": {
+      "tab": "content",
+      "group": "unlock-password-protection",
+      "label": "Error message",
+      "type": "text"
+    },
+    "_animationSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Animation",
+      "type": "separator",
+      "deprecated": true
+    },
+    "_animationInfo": {
+      "tab": "style",
+      "group": "_layout",
+      "content": "The \"Entry animation\" settings below are deprecated since 1.6. Please convert them under \"Bricks > Settings > General > Converter\", and use the new <a href=\"https://academy.bricksbuilder.io/article/interactions/\" target=\"_blank\">Interactions</a> for all new animations.",
+      "required": [
+        "_animation",
+        "!=",
+        ""
+      ],
+      "type": "info"
+    },
+    "_animation": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Entry animation",
+      "type": "select",
+      "searchable": true,
+      "options": {
+        "bounce": "bounce",
+        "flash": "flash",
+        "pulse": "pulse",
+        "rubberBand": "rubberBand",
+        "shakeX": "shakeX",
+        "shakeY": "shakeY",
+        "headShake": "headShake",
+        "swing": "swing",
+        "tada": "tada",
+        "wobble": "wobble",
+        "jello": "jello",
+        "heartBeat": "heartBeat",
+        "backInDown": "backInDown",
+        "backInLeft": "backInLeft",
+        "backInRight": "backInRight",
+        "backInUp": "backInUp",
+        "backOutDown": "backOutDown",
+        "backOutLeft": "backOutLeft",
+        "backOutRight": "backOutRight",
+        "backOutUp": "backOutUp",
+        "bounceIn": "bounceIn",
+        "bounceInDown": "bounceInDown",
+        "bounceInLeft": "bounceInLeft",
+        "bounceInRight": "bounceInRight",
+        "bounceInUp": "bounceInUp",
+        "bounceOut": "bounceOut",
+        "bounceOutDown": "bounceOutDown",
+        "bounceOutLeft": "bounceOutLeft",
+        "bounceOutRight": "bounceOutRight",
+        "bounceOutUp": "bounceOutUp",
+        "fadeIn": "fadeIn",
+        "fadeInDown": "fadeInDown",
+        "fadeInDownBig": "fadeInDownBig",
+        "fadeInLeft": "fadeInLeft",
+        "fadeInLeftBig": "fadeInLeftBig",
+        "fadeInRight": "fadeInRight",
+        "fadeInRightBig": "fadeInRightBig",
+        "fadeInUp": "fadeInUp",
+        "fadeInUpBig": "fadeInUpBig",
+        "fadeInTopLeft": "fadeInTopLeft",
+        "fadeInTopRight": "fadeInTopRight",
+        "fadeInBottomLeft": "fadeInBottomLeft",
+        "fadeInBottomRight": "fadeInBottomRight",
+        "fadeOut": "fadeOut",
+        "fadeOutDown": "fadeOutDown",
+        "fadeOutDownBig": "fadeOutDownBig",
+        "fadeOutLeft": "fadeOutLeft",
+        "fadeOutLeftBig": "fadeOutLeftBig",
+        "fadeOutRight": "fadeOutRight",
+        "fadeOutRightBig": "fadeOutRightBig",
+        "fadeOutUp": "fadeOutUp",
+        "fadeOutUpBig": "fadeOutUpBig",
+        "fadeOutTopLeft": "fadeOutTopLeft",
+        "fadeOutTopRight": "fadeOutTopRight",
+        "fadeOutBottomRight": "fadeOutBottomRight",
+        "fadeOutBottomLeft": "fadeOutBottomLeft",
+        "flip": "flip",
+        "flipInX": "flipInX",
+        "flipInY": "flipInY",
+        "flipOutX": "flipOutX",
+        "flipOutY": "flipOutY",
+        "lightSpeedInRight": "lightSpeedInRight",
+        "lightSpeedInLeft": "lightSpeedInLeft",
+        "lightSpeedOutRight": "lightSpeedOutRight",
+        "lightSpeedOutLeft": "lightSpeedOutLeft",
+        "rotateIn": "rotateIn",
+        "rotateInDownLeft": "rotateInDownLeft",
+        "rotateInDownRight": "rotateInDownRight",
+        "rotateInUpLeft": "rotateInUpLeft",
+        "rotateInUpRight": "rotateInUpRight",
+        "rotateOut": "rotateOut",
+        "rotateOutDownLeft": "rotateOutDownLeft",
+        "rotateOutDownRight": "rotateOutDownRight",
+        "rotateOutUpLeft": "rotateOutUpLeft",
+        "rotateOutUpRight": "rotateOutUpRight",
+        "hinge": "hinge",
+        "jackInTheBox": "jackInTheBox",
+        "rollIn": "rollIn",
+        "rollOut": "rollOut",
+        "zoomIn": "zoomIn",
+        "zoomInDown": "zoomInDown",
+        "zoomInLeft": "zoomInLeft",
+        "zoomInRight": "zoomInRight",
+        "zoomInUp": "zoomInUp",
+        "zoomOut": "zoomOut",
+        "zoomOutDown": "zoomOutDown",
+        "zoomOutLeft": "zoomOutLeft",
+        "zoomOutRight": "zoomOutRight",
+        "zoomOutUp": "zoomOutUp",
+        "slideInUp": "slideInUp",
+        "slideInDown": "slideInDown",
+        "slideInLeft": "slideInLeft",
+        "slideInRight": "slideInRight",
+        "slideOutUp": "slideOutUp",
+        "slideOutDown": "slideOutDown",
+        "slideOutLeft": "slideOutLeft",
+        "slideOutRight": "slideOutRight"
+      },
+      "inline": true,
+      "placeholder": "None",
+      "deprecated": true
+    },
+    "_animationDuration": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Animation duration",
+      "type": "select",
+      "searchable": true,
+      "options": {
+        "very-slow": "Very slow",
+        "slow": "Slow",
+        "normal": "Normal",
+        "fast": "Fast",
+        "very-fast": "Very fast",
+        "custom": "Custom"
+      },
+      "inline": true,
+      "hasDynamicData": false,
+      "placeholder": "Normal (1s)",
+      "required": [
+        "_animation",
+        "!=",
+        ""
+      ],
+      "deprecated": true
+    },
+    "_animationDurationCustom": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Animation duration (Custom)",
+      "type": "text",
+      "inline": true,
+      "hasDynamicData": false,
+      "info": "500ms | 1s",
+      "required": [
+        "_animationDuration",
+        "=",
+        "custom"
+      ],
+      "deprecated": true
+    },
+    "_animationDelay": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Animation delay",
+      "type": "text",
+      "inline": true,
+      "placeholder": 0,
+      "info": "500ms | -2.5s",
+      "required": [
+        "_animation",
+        "!=",
+        ""
+      ],
+      "deprecated": true
+    }
+  },
+  "controlGroups": {
+    "_layout": {
+      "title": "Layout",
+      "tab": "style",
+      "icon": "tab-layout"
+    },
+    "_typography": {
+      "title": "Typography",
+      "tab": "style",
+      "icon": "tab-typography"
+    },
+    "_background": {
+      "title": "Background",
+      "tab": "style",
+      "icon": "tab-background"
+    },
+    "_border": {
+      "title": "Border / Box Shadow",
+      "tab": "style",
+      "icon": "tab-border"
+    },
+    "_gradient": {
+      "title": "Gradient / Overlay",
+      "tab": "style",
+      "icon": "tab-gradient"
+    },
+    "_transform": {
+      "title": "Transform",
+      "tab": "style",
+      "icon": "tab-transform"
+    },
+    "_css": {
+      "title": "CSS",
+      "tab": "style",
+      "icon": "css3"
+    },
+    "_attributes": {
+      "title": "Attributes",
+      "tab": "style",
+      "icon": "html"
+    },
+    "fields": {
+      "title": "Fields",
+      "tab": "content"
+    },
+    "submitButton": {
+      "title": "Submit button",
+      "tab": "content"
+    },
+    "actions": {
+      "title": "Actions",
+      "tab": "content"
+    },
+    "notices": {
+      "title": "Notices",
+      "tab": "content"
+    },
+    "email": {
+      "title": "Email",
+      "required": [
+        "actions",
+        "=",
+        "email"
+      ],
+      "tab": "content"
+    },
+    "webhook": {
+      "title": "Webhook",
+      "required": [
+        "actions",
+        "=",
+        "webhook"
+      ],
+      "tab": "content"
+    },
+    "confirmation": {
+      "title": "Confirmation email",
+      "required": [
+        "actions",
+        "=",
+        "email"
+      ],
+      "tab": "content"
+    },
+    "redirect": {
+      "title": "Redirect",
+      "required": [
+        "actions",
+        "=",
+        "redirect"
+      ],
+      "tab": "content"
+    },
+    "mailchimp": {
+      "title": "Mailchimp",
+      "required": [
+        "actions",
+        "=",
+        "mailchimp"
+      ],
+      "tab": "content"
+    },
+    "sendgrid": {
+      "title": "SendGrid",
+      "required": [
+        "actions",
+        "=",
+        "sendgrid"
+      ],
+      "tab": "content"
+    },
+    "registration": {
+      "title": "User registration",
+      "required": [
+        "actions",
+        "=",
+        "registration"
+      ],
+      "tab": "content"
+    },
+    "login": {
+      "title": "User login",
+      "required": [
+        "actions",
+        "=",
+        "login"
+      ],
+      "tab": "content"
+    },
+    "lostPassword": {
+      "title": "Lost password",
+      "required": [
+        "actions",
+        "=",
+        "lost-password"
+      ],
+      "tab": "content"
+    },
+    "resetPassword": {
+      "title": "Reset password",
+      "required": [
+        "actions",
+        "=",
+        "reset-password"
+      ],
+      "tab": "content"
+    },
+    "createPost": {
+      "title": "Create post",
+      "required": [
+        "actions",
+        "=",
+        "create-post"
+      ],
+      "tab": "content"
+    },
+    "updatePost": {
+      "title": "Update post",
+      "required": [
+        "actions",
+        "=",
+        "update-post"
+      ],
+      "tab": "content"
+    },
+    "unlock-password-protection": {
+      "title": "Unlock password protection",
+      "required": [
+        "actions",
+        "=",
+        "unlock-password-protection"
+      ],
+      "tab": "content"
+    },
+    "spam": {
+      "title": "Spam protection",
+      "tab": "content"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"issues":[{"severity":"medium","elementId":"ida11r","description":"The card container has a right padding of 55px, which is significantly larger than the left padding of 24px, causing the content to be misaligned and not centered within the card."}],"patches":[{"op":"settings","id":"ida11r","set":{"_padding":{"top":"24","right":"24","bottom":"24","left":"24"}}}]}

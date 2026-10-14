@@ -1,0 +1,13 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "line-21"
+    }
+  ],
+  "_uncertain": [
+    "line-21: dropped unknown field \"_uncertain\"",
+    "Coverage: 1 content node(s) from the Figma data are missing from your output: 250:24 (asset: Line 21). Emit each as a heading/text/image element with that figmaNodeId (button labels belong in the button's own \"text\", never as a child)."
+  ]
+}

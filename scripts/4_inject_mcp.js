@@ -27,6 +27,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { validateBricks } from "./bricks-validator.js";
+import { validateBuild } from "./validate-build.js";
 
 // ---------- args ----------
 const argv = process.argv.slice(2);
@@ -87,6 +88,8 @@ if (!Array.isArray(tree) || !tree.length) {
 const label = path.basename(path.dirname(path.resolve(treePath))) || "tree";
 const validation = validateBricks(tree);
 if (validation.errors.length) throw new Error(`Invalid Bricks tree: ${validation.errors.join("; ")}`);
+const buildValidation = validateBuild(tree, treeDir);
+if (buildValidation.errors.length) throw new Error(`Unsafe/unverified native build: ${buildValidation.errors.join("; ")}`);
 const outDir = path.resolve(opt("--report-dir") || "output");
 fs.mkdirSync(outDir, { recursive: true });
 

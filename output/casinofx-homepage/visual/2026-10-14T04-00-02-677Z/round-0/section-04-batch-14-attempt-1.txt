@@ -1,0 +1,1 @@
+{"issues":[{"severity":"low","elementId":"q7t13z","description":"The right padding of the section container is set to 121px, which is significantly larger than the 20px padding on the other sides, creating an unbalanced layout."}],"patches":[{"op":"settings","id":"q7t13z","set":{"_padding":{"top":"21","right":"20","bottom":"20","left":"20"}}}]}

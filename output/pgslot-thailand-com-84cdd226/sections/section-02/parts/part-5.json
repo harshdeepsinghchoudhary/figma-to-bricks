@@ -1,0 +1,51 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "apply-membership-band",
+      "children": [
+        {
+          "type": "button",
+          "id": "apply-membership",
+          "figmaNodeId": "202:18",
+          "text": "Apply for membership",
+          "background": {
+            "gradient": {
+              "angle": 90,
+              "stops": [
+                {
+                  "color": "#F5CB6A",
+                  "position": 0
+                },
+                {
+                  "color": "#BA8C30",
+                  "position": 100
+                }
+              ]
+            }
+          },
+          "border": {
+            "radius": 100
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "align": "center",
+            "justify": "center",
+            "padding": {
+              "left": 28,
+              "right": 28,
+              "top": 14,
+              "bottom": 14
+            }
+          },
+          "size": {
+            "width": 226,
+            "height": 47
+          }
+        }
+      ]
+    }
+  ]
+}

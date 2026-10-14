@@ -1,0 +1,28 @@
+[
+  {
+    "id": "13rwku",
+    "name": "container",
+    "parent": "bc7az1",
+    "children": [],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_width": "100%",
+      "_widthMax": "1120px"
+    }
+  },
+  {
+    "id": "bc7az1",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "13rwku"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

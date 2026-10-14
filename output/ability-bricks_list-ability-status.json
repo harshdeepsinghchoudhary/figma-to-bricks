@@ -1,0 +1,74 @@
+{
+  "name": "bricks/list-ability-status",
+  "label": "List Bricks ability status",
+  "description": "Inspect whether expected Bricks abilities are enabled. Pass exact `abilityNames` for targeted diagnostics. The default summary lists enabled abilities only; pass `includeDisabled: true` for the complete compact registry, or use `detailed` for full metadata. Exact-name lookups still return matching disabled abilities.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "abilityNames": {
+        "type": "array",
+        "description": "Optional exact ability names to inspect, such as `bricks/update-element`. Exact-name diagnostics return matching disabled abilities without requiring includeDisabled.",
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 50
+      },
+      "includeDisabled": {
+        "type": "boolean",
+        "default": false,
+        "description": "Include disabled rows in an unfiltered summary. Omit for the compact enabled-ability inventory. Detailed responses continue to include the complete registry."
+      },
+      "responseFormat": {
+        "type": "string",
+        "enum": [
+          "summary",
+          "detailed"
+        ],
+        "default": "summary",
+        "description": "Summary returns compact status rows and, by default, only enabled abilities. Detailed includes labels, descriptions, annotations, and the complete registry."
+      }
+    },
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "abilities": {
+        "type": "array",
+        "description": "Requested Bricks ability status rows. An unfiltered summary returns enabled abilities by default; pass includeDisabled to include the complete registry."
+      },
+      "responseFormat": {
+        "type": "string"
+      },
+      "returned": {
+        "type": "integer"
+      },
+      "total": {
+        "type": "integer"
+      },
+      "enabled": {
+        "type": "integer"
+      },
+      "disabled": {
+        "type": "integer"
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

@@ -1,0 +1,1530 @@
+{
+  "name": "tabs-nested",
+  "label": "Tabs (Nestable)",
+  "nestable": true,
+  "controls": {
+    "_conditions": {
+      "type": "conditions",
+      "virtual": true,
+      "internal": true
+    },
+    "_cssGlobalClasses": {
+      "type": "array",
+      "virtual": true,
+      "internal": true
+    },
+    "_hidden": {
+      "tab": "style",
+      "type": "object",
+      "virtual": true,
+      "internal": true,
+      "properties": {
+        "_cssClasses": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "_hideElementBuilder": {
+      "type": "checkbox",
+      "virtual": true,
+      "internal": true
+    },
+    "_hideElementFrontend": {
+      "type": "checkbox",
+      "virtual": true,
+      "internal": true
+    },
+    "_interactions": {
+      "type": "interactions",
+      "virtual": true,
+      "internal": true
+    },
+    "_content": {
+      "tab": "content",
+      "label": "Content",
+      "type": "text",
+      "hidden": true,
+      "css": [
+        {
+          "property": "content",
+          "value": "%s"
+        }
+      ]
+    },
+    "_spacingSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Spacing",
+      "type": "separator"
+    },
+    "_margin": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Margin",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "margin",
+          "selector": ""
+        }
+      ]
+    },
+    "_padding": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Padding",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "padding"
+        }
+      ]
+    },
+    "_sizingSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Sizing",
+      "type": "separator"
+    },
+    "_width": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Width",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "width",
+          "selector": ""
+        }
+      ]
+    },
+    "_widthMin": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Min. width",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "min-width",
+          "selector": ""
+        }
+      ]
+    },
+    "_widthMax": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Max. width",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "max-width",
+          "selector": ""
+        }
+      ]
+    },
+    "_height": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Height",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "height"
+        }
+      ]
+    },
+    "_heightMin": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Min. height",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "min-height"
+        }
+      ]
+    },
+    "_heightMax": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Max. height",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "max-height"
+        }
+      ]
+    },
+    "_aspectRatio": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Aspect ratio",
+      "type": "text",
+      "inline": true,
+      "hasDynamicData": false,
+      "hasVariables": true,
+      "placeholder": "",
+      "css": [
+        {
+          "property": "aspect-ratio"
+        }
+      ]
+    },
+    "_positionSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Positioning",
+      "type": "separator"
+    },
+    "_position": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Position",
+      "type": "select",
+      "options": {
+        "static": "static",
+        "relative": "relative",
+        "absolute": "absolute",
+        "fixed": "fixed",
+        "sticky": "sticky"
+      },
+      "css": [
+        {
+          "property": "position",
+          "selector": ""
+        }
+      ],
+      "inline": true
+    },
+    "_positionInfo": {
+      "type": "info",
+      "content": "Set &quot;Top&quot; value to make this element &quot;sticky&quot;.",
+      "tab": "style",
+      "group": "_layout",
+      "required": [
+        "_position",
+        "=",
+        "sticky"
+      ]
+    },
+    "_top": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Top",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "top",
+          "selector": ""
+        }
+      ]
+    },
+    "_right": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Right",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "right",
+          "selector": ""
+        }
+      ]
+    },
+    "_bottom": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Bottom",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "bottom",
+          "selector": ""
+        }
+      ]
+    },
+    "_left": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Left",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "left",
+          "selector": ""
+        }
+      ]
+    },
+    "_zIndex": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Z-index",
+      "type": "number",
+      "css": [
+        {
+          "property": "z-index",
+          "selector": ""
+        }
+      ],
+      "min": -999,
+      "placeholder": 0
+    },
+    "_order": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Order",
+      "type": "number",
+      "css": [
+        {
+          "selector": "",
+          "property": "order"
+        }
+      ],
+      "min": -999,
+      "placeholder": 0
+    },
+    "_scrollSnapSep": {
+      "group": "_layout",
+      "label": "Scroll snap",
+      "desc": "<a href=\"https://academy.bricksbuilder.io/builder/styling/scroll-snap/\" target=\"_blank\" rel=\"noopener\">Learn more</a> about scroll snap in the Bricks Academy. View on frontend.",
+      "type": "separator",
+      "tab": "content"
+    },
+    "_scrollSnapType": {
+      "group": "_layout",
+      "label": "Type",
+      "placeholder": "Select",
+      "tooltip": "scroll-snap-type",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "unset": "Unset",
+        "y mandatory": "Mandatory (y-axis)",
+        "y proximity": "Proximity (y-axis)",
+        "x mandatory": "Mandatory (x-axis)",
+        "x proximity": "Proximity (x-axis)"
+      },
+      "css": [
+        {
+          "property": "scroll-snap-type"
+        }
+      ],
+      "tab": "content"
+    },
+    "_scrollSnapAlign": {
+      "group": "_layout",
+      "label": "Align",
+      "tooltip": "scroll-snap-align",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "start": "start",
+        "center": "center",
+        "end": "end"
+      },
+      "css": [
+        {
+          "property": "scroll-snap-align"
+        }
+      ],
+      "tab": "content"
+    },
+    "_scrollSnapStop": {
+      "group": "_layout",
+      "label": "Stop",
+      "tooltip": "scroll-snap-stop",
+      "placeholder": "normal",
+      "type": "select",
+      "inline": true,
+      "small": true,
+      "options": {
+        "normal": "normal",
+        "always": "always"
+      },
+      "css": [
+        {
+          "property": "scroll-snap-stop"
+        }
+      ],
+      "tab": "content"
+    },
+    "_miscSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Misc",
+      "type": "separator"
+    },
+    "_display": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Display",
+      "type": "select",
+      "options": {
+        "flex": "flex",
+        "inline-flex": "inline-flex",
+        "block": "block",
+        "inline-block": "inline-block",
+        "inline": "inline",
+        "none": "none"
+      },
+      "add": true,
+      "inline": true,
+      "lowercase": true,
+      "css": [
+        {
+          "selector": "",
+          "property": "display"
+        },
+        {
+          "selector": "",
+          "property": "align-items",
+          "value": "initial",
+          "required": "grid"
+        }
+      ]
+    },
+    "_visibility": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Visibility",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "visible": "visible",
+        "hidden": "hidden",
+        "collapse": "collapse"
+      },
+      "css": [
+        {
+          "property": "visibility"
+        }
+      ]
+    },
+    "_overflow": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Overflow",
+      "type": "text",
+      "css": [
+        {
+          "property": "overflow"
+        }
+      ],
+      "inline": true,
+      "hasDynamicData": false,
+      "placeholder": "visible"
+    },
+    "_opacity": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Opacity",
+      "type": "number",
+      "step": ".01",
+      "min": "0",
+      "max": "1",
+      "placeholder": 1,
+      "css": [
+        {
+          "property": "opacity"
+        }
+      ]
+    },
+    "_cursor": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Cursor",
+      "type": "select",
+      "options": {
+        "generalGroupTitle": "General",
+        "auto": "auto",
+        "default": "default",
+        "none": "none",
+        "linkGroupTitle": "Link &amp; status",
+        "pointer": "pointer",
+        "context-menu": "context-menu",
+        "help": "help",
+        "progress": "progress",
+        "wait": "wait",
+        "selectionGroupTitle": "Selection",
+        "cell": "cell",
+        "crosshair": "crosshair",
+        "text": "text",
+        "vertical-text": "vertical-text",
+        "dndGroupTitle": "Drag &amp; drop",
+        "alias": "alias",
+        "copy": "copy",
+        "move": "move",
+        "no-drop": "no-drop",
+        "not-allowed": "not-allowed",
+        "grab": "grab",
+        "grabbing": "grabbing",
+        "zoomGroupTitle": "Zoom",
+        "zoom-in": "zoom-in",
+        "zoom-out": "zoom-out",
+        "scrollGroupTitle": "Resize",
+        "col-resize": "col-resize",
+        "row-resize": "row-resize",
+        "n-resize": "n-resize",
+        "e-resize": "e-resize",
+        "s-resize": "s-resize",
+        "w-resize": "w-resize",
+        "ne-resize": "ne-resize",
+        "nw-resize": "nw-resize",
+        "se-resize": "se-resize",
+        "sw-resize": "sw-resize",
+        "ew-resize": "ew-resize",
+        "ns-resize": "ns-resize",
+        "nesw-resize": "nesw-resize",
+        "nwse-resize": "nwse-resize",
+        "all-scroll": "all-scroll"
+      },
+      "css": [
+        {
+          "selector": "",
+          "property": "cursor"
+        }
+      ],
+      "inline": true,
+      "placeholder": "auto"
+    },
+    "_isolation": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Isolation",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "auto": "auto",
+        "isolate": "isolate"
+      },
+      "css": [
+        {
+          "property": "isolation"
+        }
+      ]
+    },
+    "_mixBlendMode": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Mix blend mode",
+      "type": "select",
+      "inline": true,
+      "options": {
+        "normal": "normal",
+        "multiply": "multiply",
+        "screen": "screen",
+        "overlay": "overlay",
+        "darken": "darken",
+        "lighten": "lighten",
+        "color-dodge": "color-dodge",
+        "color-burn": "color-burn",
+        "hard-light": "hard-light",
+        "soft-light": "soft-light",
+        "difference": "difference",
+        "exclusion": "exclusion",
+        "hue": "hue",
+        "saturation": "saturation",
+        "color": "color",
+        "luminosity": "luminosity"
+      },
+      "css": [
+        {
+          "property": "mix-blend-mode"
+        }
+      ]
+    },
+    "_pointerEvents": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Pointer events",
+      "type": "text",
+      "inline": true,
+      "dd": false,
+      "css": [
+        {
+          "property": "pointer-events"
+        }
+      ]
+    },
+    "_perspective": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Perspective",
+      "type": "number",
+      "units": true,
+      "inline": true,
+      "hasDynamicData": false,
+      "css": [
+        {
+          "property": "perspective"
+        }
+      ]
+    },
+    "_perspectiveOrigin": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Perspective origin",
+      "type": "text",
+      "inline": true,
+      "hasDynamicData": false,
+      "css": [
+        {
+          "property": "perspective-origin"
+        }
+      ]
+    },
+    "_gridItemSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Grid item",
+      "type": "separator"
+    },
+    "_gridItemJustifySelf": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Justify self",
+      "type": "align-items",
+      "hasDynamicData": false,
+      "css": [
+        {
+          "property": "justify-self"
+        }
+      ]
+    },
+    "_flexSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Flex",
+      "type": "separator"
+    },
+    "_flexDirection": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Direction",
+      "tooltip": {
+        "content": "flex-direction",
+        "position": "top-left"
+      },
+      "type": "direction",
+      "css": [
+        {
+          "selector": "",
+          "property": "flex-direction"
+        }
+      ],
+      "inline": true,
+      "rerender": true,
+      "required": [
+        "_display",
+        "=",
+        "flex"
+      ]
+    },
+    "_alignSelf": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Align self",
+      "type": "align-items",
+      "tooltip": {
+        "content": "align-self",
+        "position": "top-left"
+      },
+      "css": [
+        {
+          "selector": "",
+          "property": "align-self"
+        }
+      ]
+    },
+    "_justifyContent": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Align main axis",
+      "tooltip": {
+        "content": "justify-content",
+        "position": "top-left"
+      },
+      "type": "justify-content",
+      "css": [
+        {
+          "selector": "",
+          "property": "justify-content"
+        }
+      ],
+      "required": [
+        "_display",
+        "=",
+        [
+          "flex",
+          "inline-flex"
+        ]
+      ]
+    },
+    "_alignItems": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Align cross axis",
+      "tooltip": {
+        "content": "align-items",
+        "position": "top-left"
+      },
+      "type": "align-items",
+      "css": [
+        {
+          "selector": "",
+          "property": "align-items"
+        }
+      ],
+      "required": [
+        "_display",
+        "=",
+        [
+          "flex",
+          "inline-flex"
+        ]
+      ]
+    },
+    "_gap": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Gap",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "property": "gap",
+          "selector": ""
+        }
+      ],
+      "required": [
+        "_display",
+        "=",
+        [
+          "flex",
+          "inline-flex"
+        ]
+      ]
+    },
+    "_flexGrow": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Flex grow",
+      "type": "number",
+      "tooltip": {
+        "content": "flex-grow",
+        "position": "top-left"
+      },
+      "css": [
+        {
+          "selector": "",
+          "property": "flex-grow"
+        }
+      ],
+      "min": 0,
+      "placeholder": 0
+    },
+    "_flexShrink": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Flex shrink",
+      "type": "number",
+      "tooltip": {
+        "content": "flex-shrink",
+        "position": "top-left"
+      },
+      "css": [
+        {
+          "selector": "",
+          "property": "flex-shrink"
+        }
+      ],
+      "min": 0,
+      "placeholder": 1
+    },
+    "_flexBasis": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Flex basis",
+      "type": "text",
+      "tooltip": {
+        "content": "flex-basis",
+        "position": "top-left"
+      },
+      "css": [
+        {
+          "selector": "",
+          "property": "flex-basis"
+        }
+      ],
+      "inline": true,
+      "hasDynamicData": false,
+      "hasVariables": true,
+      "placeholder": "auto"
+    },
+    "_typography": {
+      "tab": "style",
+      "group": "_typography",
+      "type": "typography",
+      "popup": false,
+      "css": [
+        {
+          "property": "font"
+        }
+      ]
+    },
+    "_background": {
+      "tab": "style",
+      "group": "_background",
+      "type": "background",
+      "popup": false,
+      "css": [
+        {
+          "property": "background"
+        }
+      ],
+      "exclude": "video"
+    },
+    "_gradient": {
+      "tab": "style",
+      "group": "_gradient",
+      "type": "gradient",
+      "css": [
+        {
+          "property": "background-image"
+        }
+      ]
+    },
+    "_border": {
+      "tab": "style",
+      "group": "_border",
+      "type": "border",
+      "label": "Border",
+      "css": [
+        {
+          "property": "border"
+        }
+      ]
+    },
+    "_boxShadow": {
+      "tab": "style",
+      "group": "_border",
+      "label": "Box shadow",
+      "type": "box-shadow",
+      "css": [
+        {
+          "property": "box-shadow"
+        }
+      ]
+    },
+    "_transform": {
+      "tab": "style",
+      "group": "_transform",
+      "type": "transform",
+      "label": "Transform",
+      "css": [
+        {
+          "property": "transform"
+        }
+      ],
+      "inline": true,
+      "small": true,
+      "description": "<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/transform\" target=\"_blank\" rel=\"noopener\">Learn more about CSS transform</a>"
+    },
+    "_transformOrigin": {
+      "tab": "style",
+      "group": "_transform",
+      "type": "text",
+      "label": "Transform origin",
+      "css": [
+        {
+          "property": "transform-origin"
+        }
+      ],
+      "inline": true,
+      "hasDynamicData": false,
+      "description": "<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin\" target=\"_blank\" rel=\"noopener\">Learn more about CSS transform-origin</a>",
+      "placeholder": "center"
+    },
+    "_motionParallaxSeparator": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Parallax",
+      "type": "separator"
+    },
+    "_motionParallaxBuilderInfo": {
+      "tab": "style",
+      "group": "_transform",
+      "type": "info",
+      "content": "Parallax effects are not active in the builder preview."
+    },
+    "_motionElementParallax": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Element parallax",
+      "type": "checkbox",
+      "description": "Move this element while scrolling."
+    },
+    "_motionElementParallaxSpeedX": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Horizontal speed  (%)",
+      "type": "number",
+      "placeholder": 0,
+      "inline": true,
+      "small": true,
+      "hasVariables": false,
+      "css": [
+        {
+          "property": "--brx-motion-parallax-speed-x"
+        }
+      ],
+      "required": [
+        "_motionElementParallax",
+        "=",
+        true
+      ]
+    },
+    "_motionElementParallaxSpeedY": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Vertical speed  (%)",
+      "type": "number",
+      "placeholder": 0,
+      "inline": true,
+      "small": true,
+      "hasVariables": false,
+      "css": [
+        {
+          "property": "--brx-motion-parallax-speed-y"
+        }
+      ],
+      "required": [
+        "_motionElementParallax",
+        "=",
+        true
+      ]
+    },
+    "_motionBackgroundParallax": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Background parallax",
+      "type": "checkbox",
+      "description": "Move the background image while scrolling."
+    },
+    "_motionBackgroundParallaxSpeed": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Background speed  (%)",
+      "type": "number",
+      "inline": true,
+      "small": true,
+      "placeholder": 0,
+      "hasVariables": false,
+      "css": [
+        {
+          "property": "--brx-motion-background-speed"
+        }
+      ],
+      "required": [
+        "_motionBackgroundParallax",
+        "=",
+        true
+      ]
+    },
+    "_motionStartVisiblePercent": {
+      "tab": "style",
+      "group": "_transform",
+      "label": "Parallax start point  (%)",
+      "type": "number",
+      "min": 0,
+      "max": 100,
+      "placeholder": 0,
+      "hasVariables": false,
+      "inline": true,
+      "small": true,
+      "description": "Set where the parallax effect starts based on the viewport scroll progress (0 = when entering, 50 = near center)."
+    },
+    "_cssCustom": {
+      "tab": "style",
+      "group": "_css",
+      "label": "Custom CSS",
+      "type": "code",
+      "mode": "css",
+      "hasVariables": true,
+      "pasteStyles": true,
+      "css": [],
+      "description": "Use &quot;%root%&quot; to target the element wrapper. Add &quot;%root%&quot; via keyboard shortcut &quot;r + TAB&quot;.",
+      "placeholder": "%root% {\n  color: firebrick;\n}"
+    },
+    "_cssClasses": {
+      "tab": "style",
+      "group": "_css",
+      "label": "CSS classes",
+      "class": "ltr",
+      "type": "text",
+      "description": "Separated by space. Without class dot."
+    },
+    "_cssId": {
+      "tab": "style",
+      "group": "_css",
+      "label": "CSS ID",
+      "class": "ltr",
+      "type": "text",
+      "description": "No spaces. No pound (#) sign."
+    },
+    "_cssIdComponentInfo": {
+      "tab": "style",
+      "group": "_css",
+      "type": "info",
+      "content": "Connect the CSS ID to a property to set it on an per-instance basis to avoid same ID conflicts.",
+      "required": [
+        [
+          "_cssId",
+          "!=",
+          ""
+        ],
+        [
+          "id",
+          "!=",
+          "",
+          "activeComponent"
+        ]
+      ]
+    },
+    "_cssFilters": {
+      "tab": "style",
+      "group": "_css",
+      "label": "CSS Filters",
+      "titleProperty": "type",
+      "type": "filters",
+      "inline": true,
+      "small": true,
+      "css": [
+        {
+          "property": "filter"
+        }
+      ],
+      "description": "<a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/filter#Syntax\">Learn more about CSS filters</a>"
+    },
+    "_cssTransition": {
+      "tab": "style",
+      "group": "_css",
+      "label": "Transition",
+      "class": "ltr",
+      "css": [
+        {
+          "property": "transition",
+          "selector": ""
+        }
+      ],
+      "type": "text",
+      "hasVariables": true,
+      "hasDynamicData": false,
+      "description": "<a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions\" target=\"_blank\">Learn more about CSS transitions</a>"
+    },
+    "infoAttributes": {
+      "tab": "style",
+      "group": "_attributes",
+      "content": "<a href=\"https://academy.bricksbuilder.io/builder/features/custom-attributes/\" target=\"_blank\" rel=\"noopener\">Custom attributes</a> will be added to the most relevant HTML node.",
+      "type": "info"
+    },
+    "_attributes": {
+      "tab": "style",
+      "group": "_attributes",
+      "placeholder": "Attributes",
+      "type": "repeater",
+      "titleProperty": "name",
+      "fields": {
+        "name": {
+          "label": "Name",
+          "type": "text",
+          "rerender": false
+        },
+        "value": {
+          "label": "Value",
+          "type": "text",
+          "rerender": false
+        }
+      }
+    },
+    "direction": {
+      "label": "Direction",
+      "tooltip": {
+        "content": "flex-direction",
+        "position": "top-left"
+      },
+      "type": "direction",
+      "css": [
+        {
+          "property": "flex-direction"
+        }
+      ],
+      "inline": true,
+      "rerender": true,
+      "description": "Set &quot;ID&quot; on tab menu &quot;Div&quot; to open a tab via anchor link. No spaces. No pound (#) sign.",
+      "tab": "content"
+    },
+    "openTabOn": {
+      "label": "Open tab on",
+      "type": "select",
+      "options": {
+        "click": "Click",
+        "mouseenter": "Hover"
+      },
+      "inline": true,
+      "placeholder": "Click",
+      "tab": "content"
+    },
+    "openTab": {
+      "label": "Open tab index",
+      "type": "text",
+      "description": "Index of the item to expand on page load, start at 0.",
+      "inline": true,
+      "placeholder": "0",
+      "tab": "content"
+    },
+    "titleWidth": {
+      "group": "title",
+      "label": "Width",
+      "type": "number",
+      "units": true,
+      "css": [
+        {
+          "selector": "> .tab-menu .tab-title",
+          "property": "width"
+        }
+      ],
+      "placeholder": "auto",
+      "tab": "content"
+    },
+    "titleMargin": {
+      "group": "title",
+      "label": "Margin",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "margin",
+          "selector": "> .tab-menu .tab-title"
+        }
+      ],
+      "tab": "content"
+    },
+    "titlePadding": {
+      "group": "title",
+      "label": "Padding",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "padding",
+          "selector": "> .tab-menu .tab-title"
+        }
+      ],
+      "default": {
+        "top": 20,
+        "right": 20,
+        "bottom": 20,
+        "left": 20
+      },
+      "tab": "content"
+    },
+    "titleBackgroundColor": {
+      "group": "title",
+      "label": "Background",
+      "type": "color",
+      "css": [
+        {
+          "property": "background-color",
+          "selector": "> .tab-menu .tab-title"
+        }
+      ],
+      "tab": "content"
+    },
+    "titleBorder": {
+      "group": "title",
+      "label": "Border",
+      "type": "border",
+      "css": [
+        {
+          "property": "border",
+          "selector": "> .tab-menu .tab-title"
+        }
+      ],
+      "tab": "content"
+    },
+    "titleTypography": {
+      "group": "title",
+      "label": "Typography",
+      "type": "typography",
+      "css": [
+        {
+          "property": "font",
+          "selector": "> .tab-menu .tab-title"
+        }
+      ],
+      "tab": "content"
+    },
+    "titleActiveSeparator": {
+      "group": "title",
+      "label": "Active",
+      "type": "separator",
+      "fullAccess": true,
+      "tab": "content"
+    },
+    "titleActiveBackgroundColor": {
+      "group": "title",
+      "label": "Background color",
+      "type": "color",
+      "css": [
+        {
+          "property": "background-color",
+          "selector": "> .tab-menu .tab-title.brx-open"
+        }
+      ],
+      "default": {
+        "hex": "#dddedf"
+      },
+      "tab": "content"
+    },
+    "titleActiveBorder": {
+      "group": "title",
+      "label": "Border",
+      "type": "border",
+      "css": [
+        {
+          "property": "border",
+          "selector": "> .tab-menu .tab-title.brx-open"
+        }
+      ],
+      "tab": "content"
+    },
+    "titleActiveTypography": {
+      "group": "title",
+      "label": "Typography",
+      "type": "typography",
+      "css": [
+        {
+          "property": "font",
+          "selector": "> .tab-menu .tab-title.brx-open"
+        }
+      ],
+      "tab": "content"
+    },
+    "contentMargin": {
+      "group": "content",
+      "label": "Margin",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "margin",
+          "selector": "> .tab-content"
+        }
+      ],
+      "tab": "content"
+    },
+    "contentPadding": {
+      "group": "content",
+      "label": "Padding",
+      "type": "spacing",
+      "css": [
+        {
+          "property": "padding",
+          "selector": "> .tab-content"
+        }
+      ],
+      "default": {
+        "top": 20,
+        "right": 20,
+        "bottom": 20,
+        "left": 20
+      },
+      "tab": "content"
+    },
+    "contentColor": {
+      "group": "content",
+      "label": "Text color",
+      "type": "color",
+      "css": [
+        {
+          "property": "color",
+          "selector": "> .tab-content"
+        }
+      ],
+      "tab": "content"
+    },
+    "contentBackgroundColor": {
+      "group": "content",
+      "label": "Background color",
+      "type": "color",
+      "css": [
+        {
+          "property": "background-color",
+          "selector": "> .tab-content"
+        }
+      ],
+      "tab": "content"
+    },
+    "contentBorder": {
+      "group": "content",
+      "label": "Border",
+      "type": "border",
+      "css": [
+        {
+          "property": "border",
+          "selector": "> .tab-content"
+        }
+      ],
+      "default": {
+        "width": {
+          "top": 1,
+          "right": 1,
+          "bottom": 1,
+          "left": 1
+        },
+        "style": "solid"
+      },
+      "tab": "content"
+    },
+    "_animationSeparator": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Animation",
+      "type": "separator",
+      "deprecated": true
+    },
+    "_animationInfo": {
+      "tab": "style",
+      "group": "_layout",
+      "content": "The \"Entry animation\" settings below are deprecated since 1.6. Please convert them under \"Bricks > Settings > General > Converter\", and use the new <a href=\"https://academy.bricksbuilder.io/article/interactions/\" target=\"_blank\">Interactions</a> for all new animations.",
+      "required": [
+        "_animation",
+        "!=",
+        ""
+      ],
+      "type": "info"
+    },
+    "_animation": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Entry animation",
+      "type": "select",
+      "searchable": true,
+      "options": {
+        "bounce": "bounce",
+        "flash": "flash",
+        "pulse": "pulse",
+        "rubberBand": "rubberBand",
+        "shakeX": "shakeX",
+        "shakeY": "shakeY",
+        "headShake": "headShake",
+        "swing": "swing",
+        "tada": "tada",
+        "wobble": "wobble",
+        "jello": "jello",
+        "heartBeat": "heartBeat",
+        "backInDown": "backInDown",
+        "backInLeft": "backInLeft",
+        "backInRight": "backInRight",
+        "backInUp": "backInUp",
+        "backOutDown": "backOutDown",
+        "backOutLeft": "backOutLeft",
+        "backOutRight": "backOutRight",
+        "backOutUp": "backOutUp",
+        "bounceIn": "bounceIn",
+        "bounceInDown": "bounceInDown",
+        "bounceInLeft": "bounceInLeft",
+        "bounceInRight": "bounceInRight",
+        "bounceInUp": "bounceInUp",
+        "bounceOut": "bounceOut",
+        "bounceOutDown": "bounceOutDown",
+        "bounceOutLeft": "bounceOutLeft",
+        "bounceOutRight": "bounceOutRight",
+        "bounceOutUp": "bounceOutUp",
+        "fadeIn": "fadeIn",
+        "fadeInDown": "fadeInDown",
+        "fadeInDownBig": "fadeInDownBig",
+        "fadeInLeft": "fadeInLeft",
+        "fadeInLeftBig": "fadeInLeftBig",
+        "fadeInRight": "fadeInRight",
+        "fadeInRightBig": "fadeInRightBig",
+        "fadeInUp": "fadeInUp",
+        "fadeInUpBig": "fadeInUpBig",
+        "fadeInTopLeft": "fadeInTopLeft",
+        "fadeInTopRight": "fadeInTopRight",
+        "fadeInBottomLeft": "fadeInBottomLeft",
+        "fadeInBottomRight": "fadeInBottomRight",
+        "fadeOut": "fadeOut",
+        "fadeOutDown": "fadeOutDown",
+        "fadeOutDownBig": "fadeOutDownBig",
+        "fadeOutLeft": "fadeOutLeft",
+        "fadeOutLeftBig": "fadeOutLeftBig",
+        "fadeOutRight": "fadeOutRight",
+        "fadeOutRightBig": "fadeOutRightBig",
+        "fadeOutUp": "fadeOutUp",
+        "fadeOutUpBig": "fadeOutUpBig",
+        "fadeOutTopLeft": "fadeOutTopLeft",
+        "fadeOutTopRight": "fadeOutTopRight",
+        "fadeOutBottomRight": "fadeOutBottomRight",
+        "fadeOutBottomLeft": "fadeOutBottomLeft",
+        "flip": "flip",
+        "flipInX": "flipInX",
+        "flipInY": "flipInY",
+        "flipOutX": "flipOutX",
+        "flipOutY": "flipOutY",
+        "lightSpeedInRight": "lightSpeedInRight",
+        "lightSpeedInLeft": "lightSpeedInLeft",
+        "lightSpeedOutRight": "lightSpeedOutRight",
+        "lightSpeedOutLeft": "lightSpeedOutLeft",
+        "rotateIn": "rotateIn",
+        "rotateInDownLeft": "rotateInDownLeft",
+        "rotateInDownRight": "rotateInDownRight",
+        "rotateInUpLeft": "rotateInUpLeft",
+        "rotateInUpRight": "rotateInUpRight",
+        "rotateOut": "rotateOut",
+        "rotateOutDownLeft": "rotateOutDownLeft",
+        "rotateOutDownRight": "rotateOutDownRight",
+        "rotateOutUpLeft": "rotateOutUpLeft",
+        "rotateOutUpRight": "rotateOutUpRight",
+        "hinge": "hinge",
+        "jackInTheBox": "jackInTheBox",
+        "rollIn": "rollIn",
+        "rollOut": "rollOut",
+        "zoomIn": "zoomIn",
+        "zoomInDown": "zoomInDown",
+        "zoomInLeft": "zoomInLeft",
+        "zoomInRight": "zoomInRight",
+        "zoomInUp": "zoomInUp",
+        "zoomOut": "zoomOut",
+        "zoomOutDown": "zoomOutDown",
+        "zoomOutLeft": "zoomOutLeft",
+        "zoomOutRight": "zoomOutRight",
+        "zoomOutUp": "zoomOutUp",
+        "slideInUp": "slideInUp",
+        "slideInDown": "slideInDown",
+        "slideInLeft": "slideInLeft",
+        "slideInRight": "slideInRight",
+        "slideOutUp": "slideOutUp",
+        "slideOutDown": "slideOutDown",
+        "slideOutLeft": "slideOutLeft",
+        "slideOutRight": "slideOutRight"
+      },
+      "inline": true,
+      "placeholder": "None",
+      "deprecated": true
+    },
+    "_animationDuration": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Animation duration",
+      "type": "select",
+      "searchable": true,
+      "options": {
+        "very-slow": "Very slow",
+        "slow": "Slow",
+        "normal": "Normal",
+        "fast": "Fast",
+        "very-fast": "Very fast",
+        "custom": "Custom"
+      },
+      "inline": true,
+      "hasDynamicData": false,
+      "placeholder": "Normal (1s)",
+      "required": [
+        "_animation",
+        "!=",
+        ""
+      ],
+      "deprecated": true
+    },
+    "_animationDurationCustom": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Animation duration (Custom)",
+      "type": "text",
+      "inline": true,
+      "hasDynamicData": false,
+      "info": "500ms | 1s",
+      "required": [
+        "_animationDuration",
+        "=",
+        "custom"
+      ],
+      "deprecated": true
+    },
+    "_animationDelay": {
+      "tab": "style",
+      "group": "_layout",
+      "label": "Animation delay",
+      "type": "text",
+      "inline": true,
+      "placeholder": 0,
+      "info": "500ms | -2.5s",
+      "required": [
+        "_animation",
+        "!=",
+        ""
+      ],
+      "deprecated": true
+    }
+  },
+  "controlGroups": {
+    "_layout": {
+      "title": "Layout",
+      "tab": "style",
+      "icon": "tab-layout"
+    },
+    "_typography": {
+      "title": "Typography",
+      "tab": "style",
+      "icon": "tab-typography"
+    },
+    "_background": {
+      "title": "Background",
+      "tab": "style",
+      "icon": "tab-background"
+    },
+    "_border": {
+      "title": "Border / Box Shadow",
+      "tab": "style",
+      "icon": "tab-border"
+    },
+    "_gradient": {
+      "title": "Gradient / Overlay",
+      "tab": "style",
+      "icon": "tab-gradient"
+    },
+    "_transform": {
+      "title": "Transform",
+      "tab": "style",
+      "icon": "tab-transform"
+    },
+    "_css": {
+      "title": "CSS",
+      "tab": "style",
+      "icon": "css3"
+    },
+    "_attributes": {
+      "title": "Attributes",
+      "tab": "style",
+      "icon": "html"
+    },
+    "title": {
+      "title": "Title",
+      "tab": "content"
+    },
+    "content": {
+      "title": "Content",
+      "tab": "content"
+    }
+  }
+}

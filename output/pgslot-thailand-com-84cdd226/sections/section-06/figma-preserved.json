@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "rootId": "scope",
+  "sourceHash": "f7d039b07b8f1943e1d504c8be225a69be14619834aefff642346967a57037a8",
+  "frames": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "pgslot-thailand.com (scoped)",
+      "bounds": {
+        "x": -2972,
+        "y": 3628,
+        "width": 1440,
+        "height": 1186
+      },
+      "componentId": null
+    }
+  ],
+  "metadata": {
+    "name": "Online Betting Website 2 (Copy)",
+    "version": "2409797105972294567",
+    "lastModified": "2024-06-12T15:07:49Z",
+    "components": {
+      "250:2": {
+        "key": "d7f10178ba90a6be556e18de3c0ca90650fa8e44",
+        "name": "home",
+        "description": "",
+        "remote": true,
+        "documentationLinks": []
+      }
+    },
+    "componentSets": {},
+    "styles": {
+      "202:11": {
+        "key": "5d659a5c06d22a0518ef32821a3e95091a3fc638",
+        "name": "Linear",
+        "styleType": "FILL",
+        "remote": true,
+        "description": ""
+      }
+    }
+  },
+  "nodes": {
+    "scope": {
+      "parentId": null,
+      "childIds": [
+        "202:26"
+      ],
+      "name": "pgslot-thailand.com (scoped)",
+      "type": "FRAME",
+      "absoluteBoundingBox": {
+        "x": -2972,
+        "y": 3628,
+        "width": 1440,
+        "height": 1186
+      },
+      "effectiveVisible": true
+    },
+    "202:26": {
+      "parentId": "scope",
+      "childIds": [],
+      "name": "Rectangle 5741",
+      "type": "RECTANGLE",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2972,
+        "y": 3628,
+        "width": 1440,
+        "height": 1186
+      },
+      "absoluteRenderBounds": {
+        "x": -2972,
+        "y": 3628,
+        "width": 1440,
+        "height": 1186
+      },
+      "size": {
+        "x": 1440,
+        "y": 1186
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1291
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.15833333134651184,
+            "g": 0.04618055373430252,
+            "b": 0.07733409106731415,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    }
+  }
+}

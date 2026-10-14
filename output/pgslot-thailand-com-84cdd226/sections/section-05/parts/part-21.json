@@ -1,0 +1,42 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "text",
+      "id": "bonuses-and-rewards",
+      "figmaNodeId": "202:396",
+      "text": "Bonuses and Rewards",
+      "typography": {
+        "fontFamily": "Inter",
+        "fontSize": 24,
+        "fontWeight": 600,
+        "lineHeight": "33px",
+        "color": "#FFFFFF"
+      },
+      "figma": {
+        "constraints": {
+          "vertical": "TOP",
+          "horizontal": "LEFT"
+        },
+        "strokeWeight": 1,
+        "strokeAlign": "OUTSIDE",
+        "fills": [
+          {
+            "t": "SOLID",
+            "c": "#FFFFFF"
+          }
+        ],
+        "style": {
+          "fontFamily": "Inter",
+          "fontSize": 24,
+          "fontWeight": 600,
+          "textAlignHorizontal": "CENTER",
+          "lineHeight": "33px"
+        }
+      }
+    }
+  ],
+  "_uncertain": [
+    "bonuses-and-rewards: dropped unknown field \"typography.textAlignHorizontal\""
+  ]
+}

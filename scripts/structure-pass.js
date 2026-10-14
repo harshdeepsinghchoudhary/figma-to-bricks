@@ -15,6 +15,7 @@
 import { findPanels } from "./decoration-detect.js";
 import { applyStructureRules, buildFigmaIndex } from "./structure-rules.js";
 const isNum = (v) => typeof v === "number" && isFinite(v);
+import { hasLayoutBoundary } from "./layout-boundaries.js";
 const LEAF = new Set(["heading", "text", "text-basic", "button", "image", "icon", "unsupported", "spacer"]);
 const hex = (c) => "#" + [c.r, c.g, c.b].map((v) => Math.round(v * 255).toString(16).padStart(2, "0")).join("").toUpperCase();
 
@@ -127,7 +128,7 @@ export function structurePass(input, { figmaRoot = null, manifest = [], enable =
   }
 
   // ---------- 2 + 3 ----------
-  const plain = (n) => n.layout && !n.background && !n._bgImage && !n._relative && !n._fullBleed && !n.border && !n.size && !(n.notes || []).length
+  const plain = (n) => !hasLayoutBoundary(n) && n.layout && !n.background && !n._bgImage && !n._relative && !n._fullBleed && !n.border && !n.size && !(n.notes || []).length
     && !n.layout.padding && !n.layout.margin && !n.layout.justify;
   function visit(n, parent) {
     n.children = (n.children || []).map((c) => visit(c, n));

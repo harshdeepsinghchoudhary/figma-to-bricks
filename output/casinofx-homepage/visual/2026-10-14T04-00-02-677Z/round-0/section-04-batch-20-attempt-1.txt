@@ -1,0 +1,37 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "elementId": "i0k8i4",
+      "description": "The right padding is set to 121px, which is significantly larger than the 20px padding on the other sides, causing the content to be misaligned and not filling the container width as intended in the Figma design."
+    },
+    {
+      "severity": "medium",
+      "elementId": "i0k8i4",
+      "description": "The tablet portrait right padding is set to 40px, which is inconsistent with the 20px padding used on other sides and breakpoints."
+    }
+  ],
+  "patches": [
+    {
+      "op": "settings",
+      "id": "i0k8i4",
+      "set": {
+        "_padding": {
+          "top": "21",
+          "right": "20",
+          "bottom": "20",
+          "left": "20"
+        }
+      }
+    },
+    {
+      "op": "settings",
+      "id": "i0k8i4",
+      "set": {
+        "_padding:tablet_portrait": {
+          "right": "20"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "elementId": "jprgf0",
+      "description": "The main content container (jprgf0) is set to flex-direction: column, causing the left content block and the right image block to stack vertically. In the Figma design, they are arranged side-by-side (horizontal layout)."
+    },
+    {
+      "severity": "medium",
+      "elementId": "jprgf0",
+      "description": "The container (jprgf0) is missing a horizontal gap (column gap) between the two main columns, which is present in the Figma design."
+    }
+  ],
+  "patches": [
+    {
+      "op": "settings",
+      "id": "jprgf0",
+      "set": {
+        "_direction": "row",
+        "_columnGap": "50"
+      }
+    }
+  ]
+}

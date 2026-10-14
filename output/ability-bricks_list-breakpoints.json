@@ -1,0 +1,62 @@
+{
+  "name": "bricks/list-breakpoints",
+  "label": "List Bricks breakpoints",
+  "description": "Read the site's responsive breakpoints. Returns `{ baseKey, baseWidth, customEnabled, isMobileFirst, breakpoints, defaults }`, with `breakpoints` sorted by width for the active paradigm. `customEnabled` reflects the `customBreakpoints` master toggle.",
+  "input_schema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "customEnabled": {
+        "type": "boolean",
+        "description": "Whether the site is using custom breakpoints instead of Bricks defaults. Writable through `bricks/set-breakpoints` via `customEnabled`, not through `bricks/set-global-settings`."
+      },
+      "isMobileFirst": {
+        "type": "boolean",
+        "description": "True when the smallest breakpoint is the `base`. CSS is emitted with min-width rules."
+      },
+      "baseKey": {
+        "type": "string",
+        "description": "Key of the base breakpoint."
+      },
+      "baseWidth": {
+        "type": "integer",
+        "description": "Width in pixels of the base breakpoint."
+      },
+      "breakpoints": {
+        "type": "array",
+        "description": "All breakpoints, sorted by width according to the active paradigm. Each row has { key, label, width, icon, base? }."
+      },
+      "defaults": {
+        "type": "array",
+        "description": "The built-in default breakpoints (reference for reset operations)."
+      },
+      "breakpointOwnership": {
+        "type": "object"
+      },
+      "globalSettingsOwnership": {
+        "type": "object"
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

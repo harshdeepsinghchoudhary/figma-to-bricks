@@ -1,0 +1,48 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "section-1",
+      "children": [
+        {
+          "type": "row",
+          "id": "frame-29",
+          "figmaNodeId": "202:44",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 10,
+            "padding": {
+              "top": 14,
+              "right": 30,
+              "bottom": 14,
+              "left": 30
+            }
+          },
+          "border": {
+            "radius": 4
+          },
+          "background": {
+            "gradient": {
+              "angle": 90,
+              "stops": [
+                {
+                  "color": "#F5CB6A",
+                  "position": 0
+                },
+                {
+                  "color": "#BA8C30",
+                  "position": 100
+                }
+              ]
+            }
+          },
+          "notes": [
+            "strokeWeight 1, strokeAlign inside"
+          ]
+        }
+      ]
+    }
+  ]
+}

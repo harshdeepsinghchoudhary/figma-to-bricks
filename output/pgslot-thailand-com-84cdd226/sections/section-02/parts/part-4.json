@@ -1,0 +1,46 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "page-slot-thailand-part-4",
+      "children": [
+        {
+          "type": "button",
+          "id": "login",
+          "figmaNodeId": "202:17",
+          "text": "Login",
+          "figma": {
+            "id": "202:17",
+            "name": "Login",
+            "type": "TEXT",
+            "box": [
+              -1985,
+              2370,
+              43,
+              19
+            ],
+            "fills": [
+              {
+                "t": "SOLID",
+                "c": "#FFFFFF"
+              }
+            ]
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 500,
+            "lineHeight": "19.36px",
+            "color": "#FFFFFF",
+            "align": "left"
+          },
+          "size": {
+            "width": 43,
+            "height": 19
+          }
+        }
+      ]
+    }
+  ]
+}

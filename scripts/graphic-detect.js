@@ -24,6 +24,22 @@ export function hasImageFill(node) {
   return (node.fills || []).some((f) => f.type === "IMAGE" && f.visible !== false);
 }
 
+// A clipping mask has no standalone artwork. Export its text-free image group
+// as a composite, retaining the shape/crop instead of exporting an invisible mask.
+function maskedImageGraphic(node) {
+  const children = (node.children || []).filter(c => c.visible !== false);
+  if (!CONTAINERS.has(node.type) || !children.some(c => c.isMask) || children.length < 2) return false;
+  let images = 0;
+  function drawable(n) {
+    if (n.visible === false) return true;
+    if (n.type === "TEXT") return false;
+    if (hasImageFill(n)) images++;
+    if (!VECTOR_TYPES.has(n.type) && !PLAIN_TYPES.has(n.type) && !CONTAINERS.has(n.type)) return false;
+    return (n.children || []).every(drawable);
+  }
+  return children.every(drawable) && images > 0;
+}
+
 // returns { ok, vectors } for the subtree: ok=true means "pure graphic material so far"
 function graphicInfo(node) {
   if (node.visible === false) return { ok: true, vectors: 0, rects: 0 };
@@ -47,13 +63,21 @@ function graphicInfo(node) {
  */
 export function isGraphicNode(node) {
   const box = node.absoluteBoundingBox;
-  if (!box || node.type === "TEXT" || hasImageFill(node)) return { isGraphic: false, vectors: 0 };
+  if (!box || node.type === "TEXT" || node.isMask || hasImageFill(node)) return { isGraphic: false, vectors: 0 };
+  if (box.width > 0 && box.height > 0 && maskedImageGraphic(node)) return { isGraphic: true, vectors: 0, masked: true, format: "png" };
   const longest = Math.max(box.width, box.height);
   const shortest = Math.min(box.width, box.height);
   const g = graphicInfo(node);
   // Bigger than MAX_GRAPHIC is layout - unless it is nothing but vector shapes (a curve line across the page, a wave): there is no
   // layout inside it to look at, and walking into it exported only its 20px end dots and dropped the curve itself.
-  const sizeOk = longest <= MAX_GRAPHIC || (g.rects === 0 && longest <= MAX_PURE_VECTOR);
-  const isGraphic = g.ok && g.vectors > 0 && sizeOk && longest >= MIN_SIDE && shortest >= 2;
+  // A leaf vector has no layout to reconstruct. Never discard it because it is a
+  // very large illustration or a thin divider; preserve its export at the source.
+  const leafVector = VECTOR_TYPES.has(node.type) && !(node.children || []).length;
+  const sizeOk = leafVector || longest <= MAX_GRAPHIC || (g.rects === 0 && longest <= MAX_PURE_VECTOR);
+  const visibleStroke = finitePositive(node.strokeWeight) && (node.strokes || []).some((paint) => paint.visible !== false);
+  const drawable = leafVector ? longest > 0 && (shortest > 0 || visibleStroke) : longest >= MIN_SIDE && shortest >= 2;
+  const isGraphic = g.ok && g.vectors > 0 && sizeOk && drawable;
   return { isGraphic, vectors: g.vectors };
 }
+
+const finitePositive = (value) => typeof value === "number" && Number.isFinite(value) && value > 0;

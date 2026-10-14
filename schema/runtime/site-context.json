@@ -1,0 +1,1241 @@
+{
+  "site": "https://casinodesign.bcit.in",
+  "fetchedAt": "2026-10-14T05:28:23.400Z",
+  "version": {
+    "bricksVersion": "2.4.2",
+    "bricksAbilitiesVersion": "2.0.0",
+    "adapterVersion": "0.6.1",
+    "wordpressVersion": "7.1.3",
+    "abilitiesApiActive": true,
+    "disabledAbilityCount": 45,
+    "adminDisabledAbilityCount": 40,
+    "defaultDisabledAbilityCount": 5
+  },
+  "breakpoints": {
+    "customEnabled": true,
+    "isMobileFirst": false,
+    "baseKey": "desktop",
+    "baseWidth": 1279,
+    "breakpoints": [
+      {
+        "base": true,
+        "key": "desktop",
+        "label": "Desktop",
+        "width": 1279,
+        "icon": "laptop"
+      },
+      {
+        "key": "tablet_portrait",
+        "label": "Tablet portrait",
+        "width": 1024,
+        "icon": "tablet-portrait",
+        "edited": true
+      },
+      {
+        "key": "mobile_landscape",
+        "label": "Mobile landscape",
+        "width": 767,
+        "icon": "phone-landscape"
+      },
+      {
+        "key": "mobile_portrait",
+        "label": "Mobile portrait",
+        "width": 478,
+        "icon": "phone-portrait"
+      }
+    ],
+    "defaults": [
+      {
+        "base": true,
+        "key": "desktop",
+        "label": "Desktop",
+        "width": 1279,
+        "icon": "laptop"
+      },
+      {
+        "key": "tablet_portrait",
+        "label": "Tablet portrait",
+        "width": 991,
+        "icon": "tablet-portrait"
+      },
+      {
+        "key": "mobile_landscape",
+        "label": "Mobile landscape",
+        "width": 767,
+        "icon": "phone-landscape"
+      },
+      {
+        "key": "mobile_portrait",
+        "label": "Mobile portrait",
+        "width": 478,
+        "icon": "phone-portrait"
+      }
+    ],
+    "breakpointOwnership": {
+      "resource": "breakpoints",
+      "siteId": 1,
+      "version": 2,
+      "resourceDigest": "df94d10fb3bd6fb588376e3397102195f9213638cc9b02c04382aa77fad0ef00"
+    },
+    "globalSettingsOwnership": {
+      "resource": "globalSettings",
+      "siteId": 1,
+      "version": 2,
+      "resourceDigest": "d165fc202272f620468cbf21faa3d8d78b081ac1a6d6ad03893bff6225cb9d3a"
+    }
+  },
+  "abilities": {
+    "abilities": [
+      {
+        "name": "bricks/list-element-types",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-element-schema",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-query-loop-types",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-dynamic-tag",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-dynamic-data-tags",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-builder-guide",
+        "category": "bricks-reference",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-page-structure",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-page-elements",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-page-elements",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/add-element",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-element",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/batch-update-elements",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/remove-element",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-page-settings",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-page-settings",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/find-post",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/render-elements",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/checkout-site-repository",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/resolve-agent-file",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/convert-html-css-to-bricks-data",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-html-css-page-import",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/commit-site-foundation",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/commit-html-css-page-import",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/checkout-page-workspace",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-page-workspace",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/apply-page-workspace",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/checkout-design-resource-workspace",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-design-resource-workspace",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/apply-design-resource-workspace",
+        "category": "bricks-design",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/commit-exact-site-edits",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/checkout-site-edit-map",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-site-edit-plan",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/commit-site-edit-plan",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/checkout-site-changeset",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/preview-site-changeset",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/apply-site-changeset",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/resume-site-changeset",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/commit-agent-file",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/resolve-site-changeset",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/apply-html-css-page-import",
+        "category": "bricks-elements",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-templates",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-template",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-template",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-template",
+        "category": "bricks-templates",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-template-settings",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-template-settings",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-template-conditions",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-template-sources",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-remote-templates",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/insert-template",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/insert-remote-template",
+        "category": "bricks-templates",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-design-context",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-color-palettes",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-color",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-color",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-color-palette",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-color-palette",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-color",
+        "category": "bricks-design",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-color-palette",
+        "category": "bricks-design",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-global-classes",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-global-class",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/batch-create-global-classes",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-global-class",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-global-class",
+        "category": "bricks-design",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-theme-styles",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-theme-styles",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-theme-style",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-theme-style",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-theme-style",
+        "category": "bricks-design",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-components",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-component",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-component",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-component",
+        "category": "bricks-design",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-component",
+        "category": "bricks-design",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/extract-component-from-elements",
+        "category": "bricks-design",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-global-variables",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-global-variables",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-global-variable-categories",
+        "category": "bricks-design",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-global-variable",
+        "category": "bricks-design",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/generate-scale-variables",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/audit-design-system",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/generate-color-shades",
+        "category": "bricks-design",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-post",
+        "category": "bricks-content",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/duplicate-post",
+        "category": "bricks-content",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-post",
+        "category": "bricks-content",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-revisions",
+        "category": "bricks-revisions",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-revision",
+        "category": "bricks-revisions",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/restore-revision",
+        "category": "bricks-revisions",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/upload-media",
+        "category": "bricks-media",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/find-media",
+        "category": "bricks-media",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-media",
+        "category": "bricks-media",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-mcp-version",
+        "category": "bricks-meta",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-ability-status",
+        "category": "bricks-meta",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/start-here",
+        "category": "bricks-meta",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-cms-sources",
+        "category": "bricks-cms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-reading-settings",
+        "category": "bricks-cms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-reading-settings",
+        "category": "bricks-cms",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-nav-menus",
+        "category": "bricks-navigation",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-nav-menu",
+        "category": "bricks-navigation",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/save-nav-menu",
+        "category": "bricks-navigation",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-nav-menu-items",
+        "category": "bricks-navigation",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-nav-menu",
+        "category": "bricks-navigation",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-form-config",
+        "category": "bricks-forms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-form-fields",
+        "category": "bricks-forms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-form-actions",
+        "category": "bricks-forms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-form-submissions",
+        "category": "bricks-forms",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-query-filters",
+        "category": "bricks-filters",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-filter-element",
+        "category": "bricks-filters",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-filter-element",
+        "category": "bricks-filters",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-filter-target-query",
+        "category": "bricks-filters",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/reindex-filters",
+        "category": "bricks-filters",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-popups",
+        "category": "bricks-popups",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-popup-config",
+        "category": "bricks-popups",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-popup-settings",
+        "category": "bricks-popups",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-element-interactions",
+        "category": "bricks-interactions",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-element-interactions",
+        "category": "bricks-interactions",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-element-conditions",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-element-conditions",
+        "category": "bricks-elements",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-settings-schema",
+        "category": "bricks-settings",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-credential-status",
+        "category": "bricks-settings",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-global-settings",
+        "category": "bricks-settings",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-global-settings",
+        "category": "bricks-settings",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-woo-setup-status",
+        "category": "bricks-woocommerce",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/plan-woo-setup",
+        "category": "bricks-woocommerce",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/run-woo-setup",
+        "category": "bricks-woocommerce",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-woo-setup-options",
+        "category": "bricks-woocommerce",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-woo-setup-options",
+        "category": "bricks-woocommerce",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-builder-permissions",
+        "category": "bricks-permissions",
+        "enabled": false,
+        "defaultEnabled": false
+      },
+      {
+        "name": "bricks/upsert-builder-capability",
+        "category": "bricks-permissions",
+        "enabled": false,
+        "defaultEnabled": false
+      },
+      {
+        "name": "bricks/set-builder-role-access",
+        "category": "bricks-permissions",
+        "enabled": false,
+        "defaultEnabled": false
+      },
+      {
+        "name": "bricks/delete-builder-capability",
+        "category": "bricks-permissions",
+        "enabled": false,
+        "defaultEnabled": false
+      },
+      {
+        "name": "bricks/list-breakpoints",
+        "category": "bricks-breakpoints",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-breakpoints",
+        "category": "bricks-breakpoints",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-global-queries",
+        "category": "bricks-queries",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-global-query",
+        "category": "bricks-queries",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-global-query",
+        "category": "bricks-queries",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-global-query",
+        "category": "bricks-queries",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-global-query",
+        "category": "bricks-queries",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-global-query-category",
+        "category": "bricks-queries",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-global-query-category",
+        "category": "bricks-queries",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-sidebars",
+        "category": "bricks-sidebars",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-sidebar",
+        "category": "bricks-sidebars",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-sidebar",
+        "category": "bricks-sidebars",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-sidebar",
+        "category": "bricks-sidebars",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-custom-fonts",
+        "category": "bricks-fonts",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-custom-font",
+        "category": "bricks-fonts",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-custom-font",
+        "category": "bricks-fonts",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/update-custom-font",
+        "category": "bricks-fonts",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-custom-font",
+        "category": "bricks-fonts",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/upload-custom-font-file",
+        "category": "bricks-fonts",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-icon-sets",
+        "category": "bricks-icons",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-disabled-icon-sets",
+        "category": "bricks-icons",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-custom-icons",
+        "category": "bricks-icons",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/upload-custom-icon",
+        "category": "bricks-icons",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-custom-icon",
+        "category": "bricks-icons",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/create-custom-icon-set",
+        "category": "bricks-icons",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/delete-custom-icon-set",
+        "category": "bricks-icons",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-pseudo-classes",
+        "category": "bricks-pseudo-classes",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-pseudo-classes",
+        "category": "bricks-pseudo-classes",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-style-manager",
+        "category": "bricks-style-manager",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/set-style-manager",
+        "category": "bricks-style-manager",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/regenerate-css-files",
+        "category": "bricks-maintenance",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/list-orphaned-elements",
+        "category": "bricks-maintenance",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/cleanup-orphaned-elements",
+        "category": "bricks-maintenance",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/execute-php",
+        "category": "bricks-system",
+        "enabled": false,
+        "defaultEnabled": false
+      },
+      {
+        "name": "bricks/list-transfer-items",
+        "category": "bricks-import-export",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/export-transfer-package",
+        "category": "bricks-import-export",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/inspect-transfer-package",
+        "category": "bricks-import-export",
+        "enabled": true,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/import-transfer-package",
+        "category": "bricks-import-export",
+        "enabled": false,
+        "defaultEnabled": true
+      },
+      {
+        "name": "bricks/get-system-information",
+        "category": "bricks-system",
+        "enabled": true,
+        "defaultEnabled": true
+      }
+    ],
+    "responseFormat": "summary",
+    "returned": 170,
+    "total": 170,
+    "enabled": 125,
+    "disabled": 45
+  },
+  "registeredElements": [
+    "container",
+    "section",
+    "block",
+    "div",
+    "slot",
+    "heading",
+    "text-basic",
+    "text",
+    "text-link",
+    "button",
+    "icon",
+    "image",
+    "video",
+    "nav-nested",
+    "dropdown",
+    "offcanvas",
+    "toggle",
+    "toggle-mode",
+    "divider",
+    "icon-box",
+    "social-icons",
+    "list",
+    "accordion",
+    "accordion-nested",
+    "tabs",
+    "tabs-nested",
+    "form",
+    "map",
+    "map-leaflet",
+    "map-connector",
+    "alert",
+    "animated-typing",
+    "countdown",
+    "counter",
+    "pricing-tables",
+    "progress-bar",
+    "pie-chart",
+    "team-members",
+    "testimonials",
+    "html",
+    "code",
+    "template",
+    "logo",
+    "facebook-page",
+    "breadcrumbs",
+    "rating",
+    "back-to-top",
+    "image-gallery",
+    "audio",
+    "file",
+    "carousel",
+    "slider",
+    "slider-nested",
+    "svg",
+    "instagram-feed",
+    "pagination",
+    "query-results-summary",
+    "wordpress",
+    "posts",
+    "nav-menu",
+    "sidebar",
+    "search",
+    "shortcode",
+    "post-title",
+    "post-excerpt",
+    "post-meta",
+    "post-content",
+    "post-sharing",
+    "related-posts",
+    "post-author",
+    "post-comments",
+    "post-taxonomy",
+    "post-navigation",
+    "post-reading-time",
+    "post-reading-progress-bar",
+    "post-toc",
+    "maxmegamenu-location",
+    "custom-title"
+  ],
+  "designSystem": {
+    "counts": {
+      "colorPalettes": 1,
+      "colors": 18,
+      "globalClasses": 4,
+      "themeStyles": 6,
+      "components": 0,
+      "globalVariables": 2,
+      "variableCategories": 1
+    },
+    "globalClasses": [
+      {
+        "id": "hybkja",
+        "name": "theme-blue"
+      },
+      {
+        "id": "eidemy",
+        "name": "theme-green"
+      },
+      {
+        "id": "erzgac",
+        "name": "theme-yellow"
+      },
+      {
+        "id": "ivfgha",
+        "name": "theme-orange"
+      }
+    ],
+    "globalVariables": [
+      {
+        "id": "jbpaer",
+        "name": "W-full",
+        "value": "100%",
+        "category": "qmtwkc"
+      },
+      {
+        "id": "qgazjj",
+        "name": "px-4",
+        "value": "16px",
+        "category": "qmtwkc"
+      }
+    ],
+    "components": [],
+    "truncated": {}
+  }
+}

@@ -148,6 +148,7 @@ function node(script, a, live = false) {
 const failed = [];
 const failedNames = new Set();
 const split = opt("split", "4600");
+const normalizationMode = flag("deterministic") || process.env.NORMALIZE_MODE === "deterministic" ? "deterministic" : "ai";
 let merged = false;
 fs.writeFileSync(path.join(frameDir, "build-report.json"), JSON.stringify({ status: "running", merged: false }));
 for (const s of sections) {
@@ -156,8 +157,9 @@ for (const s of sections) {
   const sourceHash = createHash("sha256").update(JSON.stringify(top.find((n) => n.id === s.id))).digest("hex");
   const metaPath = path.join(dir, "normalized-source.json");
   let cachedHash = null;
-  if (fs.existsSync(metaPath)) { try { cachedHash = JSON.parse(fs.readFileSync(metaPath, "utf8")).hash; } catch {} }
-  const changed = cachedHash && cachedHash !== sourceHash;
+  let cachedMode = null;
+  if (fs.existsSync(metaPath)) { try { const metadata = JSON.parse(fs.readFileSync(metaPath, "utf8")); cachedHash = metadata.hash; cachedMode = metadata.mode; } catch {} }
+  const changed = (cachedHash && cachedHash !== sourceHash) || (isDone(s) && ((cachedMode && cachedMode !== normalizationMode) || (normalizationMode === "deterministic" && !cachedMode)));
   if (changed) console.log(`\n--- ${s.name}: Figma input changed, rebuilding normalization.`);
   if (!isDone(s) || flag("force") || changed) {
     // --force means redo: saved parts would otherwise be reused by --resume, and they were answered for the old input
@@ -166,12 +168,12 @@ for (const s of sections) {
       if (!partsPath.startsWith(sectionRoot)) throw new Error("Parts path is outside the section workspace.");
       fs.rmSync(partsPath, { recursive: true, force: true }); console.log(`\n--- ${s.name}: removed saved parts (--force)`);
     }
-    const ok = node("2_normalize.js", [frameDir, `--nodes=${s.id}`, `--name=${s.name}`, `--split=${split}`, "--resume"], true);
+    const ok = node("2_normalize.js", [frameDir, `--nodes=${s.id}`, `--name=${s.name}`, `--split=${split}`, "--resume", ...(flag("deterministic") ? ["--deterministic"] : [])], true);
     if (!ok || !isDone(s)) { failedNames.add(s.name); failed.push(`${s.name} (${s.id}): model step failed, section left out - re-run the same command to retry it, or add --skip=${s.name} to leave it out on purpose`); continue; }
   } else {
     console.log(`\n--- ${s.name}: already normalized, skipping the model step (use --force to redo)`);
   }
-  fs.writeFileSync(metaPath, JSON.stringify({ hash: sourceHash, figmaNodeId: s.id }, null, 2));
+  fs.writeFileSync(metaPath, JSON.stringify({ hash: sourceHash, figmaNodeId: s.id, mode: normalizationMode }, null, 2));
   if (!node("3_compile_bricks.js", [dir])) { failedNames.add(s.name); failed.push(`${s.name} (${s.id}): compile failed`); }
   else {
     // The compile step lists Figma text that never made it into the section. A few lost texts (a nav bar, a card body) mean the model

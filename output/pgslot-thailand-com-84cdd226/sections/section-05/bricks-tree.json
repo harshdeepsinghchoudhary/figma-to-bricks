@@ -1,0 +1,507 @@
+[
+  {
+    "id": "ya9swn",
+    "name": "heading",
+    "parent": "j0ag8w",
+    "children": [],
+    "settings": {
+      "text": "3 Benefits To Play PG Slot Games",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "g42uyt",
+    "name": "image",
+    "parent": "5ylfbn",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/shield-12902009-1-202_386.png",
+        "url": "../../assets/shield-12902009-1-202_386.png"
+      },
+      "_width": "100%",
+      "_widthMax": "85px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "fwo553",
+    "name": "heading",
+    "parent": "5ylfbn",
+    "children": [],
+    "settings": {
+      "text": "Accessibility and Convenience",
+      "tag": "h3",
+      "_margin": {
+        "top": "26"
+      },
+      "_width": "100%",
+      "_widthMax": "222px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "33px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "tvb5qu",
+    "name": "text-basic",
+    "parent": "5ylfbn",
+    "children": [],
+    "settings": {
+      "text": "Lorem Ipsum is simply dummy the printing and typesetting ",
+      "_margin": {
+        "top": "14"
+      },
+      "_width": "100%",
+      "_widthMax": "292px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "5ylfbn",
+    "name": "div",
+    "parent": "j5t9ut",
+    "children": [
+      "g42uyt",
+      "fwo553",
+      "tvb5qu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "50",
+        "right": "30",
+        "bottom": "30",
+        "left": "31"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "180",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#1A070C"
+            },
+            "stop": "20%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#611530"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#B12255"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      }
+    }
+  },
+  {
+    "id": "3b97ih",
+    "name": "image",
+    "parent": "oulyxq",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/gamepad-1729243-1-202_392.png",
+        "url": "../../assets/gamepad-1729243-1-202_392.png"
+      },
+      "_width": "100%",
+      "_widthMax": "85px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "qavd4h",
+    "name": "heading",
+    "parent": "oulyxq",
+    "children": [],
+    "settings": {
+      "text": "Variety of Games",
+      "tag": "h3",
+      "_margin": {
+        "top": "30"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "33px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "lmllls",
+    "name": "text-basic",
+    "parent": "oulyxq",
+    "children": [],
+    "settings": {
+      "text": "Lorem Ipsum is simply dummy the printing and typesetting ",
+      "_display": "block",
+      "_margin": {
+        "top": "14"
+      },
+      "_width": "100%",
+      "_widthMax": "292px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "oulyxq",
+    "name": "div",
+    "parent": "j5t9ut",
+    "children": [
+      "3b97ih",
+      "qavd4h",
+      "lmllls"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "50",
+        "right": "30",
+        "bottom": "59",
+        "left": "31"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "180",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#1A070C"
+            },
+            "stop": "20%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#611530"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#B12255"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      }
+    }
+  },
+  {
+    "id": "r502bk",
+    "name": "image",
+    "parent": "0pgws5",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/first-prize-3188620-1-202_398.png",
+        "url": "../../assets/first-prize-3188620-1-202_398.png"
+      },
+      "_width": "100%",
+      "_widthMax": "85px",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      },
+      "_boxShadow": {
+        "color": {
+          "raw": "#00000000"
+        },
+        "values": {
+          "blur": "0",
+          "offsetX": "0",
+          "offsetY": "0",
+          "spread": "0"
+        }
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "jc9naw",
+    "name": "heading",
+    "parent": "0pgws5",
+    "children": [],
+    "settings": {
+      "text": "Bonuses and Rewards",
+      "tag": "h3",
+      "_margin": {
+        "top": "26"
+      },
+      "_width": "100%",
+      "_widthMax": "222px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "33px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "d7z9fq",
+    "name": "text",
+    "parent": "0pgws5",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy the printing and typesetting </p>",
+      "_margin": {
+        "top": "14"
+      },
+      "_width": "100%",
+      "_widthMax": "292px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "0pgws5",
+    "name": "div",
+    "parent": "j5t9ut",
+    "children": [
+      "r502bk",
+      "jc9naw",
+      "d7z9fq"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "50",
+        "right": "30",
+        "bottom": "30",
+        "left": "31"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "180",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#1A070C"
+            },
+            "stop": "20%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#611530"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#B12255"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      }
+    }
+  },
+  {
+    "id": "j5t9ut",
+    "name": "div",
+    "parent": "j0ag8w",
+    "children": [
+      "5ylfbn",
+      "oulyxq",
+      "0pgws5"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(3, 1fr)",
+      "_gridGap": "30",
+      "_alignItemsGrid": "stretch",
+      "_width": "100%",
+      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
+      "_gridGap:tablet_portrait": "30",
+      "_gridTemplateColumns:mobile_portrait": "1fr"
+    }
+  },
+  {
+    "id": "j0ag8w",
+    "name": "div",
+    "parent": "ttz5lg",
+    "children": [
+      "ya9swn",
+      "j5t9ut"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "44",
+      "_columnGap": "44",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    }
+  },
+  {
+    "id": "ttz5lg",
+    "name": "container",
+    "parent": "c8yj9r",
+    "children": [
+      "j0ag8w"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1119px"
+    }
+  },
+  {
+    "id": "c8yj9r",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "ttz5lg"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#1A070C"
+        }
+      }
+    }
+  }
+]

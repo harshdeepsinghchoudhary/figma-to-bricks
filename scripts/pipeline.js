@@ -1,4 +1,4 @@
-/** Resumable Figma -> Bricks pipeline; visual QA and complete builds gate injection. */
+/** Resumable Figma -> Bricks pipeline. Only nonvisual validation gates injection. */
 import "dotenv/config";
 import { spawn } from "node:child_process";
 import fs from "node:fs";
@@ -9,7 +9,7 @@ const valued = new Set(["--page", "--title", "--frame", "--only", "--split", "--
 const val = (name) => { const i = args.indexOf(name); if (i >= 0) { if (!args[i + 1] || args[i + 1].startsWith("--")) throw new Error(`${name} needs a value`); return args[i + 1]; } return args.find((a) => a.startsWith(name + "="))?.slice(name.length + 1); };
 const has = (name) => args.includes(name);
 const url = args.find((a, i) => !a.startsWith("--") && !valued.has(args[i - 1]));
-const allowed = new Set([...valued, "--refresh", "--no-inject", "--inject-partial", "--strict", "--force", "--keep-duplicates", "--no-dataset", "--no-visual", "--visual-review-only"]);
+const allowed = new Set([...valued, "--refresh", "--no-inject", "--inject-partial", "--strict", "--force", "--keep-duplicates", "--no-dataset", "--no-visual", "--visual-review-only", "--deterministic"]);
 const stamp = new Date().toISOString().replace(/[:.]/g, "-");
 const steps = [], state = { figmaUrl: url || null, frameDir: null, postId: null, startedAt: new Date().toISOString() };
 let runDir, logFile, pendingLog = "";
@@ -29,8 +29,9 @@ function run(label, script, argv) {
 }
 async function main() {
   for (const arg of args.filter((a) => a.startsWith("--"))) if (!allowed.has(arg.split("=")[0])) throw new Error(`Unknown option ${arg}`);
+  if (has("--visual-review-only") || val("--visual-iterations")) throw new Error('Visual debugging is manual only. Use npm run visual with --only, --problem and --page-url after inspecting the frontend.');
   let frameDir = val("--frame");
-  if (!url && !frameDir) throw new Error('Usage: npm run pipeline -- "<figma-url>" [--page <id>] [--no-inject] [--no-visual]');
+  if (!url && !frameDir) throw new Error('Usage: npm run pipeline -- "<figma-url>" [--page <id>] [--no-inject] [--deterministic]');
   if (val("--page") && (!/^\d+$/.test(val("--page")) || Number(val("--page")) < 1)) throw new Error("--page must be a positive numeric post ID.");
   if (has("--strict") && has("--inject-partial")) throw new Error("--strict and --inject-partial cannot be combined.");
   if (!frameDir) {
@@ -46,7 +47,7 @@ async function main() {
   if (url) fs.writeFileSync(path.join(frameDir, "source.json"), JSON.stringify({ figmaUrl: url, extractedAt: new Date().toISOString() }, null, 2));
   log(`Frame folder: ${frameDir}`);
   const sectionArgs = [frameDir];
-  for (const name of ["--force", "--keep-duplicates"]) if (has(name)) sectionArgs.push(name);
+  for (const name of ["--force", "--keep-duplicates", "--deterministic"]) if (has(name)) sectionArgs.push(name);
   for (const name of ["--only", "--split", "--skip"]) if (val(name)) sectionArgs.push(`${name}=${val(name)}`);
   const reportFile = path.join(frameDir, "build-report.json");
   // A failed child must not inherit a previous successful build report.
@@ -56,22 +57,12 @@ async function main() {
   if (!buildReport.merged) throw new Error("This run did not produce a merge; old merged output will not be injected.");
   const mergedDir = path.join(frameDir, "merged"), mergedTree = path.join(mergedDir, "bricks-tree.json");
   if ((await run("validate merged tree", "bricks-validator.js", [mergedTree])).code) throw new Error("Merged tree failed structural validation.");
-  let visualFailed = false;
-  let providerWaiting = false;
-  if (!has("--no-visual")) {
-    const visualArgs = [frameDir, `--iterations=${val("--visual-iterations") || 2}`];
-    if (!has("--visual-review-only")) visualArgs.push("--fix");
-    const reviewed = await run("visual screenshot review", "6_visual_review.js", visualArgs);
-    visualFailed = reviewed.code !== 0;
-    providerWaiting = reviewed.code === 75;
-    if (providerWaiting) state.status = "waiting-for-provider";
-    // Corrections can be retained even if other issues still need review; always refresh the template.
-    if ((await run("wrap reviewed tree", "wrap-template.js", [mergedDir, val("--title") || `${path.basename(frameDir)} page`])).code) throw new Error("Reviewed template wrap failed.");
-  } else log("Visual review explicitly skipped (--no-visual).");
-  let failed = !!build.code || visualFailed;
-  const blocked = visualFailed || (build.code && !has("--inject-partial"));
+  if ((await run("validate native settings and assets", "validate-build.js", [mergedTree])).code) throw new Error("Merged build failed nonvisual schema/asset validation.");
+  state.visualDebugging = "manual-only; never invoked by the pipeline";
+  let failed = !!build.code;
+  const blocked = build.code && !has("--inject-partial");
   if (has("--no-inject")) log("WordPress injection skipped (--no-inject).");
-  else if (blocked) log("WordPress injection stopped because build/visual QA has unresolved failures.");
+  else if (blocked) log("WordPress injection stopped because this build has unresolved failures.");
   else {
     const injectArgs = [mergedDir, "--fix-keys", "--report-dir", path.join(runDir, "mcp")];
     if (val("--page")) injectArgs.push("--page", val("--page"));
@@ -84,16 +75,14 @@ async function main() {
     }
   }
   fs.copyFileSync(mergedTree, path.join(runDir, "compiled-tree.json"));
-  const visualFile = path.join(mergedDir, "visual-report.json");
-  if (!has("--no-visual") && fs.existsSync(visualFile)) fs.copyFileSync(visualFile, path.join(runDir, "visual-report.json"));
   if (!has("--no-dataset")) {
     const datasetArgs = [frameDir, "--run", runDir];
     if (state.postId) datasetArgs.push("--page", String(state.postId));
     const exported = await run("5 export dataset", "export-dataset.js", datasetArgs);
     failed = !!exported.code || failed;
   }
-  log(providerWaiting ? "\nWaiting for provider quota. Cached work and dataset are saved; see visual-report.json for the retry time." : failed ? "\nFinished with failures. See run.json and run.log." : "\nCompleted successfully.");
-  return providerWaiting && !build.code && !steps.some((s) => s.code && !["6_visual_review.js"].includes(s.script)) ? 75 : failed ? 1 : 0;
+  log(failed ? "\nFinished with failures. See run.json and run.log." : "\nCompleted. Frontend layout and interactive behavior await manual inspection.");
+  return failed ? 1 : 0;
 }
 let exitCode = 1;
 try { exitCode = await main(); } catch (error) { state.error = error.message; log(`\nSTOPPED: ${error.message}`); }

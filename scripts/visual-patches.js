@@ -1,4 +1,32 @@
 import { validateBricks } from "./bricks-validator.js";
+import { isDeepStrictEqual } from "node:util";
+import { validateNativeComponents } from "./native-components.js";
+
+// Resolve the entire proposal set before applying anything: order must not decide
+// which of two contradictory model answers wins.
+export function filterVisualPatches(tree, patches) {
+  const byId = new Map(tree.map(e => [e.id, e]));
+  const proposals = new Map(), rejected = [], accepted = [];
+  for (const p of patches) {
+    const fields = p.op === "settings" ? Object.entries(p.set || {}) : [[p.op, p]];
+    for (const [key, value] of fields) {
+      const token = `${p.id}:${key}`, entries = proposals.get(token) || [];
+      entries.push({ p, key, value }); proposals.set(token, entries);
+    }
+  }
+  for (const entries of proposals.values()) {
+    const { p, key, value } = entries[0], e = byId.get(p.id);
+    if (entries.some(v => !isDeepStrictEqual(v.value, value))) {
+      rejected.push({ patch: p, field: key, reason: "Conflicting proposals for the same field." }); continue;
+    }
+    const unchanged = p.op === "settings" ? (value === null ? !Object.hasOwn(e?.settings || {}, key) : isDeepStrictEqual(e?.settings?.[key], value))
+      : p.op === "reorder" ? isDeepStrictEqual(e?.children, p.children)
+      : p.op === "move" && e?.parent === p.parent && byId.get(p.parent)?.children.indexOf(p.id) === p.index;
+    if (unchanged) { rejected.push({ patch: p, field: key, reason: "No change to the existing tree." }); continue; }
+    accepted.push(p.op === "settings" ? { ...p, set: { [key]: value } } : p);
+  }
+  return { patches: accepted, rejected };
+}
 
 const allowed = new Set(["_display", "_direction", "_flexDirection", "_alignItems", "_alignItemsGrid", "_justifyContent", "_flexWrap", "_gridTemplateColumns", "_rowGap", "_columnGap", "_gap", "iconGap", "_gridGap", "_padding", "_margin", "_width", "_widthMax", "_widthMin", "_height", "_heightMin", "_heightMax", "_position", "_top", "_right", "_bottom", "_left", "_overflow", "_zIndex", "_alignSelf", "_flexGrow", "_flexShrink", "_flexBasis", "_background", "_border", "_typography", "_boxShadow", "_objectFit", "image"]);
 
@@ -51,7 +79,8 @@ export function applyVisualPatches(tree, patches, validAssetUrls = []) {
       parent.children.splice(patch.index, 0, e.id); e.parent = parent.id;
     } else throw new Error(`Unknown visual patch operation ${patch.op}`);
   }
-  const checked = validateBricks(doc);
+  const checked = validateBricks(doc, { strict: true });
+  checked.errors.push(...validateNativeComponents(doc).errors);
   if (checked.errors.length) throw new Error(`Visual correction invalid: ${checked.errors.join("; ")}`);
   return doc;
 }

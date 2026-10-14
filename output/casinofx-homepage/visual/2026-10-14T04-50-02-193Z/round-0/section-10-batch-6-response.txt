@@ -1,0 +1,42 @@
+{
+  "issues": [
+    {
+      "severity": "high",
+      "elementId": "d2h5ap",
+      "description": "The main content image (casino screenshot) is missing from the local preview. The 'Danger' badge is rendered as a full-width red bar instead of a small overlay on the top-left of the image."
+    },
+    {
+      "severity": "high",
+      "elementId": "7p8oqm",
+      "description": "The main content image is missing from the local preview. The 'Danger' badge is rendered as a full-width red bar instead of a small overlay on the top-left of the image."
+    },
+    {
+      "severity": "medium",
+      "elementId": "ld3kbt",
+      "description": "The grid layout is not stretching the cards to equal heights. The cards appear to have different heights based on content, whereas the target shows uniform card heights."
+    }
+  ],
+  "patches": [
+    {
+      "op": "settings",
+      "id": "ld3kbt",
+      "set": {
+        "_alignItemsGrid": "stretch"
+      }
+    },
+    {
+      "op": "settings",
+      "id": "d2h5ap",
+      "set": {
+        "_height": "100%"
+      }
+    },
+    {
+      "op": "settings",
+      "id": "7p8oqm",
+      "set": {
+        "_height": "100%"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "y6937n",
+    "name": "container",
+    "parent": "hcaiuk",
+    "children": [],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_width": "100%",
+      "_widthMax": "1120px"
+    }
+  },
+  {
+    "id": "hcaiuk",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "y6937n"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_height": "1186"
+    }
+  }
+]

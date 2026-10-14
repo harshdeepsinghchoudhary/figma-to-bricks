@@ -1,0 +1,89 @@
+{
+  "name": "bricks/get-element-schema",
+  "label": "Get element schema",
+  "description": "Full settings schema (controls, groups, defaults) for a specific element type.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "elementName": {
+        "type": "string",
+        "description": "Element type name, e.g. \"heading\", \"image\", \"container\".",
+        "required": true
+      },
+      "controlKeys": {
+        "type": "array",
+        "description": "Optional exact control keys to return. Use this when you only need a few settings (for example fields, actions, and submitButtonText on a form) instead of loading the full element schema.",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "elementName"
+    ],
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "label": {
+        "type": "string"
+      },
+      "nestable": {
+        "type": "boolean"
+      },
+      "nestableChildren": {
+        "type": "array",
+        "description": "Builder default child trees for creating this element. Preserve required wrapper settings and allocate fresh IDs when inserting these trees. Do not replace existing content with these defaults.",
+        "items": {
+          "type": "object"
+        }
+      },
+      "stateChildren": {
+        "type": "array",
+        "description": "Currently available canonical state child trees. Repair an existing parent by appending only missing direct state children through the page or component editing abilities. Preserve existing children and allocate fresh IDs for inserted trees.",
+        "items": {
+          "type": "object"
+        }
+      },
+      "controls": {
+        "type": "object"
+      },
+      "controlGroups": {
+        "type": "object"
+      },
+      "requestedControlKeys": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "missingControlKeys": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

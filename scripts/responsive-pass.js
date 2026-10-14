@@ -25,7 +25,8 @@ const BIG_MARGIN = 60;         // vertical margins above this get scaled down on
 const ICON_MAX = 48;             // an SVG asset up to this wide is an icon, not an image
 const FILL_TOLERANCE = 0.97;   // a child at least this fraction of its parent's width is treated as "fills parent"
 
-const T = "tablet_portrait", M = "mobile_landscape";
+import { BRICKS_BREAKPOINTS } from "./breakpoints.js";
+const T = BRICKS_BREAKPOINTS.tablet, M = BRICKS_BREAKPOINTS.mobile;
 const isNum = (v) => typeof v === "number" && isFinite(v);
 const isRowish = (n) => n.type === "row" || n.layout?.direction === "row";
 const gapOf = (n) => n.layout?.columnGap ?? n.layout?.gap ?? 0;
@@ -72,6 +73,7 @@ function setResp(n, bp, patch) {
 const r1 = (v) => Math.round(v * 10) / 10;
 
 export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, texts = {}, siteWidth = 0 } = {}) {
+  if (BRICKS_BREAKPOINTS.isMobileFirst) throw new Error("The current responsive inference uses desktop-first layouts. Use explicit responsive data and --no-responsive for a mobile-first Bricks site.");
   // the page container width comes from the design (see 3_compile_bricks.js); SITE_WIDTH is only the fallback when the design has no usable frames
   const SITE = siteWidth > 0 ? siteWidth : SITE_WIDTH;
   const doc = JSON.parse(JSON.stringify(input));
@@ -80,6 +82,13 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
 
   // ---- per-node rules (everything except the section/container restructure) ----
   function fixNode(n, parent, contentW) {
+    // Native menu/slider/tab/accordion wrappers own their responsive behavior.
+    // Generic equal-card and row-stacking rules would break their JS structure.
+    if (n._nativeLayoutLock) {
+      if (n.typography?.fontFamily && fontAliases[n.typography.fontFamily]) n.typography.fontFamily = fontAliases[n.typography.fontFamily];
+      for (const c of n.children || []) fixNode(c, n, contentW);
+      return;
+    }
     // fonts
     if (n.typography?.fontFamily && fontAliases[n.typography.fontFamily]) {
       log(`font ${n.typography.fontFamily} -> ${fontAliases[n.typography.fontFamily]} on ${n.id}`);

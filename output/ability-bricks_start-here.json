@@ -1,0 +1,77 @@
+{
+  "name": "bricks/start-here",
+  "label": "Bricks orientation (start here)",
+  "description": "Compact task router for clients without loaded Bricks skills. A clearly named existing page or design resource routes directly to resolve-agent-file then commit-agent-file without version, context, catalog, or manifest calls. Pass responseFormat=detailed only when the complete workflow guide is needed. Clients that already loaded bricks-start-here do not need this tool.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "responseFormat": {
+        "type": "string",
+        "enum": [
+          "compact",
+          "detailed"
+        ],
+        "default": "compact",
+        "description": "Compact returns only task routing. Detailed returns the complete bundled workflow guide."
+      }
+    },
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "responseFormat": {
+        "type": "string",
+        "enum": [
+          "compact",
+          "detailed"
+        ],
+        "description": "Response detail level used for orientation."
+      },
+      "orientation": {
+        "type": "string",
+        "description": "Markdown-formatted task routing or complete orientation prose."
+      },
+      "fastPath": {
+        "type": "array",
+        "description": "Hyphenated MCP tool names exposed directly on this site (visible in `tools/list`). Example: ability `bricks/get-design-context` appears as tool `bricks-get-design-context`. The list reflects the current admin deny-list and any `bricks/abilities/named_tools` filter overrides.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "dispatcherInvocation": {
+        "type": "object",
+        "description": "Call shape for invoking long-tail abilities (those not in `fastPath`) through the bundled mcp-adapter dispatcher tool.",
+        "properties": {
+          "tool": {
+            "type": "string"
+          },
+          "argsExample": {
+            "type": "object"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": true
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "idempotent": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}

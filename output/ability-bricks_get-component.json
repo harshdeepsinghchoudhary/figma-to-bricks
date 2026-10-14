@@ -1,0 +1,57 @@
+{
+  "name": "bricks/get-component",
+  "label": "Get component",
+  "description": "Component elements, properties, variants, slots, authoritative componentDigest, and atomically paired designSystemVersion for safe follow-up writes. Reports componentPayloadRedacted when code-sensitive settings are hidden.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "componentId": {
+        "type": "string",
+        "description": "The component ID (same as root element ID).",
+        "required": true
+      }
+    },
+    "required": [
+      "componentId"
+    ],
+    "additionalProperties": false,
+    "default": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "component": {
+        "type": "object",
+        "description": "Component data: elements, full property definitions, variants, and slots. Code-sensitive settings are redacted when the caller cannot execute code; componentPayloadRedacted reports that state."
+      },
+      "designSystemVersion": {
+        "type": "integer",
+        "description": "Current design-system version. Pass this as expectedDesignSystemVersion when updating or deleting this component."
+      },
+      "componentDigest": {
+        "type": "string",
+        "description": "SHA-256 digest of the complete authoritative component record, including unredacted code-sensitive settings and opaque fields. Pass it unchanged as expectedComponentDigest for update/delete."
+      },
+      "componentPayloadRedacted": {
+        "type": "boolean",
+        "description": "True when code-sensitive element settings were hidden. The authoritative digest remains usable, but do not replace `elements` from this redacted payload; omit `elements` for metadata-only edits or use a code-authorized read."
+      }
+    }
+  },
+  "meta": {
+    "annotations": {
+      "readonly": true,
+      "destructive": false,
+      "idempotent": null
+    },
+    "mcp": {
+      "public": true,
+      "annotations": {
+        "readonly": true,
+        "destructive": false
+      }
+    },
+    "show_in_rest": true,
+    "public": false
+  }
+}
