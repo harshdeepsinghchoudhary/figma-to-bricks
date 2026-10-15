@@ -144,6 +144,9 @@ function compileNode(node, parentId, parentNode = null) {
       if (!supportedKeys.has(key.split(":")[0])) { warnings.push(`${node.id}: ${el.name} does not support ${key}; measured style retained in normalized input.`); delete el.settings[key]; }
     }
   }
+  // The slider root is laid out by Bricks (track, arrows, pagination). A row/gap from the Figma frame would put those side by side;
+  // the slide gap is the native "gap" control.
+  if (el.name === "slider-nested") for (const key of Object.keys(el.settings)) if (/^(_display|_direction|_flexDirection|_alignItems|_justifyContent|_gap|_rowGap|_columnGap|_flexWrap)(:|$)/.test(key)) delete el.settings[key];
   let salt = 0, bricksId;
   do {
     const hash = createHash("sha256").update(`${idNamespace}|${node.id}|${salt++}`).digest("hex");

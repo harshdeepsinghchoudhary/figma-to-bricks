@@ -173,6 +173,27 @@ function applyPageBackground() {
   }
   console.log("  page background " + raw + " applied to " + n + " section(s) that had no background of their own");
 }
+// Backdrop rectangles (run-sections.js): their solid colour is the background of the sections they sit behind.
+function applyBackdrops() {
+  const fp = path.join(frameDir, "backdrops.json");
+  if (!fs.existsSync(fp)) return;
+  let n = 0;
+  for (const b of JSON.parse(fs.readFileSync(fp, "utf8"))) {
+    for (const name of b.sections) {
+      const entry = sectionMap.find((m) => m.name === name);
+      for (const el of merged) {
+        if (el.name !== "section" || !entry?.rootIds.includes(el.id)) continue;
+        const bg = el.settings?._background;
+        if (bg?.color || bg?.image || el.settings?._gradient) continue;
+        el.settings = el.settings || {};
+        el.settings._background = { ...(bg || {}), color: { raw: b.color } };
+        n++;
+      }
+    }
+  }
+  if (n) console.log("  backdrop colours applied to " + n + " section(s)");
+}
+applyBackdrops();
 if (!process.argv.includes("--no-page-bg")) applyPageBackground();
 fs.writeFileSync(path.join(outDir, "bricks-tree.json"), JSON.stringify(merged, null, 2));
 fs.writeFileSync(path.join(outDir, "section-map.json"), JSON.stringify(sectionMap, null, 2));

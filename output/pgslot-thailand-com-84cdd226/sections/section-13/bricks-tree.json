@@ -1,0 +1,280 @@
+[
+  {
+    "id": "x8a66b",
+    "name": "image",
+    "parent": "wqxgav",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154083-202_203.svg",
+        "url": "../../assets/group-1261154083-202_203.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "364px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sn34vg",
+    "name": "image",
+    "parent": "wqxgav",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/mask-group-202_208.png",
+        "url": "../../assets/mask-group-202_208.png"
+      },
+      "_width": "100%",
+      "_widthMax": "364px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "wqxgav",
+    "name": "div",
+    "parent": "vizkr5",
+    "children": [
+      "x8a66b",
+      "sn34vg"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column"
+    }
+  },
+  {
+    "id": "n5pwyb",
+    "name": "heading",
+    "parent": "nls8zl",
+    "children": [],
+    "settings": {
+      "text": "24/7 Customer Support of PG Slot Casino Thailand",
+      "tag": "h2",
+      "_width": "100%",
+      "_widthMax": "506px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "khvlgp",
+    "name": "text",
+    "parent": "nls8zl",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>",
+      "_margin": {
+        "top": "14"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "18ring",
+    "name": "text",
+    "parent": "nls8zl",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>",
+      "_margin": {
+        "top": "16"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "nls8zl",
+    "name": "div",
+    "parent": "c3knm4",
+    "children": [
+      "n5pwyb",
+      "khvlgp",
+      "18ring"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "lvwcgw",
+    "name": "text",
+    "parent": "8gopng",
+    "children": [],
+    "settings": {
+      "text": "<p>Contact us</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "8gopng",
+    "name": "div",
+    "parent": "c3knm4",
+    "children": [
+      "lvwcgw"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "100px",
+          "right": "100px",
+          "bottom": "100px",
+          "left": "100px"
+        }
+      }
+    }
+  },
+  {
+    "id": "c3knm4",
+    "name": "div",
+    "parent": "vizkr5",
+    "children": [
+      "nls8zl",
+      "8gopng"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "30",
+      "_columnGap": "30",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "564px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "vizkr5",
+    "name": "div",
+    "parent": "aysvwa",
+    "children": [
+      "wqxgav",
+      "c3knm4"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "aysvwa",
+    "name": "container",
+    "parent": "bj2wq1",
+    "children": [
+      "vizkr5"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1140px"
+    }
+  },
+  {
+    "id": "bj2wq1",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "aysvwa"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#280C14"
+        }
+      }
+    }
+  }
+]

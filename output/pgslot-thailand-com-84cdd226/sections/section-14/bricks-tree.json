@@ -1,0 +1,228 @@
+[
+  {
+    "id": "dd6lsa",
+    "name": "heading",
+    "parent": "usuykw",
+    "children": [],
+    "settings": {
+      "text": "Is PG Slot Legal in Thailand?",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "ilxscw",
+    "name": "text",
+    "parent": "usuykw",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>",
+      "_margin": {
+        "top": "14"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "vrp9qt",
+    "name": "text",
+    "parent": "usuykw",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>",
+      "_margin": {
+        "top": "16"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "usuykw",
+    "name": "div",
+    "parent": "zwzcbq",
+    "children": [
+      "dd6lsa",
+      "ilxscw",
+      "vrp9qt"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "3ahenv",
+    "name": "text-basic",
+    "parent": "zwzcbq",
+    "children": [],
+    "settings": {
+      "text": "Lear More",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "zwzcbq",
+    "name": "div",
+    "parent": "sjp6hf",
+    "children": [
+      "usuykw",
+      "3ahenv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "45",
+      "_columnGap": "45",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "36"
+      },
+      "_width": "100%",
+      "_widthMax": "564px",
+      "_margin:tablet_portrait": {
+        "top": "0"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "8cl791",
+    "name": "image",
+    "parent": "3hno9d",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154086-202_220.svg",
+        "url": "../../assets/group-1261154086-202_220.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "364px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "iro2xl",
+    "name": "image",
+    "parent": "3hno9d",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/mask-group-202_225.png",
+        "url": "../../assets/mask-group-202_225.png"
+      },
+      "_width": "100%",
+      "_widthMax": "364px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "3hno9d",
+    "name": "div",
+    "parent": "sjp6hf",
+    "children": [
+      "8cl791",
+      "iro2xl"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column"
+    }
+  },
+  {
+    "id": "sjp6hf",
+    "name": "div",
+    "parent": "5he3lv",
+    "children": [
+      "zwzcbq",
+      "3hno9d"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "5he3lv",
+    "name": "container",
+    "parent": "hl2ixf",
+    "children": [
+      "sjp6hf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1120px"
+    }
+  },
+  {
+    "id": "hl2ixf",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "5he3lv"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

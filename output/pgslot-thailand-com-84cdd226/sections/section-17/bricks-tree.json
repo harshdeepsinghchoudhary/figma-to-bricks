@@ -1,0 +1,235 @@
+[
+  {
+    "id": "z9yb3v",
+    "name": "image",
+    "parent": "xmufod",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-25-202_368.png",
+        "url": "../../assets/image-25-202_368.png"
+      },
+      "_width": "100%",
+      "_widthMax": "122px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "rw9enw",
+    "name": "text",
+    "parent": "xmufod",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the ipsum is simply dummy text of the printing text.</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFFD6"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "xmufod",
+    "name": "div",
+    "parent": "k142g3",
+    "children": [
+      "z9yb3v",
+      "rw9enw"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "flex-start"
+    }
+  },
+  {
+    "id": "j6lvw3",
+    "name": "text",
+    "parent": "qixudi",
+    "children": [],
+    "settings": {
+      "text": "<p>Related things</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "9esupg",
+    "name": "text",
+    "parent": "qixudi",
+    "children": [],
+    "settings": {
+      "text": "<p>All (1)\nPgslot game review (15)</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "34px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFFD6"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "qixudi",
+    "name": "div",
+    "parent": "k142g3",
+    "children": [
+      "j6lvw3",
+      "9esupg"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "16"
+      },
+      "_margin:tablet_portrait": {
+        "top": "0"
+      }
+    }
+  },
+  {
+    "id": "n62k57",
+    "name": "text",
+    "parent": "5p7yn3",
+    "children": [],
+    "settings": {
+      "text": "<p>Subject</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "500",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "uo0tfb",
+    "name": "text",
+    "parent": "5p7yn3",
+    "children": [],
+    "settings": {
+      "text": "<p>Piggy Gold slot game review\nReview of Dragon Tiger Luck slot game\nEmperor's Favor slot game review\nReview of Dim Sum Mania slot game\nMermaid's Market Review</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "34px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFFD6"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "5p7yn3",
+    "name": "div",
+    "parent": "k142g3",
+    "children": [
+      "n62k57",
+      "uo0tfb"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "16"
+      },
+      "_margin:tablet_portrait": {
+        "top": "0"
+      }
+    }
+  },
+  {
+    "id": "k142g3",
+    "name": "div",
+    "parent": "ebkuua",
+    "children": [
+      "xmufod",
+      "qixudi",
+      "5p7yn3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "124",
+      "_columnGap": "124",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "ebkuua",
+    "name": "container",
+    "parent": "p2wix1",
+    "children": [
+      "k142g3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1120px"
+    }
+  },
+  {
+    "id": "p2wix1",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "ebkuua"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#2E0D16"
+        }
+      }
+    }
+  }
+]

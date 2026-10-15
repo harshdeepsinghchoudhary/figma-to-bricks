@@ -108,15 +108,49 @@ for (const s of sections) {
   const owner = decorationOwner(top.find((n) => n.id === s.id), top);
   if (owner) skipReason[s.name] = `decorative shape inside ${names[owner.id]} (not a standalone section)`;
 }
+// What a top-level frame says: its copy and whether it carries pictures. Two frames in the same place are the SAME section drawn twice
+// only when they say the same thing. A picture-only banner and a frame holding its headline and button are two layers of ONE section.
+const copyOf = (n) => { const t = new Set(); let pics = 0; (function w(x) { if (x.visible === false) return; if (x.type === "TEXT" && x.characters?.trim()) t.add(x.characters.trim().toLowerCase()); if ((x.fills || []).some((f) => f.visible !== false && f.type === "IMAGE")) pics++; for (const c of x.children || []) w(c); })(n); return { texts: t, pics }; };
+const sameCopy = (a, b) => {
+  if (!a.texts.size && !b.texts.size) return true; // two silent graphics in one place: one drawn twice
+  if (!a.texts.size || !b.texts.size) return false;
+  const shared = [...a.texts].filter((x) => b.texts.has(x)).length;
+  return shared / Math.min(a.texts.size, b.texts.size) >= 0.8;
+};
+const layerIds = {}; // section name -> extra top-level node ids built into the same section
 if (!flag("keep-duplicates")) {
   for (const s of sections) {
     for (const o of sections) {
       if (o === s || skipReason[s.name] || skipReason[o.name] || iou(s.box, o.box) < 0.9) continue;
+      const sNode = top.find((n) => n.id === s.id), oNode = top.find((n) => n.id === o.id);
+      const sCopy = copyOf(sNode), oCopy = copyOf(oNode);
+      if (!sameCopy(sCopy, oCopy)) {
+        // layers of one section: the one with the copy is the section, the picture-only one is built into it (as its backdrop)
+        if (oCopy.texts.size && !sCopy.texts.size) { (layerIds[o.name] ||= []).push(s.id); skipReason[s.name] = `layer of ${o.name} (built into it as backdrop)`; break; }
+        continue;
+      }
       const sDone = fs.existsSync(path.join(secRoot, s.name, "normalized.json")), oDone = fs.existsSync(path.join(secRoot, o.name, "normalized.json"));
       if ((oDone && !sDone) || (oDone === sDone && o.index < s.index)) { skipReason[s.name] = `duplicate of ${o.name} (same position and size)`; break; }
     }
   }
 }
+// Backdrops: a content-less solid rectangle that lies behind other top-level sections is their background, not a section of its own
+// (built as a section it became an empty block as tall as everything it sits behind, pushing the content down).
+const backdrops = [];
+for (const s of sections) {
+  if (skipReason[s.name]) continue;
+  const n = top.find((x) => x.id === s.id);
+  const fill = (n.fills || []).find((f) => f.visible !== false);
+  if (n.type !== "RECTANGLE" || n.children?.length || fill?.type !== "SOLID" || (fill.opacity ?? 1) < 1) continue;
+  const covered = sections.filter((o) => o !== s && !skipReason[o.name] && o.box.y >= s.box.y - 1 && o.box.y + o.box.height <= s.box.y + s.box.height + 1
+    && o.box.x + o.box.width > s.box.x && o.box.x < s.box.x + s.box.width && copyOf(top.find((x) => x.id === o.id)).texts.size > 0);
+  if (!covered.length) continue;
+  const hex = (v) => Math.round(v * 255).toString(16).padStart(2, "0");
+  backdrops.push({ rectId: s.id, color: ("#" + hex(fill.color.r) + hex(fill.color.g) + hex(fill.color.b)).toUpperCase(), sections: covered.map((o) => o.name) });
+  skipReason[s.name] = `backdrop behind ${covered.map((o) => o.name).join(", ")} (applied as their background)`;
+}
+fs.writeFileSync(path.join(frameDir, "backdrops.json"), JSON.stringify(backdrops, null, 2));
+const nodeIdsOf = (s) => [...(layerIds[s.name] || []), s.id].sort((a, b) => top.findIndex((n) => n.id === a) - top.findIndex((n) => n.id === b)).map((id) => top.find((n) => n.id === id).id);
 const isSkipped = (s) => !!skipReason[s.name];
 const picked = (s) => !isSkipped(s) && (!only || only.has(s.name) || only.has(s.id));
 const normalizedOf = (s) => path.join(secRoot, s.name, "normalized.json");
@@ -154,7 +188,7 @@ fs.writeFileSync(path.join(frameDir, "build-report.json"), JSON.stringify({ stat
 for (const s of sections) {
   if (!picked(s)) continue;
   const dir = path.join(secRoot, s.name);
-  const sourceHash = createHash("sha256").update(JSON.stringify(top.find((n) => n.id === s.id))).digest("hex");
+  const sourceHash = createHash("sha256").update(JSON.stringify(nodeIdsOf(s).map((id) => top.find((n) => n.id === id)))).digest("hex");
   const metaPath = path.join(dir, "normalized-source.json");
   let cachedHash = null;
   let cachedMode = null;
@@ -168,7 +202,7 @@ for (const s of sections) {
       if (!partsPath.startsWith(sectionRoot)) throw new Error("Parts path is outside the section workspace.");
       fs.rmSync(partsPath, { recursive: true, force: true }); console.log(`\n--- ${s.name}: removed saved parts (--force)`);
     }
-    const ok = node("2_normalize.js", [frameDir, `--nodes=${s.id}`, `--name=${s.name}`, `--split=${split}`, "--resume", ...(flag("deterministic") ? ["--deterministic"] : [])], true);
+    const ok = node("2_normalize.js", [frameDir, `--nodes=${nodeIdsOf(s).join(",")}`, `--name=${s.name}`, `--split=${split}`, "--resume", ...(flag("deterministic") ? ["--deterministic"] : [])], true);
     if (!ok || !isDone(s)) { failedNames.add(s.name); failed.push(`${s.name} (${s.id}): model step failed, section left out - re-run the same command to retry it, or add --skip=${s.name} to leave it out on purpose`); continue; }
   } else {
     console.log(`\n--- ${s.name}: already normalized, skipping the model step (use --force to redo)`);

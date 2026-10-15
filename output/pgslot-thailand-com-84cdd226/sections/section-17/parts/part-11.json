@@ -1,0 +1,29 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "subject-section",
+      "children": [
+        {
+          "type": "text",
+          "id": "subject",
+          "figmaNodeId": "202:374",
+          "text": "Subject",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": 500,
+            "lineHeight": "32px",
+            "color": "#FFFFFF",
+            "align": "left"
+          },
+          "size": {
+            "width": 73,
+            "height": 32
+          }
+        }
+      ]
+    }
+  ]
+}

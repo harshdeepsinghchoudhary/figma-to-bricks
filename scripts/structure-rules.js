@@ -940,7 +940,10 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
     for (let i = 0; i < kids.length; i++) {
       if (!isCardRow(kids[i])) { out.push(kids[i]); continue; }
       let j = i + 1;
-      while (j < kids.length && isCardRow(kids[j]) && rendered(kids[j]).length === rendered(kids[i]).length) j++;
+      const per = rendered(kids[i]).length;
+      while (j < kids.length && isCardRow(kids[j]) && rendered(kids[j]).length === per) j++;
+      // a shorter LAST row of the same cards (3 + 2) belongs to the same grid: its cards keep the column width instead of stretching to halves
+      if (j < kids.length && j > i && isCardRow(kids[j]) && rendered(kids[j]).length < per) j++;
       if (j - i >= 2) {
         const run = kids.slice(i, j);
         const cards = run.flatMap((r) => rendered(r));

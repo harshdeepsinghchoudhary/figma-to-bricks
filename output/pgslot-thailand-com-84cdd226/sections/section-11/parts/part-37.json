@@ -1,0 +1,46 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "lorem-ipsum",
+      "children": [
+        {
+          "type": "text-basic",
+          "id": "lorem-ipsum-text",
+          "figmaNodeId": "202:185",
+          "figma": {
+            "type": "TEXT",
+            "box": [
+              -2217,
+              6945,
+              209,
+              54
+            ],
+            "fills": [
+              {
+                "t": "SOLID",
+                "c": "#FFFFFF"
+              }
+            ],
+            "style": {
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": 400,
+              "textAlignHorizontal": "LEFT",
+              "lineHeight": "27px"
+            }
+          },
+          "text": "Lorem Ipsum is simply dummy the printing and ",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fontWeight": 400,
+            "lineHeight": "27px",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    }
+  ]
+}

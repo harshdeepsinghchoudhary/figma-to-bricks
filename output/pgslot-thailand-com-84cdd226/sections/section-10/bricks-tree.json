@@ -1,0 +1,284 @@
+[
+  {
+    "id": "iurh4m",
+    "name": "heading",
+    "parent": "8ztsso",
+    "children": [],
+    "settings": {
+      "text": "Download and Install PG Slot App For APK &amp; IOS",
+      "tag": "h2",
+      "_width": "100%",
+      "_widthMax": "510px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "168fhc",
+    "name": "text",
+    "parent": "8ztsso",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>",
+      "_margin": {
+        "top": "16"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "jb1xvp",
+    "name": "image",
+    "parent": "5ndo96",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/appstore-202_78.svg",
+        "url": "../../assets/appstore-202_78.svg"
+      },
+      "_width": "100%",
+      "_widthMax": "204px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "7dmzx0",
+    "name": "icon",
+    "parent": "5ndo96",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/googleplay-202_109.svg",
+          "url": "../../assets/googleplay-202_109.svg"
+        },
+        "height": "59"
+      },
+      "_widthMax": "203px",
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "5ndo96",
+    "name": "div",
+    "parent": "8ztsso",
+    "children": [
+      "jb1xvp",
+      "7dmzx0"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20.77",
+      "_columnGap": "20.77",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "40"
+      },
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "8ztsso",
+    "name": "div",
+    "parent": "tjzho4",
+    "children": [
+      "iurh4m",
+      "168fhc",
+      "5ndo96"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "556px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "lho00o",
+    "name": "image",
+    "parent": "j0rr4n",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154072-1-202_138.png",
+        "url": "../../assets/group-1261154072-1-202_138.png"
+      },
+      "_width": "100%",
+      "_widthMax": "380px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "bfrdvs",
+    "name": "image",
+    "parent": "yyh9av",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-30-copy-1-202_140.png",
+        "url": "../../assets/image-30-copy-1-202_140.png"
+      },
+      "_width": "100%",
+      "_widthMax": "307px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "8sdk8a",
+    "name": "image",
+    "parent": "yyh9av",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-25-202_142.png",
+        "url": "../../assets/image-25-202_142.png"
+      },
+      "_width": "42px",
+      "_position": "absolute",
+      "_left": "17.2%",
+      "_top": "69px",
+      "_zIndex": "1"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "yyh9av",
+    "name": "div",
+    "parent": "j0rr4n",
+    "children": [
+      "bfrdvs",
+      "8sdk8a"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_widthMax": "307px",
+      "_position": "relative"
+    }
+  },
+  {
+    "id": "41cg75",
+    "name": "image",
+    "parent": "j0rr4n",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/mask-group-202_143.png",
+        "url": "../../assets/mask-group-202_143.png"
+      },
+      "_width": "100%",
+      "_widthMax": "380px"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "j0rr4n",
+    "name": "div",
+    "parent": "tjzho4",
+    "children": [
+      "lho00o",
+      "yyh9av",
+      "41cg75"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "tjzho4",
+    "name": "div",
+    "parent": "c1jumy",
+    "children": [
+      "8ztsso",
+      "j0rr4n"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "c1jumy",
+    "name": "container",
+    "parent": "c7celo",
+    "children": [
+      "tjzho4"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1097px"
+    }
+  },
+  {
+    "id": "c7celo",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "c1jumy"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

@@ -1,29 +1,54 @@
 {
   "type": "section",
-  "id": "pgslot-thailand-com-scoped-part",
+  "id": "part-20",
+  "figmaNodeId": "scope",
+  "layout": {
+    "display": "block"
+  },
+  "size": {
+    "width": 270,
+    "height": 54
+  },
+  "typography": {
+    "fontFamily": "Inter",
+    "fontSize": 18,
+    "fontWeight": 400,
+    "lineHeight": "27px",
+    "align": "center"
+  },
+  "background": {
+    "color": "#FFFFFF"
+  },
   "children": [
     {
-      "type": "text-basic",
-      "id": "lorem-ipsum-is-simply-dummy-text-of-the-here",
-      "figmaNodeId": "202:413",
-      "text": "Lorem Ipsum is simply dummy text of the here",
-      "typography": {
-        "fontFamily": "Inter",
-        "fontSize": 18,
-        "fontWeight": 400,
-        "lineHeight": "27px",
-        "align": "center"
-      },
-      "layout": {
-        "display": "flex",
-        "direction": "row",
-        "justify": "center",
-        "align": "center"
-      },
-      "size": {
-        "width": 270,
-        "height": 54
+      "id": "lorem-ipsum-text",
+      "figmaNodeId": "202:418",
+      "level": 1,
+      "figma": {
+        "type": "TEXT",
+        "box": [
+          -1962,
+          5666,
+          270,
+          54
+        ],
+        "fills": [
+          {
+            "t": "SOLID",
+            "c": "#FFFFFF"
+          }
+        ],
+        "style": {
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": 400,
+          "textAlignHorizontal": "CENTER",
+          "lineHeight": "27px"
+        }
       }
     }
+  ],
+  "_uncertain": [
+    "lorem-ipsum-text: dropped unknown field \"content\""
   ]
 }

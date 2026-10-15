@@ -1,0 +1,593 @@
+{
+  "version": 1,
+  "sourceHash": "5aa188e18b1f3bf3f8ebcefd97ae9b1488dca55ea6e790f1c3b1631fc6cfc3af",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "pgslot-thailand.com (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:76",
+      "parentId": "scope",
+      "name": "Group 1261154176",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:77",
+      "parentId": "202:76",
+      "name": "Group 1261154068",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:78",
+      "parentId": "202:77",
+      "name": "appstore",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:79",
+      "parentId": "202:78",
+      "name": "Group",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:80",
+      "parentId": "202:79",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:81",
+      "parentId": "202:79",
+      "name": "path16",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:82",
+      "parentId": "202:79",
+      "name": "Group",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:83",
+      "parentId": "202:82",
+      "name": "Group",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:84",
+      "parentId": "202:83",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:85",
+      "parentId": "202:79",
+      "name": "Group",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:86",
+      "parentId": "202:85",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:87",
+      "parentId": "202:85",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:88",
+      "parentId": "202:85",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:89",
+      "parentId": "202:85",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:90",
+      "parentId": "202:85",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:91",
+      "parentId": "202:85",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:92",
+      "parentId": "202:85",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:93",
+      "parentId": "202:85",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:94",
+      "parentId": "202:79",
+      "name": "Group",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:95",
+      "parentId": "202:94",
+      "name": "Group",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:96",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:97",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:98",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:99",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:100",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:101",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:102",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:103",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:104",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:105",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:106",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:107",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:108",
+      "parentId": "202:95",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:78"
+    },
+    {
+      "nodeId": "202:109",
+      "parentId": "202:77",
+      "name": "googleplay",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:110",
+      "parentId": "202:109",
+      "name": "path14",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:111",
+      "parentId": "202:109",
+      "name": "path16",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:112",
+      "parentId": "202:109",
+      "name": "g18",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:113",
+      "parentId": "202:112",
+      "name": "path20",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:114",
+      "parentId": "202:109",
+      "name": "g22",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:115",
+      "parentId": "202:114",
+      "name": "path24",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:116",
+      "parentId": "202:109",
+      "name": "g26",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:117",
+      "parentId": "202:116",
+      "name": "path28",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:118",
+      "parentId": "202:109",
+      "name": "g30",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:119",
+      "parentId": "202:118",
+      "name": "path32",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:120",
+      "parentId": "202:109",
+      "name": "g34",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:121",
+      "parentId": "202:120",
+      "name": "path36",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:122",
+      "parentId": "202:109",
+      "name": "g38",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:123",
+      "parentId": "202:122",
+      "name": "path40",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:124",
+      "parentId": "202:109",
+      "name": "g42",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:125",
+      "parentId": "202:124",
+      "name": "path44",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:126",
+      "parentId": "202:109",
+      "name": "path46",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:127",
+      "parentId": "202:109",
+      "name": "g48",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:128",
+      "parentId": "202:127",
+      "name": "path64",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:129",
+      "parentId": "202:109",
+      "name": "g66",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:130",
+      "parentId": "202:129",
+      "name": "path78",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:131",
+      "parentId": "202:109",
+      "name": "g80",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:132",
+      "parentId": "202:131",
+      "name": "path88",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:133",
+      "parentId": "202:109",
+      "name": "g90",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:134",
+      "parentId": "202:133",
+      "name": "path104",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:109"
+    },
+    {
+      "nodeId": "202:135",
+      "parentId": "202:77",
+      "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:136",
+      "parentId": "202:77",
+      "name": "Download and Install PG Slot App For APK & IOS",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:137",
+      "parentId": "202:76",
+      "name": "Group 1261154074",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:138",
+      "parentId": "202:137",
+      "name": "Group 1261154072 1",
+      "type": "RECTANGLE",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:139",
+      "parentId": "202:137",
+      "name": "Group 1261154070",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:140",
+      "parentId": "202:139",
+      "name": "image 30 copy 1",
+      "type": "RECTANGLE",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:141",
+      "parentId": "202:139",
+      "name": "Rectangle 5766",
+      "type": "RECTANGLE",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:142",
+      "parentId": "202:139",
+      "name": "image 25",
+      "type": "RECTANGLE",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:143",
+      "parentId": "202:137",
+      "name": "Mask group",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:144",
+      "parentId": "202:143",
+      "name": "Group 1261154072 2",
+      "type": "RECTANGLE",
+      "status": "covered-by-export",
+      "representedBy": "202:143"
+    },
+    {
+      "nodeId": "202:145",
+      "parentId": "202:143",
+      "name": "Group 1261154073",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:143"
+    },
+    {
+      "nodeId": "202:146",
+      "parentId": "202:145",
+      "name": "image 30 copy 1",
+      "type": "RECTANGLE",
+      "status": "covered-by-export",
+      "representedBy": "202:143"
+    },
+    {
+      "nodeId": "202:147",
+      "parentId": "202:145",
+      "name": "Rectangle 5766",
+      "type": "RECTANGLE",
+      "status": "covered-by-export",
+      "representedBy": "202:143"
+    },
+    {
+      "nodeId": "202:148",
+      "parentId": "202:145",
+      "name": "image 25",
+      "type": "RECTANGLE",
+      "status": "covered-by-export",
+      "representedBy": "202:143"
+    }
+  ],
+  "summary": {
+    "represented": 13,
+    "covered-by-export": 60,
+    "button-label": 0,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 1
+  }
+}

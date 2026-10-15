@@ -1,0 +1,5456 @@
+{
+  "version": 1,
+  "rootId": "scope",
+  "sourceHash": "5aa188e18b1f3bf3f8ebcefd97ae9b1488dca55ea6e790f1c3b1631fc6cfc3af",
+  "frames": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "pgslot-thailand.com (scoped)",
+      "bounds": {
+        "x": -2812,
+        "y": 5900,
+        "width": 1096.95654296875,
+        "height": 511.0000915527344
+      },
+      "componentId": null
+    }
+  ],
+  "metadata": {
+    "name": "Online Betting Website 2 (Copy)",
+    "version": "2409797105972294567",
+    "lastModified": "2024-06-12T15:07:49Z",
+    "components": {
+      "250:2": {
+        "key": "d7f10178ba90a6be556e18de3c0ca90650fa8e44",
+        "name": "home",
+        "description": "",
+        "remote": true,
+        "documentationLinks": []
+      }
+    },
+    "componentSets": {},
+    "styles": {
+      "202:11": {
+        "key": "5d659a5c06d22a0518ef32821a3e95091a3fc638",
+        "name": "Linear",
+        "styleType": "FILL",
+        "remote": true,
+        "description": ""
+      }
+    }
+  },
+  "nodes": {
+    "scope": {
+      "parentId": null,
+      "childIds": [
+        "202:76"
+      ],
+      "name": "pgslot-thailand.com (scoped)",
+      "type": "FRAME",
+      "absoluteBoundingBox": {
+        "x": -2812,
+        "y": 5900,
+        "width": 1096.95654296875,
+        "height": 511.0000915527344
+      },
+      "effectiveVisible": true
+    },
+    "202:76": {
+      "parentId": "scope",
+      "childIds": [
+        "202:77",
+        "202:137"
+      ],
+      "name": "Group 1261154176",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2812,
+        "y": 5900,
+        "width": 1096.95654296875,
+        "height": 511.0000915527344
+      },
+      "absoluteRenderBounds": {
+        "x": -2812,
+        "y": 5900,
+        "width": 1096.95654296875,
+        "height": 511.0000915527344
+      },
+      "size": {
+        "x": 1096.95654296875,
+        "y": 511.0000915527344
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          160
+        ],
+        [
+          0,
+          1,
+          3563
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:77": {
+      "parentId": "202:76",
+      "childIds": [
+        "202:78",
+        "202:109",
+        "202:135",
+        "202:136"
+      ],
+      "name": "Group 1261154068",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2812,
+        "y": 5955,
+        "width": 556,
+        "height": 402
+      },
+      "absoluteRenderBounds": {
+        "x": -2812,
+        "y": 5955,
+        "width": 556,
+        "height": 402
+      },
+      "size": {
+        "x": 556,
+        "y": 402
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          55
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:78": {
+      "parentId": "202:77",
+      "childIds": [
+        "202:79"
+      ],
+      "name": "appstore",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2812,
+        "y": 6298,
+        "width": 204.23077392578125,
+        "height": 59
+      },
+      "absoluteRenderBounds": {
+        "x": -2812,
+        "y": 6298,
+        "width": 204.23077392578125,
+        "height": 59
+      },
+      "size": {
+        "x": 204.23077392578125,
+        "y": 59
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1.9868667777700466e-7
+        ],
+        [
+          0,
+          1,
+          343
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "visible": false,
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [
+          {
+            "blendMode": "NORMAL",
+            "visible": false,
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          }
+        ],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "exportSettings": [
+          {
+            "suffix": "",
+            "format": "PNG",
+            "constraint": {
+              "type": "HEIGHT",
+              "value": 512
+            }
+          }
+        ],
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:79": {
+      "parentId": "202:78",
+      "childIds": [
+        "202:80",
+        "202:81",
+        "202:82",
+        "202:85",
+        "202:94"
+      ],
+      "name": "Group",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2812,
+        "y": 6298,
+        "width": 204.23077392578125,
+        "height": 59
+      },
+      "absoluteRenderBounds": {
+        "x": -2812,
+        "y": 6298,
+        "width": 204.23077392578125,
+        "height": 59
+      },
+      "size": {
+        "x": 204.23077392578125,
+        "y": 59
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:80": {
+      "parentId": "202:79",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2810.865478515625,
+        "y": 6299.11328125,
+        "width": 201.96153259277344,
+        "height": 56.773582458496094
+      },
+      "absoluteRenderBounds": {
+        "x": -2810.865478515625,
+        "y": 6299.11328125,
+        "width": 201.96142578125,
+        "height": 56.7734375
+      },
+      "size": {
+        "x": 201.96153259277344,
+        "y": 56.773582458496094
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          1.1346291303634644
+        ],
+        [
+          0,
+          1,
+          1.1132009029388428
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:81": {
+      "parentId": "202:79",
+      "childIds": [],
+      "name": "path16",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2812,
+        "y": 6298.000005480197,
+        "width": 204.23075692825478,
+        "height": 58.999994519803295
+      },
+      "absoluteRenderBounds": {
+        "x": -2812,
+        "y": 6298,
+        "width": 204.230712890625,
+        "height": 59
+      },
+      "size": {
+        "x": 162.9946746826172,
+        "y": 47.64164733886719
+      },
+      "relativeTransform": [
+        [
+          1.2529903650283813,
+          0,
+          0.000007419062967528589
+        ],
+        [
+          0,
+          -1.2384121417999268,
+          58.999996185302734
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.6509804129600525,
+            "g": 0.6509804129600525,
+            "b": 0.6509804129600525,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:82": {
+      "parentId": "202:79",
+      "childIds": [
+        "202:83"
+      ],
+      "name": "Group",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2792.6484375,
+        "y": 6307.169921875,
+        "width": 31.40024757385254,
+        "height": 37.62957000732422
+      },
+      "absoluteRenderBounds": {
+        "x": -2792.6484375,
+        "y": 6307.169921875,
+        "width": 31.40024757385254,
+        "height": 37.62957000732422
+      },
+      "size": {
+        "x": 31.40024757385254,
+        "y": 37.62957000732422
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          19.3515625
+        ],
+        [
+          0,
+          1,
+          9.169921875
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:83": {
+      "parentId": "202:82",
+      "childIds": [
+        "202:84"
+      ],
+      "name": "Group",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2792.6484375,
+        "y": 6307.169921875,
+        "width": 31.40024757385254,
+        "height": 37.62957000732422
+      },
+      "absoluteRenderBounds": {
+        "x": -2792.6484375,
+        "y": 6307.169921875,
+        "width": 31.40024757385254,
+        "height": 37.62957000732422
+      },
+      "size": {
+        "x": 31.40024757385254,
+        "y": 37.62957000732422
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:84": {
+      "parentId": "202:83",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2792.6484375,
+        "y": 6307.169921875,
+        "width": 31.40024757385254,
+        "height": 37.629547119140625
+      },
+      "absoluteRenderBounds": {
+        "x": -2792.6484375,
+        "y": 6307.169921875,
+        "width": 31.400146484375,
+        "height": 37.62939453125
+      },
+      "size": {
+        "x": 31.40024757385254,
+        "y": 37.629547119140625
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0.0000038052867239457555
+        ],
+        [
+          0,
+          1,
+          -0.00001049041748046875
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "fillOverrideTable": {
+          "1": null
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:85": {
+      "parentId": "202:79",
+      "childIds": [
+        "202:86",
+        "202:87",
+        "202:88",
+        "202:89",
+        "202:90",
+        "202:91",
+        "202:92",
+        "202:93"
+      ],
+      "name": "Group",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2747.8408203125,
+        "y": 6324.55126953125,
+        "width": 120.64137268066406,
+        "height": 25.68417739868164
+      },
+      "absoluteRenderBounds": {
+        "x": -2747.8408203125,
+        "y": 6324.55126953125,
+        "width": 120.64137268066406,
+        "height": 25.68417739868164
+      },
+      "size": {
+        "x": 120.64137268066406,
+        "y": 25.68417739868164
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          64.1591796875
+        ],
+        [
+          0,
+          1,
+          26.55126953125
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:86": {
+      "parentId": "202:85",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2747.8408203125,
+        "y": 6324.8388671875,
+        "width": 16.996532440185547,
+        "height": 19.629301071166992
+      },
+      "absoluteRenderBounds": {
+        "x": -2747.8408203125,
+        "y": 6324.8388671875,
+        "width": 16.99658203125,
+        "height": 19.62939453125
+      },
+      "size": {
+        "x": 16.996532440185547,
+        "y": 19.629301071166992
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          -0.000006561385362147121
+        ],
+        [
+          0,
+          1,
+          0.2875991761684418
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:87": {
+      "parentId": "202:85",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2728.1572265625,
+        "y": 6330.0234375,
+        "width": 13.979976654052734,
+        "height": 20.211925506591797
+      },
+      "absoluteRenderBounds": {
+        "x": -2728.1572265625,
+        "y": 6330.0234375,
+        "width": 13.97998046875,
+        "height": 20.2119140625
+      },
+      "size": {
+        "x": 13.979976654052734,
+        "y": 20.211925506591797
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          19.68359375
+        ],
+        [
+          0,
+          1,
+          5.47216796875
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:88": {
+      "parentId": "202:85",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2711.458984375,
+        "y": 6330.0234375,
+        "width": 13.978461265563965,
+        "height": 20.211925506591797
+      },
+      "absoluteRenderBounds": {
+        "x": -2711.458984375,
+        "y": 6330.0234375,
+        "width": 13.978515625,
+        "height": 20.2119140625
+      },
+      "size": {
+        "x": 13.978461265563965,
+        "y": 20.211925506591797
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          36.38182830810547
+        ],
+        [
+          0,
+          1,
+          5.472264766693115
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:89": {
+      "parentId": "202:85",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2691.3017578125,
+        "y": 6324.55126953125,
+        "width": 12.489850044250488,
+        "height": 20.207502365112305
+      },
+      "absoluteRenderBounds": {
+        "x": -2691.3017578125,
+        "y": 6324.55126953125,
+        "width": 12.48974609375,
+        "height": 20.20751953125
+      },
+      "size": {
+        "x": 12.489850044250488,
+        "y": 20.207502365112305
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          56.5390625
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:90": {
+      "parentId": "202:85",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2676.9892578125,
+        "y": 6326.787109375,
+        "width": 8.840914726257324,
+        "height": 17.969926834106445
+      },
+      "absoluteRenderBounds": {
+        "x": -2676.9892578125,
+        "y": 6326.787109375,
+        "width": 8.8408203125,
+        "height": 17.9697265625
+      },
+      "size": {
+        "x": 8.840914726257324,
+        "y": 17.969926834106445
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          70.8514404296875
+        ],
+        [
+          0,
+          1,
+          2.2360668182373047
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:91": {
+      "parentId": "202:85",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2666.3271484375,
+        "y": 6330.02490234375,
+        "width": 14.21899700164795,
+        "height": 14.763275146484375
+      },
+      "absoluteRenderBounds": {
+        "x": -2666.3271484375,
+        "y": 6330.02490234375,
+        "width": 14.218994140625,
+        "height": 14.76318359375
+      },
+      "size": {
+        "x": 14.21899700164795,
+        "y": 14.763275146484375
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          81.5137710571289
+        ],
+        [
+          0,
+          1,
+          5.47371244430542
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:92": {
+      "parentId": "202:85",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2649.390625,
+        "y": 6330.0234375,
+        "width": 7.766859531402588,
+        "height": 14.44467544555664
+      },
+      "absoluteRenderBounds": {
+        "x": -2649.390625,
+        "y": 6330.0234375,
+        "width": 7.766845703125,
+        "height": 14.44482421875
+      },
+      "size": {
+        "x": 7.766859531402588,
+        "y": 14.44467544555664
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          98.4501953125
+        ],
+        [
+          0,
+          1,
+          5.47216796875
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:93": {
+      "parentId": "202:85",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2640.100830078125,
+        "y": 6329.9970703125,
+        "width": 12.901315689086914,
+        "height": 14.733771324157715
+      },
+      "absoluteRenderBounds": {
+        "x": -2640.100830078125,
+        "y": 6329.9970703125,
+        "width": 12.9013671875,
+        "height": 14.73388671875
+      },
+      "size": {
+        "x": 12.901315689086914,
+        "y": 14.733771324157715
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          107.74004364013672
+        ],
+        [
+          0,
+          1,
+          5.445681571960449
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:94": {
+      "parentId": "202:79",
+      "childIds": [
+        "202:95"
+      ],
+      "name": "Group",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2745.926025390625,
+        "y": 6307.669921875,
+        "width": 117.2905044555664,
+        "height": 10.301399230957031
+      },
+      "absoluteRenderBounds": {
+        "x": -2745.926025390625,
+        "y": 6307.669921875,
+        "width": 117.29052734375,
+        "height": 10.301399230957031
+      },
+      "size": {
+        "x": 117.2905044555664,
+        "y": 10.301399230957031
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          66.07398986816406
+        ],
+        [
+          0,
+          1,
+          9.670111656188965
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:95": {
+      "parentId": "202:94",
+      "childIds": [
+        "202:96",
+        "202:97",
+        "202:98",
+        "202:99",
+        "202:100",
+        "202:101",
+        "202:102",
+        "202:103",
+        "202:104",
+        "202:105",
+        "202:106",
+        "202:107",
+        "202:108"
+      ],
+      "name": "Group",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2745.926025390625,
+        "y": 6307.669921875,
+        "width": 117.2905044555664,
+        "height": 10.301399230957031
+      },
+      "absoluteRenderBounds": {
+        "x": -2745.926025390625,
+        "y": 6307.669921875,
+        "width": 117.29052734375,
+        "height": 10.301399230957031
+      },
+      "size": {
+        "x": 117.2905044555664,
+        "y": 10.301399230957031
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:96": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2745.926025390625,
+        "y": 6308.09765625,
+        "width": 8.129905700683594,
+        "height": 9.801376342773438
+      },
+      "absoluteRenderBounds": {
+        "x": -2745.926025390625,
+        "y": 6308.09765625,
+        "width": 8.1298828125,
+        "height": 9.80126953125
+      },
+      "size": {
+        "x": 8.129905700683594,
+        "y": 9.801376342773438
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          -0.000016617183064226992
+        ],
+        [
+          0,
+          1,
+          0.4277760088443756
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:97": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2735.917236328125,
+        "y": 6310.71875,
+        "width": 6.98469877243042,
+        "height": 7.252573013305664
+      },
+      "absoluteRenderBounds": {
+        "x": -2735.917236328125,
+        "y": 6310.71875,
+        "width": 6.984619140625,
+        "height": 7.25244140625
+      },
+      "size": {
+        "x": 6.98469877243042,
+        "y": 7.252573013305664
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          10.008829116821289
+        ],
+        [
+          0,
+          1,
+          3.048832416534424
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:98": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2727.38037109375,
+        "y": 6310.8603515625,
+        "width": 10.332554817199707,
+        "height": 6.953150272369385
+      },
+      "absoluteRenderBounds": {
+        "x": -2727.38037109375,
+        "y": 6310.8603515625,
+        "width": 10.33251953125,
+        "height": 6.953125
+      },
+      "size": {
+        "x": 10.332554817199707,
+        "y": 6.953150272369385
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          18.545673370361328
+        ],
+        [
+          0,
+          1,
+          3.1904356479644775
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:99": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2715.079345703125,
+        "y": 6310.71435546875,
+        "width": 6.2509541511535645,
+        "height": 7.09917688369751
+      },
+      "absoluteRenderBounds": {
+        "x": -2715.079345703125,
+        "y": 6310.71435546875,
+        "width": 6.2509765625,
+        "height": 7.09912109375
+      },
+      "size": {
+        "x": 6.2509541511535645,
+        "y": 7.09917688369751
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          30.8466796875
+        ],
+        [
+          0,
+          1,
+          3.04443359375
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:100": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2706.04052734375,
+        "y": 6307.669921875,
+        "width": 1.5839099884033203,
+        "height": 10.143573760986328
+      },
+      "absoluteRenderBounds": {
+        "x": -2706.04052734375,
+        "y": 6307.669921875,
+        "width": 1.583984375,
+        "height": 10.1435546875
+      },
+      "size": {
+        "x": 1.5839099884033203,
+        "y": 10.143573760986328
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          39.88553237915039
+        ],
+        [
+          0,
+          1,
+          0.0000068068320615566336
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:101": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2702.107666015625,
+        "y": 6310.71875,
+        "width": 6.98469877243042,
+        "height": 7.252573013305664
+      },
+      "absoluteRenderBounds": {
+        "x": -2702.107666015625,
+        "y": 6310.71875,
+        "width": 6.984619140625,
+        "height": 7.25244140625
+      },
+      "size": {
+        "x": 6.98469877243042,
+        "y": 7.252573013305664
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          43.818359375
+        ],
+        [
+          0,
+          1,
+          3.048828125
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:102": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2693.30419921875,
+        "y": 6310.71875,
+        "width": 5.854610919952393,
+        "height": 7.252573013305664
+      },
+      "absoluteRenderBounds": {
+        "x": -2693.30419921875,
+        "y": 6310.71875,
+        "width": 5.8544921875,
+        "height": 7.25244140625
+      },
+      "size": {
+        "x": 5.854610919952393,
+        "y": 7.252573013305664
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          52.62194061279297
+        ],
+        [
+          0,
+          1,
+          3.048832416534424
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:103": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2685.248291015625,
+        "y": 6307.669921875,
+        "width": 6.807683944702148,
+        "height": 10.301399230957031
+      },
+      "absoluteRenderBounds": {
+        "x": -2685.248291015625,
+        "y": 6307.669921875,
+        "width": 6.8076171875,
+        "height": 10.30126953125
+      },
+      "size": {
+        "x": 6.807683944702148,
+        "y": 10.301399230957031
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          60.677738189697266
+        ],
+        [
+          0,
+          1,
+          0.0000068068320615566336
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:104": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2671.865478515625,
+        "y": 6310.71875,
+        "width": 6.984690189361572,
+        "height": 7.252573013305664
+      },
+      "absoluteRenderBounds": {
+        "x": -2671.865478515625,
+        "y": 6310.71875,
+        "width": 6.984619140625,
+        "height": 7.25244140625
+      },
+      "size": {
+        "x": 6.984690189361572,
+        "y": 7.252573013305664
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          74.060546875
+        ],
+        [
+          0,
+          1,
+          3.048828125
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:105": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2662.60595703125,
+        "y": 6310.71435546875,
+        "width": 6.249456405639648,
+        "height": 7.09917688369751
+      },
+      "absoluteRenderBounds": {
+        "x": -2662.60595703125,
+        "y": 6310.71435546875,
+        "width": 6.24951171875,
+        "height": 7.09912109375
+      },
+      "size": {
+        "x": 6.249456405639648,
+        "y": 7.09917688369751
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          83.32012176513672
+        ],
+        [
+          0,
+          1,
+          3.0444254875183105
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:106": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2650.029541015625,
+        "y": 6309.12890625,
+        "width": 4.3432936668396,
+        "height": 8.827875137329102
+      },
+      "absoluteRenderBounds": {
+        "x": -2650.029541015625,
+        "y": 6309.12890625,
+        "width": 4.34326171875,
+        "height": 8.82763671875
+      },
+      "size": {
+        "x": 4.3432936668396,
+        "y": 8.827875137329102
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          95.896484375
+        ],
+        [
+          0,
+          1,
+          1.458984375
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:107": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2643.486572265625,
+        "y": 6307.669921875,
+        "width": 6.19351863861084,
+        "height": 10.143573760986328
+      },
+      "absoluteRenderBounds": {
+        "x": -2643.486572265625,
+        "y": 6307.669921875,
+        "width": 6.193603515625,
+        "height": 10.1435546875
+      },
+      "size": {
+        "x": 6.19351863861084,
+        "y": 10.143573760986328
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          102.439453125
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:108": {
+      "parentId": "202:95",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2634.975830078125,
+        "y": 6310.70556640625,
+        "width": 6.3402276039123535,
+        "height": 7.237823486328125
+      },
+      "absoluteRenderBounds": {
+        "x": -2634.975830078125,
+        "y": 6310.70556640625,
+        "width": 6.34033203125,
+        "height": 7.23779296875
+      },
+      "size": {
+        "x": 6.3402276039123535,
+        "y": 7.237823486328125
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          110.95024108886719
+        ],
+        [
+          0,
+          1,
+          3.035564422607422
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:109": {
+      "parentId": "202:77",
+      "childIds": [
+        "202:110",
+        "202:111",
+        "202:112",
+        "202:114",
+        "202:116",
+        "202:118",
+        "202:120",
+        "202:122",
+        "202:124",
+        "202:126",
+        "202:127",
+        "202:129",
+        "202:131",
+        "202:133"
+      ],
+      "name": "googleplay",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2587,
+        "y": 6297.999999046326,
+        "width": 203.95004272460938,
+        "height": 59.000000953674316
+      },
+      "absoluteRenderBounds": {
+        "x": -2587,
+        "y": 6297.999999046326,
+        "width": 203.95004272460938,
+        "height": 59.000000953674316
+      },
+      "size": {
+        "x": 163.1600341796875,
+        "y": 47.20000076293945
+      },
+      "relativeTransform": [
+        [
+          1.25,
+          0,
+          225
+        ],
+        [
+          0,
+          -1.25,
+          402
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "exportSettings": [
+          {
+            "suffix": "",
+            "format": "PNG",
+            "constraint": {
+              "type": "HEIGHT",
+              "value": 512
+            }
+          }
+        ],
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:110": {
+      "parentId": "202:109",
+      "childIds": [],
+      "name": "path14",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2587,
+        "y": 6298.000000756029,
+        "width": 203.95005007188047,
+        "height": 58.999999243970706
+      },
+      "absoluteRenderBounds": {
+        "x": -2587,
+        "y": 6298,
+        "width": 203.949951171875,
+        "height": 59
+      },
+      "size": {
+        "x": 162.77064514160156,
+        "y": 47.64165115356445
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          0
+        ],
+        [
+          0,
+          0.9907297492027283,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:111": {
+      "parentId": "202:109",
+      "childIds": [],
+      "name": "path16",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2587,
+        "y": 6298.000000756029,
+        "width": 203.95005007188047,
+        "height": 58.999999243970706
+      },
+      "absoluteRenderBounds": {
+        "x": -2587,
+        "y": 6298,
+        "width": 203.949951171875,
+        "height": 59
+      },
+      "size": {
+        "x": 162.77064514160156,
+        "y": 47.64165115356445
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          0
+        ],
+        [
+          0,
+          0.9907297492027283,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.6509804129600525,
+            "g": 0.6509804129600525,
+            "b": 0.6509804129600525,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:112": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:113"
+      ],
+      "name": "g18",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2524.527099609375,
+        "y": 6308.1259765625,
+        "width": 9.162641412361154,
+        "height": 9.248247435554731
+      },
+      "absoluteRenderBounds": {
+        "x": -2524.62744140625,
+        "y": 6308.02685546875,
+        "width": 9.36328125,
+        "height": 9.4462890625
+      },
+      "size": {
+        "x": 7.312619209289551,
+        "y": 7.467826843261719
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          49.97834014892578
+        ],
+        [
+          0,
+          -0.9907297492027283,
+          39.099300384521484
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:113": {
+      "parentId": "202:112",
+      "childIds": [],
+      "name": "path20",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2524.527099609375,
+        "y": 6308.1259765625,
+        "width": 9.162641412361154,
+        "height": 9.248247435554731
+      },
+      "absoluteRenderBounds": {
+        "x": -2524.62744140625,
+        "y": 6308.02685546875,
+        "width": 9.36328125,
+        "height": 9.4462890625
+      },
+      "size": {
+        "x": 7.312619209289551,
+        "y": 7.467826843261719
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokeWeight": 0.1599999964237213,
+      "strokeAlign": "CENTER",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "strokeMiterAngle": 11.478341102600098,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:114": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:115"
+      ],
+      "name": "g22",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2513.69140625,
+        "y": 6308.32861328125,
+        "width": 5.289484386255026,
+        "height": 8.842622744870823
+      },
+      "absoluteRenderBounds": {
+        "x": -2513.791748046875,
+        "y": 6308.2294921875,
+        "width": 5.489990234375,
+        "height": 9.041015625
+      },
+      "size": {
+        "x": 4.2214884757995605,
+        "y": 7.1402907371521
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          58.64695739746094
+        ],
+        [
+          0,
+          -0.9907297492027283,
+          38.93706130981445
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:115": {
+      "parentId": "202:114",
+      "childIds": [],
+      "name": "path24",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2513.69140625,
+        "y": 6308.32861328125,
+        "width": 5.289484386255026,
+        "height": 8.842622744870823
+      },
+      "absoluteRenderBounds": {
+        "x": -2513.791748046875,
+        "y": 6308.2294921875,
+        "width": 5.489990234375,
+        "height": 9.041015625
+      },
+      "size": {
+        "x": 4.2214884757995605,
+        "y": 7.1402907371521
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokeWeight": 0.1599999964237213,
+      "strokeAlign": "CENTER",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "strokeMiterAngle": 11.478341102600098,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:116": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:117"
+      ],
+      "name": "g26",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2507.183837890625,
+        "y": 6308.32861328125,
+        "width": 6.226135838010578,
+        "height": 8.842622744870823
+      },
+      "absoluteRenderBounds": {
+        "x": -2507.2841796875,
+        "y": 6308.2294921875,
+        "width": 6.4267578125,
+        "height": 9.041015625
+      },
+      "size": {
+        "x": 4.969021320343018,
+        "y": 7.1402907371521
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          63.85294723510742
+        ],
+        [
+          0,
+          -0.9907297492027283,
+          38.93706130981445
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:117": {
+      "parentId": "202:116",
+      "childIds": [],
+      "name": "path28",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2507.183837890625,
+        "y": 6308.32861328125,
+        "width": 6.226135838010578,
+        "height": 8.842622744870823
+      },
+      "absoluteRenderBounds": {
+        "x": -2507.2841796875,
+        "y": 6308.2294921875,
+        "width": 6.4267578125,
+        "height": 9.041015625
+      },
+      "size": {
+        "x": 4.969021320343018,
+        "y": 7.1402907371521
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokeWeight": 0.1599999964237213,
+      "strokeAlign": "CENTER",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "strokeMiterAngle": 11.478341102600098,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:118": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:119"
+      ],
+      "name": "g30",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2496.451904296875,
+        "y": 6308.32861328125,
+        "width": 1.1651611805450557,
+        "height": 8.842622744870823
+      },
+      "absoluteRenderBounds": {
+        "x": -2496.55224609375,
+        "y": 6308.2294921875,
+        "width": 1.36572265625,
+        "height": 9.041015625
+      },
+      "size": {
+        "x": 0.9299043416976929,
+        "y": 7.1402907371521
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          72.43851470947266
+        ],
+        [
+          0,
+          -0.9907297492027283,
+          38.93706130981445
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:119": {
+      "parentId": "202:118",
+      "childIds": [],
+      "name": "path32",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2496.451904296875,
+        "y": 6308.32861328125,
+        "width": 1.1651611805450557,
+        "height": 8.842622744870823
+      },
+      "absoluteRenderBounds": {
+        "x": -2496.55224609375,
+        "y": 6308.2294921875,
+        "width": 1.36572265625,
+        "height": 9.041015625
+      },
+      "size": {
+        "x": 0.9299043416976929,
+        "y": 7.1402907371521
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokeWeight": 0.1599999964237213,
+      "strokeAlign": "CENTER",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "strokeMiterAngle": 11.478341102600098,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:120": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:121"
+      ],
+      "name": "g34",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2493.817626953125,
+        "y": 6308.32861328125,
+        "width": 6.233680121562429,
+        "height": 8.842622744870823
+      },
+      "absoluteRenderBounds": {
+        "x": -2493.91796875,
+        "y": 6308.2294921875,
+        "width": 6.434326171875,
+        "height": 9.041015625
+      },
+      "size": {
+        "x": 4.975042343139648,
+        "y": 7.1402907371521
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          74.54597473144531
+        ],
+        [
+          0,
+          -0.9907297492027283,
+          38.93706130981445
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:121": {
+      "parentId": "202:120",
+      "childIds": [],
+      "name": "path36",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2493.817626953125,
+        "y": 6308.32861328125,
+        "width": 6.233680121562429,
+        "height": 8.842622744870823
+      },
+      "absoluteRenderBounds": {
+        "x": -2493.91796875,
+        "y": 6308.2294921875,
+        "width": 6.434326171875,
+        "height": 9.041015625
+      },
+      "size": {
+        "x": 4.975042343139648,
+        "y": 7.1402907371521
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokeWeight": 0.1599999964237213,
+      "strokeAlign": "CENTER",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "strokeMiterAngle": 11.478341102600098,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:122": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:123"
+      ],
+      "name": "g38",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2483.7783203125,
+        "y": 6308.1259765625,
+        "width": 9.317502664513086,
+        "height": 9.248247435554731
+      },
+      "absoluteRenderBounds": {
+        "x": -2483.878662109375,
+        "y": 6308.02685546875,
+        "width": 9.51806640625,
+        "height": 9.4462890625
+      },
+      "size": {
+        "x": 7.436212539672852,
+        "y": 7.467826843261719
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          82.57734680175781
+        ],
+        [
+          0,
+          -0.9907297492027283,
+          39.099220275878906
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:123": {
+      "parentId": "202:122",
+      "childIds": [],
+      "name": "path40",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2483.7783203125,
+        "y": 6308.1259765625,
+        "width": 9.317502664513086,
+        "height": 9.248247435554731
+      },
+      "absoluteRenderBounds": {
+        "x": -2483.878662109375,
+        "y": 6308.02685546875,
+        "width": 9.51806640625,
+        "height": 9.4462890625
+      },
+      "size": {
+        "x": 7.436212539672852,
+        "y": 7.467826843261719
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokeWeight": 0.1599999964237213,
+      "strokeAlign": "CENTER",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "strokeMiterAngle": 11.478341102600098,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:124": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:125"
+      ],
+      "name": "g42",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2472.82421875,
+        "y": 6308.32861328125,
+        "width": 6.985298564209643,
+        "height": 8.842622744870823
+      },
+      "absoluteRenderBounds": {
+        "x": -2472.924560546875,
+        "y": 6308.2294921875,
+        "width": 7.185791015625,
+        "height": 9.041015625
+      },
+      "size": {
+        "x": 5.574902057647705,
+        "y": 7.1402907371521
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          91.34062194824219
+        ],
+        [
+          0,
+          -0.9907297492027283,
+          38.937110900878906
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:125": {
+      "parentId": "202:124",
+      "childIds": [],
+      "name": "path44",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2472.82421875,
+        "y": 6308.32861328125,
+        "width": 6.985298564209643,
+        "height": 8.842622744870823
+      },
+      "absoluteRenderBounds": {
+        "x": -2472.924560546875,
+        "y": 6308.2294921875,
+        "width": 7.185791015625,
+        "height": 9.041015625
+      },
+      "size": {
+        "x": 5.574902057647705,
+        "y": 7.1402907371521
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokeWeight": 0.1599999964237213,
+      "strokeAlign": "CENTER",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "strokeMiterAngle": 11.478341102600098,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:126": {
+      "parentId": "202:109",
+      "childIds": [],
+      "name": "path46",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2524.999267578125,
+        "y": 6323.143071618404,
+        "width": 128.080581047152,
+        "height": 25.121088537845935
+      },
+      "absoluteRenderBounds": {
+        "x": -2524.999267578125,
+        "y": 6323.14306640625,
+        "width": 128.08056640625,
+        "height": 25.12109375
+      },
+      "size": {
+        "x": 102.21992492675781,
+        "y": 20.2849178314209
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          49.600643157958984
+        ],
+        [
+          0,
+          0.9907297492027283,
+          6.988528728485107
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:127": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:128"
+      ],
+      "name": "g48",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2571.935546875,
+        "y": 6309.012741560267,
+        "width": 19.531983420806682,
+        "height": 36.974563127232614
+      },
+      "absoluteRenderBounds": {
+        "x": -2571.935546875,
+        "y": 6309.0126953125,
+        "width": 19.531983420806682,
+        "height": 36.974609375
+      },
+      "size": {
+        "x": 15.588294982910156,
+        "y": 29.856428146362305
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          12.051562309265137
+        ],
+        [
+          0,
+          0.9907297492027283,
+          8.810155868530273
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:128": {
+      "parentId": "202:127",
+      "childIds": [],
+      "name": "path64",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2571.935546875,
+        "y": 6309.012739198184,
+        "width": 19.531983420806682,
+        "height": 36.974565489315864
+      },
+      "absoluteRenderBounds": {
+        "x": -2571.935546875,
+        "y": 6309.0126953125,
+        "width": 19.531982421875,
+        "height": 36.974609375
+      },
+      "size": {
+        "x": 15.588294982910156,
+        "y": 29.856430053710938
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "GRADIENT_LINEAR",
+          "gradientHandlePositions": [
+            {
+              "x": 0.9148951148478162,
+              "y": 0.04960407934538552
+            },
+            {
+              "x": -0.3831731813737916,
+              "y": 0.719092481387289
+            },
+            {
+              "x": 1.56392926295862,
+              "y": 0.3843482803663372
+            }
+          ],
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0,
+                "g": 0.6274510025978088,
+                "b": 1,
+                "a": 1
+              },
+              "position": 0
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 0.6313725709915161,
+                "b": 1,
+                "a": 1
+              },
+              "position": 0.006599999964237213
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 0.7450980544090271,
+                "b": 1,
+                "a": 1
+              },
+              "position": 0.26010000705718994
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 0.8235294222831726,
+                "b": 1,
+                "a": 1
+              },
+              "position": 0.5121999979019165
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 0.8745098114013672,
+                "b": 1,
+                "a": 1
+              },
+              "position": 0.7603999972343445
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 0.8901960849761963,
+                "b": 1,
+                "a": 1
+              },
+              "position": 1
+            }
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:129": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:130"
+      ],
+      "name": "g66",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2552.404052734375,
+        "y": 6321.190457667134,
+        "width": 15.35432042161483,
+        "height": 12.61862436411593
+      },
+      "absoluteRenderBounds": {
+        "x": -2552.404052734375,
+        "y": 6321.1904296875,
+        "width": 15.35432042161483,
+        "height": 12.61865234375
+      },
+      "size": {
+        "x": 12.254140853881836,
+        "y": 10.18935775756836
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          27.67675018310547
+        ],
+        [
+          0,
+          0.9907297492027283,
+          18.552576065063477
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:130": {
+      "parentId": "202:129",
+      "childIds": [],
+      "name": "path78",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2552.404052734375,
+        "y": 6321.190457667134,
+        "width": 15.35432042161483,
+        "height": 12.61862436411593
+      },
+      "absoluteRenderBounds": {
+        "x": -2552.404052734375,
+        "y": 6321.1904296875,
+        "width": 15.354248046875,
+        "height": 12.61865234375
+      },
+      "size": {
+        "x": 12.254140853881836,
+        "y": 10.18935775756836
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "GRADIENT_LINEAR",
+          "gradientHandlePositions": [
+            {
+              "x": 1.0758564279778582,
+              "y": 0.5001636120689569
+            },
+            {
+              "x": -1.3049225309581003,
+              "y": 0.5001636120689569
+            },
+            {
+              "x": 1.0758564279778582,
+              "y": 1.9143599135089793
+            }
+          ],
+          "gradientStops": [
+            {
+              "color": {
+                "r": 1,
+                "g": 0.8784313797950745,
+                "b": 0,
+                "a": 1
+              },
+              "position": 0
+            },
+            {
+              "color": {
+                "r": 1,
+                "g": 0.7411764860153198,
+                "b": 0,
+                "a": 1
+              },
+              "position": 0.40869998931884766
+            },
+            {
+              "color": {
+                "r": 1,
+                "g": 0.6470588445663452,
+                "b": 0,
+                "a": 1
+              },
+              "position": 0.7753999829292297
+            },
+            {
+              "color": {
+                "r": 1,
+                "g": 0.6117647290229797,
+                "b": 0,
+                "a": 1
+              },
+              "position": 1
+            }
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:131": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:132"
+      ],
+      "name": "g80",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2571.2353515625,
+        "y": 6327.49987385267,
+        "width": 25.212377843672584,
+        "height": 18.972294116079865
+      },
+      "absoluteRenderBounds": {
+        "x": -2571.2353515625,
+        "y": 6327.49987385267,
+        "width": 25.21240234375,
+        "height": 18.972294116079865
+      },
+      "size": {
+        "x": 20.12176513671875,
+        "y": 15.319854736328125
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          12.611655235290527
+        ],
+        [
+          0,
+          0.9907297492027283,
+          8.422164916992188
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:132": {
+      "parentId": "202:131",
+      "childIds": [],
+      "name": "path88",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2571.2353515625,
+        "y": 6327.4998726716285,
+        "width": 25.212377843672584,
+        "height": 18.97229529712149
+      },
+      "absoluteRenderBounds": {
+        "x": -2571.2353515625,
+        "y": 6327.5,
+        "width": 25.21240234375,
+        "height": 18.97216796875
+      },
+      "size": {
+        "x": 20.12176513671875,
+        "y": 15.319855690002441
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "GRADIENT_LINEAR",
+          "gradientHandlePositions": [
+            {
+              "x": 0.862377342942638,
+              "y": 1.1785101783082468
+            },
+            {
+              "x": -0.501313745864965,
+              "y": 2.9478527605744462
+            },
+            {
+              "x": 1.5442228873464394,
+              "y": 2.0631814694413464
+            }
+          ],
+          "gradientStops": [
+            {
+              "color": {
+                "r": 1,
+                "g": 0.22745098173618317,
+                "b": 0.2666666805744171,
+                "a": 1
+              },
+              "position": 0
+            },
+            {
+              "color": {
+                "r": 0.7647058963775635,
+                "g": 0.06666667014360428,
+                "b": 0.3843137323856354,
+                "a": 1
+              },
+              "position": 1
+            }
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:133": {
+      "parentId": "202:109",
+      "childIds": [
+        "202:134"
+      ],
+      "name": "g90",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2571.2353515625,
+        "y": 6308.533980759284,
+        "width": 25.212377843672584,
+        "height": 18.966019240716378
+      },
+      "absoluteRenderBounds": {
+        "x": -2571.2353515625,
+        "y": 6308.533980759284,
+        "width": 25.21240234375,
+        "height": 18.966019240716378
+      },
+      "size": {
+        "x": 20.12176513671875,
+        "y": 15.314787864685059
+      },
+      "relativeTransform": [
+        [
+          1.002392292022705,
+          0,
+          12.611655235290527
+        ],
+        [
+          0,
+          0.9907297492027283,
+          23.600000381469727
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:134": {
+      "parentId": "202:133",
+      "childIds": [],
+      "name": "path104",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2571.2353515625,
+        "y": 6308.533979578242,
+        "width": 25.212377843672584,
+        "height": 18.966020421758003
+      },
+      "absoluteRenderBounds": {
+        "x": -2571.2353515625,
+        "y": 6308.5341796875,
+        "width": 25.21240234375,
+        "height": 18.9658203125
+      },
+      "size": {
+        "x": 20.12176513671875,
+        "y": 15.314788818359375
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "GRADIENT_LINEAR",
+          "gradientHandlePositions": [
+            {
+              "x": -0.1880128646505369,
+              "y": -1.5417105471951922
+            },
+            {
+              "x": 0.42093626755950997,
+              "y": -0.7513655490797244
+            },
+            {
+              "x": 0.11645900492183958,
+              "y": -1.9368865460080635
+            }
+          ],
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.19607843458652496,
+                "g": 0.6274510025978088,
+                "b": 0.4431372582912445,
+                "a": 1
+              },
+              "position": 0
+            },
+            {
+              "color": {
+                "r": 0.1764705926179886,
+                "g": 0.6549019813537598,
+                "b": 0.4431372582912445,
+                "a": 1
+              },
+              "position": 0.06849999725818634
+            },
+            {
+              "color": {
+                "r": 0.08235294371843338,
+                "g": 0.8117647171020508,
+                "b": 0.45490196347236633,
+                "a": 1
+              },
+              "position": 0.47620001435279846
+            },
+            {
+              "color": {
+                "r": 0.0235294122248888,
+                "g": 0.9058823585510254,
+                "b": 0.4588235318660736,
+                "a": 1
+              },
+              "position": 0.8008999824523926
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 0.9411764740943909,
+                "b": 0.4627451002597809,
+                "a": 1
+              },
+              "position": 1
+            }
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:135": {
+      "parentId": "202:77",
+      "childIds": [],
+      "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "type": "TEXT",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2812.000000198687,
+        "y": 6067,
+        "width": 556.0000001986868,
+        "height": 191.00000057837588
+      },
+      "absoluteRenderBounds": {
+        "x": -2811.5,
+        "y": 6073,
+        "width": 540.428955078125,
+        "height": 183.27294921875
+      },
+      "size": {
+        "x": 556,
+        "y": 191
+      },
+      "relativeTransform": [
+        [
+          1,
+          -1.0402444461377058e-9,
+          1.9868667777700466e-7
+        ],
+        [
+          1.0402444461377058e-9,
+          1,
+          112
+        ]
+      ],
+      "rotation": 1.0402444461377058e-9,
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "style": {
+        "fontFamily": "Inter",
+        "fontPostScriptName": null,
+        "fontStyle": "Regular",
+        "fontWeight": 400,
+        "fontSize": 16,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 24,
+        "lineHeightPercent": 123.94366455078125,
+        "lineHeightPercentFontSize": 150,
+        "lineHeightUnit": "PIXELS"
+      },
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "characters": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "lineTypes": [
+          "NONE",
+          "NONE",
+          "NONE"
+        ],
+        "lineIndentations": [
+          0,
+          0,
+          0
+        ],
+        "layoutVersion": 4,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:136": {
+      "parentId": "202:77",
+      "childIds": [],
+      "name": "Download and Install PG Slot App For APK & IOS",
+      "type": "TEXT",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2812,
+        "y": 5955,
+        "width": 510,
+        "height": 96
+      },
+      "absoluteRenderBounds": {
+        "x": -2811.191162109375,
+        "y": 5965.9345703125,
+        "width": 473.567138671875,
+        "height": 80.02001953125
+      },
+      "size": {
+        "x": 510,
+        "y": 96
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "style": {
+        "fontFamily": "Inter",
+        "fontPostScriptName": "Inter-Bold",
+        "fontStyle": "Bold",
+        "fontWeight": 700,
+        "textAutoResize": "HEIGHT",
+        "fontSize": 34,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 48,
+        "lineHeightPercent": 116.6528549194336,
+        "lineHeightPercentFontSize": 141.1764678955078,
+        "lineHeightUnit": "PIXELS"
+      },
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "characters": "Download and Install PG Slot App For APK & IOS",
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "lineTypes": [
+          "NONE"
+        ],
+        "lineIndentations": [
+          0
+        ],
+        "layoutVersion": 4,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:137": {
+      "parentId": "202:76",
+      "childIds": [
+        "202:138",
+        "202:139",
+        "202:143"
+      ],
+      "name": "Group 1261154074",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2095.95654296875,
+        "y": 5900,
+        "width": 380.9130859375,
+        "height": 511.0000915527344
+      },
+      "absoluteRenderBounds": {
+        "x": -2095.95654296875,
+        "y": 5900,
+        "width": 380.9130859375,
+        "height": 511.0000915527344
+      },
+      "size": {
+        "x": 380.9130859375,
+        "y": 511.0000915527344
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          716.04345703125
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:138": {
+      "parentId": "202:137",
+      "childIds": [],
+      "name": "Group 1261154072 1",
+      "type": "RECTANGLE",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2095.95654296875,
+        "y": 6062.80322265625,
+        "width": 380.9130859375,
+        "height": 348.1966552734375
+      },
+      "absoluteRenderBounds": {
+        "x": -2095.95654296875,
+        "y": 6062.80322265625,
+        "width": 380.9130859375,
+        "height": 348.19677734375
+      },
+      "size": {
+        "x": 380.9130859375,
+        "y": 348.1966552734375
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          162.80343627929688
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "d81f47615638650e7d457fd9fccef230acbf76eb"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:139": {
+      "parentId": "202:137",
+      "childIds": [
+        "202:140",
+        "202:141",
+        "202:142"
+      ],
+      "name": "Group 1261154070",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2061.68212890625,
+        "y": 5900,
+        "width": 307.6905517578125,
+        "height": 461.1463317871094
+      },
+      "absoluteRenderBounds": {
+        "x": -2061.68212890625,
+        "y": 5900,
+        "width": 307.6905517578125,
+        "height": 461.146484375
+      },
+      "size": {
+        "x": 307.6905517578125,
+        "y": 461.1463317871094
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          34.27434539794922
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:140": {
+      "parentId": "202:139",
+      "childIds": [],
+      "name": "image 30 copy 1",
+      "type": "RECTANGLE",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2061.68212890625,
+        "y": 5900,
+        "width": 307.6905517578125,
+        "height": 461.1463317871094
+      },
+      "absoluteRenderBounds": {
+        "x": -2061.68212890625,
+        "y": 5900,
+        "width": 307.6905517578125,
+        "height": 461.146484375
+      },
+      "size": {
+        "x": 307.6905517578125,
+        "y": 461.1463317871094
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "STRETCH",
+          "imageRef": "6e6b9a5ca3f1f5164ec6a2fa0058274ddf95bd3f",
+          "imageTransform": [
+            [
+              0.8021472096443176,
+              0,
+              0.12269937992095947
+            ],
+            [
+              0,
+              0.6870819330215454,
+              0.061635538935661316
+            ]
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:141": {
+      "parentId": "202:139",
+      "childIds": [],
+      "name": "Rectangle 5766",
+      "type": "RECTANGLE",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2021.176025390625,
+        "y": 5966.2119140625,
+        "width": 74.00151824951172,
+        "height": 31.15853500366211
+      },
+      "absoluteRenderBounds": {
+        "x": -2021.176025390625,
+        "y": 5966.2119140625,
+        "width": 74.00146484375,
+        "height": 31.15869140625
+      },
+      "size": {
+        "x": 74.00151824951172,
+        "y": 31.15853500366211
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          40.506065368652344
+        ],
+        [
+          0,
+          1,
+          66.21195983886719
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "GRADIENT_LINEAR",
+          "gradientHandlePositions": [
+            {
+              "x": 0.02197802454237202,
+              "y": 0.3874999985602008
+            },
+            {
+              "x": 0.9945055170606136,
+              "y": 0.9750000813668098
+            },
+            {
+              "x": -0.27177201686093244,
+              "y": 2.904218645802826
+            }
+          ],
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.09803921729326248,
+                "g": 0.10980392247438431,
+                "b": 0.19607843458652496,
+                "a": 1
+              },
+              "position": 0
+            },
+            {
+              "color": {
+                "r": 0.08235294371843338,
+                "g": 0.10196078568696976,
+                "b": 0.20000000298023224,
+                "a": 1
+              },
+              "position": 1
+            }
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:142": {
+      "parentId": "202:139",
+      "childIds": [],
+      "name": "image 25",
+      "type": "RECTANGLE",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2008.712646484375,
+        "y": 5969.32763671875,
+        "width": 42.46793746948242,
+        "height": 24.926828384399414
+      },
+      "absoluteRenderBounds": {
+        "x": -2008.712646484375,
+        "y": 5969.32763671875,
+        "width": 42.4678955078125,
+        "height": 24.9267578125
+      },
+      "size": {
+        "x": 42.46793746948242,
+        "y": 24.926828384399414
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          52.9694938659668
+        ],
+        [
+          0,
+          1,
+          69.32767486572266
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "STRETCH",
+          "imageRef": "cd1794405c6495d20a7b67276cf304d2685fe322",
+          "imageTransform": [
+            [
+              1.0015528202056885,
+              0,
+              0
+            ],
+            [
+              0,
+              0.9029760360717773,
+              0.0042484779842197895
+            ]
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:143": {
+      "parentId": "202:137",
+      "childIds": [
+        "202:144",
+        "202:145"
+      ],
+      "name": "Mask group",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2095.95654296875,
+        "y": 6062.80322265625,
+        "width": 380.9130859375,
+        "height": 348.1966552734375
+      },
+      "absoluteRenderBounds": {
+        "x": -2095.95654296875,
+        "y": 6062.80322265625,
+        "width": 380.9130859375,
+        "height": 348.19677734375
+      },
+      "size": {
+        "x": 380.9130859375,
+        "y": 348.1966552734375
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          162.80343627929688
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:144": {
+      "parentId": "202:143",
+      "childIds": [],
+      "name": "Group 1261154072 2",
+      "type": "RECTANGLE",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2095.95654296875,
+        "y": 6062.80322265625,
+        "width": 380.9130859375,
+        "height": 348.1966552734375
+      },
+      "absoluteRenderBounds": null,
+      "size": {
+        "x": 380.9130859375,
+        "y": 348.1966552734375
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "isMask": true,
+      "maskType": "ALPHA",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "d81f47615638650e7d457fd9fccef230acbf76eb"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:145": {
+      "parentId": "202:143",
+      "childIds": [
+        "202:146",
+        "202:147",
+        "202:148"
+      ],
+      "name": "Group 1261154073",
+      "type": "GROUP",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2061.68212890625,
+        "y": 5900,
+        "width": 307.6905517578125,
+        "height": 599.0228881835938
+      },
+      "absoluteRenderBounds": {
+        "x": -2061.68212890625,
+        "y": 6062.80322265625,
+        "width": 307.6905517578125,
+        "height": 348.19677734375
+      },
+      "size": {
+        "x": 307.6905517578125,
+        "y": 599.0228881835938
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          34.2744140625
+        ],
+        [
+          0,
+          1,
+          -162.80322265625
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:146": {
+      "parentId": "202:145",
+      "childIds": [],
+      "name": "image 30 copy 1",
+      "type": "RECTANGLE",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2061.68212890625,
+        "y": 5900,
+        "width": 307.6905517578125,
+        "height": 599.0228881835938
+      },
+      "absoluteRenderBounds": {
+        "x": -2061.68212890625,
+        "y": 6062.80322265625,
+        "width": 307.6905517578125,
+        "height": 348.19677734375
+      },
+      "size": {
+        "x": 307.6905517578125,
+        "y": 599.0228881835938
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "STRETCH",
+          "imageRef": "6e6b9a5ca3f1f5164ec6a2fa0058274ddf95bd3f",
+          "imageTransform": [
+            [
+              0.8021472096443176,
+              0,
+              0.12269937992095947
+            ],
+            [
+              0,
+              0.892510175704956,
+              0.061635538935661316
+            ]
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:147": {
+      "parentId": "202:145",
+      "childIds": [],
+      "name": "Rectangle 5766",
+      "type": "RECTANGLE",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2021.176025390625,
+        "y": 5966.2119140625,
+        "width": 74.00151824951172,
+        "height": 31.15853500366211
+      },
+      "absoluteRenderBounds": null,
+      "size": {
+        "x": 74.00151824951172,
+        "y": 31.15853500366211
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          40.506065368652344
+        ],
+        [
+          0,
+          1,
+          66.21195983886719
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "GRADIENT_LINEAR",
+          "gradientHandlePositions": [
+            {
+              "x": 0.02197802454237202,
+              "y": 0.3874999985602008
+            },
+            {
+              "x": 0.9945055170606136,
+              "y": 0.9750000813668098
+            },
+            {
+              "x": -0.27177201686093244,
+              "y": 2.904218645802826
+            }
+          ],
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.09803921729326248,
+                "g": 0.10980392247438431,
+                "b": 0.19607843458652496,
+                "a": 1
+              },
+              "position": 0
+            },
+            {
+              "color": {
+                "r": 0.08235294371843338,
+                "g": 0.10196078568696976,
+                "b": 0.20000000298023224,
+                "a": 1
+              },
+              "position": 1
+            }
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "202:148": {
+      "parentId": "202:145",
+      "childIds": [],
+      "name": "image 25",
+      "type": "RECTANGLE",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2008.712646484375,
+        "y": 5969.32763671875,
+        "width": 42.46793746948242,
+        "height": 24.926828384399414
+      },
+      "absoluteRenderBounds": null,
+      "size": {
+        "x": 42.46793746948242,
+        "y": 24.926828384399414
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          52.9694938659668
+        ],
+        [
+          0,
+          1,
+          69.32767486572266
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "STRETCH",
+          "imageRef": "cd1794405c6495d20a7b67276cf304d2685fe322",
+          "imageTransform": [
+            [
+              1.0015528202056885,
+              0,
+              0
+            ],
+            [
+              0,
+              0.9029760360717773,
+              0.0042484779842197895
+            ]
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    }
+  }
+}

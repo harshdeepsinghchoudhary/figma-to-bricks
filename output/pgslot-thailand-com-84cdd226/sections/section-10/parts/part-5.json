@@ -1,0 +1,50 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "scope-section",
+      "children": [
+        {
+          "type": "text",
+          "id": "lorem-paragraph",
+          "figmaNodeId": "202:135",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "lineHeight": "24px",
+            "color": "#FFFFFF",
+            "align": "left"
+          },
+          "size": {
+            "width": 556,
+            "height": 191
+          },
+          "figma": {
+            "constraints": {
+              "vertical": "SCALE",
+              "horizontal": "SCALE"
+            },
+            "style": {
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": 400,
+              "textAlignHorizontal": "LEFT",
+              "lineHeight": "24px"
+            },
+            "fills": [
+              {
+                "t": "SOLID",
+                "c": "#FFFFFF"
+              }
+            ],
+            "strokeWeight": 1,
+            "strokeAlign": "OUTSIDE"
+          }
+        }
+      ]
+    }
+  ]
+}

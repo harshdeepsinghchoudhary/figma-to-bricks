@@ -1,0 +1,41 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "scope-section",
+      "children": [
+        {
+          "type": "text",
+          "id": "visa-and-mastercard",
+          "figmaNodeId": "202:464",
+          "text": "Visa and Mastercard",
+          "figma": {
+            "name": "Visa and Mastercard",
+            "type": "TEXT",
+            "box": [
+              -1898,
+              7508,
+              202,
+              32
+            ],
+            "fills": [
+              {
+                "t": "SOLID",
+                "c": "#FFFFFF"
+              }
+            ]
+          },
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": 700,
+            "lineHeight": "32px",
+            "color": "#FFFFFF",
+            "align": "center"
+          }
+        }
+      ]
+    }
+  ]
+}

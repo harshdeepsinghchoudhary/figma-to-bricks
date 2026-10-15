@@ -1,0 +1,817 @@
+[
+  {
+    "id": "pkhp3u",
+    "name": "heading",
+    "parent": "3yqwsc",
+    "children": [],
+    "settings": {
+      "text": "Latest Promotions and Bonuses of PG Slots Thailand",
+      "tag": "h2",
+      "_width": "100%",
+      "_widthMax": "593px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "700",
+        "line-height": "48px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "q14oga",
+    "name": "image",
+    "parent": "wnpxkq",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/rectangle-5771-202_157.png",
+        "url": "../../assets/rectangle-5771-202_157.png"
+      },
+      "_width": "100%",
+      "_widthMax": "258px",
+      "_border": {
+        "radius": {
+          "top": "6px",
+          "right": "6px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "u0mq3j",
+    "name": "heading",
+    "parent": "mmczbv",
+    "children": [],
+    "settings": {
+      "text": "Welcome Bonus",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "700",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "pxplkg",
+    "name": "text",
+    "parent": "mmczbv",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy the printing and </p>",
+      "_margin": {
+        "top": "10"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "m7805g",
+    "name": "text-basic",
+    "parent": "mmczbv",
+    "children": [],
+    "settings": {
+      "text": "Claim Now",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "mmczbv",
+    "name": "div",
+    "parent": "wnpxkq",
+    "children": [
+      "u0mq3j",
+      "pxplkg",
+      "m7805g"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_widthMax": "209px"
+    }
+  },
+  {
+    "id": "wnpxkq",
+    "name": "div",
+    "parent": "1omsmh",
+    "children": [
+      "q14oga",
+      "mmczbv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "32",
+        "left": "0"
+      },
+      "_background": {
+        "color": {
+          "raw": "#18070C"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    }
+  },
+  {
+    "id": "on3ene",
+    "name": "image",
+    "parent": "bij1mn",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/rectangle-5772-202_166.png",
+        "url": "../../assets/rectangle-5772-202_166.png"
+      },
+      "_width": "100%",
+      "_widthMax": "258px",
+      "_border": {
+        "radius": {
+          "top": "6px",
+          "right": "6px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "zgcm8a",
+    "name": "heading",
+    "parent": "lgieeq",
+    "children": [],
+    "settings": {
+      "text": "No Deposit Bonus",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "700",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "e19mu0",
+    "name": "text",
+    "parent": "lgieeq",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy the printing and </p>",
+      "_margin": {
+        "top": "10"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "ptikbf",
+    "name": "text",
+    "parent": "tx9ymk",
+    "children": [],
+    "settings": {
+      "text": "<p>Claim Now</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "tx9ymk",
+    "name": "div",
+    "parent": "lgieeq",
+    "children": [
+      "ptikbf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "12",
+        "right": "24",
+        "bottom": "12",
+        "left": "24"
+      },
+      "_margin": {
+        "top": "25"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      }
+    }
+  },
+  {
+    "id": "lgieeq",
+    "name": "div",
+    "parent": "bij1mn",
+    "children": [
+      "zgcm8a",
+      "e19mu0",
+      "tx9ymk"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_widthMax": "209px"
+    }
+  },
+  {
+    "id": "bij1mn",
+    "name": "div",
+    "parent": "hd7zqu",
+    "children": [
+      "on3ene",
+      "lgieeq"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    }
+  },
+  {
+    "id": "hd7zqu",
+    "name": "div",
+    "parent": "1omsmh",
+    "children": [
+      "bij1mn"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "20",
+        "left": "0"
+      },
+      "_background": {
+        "color": {
+          "raw": "#18070C"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    }
+  },
+  {
+    "id": "4kmy4y",
+    "name": "image",
+    "parent": "oy9m09",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/mask-group-202_189.png",
+        "url": "../../assets/mask-group-202_189.png"
+      },
+      "_width": "100%",
+      "_widthMax": "258px",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "tk4a6m",
+    "name": "heading",
+    "parent": "8ekcyj",
+    "children": [],
+    "settings": {
+      "text": "PG Slot Free Credit",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "700",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "ohurev",
+    "name": "text-basic",
+    "parent": "8ekcyj",
+    "children": [],
+    "settings": {
+      "text": "Lorem Ipsum is simply dummy the printing and ",
+      "_margin": {
+        "top": "10"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "917mrj",
+    "name": "text",
+    "parent": "8ekcyj",
+    "children": [],
+    "settings": {
+      "text": "<p>Claim Now</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "8ekcyj",
+    "name": "div",
+    "parent": "oy9m09",
+    "children": [
+      "tk4a6m",
+      "ohurev",
+      "917mrj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "12",
+        "left": "0"
+      },
+      "_widthMax": "209px",
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      }
+    }
+  },
+  {
+    "id": "oy9m09",
+    "name": "div",
+    "parent": "1omsmh",
+    "children": [
+      "4kmy4y",
+      "8ekcyj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "20",
+        "left": "1"
+      },
+      "_background": {
+        "color": {
+          "raw": "#18070C"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    }
+  },
+  {
+    "id": "ehzllz",
+    "name": "image",
+    "parent": "2wvwtq",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/rectangle-5774-202_175.png",
+        "url": "../../assets/rectangle-5774-202_175.png"
+      },
+      "_width": "100%",
+      "_widthMax": "259px",
+      "_border": {
+        "radius": {
+          "top": "6px",
+          "right": "6px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "ap5smc",
+    "name": "heading",
+    "parent": "7u3yec",
+    "children": [],
+    "settings": {
+      "text": "PG Slot VIP Bonus",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "700",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "center"
+      }
+    }
+  },
+  {
+    "id": "ip8j4e",
+    "name": "text",
+    "parent": "7u3yec",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy the printing and </p>",
+      "_margin": {
+        "top": "10"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "4vuawu",
+    "name": "text-basic",
+    "parent": "m4nffu",
+    "children": [],
+    "settings": {
+      "text": "Claim Now",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "m4nffu",
+    "name": "div",
+    "parent": "7u3yec",
+    "children": [
+      "4vuawu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "12",
+        "right": "24",
+        "bottom": "12",
+        "left": "24"
+      },
+      "_margin": {
+        "top": "25"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      }
+    }
+  },
+  {
+    "id": "7u3yec",
+    "name": "div",
+    "parent": "2wvwtq",
+    "children": [
+      "ap5smc",
+      "ip8j4e",
+      "m4nffu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_widthMax": "209px",
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      }
+    }
+  },
+  {
+    "id": "2wvwtq",
+    "name": "div",
+    "parent": "1omsmh",
+    "children": [
+      "ehzllz",
+      "7u3yec"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "20",
+        "left": "0"
+      },
+      "_background": {
+        "color": {
+          "raw": "#18070C"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    }
+  },
+  {
+    "id": "1omsmh",
+    "name": "div",
+    "parent": "3yqwsc",
+    "children": [
+      "wnpxkq",
+      "hd7zqu",
+      "oy9m09",
+      "2wvwtq"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(4, 1fr)",
+      "_gridGap": "29.33",
+      "_alignItemsGrid": "stretch",
+      "_width": "100%",
+      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
+      "_gridGap:tablet_portrait": "29.33",
+      "_gridTemplateColumns:mobile_portrait": "1fr"
+    }
+  },
+  {
+    "id": "3yqwsc",
+    "name": "div",
+    "parent": "owe69x",
+    "children": [
+      "pkhp3u",
+      "1omsmh"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "42",
+      "_columnGap": "42",
+      "_alignItems": "center",
+      "_width": "100%",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    }
+  },
+  {
+    "id": "owe69x",
+    "name": "container",
+    "parent": "zix0zj",
+    "children": [
+      "3yqwsc"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1122px"
+    }
+  },
+  {
+    "id": "zix0zj",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "owe69x"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_background": {
+        "color": {
+          "raw": "#280C14"
+        }
+      }
+    }
+  }
+]

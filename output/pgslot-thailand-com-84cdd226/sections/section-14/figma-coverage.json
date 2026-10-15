@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "sourceHash": "4f20f3a7d43d1d33c20b638e0ae2709f06088972f4b455d5451ba40ce4ac77c0",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "pgslot-thailand.com (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:211",
+      "parentId": "scope",
+      "name": "Group 1261154091",
+      "type": "GROUP",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:212",
+      "parentId": "202:211",
+      "name": "Group 1261154085",
+      "type": "GROUP",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:213",
+      "parentId": "202:212",
+      "name": "Group 1261153951",
+      "type": "GROUP",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:214",
+      "parentId": "202:213",
+      "name": "Is PG Slot Legal in Thailand?",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:215",
+      "parentId": "202:213",
+      "name": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:216",
+      "parentId": "202:213",
+      "name": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:217",
+      "parentId": "202:212",
+      "name": "Frame 25",
+      "type": "FRAME",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:218",
+      "parentId": "202:217",
+      "name": "Lear More",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:219",
+      "parentId": "202:211",
+      "name": "Group 1261154090",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:220",
+      "parentId": "202:219",
+      "name": "Group 1261154086",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:221",
+      "parentId": "202:220",
+      "name": "Ellipse 1",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:220"
+    },
+    {
+      "nodeId": "202:222",
+      "parentId": "202:220",
+      "name": "Mask group",
+      "type": "GROUP",
+      "status": "covered-by-export",
+      "representedBy": "202:220"
+    },
+    {
+      "nodeId": "202:223",
+      "parentId": "202:222",
+      "name": "Ellipse 2",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:220"
+    },
+    {
+      "nodeId": "202:224",
+      "parentId": "202:222",
+      "name": "Vector 19",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:220"
+    },
+    {
+      "nodeId": "202:225",
+      "parentId": "202:219",
+      "name": "Mask group",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:226",
+      "parentId": "202:225",
+      "name": "Ellipse 1",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "202:225"
+    },
+    {
+      "nodeId": "202:227",
+      "parentId": "202:225",
+      "name": "image 33",
+      "type": "RECTANGLE",
+      "status": "covered-by-export",
+      "representedBy": "202:225"
+    }
+  ],
+  "summary": {
+    "represented": 8,
+    "covered-by-export": 6,
+    "button-label": 0,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 4
+  }
+}

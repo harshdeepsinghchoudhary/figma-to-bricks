@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "sourceHash": "7d9101ab9431f51fc879ab57edd4b0888e4da5590587e0aa7f6b0484741eb9b2",
+  "warnings": [
+    "202:372: mixed text runs preserved in figma.styleOverrideTable; a single native text style cannot reproduce every run"
+  ],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "pgslot-thailand.com (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:364",
+      "parentId": "scope",
+      "name": "Group 1261154130",
+      "type": "GROUP",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:365",
+      "parentId": "202:364",
+      "name": "Rectangle 5776",
+      "type": "RECTANGLE",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "202:366",
+      "parentId": "202:364",
+      "name": "Group 1261154129",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:367",
+      "parentId": "202:366",
+      "name": "Frame 44",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:368",
+      "parentId": "202:367",
+      "name": "image 25",
+      "type": "RECTANGLE",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:369",
+      "parentId": "202:367",
+      "name": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the ipsum is simply dummy text of the printing text.",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:370",
+      "parentId": "202:366",
+      "name": "Frame 42",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:371",
+      "parentId": "202:370",
+      "name": "Related things",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:372",
+      "parentId": "202:370",
+      "name": "All (1) Pgslot game review (15)",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:373",
+      "parentId": "202:366",
+      "name": "Frame 43",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:374",
+      "parentId": "202:373",
+      "name": "Subject",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "202:375",
+      "parentId": "202:373",
+      "name": "Piggy Gold slot game review Review of Dragon Tiger Luck slot game Emperor's Favor slot game review Review of Dim Sum Mania slot game Mermaid's Market Review",
+      "type": "TEXT",
+      "status": "represented"
+    }
+  ],
+  "summary": {
+    "represented": 11,
+    "covered-by-export": 0,
+    "button-label": 0,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 2
+  }
+}

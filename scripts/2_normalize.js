@@ -648,6 +648,7 @@ async function callOllama(turns, { model, maxTokens }) {
     body: JSON.stringify({
       model,
       stream: false,
+      think: false, // qwen3.x / deepseek-r1 style models otherwise spend the whole token budget "thinking" and the JSON is cut off
       format: "json",
       options: { num_ctx: numCtx, num_predict: maxTokens, temperature: 0 },
       messages: stripImages(turns).map((t) => ({
@@ -1000,7 +1001,13 @@ async function main() {
   if (DETERMINISTIC) {
     const manifestFile = path.join(frameDir, "asset-manifest.json");
     const deterministicManifest = fs.existsSync(manifestFile) ? JSON.parse(fs.readFileSync(manifestFile, "utf8")) : [];
-    const result = deterministicNormalize(scopedRoot, deterministicManifest, { metadata: sourceMetadata });
+    const result = deterministicNormalize(scopedRoot, deterministicManifest, { metadata: sourceMetadata, frameWidth: fullRoot.absoluteBoundingBox?.width || 0, siteWidth: (() => {
+      // the site (container) width: the most common width of the page's top-level frames that are narrower than the page
+      const pw = fullRoot.absoluteBoundingBox?.width || 0, counts = {};
+      for (const k of fullRoot.children || []) { const w = Math.round(k.absoluteBoundingBox?.width || 0); if (w >= 600 && (!pw || w < pw * 0.99)) counts[w] = (counts[w] || 0) + 1; }
+      const best = Object.entries(counts).sort((a, b) => b[1] - a[1] || b[0] - a[0])[0];
+      return best ? Number(best[0]) : 0;
+    })() });
     // Reuse measured loose-layout handling; authoritative Auto Layout is reapplied afterwards.
     const deterministicStats = { count: 0, charsSaved: 0 };
     const deterministicPruned = pruneGraphics(scopedRoot, deterministicStats);

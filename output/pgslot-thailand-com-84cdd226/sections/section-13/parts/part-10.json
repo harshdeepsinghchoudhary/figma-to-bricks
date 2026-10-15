@@ -1,0 +1,30 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "contact-us-part",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "text",
+          "id": "contact-us-label",
+          "figmaNodeId": "202:201",
+          "text": "Contact us",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 500,
+            "lineHeight": "19.36px",
+            "color": "#1A070C",
+            "align": "left"
+          },
+          "size": {
+            "width": 84,
+            "height": 19
+          }
+        }
+      ]
+    }
+  ]
+}

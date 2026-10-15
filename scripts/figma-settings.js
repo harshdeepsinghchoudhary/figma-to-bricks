@@ -19,6 +19,8 @@ export function applyFigmaSettings(node, settings, { supportedKeys = new Set(), 
   if (source.layoutAlign === "STRETCH") set("_alignSelf", "stretch");
   const hasAbsoluteChildren = (node.children || []).some((child) => child.figma?.position?.mode === "absolute" || child.figma?.layoutPositioning === "ABSOLUTE");
   if (hasAbsoluteChildren || source.geometryPositioned) set("_position", "relative");
+  // Artwork pinned behind flowing content: the parent opens a stacking context so a negative z-index stays inside it.
+  if (source.geometryLayered) { set("_position", "relative"); set("_zIndex", "0"); }
   if (source.position?.mode === "absolute") {
     // Measured offsets refer to the original parent's origin, so regrouping must not reuse them blindly.
     const actualParent = parentNode?.figmaNodeId || parentNode?.asset?.nodeId;
@@ -27,9 +29,10 @@ export function applyFigmaSettings(node, settings, { supportedKeys = new Set(), 
       set("_position", "absolute");
       if (finite(source.position.left)) set("_left", `${source.position.left}px`);
       if (finite(source.position.top)) set("_top", `${source.position.top}px`);
+      if (source.position.behind) set("_zIndex", "-1");
       const width = source.size?.x ?? source.absoluteBoundingBox?.width;
       const height = source.size?.y ?? source.absoluteBoundingBox?.height;
-      if (finite(width)) set("_width", `${width}px`);
+      if (finite(width)) { set("_width", `${width}px`); set("_widthMax", "100%"); } // a pinned layer may never be wider than its box: no sideways scrolling on narrow screens
       if (finite(height)) set("_height", `${height}px`);
     }
   }

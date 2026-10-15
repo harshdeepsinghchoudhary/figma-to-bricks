@@ -291,6 +291,22 @@ export function recognizeComponents(input, { figmaRoot = null, schemaDir = runti
     const row = n.type === "row" || n.layout?.direction === "row" || source?.layoutMode === "HORIZONTAL";
     let kind = n.component?.role ? null : n.component?.kind;
     if (!kind && /(^|[\s_-])(carousel|slider)([\s_-]|$)/i.test(label) && kids.length >= 2 && (/arrow|pagination|dots|next|previous/i.test(allLabels) || source?.clipsContent || ["INSTANCE", "COMPONENT"].includes(source?.type))) kind = "slider";
+    // Carousel by geometry: three or more equal slides side by side that run well past the page width (a Figma slider lays its slides out in a row).
+    if (!kind && !n.component && kids.length >= 3 && n.type !== "section") {
+      const frameW = (figmaRoot?.document || figmaRoot)?.absoluteBoundingBox?.width || 0;
+      const boxes = kids.map(c => nodes.get(c.figmaNodeId)?.absoluteBoundingBox);
+      if (frameW && boxes.every(Boolean)) {
+        const ws = boxes.map(b => b.width), hs = boxes.map(b => b.height), sorted = [...boxes].sort((a, b) => a.x - b.x);
+        const span = sorted.at(-1).x + sorted.at(-1).width - sorted[0].x;
+        const sideBySide = sorted.every((b, i) => !i || b.x >= sorted[i - 1].x + sorted[i - 1].width - 1);
+        if (sideBySide && span > frameW * 1.3 && Math.max(...ws) - Math.min(...ws) <= 2 && Math.max(...hs) - Math.min(...hs) <= 2) {
+          kind = "slider";
+          n.component = { kind: "slider", options: { slidesPerView: 1, arrows: true, pagination: true, gap: Math.max(0, Math.round(sorted[1].x - sorted[0].x - sorted[0].width)) } };
+          n.children = kids.slice().sort((a, b) => nodes.get(a.figmaNodeId).absoluteBoundingBox.x - nodes.get(b.figmaNodeId).absoluteBoundingBox.x);
+          report.push(`${n.id}: ${kids.length} equal slides side by side past the page width -> native slider (arrows/pagination are Bricks defaults, not read from the design).`);
+        }
+      }
+    }
     if (!kind && /(^|[\s_-])tabs([\s_-]|$)/i.test(label)) kind = "tabs";
     if (!kind && /(^|[\s_-])(accordion|faq)([\s_-]|$)/i.test(label)) kind = "accordion";
     if (!kind && row && kids.length >= 3 && kids.every(c => navigationLabel(c) && String(navigationLabel(c).text || "").length <= 48) && [label, ...ancestors.map(a => sourceName(a, nodes))].some(s => /(^|[\s_-])(nav|navigation|menu|header)([\s_-]|$)/i.test(s))) kind = "navigation";

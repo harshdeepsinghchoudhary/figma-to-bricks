@@ -69,7 +69,11 @@ test("deterministic overlap keeps z-order and measured offsets without losing so
   const second = deterministicNormalize(root);
   assert.deepEqual(first, second);
   assert.deepEqual(first.doc.children[0].children.map((node) => node.figmaNodeId), ["overlap:2", "overlap:3"]);
-  assert.deepEqual(first.doc.children[0].children[1].figma.position, { mode: "absolute", left: 20, top: 15 });
+  // the panel is artwork behind the copy: pinned behind it, while the text flows with its measured offset
+  assert.deepEqual(first.doc.children[0].children[0].figma.position, { mode: "absolute", left: 0, top: 0, behind: true });
+  assert.equal(first.doc.children[0].children[1].figma.position, undefined);
+  assert.equal(first.doc.children[0].layout.padding.left, 20);
+  assert.equal(first.doc.children[0].layout.padding.top, 15);
   assert.equal(first.report.summary.unrepresented, 0);
   assert.equal(validateNormalized(first.doc).errors.length, 0);
 });
@@ -91,7 +95,7 @@ test("measured setting application respects installed control support and origin
   const { doc } = deterministicNormalize(fixture());
   const root = doc.children[0];
   const badge = root.children.find((node) => node.figmaNodeId === "10:5");
-  const keys = new Set(["_overflow", "_position", "_left", "_top", "_width", "_height", "_opacity", "_heightMin", "_heightMax", "_border"]);
+  const keys = new Set(["_overflow", "_position", "_left", "_top", "_width", "_widthMax", "_height", "_opacity", "_heightMin", "_heightMax", "_border"]);
   const settings = {};
   assert.equal(applyFigmaSettings(badge, settings, { supportedKeys: keys, parentNode: root }).length, 0);
   assert.equal(settings._position, "absolute");
@@ -117,7 +121,10 @@ test("large vectors and hairline strokes remain exportable, missing graphics fai
   assert.deepEqual(nativeLine.border.sides, ["top"]);
   assert.equal(nativeLine.size.height, 0);
   assert.equal(validateNormalized({ type: "page", children: [nativeLine] }).errors.length, 0);
-  assert.throws(() => deterministicNormalize({ id: "svg:root", type: "FRAME", children: [curve] }), /Required export missing/);
+  // a graphic without an export no longer costs the whole section: it is kept as a sized empty block and reported
+  const degraded = deterministicNormalize({ id: "svg:root", type: "FRAME", children: [curve] });
+  assert.equal(degraded.doc.children[0].children[0].type, "block");
+  assert.ok(degraded.doc._uncertain.some((note) => /no exported file/.test(note)));
   const result = deterministicNormalize({ id: "svg:root", type: "FRAME", children: [curve] }, [{ nodeId: curve.id, type: "svg", file: "wave.svg" }]);
   assert.equal(result.doc.children[0].children[0].asset.kind, "svg");
 });

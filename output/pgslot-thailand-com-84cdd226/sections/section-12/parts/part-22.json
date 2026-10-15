@@ -1,0 +1,30 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "tmb",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "text-basic",
+          "id": "tmb-label",
+          "text": "TMB",
+          "figmaNodeId": "202:469",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": 700,
+            "lineHeight": "32px",
+            "color": "#FFFFFF",
+            "align": "center"
+          },
+          "size": {
+            "width": 45,
+            "height": 32
+          }
+        }
+      ]
+    }
+  ]
+}

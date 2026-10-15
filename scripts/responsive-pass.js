@@ -161,9 +161,21 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
     if (n.size?.width === "fill" && (n.layout?.margin?.left || n.layout?.margin?.right) && parent && !parentRow && !parentGrid
         && !["center", "start", "end"].includes(parent.layout?.align)) delete n.size.width;
     // very wide side padding is a desktop-only offset (text pushed to one side of a banner): shrink it on small screens
-    for (const side of ["left", "right"]) {
-      const pv = Number(n.layout?.padding?.[side]);
-      if (pv > 60) { setResp(n, T, { layout: { padding: { [side]: Math.min(pv, 40) } } }); setResp(n, M, { layout: { padding: { [side]: Math.min(pv, 20) } } }); }
+    // (both sides in ONE override: two separate overrides replaced each other, so a wide LEFT padding survived on phones and overflowed)
+    {
+      const wide = ["left", "right"].filter((side) => Number(n.layout?.padding?.[side]) > 60);
+      if (wide.length) {
+        setResp(n, T, { layout: { padding: Object.fromEntries(wide.map((side) => [side, Math.min(Number(n.layout.padding[side]), 40)])) } });
+        setResp(n, M, { layout: { padding: Object.fromEntries(wide.map((side) => [side, Math.min(Number(n.layout.padding[side]), 20)])) } });
+      }
+    }
+    // a big side margin is a desktop-only offset (a heading centred by a margin): drop it on tablet and phone
+    {
+      const big = ["left", "right"].filter((side) => Number(n.layout?.margin?.[side]) > 60);
+      if (big.length) {
+        setResp(n, T, { layout: { margin: Object.fromEntries(big.map((side) => [side, 0])) } });
+        setResp(n, M, { layout: { margin: Object.fromEntries(big.map((side) => [side, 0])) } });
+      }
     }
     // side offsets that only line a child up inside a row would push the stacked (100% wide) child out of the screen
     if (parentRow && (n.layout?.margin?.left || n.layout?.margin?.right)) setResp(n, T, { layout: { margin: { left: 0, right: 0 } } });
@@ -187,7 +199,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
         const spread = Math.max(...sides.map((sd) => Math.max(...pads.map((q) => q[sd] ?? 0)) - Math.min(...pads.map((q) => q[sd] ?? 0))));
         if (spread > 0 && spread <= 8) { const m = Object.fromEntries(sides.map((sd) => [sd, Math.max(...pads.map((q) => q[sd] ?? 0))])); for (const k of n.children) k.layout.padding = { ...m }; log(`grid: ${n.id} cards share padding ${m.top}/${m.right}/${m.bottom}/${m.left}`); }
       }
-      if (!n.size?.width || n.size.width === "fill") n.size = { ...(n.size || {}), width: "fill" };
+      if (!n.size?.width || n.size.width === "fill" || n.size.width === "hug") n.size = { ...(n.size || {}), width: "fill" }; // "hug" (Auto Layout hug) would otherwise shrink the row and swallow the spread
       const rowGapOverride = n.layout.gridRowGap !== undefined ? { gridRowGap: stacked } : {};
       if (cols <= 2) setResp(n, T, { layout: { gridColumns: 1, gridGap: stacked, ...rowGapOverride } });
       else {
@@ -217,7 +229,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
         n.layout = { ...n.layout, justify: "space-between", gap: MIN_GAP };
         delete n.layout.columnGap; delete n.layout.rowGap;
         // a row that spreads its children must span its parent, or a centered parent shrinks it to its content
-        if (!n.size?.width || n.size.width === "fill") n.size = { ...(n.size || {}), width: "fill" };
+        if (!n.size?.width || n.size.width === "fill" || n.size.width === "hug") n.size = { ...(n.size || {}), width: "fill" }; // "hug" (Auto Layout hug) would otherwise shrink the row and swallow the spread
       }
       setResp(n, T, { layout: { direction: "column", align: "center", rowGap: STACKED_GAP } });
     }
