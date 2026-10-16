@@ -84,21 +84,75 @@
   },
   {
     "id": "3ahenv",
-    "name": "text-basic",
+    "name": "button",
     "parent": "zwzcbq",
     "children": [],
     "settings": {
       "text": "Lear More",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_margin": {
+        "top": "0",
+        "left": "0"
+      },
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#1A070C"
         },
         "text-align": "left"
-      }
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "100px",
+          "right": "100px",
+          "bottom": "100px",
+          "left": "100px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10"
     }
   },
   {
@@ -139,8 +193,12 @@
         "full": "../../assets/group-1261154086-202_220.svg",
         "url": "../../assets/group-1261154086-202_220.svg"
       },
-      "_width": "100%",
-      "_widthMax": "364px"
+      "_width": "364px",
+      "_widthMax": "100%",
+      "_height": "340px",
+      "_position": "absolute",
+      "_left": "0px",
+      "_top": "0px"
     },
     "themeStyles": []
   },
@@ -157,8 +215,12 @@
         "full": "../../assets/mask-group-202_225.png",
         "url": "../../assets/mask-group-202_225.png"
       },
-      "_width": "100%",
-      "_widthMax": "364px"
+      "_width": "364px",
+      "_widthMax": "100%",
+      "_height": "340px",
+      "_position": "absolute",
+      "_left": "20px",
+      "_top": "25px"
     },
     "themeStyles": []
   },
@@ -171,8 +233,11 @@
       "iro2xl"
     ],
     "settings": {
-      "_display": "flex",
-      "_direction": "column"
+      "_display": "block",
+      "_width": "100%",
+      "_widthMax": "384px",
+      "_height": "365",
+      "_position": "relative"
     }
   },
   {

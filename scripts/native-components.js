@@ -5,6 +5,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { BRICKS_BREAKPOINTS } from "./breakpoints.js";
+import { findPanels } from "./decoration-detect.js";
+import { figmaColor } from "./figma-preservation.js";
+import { resolveLinearGradient } from "./gradient-utils.js";
 
 const runtimeDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../schema/runtime");
 const NATIVE_NAMES = { navigation: "nav-nested", slider: "slider-nested", tabs: "tabs-nested", accordion: "accordion-nested", form: "form" };
@@ -212,23 +215,90 @@ export function recognizeComponents(input, { figmaRoot = null, schemaDir = runti
     // A visual arrow/dot must not become an ordinary slide. Native controls replace only
     // recognized controls; anything unclassified remains visible as a separate sibling.
     const controls = childNodes.filter(control);
+    const dotSources = [];
+    function dotStrip(source) {
+      if (!source) return false;
+      if (source.children?.length === 1) return dotStrip(source.children[0]);
+      const parts = (source.children || []).filter(c => c.visible !== false);
+      const circular = c => c.type === 'ELLIPSE' || !!c.children?.length && c.children.every(circular);
+      if (parts.length !== slides.length || parts.length < 3 || !parts.every(circular)) return false;
+      const boxes = parts.map(c => c.absoluteBoundingBox);
+      return boxes.every(b => b && b.width <= 48 && Math.abs(b.width-b.height) < 2) && boxes.every(b => Math.abs(b.y+b.height/2-boxes[0].y-boxes[0].height/2)<2);
+    }
+    function removeDots(node) {
+      node.children = (node.children || []).filter(c => {
+        const source = nodes.get(c.figmaNodeId || c.asset?.nodeId);
+        if (dotStrip(source)) { dotSources.push(source); return false; }
+        removeDots(c); return true;
+      });
+    }
+    slides.forEach(removeDots);
     const source = nodes.get(n.figmaNodeId), box = source?.absoluteBoundingBox;
     let perPage = options.slidesPerView;
     if (!perPage && box) { const widths = slides.map(c => nodes.get(c.figmaNodeId)?.absoluteBoundingBox?.width || (typeof c.size?.width === "number" ? c.size.width : 0)).filter(w => w > 0); if (widths.length === slides.length && Math.max(...widths) - Math.min(...widths) < Math.max(...widths) * 0.05) perPage = Math.max(1, Math.min(slides.length, Math.floor((box.width + (n.layout?.gap || 0)) / (widths[0] + (n.layout?.gap || 0))))); }
     perPage ||= 1;
-    const settings = { perPage: bare(perPage), type: options.loop ? "loop" : "slide", gap: bare(options.gap ?? n.layout?.gap ?? source?.itemSpacing), arrows: options.arrows ?? controls.some(c => /arrow|next|previous/i.test(sourceName(c, nodes))), pagination: options.pagination ?? controls.some(c => /pagination|dots/i.test(sourceName(c, nodes))) };
+    const settings = { perPage: bare(perPage), type: options.loop ? "loop" : "slide", gap: bare(options.gap ?? n.layout?.gap ?? source?.itemSpacing), arrows: options.arrows ?? controls.some(c => /arrow|next|previous/i.test(sourceName(c, nodes))), pagination: dotSources.length > 0 || (options.pagination ?? controls.some(c => /pagination|dots/i.test(sourceName(c, nodes)))) };
+    if (dotSources.length) report.push(`${n.id}: replaced ${dotSources.length} measured dot strips inside slides with native pagination.`);
+    if (dotSources.length) {
+      let strip = dotSources[0]; while (strip.children?.length === 1) strip = strip.children[0];
+      const dots = strip.children, normal = dots.find(c => c.type === 'ELLIPSE'), active = dots.find(c => c.type !== 'ELLIPSE');
+      if (normal) {
+        settings.paginationWidth = bare(normal.absoluteBoundingBox.width); settings.paginationHeight = bare(normal.absoluteBoundingBox.height);
+        const fill = normal.fills?.find(f => f.visible !== false && f.type === 'SOLID');
+        if (fill) settings.paginationColor = { raw: figmaColor(fill.color, fill.opacity ?? 1) };
+        const gap = dots.length > 2 ? dots[2].absoluteBoundingBox.x - dots[1].absoluteBoundingBox.x - dots[1].absoluteBoundingBox.width : 0;
+        settings.paginationSpacing = { left: `${gap/2}px`, right: `${gap/2}px`, top: '0', bottom: '0' };
+      }
+      if (active) { settings.paginationWidthActive = bare(active.absoluteBoundingBox.width); settings.paginationHeightActive = bare(active.absoluteBoundingBox.height); }
+      if (active) {
+        const painted = descendants(active).find(c => c.fills?.some(f => f.visible !== false && f.type === 'GRADIENT_LINEAR'));
+        const gradient = painted && resolveLinearGradient(painted.fills.find(f=>f.visible !== false && f.type === 'GRADIENT_LINEAR'), painted.absoluteBoundingBox);
+        if (gradient) {
+          const cssGradient = `linear-gradient(${gradient.angle}deg, ${gradient.stops.map(s=>`${s.color} ${s.position}%`).join(', ')})`;
+          const inset = (active.absoluteBoundingBox.width-painted.absoluteBoundingBox.width)/2;
+          const ring = descendants(active).find(c=>c.strokes?.some(p=>p.visible!==false));
+          const selector = '#brxe-__ID__ > .splide__pagination .splide__pagination__page';
+          settings._cssCustom = `${selector} { opacity: 1; transform: none; } ${selector}.is-active { background: transparent; position: relative; } ${selector}.is-active::before { content: ''; position: absolute; inset: ${inset}px; border-radius: 50%; background: ${cssGradient}; }`;
+          if (ring?.strokeWeight) settings._cssCustom += ` ${selector}.is-active::after { content: ''; position: absolute; inset: 0; border: ${ring.strokeWeight}px solid transparent; border-radius: 50%; background: ${cssGradient} border-box; mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); mask-composite: exclude; }`;
+        }
+      }
+      const firstSlide = nodes.get(slides[0].figmaNodeId)?.absoluteBoundingBox, dotBox = dotSources[0].absoluteBoundingBox;
+      if (firstSlide && dotBox) settings.paginationBottom = `${Math.max(0, firstSlide.y+firstSlide.height-dotBox.y-dotBox.height)}px`;
+    }
     for (const [sourceKey, setting] of Object.entries({ slidesPerMove: "perMove", speed: "speed", interval: "interval", autoplay: "autoplay" })) if (options[sourceKey] !== undefined) settings[setting] = typeof options[sourceKey] === "boolean" ? options[sourceKey] : bare(options[sourceKey]);
+    // Bricks' MCP rejects per-breakpoint keys (perPage:tablet_portrait ...) because Splide options are not CSS settings.
+    // Responsive counts go into Splide's own "breakpoints" through the slider's Custom options (JSON) instead.
     const responsive = options.responsive || {};
-    for (const bp of BRICKS_BREAKPOINTS.keys) {
-      const value = responsive[bp];
-      const count = value?.slidesPerView ?? (bp === BRICKS_BREAKPOINTS.tablet ? Math.min(2, perPage) : 1);
-      settings[`perPage:${bp}`] = bare(count);
-      if (value?.slidesPerMove !== undefined) settings[`perMove:${bp}`] = bare(value.slidesPerMove);
-      if (value?.gap !== undefined) settings[`gap:${bp}`] = bare(value.gap);
+    const splideBreakpoints = {};
+    for (const bpt of BRICKS_BREAKPOINTS.variants) {
+      const value = responsive[bpt.key];
+      const count = value?.slidesPerView ?? (bpt.key === BRICKS_BREAKPOINTS.tablet ? Math.min(2, perPage) : 1);
+      const o = { perPage: Number(count) };
+      if (value?.slidesPerMove !== undefined) o.perMove = Number(value.slidesPerMove);
+      if (value?.gap !== undefined) o.gap = Number(value.gap);
+      splideBreakpoints[bpt.width] = o;
+    }
+    // The installed Bricks renderer treats a present checkbox key as enabled,
+    // even when its value is false. Explicit Splide JSON preserves false and
+    // avoids its unrelated 50vh default height.
+    {
+      const custom = { type: settings.type, perPage: Number(perPage), gap: `${Number(settings.gap || 0)}px`, arrows: settings.arrows, pagination: settings.pagination, height: 'auto', autoHeight: true, breakpoints: splideBreakpoints };
+      if (settings.perMove !== undefined) custom.perMove = Number(settings.perMove);
+      if (settings.speed !== undefined) custom.speed = Number(settings.speed);
+      for (const key of ['autoplay','interval']) if (settings[key] !== undefined) custom[key] = settings[key];
+      settings.optionsType = "custom";
+      settings.options = JSON.stringify(custom);
     }
     const nativeSlides = slides.map(slide => {
       // A slide wrapper must not replace an image/text's editable content.
       const output = WRAPPERS.has(slide.type) ? slide : wrapper(`${slide.id}-slide`, [slide]);
+      const slideSource = nodes.get(slide.figmaNodeId), slideBox = slideSource?.absoluteBoundingBox;
+      const panel = slideSource && findPanels(slideSource).find(p => slideBox && Math.abs(p.box.width-slideBox.width)<2 && Math.abs(p.box.height-slideBox.height)<2);
+      if (panel) {
+        output.background = { color: panel.bg.color };
+        output._pseudo = panel.layers.map((layer, i) => ({ asset: { nodeId: layer.id }, placement: i === 0 ? 'before' : 'after', inset: true }));
+      }
+      if (slideBox) output.size = { ...(output.size || {}), minHeight: slideBox.height };
       native(output, "block", { ...(output._nativeSettings || {}) }); output.size = { ...(output.size || {}), width: "fill" }; delete output.size.maxWidth;
       return output;
     });
@@ -258,7 +328,15 @@ export function recognizeComponents(input, { figmaRoot = null, schemaDir = runti
     const pairs = items.map(item => { const children = item.children || []; return { item, title: children.find(c => role(c, "accordion-title", nodes) || /title|question/i.test(sourceName(c, nodes))), content: children.find(c => role(c, "accordion-content", nodes) || /content|answer/i.test(sourceName(c, nodes))) }; });
     if (pairs.some(({ item, title, content }) => !title || !content || item.children.length !== 2)) return "each accordion item requires title and content wrappers";
     native(n, "accordion-nested", { ...(options.openIndex !== undefined ? { expandItem: String(options.openIndex) } : {}), ...(options.independentToggle !== undefined ? { independentToggle: options.independentToggle } : {}), ...(options.transition !== undefined ? { transition: bare(options.transition) } : {}) });
-    for (const { item, title, content } of pairs) { native(item, "block"); classes(item, "accordion-item"); native(title, "block"); classes(title, "accordion-title-wrapper"); native(content, "block"); classes(content, "accordion-content-wrapper"); content._nativeManagedDisplay = true; }
+    for (const [itemIndex, { item, title, content }] of pairs.entries()) {
+      native(item, "block"); classes(item, "accordion-item");
+      native(title, "block", { _attributes: [{name:'role',value:'button'},{name:'tabindex',value:'0'},{name:'aria-expanded',value:'false'}] }); classes(title, "accordion-title-wrapper");
+      native(content, "block"); classes(content, "accordion-content-wrapper"); content._nativeManagedDisplay = true;
+      for (const label of descendants(title).filter(c=>TEXT.has(c.type))) {
+        if (nodes.get(label.figmaNodeId)?.lineTypes?.includes('ORDERED')) label.text = `${itemIndex+1}. ${label.text}`;
+        label.typography = { ...(label.typography || {}), align: 'left' };
+      }
+    }
     return null;
   }
 
@@ -301,9 +379,9 @@ export function recognizeComponents(input, { figmaRoot = null, schemaDir = runti
         const sideBySide = sorted.every((b, i) => !i || b.x >= sorted[i - 1].x + sorted[i - 1].width - 1);
         if (sideBySide && span > frameW * 1.3 && Math.max(...ws) - Math.min(...ws) <= 2 && Math.max(...hs) - Math.min(...hs) <= 2) {
           kind = "slider";
-          n.component = { kind: "slider", options: { slidesPerView: 1, arrows: true, pagination: true, gap: Math.max(0, Math.round(sorted[1].x - sorted[0].x - sorted[0].width)) } };
+          n.component = { kind: "slider", options: { slidesPerView: 1, gap: Math.max(0, Math.round(sorted[1].x - sorted[0].x - sorted[0].width)) } };
           n.children = kids.slice().sort((a, b) => nodes.get(a.figmaNodeId).absoluteBoundingBox.x - nodes.get(b.figmaNodeId).absoluteBoundingBox.x);
-          report.push(`${n.id}: ${kids.length} equal slides side by side past the page width -> native slider (arrows/pagination are Bricks defaults, not read from the design).`);
+          report.push(`${n.id}: ${kids.length} equal slides side by side past the page width -> native slider; controls require separate design evidence.`);
         }
       }
     }

@@ -86,6 +86,13 @@ export function structurePass(input, { figmaRoot = null, manifest = [], enable =
       const x1 = Math.min(...bs.map((b) => b.x)), y1 = Math.min(...bs.map((b) => b.y)), x2 = Math.max(...bs.map((b) => b.x + b.width)), y2 = Math.max(...bs.map((b) => b.y + b.height));
       // a section whose whole scope is narrower than the site container sets the container's max-width itself
       if (x2 - x1 >= 840 && x2 - x1 < 1199) { sec._scopeW = Math.round(x2 - x1); stats.scopeW++; log(`section ${sec.id}: scope is ${sec._scopeW}px wide -> container max-width ${sec._scopeW}px`); }
+      // A shallow left-aligned header strip must share the page's left gutter;
+      // centering its narrower content union shifts the navigation to the right.
+      const pageBox = figmaRoot.absoluteBoundingBox;
+      if (sec._scopeW && y2-y1 <= 160 && pageBox && x1 >= pageBox.x && x2 <= pageBox.x+rootW) {
+        const gutter = Math.min(x1-pageBox.x, pageBox.x+rootW-x2);
+        sec._scopeW = Math.round(rootW-2*gutter);
+      }
       // the panel behind this section's content (smallest one that contains it)
       const hit = panels.filter((p) => p.box.x - 2 <= x1 && p.box.y - 2 <= y1 && p.box.x + p.box.width + 2 >= x2 && p.box.y + p.box.height + 2 >= y2 && !(x1 <= p.box.x && x2 >= p.box.x + p.box.width && y1 <= p.box.y && y2 >= p.box.y + p.box.height))
         .sort((a, b) => a.box.width * a.box.height - b.box.width * b.box.height)[0];

@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { connectReadOnlyBricks } from './bricks-mcp-readonly.js';
 
-export const DEFAULT_SCHEMA_TYPES = ['section', 'container', 'div', 'block', 'heading', 'text', 'text-basic', 'button', 'image', 'icon', 'text-link', 'nav-nested', 'dropdown', 'toggle', 'offcanvas', 'slider-nested', 'tabs-nested', 'accordion-nested', 'form'];
+export const DEFAULT_SCHEMA_TYPES = ['section', 'container', 'div', 'block', 'heading', 'text', 'text-basic', 'button', 'image', 'icon', 'text-link', 'nav-menu', 'nav-nested', 'dropdown', 'toggle', 'offcanvas', 'slider-nested', 'tabs-nested', 'accordion-nested', 'form'];
 
 export function safeElementNames(names) {
   if (!Array.isArray(names) || !names.length || names.some(name => typeof name !== 'string' || !/^[a-z][a-z0-9-]{0,79}$/.test(name))) throw new Error('Element names must be safe registered identifiers');
@@ -78,3 +78,4 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   if (unknown.length) { console.error(`Unknown options: ${unknown.join(', ')}`); process.exitCode = 1; }
   else syncBricksSchema({ ...(option ? { elements: option.slice('--elements='.length).split(',') } : {}) }).catch(error => { console.error(error.message); process.exitCode = 1; });
 }
+

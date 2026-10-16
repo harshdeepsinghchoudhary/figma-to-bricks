@@ -1,8 +1,76 @@
 [
   {
-    "id": "wi755n",
+    "id": "feiu5g",
+    "name": "div",
+    "parent": "g9bzhv",
+    "children": [],
+    "settings": {
+      "_display": "block",
+      "_width": "100%",
+      "_height": "2",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "tedzmo",
+    "name": "div",
+    "parent": "g9bzhv",
+    "children": [],
+    "settings": {
+      "_display": "block",
+      "_width": "100%",
+      "_height": "2",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "n79g5r",
+    "name": "div",
+    "parent": "g9bzhv",
+    "children": [],
+    "settings": {
+      "_display": "block",
+      "_width": "100%",
+      "_height": "2",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "g9bzhv",
+    "name": "div",
+    "parent": "ncn2ps",
+    "children": [
+      "feiu5g",
+      "tedzmo",
+      "n79g5r"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "5",
+      "_columnGap": "5",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "22px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "vyxobx",
     "name": "image",
-    "parent": "vbihz3",
+    "parent": "ncn2ps",
     "children": [],
     "settings": {
       "image": {
@@ -13,56 +81,59 @@
         "url": "../../assets/image-25-202_21.png"
       },
       "_width": "100%",
-      "_widthMax": "86px"
+      "_widthMax": "86px",
+      "_widthMax:tablet_portrait": "100%"
     },
     "themeStyles": []
   },
   {
-    "id": "vbihz3",
+    "id": "ncn2ps",
     "name": "div",
-    "parent": "p8vvjr",
+    "parent": "kchfa6",
     "children": [
-      "wi755n"
+      "g9bzhv",
+      "vyxobx"
     ],
     "settings": {
       "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "0",
-        "right": "0",
-        "bottom": "0",
-        "left": "32"
-      },
+      "_direction": "row",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "center",
       "_width": "100%",
       "_widthMax": "118px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center",
       "_widthMax:tablet_portrait": "100%"
     }
   },
   {
-    "id": "683zco",
-    "name": "button",
-    "parent": "eqzd5n",
+    "id": "ajsg5c",
+    "name": "text",
+    "parent": "lrcb5d",
     "children": [],
     "settings": {
-      "text": "Login",
+      "text": "<p>Login</p>",
+      "_width": "auto",
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#FFFFFF"
         },
         "text-align": "left"
       },
-      "_widthMax:tablet_portrait": "100%"
+      "_flexShrink": "0"
     }
   },
   {
-    "id": "8zalol",
+    "id": "xoyhcp",
     "name": "button",
-    "parent": "eqzd5n",
+    "parent": "lrcb5d",
     "children": [],
     "settings": {
       "text": "Apply for membership",
@@ -79,6 +150,7 @@
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#1A070C"
@@ -114,18 +186,26 @@
           "left": "100px"
         }
       },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
       "_flexDirection": "row",
       "_gap": "10",
       "iconGap": "10"
     }
   },
   {
-    "id": "eqzd5n",
+    "id": "lrcb5d",
     "name": "div",
-    "parent": "p8vvjr",
+    "parent": "kchfa6",
     "children": [
-      "683zco",
-      "8zalol"
+      "ajsg5c",
+      "xoyhcp"
     ],
     "settings": {
       "_display": "flex",
@@ -135,6 +215,14 @@
       "_alignItems": "center",
       "_width": "100%",
       "_widthMax": "293px",
+      "_border": {
+        "radius": {
+          "top": "100px",
+          "right": "100px",
+          "bottom": "100px",
+          "left": "100px"
+        }
+      },
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
       "_alignItems:tablet_portrait": "center",
@@ -142,30 +230,63 @@
     }
   },
   {
-    "id": "p8vvjr",
+    "id": "kchfa6",
     "name": "div",
-    "parent": "rr6ak2",
+    "parent": "po7hnv",
     "children": [
-      "vbihz3",
-      "eqzd5n"
+      "ncn2ps",
+      "lrcb5d"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_alignItems": "flex-start",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
       "_justifyContent": "space-between",
       "_width": "100%",
+      "_widthMax": "1120px",
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
-      "_alignItems:tablet_portrait": "center"
+      "_alignItems:tablet_portrait": "center",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
     }
   },
   {
-    "id": "rr6ak2",
-    "name": "container",
-    "parent": "cwj0dr",
+    "id": "po7hnv",
+    "name": "div",
+    "parent": "oeboy8",
     "children": [
-      "p8vvjr"
+      "kchfa6"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    }
+  },
+  {
+    "id": "oeboy8",
+    "name": "container",
+    "parent": "0misuu",
+    "children": [
+      "po7hnv"
     ],
     "settings": {
       "_display": "flex",
@@ -176,21 +297,31 @@
     }
   },
   {
-    "id": "cwj0dr",
+    "id": "0misuu",
     "name": "section",
     "parent": 0,
     "children": [
-      "rr6ak2"
+      "oeboy8"
     ],
     "settings": {
       "_padding": {
+        "top": "17",
         "right": "16",
+        "bottom": "17",
         "left": "16"
       },
       "_background": {
         "color": {
           "raw": "#290A12"
         }
+      },
+      "_padding:tablet_portrait": {
+        "top": "9",
+        "bottom": "9"
+      },
+      "_padding:mobile_landscape": {
+        "top": "9",
+        "bottom": "9"
       }
     }
   }

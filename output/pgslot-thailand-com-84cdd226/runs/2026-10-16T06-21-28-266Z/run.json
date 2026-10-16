@@ -1,0 +1,44 @@
+{
+  "figmaUrl": null,
+  "frameDir": "output/pgslot-thailand-com-84cdd226",
+  "postId": null,
+  "startedAt": "2026-10-16T06:21:28.268Z",
+  "visualDebugging": "manual-only; never invoked by the pipeline",
+  "args": [
+    "--frame",
+    "output/pgslot-thailand-com-84cdd226",
+    "--no-inject",
+    "--no-dataset"
+  ],
+  "steps": [
+    {
+      "label": "2-3 normalize, compile, merge",
+      "script": "run-sections.js",
+      "args": [
+        "output/pgslot-thailand-com-84cdd226"
+      ],
+      "code": 0,
+      "seconds": 6
+    },
+    {
+      "label": "validate merged tree",
+      "script": "bricks-validator.js",
+      "args": [
+        "output\\pgslot-thailand-com-84cdd226\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "validate native settings and assets",
+      "script": "validate-build.js",
+      "args": [
+        "output\\pgslot-thailand-com-84cdd226\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-16T06:21:34.957Z",
+  "exitCode": 0
+}

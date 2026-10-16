@@ -33,6 +33,7 @@ const gapOf = (n) => n.layout?.columnGap ?? n.layout?.gap ?? 0;
 
 // cap: ignore explicit widths above it (full-bleed bands / backgrounds say nothing about the content width)
 function nodeWidth(n, cap = Infinity) {
+  if (isNum(n._measuredRowWidth)) return n._measuredRowWidth > cap ? 0 : n._measuredRowWidth;
   if (isNum(n.size?.width)) return n.size.width > cap ? 0 : n.size.width;
   const kids = (n.children || []).filter((c) => !c.abs).map((c) => nodeWidth(c, cap)).filter((w) => w > 0);
   if (!kids.length) return 0;
@@ -82,6 +83,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
 
   // ---- per-node rules (everything except the section/container restructure) ----
   function fixNode(n, parent, contentW) {
+    if (isNum(n._measuredRowWidth)) n.size = { ...(n.size || {}), width: n._measuredRowWidth };
     // Native menu/slider/tab/accordion wrappers own their responsive behavior.
     // Generic equal-card and row-stacking rules would break their JS structure.
     if (n._nativeLayoutLock) {
@@ -139,7 +141,8 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       const singleLine = (n.type === "heading" || n.type === "text" || n.type === "text-basic") && box?.height && lh && box.height <= lh * 1.4;
       // a child that fills its parent says so (width 100%) when the parent is a container or centres its children - otherwise a centred flex
       // column shrinks it to its content, and the container is now wider than the measured content
-      if (fillsParent && n.type === "button") n.size.width = "fill";
+      if (isNum(n._measuredRowWidth)) { n.size.width = "fill"; n.size.maxWidth = n._measuredRowWidth; }
+      else if (fillsParent && n.type === "button") n.size.width = "fill";
       else if (fillsParent) { if (!TEXTLEAF.has(n.type) && (parent.type === "container" || ["start", "center", "end"].includes(parent.layout?.align))) n.size.width = "fill"; else if (["center", "right"].includes(n.typography?.align)) n.size.width = "fill"; else delete n.size.width; }
       else if (singleLine) { delete n.size.width; log(`single-line text ${n.id}: no fixed width (avoids wrapping from font differences)`); }
       else {
@@ -163,9 +166,9 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
     // very wide side padding is a desktop-only offset (text pushed to one side of a banner): shrink it on small screens
     // (both sides in ONE override: two separate overrides replaced each other, so a wide LEFT padding survived on phones and overflowed)
     {
-      const wide = ["left", "right"].filter((side) => Number(n.layout?.padding?.[side]) > 60);
+      const wide = ["left", "right"].filter((side) => Number(n.layout?.padding?.[side]) > 20);
       if (wide.length) {
-        setResp(n, T, { layout: { padding: Object.fromEntries(wide.map((side) => [side, Math.min(Number(n.layout.padding[side]), 40)])) } });
+        setResp(n, T, { layout: { padding: Object.fromEntries(wide.map((side) => [side, 20])) } });
         setResp(n, M, { layout: { padding: Object.fromEntries(wide.map((side) => [side, Math.min(Number(n.layout.padding[side]), 20)])) } });
       }
     }
@@ -201,11 +204,9 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       }
       if (!n.size?.width || n.size.width === "fill" || n.size.width === "hug") n.size = { ...(n.size || {}), width: "fill" }; // "hug" (Auto Layout hug) would otherwise shrink the row and swallow the spread
       const rowGapOverride = n.layout.gridRowGap !== undefined ? { gridRowGap: stacked } : {};
-      if (cols <= 2) setResp(n, T, { layout: { gridColumns: 1, gridGap: stacked, ...rowGapOverride } });
-      else {
-        setResp(n, T, { layout: { gridColumns: 2, gridGap: stacked, ...rowGapOverride } });
-        setResp(n, "mobile_portrait", { layout: { gridColumns: 1 } });
-      }
+      setResp(n, T, { layout: { gridColumns: Math.max(1,Math.ceil(cols/2)), gridGap: stacked, ...rowGapOverride } });
+      setResp(n, M, { layout: { gridColumns: 1 } });
+      setResp(n, "mobile_portrait", { layout: { gridColumns: 1 } });
     };
     if (n.layout?.display === "grid" && n._grid && n.layout.gridColumns) {
       // already a measured grid (structure rules): keep its columns and gaps, add the responsive behaviour
@@ -216,7 +217,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       n.children = rendered(n); // an equal-column grid has no room for a divider cell
       const cols = n.children.length;
       const gap = gapOf(n);
-      n.layout = { ...n.layout, display: "grid", gridColumns: cols, gridGap: gap, align: "stretch" }; // cards in a row are as tall as the tallest
+      n.layout = { ...n.layout, display: "grid", gridColumns: cols, gridGap: gap, align: n.layout?.align === 'end' ? 'end' : "stretch" };
       delete n.layout.justify; delete n.layout.gap; delete n.layout.columnGap; delete n.layout.rowGap; delete n.layout.direction;
       finishGrid(cols, gap);
       log(`grid: ${n.id} -> ${cols} equal columns, gap ${gap}`);
@@ -225,7 +226,17 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
     else if (isRowish(n) && n.type !== "section" && rendered(n).length >= 2 && !n._inline) {
       const kids = rendered(n);
       const total = nodeWidth({ ...n, size: undefined });
-      if (contentW && total >= contentW * 0.9 && kids.every((k) => nodeWidth(k) > 0)) {
+      const boxes=kids.map(k=>geo[k.figmaNodeId]);
+      const gaps=boxes.every(Boolean)?boxes.slice(1).map((b,i)=>b.x-boxes[i].x-boxes[i].width):[];
+      const distributed=gaps.length>0 && gaps.every(g=>g>80) && Math.max(...gaps)-Math.min(...gaps)<=2 && boxes.every(b=>Math.abs(b.y-boxes[0].y)<=Math.max(2,Math.min(b.height,boxes[0].height)));
+      if(distributed){
+        const span=boxes.at(-1).x+boxes.at(-1).width-boxes[0].x+(Number(n.layout?.padding?.left)||0)+(Number(n.layout?.padding?.right)||0);
+        n.size={...(n.size||{}),width:'fill',maxWidth:span};
+        n.layout={...n.layout,justify:'space-between',gap:20};delete n.layout.columnGap;delete n.layout.rowGap;
+        n._distributedRow=true;
+        log(`row ${n.id}: measured ${span}px content span, gap over 80px -> fluid width with space-between`);
+      }
+      else if (!isNum(n._measuredRowWidth) && contentW && total >= contentW * 0.9 && kids.every((k) => nodeWidth(k) > 0)) {
         n.layout = { ...n.layout, justify: "space-between", gap: MIN_GAP };
         delete n.layout.columnGap; delete n.layout.rowGap;
         // a row that spreads its children must span its parent, or a centered parent shrinks it to its content
@@ -234,7 +245,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       setResp(n, T, { layout: { direction: "column", align: "center", rowGap: STACKED_GAP } });
     }
 
-    const w2 = nodeWidth(n);
+    const w2 = n._distributedRow ? n.size.maxWidth : nodeWidth(n);
     n._contentW = w2;
     for (const c of n.children || []) fixNode(c, n, contentW);
     delete n._contentW; delete n._origW; delete n._inline;

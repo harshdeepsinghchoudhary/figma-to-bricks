@@ -9,6 +9,14 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { bindMenuControls } from './menu-controls.js';
+import { capTabletPadding } from './responsive-padding.js';
+import { repairContentSpacing } from './content-spacing.js';
+import { responsiveContent } from './responsive-content.js';
+import { applyFooterMenus } from './footer-menus.js';
+import { applyHeaderMenus } from './pipeline-menus.js';
+import { sectionGap } from './section-gap.js';
+import { annotateMenuContext } from './source-menu-context.js';
 
 const [frameDir, ...names] = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 if (!frameDir || !names.length) {
@@ -56,10 +64,16 @@ function sectionBands(frameDir, names, trees) {
     const np = path.join(frameDir, "sections", name, "normalized.json");
     if (!fs.existsSync(np)) { console.log(`  spacing: ${name} has no normalized.json - left out of the spacing`); continue; }
     const ids = new Set();
-    (function walk(n) { if (!n || typeof n !== "object") return; if (n.figmaNodeId && geo.box.has(n.figmaNodeId)) ids.add(n.figmaNodeId); if (n.asset?.nodeId && geo.box.has(n.asset.nodeId)) ids.add(n.asset.nodeId); for (const c of n.children || []) walk(c); })(JSON.parse(fs.readFileSync(np, "utf-8")));
+    (function walk(n) { if (!n || typeof n !== "object") return; if (n.figmaNodeId && geo.box.has(n.figmaNodeId)) ids.add(n.figmaNodeId); if (n.asset?.nodeId && geo.box.has(n.asset.nodeId)) ids.add(n.asset.nodeId); for (const id of n.figma?.paintSourceIds || []) if (geo.box.has(id)) ids.add(id); for (const c of n.children || []) walk(c); })(JSON.parse(fs.readFileSync(np, "utf-8")));
     // one section without Figma ids (an empty stub, say) must not switch the spacing off for the whole page
     if (!ids.size) { console.log(`  spacing: ${name} has no Figma geometry - kept its default padding, the others are still measured`); continue; }
     const tops = [...new Set([...ids].map((id) => geo.top.get(id)).filter(Boolean))];
+    // Backdrop paint also defines the visible band's padding, without changing
+    // normalization scope and invalidating an otherwise reusable content cache.
+    const backdropFile = path.join(frameDir, 'backdrops.json');
+    if (fs.existsSync(backdropFile)) for (const backdrop of JSON.parse(fs.readFileSync(backdropFile, 'utf8'))) {
+      if (backdrop.sections?.length === 1 && backdrop.sections[0] === name && geo.box.has(backdrop.rectId) && !tops.includes(backdrop.rectId)) tops.push(backdrop.rectId);
+    }
     const band = unionBox(tops.map((t) => geo.box.get(t)).filter(Boolean));
     const sec = trees[i].find((e) => e.name === "section");
     const hasBgImage = !!sec?.settings?._background?.image;
@@ -70,7 +84,7 @@ function sectionBands(frameDir, names, trees) {
   }
   return out;
 }
-function applyVerticalSpacing(frameDir, names, trees) {
+function applyVerticalSpacing(frameDir, names, trees, pageColour) {
   const b = sectionBands(frameDir, names, trees);
   if (!b || !b.length) { console.log("Spacing: no Figma geometry for these sections - kept the compiler's default padding."); return; }
   const r = (v) => Math.max(0, Math.round(v));
@@ -78,20 +92,12 @@ function applyVerticalSpacing(frameDir, names, trees) {
   const navFirst = (i) => i === 0 && b.length > 1 && b[0].band.h <= 160;
   // A section with its own fill (a different colour from the page) is a visible band, like one with a background image: the empty gap
   // between it and a plain section belongs to the plain one (a band keeps the padding its content was measured with).
-  const colourOf = (s) => s.sec?.settings?._background?.color?.raw || null;
-  const counts = {};
-  b.forEach((s) => { const c = colourOf(s); if (c) counts[c] = (counts[c] || 0) + 1; });
-  const pageColour = Object.entries(counts).sort((x, y) => y[1] - x[1])[0]?.[0] || null;
-  const isBand = (s) => s.bg || (!!colourOf(s) && colourOf(s) !== pageColour);
   for (let i = 0; i + 1 < b.length; i++) {
     const A = b[i], B = b[i + 1];
     const G = Math.max(0, B.band.y - (A.band.y + A.band.h));
     if (G < 1) continue;
-    if (isBand(A) && !isBand(B)) pad[i + 1].top += G;
-    else if (isBand(B) && !isBand(A)) pad[i].bottom += G;
-    else if (A.bg || navFirst(i)) pad[i + 1].top += G;
-    else if (B.bg) pad[i].bottom += G;
-    else { pad[i].bottom += G / 2; pad[i + 1].top += G / 2; }
+    const [bottom,top]=sectionGap(A.sec?.settings,B.sec?.settings,G,pageColour,navFirst(i));
+    pad[i].bottom+=bottom;pad[i+1].top+=top;
   }
   const last = pad.length - 1;
   if (last > 0 && !b[last].bg && pad[last].bottom < 1) pad[last].bottom = pad[last].top; // nothing below it in the selection: mirror the top
@@ -149,7 +155,6 @@ for (const name of names) {
   }
   console.log(`+ ${name}: ${tree.length} element(s)`);
 }
-if (!process.argv.includes("--no-spacing")) applyVerticalSpacing(frameDir, names, trees);
 
 // Page background. The Figma root frame's fill belongs to no section, so sections came out transparent
 // (white text on Bricks' default white page). Sections with no background of their own get the page colour.
@@ -172,6 +177,7 @@ function applyPageBackground() {
     n++;
   }
   console.log("  page background " + raw + " applied to " + n + " section(s) that had no background of their own");
+  return raw;
 }
 // Backdrop rectangles (run-sections.js): their solid colour is the background of the sections they sit behind.
 function applyBackdrops() {
@@ -194,7 +200,23 @@ function applyBackdrops() {
   if (n) console.log("  backdrop colours applied to " + n + " section(s)");
 }
 applyBackdrops();
-if (!process.argv.includes("--no-page-bg")) applyPageBackground();
+const pageColour=!process.argv.includes("--no-page-bg") ? applyPageBackground() : undefined;
+if (!process.argv.includes("--no-spacing")) applyVerticalSpacing(frameDir, names, trees,pageColour);
+// Keep the source-backed tree for menu discovery before widgets replace text.
+const autoControls=annotateMenuContext(sourceMap,JSON.parse(fs.readFileSync(path.join(frameDir,'figma-node.json'),'utf8')));
+const controlsPath=path.join(frameDir,'menu-controls.json');
+if(!fs.existsSync(controlsPath)&&autoControls.length)fs.writeFileSync(controlsPath,JSON.stringify(autoControls,null,2));
+fs.writeFileSync(path.join(outDir, 'menu-source.json'), JSON.stringify({tree:merged,sourceMap}));
+const menuBindings = path.join(frameDir, 'menu-controls.json');
+if (fs.existsSync(menuBindings)) bindMenuControls(merged, sourceMap, JSON.parse(fs.readFileSync(menuBindings,'utf8')));
+const wordpressBindings=path.join(frameDir,'wordpress-menus.json');
+if(fs.existsSync(wordpressBindings))applyHeaderMenus(merged,sourceMap,JSON.parse(fs.readFileSync(wordpressBindings,'utf8')));
+const spacingSource=path.join(frameDir,'figma-node.json');
+for(const line of repairContentSpacing(merged,sourceMap,fs.existsSync(spacingSource)?JSON.parse(fs.readFileSync(spacingSource,'utf8')):null)) console.log('  spacing repair: '+line);
+capTabletPadding(merged);
+const footerBindings=path.join(frameDir,'footer-menus.json');
+if(fs.existsSync(footerBindings))applyFooterMenus(merged,sourceMap,JSON.parse(fs.readFileSync(footerBindings,'utf8')));
+responsiveContent(merged,sourceMap,JSON.parse(fs.readFileSync(path.join(frameDir,'figma-node.json'),'utf8')));
 fs.writeFileSync(path.join(outDir, "bricks-tree.json"), JSON.stringify(merged, null, 2));
 fs.writeFileSync(path.join(outDir, "section-map.json"), JSON.stringify(sectionMap, null, 2));
 fs.writeFileSync(path.join(outDir, "bricks-source-map.json"), JSON.stringify(sourceMap, null, 2));

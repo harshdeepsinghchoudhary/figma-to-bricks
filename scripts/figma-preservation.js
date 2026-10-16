@@ -80,6 +80,7 @@ function measuredTypography(node) {
   for (const key of ["fontFamily", "fontSize", "fontWeight"]) if (style[key] !== undefined) out[key] = style[key];
   if (style.lineHeightUnit === "PIXELS" && finite(style.lineHeightPx)) out.lineHeight = `${style.lineHeightPx}px`;
   else if (style.lineHeightUnit === "FONT_SIZE_%" && finite(style.lineHeightPercentFontSize)) out.lineHeight = `${style.lineHeightPercentFontSize}%`;
+  else if (finite(style.lineHeightPx)) out.lineHeight = `${style.lineHeightPx}px`;
   if (finite(style.letterSpacing)) out.letterSpacing = `${style.letterSpacing}px`;
   const align = { LEFT: "left", CENTER: "center", RIGHT: "right", JUSTIFIED: "justify" }[style.textAlignHorizontal];
   if (align) out.align = align;
@@ -96,6 +97,9 @@ function measuredStyle(target, source, report) {
   const visibleText = (node) => node.visible === false ? null : node.type === "TEXT" ? node : (node.children || []).map(visibleText).find(Boolean);
   const textSource = source.type === "TEXT" ? source : target.type === "button" ? visibleText(source) : null;
   if (textSource) {
+    // Figma TEXT fills color the glyphs. A stale AI background must not turn
+    // white text into a white rectangle inside a protected native component.
+    if (source.type === 'TEXT') delete target.background;
     target.text = textSource.characters ?? "";
     target.typography = measuredTypography(textSource);
     if (!Object.keys(target.typography).length) delete target.typography;
@@ -169,9 +173,24 @@ export function reconcileFigmaProperties(doc, root, { manifest = [], metadata = 
   function walk(node) {
     const source = raw.get(node.figmaNodeId || node.asset?.nodeId);
     if (source) {
+      if(node.children?.length && assetIndex.has(source.id) && isGraphicNode(source).composite){
+        node.type='image';node.asset={nodeId:source.id,kind:'image'};delete node.children;
+        node.layout={};node.size={width:source.absoluteBoundingBox.width,height:source.absoluteBoundingBox.height};
+        if(node.figma){delete node.figma.geometryPositioned;delete node.figma.geometryLayered;}
+        delete node.background;delete node.border;
+      }
       represented.set(source.id, node);
       const derived = node.figma?.geometryDerived ? { geometryDerived: true, ...(node.figma.position ? { position: copy(node.figma.position) } : {}), ...(node.figma.geometryPositioned ? { geometryPositioned: true } : {}), ...(node.figma.geometryLayered ? { geometryLayered: true } : {}), ...(node.figma.paintSourceIds ? { paintSourceIds: copy(node.figma.paintSourceIds) } : {}) } : {};
       node.figma = { ...copy(preserved.nodes[source.id]), ...derived };
+      // Figma crops a masked export to the painted children, excluding the mask's
+      // wider box. Using the group box stretches that crop and breaks overlaps.
+      if (node.asset && source.children?.some(c => c.isMask)) {
+        const boxes = source.children.filter(c => !c.isMask && c.visible !== false).map(c => c.absoluteRenderBounds).filter(Boolean);
+        if (boxes.length) {
+          const x = Math.min(...boxes.map(b => b.x)), y = Math.min(...boxes.map(b => b.y));
+          node.figma.exportBounds = { x, y, width: Math.max(...boxes.map(b => b.x+b.width))-x, height: Math.max(...boxes.map(b => b.y+b.height))-y };
+        }
+      }
       const fillSource = assetIndex.get(`${source.id}:image-fill`);
       if (fillSource?.exportMode === "source-image") node.figma.imageFillAsset = { nodeId: fillSource.nodeId, exportMode: fillSource.exportMode };
       measuredStyle(node, source, report);
@@ -217,7 +236,7 @@ const decorative = (node) => !hasCopy(node) && (["image", "icon"].includes(node.
 let FLOW_TOL = 1; // px: boxes closer than this on an axis count as touching, not overlapping (relaxed for the second attempt)
 
 /** A small framed label that is really a button: one text, a fill or stroke, rounded, button-sized (or named like one). */
-function buttonLike(source, visible) {
+export function buttonLike(source, visible) {
   if (!["FRAME", "INSTANCE", "COMPONENT", "GROUP"].includes(source.type)) return null;
   const box = source.absoluteBoundingBox;
   if (!box || box.height > 96 || box.width > 460 || box.height < 16) return null;
@@ -231,7 +250,7 @@ function buttonLike(source, visible) {
     || (node.strokes || []).some((stroke) => stroke.visible !== false);
   const named = /(^|[^a-z])(button|btn|cta)([^a-z]|$)/i.test(source.name || "");
   const rounded = source.cornerRadius > 0 || (Array.isArray(source.rectangleCornerRadii) && source.rectangleCornerRadii.some((r) => r > 0));
-  if (!(named || (rounded && (painted(source) || others.some(painted))))) return null;
+  if (!(named || ((rounded || source.layoutMode === "HORIZONTAL") && (painted(source) || others.some(painted))))) return null;
   return texts[0];
 }
 
@@ -297,6 +316,7 @@ function flowLayout(dir, items) {
 /** Stable geometry/hierarchy conversion; semantics can be enriched later without rewriting measurements. */
 export function deterministicNormalize(root, manifest = [], { metadata = {}, frameWidth = 0, siteWidth = 0 } = {}) {
   const assets = new Map(manifest.map((asset) => [asset.nodeId, asset]));
+  const sourceNodes=new Map();(function index(n){sourceNodes.set(n.id,n);for(const c of n.children||[])index(c);})(root);
   const notes = [];
   const slug = (node) => `${String(node.name || node.type || "node").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 35).replace(/-$/, "") || "node"}-${createHash("sha256").update(node.id).digest("hex").slice(0, 8)}`;
   function convert(source, parent, section = false) {
@@ -319,12 +339,26 @@ export function deterministicNormalize(root, manifest = [], { metadata = {}, fra
     }
     // A graphic with no export must not cost the whole section. Report it and keep the surrounding structure (and any children) instead.
     if (!section && (hasImageFill(source) && !source.children?.length || isGraphicNode(source).isGraphic) && !asset) {
+      if (isGraphicNode(source).masked) throw new Error(`Required export missing for ${source.id}: complete mask composition`);
       notes.push(`${source.id} (${source.name}): graphic has no exported file - re-run extraction; its box is kept as an empty block`);
       const box = source.absoluteBoundingBox;
       // Do not descend: the vectors inside an un-exported graphic would each become an empty, pinned block.
       return { ...base, type: "block", ...(box ? { size: { width: box.width, height: box.height } } : {}) };
     }
-    const visible = (source.children || []).filter((child) => child.visible !== false);
+    let visible = (source.children || []).filter((child) => child.visible !== false);
+    if(!source._inferredPanel){
+      const rectangles=visible.filter(n=>n.type==='RECTANGLE'&&!n.isMask&&n.absoluteBoundingBox?.width>120&&n.absoluteBoundingBox?.height>80&&(n.fills||[]).some(f=>f.visible!==false&&f.type==='SOLID'));
+      const repeated=rectangles.filter(a=>rectangles.some(b=>a!==b&&Math.abs(a.absoluteBoundingBox.width-b.absoluteBoundingBox.width)<2&&Math.abs(a.absoluteBoundingBox.height-b.absoluteBoundingBox.height)<2));
+      const owned=new Set(),panels=new Map();
+      for(const rect of repeated){
+        const b=rect.absoluteBoundingBox;
+        const inside=visible.filter(n=>n!==rect&&!owned.has(n.id)&&!repeated.includes(n)&&n.absoluteBoundingBox&&n.absoluteBoundingBox.x>=b.x-1&&n.absoluteBoundingBox.y>=b.y-1&&n.absoluteBoundingBox.x+n.absoluteBoundingBox.width<=b.x+b.width+1&&n.absoluteBoundingBox.y+n.absoluteBoundingBox.height<=b.y+b.height+1);
+        if(inside.length<2||!inside.some(n=>n.type==='TEXT'))continue;
+        const panel={id:`${rect.id}-panel`,name:'Measured card panel',type:'GROUP',_inferredPanel:true,absoluteBoundingBox:b,children:[rect,...inside]};
+        sourceNodes.set(panel.id,panel);panels.set(rect.id,panel);inside.forEach(n=>owned.add(n.id));
+      }
+      if(panels.size)visible=visible.filter(n=>!owned.has(n.id)).map(n=>panels.get(n.id)||n);
+    }
     const labelText = !section && !asset ? buttonLike(source, visible) : null;
     if (labelText) {
       const box = source.absoluteBoundingBox, tb = labelText.absoluteBoundingBox;
@@ -371,6 +405,25 @@ export function deterministicNormalize(root, manifest = [], { metadata = {}, fra
         layers.push(layer);
         arranged = xyCut(flowItems, makeWrapper);
       }
+      // An unpainted Figma GROUP may span a neighbouring heading even though
+      // its actual children do not overlap. Expand only such grouping boxes
+      // before resorting to absolute positioning of the entire section.
+      const nodeBox=node=>sourceNodes.get(node.figmaNodeId)?.absoluteBoundingBox||((node.children||[]).length&&node.children.every(c=>nodeBox(c))?unionBox(node.children.map(nodeBox)):null);
+      for(let pass=0;!arranged&&pass<4;pass++){
+        const candidate=flowItems.find(item=>{
+          const raw=sourceNodes.get(item.node.figmaNodeId);
+          return (raw?.type==='GROUP'||!raw&&!item.node.figmaNodeId)&&item.node.children?.length&&!raw?.fills?.some(p=>p.visible!==false)&&!raw?.strokes?.some(p=>p.visible!==false)&&!raw?.effects?.some(p=>p.visible!==false)&&!raw?.reactions?.length&&item.node.children.every(c=>nodeBox(c))&&flowItems.some(other=>other!==item&&Math.min(item.box.x+item.box.width,other.box.x+other.box.width)-Math.max(item.box.x,other.box.x)>1&&Math.min(item.box.y+item.box.height,other.box.y+other.box.height)-Math.max(item.box.y,other.box.y)>1);
+        });
+        if(!candidate)break;
+        const expanded=candidate.node.children.map(original=>{
+          const node=copy(original);
+          if(node.figma?.geometryDerived)delete node.figma.position;
+          if(node.layout?.margin)delete node.layout.margin;
+          return {node,box:nodeBox(node)};
+        });
+        flowItems=flowItems.flatMap(item=>item===candidate?expanded:[item]);
+        arranged=xyCut(flowItems,makeWrapper);
+      }
       if (!arranged) {
         // Slight overlaps (a title sitting a few px over its picture, shadows, rounding) stay in the flow instead of being pinned.
         layers = []; flowItems = flowSources.map((child) => ({ box: child.absoluteBoundingBox, node: kidOf.get(child.id) }));
@@ -389,8 +442,8 @@ export function deterministicNormalize(root, manifest = [], { metadata = {}, fra
       const equal = Math.max(...widths) - Math.min(...widths) <= 2 && Math.max(...heights) - Math.min(...heights) <= 2;
       if (equal && parentBox.width > frameWidth * 1.3) {
         const gaps = arranged.items.slice(1).map((item, i) => item.box.x - arranged.items[i].box.x - arranged.items[i].box.width);
-        componentTag = { kind: "slider", options: { slidesPerView: 1, arrows: true, pagination: true, gap: Math.max(0, Math.round(gaps[0] || 0)) } };
-        notes.push(`${source.id}: ${arranged.items.length} equal slides side by side past the page width -> native slider (arrows/pagination are Bricks defaults, not read from the design)`);
+          componentTag = { kind: "slider", options: { slidesPerView: 1, gap: Math.max(0, Math.round(gaps[0] || 0)) } };
+          notes.push(`${source.id}: ${arranged.items.length} equal slides side by side past the page width -> native slider; controls require separate design evidence`);
       }
     }
     const type = section ? "section" : auto || measuredDirection || "block";

@@ -12,8 +12,12 @@
         "full": "../../assets/group-1261154083-202_203.svg",
         "url": "../../assets/group-1261154083-202_203.svg"
       },
-      "_width": "100%",
-      "_widthMax": "364px"
+      "_width": "364px",
+      "_widthMax": "100%",
+      "_height": "340px",
+      "_position": "absolute",
+      "_left": "0px",
+      "_top": "0px"
     },
     "themeStyles": []
   },
@@ -30,8 +34,12 @@
         "full": "../../assets/mask-group-202_208.png",
         "url": "../../assets/mask-group-202_208.png"
       },
-      "_width": "100%",
-      "_widthMax": "364px"
+      "_width": "364px",
+      "_widthMax": "100%",
+      "_height": "340px",
+      "_position": "absolute",
+      "_left": "20px",
+      "_top": "25px"
     },
     "themeStyles": []
   },
@@ -44,8 +52,11 @@
       "sn34vg"
     ],
     "settings": {
-      "_display": "flex",
-      "_direction": "column"
+      "_display": "block",
+      "_width": "100%",
+      "_widthMax": "384px",
+      "_height": "365",
+      "_position": "relative"
     }
   },
   {
@@ -134,36 +145,13 @@
     }
   },
   {
-    "id": "lvwcgw",
-    "name": "text",
-    "parent": "8gopng",
+    "id": "8gopng",
+    "name": "button",
+    "parent": "c3knm4",
     "children": [],
     "settings": {
-      "text": "<p>Contact us</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "8gopng",
-    "name": "div",
-    "parent": "c3knm4",
-    "children": [
-      "lvwcgw"
-    ],
-    "settings": {
+      "text": "Contact us",
       "_display": "flex",
-      "_direction": "row",
-      "_rowGap": "10",
-      "_columnGap": "10",
       "_alignItems": "center",
       "_justifyContent": "center",
       "_padding": {
@@ -171,6 +159,21 @@
         "right": "32",
         "bottom": "15",
         "left": "32"
+      },
+      "_margin": {
+        "top": "0",
+        "left": "0"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
       },
       "_gradient": {
         "applyTo": "background",
@@ -200,7 +203,18 @@
           "bottom": "100px",
           "left": "100px"
         }
-      }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10"
     }
   },
   {

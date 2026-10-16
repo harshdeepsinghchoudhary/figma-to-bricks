@@ -24,6 +24,8 @@ import { reconcileFigmaProperties } from "./figma-preservation.js";
 import { validateNormalized } from "./normalized-validator.js";
 import { responsify } from "./responsive-pass.js";
 import { structurePass } from "./structure-pass.js";
+import { repairSourceLayout } from "./source-layout-repair.js";
+import { inferSiteWidth } from './site-width.js';
 
 const frameDir = process.argv[2];
 if (!frameDir) {
@@ -215,6 +217,8 @@ if (!process.argv.includes("--no-responsive")) {
   }
   if (figmaRoot) {
     src = structuredClone(src);
+    const repaired = repairSourceLayout(src, figmaRoot.document || figmaRoot);
+    for (const line of repaired.report) console.log('  source repair:', line);
     const measured = reconcileFigmaProperties(src, figmaRoot.document || figmaRoot, { manifest: assetManifest });
     warnings.push(...(measured.report?.warnings || []));
   }
@@ -235,10 +239,7 @@ if (!process.argv.includes("--no-responsive")) {
     const fp = path.join(dir, "figma-node.json");
     if (!fs.existsSync(fp)) continue;
     const root = JSON.parse(fs.readFileSync(fp, "utf-8")); const r = root.document || root;
-    const pw = r.absoluteBoundingBox?.width || 0, counts = {};
-    for (const k of r.children || []) { const w = Math.round(k.absoluteBoundingBox?.width || 0); if (w >= 600 && (!pw || w < pw * 0.99)) counts[w] = (counts[w] || 0) + 1; }
-    const best = Object.entries(counts).sort((a, b) => b[1] - a[1] || b[0] - a[0])[0];
-    if (best) siteWidth = Number(best[0]);
+    siteWidth = inferSiteWidth(r);
     break;
   }
   const rp = responsify(src, { manifest: assetManifest, fontAliases, geo, texts, siteWidth });
@@ -251,7 +252,7 @@ else {
     const fp = path.join(dir, "figma-node.json"); if (fs.existsSync(fp)) { figmaRoot = JSON.parse(fs.readFileSync(fp, "utf8")); break; }
   }
   let src = structuredClone(normalized);
-  if (figmaRoot) { const measured = reconcileFigmaProperties(src, figmaRoot.document || figmaRoot, { manifest: assetManifest }); warnings.push(...(measured.report?.warnings || [])); }
+  if (figmaRoot) { repairSourceLayout(src, figmaRoot.document || figmaRoot); const measured = reconcileFigmaProperties(src, figmaRoot.document || figmaRoot, { manifest: assetManifest }); warnings.push(...(measured.report?.warnings || [])); }
   componentReport = recognizeComponents(src, { figmaRoot }); toCompile = componentReport.doc;
   for (const line of componentReport.report) console.log("  component:", line);
 }

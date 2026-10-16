@@ -28,7 +28,8 @@
       },
       "_margin:mobile_landscape": {
         "left": "0"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -94,7 +95,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -114,30 +116,11 @@
     }
   },
   {
-    "id": "3xe27s",
-    "name": "image",
-    "parent": "vb2wnt",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/group-1261154097-202_238.svg",
-        "url": "../../assets/group-1261154097-202_238.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "168px"
-    },
-    "themeStyles": []
-  },
-  {
     "id": "vb2wnt",
     "name": "div",
     "parent": "v1avpf",
     "children": [
-      "fmpz4a",
-      "3xe27s"
+      "fmpz4a"
     ],
     "settings": {
       "_display": "flex",
@@ -165,11 +148,38 @@
         "left": "97"
       },
       "_width": "100%",
+      "_heightMin": "540",
       "_background": {
         "color": {
           "raw": "#280C14"
         }
-      }
+      },
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/mask-group-202_234.svg",
+          "url": "../../assets/mask-group-202_234.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
+      },
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-v1avpf::before, #brxe-v1avpf::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-v1avpf > * {\n  position: relative;\n  z-index: 1;\n}"
     }
   },
   {
@@ -235,7 +245,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -255,30 +266,11 @@
     }
   },
   {
-    "id": "izr6l3",
-    "name": "image",
-    "parent": "k8lwmu",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/group-1261154110-202_258.svg",
-        "url": "../../assets/group-1261154110-202_258.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "168px"
-    },
-    "themeStyles": []
-  },
-  {
     "id": "k8lwmu",
     "name": "div",
     "parent": "d5bazg",
     "children": [
-      "aj9kxr",
-      "izr6l3"
+      "aj9kxr"
     ],
     "settings": {
       "_display": "flex",
@@ -306,11 +298,38 @@
         "left": "97"
       },
       "_width": "100%",
+      "_heightMin": "540",
       "_background": {
         "color": {
           "raw": "#280C14"
         }
-      }
+      },
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/mask-group-202_254.svg",
+          "url": "../../assets/mask-group-202_254.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
+      },
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-d5bazg::before, #brxe-d5bazg::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-d5bazg > * {\n  position: relative;\n  z-index: 1;\n}"
     }
   },
   {
@@ -376,7 +395,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -410,30 +430,11 @@
     }
   },
   {
-    "id": "htmpbg",
-    "name": "image",
-    "parent": "l0rvdy",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/group-1261154113-202_277.svg",
-        "url": "../../assets/group-1261154113-202_277.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "168px"
-    },
-    "themeStyles": []
-  },
-  {
     "id": "l0rvdy",
     "name": "div",
     "parent": "wpgkx9",
     "children": [
-      "1vc46v",
-      "htmpbg"
+      "1vc46v"
     ],
     "settings": {
       "_display": "flex",
@@ -461,11 +462,38 @@
         "left": "97"
       },
       "_width": "100%",
+      "_heightMin": "540",
       "_background": {
         "color": {
           "raw": "#280C14"
         }
-      }
+      },
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/mask-group-202_273.svg",
+          "url": "../../assets/mask-group-202_273.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
+      },
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-wpgkx9::before, #brxe-wpgkx9::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-wpgkx9 > * {\n  position: relative;\n  z-index: 1;\n}"
     }
   },
   {
@@ -531,7 +559,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -601,11 +630,38 @@
         "left": "97"
       },
       "_width": "100%",
+      "_heightMin": "540",
       "_background": {
         "color": {
           "raw": "#280C14"
         }
-      }
+      },
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/mask-group-202_292.svg",
+          "url": "../../assets/mask-group-202_292.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
+      },
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-hlj0ha::before, #brxe-hlj0ha::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-hlj0ha > * {\n  position: relative;\n  z-index: 1;\n}"
     }
   },
   {
@@ -671,7 +727,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -691,30 +748,11 @@
     }
   },
   {
-    "id": "fog140",
-    "name": "image",
-    "parent": "dwgzip",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/group-1261154119-202_315.svg",
-        "url": "../../assets/group-1261154119-202_315.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "168px"
-    },
-    "themeStyles": []
-  },
-  {
     "id": "dwgzip",
     "name": "div",
     "parent": "pqdyjg",
     "children": [
-      "ps4udr",
-      "fog140"
+      "ps4udr"
     ],
     "settings": {
       "_display": "flex",
@@ -742,11 +780,38 @@
         "left": "97"
       },
       "_width": "100%",
+      "_heightMin": "540",
       "_background": {
         "color": {
           "raw": "#280C14"
         }
-      }
+      },
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/mask-group-202_311.svg",
+          "url": "../../assets/mask-group-202_311.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
+      },
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-pqdyjg::before, #brxe-pqdyjg::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-pqdyjg > * {\n  position: relative;\n  z-index: 1;\n}"
     }
   },
   {
@@ -764,11 +829,25 @@
       "perPage": "1",
       "type": "slide",
       "gap": "30",
-      "arrows": true,
+      "arrows": false,
       "pagination": true,
-      "perPage:tablet_portrait": "1",
-      "perPage:mobile_landscape": "1",
-      "perPage:mobile_portrait": "1"
+      "paginationWidth": "20",
+      "paginationHeight": "20",
+      "paginationColor": {
+        "raw": "#FFFFFF33"
+      },
+      "paginationSpacing": {
+        "left": "7px",
+        "right": "7px",
+        "top": "0",
+        "bottom": "0"
+      },
+      "paginationWidthActive": "32",
+      "paginationHeightActive": "32",
+      "_cssCustom": "#brxe-7wp8qs > .splide__pagination .splide__pagination__page { opacity: 1; transform: none; } #brxe-7wp8qs > .splide__pagination .splide__pagination__page.is-active { background: transparent; position: relative; } #brxe-7wp8qs > .splide__pagination .splide__pagination__page.is-active::before { content: ''; position: absolute; inset: 4.8000030517578125px; border-radius: 50%; background: linear-gradient(90deg, #F5CB6A 0%, #BA8C30 100%); } #brxe-7wp8qs > .splide__pagination .splide__pagination__page.is-active::after { content: ''; position: absolute; inset: 0; border: 1.5px solid transparent; border-radius: 50%; background: linear-gradient(90deg, #F5CB6A 0%, #BA8C30 100%) border-box; mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); mask-composite: exclude; }",
+      "paginationBottom": "65px",
+      "optionsType": "custom",
+      "options": "{\"type\":\"slide\",\"perPage\":1,\"gap\":\"30px\",\"arrows\":false,\"pagination\":true,\"height\":\"auto\",\"autoHeight\":true,\"breakpoints\":{\"478\":{\"perPage\":1},\"767\":{\"perPage\":1},\"1024\":{\"perPage\":1}}}"
     }
   },
   {

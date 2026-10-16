@@ -1,99 +1,101 @@
 [
   {
-    "id": "13rwku",
-    "name": "container",
-    "parent": "bc7az1",
+    "id": "g9bzhv",
+    "name": "toggle",
+    "parent": "ncn2ps",
     "children": [],
     "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_width": "100%",
-      "_widthMax": "1120px"
-    }
-  },
-  {
-    "id": "bc7az1",
-    "name": "section",
-    "parent": 0,
-    "children": [
-      "13rwku"
-    ],
-    "settings": {
-      "_padding": {
-        "right": "16",
-        "left": "16"
+      "ariaLabel": "Open navigation",
+      "toggleSelector": "#brxe-ddd8f4",
+      "toggleValue": "brx-open",
+      "barHeight": "2px",
+      "barRadius": "0px",
+      "barColor": {
+        "raw": "#FFFFFF"
       },
-      "_background": {
-        "color": {
-          "raw": "#1A070C"
+      "_width": "22px",
+      "_height": "16px",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0"
+      },
+      "_attributes": [
+        {
+          "name": "aria-controls",
+          "value": "brxe-ddd8f4"
         }
-      }
+      ],
+      "_cssCustom": "#brxe-g9bzhv .brxa-wrap { width:22px; height:16px; } #brxe-g9bzhv .brxa-inner { width:22px; } #brxe-g9bzhv .brxa-inner::before { top:-7px; width:22px; } #brxe-g9bzhv .brxa-inner::after { bottom:-7px; width:22px; }"
     }
   },
   {
-    "id": "wi755n",
+    "id": "vyxobx",
     "name": "image",
-    "parent": "vbihz3",
+    "parent": "ncn2ps",
     "children": [],
     "settings": {
       "image": {
-        "id": 3726,
+        "id": 3933,
         "filename": "image-25-202_21.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-25-202_21.png",
         "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-25-202_21.png"
       },
-      "_width": "100%",
-      "_widthMax": "86px"
+      "_width": "86px",
+      "_widthMax": "86px",
+      "_flexShrink": "0"
     },
     "themeStyles": []
   },
   {
-    "id": "vbihz3",
+    "id": "ncn2ps",
     "name": "div",
-    "parent": "p8vvjr",
+    "parent": "kchfa6",
     "children": [
-      "wi755n"
+      "g9bzhv",
+      "vyxobx"
     ],
     "settings": {
       "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "0",
-        "right": "0",
-        "bottom": "0",
-        "left": "32"
-      },
-      "_width": "100%",
+      "_direction": "row",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "center",
+      "_width": "auto",
       "_widthMax": "118px",
-      "_widthMax:tablet_portrait": "100%"
+      "_flexWrap": "nowrap",
+      "_flexShrink": "0"
     }
   },
   {
-    "id": "683zco",
-    "name": "button",
-    "parent": "eqzd5n",
+    "id": "ajsg5c",
+    "name": "text",
+    "parent": "lrcb5d",
     "children": [],
     "settings": {
-      "text": "Login",
+      "text": "<p>Login</p>",
+      "_width": "auto",
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#FFFFFF"
         },
         "text-align": "left"
       },
-      "_widthMax:tablet_portrait": "100%"
+      "_flexShrink": "0",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ajsg5c{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
-    "id": "8zalol",
+    "id": "xoyhcp",
     "name": "button",
-    "parent": "eqzd5n",
+    "parent": "lrcb5d",
     "children": [],
     "settings": {
       "text": "Apply for membership",
@@ -110,6 +112,7 @@
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#1A070C"
@@ -145,18 +148,27 @@
           "left": "100px"
         }
       },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
       "_flexDirection": "row",
       "_gap": "10",
-      "iconGap": "10"
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-xoyhcp{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-xoyhcp{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-xoyhcp{padding-left:20px;padding-right:20px}}"
     }
   },
   {
-    "id": "eqzd5n",
+    "id": "lrcb5d",
     "name": "div",
-    "parent": "p8vvjr",
+    "parent": "kchfa6",
     "children": [
-      "683zco",
-      "8zalol"
+      "ajsg5c",
+      "xoyhcp"
     ],
     "settings": {
       "_display": "flex",
@@ -164,39 +176,78 @@
       "_rowGap": "24",
       "_columnGap": "24",
       "_alignItems": "center",
-      "_width": "100%",
+      "_width": "auto",
       "_widthMax": "293px",
-      "_direction:tablet_portrait": "column",
-      "_rowGap:tablet_portrait": "40",
-      "_alignItems:tablet_portrait": "center",
-      "_widthMax:tablet_portrait": "100%"
+      "_border": {
+        "radius": {
+          "top": "100px",
+          "right": "100px",
+          "bottom": "100px",
+          "left": "100px"
+        }
+      },
+      "_flexWrap": "nowrap",
+      "_flexShrink": "0"
     }
   },
   {
-    "id": "p8vvjr",
+    "id": "kchfa6",
     "name": "div",
-    "parent": "rr6ak2",
+    "parent": "po7hnv",
     "children": [
-      "vbihz3",
-      "eqzd5n"
+      "ncn2ps",
+      "lrcb5d"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_alignItems": "flex-start",
+      "_rowGap": "20",
+      "_columnGap": "12",
+      "_alignItems": "center",
       "_justifyContent": "space-between",
       "_width": "100%",
-      "_direction:tablet_portrait": "column",
-      "_rowGap:tablet_portrait": "40",
-      "_alignItems:tablet_portrait": "center"
+      "_widthMax": "1120px",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      },
+      "_flexWrap": "nowrap",
+      "_widthMin": "0",
+      "_cssCustom": "\n#brxe-kchfa6{flex-wrap:nowrap} @media(max-width:478px){#brxe-vyxobx{width:60px;max-width:60px} #brxe-kchfa6{column-gap:8px} #brxe-lrcb5d{column-gap:8px} #brxe-kchfa6 .bricks-button{font-size:11px;line-height:16px;padding:10px;white-space:nowrap} #brxe-kchfa6 .brxe-text{font-size:12px}}"
     }
   },
   {
-    "id": "rr6ak2",
-    "name": "container",
-    "parent": "cwj0dr",
+    "id": "po7hnv",
+    "name": "div",
+    "parent": "oeboy8",
     "children": [
-      "p8vvjr"
+      "kchfa6"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
+    }
+  },
+  {
+    "id": "oeboy8",
+    "name": "container",
+    "parent": "0misuu",
+    "children": [
+      "po7hnv"
     ],
     "settings": {
       "_display": "flex",
@@ -207,625 +258,243 @@
     }
   },
   {
-    "id": "cwj0dr",
+    "id": "0misuu",
     "name": "section",
     "parent": 0,
     "children": [
-      "rr6ak2"
+      "oeboy8"
     ],
     "settings": {
       "_padding": {
+        "top": "17",
         "right": "16",
+        "bottom": "17",
         "left": "16"
       },
       "_background": {
         "color": {
           "raw": "#290A12"
         }
+      },
+      "_padding:tablet_portrait": {
+        "top": "9",
+        "bottom": "9"
+      },
+      "_padding:mobile_landscape": {
+        "top": "9",
+        "bottom": "9"
       }
     }
   },
   {
-    "id": "ym36vi",
+    "id": "5932my",
     "name": "icon",
-    "parent": "zb9unz",
+    "parent": "b7ilpo",
     "children": [],
     "settings": {
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3727,
-          "filename": "group-1261152750-250_28.svg",
+          "id": 3934,
+          "filename": "1-250_32.svg",
           "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261152750-250_28.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261152750-250_28.svg"
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/1-250_32.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/1-250_32.svg"
         },
-        "height": "22"
+        "height": "20"
       },
-      "_widthMax": "82px",
-      "_widthMax:tablet_portrait": "100%"
+      "_widthMax": "20px",
+      "_widthMax:tablet_portrait": "100%",
+      "_overflow": "hidden"
     },
     "themeStyles": []
   },
   {
-    "id": "1u4krt",
-    "name": "text",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "text": "<p>Cricket</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "14px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "iswdpv",
+    "id": "e0ftut",
     "name": "icon",
-    "parent": "p1a5ne",
+    "parent": "b7ilpo",
     "children": [],
     "settings": {
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3728,
-          "filename": "line-3-250_10.svg",
+          "id": 3935,
+          "filename": "line-12-250_31.svg",
           "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-3-250_10.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-3-250_10.svg"
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-12-250_31.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-12-250_31.svg"
         },
         "height": "14"
       },
-      "_widthMax": "0px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
+      "_margin": {
+        "left": "15.5px",
+        "right": "-0.5px"
       },
-      "_widthMax:tablet_portrait": "100%"
+      "_widthMax": "1px",
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_width": "1px",
+      "_flexShrink": "0"
     },
     "themeStyles": []
   },
   {
-    "id": "zvh2bz",
-    "name": "text",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "text": "<p>Live Casino</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "14px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "5w1oa7",
+    "id": "02bdn3",
     "name": "icon",
-    "parent": "p1a5ne",
+    "parent": "b7ilpo",
     "children": [],
     "settings": {
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3729,
-          "filename": "line-4-250_12.svg",
+          "id": 3936,
+          "filename": "home-250_29.svg",
           "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-4-250_12.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-4-250_12.svg"
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/home-250_29.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/home-250_29.svg"
         },
-        "height": "14"
+        "height": "21"
       },
-      "_widthMax": "0px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
+      "_margin": {
+        "left": "16"
+      },
+      "_widthMax": "21px",
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
       },
       "_widthMax:tablet_portrait": "100%"
     },
     "themeStyles": []
   },
   {
-    "id": "rikbjk",
-    "name": "text",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "text": "<p>Slots</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "14px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "65gxts",
+    "id": "4c9jka",
     "name": "icon",
-    "parent": "p1a5ne",
+    "parent": "b7ilpo",
     "children": [],
     "settings": {
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3730,
-          "filename": "line-5-250_14.svg",
+          "id": 3937,
+          "filename": "line-2-250_30.svg",
           "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-5-250_14.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-5-250_14.svg"
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-2-250_30.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-2-250_30.svg"
         },
         "height": "14"
       },
-      "_widthMax": "0px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
+      "_margin": {
+        "left": "8.5px",
+        "right": "-0.5px"
       },
-      "_widthMax:tablet_portrait": "100%"
+      "_widthMax": "1px",
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_width": "1px",
+      "_flexShrink": "0"
     },
     "themeStyles": []
   },
   {
-    "id": "4jj6ud",
-    "name": "text",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "text": "<p>Sports</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "14px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "oqa3dc",
-    "name": "icon",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "icon": {
-        "library": "svg",
-        "svg": {
-          "id": 3731,
-          "filename": "line-6-250_16.svg",
-          "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-6-250_16.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-6-250_16.svg"
-        },
-        "height": "14"
-      },
-      "_widthMax": "0px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
-      },
-      "_widthMax:tablet_portrait": "100%"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "uf9rwe",
-    "name": "text",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "text": "<p>Crash</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "14px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "t2x96a",
-    "name": "icon",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "icon": {
-        "library": "svg",
-        "svg": {
-          "id": 3732,
-          "filename": "line-7-250_18.svg",
-          "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-7-250_18.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-7-250_18.svg"
-        },
-        "height": "14"
-      },
-      "_widthMax": "0px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
-      },
-      "_widthMax:tablet_portrait": "100%"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "g2ns6p",
-    "name": "text",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "text": "<p>Table</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "14px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "qzxilb",
-    "name": "icon",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "icon": {
-        "library": "svg",
-        "svg": {
-          "id": 3733,
-          "filename": "line-8-250_20.svg",
-          "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-8-250_20.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-8-250_20.svg"
-        },
-        "height": "14"
-      },
-      "_widthMax": "0px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
-      },
-      "_widthMax:tablet_portrait": "100%"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "0anfe7",
-    "name": "text",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "text": "<p>Fishing</p>",
-      "_display": "block",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "14px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "hf4vq0",
-    "name": "icon",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "icon": {
-        "library": "svg",
-        "svg": {
-          "id": 3734,
-          "filename": "line-9-250_22.svg",
-          "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-9-250_22.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-9-250_22.svg"
-        },
-        "height": "14"
-      },
-      "_widthMax": "0px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
-      },
-      "_widthMax:tablet_portrait": "100%"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "yccrzg",
-    "name": "text",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "text": "<p>Lottery</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "14px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "q0pcvc",
-    "name": "icon",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "icon": {
-        "library": "svg",
-        "svg": {
-          "id": 3735,
-          "filename": "line-21-250_24.svg",
-          "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-21-250_24.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-21-250_24.svg"
-        },
-        "height": "14"
-      },
-      "_widthMax": "0px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
-      },
-      "_widthMax:tablet_portrait": "100%"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "g9jlgp",
-    "name": "text",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "text": "<p>Promotion</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "14px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "6rxy8r",
-    "name": "icon",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "icon": {
-        "library": "svg",
-        "svg": {
-          "id": 3736,
-          "filename": "line-18-250_26.svg",
-          "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-18-250_26.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-18-250_26.svg"
-        },
-        "height": "14"
-      },
-      "_widthMax": "0px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
-      },
-      "_widthMax:tablet_portrait": "100%"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "izr67y",
-    "name": "text",
-    "parent": "p1a5ne",
-    "children": [],
-    "settings": {
-      "text": "<p>VIP</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "14px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "p1a5ne",
+    "id": "b7ilpo",
     "name": "div",
-    "parent": "zb9unz",
+    "parent": "lxiu0r",
     "children": [
-      "1u4krt",
-      "iswdpv",
-      "zvh2bz",
-      "5w1oa7",
-      "rikbjk",
-      "65gxts",
-      "4jj6ud",
-      "oqa3dc",
-      "uf9rwe",
-      "t2x96a",
-      "g2ns6p",
-      "qzxilb",
-      "0anfe7",
-      "hf4vq0",
-      "yccrzg",
-      "q0pcvc",
-      "g9jlgp",
-      "6rxy8r",
-      "izr67y"
+      "5932my",
+      "e0ftut",
+      "02bdn3",
+      "4c9jka"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "22",
-      "_columnGap": "22",
       "_alignItems": "center",
+      "_width": "100%",
+      "_widthMax": "82px",
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
-      "_alignItems:tablet_portrait": "center"
+      "_alignItems:tablet_portrait": "center",
+      "_widthMax:tablet_portrait": "100%"
     }
   },
   {
-    "id": "zb9unz",
+    "id": "m5tltd",
+    "name": "nav-menu",
+    "parent": "lxiu0r",
+    "children": [],
+    "settings": {
+      "menu": "22",
+      "menuTypography": {
+        "font-family": "Inter",
+        "font-size": "14px",
+        "font-weight": "500",
+        "line-height": "17px",
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "mobileMenu": "custom",
+      "mobileMenuCustomBreakpoint": "1024",
+      "menuGap": "44",
+      "_width": "auto",
+      "_cssCustom": "#brxe-m5tltd .bricks-nav-menu>li:first-child{display:none} #brxe-m5tltd .bricks-nav-menu>li{position:relative} #brxe-m5tltd .bricks-nav-menu>li:not(:first-child):not(:last-child)::after{content:'';position:absolute;right:-22px;top:50%;height:14px;width:1px;background:white;transform:translateY(-50%)} #brxe-m5tltd .bricks-nav-menu{gap:44px} #brxe-m5tltd .bricks-nav-menu>li{margin:0!important;flex-shrink:0} #brxe-m5tltd .bricks-nav-menu>li>a{white-space:nowrap;padding:0}",
+      "_flexShrink": "0",
+      "_widthMax": "100%"
+    }
+  },
+  {
+    "id": "lxiu0r",
     "name": "div",
-    "parent": "r3y6qw",
+    "parent": "78r45d",
     "children": [
-      "ym36vi",
-      "p1a5ne"
+      "b7ilpo",
+      "m5tltd"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "20",
-      "_columnGap": "20",
-      "_alignItems": "flex-start",
-      "_justifyContent": "space-between",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "center",
       "_width": "100%",
+      "_widthMax": "967px",
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
       "_alignItems:tablet_portrait": "center"
     }
   },
   {
-    "id": "r3y6qw",
+    "id": "78r45d",
     "name": "container",
-    "parent": "ba54wj",
+    "parent": "rsfsp7",
     "children": [
-      "zb9unz"
+      "lxiu0r"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_alignItems": "flex-start",
       "_width": "100%",
-      "_widthMax": "967px"
+      "_widthMax": "1120px"
     }
   },
   {
-    "id": "ba54wj",
+    "id": "rsfsp7",
     "name": "section",
     "parent": 0,
     "children": [
-      "r3y6qw"
+      "78r45d"
     ],
     "settings": {
       "_padding": {
-        "top": "25",
+        "top": "8",
         "right": "16",
         "bottom": "9",
         "left": "16"
@@ -836,13 +505,14 @@
         }
       },
       "_padding:tablet_portrait": {
-        "top": "13",
+        "top": "4",
         "bottom": "5"
       },
       "_padding:mobile_landscape": {
-        "top": "13",
+        "top": "4",
         "bottom": "5"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-rsfsp7{display:none}}"
     }
   },
   {
@@ -863,7 +533,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-288uzu{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -888,7 +559,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-0uuhlx{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -914,6 +586,7 @@
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#1A070C"
@@ -949,9 +622,18 @@
           "left": "100px"
         }
       },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
       "_flexDirection": "row",
       "_gap": "10",
-      "iconGap": "10"
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-okxier{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-okxier{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-okxier{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -1003,7 +685,7 @@
       },
       "_background": {
         "image": {
-          "id": 3737,
+          "id": 3947,
           "filename": "group-1261154194-1-202_420.png",
           "size": "full",
           "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154194-1-202_420-scaled.png",
@@ -1044,7 +726,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ya9swn{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -1054,7 +737,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3738,
+        "id": 3948,
         "filename": "shield-12902009-1-202_386.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/shield-12902009-1-202_386.png",
@@ -1088,7 +771,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-fwo553{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -1113,7 +798,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-tvb5qu{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -1173,7 +860,16 @@
           "bottom": "1",
           "left": "1"
         }
-      }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-5ylfbn{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-5ylfbn{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-5ylfbn{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -1183,7 +879,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3739,
+        "id": 3949,
         "filename": "gamepad-1729243-1-202_392.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/gamepad-1729243-1-202_392.png",
@@ -1205,6 +901,7 @@
       "_margin": {
         "top": "30"
       },
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -1215,7 +912,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-qavd4h{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -1241,7 +940,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-lmllls{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -1301,7 +1002,16 @@
           "bottom": "1",
           "left": "1"
         }
-      }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-oulyxq{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-oulyxq{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-oulyxq{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -1311,7 +1021,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3740,
+        "id": 3950,
         "filename": "first-prize-3188620-1-202_398.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/first-prize-3188620-1-202_398.png",
@@ -1364,7 +1074,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-jc9naw{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -1389,7 +1101,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-d7z9fq{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -1449,7 +1163,16 @@
           "bottom": "1",
           "left": "1"
         }
-      }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-0pgws5{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-0pgws5{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-0pgws5{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -1469,6 +1192,7 @@
       "_width": "100%",
       "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
       "_gridGap:tablet_portrait": "30",
+      "_gridTemplateColumns:mobile_landscape": "1fr",
       "_gridTemplateColumns:mobile_portrait": "1fr"
     }
   },
@@ -1542,38 +1266,6 @@
     }
   },
   {
-    "id": "y6937n",
-    "name": "container",
-    "parent": "hcaiuk",
-    "children": [],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_width": "100%",
-      "_widthMax": "1120px"
-    }
-  },
-  {
-    "id": "hcaiuk",
-    "name": "section",
-    "parent": 0,
-    "children": [
-      "y6937n"
-    ],
-    "settings": {
-      "_padding": {
-        "right": "16",
-        "left": "16"
-      },
-      "_height": "1186",
-      "_background": {
-        "color": {
-          "raw": "#1A070C"
-        }
-      }
-    }
-  },
-  {
     "id": "mbqzhg",
     "name": "heading",
     "parent": "pmxhy3",
@@ -1591,7 +1283,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-mbqzhg{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -1601,7 +1294,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3741,
+        "id": 3951,
         "filename": "rectangle-5757-202_33.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/rectangle-5757-202_33.png",
@@ -1616,22 +1309,21 @@
           "bottom": "0px",
           "left": "0px"
         }
-      }
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-wy67ph{max-width:100%;height:auto}}"
     },
     "themeStyles": []
   },
   {
     "id": "ja4qfk",
     "name": "heading",
-    "parent": "zvxx07",
+    "parent": "7f3c2a",
     "children": [],
     "settings": {
       "text": "Mafia Ways slot [RTP - 97.09%]",
       "tag": "h3",
-      "_margin": {
-        "top": "24",
-        "left": "24"
-      },
+      "_margin": {},
       "_width": "100%",
       "_widthMax": "177px",
       "_typography": {
@@ -1644,19 +1336,19 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ja4qfk{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "arpsus",
     "name": "text",
-    "parent": "zvxx07",
+    "parent": "7f3c2a",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy the printing and typesetting </p>",
       "_margin": {
-        "top": "14",
-        "left": "24"
+        "top": "14"
       },
       "_width": "100%",
       "_widthMax": "292px",
@@ -1670,40 +1362,18 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "b02qj2",
-    "name": "text",
-    "parent": "t8ravm",
-    "children": [],
-    "settings": {
-      "text": "<p>Play Now</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-arpsus{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "t8ravm",
-    "name": "div",
-    "parent": "zvxx07",
-    "children": [
-      "b02qj2"
-    ],
+    "name": "button",
+    "parent": "7f3c2a",
+    "children": [],
     "settings": {
+      "text": "Play Now",
       "_display": "flex",
-      "_direction": "row",
-      "_rowGap": "10",
-      "_columnGap": "10",
       "_alignItems": "center",
       "_justifyContent": "center",
       "_padding": {
@@ -1713,8 +1383,18 @@
         "left": "30"
       },
       "_margin": {
-        "top": "24",
-        "left": "24"
+        "top": "24"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
       },
       "_gradient": {
         "applyTo": "background",
@@ -1744,7 +1424,19 @@
           "bottom": "4px",
           "left": "4px"
         }
-      }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-t8ravm{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-t8ravm{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-t8ravm{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -1753,9 +1445,7 @@
     "parent": "1tw723",
     "children": [
       "wy67ph",
-      "ja4qfk",
-      "arpsus",
-      "t8ravm"
+      "7f3c2a"
     ],
     "settings": {
       "_display": "flex",
@@ -1786,7 +1476,7 @@
       "_padding": {
         "top": "0",
         "right": "0",
-        "bottom": "24",
+        "bottom": "0",
         "left": "0"
       },
       "_background": {
@@ -1811,7 +1501,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3742,
+        "id": 3952,
         "filename": "mask-group-202_53.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_53.png",
@@ -1826,22 +1516,21 @@
           "bottom": "0px",
           "left": "0px"
         }
-      }
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-kbpepq{max-width:100%;height:auto}}"
     },
     "themeStyles": []
   },
   {
     "id": "1fnp1n",
     "name": "heading",
-    "parent": "md8byy",
+    "parent": "347d26",
     "children": [],
     "settings": {
       "text": "Fortune Mouse slot [RTP - 96.88%]",
       "tag": "h3",
-      "_margin": {
-        "top": "24",
-        "left": "24"
-      },
+      "_margin": {},
       "_width": "100%",
       "_widthMax": "219px",
       "_typography": {
@@ -1854,19 +1543,19 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-1fnp1n{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "l71zaf",
     "name": "text",
-    "parent": "md8byy",
+    "parent": "347d26",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy the printing and typesetting </p>",
       "_margin": {
-        "top": "14",
-        "left": "24"
+        "top": "14"
       },
       "_width": "100%",
       "_widthMax": "292px",
@@ -1880,26 +1569,81 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-l71zaf{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "pjzytx",
-    "name": "text",
-    "parent": "md8byy",
+    "name": "button",
+    "parent": "347d26",
     "children": [],
     "settings": {
-      "text": "<p>Play Now</p>",
+      "text": "Play Now",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "14",
+        "right": "30",
+        "bottom": "14",
+        "left": "30"
+      },
+      "_margin": {
+        "top": "24"
+      },
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#1A070C"
         },
         "text-align": "left"
-      }
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-pjzytx{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-pjzytx{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-pjzytx{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -1908,9 +1652,7 @@
     "parent": "78yk70",
     "children": [
       "kbpepq",
-      "1fnp1n",
-      "l71zaf",
-      "pjzytx"
+      "347d26"
     ],
     "settings": {
       "_display": "flex",
@@ -1919,7 +1661,7 @@
       "_padding": {
         "top": "0",
         "right": "0",
-        "bottom": "14",
+        "bottom": "0",
         "left": "0"
       },
       "_width": "100%",
@@ -1947,7 +1689,7 @@
       "_padding": {
         "top": "0",
         "right": "0",
-        "bottom": "24",
+        "bottom": "0",
         "left": "0"
       },
       "_background": {
@@ -1972,7 +1714,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3743,
+        "id": 3953,
         "filename": "mask-group-202_63.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_63.png",
@@ -1987,22 +1729,21 @@
           "bottom": "0px",
           "left": "0px"
         }
-      }
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-efs0ye{max-width:100%;height:auto}}"
     },
     "themeStyles": []
   },
   {
     "id": "2tsam2",
     "name": "heading",
-    "parent": "v15r4z",
+    "parent": "9e5ec8",
     "children": [],
     "settings": {
       "text": "Medusa II slot [RTP - 96.54%]",
       "tag": "h3",
-      "_margin": {
-        "top": "24",
-        "left": "24"
-      },
+      "_margin": {},
       "_width": "100%",
       "_widthMax": "177px",
       "_typography": {
@@ -2015,19 +1756,19 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-2tsam2{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "3ihqck",
     "name": "text",
-    "parent": "v15r4z",
+    "parent": "9e5ec8",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy the printing and typesetting </p>",
       "_margin": {
-        "top": "14",
-        "left": "24"
+        "top": "14"
       },
       "_width": "100%",
       "_widthMax": "292px",
@@ -2041,193 +1782,18 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-3ihqck{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "j6sqxj",
-    "name": "text",
-    "parent": "v15r4z",
+    "name": "button",
+    "parent": "9e5ec8",
     "children": [],
     "settings": {
-      "text": "<p>Play Now</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "v15r4z",
-    "name": "div",
-    "parent": "66rzrs",
-    "children": [
-      "efs0ye",
-      "2tsam2",
-      "3ihqck",
-      "j6sqxj"
-    ],
-    "settings": {
+      "text": "Play Now",
       "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_padding": {
-        "top": "0",
-        "right": "0",
-        "bottom": "38",
-        "left": "0"
-      },
-      "_background": {
-        "color": {
-          "raw": "#18070C"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "0px",
-          "right": "0px",
-          "bottom": "0px",
-          "left": "0px"
-        }
-      }
-    }
-  },
-  {
-    "id": "66rzrs",
-    "name": "div",
-    "parent": "yv0nzj",
-    "children": [
-      "1tw723",
-      "78yk70",
-      "v15r4z"
-    ],
-    "settings": {
-      "_display": "grid",
-      "_gridTemplateColumns": "repeat(3, 1fr)",
-      "_gridGap": "30",
-      "_alignItemsGrid": "stretch",
-      "_width": "100%",
-      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
-      "_gridGap:tablet_portrait": "30",
-      "_gridTemplateColumns:mobile_portrait": "1fr"
-    }
-  },
-  {
-    "id": "3v69za",
-    "name": "image",
-    "parent": "igzby1",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": 3744,
-        "filename": "mask-group-202_73.png",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_73.png",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_73.png"
-      },
-      "_width": "100%",
-      "_widthMax": "353px",
-      "_border": {
-        "radius": {
-          "top": "0px",
-          "right": "0px",
-          "bottom": "0px",
-          "left": "0px"
-        }
-      }
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "l92c6i",
-    "name": "heading",
-    "parent": "igzby1",
-    "children": [],
-    "settings": {
-      "text": "Piggy Gold slot [RTP - 96.21%]",
-      "tag": "h3",
-      "_margin": {
-        "top": "24",
-        "left": "24"
-      },
-      "_width": "100%",
-      "_widthMax": "177px",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "22px",
-        "font-weight": "700",
-        "line-height": "33px",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "qtud6f",
-    "name": "text",
-    "parent": "igzby1",
-    "children": [],
-    "settings": {
-      "text": "<p>Lorem Ipsum is simply dummy the printing and typesetting </p>",
-      "_margin": {
-        "top": "14",
-        "left": "24"
-      },
-      "_width": "100%",
-      "_widthMax": "292px",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "cftiy6",
-    "name": "text",
-    "parent": "p23anq",
-    "children": [],
-    "settings": {
-      "text": "<p>Play Now</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "p23anq",
-    "name": "div",
-    "parent": "igzby1",
-    "children": [
-      "cftiy6"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "row",
-      "_rowGap": "10",
-      "_columnGap": "10",
       "_alignItems": "center",
       "_justifyContent": "center",
       "_padding": {
@@ -2237,8 +1803,18 @@
         "left": "30"
       },
       "_margin": {
-        "top": "24",
-        "left": "24"
+        "top": "24"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
       },
       "_gradient": {
         "applyTo": "background",
@@ -2268,7 +1844,204 @@
           "bottom": "4px",
           "left": "4px"
         }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-j6sqxj{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-j6sqxj{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-j6sqxj{padding-left:20px;padding-right:20px}}"
+    }
+  },
+  {
+    "id": "v15r4z",
+    "name": "div",
+    "parent": "66rzrs",
+    "children": [
+      "efs0ye",
+      "9e5ec8"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0"
+      },
+      "_background": {
+        "color": {
+          "raw": "#18070C"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
       }
+    }
+  },
+  {
+    "id": "3v69za",
+    "name": "image",
+    "parent": "igzby1",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3954,
+        "filename": "mask-group-202_73.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_73.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_73.png"
+      },
+      "_width": "100%",
+      "_widthMax": "353px",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-3v69za{max-width:100%;height:auto}}"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "l92c6i",
+    "name": "heading",
+    "parent": "0ab501",
+    "children": [],
+    "settings": {
+      "text": "Piggy Gold slot [RTP - 96.21%]",
+      "tag": "h3",
+      "_margin": {},
+      "_width": "100%",
+      "_widthMax": "177px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "22px",
+        "font-weight": "700",
+        "line-height": "33px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-l92c6i{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
+    }
+  },
+  {
+    "id": "qtud6f",
+    "name": "text",
+    "parent": "0ab501",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy the printing and typesetting </p>",
+      "_margin": {
+        "top": "14"
+      },
+      "_width": "100%",
+      "_widthMax": "292px",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-qtud6f{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
+    }
+  },
+  {
+    "id": "p23anq",
+    "name": "button",
+    "parent": "0ab501",
+    "children": [],
+    "settings": {
+      "text": "Play Now",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "14",
+        "right": "30",
+        "bottom": "14",
+        "left": "30"
+      },
+      "_margin": {
+        "top": "24"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-p23anq{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-p23anq{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-p23anq{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -2277,9 +2050,7 @@
     "parent": "vn4kpv",
     "children": [
       "3v69za",
-      "l92c6i",
-      "qtud6f",
-      "p23anq"
+      "0ab501"
     ],
     "settings": {
       "_display": "flex",
@@ -2299,7 +2070,7 @@
   {
     "id": "vn4kpv",
     "name": "div",
-    "parent": "7q2mz9",
+    "parent": "66rzrs",
     "children": [
       "igzby1"
     ],
@@ -2310,7 +2081,7 @@
       "_padding": {
         "top": "0",
         "right": "0",
-        "bottom": "24",
+        "bottom": "0",
         "left": "0"
       },
       "_background": {
@@ -2335,7 +2106,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3745,
+        "id": 3955,
         "filename": "rectangle-5765-202_41.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/rectangle-5765-202_41.png",
@@ -2350,22 +2121,21 @@
           "bottom": "0px",
           "left": "0px"
         }
-      }
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-dv5jl2{max-width:100%;height:auto}}"
     },
     "themeStyles": []
   },
   {
     "id": "75ydoj",
     "name": "heading",
-    "parent": "fjx48k",
+    "parent": "a75fef",
     "children": [],
     "settings": {
       "text": "Dragon Tiger Luck slot [RTP - 95.98%]",
       "tag": "h3",
-      "_margin": {
-        "top": "24",
-        "left": "24"
-      },
+      "_margin": {},
       "_width": "100%",
       "_widthMax": "245px",
       "_typography": {
@@ -2378,19 +2148,19 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-75ydoj{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "dpxupu",
     "name": "text",
-    "parent": "fjx48k",
+    "parent": "a75fef",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy the printing and typesetting </p>",
       "_margin": {
-        "top": "14",
-        "left": "24"
+        "top": "14"
       },
       "_width": "100%",
       "_widthMax": "292px",
@@ -2404,40 +2174,18 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "surhxa",
-    "name": "text-basic",
-    "parent": "swaw0d",
-    "children": [],
-    "settings": {
-      "text": "Play Now",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-dpxupu{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "swaw0d",
-    "name": "div",
-    "parent": "fjx48k",
-    "children": [
-      "surhxa"
-    ],
+    "name": "button",
+    "parent": "a75fef",
+    "children": [],
     "settings": {
+      "text": "Play Now",
       "_display": "flex",
-      "_direction": "row",
-      "_rowGap": "10",
-      "_columnGap": "10",
       "_alignItems": "center",
       "_justifyContent": "center",
       "_padding": {
@@ -2447,8 +2195,18 @@
         "left": "30"
       },
       "_margin": {
-        "top": "24",
-        "left": "24"
+        "top": "24"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
       },
       "_gradient": {
         "applyTo": "background",
@@ -2478,7 +2236,19 @@
           "bottom": "4px",
           "left": "4px"
         }
-      }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-swaw0d{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-swaw0d{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-swaw0d{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -2487,9 +2257,7 @@
     "parent": "avo376",
     "children": [
       "dv5jl2",
-      "75ydoj",
-      "dpxupu",
-      "swaw0d"
+      "a75fef"
     ],
     "settings": {
       "_display": "flex",
@@ -2509,7 +2277,7 @@
   {
     "id": "avo376",
     "name": "div",
-    "parent": "7q2mz9",
+    "parent": "66rzrs",
     "children": [
       "fjx48k"
     ],
@@ -2520,7 +2288,7 @@
       "_padding": {
         "top": "0",
         "right": "0",
-        "bottom": "24",
+        "bottom": "0",
         "left": "0"
       },
       "_background": {
@@ -2539,21 +2307,26 @@
     }
   },
   {
-    "id": "7q2mz9",
+    "id": "66rzrs",
     "name": "div",
     "parent": "yv0nzj",
     "children": [
+      "1tw723",
+      "78yk70",
+      "v15r4z",
       "vn4kpv",
       "avo376"
     ],
     "settings": {
       "_display": "grid",
-      "_gridTemplateColumns": "repeat(2, 1fr)",
+      "_gridTemplateColumns": "repeat(3, 1fr)",
       "_gridGap": "30",
       "_alignItemsGrid": "stretch",
       "_width": "100%",
-      "_gridTemplateColumns:tablet_portrait": "1fr",
-      "_gridGap:tablet_portrait": "30"
+      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
+      "_gridGap:tablet_portrait": "30",
+      "_gridTemplateColumns:mobile_landscape": "1fr",
+      "_gridTemplateColumns:mobile_portrait": "1fr"
     }
   },
   {
@@ -2561,8 +2334,7 @@
     "name": "div",
     "parent": "pmxhy3",
     "children": [
-      "66rzrs",
-      "7q2mz9"
+      "66rzrs"
     ],
     "settings": {
       "_display": "flex",
@@ -2610,7 +2382,7 @@
       "_padding": {
         "top": "80",
         "right": "16",
-        "bottom": "90",
+        "bottom": "80",
         "left": "16"
       },
       "_background": {
@@ -2620,11 +2392,11 @@
       },
       "_padding:tablet_portrait": {
         "top": "40",
-        "bottom": "45"
+        "bottom": "40"
       },
       "_padding:mobile_landscape": {
         "top": "40",
-        "bottom": "45"
+        "bottom": "40"
       }
     }
   },
@@ -2646,7 +2418,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-s31w3e{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -2656,7 +2429,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3746,
+        "id": 3956,
         "filename": "globe-12657881-1-202_430.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/globe-12657881-1-202_430.png",
@@ -2690,7 +2463,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-t5ovte{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -2714,7 +2489,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-7rrowu{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -2742,7 +2519,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3747,
+        "id": 3957,
         "filename": "id-card-4729741-1-202_447.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/id-card-4729741-1-202_447.png",
@@ -2773,7 +2550,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-jjdg4i{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -2794,7 +2573,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-e6qgab{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -2840,7 +2621,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3748,
+        "id": 3958,
         "filename": "accepted-1376350-1-202_434.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/accepted-1376350-1-202_434.png",
@@ -2870,7 +2651,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-cpxp78{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -2892,7 +2675,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-yt8np3{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -2946,7 +2731,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3749,
+        "id": 3959,
         "filename": "joystick-5817732-1-202_439.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/joystick-5817732-1-202_439.png",
@@ -2977,7 +2762,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-9js09h{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -2998,7 +2785,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-wjoya7{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3087,23 +2876,23 @@
     ],
     "settings": {
       "_padding": {
-        "top": "90",
+        "top": "100",
         "right": "16",
-        "bottom": "50",
+        "bottom": "100",
         "left": "16"
-      },
-      "_padding:tablet_portrait": {
-        "top": "45",
-        "bottom": "25"
-      },
-      "_padding:mobile_landscape": {
-        "top": "45",
-        "bottom": "25"
       },
       "_background": {
         "color": {
           "raw": "#1A070C"
         }
+      },
+      "_padding:tablet_portrait": {
+        "top": "50",
+        "bottom": "50"
+      },
+      "_padding:mobile_landscape": {
+        "top": "50",
+        "bottom": "50"
       }
     }
   },
@@ -3125,7 +2914,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-l7ilws{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3135,7 +2925,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3750,
+        "id": 3960,
         "filename": "application-14078591-1-202_407.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/application-14078591-1-202_407.png",
@@ -3165,7 +2955,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-xb24du{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3203,7 +2995,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-wjokfx{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3229,7 +3023,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3751,
+        "id": 3961,
         "filename": "apple-527565-1-202_412.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/apple-527565-1-202_412.png",
@@ -3259,7 +3053,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-61zb0a{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3297,7 +3093,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-htcsro{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3323,7 +3121,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3752,
+        "id": 3962,
         "filename": "computer-9518074-1-202_417.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/computer-9518074-1-202_417.png",
@@ -3353,7 +3151,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-8pnc2h{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3391,7 +3191,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-tc7kuj{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3427,6 +3229,7 @@
       "_width": "100%",
       "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
       "_gridGap:tablet_portrait": "40",
+      "_gridTemplateColumns:mobile_landscape": "1fr",
       "_gridTemplateColumns:mobile_portrait": "1fr"
     }
   },
@@ -3471,9 +3274,9 @@
     ],
     "settings": {
       "_padding": {
-        "top": "130",
+        "top": "80",
         "right": "16",
-        "bottom": "130",
+        "bottom": "80",
         "left": "16"
       },
       "_background": {
@@ -3482,12 +3285,12 @@
         }
       },
       "_padding:tablet_portrait": {
-        "top": "120",
-        "bottom": "120"
+        "top": "40",
+        "bottom": "40"
       },
       "_padding:mobile_landscape": {
-        "top": "60",
-        "bottom": "60"
+        "top": "40",
+        "bottom": "40"
       }
     }
   },
@@ -3511,7 +3314,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-iurh4m{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3520,7 +3324,7 @@
     "parent": "8ztsso",
     "children": [],
     "settings": {
-      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>",
       "_margin": {
         "top": "16"
       },
@@ -3534,7 +3338,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-168fhc{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3544,7 +3349,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3753,
+        "id": 3963,
         "filename": "appstore-202_78.svg",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/appstore-202_78.svg",
@@ -3552,7 +3357,8 @@
       },
       "_width": "100%",
       "_widthMax": "204px",
-      "_widthMax:tablet_portrait": "100%"
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-jb1xvp{max-width:100%;height:auto}}"
     },
     "themeStyles": []
   },
@@ -3565,7 +3371,7 @@
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3754,
+          "id": 3964,
           "filename": "googleplay-202_109.svg",
           "size": "full",
           "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/googleplay-202_109.svg",
@@ -3619,109 +3425,24 @@
     }
   },
   {
-    "id": "lho00o",
-    "name": "image",
-    "parent": "j0rr4n",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": 3755,
-        "filename": "group-1261154072-1-202_138.png",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154072-1-202_138.png",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154072-1-202_138.png"
-      },
-      "_width": "100%",
-      "_widthMax": "380px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "bfrdvs",
-    "name": "image",
-    "parent": "yyh9av",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": 3756,
-        "filename": "image-30-copy-1-202_140.png",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-30-copy-1-202_140.png",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-30-copy-1-202_140.png"
-      },
-      "_width": "100%",
-      "_widthMax": "307px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "8sdk8a",
-    "name": "image",
-    "parent": "yyh9av",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": 3757,
-        "filename": "image-25-202_142.png",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-25-202_142.png",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-25-202_142.png"
-      },
-      "_width": "42px",
-      "_position": "absolute",
-      "_left": "17.2%",
-      "_top": "69px",
-      "_zIndex": "1"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "yyh9av",
-    "name": "div",
-    "parent": "j0rr4n",
-    "children": [
-      "bfrdvs",
-      "8sdk8a"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_widthMax": "307px",
-      "_position": "relative"
-    }
-  },
-  {
-    "id": "41cg75",
-    "name": "image",
-    "parent": "j0rr4n",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": 3758,
-        "filename": "mask-group-202_143.png",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_143.png",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_143.png"
-      },
-      "_width": "100%",
-      "_widthMax": "380px"
-    },
-    "themeStyles": []
-  },
-  {
     "id": "j0rr4n",
-    "name": "div",
+    "name": "image",
     "parent": "tjzho4",
-    "children": [
-      "lho00o",
-      "yyh9av",
-      "41cg75"
-    ],
+    "children": [],
     "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "center"
-    }
+      "image": {
+        "id": 4023,
+        "filename": "group-1261154074-202_137.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154074-202_137.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154074-202_137.png"
+      },
+      "_width": "100%",
+      "_widthMax": "380.9130859375px",
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-j0rr4n{max-width:100%;height:auto}}"
+    },
+    "themeStyles": []
   },
   {
     "id": "tjzho4",
@@ -3739,6 +3460,7 @@
       "_alignItems": "center",
       "_justifyContent": "space-between",
       "_width": "100%",
+      "_widthMax": "1096.95654296875px",
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
       "_alignItems:tablet_portrait": "center"
@@ -3768,23 +3490,23 @@
     ],
     "settings": {
       "_padding": {
-        "top": "50",
+        "top": "100",
         "right": "16",
-        "bottom": "50",
+        "bottom": "100",
         "left": "16"
-      },
-      "_padding:tablet_portrait": {
-        "top": "25",
-        "bottom": "25"
-      },
-      "_padding:mobile_landscape": {
-        "top": "25",
-        "bottom": "25"
       },
       "_background": {
         "color": {
           "raw": "#1A070C"
         }
+      },
+      "_padding:tablet_portrait": {
+        "top": "50",
+        "bottom": "50"
+      },
+      "_padding:mobile_landscape": {
+        "top": "50",
+        "bottom": "50"
       }
     }
   },
@@ -3808,7 +3530,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-pkhp3u{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3818,7 +3542,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3759,
+        "id": 3969,
         "filename": "rectangle-5771-202_157.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/rectangle-5771-202_157.png",
@@ -3833,7 +3557,9 @@
           "bottom": "0px",
           "left": "0px"
         }
-      }
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-q14oga{max-width:100%;height:auto}}"
     },
     "themeStyles": []
   },
@@ -3845,6 +3571,7 @@
     "settings": {
       "text": "Welcome Bonus",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -3854,8 +3581,10 @@
         "color": {
           "raw": "#FFFFFF"
         },
-        "text-align": "center"
-      }
+        "text-align": "left"
+      },
+      "_alignSelf": "flex-start",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-u0mq3j{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -3878,180 +3607,18 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-pxplkg{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "m7805g",
-    "name": "text-basic",
+    "name": "button",
     "parent": "mmczbv",
     "children": [],
     "settings": {
       "text": "Claim Now",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "mmczbv",
-    "name": "div",
-    "parent": "wnpxkq",
-    "children": [
-      "u0mq3j",
-      "pxplkg",
-      "m7805g"
-    ],
-    "settings": {
       "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "flex-start",
-      "_widthMax": "209px"
-    }
-  },
-  {
-    "id": "wnpxkq",
-    "name": "div",
-    "parent": "1omsmh",
-    "children": [
-      "q14oga",
-      "mmczbv"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "20",
-      "_columnGap": "20",
-      "_alignItems": "center",
-      "_padding": {
-        "top": "0",
-        "right": "0",
-        "bottom": "32",
-        "left": "0"
-      },
-      "_background": {
-        "color": {
-          "raw": "#18070C"
-        }
-      },
-      "_border": {
-        "radius": {
-          "top": "0px",
-          "right": "0px",
-          "bottom": "0px",
-          "left": "0px"
-        }
-      }
-    }
-  },
-  {
-    "id": "on3ene",
-    "name": "image",
-    "parent": "bij1mn",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": 3760,
-        "filename": "rectangle-5772-202_166.png",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/rectangle-5772-202_166.png",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/rectangle-5772-202_166.png"
-      },
-      "_width": "100%",
-      "_widthMax": "258px",
-      "_border": {
-        "radius": {
-          "top": "6px",
-          "right": "6px",
-          "bottom": "0px",
-          "left": "0px"
-        }
-      }
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "zgcm8a",
-    "name": "heading",
-    "parent": "lgieeq",
-    "children": [],
-    "settings": {
-      "text": "No Deposit Bonus",
-      "tag": "h3",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "20px",
-        "font-weight": "700",
-        "line-height": "32px",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "center"
-      }
-    }
-  },
-  {
-    "id": "e19mu0",
-    "name": "text",
-    "parent": "lgieeq",
-    "children": [],
-    "settings": {
-      "text": "<p>Lorem Ipsum is simply dummy the printing and </p>",
-      "_margin": {
-        "top": "10"
-      },
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "18px",
-        "font-weight": "400",
-        "line-height": "27px",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#FFFFFF"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "ptikbf",
-    "name": "text",
-    "parent": "tx9ymk",
-    "children": [],
-    "settings": {
-      "text": "<p>Claim Now</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "tx9ymk",
-    "name": "div",
-    "parent": "lgieeq",
-    "children": [
-      "ptikbf"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "row",
-      "_rowGap": "10",
-      "_columnGap": "10",
       "_alignItems": "center",
       "_justifyContent": "center",
       "_padding": {
@@ -4061,7 +3628,19 @@
         "left": "24"
       },
       "_margin": {
-        "top": "25"
+        "top": "25",
+        "left": "0"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
       },
       "_gradient": {
         "applyTo": "background",
@@ -4091,7 +3670,227 @@
           "bottom": "4px",
           "left": "4px"
         }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-m7805g{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-m7805g{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-m7805g{padding-left:20px;padding-right:20px}}"
+    }
+  },
+  {
+    "id": "mmczbv",
+    "name": "div",
+    "parent": "wnpxkq",
+    "children": [
+      "u0mq3j",
+      "pxplkg",
+      "m7805g"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_widthMax": "209px",
+      "_width": "100%",
+      "_widthMax:tablet_portrait": "100%",
+      "_padding:tablet_portrait": {
+        "left": "20",
+        "right": "20"
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-mmczbv{width:100%;max-width:100%;min-width:0;box-sizing:border-box;padding-left:20px;padding-right:20px;align-items:flex-start} #brxe-mmczbv>*{min-width:0;max-width:100%;overflow-wrap:anywhere} #brxe-u0mq3j,#brxe-pxplkg{width:100%;text-align:left;align-self:flex-start}}"
+    }
+  },
+  {
+    "id": "wnpxkq",
+    "name": "div",
+    "parent": "1omsmh",
+    "children": [
+      "q14oga",
+      "mmczbv"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "20",
+        "left": "1"
+      },
+      "_background": {
+        "color": {
+          "raw": "#18070C"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
       }
+    }
+  },
+  {
+    "id": "on3ene",
+    "name": "image",
+    "parent": "bij1mn",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": 3970,
+        "filename": "rectangle-5772-202_166.png",
+        "size": "full",
+        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/rectangle-5772-202_166.png",
+        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/rectangle-5772-202_166.png"
+      },
+      "_width": "100%",
+      "_widthMax": "258px",
+      "_border": {
+        "radius": {
+          "top": "6px",
+          "right": "6px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-on3ene{max-width:100%;height:auto}}"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "zgcm8a",
+    "name": "heading",
+    "parent": "lgieeq",
+    "children": [],
+    "settings": {
+      "text": "No Deposit Bonus",
+      "tag": "h3",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "20px",
+        "font-weight": "700",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_alignSelf": "flex-start",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-zgcm8a{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
+    }
+  },
+  {
+    "id": "e19mu0",
+    "name": "text",
+    "parent": "lgieeq",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy the printing and </p>",
+      "_margin": {
+        "top": "10"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-e19mu0{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
+    }
+  },
+  {
+    "id": "tx9ymk",
+    "name": "button",
+    "parent": "lgieeq",
+    "children": [],
+    "settings": {
+      "text": "Claim Now",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "12",
+        "right": "24",
+        "bottom": "12",
+        "left": "24"
+      },
+      "_margin": {
+        "top": "25",
+        "left": "0"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-tx9ymk{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-tx9ymk{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-tx9ymk{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -4107,7 +3906,14 @@
       "_display": "flex",
       "_direction": "column",
       "_alignItems": "flex-start",
-      "_widthMax": "209px"
+      "_widthMax": "209px",
+      "_width": "100%",
+      "_widthMax:tablet_portrait": "100%",
+      "_padding:tablet_portrait": {
+        "left": "20",
+        "right": "20"
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-lgieeq{width:100%;max-width:100%;min-width:0;box-sizing:border-box;padding-left:20px;padding-right:20px;align-items:flex-start} #brxe-lgieeq>*{min-width:0;max-width:100%;overflow-wrap:anywhere} #brxe-zgcm8a,#brxe-e19mu0{width:100%;text-align:left;align-self:flex-start}}"
     }
   },
   {
@@ -4150,7 +3956,7 @@
         "top": "0",
         "right": "0",
         "bottom": "20",
-        "left": "0"
+        "left": "1"
       },
       "_background": {
         "color": {
@@ -4174,7 +3980,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3761,
+        "id": 3971,
         "filename": "mask-group-202_189.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_189.png",
@@ -4189,7 +3995,9 @@
           "bottom": "0px",
           "left": "0px"
         }
-      }
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-4kmy4y{max-width:100%;height:auto}}"
     },
     "themeStyles": []
   },
@@ -4201,6 +4009,7 @@
     "settings": {
       "text": "PG Slot Free Credit",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -4210,8 +4019,10 @@
         "color": {
           "raw": "#FFFFFF"
         },
-        "text-align": "center"
-      }
+        "text-align": "left"
+      },
+      "_alignSelf": "flex-start",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-tk4a6m{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -4234,26 +4045,82 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ohurev{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "917mrj",
-    "name": "text",
+    "name": "button",
     "parent": "8ekcyj",
     "children": [],
     "settings": {
-      "text": "<p>Claim Now</p>",
+      "text": "Claim Now",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "12",
+        "right": "24",
+        "bottom": "12",
+        "left": "24"
+      },
+      "_margin": {
+        "top": "25",
+        "left": "0"
+      },
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#1A070C"
         },
         "text-align": "left"
-      }
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-917mrj{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-917mrj{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-917mrj{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -4272,7 +4139,7 @@
       "_padding": {
         "top": "0",
         "right": "0",
-        "bottom": "12",
+        "bottom": "0",
         "left": "0"
       },
       "_widthMax": "209px",
@@ -4283,7 +4150,16 @@
           "bottom": "4px",
           "left": "4px"
         }
-      }
+      },
+      "_width": "100%",
+      "_widthMax:tablet_portrait": "100%",
+      "_padding:tablet_portrait": {
+        "top": "0",
+        "right": "20",
+        "bottom": "0",
+        "left": "20"
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-8ekcyj{width:100%;max-width:100%;min-width:0;box-sizing:border-box;padding-left:20px;padding-right:20px;align-items:flex-start} #brxe-8ekcyj>*{min-width:0;max-width:100%;overflow-wrap:anywhere} #brxe-tk4a6m,#brxe-ohurev{width:100%;text-align:left;align-self:flex-start}}"
     }
   },
   {
@@ -4328,7 +4204,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3762,
+        "id": 3972,
         "filename": "rectangle-5774-202_175.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/rectangle-5774-202_175.png",
@@ -4343,7 +4219,9 @@
           "bottom": "0px",
           "left": "0px"
         }
-      }
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ehzllz{max-width:100%;height:auto}}"
     },
     "themeStyles": []
   },
@@ -4355,6 +4233,7 @@
     "settings": {
       "text": "PG Slot VIP Bonus",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -4364,8 +4243,10 @@
         "color": {
           "raw": "#FFFFFF"
         },
-        "text-align": "center"
-      }
+        "text-align": "left"
+      },
+      "_alignSelf": "flex-start",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ap5smc{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -4388,40 +4269,18 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "4vuawu",
-    "name": "text-basic",
-    "parent": "m4nffu",
-    "children": [],
-    "settings": {
-      "text": "Claim Now",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ip8j4e{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "m4nffu",
-    "name": "div",
+    "name": "button",
     "parent": "7u3yec",
-    "children": [
-      "4vuawu"
-    ],
+    "children": [],
     "settings": {
+      "text": "Claim Now",
       "_display": "flex",
-      "_direction": "row",
-      "_rowGap": "10",
-      "_columnGap": "10",
       "_alignItems": "center",
       "_justifyContent": "center",
       "_padding": {
@@ -4431,7 +4290,19 @@
         "left": "24"
       },
       "_margin": {
-        "top": "25"
+        "top": "25",
+        "left": "0"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
       },
       "_gradient": {
         "applyTo": "background",
@@ -4461,7 +4332,19 @@
           "bottom": "4px",
           "left": "4px"
         }
-      }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-m4nffu{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-m4nffu{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-m4nffu{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -4485,7 +4368,14 @@
           "bottom": "4px",
           "left": "4px"
         }
-      }
+      },
+      "_width": "100%",
+      "_widthMax:tablet_portrait": "100%",
+      "_padding:tablet_portrait": {
+        "left": "20",
+        "right": "20"
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-7u3yec{width:100%;max-width:100%;min-width:0;box-sizing:border-box;padding-left:20px;padding-right:20px;align-items:flex-start} #brxe-7u3yec>*{min-width:0;max-width:100%;overflow-wrap:anywhere} #brxe-ap5smc,#brxe-ip8j4e{width:100%;text-align:left;align-self:flex-start}}"
     }
   },
   {
@@ -4506,7 +4396,7 @@
         "top": "0",
         "right": "0",
         "bottom": "20",
-        "left": "0"
+        "left": "1"
       },
       "_background": {
         "color": {
@@ -4541,6 +4431,7 @@
       "_width": "100%",
       "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
       "_gridGap:tablet_portrait": "29.33",
+      "_gridTemplateColumns:mobile_landscape": "1fr",
       "_gridTemplateColumns:mobile_portrait": "1fr"
     }
   },
@@ -4593,9 +4484,9 @@
     ],
     "settings": {
       "_padding": {
-        "top": "130",
+        "top": "80",
         "right": "16",
-        "bottom": "130",
+        "bottom": "80",
         "left": "16"
       },
       "_background": {
@@ -4604,12 +4495,12 @@
         }
       },
       "_padding:tablet_portrait": {
-        "top": "120",
-        "bottom": "120"
+        "top": "40",
+        "bottom": "40"
       },
       "_padding:mobile_landscape": {
-        "top": "60",
-        "bottom": "60"
+        "top": "40",
+        "bottom": "40"
       }
     }
   },
@@ -4633,7 +4524,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ecwlzy{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -4643,7 +4536,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3763,
+        "id": 3973,
         "filename": "image-34-202_455.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-34-202_455.png",
@@ -4662,6 +4555,7 @@
     "settings": {
       "text": "TrueMoney Wallet",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -4672,7 +4566,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-yhly63{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -4693,7 +4589,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-kvlkxx{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -4744,7 +4642,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3764,
+        "id": 3974,
         "filename": "image-35-copy-1-202_460.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-35-copy-1-202_460.png",
@@ -4763,6 +4661,7 @@
     "settings": {
       "text": "Rabbit LINE Pay",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -4773,7 +4672,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-3y48ug{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -4794,7 +4695,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-4w4gca{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -4845,7 +4748,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3765,
+        "id": 3975,
         "filename": "image-36-202_470.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-36-202_470.png",
@@ -4864,6 +4767,7 @@
     "settings": {
       "text": "TMB",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -4874,7 +4778,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-k60869{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -4895,7 +4801,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-gt1099{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -4938,7 +4846,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3766,
+        "id": 3976,
         "filename": "image-37-202_465.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-37-202_465.png",
@@ -4957,6 +4865,7 @@
     "settings": {
       "text": "Visa and Mastercard",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -4967,7 +4876,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-9dmn8g{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -4988,7 +4899,9 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-s61h1t{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -5046,10 +4959,11 @@
       "_display": "grid",
       "_gridTemplateColumns": "repeat(4, 1fr)",
       "_gridGap": "94.67",
-      "_alignItemsGrid": "stretch",
+      "_alignItemsGrid": "flex-end",
       "_width": "100%",
       "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
       "_gridGap:tablet_portrait": "40",
+      "_gridTemplateColumns:mobile_landscape": "1fr",
       "_gridTemplateColumns:mobile_portrait": "1fr"
     }
   },
@@ -5094,23 +5008,23 @@
     ],
     "settings": {
       "_padding": {
-        "top": "50",
+        "top": "100",
         "right": "16",
-        "bottom": "50",
+        "bottom": "100",
         "left": "16"
-      },
-      "_padding:tablet_portrait": {
-        "top": "25",
-        "bottom": "25"
-      },
-      "_padding:mobile_landscape": {
-        "top": "25",
-        "bottom": "25"
       },
       "_background": {
         "color": {
           "raw": "#1A070C"
         }
+      },
+      "_padding:tablet_portrait": {
+        "top": "50",
+        "bottom": "50"
+      },
+      "_padding:mobile_landscape": {
+        "top": "50",
+        "bottom": "50"
       }
     }
   },
@@ -5121,14 +5035,19 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3767,
+        "id": 3977,
         "filename": "group-1261154083-202_203.svg",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154083-202_203.svg",
         "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154083-202_203.svg"
       },
-      "_width": "100%",
-      "_widthMax": "364px"
+      "_width": "364px",
+      "_widthMax": "100%",
+      "_height": "340px",
+      "_position": "absolute",
+      "_left": "0px",
+      "_top": "0px",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-x8a66b{left:0%;width:94.79166666666666%;max-width:100%}}"
     },
     "themeStyles": []
   },
@@ -5139,14 +5058,19 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3768,
+        "id": 3978,
         "filename": "mask-group-202_208.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_208.png",
         "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_208.png"
       },
-      "_width": "100%",
-      "_widthMax": "364px"
+      "_width": "364px",
+      "_widthMax": "100%",
+      "_height": "340px",
+      "_position": "absolute",
+      "_left": "20px",
+      "_top": "25px",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-sn34vg{left:5.208333333333334%;width:94.79166666666666%;max-width:94.79166666666667%}}"
     },
     "themeStyles": []
   },
@@ -5159,8 +5083,11 @@
       "sn34vg"
     ],
     "settings": {
-      "_display": "flex",
-      "_direction": "column"
+      "_display": "block",
+      "_width": "100%",
+      "_widthMax": "384px",
+      "_height": "365",
+      "_position": "relative"
     }
   },
   {
@@ -5183,7 +5110,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-n5pwyb{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -5206,7 +5134,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-khvlgp{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -5229,7 +5158,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-18ring{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -5249,36 +5179,13 @@
     }
   },
   {
-    "id": "lvwcgw",
-    "name": "text",
-    "parent": "8gopng",
+    "id": "8gopng",
+    "name": "button",
+    "parent": "c3knm4",
     "children": [],
     "settings": {
-      "text": "<p>Contact us</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "8gopng",
-    "name": "div",
-    "parent": "c3knm4",
-    "children": [
-      "lvwcgw"
-    ],
-    "settings": {
+      "text": "Contact us",
       "_display": "flex",
-      "_direction": "row",
-      "_rowGap": "10",
-      "_columnGap": "10",
       "_alignItems": "center",
       "_justifyContent": "center",
       "_padding": {
@@ -5286,6 +5193,21 @@
         "right": "32",
         "bottom": "15",
         "left": "32"
+      },
+      "_margin": {
+        "top": "0",
+        "left": "0"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
       },
       "_gradient": {
         "applyTo": "background",
@@ -5315,7 +5237,19 @@
           "bottom": "100px",
           "left": "100px"
         }
-      }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-8gopng{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-8gopng{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-8gopng{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -5382,9 +5316,9 @@
     ],
     "settings": {
       "_padding": {
-        "top": "130",
+        "top": "80",
         "right": "16",
-        "bottom": "130",
+        "bottom": "80",
         "left": "16"
       },
       "_background": {
@@ -5393,12 +5327,12 @@
         }
       },
       "_padding:tablet_portrait": {
-        "top": "120",
-        "bottom": "120"
+        "top": "40",
+        "bottom": "40"
       },
       "_padding:mobile_landscape": {
-        "top": "60",
-        "bottom": "60"
+        "top": "40",
+        "bottom": "40"
       }
     }
   },
@@ -5420,7 +5354,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-dd6lsa{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -5443,7 +5378,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ilxscw{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -5466,7 +5402,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-vrp9qt{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -5487,21 +5424,76 @@
   },
   {
     "id": "3ahenv",
-    "name": "text-basic",
+    "name": "button",
     "parent": "zwzcbq",
     "children": [],
     "settings": {
       "text": "Lear More",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_margin": {
+        "top": "0",
+        "left": "0"
+      },
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#1A070C"
         },
         "text-align": "left"
-      }
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "100px",
+          "right": "100px",
+          "bottom": "100px",
+          "left": "100px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-3ahenv{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-3ahenv{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-3ahenv{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -5536,14 +5528,19 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3769,
+        "id": 3979,
         "filename": "group-1261154086-202_220.svg",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154086-202_220.svg",
         "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154086-202_220.svg"
       },
-      "_width": "100%",
-      "_widthMax": "364px"
+      "_width": "364px",
+      "_widthMax": "100%",
+      "_height": "340px",
+      "_position": "absolute",
+      "_left": "0px",
+      "_top": "0px",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-8cl791{left:0%;width:94.79166666666666%;max-width:100%}}"
     },
     "themeStyles": []
   },
@@ -5554,14 +5551,19 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3770,
+        "id": 3980,
         "filename": "mask-group-202_225.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_225.png",
         "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_225.png"
       },
-      "_width": "100%",
-      "_widthMax": "364px"
+      "_width": "364px",
+      "_widthMax": "100%",
+      "_height": "340px",
+      "_position": "absolute",
+      "_left": "20px",
+      "_top": "25px",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-iro2xl{left:5.208333333333334%;width:94.79166666666666%;max-width:94.79166666666667%}}"
     },
     "themeStyles": []
   },
@@ -5574,8 +5576,11 @@
       "iro2xl"
     ],
     "settings": {
-      "_display": "flex",
-      "_direction": "column"
+      "_display": "block",
+      "_width": "100%",
+      "_widthMax": "384px",
+      "_height": "365",
+      "_position": "relative"
     }
   },
   {
@@ -5623,23 +5628,23 @@
     ],
     "settings": {
       "_padding": {
-        "top": "50",
+        "top": "100",
         "right": "16",
         "bottom": "50",
         "left": "16"
-      },
-      "_padding:tablet_portrait": {
-        "top": "25",
-        "bottom": "25"
-      },
-      "_padding:mobile_landscape": {
-        "top": "25",
-        "bottom": "25"
       },
       "_background": {
         "color": {
           "raw": "#1A070C"
         }
+      },
+      "_padding:tablet_portrait": {
+        "top": "50",
+        "bottom": "25"
+      },
+      "_padding:mobile_landscape": {
+        "top": "50",
+        "bottom": "25"
       }
     }
   },
@@ -5666,7 +5671,15 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_margin:tablet_portrait": {
+        "left": "0"
+      },
+      "_margin:mobile_landscape": {
+        "left": "0"
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-bcs7gc{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -5676,7 +5689,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3771,
+        "id": 3981,
         "filename": "ellipse-3-202_248.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-3-202_248.png",
@@ -5708,7 +5721,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-kgedd3{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -5732,13 +5746,15 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-lrnvoi{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "fmpz4a",
     "name": "div",
-    "parent": "v1avpf",
+    "parent": "vb2wnt",
     "children": [
       "soruzg",
       "kgedd3",
@@ -5752,56 +5768,70 @@
     }
   },
   {
-    "id": "3xe27s",
-    "name": "image",
-    "parent": "v1avpf",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": 3772,
-        "filename": "group-1261154097-202_238.svg",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154097-202_238.svg",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154097-202_238.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "168px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "v1avpf",
+    "id": "vb2wnt",
     "name": "div",
-    "parent": "7wp8qs",
+    "parent": "v1avpf",
     "children": [
-      "fmpz4a",
-      "3xe27s"
+      "fmpz4a"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_rowGap": "40",
       "_columnGap": "40",
-      "_alignItems": "center",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "v1avpf",
+    "name": "block",
+    "parent": "7wp8qs",
+    "children": [
+      "vb2wnt"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
       "_padding": {
         "top": "65",
         "right": "96",
         "bottom": "65",
         "left": "97"
       },
+      "_width": "100%",
+      "_heightMin": "540",
       "_background": {
         "color": {
           "raw": "#280C14"
         }
       },
-      "_padding:tablet_portrait": {
-        "right": "40",
-        "left": "40"
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": 3982,
+          "filename": "mask-group-202_234.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_234.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_234.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
       },
-      "_padding:mobile_landscape": {
-        "right": "20",
-        "left": "20"
-      }
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-v1avpf::before, #brxe-v1avpf::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-v1avpf > * {\n  position: relative;\n  z-index: 1;\n}\n@media(max-width:1024px){#brxe-v1avpf{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-v1avpf{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-v1avpf{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -5811,7 +5841,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3773,
+        "id": 3983,
         "filename": "ellipse-3-202_267.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-3-202_267.png",
@@ -5843,7 +5873,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-r9hf4q{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -5867,13 +5898,15 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-cgyn2z{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "aj9kxr",
     "name": "div",
-    "parent": "d5bazg",
+    "parent": "k8lwmu",
     "children": [
       "5jpi5y",
       "r9hf4q",
@@ -5887,56 +5920,70 @@
     }
   },
   {
-    "id": "izr6l3",
-    "name": "image",
-    "parent": "d5bazg",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": 3774,
-        "filename": "group-1261154110-202_258.svg",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154110-202_258.svg",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154110-202_258.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "168px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "d5bazg",
+    "id": "k8lwmu",
     "name": "div",
-    "parent": "7wp8qs",
+    "parent": "d5bazg",
     "children": [
-      "aj9kxr",
-      "izr6l3"
+      "aj9kxr"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_rowGap": "40",
       "_columnGap": "40",
-      "_alignItems": "center",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "d5bazg",
+    "name": "block",
+    "parent": "7wp8qs",
+    "children": [
+      "k8lwmu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
       "_padding": {
         "top": "65",
         "right": "96",
         "bottom": "65",
         "left": "97"
       },
+      "_width": "100%",
+      "_heightMin": "540",
       "_background": {
         "color": {
           "raw": "#280C14"
         }
       },
-      "_padding:tablet_portrait": {
-        "right": "40",
-        "left": "40"
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": 3984,
+          "filename": "mask-group-202_254.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_254.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_254.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
       },
-      "_padding:mobile_landscape": {
-        "right": "20",
-        "left": "20"
-      }
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-d5bazg::before, #brxe-d5bazg::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-d5bazg > * {\n  position: relative;\n  z-index: 1;\n}\n@media(max-width:1024px){#brxe-d5bazg{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-d5bazg{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-d5bazg{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -5946,7 +5993,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3775,
+        "id": 3985,
         "filename": "ellipse-3-202_286.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-3-202_286.png",
@@ -5978,7 +6025,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ge2y5i{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -6002,13 +6050,15 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-94gyik{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "lk1cqt",
     "name": "div",
-    "parent": "wpgkx9",
+    "parent": "1vc46v",
     "children": [
       "b63wru",
       "ge2y5i",
@@ -6022,56 +6072,84 @@
     }
   },
   {
-    "id": "htmpbg",
-    "name": "image",
-    "parent": "wpgkx9",
-    "children": [],
+    "id": "1vc46v",
+    "name": "div",
+    "parent": "l0rvdy",
+    "children": [
+      "lk1cqt"
+    ],
     "settings": {
-      "image": {
-        "id": 3776,
-        "filename": "group-1261154113-202_277.svg",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154113-202_277.svg",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154113-202_277.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "168px"
-    },
-    "themeStyles": []
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
   },
   {
-    "id": "wpgkx9",
+    "id": "l0rvdy",
     "name": "div",
-    "parent": "7wp8qs",
+    "parent": "wpgkx9",
     "children": [
-      "lk1cqt",
-      "htmpbg"
+      "1vc46v"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_rowGap": "40",
       "_columnGap": "40",
-      "_alignItems": "center",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "wpgkx9",
+    "name": "block",
+    "parent": "7wp8qs",
+    "children": [
+      "l0rvdy"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
       "_padding": {
         "top": "65",
         "right": "96",
         "bottom": "65",
         "left": "97"
       },
+      "_width": "100%",
+      "_heightMin": "540",
       "_background": {
         "color": {
           "raw": "#280C14"
         }
       },
-      "_padding:tablet_portrait": {
-        "right": "40",
-        "left": "40"
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": 3986,
+          "filename": "mask-group-202_273.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_273.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_273.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
       },
-      "_padding:mobile_landscape": {
-        "right": "20",
-        "left": "20"
-      }
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-wpgkx9::before, #brxe-wpgkx9::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-wpgkx9 > * {\n  position: relative;\n  z-index: 1;\n}\n@media(max-width:1024px){#brxe-wpgkx9{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-wpgkx9{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-wpgkx9{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -6081,7 +6159,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3777,
+        "id": 3987,
         "filename": "ellipse-3-202_305.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-3-202_305.png",
@@ -6113,7 +6191,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-2tn8rr{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -6137,13 +6216,15 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-m15lxr{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "yrdokf",
     "name": "div",
-    "parent": "pr2azk",
+    "parent": "l8g5wp",
     "children": [
       "5m3c57",
       "2tn8rr",
@@ -6157,49 +6238,41 @@
     }
   },
   {
-    "id": "dlewn0",
-    "name": "image",
+    "id": "l8g5wp",
+    "name": "div",
     "parent": "pr2azk",
-    "children": [],
+    "children": [
+      "yrdokf"
+    ],
     "settings": {
-      "image": {
-        "id": 3778,
-        "filename": "group-1261154116-202_296.svg",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154116-202_296.svg",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154116-202_296.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "168px"
-    },
-    "themeStyles": []
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%"
+    }
   },
   {
     "id": "pr2azk",
     "name": "div",
     "parent": "hlj0ha",
     "children": [
-      "yrdokf",
-      "dlewn0"
+      "l8g5wp"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
-      "_rowGap": "40",
-      "_columnGap": "40",
-      "_alignItems": "center",
+      "_alignItems": "flex-start",
       "_padding": {
         "top": "0",
         "right": "0",
-        "bottom": "0",
+        "bottom": "72",
         "left": "0"
-      },
-      "_width": "100%"
+      }
     }
   },
   {
     "id": "hlj0ha",
-    "name": "div",
+    "name": "block",
     "parent": "7wp8qs",
     "children": [
       "pr2azk"
@@ -6214,19 +6287,39 @@
         "bottom": "65",
         "left": "97"
       },
+      "_width": "100%",
+      "_heightMin": "540",
       "_background": {
         "color": {
           "raw": "#280C14"
         }
       },
-      "_padding:tablet_portrait": {
-        "right": "40",
-        "left": "40"
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": 3988,
+          "filename": "mask-group-202_292.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_292.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_292.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
       },
-      "_padding:mobile_landscape": {
-        "right": "20",
-        "left": "20"
-      }
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-hlj0ha::before, #brxe-hlj0ha::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-hlj0ha > * {\n  position: relative;\n  z-index: 1;\n}\n@media(max-width:1024px){#brxe-hlj0ha{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-hlj0ha{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-hlj0ha{padding-left:20px;padding-right:20px}}"
     }
   },
   {
@@ -6236,7 +6329,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3779,
+        "id": 3989,
         "filename": "ellipse-3-202_324.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/ellipse-3-202_324.png",
@@ -6268,7 +6361,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-3tmtxy{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -6292,13 +6386,15 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-6glpqf{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "ps4udr",
     "name": "div",
-    "parent": "pqdyjg",
+    "parent": "dwgzip",
     "children": [
       "7k0fp0",
       "3tmtxy",
@@ -6312,61 +6408,75 @@
     }
   },
   {
-    "id": "fog140",
-    "name": "image",
-    "parent": "pqdyjg",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": 3780,
-        "filename": "group-1261154119-202_315.svg",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154119-202_315.svg",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/group-1261154119-202_315.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "168px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "pqdyjg",
+    "id": "dwgzip",
     "name": "div",
-    "parent": "7wp8qs",
+    "parent": "pqdyjg",
     "children": [
-      "ps4udr",
-      "fog140"
+      "ps4udr"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_rowGap": "40",
       "_columnGap": "40",
-      "_alignItems": "center",
+      "_alignItems": "center"
+    }
+  },
+  {
+    "id": "pqdyjg",
+    "name": "block",
+    "parent": "7wp8qs",
+    "children": [
+      "dwgzip"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
       "_padding": {
         "top": "65",
         "right": "96",
         "bottom": "65",
         "left": "97"
       },
+      "_width": "100%",
+      "_heightMin": "540",
       "_background": {
         "color": {
           "raw": "#280C14"
         }
       },
-      "_padding:tablet_portrait": {
-        "right": "40",
-        "left": "40"
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_content::before": " ",
+      "_position::before": "absolute",
+      "_position:tablet_portrait::before": "absolute",
+      "_position:mobile_landscape::before": "absolute",
+      "_position:mobile_portrait::before": "absolute",
+      "_background::before": {
+        "image": {
+          "id": 3990,
+          "filename": "mask-group-202_311.svg",
+          "size": "full",
+          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_311.svg",
+          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/mask-group-202_311.svg"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll",
+        "blendMode": "normal"
       },
-      "_padding:mobile_landscape": {
-        "right": "20",
-        "left": "20"
-      }
+      "_top::before": "0",
+      "_right::before": "0",
+      "_bottom::before": "0",
+      "_left::before": "0",
+      "_cssCustom": "#brxe-pqdyjg::before, #brxe-pqdyjg::after {\n  pointer-events: none;\n  z-index: 0;\n}\n#brxe-pqdyjg > * {\n  position: relative;\n  z-index: 1;\n}\n@media(max-width:1024px){#brxe-pqdyjg{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-pqdyjg{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-pqdyjg{padding-left:20px;padding-right:20px}}"
     }
   },
   {
     "id": "7wp8qs",
-    "name": "div",
+    "name": "slider-nested",
     "parent": "sqncex",
     "children": [
       "v1avpf",
@@ -6376,14 +6486,28 @@
       "pqdyjg"
     ],
     "settings": {
-      "_display": "grid",
-      "_gridTemplateColumns": "repeat(5, 1fr)",
-      "_gridGap": "30",
-      "_alignItemsGrid": "stretch",
-      "_width": "100%",
-      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
-      "_gridGap:tablet_portrait": "30",
-      "_gridTemplateColumns:mobile_portrait": "1fr"
+      "perPage": "1",
+      "type": "slide",
+      "gap": "30",
+      "arrows": false,
+      "pagination": true,
+      "paginationWidth": "20",
+      "paginationHeight": "20",
+      "paginationColor": {
+        "raw": "#FFFFFF33"
+      },
+      "paginationSpacing": {
+        "left": "7px",
+        "right": "7px",
+        "top": "0",
+        "bottom": "0"
+      },
+      "paginationWidthActive": "32",
+      "paginationHeightActive": "32",
+      "_cssCustom": "#brxe-7wp8qs > .splide__pagination .splide__pagination__page { opacity: 1; transform: none; } #brxe-7wp8qs > .splide__pagination .splide__pagination__page.is-active { background: transparent; position: relative; } #brxe-7wp8qs > .splide__pagination .splide__pagination__page.is-active::before { content: ''; position: absolute; inset: 4.8000030517578125px; border-radius: 50%; background: linear-gradient(90deg, #F5CB6A 0%, #BA8C30 100%); } #brxe-7wp8qs > .splide__pagination .splide__pagination__page.is-active::after { content: ''; position: absolute; inset: 0; border: 1.5px solid transparent; border-radius: 50%; background: linear-gradient(90deg, #F5CB6A 0%, #BA8C30 100%) border-box; mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); mask-composite: exclude; }",
+      "paginationBottom": "65px",
+      "optionsType": "custom",
+      "options": "{\"type\":\"slide\",\"perPage\":1,\"gap\":\"30px\",\"arrows\":false,\"pagination\":true,\"height\":\"auto\",\"autoHeight\":true,\"breakpoints\":{\"478\":{\"perPage\":1},\"767\":{\"perPage\":1},\"1024\":{\"perPage\":1}}}"
     }
   },
   {
@@ -6432,6 +6556,11 @@
         "bottom": "50",
         "left": "16"
       },
+      "_background": {
+        "color": {
+          "raw": "#1A070C"
+        }
+      },
       "_padding:tablet_portrait": {
         "top": "25",
         "bottom": "25"
@@ -6439,11 +6568,6 @@
       "_padding:mobile_landscape": {
         "top": "25",
         "bottom": "25"
-      },
-      "_background": {
-        "color": {
-          "raw": "#1A070C"
-        }
       }
     }
   },
@@ -6455,6 +6579,7 @@
     "settings": {
       "text": "FAQ",
       "tag": "h2",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "34px",
@@ -6465,17 +6590,20 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-9jmx3c{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "qxkmkn",
     "name": "heading",
-    "parent": "gqqqph",
+    "parent": "9j6qzf",
     "children": [],
     "settings": {
-      "text": "Is PG Slot safe and secure?",
+      "text": "1. Is PG Slot safe and secure?",
       "tag": "h3",
+      "_width": "auto",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -6485,20 +6613,22 @@
         "color": {
           "raw": "#FFFFFF"
         },
-        "text-align": "center"
-      }
+        "text-align": "left"
+      },
+      "_flexShrink": "0",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-qxkmkn{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
-    "id": "icwcb2",
+    "id": "j5gv4x",
     "name": "icon",
-    "parent": "gqqqph",
+    "parent": "9j6qzf",
     "children": [],
     "settings": {
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3781,
+          "id": 3991,
           "filename": "frame-202_333.svg",
           "size": "full",
           "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/frame-202_333.svg",
@@ -6507,66 +6637,77 @@
         "height": "34"
       },
       "_widthMax": "34px",
+      "_widthMax:tablet_portrait": "100%",
       "_overflow": "hidden"
     },
     "themeStyles": []
   },
   {
-    "id": "gqqqph",
-    "name": "div",
-    "parent": "j61fdb",
+    "id": "9j6qzf",
+    "name": "block",
+    "parent": "rosqjj",
     "children": [
       "qxkmkn",
-      "icwcb2"
+      "j5gv4x"
     ],
     "settings": {
+      "_attributes": [
+        {
+          "name": "role",
+          "value": "button"
+        },
+        {
+          "name": "tabindex",
+          "value": "0"
+        },
+        {
+          "name": "aria-expanded",
+          "value": "false"
+        }
+      ],
+      "_hidden": {
+        "_cssClasses": "accordion-title-wrapper"
+      },
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "490",
-      "_columnGap": "490",
       "_alignItems": "center",
-      "_justifyContent": "space-between",
-      "_width": "100%"
+      "_justifyContent": "space-between"
     }
   },
   {
-    "id": "7uyv65",
-    "name": "image",
-    "parent": "j61fdb",
+    "id": "49wlrm",
+    "name": "block",
+    "parent": "rosqjj",
     "children": [],
     "settings": {
-      "image": {
-        "id": 3782,
-        "filename": "line-32-202_335.svg",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-32-202_335.svg",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-32-202_335.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "875px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#451D28"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
+      "_hidden": {
+        "_cssClasses": "accordion-content-wrapper"
       }
-    },
-    "themeStyles": []
+    }
+  },
+  {
+    "id": "rosqjj",
+    "name": "block",
+    "parent": "bztjle",
+    "children": [
+      "9j6qzf",
+      "49wlrm"
+    ],
+    "settings": {
+      "_hidden": {
+        "_cssClasses": "accordion-item"
+      }
+    }
   },
   {
     "id": "k7z0l3",
     "name": "heading",
-    "parent": "mg3qlf",
+    "parent": "slggcx",
     "children": [],
     "settings": {
-      "text": "What is PG Slot rtp?",
+      "text": "2. What is PG Slot rtp?",
       "tag": "h3",
+      "_width": "auto",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -6576,20 +6717,22 @@
         "color": {
           "raw": "#FFFFFF"
         },
-        "text-align": "center"
-      }
+        "text-align": "left"
+      },
+      "_flexShrink": "0",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-k7z0l3{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
-    "id": "thyenu",
+    "id": "wgfwbe",
     "name": "icon",
-    "parent": "mg3qlf",
+    "parent": "slggcx",
     "children": [],
     "settings": {
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3781,
+          "id": 3991,
           "filename": "frame-202_333.svg",
           "size": "full",
           "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/frame-202_333.svg",
@@ -6598,68 +6741,77 @@
         "height": "34"
       },
       "_widthMax": "34px",
+      "_widthMax:tablet_portrait": "100%",
       "_overflow": "hidden"
     },
     "themeStyles": []
   },
   {
-    "id": "mg3qlf",
-    "name": "div",
-    "parent": "j61fdb",
+    "id": "slggcx",
+    "name": "block",
+    "parent": "s047n4",
     "children": [
       "k7z0l3",
-      "thyenu"
+      "wgfwbe"
     ],
     "settings": {
+      "_attributes": [
+        {
+          "name": "role",
+          "value": "button"
+        },
+        {
+          "name": "tabindex",
+          "value": "0"
+        },
+        {
+          "name": "aria-expanded",
+          "value": "false"
+        }
+      ],
+      "_hidden": {
+        "_cssClasses": "accordion-title-wrapper"
+      },
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "573",
-      "_columnGap": "573",
       "_alignItems": "center",
-      "_justifyContent": "space-between",
-      "_width": "100%"
+      "_justifyContent": "space-between"
     }
   },
   {
-    "id": "o2ql3n",
-    "name": "icon",
-    "parent": "j61fdb",
+    "id": "bkf4sa",
+    "name": "block",
+    "parent": "s047n4",
     "children": [],
     "settings": {
-      "icon": {
-        "library": "svg",
-        "svg": {
-          "id": 3783,
-          "filename": "line-33-202_340.svg",
-          "size": "full",
-          "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-33-202_340.svg",
-          "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-33-202_340.svg"
-        },
-        "height": "0"
-      },
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#451D28"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
+      "_hidden": {
+        "_cssClasses": "accordion-content-wrapper"
       }
-    },
-    "themeStyles": []
+    }
+  },
+  {
+    "id": "s047n4",
+    "name": "block",
+    "parent": "bztjle",
+    "children": [
+      "slggcx",
+      "bkf4sa"
+    ],
+    "settings": {
+      "_hidden": {
+        "_cssClasses": "accordion-item"
+      }
+    }
   },
   {
     "id": "ljx1nj",
     "name": "heading",
-    "parent": "v45lgi",
+    "parent": "psht0r",
     "children": [],
     "settings": {
-      "text": "What are the popular PG Slot jackpot games?",
+      "text": "3. What are the popular PG Slot jackpot games?",
       "tag": "h3",
+      "_width": "auto",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -6669,20 +6821,22 @@
         "color": {
           "raw": "#FFFFFF"
         },
-        "text-align": "center"
-      }
+        "text-align": "left"
+      },
+      "_flexShrink": "0",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ljx1nj{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
-    "id": "lbsfgl",
+    "id": "ezg0df",
     "name": "icon",
-    "parent": "v45lgi",
+    "parent": "psht0r",
     "children": [],
     "settings": {
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3781,
+          "id": 3991,
           "filename": "frame-202_333.svg",
           "size": "full",
           "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/frame-202_333.svg",
@@ -6691,66 +6845,77 @@
         "height": "34"
       },
       "_widthMax": "34px",
+      "_widthMax:tablet_portrait": "100%",
       "_overflow": "hidden"
     },
     "themeStyles": []
   },
   {
-    "id": "v45lgi",
-    "name": "div",
-    "parent": "j61fdb",
+    "id": "psht0r",
+    "name": "block",
+    "parent": "dbx6ok",
     "children": [
       "ljx1nj",
-      "lbsfgl"
+      "ezg0df"
     ],
     "settings": {
+      "_attributes": [
+        {
+          "name": "role",
+          "value": "button"
+        },
+        {
+          "name": "tabindex",
+          "value": "0"
+        },
+        {
+          "name": "aria-expanded",
+          "value": "false"
+        }
+      ],
+      "_hidden": {
+        "_cssClasses": "accordion-title-wrapper"
+      },
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "281",
-      "_columnGap": "281",
       "_alignItems": "center",
-      "_justifyContent": "space-between",
-      "_width": "100%"
+      "_justifyContent": "space-between"
     }
   },
   {
-    "id": "3uo3ws",
-    "name": "image",
-    "parent": "j61fdb",
+    "id": "794pdj",
+    "name": "block",
+    "parent": "dbx6ok",
     "children": [],
     "settings": {
-      "image": {
-        "id": 3784,
-        "filename": "line-34-202_345.svg",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-34-202_345.svg",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-34-202_345.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "875px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#451D28"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
+      "_hidden": {
+        "_cssClasses": "accordion-content-wrapper"
       }
-    },
-    "themeStyles": []
+    }
+  },
+  {
+    "id": "dbx6ok",
+    "name": "block",
+    "parent": "bztjle",
+    "children": [
+      "psht0r",
+      "794pdj"
+    ],
+    "settings": {
+      "_hidden": {
+        "_cssClasses": "accordion-item"
+      }
+    }
   },
   {
     "id": "zcoapg",
     "name": "heading",
-    "parent": "cn33rw",
+    "parent": "3dgx1f",
     "children": [],
     "settings": {
-      "text": "How to make deposit in PG Slot?",
+      "text": "4. How to make deposit in PG Slot?",
       "tag": "h3",
+      "_width": "auto",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -6760,20 +6925,22 @@
         "color": {
           "raw": "#FFFFFF"
         },
-        "text-align": "center"
-      }
+        "text-align": "left"
+      },
+      "_flexShrink": "0",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-zcoapg{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
-    "id": "y9jqbb",
+    "id": "01v6dt",
     "name": "icon",
-    "parent": "cn33rw",
+    "parent": "3dgx1f",
     "children": [],
     "settings": {
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3781,
+          "id": 3991,
           "filename": "frame-202_333.svg",
           "size": "full",
           "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/frame-202_333.svg",
@@ -6782,66 +6949,77 @@
         "height": "34"
       },
       "_widthMax": "34px",
+      "_widthMax:tablet_portrait": "100%",
       "_overflow": "hidden"
     },
     "themeStyles": []
   },
   {
-    "id": "cn33rw",
-    "name": "div",
-    "parent": "j61fdb",
+    "id": "3dgx1f",
+    "name": "block",
+    "parent": "8nc93f",
     "children": [
       "zcoapg",
-      "y9jqbb"
+      "01v6dt"
     ],
     "settings": {
+      "_attributes": [
+        {
+          "name": "role",
+          "value": "button"
+        },
+        {
+          "name": "tabindex",
+          "value": "0"
+        },
+        {
+          "name": "aria-expanded",
+          "value": "false"
+        }
+      ],
+      "_hidden": {
+        "_cssClasses": "accordion-title-wrapper"
+      },
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "430",
-      "_columnGap": "430",
       "_alignItems": "center",
-      "_justifyContent": "space-between",
-      "_width": "100%"
+      "_justifyContent": "space-between"
     }
   },
   {
-    "id": "6zj02x",
-    "name": "image",
-    "parent": "j61fdb",
+    "id": "8xyl40",
+    "name": "block",
+    "parent": "8nc93f",
     "children": [],
     "settings": {
-      "image": {
-        "id": 3785,
-        "filename": "line-35-202_350.svg",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-35-202_350.svg",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-35-202_350.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "875px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#451D28"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
+      "_hidden": {
+        "_cssClasses": "accordion-content-wrapper"
       }
-    },
-    "themeStyles": []
+    }
+  },
+  {
+    "id": "8nc93f",
+    "name": "block",
+    "parent": "bztjle",
+    "children": [
+      "3dgx1f",
+      "8xyl40"
+    ],
+    "settings": {
+      "_hidden": {
+        "_cssClasses": "accordion-item"
+      }
+    }
   },
   {
     "id": "uooxvu",
     "name": "heading",
-    "parent": "fss8bi",
+    "parent": "hz2f6h",
     "children": [],
     "settings": {
-      "text": "How to claim welcome bonus in PG Slot?",
+      "text": "5. How to claim welcome bonus in PG Slot?",
       "tag": "h3",
+      "_width": "auto",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -6851,20 +7029,22 @@
         "color": {
           "raw": "#FFFFFF"
         },
-        "text-align": "center"
-      }
+        "text-align": "left"
+      },
+      "_flexShrink": "0",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-uooxvu{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
-    "id": "iecljd",
+    "id": "wj3mqo",
     "name": "icon",
-    "parent": "fss8bi",
+    "parent": "hz2f6h",
     "children": [],
     "settings": {
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3781,
+          "id": 3991,
           "filename": "frame-202_333.svg",
           "size": "full",
           "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/frame-202_333.svg",
@@ -6873,91 +7053,77 @@
         "height": "34"
       },
       "_widthMax": "34px",
+      "_widthMax:tablet_portrait": "100%",
       "_overflow": "hidden"
     },
     "themeStyles": []
   },
   {
-    "id": "fss8bi",
-    "name": "div",
-    "parent": "j61fdb",
+    "id": "hz2f6h",
+    "name": "block",
+    "parent": "n8y8c6",
     "children": [
       "uooxvu",
-      "iecljd"
+      "wj3mqo"
     ],
     "settings": {
+      "_attributes": [
+        {
+          "name": "role",
+          "value": "button"
+        },
+        {
+          "name": "tabindex",
+          "value": "0"
+        },
+        {
+          "name": "aria-expanded",
+          "value": "false"
+        }
+      ],
+      "_hidden": {
+        "_cssClasses": "accordion-title-wrapper"
+      },
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "336",
-      "_columnGap": "336",
       "_alignItems": "center",
-      "_justifyContent": "space-between",
-      "_width": "100%"
+      "_justifyContent": "space-between"
     }
   },
   {
-    "id": "izstwu",
-    "name": "image",
-    "parent": "j61fdb",
+    "id": "fyi00z",
+    "name": "block",
+    "parent": "n8y8c6",
     "children": [],
     "settings": {
-      "image": {
-        "id": 3786,
-        "filename": "line-36-202_355.svg",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-36-202_355.svg",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-36-202_355.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "875px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#451D28"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
+      "_hidden": {
+        "_cssClasses": "accordion-content-wrapper"
       }
-    },
-    "themeStyles": []
+    }
   },
   {
-    "id": "j61fdb",
-    "name": "div",
-    "parent": "kkhd7i",
+    "id": "n8y8c6",
+    "name": "block",
+    "parent": "bztjle",
     "children": [
-      "gqqqph",
-      "7uyv65",
-      "mg3qlf",
-      "o2ql3n",
-      "v45lgi",
-      "3uo3ws",
-      "cn33rw",
-      "6zj02x",
-      "fss8bi",
-      "izstwu"
+      "hz2f6h",
+      "fyi00z"
     ],
     "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "34",
-      "_columnGap": "34",
-      "_alignItems": "flex-start",
-      "_width": "100%"
+      "_hidden": {
+        "_cssClasses": "accordion-item"
+      }
     }
   },
   {
     "id": "ryczpt",
     "name": "heading",
-    "parent": "8c3okg",
+    "parent": "rvhjsi",
     "children": [],
     "settings": {
-      "text": "Did PG Slot have any alternative website?",
+      "text": "6. Did PG Slot have any alternative website?",
       "tag": "h3",
+      "_width": "auto",
       "_typography": {
         "font-family": "Inter",
         "font-size": "24px",
@@ -6967,20 +7133,22 @@
         "color": {
           "raw": "#FFFFFF"
         },
-        "text-align": "center"
-      }
+        "text-align": "left"
+      },
+      "_flexShrink": "0",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-ryczpt{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
-    "id": "z5r3z0",
+    "id": "ghb5mn",
     "name": "icon",
-    "parent": "8c3okg",
+    "parent": "rvhjsi",
     "children": [],
     "settings": {
       "icon": {
         "library": "svg",
         "svg": {
-          "id": 3787,
+          "id": 3992,
           "filename": "frame-202_360.svg",
           "size": "full",
           "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/frame-202_360.svg",
@@ -6989,35 +7157,52 @@
         "height": "34"
       },
       "_widthMax": "34px",
+      "_widthMax:tablet_portrait": "100%",
       "_overflow": "hidden"
     },
     "themeStyles": []
   },
   {
-    "id": "8c3okg",
-    "name": "div",
-    "parent": "ffq83r",
+    "id": "rvhjsi",
+    "name": "block",
+    "parent": "osgf6n",
     "children": [
       "ryczpt",
-      "z5r3z0"
+      "ghb5mn"
     ],
     "settings": {
+      "_attributes": [
+        {
+          "name": "role",
+          "value": "button"
+        },
+        {
+          "name": "tabindex",
+          "value": "0"
+        },
+        {
+          "name": "aria-expanded",
+          "value": "false"
+        }
+      ],
+      "_hidden": {
+        "_cssClasses": "accordion-title-wrapper"
+      },
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "325",
-      "_columnGap": "325",
       "_alignItems": "center",
-      "_justifyContent": "space-between",
-      "_width": "100%"
+      "_justifyContent": "space-between"
     }
   },
   {
     "id": "pc9g0d",
     "name": "text",
-    "parent": "ffq83r",
+    "parent": "h2d9gs",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the ipsum is simply dummy text of the printing text.</p>",
+      "_width": "100%",
+      "_widthMax": "739px",
       "_typography": {
         "font-family": "Inter",
         "font-size": "18px",
@@ -7028,88 +7213,51 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-pc9g0d{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
-    "id": "ffq83r",
-    "name": "div",
-    "parent": "rue901",
+    "id": "h2d9gs",
+    "name": "block",
+    "parent": "osgf6n",
     "children": [
-      "8c3okg",
       "pc9g0d"
     ],
     "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "14",
-      "_columnGap": "14",
-      "_alignItems": "flex-start",
-      "_width": "100%"
+      "_hidden": {
+        "_cssClasses": "accordion-content-wrapper"
+      }
     }
   },
   {
-    "id": "s7bls7",
-    "name": "image",
-    "parent": "rue901",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": 3788,
-        "filename": "line-37-202_363.svg",
-        "size": "full",
-        "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-37-202_363.svg",
-        "url": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/line-37-202_363.svg"
-      },
-      "_width": "100%",
-      "_widthMax": "875px",
-      "_border": {
-        "style": "solid",
-        "color": {
-          "raw": "#451D28"
-        },
-        "width": {
-          "top": "1",
-          "right": "1",
-          "bottom": "1",
-          "left": "1"
-        }
-      }
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "rue901",
-    "name": "div",
-    "parent": "kkhd7i",
+    "id": "osgf6n",
+    "name": "block",
+    "parent": "bztjle",
     "children": [
-      "ffq83r",
-      "s7bls7"
+      "rvhjsi",
+      "h2d9gs"
     ],
     "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "34",
-      "_columnGap": "34",
-      "_alignItems": "flex-start",
-      "_width": "100%"
+      "_hidden": {
+        "_cssClasses": "accordion-item"
+      }
     }
   },
   {
-    "id": "kkhd7i",
-    "name": "div",
+    "id": "bztjle",
+    "name": "accordion-nested",
     "parent": "pupebk",
     "children": [
-      "j61fdb",
-      "rue901"
+      "rosqjj",
+      "s047n4",
+      "dbx6ok",
+      "8nc93f",
+      "n8y8c6",
+      "osgf6n"
     ],
     "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_rowGap": "34",
-      "_columnGap": "34",
-      "_alignItems": "flex-start",
-      "_width": "100%"
+      "expandItem": "5"
     }
   },
   {
@@ -7118,7 +7266,7 @@
     "parent": "nb4pxn",
     "children": [
       "9jmx3c",
-      "kkhd7i"
+      "bztjle"
     ],
     "settings": {
       "_display": "flex",
@@ -7158,6 +7306,11 @@
         "bottom": "80",
         "left": "16"
       },
+      "_background": {
+        "color": {
+          "raw": "#1A070C"
+        }
+      },
       "_padding:tablet_portrait": {
         "top": "25",
         "bottom": "40"
@@ -7165,11 +7318,6 @@
       "_padding:mobile_landscape": {
         "top": "25",
         "bottom": "40"
-      },
-      "_background": {
-        "color": {
-          "raw": "#1A070C"
-        }
       }
     }
   },
@@ -7180,7 +7328,7 @@
     "children": [],
     "settings": {
       "image": {
-        "id": 3789,
+        "id": 3993,
         "filename": "image-25-202_368.png",
         "size": "full",
         "full": "https://casinodesign.bcit.in/wp-content/uploads/2026/10/image-25-202_368.png",
@@ -7208,7 +7356,8 @@
           "raw": "#FFFFFFD6"
         },
         "text-align": "left"
-      }
+      },
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-rw9enw{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
@@ -7224,16 +7373,18 @@
       "_direction": "column",
       "_rowGap": "16",
       "_columnGap": "16",
-      "_alignItems": "flex-start"
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "392px"
     }
   },
   {
     "id": "j6lvw3",
-    "name": "text",
+    "name": "heading",
     "parent": "qixudi",
     "children": [],
     "settings": {
-      "text": "<p>Related things</p>",
+      "text": "Related things",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -7244,17 +7395,22 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "tag": "h3",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-j6lvw3{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "9esupg",
-    "name": "text",
+    "name": "nav-menu",
     "parent": "qixudi",
     "children": [],
     "settings": {
-      "text": "<p>All (1)\nPgslot game review (15)</p>",
-      "_typography": {
+      "menu": "23",
+      "mobileMenu": "never",
+      "menuAlignment": "column",
+      "menuGap": "0",
+      "menuTypography": {
         "font-family": "Inter",
         "font-size": "20px",
         "font-weight": "500",
@@ -7264,7 +7420,9 @@
           "raw": "#FFFFFFD6"
         },
         "text-align": "left"
-      }
+      },
+      "_width": "100%",
+      "_cssCustom": "#brxe-9esupg .bricks-nav-menu{align-items:flex-start} #brxe-9esupg .bricks-nav-menu>li{margin:0;max-width:100%} #brxe-9esupg a{white-space:normal;overflow-wrap:anywhere}"
     }
   },
   {
@@ -7284,6 +7442,8 @@
       "_margin": {
         "top": "16"
       },
+      "_width": "100%",
+      "_widthMax": "183px",
       "_margin:tablet_portrait": {
         "top": "0"
       }
@@ -7291,11 +7451,11 @@
   },
   {
     "id": "n62k57",
-    "name": "text",
+    "name": "heading",
     "parent": "5p7yn3",
     "children": [],
     "settings": {
-      "text": "<p>Subject</p>",
+      "text": "Subject",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -7306,17 +7466,22 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
-      }
+      },
+      "tag": "h3",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-n62k57{min-width:0;max-width:100%;flex-shrink:1;overflow-wrap:anywhere}}"
     }
   },
   {
     "id": "uo0tfb",
-    "name": "text",
+    "name": "nav-menu",
     "parent": "5p7yn3",
     "children": [],
     "settings": {
-      "text": "<p>Piggy Gold slot game review\nReview of Dragon Tiger Luck slot game\nEmperor's Favor slot game review\nReview of Dim Sum Mania slot game\nMermaid's Market Review</p>",
-      "_typography": {
+      "menu": "25",
+      "mobileMenu": "never",
+      "menuAlignment": "column",
+      "menuGap": "0",
+      "menuTypography": {
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "400",
@@ -7326,7 +7491,9 @@
           "raw": "#FFFFFFD6"
         },
         "text-align": "left"
-      }
+      },
+      "_width": "100%",
+      "_cssCustom": "#brxe-uo0tfb .bricks-nav-menu{align-items:flex-start} #brxe-uo0tfb .bricks-nav-menu>li{margin:0;max-width:100%} #brxe-uo0tfb a{white-space:normal;overflow-wrap:anywhere}"
     }
   },
   {
@@ -7346,6 +7513,8 @@
       "_margin": {
         "top": "16"
       },
+      "_width": "100%",
+      "_widthMax": "297px",
       "_margin:tablet_portrait": {
         "top": "0"
       }
@@ -7363,13 +7532,17 @@
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "124",
-      "_columnGap": "124",
+      "_rowGap": "20",
+      "_columnGap": "20",
       "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
       "_width": "100%",
-      "_direction:tablet_portrait": "column",
+      "_widthMax": "1120px",
+      "_direction:tablet_portrait": "row",
       "_rowGap:tablet_portrait": "40",
-      "_alignItems:tablet_portrait": "center"
+      "_alignItems:tablet_portrait": "flex-start",
+      "_flexWrap:tablet_portrait": "wrap",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-k142g3{flex-direction:row;flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;gap:24px}#brxe-k142g3>*{flex:1 1 calc(50% - 12px);min-width:0;max-width:100%}} @media(max-width:767px){#brxe-k142g3>*{flex-basis:100%;width:100%}}"
     }
   },
   {
@@ -7414,6 +7587,217 @@
         "top": "30",
         "bottom": "30"
       }
+    }
+  },
+  {
+    "id": "ddd8f4",
+    "name": "offcanvas",
+    "parent": 0,
+    "children": [
+      "1aba6f",
+      "629b99"
+    ],
+    "settings": {
+      "ariaLabel": "Navigation",
+      "direction": "left",
+      "width": "320px",
+      "noScrollBody": true,
+      "_cssCustom": "#brxe-ddd8f4 .brx-offcanvas-inner{max-width:100vw;overflow-y:auto}"
+    }
+  },
+  {
+    "id": "1aba6f",
+    "name": "block",
+    "parent": "ddd8f4",
+    "children": [
+      "d2d438",
+      "e8021f"
+    ],
+    "settings": {
+      "_hidden": {
+        "_cssClasses": "brx-offcanvas-inner"
+      },
+      "_background": {
+        "color": {
+          "raw": "#2E0D16"
+        }
+      },
+      "_padding": {
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_rowGap": "24",
+      "_cssCustom": "\n@media(max-width:1024px){#brxe-1aba6f{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-1aba6f{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-1aba6f{padding-left:20px;padding-right:20px}}"
+    }
+  },
+  {
+    "id": "d2d438",
+    "name": "toggle",
+    "parent": "1aba6f",
+    "children": [],
+    "settings": {
+      "ariaLabel": "Close navigation",
+      "toggleSelector": "#brxe-ddd8f4",
+      "barColor": {
+        "raw": "#FFFFFF"
+      },
+      "animation": "boring"
+    }
+  },
+  {
+    "id": "629b99",
+    "name": "block",
+    "parent": "ddd8f4",
+    "children": [],
+    "settings": {
+      "_hidden": {
+        "_cssClasses": "brx-offcanvas-backdrop"
+      }
+    }
+  },
+  {
+    "id": "e8021f",
+    "name": "nav-menu",
+    "parent": "1aba6f",
+    "children": [],
+    "settings": {
+      "menu": "22",
+      "menuTypography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "17px",
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "mobileMenu": "never",
+      "mobileMenuCustomBreakpoint": "1024",
+      "menuAlignment": "column",
+      "menuGap": "24",
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "7f3c2a",
+    "name": "div",
+    "parent": "zvxx07",
+    "children": [
+      "ja4qfk",
+      "arpsus",
+      "t8ravm"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMin": "0",
+      "_padding": {
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_cssCustom": "#brxe-7f3c2a{box-sizing:border-box} #brxe-7f3c2a>*{min-width:0;max-width:100%;overflow-wrap:anywhere}\n@media(max-width:1024px){#brxe-7f3c2a{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-7f3c2a{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-7f3c2a{padding-left:20px;padding-right:20px}}"
+    }
+  },
+  {
+    "id": "347d26",
+    "name": "div",
+    "parent": "md8byy",
+    "children": [
+      "1fnp1n",
+      "l71zaf",
+      "pjzytx"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMin": "0",
+      "_padding": {
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_cssCustom": "#brxe-347d26{box-sizing:border-box} #brxe-347d26>*{min-width:0;max-width:100%;overflow-wrap:anywhere}\n@media(max-width:1024px){#brxe-347d26{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-347d26{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-347d26{padding-left:20px;padding-right:20px}}"
+    }
+  },
+  {
+    "id": "9e5ec8",
+    "name": "div",
+    "parent": "v15r4z",
+    "children": [
+      "2tsam2",
+      "3ihqck",
+      "j6sqxj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMin": "0",
+      "_padding": {
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_cssCustom": "#brxe-9e5ec8{box-sizing:border-box} #brxe-9e5ec8>*{min-width:0;max-width:100%;overflow-wrap:anywhere}\n@media(max-width:1024px){#brxe-9e5ec8{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-9e5ec8{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-9e5ec8{padding-left:20px;padding-right:20px}}"
+    }
+  },
+  {
+    "id": "0ab501",
+    "name": "div",
+    "parent": "igzby1",
+    "children": [
+      "l92c6i",
+      "qtud6f",
+      "p23anq"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMin": "0",
+      "_padding": {
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_cssCustom": "#brxe-0ab501{box-sizing:border-box} #brxe-0ab501>*{min-width:0;max-width:100%;overflow-wrap:anywhere}\n@media(max-width:1024px){#brxe-0ab501{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-0ab501{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-0ab501{padding-left:20px;padding-right:20px}}"
+    }
+  },
+  {
+    "id": "a75fef",
+    "name": "div",
+    "parent": "fjx48k",
+    "children": [
+      "75ydoj",
+      "dpxupu",
+      "swaw0d"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMin": "0",
+      "_padding": {
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_cssCustom": "#brxe-a75fef{box-sizing:border-box} #brxe-a75fef>*{min-width:0;max-width:100%;overflow-wrap:anywhere}\n@media(max-width:1024px){#brxe-a75fef{padding-left:20px;padding-right:20px}}\n@media(max-width:767px){#brxe-a75fef{padding-left:20px;padding-right:20px}}\n@media(max-width:478px){#brxe-a75fef{padding-left:20px;padding-right:20px}}"
     }
   }
 ]

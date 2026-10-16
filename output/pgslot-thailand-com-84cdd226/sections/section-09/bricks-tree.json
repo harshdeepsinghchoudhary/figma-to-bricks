@@ -57,7 +57,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -95,7 +96,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -151,7 +153,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -189,7 +192,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -245,7 +249,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -283,7 +288,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -319,6 +325,7 @@
       "_width": "100%",
       "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
       "_gridGap:tablet_portrait": "40",
+      "_gridTemplateColumns:mobile_landscape": "1fr",
       "_gridTemplateColumns:mobile_portrait": "1fr"
     }
   },

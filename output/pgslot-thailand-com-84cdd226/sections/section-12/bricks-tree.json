@@ -19,7 +19,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -48,6 +49,7 @@
     "settings": {
       "text": "TrueMoney Wallet",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -58,7 +60,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -79,7 +82,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -149,6 +153,7 @@
     "settings": {
       "text": "Rabbit LINE Pay",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -159,7 +164,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -180,7 +186,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -250,6 +257,7 @@
     "settings": {
       "text": "TMB",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -260,7 +268,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -281,7 +290,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -343,6 +353,7 @@
     "settings": {
       "text": "Visa and Mastercard",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -353,7 +364,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -374,7 +386,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -432,10 +445,11 @@
       "_display": "grid",
       "_gridTemplateColumns": "repeat(4, 1fr)",
       "_gridGap": "94.67",
-      "_alignItemsGrid": "stretch",
+      "_alignItemsGrid": "flex-end",
       "_width": "100%",
       "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
       "_gridGap:tablet_portrait": "40",
+      "_gridTemplateColumns:mobile_landscape": "1fr",
       "_gridTemplateColumns:mobile_portrait": "1fr"
     }
   },

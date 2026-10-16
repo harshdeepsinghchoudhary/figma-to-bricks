@@ -302,7 +302,7 @@ function applyLayers(node, settings) {
 export function escapeText(text) {
   if (typeof text !== "string" || !text) return text;
   if (/<\/?[a-z!][^>]*>/i.test(text)) return text;
-  return text.replace(/&(?!#?\w+;)/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  return text.replace(/&(?!#?\w+;)/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\r?\n/g, '<br>');
 }
 
 function wrapAsParagraphIfNeeded(text) {

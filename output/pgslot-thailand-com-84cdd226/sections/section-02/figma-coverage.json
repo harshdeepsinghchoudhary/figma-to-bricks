@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "sourceHash": "a71f62873100ae9e9cf1c2e42846fbbe880e9a613280a61bebb9573ea9bc647a",
+  "sourceHash": "476d3b3376950236c97af7cf90457068de874220e348c902b01e46bea45d20bf",
   "warnings": [],
   "nodes": [
     {
@@ -11,25 +11,33 @@
       "status": "represented"
     },
     {
+      "nodeId": "202:14",
+      "parentId": "scope",
+      "name": "Rectangle 152",
+      "type": "RECTANGLE",
+      "status": "absorbed-paint",
+      "representedBy": "scope"
+    },
+    {
       "nodeId": "247:27",
       "parentId": "scope",
       "name": "Group 1261154196",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:15",
       "parentId": "247:27",
       "name": "Group 1261154187",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:16",
       "parentId": "202:15",
       "name": "Group 1261154186",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:17",
@@ -72,36 +80,36 @@
       "parentId": "202:20",
       "name": "Group 1261154067",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:23",
       "parentId": "202:22",
       "name": "Rectangle 5748",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:24",
       "parentId": "202:22",
       "name": "Rectangle 5749",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:25",
       "parentId": "202:22",
       "name": "Rectangle 5750",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "represented"
     }
   ],
   "summary": {
-    "represented": 5,
+    "represented": 12,
     "covered-by-export": 0,
     "button-label": 1,
-    "absorbed-paint": 0,
+    "absorbed-paint": 1,
     "hidden": 0,
-    "unrepresented": 7
+    "unrepresented": 0
   }
 }

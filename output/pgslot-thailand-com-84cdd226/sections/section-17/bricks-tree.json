@@ -50,7 +50,9 @@
       "_direction": "column",
       "_rowGap": "16",
       "_columnGap": "16",
-      "_alignItems": "flex-start"
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "392px"
     }
   },
   {
@@ -79,7 +81,7 @@
     "parent": "qixudi",
     "children": [],
     "settings": {
-      "text": "<p>All (1)\nPgslot game review (15)</p>",
+      "text": "<p>All (1)<br>Pgslot game review (15)</p>",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -110,6 +112,8 @@
       "_margin": {
         "top": "16"
       },
+      "_width": "100%",
+      "_widthMax": "183px",
       "_margin:tablet_portrait": {
         "top": "0"
       }
@@ -141,7 +145,7 @@
     "parent": "5p7yn3",
     "children": [],
     "settings": {
-      "text": "<p>Piggy Gold slot game review\nReview of Dragon Tiger Luck slot game\nEmperor's Favor slot game review\nReview of Dim Sum Mania slot game\nMermaid's Market Review</p>",
+      "text": "<p>Piggy Gold slot game review<br>Review of Dragon Tiger Luck slot game<br>Emperor's Favor slot game review<br>Review of Dim Sum Mania slot game<br>Mermaid's Market Review</p>",
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
@@ -172,6 +176,8 @@
       "_margin": {
         "top": "16"
       },
+      "_width": "100%",
+      "_widthMax": "297px",
       "_margin:tablet_portrait": {
         "top": "0"
       }
@@ -189,10 +195,12 @@
     "settings": {
       "_display": "flex",
       "_direction": "row",
-      "_rowGap": "124",
-      "_columnGap": "124",
+      "_rowGap": "20",
+      "_columnGap": "20",
       "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
       "_width": "100%",
+      "_widthMax": "1120px",
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
       "_alignItems:tablet_portrait": "center"

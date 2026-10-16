@@ -1,0 +1,41 @@
+{
+  "figmaUrl": "https://www.figma.com/design/QWeNLqVxWvyzYENYnMrvBk/Online-Betting-Website-2--Copy-?node-id=202-12",
+  "frameDir": "output\\pgslot-thailand-com-84cdd226",
+  "postId": null,
+  "startedAt": "2026-10-16T10:04:31.723Z",
+  "error": "Automatic WordPress menu setup failed; page injection stopped.",
+  "args": [
+    "https://www.figma.com/design/QWeNLqVxWvyzYENYnMrvBk/Online-Betting-Website-2--Copy-?node-id=202-12"
+  ],
+  "steps": [
+    {
+      "label": "1 extract",
+      "script": "1_extract_figma.js",
+      "args": [
+        "https://www.figma.com/design/QWeNLqVxWvyzYENYnMrvBk/Online-Betting-Website-2--Copy-?node-id=202-12"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "2-3 normalize, compile, merge",
+      "script": "run-sections.js",
+      "args": [
+        "output\\pgslot-thailand-com-84cdd226"
+      ],
+      "code": 0,
+      "seconds": 6
+    },
+    {
+      "label": "prepare WordPress menus",
+      "script": "setup-pipeline-menus.js",
+      "args": [
+        "output\\pgslot-thailand-com-84cdd226"
+      ],
+      "code": 1,
+      "seconds": 2
+    }
+  ],
+  "finishedAt": "2026-10-16T10:04:40.232Z",
+  "exitCode": 1
+}

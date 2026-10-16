@@ -28,7 +28,7 @@
     "parent": "8ztsso",
     "children": [],
     "settings": {
-      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>",
       "_margin": {
         "top": "16"
       },
@@ -127,109 +127,22 @@
     }
   },
   {
-    "id": "lho00o",
-    "name": "image",
-    "parent": "j0rr4n",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/group-1261154072-1-202_138.png",
-        "url": "../../assets/group-1261154072-1-202_138.png"
-      },
-      "_width": "100%",
-      "_widthMax": "380px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "bfrdvs",
-    "name": "image",
-    "parent": "yyh9av",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/image-30-copy-1-202_140.png",
-        "url": "../../assets/image-30-copy-1-202_140.png"
-      },
-      "_width": "100%",
-      "_widthMax": "307px"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "8sdk8a",
-    "name": "image",
-    "parent": "yyh9av",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/image-25-202_142.png",
-        "url": "../../assets/image-25-202_142.png"
-      },
-      "_width": "42px",
-      "_position": "absolute",
-      "_left": "17.2%",
-      "_top": "69px",
-      "_zIndex": "1"
-    },
-    "themeStyles": []
-  },
-  {
-    "id": "yyh9av",
-    "name": "div",
-    "parent": "j0rr4n",
-    "children": [
-      "bfrdvs",
-      "8sdk8a"
-    ],
-    "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_widthMax": "307px",
-      "_position": "relative"
-    }
-  },
-  {
-    "id": "41cg75",
-    "name": "image",
-    "parent": "j0rr4n",
-    "children": [],
-    "settings": {
-      "image": {
-        "id": null,
-        "filename": null,
-        "size": "full",
-        "full": "../../assets/mask-group-202_143.png",
-        "url": "../../assets/mask-group-202_143.png"
-      },
-      "_width": "100%",
-      "_widthMax": "380px"
-    },
-    "themeStyles": []
-  },
-  {
     "id": "j0rr4n",
-    "name": "div",
+    "name": "image",
     "parent": "tjzho4",
-    "children": [
-      "lho00o",
-      "yyh9av",
-      "41cg75"
-    ],
+    "children": [],
     "settings": {
-      "_display": "flex",
-      "_direction": "column",
-      "_alignItems": "center"
-    }
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/group-1261154074-202_137.png",
+        "url": "../../assets/group-1261154074-202_137.png"
+      },
+      "_width": "100%",
+      "_widthMax": "380.9130859375px"
+    },
+    "themeStyles": []
   },
   {
     "id": "tjzho4",
@@ -247,6 +160,7 @@
       "_alignItems": "center",
       "_justifyContent": "space-between",
       "_width": "100%",
+      "_widthMax": "1096.95654296875px",
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
       "_alignItems:tablet_portrait": "center"

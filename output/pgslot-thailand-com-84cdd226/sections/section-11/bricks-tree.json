@@ -19,7 +19,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -56,6 +57,7 @@
     "settings": {
       "text": "Welcome Bonus",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -66,7 +68,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -94,21 +97,75 @@
   },
   {
     "id": "m7805g",
-    "name": "text-basic",
+    "name": "button",
     "parent": "mmczbv",
     "children": [],
     "settings": {
       "text": "Claim Now",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "12",
+        "right": "24",
+        "bottom": "12",
+        "left": "24"
+      },
+      "_margin": {
+        "top": "25",
+        "left": "0"
+      },
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#1A070C"
         },
         "text-align": "left"
-      }
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10"
     }
   },
   {
@@ -144,8 +201,8 @@
       "_padding": {
         "top": "0",
         "right": "0",
-        "bottom": "32",
-        "left": "0"
+        "bottom": "20",
+        "left": "1"
       },
       "_background": {
         "color": {
@@ -196,6 +253,7 @@
     "settings": {
       "text": "No Deposit Bonus",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -206,7 +264,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -233,36 +292,13 @@
     }
   },
   {
-    "id": "ptikbf",
-    "name": "text",
-    "parent": "tx9ymk",
+    "id": "tx9ymk",
+    "name": "button",
+    "parent": "lgieeq",
     "children": [],
     "settings": {
-      "text": "<p>Claim Now</p>",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "tx9ymk",
-    "name": "div",
-    "parent": "lgieeq",
-    "children": [
-      "ptikbf"
-    ],
-    "settings": {
+      "text": "Claim Now",
       "_display": "flex",
-      "_direction": "row",
-      "_rowGap": "10",
-      "_columnGap": "10",
       "_alignItems": "center",
       "_justifyContent": "center",
       "_padding": {
@@ -272,7 +308,19 @@
         "left": "24"
       },
       "_margin": {
-        "top": "25"
+        "top": "25",
+        "left": "0"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
       },
       "_gradient": {
         "applyTo": "background",
@@ -302,7 +350,18 @@
           "bottom": "4px",
           "left": "4px"
         }
-      }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10"
     }
   },
   {
@@ -361,7 +420,7 @@
         "top": "0",
         "right": "0",
         "bottom": "20",
-        "left": "0"
+        "left": "1"
       },
       "_background": {
         "color": {
@@ -412,6 +471,7 @@
     "settings": {
       "text": "PG Slot Free Credit",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -422,7 +482,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -450,21 +511,75 @@
   },
   {
     "id": "917mrj",
-    "name": "text",
+    "name": "button",
     "parent": "8ekcyj",
     "children": [],
     "settings": {
-      "text": "<p>Claim Now</p>",
+      "text": "Claim Now",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "12",
+        "right": "24",
+        "bottom": "12",
+        "left": "24"
+      },
+      "_margin": {
+        "top": "25",
+        "left": "0"
+      },
       "_typography": {
         "font-family": "Inter",
         "font-size": "16px",
         "font-weight": "500",
+        "line-height": "19.363636016845703px",
         "letter-spacing": "0px",
         "color": {
           "raw": "#1A070C"
         },
         "text-align": "left"
-      }
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#F5CB6A"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#BA8C30"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_border": {
+        "radius": {
+          "top": "4px",
+          "right": "4px",
+          "bottom": "4px",
+          "left": "4px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10"
     }
   },
   {
@@ -483,7 +598,7 @@
       "_padding": {
         "top": "0",
         "right": "0",
-        "bottom": "12",
+        "bottom": "0",
         "left": "0"
       },
       "_widthMax": "209px",
@@ -566,6 +681,7 @@
     "settings": {
       "text": "PG Slot VIP Bonus",
       "tag": "h3",
+      "_width": "100%",
       "_typography": {
         "font-family": "Inter",
         "font-size": "20px",
@@ -576,7 +692,8 @@
           "raw": "#FFFFFF"
         },
         "text-align": "center"
-      }
+      },
+      "_alignSelf": "center"
     }
   },
   {
@@ -603,36 +720,13 @@
     }
   },
   {
-    "id": "4vuawu",
-    "name": "text-basic",
-    "parent": "m4nffu",
+    "id": "m4nffu",
+    "name": "button",
+    "parent": "7u3yec",
     "children": [],
     "settings": {
       "text": "Claim Now",
-      "_typography": {
-        "font-family": "Inter",
-        "font-size": "16px",
-        "font-weight": "500",
-        "letter-spacing": "0px",
-        "color": {
-          "raw": "#1A070C"
-        },
-        "text-align": "left"
-      }
-    }
-  },
-  {
-    "id": "m4nffu",
-    "name": "div",
-    "parent": "7u3yec",
-    "children": [
-      "4vuawu"
-    ],
-    "settings": {
       "_display": "flex",
-      "_direction": "row",
-      "_rowGap": "10",
-      "_columnGap": "10",
       "_alignItems": "center",
       "_justifyContent": "center",
       "_padding": {
@@ -642,7 +736,19 @@
         "left": "24"
       },
       "_margin": {
-        "top": "25"
+        "top": "25",
+        "left": "0"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#1A070C"
+        },
+        "text-align": "left"
       },
       "_gradient": {
         "applyTo": "background",
@@ -672,7 +778,18 @@
           "bottom": "4px",
           "left": "4px"
         }
-      }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "10",
+      "iconGap": "10"
     }
   },
   {
@@ -717,7 +834,7 @@
         "top": "0",
         "right": "0",
         "bottom": "20",
-        "left": "0"
+        "left": "1"
       },
       "_background": {
         "color": {
@@ -752,6 +869,7 @@
       "_width": "100%",
       "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
       "_gridGap:tablet_portrait": "29.33",
+      "_gridTemplateColumns:mobile_landscape": "1fr",
       "_gridTemplateColumns:mobile_portrait": "1fr"
     }
   },

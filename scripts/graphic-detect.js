@@ -40,6 +40,26 @@ function maskedImageGraphic(node) {
   return children.every(drawable) && images > 0;
 }
 
+// A small, connected stack of decorative raster layers is one illustration.
+// Separate cards, text and interactive controls must remain editable layout.
+function layeredImageGraphic(node) {
+  const children=(node.children||[]).filter(c=>c.visible!==false), b=node.absoluteBoundingBox;
+  if(!CONTAINERS.has(node.type)||children.length<2||!b||Math.max(b.width,b.height)>MAX_GRAPHIC||node.layoutMode && node.layoutMode!=='NONE')return false;
+  let images=0;
+  function decorative(n){
+    if(n.visible===false)return true;
+    if(n.type==='TEXT'||n.interactions?.length||n.reactions?.length||n.hyperlink)return false;
+    if(hasImageFill(n))images++;
+    return (CONTAINERS.has(n.type)||PLAIN_TYPES.has(n.type)||VECTOR_TYPES.has(n.type))&&(n.children||[]).every(decorative);
+  }
+  if(!decorative(node)||images<2||children.some(c=>!c.absoluteBoundingBox))return false;
+  const reached=new Set([0]);
+  for(let changed=true;changed;){changed=false;children.forEach((c,i)=>{if(reached.has(i))return;const a=c.absoluteBoundingBox;
+    if([...reached].some(j=>{const z=children[j].absoluteBoundingBox;return Math.min(a.x+a.width,z.x+z.width)-Math.max(a.x,z.x)>2&&Math.min(a.y+a.height,z.y+z.height)-Math.max(a.y,z.y)>2;})){reached.add(i);changed=true;}
+  });}
+  return reached.size===children.length;
+}
+
 // returns { ok, vectors } for the subtree: ok=true means "pure graphic material so far"
 function graphicInfo(node) {
   if (node.visible === false) return { ok: true, vectors: 0, rects: 0 };
@@ -64,7 +84,12 @@ function graphicInfo(node) {
 export function isGraphicNode(node) {
   const box = node.absoluteBoundingBox;
   if (!box || node.type === "TEXT" || node.isMask || hasImageFill(node)) return { isGraphic: false, vectors: 0 };
+  if(layeredImageGraphic(node))return {isGraphic:true,vectors:0,composite:true,format:'png'};
   if (box.width > 0 && box.height > 0 && maskedImageGraphic(node)) return { isGraphic: true, vectors: 0, masked: true, format: "png" };
+  // A toolbar containing separators and independent icons is layout, even if
+  // every descendant happens to be a vector. Keep each icon independently editable.
+  const children = (node.children || []).filter(c => c.visible !== false);
+  if (CONTAINERS.has(node.type) && children.some(c => c.type === 'LINE') && children.some(c => CONTAINERS.has(c.type))) return { isGraphic: false, vectors: 0 };
   const longest = Math.max(box.width, box.height);
   const shortest = Math.min(box.width, box.height);
   const g = graphicInfo(node);

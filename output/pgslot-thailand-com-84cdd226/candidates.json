@@ -47,31 +47,16 @@
       "parent": "Group 1261154170 (GROUP)"
     },
     {
-      "id": "202:138",
-      "name": "Group 1261154072 1",
-      "kind": "image"
-    },
-    {
-      "id": "202:140",
-      "name": "image 30 copy 1",
-      "kind": "image"
-    },
-    {
-      "id": "202:142",
-      "name": "image 25",
-      "kind": "image"
-    },
-    {
-      "id": "202:143",
-      "name": "Mask group",
+      "id": "202:137",
+      "name": "Group 1261154074",
       "kind": "image",
       "componentId": null,
-      "sig": "6chp7m",
+      "sig": "xp77e3",
       "w": 381,
-      "h": 348,
+      "h": 511,
       "nodeType": "GROUP",
       "vectorCount": 0,
-      "parent": "Group 1261154074 (GROUP)"
+      "parent": "Group 1261154176 (GROUP)"
     },
     {
       "id": "202:157",
@@ -453,12 +438,36 @@
       "parent": "Frame 8 (FRAME)"
     },
     {
-      "name": "Group 1261152750",
-      "size": "82x22",
+      "name": "home",
+      "size": "21x21",
       "copies": 1,
-      "type": "GROUP",
-      "vectors": 4,
-      "parent": "Group 1261153894 (GROUP)"
+      "type": "INSTANCE",
+      "vectors": 1,
+      "parent": "Group 1261152750 (GROUP)"
+    },
+    {
+      "name": "Line 2",
+      "size": "0x14",
+      "copies": 1,
+      "type": "LINE",
+      "vectors": 1,
+      "parent": "Group 1261152750 (GROUP)"
+    },
+    {
+      "name": "Line 12",
+      "size": "0x14",
+      "copies": 1,
+      "type": "LINE",
+      "vectors": 1,
+      "parent": "Group 1261152750 (GROUP)"
+    },
+    {
+      "name": " 1",
+      "size": "20x20",
+      "copies": 1,
+      "type": "FRAME",
+      "vectors": 1,
+      "parent": "Group 1261152750 (GROUP)"
     },
     {
       "name": "Mask group",

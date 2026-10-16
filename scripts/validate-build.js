@@ -36,6 +36,10 @@ export function validateBuild(tree, treeDir, { runtimeDir = schemaDir } = {}) {
     for (const [key, value] of Object.entries(settings)) {
       const base = key.split(":")[0], control = schema?.controls?.[base];
       if (schema && !control) errors.push(`Element ${e.id} (${e.name}): unsupported setting ${key}.`);
+      if(e.name==='nav-menu' && base==='menu' && control){
+        if(!Number.isInteger(Number(value)) || Number(value)<1) errors.push(`Element ${e.id}: WordPress menu must be a positive term ID.`);
+        continue; // Runtime schema omits the site's dynamic menu choices.
+      }
       // Only validate closed choice lists. Dynamic data/CSS variables are resolved
       // by Bricks and cannot be validated as literal choices here.
       if (control?.type === "select" && control.options) for (const choice of Array.isArray(value) ? value : [value]) if (typeof choice === "string" && choice && !/[{}]|var\(/.test(choice) && !Object.hasOwn(control.options, choice)) errors.push(`Element ${e.id}: invalid choice ${JSON.stringify(choice)} for ${key}.`);

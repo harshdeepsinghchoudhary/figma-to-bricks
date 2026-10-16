@@ -12,6 +12,7 @@
  *   --page <id>      Write into this existing page. Default: create a NEW DRAFT page.
  *   --title "<t>"    Title for the new draft page (default: "MCP Test - <folder name>").
  *   --no-assets      Skip uploading images/icons (keeps local ../assets paths).
+ *   --assets-only    Upload/verify assets and stop without creating or saving a page.
  *   --render-only    Upload nothing, save nothing: just render-check the tree. Needs --page.
  *   --fix-keys       If Bricks rejects a setting key and suggests a replacement ("did you mean"),
  *                    rename it in memory and retry. Writes the patched tree next to the report
@@ -28,6 +29,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { validateBricks } from "./bricks-validator.js";
 import { validateBuild } from "./validate-build.js";
+import { verifyCachedMedia } from "./media-cache.js";
 
 // ---------- args ----------
 const argv = process.argv.slice(2);
@@ -151,6 +153,8 @@ async function ability(name, params = {}) {
 const MIME = { png: "image/png", jpg: "image/jpeg", jpeg: "image/jpeg", svg: "image/svg+xml", webp: "image/webp", gif: "image/gif" };
 const cachePath = path.resolve("output", "mcp-media-cache.json");
 let cache = {};
+const verifiedMedia = new Set();
+let uploadedCount = 0, reusedCount = 0, staleCount = 0;
 try { cache = JSON.parse(fs.readFileSync(cachePath, "utf8")); } catch {}
 
 function findLocal(url) {
@@ -166,7 +170,13 @@ async function uploadAsset(localPath) {
   const filename = path.basename(localPath);
   const stat = fs.statSync(localPath);
   const key = `${SITE_BASE}|${localPath}|${stat.size}|${Math.floor(stat.mtimeMs)}`;
-  if (cache[key]) return cache[key];
+  if (cache[key]) {
+    if (verifiedMedia.has(key)) return cache[key];
+    const live = await verifyCachedMedia(cache[key], { site: SITE_BASE, auth: AUTH });
+    if (live) { cache[key] = live; verifiedMedia.add(key); reusedCount++; return live; }
+    delete cache[key]; staleCount++;
+    console.log(`   Deleted attachment detected; re-uploading ${filename}`);
+  }
   const ext = path.extname(filename).slice(1).toLowerCase();
   const res = await fetch(`${SITE_BASE}/wp-json/wp/v2/media`, {
     method: "POST",
@@ -182,6 +192,7 @@ async function uploadAsset(localPath) {
   const data = JSON.parse(text);
   if (!Number.isInteger(data.id) || data.id < 1 || !/^https?:\/\//i.test(data.source_url || "")) throw new Error("Media endpoint did not return a valid attachment ID and URL.");
   cache[key] = { id: data.id, url: data.source_url, filename };
+  verifiedMedia.add(key); uploadedCount++;
   fs.mkdirSync(path.dirname(cachePath), { recursive: true });
   fs.writeFileSync(cachePath, JSON.stringify(cache, null, 2));
   return cache[key];
@@ -215,6 +226,7 @@ async function resolveAssets() {
     }
   }
   console.log(`   Assets: ${refs.length} references, ${done} uploaded/reused, ${failures.length} failed.`);
+  console.log(`   Unique assets: ${uploadedCount} uploaded, ${reusedCount} verified on site, ${staleCount} stale cache entries replaced.`);
   if (failures.length) {
     const unique = [...new Set(failures)];
     console.log("   Failed (these stay as local paths and will show broken in Bricks):");
@@ -280,6 +292,7 @@ async function main() {
     if (assetFailures.length) throw new Error(`Asset resolution failed (${assetFailures.length} references). Not saving broken image URLs.`);
   }
 
+  if(flag('--assets-only')) { console.log('Assets ready. No page was created or saved.'); return; }
   let postId = PAGE_ARG;
   let created = null;
   if (!postId) {

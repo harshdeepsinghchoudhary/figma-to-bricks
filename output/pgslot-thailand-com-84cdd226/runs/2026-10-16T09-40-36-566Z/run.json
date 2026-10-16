@@ -1,0 +1,77 @@
+{
+  "figmaUrl": "https://www.figma.com/design/QWeNLqVxWvyzYENYnMrvBk/Online-Betting-Website-2--Copy-?node-id=202-12",
+  "frameDir": "output\\pgslot-thailand-com-84cdd226",
+  "postId": 4031,
+  "startedAt": "2026-10-16T09:40:36.567Z",
+  "visualDebugging": "manual-only; never invoked by the pipeline",
+  "args": [
+    "https://www.figma.com/design/QWeNLqVxWvyzYENYnMrvBk/Online-Betting-Website-2--Copy-?node-id=202-12"
+  ],
+  "steps": [
+    {
+      "label": "1 extract",
+      "script": "1_extract_figma.js",
+      "args": [
+        "https://www.figma.com/design/QWeNLqVxWvyzYENYnMrvBk/Online-Betting-Website-2--Copy-?node-id=202-12"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "2-3 normalize, compile, merge",
+      "script": "run-sections.js",
+      "args": [
+        "output\\pgslot-thailand-com-84cdd226"
+      ],
+      "code": 0,
+      "seconds": 6
+    },
+    {
+      "label": "validate merged tree",
+      "script": "bricks-validator.js",
+      "args": [
+        "output\\pgslot-thailand-com-84cdd226\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "validate native settings and assets",
+      "script": "validate-build.js",
+      "args": [
+        "output\\pgslot-thailand-com-84cdd226\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "4 inject into Bricks",
+      "script": "4_inject_mcp.js",
+      "args": [
+        "output\\pgslot-thailand-com-84cdd226\\merged",
+        "--fix-keys",
+        "--report-dir",
+        "output\\pgslot-thailand-com-84cdd226\\runs\\2026-10-16T09-40-36-566Z\\mcp",
+        "--title",
+        "Figma import - pgslot-thailand-com-84cdd226 2026-10-16"
+      ],
+      "code": 0,
+      "seconds": 10
+    },
+    {
+      "label": "5 export dataset",
+      "script": "export-dataset.js",
+      "args": [
+        "output\\pgslot-thailand-com-84cdd226",
+        "--run",
+        "output\\pgslot-thailand-com-84cdd226\\runs\\2026-10-16T09-40-36-566Z",
+        "--page",
+        "4031"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-16T09:40:53.811Z",
+  "exitCode": 0
+}

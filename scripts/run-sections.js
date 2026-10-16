@@ -149,6 +149,34 @@ for (const s of sections) {
   backdrops.push({ rectId: s.id, color: ("#" + hex(fill.color.r) + hex(fill.color.g) + hex(fill.color.b)).toUpperCase(), sections: covered.map((o) => o.name) });
   skipReason[s.name] = `backdrop behind ${covered.map((o) => o.name).join(", ")} (applied as their background)`;
 }
+// Non-rectangular painted backgrounds (for example a curved boolean union)
+// must share a section with the content above them, not become an empty band.
+for(const s of sections){
+ if(skipReason[s.name])continue;
+ const n=top.find(n=>n.id===s.id);
+ if(!['BOOLEAN_OPERATION','VECTOR'].includes(n.type)||copyOf(n).texts.size)continue;
+ const covered=sections.filter(o=>o!==s&&!skipReason[o.name]&&o.box.y>=s.box.y-1&&o.box.y+o.box.height<=s.box.y+s.box.height+1&&o.box.x>=s.box.x-1&&o.box.x+o.box.width<=s.box.x+s.box.width+1&&copyOf(top.find(n=>n.id===o.id)).texts.size);
+ if(!covered.length)continue;
+ const owner=covered[0];
+ layerIds[owner.name]=[...new Set([...(layerIds[owner.name]||[]),s.id,...covered.slice(1).map(o=>o.id)])];
+ skipReason[s.name]=`painted background included in ${owner.name}`;
+ for(const other of covered.slice(1))skipReason[other.name]=`content included in ${owner.name} with shared painted background`;
+}
+// Loose top-level artwork/copy in the same vertical band forms one section.
+// Connected overlap captures an image beside several stacked text nodes and
+// equal-height card rows without relying on layer names or saved section maps.
+let bandOwner=null,bandBottom=-Infinity;
+for(const s of sections){
+ if(skipReason[s.name])continue;
+ const members=[s.id,...(layerIds[s.name]||[])].map(id=>top.find(n=>n.id===id)?.absoluteBoundingBox).filter(Boolean);
+ const start=Math.min(...members.map(b=>b.y)),end=Math.max(...members.map(b=>b.y+b.height));
+ if(bandOwner&&start<bandBottom-1){
+  layerIds[bandOwner.name]=[...new Set([...(layerIds[bandOwner.name]||[]),s.id,...(layerIds[s.name]||[])])];
+  skipReason[s.name]=`same vertical content band as ${bandOwner.name}`;
+  for(const backdrop of backdrops)if(backdrop.sections.includes(s.name))backdrop.sections=[...new Set(backdrop.sections.map(name=>name===s.name?bandOwner.name:name))];
+  bandBottom=Math.max(bandBottom,end);
+ }else{bandOwner=s;bandBottom=end;}
+}
 fs.writeFileSync(path.join(frameDir, "backdrops.json"), JSON.stringify(backdrops, null, 2));
 const nodeIdsOf = (s) => [...(layerIds[s.name] || []), s.id].sort((a, b) => top.findIndex((n) => n.id === a) - top.findIndex((n) => n.id === b)).map((id) => top.find((n) => n.id === id).id);
 const isSkipped = (s) => !!skipReason[s.name];

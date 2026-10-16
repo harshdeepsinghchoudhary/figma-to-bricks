@@ -17,7 +17,21 @@ export function applyFigmaSettings(node, settings, { supportedKeys = new Set(), 
   for (const [input, key] of [["minWidth", "_widthMin"], ["maxWidth", "_widthMax"], ["minHeight", "_heightMin"], ["maxHeight", "_heightMax"]]) if (finite(source[input])) set(key, `${source[input]}px`);
   if (finite(source.layoutGrow) && source.layoutGrow !== 0) set("_flexGrow", String(source.layoutGrow));
   if (source.layoutAlign === "STRETCH") set("_alignSelf", "stretch");
+  if (source.type === 'TEXT' && (source.textAutoResize || source.style?.textAutoResize) === 'WIDTH_AND_HEIGHT' && parentNode?.layout?.direction === 'row' && !String(node.text || '').includes('\n')) {
+    set('_flexShrink', '0'); set('_width', parentNode._measuredRowWidth && source.absoluteBoundingBox ? `${source.absoluteBoundingBox.width}px` : 'auto');
+  }
+  if (node.asset && source.type === 'LINE' && source.absoluteBoundingBox?.width < 0.01 && parentNode?.layout?.direction === 'row') {
+    // The SVG already contains the stroke. Keep its painted width while its
+    // layout footprint remains the source line's zero width.
+    const width = source.strokeWeight || 1;
+    delete settings._border;
+    set('_width', `${width}px`); set('_widthMax', `${width}px`); set('_flexShrink', '0');
+    set('_margin', { ...(settings._margin || {}), left: `${(parseFloat(settings._margin?.left)||0)-width/2}px`, right: `${(parseFloat(settings._margin?.right)||0)-width/2}px` });
+  }
   const hasAbsoluteChildren = (node.children || []).some((child) => child.figma?.position?.mode === "absolute" || child.figma?.layoutPositioning === "ABSOLUTE");
+  if(source.type==='TEXT' && source.style?.textAlignHorizontal==='CENTER' && parentNode?.layout?.direction!=='row'){
+    set('_alignSelf','center');set('_width','100%');
+  }
   if (hasAbsoluteChildren || source.geometryPositioned) set("_position", "relative");
   // Artwork pinned behind flowing content: the parent opens a stacking context so a negative z-index stays inside it.
   if (source.geometryLayered) { set("_position", "relative"); set("_zIndex", "0"); }
@@ -27,11 +41,12 @@ export function applyFigmaSettings(node, settings, { supportedKeys = new Set(), 
     if (parentNode && source.parentId && actualParent !== source.parentId) warnings.push(`${node.id}: absolute offset belongs to Figma parent ${source.parentId}, not ${actualParent || parentNode.id}; positioning requires reconciliation`);
     else {
       set("_position", "absolute");
-      if (finite(source.position.left)) set("_left", `${source.position.left}px`);
-      if (finite(source.position.top)) set("_top", `${source.position.top}px`);
+      const crop = source.exportBounds, box = source.absoluteBoundingBox;
+      if (finite(source.position.left)) set("_left", `${source.position.left + (crop && box ? crop.x-box.x : 0)}px`);
+      if (finite(source.position.top)) set("_top", `${source.position.top + (crop && box ? crop.y-box.y : 0)}px`);
       if (source.position.behind) set("_zIndex", "-1");
-      const width = source.size?.x ?? source.absoluteBoundingBox?.width;
-      const height = source.size?.y ?? source.absoluteBoundingBox?.height;
+      const width = crop?.width ?? source.size?.x ?? source.absoluteBoundingBox?.width;
+      const height = crop?.height ?? source.size?.y ?? source.absoluteBoundingBox?.height;
       if (finite(width)) { set("_width", `${width}px`); set("_widthMax", "100%"); } // a pinned layer may never be wider than its box: no sideways scrolling on narrow screens
       if (finite(height)) set("_height", `${height}px`);
     }

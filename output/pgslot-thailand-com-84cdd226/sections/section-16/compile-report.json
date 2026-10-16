@@ -1,15 +1,21 @@
 {
   "status": "compiled",
-  "elementCount": 33,
-  "components": [],
+  "elementCount": 36,
+  "components": [
+    {
+      "id": "frame-41-faq",
+      "kind": "accordion",
+      "status": "native",
+      "reason": "structure and controls verified against saved runtime schema"
+    }
+  ],
   "errors": [],
   "warnings": [
-    "line-32: center Figma stroke retained in metadata; CSS border lies inside the box",
-    "line-33: center Figma stroke retained in metadata; CSS border lies inside the box",
-    "line-34-img: center Figma stroke retained in metadata; CSS border lies inside the box",
-    "line-35-13: center Figma stroke retained in metadata; CSS border lies inside the box",
-    "line-36: center Figma stroke retained in metadata; CSS border lies inside the box",
-    "line-37: center Figma stroke retained in metadata; CSS border lies inside the box"
+    "/page-section/frame-41/frame-40-1/faq-item-1/faq-answer-1: note: Answer absent from Figma; empty panel explicitly requested.",
+    "/page-section/frame-41/frame-40-1/faq-item-2/faq-answer-2: note: Answer absent from Figma; empty panel explicitly requested.",
+    "/page-section/frame-41/frame-40-1/faq-item-3/faq-answer-3: note: Answer absent from Figma; empty panel explicitly requested.",
+    "/page-section/frame-41/frame-40-1/faq-item-4/faq-answer-4: note: Answer absent from Figma; empty panel explicitly requested.",
+    "/page-section/frame-41/frame-40-1/faq-item-5/faq-answer-5: note: Answer absent from Figma; empty panel explicitly requested."
   ],
   "frontendBehaviorVerified": false
 }

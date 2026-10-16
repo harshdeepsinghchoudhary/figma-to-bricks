@@ -19,7 +19,8 @@ test("native recognition retains editable content and does not turn ordinary car
   assert.deepEqual(result.decisions.filter(d => d.status === "native").map(d => d.kind).sort(), ["accordion", "form", "navigation", "slider", "tabs"]);
   assert.equal(by(result.doc, "feature-cards")._nativeName, undefined);
   assert.equal(by(result.doc, "details-tabs")._nativeName, "tabs-nested");
-  assert.equal(by(result.doc, "featured-carousel")._nativeSettings["perPage:mobile_portrait"], "1");
+  assert.equal(JSON.parse(by(result.doc, "featured-carousel")._nativeSettings.options).breakpoints[478].perPage, 1);
+  assert.equal(by(result.doc, "featured-carousel")._nativeSettings["perPage:mobile_portrait"], undefined);
   for (const node of all(original).filter(n => n.text && n.id !== "catalog-title")) assert.equal(by(result.doc, node.id)?.text, node.text);
   assert.equal(by(result.doc, "catalog-dropdown")._nativeSettings.text, "Catalog");
   assert.deepEqual(original, nativeFixture(), "input is immutable");

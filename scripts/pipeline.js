@@ -56,6 +56,12 @@ async function main() {
   const buildReport = JSON.parse(fs.readFileSync(reportFile, "utf8"));
   if (!buildReport.merged) throw new Error("This run did not produce a merge; old merged output will not be injected.");
   const mergedDir = path.join(frameDir, "merged"), mergedTree = path.join(mergedDir, "bricks-tree.json");
+  if (!has('--no-inject') && (!build.code || has('--inject-partial'))) {
+    if ((await run('prepare WordPress menus', 'setup-pipeline-menus.js', [frameDir])).code) throw new Error('Automatic WordPress menu setup failed; page injection stopped.');
+    const sections=JSON.parse(fs.readFileSync(path.join(mergedDir,'section-map.json'),'utf8')).map(s=>s.name);
+    if ((await run('bind WordPress menus', 'merge_sections.js', [frameDir,...sections])).code) throw new Error('Menu binding failed.');
+    if ((await run('wrap menu-bound template','wrap-template.js',[mergedDir,`${path.basename(frameDir)} page`])).code) throw new Error('Template wrapping failed.');
+  }
   if ((await run("validate merged tree", "bricks-validator.js", [mergedTree])).code) throw new Error("Merged tree failed structural validation.");
   if ((await run("validate native settings and assets", "validate-build.js", [mergedTree])).code) throw new Error("Merged build failed nonvisual schema/asset validation.");
   state.visualDebugging = "manual-only; never invoked by the pipeline";

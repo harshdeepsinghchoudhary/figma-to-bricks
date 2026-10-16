@@ -1,17 +1,17 @@
 {
   "version": 1,
   "rootId": "scope",
-  "sourceHash": "a71f62873100ae9e9cf1c2e42846fbbe880e9a613280a61bebb9573ea9bc647a",
+  "sourceHash": "476d3b3376950236c97af7cf90457068de874220e348c902b01e46bea45d20bf",
   "frames": [
     {
       "nodeId": "scope",
       "parentId": null,
       "name": "pgslot-thailand.com (scoped)",
       "bounds": {
-        "x": -2812,
-        "y": 2354,
-        "width": 1120,
-        "height": 51
+        "x": -2972,
+        "y": 2337,
+        "width": 1440,
+        "height": 85
       },
       "componentId": null
     },
@@ -56,15 +56,84 @@
     "scope": {
       "parentId": null,
       "childIds": [
+        "202:14",
         "247:27"
       ],
       "name": "pgslot-thailand.com (scoped)",
       "type": "FRAME",
       "absoluteBoundingBox": {
-        "x": -2812,
-        "y": 2354,
-        "width": 1120,
-        "height": 51
+        "x": -2972,
+        "y": 2337,
+        "width": 1440,
+        "height": 85
+      },
+      "effectiveVisible": true
+    },
+    "202:14": {
+      "parentId": "scope",
+      "childIds": [],
+      "name": "Rectangle 152",
+      "type": "RECTANGLE",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -2972,
+        "y": 2337,
+        "width": 1440,
+        "height": 85
+      },
+      "absoluteRenderBounds": {
+        "x": -2972,
+        "y": 2337,
+        "width": 1440,
+        "height": 85
+      },
+      "size": {
+        "x": 1440,
+        "y": 85
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.16078431904315948,
+            "g": 0.03921568766236305,
+            "b": 0.07058823853731155,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
       },
       "effectiveVisible": true
     },

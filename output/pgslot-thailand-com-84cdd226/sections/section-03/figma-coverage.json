@@ -22,7 +22,8 @@
       "parentId": "250:5",
       "name": "Rectangle 102",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "absorbed-paint",
+      "representedBy": "250:5"
     },
     {
       "nodeId": "250:7",
@@ -183,7 +184,7 @@
       "parentId": "250:28",
       "name": "home",
       "type": "INSTANCE",
-      "status": "covered-by-export",
+      "status": "represented",
       "representedBy": "250:28"
     },
     {
@@ -192,14 +193,14 @@
       "name": "home",
       "type": "VECTOR",
       "status": "covered-by-export",
-      "representedBy": "250:28"
+      "representedBy": "250:29"
     },
     {
       "nodeId": "250:30",
       "parentId": "250:28",
       "name": "Line 2",
       "type": "LINE",
-      "status": "covered-by-export",
+      "status": "represented",
       "representedBy": "250:28"
     },
     {
@@ -207,7 +208,7 @@
       "parentId": "250:28",
       "name": "Line 12",
       "type": "LINE",
-      "status": "covered-by-export",
+      "status": "represented",
       "representedBy": "250:28"
     },
     {
@@ -215,7 +216,7 @@
       "parentId": "250:28",
       "name": " 1",
       "type": "FRAME",
-      "status": "covered-by-export",
+      "status": "represented",
       "representedBy": "250:28"
     },
     {
@@ -224,7 +225,7 @@
       "name": "Group",
       "type": "GROUP",
       "status": "covered-by-export",
-      "representedBy": "250:28"
+      "representedBy": "250:32"
     },
     {
       "nodeId": "250:34",
@@ -232,15 +233,15 @@
       "name": "Vector",
       "type": "VECTOR",
       "status": "covered-by-export",
-      "representedBy": "250:28"
+      "representedBy": "250:32"
     }
   ],
   "summary": {
-    "represented": 24,
-    "covered-by-export": 7,
+    "represented": 28,
+    "covered-by-export": 3,
     "button-label": 0,
-    "absorbed-paint": 0,
+    "absorbed-paint": 1,
     "hidden": 0,
-    "unrepresented": 1
+    "unrepresented": 0
   }
 }

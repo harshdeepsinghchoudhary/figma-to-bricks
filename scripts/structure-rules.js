@@ -558,6 +558,7 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
         for (const c of n.children || []) walk(c);
       })(sec);
       if (!host) { log(`missing picture ${a.id} "${a.name}" could not be placed: no container holds it`); continue; }
+      host.children ||= [];
       const el = buildFromFigma(a.id);
       if (!el) continue;
       // an icon beside a line of text belongs in that line (a bullet / check mark), not in the column that stacks the lines
@@ -676,6 +677,7 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
     if (o.layout) { delete o.layout.padding; if (!Object.keys(o.layout).length) delete o.layout; }
   }
   function decoration(n, isSection) {
+    if (n.figma?.geometryPositioned || n.figma?.position) return;
     for (const c of [...(n.children || [])]) if (CONTAINER_TYPES.has(c.type)) decoration(c, false);
     if (!(CONTAINER_TYPES.has(n.type) || n.type === "section")) return;
     const flow = rendered(n);
@@ -922,7 +924,7 @@ export function applyStructureRules(input, { figma = {}, rootBox = null, manifes
   }
   function makeGrid(n, info) {
     const keep = { padding: n.layout?.padding, margin: n.layout?.margin };
-    n.layout = { display: "grid", gridColumns: info.cols, align: "stretch" };
+    n.layout = { display: "grid", gridColumns: info.cols, align: n.layout?.align === 'end' ? 'end' : "stretch" };
     if (info.rowGap != null && Math.abs(info.rowGap - info.colGap) > TOL.gapPx) { n.layout.gridGap = info.colGap; n.layout.gridRowGap = info.rowGap; }
     else n.layout.gridGap = info.rowGap != null ? r2((info.colGap + info.rowGap) / 2) : info.colGap;
     if (keep.padding) n.layout.padding = keep.padding;
