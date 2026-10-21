@@ -51,6 +51,19 @@ test('overflow slider uses native dots, removes embedded dot exports, and does n
   assert.ok(!all(slider).some(n=>['202:238','202:258','202:277','202:315'].includes(n.asset?.nodeId)));
 });
 
+test('a measured sibling pagination strip becomes native slider pagination', () => {
+  const box = (x, y, width, height) => ({ x, y, width, height });
+  const slideSources = [0, 1, 2].map(i => ({ id: `slide-${i}`, type: 'GROUP', name: `Slide ${i + 1}`, absoluteBoundingBox: box(i * 560, 100, 500, 300) }));
+  const dots = [0, 1, 2, 3].map(i => ({ id: `dot-${i}`, type: 'RECTANGLE', name: `Rectangle ${i}`, cornerRadius: 8, absoluteBoundingBox: box(i * 66, 430, 57, 16), fills: [{ type: 'SOLID', color: i === 1 ? { r: 1, g: .4, b: 0 } : { r: .8, g: .8, b: .8 } }] }));
+  const figmaRoot = { id: 'root', type: 'FRAME', absoluteBoundingBox: box(0, 0, 1000, 700), children: [{ id: 'slides', type: 'GROUP', name: 'Testimonials', absoluteBoundingBox: box(0, 100, 1620, 300), children: slideSources }, { id: 'dots', type: 'GROUP', name: 'Group 35', absoluteBoundingBox: box(0, 430, 255, 16), children: dots }] };
+  const doc = { type: 'page', children: [{ type: 'column', id: 'host', children: [{ type: 'row', id: 'slider', figmaNodeId: 'slides', component: { kind: 'slider' }, children: slideSources.map(s => ({ type: 'column', id: s.id, figmaNodeId: s.id, children: [{ type: 'text', id: `${s.id}-text`, text: s.name }] })) }, { type: 'row', id: 'dots', figmaNodeId: 'dots', children: dots.map(d => ({ type: 'div', id: d.id, figmaNodeId: d.id })) }] }] };
+  const result = recognizeComponents(doc, { figmaRoot });
+  const slider = all(result.doc).find(n => n._nativeName === 'slider-nested');
+  assert.ok(slider); assert.equal(slider._nativeSettings.pagination, true); assert.equal(slider._nativeSettings.arrows, false);
+  assert.equal(slider._nativeSettings.paginationWidth, '57');
+  assert.ok(!all(result.doc).some(n => n.figmaNodeId === 'dots'));
+});
+
 test('phone artwork restores the painted cover and native FAQ retains source details',()=>{
   const manifest = read('asset-manifest.json').filter(a=>a.nodeId!=='202:137');
   const doc=normalized('10');repairSourceLayout(doc,root);reconcileFigmaProperties(doc,root,{manifest});

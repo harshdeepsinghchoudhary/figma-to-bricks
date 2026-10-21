@@ -14,7 +14,18 @@ Initially there were seven designs. The user explicitly said **skip CasinoFX and
 4. Personal portfolio (`landing-page`)
 5. PG Slot
 
-**Not ready to promise bug-free output or advise deleting all outputs yet.** All five have passed a clean deterministic compilation at least once, but visual inspection exposed remaining layout problems. Schema validation is not visual validation. Latest source changes need a final consistent regression run. No pages were published or injected in this audit.
+**Compiler regression is now clean, but actual Bricks frontend verification is still required before promising bug-free output.** All five passed the same fresh deterministic build on 2026-10-21 and the complete automated suite passes. No pages were published or injected in this audit.
+
+## 2026-10-21 continuation checkpoint
+
+- Fixed repeated portfolio service-card sizing in `figma-preservation.js`: card-sized background panels retain their measured width while full section backgrounds still remain fluid.
+- Fixed external slider pagination in `native-components.js`: an aligned strip of at least three small circular or rounded-pill controls can sit beside the slide row, is removed from ordinary content, and becomes native pagination. Portfolio now emits `pagination:true`, `arrows:false`, measured 57x16 pagination controls, and three native slides.
+- Extended source header-menu discovery through one-label wrapper frames. The menu plan selects those direct wrappers, keeps the logo and CTA, and creates a WordPress menu configured to switch at 1024px.
+- Added focused regression tests for all three behaviors.
+- `npm.cmd test`: **85 passed, 0 failed**.
+- Final consistent clean build: `.review-work/clean-regression-1792554925396`; all five active designs PASS.
+- Final local preview report: `.review-work/clean-regression-1792554925396/preview-report.json`. Both Jili designs and portfolio have zero horizontal overflow and zero broken images at all measured widths. Match reports 420px at 390; PG reports 1136px at 390/1024. The overwide nodes are their uninitialized native slider children (Match 404px slides, PG 1120px slides). This local renderer does not initialize Splide or provision WordPress menus, so do not treat those measurements as live Bricks widget failures.
+- Remaining acceptance step: import/inject the new templates into reversible WordPress drafts and inspect actual Bricks frontend behavior for native sliders, menus, FAQ, and visual fidelity. Do not claim frontend certification from the local preview.
 
 ## Working constraints
 

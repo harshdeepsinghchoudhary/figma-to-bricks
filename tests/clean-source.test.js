@@ -13,6 +13,14 @@ test('overlapping unpainted footer groups become flowing columns, not a pinned c
  assert.notEqual(result.figma?.geometryPositioned,true);
  assert.ok(result.children.some(n=>n.type==='row'));
 });
+test('repeated portfolio card panels keep their equal measured width',()=>{
+ const root=JSON.parse(fs.readFileSync('output/landing-page/figma-node.json'));
+ let cards; (function walk(n){if(n.id==='645:469')cards=n;for(const c of n.children||[])walk(c);})(root);
+ const manifest=JSON.parse(fs.readFileSync('output/landing-page/asset-manifest.json'));
+ const result=deterministicNormalize(cards,manifest,{frameWidth:1920,siteWidth:1413}).doc.children[0];
+ const panels=result.children.filter(n=>n.background?.color);
+ assert.equal(panels.length,4);assert.ok(panels.every(n=>n.size.width===330));
+});
 test('site width does not select a repeated half-width column',()=>{
  const read=name=>JSON.parse(fs.readFileSync(`output/${name}/figma-node.json`));
  assert.equal(inferSiteWidth(read('match-plus-home')),1276);
@@ -23,6 +31,12 @@ test('PG Slot hamburger, menu and footer context are derived without saved bindi
  const result=sourceMenuContext(root);
  assert.equal(result.controls.length,1);assert.equal(result.controls[0].trigger,'202:22');
  assert.equal(result.controls[0].navigation,'250:8');assert.ok(result.footerIds.has('202:364'));
+});
+test('all active design headers expose their source navigation row',()=>{
+ for(const [folder,id] of [['jilislot-global-0d6791f8','8219:33'],['jilislot-global-v-2','8232:8'],['match-plus-home-07978f5e','32:2599'],['pgslot-thailand-com-84cdd226','250:8'],['landing-page','260:137']]){
+  const root=JSON.parse(fs.readFileSync(`output/${folder}/figma-node.json`));
+  assert.ok(sourceMenuContext(root).navIds.has(id),`${folder} navigation ${id}`);
+ }
 });
 test('FAQ source rows become six editable items without inventing five answers',()=>{
  const questions=Array.from({length:6},(_,i)=>({type:'row',id:'r'+i,children:[{type:'text',id:'q'+i,text:`Question ${i}?`,figma:{absoluteBoundingBox:{y:i*100}}}]}));

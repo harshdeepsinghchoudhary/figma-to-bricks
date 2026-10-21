@@ -6,7 +6,21 @@ export function sourceMenuContext(root){
  const box=n=>n.absoluteBoundingBox;
  const page=box(root),nearTop=n=>box(n)&&box(n).y<page.y+Math.min(220,page.height*.12);
  const texts=n=>(n.children||[]).filter(c=>c.visible!==false&&c.type==='TEXT');
- const navs=nodes.filter(n=>nearTop(n)&&texts(n).length>=3&&texts(n).every(c=>c.characters?.trim()&&c.characters.length<=35)&&texts(n).every(c=>Math.abs(box(c).y-box(texts(n)[0]).y)<12));
+ const descendantTexts=n=>{const found=[];(function visit(x){for(const c of x.children||[]){if(c.visible===false)continue;if(c.type==='TEXT')found.push(c);else visit(c);}})(n);return found;};
+ // Menu labels are often wrapped in one small frame each. Treat a child as a
+ // label only when that wrapper contains exactly one short text node, which
+ // avoids promoting a whole header (logo + nav + CTA) to a menu.
+ const menuLabels=n=>(n.children||[]).map(child=>{
+  if(child.visible===false)return null;
+  if(child.type==='TEXT')return {member:child,text:child};
+  const nested=descendantTexts(child);
+  return nested.length===1?{member:child,text:nested[0]}:null;
+ }).filter(Boolean);
+ const navs=nodes.filter(n=>{
+  if(!nearTop(n))return false;
+  const labels=menuLabels(n);
+  return labels.length>=3&&labels.every(({text})=>text.characters?.trim()&&text.characters.length<=35&&box(text))&&labels.every(({text})=>Math.abs(box(text).y+box(text).height/2-(box(labels[0].text).y+box(labels[0].text).height/2))<12);
+ });
  const bars=nodes.filter(n=>nearTop(n)&&(n.children||[]).length===3&&n.children.every(c=>['RECTANGLE','LINE'].includes(c.type)&&box(c)?.width>=12&&box(c).height<=4));
  const images=nodes.filter(n=>nearTop(n)&&box(n).width<250&&box(n).height<100&&(n.fills||[]).some(f=>f.type==='IMAGE'));
  const controls=[];

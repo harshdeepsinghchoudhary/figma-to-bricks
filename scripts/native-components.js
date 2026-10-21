@@ -207,28 +207,31 @@ export function recognizeComponents(input, { figmaRoot = null, schemaDir = runti
     return null;
   }
 
-  function slider(n, options) {
-    const childNodes = n.children || [], control = c => role(c, "controls", nodes) || role(c, "pagination", nodes) || /(^|[\s_-])(arrows?|pagination|dots?|next|previous)([\s_-]|$)/i.test(sourceName(c, nodes));
+  function slider(n, options, ancestors = []) {
+    const childNodes = n.children || [];
+    function dotStrip(source, expected = 0) {
+      if (!source) return false;
+      if (source.children?.length === 1) return dotStrip(source.children[0], expected);
+      const parts = (source.children || []).filter(c => c.visible !== false);
+      const indicator = c => c.type === 'ELLIPSE' || c.type === 'RECTANGLE' && (c.cornerRadius || 0) >= (c.absoluteBoundingBox?.height || 0) / 2 - 1 || !!c.children?.length && c.children.every(indicator);
+      if (parts.length < 3 || expected && parts.length !== expected || !parts.every(indicator)) return false;
+      const boxes = parts.map(c => c.absoluteBoundingBox);
+      return boxes.every(b => b && b.width <= 80 && b.height <= 48 && b.width <= b.height * 4) && boxes.every(b => Math.abs(b.y+b.height/2-boxes[0].y-boxes[0].height/2)<2);
+    }
+    const control = c => role(c, "controls", nodes) || role(c, "pagination", nodes) || /(^|[\s_-])(arrows?|pagination|dots?|next|previous)([\s_-]|$)/i.test(sourceName(c, nodes)) || dotStrip(nodes.get(c.figmaNodeId || c.asset?.nodeId));
     let host = childNodes.find(c => (c.children || []).length >= 2 && (role(c, "menu", nodes) || /slides|track/i.test(sourceName(c, nodes))));
     const slides = (host ? host.children : childNodes).filter(c => !control(c));
     if (slides.length < 2 || slides.some(c => !(c.children || []).length && !["image", "text", "text-basic", "heading"].includes(c.type))) return "slider requires at least two identifiable slides";
     // A visual arrow/dot must not become an ordinary slide. Native controls replace only
     // recognized controls; anything unclassified remains visible as a separate sibling.
-    const controls = childNodes.filter(control);
-    const dotSources = [];
-    function dotStrip(source) {
-      if (!source) return false;
-      if (source.children?.length === 1) return dotStrip(source.children[0]);
-      const parts = (source.children || []).filter(c => c.visible !== false);
-      const circular = c => c.type === 'ELLIPSE' || !!c.children?.length && c.children.every(circular);
-      if (parts.length !== slides.length || parts.length < 3 || !parts.every(circular)) return false;
-      const boxes = parts.map(c => c.absoluteBoundingBox);
-      return boxes.every(b => b && b.width <= 48 && Math.abs(b.width-b.height) < 2) && boxes.every(b => Math.abs(b.y+b.height/2-boxes[0].y-boxes[0].height/2)<2);
-    }
+    const parent = ancestors.at(-1);
+    const siblingControls = (parent?.children || []).filter(c => c !== n && dotStrip(nodes.get(c.figmaNodeId || c.asset?.nodeId)));
+    const controls = [...childNodes.filter(control), ...siblingControls];
+    const dotSources = controls.map(c => nodes.get(c.figmaNodeId || c.asset?.nodeId)).filter(source => dotStrip(source));
     function removeDots(node) {
       node.children = (node.children || []).filter(c => {
         const source = nodes.get(c.figmaNodeId || c.asset?.nodeId);
-        if (dotStrip(source)) { dotSources.push(source); return false; }
+        if (dotStrip(source, slides.length)) { dotSources.push(source); return false; }
         removeDots(c); return true;
       });
     }
@@ -238,10 +241,13 @@ export function recognizeComponents(input, { figmaRoot = null, schemaDir = runti
     if (!perPage && box) { const widths = slides.map(c => nodes.get(c.figmaNodeId)?.absoluteBoundingBox?.width || (typeof c.size?.width === "number" ? c.size.width : 0)).filter(w => w > 0); if (widths.length === slides.length && Math.max(...widths) - Math.min(...widths) < Math.max(...widths) * 0.05) perPage = Math.max(1, Math.min(slides.length, Math.floor((box.width + (n.layout?.gap || 0)) / (widths[0] + (n.layout?.gap || 0))))); }
     perPage ||= 1;
     const settings = { perPage: bare(perPage), type: options.loop ? "loop" : "slide", gap: bare(options.gap ?? n.layout?.gap ?? source?.itemSpacing), arrows: options.arrows ?? controls.some(c => /arrow|next|previous/i.test(sourceName(c, nodes))), pagination: dotSources.length > 0 || (options.pagination ?? controls.some(c => /pagination|dots/i.test(sourceName(c, nodes)))) };
-    if (dotSources.length) report.push(`${n.id}: replaced ${dotSources.length} measured dot strips inside slides with native pagination.`);
+    if (dotSources.length) report.push(`${n.id}: replaced ${dotSources.length} measured dot strip${dotSources.length === 1 ? '' : 's'} with native pagination.`);
     if (dotSources.length) {
       let strip = dotSources[0]; while (strip.children?.length === 1) strip = strip.children[0];
-      const dots = strip.children, normal = dots.find(c => c.type === 'ELLIPSE'), active = dots.find(c => c.type !== 'ELLIPSE');
+      const dots = strip.children;
+      const paintKey = c => JSON.stringify((c.fills || []).filter(f => f.visible !== false).map(f => [f.type, f.color, f.opacity, f.gradientStops]));
+      const paintCounts = new Map(dots.map(c => paintKey(c)).map(key => [key, dots.filter(c => paintKey(c) === key).length]));
+      const active = dots.find(c => paintCounts.get(paintKey(c)) === 1), normal = dots.find(c => c !== active) || dots[0];
       if (normal) {
         settings.paginationWidth = bare(normal.absoluteBoundingBox.width); settings.paginationHeight = bare(normal.absoluteBoundingBox.height);
         const fill = normal.fills?.find(f => f.visible !== false && f.type === 'SOLID');
@@ -304,6 +310,7 @@ export function recognizeComponents(input, { figmaRoot = null, schemaDir = runti
     });
     if (host) { host.children = nativeSlides; native(host, "slider-nested", settings); n.children = childNodes.filter(c => !control(c)); }
     else { native(n, "slider-nested", settings); n.children = nativeSlides; }
+    if (siblingControls.length) parent.children = parent.children.filter(c => !siblingControls.includes(c));
     if (controls.length) report.push(`${n.id}: ${controls.length} arrow/pagination design controls replaced with native slider controls.`);
     return null;
   }

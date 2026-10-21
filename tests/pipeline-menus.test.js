@@ -33,6 +33,14 @@ test('menu binding preserves logo and action in a mixed header',()=>{
  assert.ok(tree.some(e=>e.id==='logo'));assert.ok(tree.some(e=>e.id==='cta'));assert.equal(tree.find(e=>e.id==='header').children.length,3);
 });
 
+test('discovers and replaces header labels wrapped in individual frames',()=>{
+ const tree=[{id:'header',parent:0,children:['a','b','c'],settings:{}},...['a','b','c'].flatMap((id,i)=>[{id,parent:'header',children:[`${id}-text`],name:'div',settings:{}},{id:`${id}-text`,parent:id,children:[],name:'text',settings:{text:['Home','Games','Contact'][i]}}])];
+ const map=Object.fromEntries(tree.map(e=>[e.id,{figmaNodeId:e.id,normalizedId:e.id==='header'?'header-navigation':e.id}]));
+ const plans=discoverMenus(tree,map); assert.equal(plans.length,1); assert.deepEqual(plans[0].members,['a','b','c']);
+ applyHeaderMenus(tree,map,[{...plans[0],menuId:9}]);
+ const nav=tree.find(e=>e.name==='nav-menu'); assert.equal(nav.parent,'header'); assert.equal(nav.settings.mobileMenuCustomBreakpoint,'1024');
+});
+
 test('reuses a same-name menu when WordPress derives a different slug',async()=>{
  const menu={id:77,name:'design - Header',slug:'design-header'};let creates=0;
  const api=async(route,body)=>{

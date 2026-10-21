@@ -453,7 +453,11 @@ export function deterministicNormalize(root, manifest = [], { metadata = {}, fra
     if (background) {
       out.figma = { geometryDerived: true, paintSourceIds: [background.id] };
       measuredStyle(out, background, { warnings: [] });
-      delete out.size; // The background's source dimensions do not define the parent's responsive sizing.
+      // A section background does not define content width. A card-sized
+      // background does: preserve its measured box so repeated cards remain
+      // equal before the responsive pass turns that width into a fluid max.
+      if(section)delete out.size;
+      else if(parentBox)out.size={width:parentBox.width,minHeight:parentBox.height};
     }
     if (layers.length) out.figma = { ...(out.figma || {}), geometryDerived: true, geometryLayered: true };
     if (!auto && measuredDirection) {

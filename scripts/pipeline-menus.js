@@ -22,9 +22,14 @@ export function discoverMenus(tree, sourceMap, controls = []) {
     let header = false;
     for(let n=e;n;n=byId.get(n.parent)) if(/header|nav(?:igation)?/i.test(sourceMap[n.id]?.normalizedId || '')) header=true;
     if (!header) continue;
-    const labels=(e.name==='nav-nested'?descendants(e):(e.children || []).map(id=>byId.get(id))).filter(n=>['text','text-basic','text-link'].includes(n.name));
-    if(labels.length<3 || labels.some(n=>!plain(n.settings?.text)||plain(n.settings?.text).length>30))continue;
-    plans.push({role:'header',key:source(e),title:'Header',items:labels.map(n=>plain(n.settings.text)),...(e.name!=='nav-nested'?{members:labels.map(source)}:{})});
+    const labels=e.name==='nav-nested'
+      ?descendants(e).filter(n=>['text','text-basic','text-link'].includes(n.name)).map(label=>({member:label,label}))
+      :(e.children || []).map(id=>byId.get(id)).map(member=>{
+        const nested=descendants(member).filter(n=>['text','text-basic','text-link'].includes(n.name));
+        return nested.length===1?{member,label:nested[0]}:null;
+      }).filter(Boolean);
+    if(labels.length<3 || labels.some(({label})=>!plain(label.settings?.text)||plain(label.settings?.text).length>30))continue;
+    plans.push({role:'header',key:source(e),title:'Header',items:labels.map(({label})=>plain(label.settings.text)),...(e.name!=='nav-nested'?{members:labels.map(({member})=>source(member))}:{})});
   }
   return plans;
 }
