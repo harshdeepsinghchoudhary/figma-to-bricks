@@ -334,11 +334,38 @@ export function recognizeComponents(input, { figmaRoot = null, schemaDir = runti
     if (options.openIndex !== undefined && options.openIndex >= items.length) return "open accordion index is outside the supplied item list";
     const pairs = items.map(item => { const children = item.children || []; return { item, title: children.find(c => role(c, "accordion-title", nodes) || /title|question/i.test(sourceName(c, nodes))), content: children.find(c => role(c, "accordion-content", nodes) || /content|answer/i.test(sourceName(c, nodes))) }; });
     if (pairs.some(({ item, title, content }) => !title || !content || item.children.length !== 2)) return "each accordion item requires title and content wrappers";
+    // Semantic FAQ repair creates new wrappers. Recover their layout from the
+    // source question rows and separators rather than native widget defaults.
+    const sourceParents = new Map();
+    for (const source of nodes.values()) for (const child of source.children || []) sourceParents.set(child.id, source);
+    const rows = pairs.map(({title}) => {
+      const label = descendants(title).find(c => TEXT.has(c.type) && nodes.has(c.figmaNodeId));
+      const source = label && nodes.get(label.figmaNodeId), parent = sourceParents.get(source?.id);
+      return parent?.absoluteBoundingBox && parent.children?.some(c => c !== source) ? parent.absoluteBoundingBox : source?.absoluteBoundingBox;
+    });
+    const measuredWidth = rows.every(Boolean) && Math.max(...rows.map(b => b.width));
+    if (measuredWidth) n.size = {width:'fill',maxWidth:measuredWidth};
     native(n, "accordion-nested", { ...(options.openIndex !== undefined ? { expandItem: String(options.openIndex) } : {}), ...(options.independentToggle !== undefined ? { independentToggle: options.independentToggle } : {}), ...(options.transition !== undefined ? { transition: bare(options.transition) } : {}) });
     for (const [itemIndex, { item, title, content }] of pairs.entries()) {
       native(item, "block"); classes(item, "accordion-item");
       native(title, "block", { _attributes: [{name:'role',value:'button'},{name:'tabindex',value:'0'},{name:'aria-expanded',value:'false'}] }); classes(title, "accordion-title-wrapper");
       native(content, "block"); classes(content, "accordion-content-wrapper"); content._nativeManagedDisplay = true;
+      const row = rows[itemIndex], next = rows[itemIndex+1];
+      if (row) {
+        const answers = descendants(content).map(c => nodes.get(c.figmaNodeId)?.absoluteBoundingBox).filter(Boolean);
+        const end = Math.max(row.y+row.height, ...answers.map(b => b.y+b.height));
+        const separator = [...nodes.values()].filter(s => s.type === 'LINE' && s.visible !== false && s.absoluteBoundingBox && Math.abs(s.absoluteBoundingBox.x-row.x)<2 && Math.abs(s.absoluteBoundingBox.width-row.width)<2 && s.absoluteBoundingBox.y>=end && s.absoluteBoundingBox.y<(next?.y ?? end+row.height*2)).sort((a,b)=>a.absoluteBoundingBox.y-b.absoluteBoundingBox.y)[0];
+        title._nativeSettings._width = '100%';
+        title._nativeSettings._justifyContent = 'space-between';
+        title._nativeSettings._alignItems = 'center';
+        if (answers.length) content._nativeSettings._padding = {top:String(Math.max(0,Math.min(...answers.map(b=>b.y))-row.y-row.height))};
+        if (separator) {
+          item._nativeSettings._padding = {bottom:String(separator.absoluteBoundingBox.y-end)};
+          item._nativeSettings._margin = {bottom:String(next ? Math.max(0,next.y-separator.absoluteBoundingBox.y) : 0)};
+          const stroke = separator.strokes?.find(p=>p.visible!==false&&p.type==='SOLID');
+          if (stroke) item._nativeSettings._border = {width:{bottom:String(separator.strokeWeight||1)},style:'solid',color:{raw:figmaColor(stroke.color,stroke.opacity??1)}};
+        } else if (next) item._nativeSettings._margin = {bottom:String(Math.max(0,next.y-end))};
+      }
       for (const label of descendants(title).filter(c=>TEXT.has(c.type))) {
         if (nodes.get(label.figmaNodeId)?.lineTypes?.includes('ORDERED')) label.text = `${itemIndex+1}. ${label.text}`;
         label.typography = { ...(label.typography || {}), align: 'left' };

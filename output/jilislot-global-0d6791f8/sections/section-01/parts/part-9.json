@@ -1,0 +1,35 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "games-section",
+      "children": [
+        {
+          "type": "text",
+          "id": "games",
+          "figmaNodeId": "8219:36",
+          "text": "GAMES",
+          "typography": {
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": 500,
+            "lineHeight": "19.36px",
+            "color": "#FFFFFF"
+          },
+          "layout": {
+            "display": "block"
+          },
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "size",
+    "layout",
+    "background",
+    "border",
+    "boxShadow"
+  ]
+}

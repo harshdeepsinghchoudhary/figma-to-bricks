@@ -17,10 +17,12 @@ export async function connectReadOnlyBricks({ endpoint = process.env.WP_API_URL,
   const url = new URL(endpoint);
   if (!['http:', 'https:'].includes(url.protocol)) throw new Error('Unsupported MCP endpoint protocol');
   let sessionId;
+  let protocolVersion;
   let id = 1;
   async function rpc(method, params = {}, notify = false) {
     const headers = { 'Content-Type': 'application/json', Accept: 'application/json, text/event-stream', Authorization: `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}` };
     if (sessionId) headers['Mcp-Session-Id'] = sessionId;
+    if (protocolVersion) headers['MCP-Protocol-Version'] = protocolVersion;
     const body = { jsonrpc: '2.0', method, params };
     if (!notify) body.id = id++;
     const response = await fetchImpl(endpoint, { method: 'POST', headers, body: JSON.stringify(body), signal: AbortSignal.timeout(60000) });
@@ -37,6 +39,7 @@ export async function connectReadOnlyBricks({ endpoint = process.env.WP_API_URL,
     return result.result;
   }
   const server = await rpc('initialize', { protocolVersion: '2025-06-18', capabilities: {}, clientInfo: { name: 'figma-bricks-schema-reader', version: '1.0.0' } });
+  protocolVersion = server?.protocolVersion;
   await rpc('notifications/initialized', {}, true);
   const { tools } = await rpc('tools/list');
   const infoTool = tools.find(tool => /get-ability-info/.test(tool.name));

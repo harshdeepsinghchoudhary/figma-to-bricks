@@ -1,0 +1,255 @@
+[
+  {
+    "id": "8jypt7",
+    "name": "image",
+    "parent": "xns2g3",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-8219_1273.png",
+        "url": "../../assets/image-8219_1273.png"
+      },
+      "_width": "100%",
+      "_widthMax": "532px",
+      "_border": {
+        "radius": {
+          "top": "12px",
+          "right": "12px",
+          "bottom": "12px",
+          "left": "12px"
+        }
+      },
+      "_widthMax:tablet_portrait": "100%"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "1tq9oa",
+    "name": "heading",
+    "parent": "c4cvfw",
+    "children": [],
+    "settings": {
+      "text": "What is Jili Software Provider?",
+      "tag": "h2",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "34px",
+        "font-weight": "600",
+        "line-height": "41.147727966308594px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "zevc31",
+    "name": "text",
+    "parent": "pkyp1t",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "51zecb",
+    "name": "text",
+    "parent": "pkyp1t",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "pkyp1t",
+    "name": "div",
+    "parent": "c4cvfw",
+    "children": [
+      "zevc31",
+      "51zecb"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "c4cvfw",
+    "name": "div",
+    "parent": "zvn54d",
+    "children": [
+      "1tq9oa",
+      "pkyp1t"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "10",
+      "_columnGap": "10",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "1rc3dt",
+    "name": "button",
+    "parent": "zvn54d",
+    "children": [],
+    "settings": {
+      "text": "Learn More",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FCC40B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "400px",
+          "right": "400px",
+          "bottom": "400px",
+          "left": "400px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "7",
+      "iconGap": "7"
+    }
+  },
+  {
+    "id": "zvn54d",
+    "name": "div",
+    "parent": "xns2g3",
+    "children": [
+      "c4cvfw",
+      "1rc3dt"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "40",
+      "_columnGap": "40",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "568px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "xns2g3",
+    "name": "div",
+    "parent": "j1pwhx",
+    "children": [
+      "8jypt7",
+      "zvn54d"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "flex-start",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_widthMax": "1200px",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "j1pwhx",
+    "name": "container",
+    "parent": "e2zo5d",
+    "children": [
+      "xns2g3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px"
+    }
+  },
+  {
+    "id": "e2zo5d",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "j1pwhx"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

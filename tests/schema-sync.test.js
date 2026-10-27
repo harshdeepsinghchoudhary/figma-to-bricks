@@ -54,8 +54,9 @@ test('read-only MCP transport checks actual readonly annotation before execution
   let executes = 0;
   const mock = async (_url, request) => {
     const body = JSON.parse(request.body);
+    if(body.method !== 'initialize') assert.equal(request.headers['MCP-Protocol-Version'], '2025-03-26');
     let result;
-    if (body.method === 'initialize') result = { serverInfo: { name: 'mock' } };
+    if (body.method === 'initialize') result = { protocolVersion: '2025-03-26', serverInfo: { name: 'mock' } };
     else if (body.method === 'notifications/initialized') return new Response('', { status: 202 });
     else if (body.method === 'tools/list') result = { tools: [{ name: 'mcp-adapter-get-ability-info', inputSchema: { properties: { ability_name: {} } } }, { name: 'mcp-adapter-execute-ability', inputSchema: { properties: { ability_name: {}, parameters: {} } } }] };
     else if (body.params.name.includes('get-ability-info')) result = { structuredContent: { name: body.params.arguments.ability_name, meta: { annotations: { readonly: false, destructive: false } } } };

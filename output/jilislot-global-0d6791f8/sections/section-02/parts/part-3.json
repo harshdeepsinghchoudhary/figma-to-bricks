@@ -1,0 +1,24 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "column",
+      "id": "frame-8",
+      "figmaNodeId": "8219:54",
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "gap": 32
+      },
+      "size": {
+        "width": 619
+      },
+      "border": {
+        "radius": 0
+      }
+    }
+  ],
+  "_uncertain": [
+    "Frame 8 has no 'children' key in the provided Figma data, so it was emitted as an empty column; its contents are handled in other parts."
+  ]
+}

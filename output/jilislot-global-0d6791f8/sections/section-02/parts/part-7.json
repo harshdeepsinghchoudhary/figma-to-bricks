@@ -1,0 +1,17 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "unsupported",
+      "id": "no-figma-data",
+      "notes": [
+        "No Figma nodes were provided in the extraction data; no UI elements to emit."
+      ]
+    }
+  ],
+  "_uncertain": [
+    "no Figma nodes provided",
+    "asset manifest was empty",
+    "no layout, sizes, typography or colours were sourceable"
+  ]
+}

@@ -1,0 +1,749 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "hero-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "hero-container",
+          "figmaNodeId": "8222:820",
+          "children": [
+            {
+              "type": "image",
+              "id": "banner-1-1",
+              "figmaNodeId": "8222:819",
+              "asset": {
+                "nodeId": "8222:819",
+                "kind": "image"
+              },
+              "size": {
+                "width": 1440,
+                "height": 518
+              },
+              "figma": {
+                "parentId": "8222:820",
+                "childIds": [],
+                "name": "Banner 1",
+                "type": "RECTANGLE",
+                "blendMode": "PASS_THROUGH",
+                "absoluteBoundingBox": {
+                  "x": 2791,
+                  "y": -3045,
+                  "width": 1440,
+                  "height": 518
+                },
+                "absoluteRenderBounds": {
+                  "x": 2791,
+                  "y": -3045,
+                  "width": 1440,
+                  "height": 518
+                },
+                "size": {
+                  "x": 1440,
+                  "y": 518
+                },
+                "relativeTransform": [
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "fills": [
+                  {
+                    "blendMode": "NORMAL",
+                    "type": "IMAGE",
+                    "scaleMode": "FILL",
+                    "imageRef": "a4e3b8fe2d303d1ac377f1039a27d87c5f78b584"
+                  }
+                ],
+                "strokes": [],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "effects": [],
+                "targetAspectRatio": {
+                  "x": 4096,
+                  "y": 1473
+                },
+                "preserveRatio": true,
+                "rawGeometryFields": [
+                  "fillGeometry",
+                  "strokeGeometry"
+                ],
+                "extraSourceProperties": {
+                  "scrollBehavior": "SCROLLS",
+                  "interactions": [],
+                  "complexStrokeProperties": {
+                    "strokeType": "BASIC"
+                  }
+                },
+                "effectiveVisible": true
+              }
+            },
+            {
+              "type": "column",
+              "id": "frame-8-1",
+              "figmaNodeId": "8219:54",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "frame-7-1",
+                  "figmaNodeId": "8219:55",
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "jili-slot-title",
+                      "figmaNodeId": "8219:1261",
+                      "text": "Jili Slot - Play Jili Online Slot | Free Games Play",
+                      "level": 2,
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 48,
+                        "fontWeight": 700,
+                        "lineHeight": "58.09090805053711px",
+                        "letterSpacing": "0px",
+                        "align": "left",
+                        "color": "#FFFFFF"
+                      },
+                      "size": {
+                        "width": "fill",
+                        "height": "hug"
+                      },
+                      "figma": {
+                        "parentId": "8219:55",
+                        "childIds": [],
+                        "name": "Jili Slot - Play Jili Online Slot | Free Games Play",
+                        "type": "TEXT",
+                        "blendMode": "PASS_THROUGH",
+                        "absoluteBoundingBox": {
+                          "x": 2892,
+                          "y": -2919,
+                          "width": 619,
+                          "height": 116
+                        },
+                        "absoluteRenderBounds": {
+                          "x": 2893.10791015625,
+                          "y": -2909.9033203125,
+                          "width": 552.23876953125,
+                          "height": 106.1533203125
+                        },
+                        "size": {
+                          "x": 619,
+                          "y": 116
+                        },
+                        "relativeTransform": [
+                          [
+                            1,
+                            0,
+                            0
+                          ],
+                          [
+                            0,
+                            1,
+                            0
+                          ]
+                        ],
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "layoutSizingHorizontal": "FILL",
+                        "layoutSizingVertical": "HUG",
+                        "layoutGrow": 0,
+                        "layoutAlign": "STRETCH",
+                        "fills": [
+                          {
+                            "blendMode": "NORMAL",
+                            "type": "SOLID",
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            }
+                          }
+                        ],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "OUTSIDE",
+                        "effects": [],
+                        "style": {
+                          "fontFamily": "Inter",
+                          "fontPostScriptName": "Inter-Bold",
+                          "fontStyle": "Bold",
+                          "fontWeight": 700,
+                          "textAutoResize": "HEIGHT",
+                          "fontSize": 48,
+                          "textAlignHorizontal": "LEFT",
+                          "textAlignVertical": "TOP",
+                          "letterSpacing": 0,
+                          "lineHeightPx": 58.09090805053711,
+                          "lineHeightPercent": 100,
+                          "lineHeightUnit": "INTRINSIC_%"
+                        },
+                        "characterStyleOverrides": [],
+                        "styleOverrideTable": {},
+                        "characters": "Jili Slot - Play Jili Online Slot | Free Games Play",
+                        "rawGeometryFields": [
+                          "fillGeometry",
+                          "strokeGeometry"
+                        ],
+                        "extraSourceProperties": {
+                          "scrollBehavior": "SCROLLS",
+                          "lineTypes": [
+                            "NONE"
+                          ],
+                          "lineIndentations": [
+                            0
+                          ],
+                          "layoutVersion": 4,
+                          "interactions": [],
+                          "complexStrokeProperties": {
+                            "strokeType": "BASIC"
+                          }
+                        },
+                        "effectiveVisible": true
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "lorem-ipsum-dummy",
+                      "figmaNodeId": "8219:57",
+                      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 500,
+                        "lineHeight": "27px",
+                        "letterSpacing": "0px",
+                        "align": "left",
+                        "color": "#FFFFFF"
+                      },
+                      "size": {
+                        "width": 518,
+                        "height": "hug"
+                      },
+                      "figma": {
+                        "parentId": "8219:55",
+                        "childIds": [],
+                        "name": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+                        "type": "TEXT",
+                        "blendMode": "PASS_THROUGH",
+                        "absoluteBoundingBox": {
+                          "x": 2892,
+                          "y": -2787,
+                          "width": 518,
+                          "height": 54
+                        },
+                        "absoluteRenderBounds": {
+                          "x": 2892.926025390625,
+                          "y": -2780.181884765625,
+                          "width": 499.203125,
+                          "height": 42.45458984375
+                        },
+                        "size": {
+                          "x": 518,
+                          "y": 54
+                        },
+                        "relativeTransform": [
+                          [
+                            1,
+                            0,
+                            0
+                          ],
+                          [
+                            0,
+                            1,
+                            132
+                          ]
+                        ],
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "layoutSizingHorizontal": "FIXED",
+                        "layoutSizingVertical": "HUG",
+                        "layoutGrow": 0,
+                        "layoutAlign": "INHERIT",
+                        "fills": [
+                          {
+                            "blendMode": "NORMAL",
+                            "type": "SOLID",
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            }
+                          }
+                        ],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "OUTSIDE",
+                        "effects": [],
+                        "style": {
+                          "fontFamily": "Inter",
+                          "fontPostScriptName": "Inter-Medium",
+                          "fontStyle": "Medium",
+                          "fontWeight": 500,
+                          "textAutoResize": "HEIGHT",
+                          "fontSize": 16,
+                          "textAlignHorizontal": "LEFT",
+                          "textAlignVertical": "TOP",
+                          "letterSpacing": 0,
+                          "lineHeightPx": 27,
+                          "lineHeightPercent": 139.43663024902344,
+                          "lineHeightPercentFontSize": 168.75,
+                          "lineHeightUnit": "PIXELS"
+                        },
+                        "characterStyleOverrides": [],
+                        "styleOverrideTable": {},
+                        "characters": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+                        "rawGeometryFields": [
+                          "fillGeometry",
+                          "strokeGeometry"
+                        ],
+                        "extraSourceProperties": {
+                          "scrollBehavior": "SCROLLS",
+                          "lineTypes": [
+                            "NONE"
+                          ],
+                          "lineIndentations": [
+                            0
+                          ],
+                          "layoutVersion": 4,
+                          "interactions": [],
+                          "complexStrokeProperties": {
+                            "strokeType": "BASIC"
+                          }
+                        },
+                        "effectiveVisible": true
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "align": "start",
+                    "gap": 16,
+                    "wrap": false
+                  },
+                  "figma": {
+                    "parentId": "8219:54",
+                    "childIds": [
+                      "8219:1261",
+                      "8219:57"
+                    ],
+                    "name": "Frame 7",
+                    "type": "FRAME",
+                    "blendMode": "PASS_THROUGH",
+                    "absoluteBoundingBox": {
+                      "x": 2892,
+                      "y": -2919,
+                      "width": 619,
+                      "height": 186
+                    },
+                    "absoluteRenderBounds": {
+                      "x": 2892,
+                      "y": -2919,
+                      "width": 619,
+                      "height": 186
+                    },
+                    "size": {
+                      "x": 619,
+                      "y": 186
+                    },
+                    "relativeTransform": [
+                      [
+                        1,
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        1,
+                        0
+                      ]
+                    ],
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "layoutMode": "VERTICAL",
+                    "layoutWrap": "NO_WRAP",
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG",
+                    "counterAxisSizingMode": "FIXED",
+                    "itemSpacing": 16,
+                    "layoutGrow": 0,
+                    "layoutAlign": "STRETCH",
+                    "clipsContent": false,
+                    "fills": [],
+                    "strokes": [],
+                    "strokeWeight": 1,
+                    "strokeAlign": "INSIDE",
+                    "effects": [],
+                    "rawGeometryFields": [
+                      "fillGeometry",
+                      "strokeGeometry"
+                    ],
+                    "extraSourceProperties": {
+                      "scrollBehavior": "SCROLLS",
+                      "background": [],
+                      "backgroundColor": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0,
+                        "a": 0
+                      },
+                      "interactions": [],
+                      "complexStrokeProperties": {
+                        "strokeType": "BASIC"
+                      }
+                    },
+                    "effectiveVisible": true
+                  },
+                  "size": {
+                    "width": "fill",
+                    "height": "hug"
+                  }
+                },
+                {
+                  "type": "button",
+                  "id": "get-started",
+                  "figmaNodeId": "8219:58",
+                  "text": "Get Started",
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": 600,
+                    "lineHeight": "19.363636016845703px",
+                    "letterSpacing": "0px",
+                    "align": "left",
+                    "color": "#000000"
+                  },
+                  "background": {
+                    "color": "#FCC40B"
+                  },
+                  "border": {
+                    "radius": 400
+                  },
+                  "size": {
+                    "width": "hug",
+                    "height": "hug"
+                  },
+                  "layout": {
+                    "padding": {
+                      "top": 15,
+                      "right": 32,
+                      "bottom": 15,
+                      "left": 32
+                    },
+                    "display": "flex",
+                    "direction": "row",
+                    "align": "center",
+                    "justify": "center",
+                    "gap": 7,
+                    "wrap": false
+                  },
+                  "figma": {
+                    "parentId": "8219:54",
+                    "childIds": [
+                      "8219:59"
+                    ],
+                    "name": "Frame 6",
+                    "type": "FRAME",
+                    "blendMode": "PASS_THROUGH",
+                    "absoluteBoundingBox": {
+                      "x": 2892,
+                      "y": -2701,
+                      "width": 154,
+                      "height": 49
+                    },
+                    "absoluteRenderBounds": {
+                      "x": 2892,
+                      "y": -2701,
+                      "width": 154,
+                      "height": 49
+                    },
+                    "size": {
+                      "x": 154,
+                      "y": 49
+                    },
+                    "relativeTransform": [
+                      [
+                        1,
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        1,
+                        218
+                      ]
+                    ],
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "layoutMode": "HORIZONTAL",
+                    "layoutWrap": "NO_WRAP",
+                    "layoutSizingHorizontal": "HUG",
+                    "layoutSizingVertical": "HUG",
+                    "primaryAxisAlignItems": "CENTER",
+                    "counterAxisAlignItems": "CENTER",
+                    "itemSpacing": 7,
+                    "paddingTop": 15,
+                    "paddingRight": 32,
+                    "paddingBottom": 15,
+                    "paddingLeft": 32,
+                    "layoutGrow": 0,
+                    "layoutAlign": "INHERIT",
+                    "clipsContent": false,
+                    "fills": [
+                      {
+                        "blendMode": "NORMAL",
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.9882352948188782,
+                          "g": 0.7686274647712708,
+                          "b": 0.04313725605607033,
+                          "a": 1
+                        }
+                      }
+                    ],
+                    "strokes": [],
+                    "strokeWeight": 1,
+                    "strokeAlign": "INSIDE",
+                    "cornerRadius": 400,
+                    "cornerSmoothing": 0,
+                    "effects": [],
+                    "rawGeometryFields": [
+                      "fillGeometry",
+                      "strokeGeometry"
+                    ],
+                    "extraSourceProperties": {
+                      "scrollBehavior": "SCROLLS",
+                      "background": [
+                        {
+                          "blendMode": "NORMAL",
+                          "type": "SOLID",
+                          "color": {
+                            "r": 0.9882352948188782,
+                            "g": 0.7686274647712708,
+                            "b": 0.04313725605607033,
+                            "a": 1
+                          }
+                        }
+                      ],
+                      "backgroundColor": {
+                        "r": 0.9882352948188782,
+                        "g": 0.7686274647712708,
+                        "b": 0.04313725605607033,
+                        "a": 1
+                      },
+                      "interactions": [],
+                      "complexStrokeProperties": {
+                        "strokeType": "BASIC"
+                      }
+                    },
+                    "effectiveVisible": true
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "align": "start",
+                "gap": 32,
+                "wrap": false
+              },
+              "figma": {
+                "parentId": "8222:820",
+                "childIds": [
+                  "8219:55",
+                  "8219:58"
+                ],
+                "name": "Frame 8",
+                "type": "FRAME",
+                "blendMode": "PASS_THROUGH",
+                "absoluteBoundingBox": {
+                  "x": 2892,
+                  "y": -2919,
+                  "width": 619,
+                  "height": 267
+                },
+                "absoluteRenderBounds": {
+                  "x": 2892,
+                  "y": -2919,
+                  "width": 619,
+                  "height": 267
+                },
+                "size": {
+                  "x": 619,
+                  "y": 267
+                },
+                "relativeTransform": [
+                  [
+                    1,
+                    0,
+                    101
+                  ],
+                  [
+                    0,
+                    1,
+                    126
+                  ]
+                ],
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "layoutMode": "VERTICAL",
+                "layoutWrap": "NO_WRAP",
+                "layoutSizingHorizontal": "FIXED",
+                "layoutSizingVertical": "HUG",
+                "counterAxisSizingMode": "FIXED",
+                "itemSpacing": 32,
+                "clipsContent": false,
+                "fills": [],
+                "strokes": [],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "effects": [],
+                "rawGeometryFields": [
+                  "fillGeometry",
+                  "strokeGeometry"
+                ],
+                "extraSourceProperties": {
+                  "scrollBehavior": "SCROLLS",
+                  "background": [],
+                  "backgroundColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "interactions": [],
+                  "complexStrokeProperties": {
+                    "strokeType": "BASIC"
+                  }
+                },
+                "effectiveVisible": true
+              },
+              "size": {
+                "width": 619,
+                "height": "hug"
+              }
+            }
+          ],
+          "figma": {
+            "parentId": "scope",
+            "childIds": [
+              "8222:819",
+              "8219:54"
+            ],
+            "name": "Group 1261154691",
+            "type": "GROUP",
+            "blendMode": "PASS_THROUGH",
+            "absoluteBoundingBox": {
+              "x": 2791,
+              "y": -3045,
+              "width": 1440,
+              "height": 518
+            },
+            "absoluteRenderBounds": {
+              "x": 2791,
+              "y": -3045,
+              "width": 1440,
+              "height": 518
+            },
+            "size": {
+              "x": 1440,
+              "y": 518
+            },
+            "relativeTransform": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                75
+              ]
+            ],
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "LEFT"
+            },
+            "clipsContent": false,
+            "fills": [],
+            "strokes": [],
+            "strokeWeight": 1,
+            "strokeAlign": "INSIDE",
+            "effects": [],
+            "rawGeometryFields": [
+              "fillGeometry",
+              "strokeGeometry"
+            ],
+            "extraSourceProperties": {
+              "scrollBehavior": "SCROLLS",
+              "background": [],
+              "backgroundColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "interactions": [],
+              "complexStrokeProperties": {
+                "strokeType": "BASIC"
+              }
+            },
+            "effectiveVisible": true
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      },
+      "figma": {
+        "parentId": null,
+        "childIds": [
+          "8222:820"
+        ],
+        "name": "jilislot.global (scoped)",
+        "type": "FRAME",
+        "absoluteBoundingBox": {
+          "x": 2791,
+          "y": -3045,
+          "width": 1440,
+          "height": 518
+        },
+        "effectiveVisible": true
+      }
+    }
+  ],
+  "_uncertain": [
+    "Frame 8 has no 'children' key in the provided Figma data, so it was emitted as an empty column; its contents are handled in other parts.",
+    "no Figma nodes provided",
+    "asset manifest was empty",
+    "stitch: 1 node(s) added from Figma data because the model's parts did not include them"
+  ]
+}

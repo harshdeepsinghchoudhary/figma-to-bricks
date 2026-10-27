@@ -78,6 +78,13 @@ test('phone artwork restores the painted cover and native FAQ retains source det
   const last=all(result).find(n=>n.figmaNodeId==='202:359');assert.equal(last.background,undefined);assert.match(last.text,/^6\. /);
   const accordion=all(result).find(n=>n._nativeName==='accordion-nested');assert.equal(accordion.children.length,6);
   assert.ok(accordion.children.every(n=>n.children[0].children.some(c=>c.asset)));
+  assert.equal(accordion.size.maxWidth,875);
+  for(const item of accordion.children.slice(0,5)){
+    assert.equal(item._nativeSettings._padding.bottom,'34');
+    assert.equal(item._nativeSettings._margin.bottom,'34');
+    assert.equal(item._nativeSettings._border.width.bottom,'1');
+  }
+  assert.equal(accordion.children[5].children[1]._nativeSettings._padding.top,'14');
 });
 
 test('toolbar with icons and separators remains separate artwork', () => {

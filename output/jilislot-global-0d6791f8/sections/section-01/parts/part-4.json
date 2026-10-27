@@ -1,0 +1,31 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "row",
+      "id": "jilislot-nav-bar",
+      "figmaNodeId": "8219:1249",
+      "layout": {
+        "display": "flex",
+        "direction": "row",
+        "justify": "space-between",
+        "align": "center",
+        "gap": 294
+      },
+      "size": {
+        "width": 807,
+        "height": 40
+      },
+      "children": [
+        {
+          "type": "image",
+          "id": "jilislot-logo",
+          "asset": {
+            "nodeId": "8219:1250",
+            "kind": "image"
+          }
+        }
+      ]
+    }
+  ]
+}

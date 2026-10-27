@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "sourceHash": "e868a1bbd81343698a9a0ee07ad4b3fcdd4bbd5045497d6b0bbec63162b946b4",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "jilislot.global (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:1275",
+      "parentId": "scope",
+      "name": "Frame 1261152823",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:1273",
+      "parentId": "8219:1275",
+      "name": "image",
+      "type": "RECTANGLE",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:1269",
+      "parentId": "8219:1275",
+      "name": "Frame 1261152822",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:1265",
+      "parentId": "8219:1269",
+      "name": "Frame 1261152821",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:56",
+      "parentId": "8219:1265",
+      "name": "What is Jili Software Provider?",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:1262",
+      "parentId": "8219:1265",
+      "name": "Frame 43",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:1263",
+      "parentId": "8219:1262",
+      "name": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:1264",
+      "parentId": "8219:1262",
+      "name": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:1267",
+      "parentId": "8219:1269",
+      "name": "Frame 8",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:1268",
+      "parentId": "8219:1267",
+      "name": "Learn More",
+      "type": "TEXT",
+      "status": "button-label",
+      "representedBy": "8219:1267"
+    }
+  ],
+  "summary": {
+    "represented": 10,
+    "covered-by-export": 0,
+    "button-label": 1,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 0
+  }
+}

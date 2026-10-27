@@ -97,12 +97,14 @@ fs.mkdirSync(outDir, { recursive: true });
 
 // ---------- MCP client ----------
 let sessionId = null;
+let protocolVersion = null;
 let nextId = 1;
 async function rpc(method, params = {}, notify = false) {
   const body = { jsonrpc: "2.0", method, params };
   if (!notify) body.id = nextId++;
   const headers = { "Content-Type": "application/json", Accept: "application/json, text/event-stream", Authorization: AUTH };
   if (sessionId) headers["Mcp-Session-Id"] = sessionId;
+  if (protocolVersion) headers["MCP-Protocol-Version"] = protocolVersion;
   const res = await fetch(WP_API_URL, { method: "POST", headers, body: JSON.stringify(body) });
   const sid = res.headers.get("mcp-session-id");
   if (sid) sessionId = sid;
@@ -119,11 +121,12 @@ async function rpc(method, params = {}, notify = false) {
 }
 let execTool, abilityKey, paramsKey;
 async function connect() {
-  await rpc("initialize", {
+  const initialized = await rpc("initialize", {
     protocolVersion: "2025-06-18",
     capabilities: {},
     clientInfo: { name: "figma-bricks-inject-mcp", version: "0.1.0" },
   });
+  protocolVersion = initialized?.protocolVersion;
   await rpc("notifications/initialized", {}, true);
   const { tools } = await rpc("tools/list");
   execTool = tools.find((t) => t.name.toLowerCase().includes("execute"));

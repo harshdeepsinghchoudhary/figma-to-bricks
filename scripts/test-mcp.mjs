@@ -39,6 +39,7 @@ if (!URL_ || !USER || !PASS) {
 
 const auth = 'Basic ' + Buffer.from(`${USER}:${PASS}`).toString('base64');
 let sessionId = null;
+let protocolVersion = null;
 let nextId = 1;
 
 async function rpc(method, params = {}, { notify = false } = {}) {
@@ -51,6 +52,7 @@ async function rpc(method, params = {}, { notify = false } = {}) {
     Authorization: auth,
   };
   if (sessionId) headers['Mcp-Session-Id'] = sessionId;
+  if (protocolVersion) headers['MCP-Protocol-Version'] = protocolVersion;
 
   const res = await fetch(URL_, { method: 'POST', headers, body: JSON.stringify(body) });
 
@@ -94,6 +96,7 @@ try {
   });
   console.log('   OK. Server:', init?.serverInfo?.name, init?.serverInfo?.version,
     '| protocol:', init?.protocolVersion, '| session:', sessionId ? 'yes' : 'none');
+  protocolVersion = init?.protocolVersion;
   await rpc('notifications/initialized', {}, { notify: true });
 
   // 2. Tools

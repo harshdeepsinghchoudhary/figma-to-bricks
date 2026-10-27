@@ -1,0 +1,180 @@
+[
+  {
+    "id": "yn461o",
+    "name": "heading",
+    "parent": "9tq1m0",
+    "children": [],
+    "settings": {
+      "text": "Jili Slot - Play Jili Online Slot | Free Games Play",
+      "tag": "h2",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "58.09090805053711px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "tjuw0l",
+    "name": "text",
+    "parent": "9tq1m0",
+    "children": [],
+    "settings": {
+      "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>",
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "500",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "9tq1m0",
+    "name": "div",
+    "parent": "93w4e1",
+    "children": [
+      "yn461o",
+      "tjuw0l"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "16",
+      "_columnGap": "16",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "s00ho9",
+    "name": "button",
+    "parent": "93w4e1",
+    "children": [],
+    "settings": {
+      "text": "Get Started",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "15",
+        "right": "32",
+        "bottom": "15",
+        "left": "32"
+      },
+      "_typography": {
+        "font-family": "Inter",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "19.363636016845703px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#000000"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#FCC40B"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "400px",
+          "right": "400px",
+          "bottom": "400px",
+          "left": "400px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "7",
+      "iconGap": "7"
+    }
+  },
+  {
+    "id": "93w4e1",
+    "name": "div",
+    "parent": "lv2wx0",
+    "children": [
+      "9tq1m0",
+      "s00ho9"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "32",
+      "_columnGap": "32",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "619px"
+    }
+  },
+  {
+    "id": "lv2wx0",
+    "name": "container",
+    "parent": "4jkq5h",
+    "children": [
+      "93w4e1"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1200px",
+      "_position": "relative",
+      "_zIndex": "1"
+    }
+  },
+  {
+    "id": "4jkq5h",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "lv2wx0"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      },
+      "_background": {
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/banner-1-8222_819.png",
+          "url": "../../assets/banner-1-8222_819.png"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll"
+      },
+      "_position": "relative",
+      "_overflow": "hidden"
+    }
+  }
+]

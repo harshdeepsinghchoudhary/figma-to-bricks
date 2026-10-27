@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "sourceHash": "bc7d57d13b4290efc957098b265294c8bab2bbe8940bf1ff000ab0b6bfa5b943",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "jilislot.global (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8222:820",
+      "parentId": "scope",
+      "name": "Group 1261154691",
+      "type": "GROUP",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8222:819",
+      "parentId": "8222:820",
+      "name": "Banner 1",
+      "type": "RECTANGLE",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:54",
+      "parentId": "8222:820",
+      "name": "Frame 8",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:55",
+      "parentId": "8219:54",
+      "name": "Frame 7",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:1261",
+      "parentId": "8219:55",
+      "name": "Jili Slot - Play Jili Online Slot | Free Games Play",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:57",
+      "parentId": "8219:55",
+      "name": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:58",
+      "parentId": "8219:54",
+      "name": "Frame 6",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "8219:59",
+      "parentId": "8219:58",
+      "name": "Get Started",
+      "type": "TEXT",
+      "status": "button-label",
+      "representedBy": "8219:58"
+    }
+  ],
+  "summary": {
+    "represented": 8,
+    "covered-by-export": 0,
+    "button-label": 1,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 0
+  }
+}

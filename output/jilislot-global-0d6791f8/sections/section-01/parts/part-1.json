@@ -1,0 +1,39 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "nav-bar",
+      "figmaNodeId": "8221:6",
+      "size": {
+        "width": 1440,
+        "height": 75
+      },
+      "notes": [
+        "No fills, border, typography or child node data present in this part; contents are provided in other parts of the section."
+      ]
+    },
+    {
+      "type": "section",
+      "id": "jilli",
+      "figmaNodeId": "8221:9",
+      "size": {
+        "width": 1440,
+        "height": 75
+      },
+      "background": {
+        "color": "#1F2123"
+      },
+      "boxShadow": {
+        "color": "#00000033",
+        "offsetX": 0,
+        "offsetY": 2,
+        "blur": 0.99,
+        "spread": 0.19
+      },
+      "notes": [
+        "clip set (clipsContent: true). Container with no children in this part."
+      ]
+    }
+  ]
+}

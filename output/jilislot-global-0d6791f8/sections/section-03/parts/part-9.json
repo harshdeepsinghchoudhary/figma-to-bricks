@@ -1,0 +1,46 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "scope",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "column",
+          "id": "frame-8",
+          "figmaNodeId": "8219:1267",
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "gap": 7,
+            "align": "center",
+            "justify": "center",
+            "wrap": false,
+            "padding": {
+              "left": 32,
+              "right": 32,
+              "top": 15,
+              "bottom": 15
+            }
+          },
+          "size": {
+            "width": 152,
+            "height": 49
+          },
+          "background": {
+            "color": "#FCC40B"
+          },
+          "border": {
+            "radius": 40
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "frame-8: dropped unknown field \"strokeWeight\"",
+    "frame-8: dropped unknown field \"strokeAlign\"",
+    "frame-8: dropped unknown field \"box\""
+  ]
+}
