@@ -49,7 +49,8 @@ function isInlineRow(n) {
   if (!isRowish(n)) return false;
   const kids = rendered(n);
   if (kids.length < 2 || kids.length > 3) return false;
-  if (!kids.every((k) => GRID_LEAVES.has(k.type))) return false;
+  const textBranch=k=>['text','text-basic','heading','button'].includes(k.type)||!!k.children?.length&&k.children.every(textBranch);
+  if (!kids.every((k) => GRID_LEAVES.has(k.type)||textBranch(k))) return false;
   return kids.some((k) => (k.type === "icon" || k.type === "image") && isNum(k.size?.width) && k.size.width <= 48);
 }
 
@@ -122,6 +123,12 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
     if (n.abs) { for (const c of n.children || []) fixNode(c, n, contentW); return; }
 
     n._inline = isInlineRow(n); // decided before the children are rewritten (their widths change below)
+    if(n._inline){
+      setResp(n,T,{layout:{direction:'row',align:n.layout?.align||'start',rowGap:gapOf(n),columnGap:gapOf(n)}});
+    }
+    if(n.type==='heading' && n.typography?.fontSize>32 && !n.responsive?.[M]?.typography?.fontSize){
+      setResp(n,M,{typography:{fontSize:Math.min(n.typography.fontSize,32),lineHeight:'125%'}});
+    }
     const parentGrid = parent && parent.layout?.display === "grid";
     const parentRow = parent && isRowish(parent) && !parentGrid;
     const w = n.size?.width;
@@ -130,6 +137,12 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
 
     if (n.type === "image") {
       if (n.size && "height" in n.size) delete n.size.height;
+    }
+    // Flow containers must grow when text wraps or columns stack. Keep the
+    // desktop measurement as a minimum, never as a clipping fixed height.
+    if(n.children?.length && !n.abs && !n.figma?.geometryPositioned && !n.figma?.geometryLayered && isNum(n.size?.height)){
+      n.size.minHeight=n.size.height;delete n.size.height;
+      setResp(n,T,{size:{height:'auto',minHeight:0}});
     }
     if (isNum(w) && parent && !parentGrid) {
       const pw = parent._origW ?? parent._contentW ?? 0;
@@ -248,6 +261,27 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
     const w2 = n._distributedRow ? n.size.maxWidth : nodeWidth(n);
     n._contentW = w2;
     for (const c of n.children || []) fixNode(c, n, contentW);
+    // Compact labels are an inline list, not equal-width cards or a tall
+    // mobile column. Evidence comes from content, not a particular page ID.
+    const plainLabel=k=>['text','text-basic','heading'].includes(k.type)&&String(k.text||'').length<=40&&!String(k.text||'').includes('\n')||k.children?.length===1&&plainLabel(k.children[0]);
+    const children=rendered(n);
+    if(isRowish(n)&&children.length>=4&&children.every(plainLabel)){
+      n.layout={...n.layout,wrap:true,align:'center'};
+      setResp(n,T,{layout:{direction:'row',wrap:true,justify:'center',rowGap:16}});
+      for(const child of children){child.size={...child.size,width:'hug'};delete child.size.maxWidth;}
+    }
+    const action=k=>k.type==='button'||k.type==='link'||!!k.background&&!!k.children?.length&&k.children.every(c=>['text','text-basic','icon','image'].includes(c.type));
+    if(isRowish(n)&&children.length>=2&&children.length<=3&&children.every(action)){
+      setResp(n,T,{layout:{direction:'row',wrap:true,align:'center',rowGap:12}});
+      setResp(n,'mobile_portrait',{layout:{direction:'column',align:'start',rowGap:12}});
+    }
+    // Centering expressed as hundreds of pixels of symmetric empty padding
+    // must become alignment so that the same heading fits smaller screens.
+    const p=n.layout?.padding;
+    if(children.length===1&&plainLabel(children[0])&&p?.left>40&&Math.abs(p.left-p.right)<=2){
+      n.layout.padding={...p,left:0,right:0};n.layout.align='center';n.layout.justify='center';
+      for(const r of Object.values(n.responsive||{}))if(r.layout?.padding){r.layout.padding.left=0;r.layout.padding.right=0;}
+    }
     delete n._contentW; delete n._origW; delete n._inline;
   }
 
@@ -300,6 +334,10 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
   }
 
   function fixSection(sec) {
+    if(isNum(sec.size?.height)){
+      sec.size.minHeight=sec.size.height;delete sec.size.height;
+      setResp(sec,T,{size:{height:'auto',minHeight:0}});
+    }
     const pad = sec.layout?.padding || {};
     // The model sometimes gives the section the Figma id/asset of its full-width banner picture instead of emitting an image child, so the
     // picture was never placed. A raster asset on the section itself is its background image.
@@ -324,7 +362,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       id: `${sec.id}-container`,
       layout: { display: "flex", direction: "column", ...flexLayout },
       // width fill + widthMax: Bricks containers default to a fixed 1100px wide, which would beat a larger max-width
-      size: { width: "fill", maxWidth: SITE },
+      size: { width: "fill", maxWidth: sec._fullBleedContent ? '100%' : sec._sourceContainerWidth || SITE },
       children: sec.children || [],
     };
     // content narrower than the site container (a 619px hero column): the single block inside the container carries that width
@@ -334,7 +372,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
       container.size.maxWidth = sec._scopeW;
       if (only && !TEXTLEAF.has(only.type) && !isNum(only.size?.maxWidth)) only.size = { ...(only.size || {}), width: "fill" };
       log(`section ${sec.id}: container max-width ${sec._scopeW}px from the Figma frame width`);
-    } else if (only && !TEXTLEAF.has(only.type) && cw > 0 && cw < SITE - 1 && !isNum(only.size?.maxWidth)) only.size = { ...(only.size || {}), width: "fill", maxWidth: cw };
+    } else if (only && !TEXTLEAF.has(only.type) && cw > 0 && cw < (sec._sourceContainerWidth || SITE) - 1 && (!sec._sourceContainerWidth || only.figma?.absoluteBoundingBox?.width < sec._sourceContainerWidth-1) && !isNum(only.size?.maxWidth)) only.size = { ...(only.size || {}), width: "fill", maxWidth: cw };
     if (sec._card) {
       // a card panel (rectangle + decoration) behind the content: the container IS the card
       const c = sec._card;
@@ -351,7 +389,7 @@ export function responsify(input, { manifest = [], fontAliases = {}, geo = {}, t
     if (sec._pseudo) { sec._layered = true; container._raise = true; }
     // with a full-width strip beside it the section cannot have side padding (the strip would stop short of the screen edge): the container
     // carries the side padding instead
-    sec.layout = { padding: strips.length ? { ...pad, left: 0, right: 0 } : { ...pad, left: SIDE_PADDING, right: SIDE_PADDING }, ...(margin ? { margin } : {}) };
+    sec.layout = { padding: strips.length || sec._fullBleedContent ? { ...pad, left: 0, right: 0 } : { ...pad, left: SIDE_PADDING, right: SIDE_PADDING }, ...(margin ? { margin } : {}) };
     if (strips.length) {
       container.layout.padding = { ...(container.layout.padding || {}), left: SIDE_PADDING, right: SIDE_PADDING };
       const gapAbove = Math.max(0, ...strips.map((c) => c._stripGap || 0));

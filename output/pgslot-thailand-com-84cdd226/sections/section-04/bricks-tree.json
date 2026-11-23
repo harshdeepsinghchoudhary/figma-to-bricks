@@ -1,8 +1,8 @@
 [
   {
-    "id": "288uzu",
+    "id": "j6fu5v",
     "name": "heading",
-    "parent": "9y2p8h",
+    "parent": "7hyzsk",
     "children": [],
     "settings": {
       "text": "PG Slot - Trusted License Online Slot Thailand | Official PG Slot Website",
@@ -17,13 +17,18 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
+      },
+      "_typography:mobile_landscape": {
+        "font-size": "32px",
+        "line-height": "125%",
+        "letter-spacing": "0%"
       }
     }
   },
   {
-    "id": "0uuhlx",
+    "id": "hnrms1",
     "name": "text",
-    "parent": "9y2p8h",
+    "parent": "7hyzsk",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust  </p>",
@@ -46,9 +51,9 @@
     }
   },
   {
-    "id": "okxier",
+    "id": "krg3ac",
     "name": "button",
-    "parent": "9y2p8h",
+    "parent": "7hyzsk",
     "children": [],
     "settings": {
       "text": "More info",
@@ -118,32 +123,41 @@
     }
   },
   {
-    "id": "9y2p8h",
+    "id": "7hyzsk",
     "name": "div",
-    "parent": "6l4s6j",
+    "parent": "3hah2b",
     "children": [
-      "288uzu",
-      "0uuhlx",
-      "okxier"
+      "j6fu5v",
+      "hnrms1",
+      "krg3ac"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_alignItems": "flex-start",
       "_width": "100%",
-      "_widthMax": "552px"
+      "_widthMax": "552px",
+      "_border": {
+        "radius": {
+          "top": "100px",
+          "right": "100px",
+          "bottom": "100px",
+          "left": "100px"
+        }
+      }
     }
   },
   {
-    "id": "6l4s6j",
+    "id": "3hah2b",
     "name": "container",
-    "parent": "4a00og",
+    "parent": "3mxn9v",
     "children": [
-      "9y2p8h"
+      "7hyzsk"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
+      "_alignItems": "flex-start",
       "_width": "100%",
       "_widthMax": "1120px",
       "_position": "relative",
@@ -151,16 +165,25 @@
     }
   },
   {
-    "id": "4a00og",
+    "id": "3mxn9v",
     "name": "section",
     "parent": 0,
     "children": [
-      "6l4s6j"
+      "3hah2b"
     ],
     "settings": {
       "_padding": {
+        "top": "105",
         "right": "16",
+        "bottom": "0",
         "left": "16"
+      },
+      "_heightMin": "550",
+      "_padding:tablet_portrait": {
+        "top": "53"
+      },
+      "_padding:mobile_landscape": {
+        "top": "53"
       },
       "_background": {
         "image": {
@@ -176,7 +199,16 @@
         "attachment": "scroll"
       },
       "_position": "relative",
-      "_overflow": "hidden"
+      "_overflow": "hidden",
+      "_zIndex": "0",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
     }
   }
 ]

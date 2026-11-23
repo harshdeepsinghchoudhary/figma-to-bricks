@@ -2012,21 +2012,21 @@
           "type": "text",
           "label": "Name",
           "placeholder": "Your Name",
-          "id": "0d6747"
+          "id": "ddc9a7"
         },
         {
           "type": "email",
           "label": "Email",
           "placeholder": "Your Email",
           "required": true,
-          "id": "dbb730"
+          "id": "48f302"
         },
         {
           "type": "textarea",
           "label": "Message",
           "placeholder": "Your Message",
           "required": true,
-          "id": "16386b"
+          "id": "1508fd"
         }
       ]
     },
@@ -2162,7 +2162,7 @@
         },
         {
           "property": "padding",
-          "selector": ".form-field-richtext + .tox-tinymce"
+          "selector": ".form-field-richtext + .tox-tinymce .tox-edit-area__iframe"
         }
       ]
     },
@@ -2591,7 +2591,7 @@
       "label": "Send to email address",
       "type": "select",
       "options": {
-        "admin_email": "Admin email (akshdeep@blackcapit.com)",
+        "admin_email": "Admin email (ishaan@blackcapit.com)",
         "custom": "Custom email address"
       },
       "default": "admin_email",
@@ -3136,10 +3136,9 @@
       "tab": "content",
       "group": "registration",
       "label": "Role",
-      "desc": "Administrator role is not allowed as a security precaution.",
+      "desc": "Roles with administrative, user management, unfiltered HTML or Builder capabilities are not allowed as a security precaution.",
       "type": "select",
       "options": {
-        "editor": "Editor",
         "author": "Author",
         "contributor": "Contributor",
         "subscriber": "Subscriber"

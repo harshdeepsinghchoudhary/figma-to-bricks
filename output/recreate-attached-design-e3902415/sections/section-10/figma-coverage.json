@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "sourceHash": "4bac04704607b1cefccb37a5a1b29d16b436d11dea5997745255698493269d15",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "Recreate attached design (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4418",
+      "parentId": "scope",
+      "name": "Section",
+      "type": "FRAME",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "11:4419",
+      "parentId": "11:4418",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4420",
+      "parentId": "11:4419",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4421",
+      "parentId": "11:4420",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4422",
+      "parentId": "11:4421",
+      "name": "Ontvang onze vrijblijvende offerte!",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4423",
+      "parentId": "11:4420",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4424",
+      "parentId": "11:4423",
+      "name": "Maak een vrijblijvende afspraak of ontvang uw offe",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4425",
+      "parentId": "11:4419",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4426",
+      "parentId": "11:4425",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4427",
+      "parentId": "11:4426",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4428",
+      "parentId": "11:4427",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4427"
+    },
+    {
+      "nodeId": "11:4429",
+      "parentId": "11:4426",
+      "name": " Contact opnemen",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4430",
+      "parentId": "11:4425",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4431",
+      "parentId": "11:4430",
+      "name": "Offerte aanvragen ",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4432",
+      "parentId": "11:4430",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4433",
+      "parentId": "11:4432",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4432"
+    },
+    {
+      "nodeId": "11:4434",
+      "parentId": "11:4432",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4432"
+    }
+  ],
+  "summary": {
+    "represented": 14,
+    "covered-by-export": 3,
+    "button-label": 0,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 1
+  }
+}

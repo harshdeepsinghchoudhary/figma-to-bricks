@@ -1,0 +1,47 @@
+{
+  "figmaUrl": null,
+  "frameDir": "C:\\figma-to-bricks\\output\\pgslot-thailand-com-84cdd226",
+  "postId": null,
+  "startedAt": "2026-10-27T11:52:22.189Z",
+  "visualDebugging": "manual-only; never invoked by the pipeline",
+  "args": [
+    "--frame",
+    "C:\\figma-to-bricks\\output\\pgslot-thailand-com-84cdd226",
+    "--no-inject",
+    "--no-visual",
+    "--no-dataset",
+    "--deterministic"
+  ],
+  "steps": [
+    {
+      "label": "2-3 normalize, compile, merge",
+      "script": "run-sections.js",
+      "args": [
+        "C:\\figma-to-bricks\\output\\pgslot-thailand-com-84cdd226",
+        "--deterministic"
+      ],
+      "code": 0,
+      "seconds": 12
+    },
+    {
+      "label": "validate merged tree",
+      "script": "bricks-validator.js",
+      "args": [
+        "C:\\figma-to-bricks\\output\\pgslot-thailand-com-84cdd226\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "validate native settings and assets",
+      "script": "validate-build.js",
+      "args": [
+        "C:\\figma-to-bricks\\output\\pgslot-thailand-com-84cdd226\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-27T11:52:34.120Z",
+  "exitCode": 0
+}

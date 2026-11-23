@@ -1,7 +1,15 @@
 {
-  "status": "built",
+  "status": "incomplete",
   "merged": true,
-  "failures": [],
+  "failures": [
+    "section-02 (247:27): INCOMPLETE - 100 Figma text(s) are missing from it. Redo it with: --only=section-02 --force",
+    "section-07 (202:27): INCOMPLETE - 75 Figma text(s) are missing from it. Redo it with: --only=section-07 --force",
+    "section-08 (202:426): INCOMPLETE - 82 Figma text(s) are missing from it. Redo it with: --only=section-08 --force",
+    "section-10 (202:76): INCOMPLETE - 100 Figma text(s) are missing from it. Redo it with: --only=section-10 --force",
+    "section-12 (202:448): INCOMPLETE - 81 Figma text(s) are missing from it. Redo it with: --only=section-12 --force",
+    "section-14 (202:211): INCOMPLETE - 90 Figma text(s) are missing from it. Redo it with: --only=section-14 --force",
+    "section-16 (202:327): INCOMPLETE - 87 Figma text(s) are missing from it. Redo it with: --only=section-16 --force"
+  ],
   "failedSections": [],
-  "finishedAt": "2026-10-27T09:50:40.889Z"
+  "finishedAt": "2026-10-30T05:02:32.304Z"
 }

@@ -30,6 +30,8 @@ export function filterVisualPatches(tree, patches) {
 
 const allowed = new Set(["_display", "_direction", "_flexDirection", "_alignItems", "_alignItemsGrid", "_justifyContent", "_flexWrap", "_gridTemplateColumns", "_rowGap", "_columnGap", "_gap", "iconGap", "_gridGap", "_padding", "_margin", "_width", "_widthMax", "_widthMin", "_height", "_heightMin", "_heightMax", "_position", "_top", "_right", "_bottom", "_left", "_overflow", "_zIndex", "_alignSelf", "_flexGrow", "_flexShrink", "_flexBasis", "_background", "_border", "_typography", "_boxShadow", "_objectFit", "image"]);
 
+export function visualPatchSettings() { return [...allowed]; }
+
 export function validateReview(review, ids) {
   if (!review || !Array.isArray(review.issues) || !Array.isArray(review.patches)) throw new Error("Vision report must contain issues[] and patches[].");
   if (review.patches.length > 30 || review.issues.length > 50) throw new Error("Vision report exceeds the bounded correction budget.");

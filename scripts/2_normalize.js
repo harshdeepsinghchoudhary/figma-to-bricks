@@ -12,6 +12,7 @@
  */
 import "dotenv/config";
 import { inferSiteWidth } from './site-width.js';
+import { pageSections } from './section-detect.js';
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
@@ -31,7 +32,7 @@ const DETERMINISTIC = process.argv.includes("--deterministic") || process.env.NO
 const PROVIDER = (process.env.AI_PROVIDER || (process.env.GROQ_API_KEY ? "groq" : "anthropic")).toLowerCase();
 // Also supported: AI_PROVIDER=gemini (free tier, big context, needs GEMINI_API_KEY) and
 // AI_PROVIDER=ollama (fully local, no key, no limits).
-if (!DETERMINISTIC && !["groq", "anthropic", "gemini", "ollama", "nvidia", "auto"].includes(PROVIDER)) {
+if (!DETERMINISTIC && !["groq", "anthropic", "gemini", "ollama", "nvidia", "auto", "codex"].includes(PROVIDER)) {
   console.error(`Unknown AI_PROVIDER "${PROVIDER}" - expected "groq", "anthropic", "gemini", "ollama", "nvidia" or "auto".`);
   process.exit(1);
 }
@@ -48,6 +49,7 @@ if (!CHAIN.length && !DETERMINISTIC) {
 }
 let activeProvider = CHAIN[0]; // the provider that answered last (the repair-retry style depends on it)
 const modelFor = (p) =>
+  p === "codex" ? process.env.CODEX_MODEL || null :
   p === "groq" ? process.env.GROQ_MODEL || null
   : p === "gemini" ? process.env.GEMINI_MODEL || "gemini-3.8-flash"
   : p === "ollama" ? process.env.OLLAMA_MODEL || "qwen2.5:14b"
@@ -94,11 +96,11 @@ function slugify(s) {
 // order given, so every downstream consumer (gradient collection, the model prompt) sees
 // an ordinary-looking root node and nothing needs to know scoping happened.
 function buildScopedRoot(fullRoot, ids) {
-  const byId = new Map((fullRoot.children || []).map((c) => [c.id, c]));
+  const byId = new Map([...(fullRoot.children || []), ...pageSections(fullRoot)].map((c) => [c.id, c]));
   const missing = ids.filter((id) => !byId.has(id));
   if (missing.length) {
     throw new Error(
-      `--nodes: these ids are not DIRECT children of the root frame (scoping only matches top-level siblings): ${missing.join(", ")}`
+      `--nodes: these ids are not root children or detected page sections: ${missing.join(", ")}`
     );
   }
   // Hidden layers (visible:false) aren't part of the design and stage 1 never exports them.
@@ -758,6 +760,9 @@ async function callNvidia(turns, { model, maxTokens }) {
 }
 
 async function callOne(p, turns, opts) {
+  const {recordUsage}=await import('../studio/usage.js');
+  recordUsage(process.env.STUDIO_USAGE_FILE,{phase:'normalization',provider:p,inputCharacters:turns.reduce((n,t)=>n+(typeof t.content==='string'?t.content.length:t.content.filter(p=>p.type==='text').reduce((m,p)=>m+p.text.length,0)),0),tokenUsage:null});
+  if (p === "codex") return (await import("./codex-normalizer.js")).callCodex(turns, opts);
   if (p === "nvidia") return callNvidia(turns, opts);
   if (p === "gemini") return callGemini(turns, opts);
   if (p === "ollama") return callOllama(turns, opts);
@@ -1398,6 +1403,7 @@ how gaps/padding/typography are expressed, when notes are used).` : ""}`,
             const s0 = a.children?.[0] || { type: "section", id: "scope", figmaNodeId: "scope", children: [] };
             return { ...a, children: [{ ...s0, children: [...(s0.children || []), ...(b.children?.[0]?.children || [])] }], _uncertain: [...(a._uncertain || []), ...(b._uncertain || [])] };
           }
+          if (activeProvider === 'codex') throw e;
           console.warn(`  Part ${label} could not be validated - building it from the Figma data alone (text, images and frames, without the model's styling for them).`);
           const fd = fallbackDoc(ns);
           fd._uncertain = [...(fd._uncertain || []), `part ${label}: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing`];

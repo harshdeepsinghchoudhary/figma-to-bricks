@@ -1,0 +1,340 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "customer-testimonials",
+      "figmaNodeId": "11:4356",
+      "background": {
+        "color": "#FFFFFF"
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "testimonials-container",
+          "figmaNodeId": "11:4357",
+          "children": [
+            {
+              "type": "column",
+              "id": "testimonials-introduction",
+              "figmaNodeId": "11:4358",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "testimonials-heading-wrapper",
+                  "figmaNodeId": "11:4359",
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "testimonials-heading",
+                      "figmaNodeId": "11:4360",
+                      "level": 2,
+                      "text": "Wat klanten zeggen",
+                      "typography": {
+                        "fontFamily": "Plus Jakarta Sans",
+                        "fontSize": 20,
+                        "fontWeight": 600,
+                        "align": "center",
+                        "lineHeight": "30px",
+                        "color": "#0D1B2A"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "id": "testimonials-subtitle-wrapper",
+                  "figmaNodeId": "11:4361",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "testimonials-subtitle",
+                      "figmaNodeId": "11:4362",
+                      "text": "Direct en eerlijk, daar staan we voor bekend",
+                      "typography": {
+                        "fontFamily": "Plus Jakarta Sans",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "align": "center",
+                        "lineHeight": "24px",
+                        "color": "#6A7282"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "id": "testimonial-cards",
+              "figmaNodeId": "11:4363",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "customer-testimonials-row-1",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "jan-testimonial",
+                      "figmaNodeId": "11:4364",
+                      "component": {
+                        "kind": "card"
+                      },
+                      "background": {
+                        "color": "#F9FAFB"
+                      },
+                      "border": {
+                        "radius": 16
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #F3F4F6."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "customer-testimonials-column-1",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "jan-quote-graphic",
+                              "figmaNodeId": "11:4365",
+                              "asset": {
+                                "nodeId": "11:4365",
+                                "kind": "svg"
+                              }
+                            },
+                            {
+                              "type": "image",
+                              "id": "jan-stars",
+                              "figmaNodeId": "11:4367",
+                              "asset": {
+                                "nodeId": "11:4367",
+                                "kind": "svg"
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "jan-quote-wrapper",
+                              "figmaNodeId": "11:4378",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "jan-quote",
+                                  "figmaNodeId": "11:4379",
+                                  "text": "\"Goede prijs en geen geouwehoer.\"",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "align": "left",
+                                    "lineHeight": "24px",
+                                    "color": "#1E2939"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "jan-attribution-wrapper",
+                              "figmaNodeId": "11:4380",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "jan-attribution",
+                                  "figmaNodeId": "11:4381",
+                                  "text": "— Jan uit Rotterdam",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "align": "left",
+                                    "lineHeight": "24px",
+                                    "color": "#99A1AF"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "maria-testimonial",
+                      "figmaNodeId": "11:4382",
+                      "component": {
+                        "kind": "card"
+                      },
+                      "background": {
+                        "color": "#F9FAFB"
+                      },
+                      "border": {
+                        "radius": 16
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #F3F4F6."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "customer-testimonials-column-2",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "maria-quote-graphic",
+                              "figmaNodeId": "11:4383",
+                              "asset": {
+                                "nodeId": "11:4383",
+                                "kind": "svg"
+                              }
+                            },
+                            {
+                              "type": "image",
+                              "id": "maria-stars",
+                              "figmaNodeId": "11:4385",
+                              "asset": {
+                                "nodeId": "11:4385",
+                                "kind": "svg"
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "maria-quote-wrapper",
+                              "figmaNodeId": "11:4396",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "maria-quote",
+                                  "figmaNodeId": "11:4397",
+                                  "text": "\"Fijne vakmansen en goed advies.\"",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "align": "left",
+                                    "lineHeight": "24px",
+                                    "color": "#1E2939"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "maria-attribution-wrapper",
+                              "figmaNodeId": "11:4398",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "maria-attribution",
+                                  "figmaNodeId": "11:4399",
+                                  "text": "— Maria uit Den Haag",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "align": "left",
+                                    "lineHeight": "24px",
+                                    "color": "#99A1AF"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "peter-testimonial",
+                      "figmaNodeId": "11:4400",
+                      "component": {
+                        "kind": "card"
+                      },
+                      "background": {
+                        "color": "#F9FAFB"
+                      },
+                      "border": {
+                        "radius": 16
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #F3F4F6."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "customer-testimonials-column-3",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "peter-quote-graphic",
+                              "figmaNodeId": "11:4401",
+                              "asset": {
+                                "nodeId": "11:4401",
+                                "kind": "svg"
+                              }
+                            },
+                            {
+                              "type": "image",
+                              "id": "peter-stars",
+                              "figmaNodeId": "11:4403",
+                              "asset": {
+                                "nodeId": "11:4403",
+                                "kind": "svg"
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "peter-quote-wrapper",
+                              "figmaNodeId": "11:4414",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "peter-quote",
+                                  "figmaNodeId": "11:4415",
+                                  "text": "\"Alles wordt geregeld.\"",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "align": "left",
+                                    "lineHeight": "24px",
+                                    "color": "#1E2939"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "peter-attribution-wrapper",
+                              "figmaNodeId": "11:4416",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "peter-attribution",
+                                  "figmaNodeId": "11:4417",
+                                  "text": "— Peter uit Delft",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "align": "left",
+                                    "lineHeight": "24px",
+                                    "color": "#99A1AF"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

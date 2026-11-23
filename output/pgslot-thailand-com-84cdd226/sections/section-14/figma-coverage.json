@@ -15,21 +15,21 @@
       "parentId": "scope",
       "name": "Group 1261154091",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:212",
       "parentId": "202:211",
       "name": "Group 1261154085",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:213",
       "parentId": "202:212",
       "name": "Group 1261153951",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:214",
@@ -57,14 +57,15 @@
       "parentId": "202:212",
       "name": "Frame 25",
       "type": "FRAME",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:218",
       "parentId": "202:217",
       "name": "Lear More",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:217"
     },
     {
       "nodeId": "202:219",
@@ -137,11 +138,11 @@
     }
   ],
   "summary": {
-    "represented": 8,
+    "represented": 11,
     "covered-by-export": 6,
-    "button-label": 0,
+    "button-label": 1,
     "absorbed-paint": 0,
     "hidden": 0,
-    "unrepresented": 4
+    "unrepresented": 0
   }
 }

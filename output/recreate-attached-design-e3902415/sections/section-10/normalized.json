@@ -1,0 +1,1379 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "offer-section",
+      "figmaNodeId": "scope",
+      "children": [
+        {
+          "type": "row",
+          "id": "offer-container",
+          "figmaNodeId": "11:4419",
+          "children": [
+            {
+              "type": "column",
+              "id": "offer-copy",
+              "figmaNodeId": "11:4420",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "offer-title-paragraph",
+                  "figmaNodeId": "11:4421",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "offer-title",
+                      "figmaNodeId": "11:4422",
+                      "text": "Ontvang onze vrijblijvende offerte!",
+                      "typography": {
+                        "fontFamily": "Plus Jakarta Sans",
+                        "fontSize": 18,
+                        "fontWeight": 600,
+                        "lineHeight": "28px",
+                        "letterSpacing": "0px",
+                        "align": "left",
+                        "color": "#FFFFFF"
+                      },
+                      "size": {
+                        "width": 300
+                      },
+                      "figma": {
+                        "parentId": "11:4421",
+                        "childIds": [],
+                        "name": "Ontvang onze vrijblijvende offerte!",
+                        "type": "TEXT",
+                        "blendMode": "PASS_THROUGH",
+                        "absoluteBoundingBox": {
+                          "x": -3791.5,
+                          "y": 3491,
+                          "width": 300,
+                          "height": 28
+                        },
+                        "absoluteRenderBounds": {
+                          "x": -3790.510009765625,
+                          "y": 3498.3740234375,
+                          "width": 296.545654296875,
+                          "height": 17.60400390625
+                        },
+                        "size": {
+                          "x": 300,
+                          "y": 28
+                        },
+                        "relativeTransform": [
+                          [
+                            1,
+                            0,
+                            0
+                          ],
+                          [
+                            0,
+                            1,
+                            0
+                          ]
+                        ],
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "fills": [
+                          {
+                            "blendMode": "NORMAL",
+                            "type": "SOLID",
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            }
+                          }
+                        ],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "OUTSIDE",
+                        "effects": [],
+                        "style": {
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontPostScriptName": null,
+                          "fontStyle": "SemiBold",
+                          "fontWeight": 600,
+                          "textAutoResize": "WIDTH_AND_HEIGHT",
+                          "fontSize": 18,
+                          "textAlignHorizontal": "LEFT",
+                          "textAlignVertical": "TOP",
+                          "letterSpacing": 0,
+                          "lineHeightPx": 28,
+                          "lineHeightPercent": 123.456787109375,
+                          "lineHeightPercentFontSize": 155.55555725097656,
+                          "lineHeightUnit": "PIXELS"
+                        },
+                        "characterStyleOverrides": [],
+                        "styleOverrideTable": {},
+                        "characters": "Ontvang onze vrijblijvende offerte!",
+                        "rawGeometryFields": [
+                          "fillGeometry",
+                          "strokeGeometry"
+                        ],
+                        "extraSourceProperties": {
+                          "scrollBehavior": "SCROLLS",
+                          "lineTypes": [
+                            "NONE"
+                          ],
+                          "lineIndentations": [
+                            0
+                          ],
+                          "layoutVersion": 5,
+                          "interactions": [],
+                          "complexStrokeProperties": {
+                            "strokeType": "BASIC"
+                          }
+                        },
+                        "effectiveVisible": true
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "padding": {
+                      "top": 0,
+                      "right": 99.55,
+                      "bottom": 0,
+                      "left": 0
+                    },
+                    "align": "start"
+                  },
+                  "figma": {
+                    "parentId": "11:4420",
+                    "childIds": [
+                      "11:4422"
+                    ],
+                    "name": "Paragraph",
+                    "type": "FRAME",
+                    "blendMode": "PASS_THROUGH",
+                    "absoluteBoundingBox": {
+                      "x": -3791.5,
+                      "y": 3491,
+                      "width": 399.546875,
+                      "height": 28
+                    },
+                    "absoluteRenderBounds": {
+                      "x": -3791.5,
+                      "y": 3491,
+                      "width": 399.546875,
+                      "height": 28
+                    },
+                    "size": {
+                      "x": 399.546875,
+                      "y": 28
+                    },
+                    "relativeTransform": [
+                      [
+                        1,
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        1,
+                        0
+                      ]
+                    ],
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "FIXED",
+                    "layoutGrow": 0,
+                    "layoutAlign": "STRETCH",
+                    "clipsContent": false,
+                    "fills": [],
+                    "strokes": [],
+                    "strokeWeight": 1,
+                    "strokeAlign": "INSIDE",
+                    "effects": [],
+                    "rawGeometryFields": [
+                      "fillGeometry",
+                      "strokeGeometry"
+                    ],
+                    "extraSourceProperties": {
+                      "scrollBehavior": "SCROLLS",
+                      "background": [],
+                      "backgroundColor": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0,
+                        "a": 0
+                      },
+                      "interactions": [],
+                      "complexStrokeProperties": {
+                        "strokeType": "BASIC"
+                      }
+                    },
+                    "effectiveVisible": true
+                  },
+                  "size": {
+                    "width": "fill",
+                    "height": 28
+                  }
+                },
+                {
+                  "type": "column",
+                  "id": "offer-description-paragraph",
+                  "figmaNodeId": "11:4423",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "offer-description",
+                      "figmaNodeId": "11:4424",
+                      "text": "Maak een vrijblijvende afspraak of ontvang uw offerte",
+                      "typography": {
+                        "fontFamily": "Plus Jakarta Sans",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "24px",
+                        "letterSpacing": "0px",
+                        "align": "left",
+                        "color": "#FFFFFFBF"
+                      },
+                      "size": {
+                        "width": 400
+                      },
+                      "figma": {
+                        "parentId": "11:4423",
+                        "childIds": [],
+                        "name": "Maak een vrijblijvende afspraak of ontvang uw offe",
+                        "type": "TEXT",
+                        "blendMode": "PASS_THROUGH",
+                        "absoluteBoundingBox": {
+                          "x": -3791.5,
+                          "y": 3520,
+                          "width": 400,
+                          "height": 24
+                        },
+                        "absoluteRenderBounds": {
+                          "x": -3790.092041015625,
+                          "y": 3526.887939453125,
+                          "width": 397.255126953125,
+                          "height": 15.632080078125
+                        },
+                        "size": {
+                          "x": 400,
+                          "y": 24
+                        },
+                        "relativeTransform": [
+                          [
+                            1,
+                            0,
+                            0
+                          ],
+                          [
+                            0,
+                            1,
+                            -1
+                          ]
+                        ],
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "fills": [
+                          {
+                            "opacity": 0.75,
+                            "blendMode": "NORMAL",
+                            "type": "SOLID",
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            }
+                          }
+                        ],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "OUTSIDE",
+                        "effects": [],
+                        "style": {
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontPostScriptName": null,
+                          "fontStyle": "Regular",
+                          "fontWeight": 400,
+                          "textAutoResize": "WIDTH_AND_HEIGHT",
+                          "fontSize": 16,
+                          "textAlignHorizontal": "LEFT",
+                          "textAlignVertical": "TOP",
+                          "letterSpacing": 0,
+                          "lineHeightPx": 24,
+                          "lineHeightPercent": 119.04761505126953,
+                          "lineHeightPercentFontSize": 150,
+                          "lineHeightUnit": "PIXELS"
+                        },
+                        "characterStyleOverrides": [],
+                        "styleOverrideTable": {},
+                        "characters": "Maak een vrijblijvende afspraak of ontvang uw offerte",
+                        "rawGeometryFields": [
+                          "fillGeometry",
+                          "strokeGeometry"
+                        ],
+                        "extraSourceProperties": {
+                          "scrollBehavior": "SCROLLS",
+                          "lineTypes": [
+                            "NONE"
+                          ],
+                          "lineIndentations": [
+                            0
+                          ],
+                          "layoutVersion": 5,
+                          "interactions": [],
+                          "complexStrokeProperties": {
+                            "strokeType": "BASIC"
+                          }
+                        },
+                        "effectiveVisible": true
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "padding": {
+                      "top": 0,
+                      "right": 0,
+                      "bottom": 1,
+                      "left": 0
+                    },
+                    "align": "start"
+                  },
+                  "figma": {
+                    "parentId": "11:4420",
+                    "childIds": [
+                      "11:4424"
+                    ],
+                    "name": "Paragraph",
+                    "type": "FRAME",
+                    "blendMode": "PASS_THROUGH",
+                    "absoluteBoundingBox": {
+                      "x": -3791.5,
+                      "y": 3521,
+                      "width": 399.546875,
+                      "height": 24
+                    },
+                    "absoluteRenderBounds": {
+                      "x": -3791.5,
+                      "y": 3521,
+                      "width": 399.546875,
+                      "height": 24
+                    },
+                    "size": {
+                      "x": 399.546875,
+                      "y": 24
+                    },
+                    "relativeTransform": [
+                      [
+                        1,
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        1,
+                        30
+                      ]
+                    ],
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "FIXED",
+                    "layoutGrow": 0,
+                    "layoutAlign": "STRETCH",
+                    "clipsContent": false,
+                    "fills": [],
+                    "strokes": [],
+                    "strokeWeight": 1,
+                    "strokeAlign": "INSIDE",
+                    "effects": [],
+                    "rawGeometryFields": [
+                      "fillGeometry",
+                      "strokeGeometry"
+                    ],
+                    "extraSourceProperties": {
+                      "scrollBehavior": "SCROLLS",
+                      "background": [],
+                      "backgroundColor": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0,
+                        "a": 0
+                      },
+                      "interactions": [],
+                      "complexStrokeProperties": {
+                        "strokeType": "BASIC"
+                      }
+                    },
+                    "effectiveVisible": true
+                  },
+                  "size": {
+                    "width": "fill",
+                    "height": 24
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "align": "start",
+                "gap": 2,
+                "wrap": false
+              },
+              "size": {
+                "width": 399.546875,
+                "height": 54
+              },
+              "figma": {
+                "parentId": "11:4419",
+                "childIds": [
+                  "11:4421",
+                  "11:4423"
+                ],
+                "name": "Container",
+                "type": "FRAME",
+                "blendMode": "PASS_THROUGH",
+                "absoluteBoundingBox": {
+                  "x": -3791.5,
+                  "y": 3491,
+                  "width": 399.546875,
+                  "height": 54
+                },
+                "absoluteRenderBounds": {
+                  "x": -3791.5,
+                  "y": 3491,
+                  "width": 399.546875,
+                  "height": 54
+                },
+                "size": {
+                  "x": 399.546875,
+                  "y": 54
+                },
+                "relativeTransform": [
+                  [
+                    1,
+                    0,
+                    24
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "layoutMode": "VERTICAL",
+                "layoutWrap": "NO_WRAP",
+                "layoutSizingHorizontal": "FIXED",
+                "layoutSizingVertical": "FIXED",
+                "primaryAxisSizingMode": "FIXED",
+                "counterAxisSizingMode": "FIXED",
+                "itemSpacing": 2,
+                "layoutGrow": 0,
+                "layoutAlign": "INHERIT",
+                "clipsContent": false,
+                "fills": [],
+                "strokes": [],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "effects": [],
+                "rawGeometryFields": [
+                  "fillGeometry",
+                  "strokeGeometry"
+                ],
+                "extraSourceProperties": {
+                  "scrollBehavior": "SCROLLS",
+                  "background": [],
+                  "backgroundColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "interactions": [],
+                  "complexStrokeProperties": {
+                    "strokeType": "BASIC"
+                  }
+                },
+                "effectiveVisible": true
+              }
+            },
+            {
+              "type": "column",
+              "id": "offer-actions",
+              "figmaNodeId": "11:4425",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "offer-section-row-6",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "contact-link",
+                      "figmaNodeId": "11:4426",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 10
+                      },
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "offer-section-row-4",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "contact-icon",
+                              "figmaNodeId": "11:4427",
+                              "asset": {
+                                "nodeId": "11:4427",
+                                "kind": "svg"
+                              },
+                              "size": {
+                                "width": 16,
+                                "height": 16
+                              },
+                              "figma": {
+                                "parentId": "11:4426",
+                                "childIds": [
+                                  "11:4428"
+                                ],
+                                "name": "Icon",
+                                "type": "FRAME",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -2962.703125,
+                                  "y": 3510,
+                                  "width": 16,
+                                  "height": 16
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -2962.703125,
+                                  "y": 3510,
+                                  "width": 16,
+                                  "height": 16
+                                },
+                                "size": {
+                                  "x": 16,
+                                  "y": 16
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    20
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    14
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "clipsContent": true,
+                                "fills": [],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "INSIDE",
+                                "effects": [],
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "background": [],
+                                  "backgroundColor": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0,
+                                    "a": 0
+                                  },
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "contact-label",
+                              "figmaNodeId": "11:4429",
+                              "text": " Contact opnemen",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 600,
+                                "lineHeight": "24px",
+                                "letterSpacing": "0px",
+                                "align": "left",
+                                "color": "#0C7AB3"
+                              },
+                              "size": {
+                                "width": 144
+                              },
+                              "figma": {
+                                "parentId": "11:4426",
+                                "childIds": [],
+                                "name": " Contact opnemen",
+                                "type": "TEXT",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -2938.703125,
+                                  "y": 3505,
+                                  "width": 144,
+                                  "height": 24
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -2935.0263671875,
+                                  "y": 3511.887939453125,
+                                  "width": 139.2412109375,
+                                  "height": 15.31201171875
+                                },
+                                "size": {
+                                  "x": 144,
+                                  "y": 24
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    44
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    9
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "fills": [
+                                  {
+                                    "blendMode": "NORMAL",
+                                    "type": "SOLID",
+                                    "color": {
+                                      "r": 0.0470588244497776,
+                                      "g": 0.47843137383461,
+                                      "b": 0.7019608020782471,
+                                      "a": 1
+                                    }
+                                  }
+                                ],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "OUTSIDE",
+                                "effects": [],
+                                "style": {
+                                  "fontFamily": "Plus Jakarta Sans",
+                                  "fontPostScriptName": null,
+                                  "fontStyle": "SemiBold",
+                                  "fontWeight": 600,
+                                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                                  "fontSize": 16,
+                                  "textAlignHorizontal": "LEFT",
+                                  "textAlignVertical": "TOP",
+                                  "letterSpacing": 0,
+                                  "lineHeightPx": 24,
+                                  "lineHeightPercent": 119.04761505126953,
+                                  "lineHeightPercentFontSize": 150,
+                                  "lineHeightUnit": "PIXELS"
+                                },
+                                "characterStyleOverrides": [],
+                                "styleOverrideTable": {},
+                                "characters": " Contact opnemen",
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "lineTypes": [
+                                    "NONE"
+                                  ],
+                                  "lineIndentations": [
+                                    0
+                                  ],
+                                  "layoutVersion": 5,
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 8,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "padding": {
+                          "top": 9,
+                          "right": 16.92,
+                          "bottom": 11,
+                          "left": 20
+                        },
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 204.921875
+                      },
+                      "figma": {
+                        "parentId": "11:4425",
+                        "childIds": [
+                          "11:4427",
+                          "11:4429"
+                        ],
+                        "name": "Link",
+                        "type": "FRAME",
+                        "blendMode": "PASS_THROUGH",
+                        "absoluteBoundingBox": {
+                          "x": -2982.703125,
+                          "y": 3496,
+                          "width": 204.921875,
+                          "height": 44
+                        },
+                        "absoluteRenderBounds": {
+                          "x": -2982.703125,
+                          "y": 3496,
+                          "width": 204.921875,
+                          "height": 44
+                        },
+                        "size": {
+                          "x": 204.921875,
+                          "y": 44
+                        },
+                        "relativeTransform": [
+                          [
+                            1,
+                            0,
+                            0
+                          ],
+                          [
+                            0,
+                            1,
+                            0
+                          ]
+                        ],
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "clipsContent": false,
+                        "fills": [
+                          {
+                            "blendMode": "NORMAL",
+                            "type": "SOLID",
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            }
+                          }
+                        ],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "cornerRadius": 10,
+                        "cornerSmoothing": 0,
+                        "effects": [],
+                        "rawGeometryFields": [
+                          "fillGeometry",
+                          "strokeGeometry"
+                        ],
+                        "extraSourceProperties": {
+                          "scrollBehavior": "SCROLLS",
+                          "background": [
+                            {
+                              "blendMode": "NORMAL",
+                              "type": "SOLID",
+                              "color": {
+                                "r": 1,
+                                "g": 1,
+                                "b": 1,
+                                "a": 1
+                              }
+                            }
+                          ],
+                          "backgroundColor": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1
+                          },
+                          "interactions": [],
+                          "complexStrokeProperties": {
+                            "strokeType": "BASIC"
+                          }
+                        },
+                        "effectiveVisible": true
+                      }
+                    },
+                    {
+                      "type": "column",
+                      "id": "request-offer-link",
+                      "figmaNodeId": "11:4430",
+                      "background": {
+                        "color": "#EE3E38"
+                      },
+                      "border": {
+                        "radius": 10
+                      },
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "offer-section-row-5",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "request-offer-label",
+                              "figmaNodeId": "11:4431",
+                              "text": "Offerte aanvragen ",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 600,
+                                "lineHeight": "24px",
+                                "letterSpacing": "0px",
+                                "align": "left",
+                                "color": "#FFFFFF"
+                              },
+                              "size": {
+                                "width": 143
+                              },
+                              "figma": {
+                                "parentId": "11:4430",
+                                "childIds": [],
+                                "name": "Offerte aanvragen ",
+                                "type": "TEXT",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -2745.78125,
+                                  "y": 3505,
+                                  "width": 143,
+                                  "height": 24
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -2744.9013671875,
+                                  "y": 3511.887939453125,
+                                  "width": 140.5849609375,
+                                  "height": 15.632080078125
+                                },
+                                "size": {
+                                  "x": 143,
+                                  "y": 24
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    20
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    9
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "fills": [
+                                  {
+                                    "blendMode": "NORMAL",
+                                    "type": "SOLID",
+                                    "color": {
+                                      "r": 1,
+                                      "g": 1,
+                                      "b": 1,
+                                      "a": 1
+                                    }
+                                  }
+                                ],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "OUTSIDE",
+                                "effects": [],
+                                "style": {
+                                  "fontFamily": "Plus Jakarta Sans",
+                                  "fontPostScriptName": null,
+                                  "fontStyle": "SemiBold",
+                                  "fontWeight": 600,
+                                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                                  "fontSize": 16,
+                                  "textAlignHorizontal": "LEFT",
+                                  "textAlignVertical": "TOP",
+                                  "letterSpacing": 0,
+                                  "lineHeightPx": 24,
+                                  "lineHeightPercent": 119.04761505126953,
+                                  "lineHeightPercentFontSize": 150,
+                                  "lineHeightUnit": "PIXELS"
+                                },
+                                "characterStyleOverrides": [],
+                                "styleOverrideTable": {},
+                                "characters": "Offerte aanvragen ",
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "lineTypes": [
+                                    "NONE"
+                                  ],
+                                  "lineIndentations": [
+                                    0
+                                  ],
+                                  "layoutVersion": 5,
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              }
+                            },
+                            {
+                              "type": "image",
+                              "id": "request-offer-icon",
+                              "figmaNodeId": "11:4432",
+                              "asset": {
+                                "nodeId": "11:4432",
+                                "kind": "svg"
+                              },
+                              "size": {
+                                "width": 16,
+                                "height": 16
+                              },
+                              "figma": {
+                                "parentId": "11:4430",
+                                "childIds": [
+                                  "11:4433",
+                                  "11:4434"
+                                ],
+                                "name": "Icon",
+                                "type": "FRAME",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -2595.5,
+                                  "y": 3510,
+                                  "width": 16,
+                                  "height": 16
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -2595.5,
+                                  "y": 3510,
+                                  "width": 16,
+                                  "height": 16
+                                },
+                                "size": {
+                                  "x": 16,
+                                  "y": 16
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    170.28125
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    14
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "clipsContent": true,
+                                "fills": [],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "INSIDE",
+                                "effects": [],
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "background": [],
+                                  "backgroundColor": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0,
+                                    "a": 0
+                                  },
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "gap": 7.28,
+                            "align": "start"
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "padding": {
+                          "top": 9,
+                          "right": 20,
+                          "bottom": 11,
+                          "left": 20
+                        },
+                        "align": "start"
+                      },
+                      "size": {
+                        "width": 206.28125
+                      },
+                      "figma": {
+                        "parentId": "11:4425",
+                        "childIds": [
+                          "11:4431",
+                          "11:4432"
+                        ],
+                        "name": "Link",
+                        "type": "FRAME",
+                        "blendMode": "PASS_THROUGH",
+                        "absoluteBoundingBox": {
+                          "x": -2765.78125,
+                          "y": 3496,
+                          "width": 206.28125,
+                          "height": 44
+                        },
+                        "absoluteRenderBounds": {
+                          "x": -2765.78125,
+                          "y": 3496,
+                          "width": 206.28125,
+                          "height": 44
+                        },
+                        "size": {
+                          "x": 206.28125,
+                          "y": 44
+                        },
+                        "relativeTransform": [
+                          [
+                            1,
+                            0,
+                            216.921875
+                          ],
+                          [
+                            0,
+                            1,
+                            0
+                          ]
+                        ],
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "clipsContent": false,
+                        "fills": [
+                          {
+                            "blendMode": "NORMAL",
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.9333333373069763,
+                              "g": 0.24313725531101227,
+                              "b": 0.21960784494876862,
+                              "a": 1
+                            }
+                          }
+                        ],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "cornerRadius": 10,
+                        "cornerSmoothing": 0,
+                        "effects": [],
+                        "rawGeometryFields": [
+                          "fillGeometry",
+                          "strokeGeometry"
+                        ],
+                        "extraSourceProperties": {
+                          "scrollBehavior": "SCROLLS",
+                          "background": [
+                            {
+                              "blendMode": "NORMAL",
+                              "type": "SOLID",
+                              "color": {
+                                "r": 0.9333333373069763,
+                                "g": 0.24313725531101227,
+                                "b": 0.21960784494876862,
+                                "a": 1
+                              }
+                            }
+                          ],
+                          "backgroundColor": {
+                            "r": 0.9333333373069763,
+                            "g": 0.24313725531101227,
+                            "b": 0.21960784494876862,
+                            "a": 1
+                          },
+                          "interactions": [],
+                          "complexStrokeProperties": {
+                            "strokeType": "BASIC"
+                          }
+                        },
+                        "effectiveVisible": true
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 12,
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "align": "start"
+              },
+              "size": {
+                "width": 423.203125,
+                "height": 44
+              },
+              "figma": {
+                "parentId": "11:4419",
+                "childIds": [
+                  "11:4426",
+                  "11:4430"
+                ],
+                "name": "Container",
+                "type": "FRAME",
+                "blendMode": "PASS_THROUGH",
+                "absoluteBoundingBox": {
+                  "x": -2982.703125,
+                  "y": 3496,
+                  "width": 423.203125,
+                  "height": 44
+                },
+                "absoluteRenderBounds": {
+                  "x": -2982.703125,
+                  "y": 3496,
+                  "width": 423.203125,
+                  "height": 44
+                },
+                "size": {
+                  "x": 423.203125,
+                  "y": 44
+                },
+                "relativeTransform": [
+                  [
+                    1,
+                    0,
+                    832.796875
+                  ],
+                  [
+                    0,
+                    1,
+                    5
+                  ]
+                ],
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "layoutSizingHorizontal": "FIXED",
+                "layoutSizingVertical": "FIXED",
+                "layoutGrow": 0,
+                "layoutAlign": "INHERIT",
+                "clipsContent": false,
+                "fills": [],
+                "strokes": [],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "effects": [],
+                "rawGeometryFields": [
+                  "fillGeometry",
+                  "strokeGeometry"
+                ],
+                "extraSourceProperties": {
+                  "scrollBehavior": "SCROLLS",
+                  "background": [],
+                  "backgroundColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "interactions": [],
+                  "complexStrokeProperties": {
+                    "strokeType": "BASIC"
+                  }
+                },
+                "effectiveVisible": true
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "row",
+            "justify": "space-between",
+            "padding": {
+              "right": 24,
+              "left": 24
+            },
+            "align": "center",
+            "gap": 409.25,
+            "wrap": false
+          },
+          "size": {
+            "width": "fill",
+            "height": 54
+          },
+          "figma": {
+            "parentId": "11:4418",
+            "childIds": [
+              "11:4420",
+              "11:4425"
+            ],
+            "name": "Container",
+            "type": "FRAME",
+            "blendMode": "PASS_THROUGH",
+            "absoluteBoundingBox": {
+              "x": -3815.5,
+              "y": 3491,
+              "width": 1280,
+              "height": 54
+            },
+            "absoluteRenderBounds": {
+              "x": -3815.5,
+              "y": 3491,
+              "width": 1280,
+              "height": 54
+            },
+            "size": {
+              "x": 1280,
+              "y": 54
+            },
+            "relativeTransform": [
+              [
+                1,
+                0,
+                199.5
+              ],
+              [
+                0,
+                1,
+                40
+              ]
+            ],
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "LEFT"
+            },
+            "layoutMode": "HORIZONTAL",
+            "layoutWrap": "NO_WRAP",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "FIXED",
+            "primaryAxisSizingMode": "FIXED",
+            "counterAxisSizingMode": "FIXED",
+            "primaryAxisAlignItems": "SPACE_BETWEEN",
+            "counterAxisAlignItems": "CENTER",
+            "itemSpacing": 409.25,
+            "paddingRight": 24,
+            "paddingLeft": 24,
+            "layoutGrow": 0,
+            "layoutAlign": "STRETCH",
+            "clipsContent": false,
+            "fills": [],
+            "strokes": [],
+            "strokeWeight": 1,
+            "strokeAlign": "INSIDE",
+            "effects": [],
+            "rawGeometryFields": [
+              "fillGeometry",
+              "strokeGeometry"
+            ],
+            "extraSourceProperties": {
+              "scrollBehavior": "SCROLLS",
+              "background": [],
+              "backgroundColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "strokesIncludedInLayout": true,
+              "interactions": [],
+              "complexStrokeProperties": {
+                "strokeType": "BASIC"
+              }
+            },
+            "effectiveVisible": true
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      },
+      "figma": {
+        "parentId": null,
+        "childIds": [
+          "11:4418"
+        ],
+        "name": "Recreate attached design (scoped)",
+        "type": "FRAME",
+        "absoluteBoundingBox": {
+          "x": -4015,
+          "y": 3451,
+          "width": 1679,
+          "height": 134
+        },
+        "effectiveVisible": true
+      },
+      "size": {
+        "width": 1679
+      }
+    }
+  ],
+  "_uncertain": [
+    "Link destinations are not provided."
+  ]
+}

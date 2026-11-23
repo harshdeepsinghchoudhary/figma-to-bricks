@@ -1,0 +1,11 @@
+import React,{useEffect,useState} from 'react';
+export function AccountGate({children}:{children:React.ReactNode}){
+ const [account,setAccount]=useState<{hosted:boolean;user?:{email:string}|null}>(),[email,setEmail]=useState(''),[password,setPassword]=useState(''),[invite,setInvite]=useState(''),[register,setRegister]=useState(false),[message,setMessage]=useState('');
+ async function refresh(){try{const response=await fetch('/api/account');if(response.status===404){setAccount({hosted:false});return}if(!response.ok)throw Error('Could not check account session.');setAccount(await response.json())}catch(e){setMessage(String(e))}}
+ useEffect(()=>{refresh()},[]);
+ async function submit(){try{const response=await fetch('/api/account/'+(register?'register':'login'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,password,invite})}),data=await response.json();if(!response.ok)throw Error(data.error);setPassword('');setInvite('');setMessage('');await refresh()}catch(e){setMessage(String(e))}}
+ if(!account)return <main><p>{message||'Loading your workspace…'}</p></main>;
+ if(!account.hosted)return <>{children}</>;
+ if(account.user)return <><div className="account-bar">{account.user.email} <button onClick={async()=>{await fetch('/api/account/logout',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});location.reload()}}>Sign out</button></div>{children}</>;
+ return <main><section><h1>Figma to Bricks AI Studio</h1><p>Your designs, your website, your AI credentials.</p><h2>{register?'Create private-beta account':'Sign in'}</h2><form onSubmit={e=>{e.preventDefault();submit()}}><label>Email<input type="email" autoComplete="username" required value={email} onChange={e=>setEmail(e.target.value)}/></label><label>Password<input type="password" autoComplete={register?'new-password':'current-password'} required minLength={12} value={password} onChange={e=>setPassword(e.target.value)}/></label>{register&&<label>Invite code<input type="password" value={invite} onChange={e=>setInvite(e.target.value)}/></label>}<button type="submit">{register?'Create account':'Sign in'}</button></form><button className="secondary" onClick={()=>setRegister(!register)}>{register?'Already have an account':'Use an invite'}</button>{message&&<p role="alert">{message}</p>}</section></main>;
+}

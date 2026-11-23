@@ -1099,7 +1099,7 @@
     "faqSchema": {
       "label": "FAQ schema",
       "type": "checkbox",
-      "description": "<a href=\"https://developers.google.com/search/docs/appearance/structured-data/faqpage\" target=\"_blank\">Generate FAQPage structured data (JSON-LD).</a>",
+      "description": "<a href=\"https://schema.org/FAQPage\" target=\"_blank\">Generate FAQPage structured data (JSON-LD).</a> Google Search no longer displays FAQ rich results.",
       "tab": "content"
     },
     "titleHeight": {

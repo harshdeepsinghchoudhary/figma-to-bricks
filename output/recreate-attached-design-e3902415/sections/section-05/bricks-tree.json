@@ -1,0 +1,501 @@
+[
+  {
+    "id": "3zg3ad",
+    "name": "text",
+    "parent": "roa9ve",
+    "children": [],
+    "settings": {
+      "text": "<p>Ons vakmanschap</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "1.600000023841858px",
+        "color": {
+          "raw": "#FFFFFFB2"
+        },
+        "text-align": "left",
+        "text-transform": "uppercase"
+      }
+    }
+  },
+  {
+    "id": "roa9ve",
+    "name": "div",
+    "parent": "nge369",
+    "children": [
+      "3zg3ad"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_width": "100%",
+      "_widthMax": "775px"
+    }
+  },
+  {
+    "id": "1wa52g",
+    "name": "heading",
+    "parent": "nge369",
+    "children": [],
+    "settings": {
+      "text": "Maatwerk vloeren voor elk project",
+      "tag": "h2",
+      "_margin": {
+        "top": "8"
+      },
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "rqmjei",
+    "name": "text",
+    "parent": "iumzgr",
+    "children": [],
+    "settings": {
+      "text": "<p>Meer over ons aanbod </p>",
+      "_width": "auto",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_flexShrink": "0"
+    }
+  },
+  {
+    "id": "g2f044",
+    "name": "icon",
+    "parent": "iumzgr",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/icon-11_4205.svg",
+          "url": "../../assets/icon-11_4205.svg"
+        },
+        "height": "16"
+      },
+      "_widthMax": "16px",
+      "_flexShrink": "0",
+      "_overflow": "hidden"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "iumzgr",
+    "name": "div",
+    "parent": "nge369",
+    "children": [
+      "rqmjei",
+      "g2f044"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "7.08",
+      "_columnGap": "7.08",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "9",
+        "right": "20",
+        "bottom": "11",
+        "left": "20"
+      },
+      "_margin": {
+        "top": "16"
+      },
+      "_width": "100%",
+      "_widthMax": "234px",
+      "_background": {
+        "color": {
+          "raw": "#0E8BCC"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      },
+      "_direction:tablet_portrait": "row",
+      "_rowGap:tablet_portrait": "7.08",
+      "_columnGap:tablet_portrait": "7.08",
+      "_alignItems:tablet_portrait": "flex-start"
+    }
+  },
+  {
+    "id": "nge369",
+    "name": "div",
+    "parent": "qz6lsg",
+    "children": [
+      "roa9ve",
+      "1wa52g",
+      "iumzgr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "264",
+        "right": "32",
+        "bottom": "32",
+        "left": "32"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "0",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#0D1B2ABF"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#00000000"
+            },
+            "stop": "50%"
+          },
+          {
+            "id": "g2",
+            "color": {
+              "raw": "#00000000"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_overflow": "hidden",
+      "_background": {
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "url": "../../assets/image-fill-e9a7fc51013d1b0e52c4.png",
+          "full": "../../assets/image-fill-e9a7fc51013d1b0e52c4.png"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat"
+      }
+    }
+  },
+  {
+    "id": "ynezo5",
+    "name": "text",
+    "parent": "ss0fo6",
+    "children": [],
+    "settings": {
+      "text": "<p>Inspiratie</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "1.600000023841858px",
+        "color": {
+          "raw": "#FFFFFFB2"
+        },
+        "text-align": "left",
+        "text-transform": "uppercase"
+      }
+    }
+  },
+  {
+    "id": "ss0fo6",
+    "name": "div",
+    "parent": "pwy5js",
+    "children": [
+      "ynezo5"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_width": "100%",
+      "_widthMax": "775px"
+    }
+  },
+  {
+    "id": "zx6wtt",
+    "name": "heading",
+    "parent": "pwy5js",
+    "children": [],
+    "settings": {
+      "text": "Bekijk onze projecten",
+      "tag": "h2",
+      "_margin": {
+        "top": "8"
+      },
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "32px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "b0kdkd",
+    "name": "text",
+    "parent": "ak537f",
+    "children": [],
+    "settings": {
+      "text": "<p>Fotogalerij </p>",
+      "_width": "auto",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#0D1B2A"
+        },
+        "text-align": "left"
+      },
+      "_flexShrink": "0"
+    }
+  },
+  {
+    "id": "pvig5k",
+    "name": "icon",
+    "parent": "ak537f",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/icon-11_4216.svg",
+          "url": "../../assets/icon-11_4216.svg"
+        },
+        "height": "16"
+      },
+      "_widthMax": "16px",
+      "_flexShrink": "0",
+      "_overflow": "hidden"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "ak537f",
+    "name": "div",
+    "parent": "pwy5js",
+    "children": [
+      "b0kdkd",
+      "pvig5k"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "7.22",
+      "_columnGap": "7.22",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "9",
+        "right": "20",
+        "bottom": "11",
+        "left": "20"
+      },
+      "_margin": {
+        "top": "16"
+      },
+      "_width": "100%",
+      "_widthMax": "147px",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      },
+      "_direction:tablet_portrait": "row",
+      "_rowGap:tablet_portrait": "7.22",
+      "_columnGap:tablet_portrait": "7.22",
+      "_alignItems:tablet_portrait": "flex-start"
+    }
+  },
+  {
+    "id": "pwy5js",
+    "name": "div",
+    "parent": "qz6lsg",
+    "children": [
+      "ss0fo6",
+      "zx6wtt",
+      "ak537f"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "264",
+        "right": "32",
+        "bottom": "32",
+        "left": "32"
+      },
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "0",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#0D1B2ABF"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#00000000"
+            },
+            "stop": "50%"
+          },
+          {
+            "id": "g2",
+            "color": {
+              "raw": "#00000000"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_overflow": "hidden",
+      "_background": {
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "url": "../../assets/image-fill-60fcd1444ee92a3135f8.png",
+          "full": "../../assets/image-fill-60fcd1444ee92a3135f8.png"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat"
+      }
+    }
+  },
+  {
+    "id": "qz6lsg",
+    "name": "div",
+    "parent": "2b3shb",
+    "children": [
+      "nge369",
+      "pwy5js"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(2, 1fr)",
+      "_gridGap": "0",
+      "_alignItemsGrid": "stretch",
+      "_width": "100%",
+      "_gridTemplateColumns:tablet_portrait": "1fr",
+      "_gridGap:tablet_portrait": "40",
+      "_gridTemplateColumns:mobile_landscape": "1fr",
+      "_gridTemplateColumns:mobile_portrait": "1fr"
+    }
+  },
+  {
+    "id": "2b3shb",
+    "name": "container",
+    "parent": "971rty",
+    "children": [
+      "qz6lsg"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1280px"
+    }
+  },
+  {
+    "id": "971rty",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "2b3shb"
+    ],
+    "settings": {
+      "_padding": {
+        "right": "16",
+        "left": "16"
+      }
+    }
+  }
+]

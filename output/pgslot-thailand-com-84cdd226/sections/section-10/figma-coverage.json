@@ -504,42 +504,48 @@
       "parentId": "202:137",
       "name": "Group 1261154072 1",
       "type": "RECTANGLE",
-      "status": "represented"
+      "status": "covered-by-export",
+      "representedBy": "202:137"
     },
     {
       "nodeId": "202:139",
       "parentId": "202:137",
       "name": "Group 1261154070",
       "type": "GROUP",
-      "status": "represented"
+      "status": "covered-by-export",
+      "representedBy": "202:137"
     },
     {
       "nodeId": "202:140",
       "parentId": "202:139",
       "name": "image 30 copy 1",
       "type": "RECTANGLE",
-      "status": "represented"
+      "status": "covered-by-export",
+      "representedBy": "202:137"
     },
     {
       "nodeId": "202:141",
       "parentId": "202:139",
       "name": "Rectangle 5766",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "covered-by-export",
+      "representedBy": "202:137"
     },
     {
       "nodeId": "202:142",
       "parentId": "202:139",
       "name": "image 25",
       "type": "RECTANGLE",
-      "status": "represented"
+      "status": "covered-by-export",
+      "representedBy": "202:137"
     },
     {
       "nodeId": "202:143",
       "parentId": "202:137",
       "name": "Mask group",
       "type": "GROUP",
-      "status": "represented"
+      "status": "covered-by-export",
+      "representedBy": "202:137"
     },
     {
       "nodeId": "202:144",
@@ -547,7 +553,7 @@
       "name": "Group 1261154072 2",
       "type": "RECTANGLE",
       "status": "covered-by-export",
-      "representedBy": "202:143"
+      "representedBy": "202:137"
     },
     {
       "nodeId": "202:145",
@@ -555,7 +561,7 @@
       "name": "Group 1261154073",
       "type": "GROUP",
       "status": "covered-by-export",
-      "representedBy": "202:143"
+      "representedBy": "202:137"
     },
     {
       "nodeId": "202:146",
@@ -563,7 +569,7 @@
       "name": "image 30 copy 1",
       "type": "RECTANGLE",
       "status": "covered-by-export",
-      "representedBy": "202:143"
+      "representedBy": "202:137"
     },
     {
       "nodeId": "202:147",
@@ -571,7 +577,7 @@
       "name": "Rectangle 5766",
       "type": "RECTANGLE",
       "status": "covered-by-export",
-      "representedBy": "202:143"
+      "representedBy": "202:137"
     },
     {
       "nodeId": "202:148",
@@ -579,15 +585,15 @@
       "name": "image 25",
       "type": "RECTANGLE",
       "status": "covered-by-export",
-      "representedBy": "202:143"
+      "representedBy": "202:137"
     }
   ],
   "summary": {
-    "represented": 13,
-    "covered-by-export": 60,
+    "represented": 8,
+    "covered-by-export": 66,
     "button-label": 0,
     "absorbed-paint": 0,
     "hidden": 0,
-    "unrepresented": 1
+    "unrepresented": 0
   }
 }

@@ -1,0 +1,489 @@
+{
+  "version": 1,
+  "sourceHash": "95bf71411921c49ca07ce14a64395a9b66ea6e0e976cbcde2ec5e95cdffbbae5",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "Recreate attached design (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4356",
+      "parentId": "scope",
+      "name": "Section",
+      "type": "FRAME",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "11:4357",
+      "parentId": "11:4356",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4358",
+      "parentId": "11:4357",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4359",
+      "parentId": "11:4358",
+      "name": "Heading 2",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4360",
+      "parentId": "11:4359",
+      "name": "Wat klanten zeggen",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4361",
+      "parentId": "11:4358",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4362",
+      "parentId": "11:4361",
+      "name": "Direct en eerlijk, daar staan we voor bekend",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4363",
+      "parentId": "11:4357",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4364",
+      "parentId": "11:4363",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4365",
+      "parentId": "11:4364",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4366",
+      "parentId": "11:4365",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4365"
+    },
+    {
+      "nodeId": "11:4367",
+      "parentId": "11:4364",
+      "name": "Stars",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4368",
+      "parentId": "11:4367",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4367"
+    },
+    {
+      "nodeId": "11:4369",
+      "parentId": "11:4368",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4367"
+    },
+    {
+      "nodeId": "11:4370",
+      "parentId": "11:4367",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4367"
+    },
+    {
+      "nodeId": "11:4371",
+      "parentId": "11:4370",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4367"
+    },
+    {
+      "nodeId": "11:4372",
+      "parentId": "11:4367",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4367"
+    },
+    {
+      "nodeId": "11:4373",
+      "parentId": "11:4372",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4367"
+    },
+    {
+      "nodeId": "11:4374",
+      "parentId": "11:4367",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4367"
+    },
+    {
+      "nodeId": "11:4375",
+      "parentId": "11:4374",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4367"
+    },
+    {
+      "nodeId": "11:4376",
+      "parentId": "11:4367",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4367"
+    },
+    {
+      "nodeId": "11:4377",
+      "parentId": "11:4376",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4367"
+    },
+    {
+      "nodeId": "11:4378",
+      "parentId": "11:4364",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4379",
+      "parentId": "11:4378",
+      "name": "\"Goede prijs en geen geouwehoer.\"",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4380",
+      "parentId": "11:4364",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4381",
+      "parentId": "11:4380",
+      "name": "— Jan uit Rotterdam",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4382",
+      "parentId": "11:4363",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4383",
+      "parentId": "11:4382",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4384",
+      "parentId": "11:4383",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4383"
+    },
+    {
+      "nodeId": "11:4385",
+      "parentId": "11:4382",
+      "name": "Stars",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4386",
+      "parentId": "11:4385",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4385"
+    },
+    {
+      "nodeId": "11:4387",
+      "parentId": "11:4386",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4385"
+    },
+    {
+      "nodeId": "11:4388",
+      "parentId": "11:4385",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4385"
+    },
+    {
+      "nodeId": "11:4389",
+      "parentId": "11:4388",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4385"
+    },
+    {
+      "nodeId": "11:4390",
+      "parentId": "11:4385",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4385"
+    },
+    {
+      "nodeId": "11:4391",
+      "parentId": "11:4390",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4385"
+    },
+    {
+      "nodeId": "11:4392",
+      "parentId": "11:4385",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4385"
+    },
+    {
+      "nodeId": "11:4393",
+      "parentId": "11:4392",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4385"
+    },
+    {
+      "nodeId": "11:4394",
+      "parentId": "11:4385",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4385"
+    },
+    {
+      "nodeId": "11:4395",
+      "parentId": "11:4394",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4385"
+    },
+    {
+      "nodeId": "11:4396",
+      "parentId": "11:4382",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4397",
+      "parentId": "11:4396",
+      "name": "\"Fijne vakmansen en goed advies.\"",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4398",
+      "parentId": "11:4382",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4399",
+      "parentId": "11:4398",
+      "name": "— Maria uit Den Haag",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4400",
+      "parentId": "11:4363",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4401",
+      "parentId": "11:4400",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4402",
+      "parentId": "11:4401",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4401"
+    },
+    {
+      "nodeId": "11:4403",
+      "parentId": "11:4400",
+      "name": "Stars",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4404",
+      "parentId": "11:4403",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4403"
+    },
+    {
+      "nodeId": "11:4405",
+      "parentId": "11:4404",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4403"
+    },
+    {
+      "nodeId": "11:4406",
+      "parentId": "11:4403",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4403"
+    },
+    {
+      "nodeId": "11:4407",
+      "parentId": "11:4406",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4403"
+    },
+    {
+      "nodeId": "11:4408",
+      "parentId": "11:4403",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4403"
+    },
+    {
+      "nodeId": "11:4409",
+      "parentId": "11:4408",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4403"
+    },
+    {
+      "nodeId": "11:4410",
+      "parentId": "11:4403",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4403"
+    },
+    {
+      "nodeId": "11:4411",
+      "parentId": "11:4410",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4403"
+    },
+    {
+      "nodeId": "11:4412",
+      "parentId": "11:4403",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4403"
+    },
+    {
+      "nodeId": "11:4413",
+      "parentId": "11:4412",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4403"
+    },
+    {
+      "nodeId": "11:4414",
+      "parentId": "11:4400",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4415",
+      "parentId": "11:4414",
+      "name": "\"Alles wordt geregeld.\"",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4416",
+      "parentId": "11:4400",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4417",
+      "parentId": "11:4416",
+      "name": "— Peter uit Delft",
+      "type": "TEXT",
+      "status": "represented"
+    }
+  ],
+  "summary": {
+    "represented": 29,
+    "covered-by-export": 33,
+    "button-label": 0,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 1
+  }
+}

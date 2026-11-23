@@ -1,0 +1,1619 @@
+[
+  {
+    "id": "yrprrr",
+    "name": "heading",
+    "parent": "73y1qz",
+    "children": [],
+    "settings": {
+      "text": "Onze diensten",
+      "tag": "h2",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "30px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#0D1B2A"
+        },
+        "text-align": "center"
+      },
+      "_alignSelf": "center"
+    }
+  },
+  {
+    "id": "73y1qz",
+    "name": "div",
+    "parent": "n2kbgx",
+    "children": [
+      "yrprrr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "center",
+      "_justifyContent": "center",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0"
+      },
+      "_width": "100%",
+      "_heightMin": "30",
+      "_padding:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_padding:mobile_landscape": {
+        "right": "0",
+        "left": "0"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "614bmd",
+    "name": "text",
+    "parent": "fr5p9u",
+    "children": [],
+    "settings": {
+      "text": "<p>Compleet aanbod voor uw vloeren en raamdecoratie, altijd op maat</p>",
+      "_width": "100%",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#6A7282"
+        },
+        "text-align": "center"
+      },
+      "_alignSelf": "center"
+    }
+  },
+  {
+    "id": "fr5p9u",
+    "name": "div",
+    "parent": "n2kbgx",
+    "children": [
+      "614bmd"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "361.87",
+        "bottom": "1",
+        "left": "362.13"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "n2kbgx",
+    "name": "div",
+    "parent": "0tmav1",
+    "children": [
+      "73y1qz",
+      "fr5p9u"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "8",
+      "_columnGap": "8",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_heightMin": "62",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "ucl2vn",
+    "name": "image",
+    "parent": "0m60nc",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-vloeren-op-maat-11_4283.png",
+        "url": "../../assets/image-vloeren-op-maat-11_4283.png"
+      },
+      "_width": "100%",
+      "_overflow": "hidden",
+      "_alignSelf": "stretch"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "0m60nc",
+    "name": "div",
+    "parent": "p1umip",
+    "children": [
+      "ucl2vn"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_heightMin": "208",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_overflow": "hidden",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "a0gi6t",
+    "name": "heading",
+    "parent": "y7f7vb",
+    "children": [],
+    "settings": {
+      "text": "Vloeren op maat",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "18px",
+        "font-weight": "600",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#101828"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "cm9f2w",
+    "name": "text",
+    "parent": "y710vg",
+    "children": [],
+    "settings": {
+      "text": "<p>Van tapijt tot laminaat en PVC — wij maken maatwerk vloeren voor woningen, hotels en bedrijfspanden.</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "26px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#6A7282"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "y710vg",
+    "name": "div",
+    "parent": "y7f7vb",
+    "children": [
+      "cm9f2w"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "8"
+      },
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "l6d4wr",
+    "name": "text",
+    "parent": "e6mn0t",
+    "children": [],
+    "settings": {
+      "text": "<p>Tapijt</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "e6mn0t",
+    "name": "div",
+    "parent": "ydpe9v",
+    "children": [
+      "l6d4wr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "3ufvhw",
+    "name": "text",
+    "parent": "orbmtp",
+    "children": [],
+    "settings": {
+      "text": "<p>Laminaat</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "orbmtp",
+    "name": "div",
+    "parent": "ydpe9v",
+    "children": [
+      "3ufvhw"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "2wk8dm",
+    "name": "text",
+    "parent": "trfefa",
+    "children": [],
+    "settings": {
+      "text": "<p>PVC</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "trfefa",
+    "name": "div",
+    "parent": "ydpe9v",
+    "children": [
+      "2wk8dm"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "9h1bcr",
+    "name": "text",
+    "parent": "31ryea",
+    "children": [],
+    "settings": {
+      "text": "<p>Vinyl</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "31ryea",
+    "name": "div",
+    "parent": "ydpe9v",
+    "children": [
+      "9h1bcr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "ydpe9v",
+    "name": "div",
+    "parent": "y7f7vb",
+    "children": [
+      "e6mn0t",
+      "orbmtp",
+      "trfefa",
+      "31ryea"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "6",
+      "_columnGap": "6",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "16"
+      },
+      "_width": "100%",
+      "_heightMin": "114",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0"
+    }
+  },
+  {
+    "id": "yujz7v",
+    "name": "text",
+    "parent": "c6l8ym",
+    "children": [],
+    "settings": {
+      "text": "<p>Meer informatie </p>",
+      "_width": "auto",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#0E8BCC"
+        },
+        "text-align": "left"
+      },
+      "_flexShrink": "0"
+    }
+  },
+  {
+    "id": "j1ju9z",
+    "name": "icon",
+    "parent": "c6l8ym",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/icon-11_4304.svg",
+          "url": "../../assets/icon-11_4304.svg"
+        },
+        "height": "16"
+      },
+      "_widthMax": "16px",
+      "_flexShrink": "0",
+      "_overflow": "hidden"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "c6l8ym",
+    "name": "div",
+    "parent": "y7f7vb",
+    "children": [
+      "yujz7v",
+      "j1ju9z"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "5.8",
+      "_columnGap": "5.8",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "20"
+      },
+      "_width": "100%",
+      "_widthMax": "143px",
+      "_direction:tablet_portrait": "row",
+      "_rowGap:tablet_portrait": "5.8",
+      "_columnGap:tablet_portrait": "5.8",
+      "_alignItems:tablet_portrait": "flex-start"
+    }
+  },
+  {
+    "id": "y7f7vb",
+    "name": "div",
+    "parent": "p1umip",
+    "children": [
+      "a0gi6t",
+      "y710vg",
+      "ydpe9v",
+      "c6l8ym"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_width": "100%",
+      "_heightMin": "335",
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "p1umip",
+    "name": "div",
+    "parent": "ys1nuj",
+    "children": [
+      "0m60nc",
+      "y7f7vb"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "1",
+        "right": "1",
+        "bottom": "1",
+        "left": "1"
+      },
+      "_heightMin": "545",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "16px",
+          "right": "16px",
+          "bottom": "16px",
+          "left": "16px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#F3F4F6"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_overflow": "hidden"
+    }
+  },
+  {
+    "id": "r4qogs",
+    "name": "image",
+    "parent": "04k62m",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-raamdecoratie-11_4308.png",
+        "url": "../../assets/image-raamdecoratie-11_4308.png"
+      },
+      "_width": "100%",
+      "_overflow": "hidden",
+      "_alignSelf": "stretch"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "04k62m",
+    "name": "div",
+    "parent": "tx4fwr",
+    "children": [
+      "r4qogs"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_heightMin": "208",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_overflow": "hidden",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "exkjd4",
+    "name": "heading",
+    "parent": "1zaxzp",
+    "children": [],
+    "settings": {
+      "text": "Raamdecoratie",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "18px",
+        "font-weight": "600",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#101828"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "by0ghu",
+    "name": "text",
+    "parent": "b0zv3a",
+    "children": [],
+    "settings": {
+      "text": "<p>Gordijnen, vitrages en luxaflex op maat gemaakt voor elk interieur.</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "26px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#6A7282"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "b0zv3a",
+    "name": "div",
+    "parent": "1zaxzp",
+    "children": [
+      "by0ghu"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "8"
+      },
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "bke1zb",
+    "name": "text",
+    "parent": "2lin85",
+    "children": [],
+    "settings": {
+      "text": "<p>Gordijnen</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "2lin85",
+    "name": "div",
+    "parent": "ewtre0",
+    "children": [
+      "bke1zb"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "6k4pop",
+    "name": "text",
+    "parent": "ir1dzt",
+    "children": [],
+    "settings": {
+      "text": "<p>Vitrages</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "ir1dzt",
+    "name": "div",
+    "parent": "ewtre0",
+    "children": [
+      "6k4pop"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "zh1ybj",
+    "name": "text",
+    "parent": "zr682d",
+    "children": [],
+    "settings": {
+      "text": "<p>Luxaflex</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "zr682d",
+    "name": "div",
+    "parent": "ewtre0",
+    "children": [
+      "zh1ybj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "yy1s0g",
+    "name": "text",
+    "parent": "szas67",
+    "children": [],
+    "settings": {
+      "text": "<p>Jaloezieën</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "szas67",
+    "name": "div",
+    "parent": "ewtre0",
+    "children": [
+      "yy1s0g"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "ewtre0",
+    "name": "div",
+    "parent": "1zaxzp",
+    "children": [
+      "2lin85",
+      "ir1dzt",
+      "zr682d",
+      "szas67"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "6",
+      "_columnGap": "6",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "16"
+      },
+      "_width": "100%",
+      "_heightMin": "114",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0"
+    }
+  },
+  {
+    "id": "d56l2c",
+    "name": "text",
+    "parent": "lhtbt9",
+    "children": [],
+    "settings": {
+      "text": "<p>Meer informatie </p>",
+      "_width": "auto",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#0E8BCC"
+        },
+        "text-align": "left"
+      },
+      "_flexShrink": "0"
+    }
+  },
+  {
+    "id": "cwrvky",
+    "name": "icon",
+    "parent": "lhtbt9",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/icon-11_4304.svg",
+          "url": "../../assets/icon-11_4304.svg"
+        },
+        "height": "16"
+      },
+      "_widthMax": "16px",
+      "_flexShrink": "0",
+      "_overflow": "hidden"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "lhtbt9",
+    "name": "div",
+    "parent": "1zaxzp",
+    "children": [
+      "d56l2c",
+      "cwrvky"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "5.79",
+      "_columnGap": "5.79",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0.01",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "20"
+      },
+      "_width": "100%",
+      "_widthMax": "143px",
+      "_direction:tablet_portrait": "row",
+      "_rowGap:tablet_portrait": "5.79",
+      "_columnGap:tablet_portrait": "5.79",
+      "_alignItems:tablet_portrait": "flex-start"
+    }
+  },
+  {
+    "id": "1zaxzp",
+    "name": "div",
+    "parent": "tx4fwr",
+    "children": [
+      "exkjd4",
+      "b0zv3a",
+      "ewtre0",
+      "lhtbt9"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_width": "100%",
+      "_heightMin": "309",
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "tx4fwr",
+    "name": "div",
+    "parent": "ys1nuj",
+    "children": [
+      "04k62m",
+      "1zaxzp"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "1",
+        "right": "1",
+        "bottom": "1",
+        "left": "1"
+      },
+      "_heightMin": "545",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "16px",
+          "right": "16px",
+          "bottom": "16px",
+          "left": "16px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#F3F4F6"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_overflow": "hidden"
+    }
+  },
+  {
+    "id": "4d8l9h",
+    "name": "image",
+    "parent": "f1gup8",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-advies-projecten-11_4333.png",
+        "url": "../../assets/image-advies-projecten-11_4333.png"
+      },
+      "_width": "100%",
+      "_overflow": "hidden",
+      "_alignSelf": "stretch"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "f1gup8",
+    "name": "div",
+    "parent": "clwp0l",
+    "children": [
+      "4d8l9h"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_heightMin": "208",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_overflow": "hidden",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "rr2hqi",
+    "name": "heading",
+    "parent": "1zv2v4",
+    "children": [],
+    "settings": {
+      "text": "Advies &amp; Projecten",
+      "tag": "h3",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "18px",
+        "font-weight": "600",
+        "line-height": "27px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#101828"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "11czpb",
+    "name": "text",
+    "parent": "mubx1k",
+    "children": [],
+    "settings": {
+      "text": "<p>Bezoek onze showroom voor persoonlijk advies en ontdek wat wij voor uw project kunnen betekenen.</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "26px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#6A7282"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "mubx1k",
+    "name": "div",
+    "parent": "1zv2v4",
+    "children": [
+      "11czpb"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "8"
+      },
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "yxttgg",
+    "name": "text",
+    "parent": "bn1lr3",
+    "children": [],
+    "settings": {
+      "text": "<p>Showroom bezoek</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "bn1lr3",
+    "name": "div",
+    "parent": "hsax0u",
+    "children": [
+      "yxttgg"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "uwgnc7",
+    "name": "text",
+    "parent": "l18vwr",
+    "children": [],
+    "settings": {
+      "text": "<p>Gratis opmeten</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "l18vwr",
+    "name": "div",
+    "parent": "hsax0u",
+    "children": [
+      "uwgnc7"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "bj19cf",
+    "name": "text",
+    "parent": "sa2rw2",
+    "children": [],
+    "settings": {
+      "text": "<p>Maatwerk oplossingen</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "sa2rw2",
+    "name": "div",
+    "parent": "hsax0u",
+    "children": [
+      "bj19cf"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "f7im7e",
+    "name": "text",
+    "parent": "d8jj6r",
+    "children": [],
+    "settings": {
+      "text": "<p>Garantie</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "d8jj6r",
+    "name": "div",
+    "parent": "hsax0u",
+    "children": [
+      "f7im7e"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "14",
+        "bottom": "1",
+        "left": "14"
+      },
+      "_width": "100%",
+      "_heightMin": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "hsax0u",
+    "name": "div",
+    "parent": "1zv2v4",
+    "children": [
+      "bn1lr3",
+      "l18vwr",
+      "sa2rw2",
+      "d8jj6r"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "6",
+      "_columnGap": "6",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "16"
+      },
+      "_width": "100%",
+      "_heightMin": "114",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0"
+    }
+  },
+  {
+    "id": "g1d83c",
+    "name": "text",
+    "parent": "mbunyj",
+    "children": [],
+    "settings": {
+      "text": "<p>Meer informatie </p>",
+      "_width": "auto",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#0E8BCC"
+        },
+        "text-align": "left"
+      },
+      "_flexShrink": "0"
+    }
+  },
+  {
+    "id": "z1q3su",
+    "name": "icon",
+    "parent": "mbunyj",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/icon-11_4304.svg",
+          "url": "../../assets/icon-11_4304.svg"
+        },
+        "height": "16"
+      },
+      "_widthMax": "16px",
+      "_flexShrink": "0",
+      "_overflow": "hidden"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "mbunyj",
+    "name": "div",
+    "parent": "1zv2v4",
+    "children": [
+      "g1d83c",
+      "z1q3su"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "5.8",
+      "_columnGap": "5.8",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "20"
+      },
+      "_width": "100%",
+      "_widthMax": "143px",
+      "_direction:tablet_portrait": "row",
+      "_rowGap:tablet_portrait": "5.8",
+      "_columnGap:tablet_portrait": "5.8",
+      "_alignItems:tablet_portrait": "flex-start"
+    }
+  },
+  {
+    "id": "1zv2v4",
+    "name": "div",
+    "parent": "clwp0l",
+    "children": [
+      "rr2hqi",
+      "mubx1k",
+      "hsax0u",
+      "mbunyj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "24",
+        "right": "24",
+        "bottom": "24",
+        "left": "24"
+      },
+      "_width": "100%",
+      "_heightMin": "335",
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "clwp0l",
+    "name": "div",
+    "parent": "ys1nuj",
+    "children": [
+      "f1gup8",
+      "1zv2v4"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "1",
+        "right": "1",
+        "bottom": "1",
+        "left": "1"
+      },
+      "_heightMin": "545",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "16px",
+          "right": "16px",
+          "bottom": "16px",
+          "left": "16px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#F3F4F6"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_overflow": "hidden"
+    }
+  },
+  {
+    "id": "ys1nuj",
+    "name": "div",
+    "parent": "0tmav1",
+    "children": [
+      "p1umip",
+      "tx4fwr",
+      "clwp0l"
+    ],
+    "settings": {
+      "_display": "grid",
+      "_gridTemplateColumns": "repeat(3, 1fr)",
+      "_gridGap": "24",
+      "_alignItemsGrid": "stretch",
+      "_width": "100%",
+      "_heightMin": "545",
+      "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
+      "_gridGap:tablet_portrait": "24",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_gridTemplateColumns:mobile_landscape": "1fr",
+      "_gridTemplateColumns:mobile_portrait": "1fr",
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "0tmav1",
+    "name": "div",
+    "parent": "o77v47",
+    "children": [
+      "n2kbgx",
+      "ys1nuj"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "48",
+      "_columnGap": "48",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "right": "24",
+        "left": "24"
+      },
+      "_width": "100%",
+      "_heightMin": "655",
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "o77v47",
+    "name": "container",
+    "parent": "8fexnu",
+    "children": [
+      "0tmav1"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1280px"
+    }
+  },
+  {
+    "id": "8fexnu",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "o77v47"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "80",
+        "right": "16",
+        "left": "16"
+      },
+      "_heightMin": "815",
+      "_background": {
+        "color": {
+          "raw": "#F9FAFB"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "top": "40"
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_padding:mobile_landscape": {
+        "top": "40"
+      },
+      "_alignSelf": "stretch"
+    }
+  }
+]

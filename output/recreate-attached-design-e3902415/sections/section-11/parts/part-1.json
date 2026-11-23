@@ -1,0 +1,688 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "footer-section",
+      "children": [
+        {
+          "type": "column",
+          "id": "footer",
+          "figmaNodeId": "11:4435",
+          "background": {
+            "color": "#0D1B2A"
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "footer-container",
+              "figmaNodeId": "11:4436",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "footer-main",
+                  "figmaNodeId": "11:4437",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "footer-section-row-8",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "business-information",
+                          "figmaNodeId": "11:4438",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "footer-section-column-2",
+                              "children": [
+                                {
+                                  "type": "row",
+                                  "id": "logo-container",
+                                  "figmaNodeId": "11:4439",
+                                  "children": [
+                                    {
+                                      "type": "image",
+                                      "id": "tapijtschuur-logo",
+                                      "figmaNodeId": "11:4440",
+                                      "asset": {
+                                        "nodeId": "11:4440",
+                                        "kind": "image"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "business-description-container",
+                                  "figmaNodeId": "11:4441",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "business-description",
+                                      "figmaNodeId": "11:4442",
+                                      "text": "Vakmanschap in vloeren en raamdecoratie sinds 1995"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "contact-details",
+                                  "figmaNodeId": "11:4443",
+                                  "children": [
+                                    {
+                                      "type": "column",
+                                      "id": "phone-link",
+                                      "figmaNodeId": "11:4444",
+                                      "children": [
+                                        {
+                                          "type": "row",
+                                          "id": "footer-section-row-1",
+                                          "children": [
+                                            {
+                                              "type": "image",
+                                              "id": "phone-icon",
+                                              "figmaNodeId": "11:4445",
+                                              "asset": {
+                                                "nodeId": "11:4445",
+                                                "kind": "svg"
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "phone-number",
+                                              "figmaNodeId": "11:4447",
+                                              "text": " 0317 – 413068"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "column",
+                                      "id": "email-link",
+                                      "figmaNodeId": "11:4448",
+                                      "children": [
+                                        {
+                                          "type": "row",
+                                          "id": "footer-section-row-2",
+                                          "children": [
+                                            {
+                                              "type": "image",
+                                              "id": "email-icon",
+                                              "figmaNodeId": "11:4449",
+                                              "asset": {
+                                                "nodeId": "11:4449",
+                                                "kind": "svg"
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "email-address",
+                                              "figmaNodeId": "11:4452",
+                                              "text": " info@tapijtschuur.nl"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "column",
+                                      "id": "address-container",
+                                      "figmaNodeId": "11:4453",
+                                      "children": [
+                                        {
+                                          "type": "row",
+                                          "id": "footer-section-row-3",
+                                          "children": [
+                                            {
+                                              "type": "image",
+                                              "id": "address-icon",
+                                              "figmaNodeId": "11:4454",
+                                              "asset": {
+                                                "nodeId": "11:4454",
+                                                "kind": "svg"
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "id": "business-address",
+                                              "figmaNodeId": "11:4457",
+                                              "text": " Harnjesweg 29a, 6706 AR Wageningen"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "column",
+                                      "id": "opening-hours",
+                                      "figmaNodeId": "11:4458",
+                                      "children": [
+                                        {
+                                          "type": "column",
+                                          "id": "footer-section-column-1",
+                                          "children": [
+                                            {
+                                              "type": "column",
+                                              "id": "opening-hours-label-container",
+                                              "figmaNodeId": "11:4459",
+                                              "children": [
+                                                {
+                                                  "type": "row",
+                                                  "id": "footer-section-row-4",
+                                                  "children": [
+                                                    {
+                                                      "type": "image",
+                                                      "id": "opening-hours-icon",
+                                                      "figmaNodeId": "11:4460",
+                                                      "asset": {
+                                                        "nodeId": "11:4460",
+                                                        "kind": "svg"
+                                                      }
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "id": "opening-hours-label",
+                                                      "figmaNodeId": "11:4463",
+                                                      "text": " Openingstijden"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "column",
+                                              "id": "weekday-hours-container",
+                                              "figmaNodeId": "11:4464",
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "id": "weekday-hours",
+                                                  "figmaNodeId": "11:4465",
+                                                  "text": "Ma – Do: 10:00–12:30 & 13:30–17:00"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "column",
+                                              "id": "saturday-hours-container",
+                                              "figmaNodeId": "11:4466",
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "id": "saturday-hours",
+                                                  "figmaNodeId": "11:4467",
+                                                  "text": "Zaterdag: 10:00–17:00"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "column",
+                                              "id": "closed-days-container",
+                                              "figmaNodeId": "11:4468",
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "id": "closed-days",
+                                                  "figmaNodeId": "11:4469",
+                                                  "text": "Vr & Zo: gesloten"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "main-menu-column",
+                          "figmaNodeId": "11:4470",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "main-menu-label-container",
+                              "figmaNodeId": "11:4471",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "main-menu-label",
+                                  "figmaNodeId": "11:4472",
+                                  "text": "Hoofdmenu"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "main-menu-list",
+                              "figmaNodeId": "11:4473",
+                              "component": {
+                                "kind": "navigation",
+                                "role": "menu"
+                              },
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "home-item",
+                                  "figmaNodeId": "11:4474",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "home-text",
+                                      "figmaNodeId": "11:4475",
+                                      "text": "Home"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "main-about-item",
+                                  "figmaNodeId": "11:4476",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "main-about-text",
+                                      "figmaNodeId": "11:4477",
+                                      "text": "Over ons"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "curtains-item",
+                                  "figmaNodeId": "11:4478",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "curtains-text",
+                                      "figmaNodeId": "11:4479",
+                                      "text": "Gordijnen"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "floors-item",
+                                  "figmaNodeId": "11:4480",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "floors-text",
+                                      "figmaNodeId": "11:4481",
+                                      "text": "Vloeren"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "stairs-item",
+                                  "figmaNodeId": "11:4482",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "stairs-text",
+                                      "figmaNodeId": "11:4483",
+                                      "text": "Trappen"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "screens-item",
+                                  "figmaNodeId": "11:4484",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "screens-text",
+                                      "figmaNodeId": "11:4485",
+                                      "text": "Horren"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "main-contact-item",
+                                  "figmaNodeId": "11:4486",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "main-contact-text",
+                                      "figmaNodeId": "11:4487",
+                                      "text": "Contact"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "general-column",
+                          "figmaNodeId": "11:4488",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "general-label-container",
+                              "figmaNodeId": "11:4489",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "general-label",
+                                  "figmaNodeId": "11:4490",
+                                  "text": "Algemeen"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "general-menu-list",
+                              "figmaNodeId": "11:4491",
+                              "component": {
+                                "kind": "navigation",
+                                "role": "menu"
+                              },
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "privacy-item",
+                                  "figmaNodeId": "11:4492",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "privacy-text",
+                                      "figmaNodeId": "11:4493",
+                                      "text": "Privacy"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "general-about-item",
+                                  "figmaNodeId": "11:4494",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "general-about-text",
+                                      "figmaNodeId": "11:4495",
+                                      "text": "Over ons"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "projects-item",
+                                  "figmaNodeId": "11:4496",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "projects-text",
+                                      "figmaNodeId": "11:4497",
+                                      "text": "Projecten"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "reviews-item",
+                                  "figmaNodeId": "11:4498",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "reviews-text",
+                                      "figmaNodeId": "11:4499",
+                                      "text": "Reviews"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "quote-item",
+                                  "figmaNodeId": "11:4500",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "quote-text",
+                                      "figmaNodeId": "11:4501",
+                                      "text": "Offerte aanvragen"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "general-contact-item",
+                                  "figmaNodeId": "11:4502",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "general-contact-text",
+                                      "figmaNodeId": "11:4503",
+                                      "text": "Contact"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "social-and-useful-links",
+                          "figmaNodeId": "11:4504",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "footer-section-column-3",
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "social-label-container",
+                                  "figmaNodeId": "11:4505",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "social-label",
+                                      "figmaNodeId": "11:4506",
+                                      "text": "Volg ons"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "image",
+                                  "id": "social-links-graphic",
+                                  "figmaNodeId": "11:4507",
+                                  "asset": {
+                                    "nodeId": "11:4507",
+                                    "kind": "svg"
+                                  }
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "useful-links-label-container",
+                                  "figmaNodeId": "11:4521",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "useful-links-label",
+                                      "figmaNodeId": "11:4522",
+                                      "text": "Handige links"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "useful-links-list",
+                                  "figmaNodeId": "11:4523",
+                                  "component": {
+                                    "kind": "navigation",
+                                    "role": "menu"
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "column",
+                                      "id": "custom-floors-item",
+                                      "figmaNodeId": "11:4524",
+                                      "children": [
+                                        {
+                                          "type": "column",
+                                          "id": "custom-floors-link",
+                                          "figmaNodeId": "11:4525",
+                                          "children": [
+                                            {
+                                              "type": "row",
+                                              "id": "footer-section-row-5",
+                                              "children": [
+                                                {
+                                                  "type": "image",
+                                                  "id": "custom-floors-chevron",
+                                                  "figmaNodeId": "11:4526",
+                                                  "asset": {
+                                                    "nodeId": "11:4526",
+                                                    "kind": "svg"
+                                                  }
+                                                },
+                                                {
+                                                  "type": "text",
+                                                  "id": "custom-floors-text",
+                                                  "figmaNodeId": "11:4528",
+                                                  "text": "Maatwerk vloeren Wageningen"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "column",
+                                      "id": "commercial-projects-item",
+                                      "figmaNodeId": "11:4529",
+                                      "children": [
+                                        {
+                                          "type": "column",
+                                          "id": "commercial-projects-link",
+                                          "figmaNodeId": "11:4530",
+                                          "children": [
+                                            {
+                                              "type": "row",
+                                              "id": "footer-section-row-6",
+                                              "children": [
+                                                {
+                                                  "type": "image",
+                                                  "id": "commercial-projects-chevron",
+                                                  "figmaNodeId": "11:4531",
+                                                  "asset": {
+                                                    "nodeId": "11:4531",
+                                                    "kind": "svg"
+                                                  }
+                                                },
+                                                {
+                                                  "type": "text",
+                                                  "id": "commercial-projects-text",
+                                                  "figmaNodeId": "11:4533",
+                                                  "text": "Projecten hotels & kantoren"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "column",
+                                      "id": "window-decoration-item",
+                                      "figmaNodeId": "11:4534",
+                                      "children": [
+                                        {
+                                          "type": "column",
+                                          "id": "window-decoration-link",
+                                          "figmaNodeId": "11:4535",
+                                          "children": [
+                                            {
+                                              "type": "row",
+                                              "id": "footer-section-row-7",
+                                              "children": [
+                                                {
+                                                  "type": "image",
+                                                  "id": "window-decoration-chevron",
+                                                  "figmaNodeId": "11:4536",
+                                                  "asset": {
+                                                    "nodeId": "11:4536",
+                                                    "kind": "svg"
+                                                  }
+                                                },
+                                                {
+                                                  "type": "text",
+                                                  "id": "window-decoration-text",
+                                                  "figmaNodeId": "11:4538",
+                                                  "text": "Raamdecoratie op maat"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "id": "footer-bottom",
+                  "figmaNodeId": "11:4539",
+                  "notes": [
+                    "Solid stroke #FFFFFF80, weight 1px, aligned inside; the schema cannot represent strokes."
+                  ],
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "copyright-container",
+                      "figmaNodeId": "11:4540",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "copyright-text",
+                          "figmaNodeId": "11:4541",
+                          "text": "© 2026 Tapijtschuur. Alle rechten voorbehouden."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "website-credit-container",
+                      "figmaNodeId": "11:4542",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "website-credit-text",
+                          "figmaNodeId": "11:4543",
+                          "text": "Website door Cherry Marketing"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Link destinations are not supplied."
+  ]
+}

@@ -15,35 +15,36 @@
       "parentId": "scope",
       "name": "Group 1261154089",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:193",
       "parentId": "202:192",
       "name": "Rectangle 5741",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "absorbed-paint",
+      "representedBy": "202:192"
     },
     {
       "nodeId": "202:194",
       "parentId": "202:192",
       "name": "Group 1261154088",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:195",
       "parentId": "202:194",
       "name": "Group 1261154084",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:196",
       "parentId": "202:195",
       "name": "Group 1261153951",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:197",
@@ -78,7 +79,8 @@
       "parentId": "202:200",
       "name": "Contact us",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:200"
     },
     {
       "nodeId": "202:202",
@@ -151,11 +153,11 @@
     }
   ],
   "summary": {
-    "represented": 9,
+    "represented": 12,
     "covered-by-export": 6,
-    "button-label": 0,
-    "absorbed-paint": 0,
+    "button-label": 1,
+    "absorbed-paint": 1,
     "hidden": 0,
-    "unrepresented": 5
+    "unrepresented": 0
   }
 }

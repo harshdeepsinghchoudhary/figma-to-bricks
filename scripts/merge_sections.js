@@ -16,6 +16,7 @@ import { responsiveContent } from './responsive-content.js';
 import { applyFooterMenus } from './footer-menus.js';
 import { applyHeaderMenus } from './pipeline-menus.js';
 import { sectionGap } from './section-gap.js';
+import { pageSections } from './section-detect.js';
 import { annotateMenuContext } from './source-menu-context.js';
 
 const [frameDir, ...names] = process.argv.slice(2).filter((a) => !a.startsWith("--"));
@@ -47,7 +48,7 @@ function loadGeo(frameDir) {
     if (n.id && b) { box.set(n.id, { x: b.x, y: b.y, w: b.width, h: b.height }); top.set(n.id, topId); }
     for (const c of n.children || []) walk(c, topId);
   })(root, null);
-  for (const c of root.children || []) (function walk(n) { top.set(n.id, c.id); for (const k of n.children || []) walk(k); })(c);
+  for (const c of pageSections(root)) (function walk(n) { top.set(n.id, c.id); for (const k of n.children || []) walk(k); })(c);
   return { box, top, rootBox: box.get(root.id) || null };
 }
 const unionBox = (bs) => {

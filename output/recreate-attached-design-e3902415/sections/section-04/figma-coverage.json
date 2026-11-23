@@ -1,0 +1,375 @@
+{
+  "version": 1,
+  "sourceHash": "96008f91ffff55a0ee7f3dac8d30b91b8b8e1d76be1f3b0cb4abff5baef23d3b",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "Recreate attached design (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4148",
+      "parentId": "scope",
+      "name": "Section",
+      "type": "FRAME",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "11:4149",
+      "parentId": "11:4148",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4150",
+      "parentId": "11:4149",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4151",
+      "parentId": "11:4150",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4152",
+      "parentId": "11:4151",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4153",
+      "parentId": "11:4152",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4152"
+    },
+    {
+      "nodeId": "11:4154",
+      "parentId": "11:4153",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4152"
+    },
+    {
+      "nodeId": "11:4155",
+      "parentId": "11:4153",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4152"
+    },
+    {
+      "nodeId": "11:4156",
+      "parentId": "11:4153",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4152"
+    },
+    {
+      "nodeId": "11:4157",
+      "parentId": "11:4153",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4152"
+    },
+    {
+      "nodeId": "11:4158",
+      "parentId": "11:4151",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4159",
+      "parentId": "11:4158",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4160",
+      "parentId": "11:4159",
+      "name": "Maatwerk vloeren",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4161",
+      "parentId": "11:4158",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4162",
+      "parentId": "11:4161",
+      "name": "Op maat gemaakt voor elk project, van woning tot h",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4163",
+      "parentId": "11:4150",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4164",
+      "parentId": "11:4163",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4165",
+      "parentId": "11:4164",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4164"
+    },
+    {
+      "nodeId": "11:4166",
+      "parentId": "11:4165",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4164"
+    },
+    {
+      "nodeId": "11:4167",
+      "parentId": "11:4165",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4164"
+    },
+    {
+      "nodeId": "11:4168",
+      "parentId": "11:4165",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4164"
+    },
+    {
+      "nodeId": "11:4169",
+      "parentId": "11:4165",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4164"
+    },
+    {
+      "nodeId": "11:4170",
+      "parentId": "11:4165",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4164"
+    },
+    {
+      "nodeId": "11:4171",
+      "parentId": "11:4163",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4172",
+      "parentId": "11:4171",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4173",
+      "parentId": "11:4172",
+      "name": "Zakelijke projecten",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4174",
+      "parentId": "11:4171",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4175",
+      "parentId": "11:4174",
+      "name": "Ervaren in hotels, kantoren en andere bedrijfspand",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4176",
+      "parentId": "11:4150",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4177",
+      "parentId": "11:4176",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4178",
+      "parentId": "11:4177",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4177"
+    },
+    {
+      "nodeId": "11:4179",
+      "parentId": "11:4178",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4177"
+    },
+    {
+      "nodeId": "11:4180",
+      "parentId": "11:4178",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4177"
+    },
+    {
+      "nodeId": "11:4181",
+      "parentId": "11:4176",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4182",
+      "parentId": "11:4181",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4183",
+      "parentId": "11:4182",
+      "name": "Eerlijk advies",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4184",
+      "parentId": "11:4181",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4185",
+      "parentId": "11:4184",
+      "name": "Direct en zonder geouwehoer",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4186",
+      "parentId": "11:4150",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4187",
+      "parentId": "11:4186",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4188",
+      "parentId": "11:4187",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "covered-by-export",
+      "representedBy": "11:4187"
+    },
+    {
+      "nodeId": "11:4189",
+      "parentId": "11:4188",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4187"
+    },
+    {
+      "nodeId": "11:4190",
+      "parentId": "11:4188",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4187"
+    },
+    {
+      "nodeId": "11:4191",
+      "parentId": "11:4186",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4192",
+      "parentId": "11:4191",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4193",
+      "parentId": "11:4192",
+      "name": "Sterke prijs-kwaliteit",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4194",
+      "parentId": "11:4191",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4195",
+      "parentId": "11:4194",
+      "name": "Goede kwaliteit voor een eerlijke prijs",
+      "type": "TEXT",
+      "status": "represented"
+    }
+  ],
+  "summary": {
+    "represented": 31,
+    "covered-by-export": 17,
+    "button-label": 0,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 1
+  }
+}

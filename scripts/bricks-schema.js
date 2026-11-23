@@ -258,6 +258,7 @@ function applyLayers(node, settings) {
   }
   if (node._overlay) {
     css.push(`#brxe-__ID__::before {\n  content: "";\n  position: absolute;\n  inset: 0;\n  background: ${gradientCss(node._overlay)};\n  pointer-events: none;\n  z-index: 0;\n}`);
+    for (const child of node.children || []) if (!child.abs && child.figma?.position?.mode !== 'absolute') child._raise = true;
   }
   if (node._pseudo?.length) {
     // Decoration layers as pseudo-element background images (Bricks stores them as "_key::before" / "_key::after").
@@ -291,6 +292,7 @@ function applyLayers(node, settings) {
     settings._zIndex = node.abs.z ?? "0"; // decoration sits behind the content (0); a layer on a picture (badge, label) above it (1)
     delete settings._widthMax;
     delete settings._height; // aspect ratio comes from the asset
+    if(node._fullOverlay){settings._width='100%';settings._height='100%';}
     delete settings._margin;
     if (node.abs.opacity !== undefined && node.abs.opacity < 1) css.push(`#brxe-__ID__ {\n  opacity: ${node.abs.opacity};\n}`);
   }

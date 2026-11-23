@@ -1,0 +1,175 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "header-section",
+      "children": [
+        {
+          "type": "column",
+          "id": "header",
+          "figmaNodeId": "11:4107",
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "notes": [
+            "Inside stroke: #F3F4F6, 1px.",
+            "Two drop shadow effects; parameters were not provided."
+          ],
+          "children": [
+            {
+              "type": "column",
+              "id": "header-container",
+              "figmaNodeId": "11:4108",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "header-section-row-1",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "logo-link",
+                      "figmaNodeId": "11:4109",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "tapijtschuur-logo",
+                          "figmaNodeId": "11:4110",
+                          "asset": {
+                            "nodeId": "11:4110",
+                            "kind": "image"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "navigation",
+                      "figmaNodeId": "11:4111",
+                      "component": {
+                        "kind": "navigation"
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "vloeren-link",
+                          "figmaNodeId": "11:4112",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vloeren",
+                              "figmaNodeId": "11:4113",
+                              "text": "Vloeren"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "raamdecoratie-link",
+                          "figmaNodeId": "11:4114",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "raamdecoratie",
+                              "figmaNodeId": "11:4115",
+                              "text": "Raamdecoratie"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "showroom-link",
+                          "figmaNodeId": "11:4116",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "showroom",
+                              "figmaNodeId": "11:4117",
+                              "text": "Showroom"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "over-ons-link",
+                          "figmaNodeId": "11:4118",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "over-ons",
+                              "figmaNodeId": "11:4119",
+                              "text": "Over ons"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "contact-link",
+                          "figmaNodeId": "11:4120",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "contact",
+                              "figmaNodeId": "11:4121",
+                              "text": "Contact"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "header-actions",
+                      "figmaNodeId": "11:4122",
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "phone-link",
+                          "figmaNodeId": "11:4123",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "phone-icon",
+                              "figmaNodeId": "11:4124",
+                              "asset": {
+                                "nodeId": "11:4124",
+                                "kind": "svg"
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "phone-text-container",
+                              "figmaNodeId": "11:4126",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "phone-number",
+                                  "figmaNodeId": "11:4127",
+                                  "text": "0317 – 413068"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "button",
+                          "id": "quote-label",
+                          "figmaNodeId": "11:4128",
+                          "text": "Offerte aanvragen"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Link destinations were not provided.",
+    "Drop shadow parameters were not provided."
+  ]
+}

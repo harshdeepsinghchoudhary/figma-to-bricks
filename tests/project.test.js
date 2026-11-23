@@ -161,7 +161,7 @@ test("pipeline builds cached sections without model calls and records failures t
   const ok = await child("scripts/pipeline.js", ["--frame", dir, "--no-inject"], { VISUAL_PROVIDER: "invalid-provider", BROWSER_EXECUTABLE: "missing-browser" }); assert.equal(ok.code, 0, ok.output);
   const run = fs.readdirSync(path.join(dir, "runs"))[0]; const report = JSON.parse(fs.readFileSync(path.join(dir, "runs", run, "run.json")));
   assert.equal(report.exitCode, 0); assert.ok(fs.existsSync(path.join(dir, "runs", run, "dataset", "page.json")));
-  assert.equal(report.visualDebugging, "manual-only; never invoked by the pipeline");
+  assert.equal(report.visualDebugging, "export only; no frontend target");
   assert.equal(report.steps.some(s => /visual|measure|preview/.test(s.script)), false);
   assert.ok(report.steps.some(s => s.script === "validate-build.js"));
   const failed = await child("scripts/pipeline.js", ["--frame", dir, "--no-visual", "--page", "123"], { WP_API_URL: "", WP_API_USERNAME: "", WP_API_PASSWORD: "" });

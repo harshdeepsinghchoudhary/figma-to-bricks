@@ -1,0 +1,202 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "showroom-section",
+      "figmaNodeId": "11:4130",
+      "size": {
+        "width": 1679,
+        "height": 680
+      },
+      "background": {
+        "color": "#0D1B2A"
+      },
+      "notes": [
+        "Clips content. Background image and gradient layers overlap."
+      ],
+      "children": [
+        {
+          "type": "image",
+          "id": "showroom-image",
+          "figmaNodeId": "11:4131",
+          "asset": {
+            "nodeId": "11:4131",
+            "kind": "image"
+          },
+          "size": {
+            "width": 1679,
+            "height": 680
+          }
+        },
+        {
+          "type": "column",
+          "id": "showroom-content",
+          "figmaNodeId": "11:4134",
+          "size": {
+            "width": 512,
+            "height": 386.5
+          },
+          "children": [
+            {
+              "type": "column",
+              "id": "showroom-section-column-1",
+              "children": [
+                {
+                  "type": "button",
+                  "id": "showroom-badge-text",
+                  "figmaNodeId": "11:4135",
+                  "text": "Vloeren showroom"
+                },
+                {
+                  "type": "column",
+                  "id": "showroom-heading-wrapper",
+                  "figmaNodeId": "11:4137",
+                  "size": {
+                    "width": 512,
+                    "height": 180
+                  },
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "showroom-heading",
+                      "figmaNodeId": "11:4138",
+                      "text": "Vakmanschap in vloeren en raamdecoratie",
+                      "level": 1,
+                      "size": {
+                        "width": 512,
+                        "height": 180
+                      },
+                      "typography": {
+                        "fontFamily": "Plus Jakarta Sans",
+                        "fontSize": 48,
+                        "fontWeight": 600,
+                        "align": "left",
+                        "lineHeight": "60px",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "id": "showroom-description-wrapper",
+                  "figmaNodeId": "11:4139",
+                  "size": {
+                    "width": 512,
+                    "height": 58.5
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "showroom-description",
+                      "figmaNodeId": "11:4140",
+                      "text": "Bezoek onze showroom en ontdek ons uitgebreide aanbod. Van tapijt tot laminaat,  maatwerk vloeren voor elk project.",
+                      "size": {
+                        "width": 512,
+                        "height": 59
+                      },
+                      "typography": {
+                        "fontFamily": "Plus Jakarta Sans",
+                        "fontSize": 18,
+                        "fontWeight": 400,
+                        "align": "left",
+                        "lineHeight": "29.25px",
+                        "color": "#D1D5DC"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "id": "showroom-actions",
+                  "figmaNodeId": "11:4141",
+                  "size": {
+                    "width": 512,
+                    "height": 48
+                  },
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "showroom-section-row-2",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "collection-link",
+                          "figmaNodeId": "11:4142",
+                          "size": {
+                            "width": 189.3,
+                            "height": 48
+                          },
+                          "background": {
+                            "color": "#0E8BCC"
+                          },
+                          "border": {
+                            "radius": 10
+                          },
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "showroom-section-row-1",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "collection-link-text",
+                                  "figmaNodeId": "11:4143",
+                                  "text": "Bekijk collectie ",
+                                  "size": {
+                                    "width": 118,
+                                    "height": 24
+                                  },
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 600,
+                                    "align": "left",
+                                    "lineHeight": "24px",
+                                    "color": "#FFFFFF"
+                                  }
+                                },
+                                {
+                                  "type": "image",
+                                  "id": "collection-arrow",
+                                  "figmaNodeId": "11:4144",
+                                  "asset": {
+                                    "nodeId": "11:4144",
+                                    "kind": "svg"
+                                  },
+                                  "size": {
+                                    "width": 16,
+                                    "height": 16
+                                  },
+                                  "layout": {
+                                    "margin": {
+                                      "top": 5
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "button",
+                          "id": "quote-link-text",
+                          "figmaNodeId": "11:4146",
+                          "text": "Offerte aanvragen"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Link destinations were not provided."
+  ]
+}

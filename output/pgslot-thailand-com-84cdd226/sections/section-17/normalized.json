@@ -2,31 +2,29 @@
   "type": "page",
   "children": [
     {
-      "type": "section",
-      "id": "footer-area",
+      "id": "pgslot-thailand-com-scoped-5f161c91",
       "figmaNodeId": "scope",
-      "notes": [
-        "Frame contents are handled in other parts of this section; emitted as an empty container per scope rules."
-      ],
+      "type": "section",
       "children": [
         {
+          "id": "group-1261154130-c5c9a79a",
+          "figmaNodeId": "202:364",
           "type": "column",
-          "id": "group-1261154129-1",
-          "figmaNodeId": "202:366",
           "children": [
             {
+              "id": "group-1261154129-a6cf1d34",
+              "figmaNodeId": "202:366",
               "type": "row",
-              "id": "footer-area-row-1",
               "children": [
                 {
-                  "type": "column",
-                  "id": "frame-44",
+                  "id": "frame-44-3271bc14",
                   "figmaNodeId": "202:367",
+                  "type": "column",
                   "children": [
                     {
-                      "type": "image",
-                      "id": "image-25",
+                      "id": "image-25-2bedb04e",
                       "figmaNodeId": "202:368",
+                      "type": "image",
                       "asset": {
                         "nodeId": "202:368",
                         "kind": "image"
@@ -116,23 +114,10 @@
                       }
                     },
                     {
-                      "type": "text",
-                      "id": "lorem-ipsum-is-simply-dummy-text-of-the-2",
+                      "id": "lorem-ipsum-is-simply-dummy-text-of-417c5ec8",
                       "figmaNodeId": "202:369",
+                      "type": "text",
                       "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the ipsum is simply dummy text of the printing text.",
-                      "typography": {
-                        "fontFamily": "Inter",
-                        "fontSize": 18,
-                        "fontWeight": 400,
-                        "lineHeight": "27px",
-                        "letterSpacing": "0px",
-                        "align": "left",
-                        "color": "#FFFFFFD6"
-                      },
-                      "size": {
-                        "width": 392,
-                        "height": "hug"
-                      },
                       "figma": {
                         "parentId": "202:367",
                         "childIds": [],
@@ -229,20 +214,22 @@
                           }
                         },
                         "effectiveVisible": true
+                      },
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 18,
+                        "fontWeight": 400,
+                        "lineHeight": "27px",
+                        "letterSpacing": "0px",
+                        "align": "left",
+                        "color": "#FFFFFFD6"
+                      },
+                      "size": {
+                        "width": 392,
+                        "height": "hug"
                       }
                     }
                   ],
-                  "layout": {
-                    "display": "flex",
-                    "direction": "column",
-                    "align": "start",
-                    "gap": 16,
-                    "wrap": false
-                  },
-                  "size": {
-                    "width": "hug",
-                    "height": "hug"
-                  },
                   "figma": {
                     "parentId": "202:366",
                     "childIds": [
@@ -314,27 +301,29 @@
                       }
                     },
                     "effectiveVisible": true
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "direction": "column",
+                    "wrap": false,
+                    "align": "start",
+                    "gap": 16
+                  },
+                  "size": {
+                    "width": "hug",
+                    "height": "hug"
                   }
                 },
                 {
-                  "type": "column",
-                  "id": "frame-42-1",
+                  "id": "frame-42-fe74c507",
                   "figmaNodeId": "202:370",
+                  "type": "column",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "related-things-3",
+                      "id": "related-things-7f9c8544",
                       "figmaNodeId": "202:371",
+                      "type": "text",
                       "text": "Related things",
-                      "typography": {
-                        "fontFamily": "Inter",
-                        "fontSize": 20,
-                        "fontWeight": 500,
-                        "lineHeight": "32px",
-                        "letterSpacing": "0px",
-                        "align": "left",
-                        "color": "#FFFFFF"
-                      },
                       "figma": {
                         "parentId": "202:370",
                         "childIds": [],
@@ -431,25 +420,25 @@
                         },
                         "effectiveVisible": true
                       },
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": 500,
+                        "lineHeight": "32px",
+                        "letterSpacing": "0px",
+                        "align": "left",
+                        "color": "#FFFFFF"
+                      },
                       "size": {
                         "width": "hug",
                         "height": "hug"
                       }
                     },
                     {
-                      "type": "text",
-                      "id": "all-1-pgslot-game-review-15-4",
+                      "id": "all-1-pgslot-game-review-15-1ff10404",
                       "figmaNodeId": "202:372",
+                      "type": "text",
                       "text": "All (1)\nPgslot game review (15)",
-                      "typography": {
-                        "fontFamily": "Inter",
-                        "fontSize": 20,
-                        "fontWeight": 500,
-                        "lineHeight": "34px",
-                        "letterSpacing": "0px",
-                        "align": "left",
-                        "color": "#FFFFFFD6"
-                      },
                       "figma": {
                         "parentId": "202:370",
                         "childIds": [],
@@ -645,6 +634,15 @@
                         },
                         "effectiveVisible": true
                       },
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": 500,
+                        "lineHeight": "34px",
+                        "letterSpacing": "0px",
+                        "align": "left",
+                        "color": "#FFFFFFD6"
+                      },
                       "size": {
                         "width": "hug",
                         "height": "hug"
@@ -654,16 +652,12 @@
                   "layout": {
                     "display": "flex",
                     "direction": "column",
+                    "wrap": false,
                     "align": "start",
                     "margin": {
                       "top": 16
                     },
-                    "gap": 20,
-                    "wrap": false
-                  },
-                  "size": {
-                    "width": "hug",
-                    "height": "hug"
+                    "gap": 20
                   },
                   "figma": {
                     "parentId": "202:366",
@@ -736,27 +730,22 @@
                       }
                     },
                     "effectiveVisible": true
+                  },
+                  "size": {
+                    "width": "hug",
+                    "height": "hug"
                   }
                 },
                 {
-                  "type": "column",
-                  "id": "frame-43-1",
+                  "id": "frame-43-648f9b00",
                   "figmaNodeId": "202:373",
+                  "type": "column",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "subject",
+                      "id": "subject-b749f86d",
                       "figmaNodeId": "202:374",
+                      "type": "text",
                       "text": "Subject",
-                      "typography": {
-                        "fontFamily": "Inter",
-                        "fontSize": 20,
-                        "fontWeight": 500,
-                        "lineHeight": "32px",
-                        "letterSpacing": "0px",
-                        "align": "left",
-                        "color": "#FFFFFF"
-                      },
                       "figma": {
                         "parentId": "202:373",
                         "childIds": [],
@@ -853,25 +842,25 @@
                         },
                         "effectiveVisible": true
                       },
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": 500,
+                        "lineHeight": "32px",
+                        "letterSpacing": "0px",
+                        "align": "left",
+                        "color": "#FFFFFF"
+                      },
                       "size": {
                         "width": "hug",
                         "height": "hug"
                       }
                     },
                     {
-                      "type": "text",
-                      "id": "piggy-gold-slot-game-review-review-of-dr-6",
+                      "id": "piggy-gold-slot-game-review-review-2013a394",
                       "figmaNodeId": "202:375",
+                      "type": "text",
                       "text": "Piggy Gold slot game review\nReview of Dragon Tiger Luck slot game\nEmperor's Favor slot game review\nReview of Dim Sum Mania slot game\nMermaid's Market Review",
-                      "typography": {
-                        "fontFamily": "Inter",
-                        "fontSize": 16,
-                        "fontWeight": 400,
-                        "lineHeight": "34px",
-                        "letterSpacing": "0px",
-                        "align": "left",
-                        "color": "#FFFFFFD6"
-                      },
                       "figma": {
                         "parentId": "202:373",
                         "childIds": [],
@@ -977,6 +966,15 @@
                         },
                         "effectiveVisible": true
                       },
+                      "typography": {
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "34px",
+                        "letterSpacing": "0px",
+                        "align": "left",
+                        "color": "#FFFFFFD6"
+                      },
                       "size": {
                         "width": "hug",
                         "height": "hug"
@@ -986,16 +984,12 @@
                   "layout": {
                     "display": "flex",
                     "direction": "column",
+                    "wrap": false,
                     "align": "start",
                     "margin": {
                       "top": 16
                     },
-                    "gap": 20,
-                    "wrap": false
-                  },
-                  "size": {
-                    "width": "hug",
-                    "height": "hug"
+                    "gap": 20
                   },
                   "figma": {
                     "parentId": "202:366",
@@ -1068,58 +1062,124 @@
                       }
                     },
                     "effectiveVisible": true
+                  },
+                  "size": {
+                    "width": "hug",
+                    "height": "hug"
                   }
                 }
               ],
               "layout": {
                 "display": "flex",
                 "direction": "row",
-                "gap": 124,
-                "align": "start"
+                "align": "start",
+                "gap": 124
+              },
+              "figma": {
+                "parentId": "202:364",
+                "childIds": [
+                  "202:367",
+                  "202:370",
+                  "202:373"
+                ],
+                "name": "Group 1261154129",
+                "type": "GROUP",
+                "blendMode": "PASS_THROUGH",
+                "absoluteBoundingBox": {
+                  "x": -2812,
+                  "y": 10477,
+                  "width": 1120,
+                  "height": 238
+                },
+                "absoluteRenderBounds": {
+                  "x": -2812,
+                  "y": 10477,
+                  "width": 1120,
+                  "height": 238
+                },
+                "size": {
+                  "x": 1120,
+                  "y": 238
+                },
+                "relativeTransform": [
+                  [
+                    1,
+                    0,
+                    160
+                  ],
+                  [
+                    0,
+                    1,
+                    60
+                  ]
+                ],
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "clipsContent": false,
+                "fills": [],
+                "strokes": [],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "effects": [],
+                "rawGeometryFields": [
+                  "fillGeometry",
+                  "strokeGeometry"
+                ],
+                "extraSourceProperties": {
+                  "scrollBehavior": "SCROLLS",
+                  "background": [],
+                  "backgroundColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "interactions": [],
+                  "complexStrokeProperties": {
+                    "strokeType": "BASIC"
+                  }
+                },
+                "effectiveVisible": true
               }
             }
           ],
-          "layout": {
-            "display": "flex",
-            "direction": "column",
-            "align": "start"
-          },
           "figma": {
-            "parentId": "202:364",
+            "parentId": "scope",
             "childIds": [
-              "202:367",
-              "202:370",
-              "202:373"
+              "202:365",
+              "202:366"
             ],
-            "name": "Group 1261154129",
+            "name": "Group 1261154130",
             "type": "GROUP",
             "blendMode": "PASS_THROUGH",
             "absoluteBoundingBox": {
-              "x": -2812,
-              "y": 10477,
-              "width": 1120,
-              "height": 238
+              "x": -2972,
+              "y": 10417,
+              "width": 1440,
+              "height": 358
             },
             "absoluteRenderBounds": {
-              "x": -2812,
-              "y": 10477,
-              "width": 1120,
-              "height": 238
+              "x": -2972,
+              "y": 10417,
+              "width": 1440,
+              "height": 358
             },
             "size": {
-              "x": 1120,
-              "y": 238
+              "x": 1440,
+              "y": 358
             },
             "relativeTransform": [
               [
                 1,
                 0,
-                160
+                0
               ],
               [
                 0,
                 1,
-                60
+                8080
               ]
             ],
             "constraints": {
@@ -1150,14 +1210,41 @@
                 "strokeType": "BASIC"
               }
             },
-            "effectiveVisible": true
+            "effectiveVisible": true,
+            "geometryDerived": true,
+            "paintSourceIds": [
+              "202:365"
+            ]
+          },
+          "background": {
+            "color": "#2E0D16"
+          },
+          "size": {
+            "minHeight": 358
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "start",
+            "padding": {
+              "top": 60,
+              "right": 160,
+              "bottom": 60,
+              "left": 160
+            }
           }
         }
       ],
       "layout": {
         "display": "flex",
         "direction": "column",
-        "align": "start"
+        "align": "start",
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
       },
       "figma": {
         "parentId": null,
@@ -1175,14 +1262,5 @@
         "effectiveVisible": true
       }
     }
-  ],
-  "_uncertain": [
-    "No detailed child node data provided for frame 202:364; text, asset node ids, fonts, colors, typography, and exact layout values are unavailable and intentionally omitted.",
-    "Visible text (logo tagline, lorem-ipsum description, 'Related things' heading + links, 'Subject' heading + links) is shown only in the screenshot and is not present in the supplied Figma payload, so it was not emitted.",
-    "part 3: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing",
-    "No Figma metadata was provided to add deterministically.",
-    "No children emitted for 202:373 (Frame 43) because the frame has no 'children' key in this part; its contents are handled in other parts. No fills, border, or radius provided in Figma data.",
-    "slot-game-reviews: dropped unknown field \"typography.weight\"",
-    "stitch: 4 node(s) added from Figma data because the model's parts did not include them"
   ]
 }

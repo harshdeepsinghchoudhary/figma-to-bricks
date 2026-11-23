@@ -1,0 +1,11 @@
+# Architecture and migration — 2026-10-27
+
+The CLI remains the source of conversion behavior. `1_extract_figma.js` caches raw nodes, screenshot and asset manifests. `2_normalize.js` supports deterministic extraction and Anthropic/Groq/Gemini/NVIDIA/Ollama through schema-validated normalization. `3_compile_bricks.js` reconciles source properties, recognizes native components, applies structural/responsive passes, and writes flat editable trees. `run-sections.js` owns section orchestration; `merge_sections.js` owns page assembly and menus. `pipeline.js` gates MCP draft injection with structural/runtime/asset validation. `4_inject_mcp.js` uploads media and saves native Bricks elements. These remain callable by CLI.
+
+Existing `preview.js` is approximate, especially for native menus/sliders. `6_visual_review.js` is intentionally manual and section-scoped. Studio adds its own bounded orchestration using the existing validated patch vocabulary, rather than weakening those CLI constraints. `sharp`, Playwright, runtime schemas and validation are reused.
+
+Migration: (1) restrict agent capabilities; (2) persist projects and immutable run artifacts; (3) add cancellation, retry and exports; (4) add React/TypeScript frontend built by Vite and served by the local Node service; (5) add bounded SDK review and visual evidence; (6) test with real saved sources and clearly isolated mocks where external calls are unavailable.
+
+Local JSON records are appropriate for one serialized worker. Credentials remain server-side; session overrides may optionally be saved in a passphrase-encrypted AES-GCM vault. Existing ignored `.env` remains supported. This is not an OS credential store or a hosted key-management service. Multi-user authentication, encrypted OS/hosted vaults and a durable distributed queue are separate hosting requirements.
+
+Normal agent calls receive bounded design context and images, return structured decisions, and cannot edit the compiler. The server executes an allowlisted action vocabulary and validates patches and candidate trees. Source compiler bugs become reports for a separate approved development session. Staging writes are user-triggered, new-draft-only in this version. Publishing is intentionally unavailable rather than represented by a nonfunctional button.

@@ -1,0 +1,298 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "benefits-section",
+      "figmaNodeId": "11:4148",
+      "background": {
+        "color": "#FFFFFF"
+      },
+      "notes": [
+        "Inside stroke: 1px #F3F4F6."
+      ],
+      "children": [
+        {
+          "type": "column",
+          "id": "benefits-container",
+          "figmaNodeId": "11:4149",
+          "children": [
+            {
+              "type": "column",
+              "id": "benefits-list",
+              "figmaNodeId": "11:4150",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "benefits-section-row-1",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "custom-flooring",
+                      "figmaNodeId": "11:4151",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "custom-flooring-graphic",
+                          "figmaNodeId": "11:4152",
+                          "asset": {
+                            "nodeId": "11:4152",
+                            "kind": "svg"
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "custom-flooring-copy",
+                          "figmaNodeId": "11:4158",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "custom-flooring-title-wrapper",
+                              "figmaNodeId": "11:4159",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "custom-flooring-title",
+                                  "figmaNodeId": "11:4160",
+                                  "text": "Maatwerk vloeren",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 600,
+                                    "lineHeight": "24px",
+                                    "color": "#101828",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "custom-flooring-description-wrapper",
+                              "figmaNodeId": "11:4161",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "custom-flooring-description",
+                                  "figmaNodeId": "11:4162",
+                                  "text": "Op maat gemaakt voor elk project, van woning tot hotel",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "lineHeight": "22px",
+                                    "color": "#6A7282",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "business-projects",
+                      "figmaNodeId": "11:4163",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "business-projects-graphic",
+                          "figmaNodeId": "11:4164",
+                          "asset": {
+                            "nodeId": "11:4164",
+                            "kind": "svg"
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "business-projects-copy",
+                          "figmaNodeId": "11:4171",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "business-projects-title-wrapper",
+                              "figmaNodeId": "11:4172",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "business-projects-title",
+                                  "figmaNodeId": "11:4173",
+                                  "text": "Zakelijke projecten",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 600,
+                                    "lineHeight": "24px",
+                                    "color": "#101828",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "business-projects-description-wrapper",
+                              "figmaNodeId": "11:4174",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "business-projects-description",
+                                  "figmaNodeId": "11:4175",
+                                  "text": "Ervaren in hotels, kantoren en andere bedrijfspanden",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "lineHeight": "22px",
+                                    "color": "#6A7282",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "honest-advice",
+                      "figmaNodeId": "11:4176",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "honest-advice-graphic",
+                          "figmaNodeId": "11:4177",
+                          "asset": {
+                            "nodeId": "11:4177",
+                            "kind": "svg"
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "honest-advice-copy",
+                          "figmaNodeId": "11:4181",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "honest-advice-title-wrapper",
+                              "figmaNodeId": "11:4182",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "honest-advice-title",
+                                  "figmaNodeId": "11:4183",
+                                  "text": "Eerlijk advies",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 600,
+                                    "lineHeight": "24px",
+                                    "color": "#101828",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "honest-advice-description-wrapper",
+                              "figmaNodeId": "11:4184",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "honest-advice-description",
+                                  "figmaNodeId": "11:4185",
+                                  "text": "Direct en zonder geouwehoer",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "lineHeight": "22px",
+                                    "color": "#6A7282",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "price-quality",
+                      "figmaNodeId": "11:4186",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "price-quality-graphic",
+                          "figmaNodeId": "11:4187",
+                          "asset": {
+                            "nodeId": "11:4187",
+                            "kind": "svg"
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "price-quality-copy",
+                          "figmaNodeId": "11:4191",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "price-quality-title-wrapper",
+                              "figmaNodeId": "11:4192",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "price-quality-title",
+                                  "figmaNodeId": "11:4193",
+                                  "text": "Sterke prijs-kwaliteit",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 600,
+                                    "lineHeight": "24px",
+                                    "color": "#101828",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "column",
+                              "id": "price-quality-description-wrapper",
+                              "figmaNodeId": "11:4194",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "price-quality-description",
+                                  "figmaNodeId": "11:4195",
+                                  "text": "Goede kwaliteit voor een eerlijke prijs",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "lineHeight": "22px",
+                                    "color": "#6A7282",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

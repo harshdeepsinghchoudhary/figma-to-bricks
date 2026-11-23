@@ -1,0 +1,653 @@
+[
+  {
+    "id": "hi15tl",
+    "name": "text",
+    "parent": "7aqg63",
+    "children": [],
+    "settings": {
+      "text": "<p>De specialist</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px",
+        "letter-spacing": "1.600000023841858px",
+        "color": {
+          "raw": "#0E8BCC"
+        },
+        "text-align": "left",
+        "text-transform": "uppercase"
+      }
+    }
+  },
+  {
+    "id": "7aqg63",
+    "name": "div",
+    "parent": "3h18sh",
+    "children": [
+      "hi15tl"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "fncyx8",
+    "name": "heading",
+    "parent": "wfhy6k",
+    "children": [],
+    "settings": {
+      "text": "Tapijtschuur: vloeren en raamdecoratie op maat",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "25px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#0D1B2A"
+        },
+        "text-align": "left"
+      },
+      "_flexGrow": "1"
+    }
+  },
+  {
+    "id": "wfhy6k",
+    "name": "div",
+    "parent": "3h18sh",
+    "children": [
+      "fncyx8"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "top": "12"
+      },
+      "_width": "100%",
+      "_heightMin": "25",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0"
+    }
+  },
+  {
+    "id": "whtkzr",
+    "name": "text",
+    "parent": "e15mnf",
+    "children": [],
+    "settings": {
+      "text": "<p>Tapijtschuur is dé specialist voor het woon- en bedrijfsklaar afwerken van uw ruimte. Met meer dan 25 jaar ervaring leveren wij kwaliteit voor particulieren en bedrijven. Bij ons kunt u rekenen op een persoonlijke aanpak, uitstekende service en een goed aanbod van leveranciers.</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "26px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#6A7282"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "e15mnf",
+    "name": "div",
+    "parent": "3h18sh",
+    "children": [
+      "whtkzr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "20"
+      },
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "l6k6w9",
+    "name": "text",
+    "parent": "8oyht2",
+    "children": [],
+    "settings": {
+      "text": "<p>Onze vakmensen werken met vaste, betrouwbare merken waardoor wij de kwaliteit kunnen waarborgen. Wij zijn specialist op het gebied van vloeren, raamdecoratie en alles wat daarmee samenhangt.</p>",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "26px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#6A7282"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "8oyht2",
+    "name": "div",
+    "parent": "3h18sh",
+    "children": [
+      "l6k6w9"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "20"
+      },
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "newxdc",
+    "name": "text",
+    "parent": "396ad9",
+    "children": [],
+    "settings": {
+      "text": "<p>Offerte aanvragen </p>",
+      "_width": "auto",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_flexShrink": "0"
+    }
+  },
+  {
+    "id": "v0rjgr",
+    "name": "icon",
+    "parent": "396ad9",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/icon-11_4262.svg",
+          "url": "../../assets/icon-11_4262.svg"
+        },
+        "height": "16"
+      },
+      "_widthMax": "16px",
+      "_flexShrink": "0",
+      "_overflow": "hidden"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "396ad9",
+    "name": "div",
+    "parent": "k3hq10",
+    "children": [
+      "newxdc",
+      "v0rjgr"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "7.28",
+      "_columnGap": "7.28",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "12",
+        "right": "24",
+        "bottom": "14",
+        "left": "24"
+      },
+      "_width": "100%",
+      "_widthMax": "214px",
+      "_background": {
+        "color": {
+          "raw": "#0E8BCC"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      },
+      "_direction:tablet_portrait": "row",
+      "_rowGap:tablet_portrait": "7.28",
+      "_columnGap:tablet_portrait": "7.28",
+      "_alignItems:tablet_portrait": "flex-start",
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      }
+    }
+  },
+  {
+    "id": "vw2y6o",
+    "name": "button",
+    "parent": "k3hq10",
+    "children": [],
+    "settings": {
+      "text": "Over ons",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "12",
+        "right": "24",
+        "bottom": "12",
+        "left": "24"
+      },
+      "_height": "50",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#4A5565"
+        },
+        "text-align": "left"
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        },
+        "style": "solid",
+        "color": {
+          "raw": "#E5E7EB"
+        },
+        "width": {
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "8",
+      "iconGap": "8"
+    }
+  },
+  {
+    "id": "k3hq10",
+    "name": "div",
+    "parent": "3h18sh",
+    "children": [
+      "396ad9",
+      "vw2y6o"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "12",
+      "_columnGap": "12",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "242.61",
+        "bottom": "0",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "32"
+      },
+      "_width": "100%",
+      "_direction:tablet_portrait": "row",
+      "_rowGap:tablet_portrait": "12",
+      "_alignItems:tablet_portrait": "center",
+      "_flexWrap:tablet_portrait": "wrap",
+      "_padding:tablet_portrait": {
+        "right": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20"
+      },
+      "_direction:mobile_portrait": "column",
+      "_rowGap:mobile_portrait": "12",
+      "_alignItems:mobile_portrait": "flex-start"
+    }
+  },
+  {
+    "id": "3h18sh",
+    "name": "div",
+    "parent": "z2nty8",
+    "children": [
+      "7aqg63",
+      "wfhy6k",
+      "e15mnf",
+      "8oyht2",
+      "k3hq10"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "588px",
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "rsl4ey",
+    "name": "image",
+    "parent": "bkoj7f",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-vloer-samples-11_4268.png",
+        "url": "../../assets/image-vloer-samples-11_4268.png"
+      },
+      "_width": "100%",
+      "_overflow": "hidden",
+      "_alignSelf": "stretch"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "bkoj7f",
+    "name": "div",
+    "parent": "z2nty8",
+    "children": [
+      "rsl4ey"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "left": "56"
+      },
+      "_width": "100%",
+      "_widthMax": "288px",
+      "_heightMin": "420",
+      "_border": {
+        "radius": {
+          "top": "16px",
+          "right": "16px",
+          "bottom": "16px",
+          "left": "16px"
+        }
+      },
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_overflow": "hidden"
+    }
+  },
+  {
+    "id": "cb9jls",
+    "name": "image",
+    "parent": "q0js5v",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-raamdecoratie-11_4270.png",
+        "url": "../../assets/image-raamdecoratie-11_4270.png"
+      },
+      "_width": "100%",
+      "_overflow": "hidden",
+      "_alignSelf": "stretch"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "q0js5v",
+    "name": "div",
+    "parent": "i0dhri",
+    "children": [
+      "cb9jls"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_heightMin": "204",
+      "_border": {
+        "radius": {
+          "top": "16px",
+          "right": "16px",
+          "bottom": "16px",
+          "left": "16px"
+        }
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_overflow": "hidden"
+    }
+  },
+  {
+    "id": "nybcsq",
+    "name": "image",
+    "parent": "feyhf4",
+    "children": [],
+    "settings": {
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/image-tapijt-11_4272.png",
+        "url": "../../assets/image-tapijt-11_4272.png"
+      },
+      "_width": "100%",
+      "_overflow": "hidden",
+      "_alignSelf": "stretch"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "feyhf4",
+    "name": "div",
+    "parent": "i0dhri",
+    "children": [
+      "nybcsq"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_heightMin": "204",
+      "_border": {
+        "radius": {
+          "top": "16px",
+          "right": "16px",
+          "bottom": "16px",
+          "left": "16px"
+        }
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_overflow": "hidden"
+    }
+  },
+  {
+    "id": "i0dhri",
+    "name": "div",
+    "parent": "z2nty8",
+    "children": [
+      "q0js5v",
+      "feyhf4"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_rowGap": "12",
+      "_columnGap": "12",
+      "_alignItems": "flex-start",
+      "_margin": {
+        "left": "12"
+      },
+      "_width": "100%",
+      "_widthMax": "288px",
+      "_margin:tablet_portrait": {
+        "right": "0",
+        "left": "0"
+      },
+      "_widthMax:tablet_portrait": "100%"
+    }
+  },
+  {
+    "id": "z2nty8",
+    "name": "div",
+    "parent": "sc8j3g",
+    "children": [
+      "3h18sh",
+      "bkoj7f",
+      "i0dhri"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "20",
+      "_columnGap": "20",
+      "_alignItems": "center",
+      "_justifyContent": "space-between",
+      "_width": "100%",
+      "_direction:tablet_portrait": "column",
+      "_rowGap:tablet_portrait": "40",
+      "_alignItems:tablet_portrait": "center"
+    }
+  },
+  {
+    "id": "sc8j3g",
+    "name": "div",
+    "parent": "7kd0nc",
+    "children": [
+      "z2nty8"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "24",
+        "bottom": "0",
+        "left": "24"
+      },
+      "_width": "100%",
+      "_heightMin": "420",
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_alignSelf": "stretch"
+    }
+  },
+  {
+    "id": "7kd0nc",
+    "name": "container",
+    "parent": "cim5fq",
+    "children": [
+      "sc8j3g"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1280px"
+    }
+  },
+  {
+    "id": "cim5fq",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "7kd0nc"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "80",
+        "right": "16",
+        "left": "16"
+      },
+      "_heightMin": "580",
+      "_background": {
+        "color": {
+          "raw": "#FFFFFF"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "top": "40"
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_padding:mobile_landscape": {
+        "top": "40"
+      },
+      "_alignSelf": "stretch"
+    }
+  }
+]

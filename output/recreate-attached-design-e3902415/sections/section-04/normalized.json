@@ -1,0 +1,3120 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "benefits-section",
+      "figmaNodeId": "scope",
+      "notes": [
+        "Inside stroke: 1px #F3F4F6."
+      ],
+      "children": [
+        {
+          "type": "column",
+          "id": "benefits-container",
+          "figmaNodeId": "11:4149",
+          "children": [
+            {
+              "type": "column",
+              "id": "benefits-list",
+              "figmaNodeId": "11:4150",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "benefits-section-row-2",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "custom-flooring",
+                      "figmaNodeId": "11:4151",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "custom-flooring-graphic",
+                          "figmaNodeId": "11:4152",
+                          "asset": {
+                            "nodeId": "11:4152",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 44,
+                            "height": 44
+                          },
+                          "figma": {
+                            "parentId": "11:4151",
+                            "childIds": [
+                              "11:4153"
+                            ],
+                            "name": "Container",
+                            "type": "FRAME",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -3791.5,
+                              "y": 857,
+                              "width": 44,
+                              "height": 44
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -3791.5,
+                              "y": 857,
+                              "width": 44,
+                              "height": 44
+                            },
+                            "size": {
+                              "x": 44,
+                              "y": 44
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                0
+                              ],
+                              [
+                                0,
+                                1,
+                                0
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "layoutMode": "HORIZONTAL",
+                            "layoutWrap": "NO_WRAP",
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisSizingMode": "FIXED",
+                            "counterAxisSizingMode": "FIXED",
+                            "primaryAxisAlignItems": "CENTER",
+                            "counterAxisAlignItems": "CENTER",
+                            "paddingRight": 10,
+                            "paddingLeft": 10,
+                            "layoutGrow": 0,
+                            "layoutAlign": "INHERIT",
+                            "clipsContent": false,
+                            "fills": [
+                              {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                  "r": 0.9215686321258545,
+                                  "g": 0.9647058844566345,
+                                  "b": 0.9882352948188782,
+                                  "a": 1
+                                }
+                              }
+                            ],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "cornerRadius": 33554400,
+                            "cornerSmoothing": 0,
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [
+                                {
+                                  "blendMode": "NORMAL",
+                                  "type": "SOLID",
+                                  "color": {
+                                    "r": 0.9215686321258545,
+                                    "g": 0.9647058844566345,
+                                    "b": 0.9882352948188782,
+                                    "a": 1
+                                  }
+                                }
+                              ],
+                              "backgroundColor": {
+                                "r": 0.9215686321258545,
+                                "g": 0.9647058844566345,
+                                "b": 0.9882352948188782,
+                                "a": 1
+                              },
+                              "strokesIncludedInLayout": true,
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
+                          },
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "align": "center",
+                            "justify": "center",
+                            "wrap": false,
+                            "padding": {
+                              "right": 10,
+                              "left": 10
+                            }
+                          },
+                          "border": {
+                            "radius": 33554400
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "custom-flooring-copy",
+                          "figmaNodeId": "11:4158",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "custom-flooring-title-wrapper",
+                              "figmaNodeId": "11:4159",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "custom-flooring-title",
+                                  "figmaNodeId": "11:4160",
+                                  "text": "Maatwerk vloeren",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 600,
+                                    "lineHeight": "24px",
+                                    "letterSpacing": "0px",
+                                    "align": "left",
+                                    "color": "#101828"
+                                  },
+                                  "size": {
+                                    "width": 138
+                                  },
+                                  "figma": {
+                                    "parentId": "11:4159",
+                                    "childIds": [],
+                                    "name": "Maatwerk vloeren",
+                                    "type": "TEXT",
+                                    "blendMode": "PASS_THROUGH",
+                                    "absoluteBoundingBox": {
+                                      "x": -3735.5,
+                                      "y": 856,
+                                      "width": 138,
+                                      "height": 24
+                                    },
+                                    "absoluteRenderBounds": {
+                                      "x": -3734.26806640625,
+                                      "y": 862.8880004882812,
+                                      "width": 135.68603515625,
+                                      "height": 12.30401611328125
+                                    },
+                                    "size": {
+                                      "x": 138,
+                                      "y": 24
+                                    },
+                                    "relativeTransform": [
+                                      [
+                                        1,
+                                        0,
+                                        0
+                                      ],
+                                      [
+                                        0,
+                                        1,
+                                        -1
+                                      ]
+                                    ],
+                                    "constraints": {
+                                      "vertical": "TOP",
+                                      "horizontal": "LEFT"
+                                    },
+                                    "fills": [
+                                      {
+                                        "blendMode": "NORMAL",
+                                        "type": "SOLID",
+                                        "color": {
+                                          "r": 0.062745101749897,
+                                          "g": 0.0941176488995552,
+                                          "b": 0.1568627506494522,
+                                          "a": 1
+                                        }
+                                      }
+                                    ],
+                                    "strokes": [],
+                                    "strokeWeight": 1,
+                                    "strokeAlign": "OUTSIDE",
+                                    "effects": [],
+                                    "style": {
+                                      "fontFamily": "Plus Jakarta Sans",
+                                      "fontPostScriptName": null,
+                                      "fontStyle": "SemiBold",
+                                      "fontWeight": 600,
+                                      "textAutoResize": "WIDTH_AND_HEIGHT",
+                                      "fontSize": 16,
+                                      "textAlignHorizontal": "LEFT",
+                                      "textAlignVertical": "TOP",
+                                      "letterSpacing": 0,
+                                      "lineHeightPx": 24,
+                                      "lineHeightPercent": 119.04761505126953,
+                                      "lineHeightPercentFontSize": 150,
+                                      "lineHeightUnit": "PIXELS"
+                                    },
+                                    "characterStyleOverrides": [],
+                                    "styleOverrideTable": {},
+                                    "characters": "Maatwerk vloeren",
+                                    "rawGeometryFields": [
+                                      "fillGeometry",
+                                      "strokeGeometry"
+                                    ],
+                                    "extraSourceProperties": {
+                                      "scrollBehavior": "SCROLLS",
+                                      "lineTypes": [
+                                        "NONE"
+                                      ],
+                                      "lineIndentations": [
+                                        0
+                                      ],
+                                      "layoutVersion": 5,
+                                      "interactions": [],
+                                      "complexStrokeProperties": {
+                                        "strokeType": "BASIC"
+                                      }
+                                    },
+                                    "effectiveVisible": true
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "padding": {
+                                  "top": 0,
+                                  "right": 84,
+                                  "bottom": 1,
+                                  "left": 0
+                                },
+                                "align": "start"
+                              },
+                              "figma": {
+                                "parentId": "11:4158",
+                                "childIds": [
+                                  "11:4160"
+                                ],
+                                "name": "Paragraph",
+                                "type": "FRAME",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -3735.5,
+                                  "y": 857,
+                                  "width": 222,
+                                  "height": 24
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -3735.5,
+                                  "y": 857,
+                                  "width": 222,
+                                  "height": 24
+                                },
+                                "size": {
+                                  "x": 222,
+                                  "y": 24
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    0
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "layoutSizingHorizontal": "FILL",
+                                "layoutSizingVertical": "FIXED",
+                                "layoutGrow": 0,
+                                "layoutAlign": "STRETCH",
+                                "clipsContent": false,
+                                "fills": [],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "INSIDE",
+                                "effects": [],
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "background": [],
+                                  "backgroundColor": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0,
+                                    "a": 0
+                                  },
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              },
+                              "size": {
+                                "width": "fill",
+                                "height": 24
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "custom-flooring-description-wrapper",
+                              "figmaNodeId": "11:4161",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "custom-flooring-description",
+                                  "figmaNodeId": "11:4162",
+                                  "text": "Op maat gemaakt voor elk project, van woning tot hotel",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "lineHeight": "22px",
+                                    "letterSpacing": "0px",
+                                    "align": "left",
+                                    "color": "#6A7282"
+                                  },
+                                  "size": {
+                                    "width": 222
+                                  },
+                                  "figma": {
+                                    "parentId": "11:4161",
+                                    "childIds": [],
+                                    "name": "Op maat gemaakt voor elk project, van woning tot h",
+                                    "type": "TEXT",
+                                    "blendMode": "PASS_THROUGH",
+                                    "absoluteBoundingBox": {
+                                      "x": -3735.5,
+                                      "y": 882,
+                                      "width": 222,
+                                      "height": 44
+                                    },
+                                    "absoluteRenderBounds": {
+                                      "x": -3734.444091796875,
+                                      "y": 887.8880004882812,
+                                      "width": 212.0322265625,
+                                      "height": 37.63201904296875
+                                    },
+                                    "size": {
+                                      "x": 222,
+                                      "y": 44
+                                    },
+                                    "relativeTransform": [
+                                      [
+                                        1,
+                                        0,
+                                        0
+                                      ],
+                                      [
+                                        0,
+                                        1,
+                                        -1
+                                      ]
+                                    ],
+                                    "constraints": {
+                                      "vertical": "TOP",
+                                      "horizontal": "LEFT"
+                                    },
+                                    "fills": [
+                                      {
+                                        "blendMode": "NORMAL",
+                                        "type": "SOLID",
+                                        "color": {
+                                          "r": 0.4156862795352936,
+                                          "g": 0.4470588266849518,
+                                          "b": 0.5098039507865906,
+                                          "a": 1
+                                        }
+                                      }
+                                    ],
+                                    "strokes": [],
+                                    "strokeWeight": 1,
+                                    "strokeAlign": "OUTSIDE",
+                                    "effects": [],
+                                    "style": {
+                                      "fontFamily": "Plus Jakarta Sans",
+                                      "fontPostScriptName": null,
+                                      "fontStyle": "Regular",
+                                      "fontWeight": 400,
+                                      "textAutoResize": "HEIGHT",
+                                      "fontSize": 16,
+                                      "textAlignHorizontal": "LEFT",
+                                      "textAlignVertical": "TOP",
+                                      "letterSpacing": 0,
+                                      "lineHeightPx": 22,
+                                      "lineHeightPercent": 109.12698364257812,
+                                      "lineHeightPercentFontSize": 137.5,
+                                      "lineHeightUnit": "PIXELS"
+                                    },
+                                    "characterStyleOverrides": [],
+                                    "styleOverrideTable": {},
+                                    "characters": "Op maat gemaakt voor elk project, van woning tot hotel",
+                                    "rawGeometryFields": [
+                                      "fillGeometry",
+                                      "strokeGeometry"
+                                    ],
+                                    "extraSourceProperties": {
+                                      "scrollBehavior": "SCROLLS",
+                                      "lineTypes": [
+                                        "NONE"
+                                      ],
+                                      "lineIndentations": [
+                                        0
+                                      ],
+                                      "layoutVersion": 5,
+                                      "interactions": [],
+                                      "complexStrokeProperties": {
+                                        "strokeType": "BASIC"
+                                      }
+                                    },
+                                    "effectiveVisible": true
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "padding": {
+                                  "top": 0,
+                                  "right": 0,
+                                  "bottom": 1,
+                                  "left": 0
+                                },
+                                "align": "start"
+                              },
+                              "figma": {
+                                "parentId": "11:4158",
+                                "childIds": [
+                                  "11:4162"
+                                ],
+                                "name": "Paragraph",
+                                "type": "FRAME",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -3735.5,
+                                  "y": 883,
+                                  "width": 222,
+                                  "height": 44
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -3735.5,
+                                  "y": 883,
+                                  "width": 222,
+                                  "height": 44
+                                },
+                                "size": {
+                                  "x": 222,
+                                  "y": 44
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    26
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "layoutSizingHorizontal": "FILL",
+                                "layoutSizingVertical": "FIXED",
+                                "layoutGrow": 0,
+                                "layoutAlign": "STRETCH",
+                                "clipsContent": false,
+                                "fills": [],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "INSIDE",
+                                "effects": [],
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "background": [],
+                                  "backgroundColor": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0,
+                                    "a": 0
+                                  },
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              },
+                              "size": {
+                                "width": "fill",
+                                "height": 44
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": 2,
+                            "wrap": false
+                          },
+                          "size": {
+                            "width": "fill",
+                            "height": 70
+                          },
+                          "figma": {
+                            "parentId": "11:4151",
+                            "childIds": [
+                              "11:4159",
+                              "11:4161"
+                            ],
+                            "name": "Container",
+                            "type": "FRAME",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -3735.5,
+                              "y": 857,
+                              "width": 222,
+                              "height": 70
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -3735.5,
+                              "y": 857,
+                              "width": 222,
+                              "height": 70
+                            },
+                            "size": {
+                              "x": 222,
+                              "y": 70
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                56
+                              ],
+                              [
+                                0,
+                                1,
+                                0
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "layoutMode": "VERTICAL",
+                            "layoutWrap": "NO_WRAP",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisSizingMode": "FIXED",
+                            "counterAxisSizingMode": "FIXED",
+                            "itemSpacing": 2,
+                            "layoutGrow": 1,
+                            "layoutAlign": "INHERIT",
+                            "clipsContent": false,
+                            "fills": [],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [],
+                              "backgroundColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0,
+                                "a": 0
+                              },
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "align": "start",
+                        "gap": 12,
+                        "wrap": false
+                      },
+                      "size": {
+                        "width": 278,
+                        "height": 70
+                      },
+                      "figma": {
+                        "parentId": "11:4150",
+                        "childIds": [
+                          "11:4152",
+                          "11:4158"
+                        ],
+                        "name": "Container",
+                        "type": "FRAME",
+                        "blendMode": "PASS_THROUGH",
+                        "absoluteBoundingBox": {
+                          "x": -3791.5,
+                          "y": 857,
+                          "width": 278,
+                          "height": 70
+                        },
+                        "absoluteRenderBounds": {
+                          "x": -3791.5,
+                          "y": 857,
+                          "width": 278,
+                          "height": 70
+                        },
+                        "size": {
+                          "x": 278,
+                          "y": 70
+                        },
+                        "relativeTransform": [
+                          [
+                            1,
+                            0,
+                            0
+                          ],
+                          [
+                            0,
+                            1,
+                            0
+                          ]
+                        ],
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "layoutMode": "HORIZONTAL",
+                        "layoutWrap": "NO_WRAP",
+                        "layoutSizingHorizontal": "FIXED",
+                        "layoutSizingVertical": "FIXED",
+                        "primaryAxisSizingMode": "FIXED",
+                        "counterAxisSizingMode": "FIXED",
+                        "itemSpacing": 12,
+                        "clipsContent": false,
+                        "fills": [],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "effects": [],
+                        "rawGeometryFields": [
+                          "fillGeometry",
+                          "strokeGeometry"
+                        ],
+                        "extraSourceProperties": {
+                          "scrollBehavior": "SCROLLS",
+                          "background": [],
+                          "backgroundColor": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                          },
+                          "strokesIncludedInLayout": true,
+                          "interactions": [],
+                          "complexStrokeProperties": {
+                            "strokeType": "BASIC"
+                          }
+                        },
+                        "effectiveVisible": true
+                      }
+                    },
+                    {
+                      "type": "row",
+                      "id": "business-projects",
+                      "figmaNodeId": "11:4163",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "business-projects-graphic",
+                          "figmaNodeId": "11:4164",
+                          "asset": {
+                            "nodeId": "11:4164",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 44,
+                            "height": 44
+                          },
+                          "figma": {
+                            "parentId": "11:4163",
+                            "childIds": [
+                              "11:4165"
+                            ],
+                            "name": "Container",
+                            "type": "FRAME",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -3473.5,
+                              "y": 857,
+                              "width": 44,
+                              "height": 44
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -3473.5,
+                              "y": 857,
+                              "width": 44,
+                              "height": 44
+                            },
+                            "size": {
+                              "x": 44,
+                              "y": 44
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                0
+                              ],
+                              [
+                                0,
+                                1,
+                                0
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "layoutMode": "HORIZONTAL",
+                            "layoutWrap": "NO_WRAP",
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisSizingMode": "FIXED",
+                            "counterAxisSizingMode": "FIXED",
+                            "primaryAxisAlignItems": "CENTER",
+                            "counterAxisAlignItems": "CENTER",
+                            "paddingRight": 10,
+                            "paddingLeft": 10,
+                            "layoutGrow": 0,
+                            "layoutAlign": "INHERIT",
+                            "clipsContent": false,
+                            "fills": [
+                              {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                  "r": 0.9215686321258545,
+                                  "g": 0.9647058844566345,
+                                  "b": 0.9882352948188782,
+                                  "a": 1
+                                }
+                              }
+                            ],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "cornerRadius": 33554400,
+                            "cornerSmoothing": 0,
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [
+                                {
+                                  "blendMode": "NORMAL",
+                                  "type": "SOLID",
+                                  "color": {
+                                    "r": 0.9215686321258545,
+                                    "g": 0.9647058844566345,
+                                    "b": 0.9882352948188782,
+                                    "a": 1
+                                  }
+                                }
+                              ],
+                              "backgroundColor": {
+                                "r": 0.9215686321258545,
+                                "g": 0.9647058844566345,
+                                "b": 0.9882352948188782,
+                                "a": 1
+                              },
+                              "strokesIncludedInLayout": true,
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
+                          },
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "align": "center",
+                            "justify": "center",
+                            "wrap": false,
+                            "padding": {
+                              "right": 10,
+                              "left": 10
+                            }
+                          },
+                          "border": {
+                            "radius": 33554400
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "business-projects-copy",
+                          "figmaNodeId": "11:4171",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "business-projects-title-wrapper",
+                              "figmaNodeId": "11:4172",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "business-projects-title",
+                                  "figmaNodeId": "11:4173",
+                                  "text": "Zakelijke projecten",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 600,
+                                    "lineHeight": "24px",
+                                    "letterSpacing": "0px",
+                                    "align": "left",
+                                    "color": "#101828"
+                                  },
+                                  "size": {
+                                    "width": 147
+                                  },
+                                  "figma": {
+                                    "parentId": "11:4172",
+                                    "childIds": [],
+                                    "name": "Zakelijke projecten",
+                                    "type": "TEXT",
+                                    "blendMode": "PASS_THROUGH",
+                                    "absoluteBoundingBox": {
+                                      "x": -3417.5,
+                                      "y": 856,
+                                      "width": 147,
+                                      "height": 24
+                                    },
+                                    "absoluteRenderBounds": {
+                                      "x": -3417.22802734375,
+                                      "y": 862.8880004882812,
+                                      "width": 145.27099609375,
+                                      "height": 15.64801025390625
+                                    },
+                                    "size": {
+                                      "x": 147,
+                                      "y": 24
+                                    },
+                                    "relativeTransform": [
+                                      [
+                                        1,
+                                        0,
+                                        0
+                                      ],
+                                      [
+                                        0,
+                                        1,
+                                        -1
+                                      ]
+                                    ],
+                                    "constraints": {
+                                      "vertical": "TOP",
+                                      "horizontal": "LEFT"
+                                    },
+                                    "fills": [
+                                      {
+                                        "blendMode": "NORMAL",
+                                        "type": "SOLID",
+                                        "color": {
+                                          "r": 0.062745101749897,
+                                          "g": 0.0941176488995552,
+                                          "b": 0.1568627506494522,
+                                          "a": 1
+                                        }
+                                      }
+                                    ],
+                                    "strokes": [],
+                                    "strokeWeight": 1,
+                                    "strokeAlign": "OUTSIDE",
+                                    "effects": [],
+                                    "style": {
+                                      "fontFamily": "Plus Jakarta Sans",
+                                      "fontPostScriptName": null,
+                                      "fontStyle": "SemiBold",
+                                      "fontWeight": 600,
+                                      "textAutoResize": "WIDTH_AND_HEIGHT",
+                                      "fontSize": 16,
+                                      "textAlignHorizontal": "LEFT",
+                                      "textAlignVertical": "TOP",
+                                      "letterSpacing": 0,
+                                      "lineHeightPx": 24,
+                                      "lineHeightPercent": 119.04761505126953,
+                                      "lineHeightPercentFontSize": 150,
+                                      "lineHeightUnit": "PIXELS"
+                                    },
+                                    "characterStyleOverrides": [],
+                                    "styleOverrideTable": {},
+                                    "characters": "Zakelijke projecten",
+                                    "rawGeometryFields": [
+                                      "fillGeometry",
+                                      "strokeGeometry"
+                                    ],
+                                    "extraSourceProperties": {
+                                      "scrollBehavior": "SCROLLS",
+                                      "lineTypes": [
+                                        "NONE"
+                                      ],
+                                      "lineIndentations": [
+                                        0
+                                      ],
+                                      "layoutVersion": 5,
+                                      "interactions": [],
+                                      "complexStrokeProperties": {
+                                        "strokeType": "BASIC"
+                                      }
+                                    },
+                                    "effectiveVisible": true
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "padding": {
+                                  "top": 0,
+                                  "right": 75,
+                                  "bottom": 1,
+                                  "left": 0
+                                },
+                                "align": "start"
+                              },
+                              "figma": {
+                                "parentId": "11:4171",
+                                "childIds": [
+                                  "11:4173"
+                                ],
+                                "name": "Paragraph",
+                                "type": "FRAME",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -3417.5,
+                                  "y": 857,
+                                  "width": 222,
+                                  "height": 24
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -3417.5,
+                                  "y": 857,
+                                  "width": 222,
+                                  "height": 24
+                                },
+                                "size": {
+                                  "x": 222,
+                                  "y": 24
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    0
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "layoutSizingHorizontal": "FILL",
+                                "layoutSizingVertical": "FIXED",
+                                "layoutGrow": 0,
+                                "layoutAlign": "STRETCH",
+                                "clipsContent": false,
+                                "fills": [],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "INSIDE",
+                                "effects": [],
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "background": [],
+                                  "backgroundColor": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0,
+                                    "a": 0
+                                  },
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              },
+                              "size": {
+                                "width": "fill",
+                                "height": 24
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "business-projects-description-wrapper",
+                              "figmaNodeId": "11:4174",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "business-projects-description",
+                                  "figmaNodeId": "11:4175",
+                                  "text": "Ervaren in hotels, kantoren en andere bedrijfspanden",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "lineHeight": "22px",
+                                    "letterSpacing": "0px",
+                                    "align": "left",
+                                    "color": "#6A7282"
+                                  },
+                                  "size": {
+                                    "width": 222
+                                  },
+                                  "figma": {
+                                    "parentId": "11:4174",
+                                    "childIds": [],
+                                    "name": "Ervaren in hotels, kantoren en andere bedrijfspand",
+                                    "type": "TEXT",
+                                    "blendMode": "PASS_THROUGH",
+                                    "absoluteBoundingBox": {
+                                      "x": -3417.5,
+                                      "y": 882,
+                                      "width": 222,
+                                      "height": 44
+                                    },
+                                    "absoluteRenderBounds": {
+                                      "x": -3416.6201171875,
+                                      "y": 887.8880004882812,
+                                      "width": 216.747802734375,
+                                      "height": 37.63201904296875
+                                    },
+                                    "size": {
+                                      "x": 222,
+                                      "y": 44
+                                    },
+                                    "relativeTransform": [
+                                      [
+                                        1,
+                                        0,
+                                        0
+                                      ],
+                                      [
+                                        0,
+                                        1,
+                                        -1
+                                      ]
+                                    ],
+                                    "constraints": {
+                                      "vertical": "TOP",
+                                      "horizontal": "LEFT"
+                                    },
+                                    "fills": [
+                                      {
+                                        "blendMode": "NORMAL",
+                                        "type": "SOLID",
+                                        "color": {
+                                          "r": 0.4156862795352936,
+                                          "g": 0.4470588266849518,
+                                          "b": 0.5098039507865906,
+                                          "a": 1
+                                        }
+                                      }
+                                    ],
+                                    "strokes": [],
+                                    "strokeWeight": 1,
+                                    "strokeAlign": "OUTSIDE",
+                                    "effects": [],
+                                    "style": {
+                                      "fontFamily": "Plus Jakarta Sans",
+                                      "fontPostScriptName": null,
+                                      "fontStyle": "Regular",
+                                      "fontWeight": 400,
+                                      "textAutoResize": "HEIGHT",
+                                      "fontSize": 16,
+                                      "textAlignHorizontal": "LEFT",
+                                      "textAlignVertical": "TOP",
+                                      "letterSpacing": 0,
+                                      "lineHeightPx": 22,
+                                      "lineHeightPercent": 109.12698364257812,
+                                      "lineHeightPercentFontSize": 137.5,
+                                      "lineHeightUnit": "PIXELS"
+                                    },
+                                    "characterStyleOverrides": [],
+                                    "styleOverrideTable": {},
+                                    "characters": "Ervaren in hotels, kantoren en andere bedrijfspanden",
+                                    "rawGeometryFields": [
+                                      "fillGeometry",
+                                      "strokeGeometry"
+                                    ],
+                                    "extraSourceProperties": {
+                                      "scrollBehavior": "SCROLLS",
+                                      "lineTypes": [
+                                        "NONE"
+                                      ],
+                                      "lineIndentations": [
+                                        0
+                                      ],
+                                      "layoutVersion": 5,
+                                      "interactions": [],
+                                      "complexStrokeProperties": {
+                                        "strokeType": "BASIC"
+                                      }
+                                    },
+                                    "effectiveVisible": true
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "padding": {
+                                  "top": 0,
+                                  "right": 0,
+                                  "bottom": 1,
+                                  "left": 0
+                                },
+                                "align": "start"
+                              },
+                              "figma": {
+                                "parentId": "11:4171",
+                                "childIds": [
+                                  "11:4175"
+                                ],
+                                "name": "Paragraph",
+                                "type": "FRAME",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -3417.5,
+                                  "y": 883,
+                                  "width": 222,
+                                  "height": 44
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -3417.5,
+                                  "y": 883,
+                                  "width": 222,
+                                  "height": 44
+                                },
+                                "size": {
+                                  "x": 222,
+                                  "y": 44
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    26
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "layoutSizingHorizontal": "FILL",
+                                "layoutSizingVertical": "FIXED",
+                                "layoutGrow": 0,
+                                "layoutAlign": "STRETCH",
+                                "clipsContent": false,
+                                "fills": [],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "INSIDE",
+                                "effects": [],
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "background": [],
+                                  "backgroundColor": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0,
+                                    "a": 0
+                                  },
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              },
+                              "size": {
+                                "width": "fill",
+                                "height": 44
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": 2,
+                            "wrap": false
+                          },
+                          "size": {
+                            "width": "fill",
+                            "height": 70
+                          },
+                          "figma": {
+                            "parentId": "11:4163",
+                            "childIds": [
+                              "11:4172",
+                              "11:4174"
+                            ],
+                            "name": "Container",
+                            "type": "FRAME",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -3417.5,
+                              "y": 857,
+                              "width": 222,
+                              "height": 70
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -3417.5,
+                              "y": 857,
+                              "width": 222,
+                              "height": 70
+                            },
+                            "size": {
+                              "x": 222,
+                              "y": 70
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                56
+                              ],
+                              [
+                                0,
+                                1,
+                                0
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "layoutMode": "VERTICAL",
+                            "layoutWrap": "NO_WRAP",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisSizingMode": "FIXED",
+                            "counterAxisSizingMode": "FIXED",
+                            "itemSpacing": 2,
+                            "layoutGrow": 1,
+                            "layoutAlign": "INHERIT",
+                            "clipsContent": false,
+                            "fills": [],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [],
+                              "backgroundColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0,
+                                "a": 0
+                              },
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "align": "start",
+                        "gap": 12,
+                        "wrap": false
+                      },
+                      "size": {
+                        "width": 278,
+                        "height": 70
+                      },
+                      "figma": {
+                        "parentId": "11:4150",
+                        "childIds": [
+                          "11:4164",
+                          "11:4171"
+                        ],
+                        "name": "Container",
+                        "type": "FRAME",
+                        "blendMode": "PASS_THROUGH",
+                        "absoluteBoundingBox": {
+                          "x": -3473.5,
+                          "y": 857,
+                          "width": 278,
+                          "height": 70
+                        },
+                        "absoluteRenderBounds": {
+                          "x": -3473.5,
+                          "y": 857,
+                          "width": 278,
+                          "height": 70
+                        },
+                        "size": {
+                          "x": 278,
+                          "y": 70
+                        },
+                        "relativeTransform": [
+                          [
+                            1,
+                            0,
+                            318
+                          ],
+                          [
+                            0,
+                            1,
+                            0
+                          ]
+                        ],
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "layoutMode": "HORIZONTAL",
+                        "layoutWrap": "NO_WRAP",
+                        "layoutSizingHorizontal": "FIXED",
+                        "layoutSizingVertical": "FIXED",
+                        "primaryAxisSizingMode": "FIXED",
+                        "counterAxisSizingMode": "FIXED",
+                        "itemSpacing": 12,
+                        "clipsContent": false,
+                        "fills": [],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "effects": [],
+                        "rawGeometryFields": [
+                          "fillGeometry",
+                          "strokeGeometry"
+                        ],
+                        "extraSourceProperties": {
+                          "scrollBehavior": "SCROLLS",
+                          "background": [],
+                          "backgroundColor": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                          },
+                          "strokesIncludedInLayout": true,
+                          "interactions": [],
+                          "complexStrokeProperties": {
+                            "strokeType": "BASIC"
+                          }
+                        },
+                        "effectiveVisible": true
+                      }
+                    },
+                    {
+                      "type": "row",
+                      "id": "honest-advice",
+                      "figmaNodeId": "11:4176",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "honest-advice-graphic",
+                          "figmaNodeId": "11:4177",
+                          "asset": {
+                            "nodeId": "11:4177",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 44,
+                            "height": 44
+                          },
+                          "figma": {
+                            "parentId": "11:4176",
+                            "childIds": [
+                              "11:4178"
+                            ],
+                            "name": "Container",
+                            "type": "FRAME",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -3155.5,
+                              "y": 857,
+                              "width": 44,
+                              "height": 44
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -3155.5,
+                              "y": 857,
+                              "width": 44,
+                              "height": 44
+                            },
+                            "size": {
+                              "x": 44,
+                              "y": 44
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                0
+                              ],
+                              [
+                                0,
+                                1,
+                                0
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "layoutMode": "HORIZONTAL",
+                            "layoutWrap": "NO_WRAP",
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisSizingMode": "FIXED",
+                            "counterAxisSizingMode": "FIXED",
+                            "primaryAxisAlignItems": "CENTER",
+                            "counterAxisAlignItems": "CENTER",
+                            "paddingRight": 10,
+                            "paddingLeft": 10,
+                            "layoutGrow": 0,
+                            "layoutAlign": "INHERIT",
+                            "clipsContent": false,
+                            "fills": [
+                              {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                  "r": 0.9215686321258545,
+                                  "g": 0.9647058844566345,
+                                  "b": 0.9882352948188782,
+                                  "a": 1
+                                }
+                              }
+                            ],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "cornerRadius": 33554400,
+                            "cornerSmoothing": 0,
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [
+                                {
+                                  "blendMode": "NORMAL",
+                                  "type": "SOLID",
+                                  "color": {
+                                    "r": 0.9215686321258545,
+                                    "g": 0.9647058844566345,
+                                    "b": 0.9882352948188782,
+                                    "a": 1
+                                  }
+                                }
+                              ],
+                              "backgroundColor": {
+                                "r": 0.9215686321258545,
+                                "g": 0.9647058844566345,
+                                "b": 0.9882352948188782,
+                                "a": 1
+                              },
+                              "strokesIncludedInLayout": true,
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
+                          },
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "align": "center",
+                            "justify": "center",
+                            "wrap": false,
+                            "padding": {
+                              "right": 10,
+                              "left": 10
+                            }
+                          },
+                          "border": {
+                            "radius": 33554400
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "honest-advice-copy",
+                          "figmaNodeId": "11:4181",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "honest-advice-title-wrapper",
+                              "figmaNodeId": "11:4182",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "honest-advice-title",
+                                  "figmaNodeId": "11:4183",
+                                  "text": "Eerlijk advies",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 600,
+                                    "lineHeight": "24px",
+                                    "letterSpacing": "0px",
+                                    "align": "left",
+                                    "color": "#101828"
+                                  },
+                                  "size": {
+                                    "width": 100
+                                  },
+                                  "figma": {
+                                    "parentId": "11:4182",
+                                    "childIds": [],
+                                    "name": "Eerlijk advies",
+                                    "type": "TEXT",
+                                    "blendMode": "PASS_THROUGH",
+                                    "absoluteBoundingBox": {
+                                      "x": -3099.5,
+                                      "y": 856,
+                                      "width": 100,
+                                      "height": 24
+                                    },
+                                    "absoluteRenderBounds": {
+                                      "x": -3098.26806640625,
+                                      "y": 862.8880004882812,
+                                      "width": 97.599365234375,
+                                      "height": 15.64801025390625
+                                    },
+                                    "size": {
+                                      "x": 100,
+                                      "y": 24
+                                    },
+                                    "relativeTransform": [
+                                      [
+                                        1,
+                                        0,
+                                        0
+                                      ],
+                                      [
+                                        0,
+                                        1,
+                                        -1
+                                      ]
+                                    ],
+                                    "constraints": {
+                                      "vertical": "TOP",
+                                      "horizontal": "LEFT"
+                                    },
+                                    "fills": [
+                                      {
+                                        "blendMode": "NORMAL",
+                                        "type": "SOLID",
+                                        "color": {
+                                          "r": 0.062745101749897,
+                                          "g": 0.0941176488995552,
+                                          "b": 0.1568627506494522,
+                                          "a": 1
+                                        }
+                                      }
+                                    ],
+                                    "strokes": [],
+                                    "strokeWeight": 1,
+                                    "strokeAlign": "OUTSIDE",
+                                    "effects": [],
+                                    "style": {
+                                      "fontFamily": "Plus Jakarta Sans",
+                                      "fontPostScriptName": null,
+                                      "fontStyle": "SemiBold",
+                                      "fontWeight": 600,
+                                      "textAutoResize": "WIDTH_AND_HEIGHT",
+                                      "fontSize": 16,
+                                      "textAlignHorizontal": "LEFT",
+                                      "textAlignVertical": "TOP",
+                                      "letterSpacing": 0,
+                                      "lineHeightPx": 24,
+                                      "lineHeightPercent": 119.04761505126953,
+                                      "lineHeightPercentFontSize": 150,
+                                      "lineHeightUnit": "PIXELS"
+                                    },
+                                    "characterStyleOverrides": [],
+                                    "styleOverrideTable": {},
+                                    "characters": "Eerlijk advies",
+                                    "rawGeometryFields": [
+                                      "fillGeometry",
+                                      "strokeGeometry"
+                                    ],
+                                    "extraSourceProperties": {
+                                      "scrollBehavior": "SCROLLS",
+                                      "lineTypes": [
+                                        "NONE"
+                                      ],
+                                      "lineIndentations": [
+                                        0
+                                      ],
+                                      "layoutVersion": 5,
+                                      "interactions": [],
+                                      "complexStrokeProperties": {
+                                        "strokeType": "BASIC"
+                                      }
+                                    },
+                                    "effectiveVisible": true
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "padding": {
+                                  "top": 0,
+                                  "right": 122,
+                                  "bottom": 1,
+                                  "left": 0
+                                },
+                                "align": "start"
+                              },
+                              "figma": {
+                                "parentId": "11:4181",
+                                "childIds": [
+                                  "11:4183"
+                                ],
+                                "name": "Paragraph",
+                                "type": "FRAME",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -3099.5,
+                                  "y": 857,
+                                  "width": 222,
+                                  "height": 24
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -3099.5,
+                                  "y": 857,
+                                  "width": 222,
+                                  "height": 24
+                                },
+                                "size": {
+                                  "x": 222,
+                                  "y": 24
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    0
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "layoutSizingHorizontal": "FILL",
+                                "layoutSizingVertical": "FIXED",
+                                "layoutGrow": 0,
+                                "layoutAlign": "STRETCH",
+                                "clipsContent": false,
+                                "fills": [],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "INSIDE",
+                                "effects": [],
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "background": [],
+                                  "backgroundColor": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0,
+                                    "a": 0
+                                  },
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              },
+                              "size": {
+                                "width": "fill",
+                                "height": 24
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "honest-advice-description-wrapper",
+                              "figmaNodeId": "11:4184",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "honest-advice-description",
+                                  "figmaNodeId": "11:4185",
+                                  "text": "Direct en zonder geouwehoer",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "lineHeight": "22px",
+                                    "letterSpacing": "0px",
+                                    "align": "left",
+                                    "color": "#6A7282"
+                                  },
+                                  "size": {
+                                    "width": 222
+                                  },
+                                  "figma": {
+                                    "parentId": "11:4184",
+                                    "childIds": [],
+                                    "name": "Direct en zonder geouwehoer",
+                                    "type": "TEXT",
+                                    "blendMode": "PASS_THROUGH",
+                                    "absoluteBoundingBox": {
+                                      "x": -3099.5,
+                                      "y": 882,
+                                      "width": 222,
+                                      "height": 44
+                                    },
+                                    "absoluteRenderBounds": {
+                                      "x": -3098.6201171875,
+                                      "y": 887.8880004882812,
+                                      "width": 122.74267578125,
+                                      "height": 37.63201904296875
+                                    },
+                                    "size": {
+                                      "x": 222,
+                                      "y": 44
+                                    },
+                                    "relativeTransform": [
+                                      [
+                                        1,
+                                        0,
+                                        0
+                                      ],
+                                      [
+                                        0,
+                                        1,
+                                        -1
+                                      ]
+                                    ],
+                                    "constraints": {
+                                      "vertical": "TOP",
+                                      "horizontal": "LEFT"
+                                    },
+                                    "fills": [
+                                      {
+                                        "blendMode": "NORMAL",
+                                        "type": "SOLID",
+                                        "color": {
+                                          "r": 0.4156862795352936,
+                                          "g": 0.4470588266849518,
+                                          "b": 0.5098039507865906,
+                                          "a": 1
+                                        }
+                                      }
+                                    ],
+                                    "strokes": [],
+                                    "strokeWeight": 1,
+                                    "strokeAlign": "OUTSIDE",
+                                    "effects": [],
+                                    "style": {
+                                      "fontFamily": "Plus Jakarta Sans",
+                                      "fontPostScriptName": null,
+                                      "fontStyle": "Regular",
+                                      "fontWeight": 400,
+                                      "textAutoResize": "HEIGHT",
+                                      "fontSize": 16,
+                                      "textAlignHorizontal": "LEFT",
+                                      "textAlignVertical": "TOP",
+                                      "letterSpacing": 0,
+                                      "lineHeightPx": 22,
+                                      "lineHeightPercent": 109.12698364257812,
+                                      "lineHeightPercentFontSize": 137.5,
+                                      "lineHeightUnit": "PIXELS"
+                                    },
+                                    "characterStyleOverrides": [],
+                                    "styleOverrideTable": {},
+                                    "characters": "Direct en zonder geouwehoer",
+                                    "rawGeometryFields": [
+                                      "fillGeometry",
+                                      "strokeGeometry"
+                                    ],
+                                    "extraSourceProperties": {
+                                      "scrollBehavior": "SCROLLS",
+                                      "lineTypes": [
+                                        "NONE"
+                                      ],
+                                      "lineIndentations": [
+                                        0
+                                      ],
+                                      "layoutVersion": 5,
+                                      "interactions": [],
+                                      "complexStrokeProperties": {
+                                        "strokeType": "BASIC"
+                                      }
+                                    },
+                                    "effectiveVisible": true
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "padding": {
+                                  "top": 0,
+                                  "right": 0,
+                                  "bottom": 1,
+                                  "left": 0
+                                },
+                                "align": "start"
+                              },
+                              "figma": {
+                                "parentId": "11:4181",
+                                "childIds": [
+                                  "11:4185"
+                                ],
+                                "name": "Paragraph",
+                                "type": "FRAME",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -3099.5,
+                                  "y": 883,
+                                  "width": 222,
+                                  "height": 44
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -3099.5,
+                                  "y": 883,
+                                  "width": 222,
+                                  "height": 44
+                                },
+                                "size": {
+                                  "x": 222,
+                                  "y": 44
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    26
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "layoutSizingHorizontal": "FILL",
+                                "layoutSizingVertical": "FIXED",
+                                "layoutGrow": 0,
+                                "layoutAlign": "STRETCH",
+                                "clipsContent": false,
+                                "fills": [],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "INSIDE",
+                                "effects": [],
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "background": [],
+                                  "backgroundColor": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0,
+                                    "a": 0
+                                  },
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              },
+                              "size": {
+                                "width": "fill",
+                                "height": 44
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": 2,
+                            "wrap": false
+                          },
+                          "size": {
+                            "width": "fill",
+                            "height": 70
+                          },
+                          "figma": {
+                            "parentId": "11:4176",
+                            "childIds": [
+                              "11:4182",
+                              "11:4184"
+                            ],
+                            "name": "Container",
+                            "type": "FRAME",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -3099.5,
+                              "y": 857,
+                              "width": 222,
+                              "height": 70
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -3099.5,
+                              "y": 857,
+                              "width": 222,
+                              "height": 70
+                            },
+                            "size": {
+                              "x": 222,
+                              "y": 70
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                56
+                              ],
+                              [
+                                0,
+                                1,
+                                0
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "layoutMode": "VERTICAL",
+                            "layoutWrap": "NO_WRAP",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisSizingMode": "FIXED",
+                            "counterAxisSizingMode": "FIXED",
+                            "itemSpacing": 2,
+                            "layoutGrow": 1,
+                            "layoutAlign": "INHERIT",
+                            "clipsContent": false,
+                            "fills": [],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [],
+                              "backgroundColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0,
+                                "a": 0
+                              },
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "align": "start",
+                        "gap": 12,
+                        "wrap": false
+                      },
+                      "size": {
+                        "width": 278,
+                        "height": 70
+                      },
+                      "figma": {
+                        "parentId": "11:4150",
+                        "childIds": [
+                          "11:4177",
+                          "11:4181"
+                        ],
+                        "name": "Container",
+                        "type": "FRAME",
+                        "blendMode": "PASS_THROUGH",
+                        "absoluteBoundingBox": {
+                          "x": -3155.5,
+                          "y": 857,
+                          "width": 278,
+                          "height": 70
+                        },
+                        "absoluteRenderBounds": {
+                          "x": -3155.5,
+                          "y": 857,
+                          "width": 278,
+                          "height": 70
+                        },
+                        "size": {
+                          "x": 278,
+                          "y": 70
+                        },
+                        "relativeTransform": [
+                          [
+                            1,
+                            0,
+                            636
+                          ],
+                          [
+                            0,
+                            1,
+                            0
+                          ]
+                        ],
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "layoutMode": "HORIZONTAL",
+                        "layoutWrap": "NO_WRAP",
+                        "layoutSizingHorizontal": "FIXED",
+                        "layoutSizingVertical": "FIXED",
+                        "primaryAxisSizingMode": "FIXED",
+                        "counterAxisSizingMode": "FIXED",
+                        "itemSpacing": 12,
+                        "clipsContent": false,
+                        "fills": [],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "effects": [],
+                        "rawGeometryFields": [
+                          "fillGeometry",
+                          "strokeGeometry"
+                        ],
+                        "extraSourceProperties": {
+                          "scrollBehavior": "SCROLLS",
+                          "background": [],
+                          "backgroundColor": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                          },
+                          "strokesIncludedInLayout": true,
+                          "interactions": [],
+                          "complexStrokeProperties": {
+                            "strokeType": "BASIC"
+                          }
+                        },
+                        "effectiveVisible": true
+                      }
+                    },
+                    {
+                      "type": "row",
+                      "id": "price-quality",
+                      "figmaNodeId": "11:4186",
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "price-quality-graphic",
+                          "figmaNodeId": "11:4187",
+                          "asset": {
+                            "nodeId": "11:4187",
+                            "kind": "svg"
+                          },
+                          "size": {
+                            "width": 44,
+                            "height": 44
+                          },
+                          "figma": {
+                            "parentId": "11:4186",
+                            "childIds": [
+                              "11:4188"
+                            ],
+                            "name": "Container",
+                            "type": "FRAME",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -2837.5,
+                              "y": 857,
+                              "width": 44,
+                              "height": 44
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -2837.5,
+                              "y": 857,
+                              "width": 44,
+                              "height": 44
+                            },
+                            "size": {
+                              "x": 44,
+                              "y": 44
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                0
+                              ],
+                              [
+                                0,
+                                1,
+                                0
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "layoutMode": "HORIZONTAL",
+                            "layoutWrap": "NO_WRAP",
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisSizingMode": "FIXED",
+                            "counterAxisSizingMode": "FIXED",
+                            "primaryAxisAlignItems": "CENTER",
+                            "counterAxisAlignItems": "CENTER",
+                            "paddingRight": 10,
+                            "paddingLeft": 10,
+                            "layoutGrow": 0,
+                            "layoutAlign": "INHERIT",
+                            "clipsContent": false,
+                            "fills": [
+                              {
+                                "blendMode": "NORMAL",
+                                "type": "SOLID",
+                                "color": {
+                                  "r": 0.9215686321258545,
+                                  "g": 0.9647058844566345,
+                                  "b": 0.9882352948188782,
+                                  "a": 1
+                                }
+                              }
+                            ],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "cornerRadius": 33554400,
+                            "cornerSmoothing": 0,
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [
+                                {
+                                  "blendMode": "NORMAL",
+                                  "type": "SOLID",
+                                  "color": {
+                                    "r": 0.9215686321258545,
+                                    "g": 0.9647058844566345,
+                                    "b": 0.9882352948188782,
+                                    "a": 1
+                                  }
+                                }
+                              ],
+                              "backgroundColor": {
+                                "r": 0.9215686321258545,
+                                "g": 0.9647058844566345,
+                                "b": 0.9882352948188782,
+                                "a": 1
+                              },
+                              "strokesIncludedInLayout": true,
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
+                          },
+                          "layout": {
+                            "display": "flex",
+                            "direction": "row",
+                            "align": "center",
+                            "justify": "center",
+                            "wrap": false,
+                            "padding": {
+                              "right": 10,
+                              "left": 10
+                            }
+                          },
+                          "border": {
+                            "radius": 33554400
+                          }
+                        },
+                        {
+                          "type": "column",
+                          "id": "price-quality-copy",
+                          "figmaNodeId": "11:4191",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "price-quality-title-wrapper",
+                              "figmaNodeId": "11:4192",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "price-quality-title",
+                                  "figmaNodeId": "11:4193",
+                                  "text": "Sterke prijs-kwaliteit",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 600,
+                                    "lineHeight": "24px",
+                                    "letterSpacing": "0px",
+                                    "align": "left",
+                                    "color": "#101828"
+                                  },
+                                  "size": {
+                                    "width": 162
+                                  },
+                                  "figma": {
+                                    "parentId": "11:4192",
+                                    "childIds": [],
+                                    "name": "Sterke prijs-kwaliteit",
+                                    "type": "TEXT",
+                                    "blendMode": "PASS_THROUGH",
+                                    "absoluteBoundingBox": {
+                                      "x": -2781.5,
+                                      "y": 856,
+                                      "width": 162,
+                                      "height": 24
+                                    },
+                                    "absoluteRenderBounds": {
+                                      "x": -2780.7958984375,
+                                      "y": 862.8880004882812,
+                                      "width": 160.11865234375,
+                                      "height": 15.64801025390625
+                                    },
+                                    "size": {
+                                      "x": 162,
+                                      "y": 24
+                                    },
+                                    "relativeTransform": [
+                                      [
+                                        1,
+                                        0,
+                                        0
+                                      ],
+                                      [
+                                        0,
+                                        1,
+                                        -1
+                                      ]
+                                    ],
+                                    "constraints": {
+                                      "vertical": "TOP",
+                                      "horizontal": "LEFT"
+                                    },
+                                    "fills": [
+                                      {
+                                        "blendMode": "NORMAL",
+                                        "type": "SOLID",
+                                        "color": {
+                                          "r": 0.062745101749897,
+                                          "g": 0.0941176488995552,
+                                          "b": 0.1568627506494522,
+                                          "a": 1
+                                        }
+                                      }
+                                    ],
+                                    "strokes": [],
+                                    "strokeWeight": 1,
+                                    "strokeAlign": "OUTSIDE",
+                                    "effects": [],
+                                    "style": {
+                                      "fontFamily": "Plus Jakarta Sans",
+                                      "fontPostScriptName": null,
+                                      "fontStyle": "SemiBold",
+                                      "fontWeight": 600,
+                                      "textAutoResize": "WIDTH_AND_HEIGHT",
+                                      "fontSize": 16,
+                                      "textAlignHorizontal": "LEFT",
+                                      "textAlignVertical": "TOP",
+                                      "letterSpacing": 0,
+                                      "lineHeightPx": 24,
+                                      "lineHeightPercent": 119.04761505126953,
+                                      "lineHeightPercentFontSize": 150,
+                                      "lineHeightUnit": "PIXELS"
+                                    },
+                                    "characterStyleOverrides": [],
+                                    "styleOverrideTable": {},
+                                    "characters": "Sterke prijs-kwaliteit",
+                                    "rawGeometryFields": [
+                                      "fillGeometry",
+                                      "strokeGeometry"
+                                    ],
+                                    "extraSourceProperties": {
+                                      "scrollBehavior": "SCROLLS",
+                                      "lineTypes": [
+                                        "NONE"
+                                      ],
+                                      "lineIndentations": [
+                                        0
+                                      ],
+                                      "layoutVersion": 5,
+                                      "interactions": [],
+                                      "complexStrokeProperties": {
+                                        "strokeType": "BASIC"
+                                      }
+                                    },
+                                    "effectiveVisible": true
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "padding": {
+                                  "top": 0,
+                                  "right": 60,
+                                  "bottom": 1,
+                                  "left": 0
+                                },
+                                "align": "start"
+                              },
+                              "figma": {
+                                "parentId": "11:4191",
+                                "childIds": [
+                                  "11:4193"
+                                ],
+                                "name": "Paragraph",
+                                "type": "FRAME",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -2781.5,
+                                  "y": 857,
+                                  "width": 222,
+                                  "height": 24
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -2781.5,
+                                  "y": 857,
+                                  "width": 222,
+                                  "height": 24
+                                },
+                                "size": {
+                                  "x": 222,
+                                  "y": 24
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    0
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "layoutSizingHorizontal": "FILL",
+                                "layoutSizingVertical": "FIXED",
+                                "layoutGrow": 0,
+                                "layoutAlign": "STRETCH",
+                                "clipsContent": false,
+                                "fills": [],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "INSIDE",
+                                "effects": [],
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "background": [],
+                                  "backgroundColor": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0,
+                                    "a": 0
+                                  },
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              },
+                              "size": {
+                                "width": "fill",
+                                "height": 24
+                              }
+                            },
+                            {
+                              "type": "column",
+                              "id": "price-quality-description-wrapper",
+                              "figmaNodeId": "11:4194",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "price-quality-description",
+                                  "figmaNodeId": "11:4195",
+                                  "text": "Goede kwaliteit voor een eerlijke prijs",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 16,
+                                    "fontWeight": 400,
+                                    "lineHeight": "22px",
+                                    "letterSpacing": "0px",
+                                    "align": "left",
+                                    "color": "#6A7282"
+                                  },
+                                  "size": {
+                                    "width": 222
+                                  },
+                                  "figma": {
+                                    "parentId": "11:4194",
+                                    "childIds": [],
+                                    "name": "Goede kwaliteit voor een eerlijke prijs",
+                                    "type": "TEXT",
+                                    "blendMode": "PASS_THROUGH",
+                                    "absoluteBoundingBox": {
+                                      "x": -2781.5,
+                                      "y": 882,
+                                      "width": 222,
+                                      "height": 44
+                                    },
+                                    "absoluteRenderBounds": {
+                                      "x": -2780.6201171875,
+                                      "y": 887.8880004882812,
+                                      "width": 186.810302734375,
+                                      "height": 37.63201904296875
+                                    },
+                                    "size": {
+                                      "x": 222,
+                                      "y": 44
+                                    },
+                                    "relativeTransform": [
+                                      [
+                                        1,
+                                        0,
+                                        0
+                                      ],
+                                      [
+                                        0,
+                                        1,
+                                        -1
+                                      ]
+                                    ],
+                                    "constraints": {
+                                      "vertical": "TOP",
+                                      "horizontal": "LEFT"
+                                    },
+                                    "fills": [
+                                      {
+                                        "blendMode": "NORMAL",
+                                        "type": "SOLID",
+                                        "color": {
+                                          "r": 0.4156862795352936,
+                                          "g": 0.4470588266849518,
+                                          "b": 0.5098039507865906,
+                                          "a": 1
+                                        }
+                                      }
+                                    ],
+                                    "strokes": [],
+                                    "strokeWeight": 1,
+                                    "strokeAlign": "OUTSIDE",
+                                    "effects": [],
+                                    "style": {
+                                      "fontFamily": "Plus Jakarta Sans",
+                                      "fontPostScriptName": null,
+                                      "fontStyle": "Regular",
+                                      "fontWeight": 400,
+                                      "textAutoResize": "HEIGHT",
+                                      "fontSize": 16,
+                                      "textAlignHorizontal": "LEFT",
+                                      "textAlignVertical": "TOP",
+                                      "letterSpacing": 0,
+                                      "lineHeightPx": 22,
+                                      "lineHeightPercent": 109.12698364257812,
+                                      "lineHeightPercentFontSize": 137.5,
+                                      "lineHeightUnit": "PIXELS"
+                                    },
+                                    "characterStyleOverrides": [],
+                                    "styleOverrideTable": {},
+                                    "characters": "Goede kwaliteit voor een eerlijke prijs",
+                                    "rawGeometryFields": [
+                                      "fillGeometry",
+                                      "strokeGeometry"
+                                    ],
+                                    "extraSourceProperties": {
+                                      "scrollBehavior": "SCROLLS",
+                                      "lineTypes": [
+                                        "NONE"
+                                      ],
+                                      "lineIndentations": [
+                                        0
+                                      ],
+                                      "layoutVersion": 5,
+                                      "interactions": [],
+                                      "complexStrokeProperties": {
+                                        "strokeType": "BASIC"
+                                      }
+                                    },
+                                    "effectiveVisible": true
+                                  }
+                                }
+                              ],
+                              "layout": {
+                                "display": "flex",
+                                "direction": "column",
+                                "padding": {
+                                  "top": 0,
+                                  "right": 0,
+                                  "bottom": 1,
+                                  "left": 0
+                                },
+                                "align": "start"
+                              },
+                              "figma": {
+                                "parentId": "11:4191",
+                                "childIds": [
+                                  "11:4195"
+                                ],
+                                "name": "Paragraph",
+                                "type": "FRAME",
+                                "blendMode": "PASS_THROUGH",
+                                "absoluteBoundingBox": {
+                                  "x": -2781.5,
+                                  "y": 883,
+                                  "width": 222,
+                                  "height": 44
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": -2781.5,
+                                  "y": 883,
+                                  "width": 222,
+                                  "height": 44
+                                },
+                                "size": {
+                                  "x": 222,
+                                  "y": 44
+                                },
+                                "relativeTransform": [
+                                  [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  [
+                                    0,
+                                    1,
+                                    26
+                                  ]
+                                ],
+                                "constraints": {
+                                  "vertical": "TOP",
+                                  "horizontal": "LEFT"
+                                },
+                                "layoutSizingHorizontal": "FILL",
+                                "layoutSizingVertical": "FIXED",
+                                "layoutGrow": 0,
+                                "layoutAlign": "STRETCH",
+                                "clipsContent": false,
+                                "fills": [],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "INSIDE",
+                                "effects": [],
+                                "rawGeometryFields": [
+                                  "fillGeometry",
+                                  "strokeGeometry"
+                                ],
+                                "extraSourceProperties": {
+                                  "scrollBehavior": "SCROLLS",
+                                  "background": [],
+                                  "backgroundColor": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0,
+                                    "a": 0
+                                  },
+                                  "interactions": [],
+                                  "complexStrokeProperties": {
+                                    "strokeType": "BASIC"
+                                  }
+                                },
+                                "effectiveVisible": true
+                              },
+                              "size": {
+                                "width": "fill",
+                                "height": 44
+                              }
+                            }
+                          ],
+                          "layout": {
+                            "display": "flex",
+                            "direction": "column",
+                            "align": "start",
+                            "gap": 2,
+                            "wrap": false
+                          },
+                          "size": {
+                            "width": "fill",
+                            "height": 70
+                          },
+                          "figma": {
+                            "parentId": "11:4186",
+                            "childIds": [
+                              "11:4192",
+                              "11:4194"
+                            ],
+                            "name": "Container",
+                            "type": "FRAME",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -2781.5,
+                              "y": 857,
+                              "width": 222,
+                              "height": 70
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -2781.5,
+                              "y": 857,
+                              "width": 222,
+                              "height": 70
+                            },
+                            "size": {
+                              "x": 222,
+                              "y": 70
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                56
+                              ],
+                              [
+                                0,
+                                1,
+                                0
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "layoutMode": "VERTICAL",
+                            "layoutWrap": "NO_WRAP",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "FIXED",
+                            "primaryAxisSizingMode": "FIXED",
+                            "counterAxisSizingMode": "FIXED",
+                            "itemSpacing": 2,
+                            "layoutGrow": 1,
+                            "layoutAlign": "INHERIT",
+                            "clipsContent": false,
+                            "fills": [],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [],
+                              "backgroundColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0,
+                                "a": 0
+                              },
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
+                          }
+                        }
+                      ],
+                      "layout": {
+                        "display": "flex",
+                        "direction": "row",
+                        "align": "start",
+                        "gap": 12,
+                        "wrap": false
+                      },
+                      "size": {
+                        "width": 278,
+                        "height": 70
+                      },
+                      "figma": {
+                        "parentId": "11:4150",
+                        "childIds": [
+                          "11:4187",
+                          "11:4191"
+                        ],
+                        "name": "Container",
+                        "type": "FRAME",
+                        "blendMode": "PASS_THROUGH",
+                        "absoluteBoundingBox": {
+                          "x": -2837.5,
+                          "y": 857,
+                          "width": 278,
+                          "height": 70
+                        },
+                        "absoluteRenderBounds": {
+                          "x": -2837.5,
+                          "y": 857,
+                          "width": 278,
+                          "height": 70
+                        },
+                        "size": {
+                          "x": 278,
+                          "y": 70
+                        },
+                        "relativeTransform": [
+                          [
+                            1,
+                            0,
+                            954
+                          ],
+                          [
+                            0,
+                            1,
+                            0
+                          ]
+                        ],
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "layoutMode": "HORIZONTAL",
+                        "layoutWrap": "NO_WRAP",
+                        "layoutSizingHorizontal": "FIXED",
+                        "layoutSizingVertical": "FIXED",
+                        "primaryAxisSizingMode": "FIXED",
+                        "counterAxisSizingMode": "FIXED",
+                        "itemSpacing": 12,
+                        "clipsContent": false,
+                        "fills": [],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "effects": [],
+                        "rawGeometryFields": [
+                          "fillGeometry",
+                          "strokeGeometry"
+                        ],
+                        "extraSourceProperties": {
+                          "scrollBehavior": "SCROLLS",
+                          "background": [],
+                          "backgroundColor": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                          },
+                          "strokesIncludedInLayout": true,
+                          "interactions": [],
+                          "complexStrokeProperties": {
+                            "strokeType": "BASIC"
+                          }
+                        },
+                        "effectiveVisible": true
+                      }
+                    }
+                  ],
+                  "layout": {
+                    "display": "flex",
+                    "direction": "row",
+                    "gap": 40,
+                    "align": "start"
+                  }
+                }
+              ],
+              "layout": {
+                "display": "flex",
+                "direction": "column",
+                "align": "start"
+              },
+              "figma": {
+                "parentId": "11:4149",
+                "childIds": [
+                  "11:4151",
+                  "11:4163",
+                  "11:4176",
+                  "11:4186"
+                ],
+                "name": "Container",
+                "type": "FRAME",
+                "blendMode": "PASS_THROUGH",
+                "absoluteBoundingBox": {
+                  "x": -3791.5,
+                  "y": 857,
+                  "width": 1232,
+                  "height": 70
+                },
+                "absoluteRenderBounds": {
+                  "x": -3791.5,
+                  "y": 857,
+                  "width": 1232,
+                  "height": 70
+                },
+                "size": {
+                  "x": 1232,
+                  "y": 70
+                },
+                "relativeTransform": [
+                  [
+                    1,
+                    0,
+                    24
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "FIXED",
+                "layoutGrow": 0,
+                "layoutAlign": "STRETCH",
+                "clipsContent": false,
+                "fills": [],
+                "strokes": [],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "effects": [],
+                "rawGeometryFields": [
+                  "fillGeometry",
+                  "strokeGeometry"
+                ],
+                "extraSourceProperties": {
+                  "scrollBehavior": "SCROLLS",
+                  "background": [],
+                  "backgroundColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "interactions": [],
+                  "complexStrokeProperties": {
+                    "strokeType": "BASIC"
+                  }
+                },
+                "effectiveVisible": true
+              },
+              "size": {
+                "width": "fill",
+                "height": 70
+              }
+            }
+          ],
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "padding": {
+              "right": 24,
+              "left": 24
+            },
+            "align": "start",
+            "wrap": false
+          },
+          "figma": {
+            "parentId": "11:4148",
+            "childIds": [
+              "11:4150"
+            ],
+            "name": "Container",
+            "type": "FRAME",
+            "blendMode": "PASS_THROUGH",
+            "absoluteBoundingBox": {
+              "x": -3815.5,
+              "y": 857,
+              "width": 1280,
+              "height": 70
+            },
+            "absoluteRenderBounds": {
+              "x": -3815.5,
+              "y": 857,
+              "width": 1280,
+              "height": 70
+            },
+            "size": {
+              "x": 1280,
+              "y": 70
+            },
+            "relativeTransform": [
+              [
+                1,
+                0,
+                199.5
+              ],
+              [
+                0,
+                1,
+                40
+              ]
+            ],
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "LEFT"
+            },
+            "layoutMode": "VERTICAL",
+            "layoutWrap": "NO_WRAP",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "FIXED",
+            "primaryAxisSizingMode": "FIXED",
+            "counterAxisSizingMode": "FIXED",
+            "paddingRight": 24,
+            "paddingLeft": 24,
+            "layoutGrow": 0,
+            "layoutAlign": "STRETCH",
+            "clipsContent": false,
+            "fills": [],
+            "strokes": [],
+            "strokeWeight": 1,
+            "strokeAlign": "INSIDE",
+            "effects": [],
+            "rawGeometryFields": [
+              "fillGeometry",
+              "strokeGeometry"
+            ],
+            "extraSourceProperties": {
+              "scrollBehavior": "SCROLLS",
+              "background": [],
+              "backgroundColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "interactions": [],
+              "complexStrokeProperties": {
+                "strokeType": "BASIC"
+              }
+            },
+            "effectiveVisible": true
+          },
+          "size": {
+            "width": "fill",
+            "height": 70
+          }
+        }
+      ],
+      "layout": {
+        "display": "flex",
+        "direction": "column",
+        "align": "start"
+      },
+      "figma": {
+        "parentId": null,
+        "childIds": [
+          "11:4148"
+        ],
+        "name": "Recreate attached design (scoped)",
+        "type": "FRAME",
+        "absoluteBoundingBox": {
+          "x": -4015,
+          "y": 817,
+          "width": 1679,
+          "height": 151
+        },
+        "effectiveVisible": true
+      },
+      "size": {
+        "width": 1679
+      }
+    }
+  ]
+}

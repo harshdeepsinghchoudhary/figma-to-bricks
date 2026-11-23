@@ -1,0 +1,62 @@
+{
+  "type": "section",
+  "id": "header",
+  "figmaNodeId": "11:4107",
+  "figma": {
+    "type": "FRAME",
+    "layoutMode": "VERTICAL",
+    "paddingLeft": 199.5,
+    "paddingRight": 199.5,
+    "paddingBottom": 1,
+    "layoutWrap": "NO_WRAP",
+    "layoutSizingHorizontal": "FILL",
+    "layoutSizingVertical": "FIXED",
+    "layoutGrow": 0,
+    "layoutAlign": "STRETCH",
+    "constraints": {
+      "vertical": "TOP",
+      "horizontal": "LEFT"
+    },
+    "clipsContent": false,
+    "strokeWeight": 1,
+    "strokeAlign": "INSIDE",
+    "fills": [
+      {
+        "t": "SOLID",
+        "c": "#FFFFFF"
+      }
+    ],
+    "strokes": [
+      {
+        "t": "SOLID",
+        "c": "#F3F4F6"
+      }
+    ],
+    "effects": [
+      "DROP_SHADOW",
+      "DROP_SHADOW"
+    ]
+  },
+  "layout": {
+    "display": "flex",
+    "direction": "column",
+    "padding": {
+      "left": 199.5,
+      "right": 199.5,
+      "bottom": 1
+    }
+  },
+  "size": {
+    "height": 101,
+    "width": "100%"
+  },
+  "background": {
+    "color": "#FFFFFF"
+  },
+  "border": {
+    "radius": 0
+  },
+  "notes": [
+    "Uniform border not parseable here"
+  ]
+}

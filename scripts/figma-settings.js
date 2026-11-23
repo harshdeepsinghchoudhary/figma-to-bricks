@@ -10,6 +10,11 @@ export function applyFigmaSettings(node, settings, { supportedKeys = new Set(), 
     else warnings.push(`${node.id}: native control ${key} is unavailable; source measurement retained in normalized metadata`);
   };
   const finite = (value) => typeof value === "number" && Number.isFinite(value);
+  if(['icon','image'].includes(node.type)&&source.absoluteBoundingBox?.width<=48)set('_flexShrink','0');
+  if(source.individualStrokeWeights && settings._border){
+    const width=Object.fromEntries(Object.entries(source.individualStrokeWeights).filter(([side,value])=>['top','right','bottom','left'].includes(side)&&finite(value)).map(([side,value])=>[side,String(value)]));
+    if(Object.keys(width).length)set('_border',{...settings._border,width});
+  }
   if (source.visible === false || source.effectiveVisible === false) set("_display", "none");
   if (source.clipsContent === true) set("_overflow", "hidden");
   // Existing image/icon assets are Figma node exports, with node opacity already baked into their pixels.

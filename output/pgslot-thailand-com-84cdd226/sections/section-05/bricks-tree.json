@@ -1,8 +1,8 @@
 [
   {
-    "id": "ya9swn",
+    "id": "3em8dw",
     "name": "heading",
-    "parent": "j0ag8w",
+    "parent": "0ms00d",
     "children": [],
     "settings": {
       "text": "3 Benefits To Play PG Slot Games",
@@ -17,13 +17,18 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
+      },
+      "_typography:mobile_landscape": {
+        "font-size": "32px",
+        "line-height": "125%",
+        "letter-spacing": "0%"
       }
     }
   },
   {
-    "id": "g42uyt",
+    "id": "1xiizz",
     "name": "image",
-    "parent": "5ylfbn",
+    "parent": "usskdz",
     "children": [],
     "settings": {
       "image": {
@@ -39,9 +44,9 @@
     "themeStyles": []
   },
   {
-    "id": "fwo553",
+    "id": "ozwy4j",
     "name": "heading",
-    "parent": "5ylfbn",
+    "parent": "usskdz",
     "children": [],
     "settings": {
       "text": "Accessibility and Convenience",
@@ -66,12 +71,12 @@
     }
   },
   {
-    "id": "tvb5qu",
-    "name": "text-basic",
-    "parent": "5ylfbn",
+    "id": "efx3dt",
+    "name": "text",
+    "parent": "usskdz",
     "children": [],
     "settings": {
-      "text": "Lorem Ipsum is simply dummy the printing and typesetting ",
+      "text": "<p>Lorem Ipsum is simply dummy the printing and typesetting </p>",
       "_margin": {
         "top": "14"
       },
@@ -92,13 +97,13 @@
     }
   },
   {
-    "id": "5ylfbn",
+    "id": "usskdz",
     "name": "div",
-    "parent": "j5t9ut",
+    "parent": "b6lbbc",
     "children": [
-      "g42uyt",
-      "fwo553",
-      "tvb5qu"
+      "1xiizz",
+      "ozwy4j",
+      "efx3dt"
     ],
     "settings": {
       "_display": "flex",
@@ -110,6 +115,7 @@
         "bottom": "30",
         "left": "31"
       },
+      "_heightMin": "325",
       "_gradient": {
         "applyTo": "background",
         "gradientType": "linear",
@@ -160,9 +166,9 @@
     }
   },
   {
-    "id": "3b97ih",
+    "id": "l73uik",
     "name": "image",
-    "parent": "oulyxq",
+    "parent": "fip2mt",
     "children": [],
     "settings": {
       "image": {
@@ -178,9 +184,9 @@
     "themeStyles": []
   },
   {
-    "id": "qavd4h",
+    "id": "1bldrp",
     "name": "heading",
-    "parent": "oulyxq",
+    "parent": "fip2mt",
     "children": [],
     "settings": {
       "text": "Variety of Games",
@@ -204,13 +210,12 @@
     }
   },
   {
-    "id": "lmllls",
-    "name": "text-basic",
-    "parent": "oulyxq",
+    "id": "idq6dt",
+    "name": "text",
+    "parent": "fip2mt",
     "children": [],
     "settings": {
-      "text": "Lorem Ipsum is simply dummy the printing and typesetting ",
-      "_display": "block",
+      "text": "<p>Lorem Ipsum is simply dummy the printing and typesetting </p>",
       "_margin": {
         "top": "14"
       },
@@ -231,13 +236,13 @@
     }
   },
   {
-    "id": "oulyxq",
+    "id": "fip2mt",
     "name": "div",
-    "parent": "j5t9ut",
+    "parent": "b6lbbc",
     "children": [
-      "3b97ih",
-      "qavd4h",
-      "lmllls"
+      "l73uik",
+      "1bldrp",
+      "idq6dt"
     ],
     "settings": {
       "_display": "flex",
@@ -249,6 +254,7 @@
         "bottom": "59",
         "left": "31"
       },
+      "_heightMin": "325",
       "_gradient": {
         "applyTo": "background",
         "gradientType": "linear",
@@ -299,9 +305,9 @@
     }
   },
   {
-    "id": "r502bk",
+    "id": "86se8h",
     "name": "image",
-    "parent": "0pgws5",
+    "parent": "qbyn0k",
     "children": [],
     "settings": {
       "image": {
@@ -312,33 +318,14 @@
         "url": "../../assets/first-prize-3188620-1-202_398.png"
       },
       "_width": "100%",
-      "_widthMax": "85px",
-      "_border": {
-        "radius": {
-          "top": "0px",
-          "right": "0px",
-          "bottom": "0px",
-          "left": "0px"
-        }
-      },
-      "_boxShadow": {
-        "color": {
-          "raw": "#00000000"
-        },
-        "values": {
-          "blur": "0",
-          "offsetX": "0",
-          "offsetY": "0",
-          "spread": "0"
-        }
-      }
+      "_widthMax": "85px"
     },
     "themeStyles": []
   },
   {
-    "id": "jc9naw",
+    "id": "lkhcu7",
     "name": "heading",
-    "parent": "0pgws5",
+    "parent": "qbyn0k",
     "children": [],
     "settings": {
       "text": "Bonuses and Rewards",
@@ -363,9 +350,9 @@
     }
   },
   {
-    "id": "d7z9fq",
+    "id": "e4d9ia",
     "name": "text",
-    "parent": "0pgws5",
+    "parent": "qbyn0k",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy the printing and typesetting </p>",
@@ -389,13 +376,13 @@
     }
   },
   {
-    "id": "0pgws5",
+    "id": "qbyn0k",
     "name": "div",
-    "parent": "j5t9ut",
+    "parent": "b6lbbc",
     "children": [
-      "r502bk",
-      "jc9naw",
-      "d7z9fq"
+      "86se8h",
+      "lkhcu7",
+      "e4d9ia"
     ],
     "settings": {
       "_display": "flex",
@@ -407,6 +394,7 @@
         "bottom": "30",
         "left": "31"
       },
+      "_heightMin": "325",
       "_gradient": {
         "applyTo": "background",
         "gradientType": "linear",
@@ -457,13 +445,13 @@
     }
   },
   {
-    "id": "j5t9ut",
+    "id": "b6lbbc",
     "name": "div",
-    "parent": "j0ag8w",
+    "parent": "0ms00d",
     "children": [
-      "5ylfbn",
-      "oulyxq",
-      "0pgws5"
+      "usskdz",
+      "fip2mt",
+      "qbyn0k"
     ],
     "settings": {
       "_display": "grid",
@@ -474,16 +462,24 @@
       "_gridTemplateColumns:tablet_portrait": "repeat(2, 1fr)",
       "_gridGap:tablet_portrait": "30",
       "_gridTemplateColumns:mobile_landscape": "1fr",
-      "_gridTemplateColumns:mobile_portrait": "1fr"
+      "_gridTemplateColumns:mobile_portrait": "1fr",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
     }
   },
   {
-    "id": "j0ag8w",
+    "id": "0ms00d",
     "name": "div",
-    "parent": "ttz5lg",
+    "parent": "ej1o8u",
     "children": [
-      "ya9swn",
-      "j5t9ut"
+      "3em8dw",
+      "b6lbbc"
     ],
     "settings": {
       "_display": "flex",
@@ -503,11 +499,11 @@
     }
   },
   {
-    "id": "ttz5lg",
+    "id": "ej1o8u",
     "name": "container",
-    "parent": "c8yj9r",
+    "parent": "lmktj1",
     "children": [
-      "j0ag8w"
+      "0ms00d"
     ],
     "settings": {
       "_display": "flex",
@@ -518,20 +514,39 @@
     }
   },
   {
-    "id": "c8yj9r",
+    "id": "lmktj1",
     "name": "section",
     "parent": 0,
     "children": [
-      "ttz5lg"
+      "ej1o8u"
     ],
     "settings": {
       "_padding": {
+        "top": "100",
         "right": "16",
+        "bottom": "100",
         "left": "16"
       },
+      "_heightMin": "617",
       "_background": {
         "color": {
           "raw": "#1A070C"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "top": "50",
+        "bottom": "50"
+      },
+      "_padding:mobile_landscape": {
+        "top": "50",
+        "bottom": "50"
+      },
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
         }
       }
     }

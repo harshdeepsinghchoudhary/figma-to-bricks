@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "sourceHash": "b29efbedb6a52eddb54ceedb60314e4e6f949d21b475fa53fabcc9522240ba36",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "Recreate attached design (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4248",
+      "parentId": "scope",
+      "name": "Section",
+      "type": "FRAME",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "11:4249",
+      "parentId": "11:4248",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4250",
+      "parentId": "11:4249",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4251",
+      "parentId": "11:4250",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4252",
+      "parentId": "11:4251",
+      "name": "De specialist",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4253",
+      "parentId": "11:4250",
+      "name": "Heading 2",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4254",
+      "parentId": "11:4253",
+      "name": "Tapijtschuur: vloeren en raamdecoratie op maat",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4255",
+      "parentId": "11:4250",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4256",
+      "parentId": "11:4255",
+      "name": "Tapijtschuur is dé specialist voor het woon- en be",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4257",
+      "parentId": "11:4250",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4258",
+      "parentId": "11:4257",
+      "name": "Onze vakmensen werken met vaste, betrouwbare merke",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4259",
+      "parentId": "11:4250",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4260",
+      "parentId": "11:4259",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4261",
+      "parentId": "11:4260",
+      "name": "Offerte aanvragen ",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4262",
+      "parentId": "11:4260",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4263",
+      "parentId": "11:4262",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4262"
+    },
+    {
+      "nodeId": "11:4264",
+      "parentId": "11:4262",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4262"
+    },
+    {
+      "nodeId": "11:4265",
+      "parentId": "11:4259",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4266",
+      "parentId": "11:4265",
+      "name": "Over ons",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4267",
+      "parentId": "11:4249",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4268",
+      "parentId": "11:4267",
+      "name": "Image (Vloer samples)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4269",
+      "parentId": "11:4249",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4270",
+      "parentId": "11:4269",
+      "name": "Image (Raamdecoratie)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4271",
+      "parentId": "11:4249",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4272",
+      "parentId": "11:4271",
+      "name": "Image (Tapijt)",
+      "type": "FRAME",
+      "status": "represented"
+    }
+  ],
+  "summary": {
+    "represented": 23,
+    "covered-by-export": 2,
+    "button-label": 0,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 1
+  }
+}

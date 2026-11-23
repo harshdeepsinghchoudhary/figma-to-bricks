@@ -1,0 +1,367 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "brands-and-suppliers",
+      "figmaNodeId": "11:4219",
+      "background": {
+        "color": "#F9FAFB"
+      },
+      "notes": [
+        "Inside stroke: 1px #F3F4F6."
+      ],
+      "children": [
+        {
+          "type": "column",
+          "id": "brands-container",
+          "figmaNodeId": "11:4220",
+          "children": [
+            {
+              "type": "column",
+              "id": "brands-label-wrapper",
+              "figmaNodeId": "11:4221",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "brands-label",
+                  "figmaNodeId": "11:4222",
+                  "text": "Onze merken & leveranciers",
+                  "typography": {
+                    "fontFamily": "Plus Jakarta Sans",
+                    "fontSize": 16,
+                    "fontWeight": 400,
+                    "align": "center",
+                    "lineHeight": "24px",
+                    "letterSpacing": "1.6px",
+                    "color": "#99A1AF"
+                  },
+                  "notes": [
+                    "Text case: uppercase."
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "id": "brands-list",
+              "figmaNodeId": "11:4223",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "brands-and-suppliers-row-1",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "moduleo-container",
+                      "figmaNodeId": "11:4224",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 14
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #3B5BDB21."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "moduleo-text-wrapper",
+                          "figmaNodeId": "11:4225",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "moduleo",
+                              "figmaNodeId": "11:4226",
+                              "text": "Moduleo",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 700,
+                                "align": "left",
+                                "lineHeight": "24px",
+                                "letterSpacing": "-0.4px",
+                                "color": "#3B5BDB"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "quick-step-container",
+                      "figmaNodeId": "11:4227",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 14
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #E6770021."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "quick-step-text-wrapper",
+                          "figmaNodeId": "11:4228",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "quick-step",
+                              "figmaNodeId": "11:4229",
+                              "text": "Quick-Step",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 700,
+                                "align": "left",
+                                "lineHeight": "24px",
+                                "letterSpacing": "-0.4px",
+                                "color": "#E67700"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "tarkett-container",
+                      "figmaNodeId": "11:4230",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 14
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #2F9E4421."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "tarkett-text-wrapper",
+                          "figmaNodeId": "11:4231",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tarkett",
+                              "figmaNodeId": "11:4232",
+                              "text": "Tarkett",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 700,
+                                "align": "left",
+                                "lineHeight": "24px",
+                                "letterSpacing": "-0.4px",
+                                "color": "#2F9E44"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "desso-container",
+                      "figmaNodeId": "11:4233",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 14
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #C2255C21."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "desso-text-wrapper",
+                          "figmaNodeId": "11:4234",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "desso",
+                              "figmaNodeId": "11:4235",
+                              "text": "Desso",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 700,
+                                "align": "left",
+                                "lineHeight": "24px",
+                                "letterSpacing": "-0.4px",
+                                "color": "#C2255C"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "forbo-container",
+                      "figmaNodeId": "11:4236",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 14
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #1971C221."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "forbo-text-wrapper",
+                          "figmaNodeId": "11:4237",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "forbo",
+                              "figmaNodeId": "11:4238",
+                              "text": "Forbo",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 700,
+                                "align": "left",
+                                "lineHeight": "24px",
+                                "letterSpacing": "-0.4px",
+                                "color": "#1971C2"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "cando-container",
+                      "figmaNodeId": "11:4239",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 14
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #7048E821."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "cando-text-wrapper",
+                          "figmaNodeId": "11:4240",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cando",
+                              "figmaNodeId": "11:4241",
+                              "text": "CanDo",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 700,
+                                "align": "left",
+                                "lineHeight": "24px",
+                                "letterSpacing": "-0.4px",
+                                "color": "#7048E8"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "berryalloc-container",
+                      "figmaNodeId": "11:4242",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 14
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #E6770021."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "berryalloc-text-wrapper",
+                          "figmaNodeId": "11:4243",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "berryalloc",
+                              "figmaNodeId": "11:4244",
+                              "text": "BerryAlloc",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 700,
+                                "align": "left",
+                                "lineHeight": "24px",
+                                "letterSpacing": "-0.4px",
+                                "color": "#E67700"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "row",
+                      "id": "pergo-container",
+                      "figmaNodeId": "11:4245",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 14
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #49505721."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "pergo-text-wrapper",
+                          "figmaNodeId": "11:4246",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "pergo",
+                              "figmaNodeId": "11:4247",
+                              "text": "Pergo",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 700,
+                                "align": "left",
+                                "lineHeight": "24px",
+                                "letterSpacing": "-0.4px",
+                                "color": "#495057"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

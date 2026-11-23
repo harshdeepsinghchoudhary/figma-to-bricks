@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "sourceHash": "549da3fdd3f561e4fa78930b6a17c6871b50329a82de8d3451844d604a86e201",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "Recreate attached design (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4219",
+      "parentId": "scope",
+      "name": "Section",
+      "type": "FRAME",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "11:4220",
+      "parentId": "11:4219",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4221",
+      "parentId": "11:4220",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4222",
+      "parentId": "11:4221",
+      "name": "Onze merken & leveranciers",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4223",
+      "parentId": "11:4220",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4224",
+      "parentId": "11:4223",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4225",
+      "parentId": "11:4224",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4226",
+      "parentId": "11:4225",
+      "name": "Moduleo",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4227",
+      "parentId": "11:4223",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4228",
+      "parentId": "11:4227",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4229",
+      "parentId": "11:4228",
+      "name": "Quick-Step",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4230",
+      "parentId": "11:4223",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4231",
+      "parentId": "11:4230",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4232",
+      "parentId": "11:4231",
+      "name": "Tarkett",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4233",
+      "parentId": "11:4223",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4234",
+      "parentId": "11:4233",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4235",
+      "parentId": "11:4234",
+      "name": "Desso",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4236",
+      "parentId": "11:4223",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4237",
+      "parentId": "11:4236",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4238",
+      "parentId": "11:4237",
+      "name": "Forbo",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4239",
+      "parentId": "11:4223",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4240",
+      "parentId": "11:4239",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4241",
+      "parentId": "11:4240",
+      "name": "CanDo",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4242",
+      "parentId": "11:4223",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4243",
+      "parentId": "11:4242",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4244",
+      "parentId": "11:4243",
+      "name": "BerryAlloc",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4245",
+      "parentId": "11:4223",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4246",
+      "parentId": "11:4245",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4247",
+      "parentId": "11:4246",
+      "name": "Pergo",
+      "type": "TEXT",
+      "status": "represented"
+    }
+  ],
+  "summary": {
+    "represented": 29,
+    "covered-by-export": 0,
+    "button-label": 0,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 1
+  }
+}

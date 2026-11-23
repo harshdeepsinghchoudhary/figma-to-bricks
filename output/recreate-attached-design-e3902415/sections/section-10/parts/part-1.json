@@ -1,0 +1,171 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "offer-section",
+      "figmaNodeId": "11:4418",
+      "background": {
+        "color": "#0E8BCC"
+      },
+      "children": [
+        {
+          "type": "row",
+          "id": "offer-container",
+          "figmaNodeId": "11:4419",
+          "children": [
+            {
+              "type": "column",
+              "id": "offer-copy",
+              "figmaNodeId": "11:4420",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "offer-title-paragraph",
+                  "figmaNodeId": "11:4421",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "offer-title",
+                      "figmaNodeId": "11:4422",
+                      "text": "Ontvang onze vrijblijvende offerte!",
+                      "typography": {
+                        "fontFamily": "Plus Jakarta Sans",
+                        "fontSize": 18,
+                        "fontWeight": 600,
+                        "lineHeight": "28px",
+                        "color": "#FFFFFF",
+                        "align": "left"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "id": "offer-description-paragraph",
+                  "figmaNodeId": "11:4423",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "offer-description",
+                      "figmaNodeId": "11:4424",
+                      "text": "Maak een vrijblijvende afspraak of ontvang uw offerte",
+                      "typography": {
+                        "fontFamily": "Plus Jakarta Sans",
+                        "fontSize": 16,
+                        "fontWeight": 400,
+                        "lineHeight": "24px",
+                        "color": "#FFFFFFBF",
+                        "align": "left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "id": "offer-actions",
+              "figmaNodeId": "11:4425",
+              "children": [
+                {
+                  "type": "row",
+                  "id": "offer-section-row-3",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "contact-link",
+                      "figmaNodeId": "11:4426",
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 10
+                      },
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "offer-section-row-1",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "contact-icon",
+                              "figmaNodeId": "11:4427",
+                              "asset": {
+                                "nodeId": "11:4427",
+                                "kind": "svg"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "contact-label",
+                              "figmaNodeId": "11:4429",
+                              "text": " Contact opnemen",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 600,
+                                "lineHeight": "24px",
+                                "color": "#0C7AB3",
+                                "align": "left"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "request-offer-link",
+                      "figmaNodeId": "11:4430",
+                      "background": {
+                        "color": "#EE3E38"
+                      },
+                      "border": {
+                        "radius": 10
+                      },
+                      "children": [
+                        {
+                          "type": "row",
+                          "id": "offer-section-row-2",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "request-offer-label",
+                              "figmaNodeId": "11:4431",
+                              "text": "Offerte aanvragen ",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 600,
+                                "lineHeight": "24px",
+                                "color": "#FFFFFF",
+                                "align": "left"
+                              }
+                            },
+                            {
+                              "type": "image",
+                              "id": "request-offer-icon",
+                              "figmaNodeId": "11:4432",
+                              "asset": {
+                                "nodeId": "11:4432",
+                                "kind": "svg"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Link destinations are not provided."
+  ]
+}

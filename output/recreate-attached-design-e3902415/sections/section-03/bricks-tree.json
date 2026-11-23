@@ -1,0 +1,470 @@
+[
+  {
+    "id": "upl01y",
+    "name": "button",
+    "parent": "nafhg2",
+    "children": [],
+    "settings": {
+      "text": "Vloeren showroom",
+      "_padding": {
+        "top": "4",
+        "right": "12.7",
+        "bottom": "4",
+        "left": "12"
+      },
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "14px",
+        "font-weight": "600",
+        "line-height": "20px",
+        "letter-spacing": "1.399999976158142px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left",
+        "text-transform": "uppercase"
+      },
+      "_background": {
+        "color": {
+          "raw": "#0E8BCC"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "33554400px",
+          "right": "33554400px",
+          "bottom": "33554400px",
+          "left": "33554400px"
+        }
+      }
+    }
+  },
+  {
+    "id": "uw3rx3",
+    "name": "heading",
+    "parent": "a9kktv",
+    "children": [],
+    "settings": {
+      "text": "Vakmanschap in vloeren en raamdecoratie",
+      "tag": "h2",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "48px",
+        "font-weight": "600",
+        "line-height": "60px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_typography:mobile_landscape": {
+        "font-size": "32px",
+        "line-height": "125%",
+        "letter-spacing": "0%"
+      }
+    }
+  },
+  {
+    "id": "a9kktv",
+    "name": "div",
+    "parent": "nafhg2",
+    "children": [
+      "uw3rx3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "0",
+        "bottom": "1",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "20"
+      },
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "gsugz2",
+    "name": "text",
+    "parent": "nafhg2",
+    "children": [],
+    "settings": {
+      "text": "<p>Bezoek onze showroom en ontdek ons uitgebreide aanbod. Van tapijt tot laminaat,  maatwerk vloeren voor elk project.</p>",
+      "_margin": {
+        "top": "20"
+      },
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "18px",
+        "font-weight": "400",
+        "line-height": "29.25px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#D1D5DC"
+        },
+        "text-align": "left"
+      }
+    }
+  },
+  {
+    "id": "2z1k65",
+    "name": "text",
+    "parent": "e8ocjt",
+    "children": [],
+    "settings": {
+      "text": "<p>Bekijk collectie </p>",
+      "_width": "auto",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_flexShrink": "0"
+    }
+  },
+  {
+    "id": "xewbtb",
+    "name": "icon",
+    "parent": "e8ocjt",
+    "children": [],
+    "settings": {
+      "icon": {
+        "library": "svg",
+        "svg": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/icon-11_4144.svg",
+          "url": "../../assets/icon-11_4144.svg"
+        },
+        "height": "16"
+      },
+      "_widthMax": "16px",
+      "_flexShrink": "0",
+      "_overflow": "hidden"
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "e8ocjt",
+    "name": "div",
+    "parent": "m7w7er",
+    "children": [
+      "2z1k65",
+      "xewbtb"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "7.3",
+      "_columnGap": "7.3",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "11",
+        "right": "24",
+        "bottom": "13",
+        "left": "24"
+      },
+      "_width": "100%",
+      "_widthMax": "189px",
+      "_background": {
+        "color": {
+          "raw": "#0E8BCC"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      },
+      "_direction:tablet_portrait": "row",
+      "_rowGap:tablet_portrait": "7.3",
+      "_columnGap:tablet_portrait": "7.3",
+      "_alignItems:tablet_portrait": "flex-start",
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      }
+    }
+  },
+  {
+    "id": "k0ejyz",
+    "name": "button",
+    "parent": "m7w7er",
+    "children": [],
+    "settings": {
+      "text": "Offerte aanvragen",
+      "_display": "flex",
+      "_alignItems": "center",
+      "_padding": {
+        "top": "12",
+        "right": "24",
+        "bottom": "12",
+        "left": "24"
+      },
+      "_height": "48",
+      "_typography": {
+        "font-family": "Plus Jakarta Sans",
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px",
+        "letter-spacing": "0px",
+        "color": {
+          "raw": "#FFFFFF"
+        },
+        "text-align": "left"
+      },
+      "_background": {
+        "color": {
+          "raw": "#EE3E38"
+        }
+      },
+      "_border": {
+        "radius": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        }
+      },
+      "_padding:tablet_portrait": {
+        "right": "20",
+        "left": "20"
+      },
+      "_widthMax:tablet_portrait": "100%",
+      "_padding:mobile_landscape": {
+        "right": "20",
+        "left": "20"
+      },
+      "_flexDirection": "row",
+      "_gap": "8",
+      "iconGap": "8"
+    }
+  },
+  {
+    "id": "m7w7er",
+    "name": "div",
+    "parent": "nafhg2",
+    "children": [
+      "e8ocjt",
+      "k0ejyz"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "row",
+      "_rowGap": "12",
+      "_columnGap": "12",
+      "_alignItems": "flex-start",
+      "_padding": {
+        "top": "0",
+        "right": "120.42",
+        "bottom": "0",
+        "left": "0"
+      },
+      "_margin": {
+        "top": "32"
+      },
+      "_width": "100%",
+      "_direction:tablet_portrait": "row",
+      "_rowGap:tablet_portrait": "12",
+      "_alignItems:tablet_portrait": "center",
+      "_flexWrap:tablet_portrait": "wrap",
+      "_padding:tablet_portrait": {
+        "right": "20"
+      },
+      "_padding:mobile_landscape": {
+        "right": "20"
+      },
+      "_direction:mobile_portrait": "column",
+      "_rowGap:mobile_portrait": "12",
+      "_alignItems:mobile_portrait": "flex-start"
+    }
+  },
+  {
+    "id": "nafhg2",
+    "name": "div",
+    "parent": "y32b1x",
+    "children": [
+      "upl01y",
+      "a9kktv",
+      "gsugz2",
+      "m7w7er"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "512px"
+    }
+  },
+  {
+    "id": "y32b1x",
+    "name": "container",
+    "parent": "skdwe4",
+    "children": [
+      "nafhg2"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_width": "100%",
+      "_widthMax": "1232px",
+      "_position": "relative",
+      "_zIndex": "1"
+    }
+  },
+  {
+    "id": "66fi2l",
+    "name": "div",
+    "parent": "skdwe4",
+    "children": [],
+    "settings": {
+      "_display": "block",
+      "_width": "100%",
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "90",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#0D1B2AD9"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#0D1B2A80"
+            },
+            "stop": "50%"
+          },
+          {
+            "id": "g2",
+            "color": {
+              "raw": "#0D1B2A1A"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_position": "absolute",
+      "_left": "0",
+      "_top": "0",
+      "_zIndex": "0",
+      "_height": "100%"
+    }
+  },
+  {
+    "id": "96uolj",
+    "name": "div",
+    "parent": "skdwe4",
+    "children": [],
+    "settings": {
+      "_display": "block",
+      "_width": "100%",
+      "_gradient": {
+        "applyTo": "background",
+        "gradientType": "linear",
+        "angle": "0",
+        "colors": [
+          {
+            "id": "g0",
+            "color": {
+              "raw": "#0D1B2A66"
+            },
+            "stop": "0%"
+          },
+          {
+            "id": "g1",
+            "color": {
+              "raw": "#00000000"
+            },
+            "stop": "50%"
+          },
+          {
+            "id": "g2",
+            "color": {
+              "raw": "#00000000"
+            },
+            "stop": "100%"
+          }
+        ]
+      },
+      "_position": "absolute",
+      "_left": "0",
+      "_top": "0",
+      "_zIndex": "0",
+      "_height": "100%"
+    }
+  },
+  {
+    "id": "skdwe4",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "y32b1x",
+      "66fi2l",
+      "96uolj"
+    ],
+    "settings": {
+      "_padding": {
+        "top": "146.75",
+        "right": "16",
+        "bottom": "146.75",
+        "left": "16"
+      },
+      "_heightMin": "680",
+      "_background": {
+        "color": {
+          "raw": "#0D1B2A"
+        },
+        "image": {
+          "id": null,
+          "filename": null,
+          "size": "full",
+          "full": "../../assets/image-tapijtschuur-vloeren-showroom-11_4131.png",
+          "url": "../../assets/image-tapijtschuur-vloeren-showroom-11_4131.png"
+        },
+        "size": "cover",
+        "position": "center center",
+        "repeat": "no-repeat",
+        "attachment": "scroll"
+      },
+      "_padding:tablet_portrait": {
+        "top": "120",
+        "bottom": "120"
+      },
+      "_height:tablet_portrait": "auto",
+      "_heightMin:tablet_portrait": "0",
+      "_padding:mobile_landscape": {
+        "top": "60",
+        "bottom": "60"
+      },
+      "_position": "relative",
+      "_overflow": "hidden",
+      "_alignSelf": "stretch"
+    }
+  }
+]

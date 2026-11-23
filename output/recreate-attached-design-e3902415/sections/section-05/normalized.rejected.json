@@ -1,0 +1,241 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "craftsmanship-and-inspiration",
+      "figmaNodeId": "11:4196",
+      "children": [
+        {
+          "type": "image",
+          "id": "craftsmanship-background",
+          "figmaNodeId": "11:4197",
+          "asset": {
+            "nodeId": "11:4197",
+            "kind": "image"
+          },
+          "background": {
+            "gradient": {
+              "angle": 0,
+              "stops": [
+                {
+                  "color": "#0D1B2ABF",
+                  "position": 0
+                },
+                {
+                  "color": "#00000000",
+                  "position": 50
+                },
+                {
+                  "color": "#00000000",
+                  "position": 100
+                }
+              ]
+            }
+          },
+          "notes": [
+            "Image fill uses FILL scaling; content is clipped."
+          ]
+        },
+        {
+          "type": "column",
+          "id": "craftsmanship-content",
+          "figmaNodeId": "11:4198"
+        },
+        {
+          "type": "column",
+          "id": "craftsmanship-label-wrapper",
+          "figmaNodeId": "11:4199"
+        },
+        {
+          "type": "text",
+          "id": "craftsmanship-label",
+          "figmaNodeId": "11:4200",
+          "text": "Ons vakmanschap",
+          "typography": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "align": "left",
+            "lineHeight": "24px",
+            "letterSpacing": "1.6px",
+            "color": "#FFFFFFB3"
+          },
+          "notes": [
+            "Text case: UPPER."
+          ]
+        },
+        {
+          "type": "column",
+          "id": "craftsmanship-heading-wrapper",
+          "figmaNodeId": "11:4201"
+        },
+        {
+          "type": "heading",
+          "id": "craftsmanship-heading",
+          "figmaNodeId": "11:4202",
+          "text": "Maatwerk vloeren voor elk project",
+          "level": 3,
+          "typography": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": 24,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": "32px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "column",
+          "id": "offer-link",
+          "figmaNodeId": "11:4203",
+          "background": {
+            "color": "#0E8BCC"
+          },
+          "border": {
+            "radius": 10
+          }
+        },
+        {
+          "type": "text",
+          "id": "offer-link-label",
+          "figmaNodeId": "11:4204",
+          "text": "Meer over ons aanbod ",
+          "typography": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": 16,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": "24px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "image",
+          "id": "offer-link-arrow",
+          "figmaNodeId": "11:4205",
+          "asset": {
+            "nodeId": "11:4205",
+            "kind": "svg"
+          }
+        },
+        {
+          "type": "image",
+          "id": "inspiration-background",
+          "figmaNodeId": "11:4208",
+          "asset": {
+            "nodeId": "11:4208",
+            "kind": "image"
+          },
+          "background": {
+            "gradient": {
+              "angle": 0,
+              "stops": [
+                {
+                  "color": "#0D1B2ABF",
+                  "position": 0
+                },
+                {
+                  "color": "#00000000",
+                  "position": 50
+                },
+                {
+                  "color": "#00000000",
+                  "position": 100
+                }
+              ]
+            }
+          },
+          "notes": [
+            "Image fill uses FILL scaling; content is clipped."
+          ]
+        },
+        {
+          "type": "column",
+          "id": "inspiration-content",
+          "figmaNodeId": "11:4209"
+        },
+        {
+          "type": "column",
+          "id": "inspiration-label-wrapper",
+          "figmaNodeId": "11:4210"
+        },
+        {
+          "type": "text",
+          "id": "inspiration-label",
+          "figmaNodeId": "11:4211",
+          "text": "Inspiratie",
+          "typography": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "align": "left",
+            "lineHeight": "24px",
+            "letterSpacing": "1.6px",
+            "color": "#FFFFFFB3"
+          },
+          "notes": [
+            "Text case: UPPER."
+          ]
+        },
+        {
+          "type": "column",
+          "id": "projects-heading-wrapper",
+          "figmaNodeId": "11:4212"
+        },
+        {
+          "type": "heading",
+          "id": "projects-heading",
+          "figmaNodeId": "11:4213",
+          "text": "Bekijk onze projecten",
+          "level": 3,
+          "typography": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": 24,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": "32px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "type": "column",
+          "id": "gallery-link",
+          "figmaNodeId": "11:4214",
+          "background": {
+            "color": "#FFFFFF"
+          },
+          "border": {
+            "radius": 10
+          }
+        },
+        {
+          "type": "text",
+          "id": "gallery-link-label",
+          "figmaNodeId": "11:4215",
+          "text": "Fotogalerij ",
+          "typography": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": 16,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": "24px",
+            "color": "#0D1B2A"
+          }
+        },
+        {
+          "type": "image",
+          "id": "gallery-link-arrow",
+          "figmaNodeId": "11:4216",
+          "asset": {
+            "nodeId": "11:4216",
+            "kind": "svg"
+          }
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Link destinations are not provided."
+  ]
+}

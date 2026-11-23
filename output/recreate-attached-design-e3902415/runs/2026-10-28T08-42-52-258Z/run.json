@@ -1,0 +1,31 @@
+{
+  "figmaUrl": null,
+  "frameDir": "output/recreate-attached-design-e3902415",
+  "postId": null,
+  "startedAt": "2026-10-28T08:42:52.259Z",
+  "error": "This run did not produce a merge; old merged output will not be injected.",
+  "args": [
+    "--frame",
+    "output/recreate-attached-design-e3902415",
+    "--deterministic",
+    "--force",
+    "--no-inject",
+    "--no-visual",
+    "--no-dataset"
+  ],
+  "steps": [
+    {
+      "label": "2-3 normalize, compile, merge",
+      "script": "run-sections.js",
+      "args": [
+        "output/recreate-attached-design-e3902415",
+        "--force",
+        "--deterministic"
+      ],
+      "code": 1,
+      "seconds": 3
+    }
+  ],
+  "finishedAt": "2026-10-28T08:42:55.485Z",
+  "exitCode": 1
+}

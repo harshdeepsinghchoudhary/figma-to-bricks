@@ -1,0 +1,296 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "specialist-section",
+      "figmaNodeId": "11:4248",
+      "background": {
+        "color": "#FFFFFF"
+      },
+      "children": [
+        {
+          "type": "container",
+          "id": "specialist-container",
+          "figmaNodeId": "11:4249",
+          "children": [
+            {
+              "type": "row",
+              "id": "specialist-section-row-3",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "specialist-content",
+                  "figmaNodeId": "11:4250",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "specialist-section-column-1",
+                      "children": [
+                        {
+                          "type": "block",
+                          "id": "specialist-label-wrapper",
+                          "figmaNodeId": "11:4251",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "specialist-label",
+                              "figmaNodeId": "11:4252",
+                              "text": "De specialist",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 600,
+                                "lineHeight": "24px",
+                                "letterSpacing": "1.6px",
+                                "color": "#0E8BCC",
+                                "align": "left"
+                              },
+                              "notes": [
+                                "Text case: uppercase."
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "row",
+                          "id": "specialist-heading-wrapper",
+                          "figmaNodeId": "11:4253",
+                          "children": [
+                            {
+                              "type": "heading",
+                              "id": "specialist-heading",
+                              "figmaNodeId": "11:4254",
+                              "level": 2,
+                              "text": "Tapijtschuur: vloeren en raamdecoratie op maat",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 20,
+                                "fontWeight": 600,
+                                "lineHeight": "25px",
+                                "color": "#0D1B2A",
+                                "align": "left"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "block",
+                          "id": "specialist-introduction-wrapper",
+                          "figmaNodeId": "11:4255",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "specialist-introduction",
+                              "figmaNodeId": "11:4256",
+                              "text": "Tapijtschuur is dé specialist voor het woon- en bedrijfsklaar afwerken van uw ruimte. Met meer dan 25 jaar ervaring leveren wij kwaliteit voor particulieren en bedrijven. Bij ons kunt u rekenen op een persoonlijke aanpak, uitstekende service en een goed aanbod van leveranciers.",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 400,
+                                "lineHeight": "26px",
+                                "color": "#6A7282",
+                                "align": "left"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "block",
+                          "id": "specialist-expertise-wrapper",
+                          "figmaNodeId": "11:4257",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "specialist-expertise",
+                              "figmaNodeId": "11:4258",
+                              "text": "Onze vakmensen werken met vaste, betrouwbare merken waardoor wij de kwaliteit kunnen waarborgen. Wij zijn specialist op het gebied van vloeren, raamdecoratie en alles wat daarmee samenhangt.",
+                              "typography": {
+                                "fontFamily": "Plus Jakarta Sans",
+                                "fontSize": 16,
+                                "fontWeight": 400,
+                                "lineHeight": "26px",
+                                "color": "#6A7282",
+                                "align": "left"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "row",
+                          "id": "specialist-actions",
+                          "figmaNodeId": "11:4259",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "specialist-section-row-2",
+                              "children": [
+                                {
+                                  "type": "row",
+                                  "id": "quote-link",
+                                  "figmaNodeId": "11:4260",
+                                  "background": {
+                                    "color": "#0E8BCC"
+                                  },
+                                  "border": {
+                                    "radius": 10
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "row",
+                                      "id": "specialist-section-row-1",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "quote-link-label",
+                                          "figmaNodeId": "11:4261",
+                                          "text": "Offerte aanvragen ",
+                                          "typography": {
+                                            "fontFamily": "Plus Jakarta Sans",
+                                            "fontSize": 16,
+                                            "fontWeight": 600,
+                                            "lineHeight": "24px",
+                                            "color": "#FFFFFF",
+                                            "align": "left"
+                                          }
+                                        },
+                                        {
+                                          "type": "image",
+                                          "id": "quote-arrow",
+                                          "figmaNodeId": "11:4262",
+                                          "asset": {
+                                            "nodeId": "11:4262",
+                                            "kind": "svg"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "row",
+                                  "id": "about-link",
+                                  "figmaNodeId": "11:4265",
+                                  "border": {
+                                    "radius": 10
+                                  },
+                                  "notes": [
+                                    "Inside stroke: #E5E7EB, 1px."
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "about-link-label",
+                                      "figmaNodeId": "11:4266",
+                                      "text": "Over ons",
+                                      "typography": {
+                                        "fontFamily": "Plus Jakarta Sans",
+                                        "fontSize": 16,
+                                        "fontWeight": 600,
+                                        "lineHeight": "24px",
+                                        "color": "#4A5565",
+                                        "align": "left"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "id": "floor-samples-wrapper",
+                  "figmaNodeId": "11:4267",
+                  "border": {
+                    "radius": 16
+                  },
+                  "notes": [
+                    "Clips content."
+                  ],
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "floor-samples",
+                      "figmaNodeId": "11:4268",
+                      "asset": {
+                        "nodeId": "11:4268",
+                        "kind": "image"
+                      },
+                      "notes": [
+                        "Image fill uses FILL scaling; clips content."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "id": "specialist-section-column-2",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "window-decoration-wrapper",
+                      "figmaNodeId": "11:4269",
+                      "border": {
+                        "radius": 16
+                      },
+                      "notes": [
+                        "Clips content."
+                      ],
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "window-decoration",
+                          "figmaNodeId": "11:4270",
+                          "asset": {
+                            "nodeId": "11:4270",
+                            "kind": "image"
+                          },
+                          "notes": [
+                            "Image fill uses FILL scaling; clips content."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "carpet-wrapper",
+                      "figmaNodeId": "11:4271",
+                      "border": {
+                        "radius": 16
+                      },
+                      "notes": [
+                        "Clips content."
+                      ],
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "carpet",
+                          "figmaNodeId": "11:4272",
+                          "asset": {
+                            "nodeId": "11:4272",
+                            "kind": "image"
+                          },
+                          "notes": [
+                            "Image fill uses FILL scaling; clips content."
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Link targets are not provided and were omitted."
+  ]
+}

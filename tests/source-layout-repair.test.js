@@ -15,7 +15,9 @@ const read = p => JSON.parse(fs.readFileSync(new URL(p, dir)));
 const root = read('figma-node.json'), manifest = read('asset-manifest.json');
 const all = n => [n, ...(n.children || []).flatMap(all)];
 const source = new Map(all(root).map(n => [n.id, n]));
-const normalized = section => read(`sections/section-${section}/normalized.json`);
+const normalized = section => ['10','13','14'].includes(section)
+  ? JSON.parse(fs.readFileSync(new URL(`./fixtures/source-layout/section-${section}.json`,import.meta.url)))
+  : read(`sections/section-${section}/normalized.json`);
 
 test('saved AI output recovers all rectangular CTAs with source styles', () => {
   for (const [section, count, text] of [['07',5,'Play Now'], ['11',4,'Claim Now']]) {

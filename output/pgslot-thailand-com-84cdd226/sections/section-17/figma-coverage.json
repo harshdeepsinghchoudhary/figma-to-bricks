@@ -17,14 +17,15 @@
       "parentId": "scope",
       "name": "Group 1261154130",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:365",
       "parentId": "202:364",
       "name": "Rectangle 5776",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "absorbed-paint",
+      "representedBy": "202:364"
     },
     {
       "nodeId": "202:366",
@@ -98,11 +99,11 @@
     }
   ],
   "summary": {
-    "represented": 11,
+    "represented": 12,
     "covered-by-export": 0,
     "button-label": 0,
-    "absorbed-paint": 0,
+    "absorbed-paint": 1,
     "hidden": 0,
-    "unrepresented": 2
+    "unrepresented": 0
   }
 }

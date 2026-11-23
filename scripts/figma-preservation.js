@@ -137,6 +137,10 @@ function measuredStyle(target, source, report) {
     else if (mode === "HUG") size[field] = "hug";
     else if (mode === "FIXED" && finite(source.absoluteBoundingBox?.[length])) size[field] = source.absoluteBoundingBox[length];
   }
+  // Non-Auto-Layout frames still have an authoritative measured width. Without
+  // it, flex-start wrappers shrink around text while retaining inferred padding.
+  if(source.type==='FRAME'&&!source.layoutSizingHorizontal&&finite(source.absoluteBoundingBox?.width))size.width=source.absoluteBoundingBox.width;
+  if(source.type==='TEXT'&&(source.textAutoResize||source.style?.textAutoResize)==='HEIGHT'&&finite(source.absoluteBoundingBox?.width))size.width=source.absoluteBoundingBox.width;
   for (const key of ["minWidth", "maxWidth", "minHeight", "maxHeight"]) if (finite(source[key])) size[key] = source[key];
   if (!Object.keys(size).length) delete target.size;
   const fill = (source.fills || []).find((paint) => paint.visible !== false);
@@ -194,6 +198,18 @@ export function reconcileFigmaProperties(doc, root, { manifest = [], metadata = 
       const fillSource = assetIndex.get(`${source.id}:image-fill`);
       if (fillSource?.exportMode === "source-image") node.figma.imageFillAsset = { nodeId: fillSource.nodeId, exportMode: fillSource.exportMode };
       measuredStyle(node, source, report);
+      // A source-only photograph excludes its Figma paint overlay. Bricks'
+      // image and gradient controls both write background-image, so place the
+      // gradient on our existing overlay layer rather than let one erase the other.
+      const paints=(source.fills||[]).filter(p=>p.visible!==false);
+      if(node.figma.imageFillAsset?.exportMode==='source-image'&&paints.length===2&&paints.some(p=>p.type==='IMAGE')&&paints.some(p=>p.type==='GRADIENT_LINEAR')&&paints.every(p=>!p.blendMode||p.blendMode==='NORMAL')){
+        const gradient=resolveLinearGradient(paints.find(p=>p.type==='GRADIENT_LINEAR'),source.absoluteBoundingBox,1);
+        if(gradient){
+          node._overlay=gradient;node._layered=true;delete node.background?.gradient;
+          if(node.background&&!Object.keys(node.background).length)delete node.background;
+          report.warnings=report.warnings.filter(w=>w!==`${source.id}: stacked paints preserved in figma.fills; a single native background may not express the stack`);
+        }
+      }
       const originalParent = raw.get(preserved.nodes[source.id].parentId);
       if (["HORIZONTAL", "VERTICAL", "GRID"].includes(originalParent?.layoutMode) && source.layoutPositioning !== "ABSOLUTE" && node.layout?.margin) {
         // Figma Auto Layout already contains alignment and padding. Geometry-derived offsets would apply them twice.
@@ -467,6 +483,16 @@ export function deterministicNormalize(root, manifest = [], { metadata = {}, fra
         const left = Math.min(...content.map((value) => value.x)), top = Math.min(...content.map((value) => value.y));
         const right = Math.max(...content.map((value) => value.x + value.width)), bottom = Math.max(...content.map((value) => value.y + value.height));
         layout.padding = { top: Math.max(0, top - parentBox.y), right: Math.max(0, parentBox.x + parentBox.width - right), bottom: Math.max(0, parentBox.y + parentBox.height - bottom), left: Math.max(0, left - parentBox.x) };
+        // Extra trailing space around one auto-width text label is free space,
+        // not a fixed inset that should squeeze the label on narrower screens.
+        if (flowSources.length === 1 && flowSources[0].type === 'TEXT' && (flowSources[0].textAutoResize || flowSources[0].style?.textAutoResize) === 'WIDTH_AND_HEIGHT') {
+          const { left, right } = layout.padding;
+          if (Math.abs(left - right) <= 1) {
+            layout.align = 'center';
+            layout.padding.left = layout.padding.right = 0;
+          } else if (right > left) layout.padding.right = left;
+          else { layout.align = 'end'; layout.padding.left = right; }
+        }
         // A wrapper as wide as the page already sits inside the centred site container: the page's side margin must not be applied twice.
         const margin = frameWidth && siteWidth && siteWidth < frameWidth ? (frameWidth - siteWidth) / 2 : 0;
         if (margin && parentBox.width >= frameWidth * 0.95) { layout.padding.left = Math.max(0, layout.padding.left - margin); layout.padding.right = Math.max(0, layout.padding.right - margin); }

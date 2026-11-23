@@ -15,7 +15,7 @@
       "parentId": "scope",
       "name": "Group 1261154175",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:28",
@@ -43,7 +43,8 @@
       "parentId": "202:30",
       "name": "Rectangle 5751",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "absorbed-paint",
+      "representedBy": "202:30"
     },
     {
       "nodeId": "202:32",
@@ -85,7 +86,8 @@
       "parentId": "202:36",
       "name": "Play Now",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:36"
     },
     {
       "nodeId": "202:38",
@@ -99,7 +101,8 @@
       "parentId": "202:38",
       "name": "Rectangle 5763",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "absorbed-paint",
+      "representedBy": "202:38"
     },
     {
       "nodeId": "202:40",
@@ -141,7 +144,8 @@
       "parentId": "202:44",
       "name": "Play Now",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:44"
     },
     {
       "nodeId": "202:46",
@@ -155,7 +159,8 @@
       "parentId": "202:46",
       "name": "Rectangle 5758",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "absorbed-paint",
+      "representedBy": "202:46"
     },
     {
       "nodeId": "202:48",
@@ -183,14 +188,15 @@
       "parentId": "202:48",
       "name": "Frame 26",
       "type": "FRAME",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:52",
       "parentId": "202:51",
       "name": "Play Now",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:51"
     },
     {
       "nodeId": "202:53",
@@ -227,14 +233,15 @@
       "parentId": "202:56",
       "name": "Rectangle 5760",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "absorbed-paint",
+      "representedBy": "202:56"
     },
     {
       "nodeId": "202:58",
       "parentId": "202:56",
       "name": "Group 1261154168",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:59",
@@ -255,14 +262,15 @@
       "parentId": "202:58",
       "name": "Frame 27",
       "type": "FRAME",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:62",
       "parentId": "202:61",
       "name": "Play Now",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:61"
     },
     {
       "nodeId": "202:63",
@@ -299,7 +307,8 @@
       "parentId": "202:66",
       "name": "Rectangle 5762",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "absorbed-paint",
+      "representedBy": "202:66"
     },
     {
       "nodeId": "202:68",
@@ -334,7 +343,8 @@
       "parentId": "202:71",
       "name": "Play Now",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:71"
     },
     {
       "nodeId": "202:73",
@@ -361,11 +371,11 @@
     }
   ],
   "summary": {
-    "represented": 35,
+    "represented": 34,
     "covered-by-export": 6,
-    "button-label": 0,
-    "absorbed-paint": 0,
+    "button-label": 5,
+    "absorbed-paint": 5,
     "hidden": 0,
-    "unrepresented": 9
+    "unrepresented": 0
   }
 }

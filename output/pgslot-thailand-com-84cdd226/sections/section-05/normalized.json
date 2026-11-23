@@ -2,42 +2,25 @@
   "type": "page",
   "children": [
     {
-      "type": "section",
-      "id": "empty-root-filler",
-      "notes": [
-        "Source Figma data contained no visible nodes to map (empty input). This leaf is a structural placeholder to satisfy page validation.",
-        "Please verify page/pageId and input frame.",
-        "Re-run once a real page/context is supplied."
-      ],
+      "id": "pgslot-thailand-com-scoped-5f161c91",
       "figmaNodeId": "scope",
+      "type": "section",
       "children": [
         {
+          "id": "group-1261154163-8e371094",
+          "figmaNodeId": "202:376",
           "type": "column",
-          "id": "group-1261154162",
-          "figmaNodeId": "202:378",
           "children": [
             {
+              "id": "group-1261154162-5e716d66",
+              "figmaNodeId": "202:378",
               "type": "column",
-              "id": "empty-root-filler-column-4",
               "children": [
                 {
-                  "type": "heading",
-                  "id": "3-benefits-pg-slot",
+                  "id": "3-benefits-to-play-pg-slot-games-aa9509d7",
                   "figmaNodeId": "202:379",
-                  "level": 2,
+                  "type": "heading",
                   "text": "3 Benefits To Play PG Slot Games",
-                  "typography": {
-                    "fontFamily": "Inter",
-                    "fontSize": 34,
-                    "fontWeight": 700,
-                    "lineHeight": "48px",
-                    "letterSpacing": "0px",
-                    "align": "left",
-                    "color": "#FFFFFF"
-                  },
-                  "size": {
-                    "width": 549
-                  },
                   "figma": {
                     "parentId": "202:378",
                     "childIds": [],
@@ -129,25 +112,40 @@
                       }
                     },
                     "effectiveVisible": true
+                  },
+                  "typography": {
+                    "fontFamily": "Inter",
+                    "fontSize": 34,
+                    "fontWeight": 700,
+                    "lineHeight": "48px",
+                    "letterSpacing": "0px",
+                    "align": "left",
+                    "color": "#FFFFFF"
+                  },
+                  "level": 2,
+                  "size": {
+                    "width": 549
                   }
                 },
                 {
+                  "id": "group-1261154161-441a1cc7",
+                  "figmaNodeId": "202:380",
                   "type": "row",
-                  "id": "empty-root-filler-row-1",
                   "children": [
                     {
-                      "type": "column",
-                      "id": "group-1261154156",
+                      "id": "group-1261154156-6b18d0e5",
                       "figmaNodeId": "202:381",
+                      "type": "column",
                       "children": [
                         {
+                          "id": "group-1261154155-4f046f26",
+                          "figmaNodeId": "202:383",
                           "type": "column",
-                          "id": "empty-root-filler-column-1",
                           "children": [
                             {
-                              "type": "image",
-                              "id": "shield-12902009-1-2",
+                              "id": "shield-12902009-1-6014d034",
                               "figmaNodeId": "202:386",
+                              "type": "image",
                               "asset": {
                                 "nodeId": "202:386",
                                 "kind": "image"
@@ -221,28 +219,10 @@
                               }
                             },
                             {
-                              "type": "heading",
-                              "id": "accessibility-and-convenience",
+                              "id": "accessibility-and-convenience-25a9d998",
                               "figmaNodeId": "202:384",
+                              "type": "heading",
                               "text": "Accessibility and Convenience",
-                              "level": 3,
-                              "typography": {
-                                "fontFamily": "Inter",
-                                "fontSize": 24,
-                                "fontWeight": 600,
-                                "lineHeight": "33px",
-                                "letterSpacing": "0px",
-                                "align": "center",
-                                "color": "#FFFFFF"
-                              },
-                              "size": {
-                                "width": 222
-                              },
-                              "layout": {
-                                "margin": {
-                                  "top": 26
-                                }
-                              },
                               "figma": {
                                 "parentId": "202:383",
                                 "childIds": [],
@@ -334,30 +314,31 @@
                                   }
                                 },
                                 "effectiveVisible": true
-                              }
-                            },
-                            {
-                              "type": "text-basic",
-                              "id": "lorem-ipsum-text",
-                              "figmaNodeId": "202:385",
-                              "text": "Lorem Ipsum is simply dummy the printing and typesetting ",
+                              },
                               "typography": {
                                 "fontFamily": "Inter",
-                                "fontSize": 18,
-                                "fontWeight": 400,
-                                "lineHeight": "27px",
+                                "fontSize": 24,
+                                "fontWeight": 600,
+                                "lineHeight": "33px",
                                 "letterSpacing": "0px",
                                 "align": "center",
                                 "color": "#FFFFFF"
                               },
+                              "level": 3,
                               "size": {
-                                "width": 292
+                                "width": 222
                               },
                               "layout": {
                                 "margin": {
-                                  "top": 14
+                                  "top": 26
                                 }
-                              },
+                              }
+                            },
+                            {
+                              "id": "lorem-ipsum-is-simply-dummy-the-pri-38e62cbd",
+                              "figmaNodeId": "202:385",
+                              "type": "text",
+                              "text": "Lorem Ipsum is simply dummy the printing and typesetting ",
                               "figma": {
                                 "parentId": "202:383",
                                 "childIds": [],
@@ -449,6 +430,23 @@
                                   }
                                 },
                                 "effectiveVisible": true
+                              },
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "letterSpacing": "0px",
+                                "align": "center",
+                                "color": "#FFFFFF"
+                              },
+                              "size": {
+                                "width": 292
+                              },
+                              "layout": {
+                                "margin": {
+                                  "top": 14
+                                }
                               }
                             }
                           ],
@@ -456,49 +454,77 @@
                             "display": "flex",
                             "direction": "column",
                             "align": "center"
+                          },
+                          "figma": {
+                            "parentId": "202:381",
+                            "childIds": [
+                              "202:384",
+                              "202:385",
+                              "202:386"
+                            ],
+                            "name": "Group 1261154155",
+                            "type": "GROUP",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -2781,
+                              "y": 3253,
+                              "width": 292,
+                              "height": 245
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -2781,
+                              "y": 3253,
+                              "width": 292,
+                              "height": 245
+                            },
+                            "size": {
+                              "x": 292,
+                              "y": 245
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                31
+                              ],
+                              [
+                                0,
+                                1,
+                                50
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "clipsContent": false,
+                            "fills": [],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [],
+                              "backgroundColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0,
+                                "a": 0
+                              },
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
                           }
                         }
                       ],
-                      "layout": {
-                        "display": "flex",
-                        "direction": "column",
-                        "padding": {
-                          "top": 50,
-                          "right": 30,
-                          "bottom": 30,
-                          "left": 31
-                        },
-                        "align": "start"
-                      },
-                      "size": {
-                        "width": 353
-                      },
-                      "background": {
-                        "gradient": {
-                          "angle": 180,
-                          "stops": [
-                            {
-                              "color": "#1A070C",
-                              "position": 20
-                            },
-                            {
-                              "color": "#611530",
-                              "position": 100
-                            }
-                          ]
-                        }
-                      },
-                      "border": {
-                        "radius": 6,
-                        "color": "#B12255",
-                        "width": 1,
-                        "radii": {
-                          "topLeft": 0,
-                          "topRight": 0,
-                          "bottomRight": 0,
-                          "bottomLeft": 0
-                        }
-                      },
                       "figma": {
                         "parentId": "202:380",
                         "childIds": [
@@ -571,26 +597,72 @@
                             "strokeType": "BASIC"
                           }
                         },
-                        "effectiveVisible": true
+                        "effectiveVisible": true,
+                        "geometryDerived": true,
+                        "paintSourceIds": [
+                          "202:382"
+                        ]
+                      },
+                      "background": {
+                        "gradient": {
+                          "angle": 180,
+                          "stops": [
+                            {
+                              "color": "#1A070C",
+                              "position": 20
+                            },
+                            {
+                              "color": "#611530",
+                              "position": 100
+                            }
+                          ]
+                        }
+                      },
+                      "border": {
+                        "radius": 6,
+                        "color": "#B12255",
+                        "width": 1,
+                        "radii": {
+                          "topLeft": 0,
+                          "topRight": 0,
+                          "bottomRight": 0,
+                          "bottomLeft": 0
+                        }
+                      },
+                      "size": {
+                        "width": 353,
+                        "minHeight": 325
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start",
+                        "padding": {
+                          "top": 50,
+                          "right": 30,
+                          "bottom": 30,
+                          "left": 31
+                        }
                       }
                     },
                     {
-                      "type": "column",
-                      "id": "group-1261154158",
+                      "id": "group-1261154158-6d62c9b0",
                       "figmaNodeId": "202:387",
+                      "type": "column",
                       "children": [
                         {
+                          "id": "group-1261154157-4769f648",
+                          "figmaNodeId": "202:389",
                           "type": "column",
-                          "id": "empty-root-filler-column-2",
                           "children": [
                             {
+                              "id": "gamepad-1729243-1-7209e7c8",
+                              "figmaNodeId": "202:392",
                               "type": "image",
                               "asset": {
                                 "nodeId": "202:392",
                                 "kind": "image"
                               },
-                              "figmaNodeId": "202:392",
-                              "id": "gamepad-icon",
                               "size": {
                                 "width": 85,
                                 "height": 85
@@ -660,28 +732,10 @@
                               }
                             },
                             {
-                              "type": "heading",
-                              "id": "variety-of-games-6",
+                              "id": "variety-of-games-8ec13cb0",
                               "figmaNodeId": "202:390",
+                              "type": "heading",
                               "text": "Variety of Games",
-                              "typography": {
-                                "fontFamily": "Inter",
-                                "fontSize": 24,
-                                "fontWeight": 600,
-                                "lineHeight": "33px",
-                                "letterSpacing": "0px",
-                                "align": "center",
-                                "color": "#FFFFFF"
-                              },
-                              "level": 3,
-                              "size": {
-                                "width": 222
-                              },
-                              "layout": {
-                                "margin": {
-                                  "top": 30
-                                }
-                              },
                               "figma": {
                                 "parentId": "202:389",
                                 "childIds": [],
@@ -773,31 +827,31 @@
                                   }
                                 },
                                 "effectiveVisible": true
-                              }
-                            },
-                            {
-                              "type": "text-basic",
-                              "id": "lorem-ipsum-text-2",
-                              "figmaNodeId": "202:391",
-                              "text": "Lorem Ipsum is simply dummy the printing and typesetting ",
+                              },
                               "typography": {
                                 "fontFamily": "Inter",
-                                "fontSize": 18,
-                                "fontWeight": 400,
-                                "lineHeight": "27px",
+                                "fontSize": 24,
+                                "fontWeight": 600,
+                                "lineHeight": "33px",
                                 "letterSpacing": "0px",
                                 "align": "center",
                                 "color": "#FFFFFF"
                               },
-                              "layout": {
-                                "display": "block",
-                                "margin": {
-                                  "top": 14
-                                }
-                              },
+                              "level": 3,
                               "size": {
-                                "width": 292
+                                "width": 222
                               },
+                              "layout": {
+                                "margin": {
+                                  "top": 30
+                                }
+                              }
+                            },
+                            {
+                              "id": "lorem-ipsum-is-simply-dummy-the-pri-eda69fe5",
+                              "figmaNodeId": "202:391",
+                              "type": "text",
+                              "text": "Lorem Ipsum is simply dummy the printing and typesetting ",
                               "figma": {
                                 "parentId": "202:389",
                                 "childIds": [],
@@ -889,6 +943,23 @@
                                   }
                                 },
                                 "effectiveVisible": true
+                              },
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "letterSpacing": "0px",
+                                "align": "center",
+                                "color": "#FFFFFF"
+                              },
+                              "size": {
+                                "width": 292
+                              },
+                              "layout": {
+                                "margin": {
+                                  "top": 14
+                                }
                               }
                             }
                           ],
@@ -896,49 +967,77 @@
                             "display": "flex",
                             "direction": "column",
                             "align": "center"
+                          },
+                          "figma": {
+                            "parentId": "202:387",
+                            "childIds": [
+                              "202:390",
+                              "202:391",
+                              "202:392"
+                            ],
+                            "name": "Group 1261154157",
+                            "type": "GROUP",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -2398,
+                              "y": 3253,
+                              "width": 292,
+                              "height": 216
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -2398,
+                              "y": 3253,
+                              "width": 292,
+                              "height": 216
+                            },
+                            "size": {
+                              "x": 292,
+                              "y": 216
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                31
+                              ],
+                              [
+                                0,
+                                1,
+                                50
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "clipsContent": false,
+                            "fills": [],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [],
+                              "backgroundColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0,
+                                "a": 0
+                              },
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
                           }
                         }
                       ],
-                      "layout": {
-                        "display": "flex",
-                        "direction": "column",
-                        "padding": {
-                          "top": 50,
-                          "right": 30,
-                          "bottom": 59,
-                          "left": 31
-                        },
-                        "align": "start"
-                      },
-                      "size": {
-                        "width": 353
-                      },
-                      "background": {
-                        "gradient": {
-                          "angle": 180,
-                          "stops": [
-                            {
-                              "color": "#1A070C",
-                              "position": 20
-                            },
-                            {
-                              "color": "#611530",
-                              "position": 100
-                            }
-                          ]
-                        }
-                      },
-                      "border": {
-                        "radius": 6,
-                        "color": "#B12255",
-                        "width": 1,
-                        "radii": {
-                          "topLeft": 0,
-                          "topRight": 0,
-                          "bottomRight": 0,
-                          "bottomLeft": 0
-                        }
-                      },
                       "figma": {
                         "parentId": "202:380",
                         "childIds": [
@@ -1011,22 +1110,68 @@
                             "strokeType": "BASIC"
                           }
                         },
-                        "effectiveVisible": true
+                        "effectiveVisible": true,
+                        "geometryDerived": true,
+                        "paintSourceIds": [
+                          "202:388"
+                        ]
+                      },
+                      "background": {
+                        "gradient": {
+                          "angle": 180,
+                          "stops": [
+                            {
+                              "color": "#1A070C",
+                              "position": 20
+                            },
+                            {
+                              "color": "#611530",
+                              "position": 100
+                            }
+                          ]
+                        }
+                      },
+                      "border": {
+                        "radius": 6,
+                        "color": "#B12255",
+                        "width": 1,
+                        "radii": {
+                          "topLeft": 0,
+                          "topRight": 0,
+                          "bottomRight": 0,
+                          "bottomLeft": 0
+                        }
+                      },
+                      "size": {
+                        "width": 353,
+                        "minHeight": 325
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start",
+                        "padding": {
+                          "top": 50,
+                          "right": 30,
+                          "bottom": 59,
+                          "left": 31
+                        }
                       }
                     },
                     {
-                      "type": "column",
-                      "id": "group-1261154160-1",
+                      "id": "group-1261154160-b3784ee0",
                       "figmaNodeId": "202:393",
+                      "type": "column",
                       "children": [
                         {
+                          "id": "group-1261154159-a507c7a7",
+                          "figmaNodeId": "202:395",
                           "type": "column",
-                          "id": "empty-root-filler-column-3",
                           "children": [
                             {
-                              "type": "image",
-                              "id": "first-prize-3188620",
+                              "id": "first-prize-3188620-1-0161974e",
                               "figmaNodeId": "202:398",
+                              "type": "image",
                               "asset": {
                                 "nodeId": "202:398",
                                 "kind": "image"
@@ -1034,16 +1179,6 @@
                               "size": {
                                 "width": 85,
                                 "height": 85
-                              },
-                              "border": {
-                                "radius": 0
-                              },
-                              "boxShadow": {
-                                "color": "#00000000",
-                                "blur": 0,
-                                "offsetX": 0,
-                                "offsetY": 0,
-                                "spread": 0
                               },
                               "figma": {
                                 "parentId": "202:395",
@@ -1110,28 +1245,10 @@
                               }
                             },
                             {
-                              "type": "heading",
-                              "id": "bonuses-and-rewards-9",
+                              "id": "bonuses-and-rewards-cd345420",
                               "figmaNodeId": "202:396",
+                              "type": "heading",
                               "text": "Bonuses and Rewards",
-                              "typography": {
-                                "fontFamily": "Inter",
-                                "fontSize": 24,
-                                "fontWeight": 600,
-                                "lineHeight": "33px",
-                                "letterSpacing": "0px",
-                                "align": "center",
-                                "color": "#FFFFFF"
-                              },
-                              "level": 3,
-                              "size": {
-                                "width": 222
-                              },
-                              "layout": {
-                                "margin": {
-                                  "top": 26
-                                }
-                              },
                               "figma": {
                                 "parentId": "202:395",
                                 "childIds": [],
@@ -1223,30 +1340,31 @@
                                   }
                                 },
                                 "effectiveVisible": true
-                              }
-                            },
-                            {
-                              "type": "text",
-                              "id": "lorem-ipsum-printing-typesetting",
-                              "figmaNodeId": "202:397",
-                              "text": "Lorem Ipsum is simply dummy the printing and typesetting ",
+                              },
                               "typography": {
                                 "fontFamily": "Inter",
-                                "fontSize": 18,
-                                "fontWeight": 400,
-                                "lineHeight": "27px",
+                                "fontSize": 24,
+                                "fontWeight": 600,
+                                "lineHeight": "33px",
                                 "letterSpacing": "0px",
                                 "align": "center",
                                 "color": "#FFFFFF"
                               },
+                              "level": 3,
                               "size": {
-                                "width": 292
+                                "width": 222
                               },
                               "layout": {
                                 "margin": {
-                                  "top": 14
+                                  "top": 26
                                 }
-                              },
+                              }
+                            },
+                            {
+                              "id": "lorem-ipsum-is-simply-dummy-the-pri-1c1df6bb",
+                              "figmaNodeId": "202:397",
+                              "type": "text",
+                              "text": "Lorem Ipsum is simply dummy the printing and typesetting ",
                               "figma": {
                                 "parentId": "202:395",
                                 "childIds": [],
@@ -1338,6 +1456,23 @@
                                   }
                                 },
                                 "effectiveVisible": true
+                              },
+                              "typography": {
+                                "fontFamily": "Inter",
+                                "fontSize": 18,
+                                "fontWeight": 400,
+                                "lineHeight": "27px",
+                                "letterSpacing": "0px",
+                                "align": "center",
+                                "color": "#FFFFFF"
+                              },
+                              "size": {
+                                "width": 292
+                              },
+                              "layout": {
+                                "margin": {
+                                  "top": 14
+                                }
                               }
                             }
                           ],
@@ -1345,49 +1480,77 @@
                             "display": "flex",
                             "direction": "column",
                             "align": "center"
+                          },
+                          "figma": {
+                            "parentId": "202:393",
+                            "childIds": [
+                              "202:396",
+                              "202:397",
+                              "202:398"
+                            ],
+                            "name": "Group 1261154159",
+                            "type": "GROUP",
+                            "blendMode": "PASS_THROUGH",
+                            "absoluteBoundingBox": {
+                              "x": -2015,
+                              "y": 3253,
+                              "width": 292,
+                              "height": 245
+                            },
+                            "absoluteRenderBounds": {
+                              "x": -2015,
+                              "y": 3253,
+                              "width": 292,
+                              "height": 245
+                            },
+                            "size": {
+                              "x": 292,
+                              "y": 245
+                            },
+                            "relativeTransform": [
+                              [
+                                1,
+                                0,
+                                31
+                              ],
+                              [
+                                0,
+                                1,
+                                50
+                              ]
+                            ],
+                            "constraints": {
+                              "vertical": "TOP",
+                              "horizontal": "LEFT"
+                            },
+                            "clipsContent": false,
+                            "fills": [],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "effects": [],
+                            "rawGeometryFields": [
+                              "fillGeometry",
+                              "strokeGeometry"
+                            ],
+                            "extraSourceProperties": {
+                              "scrollBehavior": "SCROLLS",
+                              "background": [],
+                              "backgroundColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0,
+                                "a": 0
+                              },
+                              "interactions": [],
+                              "complexStrokeProperties": {
+                                "strokeType": "BASIC"
+                              }
+                            },
+                            "effectiveVisible": true
                           }
                         }
                       ],
-                      "layout": {
-                        "display": "flex",
-                        "direction": "column",
-                        "padding": {
-                          "top": 50,
-                          "right": 30,
-                          "bottom": 30,
-                          "left": 31
-                        },
-                        "align": "start"
-                      },
-                      "size": {
-                        "width": 353
-                      },
-                      "background": {
-                        "gradient": {
-                          "angle": 180,
-                          "stops": [
-                            {
-                              "color": "#1A070C",
-                              "position": 20
-                            },
-                            {
-                              "color": "#611530",
-                              "position": 100
-                            }
-                          ]
-                        }
-                      },
-                      "border": {
-                        "radius": 6,
-                        "color": "#B12255",
-                        "width": 1,
-                        "radii": {
-                          "topLeft": 0,
-                          "topRight": 0,
-                          "bottomRight": 0,
-                          "bottomLeft": 0
-                        }
-                      },
                       "figma": {
                         "parentId": "202:380",
                         "childIds": [
@@ -1460,66 +1623,271 @@
                             "strokeType": "BASIC"
                           }
                         },
-                        "effectiveVisible": true
+                        "effectiveVisible": true,
+                        "geometryDerived": true,
+                        "paintSourceIds": [
+                          "202:394"
+                        ]
+                      },
+                      "background": {
+                        "gradient": {
+                          "angle": 180,
+                          "stops": [
+                            {
+                              "color": "#1A070C",
+                              "position": 20
+                            },
+                            {
+                              "color": "#611530",
+                              "position": 100
+                            }
+                          ]
+                        }
+                      },
+                      "border": {
+                        "radius": 6,
+                        "color": "#B12255",
+                        "width": 1,
+                        "radii": {
+                          "topLeft": 0,
+                          "topRight": 0,
+                          "bottomRight": 0,
+                          "bottomLeft": 0
+                        }
+                      },
+                      "size": {
+                        "width": 353,
+                        "minHeight": 325
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "direction": "column",
+                        "align": "start",
+                        "padding": {
+                          "top": 50,
+                          "right": 30,
+                          "bottom": 30,
+                          "left": 31
+                        }
                       }
                     }
                   ],
                   "layout": {
                     "display": "flex",
                     "direction": "row",
-                    "gap": 30,
-                    "align": "start"
+                    "align": "start",
+                    "gap": 30
+                  },
+                  "figma": {
+                    "parentId": "202:378",
+                    "childIds": [
+                      "202:381",
+                      "202:387",
+                      "202:393"
+                    ],
+                    "name": "Group 1261154161",
+                    "type": "GROUP",
+                    "blendMode": "PASS_THROUGH",
+                    "absoluteBoundingBox": {
+                      "x": -2812,
+                      "y": 3203,
+                      "width": 1119,
+                      "height": 325
+                    },
+                    "absoluteRenderBounds": {
+                      "x": -2812,
+                      "y": 3203,
+                      "width": 1119,
+                      "height": 325
+                    },
+                    "size": {
+                      "x": 1119,
+                      "y": 325
+                    },
+                    "relativeTransform": [
+                      [
+                        1,
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        1,
+                        92
+                      ]
+                    ],
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "clipsContent": false,
+                    "fills": [],
+                    "strokes": [],
+                    "strokeWeight": 1,
+                    "strokeAlign": "INSIDE",
+                    "rectangleCornerRadii": [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "cornerSmoothing": 0,
+                    "effects": [],
+                    "rawGeometryFields": [
+                      "fillGeometry",
+                      "strokeGeometry"
+                    ],
+                    "extraSourceProperties": {
+                      "scrollBehavior": "SCROLLS",
+                      "background": [],
+                      "backgroundColor": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0,
+                        "a": 0
+                      },
+                      "interactions": [],
+                      "complexStrokeProperties": {
+                        "strokeType": "BASIC"
+                      }
+                    },
+                    "effectiveVisible": true
+                  },
+                  "border": {
+                    "radii": {
+                      "topLeft": 0,
+                      "topRight": 0,
+                      "bottomRight": 0,
+                      "bottomLeft": 0
+                    }
                   }
                 }
               ],
               "layout": {
                 "display": "flex",
                 "direction": "column",
-                "gap": 44,
-                "align": "center"
+                "align": "center",
+                "gap": 44
+              },
+              "figma": {
+                "parentId": "202:376",
+                "childIds": [
+                  "202:379",
+                  "202:380"
+                ],
+                "name": "Group 1261154162",
+                "type": "GROUP",
+                "blendMode": "PASS_THROUGH",
+                "absoluteBoundingBox": {
+                  "x": -2812,
+                  "y": 3111,
+                  "width": 1119,
+                  "height": 417
+                },
+                "absoluteRenderBounds": {
+                  "x": -2812,
+                  "y": 3111,
+                  "width": 1119,
+                  "height": 417
+                },
+                "size": {
+                  "x": 1119,
+                  "y": 417
+                },
+                "relativeTransform": [
+                  [
+                    1,
+                    0,
+                    160
+                  ],
+                  [
+                    0,
+                    1,
+                    100
+                  ]
+                ],
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "clipsContent": false,
+                "fills": [],
+                "strokes": [],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "rectangleCornerRadii": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "cornerSmoothing": 0,
+                "effects": [],
+                "rawGeometryFields": [
+                  "fillGeometry",
+                  "strokeGeometry"
+                ],
+                "extraSourceProperties": {
+                  "scrollBehavior": "SCROLLS",
+                  "background": [],
+                  "backgroundColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0,
+                    "a": 0
+                  },
+                  "interactions": [],
+                  "complexStrokeProperties": {
+                    "strokeType": "BASIC"
+                  }
+                },
+                "effectiveVisible": true
+              },
+              "border": {
+                "radii": {
+                  "topLeft": 0,
+                  "topRight": 0,
+                  "bottomRight": 0,
+                  "bottomLeft": 0
+                }
               }
             }
           ],
-          "layout": {
-            "display": "flex",
-            "direction": "column",
-            "align": "start"
-          },
           "figma": {
-            "parentId": "202:376",
+            "parentId": "scope",
             "childIds": [
-              "202:379",
-              "202:380"
+              "202:377",
+              "202:378"
             ],
-            "name": "Group 1261154162",
+            "name": "Group 1261154163",
             "type": "GROUP",
             "blendMode": "PASS_THROUGH",
             "absoluteBoundingBox": {
-              "x": -2812,
-              "y": 3111,
-              "width": 1119,
-              "height": 417
+              "x": -2972,
+              "y": 3011,
+              "width": 1440,
+              "height": 617
             },
             "absoluteRenderBounds": {
-              "x": -2812,
-              "y": 3111,
-              "width": 1119,
-              "height": 417
+              "x": -2972,
+              "y": 3011,
+              "width": 1440,
+              "height": 617
             },
             "size": {
-              "x": 1119,
-              "y": 417
+              "x": 1440,
+              "y": 617
             },
             "relativeTransform": [
               [
                 1,
                 0,
-                160
+                0
               ],
               [
                 0,
                 1,
-                100
+                674
               ]
             ],
             "constraints": {
@@ -1557,7 +1925,28 @@
                 "strokeType": "BASIC"
               }
             },
-            "effectiveVisible": true
+            "effectiveVisible": true,
+            "geometryDerived": true,
+            "paintSourceIds": [
+              "202:377"
+            ]
+          },
+          "background": {
+            "color": "#1A070C"
+          },
+          "size": {
+            "minHeight": 617
+          },
+          "layout": {
+            "display": "flex",
+            "direction": "column",
+            "align": "start",
+            "padding": {
+              "top": 100,
+              "right": 161,
+              "bottom": 100,
+              "left": 160
+            }
           },
           "border": {
             "radii": {
@@ -1572,7 +1961,13 @@
       "layout": {
         "display": "flex",
         "direction": "column",
-        "align": "start"
+        "align": "start",
+        "padding": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
       },
       "figma": {
         "parentId": null,
@@ -1590,19 +1985,5 @@
         "effectiveVisible": true
       }
     }
-  ],
-  "_uncertain": [
-    "The original JSON was invalid with 0 children and no Figma nodes were provided; a minimal single leaf was synthesized only to produce schema-valid output. No real content, layout, colors, or component data existed to extract. Replace once actual page/frame/node data is available.",
-    "part 2: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing",
-    "Group 1261154162 has no children in this part; its layout, background, typography and descendent content are in other parts",
-    "This part only contains a sparse group node with no child elements.",
-    "Node 202:380 (Group 1261154161) has no children in the data; it was emitted as an empty 'column'.",
-    "lorem-ipsum-text: dropped unknown field \"typography.size\"",
-    "The group node has explicit fills, border and radius information to preserve",
-    "part 18: model output failed validation; built from Figma data only, frame backgrounds/borders for it may be missing",
-    "stroke/border color #B12255 (1px, inside) cannot be expressed via border (radius-only schema)",
-    "strokes and strokeAlign/strokeWeight have no direct schema field",
-    "bonuses-and-rewards: dropped unknown field \"typography.textAlignHorizontal\"",
-    "stitch: 3 node(s) added from Figma data because the model's parts did not include them"
   ]
 }

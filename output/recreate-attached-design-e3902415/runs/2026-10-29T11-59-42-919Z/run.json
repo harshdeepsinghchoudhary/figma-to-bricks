@@ -1,0 +1,66 @@
+{
+  "figmaUrl": "https://www.figma.com/design/5grQHL65LYmhDPjXKYcHIs/Tapijtschuur?node-id=11-4081",
+  "frameDir": "output\\recreate-attached-design-e3902415",
+  "postId": null,
+  "startedAt": "2026-10-29T11:59:42.920Z",
+  "visualDebugging": "export only; no frontend target",
+  "args": [
+    "https://www.figma.com/design/5grQHL65LYmhDPjXKYcHIs/Tapijtschuur?node-id=11-4081",
+    "--provider",
+    "codex",
+    "--force",
+    "--no-inject",
+    "--no-visual",
+    "--no-dataset"
+  ],
+  "steps": [
+    {
+      "label": "1 extract",
+      "script": "1_extract_figma.js",
+      "args": [
+        "https://www.figma.com/design/5grQHL65LYmhDPjXKYcHIs/Tapijtschuur?node-id=11-4081"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "2-3 normalize, compile, merge",
+      "script": "run-sections.js",
+      "args": [
+        "output\\recreate-attached-design-e3902415",
+        "--force"
+      ],
+      "code": 0,
+      "seconds": 313
+    },
+    {
+      "label": "validate merged tree",
+      "script": "bricks-validator.js",
+      "args": [
+        "output\\recreate-attached-design-e3902415\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "validate native settings and assets",
+      "script": "validate-build.js",
+      "args": [
+        "output\\recreate-attached-design-e3902415\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "pre-import conversion audit",
+      "script": "conversion-audit.js",
+      "args": [
+        "output\\recreate-attached-design-e3902415"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-29T12:04:57.265Z",
+  "exitCode": 0
+}

@@ -4,7 +4,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { validateBricks } from "../scripts/bricks-validator.js";
 import { validateBuild } from "../scripts/validate-build.js";
-import { decorationOwner } from "../scripts/section-detect.js";
+import { decorationOwner, pageSections } from "../scripts/section-detect.js";
 const out = path.resolve(".review-work", `regression-${Date.now()}`); fs.mkdirSync(out, { recursive: true });
 const report = { compiled: 0, failures: [], frames: [], validation: "nonvisual only" };
 for (const entry of fs.readdirSync("output", { withFileTypes: true })) {
@@ -41,9 +41,9 @@ for (const entry of fs.readdirSync("output", { withFileTypes: true })) {
   }
   report.frames.push({ name: entry.name, sections: compileDirs.length, built });
   console.log(`${entry.name}: ${built}/${compileDirs.length} compiled and structurally valid`);
-  if (entry.name === "casinofx-homepage") {
+  if (built===compileDirs.length && built>0 && fs.existsSync(path.join(target,'sections.json')) && fs.existsSync(path.join(target,'figma-node.json'))) {
     const root = JSON.parse(fs.readFileSync(path.join(target, "figma-node.json"))), names = JSON.parse(fs.readFileSync(path.join(target, "sections.json")));
-    const top = (root.children || []).filter((n) => n.visible !== false && n.absoluteBoundingBox);
+    const top = pageSections(root);
     const ordered = top.filter(n => !decorationOwner(n, top)).sort((a, b) => a.absoluteBoundingBox.y - b.absoluteBoundingBox.y || a.absoluteBoundingBox.x - b.absoluteBoundingBox.x)
       .map((n) => names[n.id]).filter((n) => n && fs.existsSync(path.join(target, "sections", n, "bricks-tree.json")));
     if (ordered.length) {

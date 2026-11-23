@@ -1,8 +1,8 @@
 [
   {
-    "id": "s31w3e",
+    "id": "r1fvuq",
     "name": "heading",
-    "parent": "f2o1ia",
+    "parent": "5wx7x3",
     "children": [],
     "settings": {
       "text": "How To Sign Up PG Slot Account?",
@@ -17,13 +17,18 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
+      },
+      "_typography:mobile_landscape": {
+        "font-size": "32px",
+        "line-height": "125%",
+        "letter-spacing": "0%"
       }
     }
   },
   {
-    "id": "hi3m51",
+    "id": "ghjr64",
     "name": "image",
-    "parent": "ni4rta",
+    "parent": "s185ry",
     "children": [],
     "settings": {
       "image": {
@@ -39,9 +44,9 @@
     "themeStyles": []
   },
   {
-    "id": "t5ovte",
+    "id": "lhi37q",
     "name": "heading",
-    "parent": "ni4rta",
+    "parent": "s185ry",
     "children": [],
     "settings": {
       "text": "Access the PG Slot Website",
@@ -66,9 +71,9 @@
     }
   },
   {
-    "id": "7rrowu",
+    "id": "13ttj3",
     "name": "text",
-    "parent": "ni4rta",
+    "parent": "s185ry",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
@@ -91,13 +96,13 @@
     }
   },
   {
-    "id": "ni4rta",
+    "id": "s185ry",
     "name": "div",
-    "parent": "vyq07o",
+    "parent": "30zoof",
     "children": [
-      "hi3m51",
-      "t5ovte",
-      "7rrowu"
+      "ghjr64",
+      "lhi37q",
+      "13ttj3"
     ],
     "settings": {
       "_display": "flex",
@@ -109,9 +114,9 @@
     }
   },
   {
-    "id": "3l2lms",
+    "id": "91apz4",
     "name": "image",
-    "parent": "x00aox",
+    "parent": "ot3g5g",
     "children": [],
     "settings": {
       "image": {
@@ -127,9 +132,9 @@
     "themeStyles": []
   },
   {
-    "id": "jjdg4i",
+    "id": "3pgq1k",
     "name": "heading",
-    "parent": "tdw4k3",
+    "parent": "c23q7j",
     "children": [],
     "settings": {
       "text": "Enter Personal Information",
@@ -151,9 +156,9 @@
     }
   },
   {
-    "id": "e6qgab",
+    "id": "3d7b3b",
     "name": "text",
-    "parent": "tdw4k3",
+    "parent": "c23q7j",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
@@ -173,12 +178,12 @@
     }
   },
   {
-    "id": "tdw4k3",
+    "id": "c23q7j",
     "name": "div",
-    "parent": "x00aox",
+    "parent": "ot3g5g",
     "children": [
-      "jjdg4i",
-      "e6qgab"
+      "3pgq1k",
+      "3d7b3b"
     ],
     "settings": {
       "_display": "flex",
@@ -186,16 +191,24 @@
       "_rowGap": "12",
       "_columnGap": "12",
       "_alignItems": "center",
-      "_width": "100%"
+      "_width": "100%",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
     }
   },
   {
-    "id": "x00aox",
+    "id": "ot3g5g",
     "name": "div",
-    "parent": "vyq07o",
+    "parent": "30zoof",
     "children": [
-      "3l2lms",
-      "tdw4k3"
+      "91apz4",
+      "c23q7j"
     ],
     "settings": {
       "_display": "flex",
@@ -209,9 +222,9 @@
     }
   },
   {
-    "id": "0bvyr7",
+    "id": "86ad0w",
     "name": "image",
-    "parent": "qoplnj",
+    "parent": "sw0njd",
     "children": [],
     "settings": {
       "image": {
@@ -227,9 +240,9 @@
     "themeStyles": []
   },
   {
-    "id": "cpxp78",
+    "id": "zl6mee",
     "name": "heading",
-    "parent": "jx464i",
+    "parent": "z4lpip",
     "children": [],
     "settings": {
       "text": "Account Verification and Confirmation",
@@ -250,12 +263,12 @@
     }
   },
   {
-    "id": "yt8np3",
-    "name": "text-basic",
-    "parent": "jx464i",
+    "id": "4e0moy",
+    "name": "text",
+    "parent": "z4lpip",
     "children": [],
     "settings": {
-      "text": "Lorem Ipsum is simply dummy text of the ",
+      "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
       "_width": "100%",
       "_widthMax": "208px",
       "_typography": {
@@ -273,12 +286,12 @@
     }
   },
   {
-    "id": "jx464i",
+    "id": "z4lpip",
     "name": "div",
-    "parent": "qoplnj",
+    "parent": "sw0njd",
     "children": [
-      "cpxp78",
-      "yt8np3"
+      "zl6mee",
+      "4e0moy"
     ],
     "settings": {
       "_display": "flex",
@@ -298,12 +311,12 @@
     }
   },
   {
-    "id": "qoplnj",
+    "id": "sw0njd",
     "name": "div",
-    "parent": "vyq07o",
+    "parent": "30zoof",
     "children": [
-      "0bvyr7",
-      "jx464i"
+      "86ad0w",
+      "z4lpip"
     ],
     "settings": {
       "_display": "flex",
@@ -317,9 +330,9 @@
     }
   },
   {
-    "id": "ysqp8b",
+    "id": "vbac5h",
     "name": "image",
-    "parent": "oaieuu",
+    "parent": "11vwtx",
     "children": [],
     "settings": {
       "image": {
@@ -335,9 +348,9 @@
     "themeStyles": []
   },
   {
-    "id": "9js09h",
+    "id": "x8uw8q",
     "name": "heading",
-    "parent": "jz6j9r",
+    "parent": "abm511",
     "children": [],
     "settings": {
       "text": "Start Play PG Slot Games",
@@ -359,9 +372,9 @@
     }
   },
   {
-    "id": "wjoya7",
+    "id": "26urh6",
     "name": "text",
-    "parent": "jz6j9r",
+    "parent": "abm511",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy text of the </p>",
@@ -381,12 +394,12 @@
     }
   },
   {
-    "id": "jz6j9r",
+    "id": "abm511",
     "name": "div",
-    "parent": "oaieuu",
+    "parent": "11vwtx",
     "children": [
-      "9js09h",
-      "wjoya7"
+      "x8uw8q",
+      "26urh6"
     ],
     "settings": {
       "_display": "flex",
@@ -394,16 +407,24 @@
       "_rowGap": "12",
       "_columnGap": "12",
       "_alignItems": "center",
-      "_width": "100%"
+      "_width": "100%",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
     }
   },
   {
-    "id": "oaieuu",
+    "id": "11vwtx",
     "name": "div",
-    "parent": "vyq07o",
+    "parent": "30zoof",
     "children": [
-      "ysqp8b",
-      "jz6j9r"
+      "vbac5h",
+      "abm511"
     ],
     "settings": {
       "_display": "flex",
@@ -417,14 +438,14 @@
     }
   },
   {
-    "id": "vyq07o",
+    "id": "30zoof",
     "name": "div",
-    "parent": "f2o1ia",
+    "parent": "5wx7x3",
     "children": [
-      "ni4rta",
-      "x00aox",
-      "qoplnj",
-      "oaieuu"
+      "s185ry",
+      "ot3g5g",
+      "sw0njd",
+      "11vwtx"
     ],
     "settings": {
       "_display": "flex",
@@ -434,18 +455,19 @@
       "_alignItems": "flex-start",
       "_justifyContent": "space-between",
       "_width": "100%",
+      "_widthMax": "1121px",
       "_direction:tablet_portrait": "column",
       "_rowGap:tablet_portrait": "40",
       "_alignItems:tablet_portrait": "center"
     }
   },
   {
-    "id": "f2o1ia",
-    "name": "container",
-    "parent": "jgyean",
+    "id": "5wx7x3",
+    "name": "div",
+    "parent": "hwkv88",
     "children": [
-      "s31w3e",
-      "vyq07o"
+      "r1fvuq",
+      "30zoof"
     ],
     "settings": {
       "_display": "flex",
@@ -453,22 +475,44 @@
       "_rowGap": "42",
       "_columnGap": "42",
       "_alignItems": "center",
-      "_width": "100%",
-      "_widthMax": "1121px"
+      "_width": "100%"
     }
   },
   {
-    "id": "jgyean",
+    "id": "hwkv88",
+    "name": "container",
+    "parent": "dyia6y",
+    "children": [
+      "5wx7x3"
+    ],
+    "settings": {
+      "_display": "flex",
+      "_direction": "column",
+      "_alignItems": "flex-start",
+      "_width": "100%",
+      "_widthMax": "1120px"
+    }
+  },
+  {
+    "id": "dyia6y",
     "name": "section",
     "parent": 0,
     "children": [
-      "f2o1ia"
+      "hwkv88"
     ],
     "settings": {
       "_padding": {
+        "top": "0",
         "right": "16",
+        "bottom": "0",
         "left": "16"
-      }
+      },
+      "_background": {
+        "color": {
+          "raw": "#1A070C"
+        }
+      },
+      "_overflow": "hidden"
     }
   }
 ]

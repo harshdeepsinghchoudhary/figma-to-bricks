@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "sourceHash": "705a405f4c9ce0b3a8fa0801ee1d7713e572e8c130cfff4ed3d0f1df22bd7f05",
+  "warnings": [
+    "11:4107: multiple shadows preserved in figma.effects; native single-shadow mapping is insufficient"
+  ],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "Recreate attached design (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4107",
+      "parentId": "scope",
+      "name": "Header",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4108",
+      "parentId": "11:4107",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4109",
+      "parentId": "11:4108",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4110",
+      "parentId": "11:4109",
+      "name": "Image (Tapijtschuur)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4111",
+      "parentId": "11:4108",
+      "name": "Navigation",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4112",
+      "parentId": "11:4111",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4113",
+      "parentId": "11:4112",
+      "name": "Vloeren",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4114",
+      "parentId": "11:4111",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4115",
+      "parentId": "11:4114",
+      "name": "Raamdecoratie",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4116",
+      "parentId": "11:4111",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4117",
+      "parentId": "11:4116",
+      "name": "Showroom",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4118",
+      "parentId": "11:4111",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4119",
+      "parentId": "11:4118",
+      "name": "Over ons",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4120",
+      "parentId": "11:4111",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4121",
+      "parentId": "11:4120",
+      "name": "Contact",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4122",
+      "parentId": "11:4108",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4123",
+      "parentId": "11:4122",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4124",
+      "parentId": "11:4123",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4125",
+      "parentId": "11:4124",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4124"
+    },
+    {
+      "nodeId": "11:4126",
+      "parentId": "11:4123",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4127",
+      "parentId": "11:4126",
+      "name": "0317 – 413068",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4128",
+      "parentId": "11:4122",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4129",
+      "parentId": "11:4128",
+      "name": "Offerte aanvragen",
+      "type": "TEXT",
+      "status": "button-label",
+      "representedBy": "11:4128"
+    }
+  ],
+  "summary": {
+    "represented": 22,
+    "covered-by-export": 1,
+    "button-label": 1,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 0
+  }
+}

@@ -1,15 +1,37 @@
 {
   "status": "compiled",
-  "elementCount": 37,
+  "elementCount": 54,
   "components": [
     {
-      "id": "pgslot-thailand-com-row-1",
+      "id": "group-1261154127-43533cc5",
+      "figmaNodeId": "202:230",
       "kind": "slider",
       "status": "native",
       "reason": "structure and controls verified against saved runtime schema"
     }
   ],
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "202:236: non-drop-shadow effects preserved in figma.effects for explicit handling",
+    "202:256: non-drop-shadow effects preserved in figma.effects for explicit handling",
+    "202:275: non-drop-shadow effects preserved in figma.effects for explicit handling",
+    "202:294: non-drop-shadow effects preserved in figma.effects for explicit handling",
+    "202:313: non-drop-shadow effects preserved in figma.effects for explicit handling",
+    "ellipse-4-6365887d: absolute offset belongs to Figma parent 202:234, not mask-group-d16a98af; positioning requires reconciliation",
+    "ellipse-4-6365887d: rotated or sheared geometry preserved; transform mapping requires verified nested control values",
+    "rectangle-5775-e5ff48de: arbitrary Figma mask requires an exported graphic or explicit native mask mapping",
+    "ellipse-4-1913028a: absolute offset belongs to Figma parent 202:254, not mask-group-b0c01416; positioning requires reconciliation",
+    "ellipse-4-1913028a: rotated or sheared geometry preserved; transform mapping requires verified nested control values",
+    "rectangle-5775-ad011ae7: arbitrary Figma mask requires an exported graphic or explicit native mask mapping",
+    "ellipse-4-4fd3947a: absolute offset belongs to Figma parent 202:273, not mask-group-8c33a072; positioning requires reconciliation",
+    "ellipse-4-4fd3947a: rotated or sheared geometry preserved; transform mapping requires verified nested control values",
+    "rectangle-5775-fb344d44: arbitrary Figma mask requires an exported graphic or explicit native mask mapping",
+    "ellipse-4-06512721: absolute offset belongs to Figma parent 202:292, not mask-group-de090633; positioning requires reconciliation",
+    "ellipse-4-06512721: rotated or sheared geometry preserved; transform mapping requires verified nested control values",
+    "rectangle-5775-2501fdfe: arbitrary Figma mask requires an exported graphic or explicit native mask mapping",
+    "ellipse-4-59348c2e: absolute offset belongs to Figma parent 202:311, not mask-group-176c82d4; positioning requires reconciliation",
+    "ellipse-4-59348c2e: rotated or sheared geometry preserved; transform mapping requires verified nested control values",
+    "rectangle-5775-ea60f581: arbitrary Figma mask requires an exported graphic or explicit native mask mapping"
+  ],
   "frontendBehaviorVerified": false
 }

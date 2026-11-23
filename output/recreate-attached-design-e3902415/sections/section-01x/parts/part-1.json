@@ -1,0 +1,185 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "information-bar",
+      "children": [
+        {
+          "type": "column",
+          "id": "information-bar-container",
+          "figmaNodeId": "11:4084",
+          "background": {
+            "color": "#0D1B2A"
+          },
+          "children": [
+            {
+              "type": "row",
+              "id": "information-content-container",
+              "figmaNodeId": "11:4085",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "information-items-container",
+                  "figmaNodeId": "11:4086",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "information-bar-row-5",
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "specialist-item",
+                          "figmaNodeId": "11:4087",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "information-bar-row-1",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "specialist-icon",
+                                  "figmaNodeId": "11:4088",
+                                  "asset": {
+                                    "nodeId": "11:4088",
+                                    "kind": "svg"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "specialist-text",
+                                  "figmaNodeId": "11:4091",
+                                  "text": "Specialist in maatwerk vloeren",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 14,
+                                    "fontWeight": 400,
+                                    "lineHeight": "20px",
+                                    "color": "#FFFFFFCC",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "customers-item",
+                          "figmaNodeId": "11:4092",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "information-bar-row-2",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "customers-icon",
+                                  "figmaNodeId": "11:4093",
+                                  "asset": {
+                                    "nodeId": "11:4093",
+                                    "kind": "svg"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "customers-text",
+                                  "figmaNodeId": "11:4096",
+                                  "text": "Voor particulieren & zakelijk",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 14,
+                                    "fontWeight": 400,
+                                    "lineHeight": "20px",
+                                    "color": "#FFFFFFCC",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "weekday-hours-item",
+                          "figmaNodeId": "11:4097",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "information-bar-row-3",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "weekday-hours-icon",
+                                  "figmaNodeId": "11:4098",
+                                  "asset": {
+                                    "nodeId": "11:4098",
+                                    "kind": "svg"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "weekday-hours-text",
+                                  "figmaNodeId": "11:4101",
+                                  "text": "Ma–Do 10:00–12:30 & 13:30–17:00",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 14,
+                                    "fontWeight": 400,
+                                    "lineHeight": "20px",
+                                    "color": "#FFFFFFCC",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "saturday-hours-item",
+                          "figmaNodeId": "11:4102",
+                          "children": [
+                            {
+                              "type": "row",
+                              "id": "information-bar-row-4",
+                              "children": [
+                                {
+                                  "type": "image",
+                                  "id": "saturday-hours-icon",
+                                  "figmaNodeId": "11:4103",
+                                  "asset": {
+                                    "nodeId": "11:4103",
+                                    "kind": "svg"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "saturday-hours-text",
+                                  "figmaNodeId": "11:4106",
+                                  "text": "Zat 10:00–17:00",
+                                  "typography": {
+                                    "fontFamily": "Plus Jakarta Sans",
+                                    "fontSize": 14,
+                                    "fontWeight": 400,
+                                    "lineHeight": "20px",
+                                    "color": "#FFFFFFCC",
+                                    "align": "left"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

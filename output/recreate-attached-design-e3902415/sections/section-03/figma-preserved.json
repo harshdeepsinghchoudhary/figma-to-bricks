@@ -1,0 +1,1834 @@
+{
+  "version": 1,
+  "rootId": "scope",
+  "sourceHash": "eff7768f374a22ed8e3e3e9258d9b145678a30a3bebe44ea80053909bc546b65",
+  "frames": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "Recreate attached design (scoped)",
+      "bounds": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4130",
+      "parentId": "scope",
+      "name": "Section",
+      "bounds": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4131",
+      "parentId": "11:4130",
+      "name": "Image (Tapijtschuur vloeren showroom)",
+      "bounds": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4132",
+      "parentId": "11:4130",
+      "name": "Container",
+      "bounds": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4133",
+      "parentId": "11:4130",
+      "name": "Container",
+      "bounds": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4134",
+      "parentId": "11:4130",
+      "name": "Container",
+      "bounds": {
+        "x": -3791.5,
+        "y": 283.75,
+        "width": 512,
+        "height": 386.5
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4135",
+      "parentId": "11:4134",
+      "name": "Text",
+      "bounds": {
+        "x": -3791.5,
+        "y": 283.75,
+        "width": 205.703125,
+        "height": 28
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4137",
+      "parentId": "11:4134",
+      "name": "Heading 1",
+      "bounds": {
+        "x": -3791.5,
+        "y": 331.75,
+        "width": 512,
+        "height": 180
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4139",
+      "parentId": "11:4134",
+      "name": "Paragraph",
+      "bounds": {
+        "x": -3791.5,
+        "y": 531.75,
+        "width": 512,
+        "height": 58.5
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4141",
+      "parentId": "11:4134",
+      "name": "Container",
+      "bounds": {
+        "x": -3791.5,
+        "y": 622.25,
+        "width": 512,
+        "height": 48
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4142",
+      "parentId": "11:4141",
+      "name": "Link",
+      "bounds": {
+        "x": -3791.5,
+        "y": 622.25,
+        "width": 189.296875,
+        "height": 48
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4144",
+      "parentId": "11:4142",
+      "name": "Icon",
+      "bounds": {
+        "x": -3642.203125,
+        "y": 638.25,
+        "width": 16,
+        "height": 16
+      },
+      "componentId": null
+    },
+    {
+      "nodeId": "11:4146",
+      "parentId": "11:4141",
+      "name": "Link",
+      "bounds": {
+        "x": -3590.203125,
+        "y": 622.25,
+        "width": 190.28125,
+        "height": 48
+      },
+      "componentId": null
+    }
+  ],
+  "metadata": {
+    "name": "Tapijtschuur",
+    "version": "2378597673233802437",
+    "lastModified": "2026-07-21T08:44:40Z",
+    "components": {},
+    "componentSets": {},
+    "styles": {}
+  },
+  "nodes": {
+    "scope": {
+      "parentId": null,
+      "childIds": [
+        "11:4130"
+      ],
+      "name": "Recreate attached design (scoped)",
+      "type": "FRAME",
+      "absoluteBoundingBox": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "effectiveVisible": true
+    },
+    "11:4130": {
+      "parentId": "scope",
+      "childIds": [
+        "11:4131",
+        "11:4132",
+        "11:4133",
+        "11:4134"
+      ],
+      "name": "Section",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "absoluteRenderBounds": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "size": {
+        "x": 1679,
+        "y": 680
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          137
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "FIXED",
+      "layoutGrow": 0,
+      "layoutAlign": "STRETCH",
+      "clipsContent": true,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.05098039284348488,
+            "g": 0.10588235408067703,
+            "b": 0.16470588743686676,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [
+          {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+              "r": 0.05098039284348488,
+              "g": 0.10588235408067703,
+              "b": 0.16470588743686676,
+              "a": 1
+            }
+          }
+        ],
+        "backgroundColor": {
+          "r": 0.05098039284348488,
+          "g": 0.10588235408067703,
+          "b": 0.16470588743686676,
+          "a": 1
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4131": {
+      "parentId": "11:4130",
+      "childIds": [],
+      "name": "Image (Tapijtschuur vloeren showroom)",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "absoluteRenderBounds": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "size": {
+        "x": 1679,
+        "y": 680
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": true,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "3ee2cc032b13c7f92c480fca6cc2ef9843455b8d"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [
+          {
+            "blendMode": "NORMAL",
+            "type": "IMAGE",
+            "scaleMode": "FILL",
+            "imageRef": "3ee2cc032b13c7f92c480fca6cc2ef9843455b8d"
+          }
+        ],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4132": {
+      "parentId": "11:4130",
+      "childIds": [],
+      "name": "Container",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "absoluteRenderBounds": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "size": {
+        "x": 1679,
+        "y": 680
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "GRADIENT_LINEAR",
+          "gradientHandlePositions": [
+            {
+              "x": 0,
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 0.5
+            },
+            {
+              "x": 0,
+              "y": 1.5
+            }
+          ],
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.05098039284348488,
+                "g": 0.10588235408067703,
+                "b": 0.16470588743686676,
+                "a": 0.8500000238418579
+              },
+              "position": 0
+            },
+            {
+              "color": {
+                "r": 0.05098039284348488,
+                "g": 0.10588235408067703,
+                "b": 0.16470588743686676,
+                "a": 0.5
+              },
+              "position": 0.5
+            },
+            {
+              "color": {
+                "r": 0.05098039284348488,
+                "g": 0.10588235408067703,
+                "b": 0.16470588743686676,
+                "a": 0.10000000149011612
+              },
+              "position": 1
+            }
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [
+          {
+            "blendMode": "NORMAL",
+            "type": "GRADIENT_LINEAR",
+            "gradientHandlePositions": [
+              {
+                "x": 0,
+                "y": 0.5
+              },
+              {
+                "x": 1,
+                "y": 0.5
+              },
+              {
+                "x": 0,
+                "y": 1.5
+              }
+            ],
+            "gradientStops": [
+              {
+                "color": {
+                  "r": 0.05098039284348488,
+                  "g": 0.10588235408067703,
+                  "b": 0.16470588743686676,
+                  "a": 0.8500000238418579
+                },
+                "position": 0
+              },
+              {
+                "color": {
+                  "r": 0.05098039284348488,
+                  "g": 0.10588235408067703,
+                  "b": 0.16470588743686676,
+                  "a": 0.5
+                },
+                "position": 0.5
+              },
+              {
+                "color": {
+                  "r": 0.05098039284348488,
+                  "g": 0.10588235408067703,
+                  "b": 0.16470588743686676,
+                  "a": 0.10000000149011612
+                },
+                "position": 1
+              }
+            ]
+          }
+        ],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4133": {
+      "parentId": "11:4130",
+      "childIds": [],
+      "name": "Container",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "absoluteRenderBounds": {
+        "x": -4015,
+        "y": 137,
+        "width": 1679,
+        "height": 680
+      },
+      "size": {
+        "x": 1679,
+        "y": 680
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "GRADIENT_LINEAR",
+          "gradientHandlePositions": [
+            {
+              "x": 0.5,
+              "y": 1
+            },
+            {
+              "x": 0.5,
+              "y": 0
+            },
+            {
+              "x": 1.5,
+              "y": 1
+            }
+          ],
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.05098039284348488,
+                "g": 0.10588235408067703,
+                "b": 0.16470588743686676,
+                "a": 0.4000000059604645
+              },
+              "position": 0
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "position": 0.5
+            },
+            {
+              "color": {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "a": 0
+              },
+              "position": 1
+            }
+          ]
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [
+          {
+            "blendMode": "NORMAL",
+            "type": "GRADIENT_LINEAR",
+            "gradientHandlePositions": [
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 0
+              },
+              {
+                "x": 1.5,
+                "y": 1
+              }
+            ],
+            "gradientStops": [
+              {
+                "color": {
+                  "r": 0.05098039284348488,
+                  "g": 0.10588235408067703,
+                  "b": 0.16470588743686676,
+                  "a": 0.4000000059604645
+                },
+                "position": 0
+              },
+              {
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "position": 0.5
+              },
+              {
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 0
+                },
+                "position": 1
+              }
+            ]
+          }
+        ],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4134": {
+      "parentId": "11:4130",
+      "childIds": [
+        "11:4135",
+        "11:4137",
+        "11:4139",
+        "11:4141"
+      ],
+      "name": "Container",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3791.5,
+        "y": 283.75,
+        "width": 512,
+        "height": 386.5
+      },
+      "absoluteRenderBounds": {
+        "x": -3791.5,
+        "y": 283.75,
+        "width": 512,
+        "height": 386.5
+      },
+      "size": {
+        "x": 512,
+        "y": 386.5
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          223.5
+        ],
+        [
+          0,
+          1,
+          146.75
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4135": {
+      "parentId": "11:4134",
+      "childIds": [
+        "11:4136"
+      ],
+      "name": "Text",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3791.5,
+        "y": 283.75,
+        "width": 205.703125,
+        "height": 28
+      },
+      "absoluteRenderBounds": {
+        "x": -3791.5,
+        "y": 283.75,
+        "width": 205.703125,
+        "height": 28
+      },
+      "size": {
+        "x": 205.703125,
+        "y": 28
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.054901961237192154,
+            "g": 0.545098066329956,
+            "b": 0.800000011920929,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "cornerRadius": 33554400,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [
+          {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+              "r": 0.054901961237192154,
+              "g": 0.545098066329956,
+              "b": 0.800000011920929,
+              "a": 1
+            }
+          }
+        ],
+        "backgroundColor": {
+          "r": 0.054901961237192154,
+          "g": 0.545098066329956,
+          "b": 0.800000011920929,
+          "a": 1
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4136": {
+      "parentId": "11:4135",
+      "childIds": [],
+      "name": "Vloeren showroom",
+      "type": "TEXT",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3779.5,
+        "y": 287.75,
+        "width": 181,
+        "height": 20
+      },
+      "absoluteRenderBounds": {
+        "x": -3779.345947265625,
+        "y": 293.1520080566406,
+        "width": 179.099609375,
+        "height": 10.7659912109375
+      },
+      "size": {
+        "x": 181,
+        "y": 20
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          12
+        ],
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "style": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontPostScriptName": null,
+        "fontStyle": "SemiBold",
+        "fontWeight": 600,
+        "textCase": "UPPER",
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 1.399999976158142,
+        "lineHeightPx": 20,
+        "lineHeightPercent": 113.37869262695312,
+        "lineHeightPercentFontSize": 142.85714721679688,
+        "lineHeightUnit": "PIXELS"
+      },
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "characters": "Vloeren showroom",
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "lineTypes": [
+          "NONE"
+        ],
+        "lineIndentations": [
+          0
+        ],
+        "layoutVersion": 5,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4137": {
+      "parentId": "11:4134",
+      "childIds": [
+        "11:4138"
+      ],
+      "name": "Heading 1",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3791.5,
+        "y": 331.75,
+        "width": 512,
+        "height": 180
+      },
+      "absoluteRenderBounds": {
+        "x": -3791.5,
+        "y": 331.75,
+        "width": 512,
+        "height": 180
+      },
+      "size": {
+        "x": 512,
+        "y": 180
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          48
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4138": {
+      "parentId": "11:4137",
+      "childIds": [],
+      "name": "Vakmanschap in vloeren en raamdecoratie",
+      "type": "TEXT",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3791.5,
+        "y": 330.75,
+        "width": 512,
+        "height": 180
+      },
+      "absoluteRenderBounds": {
+        "x": -3790.971923828125,
+        "y": 344.41400146484375,
+        "width": 372.5849609375,
+        "height": 156.9119873046875
+      },
+      "size": {
+        "x": 512,
+        "y": 180
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "style": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontPostScriptName": null,
+        "fontStyle": "SemiBold",
+        "fontWeight": 600,
+        "textAutoResize": "HEIGHT",
+        "fontSize": 48,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 60,
+        "lineHeightPercent": 99.20635223388672,
+        "lineHeightPercentFontSize": 125,
+        "lineHeightUnit": "PIXELS"
+      },
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "characters": "Vakmanschap in vloeren en raamdecoratie",
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "lineTypes": [
+          "NONE"
+        ],
+        "lineIndentations": [
+          0
+        ],
+        "layoutVersion": 5,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4139": {
+      "parentId": "11:4134",
+      "childIds": [
+        "11:4140"
+      ],
+      "name": "Paragraph",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3791.5,
+        "y": 531.75,
+        "width": 512,
+        "height": 58.5
+      },
+      "absoluteRenderBounds": {
+        "x": -3791.5,
+        "y": 531.75,
+        "width": 512,
+        "height": 58.5
+      },
+      "size": {
+        "x": 512,
+        "y": 58.5
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          248
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4140": {
+      "parentId": "11:4139",
+      "childIds": [],
+      "name": "Bezoek onze showroom en ontdek ons uitgebreide aan",
+      "type": "TEXT",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3791.5,
+        "y": 531.75,
+        "width": 512,
+        "height": 59
+      },
+      "absoluteRenderBounds": {
+        "x": -3791.302001953125,
+        "y": 540.1240234375,
+        "width": 503.088134765625,
+        "height": 46.58599853515625
+      },
+      "size": {
+        "x": 512,
+        "y": 59
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8196078538894653,
+            "g": 0.8352941274642944,
+            "b": 0.8627451062202454,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "style": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontPostScriptName": null,
+        "fontStyle": "Regular",
+        "fontWeight": 400,
+        "textAutoResize": "HEIGHT",
+        "fontSize": 18,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 29.25,
+        "lineHeightPercent": 128.96824645996094,
+        "lineHeightPercentFontSize": 162.5,
+        "lineHeightUnit": "PIXELS"
+      },
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "characters": "Bezoek onze showroom en ontdek ons uitgebreide aanbod. Van tapijt tot laminaat,  maatwerk vloeren voor elk project.",
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "lineTypes": [
+          "NONE"
+        ],
+        "lineIndentations": [
+          0
+        ],
+        "layoutVersion": 5,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4141": {
+      "parentId": "11:4134",
+      "childIds": [
+        "11:4142",
+        "11:4146"
+      ],
+      "name": "Container",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3791.5,
+        "y": 622.25,
+        "width": 512,
+        "height": 48
+      },
+      "absoluteRenderBounds": {
+        "x": -3791.5,
+        "y": 622.25,
+        "width": 512,
+        "height": 48
+      },
+      "size": {
+        "x": 512,
+        "y": 48
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          338.5
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4142": {
+      "parentId": "11:4141",
+      "childIds": [
+        "11:4143",
+        "11:4144"
+      ],
+      "name": "Link",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3791.5,
+        "y": 622.25,
+        "width": 189.296875,
+        "height": 48
+      },
+      "absoluteRenderBounds": {
+        "x": -3791.5,
+        "y": 622.25,
+        "width": 189.296875,
+        "height": 48
+      },
+      "size": {
+        "x": 189.296875,
+        "y": 48
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": false,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.054901961237192154,
+            "g": 0.545098066329956,
+            "b": 0.800000011920929,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "cornerRadius": 10,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [
+          {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+              "r": 0.054901961237192154,
+              "g": 0.545098066329956,
+              "b": 0.800000011920929,
+              "a": 1
+            }
+          }
+        ],
+        "backgroundColor": {
+          "r": 0.054901961237192154,
+          "g": 0.545098066329956,
+          "b": 0.800000011920929,
+          "a": 1
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4143": {
+      "parentId": "11:4142",
+      "childIds": [],
+      "name": "Bekijk collectie ",
+      "type": "TEXT",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3767.5,
+        "y": 633.25,
+        "width": 118,
+        "height": 24
+      },
+      "absoluteRenderBounds": {
+        "x": -3766.26806640625,
+        "y": 640.1380004882812,
+        "width": 115.4814453125,
+        "height": 15.64801025390625
+      },
+      "size": {
+        "x": 118,
+        "y": 24
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          24
+        ],
+        [
+          0,
+          1,
+          11
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "style": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontPostScriptName": null,
+        "fontStyle": "SemiBold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 16,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 24,
+        "lineHeightPercent": 119.04761505126953,
+        "lineHeightPercentFontSize": 150,
+        "lineHeightUnit": "PIXELS"
+      },
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "characters": "Bekijk collectie ",
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "lineTypes": [
+          "NONE"
+        ],
+        "lineIndentations": [
+          0
+        ],
+        "layoutVersion": 5,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4144": {
+      "parentId": "11:4142",
+      "childIds": [
+        "11:4145"
+      ],
+      "name": "Icon",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3642.203125,
+        "y": 638.25,
+        "width": 16,
+        "height": 16
+      },
+      "absoluteRenderBounds": {
+        "x": -3642.203125,
+        "y": 638.25,
+        "width": 16,
+        "height": 16
+      },
+      "size": {
+        "x": 16,
+        "y": 16
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          149.296875
+        ],
+        [
+          0,
+          1,
+          16
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "clipsContent": true,
+      "fills": [],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [],
+        "backgroundColor": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4145": {
+      "parentId": "11:4144",
+      "childIds": [],
+      "name": "Vector",
+      "type": "VECTOR",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3636.203125,
+        "y": 642.25,
+        "width": 4,
+        "height": 8
+      },
+      "absoluteRenderBounds": {
+        "x": -3636.869873046875,
+        "y": 641.5833129882812,
+        "width": 5.33349609375,
+        "height": 9.3333740234375
+      },
+      "size": {
+        "x": 4,
+        "y": 8
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "SCALE"
+      },
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokeWeight": 1.3333333730697632,
+      "strokeAlign": "CENTER",
+      "effects": [],
+      "rawGeometryFields": [
+        "vectorNetwork",
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "strokeJoin": "ROUND",
+        "strokeCap": "ROUND",
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4146": {
+      "parentId": "11:4141",
+      "childIds": [
+        "11:4147"
+      ],
+      "name": "Link",
+      "type": "FRAME",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3590.203125,
+        "y": 622.25,
+        "width": 190.28125,
+        "height": 48
+      },
+      "absoluteRenderBounds": {
+        "x": -3590.203125,
+        "y": 622.25,
+        "width": 190.28125,
+        "height": 48
+      },
+      "size": {
+        "x": 190.28125,
+        "y": 48
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          201.296875
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "layoutMode": "HORIZONTAL",
+      "layoutWrap": "NO_WRAP",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "primaryAxisSizingMode": "FIXED",
+      "counterAxisSizingMode": "FIXED",
+      "counterAxisAlignItems": "CENTER",
+      "itemSpacing": 8,
+      "paddingTop": 12,
+      "paddingRight": 24,
+      "paddingBottom": 12,
+      "paddingLeft": 24,
+      "clipsContent": false,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.9333333373069763,
+            "g": 0.24313725531101227,
+            "b": 0.21960784494876862,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "cornerRadius": 10,
+      "cornerSmoothing": 0,
+      "effects": [],
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "background": [
+          {
+            "blendMode": "NORMAL",
+            "type": "SOLID",
+            "color": {
+              "r": 0.9333333373069763,
+              "g": 0.24313725531101227,
+              "b": 0.21960784494876862,
+              "a": 1
+            }
+          }
+        ],
+        "backgroundColor": {
+          "r": 0.9333333373069763,
+          "g": 0.24313725531101227,
+          "b": 0.21960784494876862,
+          "a": 1
+        },
+        "strokesIncludedInLayout": true,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    },
+    "11:4147": {
+      "parentId": "11:4146",
+      "childIds": [],
+      "name": "Offerte aanvragen",
+      "type": "TEXT",
+      "blendMode": "PASS_THROUGH",
+      "absoluteBoundingBox": {
+        "x": -3566.203125,
+        "y": 634.25,
+        "width": 143,
+        "height": 24
+      },
+      "absoluteRenderBounds": {
+        "x": -3565.3232421875,
+        "y": 641.1380004882812,
+        "width": 140.5849609375,
+        "height": 15.63201904296875
+      },
+      "size": {
+        "x": 143,
+        "y": 24
+      },
+      "relativeTransform": [
+        [
+          1,
+          0,
+          24
+        ],
+        [
+          0,
+          1,
+          12
+        ]
+      ],
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "layoutGrow": 0,
+      "layoutAlign": "INHERIT",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "effects": [],
+      "style": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontPostScriptName": null,
+        "fontStyle": "SemiBold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 16,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0,
+        "lineHeightPx": 24,
+        "lineHeightPercent": 119.04761505126953,
+        "lineHeightPercentFontSize": 150,
+        "lineHeightUnit": "PIXELS"
+      },
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "characters": "Offerte aanvragen",
+      "rawGeometryFields": [
+        "fillGeometry",
+        "strokeGeometry"
+      ],
+      "extraSourceProperties": {
+        "scrollBehavior": "SCROLLS",
+        "lineTypes": [
+          "NONE"
+        ],
+        "lineIndentations": [
+          0
+        ],
+        "layoutVersion": 5,
+        "interactions": [],
+        "complexStrokeProperties": {
+          "strokeType": "BASIC"
+        }
+      },
+      "effectiveVisible": true
+    }
+  }
+}

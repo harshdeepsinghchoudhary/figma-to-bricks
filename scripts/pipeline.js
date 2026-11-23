@@ -5,7 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const args = process.argv.slice(2);
-const valued = new Set(["--page", "--title", "--frame", "--only", "--split", "--skip", "--visual-iterations"]);
+const valued = new Set(["--page", "--title", "--frame", "--only", "--split", "--skip", "--visual-iterations", "--provider"]);
 const val = (name) => { const i = args.indexOf(name); if (i >= 0) { if (!args[i + 1] || args[i + 1].startsWith("--")) throw new Error(`${name} needs a value`); return args[i + 1]; } return args.find((a) => a.startsWith(name + "="))?.slice(name.length + 1); };
 const has = (name) => args.includes(name);
 const url = args.find((a, i) => !a.startsWith("--") && !valued.has(args[i - 1]));
@@ -30,6 +30,13 @@ function run(label, script, argv) {
 async function main() {
   for (const arg of args.filter((a) => a.startsWith("--"))) if (!allowed.has(arg.split("=")[0])) throw new Error(`Unknown option ${arg}`);
   if (has("--visual-review-only") || val("--visual-iterations")) throw new Error('Visual debugging is manual only. Use npm run visual with --only, --problem and --page-url after inspecting the frontend.');
+  const provider = val("--provider");
+  if (provider) {
+    if (!["codex","groq","anthropic","gemini","ollama","nvidia","auto"].includes(provider)) throw new Error("Unsupported normalization provider");
+    if (has("--deterministic")) throw new Error("Choose --provider or --deterministic, not both.");
+    process.env.AI_PROVIDER = provider;
+    process.env.NORMALIZE_MODE = "ai";
+  }
   let frameDir = val("--frame");
   if (!url && !frameDir) throw new Error('Usage: npm run pipeline -- "<figma-url>" [--page <id>] [--no-inject] [--deterministic]');
   if (val("--page") && (!/^\d+$/.test(val("--page")) || Number(val("--page")) < 1)) throw new Error("--page must be a positive numeric post ID.");
@@ -64,7 +71,8 @@ async function main() {
   }
   if ((await run("validate merged tree", "bricks-validator.js", [mergedTree])).code) throw new Error("Merged tree failed structural validation.");
   if ((await run("validate native settings and assets", "validate-build.js", [mergedTree])).code) throw new Error("Merged build failed nonvisual schema/asset validation.");
-  state.visualDebugging = "manual-only; never invoked by the pipeline";
+  if ((await run('pre-import conversion audit','conversion-audit.js',[frameDir])).code) throw new Error('Pre-import JSON audit failed.');
+  state.visualDebugging = has('--no-inject') ? 'export only; no frontend target' : has('--no-visual') ? 'disabled by --no-visual' : 'automatic frontend verification after injection';
   let failed = !!build.code;
   const blocked = build.code && !has("--inject-partial");
   if (has("--no-inject")) log("WordPress injection skipped (--no-inject).");
@@ -78,6 +86,12 @@ async function main() {
     if (!injected.code) {
       const report = JSON.parse(fs.readFileSync(path.join(mergedDir, "inject-report.json"), "utf8")); state.postId = report.postId;
       for (const file of ["inject-report.json", "injected-tree.json"]) fs.copyFileSync(path.join(mergedDir, file), path.join(runDir, file));
+      if (!has('--no-visual')) {
+        if(provider)process.env.STUDIO_AGENT_PROVIDER=provider;
+        const verified=await run('verify and repair the same draft','verify-draft.js',[frameDir,path.join(runDir,'visual')]);
+        state.frontendVerified=verified.code===0;
+        failed ||= verified.code!==0;
+      }
     }
   }
   fs.copyFileSync(mergedTree, path.join(runDir, "compiled-tree.json"));

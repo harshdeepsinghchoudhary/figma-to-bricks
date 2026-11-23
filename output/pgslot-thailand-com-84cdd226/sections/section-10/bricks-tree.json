@@ -1,8 +1,8 @@
 [
   {
-    "id": "iurh4m",
+    "id": "x0io7f",
     "name": "heading",
-    "parent": "8ztsso",
+    "parent": "3q488m",
     "children": [],
     "settings": {
       "text": "Download and Install PG Slot App For APK &amp; IOS",
@@ -19,13 +19,18 @@
           "raw": "#FFFFFF"
         },
         "text-align": "left"
+      },
+      "_typography:mobile_landscape": {
+        "font-size": "32px",
+        "line-height": "125%",
+        "letter-spacing": "0%"
       }
     }
   },
   {
-    "id": "168fhc",
+    "id": "nkq1c0",
     "name": "text",
-    "parent": "8ztsso",
+    "parent": "3q488m",
     "children": [],
     "settings": {
       "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>",
@@ -46,9 +51,9 @@
     }
   },
   {
-    "id": "jb1xvp",
+    "id": "vkc443",
     "name": "image",
-    "parent": "5ndo96",
+    "parent": "iuio57",
     "children": [],
     "settings": {
       "image": {
@@ -65,34 +70,31 @@
     "themeStyles": []
   },
   {
-    "id": "7dmzx0",
-    "name": "icon",
-    "parent": "5ndo96",
+    "id": "avda0r",
+    "name": "image",
+    "parent": "iuio57",
     "children": [],
     "settings": {
-      "icon": {
-        "library": "svg",
-        "svg": {
-          "id": null,
-          "filename": null,
-          "size": "full",
-          "full": "../../assets/googleplay-202_109.svg",
-          "url": "../../assets/googleplay-202_109.svg"
-        },
-        "height": "59"
+      "image": {
+        "id": null,
+        "filename": null,
+        "size": "full",
+        "full": "../../assets/googleplay-202_109.svg",
+        "url": "../../assets/googleplay-202_109.svg"
       },
+      "_width": "100%",
       "_widthMax": "203px",
       "_widthMax:tablet_portrait": "100%"
     },
     "themeStyles": []
   },
   {
-    "id": "5ndo96",
+    "id": "iuio57",
     "name": "div",
-    "parent": "8ztsso",
+    "parent": "3q488m",
     "children": [
-      "jb1xvp",
-      "7dmzx0"
+      "vkc443",
+      "avda0r"
     ],
     "settings": {
       "_display": "flex",
@@ -109,13 +111,13 @@
     }
   },
   {
-    "id": "8ztsso",
+    "id": "3q488m",
     "name": "div",
-    "parent": "tjzho4",
+    "parent": "foxipx",
     "children": [
-      "iurh4m",
-      "168fhc",
-      "5ndo96"
+      "x0io7f",
+      "nkq1c0",
+      "iuio57"
     ],
     "settings": {
       "_display": "flex",
@@ -127,9 +129,9 @@
     }
   },
   {
-    "id": "j0rr4n",
+    "id": "82rjtg",
     "name": "image",
-    "parent": "tjzho4",
+    "parent": "foxipx",
     "children": [],
     "settings": {
       "image": {
@@ -140,17 +142,18 @@
         "url": "../../assets/group-1261154074-202_137.png"
       },
       "_width": "100%",
-      "_widthMax": "380.9130859375px"
+      "_widthMax": "380px",
+      "_widthMax:tablet_portrait": "100%"
     },
     "themeStyles": []
   },
   {
-    "id": "tjzho4",
+    "id": "foxipx",
     "name": "div",
-    "parent": "c1jumy",
+    "parent": "qmavle",
     "children": [
-      "8ztsso",
-      "j0rr4n"
+      "3q488m",
+      "82rjtg"
     ],
     "settings": {
       "_display": "flex",
@@ -167,32 +170,40 @@
     }
   },
   {
-    "id": "c1jumy",
+    "id": "qmavle",
     "name": "container",
-    "parent": "c7celo",
+    "parent": "jombin",
     "children": [
-      "tjzho4"
+      "foxipx"
     ],
     "settings": {
       "_display": "flex",
       "_direction": "column",
       "_alignItems": "flex-start",
       "_width": "100%",
-      "_widthMax": "1097px"
+      "_widthMax": "1120px"
     }
   },
   {
-    "id": "c7celo",
+    "id": "jombin",
     "name": "section",
     "parent": 0,
     "children": [
-      "c1jumy"
+      "qmavle"
     ],
     "settings": {
       "_padding": {
+        "top": "0",
         "right": "16",
+        "bottom": "0",
         "left": "16"
-      }
+      },
+      "_background": {
+        "color": {
+          "raw": "#1A070C"
+        }
+      },
+      "_overflow": "hidden"
     }
   }
 ]

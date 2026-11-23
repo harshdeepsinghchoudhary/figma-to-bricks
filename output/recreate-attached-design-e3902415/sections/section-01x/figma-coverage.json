@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "sourceHash": "79eb70ea982c006cc0f35afb582337963b36d3ab9c55742f4a000d989e5f8442",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "Recreate attached design (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4084",
+      "parentId": "scope",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4085",
+      "parentId": "11:4084",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4086",
+      "parentId": "11:4085",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4087",
+      "parentId": "11:4086",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4088",
+      "parentId": "11:4087",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4089",
+      "parentId": "11:4088",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4088"
+    },
+    {
+      "nodeId": "11:4090",
+      "parentId": "11:4088",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4088"
+    },
+    {
+      "nodeId": "11:4091",
+      "parentId": "11:4087",
+      "name": "Specialist in maatwerk vloeren",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4092",
+      "parentId": "11:4086",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4093",
+      "parentId": "11:4092",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4094",
+      "parentId": "11:4093",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4093"
+    },
+    {
+      "nodeId": "11:4095",
+      "parentId": "11:4093",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4093"
+    },
+    {
+      "nodeId": "11:4096",
+      "parentId": "11:4092",
+      "name": "Voor particulieren & zakelijk",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4097",
+      "parentId": "11:4086",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4098",
+      "parentId": "11:4097",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4099",
+      "parentId": "11:4098",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4098"
+    },
+    {
+      "nodeId": "11:4100",
+      "parentId": "11:4098",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4098"
+    },
+    {
+      "nodeId": "11:4101",
+      "parentId": "11:4097",
+      "name": "Ma–Do 10:00–12:30 & 13:30–17:00",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4102",
+      "parentId": "11:4086",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4103",
+      "parentId": "11:4102",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4104",
+      "parentId": "11:4103",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4103"
+    },
+    {
+      "nodeId": "11:4105",
+      "parentId": "11:4103",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4103"
+    },
+    {
+      "nodeId": "11:4106",
+      "parentId": "11:4102",
+      "name": "Zat 10:00–17:00",
+      "type": "TEXT",
+      "status": "represented"
+    }
+  ],
+  "summary": {
+    "represented": 16,
+    "covered-by-export": 8,
+    "button-label": 0,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 0
+  }
+}

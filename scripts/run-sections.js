@@ -32,7 +32,7 @@ import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
-import { decorationOwner } from "./section-detect.js";
+import { decorationOwner, pageSections } from "./section-detect.js";
 
 const args = process.argv.slice(2);
 const frameDir = args.find((a) => !a.startsWith("--"));
@@ -46,7 +46,7 @@ if (!frameDir) {
 const figmaPath = path.join(frameDir, "figma-node.json");
 if (!fs.existsSync(figmaPath)) { console.error(`Missing ${figmaPath} - run stage 1 first.`); process.exit(1); }
 const root = JSON.parse(fs.readFileSync(figmaPath, "utf-8"));
-const top = [...(root.children || [])]
+const top = [...pageSections(root)]
   .filter((n) => n.visible !== false && n.absoluteBoundingBox)
   .sort((a, b) => a.absoluteBoundingBox.y - b.absoluteBoundingBox.y || a.absoluteBoundingBox.x - b.absoluteBoundingBox.x);
 if (!top.length) { console.error("The frame has no top-level children."); process.exit(1); }
@@ -209,7 +209,7 @@ function node(script, a, live = false) {
 }
 const failed = [];
 const failedNames = new Set();
-const split = opt("split", "4600");
+const split = opt("split", process.env.AI_PROVIDER === 'codex' ? "24000" : "4600");
 const normalizationMode = flag("deterministic") || process.env.NORMALIZE_MODE === "deterministic" ? "deterministic" : "ai";
 let merged = false;
 fs.writeFileSync(path.join(frameDir, "build-report.json"), JSON.stringify({ status: "running", merged: false }));

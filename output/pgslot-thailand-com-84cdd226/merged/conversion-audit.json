@@ -1,0 +1,201 @@
+{
+  "status": "checked",
+  "errors": [],
+  "sections": [
+    {
+      "section": "section-02",
+      "issues": []
+    },
+    {
+      "section": "section-03",
+      "issues": []
+    },
+    {
+      "section": "section-04",
+      "issues": []
+    },
+    {
+      "section": "section-05",
+      "issues": [
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154156-6b18d0e5",
+          "elementId": "usskdz",
+          "expected": 353,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154158-6d62c9b0",
+          "elementId": "fip2mt",
+          "expected": 353,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154160-b3784ee0",
+          "elementId": "qbyn0k",
+          "expected": 353,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        }
+      ]
+    },
+    {
+      "section": "section-07",
+      "issues": [
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154165-96eca94f",
+          "elementId": "wiak8e",
+          "expected": 353,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154167-f8a0f740",
+          "elementId": "glieuo",
+          "expected": 353,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154169-f0791977",
+          "elementId": "nmlio8",
+          "expected": 353,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154171-1dc80554",
+          "elementId": "roz5ub",
+          "expected": 353,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154173-cff2f465",
+          "elementId": "pteaoc",
+          "expected": 353,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        }
+      ]
+    },
+    {
+      "section": "section-08",
+      "issues": []
+    },
+    {
+      "section": "section-09",
+      "issues": [
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154141-02deae60",
+          "elementId": "cqd23h",
+          "expected": 270,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154142-7a199137",
+          "elementId": "up30ww",
+          "expected": 270,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154140-dabfc7ed",
+          "elementId": "h6qr4i",
+          "expected": 270,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        }
+      ]
+    },
+    {
+      "section": "section-10",
+      "issues": []
+    },
+    {
+      "section": "section-11",
+      "issues": [
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154178-5e33e45f",
+          "elementId": "2qel6s",
+          "expected": 258,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        }
+      ]
+    },
+    {
+      "section": "section-12",
+      "issues": [
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154151-155c1bc1",
+          "elementId": "ycwv6x",
+          "expected": 209,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154152-07482ec7",
+          "elementId": "4szqsy",
+          "expected": 209,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154149-66d6c73d",
+          "elementId": "smx6hg",
+          "expected": 209,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        },
+        {
+          "severity": "warning",
+          "kind": "lost-width",
+          "node": "group-1261154150-5e5eb77e",
+          "elementId": "l4aw04",
+          "expected": 209,
+          "description": "Measured normalized width has no direct compiled width/max-width; inspect layout inheritance."
+        }
+      ]
+    },
+    {
+      "section": "section-13",
+      "issues": []
+    },
+    {
+      "section": "section-14",
+      "issues": []
+    },
+    {
+      "section": "section-15",
+      "issues": []
+    },
+    {
+      "section": "section-16",
+      "issues": []
+    },
+    {
+      "section": "section-17",
+      "issues": []
+    }
+  ],
+  "visualAcceptance": false,
+  "note": "Static audit detects structural and mapping problems; warnings require review, not blind JSON patches."
+}

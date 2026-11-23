@@ -1,8 +1,8 @@
 [
   {
-    "id": "ecwlzy",
+    "id": "okeusj",
     "name": "heading",
-    "parent": "0mwl3x",
+    "parent": "3h0497",
     "children": [],
     "settings": {
       "text": "Popular Banking Methods of PG Slot in Thailand",
@@ -20,13 +20,18 @@
         },
         "text-align": "center"
       },
+      "_typography:mobile_landscape": {
+        "font-size": "32px",
+        "line-height": "125%",
+        "letter-spacing": "0%"
+      },
       "_alignSelf": "center"
     }
   },
   {
-    "id": "559xw9",
+    "id": "v5tufm",
     "name": "image",
-    "parent": "a34b8q",
+    "parent": "ycwv6x",
     "children": [],
     "settings": {
       "image": {
@@ -42,9 +47,9 @@
     "themeStyles": []
   },
   {
-    "id": "yhly63",
+    "id": "ews2tw",
     "name": "heading",
-    "parent": "mivf1x",
+    "parent": "qghy0a",
     "children": [],
     "settings": {
       "text": "TrueMoney Wallet",
@@ -65,9 +70,9 @@
     }
   },
   {
-    "id": "kvlkxx",
+    "id": "93jng3",
     "name": "text",
-    "parent": "mivf1x",
+    "parent": "qghy0a",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy the printing and </p>",
@@ -87,12 +92,12 @@
     }
   },
   {
-    "id": "mivf1x",
+    "id": "qghy0a",
     "name": "div",
-    "parent": "a34b8q",
+    "parent": "ycwv6x",
     "children": [
-      "yhly63",
-      "kvlkxx"
+      "ews2tw",
+      "93jng3"
     ],
     "settings": {
       "_display": "flex",
@@ -112,12 +117,12 @@
     }
   },
   {
-    "id": "a34b8q",
+    "id": "ycwv6x",
     "name": "div",
-    "parent": "chc882",
+    "parent": "owzwee",
     "children": [
-      "559xw9",
-      "mivf1x"
+      "v5tufm",
+      "qghy0a"
     ],
     "settings": {
       "_display": "flex",
@@ -128,9 +133,9 @@
     }
   },
   {
-    "id": "43yb4l",
+    "id": "irromh",
     "name": "image",
-    "parent": "glcogk",
+    "parent": "4szqsy",
     "children": [],
     "settings": {
       "image": {
@@ -146,9 +151,9 @@
     "themeStyles": []
   },
   {
-    "id": "3y48ug",
+    "id": "8xasdo",
     "name": "heading",
-    "parent": "7uw5ua",
+    "parent": "gghjhq",
     "children": [],
     "settings": {
       "text": "Rabbit LINE Pay",
@@ -169,9 +174,9 @@
     }
   },
   {
-    "id": "4w4gca",
+    "id": "8ks6vb",
     "name": "text",
-    "parent": "7uw5ua",
+    "parent": "gghjhq",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy the printing and </p>",
@@ -191,12 +196,12 @@
     }
   },
   {
-    "id": "7uw5ua",
+    "id": "gghjhq",
     "name": "div",
-    "parent": "glcogk",
+    "parent": "4szqsy",
     "children": [
-      "3y48ug",
-      "4w4gca"
+      "8xasdo",
+      "8ks6vb"
     ],
     "settings": {
       "_display": "flex",
@@ -216,12 +221,12 @@
     }
   },
   {
-    "id": "glcogk",
+    "id": "4szqsy",
     "name": "div",
-    "parent": "chc882",
+    "parent": "owzwee",
     "children": [
-      "43yb4l",
-      "7uw5ua"
+      "irromh",
+      "gghjhq"
     ],
     "settings": {
       "_display": "flex",
@@ -232,9 +237,9 @@
     }
   },
   {
-    "id": "qmymrd",
+    "id": "i7oerk",
     "name": "image",
-    "parent": "p0cw0a",
+    "parent": "smx6hg",
     "children": [],
     "settings": {
       "image": {
@@ -250,9 +255,9 @@
     "themeStyles": []
   },
   {
-    "id": "k60869",
+    "id": "oquip1",
     "name": "heading",
-    "parent": "a4me7g",
+    "parent": "ymfqpc",
     "children": [],
     "settings": {
       "text": "TMB",
@@ -273,9 +278,9 @@
     }
   },
   {
-    "id": "gt1099",
+    "id": "5qa2mq",
     "name": "text",
-    "parent": "a4me7g",
+    "parent": "ymfqpc",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy the printing and </p>",
@@ -295,12 +300,12 @@
     }
   },
   {
-    "id": "a4me7g",
+    "id": "ymfqpc",
     "name": "div",
-    "parent": "p0cw0a",
+    "parent": "smx6hg",
     "children": [
-      "k60869",
-      "gt1099"
+      "oquip1",
+      "5qa2mq"
     ],
     "settings": {
       "_display": "flex",
@@ -308,16 +313,24 @@
       "_rowGap": "12",
       "_columnGap": "12",
       "_alignItems": "center",
-      "_width": "100%"
+      "_width": "100%",
+      "_border": {
+        "radius": {
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "left": "0px"
+        }
+      }
     }
   },
   {
-    "id": "p0cw0a",
+    "id": "smx6hg",
     "name": "div",
-    "parent": "chc882",
+    "parent": "owzwee",
     "children": [
-      "qmymrd",
-      "a4me7g"
+      "i7oerk",
+      "ymfqpc"
     ],
     "settings": {
       "_display": "flex",
@@ -328,9 +341,9 @@
     }
   },
   {
-    "id": "gvips3",
+    "id": "kfti6p",
     "name": "image",
-    "parent": "tfp6s7",
+    "parent": "l4aw04",
     "children": [],
     "settings": {
       "image": {
@@ -346,9 +359,9 @@
     "themeStyles": []
   },
   {
-    "id": "9dmn8g",
+    "id": "y7yg5j",
     "name": "heading",
-    "parent": "49yu1h",
+    "parent": "zrm636",
     "children": [],
     "settings": {
       "text": "Visa and Mastercard",
@@ -369,9 +382,9 @@
     }
   },
   {
-    "id": "s61h1t",
+    "id": "xdojf1",
     "name": "text",
-    "parent": "49yu1h",
+    "parent": "zrm636",
     "children": [],
     "settings": {
       "text": "<p>Lorem Ipsum is simply dummy the printing and </p>",
@@ -391,12 +404,12 @@
     }
   },
   {
-    "id": "49yu1h",
+    "id": "zrm636",
     "name": "div",
-    "parent": "tfp6s7",
+    "parent": "l4aw04",
     "children": [
-      "9dmn8g",
-      "s61h1t"
+      "y7yg5j",
+      "xdojf1"
     ],
     "settings": {
       "_display": "flex",
@@ -416,12 +429,12 @@
     }
   },
   {
-    "id": "tfp6s7",
+    "id": "l4aw04",
     "name": "div",
-    "parent": "chc882",
+    "parent": "owzwee",
     "children": [
-      "gvips3",
-      "49yu1h"
+      "kfti6p",
+      "zrm636"
     ],
     "settings": {
       "_display": "flex",
@@ -432,14 +445,14 @@
     }
   },
   {
-    "id": "chc882",
+    "id": "owzwee",
     "name": "div",
-    "parent": "0mwl3x",
+    "parent": "3h0497",
     "children": [
-      "a34b8q",
-      "glcogk",
-      "p0cw0a",
-      "tfp6s7"
+      "ycwv6x",
+      "4szqsy",
+      "smx6hg",
+      "l4aw04"
     ],
     "settings": {
       "_display": "grid",
@@ -454,12 +467,12 @@
     }
   },
   {
-    "id": "0mwl3x",
+    "id": "3h0497",
     "name": "div",
-    "parent": "g5fqas",
+    "parent": "v1yylu",
     "children": [
-      "ecwlzy",
-      "chc882"
+      "okeusj",
+      "owzwee"
     ],
     "settings": {
       "_display": "flex",
@@ -471,11 +484,11 @@
     }
   },
   {
-    "id": "g5fqas",
+    "id": "v1yylu",
     "name": "container",
-    "parent": "azjzfc",
+    "parent": "d3ydom",
     "children": [
-      "0mwl3x"
+      "3h0497"
     ],
     "settings": {
       "_display": "flex",
@@ -486,17 +499,25 @@
     }
   },
   {
-    "id": "azjzfc",
+    "id": "d3ydom",
     "name": "section",
     "parent": 0,
     "children": [
-      "g5fqas"
+      "v1yylu"
     ],
     "settings": {
       "_padding": {
+        "top": "0",
         "right": "16",
+        "bottom": "0",
         "left": "16"
-      }
+      },
+      "_background": {
+        "color": {
+          "raw": "#1A070C"
+        }
+      },
+      "_overflow": "hidden"
     }
   }
 ]

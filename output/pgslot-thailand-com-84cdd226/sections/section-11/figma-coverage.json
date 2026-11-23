@@ -15,14 +15,15 @@
       "parentId": "scope",
       "name": "Group 1261154191",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:150",
       "parentId": "202:149",
       "name": "Rectangle 5741",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "absorbed-paint",
+      "representedBy": "202:149"
     },
     {
       "nodeId": "202:151",
@@ -43,7 +44,7 @@
       "parentId": "202:151",
       "name": "Group 1261154189",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:154",
@@ -57,14 +58,15 @@
       "parentId": "202:154",
       "name": "Rectangle 5767",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "absorbed-paint",
+      "representedBy": "202:154"
     },
     {
       "nodeId": "202:156",
       "parentId": "202:154",
       "name": "Group 1261154177",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:157",
@@ -78,7 +80,7 @@
       "parentId": "202:156",
       "name": "Group 1261154075",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:159",
@@ -99,14 +101,15 @@
       "parentId": "202:158",
       "name": "Frame 28",
       "type": "FRAME",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:162",
       "parentId": "202:161",
       "name": "Claim Now",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:161"
     },
     {
       "nodeId": "202:163",
@@ -120,7 +123,7 @@
       "parentId": "202:163",
       "name": "Rectangle 5768",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:165",
@@ -141,7 +144,7 @@
       "parentId": "202:165",
       "name": "Group 1261154076",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:168",
@@ -169,7 +172,8 @@
       "parentId": "202:170",
       "name": "Claim Now",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:170"
     },
     {
       "nodeId": "202:172",
@@ -183,14 +187,14 @@
       "parentId": "202:172",
       "name": "Rectangle 5770",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:174",
       "parentId": "202:172",
       "name": "Group 1261154183",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:175",
@@ -232,7 +236,8 @@
       "parentId": "202:179",
       "name": "Claim Now",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:179"
     },
     {
       "nodeId": "202:181",
@@ -246,14 +251,14 @@
       "parentId": "202:181",
       "name": "Rectangle 5769",
       "type": "RECTANGLE",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:183",
       "parentId": "202:181",
       "name": "Group 1261154181",
       "type": "GROUP",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:184",
@@ -281,14 +286,15 @@
       "parentId": "202:184",
       "name": "Frame 28",
       "type": "FRAME",
-      "status": "unrepresented"
+      "status": "represented"
     },
     {
       "nodeId": "202:188",
       "parentId": "202:187",
       "name": "Claim Now",
       "type": "TEXT",
-      "status": "represented"
+      "status": "button-label",
+      "representedBy": "202:187"
     },
     {
       "nodeId": "202:189",
@@ -315,11 +321,11 @@
     }
   ],
   "summary": {
-    "represented": 28,
+    "represented": 36,
     "covered-by-export": 2,
-    "button-label": 0,
-    "absorbed-paint": 0,
+    "button-label": 4,
+    "absorbed-paint": 2,
     "hidden": 0,
-    "unrepresented": 14
+    "unrepresented": 0
   }
 }

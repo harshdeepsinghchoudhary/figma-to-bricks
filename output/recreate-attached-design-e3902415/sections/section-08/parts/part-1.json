@@ -1,0 +1,653 @@
+{
+  "type": "page",
+  "children": [
+    {
+      "type": "section",
+      "id": "diensten",
+      "figmaNodeId": "11:4273",
+      "background": {
+        "color": "#F9FAFB"
+      },
+      "children": [
+        {
+          "type": "column",
+          "id": "diensten-container",
+          "figmaNodeId": "11:4274",
+          "children": [
+            {
+              "type": "column",
+              "id": "diensten-intro",
+              "figmaNodeId": "11:4275",
+              "children": [
+                {
+                  "type": "column",
+                  "id": "diensten-heading-wrapper",
+                  "figmaNodeId": "11:4276",
+                  "children": [
+                    {
+                      "type": "heading",
+                      "id": "onze-diensten",
+                      "figmaNodeId": "11:4277",
+                      "level": 2,
+                      "text": "Onze diensten"
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "id": "diensten-description-wrapper",
+                  "figmaNodeId": "11:4278",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "diensten-description",
+                      "figmaNodeId": "11:4279",
+                      "text": "Compleet aanbod voor uw vloeren en raamdecoratie, altijd op maat"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "id": "diensten-cards",
+              "figmaNodeId": "11:4280",
+              "layout": {
+                "display": "flex",
+                "direction": "row",
+                "gap": 24
+              },
+              "children": [
+                {
+                  "type": "row",
+                  "id": "diensten-row-4",
+                  "children": [
+                    {
+                      "type": "column",
+                      "id": "vloeren-card",
+                      "figmaNodeId": "11:4281",
+                      "component": {
+                        "kind": "card"
+                      },
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 16
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #F3F4F6; clips content."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "vloeren-image-wrapper",
+                          "figmaNodeId": "11:4282",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "vloeren-image",
+                              "figmaNodeId": "11:4283",
+                              "asset": {
+                                "nodeId": "11:4283",
+                                "kind": "image"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "vloeren-content",
+                          "figmaNodeId": "11:4284",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "diensten-column-1",
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "vloeren-heading-wrapper",
+                                  "figmaNodeId": "11:4285",
+                                  "children": [
+                                    {
+                                      "type": "heading",
+                                      "id": "vloeren-heading",
+                                      "figmaNodeId": "11:4286",
+                                      "level": 3,
+                                      "text": "Vloeren op maat"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "vloeren-description-wrapper",
+                                  "figmaNodeId": "11:4287",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "vloeren-description",
+                                      "figmaNodeId": "11:4288",
+                                      "text": "Van tapijt tot laminaat en PVC — wij maken maatwerk vloeren voor woningen, hotels en bedrijfspanden."
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "vloeren-list",
+                                  "figmaNodeId": "11:4289",
+                                  "children": [
+                                    {
+                                      "type": "row",
+                                      "id": "tapijt-item",
+                                      "figmaNodeId": "11:4290",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "tapijt",
+                                          "figmaNodeId": "11:4292",
+                                          "text": "Tapijt"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "row",
+                                      "id": "laminaat-item",
+                                      "figmaNodeId": "11:4293",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "laminaat",
+                                          "figmaNodeId": "11:4295",
+                                          "text": "Laminaat"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "row",
+                                      "id": "pvc-item",
+                                      "figmaNodeId": "11:4296",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "pvc",
+                                          "figmaNodeId": "11:4298",
+                                          "text": "PVC"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "row",
+                                      "id": "vinyl-item",
+                                      "figmaNodeId": "11:4299",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "vinyl",
+                                          "figmaNodeId": "11:4301",
+                                          "text": "Vinyl"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "row",
+                                  "id": "vloeren-link",
+                                  "figmaNodeId": "11:4302",
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 5.8
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "row",
+                                      "id": "diensten-row-1",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "vloeren-link-text",
+                                          "figmaNodeId": "11:4303",
+                                          "text": "Meer informatie "
+                                        },
+                                        {
+                                          "type": "image",
+                                          "id": "vloeren-link-arrow",
+                                          "figmaNodeId": "11:4304",
+                                          "asset": {
+                                            "nodeId": "11:4304",
+                                            "kind": "svg"
+                                          },
+                                          "layout": {
+                                            "margin": {
+                                              "top": 5
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "raamdecoratie-card",
+                      "figmaNodeId": "11:4306",
+                      "component": {
+                        "kind": "card"
+                      },
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 16
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #F3F4F6; clips content."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "raamdecoratie-image-wrapper",
+                          "figmaNodeId": "11:4307",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "raamdecoratie-image",
+                              "figmaNodeId": "11:4308",
+                              "asset": {
+                                "nodeId": "11:4308",
+                                "kind": "image"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "raamdecoratie-content",
+                          "figmaNodeId": "11:4309",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "diensten-column-2",
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "raamdecoratie-heading-wrapper",
+                                  "figmaNodeId": "11:4310",
+                                  "children": [
+                                    {
+                                      "type": "heading",
+                                      "id": "raamdecoratie-heading",
+                                      "figmaNodeId": "11:4311",
+                                      "level": 3,
+                                      "text": "Raamdecoratie"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "raamdecoratie-description-wrapper",
+                                  "figmaNodeId": "11:4312",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "raamdecoratie-description",
+                                      "figmaNodeId": "11:4313",
+                                      "text": "Gordijnen, vitrages en luxaflex op maat gemaakt voor elk interieur."
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "raamdecoratie-list",
+                                  "figmaNodeId": "11:4314",
+                                  "children": [
+                                    {
+                                      "type": "row",
+                                      "id": "gordijnen-item",
+                                      "figmaNodeId": "11:4315",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "gordijnen",
+                                          "figmaNodeId": "11:4317",
+                                          "text": "Gordijnen"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "row",
+                                      "id": "vitrages-item",
+                                      "figmaNodeId": "11:4318",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "vitrages",
+                                          "figmaNodeId": "11:4320",
+                                          "text": "Vitrages"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "row",
+                                      "id": "luxaflex-item",
+                                      "figmaNodeId": "11:4321",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "luxaflex",
+                                          "figmaNodeId": "11:4323",
+                                          "text": "Luxaflex"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "row",
+                                      "id": "jaloezieen-item",
+                                      "figmaNodeId": "11:4324",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "jaloezieen",
+                                          "figmaNodeId": "11:4326",
+                                          "text": "Jaloezieën"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "row",
+                                  "id": "raamdecoratie-link",
+                                  "figmaNodeId": "11:4327",
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 5.8
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "row",
+                                      "id": "diensten-row-2",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "raamdecoratie-link-text",
+                                          "figmaNodeId": "11:4328",
+                                          "text": "Meer informatie "
+                                        },
+                                        {
+                                          "type": "image",
+                                          "id": "raamdecoratie-link-arrow",
+                                          "figmaNodeId": "11:4329",
+                                          "asset": {
+                                            "nodeId": "11:4329",
+                                            "kind": "svg"
+                                          },
+                                          "layout": {
+                                            "margin": {
+                                              "top": 5
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "id": "advies-projecten-card",
+                      "figmaNodeId": "11:4331",
+                      "component": {
+                        "kind": "card"
+                      },
+                      "background": {
+                        "color": "#FFFFFF"
+                      },
+                      "border": {
+                        "radius": 16
+                      },
+                      "notes": [
+                        "Inside stroke: 1px #F3F4F6; clips content."
+                      ],
+                      "children": [
+                        {
+                          "type": "column",
+                          "id": "advies-projecten-image-wrapper",
+                          "figmaNodeId": "11:4332",
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "advies-projecten-image",
+                              "figmaNodeId": "11:4333",
+                              "asset": {
+                                "nodeId": "11:4333",
+                                "kind": "image"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "column",
+                          "id": "advies-projecten-content",
+                          "figmaNodeId": "11:4334",
+                          "children": [
+                            {
+                              "type": "column",
+                              "id": "diensten-column-3",
+                              "children": [
+                                {
+                                  "type": "column",
+                                  "id": "advies-projecten-heading-wrapper",
+                                  "figmaNodeId": "11:4335",
+                                  "children": [
+                                    {
+                                      "type": "heading",
+                                      "id": "advies-projecten-heading",
+                                      "figmaNodeId": "11:4336",
+                                      "level": 3,
+                                      "text": "Advies & Projecten"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "advies-projecten-description-wrapper",
+                                  "figmaNodeId": "11:4337",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "advies-projecten-description",
+                                      "figmaNodeId": "11:4338",
+                                      "text": "Bezoek onze showroom voor persoonlijk advies en ontdek wat wij voor uw project kunnen betekenen."
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "column",
+                                  "id": "advies-projecten-list",
+                                  "figmaNodeId": "11:4339",
+                                  "children": [
+                                    {
+                                      "type": "row",
+                                      "id": "showroom-bezoek-item",
+                                      "figmaNodeId": "11:4340",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "showroom-bezoek",
+                                          "figmaNodeId": "11:4342",
+                                          "text": "Showroom bezoek"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "row",
+                                      "id": "gratis-opmeten-item",
+                                      "figmaNodeId": "11:4343",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "gratis-opmeten",
+                                          "figmaNodeId": "11:4345",
+                                          "text": "Gratis opmeten"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "row",
+                                      "id": "maatwerk-oplossingen-item",
+                                      "figmaNodeId": "11:4346",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "maatwerk-oplossingen",
+                                          "figmaNodeId": "11:4348",
+                                          "text": "Maatwerk oplossingen"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "row",
+                                      "id": "garantie-item",
+                                      "figmaNodeId": "11:4349",
+                                      "layout": {
+                                        "display": "flex",
+                                        "direction": "row",
+                                        "gap": 8
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "garantie",
+                                          "figmaNodeId": "11:4351",
+                                          "text": "Garantie"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "row",
+                                  "id": "advies-projecten-link",
+                                  "figmaNodeId": "11:4352",
+                                  "layout": {
+                                    "display": "flex",
+                                    "direction": "row",
+                                    "gap": 5.8
+                                  },
+                                  "children": [
+                                    {
+                                      "type": "row",
+                                      "id": "diensten-row-3",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "advies-projecten-link-text",
+                                          "figmaNodeId": "11:4353",
+                                          "text": "Meer informatie "
+                                        },
+                                        {
+                                          "type": "image",
+                                          "id": "advies-projecten-link-arrow",
+                                          "figmaNodeId": "11:4354",
+                                          "asset": {
+                                            "nodeId": "11:4354",
+                                            "kind": "svg"
+                                          },
+                                          "layout": {
+                                            "margin": {
+                                              "top": 5
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_uncertain": [
+    "Link destinations are absent; href values omitted."
+  ]
+}

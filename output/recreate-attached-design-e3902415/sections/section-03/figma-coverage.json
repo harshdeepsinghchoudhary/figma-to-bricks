@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "sourceHash": "eff7768f374a22ed8e3e3e9258d9b145678a30a3bebe44ea80053909bc546b65",
+  "warnings": [],
+  "nodes": [
+    {
+      "nodeId": "scope",
+      "parentId": null,
+      "name": "Recreate attached design (scoped)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4130",
+      "parentId": "scope",
+      "name": "Section",
+      "type": "FRAME",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "11:4131",
+      "parentId": "11:4130",
+      "name": "Image (Tapijtschuur vloeren showroom)",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4132",
+      "parentId": "11:4130",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "11:4133",
+      "parentId": "11:4130",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "unrepresented"
+    },
+    {
+      "nodeId": "11:4134",
+      "parentId": "11:4130",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4135",
+      "parentId": "11:4134",
+      "name": "Text",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4136",
+      "parentId": "11:4135",
+      "name": "Vloeren showroom",
+      "type": "TEXT",
+      "status": "button-label",
+      "representedBy": "11:4135"
+    },
+    {
+      "nodeId": "11:4137",
+      "parentId": "11:4134",
+      "name": "Heading 1",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4138",
+      "parentId": "11:4137",
+      "name": "Vakmanschap in vloeren en raamdecoratie",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4139",
+      "parentId": "11:4134",
+      "name": "Paragraph",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4140",
+      "parentId": "11:4139",
+      "name": "Bezoek onze showroom en ontdek ons uitgebreide aan",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4141",
+      "parentId": "11:4134",
+      "name": "Container",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4142",
+      "parentId": "11:4141",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4143",
+      "parentId": "11:4142",
+      "name": "Bekijk collectie ",
+      "type": "TEXT",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4144",
+      "parentId": "11:4142",
+      "name": "Icon",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4145",
+      "parentId": "11:4144",
+      "name": "Vector",
+      "type": "VECTOR",
+      "status": "covered-by-export",
+      "representedBy": "11:4144"
+    },
+    {
+      "nodeId": "11:4146",
+      "parentId": "11:4141",
+      "name": "Link",
+      "type": "FRAME",
+      "status": "represented"
+    },
+    {
+      "nodeId": "11:4147",
+      "parentId": "11:4146",
+      "name": "Offerte aanvragen",
+      "type": "TEXT",
+      "status": "button-label",
+      "representedBy": "11:4146"
+    }
+  ],
+  "summary": {
+    "represented": 13,
+    "covered-by-export": 1,
+    "button-label": 2,
+    "absorbed-paint": 0,
+    "hidden": 0,
+    "unrepresented": 3
+  }
+}

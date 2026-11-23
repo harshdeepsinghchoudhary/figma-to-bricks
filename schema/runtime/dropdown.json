@@ -1141,6 +1141,12 @@
           "property": "flex-direction",
           "value": "row-reverse",
           "required": "left"
+        },
+        {
+          "selector": ".brx-submenu-toggle",
+          "property": "flex-direction",
+          "value": "row",
+          "required": "right"
         }
       ],
       "tab": "content"

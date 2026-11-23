@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "studio": "node studio/server.js",
+    "studio:build": "tsc -p studio/tsconfig.json && vite build --config studio/vite.config.ts",
     "extract": "node scripts/1_extract_figma.js",
     "normalize": "node scripts/2_normalize.js",
     "compile": "node scripts/3_compile_bricks.js",
@@ -18,15 +20,28 @@
     "schema:sync": "node scripts/sync-bricks-schema.js",
     "test": "node --test tests/*.test.js",
     "validate": "node scripts/validate-build.js",
-    "regression": "node tools/regression.mjs"
+    "regression": "node tools/regression.mjs",
+    "studio:accounts": "node studio/hosted-preview.js",
+    "studio:mcp": "node studio/mcp-server.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@openai/codex-sdk": "^0.164.0",
     "ajv": "^8.20.0",
     "dotenv": "^16.6.1",
     "jsonrepair": "^3.8.0",
     "node-fetch": "^3.3.2",
     "playwright-core": "^1.48.0",
-    "sharp": "^0.33.5"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
   }
 }

@@ -1,0 +1,52 @@
+{
+  "figmaUrl": null,
+  "frameDir": "output/recreate-attached-design-e3902415",
+  "postId": null,
+  "startedAt": "2026-10-28T08:59:54.896Z",
+  "visualDebugging": "manual-only; never invoked by the pipeline",
+  "args": [
+    "--frame",
+    "output/recreate-attached-design-e3902415",
+    "--provider",
+    "codex",
+    "--only",
+    "section-01x",
+    "--force",
+    "--no-inject",
+    "--no-visual",
+    "--no-dataset"
+  ],
+  "steps": [
+    {
+      "label": "2-3 normalize, compile, merge",
+      "script": "run-sections.js",
+      "args": [
+        "output/recreate-attached-design-e3902415",
+        "--force",
+        "--only=section-01x"
+      ],
+      "code": 1,
+      "seconds": 27
+    },
+    {
+      "label": "validate merged tree",
+      "script": "bricks-validator.js",
+      "args": [
+        "output\\recreate-attached-design-e3902415\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    },
+    {
+      "label": "validate native settings and assets",
+      "script": "validate-build.js",
+      "args": [
+        "output\\recreate-attached-design-e3902415\\merged\\bricks-tree.json"
+      ],
+      "code": 0,
+      "seconds": 0
+    }
+  ],
+  "finishedAt": "2026-10-28T09:00:21.991Z",
+  "exitCode": 1
+}

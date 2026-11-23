@@ -613,6 +613,7 @@
                         "fontFamily": "Inter",
                         "fontSize": 16,
                         "fontWeight": 500,
+                        "lineHeight": "19.363636016845703px",
                         "letterSpacing": "0px",
                         "align": "left",
                         "color": "#FFFFFF"
@@ -787,6 +788,7 @@
                         "fontFamily": "Inter",
                         "fontSize": 16,
                         "fontWeight": 500,
+                        "lineHeight": "19.363636016845703px",
                         "letterSpacing": "0px",
                         "align": "left",
                         "color": "#1A070C"
@@ -1093,39 +1095,31 @@
           }
         }
       ],
-      "figma": {
-        "parentId": null,
-        "childIds": [
-          "202:14",
-          "247:27"
-        ],
-        "name": "pgslot-thailand.com (scoped)",
-        "type": "FRAME",
-        "absoluteBoundingBox": {
-          "x": -2972,
-          "y": 2337,
-          "width": 1440,
-          "height": 85
-        },
-        "effectiveVisible": true,
-        "geometryDerived": true,
-        "paintSourceIds": [
-          "202:14"
-        ]
-      },
-      "background": {
-        "color": "#290A12"
-      },
       "layout": {
         "display": "flex",
         "direction": "column",
         "align": "start",
         "padding": {
-          "top": 17,
+          "top": 0,
           "right": 0,
-          "bottom": 17,
+          "bottom": 0,
           "left": 0
         }
+      },
+      "figma": {
+        "parentId": null,
+        "childIds": [
+          "247:27"
+        ],
+        "name": "pgslot-thailand.com (scoped)",
+        "type": "FRAME",
+        "absoluteBoundingBox": {
+          "x": -2812,
+          "y": 2354,
+          "width": 1120,
+          "height": 51
+        },
+        "effectiveVisible": true
       }
     }
   ]
